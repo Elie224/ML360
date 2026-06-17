@@ -1,0 +1,137 @@
+{
+  "category": "Apprentissage supervisé",
+  "level": "Beginner",
+  "module": "Fondamentaux du supervise",
+  "questions": [
+    {
+      "type": "text",
+      "question": "In supervised learning, what makes a training example supervised rather than unsupervised?",
+      "image_url": null,
+      "choices": {
+        "A": "Each example includes an input and its expected output label.",
+        "B": "The model automatically discovers labels from hidden patterns.",
+        "C": "The dataset only contains features with no prediction target.",
+        "D": "The algorithm never compares predictions with true answers."
+      },
+      "correct_answer": "A",
+      "explanation": "Supervised learning relies on labeled examples, meaning the correct target is known during training."
+    },
+    {
+      "type": "text",
+      "question": "For a house-price model, which variable is the target?",
+      "image_url": null,
+      "choices": {
+        "A": "The neighborhood name",
+        "B": "The sale price of the house",
+        "C": "The number of rooms used as input",
+        "D": "The list of features after preprocessing"
+      },
+      "correct_answer": "B",
+      "explanation": "The target is the value the model is asked to predict, here the sale price."
+    },
+    {
+      "type": "text",
+      "question": "Which statement best describes a feature in a supervised model?",
+      "image_url": null,
+      "choices": {
+        "A": "It is the evaluation metric used after training.",
+        "B": "It is an input variable used to help predict the target.",
+        "C": "It is the final label predicted by the model.",
+        "D": "It is a mistake made by the model during validation."
+      },
+      "correct_answer": "B",
+      "explanation": "A feature is one of the inputs the model uses to estimate the correct target."
+    },
+    {
+      "type": "text",
+      "question": "Why do we usually split data into training and test sets in supervised learning?",
+      "image_url": null,
+      "choices": {
+        "A": "To make the model memorize only the first half of the rows",
+        "B": "To reduce the number of features before training starts",
+        "C": "To estimate how well the model generalizes to unseen examples",
+        "D": "To guarantee that every model reaches the same accuracy"
+      },
+      "correct_answer": "C",
+      "explanation": "A held-out test set gives an external check of whether the learned pattern works on new data."
+    },
+    {
+      "type": "text",
+      "question": "A model predicts whether an email is spam or not spam. What kind of supervised task is this?",
+      "image_url": null,
+      "choices": {
+        "A": "Classification",
+        "B": "Regression",
+        "C": "Clustering",
+        "D": "Dimensionality reduction"
+      },
+      "correct_answer": "A",
+      "explanation": "The output is a discrete label, so the task is classification."
+    },
+    {
+      "type": "text",
+      "question": "A model predicts tomorrow temperature as 29.4 degrees Celsius. What kind of supervised task is this?",
+      "image_url": null,
+      "choices": {
+        "A": "Classification",
+        "B": "Regression",
+        "C": "Association rule mining",
+        "D": "Anomaly detection"
+      },
+      "correct_answer": "B",
+      "explanation": "When the target is a continuous numeric value, the task is regression."
+    },
+    {
+      "type": "image",
+      "question": "Look at the diagram placeholder for a scatter plot with a fitted line. What is the best interpretation?",
+      "image_url": "supervised_regression_line_intro_1.png",
+      "choices": {
+        "A": "It shows a regression model estimating a continuous relationship between inputs and outputs.",
+        "B": "It shows a clustering algorithm splitting points into hidden groups without labels.",
+        "C": "It shows a confusion matrix for binary classification.",
+        "D": "It shows a reinforcement agent selecting actions over time."
+      },
+      "correct_answer": "A",
+      "explanation": "A fitted line over labeled points is the classic beginner visualization for supervised regression."
+    },
+    {
+      "type": "image",
+      "question": "A diagram placeholder shows two classes separated by a boundary. What concept does it illustrate most directly?",
+      "image_url": "supervised_decision_boundary_intro_1.png",
+      "choices": {
+        "A": "A decision boundary used by a classifier to separate labeled classes",
+        "B": "A principal component used for dimensionality reduction",
+        "C": "A reward curve used in reinforcement learning",
+        "D": "A density cluster discovered without any target labels"
+      },
+      "correct_answer": "A",
+      "explanation": "A boundary separating two labeled classes is one of the main visual intuitions behind supervised classification."
+    },
+    {
+      "type": "text",
+      "question": "Why is it risky to evaluate a supervised model only on the same data used for training?",
+      "image_url": null,
+      "choices": {
+        "A": "Because the model may appear better than it really is on unseen data",
+        "B": "Because training data cannot contain any labels",
+        "C": "Because regression metrics require clustering labels first",
+        "D": "Because test data must always be larger than training data"
+      },
+      "correct_answer": "A",
+      "explanation": "Testing on training data hides overfitting and inflates confidence about real-world performance."
+    },
+    {
+      "type": "text",
+      "question": "A beginner builds a churn model using a column created after the customer has already left. What is the main issue?",
+      "image_url": null,
+      "choices": {
+        "A": "The model is using leaked information that would not be available at prediction time",
+        "B": "The model automatically becomes unsupervised",
+        "C": "The target changes from classification to regression",
+        "D": "The dataset no longer needs a training split"
+      },
+      "correct_answer": "A",
+      "explanation": "Using post-event information creates leakage and leads to unrealistic performance estimates."
+    }
+  ]
+}

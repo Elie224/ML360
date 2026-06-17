@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color: #0f172a;
+    background-color: #f8fafc;
+    font-family: Manrope, 'Segoe UI', sans-serif;
+    line-height: 1.5;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  html,
+  body,
+  #root {
+    @apply min-h-screen;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    margin: 0;
+    background:
+      radial-gradient(circle at 12% 12%, rgba(37, 99, 235, 0.18), transparent 42%),
+      radial-gradient(circle at 88% 4%, rgba(124, 58, 237, 0.16), transparent 34%),
+      linear-gradient(160deg, #f8fafc 0%, #eef4ff 46%, #f8fafc 100%);
+    color: #0f172a;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  .ml-shell {
+    @apply mx-auto w-full max-w-7xl px-4 pb-16 pt-5 sm:px-6 lg:px-8;
+  }
+
+  .glass-card {
+    @apply rounded-3xl border border-stroke bg-white shadow-premium backdrop-blur;
+  }
+
+  .data-grid-bg {
+    background-image:
+      linear-gradient(to right, rgba(148, 163, 184, 0.15) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(148, 163, 184, 0.15) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  .progress-track {
+    @apply h-2.5 w-full overflow-hidden rounded-full bg-slate-200;
+  }
+
+  .level-node {
+    @apply relative flex flex-col gap-3 rounded-2xl border border-stroke bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-float;
+    overflow-wrap: anywhere;
+  }
+
+  .level-node::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: -20px;
+    width: 2px;
+    height: 20px;
+    background: linear-gradient(to bottom, rgba(37, 99, 235, 0.4), rgba(124, 58, 237, 0.2));
+  }
+
+  .level-node:last-child::after {
+    display: none;
+  }
+}
