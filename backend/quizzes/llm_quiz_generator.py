@@ -66,7 +66,8 @@ REGLES OBLIGATOIRES:
 OPTION_LETTERS = ("A", "B", "C", "D")
 MIN_EXPLANATION_WORDS = 90
 MAX_EXPLANATION_WORDS = 120
-IMAGE_RATIO_TARGET = 0.2
+IMAGE_RATIO_TARGET = 0.08
+MAX_IMAGE_QUESTIONS_PER_MODULE = 2
 DEFAULT_IMAGE_MODEL = "gpt-image-1"
 
 
@@ -168,10 +169,11 @@ def _generate_image_file(
     return _module_placeholder_url(category_key, module_name)
 
 
-def _image_quota_count(question_count: int) -> int:
+def _image_quota_count(question_count: int, image_ratio_target: float, max_images_per_module: int) -> int:
     if question_count <= 0:
         return 0
-    return max(1, round(question_count * IMAGE_RATIO_TARGET))
+    target = max(1, round(question_count * image_ratio_target))
+    return min(target, max_images_per_module)
 
 
 def _image_slot_indexes(question_count: int, image_count: int) -> list[int]:
@@ -194,10 +196,14 @@ def _image_slot_indexes(question_count: int, image_count: int) -> list[int]:
     return sorted(indexes)
 
 
-def _enforce_image_quota(questions: list[dict]) -> list[dict]:
+def _enforce_image_quota(
+    questions: list[dict],
+    image_ratio_target: float,
+    max_images_per_module: int,
+) -> list[dict]:
     normalized = [dict(q) for q in questions]
     n = len(normalized)
-    target = _image_quota_count(n)
+    target = _image_quota_count(n, image_ratio_target=image_ratio_target, max_images_per_module=max_images_per_module)
     if target == 0:
         return normalized
 
@@ -653,6 +659,8 @@ def generate_module_quiz(
     api_key: str,
     model: str,
     image_model: str,
+    image_ratio_target: float,
+    max_images_per_module: int,
     question_count: int | None,
     dry_run: bool,
 ) -> dict:
@@ -730,7 +738,11 @@ def generate_module_quiz(
         module_name=module_name,
         questions=questions,
     )
-    questions = _enforce_image_quota(questions=questions)
+    questions = _enforce_image_quota(
+        questions=questions,
+        image_ratio_target=image_ratio_target,
+        max_images_per_module=max_images_per_module,
+    )
     questions = _generate_images_for_questions(
         api_key=api_key,
         image_model=image_model,
@@ -762,6 +774,8 @@ def generate_all_for_category(
     api_key: str,
     model: str,
     image_model: str,
+    image_ratio_target: float,
+    max_images_per_module: int,
     dry_run: bool,
 ) -> None:
     for level_name in supported_levels(category_key):
@@ -774,6 +788,8 @@ def generate_all_for_category(
                 api_key=api_key,
                 model=model,
                 image_model=image_model,
+                image_ratio_target=image_ratio_target,
+                max_images_per_module=max_images_per_module,
                 question_count=None,
                 dry_run=dry_run,
             )
@@ -796,6 +812,8 @@ def main() -> int:
     parser.add_argument("--api-key")
     parser.add_argument("--model", default="gpt-4o")
     parser.add_argument("--image-model", default=DEFAULT_IMAGE_MODEL)
+    parser.add_argument("--image-ratio", type=float, default=IMAGE_RATIO_TARGET)
+    parser.add_argument("--max-image-questions", type=int, default=MAX_IMAGE_QUESTIONS_PER_MODULE)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -816,6 +834,8 @@ def main() -> int:
             api_key=api_key or "",
             model=args.model,
             image_model=args.image_model,
+            image_ratio_target=args.image_ratio,
+            max_images_per_module=args.max_image_questions,
             dry_run=dry_run,
         )
         return 0
@@ -830,6 +850,8 @@ def main() -> int:
         api_key=api_key or "",
         model=args.model,
         image_model=args.image_model,
+        image_ratio_target=args.image_ratio,
+        max_images_per_module=args.max_image_questions,
         question_count=args.n_questions,
         dry_run=dry_run,
     )
