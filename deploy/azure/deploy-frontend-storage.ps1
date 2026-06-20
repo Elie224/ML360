@@ -45,7 +45,10 @@ $accountKey = az storage account keys list --account-name $StorageAccountName --
 if (-not $accountKey) {
     throw "Unable to fetch storage account key for $StorageAccountName"
 }
-Invoke-Az "az storage blob upload-batch --account-name $StorageAccountName --account-key $accountKey --destination `'$web`' --source `"$distPath`" --overwrite --output none"
+az storage blob upload-batch --account-name $StorageAccountName --account-key $accountKey --destination '$web' --source "$distPath" --overwrite --output none
+if ($LASTEXITCODE -ne 0) {
+    throw "Azure CLI command failed: az storage blob upload-batch"
+}
 
 $webUrl = az storage account show --name $StorageAccountName --resource-group $ResourceGroup --query "primaryEndpoints.web" -o tsv
 Write-Host "Done. Frontend URL: $webUrl"
