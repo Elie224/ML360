@@ -63,7 +63,6 @@ export type SubmissionResponse = {
   answers: Array<{
     question_id: number
     selected_choice_id: number | null
-    correct_choice_id: number
     is_correct: boolean
     explanation: string
   }>

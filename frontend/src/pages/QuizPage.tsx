@@ -339,11 +339,11 @@ export function QuizPage() {
                   const correctedAnswer = submission?.answers.find((answer) => answer.question_id === activeQuestion.id)
                   const isSelected = selectedChoiceId === choice.id
                   const state = correctedAnswer
-                    ? choice.id === correctedAnswer.correct_choice_id
-                      ? 'correct'
-                      : isSelected
-                        ? 'incorrect'
-                        : 'idle'
+                    ? isSelected
+                      ? correctedAnswer.is_correct
+                        ? 'correct'
+                        : 'incorrect'
+                      : 'idle'
                     : isSelected
                       ? 'selected'
                       : 'idle'

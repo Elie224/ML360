@@ -89,4 +89,5 @@ class QuizApiTests(APITestCase):
 		self.assertEqual(response.status_code, status.HTTP_200_OK)
 		self.assertEqual(response.data['score'], 1)
 		self.assertEqual(response.data['percentage'], 100.0)
+		self.assertNotIn('correct_choice_id', response.data['answers'][0])
 		self.assertIn('explanation', response.data['answers'][0])

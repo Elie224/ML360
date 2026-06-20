@@ -106,7 +106,6 @@ class QuizSubmitAPIView(APIView):
 				{
 					'question_id': question.id,
 					'selected_choice_id': selected_choice_id,
-					'correct_choice_id': correct_choice.id,
 					'is_correct': is_correct,
 					'explanation': question.explanation,
 				}
