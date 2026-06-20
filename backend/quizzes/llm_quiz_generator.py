@@ -1,4 +1,5 @@
 import argparse
+import base64
 import json
 import os
 import re
@@ -66,6 +67,7 @@ OPTION_LETTERS = ("A", "B", "C", "D")
 MIN_EXPLANATION_WORDS = 90
 MAX_EXPLANATION_WORDS = 120
 IMAGE_RATIO_TARGET = 0.2
+DEFAULT_IMAGE_MODEL = "gpt-image-1"
 
 
 def _words_count(text: str) -> int:
@@ -76,19 +78,75 @@ def _project_root() -> Path:
     return BACKEND_DIR.parent
 
 
-def _module_placeholder_name(category_key: str, module_name: str) -> str:
-    return f"{slugify(category_key)}-{slugify(module_name)}.svg"
+def _generated_image_filename(category_key: str, level_name: str, module_name: str, question_idx: int) -> str:
+    return (
+        f"{slugify(category_key)}-{slugify(level_name)}-"
+        f"{slugify(module_name)}-q{question_idx:02d}.png"
+    )
 
 
-def _module_placeholder_url(category_key: str, module_name: str) -> str:
-    return f"/images/modules/{_module_placeholder_name(category_key, module_name)}"
+def _generated_image_url(file_name: str) -> str:
+    return f"/images/generated/{file_name}"
 
 
-def _ensure_module_placeholder_image(category_key: str, module_name: str) -> str:
-    file_name = _module_placeholder_name(category_key, module_name)
-    out_dir = _project_root() / "frontend" / "public" / "images" / "modules"
+def _generated_images_dir() -> Path:
+    out_dir = _project_root() / "frontend" / "public" / "images" / "generated"
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_file = out_dir / file_name
+    return out_dir
+
+
+def _build_image_prompt(question: dict, category_label: str, level_name: str, module_name: str) -> str:
+    return (
+        "Create a clean educational diagram for a machine learning quiz. "
+        "No logos, no branding, no watermark, no answer letters, no final answer revealed. "
+        "Use a minimal flat design with clear labels and high contrast. "
+        "The visual must help reason about the question, not directly give the answer. "
+        f"Context: category={category_label}, level={level_name}, module={module_name}. "
+        f"Question: {question.get('question', '')}."
+    )
+
+
+def _generate_image_file(
+    *,
+    api_key: str,
+    image_model: str,
+    prompt: str,
+    output_file: Path,
+    max_retries: int = 3,
+) -> None:
+    if OpenAI is None:
+        raise RuntimeError("Le package openai n'est pas installe. Lance: pip install openai")
+
+    client = OpenAI(api_key=api_key, timeout=180)
+
+    for attempt in range(max_retries):
+        try:
+            response = client.images.generate(
+                model=image_model,
+                prompt=prompt,
+                size="1024x1024",
+            )
+
+            image_data = None
+            first = response.data[0] if response and response.data else None
+            if first is not None:
+                if getattr(first, "b64_json", None):
+                    image_data = base64.b64decode(first.b64_json)
+                elif getattr(first, "url", None):
+                    raise ValueError("Le modele image a retourne une URL distante non supportee dans ce flux")
+
+            if not image_data:
+                raise ValueError("Aucune image b64 retournee par le modele")
+
+            output_file.write_bytes(image_data)
+            return
+        except Exception as exc:
+            if attempt < max_retries - 1:
+                wait = 2 ** attempt
+                print(f"  Image generation attempt {attempt + 1}/{max_retries} failed ({exc}). Retry dans {wait}s...", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            raise
 
     if not out_file.exists():
         safe_title = module_name.replace("&", "and")
@@ -136,23 +194,67 @@ def _image_slot_indexes(question_count: int, image_count: int) -> list[int]:
     return sorted(indexes)
 
 
-def _enforce_image_quota(questions: list[dict], category_key: str, module_name: str) -> list[dict]:
+def _enforce_image_quota(questions: list[dict]) -> list[dict]:
     normalized = [dict(q) for q in questions]
     n = len(normalized)
     target = _image_quota_count(n)
     if target == 0:
         return normalized
 
-    url = _ensure_module_placeholder_image(category_key=category_key, module_name=module_name)
     image_indexes = set(_image_slot_indexes(question_count=n, image_count=target))
 
     for idx, q in enumerate(normalized):
         if idx in image_indexes:
             q["type"] = "image"
-            q["image_url"] = url
+            q["image_url"] = None
         else:
             q["type"] = "text"
             q["image_url"] = None
+
+    return normalized
+
+
+def _generate_images_for_questions(
+    *,
+    api_key: str,
+    image_model: str,
+    category_key: str,
+    category_label: str,
+    level_name: str,
+    module_name: str,
+    questions: list[dict],
+    dry_run: bool,
+) -> list[dict]:
+    normalized = [dict(q) for q in questions]
+    if dry_run:
+        return normalized
+
+    out_dir = _generated_images_dir()
+    for idx, q in enumerate(normalized, start=1):
+        if str(q.get("type", "")).lower() != "image":
+            q["image_url"] = None
+            continue
+
+        file_name = _generated_image_filename(
+            category_key=category_key,
+            level_name=level_name,
+            module_name=module_name,
+            question_idx=idx,
+        )
+        output_file = out_dir / file_name
+        prompt = _build_image_prompt(
+            question=q,
+            category_label=category_label,
+            level_name=level_name,
+            module_name=module_name,
+        )
+        _generate_image_file(
+            api_key=api_key,
+            image_model=image_model,
+            prompt=prompt,
+            output_file=output_file,
+        )
+        q["image_url"] = _generated_image_url(file_name)
 
     return normalized
 
@@ -550,6 +652,7 @@ def generate_module_quiz(
     module_name: str,
     api_key: str,
     model: str,
+    image_model: str,
     question_count: int | None,
     dry_run: bool,
 ) -> dict:
@@ -627,10 +730,16 @@ def generate_module_quiz(
         module_name=module_name,
         questions=questions,
     )
-    questions = _enforce_image_quota(
-        questions=questions,
+    questions = _enforce_image_quota(questions=questions)
+    questions = _generate_images_for_questions(
+        api_key=api_key,
+        image_model=image_model,
         category_key=category_key,
+        category_label=category_label,
+        level_name=level_name,
         module_name=module_name,
+        questions=questions,
+        dry_run=dry_run,
     )
 
     return {
@@ -647,7 +756,14 @@ def write_quiz(path: Path, quiz_payload: dict) -> None:
     print(f"Ecrit: {path}")
 
 
-def generate_all_for_category(category_key: str, output_dir: Path, api_key: str, model: str, dry_run: bool) -> None:
+def generate_all_for_category(
+    category_key: str,
+    output_dir: Path,
+    api_key: str,
+    model: str,
+    image_model: str,
+    dry_run: bool,
+) -> None:
     for level_name in supported_levels(category_key):
         for module_name in supported_modules(category_key, level_name):
             print(f"Generation: {category_key} / {level_name} / {module_name}")
@@ -657,6 +773,7 @@ def generate_all_for_category(category_key: str, output_dir: Path, api_key: str,
                 module_name=module_name,
                 api_key=api_key,
                 model=model,
+                image_model=image_model,
                 question_count=None,
                 dry_run=dry_run,
             )
@@ -678,6 +795,7 @@ def main() -> int:
     parser.add_argument("--n-questions", type=int)
     parser.add_argument("--api-key")
     parser.add_argument("--model", default="gpt-4o")
+    parser.add_argument("--image-model", default=DEFAULT_IMAGE_MODEL)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -697,6 +815,7 @@ def main() -> int:
             output_dir=output_dir,
             api_key=api_key or "",
             model=args.model,
+            image_model=args.image_model,
             dry_run=dry_run,
         )
         return 0
@@ -710,6 +829,7 @@ def main() -> int:
         module_name=args.module,
         api_key=api_key or "",
         model=args.model,
+        image_model=args.image_model,
         question_count=args.n_questions,
         dry_run=dry_run,
     )

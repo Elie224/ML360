@@ -5,184 +5,184 @@
   "questions": [
     {
       "type": "image",
-      "question": "Qu'est-ce qu'une 'classe' dans le contexte de la classification supervisée?",
-      "image_url": "/images/modules/apprentissage-supervise-bases-de-la-classification.svg",
+      "question": "Qu'est-ce qu'une classe dans un problème de classification ?",
+      "image_url": "/images/generated/apprentissage-supervise-beginner-bases-de-la-classification-q01.png",
       "choices": {
-        "A": "Une catégorie dans laquelle un exemple peut être classé.",
-        "B": "Un algorithme utilisé pour créer un modèle prédictif.",
-        "C": "Un ensemble de règles logiques pour unifier des données.",
-        "D": "Une mesure de la similarité entre deux données."
+        "A": "Une catégorie ou étiquette attribuée à un exemple",
+        "B": "Une mesure de performance du modèle",
+        "C": "Un algorithme utilisé pour entraîner le modèle",
+        "D": "La précision des prédictions du modèle"
       },
       "correct_answer": "A",
-      "explanation": "Dans la classification supervisée, une 'classe' est une catégorie spécifique où un exemple de données est classé. Elle sert de référence pour attribuer des étiquettes dans un modèle de classification. Choix B est incorrect, car il se réfère à un algorithme, pas une catégorie. Choix C parle de règles logiques pour unifier les données, ce qui ne correspond pas à la notion de classe comme catégorie. Choix D mentionne la similarité, qui est un critère pour mesurer la proximité entre données, mais indépendant de la catégorisation des classes. Pour valider cette question, il faut relier le besoin exprime a l'option A.",
+      "explanation": "Dans un problème de classification, une classe est une catégorie ou une étiquette que l'on assigne à un exemple, par exemple 'chat' ou 'chien'. La classification consiste à prédire ces étiquettes pour de nouveaux exemples. Le choix B est incorrect car il se réfère aux mesures de performance comme la précision ou le rappel. Le choix C concerne les algorithmes de classification, tels que la régression logistique ou les forêts d'arbres décisionnels, qui ne sont pas des classes. Le choix D, la précision, est une métrique d'évaluation du modèle et non une classe en soi.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quelle technique crée une frontière de décision linéaire entre les classes?",
+      "question": "Qu'est-ce qu'une frontière de décision ?",
       "image_url": null,
       "choices": {
-        "A": "Clustering k-means",
-        "B": "Perceptron",
-        "C": "Arbre de décision",
-        "D": "Réseau de neurones profonds"
+        "A": "Un point où le modèle commence à entraîner",
+        "B": "Une ligne qui sépare différentes classes dans l'espace des caractéristiques",
+        "C": "Une métrique utilisée pour évaluer un modèle",
+        "D": "La dernière étape du processus de validation"
       },
       "correct_answer": "B",
-      "explanation": "Le perceptron crée une frontière de décision linéaire, adaptée aux problèmes de classification binaire avec des données qui peuvent être séparées par une ligne droite. Il apprend à ajuster les poids pour aligner les exemples sur cette frontière. Choix A (k-means) fait du clustering qui n'implique pas de frontière pour ordonner des catégories. Choix C (arbre de décision) segmente des données via des seuils et non pas par une ligne droite. Choix D (réseau de neurones profonds) utilise des architectures complexes pouvant générer des frontières non linéaires, adaptées aux données complexes.",
+      "explanation": "Une frontière de décision est une ligne ou surface dans l'espace des caractéristiques d'un modèle de classification qui sépare différentes classes. Cela permet de déterminer à quelle classe un point donné appartient. Le choix A est incorrect, car la frontière de décision ne marque pas le début de l'entraînement du modèle. Le choix C est également faux, car une métrique évalue la performance mais ne sépare pas les classes. Le choix D ne décrit pas une frontière de décision, qui n'est pas la dernière étape du processus de validation mais une étape cruciale pendant la création du modèle.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quel algorithme est souvent utilisé pour des problèmes de classification binaire?",
+      "question": "Quel est l'objectif principal de la régression logistique ?",
       "image_url": null,
       "choices": {
-        "A": "K-moyennes",
-        "B": "Régression linéaire",
-        "C": "Régression logistique",
-        "D": "Transformation de Fourier rapide"
+        "A": "Maximiser le nombre de classes prédites",
+        "B": "Prédire une valeur continue à partir des données",
+        "C": "Prédire la probabilité d'appartenance à une classe binaire",
+        "D": "Minimiser l'erreur quadratique moyenne"
       },
       "correct_answer": "C",
-      "explanation": "La régression logistique est spécifiquement conçue pour la classification binaire, modélisant la probabilité qu'une instance appartienne à une classe via une fonction logistique. Elle est particulièrement efficace pour catégoriser deux groupes distincts. Choix B (régression linéaire) vise des prédictions de valeurs continues, adaptées aux problèmes de regression, pas de classification. Choix A (k-moyennes) est une technique de clustering non supervisée, pas conçue pour la classification binaire supervisée. Choix D (transformation de Fourier rapide) analyse des fréquences dans les signaux et n'est pas applicable en classification. Pour valider cette question, il faut relier le besoin exprime a l'option C.",
+      "explanation": "L'objectif principal de la régression logistique est de prédire la probabilité qu'un échantillon appartienne à une classe binaire. Elle évalue ainsi la chance d'être dans l'une des deux catégories. Le choix A est incorrect, car il n'augmente pas le nombre de classes prédites. Le choix B ne lui correspond pas non plus, car prédire des valeurs continues est un travail de régression linéaire, pas logistique. Enfin, le choix D est hors de propos puisqu'il concerne la minimisation des erreurs quadratiques, ce qui n'est pas pertinent pour la régression logistique qui se concentre sur la prédiction de probabilités.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quelle est la fonction principale d'une matrice de confusion?",
+      "question": "Que représente une matrice de confusion ?",
       "image_url": null,
       "choices": {
-        "A": "Compresser l'espace des caractéristiques.",
-        "B": "Résoudre les illusions d'optique.",
-        "C": "Stocker des poids d'un réseau de neurones.",
-        "D": "Évaluer la performance d'un modèle de classification."
+        "A": "Un diagramme de flux d'opérations de classification",
+        "B": "Un graphique qui illustre la distribution des données d'entraînement",
+        "C": "Une mesure qui compare les performances de deux modèles",
+        "D": "Un tableau qui montre les prédictions correctes et incorrectes par classe"
       },
       "correct_answer": "D",
-      "explanation": "La matrice de confusion évalue la performance d'un modèle de classification en montrant les vrais et faux positifs/négatifs, ce qui aide à comprendre les forces et faiblesses du modèle. Elle permet de calculer des mesures comme la précision et le rappel. Choix A est incorrect, car compresser l'espace des caractéristiques est une technique d'ingénierie des données, pas d'évaluation directe. Choix B et C ne sont pas pertinents : résoudre des illusions d'optique ou stocker des poids de réseau de neurones ne sont pas liés à la matrice de confusion. Pour valider cette question, il faut relier le besoin exprime a l'option D.",
+      "explanation": "Une matrice de confusion est un tableau conçu pour visualiser les performances d'un modèle de classification en détaillant les vraies et fausses prédictions pour chaque classe. Chaque élément du tableau montre des résultats prédictifs corrects ou erronés. Le choix A propose à tort un diagramme de flux qui ne spécifie pas les prédictions. Le choix B mentionne une distribution de données, qui n'engage pas un classement des résultats prédits. Le choix C suggère faussement qu'elle compare deux modèles. Cependant, une matrice de confusion détaille individuellement les échecs et succès du modèle.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans une matrice de confusion, que représente le terme 'FN'?",
+      "question": "Quelle est la formule du rappel (recall) dans une matrice de confusion ?",
       "image_url": null,
       "choices": {
-        "A": "Faux négatif",
-        "B": "Faux nombre",
-        "C": "Fonction normale",
-        "D": "Facteur neutre"
+        "A": "TP / (TP + FN)",
+        "B": "TN / (TN + FP)",
+        "C": "TP / (TP + FP)",
+        "D": "TN / (TN + FN)"
       },
       "correct_answer": "A",
-      "explanation": "Dans une matrice de confusion, 'FN' signifie 'faux négatif', qui se rapporte à des cas où un modèle prévoit incorrectement un échantillon positif comme étant négatif. Cela éclaire la capacité du modèle à détecter des cas positifs. Choix B ('faux nombre') n'a pas de sens en classification. Choix C ('fonction normale') et D ('facteur neutre') ne sont pas liés au contexte des matrices de confusion et n'ont aucun rapport avec la catégorisation des résultats. Pour valider cette question, il faut relier le besoin exprime a l'option A. L'option A (Faux négatif) repond au critere principal attendu dans l'enonce.",
+      "explanation": "Le rappel, ou 'recall', mesure la capacité du modèle à identifier tous les exemples pertinents d'une catégorie donnée et se calcule avec la formule TP / (TP + FN), où TP est le vrai positif et FN est le faux négatif. Le choix B (TN / (TN + FP)) et D (TN / (TN + FN)) concernent souvent la métrique de spécificité ou des concepts non liés au rappel. Le choix C (TP / (TP + FP)) calcule la précision, une métrique distincte qui mesure la proportion des prédictions positives correctes par rapport à toutes les prédictions positives effectuées.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Laquelle des affirmations suivantes est vraie concernant la régression logistique?",
+      "question": "Quelle est une propriété essentielle de la régression logistique ?",
       "image_url": null,
       "choices": {
-        "A": "Elle est utilisée pour des prédictions de valeurs continues",
-        "B": "Elle utilise une fonction sigmoïde pour la sortie",
-        "C": "Elle nécessite forcément des variables catégoriques",
-        "D": "Elle ignore les interactions entre les variables"
+        "A": "Crée des arbres de décision en série",
+        "B": "Utilise la fonction sigmoïde pour calculer la probabilité",
+        "C": "Nécessite la transformation des variables en log",
+        "D": "Utilise la distance des plus proches voisins"
       },
       "correct_answer": "B",
-      "explanation": "La régression logistique utilise une fonction sigmoïde pour convertir les valeurs d'entrée en probabilités de classification entre 0 et 1. C'est crucial pour modéliser des résultats binaires. Choix A est erroné car elle ne prédit pas des valeurs continues, ce qui est le domaine de la régression linéaire. Choix C n'est pas correct : elle ne nécessite pas obligatoirement des variables catégoriques. Choix D est faux car les interactions entre les variables peuvent ou non être prises en compte selon les spécificités du modèle utilisé. Pour valider cette question, il faut relier le besoin exprime a l'option B.",
+      "explanation": "La fonction sigmoïde en régression logistique est primordiale pour transformer des prédictions linéaires en probabilités comprises entre 0 et 1, essentielles pour les décisions binaires de classification. Le choix A est incorrect car il se réfère à la création d'arbres de décision, une approche distincte. Le choix C mentionne la transformation logarithmique, généralement associée à d'autres méthodes de régularisation. Le choix D implique une technique d'estimation basée sur la distance, propre à l'algorithme des k-plus proches voisins. Ainsi, seul le choix de la fonction sigmoïde est caractéristique de la régression logistique.",
       "difficulty": "easy"
     },
     {
       "type": "image",
-      "question": "Lorsqu'une frontière de décision est mal définie, qu'est-ce que cela implique?",
-      "image_url": "/images/modules/apprentissage-supervise-bases-de-la-classification.svg",
+      "question": "Pourquoi la classe déséquilibrée pose-t-elle un problème pour un modèle de classification ?",
+      "image_url": "/images/generated/apprentissage-supervise-beginner-bases-de-la-classification-q07.png",
       "choices": {
-        "A": "Le modèle a atteint sa performance maximale.",
-        "B": "La quantité de données d'entraînement est parfaite.",
-        "C": "Les classes peuvent être mal séparées.",
-        "D": "Aucune régularisation n'est nécessaire."
+        "A": "Elle réduit directement la capacité du modèle à s'entraîner",
+        "B": "Elle allonge le temps de calcul nécessaire pour l'entraînement",
+        "C": "Elle peut fausser l'évaluation en donnant une impression de haute précision",
+        "D": "Elle inhibe l'actualisation des poids durant l'entraînement"
       },
       "correct_answer": "C",
-      "explanation": "Une frontière de décision mal définie indique que les classes ne sont pas bien séparées, entraînant des erreurs de classification et potentiellement des chevauchements dans l'espace des caractéristiques. Cela peut être dû à des classes qui se chevauchent ou à une mauvaise définition du modèle. Choix A est incorrect car cela désignerait une performance optimale, contraire au contexte. Choix B, parlant de quantité de données parfaite, est sans rapport avec la définition des frontières. Choix D est inexact, car la régularisation peut être nécessaire pour optimiser la séparation. Pour valider cette question, il faut relier le besoin exprime a l'option C.",
+      "explanation": "Dans un contexte de classification, les classes déséquilibrées peuvent fausser l'évaluation du modèle en donnant une impression de haute précision en raison de la prédiction majoritaire. Cela signifie que prédire constamment la classe la plus courante peut sembler correct et ainsi biaiser l'évaluation. Le choix A est incorrect, car même avec un déséquilibre, on peut toujours entraîner un modèle, bien que sa performance puisse être affectée. Le choix B est erroné parce que le déséquilibre des classes n'affecte pas directement le temps de calcul. Enfin, le choix D est faux, car la mise à jour des poids n'est pas influencée par l'équilibre des classes, mais par le gradient calculé lors de l'entraînement.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quel est le principal objectif d'une frontière de décision en classification?",
+      "question": "Comment peut-on visualiser les performances d'un classificateur binaire ?",
       "image_url": null,
       "choices": {
-        "A": "Éliminer le surapprentissage par du bruit ajouté.",
-        "B": "Minimiser les dimensions de l'espace des données.",
-        "C": "Générer des coefficients de régression aléatoires.",
-        "D": "Séparer les différentes classes dans l'espace des caractéristiques."
+        "A": "Avec une fonction de coût logarithmique",
+        "B": "Avec un diagramme en boîte et en moustaches",
+        "C": "Avec un histogramme des classes",
+        "D": "Avec une courbe ROC"
       },
       "correct_answer": "D",
-      "explanation": "Le principal objectif d'une frontière de décision en classification est de séparer les différentes classes dans l'espace des caractéristiques, afin de distinguer correctement les échantillons appartenant à différentes catégories. Choix A, concernant l'élimination par le bruit, est hors de propos car une frontière se concentre sur la séparation, pas sur la réduction du bruit. Minimiser les dimensions (choix B) est lié à l'ingénierie des caractéristiques, pas à la séparation. Choix C est faux puisque les coefficients aléatoires ne jouent pas un rôle dans la création de frontières. Pour valider cette question, il faut relier le besoin exprime a l'option D.",
+      "explanation": "Une courbe ROC est une méthode pour visualiser les performances d'un classificateur binaire, expliquant le compromis entre le taux de vrais positifs et le taux de faux positifs à différents seuils. Le choix A fait référence à la fonction de coût logarithmique, qui est utile pendant l'entraînement, pas pour visualiser. Le choix B, concernant le diagramme en boîte et moustaches, est plus adapté pour résumer des statistiques de données. Le choix C, basé sur un histogramme, montre seulement la distribution des classes, sans fournir une vue sur la performance de classification.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Que permet de mesurer la régression logistique par l'intermédiaire de la fonction de coût?",
+      "question": "Quelle est la limite supérieure du nombre de classes dans un problème de classification binaire ?",
       "image_url": null,
       "choices": {
-        "A": "L'écart entre les probabilités prédites et les étiquettes réelles.",
-        "B": "La somme des carrés des résidus observés.",
-        "C": "La transformation spatiale des données d'entrée.",
-        "D": "La densité des points dans l'espace des données."
+        "A": "2",
+        "B": "1",
+        "C": "3",
+        "D": "4"
       },
       "correct_answer": "A",
-      "explanation": "La fonction de coût en régression logistique mesure l'écart entre les probabilités prédites par le modèle et les étiquettes réelles, permettant d'optimiser les paramètres pour améliorer la précision. Cela est essentiel pour ajuster le modèle jusqu'à ce qu'il prévoie correctement. Choix B décrit un concept lié à la régression linéaire, non pertinent ici. Choix C et D sont incorrects car la transformation spatiale des données et la densité des points se rapportent plutôt à des techniques de prétraitement des données ou de clustering, non à la fonction de coût en régression logistique.",
+      "explanation": "Dans une classification binaire, par définition, il ne peut y avoir que deux classes, représentant un échantillon positif et un négatif. Cela place la limite supérieure du nombre de classes à deux. Le choix B, une classe unique, est conceptuellement erroné car une classification exige de distinguer entre au moins deux états. Les choix C et D supposent un cadre de classification multiclasses, ce qui dépasse le cadre binaire qui repose sur une dichotomie stricte. Seules deux catégories (positif et négatif) forment la base d'une analyse binaire correctement définie, ce qui en fait l'utilisation typique dans des problèmes simplistes de distinction.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Comment minimiser le surapprentissage d'une régression logistique?",
+      "question": "Que fait l'activation sigmoïde dans la régression logistique ?",
       "image_url": null,
       "choices": {
-        "A": "Augmenter indéfiniment la complexité du modèle",
-        "B": "Utiliser la régularisation L2 (Ridge)",
-        "C": "Utiliser systématiquement des variables catégoriques",
-        "D": "Réduire la taille des données d'entraînement"
+        "A": "Normalise les valeurs d'entrée avant le calcul",
+        "B": "Transforme les prédictions linéaires en probabilités",
+        "C": "Améliore la vitesse de convergence de l'algorithme",
+        "D": "Élimine les variables non pertinentes du modèle"
       },
       "correct_answer": "B",
-      "explanation": "La régularisation L2, ou Ridge, est une technique clé pour limiter le surapprentissage en ajoutant des pénalités sur les coefficients du modèle, favorisant un ajustement simple et gardant des coefficients bas. Choix A aggraverait le surapprentissage en rendant le modèle inutilement complexe. Choix C, l'utilisation systématique de variables catégoriques, n'aide pas intrinsèquement à éviter le surapprentissage. Choix D réduirait la taille des données d'entraînement, gênant la généralisation et possiblement exacerbant le surapprentissage. Pour valider cette question, il faut relier le besoin exprime a l'option B. L'option B (Utiliser la régularisation L2 (Ridge)) repond au critere principal attendu dans l'enonce.",
+      "explanation": "Dans la régression logistique, la fonction d'activation sigmoïde transforme les valeurs prédictives linéaires en probabilités comprises entre 0 et 1. C'est indispensable pour exprimer les probabilités d'appartenance à une classe dans un cadre binaire. Le choix A n'est pas correct car normaliser les entrées est un processus distinct d'avant calcul. Le choix C est incorrect car l'augmentation de la vitesse de convergence relève de techniques de régularisation et d'optimisation, pas de l'utilisation de la fonction sigmoïde. Enfin, le choix D se réfère à une sélection de caractéristiques, ce qui n'est pas la fonction de la sigmoïde dans la transformation des valeurs en probabilités.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Quel problème peut survenir avec une matrice de confusion asymétrique?",
+      "question": "Quel mécanisme peut assurer un équilibre des classes lors de l'entraînement d'un modèle ?",
       "image_url": null,
       "choices": {
-        "A": "Génération aléatoire de données",
-        "B": "Régularisation inadéquate",
-        "C": "Déséquilibre des données",
-        "D": "Espacement erroné des points de données"
+        "A": "Exclusion de faux positifs connus",
+        "B": "Ajustement des hyperparamètres",
+        "C": "Échantillonnage sous ou sur-ajusté",
+        "D": "Augmentation du nombre de neurones dans un réseau"
       },
       "correct_answer": "C",
-      "explanation": "Une matrice de confusion asymétrique suggère un déséquilibre des données, où certaines classes sont nettement plus représentées que d'autres, ce qui peut entraîner des biais dans l'entraînement et l'évaluation du modèle. Choix B (régularisation inadéquate) concerne le traitement des coefficients et non les déséquilibres. Choix A (génération aléatoire de données) et D (espacement erroné des points) ne renvoient pas spécifiquement à des asymétries dans les classes de données analysées par une matrice de confusion. Pour valider cette question, il faut relier le besoin exprime a l'option C. L'option C (Déséquilibre des données) repond au critere principal attendu dans l'enonce.",
+      "explanation": "L'échantillonnage sous et sur-ajusté est une technique qui ajuste le nombre d'exemples dans chaque classe pour équilibrer les données d'entraînement, améliorant ainsi la performance du modèle sur des classes minoritaires. Le choix A est incorrect car exclure des faux positifs n'équilibre pas les classes mais introduit un biais systématique. Le choix B, qui mentionne l'ajustement des hyperparamètres, ne s'applique pas au déséquilibre des données, mais à l'optimisation de l'algorithme. Le choix D est lui aussi éronné car augmenter le nombre de neurones modifie l'architecture du réseau mais n'a aucun effet sur la distribution des classes dans les données d'entraînement.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Quel rôle joue la fonction d'activation sigmoïde dans un modèle de régression logistique?",
+      "question": "Quelle métrique est généralement moins informative pour les classes déséquilibrées ?",
       "image_url": null,
       "choices": {
-        "A": "Produire des valeurs de sortie purement continues",
-        "B": "Multiplier aléatoirement les étiquettes de classe",
-        "C": "Stocker les vecteurs de poids dans un réseau de neurones",
-        "D": "Transformer les valeurs de sortie en probabilités comprises entre 0 et 1"
+        "A": "Spécificité",
+        "B": "F1 score",
+        "C": "Rappel (recall)",
+        "D": "Précision (accuracy)"
       },
       "correct_answer": "D",
-      "explanation": "La fonction d'activation sigmoïde dans un modèle de régression logistique transforme les valeurs de sortie en probabilités comprises entre 0 et 1, facilitant ainsi la classification binaire. Cette transformation permet de calculer la probabilité qu'une observation appartienne à chaque classe. L'option A n'est pas correcte, car la régression logistique ne génère pas des valeurs continues pures. L'option B, multipliant aléatoirement les étiquettes, n'est pas un comportement de la fonction sigmoïde. Enfin, l'option C se rapporte au stockage de poids, ce qui est plus approprié dans le contexte des réseaux de neurones.",
+      "explanation": "La précision peut paraître trompeuse dans les scénarios de classes déséquilibrées car elle se concentre uniquement sur le nombre total de prédictions correctes, ignorant la distribution des classes. Dans ces contextes, elle donne l'impression de haute performance même si une classe n'est guère prédite correctement. La spécificité se concentre sur les vrais négatifs, ce qui n'est pas spécifiquement affecté par un déséquilibre de classe. Le F1 score équilibre le rappel et la précision, ce qui le rend plus fiable pour les déséquilibres. Enfin, le rappel pointe les faux négatifs, essentiel pour des classes minoritaires justement identifiées malgré leur faible fréquence, le rendant plus informatif.",
       "difficulty": "hard"
     },
     {
       "type": "image",
-      "question": "Pourquoi une matrice de confusion est importante dans l'évaluation d'un modèle de classification?",
-      "image_url": "/images/modules/apprentissage-supervise-bases-de-la-classification.svg",
+      "question": "Quel scénario décrit une mauvaise interprétation des résultats de la régression logistique ?",
+      "image_url": "/images/generated/apprentissage-supervise-beginner-bases-de-la-classification-q13.png",
       "choices": {
-        "A": "Elle résume exhaustivement la performance du modèle avec divers indicateurs",
-        "B": "Elle est uniquement décorative",
-        "C": "Elle substitue l'entraînement sur données biaisées",
-        "D": "Elle supprime les données bruitées"
+        "A": "Confondre les coefficients avec les probabilités directes",
+        "B": "Utiliser la régression logistique pour des prédictions continues",
+        "C": "Évaluer les performances par courbe ROC",
+        "D": "Méconnaître le fait que les classes doivent être étiquetées binaire"
       },
       "correct_answer": "A",
-      "explanation": "La matrice de confusion est essentielle car elle résume la performance d'un modèle de classification à travers des mesures critiques comme les taux de vrais et faux positifs/négatifs, et dérive des indicateurs comme la précision, le rappel et le F1-score. Choix B est simplement inexact, car la matrice joue un rôle fonctionnel, pas décoratif. Choix C est faux, car elle ne compense pas ou n'améliore pas le biais des données d'entraînement. Choix D est incorrect, la matrice ne manipule pas les données bruitées mais évalue la robustesse prédictive sur des données observées.",
+      "explanation": "Confondre les coefficients de la régression logistique avec des probabilités directes est une interprétation incorrecte, car les coefficients doivent être passés par une fonction sigmoïde pour être traduits en probabilités comprises entre 0 et 1. Le choix B est une mauvaise utilisation en visant des prédictions continues là où la régression logistique est pour des décisions binaires, mais ce n’est pas une erreur d'interprétation. Une courbe ROC (C) est au contraire une méthode valide pour évaluer la performance d'un modèle. Le choix D fait référence à un prérequis nécessaire à la régression logistique et non à une erreur d'interprétation des résultats du modèle lui-même.",
       "difficulty": "hard"
     }
   ]
