@@ -321,12 +321,14 @@ export function QuizPage() {
               </h2>
 
               {activeQuestion.presentation_type === 'image' && activeQuestion.image_url ? (
-                <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
+                <div className="quiz-media-frame mt-4">
                   <img
                     src={activeQuestion.image_url}
                     alt={`Illustration question ${currentQuestion + 1}`}
-                    className="max-h-80 w-full object-cover"
+                    className="quiz-media-image"
                     loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 640px) 92vw, (max-width: 1024px) 80vw, 900px"
                   />
                 </div>
               ) : null}
