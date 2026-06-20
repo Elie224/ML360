@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { motion } from 'framer-motion'
 
 type AnswerState = 'idle' | 'selected' | 'correct' | 'incorrect'
 
@@ -25,10 +26,12 @@ function stateClasses(state: AnswerState) {
 
 export function AnswerCard({ children, selected, disabled, state, onSelect }: AnswerCardProps) {
   return (
-    <button
+    <motion.button
       type="button"
       onClick={onSelect}
       disabled={disabled}
+      whileHover={disabled ? undefined : { y: -2 }}
+      whileTap={disabled ? undefined : { scale: 0.995 }}
       className={`w-full rounded-2xl border p-4 text-left transition-all duration-200 ${stateClasses(state)} ${
         disabled ? 'cursor-default opacity-95' : 'cursor-pointer'
       }`}
@@ -44,6 +47,6 @@ export function AnswerCard({ children, selected, disabled, state, onSelect }: An
         </span>
         <span className="text-sm text-slate-700 sm:text-base">{children}</span>
       </span>
-    </button>
+    </motion.button>
   )
 }

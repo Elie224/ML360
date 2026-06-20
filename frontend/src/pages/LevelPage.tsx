@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { fetchCategories, fetchQuizzes } from '../api'
@@ -7,22 +8,19 @@ import { areAllQuizzesCompleted, hasQuizInProgress } from '../progression'
 import type { QuizListItem } from '../types'
 
 function moduleDifficulty(questionCount: number) {
-  if (questionCount <= 9) return 'Facile'
-  if (questionCount <= 15) return 'Moyen'
-  return 'Challenge'
+  if (questionCount <= 9) return 'Debutant'
+  if (questionCount <= 15) return 'Intermediaire'
+  return 'Expert'
 }
 
-function resolveLevelQuizzes(
-  levelOrder: number,
-  levelSlug: string,
-  quizzes: QuizListItem[],
-) {
-  const direct = quizzes.filter((quiz) => quiz.level.slug === levelSlug)
-  if (direct.length > 0) {
-    return direct
-  }
+function moduleEta(questionCount: number) {
+  return `${Math.max(8, Math.round(questionCount * 1.3))} min`
+}
 
-  // Ensure Expert level is never empty by promoting the most advanced modules.
+function resolveLevelQuizzes(levelOrder: number, levelSlug: string, quizzes: QuizListItem[]) {
+  const direct = quizzes.filter((quiz) => quiz.level.slug === levelSlug)
+  if (direct.length > 0) return direct
+
   if (levelOrder === 4) {
     return quizzes
       .filter((quiz) => quiz.level.order === 3)
@@ -63,15 +61,11 @@ export function LevelPage() {
   }, [activeLevel, levelSlug, quizzes, searchTerm])
 
   const levelIsUnlocked = useMemo(() => {
-    if (!activeCategory || !activeLevel) {
-      return false
-    }
+    if (!activeCategory || !activeLevel) return false
 
     const orderedLevels = [...activeCategory.levels].sort((a, b) => a.order - b.order)
     const currentIndex = orderedLevels.findIndex((level) => level.slug === activeLevel.slug)
-    if (currentIndex <= 0) {
-      return true
-    }
+    if (currentIndex <= 0) return true
 
     const previousLevel = orderedLevels[currentIndex - 1]
     const previousLevelQuizzes = resolveLevelQuizzes(previousLevel.order, previousLevel.slug, quizzes ?? [])
@@ -87,7 +81,6 @@ export function LevelPage() {
         bySlug.set(quiz.slug, true)
         return
       }
-
       const previousQuiz = ordered[index - 1]
       bySlug.set(quiz.slug, completedQuizSlugs.has(previousQuiz.slug))
     })
@@ -96,120 +89,116 @@ export function LevelPage() {
   }, [completedQuizSlugs, levelQuizzes])
 
   if (!slug || !levelSlug) {
-    return <p className="ml-shell text-sm text-danger">Niveau introuvable.</p>
+    return <p className="ml-shell text-sm text-rose-500">Niveau introuvable.</p>
   }
 
   return (
-    <div className="ml-shell space-y-6">
-      <header className="glass-card p-5 sm:p-7">
+    <div className="ml-shell space-y-6 py-6">
+      <motion.header
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+        className="panel p-6 sm:p-8"
+      >
         <Link
           to={`/category/${slug}`}
-          className="inline-flex items-center gap-2 rounded-full border border-stroke bg-white px-3 py-1.5 text-sm font-medium text-slate-600 transition hover:text-primary"
+          className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-600 transition hover:border-ml-500 hover:text-ml-600"
         >
-          ← Retour aux niveaux
+          Retour aux niveaux
         </Link>
 
-        <div className="mt-4">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Niveau</p>
-          <h1 className="mt-2 font-display text-3xl font-bold text-slate-900 sm:text-4xl">
+        <div className="mt-4 space-y-2">
+          <p className="section-eyebrow">Niveau</p>
+          <h1 className="text-balance font-display text-3xl font-black text-slate-950 sm:text-4xl">
             {normalizeFrenchText(activeLevel?.title ?? 'Chargement...')}
           </h1>
-          <p className="mt-2 max-w-3xl text-sm text-slate-600 sm:text-base">
+          <p className="max-w-3xl text-sm text-slate-600 sm:text-base">
             {normalizeFrenchText(activeLevel?.objective ?? 'Chargement du niveau...')}
           </p>
-          <p className="mt-2 text-sm text-slate-500">Catégorie : {normalizeFrenchText(activeCategory?.title ?? '...')}</p>
         </div>
-      </header>
+      </motion.header>
 
-      <section className="glass-card p-5 sm:p-7">
+      <section className="panel p-5 sm:p-7">
         <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
-          <div className="rounded-full border border-stroke bg-white px-4 py-2 text-sm text-slate-600">
-            {levelQuizzes.length} modules
+          <div>
+            <p className="section-eyebrow">Modules</p>
+            <h2 className="section-title">Selectionne un module</h2>
           </div>
           <label className="w-full max-w-sm">
-            <span className="mb-1 block text-xs uppercase tracking-[0.18em] text-slate-500">Recherche de module</span>
+            <span className="mb-1 block text-xs uppercase tracking-[0.16em] text-slate-500">Recherche</span>
             <input
               type="search"
               value={searchTerm}
               onChange={(event) => setSearchTerm(event.target.value)}
               placeholder="Ex: clustering, regression, politique"
-              className="w-full rounded-xl border border-stroke bg-white px-4 py-2.5 text-sm outline-none ring-primary transition focus:ring-2"
+              className="w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm outline-none ring-2 ring-transparent transition focus:border-ml-400 focus:ring-ml-100"
             />
           </label>
         </div>
 
-        {categoryLoading ? <p className="text-sm text-slate-500">Chargement des catégories...</p> : null}
-        {categoryError ? <p className="text-sm font-medium text-danger">{categoryError}</p> : null}
+        {categoryLoading ? <p className="text-sm text-slate-500">Chargement des categories...</p> : null}
+        {categoryError ? <p className="text-sm text-rose-500">{categoryError}</p> : null}
         {quizLoading ? <p className="text-sm text-slate-500">Chargement des modules...</p> : null}
-        {quizError ? <p className="text-sm font-medium text-danger">{quizError}</p> : null}
-
-        {!categoryLoading && !activeCategory ? (
-          <p className="rounded-2xl border border-dashed border-stroke bg-slate-50 p-5 text-sm text-slate-600">
-            Cette catégorie est introuvable.
-          </p>
-        ) : null}
-
-        {!categoryLoading && activeCategory && !activeLevel ? (
-          <p className="rounded-2xl border border-dashed border-stroke bg-slate-50 p-5 text-sm text-slate-600">
-            Ce niveau est introuvable.
-          </p>
-        ) : null}
+        {quizError ? <p className="text-sm text-rose-500">{quizError}</p> : null}
 
         {!categoryLoading && activeCategory && activeLevel && !levelIsUnlocked ? (
-          <p className="rounded-2xl border border-dashed border-stroke bg-slate-50 p-5 text-sm text-slate-600">
-            Vous devez terminer le niveau ou le module précédent.
+          <p className="rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
+            Vous devez terminer le niveau precedent pour debloquer celui-ci.
           </p>
         ) : null}
 
-        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-          {levelQuizzes.map((quiz) => {
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          {levelQuizzes.map((quiz, index) => {
             const difficulty = moduleDifficulty(quiz.question_count)
             const moduleUnlocked = levelIsUnlocked && (lockedModules.get(quiz.slug) ?? false)
             const canResume = moduleUnlocked && !completedQuizSlugs.has(quiz.slug) && hasQuizInProgress(quiz.slug)
+
             return (
-              <article
+              <motion.article
                 key={quiz.slug}
-                className="group rounded-2xl border border-stroke bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-float"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.35, delay: 0.05 * index }}
+                whileHover={{ y: -3 }}
+                className="module-card"
               >
                 <div className="flex items-start justify-between gap-2">
-                  <div>
-                    <p className="text-lg" aria-hidden>
-                      {quiz.question_count > 14 ? '🧠' : quiz.question_count > 9 ? '📈' : '🌱'}
-                    </p>
-                    <h3 className="mt-1 font-display text-lg font-semibold text-slate-900">{normalizeFrenchText(quiz.title)}</h3>
-                  </div>
-                  <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-semibold text-slate-600">{difficulty}</span>
+                  <h3 className="text-balance font-display text-lg font-bold text-slate-950">{normalizeFrenchText(quiz.title)}</h3>
+                  <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-semibold text-slate-700">{difficulty}</span>
                 </div>
 
-                <div className="mt-3 text-sm text-slate-600">
-                  <p>{quiz.question_count} questions</p>
+                <p className="mt-2 text-sm text-slate-600">{normalizeFrenchText(quiz.description)}</p>
+
+                <div className="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
+                  <span className="rounded-full bg-slate-100 px-2.5 py-1">{quiz.question_count} questions</span>
+                  <span className="rounded-full bg-slate-100 px-2.5 py-1">{moduleEta(quiz.question_count)}</span>
                 </div>
 
-                {moduleUnlocked ? (
+                <div className="mt-4 flex flex-wrap gap-2">
                   <Link
-                    to={`/quiz/${quiz.slug}`}
-                    className="mt-4 inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white transition group-hover:bg-primary"
+                    to={`/module/${quiz.slug}`}
+                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-ml-500 hover:text-ml-600"
                   >
-                    {canResume ? 'Reprendre' : 'Continuer'}
-                    <span aria-hidden>→</span>
+                    Voir le module
                   </Link>
-                ) : (
-                  <div className="mt-4 inline-flex items-center gap-2 rounded-xl bg-slate-200 px-4 py-2.5 text-sm font-semibold text-slate-500">
-                    Module verrouillé
-                  </div>
-                )}
 
-                {!moduleUnlocked ? <p className="mt-2 text-xs text-slate-500">Vous devez terminer le niveau ou le module précédent.</p> : null}
-              </article>
+                  {moduleUnlocked ? (
+                    <Link
+                      to={`/quiz/${quiz.slug}`}
+                      className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-ml-600"
+                    >
+                      {canResume ? 'Reprendre le QCM' : 'Commencer le QCM'}
+                    </Link>
+                  ) : (
+                    <span className="inline-flex items-center rounded-xl bg-slate-100 px-4 py-2 text-sm font-semibold text-slate-500">
+                      Module verrouille
+                    </span>
+                  )}
+                </div>
+              </motion.article>
             )
           })}
         </div>
-
-        {!quizLoading && activeLevel && levelQuizzes.length === 0 ? (
-          <p className="mt-4 rounded-2xl border border-dashed border-stroke bg-slate-50 p-5 text-sm text-slate-500">
-            Aucun module ne correspond à la recherche pour ce niveau.
-          </p>
-        ) : null}
       </section>
     </div>
   )

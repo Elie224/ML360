@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,9 +6,16 @@
 
 @layer base {
   :root {
-    color: #0f172a;
-    background-color: #f8fafc;
-    font-family: Manrope, 'Segoe UI', sans-serif;
+    --ml-bg: #f8fafc;
+    --ml-ink: #0f172a;
+    --ml-blue: #2563eb;
+    --ml-violet: #7c3aed;
+    --ml-cyan: #06b6d4;
+    --ml-orange: #f97316;
+
+    color: var(--ml-ink);
+    background: var(--ml-bg);
+    font-family: Inter, 'Segoe UI', sans-serif;
     line-height: 1.5;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -34,9 +41,9 @@
   body {
     margin: 0;
     background:
-      radial-gradient(circle at 12% 12%, rgba(37, 99, 235, 0.18), transparent 42%),
-      radial-gradient(circle at 88% 4%, rgba(124, 58, 237, 0.16), transparent 34%),
-      linear-gradient(160deg, #f8fafc 0%, #eef4ff 46%, #f8fafc 100%);
+      radial-gradient(circle at 10% 8%, rgba(37, 99, 235, 0.15), transparent 38%),
+      radial-gradient(circle at 82% 6%, rgba(124, 58, 237, 0.12), transparent 34%),
+      linear-gradient(155deg, #f8fafc 0%, #f2f6ff 45%, #f8fafc 100%);
     color: #0f172a;
   }
 
@@ -55,40 +62,102 @@
 
 @layer components {
   .ml-shell {
-    @apply mx-auto w-full max-w-7xl px-4 pb-16 pt-5 sm:px-6 lg:px-8;
+    @apply mx-auto w-full max-w-7xl px-4 pb-16 pt-4 sm:px-6 lg:px-8;
   }
 
-  .glass-card {
-    @apply rounded-3xl border border-stroke bg-white shadow-premium backdrop-blur;
+  .panel {
+    @apply rounded-3xl border border-slate-200 bg-white shadow-[0_14px_38px_rgba(15,23,42,0.08)];
   }
 
-  .data-grid-bg {
+  .hero-panel {
+    @apply rounded-[32px] border border-slate-700/60 bg-slate-950 p-6 shadow-[0_20px_60px_rgba(2,6,23,0.45)] sm:p-8 lg:p-10;
     background-image:
-      linear-gradient(to right, rgba(148, 163, 184, 0.15) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(148, 163, 184, 0.15) 1px, transparent 1px);
-    background-size: 22px 22px;
+      radial-gradient(circle at 14% 16%, rgba(37, 99, 235, 0.35), transparent 35%),
+      radial-gradient(circle at 88% 22%, rgba(124, 58, 237, 0.28), transparent 30%),
+      linear-gradient(155deg, #020617 0%, #0f172a 54%, #111827 100%);
   }
 
-  .progress-track {
-    @apply h-2.5 w-full overflow-hidden rounded-full bg-slate-200;
+  .hero-grid {
+    @apply grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-end;
   }
 
-  .level-node {
-    @apply relative flex flex-col gap-3 rounded-2xl border border-stroke bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-float;
-    overflow-wrap: anywhere;
+  .cta-primary {
+    @apply inline-flex items-center justify-center rounded-xl bg-ml-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-ml-700;
   }
 
-  .level-node::after {
-    content: '';
-    position: absolute;
-    left: 20px;
-    bottom: -20px;
-    width: 2px;
-    height: 20px;
-    background: linear-gradient(to bottom, rgba(37, 99, 235, 0.4), rgba(124, 58, 237, 0.2));
+  .cta-ghost {
+    @apply inline-flex items-center justify-center rounded-xl border border-white/25 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/20;
   }
 
-  .level-node:last-child::after {
-    display: none;
+  .kpi-card {
+    @apply rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur;
+  }
+
+  .kpi-label {
+    @apply text-xs font-semibold uppercase tracking-[0.14em] text-white/70;
+  }
+
+  .kpi-value {
+    @apply mt-1 font-display text-3xl font-black text-white;
+  }
+
+  .section-eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-ml-600;
+  }
+
+  .section-title {
+    @apply mt-1 font-display text-2xl font-black text-slate-950 sm:text-3xl;
+  }
+
+  .stat-card {
+    @apply rounded-2xl border border-slate-100 bg-slate-50 p-4;
+  }
+
+  .stat-label {
+    @apply text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-500;
+  }
+
+  .stat-value {
+    @apply mt-1 font-display text-xl font-bold text-slate-950;
+  }
+
+  .stat-row {
+    @apply flex items-center justify-between rounded-xl border border-slate-100 bg-slate-50 px-3 py-2 text-sm text-slate-600;
+  }
+
+  .stat-row strong {
+    @apply font-bold text-slate-950;
+  }
+
+  .category-card {
+    @apply relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_8px_26px_rgba(15,23,42,0.08)] transition;
+  }
+
+  .level-card {
+    @apply rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_8px_24px_rgba(15,23,42,0.06)];
+  }
+
+  .module-card {
+    @apply rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_8px_24px_rgba(15,23,42,0.06)];
+  }
+
+  .roadmap {
+    @apply relative space-y-4;
+  }
+
+  .roadmap-line {
+    @apply absolute bottom-0 left-3 top-0 w-px bg-gradient-to-b from-ml-500 via-violet-500 to-cyan-500;
+  }
+
+  .roadmap-item {
+    @apply relative pl-8;
+  }
+
+  .roadmap-node {
+    @apply absolute left-[6px] top-6 h-3 w-3 rounded-full bg-ml-600 ring-4 ring-blue-100;
+  }
+
+  .roadmap-card {
+    @apply rounded-2xl border border-slate-200 bg-white p-4;
   }
 }

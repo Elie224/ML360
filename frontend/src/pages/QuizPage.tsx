@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { useEffect, useMemo, useState } from 'react'
 import type { FormEvent } from 'react'
 import { Link, useParams } from 'react-router-dom'
@@ -10,19 +11,13 @@ import { clearQuizSession, getQuizSession, isQuizCompleted, markQuizCompleted, s
 import type { SubmissionResponse } from '../types'
 
 function difficultyLabel(difficulty: 'easy' | 'medium' | 'hard') {
-  if (difficulty === 'easy') {
-    return 'Facile'
-  }
-  if (difficulty === 'medium') {
-    return 'Moyen'
-  }
-  return 'Difficile'
+  if (difficulty === 'easy') return 'Debutant'
+  if (difficulty === 'medium') return 'Intermediaire'
+  return 'Expert'
 }
 
 function questionTimeLimit(difficulty: 'easy' | 'medium' | 'hard') {
-  if (difficulty === 'hard') {
-    return 80
-  }
+  if (difficulty === 'hard') return 80
   return 60
 }
 
@@ -45,9 +40,7 @@ export function QuizPage() {
   )
 
   useEffect(() => {
-    if (!slug) {
-      return
-    }
+    if (!slug) return
 
     const session = getQuizSession(slug)
     if (!session) {
@@ -77,18 +70,14 @@ export function QuizPage() {
   }, [slug])
 
   useEffect(() => {
-    if (!quiz) {
-      return
-    }
+    if (!quiz) return
     setCurrentQuestion((current) => Math.min(current, Math.max(quiz.questions.length - 1, 0)))
   }, [quiz])
 
   const answeredQuestions = useMemo(() => Object.keys(selectedAnswers).length, [selectedAnswers])
 
   const scoreEstimate = useMemo(() => {
-    if (!quiz || answeredQuestions === 0) {
-      return 0
-    }
+    if (!quiz || answeredQuestions === 0) return 0
     const answeredQuestionIds = new Set(Object.keys(selectedAnswers).map(Number))
     const potentiallyCorrect = quiz.questions.filter((question) => answeredQuestionIds.has(question.id)).length
     return Math.round((potentiallyCorrect / quiz.questions.length) * 100)
@@ -105,26 +94,13 @@ export function QuizPage() {
   }, [activeQuestion])
 
   const moduleIsUnlocked = useMemo(() => {
-    if (!quiz) {
-      return true
-    }
+    if (!quiz) return true
+    if (!categoryQuizzes) return false
+    if (categoryQuizzes.length === 0) return true
 
-    if (!categoryQuizzes) {
-      return false
-    }
-
-    if (categoryQuizzes.length === 0) {
-      return true
-    }
-
-    const levelModules = categoryQuizzes
-      .filter((item) => item.level.slug === quiz.level.slug)
-      .sort((a, b) => a.id - b.id)
-
+    const levelModules = categoryQuizzes.filter((item) => item.level.slug === quiz.level.slug).sort((a, b) => a.id - b.id)
     const currentIndex = levelModules.findIndex((item) => item.slug === quiz.slug)
-    if (currentIndex <= 0) {
-      return true
-    }
+    if (currentIndex <= 0) return true
 
     const previousModule = levelModules[currentIndex - 1]
     return isQuizCompleted(previousModule.slug)
@@ -136,22 +112,14 @@ export function QuizPage() {
   }, [currentQuestion, quiz])
 
   useEffect(() => {
-    if (!quizStarted || !activeQuestion || submission) {
-      return
-    }
+    if (!quizStarted || !activeQuestion || submission) return
     setQuestionTimeLeft(questionTimeLimit(activeQuestion.difficulty))
   }, [activeQuestion, quizStarted, submission])
 
   useEffect(() => {
-    if (!quizStarted || !activeQuestion || submission) {
-      return
-    }
-    if (selectedAnswers[activeQuestion.id] !== undefined) {
-      return
-    }
-    if (questionTimeLeft <= 0) {
-      return
-    }
+    if (!quizStarted || !activeQuestion || submission) return
+    if (selectedAnswers[activeQuestion.id] !== undefined) return
+    if (questionTimeLeft <= 0) return
 
     const timer = window.setInterval(() => {
       setQuestionTimeLeft((prev) => Math.max(prev - 1, 0))
@@ -161,15 +129,9 @@ export function QuizPage() {
   }, [activeQuestion, questionTimeLeft, quizStarted, selectedAnswers, submission])
 
   useEffect(() => {
-    if (!quizStarted || !activeQuestion || submission) {
-      return
-    }
-    if (selectedAnswers[activeQuestion.id] !== undefined) {
-      return
-    }
-    if (questionTimeLeft > 0) {
-      return
-    }
+    if (!quizStarted || !activeQuestion || submission) return
+    if (selectedAnswers[activeQuestion.id] !== undefined) return
+    if (questionTimeLeft > 0) return
 
     if (!isLastQuestion && quiz) {
       setCurrentQuestion((prev) => Math.min(prev + 1, quiz.questions.length - 1))
@@ -177,14 +139,10 @@ export function QuizPage() {
   }, [activeQuestion, isLastQuestion, questionTimeLeft, quiz, quizStarted, selectedAnswers, submission])
 
   useEffect(() => {
-    if (!slug || submission || !moduleIsUnlocked) {
-      return
-    }
+    if (!slug || submission || !moduleIsUnlocked) return
 
     const hasProgress = quizStarted || currentQuestion > 0 || Object.keys(selectedAnswers).length > 0
-    if (!hasProgress) {
-      return
-    }
+    if (!hasProgress) return
 
     saveQuizSession(slug, {
       currentQuestion,
@@ -194,14 +152,12 @@ export function QuizPage() {
   }, [currentQuestion, moduleIsUnlocked, quizStarted, selectedAnswers, slug, submission])
 
   if (!slug) {
-    return <p className="error">Quiz introuvable.</p>
+    return <p className="ml-shell text-sm text-rose-500">Quiz introuvable.</p>
   }
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    if (!quiz) {
-      return
-    }
+    if (!quiz) return
 
     try {
       setSubmitting(true)
@@ -225,25 +181,27 @@ export function QuizPage() {
   }
 
   return (
-    <div className="ml-shell space-y-5">
-      <header className="glass-card relative overflow-hidden p-5 sm:p-7">
-        <div className="pointer-events-none absolute inset-0 data-grid-bg opacity-40" />
-        <div className="relative space-y-4">
-          <Link
-            to="/"
-            className="inline-flex items-center gap-2 rounded-full border border-stroke bg-white px-3 py-1.5 text-sm font-medium text-slate-600 transition hover:text-primary"
-          >
-            ← Retour au catalogue
-          </Link>
+    <div className="ml-shell space-y-5 py-6">
+      <motion.header
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+        className="panel p-6 sm:p-8"
+      >
+        <Link
+          to="/"
+          className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-600 transition hover:border-ml-500 hover:text-ml-600"
+        >
+          Retour au catalogue
+        </Link>
         {quiz ? (
-            <div className="space-y-2">
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{normalizeFrenchText(quiz.category.title)}</p>
-              <h1 className="font-display text-3xl font-extrabold text-slate-900 sm:text-4xl">{normalizeFrenchText(quiz.title)}</h1>
-              <p className="max-w-3xl text-sm text-slate-600 sm:text-base">{normalizeFrenchText(quiz.description)}</p>
-            </div>
-          ) : null}
-        </div>
-      </header>
+          <div className="mt-4 space-y-2">
+            <p className="section-eyebrow">{normalizeFrenchText(quiz.category.title)}</p>
+            <h1 className="text-balance font-display text-3xl font-black text-slate-950 sm:text-4xl">{normalizeFrenchText(quiz.title)}</h1>
+            <p className="max-w-3xl text-sm text-slate-600 sm:text-base">{normalizeFrenchText(quiz.description)}</p>
+          </div>
+        ) : null}
+      </motion.header>
 
       {quiz && moduleIsUnlocked ? (
         <QuizStatsBar
@@ -257,56 +215,52 @@ export function QuizPage() {
       ) : null}
 
       {loading ? <p className="text-sm text-slate-500">Chargement du quiz...</p> : null}
-      {error ? <p className="text-sm font-medium text-danger">{error}</p> : null}
+      {error ? <p className="text-sm text-rose-500">{error}</p> : null}
 
       {quiz && !moduleIsUnlocked ? (
-        <section className="glass-card p-5 sm:p-6">
-          <div className="space-y-4 text-center">
-            <p className="text-sm text-slate-600">Vous devez terminer le niveau ou le module précédent.</p>
-            <Link
-              to={`/category/${quiz.category.slug}/level/${quiz.level.slug}`}
-              className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-primary"
-            >
-              Retour au niveau
-            </Link>
-          </div>
+        <section className="panel p-6 text-center">
+          <p className="text-sm text-slate-600">Vous devez terminer le niveau ou le module precedent.</p>
+          <Link
+            to={`/category/${quiz.category.slug}/level/${quiz.level.slug}`}
+            className="mt-4 inline-flex items-center justify-center rounded-xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-ml-600"
+          >
+            Retour au niveau
+          </Link>
         </section>
       ) : null}
 
       {quiz && moduleIsUnlocked && !startConfirmed ? (
-        <section className="glass-card p-5 sm:p-6">
-          <div className="space-y-4 text-center">
-            <p className="text-sm text-slate-600">
-              Le quiz se fait question par question. Réponds, puis la suivante s'affiche automatiquement.
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-3">
+        <section className="panel p-6 text-center">
+          <p className="text-sm text-slate-600">
+            Experience question-par-question avec timer, feedback immediat et progression en temps reel.
+          </p>
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
+            <button
+              type="button"
+              onClick={() => {
+                setSelectedAnswers({})
+                setCurrentQuestion(0)
+                setQuizStarted(true)
+                setStartConfirmed(true)
+                setQuestionTimeLeft(60)
+                setCanResume(false)
+              }}
+              className="inline-flex items-center justify-center rounded-xl bg-ml-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-ml-700"
+            >
+              Commencer
+            </button>
+            {canResume ? (
               <button
                 type="button"
                 onClick={() => {
-                  setSelectedAnswers({})
-                  setCurrentQuestion(0)
                   setQuizStarted(true)
                   setStartConfirmed(true)
-                  setQuestionTimeLeft(60)
-                  setCanResume(false)
                 }}
-                className="inline-flex items-center justify-center rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
+                className="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-ml-500 hover:text-ml-600"
               >
-                Commencer
+                Reprendre
               </button>
-              {canResume ? (
-                <button
-                  type="button"
-                  onClick={() => {
-                    setQuizStarted(true)
-                    setStartConfirmed(true)
-                  }}
-                  className="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-primary hover:text-primary"
-                >
-                  Reprendre
-                </button>
-              ) : null}
-            </div>
+            ) : null}
           </div>
         </section>
       ) : null}
@@ -314,21 +268,19 @@ export function QuizPage() {
       {quiz && moduleIsUnlocked && quizStarted && startConfirmed ? (
         <form className="space-y-4" onSubmit={handleSubmit}>
           {activeQuestion ? (
-            <article key={activeQuestion.id} className="glass-card animate-fade-in p-4 sm:p-6">
+            <motion.article
+              key={activeQuestion.id}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
+              className="panel p-4 sm:p-6"
+            >
               <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
                 <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-slate-600">
                   Question {currentQuestion + 1}
                 </span>
                 <div className="flex items-center gap-2">
-                  <span
-                    className={`rounded-full px-3 py-1 text-xs font-semibold ${
-                      activeQuestion.difficulty === 'easy'
-                        ? 'bg-emerald-100 text-emerald-700'
-                        : activeQuestion.difficulty === 'medium'
-                          ? 'bg-amber-100 text-amber-700'
-                          : 'bg-rose-100 text-rose-700'
-                    }`}
-                  >
+                  <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">
                     {difficultyLabel(activeQuestion.difficulty)}
                   </span>
                   <span
@@ -336,15 +288,17 @@ export function QuizPage() {
                       questionTimeLeft <= 10 ? 'bg-rose-100 text-rose-700' : 'bg-slate-100 text-slate-700'
                     }`}
                   >
-                    Chrono: {questionTimeLeft}s
+                    {questionTimeLeft}s
                   </span>
                 </div>
               </div>
 
-              <h2 className="font-display text-xl font-semibold text-slate-900 sm:text-2xl">{normalizeFrenchText(activeQuestion.prompt)}</h2>
+              <h2 className="text-balance font-display text-xl font-bold text-slate-950 sm:text-2xl">
+                {normalizeFrenchText(activeQuestion.prompt)}
+              </h2>
 
               {activeQuestion.presentation_type === 'image' && activeQuestion.image_url ? (
-                <div className="mt-4 overflow-hidden rounded-2xl border border-stroke bg-slate-50">
+                <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
                   <img
                     src={activeQuestion.image_url}
                     alt={`Illustration question ${currentQuestion + 1}`}
@@ -390,17 +344,19 @@ export function QuizPage() {
                   )
                 })}
               </div>
-            </article>
+            </motion.article>
           ) : null}
 
-          <div className="glass-card flex flex-col gap-3 p-4 sm:flex-row sm:items-center sm:justify-between sm:p-5">
+          <div className="panel flex flex-col gap-3 p-4 sm:flex-row sm:items-center sm:justify-between sm:p-5">
             <div>
-              <p className="text-sm font-medium text-slate-700">{answeredQuestions}/{quiz.questions.length} réponses sélectionnées</p>
-              {submitError ? <p className="mt-1 text-sm font-medium text-danger">{submitError}</p> : null}
+              <p className="text-sm font-medium text-slate-700">
+                {answeredQuestions}/{quiz.questions.length} reponses selectionnees
+              </p>
+              {submitError ? <p className="mt-1 text-sm font-medium text-rose-500">{submitError}</p> : null}
             </div>
             <button
               type="submit"
-              className="inline-flex items-center justify-center rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-60"
+              className="inline-flex items-center justify-center rounded-xl bg-ml-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-ml-700 disabled:cursor-not-allowed disabled:opacity-60"
               disabled={submitting}
             >
               {submitting ? 'Soumission...' : 'Terminer le quiz'}
@@ -410,11 +366,11 @@ export function QuizPage() {
       ) : null}
 
       {submission ? (
-        <section className="glass-card p-5 sm:p-6">
+        <section className="panel p-5 sm:p-6">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Résultat</p>
-              <h2 className="font-display text-2xl font-bold text-slate-900">{normalizeFrenchText(submission.quiz)}</h2>
+              <p className="section-eyebrow">Resultat</p>
+              <h2 className="font-display text-2xl font-bold text-slate-950">{normalizeFrenchText(submission.quiz)}</h2>
             </div>
             <span className="rounded-2xl bg-slate-900 px-4 py-2 font-display text-2xl font-bold text-white">
               {submission.percentage}%
@@ -423,11 +379,11 @@ export function QuizPage() {
 
           {submission.percentage >= 90 ? (
             <p className="mt-3 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700">
-              Module validé. Le suivant est débloqué.
+              Module valide. Le suivant est debloque.
             </p>
           ) : (
             <p className="mt-3 rounded-xl border border-amber-200 bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-700">
-              Module non validé. Il faut au moins 90% de bonnes réponses pour débloquer le suivant.
+              Module non valide. Il faut au moins 90% de bonnes reponses pour debloquer le suivant.
             </p>
           )}
 
@@ -440,11 +396,11 @@ export function QuizPage() {
               <div
                 key={answer.question_id}
                 className={`rounded-2xl border p-4 ${
-                  answer.is_correct ? 'border-success/30 bg-emerald-50' : 'border-danger/30 bg-rose-50'
+                  answer.is_correct ? 'border-emerald-200 bg-emerald-50' : 'border-rose-200 bg-rose-50'
                 }`}
               >
                 <p className="text-xs font-bold uppercase tracking-[0.12em] text-slate-500">Q{index + 1}</p>
-                <p className={`mt-1 font-semibold ${answer.is_correct ? 'text-success' : 'text-danger'}`}>
+                <p className={`mt-1 font-semibold ${answer.is_correct ? 'text-emerald-700' : 'text-rose-700'}`}>
                   {answer.is_correct ? 'Correcte' : 'Incorrecte'}
                 </p>
                 <p className="mt-1 text-sm text-slate-700">{normalizeFrenchText(answer.explanation)}</p>

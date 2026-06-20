@@ -1,30 +1,37 @@
-import { useMemo, useState } from 'react'
+import { motion } from 'framer-motion'
+import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { fetchCategories, fetchQuizzes } from '../api'
 import { normalizeFrenchText } from '../frenchText'
 import { useAsyncData, useCompletedQuizSlugs } from '../hooks'
 import type { Category, QuizListItem } from '../types'
 
-const categoryVisuals: Record<string, { icon: string; gradient: string; illustration: string }> = {
+type CategoryVisual = {
+  soft: string
+  icon: string
+  subtitle: string
+}
+
+const categoryVisuals: Record<string, CategoryVisual> = {
   'apprentissage-supervise': {
-    icon: '📊',
-    illustration: 'Régression, classification, impact métier',
-    gradient: 'from-blue-600 to-indigo-500',
+    soft: 'from-blue-50 to-blue-100',
+    icon: 'SUP',
+    subtitle: 'Regression, classification, prediction',
   },
   'apprentissage-non-supervise': {
-    icon: '🧭',
-    illustration: 'Clustering, structure cachée, exploration',
-    gradient: 'from-cyan-600 to-blue-600',
+    soft: 'from-violet-50 to-violet-100',
+    icon: 'UNS',
+    subtitle: 'Clustering, structure cachee, segmentation',
   },
   'apprentissage-semi-supervise': {
-    icon: '🧬',
-    illustration: 'Pseudo-labels, données rares, intelligence hybride',
-    gradient: 'from-violet-600 to-fuchsia-500',
+    soft: 'from-cyan-50 to-cyan-100',
+    icon: 'SEMI',
+    subtitle: 'Pseudo-labels, rarete de labels, robustesse',
   },
   'apprentissage-par-renforcement': {
-    icon: '🎯',
-    illustration: 'Agent, récompense, stratégie adaptative',
-    gradient: 'from-amber-500 to-orange-500',
+    soft: 'from-orange-50 to-orange-100',
+    icon: 'RL',
+    subtitle: 'Agent, decision sequentielle, recompense',
   },
 }
 
@@ -36,169 +43,204 @@ function computeCategoryStats(category: Category, quizzes: QuizListItem[]) {
   }
 }
 
+function buildRoadmap(categories: Category[], quizzes: QuizListItem[], completedSet: Set<string>) {
+  const order = [
+    'apprentissage-supervise',
+    'apprentissage-non-supervise',
+    'apprentissage-semi-supervise',
+    'apprentissage-par-renforcement',
+  ]
+
+  const bySlug = new Map(categories.map((cat) => [cat.slug, cat]))
+
+  return order
+    .map((slug, index) => {
+      const category = bySlug.get(slug)
+      if (!category) return null
+
+      const categoryQuizzes = quizzes.filter((quiz) => quiz.category.slug === slug)
+      const completed = categoryQuizzes.filter((quiz) => completedSet.has(quiz.slug)).length
+      const progress = categoryQuizzes.length ? Math.round((completed / categoryQuizzes.length) * 100) : 0
+
+      return {
+        id: slug,
+        order: index + 1,
+        title: normalizeFrenchText(category.title),
+        modules: categoryQuizzes.length,
+        progress,
+        difficulty: index === 0 ? 'Debutant' : index < 3 ? 'Intermediaire' : 'Expert',
+      }
+    })
+    .filter(Boolean)
+}
+
+function scrollToSection(id: 'parcours' | 'roadmap') {
+  const target = document.getElementById(id)
+  if (!target) return
+  target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
+
 export function HomePage() {
+  const completedQuizSlugs = useCompletedQuizSlugs()
   const { data: categories, error: categoryError, loading: categoryLoading } = useAsyncData(fetchCategories, [])
-  const { data: allQuizzes } = useAsyncData(() => fetchQuizzes(), [])
-  const [searchCategory, setSearchCategory] = useState('')
-  const [sortBy, setSortBy] = useState<'title' | 'modules' | 'questions'>('modules')
-  useCompletedQuizSlugs()
+  const { data: allQuizzes, error: quizError } = useAsyncData(() => fetchQuizzes(), [])
 
-  const totalModules = allQuizzes?.length ?? 0
-
-  const categoryCards = useMemo(
+  const cards = useMemo(
     () =>
-      (categories ?? []).map((category) => {
-        const visual = categoryVisuals[category.slug] ?? {
-          icon: '🤖',
-          illustration: 'Parcours ML moderne',
-          gradient: 'from-blue-600 to-violet-600',
-        }
-        return {
-          category,
-          visual,
-          ...computeCategoryStats(category, allQuizzes ?? []),
-        }
-      }),
+      (categories ?? []).map((category) => ({
+        category,
+        visual: categoryVisuals[category.slug] ?? {
+          soft: 'from-slate-50 to-slate-100',
+          icon: 'ML',
+          subtitle: 'Parcours machine learning',
+        },
+        ...computeCategoryStats(category, allQuizzes ?? []),
+      })),
     [allQuizzes, categories],
   )
 
-  const filteredCategoryCards = useMemo(() => {
-    const search = searchCategory.trim().toLowerCase()
-    const visible = !search
-      ? [...categoryCards]
-      : categoryCards.filter(({ category, visual }) =>
-          [category.title, category.description, visual.illustration].join(' ').toLowerCase().includes(search),
-        )
-
-    if (sortBy === 'title') {
-      visible.sort((a, b) => a.category.title.localeCompare(b.category.title, 'fr'))
-      return visible
-    }
-
-    if (sortBy === 'questions') {
-      visible.sort((a, b) => b.questions - a.questions)
-      return visible
-    }
-
-    visible.sort((a, b) => b.modules - a.modules)
-    return visible
-  }, [categoryCards, searchCategory, sortBy])
+  const roadmap = useMemo(
+    () => buildRoadmap(categories ?? [], allQuizzes ?? [], completedQuizSlugs),
+    [allQuizzes, categories, completedQuizSlugs],
+  )
 
   return (
-    <div className="ml-shell space-y-6">
-      <header className="glass-card relative overflow-hidden p-5 sm:p-7">
-        <div className="pointer-events-none absolute inset-0 data-grid-bg opacity-55" />
-        <div className="relative space-y-4">
-          <div className="inline-flex items-center gap-3 rounded-full border border-stroke bg-white px-3 py-2 text-xs font-bold uppercase tracking-[0.2em] text-primary">
-            <img src="/ml360-logo.jpg" alt="Logo ML360" className="h-7 w-7 rounded-lg object-contain" />
-            ML360
-          </div>
-          <div>
-            <h1 className="font-display text-3xl font-extrabold leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
-              Choisis une catégorie et commence.
+    <div className="ml-shell space-y-8 py-6">
+      <motion.section
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.45 }}
+        className="hero-panel"
+      >
+        <div className="hero-grid">
+          <div className="space-y-5">
+            <div className="inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-white/85">
+              <img src="/ml360-mark.svg" alt="Logo ML360" className="h-7 w-7" />
+              ML360
+            </div>
+            <h1 className="text-balance font-display text-4xl font-black text-white sm:text-5xl lg:text-6xl">
+              Maitrise le Machine Learning de A a Z
             </h1>
-            <p className="mt-3 max-w-2xl text-sm text-slate-600 sm:text-base">
-              Navigation simple et directe : sélectionne une catégorie, puis un niveau, puis un module.
+            <p className="max-w-3xl text-sm text-white/80 sm:text-base">
+              Revise, progresse et valide tes connaissances grace a plus de 1700 questions reparties sur les 4 grands
+              paradigmes du Machine Learning.
             </p>
+            <div className="flex flex-wrap gap-3">
+              <button type="button" onClick={() => scrollToSection('parcours')} className="cta-primary">
+                Commencer maintenant
+              </button>
+              <button type="button" onClick={() => scrollToSection('roadmap')} className="cta-ghost">
+                Explorer les parcours
+              </button>
+            </div>
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-2">
+            <div className="kpi-card">
+              <p className="kpi-label">Modules</p>
+              <p className="kpi-value">88</p>
+            </div>
+            <div className="kpi-card">
+              <p className="kpi-label">Questions</p>
+              <p className="kpi-value">1760</p>
+            </div>
+            <div className="kpi-card">
+              <p className="kpi-label">Parcours</p>
+              <p className="kpi-value">4</p>
+            </div>
+            <div className="kpi-card">
+              <p className="kpi-label">Niveaux</p>
+              <p className="kpi-value">4</p>
+            </div>
           </div>
         </div>
-      </header>
+      </motion.section>
 
-      <section id="categories" className="glass-card p-5 sm:p-7">
-        <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
-          <div>
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Catégories</p>
-            <h2 className="font-display text-2xl font-bold text-slate-900 sm:text-3xl">Choisis ton terrain de jeu ML</h2>
-          </div>
-          <div className="rounded-full border border-stroke bg-white px-4 py-2 text-sm text-slate-600">
-            {categories?.length ?? 0} catégories • {totalModules} modules
-          </div>
+      <motion.section
+        id="parcours"
+        initial={{ opacity: 0, y: 14 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.45, delay: 0.1 }}
+        className="panel p-5 sm:p-7"
+      >
+        <div className="mb-5">
+          <p className="section-eyebrow">Parcours ML</p>
+          <h2 className="section-title">Choisis ton parcours</h2>
         </div>
 
-        <div className="mb-5 grid gap-3 lg:grid-cols-[minmax(0,1fr)_220px]">
-          <label>
-            <span className="mb-1 block text-xs uppercase tracking-[0.18em] text-slate-500">Rechercher une catégorie</span>
-            <input
-              type="search"
-              value={searchCategory}
-              onChange={(event) => setSearchCategory(event.target.value)}
-              placeholder="Ex: supervise, reinforcement, clustering"
-              className="w-full rounded-xl border border-stroke bg-white px-4 py-2.5 text-sm outline-none ring-primary transition focus:ring-2"
-            />
-          </label>
-
-          <label>
-            <span className="mb-1 block text-xs uppercase tracking-[0.18em] text-slate-500">Trier</span>
-            <select
-              value={sortBy}
-              onChange={(event) => setSortBy(event.target.value as 'title' | 'modules' | 'questions')}
-              className="w-full rounded-xl border border-stroke bg-white px-4 py-2.5 text-sm outline-none ring-primary transition focus:ring-2"
-            >
-              <option value="modules">Par nombre de modules</option>
-              <option value="questions">Par nombre de questions</option>
-              <option value="title">Par ordre alphabétique</option>
-            </select>
-          </label>
-        </div>
-
-        {categoryLoading ? <p className="text-sm text-slate-500">Chargement des catégories...</p> : null}
-        {categoryError ? <p className="text-sm font-medium text-danger">{categoryError}</p> : null}
+        {categoryLoading ? <p className="text-sm text-slate-500">Chargement des parcours...</p> : null}
+        {categoryError ? <p className="text-sm text-rose-500">{categoryError}</p> : null}
+        {quizError ? <p className="text-sm text-rose-500">{quizError}</p> : null}
 
         <div className="grid gap-4 lg:grid-cols-2">
-          {filteredCategoryCards.map(({ category, visual, modules, questions }) => {
-            return (
-              <article
-                key={category.slug}
-                className="group relative overflow-hidden rounded-3xl border border-stroke bg-white/95 p-5 shadow-premium transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className={`absolute inset-0 bg-gradient-to-br ${visual.gradient} opacity-0 transition group-hover:opacity-10`} />
-                <div className="relative space-y-4">
+          {cards.map(({ category, visual, modules, questions }, index) => (
+            <motion.article
+              key={category.slug}
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.35, delay: 0.08 * index }}
+              whileHover={{ y: -4, scale: 1.01 }}
+              className="category-card"
+            >
+              <div className={`absolute inset-0 -z-10 bg-gradient-to-br ${visual.soft} opacity-80`} />
+              <div className="flex items-start justify-between gap-3">
+                <span className="inline-flex h-10 min-w-10 items-center justify-center rounded-xl bg-white text-xs font-bold text-slate-900 shadow-sm">
+                  {visual.icon}
+                </span>
+                <span className="rounded-full bg-white/80 px-2.5 py-1 text-xs font-semibold text-slate-700">{modules} modules</span>
+              </div>
+
+              <div className="mt-3">
+                <h3 className="font-display text-xl font-bold text-slate-950">{normalizeFrenchText(category.title)}</h3>
+                <p className="mt-1 text-sm text-slate-600">{visual.subtitle}</p>
+              </div>
+
+              <div className="mt-4 flex items-center justify-between text-sm text-slate-600">
+                <span>{questions} questions</span>
+                <Link to={`/category/${category.slug}`} className="font-semibold text-ml-700 transition hover:text-ml-600">
+                  {'Explorer ->'}
+                </Link>
+              </div>
+            </motion.article>
+          ))}
+        </div>
+      </motion.section>
+
+      <motion.section
+        id="roadmap"
+        initial={{ opacity: 0, y: 14 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.45, delay: 0.14 }}
+        className="panel p-5 sm:p-7"
+      >
+        <article>
+          <p className="section-eyebrow">Roadmap interactive</p>
+          <h2 className="section-title">Ton chemin de progression</h2>
+
+          <div className="roadmap mt-5">
+            <div className="roadmap-line" />
+            {roadmap.map((step) => (
+              <div key={step?.id} className="roadmap-item">
+                <div className="roadmap-node" />
+                <div className="roadmap-card">
                   <div className="flex items-start justify-between gap-3">
                     <div>
-                      <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-100 text-xl">
-                        {visual.icon}
-                      </span>
-                      <h3 className="mt-3 font-display text-xl font-bold text-slate-900">{normalizeFrenchText(category.title)}</h3>
-                      <p className="mt-1 text-sm text-slate-500">{visual.illustration}</p>
+                      <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">Etape {step?.order}</p>
+                      <h3 className="font-display text-lg font-bold text-slate-950">{step?.title}</h3>
                     </div>
+                    <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-semibold text-slate-700">{step?.progress}%</span>
                   </div>
-
-                  <div className="grid grid-cols-2 gap-3 text-sm">
-                    <div className="rounded-xl bg-slate-50 p-3">
-                      <p className="text-slate-500">Modules</p>
-                      <p className="font-display text-lg font-bold text-slate-900">{modules}</p>
-                    </div>
-                    <div className="rounded-xl bg-slate-50 p-3">
-                      <p className="text-slate-500">Questions</p>
-                      <p className="font-display text-lg font-bold text-slate-900">{questions}</p>
-                    </div>
+                  <div className="mt-3 grid grid-cols-2 gap-2 text-xs text-slate-600 sm:grid-cols-4">
+                    <span>{step?.modules} modules</span>
+                    <span>{step?.difficulty}</span>
+                    <span>4 niveaux</span>
                   </div>
-
-                  <Link
-                    to={`/category/${category.slug}`}
-                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-primary hover:text-primary"
-                  >
-                    Explorer
-                    <span aria-hidden>→</span>
-                  </Link>
                 </div>
-              </article>
-            )
-          })}
-        </div>
-
-        {!categoryLoading && !categoryError && filteredCategoryCards.length === 0 ? (
-          <p className="mt-4 rounded-2xl border border-dashed border-stroke bg-slate-50 p-5 text-sm text-slate-600">
-            Aucune catégorie ne correspond à ta recherche.
-          </p>
-        ) : null}
-      </section>
-
-      <section className="glass-card p-5 sm:p-6">
-        <div className="rounded-2xl border border-dashed border-stroke bg-slate-50 p-5 text-center text-sm text-slate-600">
-          Clique sur Explorer pour ouvrir une page dédiée à la catégorie choisie.
-        </div>
-      </section>
+              </div>
+            ))}
+          </div>
+        </article>
+      </motion.section>
     </div>
   )
 }

@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import { CategoryPage } from './pages/CategoryPage'
 import { HomePage } from './pages/HomePage'
 import { LevelPage } from './pages/LevelPage'
+import { ModulePage } from './pages/ModulePage'
 import { QuizPage } from './pages/QuizPage'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/category/:slug" element={<CategoryPage />} />
       <Route path="/category/:slug/level/:levelSlug" element={<LevelPage />} />
+      <Route path="/module/:slug" element={<ModulePage />} />
       <Route path="/quiz/:slug" element={<QuizPage />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

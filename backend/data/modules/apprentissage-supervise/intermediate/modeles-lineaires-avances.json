@@ -1,230 +1,202 @@
 {
-  "category": "Apprentissage supervisé",
+  "category": "Apprentissage supervise",
   "level": "Intermediate",
-  "module": "modèles lineaires avances",
+  "module": "Modeles lineaires avances",
   "questions": [
     {
       "type": "text",
-      "question": "In the module 'modèles lineaires avances', which statement best defines coefficient?",
+      "question": "log-odds: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Modeles lineaires avances' ?",
       "image_url": null,
       "choices": {
-        "A": "coefficient is applied in apprentissage supervisé to reason about model behavior inside modèles lineaires avances.",
-        "B": "régularisation is applied in apprentissage supervisé to reason about model behavior inside modèles lineaires avances.",
-        "C": "log-odds is applied in apprentissage supervisé to reason about model behavior inside modèles lineaires avances.",
-        "D": "interprétabilité is applied in apprentissage supervisé to reason about model behavior inside modèles lineaires avances."
+        "A": "Le sc\u00e9nario avec coefficient (levier de d\u00e9cision ML) est plausible, sauf qu'il ne traite pas l'enjeu central pilote par log-odds.",
+        "B": "regularisation (controle de complexite et robustesse) apporte un angle utile, mais la d\u00e9cision prioritaire repose plut\u00f4t sur levier de d\u00e9cision ML.",
+        "C": "Dans une phase d'experimentation de Modeles lineaires avances, interpretabilite (levier de d\u00e9cision ML) peut aider, mais il reste sur un besoin annexe.",
+        "D": "Dans une phase d'experimentation pour Modeles lineaires avances, l'\u00e9quipe s'appuie d'abord sur log-odds (levier de d\u00e9cision ML) pour trancher proprement avant d'avancer."
       },
-      "correct_answer": "A",
-      "explanation": "coefficient is correctly defined by the first option because it captures the core idea used in modèles lineaires avances.",
+      "correct_answer": "D",
+      "explanation": "Ce sc\u00e9nario est le bon car log-odds y sert de levier de d\u00e9cision principal dans Modeles lineaires avances. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Le sc\u00e9nario avec coefficient (levier de d\u00e9cision ML) est plausible, sauf qu'il ne traite pas l'enjeu centra...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (regularisation (controle de complexite et robustesse) apporte un angle utile, mais la d\u00e9cision prioritaire ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une phase d'experimentation de Modeles lineaires avances, interpretabilite (levier de d\u00e9cision ML) peu...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une phase d'experimentation pour Modeles lineaires avances, l'\u00e9quipe s'appuie d'abord sur log-odds (le...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "image",
+      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec coefficient dans 'Modeles lineaires avances' ?",
+      "image_url": "apprentissage-supervise_modeles_lineaires_avances_coefficient_2.png",
+      "choices": {
+        "A": "L'intention est cr\u00e9dible, mais elle reste annexe par rapport a l'objectif central de coefficient.",
+        "B": "Cet objectif est le plus coh\u00e9rent avec l'usage r\u00e9el de coefficient sur le terrain.",
+        "C": "Dans Modeles lineaires avances, regularisation sert \u00e0 fiabiliser les d\u00e9cisions d'exp\u00e9rimentation : am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance. Objectif valable, mais pas le plus align\u00e9 avec ce qu'on te demande ici.",
+        "D": "Cette finalit\u00e9 colle plut\u00f4t a log-odds (levier de d\u00e9cision ML) qu'au levier principal attendu."
+      },
+      "correct_answer": "B",
+      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de coefficient dans Modeles lineaires avances. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (L'intention est cr\u00e9dible, mais elle reste annexe par rapport a l'objectif central de coefficient.) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Cet objectif est le plus coh\u00e9rent avec l'usage r\u00e9el de coefficient sur le terrain.) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Dans Modeles lineaires avances, regularisation sert \u00e0 fiabiliser les d\u00e9cisions d'exp\u00e9rimentation : ameliore...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (Cette finalit\u00e9 colle plut\u00f4t a log-odds (levier de d\u00e9cision ML) qu'au levier principal attendu.) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "image",
+      "question": "Dans 'Modeles lineaires avances', quel commentaire du schema traduit le mieux le role de log-odds ?",
+      "image_url": "apprentissage-supervise_modeles_lineaires_avances_log_odds_2.png",
+      "choices": {
+        "A": "L'intention est cr\u00e9dible, mais elle reste annexe par rapport a l'objectif central de log-odds.",
+        "B": "Dans Modeles lineaires avances, regularisation sert \u00e0 fiabiliser les d\u00e9cisions d'exp\u00e9rimentation : am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance. Objectif valable, mais pas le plus align\u00e9 avec ce qu'on te demande ici.",
+        "C": "Cette finalit\u00e9 colle plut\u00f4t a interpretabilite (levier de d\u00e9cision ML) qu'au levier principal attendu.",
+        "D": "Dans Modeles lineaires avances, log-odds sert d'abord ce but: c'est ce qui rend cette reponse solide."
+      },
+      "correct_answer": "D",
+      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de log-odds dans Modeles lineaires avances. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (L'intention est cr\u00e9dible, mais elle reste annexe par rapport a l'objectif central de log-odds.) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Modeles lineaires avances, regularisation sert \u00e0 fiabiliser les d\u00e9cisions d'exp\u00e9rimentation : ameliore...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (Cette finalit\u00e9 colle plut\u00f4t a interpretabilite (levier de d\u00e9cision ML) qu'au levier principal attendu.) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (Dans Modeles lineaires avances, log-odds sert d'abord ce but: c'est ce qui rend cette reponse solide.) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "In the module 'modèles lineaires avances', which statement best defines régularisation?",
+      "question": "Dans 'Modeles lineaires avances', quel est le principal mode d'echec quand log-odds est mal applique ?",
       "image_url": null,
       "choices": {
-        "A": "coefficient is applied in apprentissage supervisé to reason about model behavior inside modèles lineaires avances.",
-        "B": "log-odds is applied in apprentissage supervisé to reason about model behavior inside modèles lineaires avances.",
-        "C": "interprétabilité is applied in apprentissage supervisé to reason about model behavior inside modèles lineaires avances.",
-        "D": "régularisation is applied in apprentissage supervisé to reason about model behavior inside modèles lineaires avances."
-      },
-      "correct_answer": "D",
-      "explanation": "The correct answer is option D, because it best matches the concept assessed by this question.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "In the module 'modèles lineaires avances', which statement best defines log-odds?",
-      "image_url": null,
-      "choices": {
-        "A": "régularisation is applied in apprentissage supervisé to reason about model behavior inside modèles lineaires avances.",
-        "B": "interprétabilité is applied in apprentissage supervisé to reason about model behavior inside modèles lineaires avances.",
-        "C": "log-odds is applied in apprentissage supervisé to reason about model behavior inside modèles lineaires avances.",
-        "D": "coefficient is applied in apprentissage supervisé to reason about model behavior inside modèles lineaires avances."
-      },
-      "correct_answer": "C",
-      "explanation": "The correct answer is option C, because it best matches the concept assessed by this question.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "In the module 'modèles lineaires avances', which statement best defines interprétabilité?",
-      "image_url": null,
-      "choices": {
-        "A": "log-odds is applied in apprentissage supervisé to reason about model behavior inside modèles lineaires avances.",
-        "B": "interprétabilité is applied in apprentissage supervisé to reason about model behavior inside modèles lineaires avances.",
-        "C": "coefficient is applied in apprentissage supervisé to reason about model behavior inside modèles lineaires avances.",
-        "D": "régularisation is applied in apprentissage supervisé to reason about model behavior inside modèles lineaires avances."
-      },
-      "correct_answer": "B",
-      "explanation": "The correct answer is option B, because it best matches the concept assessed by this question.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Why is coefficient important in this module?",
-      "image_url": null,
-      "choices": {
-        "A": "It supports practical decision-making, comparison of methods, and better reasoning during implementation.",
-        "B": "It supports practical decision-making, comparison of methods, and better reasoning during implementation.",
-        "C": "It supports practical decision-making, comparison of methods, and better reasoning during implementation.",
-        "D": "It supports practical decision-making, comparison of methods, and better reasoning during implementation."
-      },
-      "correct_answer": "D",
-      "explanation": "The correct answer explains the main learning objective behind coefficient in this module.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Why is régularisation important in this module?",
-      "image_url": null,
-      "choices": {
-        "A": "It supports practical decision-making, comparison of methods, and better reasoning during implementation.",
-        "B": "It supports practical decision-making, comparison of methods, and better reasoning during implementation.",
-        "C": "It supports practical decision-making, comparison of methods, and better reasoning during implementation.",
-        "D": "It supports practical decision-making, comparison of methods, and better reasoning during implementation."
-      },
-      "correct_answer": "C",
-      "explanation": "The correct answer explains the main learning objective behind régularisation in this module.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Why is log-odds important in this module?",
-      "image_url": null,
-      "choices": {
-        "A": "It supports practical decision-making, comparison of methods, and better reasoning during implementation.",
-        "B": "It supports practical decision-making, comparison of methods, and better reasoning during implementation.",
-        "C": "It supports practical decision-making, comparison of methods, and better reasoning during implementation.",
-        "D": "It supports practical decision-making, comparison of methods, and better reasoning during implementation."
-      },
-      "correct_answer": "B",
-      "explanation": "The correct answer explains the main learning objective behind log-odds in this module.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Why is interprétabilité important in this module?",
-      "image_url": null,
-      "choices": {
-        "A": "It supports practical decision-making, comparison of methods, and better reasoning during implementation.",
-        "B": "It supports practical decision-making, comparison of methods, and better reasoning during implementation.",
-        "C": "It supports practical decision-making, comparison of methods, and better reasoning during implementation.",
-        "D": "It supports practical decision-making, comparison of methods, and better reasoning during implementation."
+        "A": "Dans Modeles lineaires avances, ce piege est prioritaire: c'est celui qui provoque le plus de r\u00e9gressions couteuses.",
+        "B": "Menace plausible, oui, mais secondaire par rapport au risque c\u0153ur de la question.",
+        "C": "Un pi\u00e8ge courant est de sur-optimiser regularisation localement en ignorant ses interactions avec les features, les m\u00e9triques et les protocoles de validation. Le risque existe, mais il reste moins central que celui lie a log-odds.",
+        "D": "Ce point peut arriver autour d'interpretabilite, sans etre la cause principale d'echec dans ce cas."
       },
       "correct_answer": "A",
-      "explanation": "The correct answer explains the main learning objective behind interprétabilité in this module.",
+      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de log-odds. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Dans Modeles lineaires avances, ce piege est prioritaire: c'est celui qui provoque le plus de r\u00e9gressions c...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Menace plausible, oui, mais secondaire par rapport au risque c\u0153ur de la question.) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un pi\u00e8ge courant est de sur-optimiser regularisation localement en ignorant ses interactions avec les featu...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Ce point peut arriver autour d'interpretabilite, sans etre la cause principale d'echec dans ce cas.) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Which risk is most directly associated with coefficient?",
+      "question": "Dans 'Modeles lineaires avances' (industrie), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment regularisation ?",
       "image_url": null,
       "choices": {
-        "A": "A common mistake is to apply log-odds mechanically without validating whether it improves the workflow.",
-        "B": "A common mistake is to apply interprétabilité mechanically without validating whether it improves the workflow.",
-        "C": "A common mistake is to apply coefficient mechanically without validating whether it improves the workflow.",
-        "D": "A common mistake is to apply régularisation mechanically without validating whether it improves the workflow."
-      },
-      "correct_answer": "C",
-      "explanation": "The correct answer is option C, because it best matches the concept assessed by this question.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Which risk is most directly associated with régularisation?",
-      "image_url": null,
-      "choices": {
-        "A": "A common mistake is to apply interprétabilité mechanically without validating whether it improves the workflow.",
-        "B": "A common mistake is to apply régularisation mechanically without validating whether it improves the workflow.",
-        "C": "A common mistake is to apply coefficient mechanically without validating whether it improves the workflow.",
-        "D": "A common mistake is to apply log-odds mechanically without validating whether it improves the workflow."
-      },
-      "correct_answer": "B",
-      "explanation": "The correct answer is option B, because it best matches the concept assessed by this question.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Which risk is most directly associated with log-odds?",
-      "image_url": null,
-      "choices": {
-        "A": "A common mistake is to apply log-odds mechanically without validating whether it improves the workflow.",
-        "B": "A common mistake is to apply coefficient mechanically without validating whether it improves the workflow.",
-        "C": "A common mistake is to apply régularisation mechanically without validating whether it improves the workflow.",
-        "D": "A common mistake is to apply interprétabilité mechanically without validating whether it improves the workflow."
-      },
-      "correct_answer": "A",
-      "explanation": "The first option is correct because it identifies the most common misuse or failure mode tied to log-odds.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Which risk is most directly associated with interprétabilité?",
-      "image_url": null,
-      "choices": {
-        "A": "A common mistake is to apply coefficient mechanically without validating whether it improves the workflow.",
-        "B": "A common mistake is to apply régularisation mechanically without validating whether it improves the workflow.",
-        "C": "A common mistake is to apply log-odds mechanically without validating whether it improves the workflow.",
-        "D": "A common mistake is to apply interprétabilité mechanically without validating whether it improves the workflow."
+        "A": "L'id\u00e9e est proche, sauf qu'elle colle davantage \u00e0 importance des variables qu'au vrai probl\u00e8me pos\u00e9.",
+        "B": "cross-validation est un concept interm\u00e9diaire en apprentissage supervise ; il structure l'\u00e9valuation hors entrainement pour estimer la g\u00e9n\u00e9ralisation r\u00e9elle. Proposition plausible, mais elle ne vise pas le concept central demand\u00e9.",
+        "C": "Cette d\u00e9finition parle bien de validation set (\u00e9valuation robuste de la g\u00e9n\u00e9ralisation), mais le c\u0153ur de la question est ailleurs.",
+        "D": "Dans Modeles lineaires avances, cette formulation de regularisation est la plus nette pour bien d\u00e9marrer l'analyse."
       },
       "correct_answer": "D",
-      "explanation": "The correct answer is option D, because it best matches the concept assessed by this question.",
-      "difficulty": "hard"
+      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de regularisation dans Modeles lineaires avances, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte industrie, alors que importance des variables, cross-validation, validation set restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (L'id\u00e9e est proche, sauf qu'elle colle davantage \u00e0 importance des variables qu'au vrai probl\u00e8me pos\u00e9.) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (cross-validation est un concept interm\u00e9diaire en apprentissage supervise ; il structure l'\u00e9valuation hors e...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Cette d\u00e9finition parle bien de validation set (\u00e9valuation robuste de la g\u00e9n\u00e9ralisation), mais le c\u0153ur de l...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (Dans Modeles lineaires avances, cette formulation de regularisation est la plus nette pour bien d\u00e9marrer l'...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "difficulty": "medium"
     },
     {
       "type": "image",
-      "question": "Which interpretation best matches the ML diagram for interprétabilité in modèles lineaires avances?",
-      "image_url": "apprentissage-supervise_modeles_lineaires_avances_interpretabilite_1.png",
+      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec interpretabilite dans 'Modeles lineaires avances' ?",
+      "image_url": "apprentissage-supervise_modeles_lineaires_avances_interpretabilite_2.png",
       "choices": {
-        "A": "A practitioner adjusts coefficient while improving a apprentissage supervisé pipeline built around modèles lineaires avances.",
-        "B": "A practitioner adjusts régularisation while improving a apprentissage supervisé pipeline built around modèles lineaires avances.",
-        "C": "A practitioner adjusts log-odds while improving a apprentissage supervisé pipeline built around modèles lineaires avances.",
-        "D": "A practitioner adjusts interprétabilité while improving a apprentissage supervisé pipeline built around modèles lineaires avances."
-      },
-      "correct_answer": "D",
-      "explanation": "The correct answer is option D, because it best matches the concept assessed by this question.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Which interpretation best matches the ML diagram for log-odds in modèles lineaires avances?",
-      "image_url": "apprentissage-supervise_modeles_lineaires_avances_log_odds_1.png",
-      "choices": {
-        "A": "A practitioner adjusts log-odds while improving a apprentissage supervisé pipeline built around modèles lineaires avances.",
-        "B": "A practitioner adjusts coefficient while improving a apprentissage supervisé pipeline built around modèles lineaires avances.",
-        "C": "A practitioner adjusts régularisation while improving a apprentissage supervisé pipeline built around modèles lineaires avances.",
-        "D": "A practitioner adjusts interprétabilité while improving a apprentissage supervisé pipeline built around modèles lineaires avances."
-      },
-      "correct_answer": "A",
-      "explanation": "The image placeholder represents a realistic ML diagram where the first option best matches log-odds.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Which interpretation best matches the ML diagram for régularisation in modèles lineaires avances?",
-      "image_url": "apprentissage-supervise_modeles_lineaires_avances_regularisation_1.png",
-      "choices": {
-        "A": "A practitioner adjusts interprétabilité while improving a apprentissage supervisé pipeline built around modèles lineaires avances.",
-        "B": "A practitioner adjusts régularisation while improving a apprentissage supervisé pipeline built around modèles lineaires avances.",
-        "C": "A practitioner adjusts coefficient while improving a apprentissage supervisé pipeline built around modèles lineaires avances.",
-        "D": "A practitioner adjusts log-odds while improving a apprentissage supervisé pipeline built around modèles lineaires avances."
-      },
-      "correct_answer": "B",
-      "explanation": "The correct answer is option B, because it best matches the concept assessed by this question.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Which interpretation best matches the ML diagram for coefficient in modèles lineaires avances?",
-      "image_url": "apprentissage-supervise_modeles_lineaires_avances_coefficient_1.png",
-      "choices": {
-        "A": "A practitioner adjusts log-odds while improving a apprentissage supervisé pipeline built around modèles lineaires avances.",
-        "B": "A practitioner adjusts interprétabilité while improving a apprentissage supervisé pipeline built around modèles lineaires avances.",
-        "C": "A practitioner adjusts coefficient while improving a apprentissage supervisé pipeline built around modèles lineaires avances.",
-        "D": "A practitioner adjusts régularisation while improving a apprentissage supervisé pipeline built around modèles lineaires avances."
+        "A": "Cette finalit\u00e9 colle plut\u00f4t a regularisation (controle de complexite et robustesse) qu'au levier principal attendu.",
+        "B": "L'intention est cr\u00e9dible, mais elle reste annexe par rapport a l'objectif central d'interpretabilite.",
+        "C": "Cet objectif est le plus coh\u00e9rent avec l'usage r\u00e9el d'interpretabilite sur le terrain.",
+        "D": "Dans Modeles lineaires avances, coefficient sert \u00e0 fiabiliser les d\u00e9cisions d'exp\u00e9rimentation : am\u00e9liorer la qualit\u00e9 des d\u00e9cisions techniques et m\u00e9tier en conditions r\u00e9elles. Objectif valable, mais pas le plus align\u00e9 avec ce qu'on te demande ici."
       },
       "correct_answer": "C",
-      "explanation": "The correct answer is option C, because it best matches the concept assessed by this question.",
+      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'interpretabilite dans Modeles lineaires avances. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Cette finalit\u00e9 colle plut\u00f4t a regularisation (controle de complexite et robustesse) qu'au levier principal ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (L'intention est cr\u00e9dible, mais elle reste annexe par rapport a l'objectif central d'interpretabilite.) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Cet objectif est le plus coh\u00e9rent avec l'usage r\u00e9el d'interpretabilite sur le terrain.) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Dans Modeles lineaires avances, coefficient sert \u00e0 fiabiliser les d\u00e9cisions d'exp\u00e9rimentation : am\u00e9liorer l...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Face a un besoin industrie dans 'Modeles lineaires avances', pourquoi regularisation est-il prioritaire ?",
+      "image_url": null,
+      "choices": {
+        "A": "Cette finalit\u00e9 colle plut\u00f4t a log-odds (levier de d\u00e9cision ML) qu'au levier principal attendu.",
+        "B": "L'intention est cr\u00e9dible, mais elle reste annexe par rapport a l'objectif central de regularisation.",
+        "C": "Cet objectif est le plus coh\u00e9rent avec l'usage r\u00e9el de regularisation sur le terrain.",
+        "D": "Dans Modeles lineaires avances, coefficient sert \u00e0 fiabiliser les d\u00e9cisions d'exp\u00e9rimentation : am\u00e9liorer la qualit\u00e9 des d\u00e9cisions techniques et m\u00e9tier en conditions r\u00e9elles. Objectif valable, mais pas le plus align\u00e9 avec ce qu'on te demande ici."
+      },
+      "correct_answer": "C",
+      "explanation": "Ici, la bonne proposition est celle qui relie regularisation \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Cette finalit\u00e9 colle plut\u00f4t a log-odds (levier de d\u00e9cision ML) qu'au levier principal attendu.) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (L'intention est cr\u00e9dible, mais elle reste annexe par rapport a l'objectif central de regularisation.) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Cet objectif est le plus coh\u00e9rent avec l'usage r\u00e9el de regularisation sur le terrain.) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Dans Modeles lineaires avances, coefficient sert \u00e0 fiabiliser les d\u00e9cisions d'exp\u00e9rimentation : am\u00e9liorer l...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans 'Modeles lineaires avances', quelle situation de terrain montre le mieux quand utiliser coefficient ?",
+      "image_url": null,
+      "choices": {
+        "A": "Le sc\u00e9nario avec interpretabilite (levier de d\u00e9cision ML) est plausible, sauf qu'il ne traite pas l'enjeu central pilote par coefficient.",
+        "B": "En situation r\u00e9elle sur Modeles lineaires avances, coefficient (levier de d\u00e9cision ML) est le vrai point d'appui pour choisir une strat\u00e9gie fiable.",
+        "C": "regularisation (controle de complexite et robustesse) apporte un angle utile, mais la d\u00e9cision prioritaire repose plut\u00f4t sur levier de d\u00e9cision ML.",
+        "D": "Dans une phase d'experimentation de Modeles lineaires avances, log-odds (levier de d\u00e9cision ML) peut aider, mais il reste sur un besoin annexe."
+      },
+      "correct_answer": "B",
+      "explanation": "Ce sc\u00e9nario est le bon car coefficient y sert de levier de d\u00e9cision principal dans Modeles lineaires avances. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Le sc\u00e9nario avec interpretabilite (levier de d\u00e9cision ML) est plausible, sauf qu'il ne traite pas l'enjeu c...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En situation r\u00e9elle sur Modeles lineaires avances, coefficient (levier de d\u00e9cision ML) est le vrai point d'...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (regularisation (controle de complexite et robustesse) apporte un angle utile, mais la d\u00e9cision prioritaire ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation de Modeles lineaires avances, log-odds (levier de d\u00e9cision ML) peut aider,...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "log-odds: pourquoi ce concept est-il crucial pour une \u00e9quipe cybersecurite dans 'Modeles lineaires avances' ?",
+      "image_url": null,
+      "choices": {
+        "A": "Dans Modeles lineaires avances, interpretabilite sert \u00e0 fiabiliser les d\u00e9cisions d'exp\u00e9rimentation : am\u00e9liorer la qualit\u00e9 des d\u00e9cisions techniques et m\u00e9tier en conditions r\u00e9elles. Objectif valable, mais pas le plus align\u00e9 avec ce qu'on te demande ici.",
+        "B": "Dans Modeles lineaires avances, log-odds sert \u00e0 fiabiliser les d\u00e9cisions d'exp\u00e9rimentation : am\u00e9liorer la qualit\u00e9 des d\u00e9cisions techniques et m\u00e9tier en conditions r\u00e9elles. C'est l'objectif prioritaire a retenir pour prendre une d\u00e9cision propre dans Modeles lineaires avances.",
+        "C": "Cette finalit\u00e9 colle plut\u00f4t a coefficient (levier de d\u00e9cision ML) qu'au levier principal attendu.",
+        "D": "L'intention est cr\u00e9dible, mais elle reste annexe par rapport a l'objectif central de log-odds."
+      },
+      "correct_answer": "B",
+      "explanation": "Ici, la bonne proposition est celle qui relie log-odds \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Modeles lineaires avances, interpretabilite sert \u00e0 fiabiliser les d\u00e9cisions d'exp\u00e9rimentation : amelio...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Dans Modeles lineaires avances, log-odds sert \u00e0 fiabiliser les d\u00e9cisions d'exp\u00e9rimentation : am\u00e9liorer la q...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (Cette finalit\u00e9 colle plut\u00f4t a coefficient (levier de d\u00e9cision ML) qu'au levier principal attendu.) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (L'intention est cr\u00e9dible, mais elle reste annexe par rapport a l'objectif central de log-odds.) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans 'Modeles lineaires avances', quel est le role le plus determinant de coefficient pour un cas e-commerce ?",
+      "image_url": null,
+      "choices": {
+        "A": "L'intention est cr\u00e9dible, mais elle reste annexe par rapport a l'objectif central de coefficient.",
+        "B": "Dans Modeles lineaires avances, log-odds sert \u00e0 fiabiliser les d\u00e9cisions d'exp\u00e9rimentation : am\u00e9liorer la qualit\u00e9 des d\u00e9cisions techniques et m\u00e9tier en conditions r\u00e9elles. Objectif valable, mais pas le plus align\u00e9 avec ce qu'on te demande ici.",
+        "C": "Cette finalit\u00e9 colle plut\u00f4t a interpretabilite (levier de d\u00e9cision ML) qu'au levier principal attendu.",
+        "D": "Dans Modeles lineaires avances, coefficient sert d'abord ce but: c'est ce qui rend cette reponse solide."
+      },
+      "correct_answer": "D",
+      "explanation": "Ici, la bonne proposition est celle qui relie coefficient \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (L'intention est cr\u00e9dible, mais elle reste annexe par rapport a l'objectif central de coefficient.) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Modeles lineaires avances, log-odds sert \u00e0 fiabiliser les d\u00e9cisions d'exp\u00e9rimentation : am\u00e9liorer la q...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Cette finalit\u00e9 colle plut\u00f4t a interpretabilite (levier de d\u00e9cision ML) qu'au levier principal attendu.) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (Dans Modeles lineaires avances, coefficient sert d'abord ce but: c'est ce qui rend cette reponse solide.) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans 'Modeles lineaires avances', quel est le role le plus determinant d'interpretabilite pour un cas banque ?",
+      "image_url": null,
+      "choices": {
+        "A": "Dans Modeles lineaires avances, interpretabilite sert d'abord ce but: c'est ce qui rend cette reponse solide.",
+        "B": "L'intention est cr\u00e9dible, mais elle reste annexe par rapport a l'objectif central d'interpretabilite.",
+        "C": "Dans Modeles lineaires avances, regularisation sert \u00e0 fiabiliser les d\u00e9cisions d'exp\u00e9rimentation : am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance. Objectif valable, mais pas le plus align\u00e9 avec ce qu'on te demande ici.",
+        "D": "Cette finalit\u00e9 colle plut\u00f4t a log-odds (levier de d\u00e9cision ML) qu'au levier principal attendu."
+      },
+      "correct_answer": "A",
+      "explanation": "Ici, la bonne proposition est celle qui relie interpretabilite \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (Dans Modeles lineaires avances, interpretabilite sert d'abord ce but: c'est ce qui rend cette reponse solide.) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (L'intention est cr\u00e9dible, mais elle reste annexe par rapport a l'objectif central d'interpretabilite.) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Dans Modeles lineaires avances, regularisation sert \u00e0 fiabiliser les d\u00e9cisions d'exp\u00e9rimentation : ameliore...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Cette finalit\u00e9 colle plut\u00f4t a log-odds (levier de d\u00e9cision ML) qu'au levier principal attendu.) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pour une \u00e9quipe cybersecurite dans 'Modeles lineaires avances', quelle d\u00e9finition de log-odds est la plus juste ?",
+      "image_url": null,
+      "choices": {
+        "A": "Cette d\u00e9finition parle bien de validation set (\u00e9valuation robuste de la g\u00e9n\u00e9ralisation), mais le c\u0153ur de la question est ailleurs.",
+        "B": "L'id\u00e9e est proche, sauf qu'elle colle davantage \u00e0 stratification qu'au vrai probl\u00e8me pos\u00e9.",
+        "C": "Cette d\u00e9finition de log-odds est la bonne: elle couvre le mecanisme vraiment attendu ici.",
+        "D": "cross-validation est un concept interm\u00e9diaire en apprentissage supervise ; il structure l'\u00e9valuation hors entrainement pour estimer la g\u00e9n\u00e9ralisation r\u00e9elle. Proposition plausible, mais elle ne vise pas le concept central demand\u00e9."
+      },
+      "correct_answer": "C",
+      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de log-odds dans Modeles lineaires avances, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que cross-validation, validation set, stratification restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Cette d\u00e9finition parle bien de validation set (\u00e9valuation robuste de la g\u00e9n\u00e9ralisation), mais le c\u0153ur de l...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (L'id\u00e9e est proche, sauf qu'elle colle davantage \u00e0 stratification qu'au vrai probl\u00e8me pos\u00e9.) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Cette d\u00e9finition de log-odds est la bonne: elle couvre le mecanisme vraiment attendu ici.) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (cross-validation est un concept interm\u00e9diaire en apprentissage supervise ; il structure l'\u00e9valuation hors e...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans 'Modeles lineaires avances', quelle situation de terrain montre le mieux quand utiliser interpretabilite ?",
+      "image_url": null,
+      "choices": {
+        "A": "Dans une phase d'experimentation de Modeles lineaires avances, regularisation (controle de complexite et robustesse) peut aider, mais il reste sur un besoin annexe.",
+        "B": "Le sc\u00e9nario avec log-odds (levier de d\u00e9cision ML) est plausible, sauf qu'il ne traite pas l'enjeu central pilote par interpretabilite.",
+        "C": "En situation r\u00e9elle sur Modeles lineaires avances, interpretabilite (levier de d\u00e9cision ML) est le vrai point d'appui pour choisir une strat\u00e9gie fiable.",
+        "D": "coefficient (levier de d\u00e9cision ML) apporte un angle utile, mais la d\u00e9cision prioritaire repose plut\u00f4t sur levier de d\u00e9cision ML."
+      },
+      "correct_answer": "C",
+      "explanation": "Ce sc\u00e9nario est le bon car interpretabilite y sert de levier de d\u00e9cision principal dans Modeles lineaires avances. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une phase d'experimentation de Modeles lineaires avances, regularisation (controle de complexite et ro...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Le sc\u00e9nario avec log-odds (levier de d\u00e9cision ML) est plausible, sauf qu'il ne traite pas l'enjeu central p...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En situation r\u00e9elle sur Modeles lineaires avances, interpretabilite (levier de d\u00e9cision ML) est le vrai poi...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (coefficient (levier de d\u00e9cision ML) apporte un angle utile, mais la d\u00e9cision prioritaire repose plut\u00f4t sur ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pour un cas operationnel de 'Modeles lineaires avances', quel exemple met regularisation au c\u0153ur de la d\u00e9cision ?",
+      "image_url": null,
+      "choices": {
+        "A": "Quand il faut arbitrer vite dans Modeles lineaires avances, prioriser regularisation (controle de complexite et robustesse) evite les d\u00e9cisions superficielles.",
+        "B": "Dans une phase d'experimentation de Modeles lineaires avances, coefficient (levier de d\u00e9cision ML) peut aider, mais il reste sur un besoin annexe.",
+        "C": "Le sc\u00e9nario avec log-odds (levier de d\u00e9cision ML) est plausible, sauf qu'il ne traite pas l'enjeu central pilote par regularisation.",
+        "D": "interpretabilite (levier de d\u00e9cision ML) apporte un angle utile, mais la d\u00e9cision prioritaire repose plut\u00f4t sur controle de complexite et robustesse."
+      },
+      "correct_answer": "A",
+      "explanation": "Ce sc\u00e9nario est le bon car regularisation y sert de levier de d\u00e9cision principal dans Modeles lineaires avances. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Quand il faut arbitrer vite dans Modeles lineaires avances, prioriser regularisation (controle de complexit...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une phase d'experimentation de Modeles lineaires avances, coefficient (levier de d\u00e9cision ML) peut aid...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Le sc\u00e9nario avec log-odds (levier de d\u00e9cision ML) est plausible, sauf qu'il ne traite pas l'enjeu central p...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (interpretabilite (levier de d\u00e9cision ML) apporte un angle utile, mais la d\u00e9cision prioritaire repose plut\u00f4t...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
       "difficulty": "hard"
     }
   ]
