@@ -67,6 +67,7 @@ class QuizApiTests(APITestCase):
 
 		self.assertEqual(response.status_code, status.HTTP_200_OK)
 		self.assertEqual(response.data['level']['title'], 'Niveau 1')
+		self.assertNotIn('explanation', response.data['questions'][0])
 		self.assertNotIn('is_correct', response.data['questions'][0]['choices'][0])
 
 	def test_quiz_submission_scores_answers(self):
@@ -88,3 +89,4 @@ class QuizApiTests(APITestCase):
 		self.assertEqual(response.status_code, status.HTTP_200_OK)
 		self.assertEqual(response.data['score'], 1)
 		self.assertEqual(response.data['percentage'], 100.0)
+		self.assertIn('explanation', response.data['answers'][0])

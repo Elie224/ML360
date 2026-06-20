@@ -32,7 +32,6 @@ class QuestionPublicSerializer(serializers.ModelSerializer):
 		fields = (
 			'id',
 			'prompt',
-			'explanation',
 			'order',
 			'question_type',
 			'presentation_type',
