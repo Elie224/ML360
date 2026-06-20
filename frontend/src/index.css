@@ -162,11 +162,12 @@
   }
 
   .quiz-media-frame {
-    @apply overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 p-2 sm:p-3;
+    @apply flex items-center justify-center overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 p-2 sm:p-3;
+    min-height: clamp(220px, 36vh, 420px);
   }
 
   .quiz-media-image {
-    @apply mx-auto block h-auto w-full rounded-xl object-contain;
+    @apply mx-auto block h-full w-full rounded-xl object-contain;
     max-height: clamp(220px, 52vh, 640px);
   }
 }

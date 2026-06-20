@@ -326,7 +326,7 @@ export function QuizPage() {
                     src={activeQuestion.image_url}
                     alt={`Illustration question ${currentQuestion + 1}`}
                     className="quiz-media-image"
-                    loading="lazy"
+                    loading="eager"
                     decoding="async"
                     sizes="(max-width: 640px) 92vw, (max-width: 1024px) 80vw, 900px"
                   />
