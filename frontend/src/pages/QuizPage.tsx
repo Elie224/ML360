@@ -21,6 +21,15 @@ function questionTimeLimit(difficulty: 'easy' | 'medium' | 'hard') {
   return 60
 }
 
+const PASSING_SCORE = 90
+
+function encouragementMessage(percentage: number) {
+  if (percentage >= PASSING_SCORE) return 'Excellent travail. Ce module est valide et le suivant est debloque.'
+  if (percentage >= 75) return 'Tres bon resultat. Vous etes proche de la validation.'
+  if (percentage >= 50) return 'Bonne progression. Revisez les points manques et relancez un essai.'
+  return 'Bon debut. Un nouvel essai guide avec les explications peut faire une vraie difference.'
+}
+
 export function QuizPage() {
   const { slug } = useParams()
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>({})
@@ -111,6 +120,20 @@ export function QuizPage() {
     return currentQuestion >= quiz.questions.length - 1
   }, [currentQuestion, quiz])
 
+  const weakThemes = useMemo(() => {
+    if (!submission || !quiz) return []
+
+    const questionById = new Map(quiz.questions.map((question) => [question.id, question]))
+    const weakPrompts = submission.answers
+      .filter((answer) => !answer.is_correct)
+      .map((answer) => questionById.get(answer.question_id)?.prompt ?? '')
+      .filter(Boolean)
+      .map((prompt) => normalizeFrenchText(prompt).replace(/\s+/g, ' ').trim())
+      .map((prompt) => (prompt.length > 90 ? `${prompt.slice(0, 87)}...` : prompt))
+
+    return Array.from(new Set(weakPrompts)).slice(0, 3)
+  }, [quiz, submission])
+
   useEffect(() => {
     if (!quizStarted || !activeQuestion || submission) return
     setQuestionTimeLeft(questionTimeLimit(activeQuestion.difficulty))
@@ -168,7 +191,7 @@ export function QuizPage() {
       }))
       const result = await submitQuiz(quiz.slug, answers)
       setSubmission(result)
-      if (result.percentage >= 90) {
+      if (result.percentage >= PASSING_SCORE) {
         markQuizCompleted(quiz.slug)
       }
       clearQuizSession(quiz.slug)
@@ -377,14 +400,30 @@ export function QuizPage() {
             </span>
           </div>
 
-          {submission.percentage >= 90 ? (
+          {submission.percentage >= PASSING_SCORE ? (
             <p className="mt-3 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700">
-              Module valide. Le suivant est debloque.
+              {encouragementMessage(submission.percentage)}
             </p>
           ) : (
-            <p className="mt-3 rounded-xl border border-amber-200 bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-700">
-              Module non valide. Il faut au moins 90% de bonnes reponses pour debloquer le suivant.
-            </p>
+            <div className="mt-3 space-y-2 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
+              <p className="font-semibold">{encouragementMessage(submission.percentage)}</p>
+              <p>
+                Module non valide pour l instant. Il faut {PASSING_SCORE}% pour debloquer le suivant.
+                Il manque {Math.max(0, Math.ceil(PASSING_SCORE - submission.percentage))} point(s).
+              </p>
+              {weakThemes.length > 0 ? (
+                <div>
+                  <p className="font-semibold">Themes a renforcer</p>
+                  <div className="mt-1 flex flex-wrap gap-2">
+                    {weakThemes.map((theme) => (
+                      <span key={theme} className="rounded-full border border-amber-300 bg-white px-3 py-1 text-xs font-medium">
+                        {theme}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+            </div>
           )}
 
           <p className="mt-3 text-slate-700">

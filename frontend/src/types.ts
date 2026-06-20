@@ -36,7 +36,6 @@ export type QuestionChoice = {
 export type QuizQuestion = {
   id: number
   prompt: string
-  explanation: string
   order: number
   question_type: string
   presentation_type: 'text' | 'image'
