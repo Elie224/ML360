@@ -4,214 +4,214 @@
   "module": "Evaluation initiale",
   "questions": [
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec exploration dans '\u00c9valuation initiale' ?",
-      "image_url": "apprentissage-par-renforcement_evaluation_initiale_exploration_2.png",
-      "choices": {
-        "A": "random baseline sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random baseline en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans \u00c9valuation initiale, stabilit\u00e9 d'apprentissage est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 d'apprentissage en production.",
-        "C": "Dans \u00c9valuation initiale, exploration est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer exploration en production.",
-        "D": "Le role de score cumule est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score cumule en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'exploration dans \u00c9valuation initiale. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (random baseline sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mi...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans \u00c9valuation initiale, stabilit\u00e9 d'apprentissage est mobilise pour installer un raisonnement fiable des ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans \u00c9valuation initiale, exploration est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'u...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de score cumule est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement perm...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec score cumule dans '\u00c9valuation initiale' ?",
-      "image_url": "apprentissage-par-renforcement_evaluation_initiale_score_cumule_2.png",
-      "choices": {
-        "A": "Dans \u00c9valuation initiale, exploration est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer exploration en production.",
-        "B": "Dans \u00c9valuation initiale, score cumule est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score cumule en production.",
-        "C": "Le role de random baseline est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random baseline en production.",
-        "D": "stabilit\u00e9 d'apprentissage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 d'apprentissage en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de score cumule dans \u00c9valuation initiale. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans \u00c9valuation initiale, exploration est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'u...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans \u00c9valuation initiale, score cumule est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de random baseline est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement p...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (stabilit\u00e9 d'apprentissage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement pe...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
       "type": "text",
-      "question": "Dans '\u00c9valuation initiale' (cybersecurite), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment random baseline ?",
+      "question": "Qu'est-ce qu'un score cumulé dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Dans \u00c9valuation initiale, policy se comprend comme une notion de base en apprentissage par renforcement ; il guide l'apprentissage de d\u00e9cisions sequentielles en maximisant un signal de recompense.",
-        "B": "choix d'action designe une notion de base en apprentissage par renforcement ; il formalise le role de choix d'action dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "comportement correspond a une notion de base en apprentissage par renforcement ; il formalise le role de comportement dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans \u00c9valuation initiale.",
-        "D": "random baseline correspond a une notion de base en apprentissage par renforcement ; il formalise le role de random baseline dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans \u00c9valuation initiale."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de random baseline dans \u00c9valuation initiale, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que policy, choix d'action, comportement restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans \u00c9valuation initiale, policy se comprend comme une notion de base en apprentissage par renforcement ; i...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (choix d'action designe une notion de base en apprentissage par renforcement ; il formalise le role de choix...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (comportement correspond a une notion de base en apprentissage par renforcement ; il formalise le role de co...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (random baseline correspond a une notion de base en apprentissage par renforcement ; il formalise le role de...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quelle situation de terrain montre le mieux quand utiliser exploration ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique random baseline pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random baseline en production.",
-        "B": "En contexte r\u00e9el sur \u00c9valuation initiale, stabilit\u00e9 d'apprentissage est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 d'apprentissage en production.",
-        "C": "En contexte r\u00e9el sur \u00c9valuation initiale, exploration est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer exploration en production.",
-        "D": "Pendant un atelier de cadrage, score cumule est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score cumule en production tout en surveillant le risque d'appliquer score cumule par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car exploration y sert de levier de d\u00e9cision principal dans \u00c9valuation initiale. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique random baseline pour installer un rais...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur \u00c9valuation initiale, stabilit\u00e9 d'apprentissage est choisi afin d'installer un raisonn...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur \u00c9valuation initiale, exploration est choisi afin d'installer un raisonnement fiable d...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant un atelier de cadrage, score cumule est utile pour installer un raisonnement fiable des le d\u00e9but ; ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "stabilit\u00e9 d'apprentissage: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans '\u00c9valuation initiale' ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur \u00c9valuation initiale, score cumule est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score cumule en production.",
-        "B": "Pendant un atelier de cadrage, random baseline est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random baseline en production tout en surveillant le risque d'appliquer random baseline par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique exploration pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer exploration en production.",
-        "D": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique stabilit\u00e9 d'apprentissage pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 d'apprentissage en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car stabilit\u00e9 d'apprentissage y sert de levier de d\u00e9cision principal dans \u00c9valuation initiale. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur \u00c9valuation initiale, score cumule est choisi afin d'installer un raisonnement fiable ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant un atelier de cadrage, random baseline est utile pour installer un raisonnement fiable des le d\u00e9but...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique exploration pour installer un raisonne...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique stabilit\u00e9 d'apprentissage pour install...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quelle situation de terrain montre le mieux quand utiliser score cumule ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur \u00c9valuation initiale, exploration est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer exploration en production.",
-        "B": "En contexte r\u00e9el sur \u00c9valuation initiale, score cumule est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score cumule en production.",
-        "C": "Pendant un atelier de cadrage, random baseline est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random baseline en production tout en surveillant le risque d'appliquer random baseline par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique stabilit\u00e9 d'apprentissage pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 d'apprentissage en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car score cumule y sert de levier de d\u00e9cision principal dans \u00c9valuation initiale. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur \u00c9valuation initiale, exploration est choisi afin d'installer un raisonnement fiable d...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur \u00c9valuation initiale, score cumule est choisi afin d'installer un raisonnement fiable ...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant un atelier de cadrage, random baseline est utile pour installer un raisonnement fiable des le d\u00e9but...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique stabilit\u00e9 d'apprentissage pour install...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quel est le role le plus determinant d'exploration pour un cas assurance ?",
-      "image_url": null,
-      "choices": {
-        "A": "exploration sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer exploration en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans \u00c9valuation initiale, score cumule est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score cumule en production.",
-        "C": "Le role de random baseline est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random baseline en production.",
-        "D": "stabilit\u00e9 d'apprentissage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 d'apprentissage en production pour guider une d\u00e9cision exploitable."
+        "A": "La somme des récompenses reçues par un agent au cours de son parcours.",
+        "B": "Le maximum des récompenses reçues pendant un épisode.",
+        "C": "La moyenne des récompenses obtenues par un agent sur des épisodes multiples.",
+        "D": "Le pourcentage des actions optimales sur la totalité des actions possibles."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie exploration \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (exploration sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans \u00c9valuation initiale, score cumule est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de random baseline est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement p...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (stabilit\u00e9 d'apprentissage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement pe...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le score cumulé est la somme des récompenses reçues au fil du temps par un agent. B est incorrect car le maximum n'indique pas le total cumulé; C est incorrect car cela se réfère à une autre métrique; D est faux car cela concerne l'efficacité mais pas directement le score cumulé.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quel est le role le plus determinant de score cumule pour un cas industrie ?",
+      "question": "Quel est l'intérêt d'une random baseline en apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Dans \u00c9valuation initiale, random baseline est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random baseline en production.",
-        "B": "Le role de stabilit\u00e9 d'apprentissage est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 d'apprentissage en production.",
-        "C": "exploration sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer exploration en production pour guider une d\u00e9cision exploitable.",
-        "D": "score cumule sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score cumule en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie score cumule \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans \u00c9valuation initiale, random baseline est mobilise pour installer un raisonnement fiable des le d\u00e9but ;...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de stabilit\u00e9 d'apprentissage est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser corr...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (exploration sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (score cumule sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin cybersecurite dans '\u00c9valuation initiale', pourquoi random baseline est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "stabilit\u00e9 d'apprentissage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 d'apprentissage en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans \u00c9valuation initiale, exploration est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer exploration en production.",
-        "C": "Dans \u00c9valuation initiale, random baseline est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random baseline en production.",
-        "D": "Le role de score cumule est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score cumule en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie random baseline \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (stabilit\u00e9 d'apprentissage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement pe...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans \u00c9valuation initiale, exploration est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'u...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans \u00c9valuation initiale, random baseline est mobilise pour installer un raisonnement fiable des le d\u00e9but ;...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de score cumule est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement perm...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de '\u00c9valuation initiale', quel exemple met random baseline au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant un atelier de cadrage, random baseline est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random baseline en production tout en surveillant le risque d'appliquer random baseline par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique score cumule pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score cumule en production.",
-        "C": "En contexte r\u00e9el sur \u00c9valuation initiale, stabilit\u00e9 d'apprentissage est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 d'apprentissage en production.",
-        "D": "Pendant un atelier de cadrage, exploration est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer exploration en production tout en surveillant le risque d'appliquer exploration par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "Établir un niveau de performance de référence pour évaluer l'agent.",
+        "B": "Optimiser le modèle pour maximiser les récompenses.",
+        "C": "Améliorer les performances de l'agent en augmentant l'exploration.",
+        "D": "Éviter les biais dans les mesures de l'environnement."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car random baseline y sert de levier de d\u00e9cision principal dans \u00c9valuation initiale. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant un atelier de cadrage, random baseline est utile pour installer un raisonnement fiable des le d\u00e9but...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique score cumule pour installer un raisonn...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur \u00c9valuation initiale, stabilit\u00e9 d'apprentissage est choisi afin d'installer un raisonn...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant un atelier de cadrage, exploration est utile pour installer un raisonnement fiable des le d\u00e9but ; l...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
+      "explanation": "La random baseline sert à mesurer la performance d'un agent par rapport à un comportement aléatoire. B et C sont liés à l'optimisation de l'apprentissage, pas à l'évaluation de base; D est incorrect car la random baseline n'affecte pas directement le biais de mesure.",
+      "difficulty": "easy"
     },
     {
-      "type": "image",
-      "question": "Dans '\u00c9valuation initiale', quel commentaire du schema traduit le mieux le role de stabilit\u00e9 d'apprentissage ?",
-      "image_url": "apprentissage-par-renforcement_evaluation_initiale_stabilite_d_apprentissage_2.png",
+      "type": "text",
+      "question": "Pourquoi est-il important de considérer la stabilité de l'apprentissage en apprentissage par renforcement?",
+      "image_url": null,
       "choices": {
-        "A": "Dans \u00c9valuation initiale, score cumule est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score cumule en production.",
-        "B": "Le role de random baseline est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random baseline en production.",
-        "C": "exploration sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer exploration en production pour guider une d\u00e9cision exploitable.",
-        "D": "stabilit\u00e9 d'apprentissage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 d'apprentissage en production pour guider une d\u00e9cision exploitable."
+        "A": "Cela assure que l'agent converge vers une politique stable et performante.",
+        "B": "Cela garantit que l'agent explore toutes les actions possibles.",
+        "C": "Cela permet à l'agent d'apprendre plus rapidement.",
+        "D": "Cela empêche l'agent de changer de politique en cours d'entraînement."
       },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de stabilit\u00e9 d'apprentissage dans \u00c9valuation initiale. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans \u00c9valuation initiale, score cumule est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de random baseline est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement p...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (exploration sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (stabilit\u00e9 d'apprentissage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement pe...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La stabilité de l'apprentissage se réfère à la convergence cohérente de l'agent vers une bonne politique. B est faux car explorer toutes les actions ne garantit pas la stabilité; C concerne la vitesse d'apprentissage, pas la stabilité; D est incorrect car un changement de politique peut être nécessaire pour converger de manière optimale.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une stratégie d'exploration en apprentissage par renforcement?",
+      "image_url": null,
+      "choices": {
+        "A": "ε-greedy, qui choisit aléatoirement ou le meilleur choix selon une probabilité.",
+        "B": "Discount greedy, qui maximise uniquement les récompenses futures.",
+        "C": "Softmax, qui choisit l'action avec une probabilité liée à sa valeur.",
+        "D": "Greedy, qui choisit aléatoirement entre toutes les actions possibles."
+      },
+      "correct_answer": "A",
+      "explanation": "Le ε-greedy est une stratégie où l'agent choisit généralement la meilleure action connue mais explore aussi aléatoirement. Discount greedy n'existe pas comme stratégie standardisée; C est incorrect car le softmax n'est pas un choix direct mais basé sur une probabilité; D est faux car le greedy ne choisit pas aléatoirement.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel concept décrit la performance minimum qu'un agent doit surpasser pour être considéré comme efficace par rapport à un choix aléatoire?",
+      "image_url": null,
+      "choices": {
+        "A": "Random baseline",
+        "B": "Optimal baseline",
+        "C": "Exploration/exploitation trade-off",
+        "D": "Reward schedule"
+      },
+      "correct_answer": "A",
+      "explanation": "La random baseline est une référence pour comparer la performance contre un choix aléatoire. B est incorrect car optimal baseline supposerait en général la performance maximale; C est incorrect car l'exploration/exploitation trade-off concerne le processus d'apprentissage; D est incorrect car le reward schedule décrit comment les récompenses sont octroyées au fil du temps.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Comment l'exploration excessive peut-elle affecter le processus d'apprentissage dans l'apprentissage par renforcement?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle peut ralentir la convergence vers une politique optimale.",
+        "B": "Elle garantit une exploration complète de l'environnement.",
+        "C": "Elle augmente les récompenses perçues par l'agent.",
+        "D": "Elle diminue le besoin d'exploitation dans toutes les situations."
+      },
+      "correct_answer": "A",
+      "explanation": "Une exploration excessive peut empêcher l'agent de se concentrer sur l'exploitation des actions déjà identifiées comme étant bonnes. B peut être vrai mais ne tient pas compte des coûts; C est faux car exploration n'implique pas nécessairement de meilleures récompenses; D est faux car l'exploitation est toujours nécessaire pour suivre les expériences antérieures.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "En apprentissage par renforcement, qu'est-ce qu'un agent entend par 'exploration'?",
+      "image_url": null,
+      "choices": {
+        "A": "Essayer de nouvelles actions sans garantir un résultat optimal.",
+        "B": "Modifier son objectif d'entraînement pour de meilleurs résultats.",
+        "C": "Mettre en place un réseau de neurones plus profond.",
+        "D": "Valoriser uniquement les récompenses futures maximisées."
+      },
+      "correct_answer": "A",
+      "explanation": "L'exploration implique de tester divers choix, même ceux qui n'ont pas prouvé leur efficacité, pour découvrir de possibles meilleures solutions. B est incorrect car cela implique un changement d'objectif plutôt que d'actions; C est faux car cela concerne l'architecture du modèle; D est faux car c'est plutôt lié à l'exploitation.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'effet d'utiliser une politique purement 'greedy' dans l'apprentissage par renforcement?",
+      "image_url": null,
+      "choices": {
+        "A": "Accélérer l'apprentissage initial mais risquer la stagnation en local.",
+        "B": "Assurer que toutes les actions sont testées de manière uniforme.",
+        "C": "Garantir l'apprentissage optimal en toutes circonstances.",
+        "D": "Réduire la variance des récompenses par prise de décisions conservatrices."
+      },
+      "correct_answer": "A",
+      "explanation": "Une politique 'greedy' choisit toujours les actions avec la meilleure valeur connue actuellement, ce qui peut mener à une stagnation dans des optima locaux. B est incorrect car cela n'élargit pas le spectre des actions testées; C est incorrect car cela omet le besoin d'exploration pour contourner les optima locaux; D est faux car une stratégie 'greedy' peut en fait conduire à une variance élevée due aux changements locaux.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce qui est fondamentalement un problème lié à l'équilibre entre exploration et exploitation dans l'apprentissage par renforcement?",
+      "image_url": null,
+      "choices": {
+        "A": "Décider quand l'agent doit explorer de nouvelles actions ou exploiter des connaissances acquises.",
+        "B": "Déterminer les récompenses futures maximales d'un agent.",
+        "C": "Augmenter continuellement les performances de l'agent de manière linéaire.",
+        "D": "Minimiser les erreurs de l'agent en continu tout en ignorant l'exploration."
+      },
+      "correct_answer": "A",
+      "explanation": "Le problème exploration/exploitation consiste à choisir entre essayer de nouvelles actions pour découvrir leur valeur (exploration) ou sélectionner les meilleures actions connues pour maximiser les récompenses (exploitation). B mentionne une fonction mais pas un conflit d'approche; C et D sont incorrects car ils n'abordent pas la dualité d'objectifs entre l'exploration et l'exploitation.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'avantage de l'approche softmax par rapport à une stratégie ε-greedy pour l'exploration?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle ajuste la probabilité de choisir des actions en fonction de l'estimation actuelle de leur qualité.",
+        "B": "Elle choisit toujours la meilleure action estimée.",
+        "C": "Elle réduit la possibilité d'explorer de nouvelles actions.",
+        "D": "Elle assure que toutes les actions sont choisies de manière égale."
+      },
+      "correct_answer": "A",
+      "explanation": "Softmax utilise une distribution de probabilités basée sur les valeurs de Q pour choisir les actions, permettant un équilibre plus nuancé entre exploration et exploitation. B est incorrect car cela décrit un comportement greedy; C est incorrect car softmax encourage toujours une exploration en fonction des probabilités; D est faux car les probabilités ne sont pas nécessairement égales.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de '\u00c9valuation initiale', quelle erreur autour d'exploration est la plus critique ?",
+      "question": "Comment un agent en apprentissage par renforcement peut-il améliorer la stabilité de son apprentissage?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec score cumule est d'appliquer score cumule par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Si random baseline est mal utilise, on observe souvent appliquer random baseline par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Le piege principal autour de stabilit\u00e9 d'apprentissage est appliquer stabilit\u00e9 d'apprentissage par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Le piege principal autour d'exploration est appliquer exploration par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "En ajustant dynamiquement le taux d'exploration au fil du temps.",
+        "B": "En augmentant la fréquence des actions aléatoires choisies.",
+        "C": "En réduisant le nombre d'actions possibles dans l'environnement.",
+        "D": "En ignorant les récompenses négatives pour éviter les biais."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'exploration. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec score cumule est d'appliquer score cumule par automatisme sans verifier hypothese...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si random baseline est mal utilise, on observe souvent appliquer random baseline par automatisme sans verif...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour de stabilit\u00e9 d'apprentissage est appliquer stabilit\u00e9 d'apprentissage par automati...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour d'exploration est appliquer exploration par automatisme sans verifier hypotheses...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Ajuster dynamiquement le taux d'exploration permet à l'agent de réduire le niveau d'exploration à mesure qu'il devient plus confiant dans ses actions, ce qui est crucial pour la stabilité. B peut perturber la convergence; C limiterait l'apprentissage au lieu de le stabiliser; D serait trompeur car les récompenses négatives peuvent indiquer des erreurs à corriger.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "stabilit\u00e9 d'apprentissage: pourquoi ce concept est-il crucial pour une \u00e9quipe banque dans '\u00c9valuation initiale' ?",
+      "question": "Dans l'apprentissage par renforcement, pourquoi une politique trop exploratrice peut-elle être préjudiciable à long terme?",
       "image_url": null,
       "choices": {
-        "A": "Le role d'exploration est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer exploration en production.",
-        "B": "Le role de stabilit\u00e9 d'apprentissage est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 d'apprentissage en production.",
-        "C": "score cumule sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score cumule en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans \u00c9valuation initiale, random baseline est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random baseline en production."
+        "A": "Elle peut empêcher l'agent de se concentrer sur les actions rentables.",
+        "B": "Elle garantit qu'aucune action n'est jamais exploitée.",
+        "C": "Elle empêche l'agent d'apprendre de nouvelles actions.",
+        "D": "Elle limite l'agent à un sous-ensemble restreint d'actions."
       },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie stabilit\u00e9 d'apprentissage \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role d'exploration est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement perme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de stabilit\u00e9 d'apprentissage est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser corr...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (score cumule sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans \u00c9valuation initiale, random baseline est mobilise pour installer un raisonnement fiable des le d\u00e9but ;...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Une politique trop exploratrice peut détourner l'attention des actions identifiées comme rentables, ce qui peut empêcher la maximisation des récompenses. B et C sont incorrects car exploration implique qu'aucune action ne soit exclue; D est incorrect car l'exploration ne restreint pas en soi le nombre d'actions explorables.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de '\u00c9valuation initiale', quelle erreur autour de score cumule est la plus critique ?",
+      "question": "Pourquoi est-il important qu'une stratégie d'exploration ait un mécanisme de décroissance dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Si stabilit\u00e9 d'apprentissage est mal utilise, on observe souvent appliquer stabilit\u00e9 d'apprentissage par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Le piege principal autour d'exploration est appliquer exploration par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Le piege principal autour de score cumule est appliquer score cumule par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Un risque classique avec random baseline est d'appliquer random baseline par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "Pour permettre à l'agent de se stabiliser et de capitaliser sur des actions connues.",
+        "B": "Pour continuer à explorer l'environnement avec intensité maximale.",
+        "C": "Pour élargir progressivement la variété des états explorés.",
+        "D": "Pour empêcher que l'agent n'acquière jamais de politique solution."
       },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de score cumule. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si stabilit\u00e9 d'apprentissage est mal utilise, on observe souvent appliquer stabilit\u00e9 d'apprentissage par au...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour d'exploration est appliquer exploration par automatisme sans verifier hypotheses...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de score cumule est appliquer score cumule par automatisme sans verifier hypothes...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec random baseline est d'appliquer random baseline par automatisme sans verifier hyp...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Un mécanisme de décroissance aide à réduire progressivement l'exploration à mesure que l'agent trouve une politique de plus en plus stable. B et C sont incorrects car ne reconnaissent pas la nécessité de stabilisation et d'exploitation accrue au fil du temps; D est incorrect car la décroissance aide précisément à atteindre une politique solution.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le rôle du paramètre 'gamma' dans le calcul des récompenses futures en apprentissage par renforcement?",
+      "image_url": null,
+      "choices": {
+        "A": "Il détermine l'importance des récompenses futures par rapport aux immédiates.",
+        "B": "Il fixe le niveau de bruit dans l'exploration des actions.",
+        "C": "Il garantit que l'agent explore toutes les actions possibles.",
+        "D": "Il ajuste la fréquence à laquelle les actions aléatoires sont choisies."
+      },
+      "correct_answer": "A",
+      "explanation": "Le paramètre gamma (γ) mesure l'impact des récompenses futures, influençant l'étendue sur laquelle les récompenses futures sont prises en compte. B et D se réfèrent à des concepts d'ajustement qui ne sont pas liés à gamma; C est incorrect car gamma n'affecte pas directement l'exploration des actions.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quel est le principal mode d'echec quand stabilit\u00e9 d'apprentissage est mal applique ?",
+      "question": "Dans le contexte de l'apprentissage par renforcement, que désigne le 'score cumulé' ?",
       "image_url": null,
       "choices": {
-        "A": "Si stabilit\u00e9 d'apprentissage est mal utilise, on observe souvent appliquer stabilit\u00e9 d'apprentissage par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Le piege principal autour de score cumule est appliquer score cumule par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Un risque classique avec random baseline est d'appliquer random baseline par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Si exploration est mal utilise, on observe souvent appliquer exploration par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "La somme totale des récompenses reçues par l'agent au cours d'un épisode.",
+        "B": "Le nombre moyen d'actions réussies par l'agent au cours d'un épisode.",
+        "C": "La différence entre la récompense la plus élevée et la plus basse qu'un agent peut recevoir.",
+        "D": "Le taux auquel l'agent explore par rapport à l'exploitation de l'environnement."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de stabilit\u00e9 d'apprentissage. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si stabilit\u00e9 d'apprentissage est mal utilise, on observe souvent appliquer stabilit\u00e9 d'apprentissage par au...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de score cumule est appliquer score cumule par automatisme sans verifier hypothes...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec random baseline est d'appliquer random baseline par automatisme sans verifier hyp...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si exploration est mal utilise, on observe souvent appliquer exploration par automatisme sans verifier hypo...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Le 'score cumulé' est la somme totale des récompenses qu'un agent accumule au cours d'un épisode ou d'une série d'épisodes. Cette mesure permet d'évaluer la performance globale de l'agent. La réponse B est incorrecte car elle se réfère à une moyenne sur les actions plutôt qu'à une somme de récompenses. La réponse C est fausse car elle concerne les récompenses maximales et minimales, pas leur somme totale. La réponse D est incorrecte, car elle décrit le ratio exploration-exploitation, non lié directement au score cumulé.",
+      "difficulty": "easy"
     }
   ]
 }

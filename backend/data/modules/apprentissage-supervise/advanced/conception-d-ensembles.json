@@ -5,240 +5,240 @@
   "questions": [
     {
       "type": "text",
-      "question": "stacking: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Conception d'ensembles' ?",
+      "question": "Dans le cadre du bagging, quel est le rôle principal de l'échantillonnage bootstrap?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Conception d'ensembles, bagging est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bagging en production.",
-        "B": "Pendant une revue pre-deploiement, boosting est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer boosting en production tout en surveillant le risque d'optimiser boosting en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Dans une revue pre-deploiement de Conception d'ensembles, l'\u00e9quipe applique weak learner pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer weak learner en production.",
-        "D": "Dans une revue pre-deploiement de Conception d'ensembles, l'\u00e9quipe applique stacking pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stacking en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car stacking y sert de levier de d\u00e9cision principal dans Conception d'ensembles. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Conception d'ensembles, bagging est choisi afin de supporter des arbitrages de product...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une revue pre-deploiement, boosting est utile pour supporter des arbitrages de production ; l'utili...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une revue pre-deploiement de Conception d'ensembles, l'\u00e9quipe applique weak learner pour supporter des...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une revue pre-deploiement de Conception d'ensembles, l'\u00e9quipe applique stacking pour supporter des arb...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Conception d'ensembles' (sante), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment boosting ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Conception d'ensembles, audit de biais se comprend comme un levier avance en apprentissage supervise ; il traite l'equite de d\u00e9cision entre groupes sensibles et la conformite des modeles.",
-        "B": "feature store designe un levier avance en apprentissage supervise ; il concerne la representation des variables utiles au modele et leur qualit\u00e9 predictive.",
-        "C": "\u00e9valuation offline correspond a un levier avance en apprentissage supervise ; il formalise le role d'\u00e9valuation offline dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Conception d'ensembles.",
-        "D": "boosting correspond a un levier avance en apprentissage supervise ; il formalise le role de boosting dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Conception d'ensembles."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de boosting dans Conception d'ensembles, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que audit de biais, feature store, \u00e9valuation offline restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Conception d'ensembles, audit de biais se comprend comme un levier avance en apprentissage supervise ;...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (feature store designe un levier avance en apprentissage supervise ; il concerne la representation des varia...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (\u00e9valuation offline correspond a un levier avance en apprentissage supervise ; il formalise le role d'evalu...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (boosting correspond a un levier avance en apprentissage supervise ; il formalise le role de boosting dans u...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec bagging dans 'Conception d'ensembles' ?",
-      "image_url": "apprentissage-supervise_conception_d_ensembles_bagging_2.png",
-      "choices": {
-        "A": "Dans Conception d'ensembles, weak learner est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer weak learner en production.",
-        "B": "Dans Conception d'ensembles, bagging est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bagging en production.",
-        "C": "Le role de boosting est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer boosting en production.",
-        "D": "stacking sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stacking en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de bagging dans Conception d'ensembles. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Conception d'ensembles, weak learner est mobilise pour supporter des arbitrages de production ; l'util...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Conception d'ensembles, bagging est mobilise pour supporter des arbitrages de production ; l'utiliser ...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de boosting est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (stacking sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider qu...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin sante dans 'Conception d'ensembles', pourquoi boosting est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "stacking sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stacking en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Conception d'ensembles, weak learner est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer weak learner en production.",
-        "C": "Dans Conception d'ensembles, boosting est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer boosting en production.",
-        "D": "Le role de bagging est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bagging en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie boosting \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (stacking sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider qu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Conception d'ensembles, weak learner est mobilise pour supporter des arbitrages de production ; l'util...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Conception d'ensembles, boosting est mobilise pour supporter des arbitrages de production ; l'utiliser...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de bagging est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec weak learner dans 'Conception d'ensembles' ?",
-      "image_url": "apprentissage-supervise_conception_d_ensembles_weak_learner_2.png",
-      "choices": {
-        "A": "boosting sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer boosting en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Conception d'ensembles, stacking est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stacking en production.",
-        "C": "Dans Conception d'ensembles, weak learner est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer weak learner en production.",
-        "D": "Le role de bagging est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bagging en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de weak learner dans Conception d'ensembles. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (boosting sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider qu...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Conception d'ensembles, stacking est mobilise pour supporter des arbitrages de production ; l'utiliser...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Conception d'ensembles, weak learner est mobilise pour supporter des arbitrages de production ; l'util...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de bagging est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Conception d'ensembles', quel commentaire du schema traduit le mieux le role de stacking ?",
-      "image_url": "apprentissage-supervise_conception_d_ensembles_stacking_2.png",
-      "choices": {
-        "A": "Dans Conception d'ensembles, bagging est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bagging en production.",
-        "B": "Le role de boosting est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer boosting en production.",
-        "C": "weak learner sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer weak learner en production pour guider une d\u00e9cision exploitable.",
-        "D": "stacking sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stacking en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de stacking dans Conception d'ensembles. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Conception d'ensembles, bagging est mobilise pour supporter des arbitrages de production ; l'utiliser ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de boosting est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (weak learner sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux decide...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (stacking sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider qu...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Conception d'ensembles', quel est le principal mode d'echec quand stacking est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si stacking est mal utilise, on observe souvent optimiser stacking en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de bagging est optimiser bagging en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Un risque classique avec boosting est d'optimiser boosting en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Si weak learner est mal utilise, on observe souvent optimiser weak learner en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Réduire la variance du modèle en utilisant des sous-échantillons avec remise.",
+        "B": "Augmenter la biais du modèle pour une meilleure généralisation.",
+        "C": "Sélectionner uniquement les caractéristiques les plus pertinentes pour chaque base learner.",
+        "D": "Réduire le nombre total de features pour augmenter la vitesse de calcul."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de stacking. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si stacking est mal utilise, on observe souvent optimiser stacking en silo et introduire des modes d'echec ...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de bagging est optimiser bagging en silo et introduire des modes d'echec caches a...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec boosting est d'optimiser boosting en silo et introduire des modes d'echec caches ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si weak learner est mal utilise, on observe souvent optimiser weak learner en silo et introduire des modes ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Le bagging utilise l'échantillonnage bootstrap pour créer plusieurs échantillons entraînants avec remplacement, réduisant ainsi la variance du modèle. Ceci n'influence pas le biais (B) et ne concerne pas la sélection de caractéristiques ou la réduction du nombre de features (C et D).",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Conception d'ensembles', quelle situation de terrain montre le mieux quand utiliser bagging ?",
+      "question": "Quel attribut du boosting aide à corriger les erreurs des modèles faibles précédents?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Conception d'ensembles, weak learner est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer weak learner en production.",
-        "B": "En contexte r\u00e9el sur Conception d'ensembles, bagging est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bagging en production.",
-        "C": "Pendant une revue pre-deploiement, boosting est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer boosting en production tout en surveillant le risque d'optimiser boosting en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Dans une revue pre-deploiement de Conception d'ensembles, l'\u00e9quipe applique stacking pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stacking en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car bagging y sert de levier de d\u00e9cision principal dans Conception d'ensembles. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Conception d'ensembles, weak learner est choisi afin de supporter des arbitrages de pr...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Conception d'ensembles, bagging est choisi afin de supporter des arbitrages de product...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une revue pre-deploiement, boosting est utile pour supporter des arbitrages de production ; l'utili...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une revue pre-deploiement de Conception d'ensembles, l'\u00e9quipe applique stacking pour supporter des arb...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Conception d'ensembles', quel est le role le plus determinant de bagging pour un cas assurance ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Conception d'ensembles, boosting est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer boosting en production.",
-        "B": "Le role de stacking est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stacking en production.",
-        "C": "weak learner sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer weak learner en production pour guider une d\u00e9cision exploitable.",
-        "D": "bagging sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bagging en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie bagging \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Conception d'ensembles, boosting est mobilise pour supporter des arbitrages de production ; l'utiliser...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de stacking est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (weak learner sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux decide...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (bagging sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider qua...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "stacking: pourquoi ce concept est-il crucial pour une \u00e9quipe marketing dans 'Conception d'ensembles' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role de weak learner est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer weak learner en production.",
-        "B": "Le role de stacking est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stacking en production.",
-        "C": "bagging sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bagging en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Conception d'ensembles, boosting est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer boosting en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie stacking \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de weak learner est de supporter des arbitrages de production ; l'utiliser correctement permet de m...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de stacking est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (bagging sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider qua...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Conception d'ensembles, boosting est mobilise pour supporter des arbitrages de production ; l'utiliser...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'Conception d'ensembles', quel exemple met boosting au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une revue pre-deploiement, boosting est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer boosting en production tout en surveillant le risque d'optimiser boosting en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Dans une revue pre-deploiement de Conception d'ensembles, l'\u00e9quipe applique bagging pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bagging en production.",
-        "C": "En contexte r\u00e9el sur Conception d'ensembles, stacking est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stacking en production.",
-        "D": "Pendant une revue pre-deploiement, weak learner est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer weak learner en production tout en surveillant le risque d'optimiser weak learner en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Les poids ajustés accordés aux données mal classées.",
+        "B": "L'utilisation de réseaux de neurones profonds pour chaque modèle faible.",
+        "C": "L'abandon de l'échantillonnage bootstrap au profit d'un entraînement sur l'ensemble des données.",
+        "D": "L'entraînement de chaque modèle faible de manière totalement indépendante."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car boosting y sert de levier de d\u00e9cision principal dans Conception d'ensembles. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une revue pre-deploiement, boosting est utile pour supporter des arbitrages de production ; l'utili...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une revue pre-deploiement de Conception d'ensembles, l'\u00e9quipe applique bagging pour supporter des arbi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Conception d'ensembles, stacking est choisi afin de supporter des arbitrages de produc...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une revue pre-deploiement, weak learner est utile pour supporter des arbitrages de production ; l'u...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Le boosting donne plus de poids aux instances mal classées pour corriger les erreurs des modèles précédents. L'option C décrit une caractéristique non spécifique au boosting et l'option D est incorrecte car les learners ne sont pas indépendants; B est erroné car il n'implique pas nécessairement des réseaux profonds.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Conception d'ensembles', quelle situation de terrain montre le mieux quand utiliser weak learner ?",
+      "question": "Dans une approche de stacking, quel est le rôle des métamodèles?",
       "image_url": null,
       "choices": {
-        "A": "Dans une revue pre-deploiement de Conception d'ensembles, l'\u00e9quipe applique boosting pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer boosting en production.",
-        "B": "En contexte r\u00e9el sur Conception d'ensembles, stacking est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stacking en production.",
-        "C": "En contexte r\u00e9el sur Conception d'ensembles, weak learner est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer weak learner en production.",
-        "D": "Pendant une revue pre-deploiement, bagging est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bagging en production tout en surveillant le risque d'optimiser bagging en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car weak learner y sert de levier de d\u00e9cision principal dans Conception d'ensembles. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une revue pre-deploiement de Conception d'ensembles, l'\u00e9quipe applique boosting pour supporter des arb...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Conception d'ensembles, stacking est choisi afin de supporter des arbitrages de produc...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Conception d'ensembles, weak learner est choisi afin de supporter des arbitrages de pr...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une revue pre-deploiement, bagging est utile pour supporter des arbitrages de production ; l'utilis...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe marketing dans 'Conception d'ensembles', quelle d\u00e9finition de stacking est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "\u00e9valuation offline correspond a un levier avance en apprentissage supervise ; il formalise le role d'\u00e9valuation offline dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Conception d'ensembles.",
-        "B": "Dans Conception d'ensembles, inference online se comprend comme un levier avance en apprentissage supervise ; il formalise le role d'inference online dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Conception d'ensembles, stacking se comprend comme un levier avance en apprentissage supervise ; il formalise le role de stacking dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "feature store designe un levier avance en apprentissage supervise ; il concerne la representation des variables utiles au modele et leur qualit\u00e9 predictive."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de stacking dans Conception d'ensembles, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que feature store, \u00e9valuation offline, inference online restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (\u00e9valuation offline correspond a un levier avance en apprentissage supervise ; il formalise le role d'evalu...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Conception d'ensembles, inference online se comprend comme un levier avance en apprentissage supervise...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Conception d'ensembles, stacking se comprend comme un levier avance en apprentissage supervise ; il fo...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (feature store designe un levier avance en apprentissage supervise ; il concerne la representation des varia...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Conception d'ensembles', quel est le role le plus determinant de weak learner pour un cas e-commerce ?",
-      "image_url": null,
-      "choices": {
-        "A": "weak learner sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer weak learner en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Conception d'ensembles, bagging est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bagging en production.",
-        "C": "Le role de boosting est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer boosting en production.",
-        "D": "stacking sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stacking en production pour guider une d\u00e9cision exploitable."
+        "A": "Combiner les sorties des modèles de base pour améliorer la prédiction finale.",
+        "B": "Former indépendamment chaque modèle de base pour réduire la divergence.",
+        "C": "Filtrer les données pour améliorer prétraitement.",
+        "D": "Réduire le temps de calcul en ignorant des modèles de base."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie weak learner \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (weak learner sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux decide...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Conception d'ensembles, bagging est mobilise pour supporter des arbitrages de production ; l'utiliser ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de boosting est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (stacking sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider qu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Dans le stacking, un métamodèle combine les sorties des modèles de base pour faire une meilleure prédiction. B décrit une caractéristique indépendante au stacking. C et D ne sont pas des propriétés associées aux métamodèles de stacking.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Conception d'ensembles', quelle erreur autour de bagging est la plus critique ?",
+      "question": "Quel est un critère courant pour classifier un 'weak learner' en apprentissage machine?",
       "image_url": null,
       "choices": {
-        "A": "Si stacking est mal utilise, on observe souvent optimiser stacking en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de weak learner est optimiser weak learner en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de bagging est optimiser bagging en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Un risque classique avec boosting est d'optimiser boosting en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de bagging. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si stacking est mal utilise, on observe souvent optimiser stacking en silo et introduire des modes d'echec ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour de weak learner est optimiser weak learner en silo et introduire des modes d'eche...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de bagging est optimiser bagging en silo et introduire des modes d'echec caches a...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec boosting est d'optimiser boosting en silo et introduire des modes d'echec caches ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "boosting: dans un cas sante, quelle interpretation correspond le mieux au schema ML de 'Conception d'ensembles' ?",
-      "image_url": "apprentissage-supervise_conception_d_ensembles_boosting_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur weak learner: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer weak learner en production.",
-        "B": "Le schema illustre une d\u00e9cision basee sur boosting: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer boosting en production.",
-        "C": "Lecture du visuel: bagging est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bagging en production dans Conception d'ensembles.",
-        "D": "Le signal visible est coh\u00e9rent avec stacking, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stacking en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de boosting: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur weak learner: les indices orientent vers supporter des arbitrages...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur boosting: les indices orientent vers supporter des arbitrages de ...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: bagging est mobilise pour supporter des arbitrages de production ; l'utiliser correcteme...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec stacking, car l'objectif est supporter des arbitrages de production ; l...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "bagging: quelle proposition en donne la meilleure d\u00e9finition dans 'Conception d'ensembles' (contexte assurance) ?",
-      "image_url": null,
-      "choices": {
-        "A": "bagging designe un levier avance en apprentissage supervise ; il formalise le role de bagging dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "attribut sensible correspond a un levier avance en apprentissage supervise ; il formalise le role d'attribut sensible dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Conception d'ensembles.",
-        "C": "Dans Conception d'ensembles, audit de biais se comprend comme un levier avance en apprentissage supervise ; il traite l'equite de d\u00e9cision entre groupes sensibles et la conformite des modeles.",
-        "D": "feature store designe un levier avance en apprentissage supervise ; il concerne la representation des variables utiles au modele et leur qualit\u00e9 predictive."
+        "A": "Il performe légèrement au-dessus du hasard.",
+        "B": "Il utilise toujours une seule feature à la fois.",
+        "C": "Il ne nécessite aucune validation.",
+        "D": "Il est fortement régularisé pour éviter le surapprentissage."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de bagging dans Conception d'ensembles, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte assurance, alors que attribut sensible, audit de biais, feature store restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (bagging designe un levier avance en apprentissage supervise ; il formalise le role de bagging dans un pipel...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (attribut sensible correspond a un levier avance en apprentissage supervise ; il formalise le role d'attrib...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Conception d'ensembles, audit de biais se comprend comme un levier avance en apprentissage supervise ;...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (feature store designe un levier avance en apprentissage supervise ; il concerne la representation des varia...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Un 'weak learner' performe légèrement mieux que le hasard, suffisant pour être utilisé dans des techniques d'ensemble comme l'AdaBoost. B et D décrivent des contraintes non spécifiques aux weak learners et C est incorrect car une simple validation basique est souvent requise.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi le boosting peut-il éviter le surapprentissage malgré l'augmentation du nombre de paramètres?",
+      "image_url": null,
+      "choices": {
+        "A": "Il réduit les erreurs de généralisation grâce à une utilisation pondérée des données.",
+        "B": "Il augmente aléatoirement le nombre de features.",
+        "C": "Il diminue la complexité du modèle en supprimant des bases learners.",
+        "D": "Il applique une régularisation stricte sur chaque modèle faible."
+      },
+      "correct_answer": "A",
+      "explanation": "Le boosting ajuste les poids donnés aux erreurs, améliorant la généralisation. B et C sont incorrects car ils ne concernent pas la gestion des erreurs ou des paramètres. D est faux car le boosting intrinsèquement n'implique pas la régularisation stricte.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "En résistance au surapprentissage, pourquoi le bagging peut échouer lorsqu'il est appliqué à des modèles fortement biaisés?",
+      "image_url": null,
+      "choices": {
+        "A": "Parce qu'il ne réduira pas le biais élevé initial du modèle.",
+        "B": "Car il augmente les fonctionnalités pour fournir un ajustement excessif.",
+        "C": "Parce qu'il construit seulement un seul base learner.",
+        "D": "Car il ne modifie pas les distributions de caractéristiques."
+      },
+      "correct_answer": "A",
+      "explanation": "Le bagging diminue la variance mais ne peut réduire le biais du modèle, donc si un modèle est déjà biaisé, combiner ses prédictions ne changera rien. B est irréaliste car il ne change pas le nombre de features. C est faux car le bagging implique plusieurs base learners et D est hors de contexte car ce n'est pas le focus du bagging.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans le stacking, pourquoi est-il important de séparer l'entraînement des métamodèles et des modèles de base?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour éviter les fuites de données et garantir une meilleure généralisation.",
+        "B": "Pour permettre aux métamodèles d'ajouter de nouvelles données exogènes.",
+        "C": "Pour forcer les modèles de base à avoir des poids nuls initiaux.",
+        "D": "Pour s'assurer que chaque modèle de base conserve une forte complexité."
+      },
+      "correct_answer": "A",
+      "explanation": "En séparant l'entraînement, on évite les fuites de données, permettant à chaque modèle de s'entraîner indépendamment des erreurs des autres. B et D ne sont pas nécessaires alors que C n'est techniquement pas pertinent pour le stacking car le poids initial n'est pas la préoccupation ici.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi le boosting est-il considéré comme supérieur au bagging pour les données déséquilibrées?",
+      "image_url": null,
+      "choices": {
+        "A": "Parce qu'il se concentre sur les observations difficiles en ajustant les poids.",
+        "B": "Parce qu'il génère des échantillons parfaitement équilibrés par échantillonnage.",
+        "C": "Parce qu'il combine les modèles les plus biaisés pour réduire l'erreur de compréhension.",
+        "D": "Parce qu'il utilise des combinaisons aléatoires de features."
+      },
+      "correct_answer": "A",
+      "explanation": "Le boosting est efficace sur les données déséquilibrées car il modifie les poids pour se concentrer sur les erreurs difficiles. Contrairement à B, il ne crée pas d'échantillons équilibrés. C est incorrect car il ne se concentre pas sur les modèles biaisés et D n'est pas pertinent en termes de traitement des déséquilibres.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel problème peut survenir dans le stacking si des modèles de base très corrélés sont utilisés?",
+      "image_url": null,
+      "choices": {
+        "A": "Les erreurs risquent de se cumuler, réduisant l'effet de diversification.",
+        "B": "Les modèles peuvent saturer leur capacité de calcul.",
+        "C": "Il normalise les données, perturbant les variables catégoriques.",
+        "D": "Les modèles peuvent devenir linéaires indépendamment de la complexité d'origine."
+      },
+      "correct_answer": "A",
+      "explanation": "Si les modèles de base sont très corrélés, ils sont susceptibles de faire des erreurs similaires, réduisant ainsi l'avantage de diversification propre au stacking. B concerne la capacité de calcul qui n'est pas spécifique à la corrélation. C et D ne se rapportent pas directement à la corrélation entre modèles dans le stacking.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce qu'une erreur classique lorsqu'on évalue le performance d'un weak learner dans un ensemble boosting?",
+      "image_url": null,
+      "choices": {
+        "A": "Considérer sa performance isolée au lieu de son apport global.",
+        "B": "Chercher toujours à augmenter sa complexité.",
+        "C": "Éviter de l'entraîner sur l'ensemble complet d'entraînements.",
+        "D": "Utiliser des métriques basées sur les intervalles de confiance."
+      },
+      "correct_answer": "A",
+      "explanation": "Évaluer un weak learner uniquement sur sa performance individuelle néglige sa contribution au modèle combiné, crucial dans le boosting. B n'est pas nécessaire pour un weak learner. C est erroné car le boosting implique d'entraîner sur toutes les données. D n'est pas pertinent pour la performance individuelle.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans quelles situations le bagging pourrait être préféré au boosting?",
+      "image_url": null,
+      "choices": {
+        "A": "Lorsque la variance du modèle est la principale préoccupation.",
+        "B": "Lorsque la vitesse de convergence est prioritaire.",
+        "C": "Quand l'importance des features individuelles est cruciale.",
+        "D": "Lorsqu'on dispose de très petites quantités de données."
+      },
+      "correct_answer": "A",
+      "explanation": "Le bagging est privilégié lorsque l'on souhaite réduire la variance, en utilisant des échantillons bootstrap multiples. B concerne plutôt le boosting. C n'a pas de rapport direct avec le bagging et D est inexact car le bagging nécessite généralement des jeux de données plus grands.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quels sont les critères principaux pour choisir les modèles de base dans une approche de stacking?",
+      "image_url": null,
+      "choices": {
+        "A": "Diversité et indépendance des erreurs.",
+        "B": "Similitudes de l'architecture des modèles.",
+        "C": "Taille minimale de chaque arbre de décision choisi.",
+        "D": "Uniformité dans le temps de formation des modèles."
+      },
+      "correct_answer": "A",
+      "explanation": "La diversité et l'indépendance des erreurs améliorent la capacité prédictive en stacking en combinant diverses perceptions du problème. B et C ne contribuent pas à la diversification nécessaire. D n'est pas un critère principal, mais plutôt une considération pratique.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une limitation principale du stacking par rapport à d'autres méthodes d'ensemble?",
+      "image_url": null,
+      "choices": {
+        "A": "Complexité et temps d'entraînement potentiellement élevés.",
+        "B": "Risque d'overfitting sur des ensembles de données déséquilibrés.",
+        "C": "Obligation d'utiliser exclusivement des arbres de décisions.",
+        "D": "Nécessité d'une réduction de dimension préalable."
+      },
+      "correct_answer": "A",
+      "explanation": "Le stacking peut souvent être complex et gourmand en ressources, avec des temps d'entraînement élevés. B est plus un problème de boosting. C est faux car le stacking accepte différents modèles. D n'est pas une contrainte absolue mais une option selon la nature des données.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi le boosting est-il particulièrement vulnérable aux bruits dans les données d'entraînement?",
+      "image_url": null,
+      "choices": {
+        "A": "Parce qu'il tend à trop s'ajuster aux exemples avec des erreurs difficiles.",
+        "B": "Parce qu'il minimise les données bruyantes par moyennage.",
+        "C": "Parce qu'il ignore les échantillons avec des prédictions correctes.",
+        "D": "Car il dépend fortement de la consistance entre modèles de base."
+      },
+      "correct_answer": "A",
+      "explanation": "Le boosting tend à accorder plus de poids aux erreurs, y compris celles dues au bruit, ce qui peut mener à un surapprentissage. B est inapplicable car le boosting ne fait pas de moyennage. C est faux car il ne les ignore pas mais les ajuste. D est incorrect car la consistance n'est pas une vulnérabilité spécifiquement liée au bruit.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quand un 'weak learner' devient-il inapproprié pour le boosting?",
+      "image_url": null,
+      "choices": {
+        "A": "Quand le dataset est trop petit pour obtenir une variance suffisante.",
+        "B": "Si le learner atteint facilement de hautes performances sans ensemble.",
+        "C": "Lorsqu'il ne peut dépasser le seuil de hasard.",
+        "D": "S'il dépend de l'échantillonnage bootstrap."
+      },
+      "correct_answer": "C",
+      "explanation": "Un 'weak learner' doit performer légèrement au-dessus du hasard pour être utile en boosting. Si ce n'est pas le cas, son intégration sera inefficace. A concerne le bagging et un excès de variance. B ne pose pas de problème pour le boosting et D est en lien plus avec le bagging que le boosting.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment le stacking pourrait-il théoriquement aider à atténuer un problème de surapprentissage par rapport à d'autres méthodes d'ensemble?",
+      "image_url": null,
+      "choices": {
+        "A": "En combinant méticuleusement des modèles hétérogènes, ce qui augmente la robustesse.",
+        "B": "En fixant le nombre total de modèles de base pour éviter la complexité.",
+        "C": "En favorisant systématiquement les modèles avec un biais faible.",
+        "D": "En échantillonnant les données avec remise, contrairement au bagging."
+      },
+      "correct_answer": "A",
+      "explanation": "Le stacking favorise l'utilisation de divers modèles permettant de capturer différents aspects du problème, ce qui peut atténuer le surapprentissage. B concerne la limitation de la complexité mais pas nécessairement l'atténuation du surapprentissage. C et D sont incorrects et D est une caractéristique du bagging, non du stacking.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une des conditions essentielles pour que le bagging soit efficace?",
+      "image_url": null,
+      "choices": {
+        "A": "Les modèles de base doivent avoir une variance élevée.",
+        "B": "Une forte corrélation entre les modèles est souhaitable.",
+        "C": "Les modèles doivent être basés exclusivement sur le même algorithme.",
+        "D": "Il doit utiliser un ensemble de validation distinct de celui d'entraînement."
+      },
+      "correct_answer": "A",
+      "explanation": "Le bagging est efficace lorsqu'il réduit la variance des modèles de base. Des modèles corrélés ou utilisant un seul algorithme (B et C) limiteraient le bénéfice du bagging. D n'est pas une exigence spécifique mais une pratique d'évaluation générale.",
       "difficulty": "hard"
     }
   ]

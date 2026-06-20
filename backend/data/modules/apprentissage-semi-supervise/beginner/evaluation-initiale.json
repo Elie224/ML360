@@ -5,212 +5,212 @@
   "questions": [
     {
       "type": "text",
-      "question": "drift des labels: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans '\u00c9valuation initiale' ?",
+      "question": "Quel est le rôle d'un jeu de validation labellisé dans l'apprentissage semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur \u00c9valuation initiale, jeu de validation labellis\u00e9 est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "B": "Pendant un atelier de cadrage, pr\u00e9cision des pseudo-labels est utile pour installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher tout en surveillant le risque d'appliquer pr\u00e9cision des pseudo-labels par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique surapprentissage pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surapprentissage en production.",
-        "D": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique drift des labels pour installer un raisonnement fiable des le d\u00e9but ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car drift des labels y sert de levier de d\u00e9cision principal dans \u00c9valuation initiale. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur \u00c9valuation initiale, jeu de validation labellis\u00e9 est choisi afin d'installer un raison...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant un atelier de cadrage, pr\u00e9cision des pseudo-labels est utile pour installer un raisonnement fiable ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique surapprentissage pour installer un rai...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique drift des labels pour installer un rai...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec surapprentissage dans '\u00c9valuation initiale' ?",
-      "image_url": "apprentissage-semi-supervise_evaluation_initiale_surapprentissage_2.png",
-      "choices": {
-        "A": "pr\u00e9cision des pseudo-labels sert a installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher pour guider une d\u00e9cision exploitable.",
-        "B": "Dans \u00c9valuation initiale, drift des labels est mobilise pour installer un raisonnement fiable des le d\u00e9but ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "C": "Dans \u00c9valuation initiale, surapprentissage est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surapprentissage en production.",
-        "D": "Le role de jeu de validation labellis\u00e9 est d'installer un raisonnement fiable des le d\u00e9but ; reduire le risque de surestimer la performance sur donn\u00e9es futures."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de surapprentissage dans \u00c9valuation initiale. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (pr\u00e9cision des pseudo-labels sert a installer un raisonnement fiable des le d\u00e9but ; limiter les faux positif...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans \u00c9valuation initiale, drift des labels est mobilise pour installer un raisonnement fiable des le d\u00e9but ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans \u00c9valuation initiale, surapprentissage est mobilise pour installer un raisonnement fiable des le d\u00e9but ...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de jeu de validation labellis\u00e9 est d'installer un raisonnement fiable des le d\u00e9but ; reduire le ris...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Dans '\u00c9valuation initiale', quel commentaire du schema traduit le mieux le role de drift des labels ?",
-      "image_url": "apprentissage-semi-supervise_evaluation_initiale_drift_des_labels_2.png",
-      "choices": {
-        "A": "Dans \u00c9valuation initiale, jeu de validation labellis\u00e9 est mobilise pour installer un raisonnement fiable des le d\u00e9but ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "B": "Le role de pr\u00e9cision des pseudo-labels est d'installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher.",
-        "C": "surapprentissage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surapprentissage en production pour guider une d\u00e9cision exploitable.",
-        "D": "drift des labels sert a installer un raisonnement fiable des le d\u00e9but ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de drift des labels dans \u00c9valuation initiale. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans \u00c9valuation initiale, jeu de validation labellis\u00e9 est mobilise pour installer un raisonnement fiable des...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de pr\u00e9cision des pseudo-labels est d'installer un raisonnement fiable des le d\u00e9but ; limiter les f...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (surapprentissage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de m...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (drift des labels sert a installer un raisonnement fiable des le d\u00e9but ; detecter rapidement une perte de va...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quel est le principal mode d'echec quand drift des labels est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si drift des labels est mal utilise, on observe souvent appliquer drift des labels par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Le piege principal autour de jeu de validation labellis\u00e9 est appliquer jeu de validation labellis\u00e9 par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Un risque classique avec pr\u00e9cision des pseudo-labels est d'appliquer pr\u00e9cision des pseudo-labels par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Si surapprentissage est mal utilise, on observe souvent appliquer surapprentissage par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "Évaluer les performances du modèle sur des données qu'il n'a pas vues.",
+        "B": "Améliorer la performance initiale du modèle avant l'entraînement.",
+        "C": "Augmenter la taille du jeu d'entraînement en ajoutant des labels.",
+        "D": "Remplacer totalement le jeu de test pour évaluer les performances."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de drift des labels. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si drift des labels est mal utilise, on observe souvent appliquer drift des labels par automatisme sans ver...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de jeu de validation labellis\u00e9 est appliquer jeu de validation labellis\u00e9 par automa...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec pr\u00e9cision des pseudo-labels est d'appliquer pr\u00e9cision des pseudo-labels par autom...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si surapprentissage est mal utilise, on observe souvent appliquer surapprentissage par automatisme sans ver...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Un jeu de validation labellisé est utilisé pour évaluer les performances du modèle pendant l'entraînement sans altérer le modèle lui-même. Option B est fausse car l'amélioration initiale est généralement liée à des hyperparamètres et non au jeu de validation. Option C est fausse parce que le jeu de validation ne sert pas à augmenter la taille de l'entraînement, mais à évaluer. Option D est incorrect parce que le jeu de validation est utilisé pendant l'entraînement, tandis que le jeu de test évalue la performance finale.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "drift des labels: pourquoi ce concept est-il crucial pour une \u00e9quipe banque dans '\u00c9valuation initiale' ?",
+      "question": "Que représente la précision des pseudo-labels dans un modèle semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Le role de surapprentissage est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surapprentissage en production.",
-        "B": "Le role de drift des labels est d'installer un raisonnement fiable des le d\u00e9but ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "C": "jeu de validation labellis\u00e9 sert a installer un raisonnement fiable des le d\u00e9but ; reduire le risque de surestimer la performance sur donn\u00e9es futures pour guider une d\u00e9cision exploitable.",
-        "D": "Dans \u00c9valuation initiale, pr\u00e9cision des pseudo-labels est mobilise pour installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie drift des labels \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de surapprentissage est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de drift des labels est d'installer un raisonnement fiable des le d\u00e9but ; detecter rapidement une ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (jeu de validation labellis\u00e9 sert a installer un raisonnement fiable des le d\u00e9but ; reduire le risque de sure...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans \u00c9valuation initiale, pr\u00e9cision des pseudo-labels est mobilise pour installer un raisonnement fiable de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quelle situation de terrain montre le mieux quand utiliser surapprentissage ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique pr\u00e9cision des pseudo-labels pour installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher.",
-        "B": "En contexte r\u00e9el sur \u00c9valuation initiale, drift des labels est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "C": "En contexte r\u00e9el sur \u00c9valuation initiale, surapprentissage est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surapprentissage en production.",
-        "D": "Pendant un atelier de cadrage, jeu de validation labellis\u00e9 est utile pour installer un raisonnement fiable des le d\u00e9but ; reduire le risque de surestimer la performance sur donn\u00e9es futures tout en surveillant le risque d'appliquer jeu de validation labellis\u00e9 par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car surapprentissage y sert de levier de d\u00e9cision principal dans \u00c9valuation initiale. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique pr\u00e9cision des pseudo-labels pour insta...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur \u00c9valuation initiale, drift des labels est choisi afin d'installer un raisonnement fia...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur \u00c9valuation initiale, surapprentissage est choisi afin d'installer un raisonnement fia...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant un atelier de cadrage, jeu de validation labellis\u00e9 est utile pour installer un raisonnement fiable d...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec jeu de validation labellis\u00e9 dans '\u00c9valuation initiale' ?",
-      "image_url": "apprentissage-semi-supervise_evaluation_initiale_jeu_de_validation_labelise_2.png",
-      "choices": {
-        "A": "Dans \u00c9valuation initiale, surapprentissage est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surapprentissage en production.",
-        "B": "Dans \u00c9valuation initiale, jeu de validation labellis\u00e9 est mobilise pour installer un raisonnement fiable des le d\u00e9but ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "C": "Le role de pr\u00e9cision des pseudo-labels est d'installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher.",
-        "D": "drift des labels sert a installer un raisonnement fiable des le d\u00e9but ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de jeu de validation labellis\u00e9 dans \u00c9valuation initiale. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans \u00c9valuation initiale, surapprentissage est mobilise pour installer un raisonnement fiable des le d\u00e9but ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans \u00c9valuation initiale, jeu de validation labellis\u00e9 est mobilise pour installer un raisonnement fiable des...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de pr\u00e9cision des pseudo-labels est d'installer un raisonnement fiable des le d\u00e9but ; limiter les f...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (drift des labels sert a installer un raisonnement fiable des le d\u00e9but ; detecter rapidement une perte de va...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe banque dans '\u00c9valuation initiale', quelle d\u00e9finition de drift des labels est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "transfert de labels correspond a une notion de base en apprentissage semi supervise ; il formalise le role de transfert de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans \u00c9valuation initiale.",
-        "B": "Dans \u00c9valuation initiale, consistance se comprend comme une notion de base en apprentissage semi supervise ; il formalise le role de consistance dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans \u00c9valuation initiale, drift des labels se comprend comme une notion de base en apprentissage semi supervise ; il mesure une d\u00e9rive entre les conditions d'entrainement et les conditions d'exploitation.",
-        "D": "graphe designe une notion de base en apprentissage semi supervise ; il formalise le role de graphe dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de drift des labels dans \u00c9valuation initiale, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que graphe, transfert de labels, consistance restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (transfert de labels correspond a une notion de base en apprentissage semi supervise ; il formalise le role ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans \u00c9valuation initiale, consistance se comprend comme une notion de base en apprentissage semi supervise ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans \u00c9valuation initiale, drift des labels se comprend comme une notion de base en apprentissage semi super...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (graphe designe une notion de base en apprentissage semi supervise ; il formalise le role de graphe dans un ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quel est le role le plus determinant de surapprentissage pour un cas assurance ?",
-      "image_url": null,
-      "choices": {
-        "A": "surapprentissage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surapprentissage en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans \u00c9valuation initiale, jeu de validation labellis\u00e9 est mobilise pour installer un raisonnement fiable des le d\u00e9but ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "C": "Le role de pr\u00e9cision des pseudo-labels est d'installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher.",
-        "D": "drift des labels sert a installer un raisonnement fiable des le d\u00e9but ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier pour guider une d\u00e9cision exploitable."
+        "A": "Le pourcentage de pseudo-labels corrects parmi tous les pseudo-labels générés.",
+        "B": "La capacité d'un modèle à retenir des informations des données non labellisées.",
+        "C": "La proportion de données labellisées dans le jeu de données total.",
+        "D": "La fidélité des prédictions sur le jeu de test final."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie surapprentissage \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (surapprentissage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de m...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans \u00c9valuation initiale, jeu de validation labellis\u00e9 est mobilise pour installer un raisonnement fiable des...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de pr\u00e9cision des pseudo-labels est d'installer un raisonnement fiable des le d\u00e9but ; limiter les f...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (drift des labels sert a installer un raisonnement fiable des le d\u00e9but ; detecter rapidement une perte de va...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La précision des pseudo-labels se réfère au pourcentage de pseudo-labels générés par le modèle qui sont corrects. Option B est incorrecte car il ne s'agit pas de rétention d'information mais de précision des prédictions. Option C est fausse car elle parle de la proportion des données labellisées, non des pseudo-labels. Option D décrit l'évaluation finale, non les pseudo-labels.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans '\u00c9valuation initiale' (cybersecurite), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment pr\u00e9cision des pseudo-labels ?",
+      "question": "Qu'est-ce que le drift des labels dans le contexte de l'apprentissage semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Dans \u00c9valuation initiale, voisinage se comprend comme une notion de base en apprentissage semi supervise ; il formalise le role de voisinage dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "graphe designe une notion de base en apprentissage semi supervise ; il formalise le role de graphe dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "transfert de labels correspond a une notion de base en apprentissage semi supervise ; il formalise le role de transfert de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans \u00c9valuation initiale.",
-        "D": "pr\u00e9cision des pseudo-labels correspond a une notion de base en apprentissage semi supervise ; il mesure la proportion de predictions positives qui sont effectivement correctes, ce qui structure l'analyse dans \u00c9valuation initiale."
+        "A": "Le changement dans la distribution des classes entre l'entraînement et la phase de test.",
+        "B": "L'accumulation d'erreurs systématiques dans les labels manuels des données.",
+        "C": "La variation des performances du modèle sur un jeu de test au fil du temps.",
+        "D": "Une amélioration progressive des prédictions à chaque itération de pseudo-étiquetage."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de pr\u00e9cision des pseudo-labels dans \u00c9valuation initiale, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que voisinage, graphe, transfert de labels restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans \u00c9valuation initiale, voisinage se comprend comme une notion de base en apprentissage semi supervise ; ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (graphe designe une notion de base en apprentissage semi supervise ; il formalise le role de graphe dans un ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (transfert de labels correspond a une notion de base en apprentissage semi supervise ; il formalise le role ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (pr\u00e9cision des pseudo-labels correspond a une notion de base en apprentissage semi supervise ; il mesure la ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Le drift des labels se réfère à un changement dans la distribution des classes, souvent entre le jeu de données utilisé pour l'entraînement et celui utilisé en test. Ceci peut affecter la performance du modèle. Option B est incorrecte car elle parle d'erreurs systématiques plutôt que de changement de distribution. Option C est mal interprétée; elle se réfère à des performances variables mais ne concerne pas le changement de distribution des labels. Option D est incorrecte car elle décrit une amélioration, pas un changement de distribution.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'impact du surapprentissage dans un modèle semi-supervisé ?",
+      "image_url": null,
+      "choices": {
+        "A": "Le modèle performe bien sur les données d'entraînement mais mal sur les nouvelles données.",
+        "B": "Le modèle devient plus précis au fur et à mesure qu'il s'entraîne.",
+        "C": "Le modèle génère des pseudo-labels de plus en plus précis.",
+        "D": "Le modèle dépend de l'exactitude des étiquettes initiales pour toutes ses futures prédictions."
+      },
+      "correct_answer": "A",
+      "explanation": "Le surapprentissage se manifeste lorsque le modèle apprend tellement de détails sur les données d'entraînement qu'il perd en capacité de généraliser. Option B est incorrecte car une meilleure performance avec l'entraînement peut indiquer un bon apprentissage, pas un surapprentissage. Option C concerne la précision croissante des pseudo-labels, non l'impact du surapprentissage. Option D est incorrecte car elle confond la dépendance sur l'exactitude des étiquettes initiales avec le surapprentissage.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi un jeu de validation labellisé est-il crucial pour évaluer un modèle pendant l'apprentissage semi-supervisé ?",
+      "image_url": null,
+      "choices": {
+        "A": "Il évalue objectivement la généralisation du modèle.",
+        "B": "Il ajuste automatiquement les hyperparamètres du modèle.",
+        "C": "Il interdit l'utilisation des données non labellisées.",
+        "D": "Il permet de prédire la précision finale du modèle."
+      },
+      "correct_answer": "A",
+      "explanation": "Un jeu de validation labellisé est essentiel pour évaluer objectivement comment le modèle généralise sur des données indépendantes de l'entraînement. Option B est incorrecte; l'ajustement automatique des hyperparamètres nécessite souvent une recherche automatisée. Option C est fausse car les données non labellisées ne sont pas interdites et sont intégrales à l'apprentissage semi-supervisé. Option D n’est pas totalement vrai, car il prédit surtout la capacité de généralisation plutôt que la précision pure finale.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Comment une mauvaise précision des pseudo-labels affecte-t-elle un modèle semi-supervisé ?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle conduit à des prédictions de plus en plus erronées.",
+        "B": "Elle entraîne un meilleur ajustement du modèle aux données labelisées.",
+        "C": "Elle n'a aucun impact si suffisamment de données non labelisées sont utilisées.",
+        "D": "Elle corrige automatiquement les erreurs d'étiquetage initiales."
+      },
+      "correct_answer": "A",
+      "explanation": "Une mauvaise précision des pseudo-labels peut introduire des erreurs systématiques qui se propagent, entraînant un modèle biaisé et des prédictions erronées. Option B est incorrecte; les mauvaises pseudo-étiquettes ne mènent pas à un meilleur ajustement sur les données labellisées. Option C est fausse; les erreurs ne sont pas nullifiées par la quantité de données non labellisées. Option D est incorrecte car il n’existe pas de mécanisme automatique pour corriger ces erreurs sans intervention.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Dans quels cas le drift des labels pourrait-il se produire en apprentissage semi-supervisé ?",
+      "image_url": null,
+      "choices": {
+        "A": "Lorsque les conditions environnementales changent pendant les phases de déploiement.",
+        "B": "Lorsque le modèle est exposé uniquement à des données non labelisées.",
+        "C": "Lorsque le jeu de validation est utilisé à la place du jeu d'entraînement.",
+        "D": "Lorsque de nouvelles fonctionnalités sont ajoutées après l'entraînement initial."
+      },
+      "correct_answer": "A",
+      "explanation": "Le drift des labels peut se produire si les conditions changent entre l'entraînement et le déploiement, affectant les classes et leurs distributions. Option B est incorrecte; seulement des données non labelisées sans changement contextuel ne suffisent pas à faire un drift. Option C est incorrecte; l'utilisation inadéquate des jeux ne crée pas directement un drift. Option D traite d'autres évolutions de modèle, pas spécifiquement de drift.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un indicateur commun de surapprentissage dans un modèle semi-supervisé ?",
+      "image_url": null,
+      "choices": {
+        "A": "Écart important entre les performances sur le jeu d'entraînement et le jeu de validation.",
+        "B": "Amélioration constante de la précision sur les pseudo-labels.",
+        "C": "Réduction du temps d'entraînement à chaque itération.",
+        "D": "Augmentation continue du nombre de faux positifs sur le jeu d'entraînement."
+      },
+      "correct_answer": "A",
+      "explanation": "Le surapprentissage est souvent indiqué par une performance très élevée sur le jeu d'entraînement mais notablement inférieure sur le jeu de validation, révélant une mauvaise généralisation. Option B est incorrecte car elle peut indiquer un bon apprentissage. Option C est incorrecte, car le temps d'entraînement n'indique pas le surapprentissage. Option D est incorrecte; une augmentation de faux positifs sur l'entraînement n’est pas classique pour le surapprentissage.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le principal risque si les pseudo-labels introduits dans l'apprentissage semi-supervisé sont incorrects ?",
+      "image_url": null,
+      "choices": {
+        "A": "Le modèle peut apprendre des fonctionnalités erronées, entraînant une généralisation médiocre.",
+        "B": "Il n'y a pas de risque car les erreurs sont corrigées durant l'apprentissage.",
+        "C": "Le modèle deviendra plus performant sur les données non labellisées.",
+        "D": "Les performances du modèle sur les données déjà labellisées diminueront systématiquement."
+      },
+      "correct_answer": "A",
+      "explanation": "Des pseudo-labels incorrects peuvent biaiser l'apprentissage en enseignant des informations erronées, ce qui nuira à la capacité de généralisation du modèle. Option B est incorrecte, car les erreurs de pseudo-labels ne sont pas corrigées automatiquement. Option C est fausse; le modèle ne peut pas mieux performer sur des données non labellisées grâce à de mauvais labels. Option D est incorrecte; la performance sur les données labellisées ne serait pas affectée directement.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Comment identifier un drift des labels dans un jeu de données utilisé pour l'apprentissage semi-supervisé ?",
+      "image_url": null,
+      "choices": {
+        "A": "Comparer la distribution des classes entre plusieurs périodes de temps.",
+        "B": "Observer une augmentation de la précision sur les données d'entraînement.",
+        "C": "Surveiller la réduction du temps de calcul du modèle.",
+        "D": "Analyser l'augmentation des taux de faux négatifs dans les prédictions."
+      },
+      "correct_answer": "A",
+      "explanation": "Le drift des labels peut être détecté en comparant la distribution des classes entre différentes périodes de temps pour voir si un changement s'est produit. Option B est incorrecte, une augmentation de la précision sur les données d'entraînement n'indique pas un drift de labels. Option C est fausse; le temps de calcul n'est pas pertinent pour détecter le drift. Option D décrit une performance décroissante sur les faux négatifs mais ne détecte pas directement un drift.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quelle situation de terrain montre le mieux quand utiliser jeu de validation labellis\u00e9 ?",
+      "question": "Quel scénario pourrait éviter le surapprentissage dans un cadre semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur \u00c9valuation initiale, surapprentissage est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surapprentissage en production.",
-        "B": "En contexte r\u00e9el sur \u00c9valuation initiale, jeu de validation labellis\u00e9 est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "C": "Pendant un atelier de cadrage, pr\u00e9cision des pseudo-labels est utile pour installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher tout en surveillant le risque d'appliquer pr\u00e9cision des pseudo-labels par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique drift des labels pour installer un raisonnement fiable des le d\u00e9but ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier."
+        "A": "Utiliser plusieurs jeux de validation pour différentes parties de l'entraînement.",
+        "B": "Augmenter la taille des pseudo-labels produits.",
+        "C": "Utiliser uniquement des données non labellisées pour l'entraînement.",
+        "D": "Réduire les nombre d'itérations d'entraînement sur les données labellisées."
       },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car jeu de validation labellis\u00e9 y sert de levier de d\u00e9cision principal dans \u00c9valuation initiale. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur \u00c9valuation initiale, surapprentissage est choisi afin d'installer un raisonnement fia...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur \u00c9valuation initiale, jeu de validation labellis\u00e9 est choisi afin d'installer un raison...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant un atelier de cadrage, pr\u00e9cision des pseudo-labels est utile pour installer un raisonnement fiable ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique drift des labels pour installer un rai...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "L'utilisation de multiples jeux de validation peut aider à évaluer et amender le modèle en fonction de ses performances sur différents sous-ensembles et éviter le surapprentissage. Option B est incorrecte; la multiplication des pseudo-labels sans contrôle de leur qualité peut empirer le surapprentissage. Option C est fausse car l'entraînement sans données labellisées peut conduire à des problèmes de convergence et de précision. Option D peut aider mais pourrait aussi sous-entraîner le modèle.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Face a un besoin cybersecurite dans '\u00c9valuation initiale', pourquoi pr\u00e9cision des pseudo-labels est-il prioritaire ?",
+      "question": "Quel facteur contribue le plus à une précision faible des pseudo-labels dans leur génération automatique ?",
       "image_url": null,
       "choices": {
-        "A": "drift des labels sert a installer un raisonnement fiable des le d\u00e9but ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier pour guider une d\u00e9cision exploitable.",
-        "B": "Dans \u00c9valuation initiale, surapprentissage est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surapprentissage en production.",
-        "C": "Dans \u00c9valuation initiale, pr\u00e9cision des pseudo-labels est mobilise pour installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher.",
-        "D": "Le role de jeu de validation labellis\u00e9 est d'installer un raisonnement fiable des le d\u00e9but ; reduire le risque de surestimer la performance sur donn\u00e9es futures."
+        "A": "Un modèle initial mal entraîné.",
+        "B": "La taille des données non-labellisées utilisées.",
+        "C": "L'utilisation de données de test pour l'entraînement.",
+        "D": "Le recours aux données de validation pendant la prédiction."
       },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie pr\u00e9cision des pseudo-labels \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (drift des labels sert a installer un raisonnement fiable des le d\u00e9but ; detecter rapidement une perte de va...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans \u00c9valuation initiale, surapprentissage est mobilise pour installer un raisonnement fiable des le d\u00e9but ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans \u00c9valuation initiale, pr\u00e9cision des pseudo-labels est mobilise pour installer un raisonnement fiable de...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de jeu de validation labellis\u00e9 est d'installer un raisonnement fiable des le d\u00e9but ; reduire le ris...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La qualité des pseudo-labels dépend en grande partie du modèle initial. S'il est mal entraîné, les pseudo-labels seront incorrects. Option B est incorrecte car la taille des données ne joue pas directement sur la précision des pseudo-labels. Option C est onéreuse mais ici incorrecte; les données de test mal utilisées affectent l'évaluation finale, pas les labels. Option D est incorrecte; la validation ne devrait pas être employée dans la prédiction directe.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quel est le role le plus determinant de jeu de validation labellis\u00e9 pour un cas industrie ?",
+      "question": "Quelle est une conséquence possible du drift des labels non détecté en production dans un modèle semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Dans \u00c9valuation initiale, pr\u00e9cision des pseudo-labels est mobilise pour installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher.",
-        "B": "Le role de drift des labels est d'installer un raisonnement fiable des le d\u00e9but ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "C": "surapprentissage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surapprentissage en production pour guider une d\u00e9cision exploitable.",
-        "D": "jeu de validation labellis\u00e9 sert a installer un raisonnement fiable des le d\u00e9but ; reduire le risque de surestimer la performance sur donn\u00e9es futures pour guider une d\u00e9cision exploitable."
+        "A": "Diminution des performances car le modèle n'est plus aligné avec les données actuelles.",
+        "B": "Amélioration des performances grâce à une variance accrue des données.",
+        "C": "Stabilité des performances car le modèle s'adapte au fil du temps.",
+        "D": "Augmentation immédiate de la performance due à la diversification des cas d'usage."
       },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie jeu de validation labellis\u00e9 \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans \u00c9valuation initiale, pr\u00e9cision des pseudo-labels est mobilise pour installer un raisonnement fiable de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de drift des labels est d'installer un raisonnement fiable des le d\u00e9but ; detecter rapidement une ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (surapprentissage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de m...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (jeu de validation labellis\u00e9 sert a installer un raisonnement fiable des le d\u00e9but ; reduire le risque de sure...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Le drift des labels signifie que le modèle peut être confronté à des données qui ne correspondent pas à ce pour quoi il a été formé, entraînant une diminution des performances. Option B est incorrecte; une variance accrue sans adaptation appropriée dégrade la performance. Option C est incorrecte; sans intervention manuelle, un modèle ne s'adapte pas automatiquement à un drift. Option D est incorrecte; la diversification non contrôlée mène généralement à une baisse de performance.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de '\u00c9valuation initiale', quelle erreur autour de surapprentissage est la plus critique ?",
+      "question": "Quel bénéfice principal offre l'apprentissage semi-supervisé par rapport à un modèle purement supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec jeu de validation labellis\u00e9 est d'appliquer jeu de validation labellis\u00e9 par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Si pr\u00e9cision des pseudo-labels est mal utilise, on observe souvent appliquer pr\u00e9cision des pseudo-labels par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Le piege principal autour de drift des labels est appliquer drift des labels par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Le piege principal autour de surapprentissage est appliquer surapprentissage par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "Réduction de la dépendance aux grandes quantités de données labellisées.",
+        "B": "Optimisation de la vitesse d'entraînement grâce à moins de données en entrée.",
+        "C": "Augmentation de la précision uniquement sur les données non labellisées.",
+        "D": "Élimination des besoins de validation croisée grâce à l'usage de pseudo-labels."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de surapprentissage. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec jeu de validation labellis\u00e9 est d'appliquer jeu de validation labellis\u00e9 par automat...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si pr\u00e9cision des pseudo-labels est mal utilise, on observe souvent appliquer pr\u00e9cision des pseudo-labels pa...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour de drift des labels est appliquer drift des labels par automatisme sans verifier ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour de surapprentissage est appliquer surapprentissage par automatisme sans verifier ...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "L'apprentissage semi-supervisé utilise des données non labellisées en combinaison avec quelques données labellisées, réduisant ainsi les besoins en connaissances humaines pour l'étiquetage. Option B est incorrecte; la vitesse d'entraînement n'est pas nécessairement optimisée. Option C est fausse; la précision augmente sur l'ensemble du jeu de données, pas seulement sur les non labellisées. Option D est incorrecte; la validation croisée reste importante pour évaluer la généralisation.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "surapprentissage: quelle proposition en donne la meilleure d\u00e9finition dans '\u00c9valuation initiale' (contexte assurance) ?",
+      "question": "Comment atténuer les effets du surapprentissage dans les modèles d'apprentissage semi-supervisés ?",
       "image_url": null,
       "choices": {
-        "A": "jeu de validation labellis\u00e9 designe une notion de base en apprentissage semi supervise ; il structure l'\u00e9valuation hors entrainement pour estimer la g\u00e9n\u00e9ralisation r\u00e9elle.",
-        "B": "surapprentissage designe une notion de base en apprentissage semi supervise ; il formalise le role de surapprentissage dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "transfert de labels correspond a une notion de base en apprentissage semi supervise ; il formalise le role de transfert de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans \u00c9valuation initiale.",
-        "D": "Dans \u00c9valuation initiale, consistance se comprend comme une notion de base en apprentissage semi supervise ; il formalise le role de consistance dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Intégrer une régularisation supplémentaire pendant l'entraînement.",
+        "B": "Utiliser uniquement des données non-labellisées pour l'entraînement.",
+        "C": "Réduire la taille des pseudo-labels.",
+        "D": "Ignorer le jeu de validation pour se concentrer sur la performance sur le jeu d'entraînement."
       },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de surapprentissage dans \u00c9valuation initiale, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte assurance, alors que transfert de labels, consistance, jeu de validation labellis\u00e9 restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (jeu de validation labellis\u00e9 designe une notion de base en apprentissage semi supervise ; il structure l'eval...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (surapprentissage designe une notion de base en apprentissage semi supervise ; il formalise le role de surap...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (transfert de labels correspond a une notion de base en apprentissage semi supervise ; il formalise le role ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans \u00c9valuation initiale, consistance se comprend comme une notion de base en apprentissage semi supervise ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La régularisation est une technique pour atténuer le surapprentissage, en ajoutant des pénalités qui limitent l'aptitude du modèle à trop s'ajuster aux données d'entraînement. Option B est fausse; exclure les données labellisées complique la validation du modèle. Option C est incorrecte; réduire la taille des pseudo-labels peut aussi enlever des informations pertinentes. Option D est incorrecte; ignorer le jeu de validation empêche de jauger la vraie performance de généralisation.",
       "difficulty": "hard"
     }
   ]

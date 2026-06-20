@@ -4,213 +4,213 @@
   "module": "Controle TD avance",
   "questions": [
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec SARSA dans 'Controle TD avance' ?",
-      "image_url": "apprentissage-par-renforcement_controle_td_avance_sarsa_2.png",
-      "choices": {
-        "A": "Dans Controle TD avance, biais de maximisation est mobilise pour supporter des arbitrages de production ; reduire les disparites de performance entre populations.",
-        "B": "Dans Controle TD avance, SARSA est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SARSA en production.",
-        "C": "Le role de double Q-learning est de supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "D": "eligibility traces sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer eligibility traces en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de SARSA dans Controle TD avance. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Controle TD avance, biais de maximisation est mobilise pour supporter des arbitrages de production ; r...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Controle TD avance, SARSA est mobilise pour supporter des arbitrages de production ; l'utiliser correc...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de double Q-learning est de supporter des arbitrages de production ; am\u00e9liorer une politique d'acti...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (eligibility traces sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
       "type": "text",
-      "question": "Dans 'Controle TD avance', quelle situation de terrain montre le mieux quand utiliser SARSA ?",
+      "question": "Quelle est la différence principale entre SARSA et Q-learning dans le contexte de l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Controle TD avance, biais de maximisation est choisi afin de supporter des arbitrages de production ; reduire les disparites de performance entre populations.",
-        "B": "En contexte r\u00e9el sur Controle TD avance, SARSA est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SARSA en production.",
-        "C": "Pendant une revue pre-deploiement, double Q-learning est utile pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique tout en surveillant le risque d'optimiser double Q-learning en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Dans une revue pre-deploiement de Controle TD avance, l'\u00e9quipe applique eligibility traces pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer eligibility traces en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car SARSA y sert de levier de d\u00e9cision principal dans Controle TD avance. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Controle TD avance, biais de maximisation est choisi afin de supporter des arbitrages ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Controle TD avance, SARSA est choisi afin de supporter des arbitrages de production ; ...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une revue pre-deploiement, double Q-learning est utile pour supporter des arbitrages de production ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une revue pre-deploiement de Controle TD avance, l'\u00e9quipe applique eligibility traces pour supporter d...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "eligibility traces: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Controle TD avance' ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Controle TD avance, SARSA est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SARSA en production.",
-        "B": "Pendant une revue pre-deploiement, double Q-learning est utile pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique tout en surveillant le risque d'optimiser double Q-learning en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Dans une revue pre-deploiement de Controle TD avance, l'\u00e9quipe applique biais de maximisation pour supporter des arbitrages de production ; reduire les disparites de performance entre populations.",
-        "D": "Dans une revue pre-deploiement de Controle TD avance, l'\u00e9quipe applique eligibility traces pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer eligibility traces en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car eligibility traces y sert de levier de d\u00e9cision principal dans Controle TD avance. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Controle TD avance, SARSA est choisi afin de supporter des arbitrages de production ; ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une revue pre-deploiement, double Q-learning est utile pour supporter des arbitrages de production ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une revue pre-deploiement de Controle TD avance, l'\u00e9quipe applique biais de maximisation pour supporte...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une revue pre-deploiement de Controle TD avance, l'\u00e9quipe applique eligibility traces pour supporter d...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Controle TD avance', quel est le role le plus determinant de SARSA pour un cas e-commerce ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Controle TD avance, double Q-learning est mobilise pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "B": "Le role d'eligibility traces est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer eligibility traces en production.",
-        "C": "biais de maximisation sert a supporter des arbitrages de production ; reduire les disparites de performance entre populations pour guider une d\u00e9cision exploitable.",
-        "D": "SARSA sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SARSA en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie SARSA \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Controle TD avance, double Q-learning est mobilise pour supporter des arbitrages de production ; ameli...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role d'eligibility traces est de supporter des arbitrages de production ; l'utiliser correctement perme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (biais de maximisation sert a supporter des arbitrages de production ; reduire les disparites de performance...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (SARSA sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Controle TD avance' (industrie), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment double Q-learning ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Controle TD avance, credit assignment se comprend comme un levier avance en apprentissage par renforcement ; il formalise le role de credit assignment dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "simulateur designe un levier avance en apprentissage par renforcement ; il formalise le role de simulateur dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "shadow mode correspond a un levier avance en apprentissage par renforcement ; il formalise le role de shadow mode dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Controle TD avance.",
-        "D": "double Q-learning correspond a un levier avance en apprentissage par renforcement ; il guide l'apprentissage de d\u00e9cisions sequentielles en maximisant un signal de recompense, ce qui structure l'analyse dans Controle TD avance."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de double Q-learning dans Controle TD avance, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte industrie, alors que credit assignment, simulateur, shadow mode restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Controle TD avance, credit assignment se comprend comme un levier avance en apprentissage par renforce...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (simulateur designe un levier avance en apprentissage par renforcement ; il formalise le role de simulateur ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (shadow mode correspond a un levier avance en apprentissage par renforcement ; il formalise le role de shado...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (double Q-learning correspond a un levier avance en apprentissage par renforcement ; il guide l'apprentissag...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec biais de maximisation dans 'Controle TD avance' ?",
-      "image_url": "apprentissage-par-renforcement_controle_td_avance_biais_de_maximisation_2.png",
-      "choices": {
-        "A": "double Q-learning sert a supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Controle TD avance, eligibility traces est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer eligibility traces en production.",
-        "C": "Dans Controle TD avance, biais de maximisation est mobilise pour supporter des arbitrages de production ; reduire les disparites de performance entre populations.",
-        "D": "Le role de SARSA est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SARSA en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de biais de maximisation dans Controle TD avance. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (double Q-learning sert a supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous inc...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Controle TD avance, eligibility traces est mobilise pour supporter des arbitrages de production ; l'ut...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Controle TD avance, biais de maximisation est mobilise pour supporter des arbitrages de production ; r...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de SARSA est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin industrie dans 'Controle TD avance', pourquoi double Q-learning est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "eligibility traces sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer eligibility traces en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Controle TD avance, biais de maximisation est mobilise pour supporter des arbitrages de production ; reduire les disparites de performance entre populations.",
-        "C": "Dans Controle TD avance, double Q-learning est mobilise pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "D": "Le role de SARSA est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SARSA en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie double Q-learning \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (eligibility traces sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Controle TD avance, biais de maximisation est mobilise pour supporter des arbitrages de production ; r...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Controle TD avance, double Q-learning est mobilise pour supporter des arbitrages de production ; ameli...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de SARSA est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Controle TD avance', quel commentaire du schema traduit le mieux le role d'eligibility traces ?",
-      "image_url": "apprentissage-par-renforcement_controle_td_avance_eligibility_traces_2.png",
-      "choices": {
-        "A": "Dans Controle TD avance, SARSA est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SARSA en production.",
-        "B": "Le role de double Q-learning est de supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "C": "biais de maximisation sert a supporter des arbitrages de production ; reduire les disparites de performance entre populations pour guider une d\u00e9cision exploitable.",
-        "D": "eligibility traces sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer eligibility traces en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'eligibility traces dans Controle TD avance. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Controle TD avance, SARSA est mobilise pour supporter des arbitrages de production ; l'utiliser correc...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de double Q-learning est de supporter des arbitrages de production ; am\u00e9liorer une politique d'acti...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (biais de maximisation sert a supporter des arbitrages de production ; reduire les disparites de performance...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (eligibility traces sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux ...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Controle TD avance', quelle erreur autour de SARSA est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si eligibility traces est mal utilise, on observe souvent optimiser eligibility traces en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de biais de maximisation est optimiser biais de maximisation en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de SARSA est optimiser SARSA en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Un risque classique avec double Q-learning est d'optimiser double Q-learning en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de SARSA. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si eligibility traces est mal utilise, on observe souvent optimiser eligibility traces en silo et introduir...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour de biais de maximisation est optimiser biais de maximisation en silo et introduir...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de SARSA est optimiser SARSA en silo et introduire des modes d'echec caches au de...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec double Q-learning est d'optimiser double Q-learning en silo et introduire des mod...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Controle TD avance', quel est le principal mode d'echec quand eligibility traces est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si eligibility traces est mal utilise, on observe souvent optimiser eligibility traces en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de SARSA est optimiser SARSA en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Un risque classique avec double Q-learning est d'optimiser double Q-learning en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Si biais de maximisation est mal utilise, on observe souvent optimiser biais de maximisation en silo et introduire des modes d'echec caches au deploiement."
+        "A": "SARSA utilise la prochaine action choisie par la politique, tandis que Q-learning utilise l'action qui maximise la valeur Q.",
+        "B": "SARSA met à jour les valeurs Q après chaque épisode, tandis que Q-learning met à jour après chaque étape.",
+        "C": "SARSA est un algorithme hors ligne, tandis que Q-learning est en ligne.",
+        "D": "SARSA nécessite un modèle de l'environnement, tandis que Q-learning n'en nécessite pas."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'eligibility traces. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si eligibility traces est mal utilise, on observe souvent optimiser eligibility traces en silo et introduir...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de SARSA est optimiser SARSA en silo et introduire des modes d'echec caches au de...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec double Q-learning est d'optimiser double Q-learning en silo et introduire des mod...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si biais de maximisation est mal utilise, on observe souvent optimiser biais de maximisation en silo et int...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "SARSA, ou State-Action-Reward-State-Action, est un algorithme on-policy, ce qui signifie qu'il met à jour les valeurs Q en utilisant la prochaine action choisie par la politique actuelle. En revanche, Q-learning est off-policy et met à jour en considérant la meilleure action possible. B est faux car les deux algorithmes peuvent mettre à jour à chaque étape. C est incorrect car les deux sont des algorithmes en ligne. D est incorrect car aucun des deux n'exige un modèle de l’environnement.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "SARSA: quelle proposition en donne la meilleure d\u00e9finition dans 'Controle TD avance' (contexte e-commerce) ?",
+      "question": "Quel problème résout le double Q-learning par rapport au Q-learning classique?",
       "image_url": null,
       "choices": {
-        "A": "SARSA designe un levier avance en apprentissage par renforcement ; il formalise le role de SARSA dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "equilibre correspond a un levier avance en apprentissage par renforcement ; il formalise le role d'equilibre dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Controle TD avance.",
-        "C": "Dans Controle TD avance, credit assignment se comprend comme un levier avance en apprentissage par renforcement ; il formalise le role de credit assignment dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "simulateur designe un levier avance en apprentissage par renforcement ; il formalise le role de simulateur dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Il réduit le biais de surévaluation des estimations de valeurs d'action.",
+        "B": "Il détermine automatiquement la meilleure politique sans exploration.",
+        "C": "Il met à jour les valeurs Q sans nécessiter de fonction de récompense.",
+        "D": "Il résout le problème de convergence des valeurs d'état-action."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de SARSA dans Controle TD avance, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que equilibre, credit assignment, simulateur restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (SARSA designe un levier avance en apprentissage par renforcement ; il formalise le role de SARSA dans un pi...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (equilibre correspond a un levier avance en apprentissage par renforcement ; il formalise le role d'equilib...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Controle TD avance, credit assignment se comprend comme un levier avance en apprentissage par renforce...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (simulateur designe un levier avance en apprentissage par renforcement ; il formalise le role de simulateur ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Le double Q-learning résout le biais de surévaluation typique des algorithmes de Q-learning en utilisant deux ensembles de valeurs Q pour décomposer l'estimation en deux étapes distinctes. B est faux car l'exploration est nécessaire pour déterminer une politique optimale. C est incorrect car une fonction de récompense est essentielle pour la mise à jour des valeurs Q. D est incorrect car le problème de convergence n'est pas spécifique à Q-learning, mais à comment il est implémenté.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour un cas operationnel de 'Controle TD avance', quel exemple met double Q-learning au c\u0153ur de la d\u00e9cision ?",
+      "question": "Dans le contexte de l'apprentissage par renforcement avec traces d'éligibilité, qu'est-ce qu'une trace d'éligibilité?",
       "image_url": null,
       "choices": {
-        "A": "Pendant une revue pre-deploiement, double Q-learning est utile pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique tout en surveillant le risque d'optimiser double Q-learning en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Dans une revue pre-deploiement de Controle TD avance, l'\u00e9quipe applique SARSA pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SARSA en production.",
-        "C": "En contexte r\u00e9el sur Controle TD avance, eligibility traces est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer eligibility traces en production.",
-        "D": "Pendant une revue pre-deploiement, biais de maximisation est utile pour supporter des arbitrages de production ; reduire les disparites de performance entre populations tout en surveillant le risque d'optimiser biais de maximisation en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Un mécanisme qui attribue du crédit aux états et actions passés proportionnellement à leur durée depuis leur apparition.",
+        "B": "Un algorithme de planification visant à anticiper les actions futures.",
+        "C": "Une méthode pour réduire la variance des mises à jour des valeurs d'action.",
+        "D": "Une approche pour diminuer les besoins en mémoire lors de l'apprentissage par renforcement."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car double Q-learning y sert de levier de d\u00e9cision principal dans Controle TD avance. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une revue pre-deploiement, double Q-learning est utile pour supporter des arbitrages de production ...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une revue pre-deploiement de Controle TD avance, l'\u00e9quipe applique SARSA pour supporter des arbitrages...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Controle TD avance, eligibility traces est choisi afin de supporter des arbitrages de ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une revue pre-deploiement, biais de maximisation est utile pour supporter des arbitrages de product...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Les traces d'éligibilité sont un mécanisme qui étend l'attribution des récompenses aux états et actions précédents dans une trajectoire, pondérées par leur distance temporelle. B est faux car les traces ne planifient pas les actions futures. C est erroné car elles ne visent pas nécessairement à réduire la variance mais à améliorer l'apprentissage. D est faux car elles augmentent en fait le besoin de stockage pour conserver les traces.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Controle TD avance', quel est le role le plus determinant de biais de maximisation pour un cas banque ?",
+      "question": "Comment le biais de maximisation impacte-t-il les algorithmes d'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "biais de maximisation sert a supporter des arbitrages de production ; reduire les disparites de performance entre populations pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Controle TD avance, SARSA est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SARSA en production.",
-        "C": "Le role de double Q-learning est de supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "D": "eligibility traces sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer eligibility traces en production pour guider une d\u00e9cision exploitable."
+        "A": "Il conduit à une surévaluation des valeurs Q lorsque des actions optimales sont systématiquement sélectionnées.",
+        "B": "Il empêche l'algorithme de converger vers une solution optimale.",
+        "C": "Il cause une sous-évaluation systématique des récompenses immédiates.",
+        "D": "Il améliore la stabilité des estimations de la politique optimale."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie biais de maximisation \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (biais de maximisation sert a supporter des arbitrages de production ; reduire les disparites de performance...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Controle TD avance, SARSA est mobilise pour supporter des arbitrages de production ; l'utiliser correc...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de double Q-learning est de supporter des arbitrages de production ; am\u00e9liorer une politique d'acti...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (eligibility traces sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le biais de maximisation dans les algorithmes d'apprentissage par renforcement survient lorsque les valeurs Q sont surévaluées en raison du bruit dans les échantillons, car les algorithmes comme Q-learning choisissent systématiquement les actions optimales dans leur estimation. B est incorrect car ce biais n'empêche pas nécessairement la convergence. C est faux car le biais affecte les estimations des actions futures, pas les récompenses immédiates. D est incorrect car le biais de maximisation ajoute de l'instabilité dans les estimations.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi l'utilisation de traces d'éligibilité est-elle pertinente dans l'apprentissage par renforcement?",
+      "image_url": null,
+      "choices": {
+        "A": "Elles permettent une mise à jour plus rapide des valeurs d'état-action en intégrant l'historique des transitions.",
+        "B": "Elles facilitent l'exploration exhaustive de l'espace d'état.",
+        "C": "Elles garantissent la convergence des politiques de manière déterministe.",
+        "D": "Elles éliminent totalement le besoin d'une fonction de politique pour l'apprentissage."
+      },
+      "correct_answer": "A",
+      "explanation": "Les traces d'éligibilité permettent d'accélérer la propagation du retour en intégrant les transitions passées au sein d'un épisode pour ajuster plus rapidement les valeurs Q. B est faux parce que les traces ne se concentrent pas sur l'exploration, mais plutôt sur l'exploitation de l'information de trajectoires passées. C est incorrect car elles ne garantissent pas la convergence en soi, cela dépend du choix des paramètres. D est faux car une fonction de politique reste nécessaire pour guider l'agent dans la sélection des actions.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le principe fondamental du SARSA (State-Action-Reward-State-Action) dans l'apprentissage par renforcement?",
+      "image_url": null,
+      "choices": {
+        "A": "Il met à jour les valeurs Q en utilisant l'action réellement choisie par l'agent.",
+        "B": "Il met à jour les valeurs Q en utilisant toujours l'action ayant la plus grande valeur Q possible.",
+        "C": "Il ne met à jour les valeurs Q que lorsque l'agent atteint un état terminal.",
+        "D": "Il met à jour les valeurs Q en ignorant l'état suivant de l'environnement."
+      },
+      "correct_answer": "A",
+      "explanation": "Le SARSA est appelé on-policy car il met à jour la valeur en fonction de l'action effectivement réalisée par l'agent. La réponse B est fausse car elle décrit plutôt le Q-learning. La réponse C est incorrecte car l'actualisation dans SARSA est effectuée à chaque étape, pas seulement dans un état terminal. La réponse D est fausse car le SARSA tient compte de l'état suivant pour calculer la récompense future.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la principale différence entre l'algorithme SARSA et Q-learning en termes de mise à jour de la politique?",
+      "image_url": null,
+      "choices": {
+        "A": "SARSA met à jour en utilisant l'action réellement prise tandis que Q-learning utilise la meilleure action possible.",
+        "B": "SARSA utilise un modèle de l'environnement, contrairement à Q-learning.",
+        "C": "SARSA ne met pas à jour ses valeurs d'état-action à chaque étape.",
+        "D": "Q-learning met à jour en temps réel et SARSA de façon différée."
+      },
+      "correct_answer": "A",
+      "explanation": "SARSA, un acronyme pour State-Action-Reward-State-Action, met à jour ses valeurs en fonction de l'action réellement suivie dans l'épisode. C'est une méthode de contrôle « on-policy ». En revanche, Q-learning utilise la meilleure action possible (politique optimale) lors de sa mise à jour, ce qui en fait une méthode « off-policy ». Réponse B est fausse car ni SARSA ni Q-learning n'utilisent de modèle de l'environnement. Réponse C est incorrecte, car les deux algorithmes mettent à jour à chaque étape. Réponse D est fausse parce que les deux algorithmes mettent à jour en temps réel.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "En double Q-learning, comment la sélection et l'évaluation de l'action sont-elles réparties?",
+      "image_url": null,
+      "choices": {
+        "A": "La sélection de l'action utilise la première fonction Q et l'évaluation de l'action utilise la seconde fonction Q.",
+        "B": "Les deux, la sélection et l'évaluation, utilisent la première fonction Q seulement.",
+        "C": "La sélection d'actions utilise des valeurs moyennes des deux fonctions Q.",
+        "D": "L'évaluation de l'action n'utilise pas de fonction Q."
+      },
+      "correct_answer": "A",
+      "explanation": "En double Q-learning, deux fonctions Q distinctes sont maintenues, et la sélection de l'action optimale est effectuée à partir de l'une tandis que l'évaluation de cette action est faite à l'aide de la seconde fonction Q. Réponse B est incorrecte car les deux étapes n’utilisent pas la même fonction Q. Réponse C est fausse parce que l’algorithme ne réalise pas de moyennes entre les différentes valeurs. Réponse D est incorrecte, l'évaluation utilise bien une fonction Q.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans le contexte des traces d'éligibilité, que mesure le paramètre lambda?",
+      "image_url": null,
+      "choices": {
+        "A": "La vitesse de décroissance de la trace d'éligibilité.",
+        "B": "La learning rate des algorithmes de renforcement.",
+        "C": "L'exploration par rapport à l'exploitation.",
+        "D": "La fréquence de l'actualisation des récompenses."
+      },
+      "correct_answer": "A",
+      "explanation": "Lambda dans le cadre des traces d'éligibilité contrôle la vitesse à laquelle les traces d'éligibilité se dégradent avec le temps. Réponse B est fausse car elle concerne le taux d'apprentissage. Réponse C est incorrecte, car elle se rapporte généralement au tuning du facteur d'exploration/exploitation souvent noté epsilon. Réponse D est erronée car ne correspond pas au rôle du paramètre lambda.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel problème le biais de maximisation vise-t-il à corriger dans les algorithmes de renforcement?",
+      "image_url": null,
+      "choices": {
+        "A": "L'exagération de l'impact de récompenses observées lors de la sélection des actions.",
+        "B": "L'incapacité à explorer de nouvelles actions en raison de l'exploitation.",
+        "C": "La lente convergence due à la faible learning rate.",
+        "D": "L'oubli des anciennes expériences dans la mise à jour de la politique."
+      },
+      "correct_answer": "A",
+      "explanation": "Le biais de maximisation survient lorsque les algorithmes de renforcement surestiment les valeurs d'état-action en raison de l'utilisation systématique des valeurs maximales estimées par une seule fonction Q. Réponse B est fausse, car elle se concentre sur le problème d'exploration/exploitation. Réponse C est incorrecte, il s'agit d'un problème lié au taux d'apprentissage. Réponse D est à côté du problème car il ne concerne pas la mise à jour des politiques.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Controle TD avance', quelle situation de terrain montre le mieux quand utiliser biais de maximisation ?",
+      "question": "Comment SARSA peut-il être comparé à Q-learning en termes de convergence dans des environnements dynamiques?",
       "image_url": null,
       "choices": {
-        "A": "Dans une revue pre-deploiement de Controle TD avance, l'\u00e9quipe applique double Q-learning pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "B": "En contexte r\u00e9el sur Controle TD avance, eligibility traces est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer eligibility traces en production.",
-        "C": "En contexte r\u00e9el sur Controle TD avance, biais de maximisation est choisi afin de supporter des arbitrages de production ; reduire les disparites de performance entre populations.",
-        "D": "Pendant une revue pre-deploiement, SARSA est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SARSA en production tout en surveillant le risque d'optimiser SARSA en silo et introduire des modes d'echec caches au deploiement."
+        "A": "SARSA converge mieux que Q-learning dans les environnements changeants.",
+        "B": "Q-learning converge plus rapidement que SARSA dans tous les environnements.",
+        "C": "SARSA ne convergera jamais dans les environnements dynamiques.",
+        "D": "L'algorithme SARSA est défini pour les environnements statiques uniquement."
       },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car biais de maximisation y sert de levier de d\u00e9cision principal dans Controle TD avance. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une revue pre-deploiement de Controle TD avance, l'\u00e9quipe applique double Q-learning pour supporter de...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Controle TD avance, eligibility traces est choisi afin de supporter des arbitrages de ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Controle TD avance, biais de maximisation est choisi afin de supporter des arbitrages ...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une revue pre-deploiement, SARSA est utile pour supporter des arbitrages de production ; l'utiliser...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "SARSA, en tant qu'algorithme « on-policy », s'adapte mieux aux environnements dynamiques car il prend en compte les actions réellement suivies. Réponse B est fausse car Q-learning peut être moins stable dans les environnements dynamiques. Réponse C est incorrecte car SARSA peut converger, bien que potentiellement plus lentement. Réponse D est erronée, SARSA n'est pas limité aux environnements statiques.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "eligibility traces: pourquoi ce concept est-il crucial pour une \u00e9quipe cybersecurite dans 'Controle TD avance' ?",
+      "question": "Dans un contexte de traces d'éligibilité, que signifie une valeur de lambda égale à 1?",
       "image_url": null,
       "choices": {
-        "A": "Le role de biais de maximisation est de supporter des arbitrages de production ; reduire les disparites de performance entre populations.",
-        "B": "Le role d'eligibility traces est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer eligibility traces en production.",
-        "C": "SARSA sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SARSA en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Controle TD avance, double Q-learning est mobilise pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique."
+        "A": "L'algorithme se rapproche de la méthode Monte Carlo.",
+        "B": "L'algorithme se désengage complètement des updates arriérés.",
+        "C": "Aucune mise à jour n'est appliquée aux valeurs d'état-action.",
+        "D": "Les traces d'éligibilité ne décayent jamais dans le temps."
       },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie eligibility traces \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de biais de maximisation est de supporter des arbitrages de production ; reduire les disparites de ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role d'eligibility traces est de supporter des arbitrages de production ; l'utiliser correctement perme...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (SARSA sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Controle TD avance, double Q-learning est mobilise pour supporter des arbitrages de production ; ameli...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Avec lambda = 1, les traces d'éligibilité n'ont pas de décroissance, ce qui fait que l'algorithme se rapproche de l'apprentissage par renforcement total type Monte Carlo. Réponse B est fausse car une valeur de 1 implique à l'inverse une pleine implication des mises à jour passées. Réponse C est incorrecte car des mises à jour se produisent toujours. Réponse D exagère, car bien que la décroissance soit nulle, tout ne reste pas éternellement en mémoire.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle stratégie est employée par le double Q-learning pour raccourcir le biais de maximisation?",
+      "image_url": null,
+      "choices": {
+        "A": "Utilisation de deux estimations séparées pour réduire la corrélation.",
+        "B": "Incorporation d'un modèle probabiliste pour les choix d'action.",
+        "C": "Augmentation indéfinie du taux d'exploration epsilon.",
+        "D": "Rendu des récompenses pour chaque action moins aléatoires."
+      },
+      "correct_answer": "A",
+      "explanation": "Le double Q-learning utilise deux évaluations différentes des actions pour désolidariser le potentiel biaisé des estimations, limitant ainsi la corrélation et le biais de maximisation. Réponse B est incorrecte, car double Q-learning ne repose pas sur des modèles probabilistes de choix. Réponse C est incorrecte, car augmenter epsilon réduirait l'exploitation mais est orthogonal au biais de maximisation. Réponse D est fausse, car la distribution des récompenses n'est pas changée.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment les traces d'éligibilité améliorent-elles l'efficacité de l'apprentissage dans les algorithmes comme SARSA?",
+      "image_url": null,
+      "choices": {
+        "A": "En permettant des mises à jour plus rapides en intégrant plusieurs étapes du passé en une seule fois.",
+        "B": "En augmentant le taux d'apprentissage gamma au-delà de 1 pour une convergence rapide.",
+        "C": "En ignorant complètement les erreurs de prédiction futures.",
+        "D": "En redoublant la taille de l'échantillon de données à chaque itération."
+      },
+      "correct_answer": "A",
+      "explanation": "Les traces d'éligibilité améliorent l'efficacité de l'apprentissage en intégrant des informations de plusieurs étapes passées à une mise à jour unique, ce qui accélère la convergence par rapport aux méthodes traditionnelles par étape unique. Réponse B est incorrecte, gamma doit rester dans l'intervalle [0,1]. Réponse C est fausse, les traces d'éligibilité ne négligent pas les étapes futures. Réponse D est incorrecte, elles n'augmentent pas l'échantillon de données.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi le double Q-learning peut-il être plus efficace que le Q-learning classique?",
+      "image_url": null,
+      "choices": {
+        "A": "Il réduit l'usage excessif des valeurs maximales biaisées dans l'estimation des récompenses.",
+        "B": "Il abaisse automatiquement le taux d'exploration selon l'environnement.",
+        "C": "Il utilise un modèle supervisé pour prédire les meilleures actions.",
+        "D": "Il supprime la phase d'exploration dès les premiers essais réussis."
+      },
+      "correct_answer": "A",
+      "explanation": "Le double Q-learning est plus efficace car il réduit le biais de maximisation en utilisant deux ensembles de valeurs d'état-action Q, limitant ainsi l'utilisation excessive et potentiellement faussée des estimations maximales. Réponse B est incorrecte car le double Q-learning ne modifie pas dynamiquement epsilon. Réponse C est fausse, car il s'agit toujours d'un apprentissage par renforcement non supervisé. Réponse D est incorrecte, une exploration suffisante reste nécessaire pour de bonnes performances.",
       "difficulty": "hard"
     }
   ]

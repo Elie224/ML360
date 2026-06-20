@@ -5,226 +5,226 @@
   "questions": [
     {
       "type": "text",
-      "question": "Dans 'Clustering par densite' (sante), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment epsilon ?",
+      "question": "Qu'est-ce que DBSCAN optimise lors de la formation de clusters?",
       "image_url": null,
       "choices": {
-        "A": "Dans Clustering par densite, choix de k se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de choix de k dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "liaison simple designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de liaison simple dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "liaison complete correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de liaison complete dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Clustering par densite.",
-        "D": "epsilon correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role d'epsilon dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Clustering par densite."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'epsilon dans Clustering par densite, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que choix de k, liaison simple, liaison complete restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Clustering par densite, choix de k se comprend comme un concept interm\u00e9diaire en apprentissage non sup...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (liaison simple designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de li...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (liaison complete correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le rol...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (epsilon correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role d'epsi...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec DBSCAN dans 'Clustering par densite' ?",
-      "image_url": "apprentissage-non-supervise_clustering_par_densite_dbscan_2.png",
-      "choices": {
-        "A": "Dans Clustering par densite, points bruit est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer points bruit en production.",
-        "B": "Dans Clustering par densite, DBSCAN est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites.",
-        "C": "Le role d'epsilon est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer epsilon en production.",
-        "D": "min_samples sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer min_samples en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de DBSCAN dans Clustering par densite. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Clustering par densite, points bruit est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Clustering par densite, DBSCAN est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; extraire...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role d'epsilon est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (min_samples sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux dec...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "min_samples: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Clustering par densite' ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Clustering par densite, DBSCAN est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites.",
-        "B": "Pendant une phase d'experimentation, epsilon est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer epsilon en production tout en surveillant le risque de sur-optimiser epsilon localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Dans une phase d'experimentation de Clustering par densite, l'\u00e9quipe applique points bruit pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer points bruit en production.",
-        "D": "Dans une phase d'experimentation de Clustering par densite, l'\u00e9quipe applique min_samples pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer min_samples en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car min_samples y sert de levier de d\u00e9cision principal dans Clustering par densite. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Clustering par densite, DBSCAN est choisi afin de fiabiliser les d\u00e9cisions d'experimen...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une phase d'experimentation, epsilon est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une phase d'experimentation de Clustering par densite, l'\u00e9quipe applique points bruit pour fiabiliser ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une phase d'experimentation de Clustering par densite, l'\u00e9quipe applique min_samples pour fiabiliser l...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin sante dans 'Clustering par densite', pourquoi epsilon est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "min_samples sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer min_samples en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Clustering par densite, points bruit est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer points bruit en production.",
-        "C": "Dans Clustering par densite, epsilon est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer epsilon en production.",
-        "D": "Le role de DBSCAN est de fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie epsilon \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (min_samples sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux dec...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Clustering par densite, points bruit est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Clustering par densite, epsilon est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utili...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de DBSCAN est de fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sa...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec points bruit dans 'Clustering par densite' ?",
-      "image_url": "apprentissage-non-supervise_clustering_par_densite_points_bruit_2.png",
-      "choices": {
-        "A": "epsilon sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer epsilon en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Clustering par densite, min_samples est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer min_samples en production.",
-        "C": "Dans Clustering par densite, points bruit est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer points bruit en production.",
-        "D": "Le role de DBSCAN est de fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de points bruit dans Clustering par densite. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (epsilon sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Clustering par densite, min_samples est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'u...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Clustering par densite, points bruit est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de DBSCAN est de fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sa...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Clustering par densite', quelle situation de terrain montre le mieux quand utiliser DBSCAN ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Clustering par densite, points bruit est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer points bruit en production.",
-        "B": "En contexte r\u00e9el sur Clustering par densite, DBSCAN est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites.",
-        "C": "Pendant une phase d'experimentation, epsilon est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer epsilon en production tout en surveillant le risque de sur-optimiser epsilon localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation de Clustering par densite, l'\u00e9quipe applique min_samples pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer min_samples en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car DBSCAN y sert de levier de d\u00e9cision principal dans Clustering par densite. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Clustering par densite, points bruit est choisi afin de fiabiliser les d\u00e9cisions d'exp...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Clustering par densite, DBSCAN est choisi afin de fiabiliser les d\u00e9cisions d'experimen...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, epsilon est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation de Clustering par densite, l'\u00e9quipe applique min_samples pour fiabiliser l...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Clustering par densite', quel est le role le plus determinant de DBSCAN pour un cas assurance ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Clustering par densite, epsilon est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer epsilon en production.",
-        "B": "Le role de min_samples est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer min_samples en production.",
-        "C": "points bruit sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer points bruit en production pour guider une d\u00e9cision exploitable.",
-        "D": "DBSCAN sert a fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie DBSCAN \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Clustering par densite, epsilon est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utili...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de min_samples est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (points bruit sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (DBSCAN sert a fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels e...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Clustering par densite', quel commentaire du schema traduit le mieux le role de min_samples ?",
-      "image_url": "apprentissage-non-supervise_clustering_par_densite_min_samples_2.png",
-      "choices": {
-        "A": "Dans Clustering par densite, DBSCAN est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites.",
-        "B": "Le role d'epsilon est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer epsilon en production.",
-        "C": "points bruit sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer points bruit en production pour guider une d\u00e9cision exploitable.",
-        "D": "min_samples sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer min_samples en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de min_samples dans Clustering par densite. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Clustering par densite, DBSCAN est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; extraire...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role d'epsilon est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (points bruit sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux de...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (min_samples sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux dec...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Clustering par densite', quel est le principal mode d'echec quand min_samples est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si min_samples est mal utilise, on observe souvent sur-optimiser min_samples localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de DBSCAN est sur-optimiser DBSCAN localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Un risque classique avec epsilon est de sur-optimiser epsilon localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Si points bruit est mal utilise, on observe souvent sur-optimiser points bruit localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "La densité des points dans une région donnée",
+        "B": "La distance moyenne entre tous les points",
+        "C": "La symétrie des clusters formés",
+        "D": "Le nombre de clusters pré-définis"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de min_samples. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si min_samples est mal utilise, on observe souvent sur-optimiser min_samples localement en ignorant ses int...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de DBSCAN est sur-optimiser DBSCAN localement en ignorant ses interactions avec f...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec epsilon est de sur-optimiser epsilon localement en ignorant ses interactions avec ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si points bruit est mal utilise, on observe souvent sur-optimiser points bruit localement en ignorant ses i...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
+      "explanation": "DBSCAN (Density-Based Spatial Clustering of Applications with Noise) se concentre sur des régions à haute densité pour former des clusters. Il ne se base pas sur la distance moyenne (B), la symétrie (C), ni sur un nombre pré-défini de clusters (D).",
+      "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Pour un cas operationnel de 'Clustering par densite', quel exemple met epsilon au c\u0153ur de la d\u00e9cision ?",
+      "question": "Quelle est l'utilité du paramètre 'epsilon' dans DBSCAN?",
       "image_url": null,
       "choices": {
-        "A": "Pendant une phase d'experimentation, epsilon est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer epsilon en production tout en surveillant le risque de sur-optimiser epsilon localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Dans une phase d'experimentation de Clustering par densite, l'\u00e9quipe applique DBSCAN pour fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites.",
-        "C": "En contexte r\u00e9el sur Clustering par densite, min_samples est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer min_samples en production.",
-        "D": "Pendant une phase d'experimentation, points bruit est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer points bruit en production tout en surveillant le risque de sur-optimiser points bruit localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Déterminer la distance maximale pour considérer des points comme voisins",
+        "B": "Prédire le nombre de clusters",
+        "C": "Ajuster la taille des points dans le graphe",
+        "D": "Réguler la vitesse de convergence de l'algorithme"
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car epsilon y sert de levier de d\u00e9cision principal dans Clustering par densite. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une phase d'experimentation, epsilon est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une phase d'experimentation de Clustering par densite, l'\u00e9quipe applique DBSCAN pour fiabiliser les de...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Clustering par densite, min_samples est choisi afin de fiabiliser les d\u00e9cisions d'expe...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une phase d'experimentation, points bruit est utile pour fiabiliser les d\u00e9cisions d'experimentation...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
+      "explanation": "Le paramètre 'epsilon' définit la distance maximale dans laquelle un point doit se trouver pour être considéré comme un voisin direct. Ce paramètre ne prédit pas le nombre de clusters (B), n'ajuste pas graphiquement (C), et ne régule pas la convergence (D).",
+      "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "min_samples: pourquoi ce concept est-il crucial pour une \u00e9quipe marketing dans 'Clustering par densite' ?",
+      "question": "Que se passe-t-il si 'min_samples' est trop grand dans DBSCAN?",
       "image_url": null,
       "choices": {
-        "A": "Le role de points bruit est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer points bruit en production.",
-        "B": "Le role de min_samples est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer min_samples en production.",
-        "C": "DBSCAN sert a fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Clustering par densite, epsilon est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer epsilon en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie min_samples \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de points bruit est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de min_samples est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet d...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (DBSCAN sert a fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels e...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Clustering par densite, epsilon est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utili...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Clustering par densite', quelle situation de terrain montre le mieux quand utiliser points bruit ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une phase d'experimentation de Clustering par densite, l'\u00e9quipe applique epsilon pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer epsilon en production.",
-        "B": "En contexte r\u00e9el sur Clustering par densite, min_samples est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer min_samples en production.",
-        "C": "En contexte r\u00e9el sur Clustering par densite, points bruit est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer points bruit en production.",
-        "D": "Pendant une phase d'experimentation, DBSCAN est utile pour fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites tout en surveillant le risque de sur-optimiser DBSCAN localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car points bruit y sert de levier de d\u00e9cision principal dans Clustering par densite. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une phase d'experimentation de Clustering par densite, l'\u00e9quipe applique epsilon pour fiabiliser les d...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Clustering par densite, min_samples est choisi afin de fiabiliser les d\u00e9cisions d'expe...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Clustering par densite, points bruit est choisi afin de fiabiliser les d\u00e9cisions d'exp...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une phase d'experimentation, DBSCAN est utile pour fiabiliser les d\u00e9cisions d'experimentation ; ext...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Clustering par densite', quel est le role le plus determinant de points bruit pour un cas e-commerce ?",
-      "image_url": null,
-      "choices": {
-        "A": "points bruit sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer points bruit en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Clustering par densite, DBSCAN est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites.",
-        "C": "Le role d'epsilon est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer epsilon en production.",
-        "D": "min_samples sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer min_samples en production pour guider une d\u00e9cision exploitable."
+        "A": "Moins de clusters se forment, plus de points sont considérés comme bruit",
+        "B": "Les clusters formés seront plus grands",
+        "C": "Les clusters seront plus serrés et nombreux",
+        "D": "Tous les points deviennent des noyaux"
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie points bruit \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (points bruit sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux de...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Clustering par densite, DBSCAN est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; extraire...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role d'epsilon est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (min_samples sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux dec...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Un 'min_samples' trop grand conduit à considérer plus de points comme bruit car ils ne peuvent pas atteindre le nombre minimum de voisins requis pour former un cluster. Les clusters ne deviennent pas plus grands (B), plus serrés (C), ni tous les points des noyaux (D).",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi DBSCAN est-il particulièrement utile sur des jeux de données avec des formes non-linéaires?",
+      "image_url": null,
+      "choices": {
+        "A": "Parce qu'il forme des clusters basés sur la densité plutôt que sur la forme des données",
+        "B": "Parce qu'il force tous les clusters à avoir la même taille",
+        "C": "Parce qu'il ignore les données bruit",
+        "D": "Parce qu'il utilise une mesure de distance linéaire"
+      },
+      "correct_answer": "A",
+      "explanation": "DBSCAN peut trouver des clusters de n'importe quelle forme car il utilise la densité pour les définir. Il ne force pas à une taille uniforme (B), bien qu'il ignore le bruit (C), cela ne justifie pas le point, et n'utilise pas uniquement des mesures linéaires (D).",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Comment DBSCAN traite-t-il les points bruit?",
+      "image_url": null,
+      "choices": {
+        "A": "Ces points ne se trouvent dans aucun cluster et sont marqués comme 'bruit'",
+        "B": "Ils sont assimilés à leurs clusters les plus proches",
+        "C": "Ils forment de petits clusters à part entière",
+        "D": "Ces points sont augmentés pour devenir des noyaux de nouveaux clusters"
+      },
+      "correct_answer": "A",
+      "explanation": "DBSCAN marque les points qui ne se trouvent dans aucune région dense comme 'bruit'. Ils ne sont ni assimilés à d'autres clusters (B), ne forment pas de clusters séparés (C), ni n'initient de nouveaux clusters (D).",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle situation peut conduire DBSCAN à sous-clusteriser?",
+      "image_url": null,
+      "choices": {
+        "A": "Epsilon trop petit et min_samples trop élevé",
+        "B": "Epsilon trop grand et min_samples trop faible",
+        "C": "Min_samples égal au nombre total de points",
+        "D": "Epsilon et min_samples sont égaux"
+      },
+      "correct_answer": "A",
+      "explanation": "Un epsilon trop petit et un min_samples élevé signifient que peu de points seront suffisamment proches pour former des clusters. Une grande epsilon (B) pourrait sur-clusteriser, (C) est incorrect en pratique, et (D) n'a pas de sens au niveau paramétrique.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'avantage de ne pas nécessiter de définir le nombre de clusters à l'avance dans DBSCAN?",
+      "image_url": null,
+      "choices": {
+        "A": "Cela permet à l'algorithme de s'adapter à la structure des données",
+        "B": "Parce que tous les autres algorithmes nécessitent cette définition",
+        "C": "Cela réduit la complexité de l'algorithme",
+        "D": "Cela garantit des clusters de taille égale"
+      },
+      "correct_answer": "A",
+      "explanation": "Ne pas fixer le nombre de clusters en amont permet à DBSCAN de déterminer la structure inhérente des données. Tous les algorithmes n'ont pas cette nécessité (B), cela n'affecte pas directement la complexité (C), ni n'entraîne des tailles égales (D).",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Que signifie un point étant dans le 'cœur' d'un cluster pour DBSCAN?",
+      "image_url": null,
+      "choices": {
+        "A": "Il a au moins min_samples points dans son voisinage epsilon",
+        "B": "Il se trouve à la frontière d'un cluster",
+        "C": "Il est considéré comme un point bruit",
+        "D": "Il a le plus grand nombre de voisins possibles"
+      },
+      "correct_answer": "A",
+      "explanation": "Un point 'cœur' dans DBSCAN a suffisamment de voisinage pour justifier son inclusion comme partie d'un cluster avec au moins min_samples voisins. Les points frontières (B) ont moins de min_samples, ce n'est pas un point bruit (C), et le plus grand nombre de voisins (D) n'est pas une condition obligatoire.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il difficile de déterminer un epsilon optimal pour DBSCAN?",
+      "image_url": null,
+      "choices": {
+        "A": "Les données peuvent avoir une densité variable",
+        "B": "Epsilon dépend linéairement de min_samples",
+        "C": "Epsilon est indépendant de la distribution des données",
+        "D": "Car il assure une vitesse de convergence rapide"
+      },
+      "correct_answer": "A",
+      "explanation": "L'epsilon optimal est difficile à déterminer car les jeux de données peuvent avoir des zones de différentes densités. La linéarité (B) n'est pas un lien direct, (C) est erroné car il dépend effectivement, et (D) est incorrect.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel problème majeur peut survenir si l'epsilon est trop grand dans DBSCAN?",
+      "image_url": null,
+      "choices": {
+        "A": "Forme de grands clusters faussement, incluant des points non liés logiquement",
+        "B": "Augmente le temps de calcul",
+        "C": "Résulte en un nombre excessif de points bruit",
+        "D": "Génère exclusivement des singletons"
+      },
+      "correct_answer": "A",
+      "explanation": "Un epsilon trop grand peut relier des clusters distincts, les fusionnant en un cluster inadéquat. Cela n'augmente pas le temps de calcul (B), ne résulte pas en plus de bruit (C), ni en singletons (D).",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans quel cas pourrait-il être préférable d’utiliser DBSCAN par rapport à K-means?",
+      "image_url": null,
+      "choices": {
+        "A": "Lorsque les données contiennent du bruit ou des valeurs aberrantes",
+        "B": "Lorsque le nombre de clusters est clairement défini et uniforme",
+        "C": "Lorsque les clusters sont globulaires et égaux en taille",
+        "D": "Lorsque seule l’assignation rapide des points aux clusters est nécessaire"
+      },
+      "correct_answer": "A",
+      "explanation": "DBSCAN gère efficacement le bruit et les valeurs aberrantes, contrairement à K-means, qui suppose une structure de cluster uniforme (B, C) et est plus rapide pour de grandes quantités de données (D).",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment DBSCAN réagit-il aux données contenant des clusters de densités très différentes?",
+      "image_url": null,
+      "choices": {
+        "A": "Il peut ignorer les clusters de densités plus faibles",
+        "B": "Il peut automatiquement ajuster epsilon pour chaque cluster",
+        "C": "Il crée des clusters de même densité",
+        "D": "Il garantit que tous les points appartiendront à un cluster"
+      },
+      "correct_answer": "A",
+      "explanation": "DBSCAN risque de négliger les clusters faiblement denses si ses paramètres ne sont pas ajustés spécifiquement. DBSCAN ne modifie pas dynamiquement epsilon (B), ne garantit pas des densités égales (C), ni que chaque point soit en cluster (D).",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Clustering par densite', quelle erreur autour de DBSCAN est la plus critique ?",
+      "question": "Dans DBSCAN, quel rôle joue un point frontière?",
       "image_url": null,
       "choices": {
-        "A": "Si min_samples est mal utilise, on observe souvent sur-optimiser min_samples localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de points bruit est sur-optimiser points bruit localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Le piege principal autour de DBSCAN est sur-optimiser DBSCAN localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Un risque classique avec epsilon est de sur-optimiser epsilon localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Il relie les points de noyau aux clusters existants",
+        "B": "Il initialise de nouveaux clusters",
+        "C": "Il est toujours considéré comme un point bruit",
+        "D": "Il augmente la densité interne du cluster"
       },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de DBSCAN. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si min_samples est mal utilise, on observe souvent sur-optimiser min_samples localement en ignorant ses int...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour de points bruit est sur-optimiser points bruit localement en ignorant ses interac...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de DBSCAN est sur-optimiser DBSCAN localement en ignorant ses interactions avec f...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec epsilon est de sur-optimiser epsilon localement en ignorant ses interactions avec ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Les points frontières se trouvent en périphérie d’un cluster existant, reliant ainsi les points de noyau. Ils ne débutent pas de clusters (B), ne sont pas systématiquement des bruits (C), et n'augmentent pas la densité interne (D).",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pour une \u00e9quipe marketing dans 'Clustering par densite', quelle d\u00e9finition de min_samples est la plus juste ?",
+      "question": "Quel facteur peut conduire à une performance accrue lors de l'application de DBSCAN sur un jeu de données?",
       "image_url": null,
       "choices": {
-        "A": "liaison complete correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de liaison complete dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Clustering par densite.",
-        "B": "Dans Clustering par densite, dendrogramme se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de dendrogramme dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Clustering par densite, min_samples se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de min_samples dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "liaison simple designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de liaison simple dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Choisir un epsilon bien ajusté",
+        "B": "Augmenter toujours le nombre de min_samples",
+        "C": "Réduire le nombre total de points dans le jeu de données",
+        "D": "Ajuster tous les points bruit pour qu’ils deviennent des noyaux"
       },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de min_samples dans Clustering par densite, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que liaison simple, liaison complete, dendrogramme restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (liaison complete correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le rol...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Clustering par densite, dendrogramme se comprend comme un concept interm\u00e9diaire en apprentissage non s...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Clustering par densite, min_samples se comprend comme un concept interm\u00e9diaire en apprentissage non su...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (liaison simple designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de li...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Un epsilon bien choisi équilibre adéquatement la capture des clusters et le filtrage du bruit. Augmenter systématiquement min_samples (B) peut engendrer plus de bruit, réduire les points (C) peut manquer des structures, et modifier les points bruit (D) diluerait la signification de 'bruit'.",
       "difficulty": "hard"
     },
     {
-      "type": "image",
-      "question": "epsilon: dans un cas sante, quelle interpretation correspond le mieux au schema ML de 'Clustering par densite' ?",
-      "image_url": "apprentissage-non-supervise_clustering_par_densite_epsilon_1.png",
+      "type": "text",
+      "question": "Quelle peut être une conséquence de bruits excessifs sur les résultats de DBSCAN?",
+      "image_url": null,
       "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur points bruit: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer points bruit en production.",
-        "B": "Le schema illustre une d\u00e9cision basee sur epsilon: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer epsilon en production.",
-        "C": "Lecture du visuel: DBSCAN est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites dans Clustering par densite.",
-        "D": "Le signal visible est coh\u00e9rent avec min_samples, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer min_samples en production."
+        "A": "Moins de clusters se forment, ce qui peut amener à sous-estimer certaines densités",
+        "B": "Les clusters deviennent plus homogènes",
+        "C": "Tous les points bruit fusionnent en nouveaux clusters",
+        "D": "Le temps de traitement est considérablement réduit"
       },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens d'epsilon: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur points bruit: les indices orientent vers fiabiliser les d\u00e9cisions...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur epsilon: les indices orientent vers fiabiliser les d\u00e9cisions d'ex...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: DBSCAN est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; extraire une struc...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec min_samples, car l'objectif est fiabiliser les d\u00e9cisions d'experimentat...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Des points bruit excessifs signifient que moins de données sont utilisées pour les clusters, conduisant potentiellement à ne pas détecter certaines zones de densité. Les clusters ne se homogénéisent pas (B), les points de bruit ne forment pas de clusters (C), et le temps de traitement n'est pas réduit (D).",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment le choix d'un faible 'min_samples' influence-t-il la détection du bruit dans DBSCAN?",
+      "image_url": null,
+      "choices": {
+        "A": "Il réduit la probabilité que des points soient considérés comme bruit",
+        "B": "Il augmente les exigences pour qu'un point se qualifie comme noyau",
+        "C": "Tous les points deviennent automatiquement des noyaux",
+        "D": "Cela n'a aucun effet sur le bruit dans DBSCAN"
+      },
+      "correct_answer": "A",
+      "explanation": "Un faible min_samples réduit le seuil pour qu'un point soit noyau, diminuant ainsi la probabilité qu’il soit traité comme bruit. Cela ne fait pas augmenter les exigences (B), ne rend pas tous les points emplacements de noyaux (C), et a effectivement un effet (D).",
       "difficulty": "hard"
     }
   ]

@@ -5,156 +5,156 @@
   "questions": [
     {
       "type": "text",
-      "question": "normalisation: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Mesures de proximite' ?",
+      "question": "Quelle formule est utilisée pour calculer la distance euclidienne entre deux points dans un espace de caractéristiques?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Mesures de proximite, distance euclidienne est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer distance euclidienne en production.",
-        "B": "Pendant un atelier de cadrage, distance cosinus est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer distance cosinus en production tout en surveillant le risque d'appliquer distance cosinus par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Dans un atelier de cadrage de Mesures de proximite, l'\u00e9quipe applique voisinage pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisinage en production.",
-        "D": "Dans un atelier de cadrage de Mesures de proximite, l'\u00e9quipe applique normalisation pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer normalisation en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car normalisation y sert de levier de d\u00e9cision principal dans Mesures de proximite. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Mesures de proximite, distance euclidienne est choisi afin d'installer un raisonnemen...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant un atelier de cadrage, distance cosinus est utile pour installer un raisonnement fiable des le debu...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans un atelier de cadrage de Mesures de proximite, l'\u00e9quipe applique voisinage pour installer un raisonnem...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans un atelier de cadrage de Mesures de proximite, l'\u00e9quipe applique normalisation pour installer un raiso...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec voisinage dans 'Mesures de proximite' ?",
-      "image_url": "apprentissage-non-supervise_mesures_de_proximite_voisinage_2.png",
-      "choices": {
-        "A": "distance cosinus sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer distance cosinus en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Mesures de proximite, normalisation est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer normalisation en production.",
-        "C": "Dans Mesures de proximite, voisinage est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisinage en production.",
-        "D": "Le role de distance euclidienne est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer distance euclidienne en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de voisinage dans Mesures de proximite. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (distance cosinus sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de m...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Mesures de proximite, normalisation est mobilise pour installer un raisonnement fiable des le d\u00e9but ; ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Mesures de proximite, voisinage est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'ut...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de distance euclidienne est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctem...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Mesures de proximite' (banque), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment distance cosinus ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Mesures de proximite, PCA se comprend comme une notion de base en apprentissage non supervise ; il projette les variables sur un sous-espace plus compact qui conserve l'essentiel de la variance utile.",
-        "B": "visualisation designe une notion de base en apprentissage non supervise ; il formalise le role de visualisation dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "silhouette score correspond a une notion de base en apprentissage non supervise ; il formalise le role de silhouette score dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Mesures de proximite.",
-        "D": "distance cosinus correspond a une notion de base en apprentissage non supervise ; il formalise le role de distance cosinus dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Mesures de proximite."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de distance cosinus dans Mesures de proximite, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que PCA, visualisation, silhouette score restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Mesures de proximite, PCA se comprend comme une notion de base en apprentissage non supervise ; il pro...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (visualisation designe une notion de base en apprentissage non supervise ; il formalise le role de visualisa...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (silhouette score correspond a une notion de base en apprentissage non supervise ; il formalise le role de s...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (distance cosinus correspond a une notion de base en apprentissage non supervise ; il formalise le role de d...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Mesures de proximite', quel est le role le plus determinant de voisinage pour un cas sante ?",
-      "image_url": null,
-      "choices": {
-        "A": "voisinage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisinage en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Mesures de proximite, distance euclidienne est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer distance euclidienne en production.",
-        "C": "Le role de distance cosinus est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer distance cosinus en production.",
-        "D": "normalisation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer normalisation en production pour guider une d\u00e9cision exploitable."
+        "A": "sqrt((x2-x1)^2 + (y2-y1)^2)",
+        "B": "|x2-x1| + |y2-y1|",
+        "C": "(x2-x1) + (y2-y1)",
+        "D": "1 - cos(theta)"
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie voisinage \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (voisinage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux de...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Mesures de proximite, distance euclidienne est mobilise pour installer un raisonnement fiable des le d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de distance cosinus est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (normalisation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Mesures de proximite', quel commentaire du schema traduit le mieux le role de normalisation ?",
-      "image_url": "apprentissage-non-supervise_mesures_de_proximite_normalisation_2.png",
-      "choices": {
-        "A": "Dans Mesures de proximite, distance euclidienne est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer distance euclidienne en production.",
-        "B": "Le role de distance cosinus est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer distance cosinus en production.",
-        "C": "voisinage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisinage en production pour guider une d\u00e9cision exploitable.",
-        "D": "normalisation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer normalisation en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de normalisation dans Mesures de proximite. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Mesures de proximite, distance euclidienne est mobilise pour installer un raisonnement fiable des le d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de distance cosinus est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (voisinage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux de...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (normalisation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieu...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La distance euclidienne est calculée par la racine carrée de la somme des carrés des différences entre les coordonnées correspondantes. Le choix B est la distance de Manhattan, C est une somme simple sans considération géométrique, D est incorrect car c'est lié à la similarité cosinus.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Face a un besoin banque dans 'Mesures de proximite', pourquoi distance cosinus est-il prioritaire ?",
+      "question": "Qu'est-ce que la distance cosinus mesure entre deux vecteurs?",
       "image_url": null,
       "choices": {
-        "A": "normalisation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer normalisation en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Mesures de proximite, voisinage est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisinage en production.",
-        "C": "Dans Mesures de proximite, distance cosinus est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer distance cosinus en production.",
-        "D": "Le role de distance euclidienne est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer distance euclidienne en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie distance cosinus \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (normalisation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Mesures de proximite, voisinage est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'ut...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Mesures de proximite, distance cosinus est mobilise pour installer un raisonnement fiable des le d\u00e9but...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de distance euclidienne est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctem...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Mesures de proximite', quelle situation de terrain montre le mieux quand utiliser voisinage ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans un atelier de cadrage de Mesures de proximite, l'\u00e9quipe applique distance cosinus pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer distance cosinus en production.",
-        "B": "En contexte r\u00e9el sur Mesures de proximite, normalisation est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer normalisation en production.",
-        "C": "En contexte r\u00e9el sur Mesures de proximite, voisinage est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisinage en production.",
-        "D": "Pendant un atelier de cadrage, distance euclidienne est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer distance euclidienne en production tout en surveillant le risque d'appliquer distance euclidienne par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car voisinage y sert de levier de d\u00e9cision principal dans Mesures de proximite. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans un atelier de cadrage de Mesures de proximite, l'\u00e9quipe applique distance cosinus pour installer un ra...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Mesures de proximite, normalisation est choisi afin d'installer un raisonnement fiabl...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Mesures de proximite, voisinage est choisi afin d'installer un raisonnement fiable de...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant un atelier de cadrage, distance euclidienne est utile pour installer un raisonnement fiable des le ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Mesures de proximite', quel est le principal mode d'echec quand normalisation est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si normalisation est mal utilise, on observe souvent appliquer normalisation par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Le piege principal autour de distance euclidienne est appliquer distance euclidienne par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Un risque classique avec distance cosinus est d'appliquer distance cosinus par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Si voisinage est mal utilise, on observe souvent appliquer voisinage par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "L'angle entre les deux vecteurs.",
+        "B": "La somme des différences absolues entre les coordonnées des vecteurs.",
+        "C": "La racine carrée de la somme des carrés des différences entre les vecteurs.",
+        "D": "Le produit scalaire des vecteurs."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de normalisation. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si normalisation est mal utilise, on observe souvent appliquer normalisation par automatisme sans verifier ...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de distance euclidienne est appliquer distance euclidienne par automatisme sans v...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec distance cosinus est d'appliquer distance cosinus par automatisme sans verifier h...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si voisinage est mal utilise, on observe souvent appliquer voisinage par automatisme sans verifier hypothes...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
+      "explanation": "La distance cosinus mesure l'angle entre deux vecteurs, exprimée souvent en termes de similarité cosinus 1 - cos(theta). B décrit la distance de Manhattan. C est la distance euclidienne, et D est utilisé pour calculer directement la similarité cosinus mais ne décrit pas la 'distance' en tant que telle.",
+      "difficulty": "easy"
     },
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec distance euclidienne dans 'Mesures de proximite' ?",
-      "image_url": "apprentissage-non-supervise_mesures_de_proximite_distance_euclidienne_2.png",
+      "type": "text",
+      "question": "Quelle méthode est couramment utilisée pour normaliser les données de caractéristiques?",
+      "image_url": null,
       "choices": {
-        "A": "Dans Mesures de proximite, voisinage est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisinage en production.",
-        "B": "Dans Mesures de proximite, distance euclidienne est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer distance euclidienne en production.",
-        "C": "Le role de distance cosinus est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer distance cosinus en production.",
-        "D": "normalisation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer normalisation en production pour guider une d\u00e9cision exploitable."
+        "A": "Échelle de 0 à 1 (normalisation min-max)",
+        "B": "Transformation polynomiale des caractéristiques",
+        "C": "Réduction dimensionnelle par PCA",
+        "D": "Utilisation de moyennes glissantes"
       },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de distance euclidienne dans Mesures de proximite. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Mesures de proximite, voisinage est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'ut...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Mesures de proximite, distance euclidienne est mobilise pour installer un raisonnement fiable des le d...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de distance cosinus est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (normalisation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieu...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La normalisation min-max ajuste l'échelle des données pour que leurs valeurs soient comprises entre 0 et 1. B concerne une transformation qui change la forme des données, C est pour réduire la dimensionnalité des données, et D est une technique statistique non spécifique à la normalisation des données.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle méthode permet de trouver un groupe de points proches dans un ensemble de données utilisant la distance euclidienne?",
+      "image_url": null,
+      "choices": {
+        "A": "Algorithme des k-plus proches voisins (k-NN)",
+        "B": "Régression logistique",
+        "C": "Gradient de descente",
+        "D": "Boosting"
+      },
+      "correct_answer": "A",
+      "explanation": "L'algorithme des k-plus proches voisins utilise la distance euclidienne pour trouver les k points les plus proches dans l'espace de caractéristiques. B est un algorithme de classification, C est une méthode d'optimisation, et D est une méthode d'ensemble et non basée sur la distance.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "En quoi le voisinage dans un ensemble de données est-il crucial pour les méthodes non supervisées?",
+      "image_url": null,
+      "choices": {
+        "A": "Il permet de détecter des structures locales telles que des clusters.",
+        "B": "Il détermine les labels de classe pour de nouvelles données.",
+        "C": "Il réduit la complexité de calcul global.",
+        "D": "Il transforme les données en un espace de plus faible dimension."
+      },
+      "correct_answer": "A",
+      "explanation": "Le voisinage aide à découvrir des structures telles que des clusters co-localisés dans des méthodes non supervisées. B décrit une méthode supervisée, C est incorrect car le voisinage n'affecte pas directement la complexité calculatoire globale, et D décrit un aspect de la réduction de dimension.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Lors de l'utilisation de la distance cosinus, quel problème peut survenir si les données ne sont pas centrées correctement?",
+      "image_url": null,
+      "choices": {
+        "A": "Les vecteurs peuvent être faussement perçus comme éloignés même s'ils sont proches en direction.",
+        "B": "Les valeurs peuvent s'écarter au-delà de l'intervalle [0, 1].",
+        "C": "Les comparaisons entre vecteurs deviennent impossibles.",
+        "D": "La matrice de covariances sera indéfinie."
+      },
+      "correct_answer": "A",
+      "explanation": "Si les données ne sont pas centrées, la distance cosinus peut indiquer une distance élevée pour des vecteurs proches en direction (norme), générant ainsi des incohérences. B est incorrect, car la distance cosinus est toujours dans l'intervalle [-1, 1], C est faux, car les comparaisons restent possibles bien que biaisées, et D est faux car lié à une technique de covariance.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une limitation notable de l'utilisation de la distance euclidienne pour les vecteurs de caractéristiques non normalisés?",
+      "image_url": null,
+      "choices": {
+        "A": "Les caractéristiques avec de plus grandes valeurs numériques domineront la distance.",
+        "B": "Elle ne peut s'appliquer qu'aux données catégoriques.",
+        "C": "Elle ne fournit pas de résultats sur les données hors ligne.",
+        "D": "Elle ne fonctionne que si les caractéristiques sont orthogonales."
+      },
+      "correct_answer": "A",
+      "explanation": "La distance euclidienne peut être biaisée par des caractéristiques à grande échelle, ce qui nécessite une normalisation préalable. B est faux car la distance euclidienne s'applique principalement aux données numériques, C est incorrect, car elle est applicable indépendamment de l'état en ligne/hors ligne, et D est faux, car l'hypothèse d'orthogonalité n'est pas requise.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "normalisation: pourquoi ce concept est-il crucial pour une \u00e9quipe assurance dans 'Mesures de proximite' ?",
+      "question": "Quel est l'effet de la normalisation par la z-score sur les distributions de caractéristiques?",
       "image_url": null,
       "choices": {
-        "A": "Le role de voisinage est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisinage en production.",
-        "B": "Le role de normalisation est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer normalisation en production.",
-        "C": "distance euclidienne sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer distance euclidienne en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Mesures de proximite, distance cosinus est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer distance cosinus en production."
+        "A": "Elle centre la distribution sur zéro avec une variance d'unité.",
+        "B": "Elle élimine les corrélations entre les caractéristiques.",
+        "C": "Elle réduit la somme totale de toutes les caractéristiques à une.",
+        "D": "Elle produit des distributions fortement asymétriques."
       },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie normalisation \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de voisinage est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de normalisation est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement per...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (distance euclidienne sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Mesures de proximite, distance cosinus est mobilise pour installer un raisonnement fiable des le d\u00e9but...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "correct_answer": "A",
+      "explanation": "La normalisation par z-score met les données à une moyenne de 0 et une variance de 1, permettant de comparer des caractéristiques sur un pied d'égalité. B est incorrect, car elle ne change pas les corrélations, C concerne la normalisation min-max, et D est inexacte car elle ne crée pas d'asymétrie.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "voisinage: quelle proposition en donne la meilleure d\u00e9finition dans 'Mesures de proximite' (contexte sante) ?",
+      "question": "Quelle est la formule de la distance euclidienne entre deux points A (x1, y1) et B (x2, y2) ?",
       "image_url": null,
       "choices": {
-        "A": "separation designe une notion de base en apprentissage non supervise ; il formalise le role de separation dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "voisinage designe une notion de base en apprentissage non supervise ; il formalise le role de voisinage dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "silhouette score correspond a une notion de base en apprentissage non supervise ; il formalise le role de silhouette score dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Mesures de proximite.",
-        "D": "Dans Mesures de proximite, cohesion se comprend comme une notion de base en apprentissage non supervise ; il formalise le role de cohesion dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "√((x2 - x1)² + (y2 - y1)²)",
+        "B": "|x2 - x1| + |y2 - y1|",
+        "C": "(x2 * x1 + y2 * y1) / (||A|| * ||B||)",
+        "D": "(x2 - x1) + (y2 - y1)"
       },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de voisinage dans Mesures de proximite, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que silhouette score, cohesion, separation restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (separation designe une notion de base en apprentissage non supervise ; il formalise le role de separation d...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (voisinage designe une notion de base en apprentissage non supervise ; il formalise le role de voisinage dan...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (silhouette score correspond a une notion de base en apprentissage non supervise ; il formalise le role de s...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans Mesures de proximite, cohesion se comprend comme une notion de base en apprentissage non supervise ; i...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La distance euclidienne est la racine carrée de la somme des carrés des différences entre les coordonnées correspondantes. L'option B décrit la distance de Manhattan, C est la formule pour la similarité cosinus, et D est simplement la somme des différences sans mise au carré ni racine carrée.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Laquelle des propositions suivantes définit correctement la distance cosinus ?",
+      "image_url": null,
+      "choices": {
+        "A": "(x1 * x2 + y1 * y2) / (sqrt(x1^2 + y1^2) * sqrt(x2^2 + y2^2))",
+        "B": "√((x2 - x1)² + (y2 - y1)²)",
+        "C": "|x2 - x1| + |y2 - y1|",
+        "D": "(x1 - x2)² + (y1 - y2)²"
+      },
+      "correct_answer": "A",
+      "explanation": "La distance cosinus (ou similarité cosinus) est calculée comme le produit scalaire normalisé des deux vecteurs. L'option B correspond à la distance euclidienne, C à la distance de Manhattan, et D ressemble à un calcul intermédiaire pour une variance mais n'est pas une distance cosinus.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi la normalisation est-elle importante avant de calculer les distances dans les algorithmes de clustering ?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour mettre chaque caractéristique sur la même échelle afin qu'elles aient une importance équivalente.",
+        "B": "Pour réduire toutes les valeurs à une plage entre -1 et 1.",
+        "C": "Pour transformer des variables catégorielles en variables numériques.",
+        "D": "Pour augmenter la variance des données pour une meilleure séparation des clusters."
+      },
+      "correct_answer": "A",
+      "explanation": "La normalisation assure que tous les attributs sont sur la même échelle, évitant que des mesures de grande échelle dominent la mesure de distance. B décrit la mise à l'échelle min-max qui ne garantit pas la normalisation, C est lié à l'encodage des variables catégorielles, et D augmenterait la variabilité inutilement plutôt que de normaliser.",
       "difficulty": "hard"
     }
   ]

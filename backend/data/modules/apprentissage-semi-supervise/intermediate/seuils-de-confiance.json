@@ -4,228 +4,228 @@
   "module": "Seuils de confiance",
   "questions": [
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec rejet dans 'Seuils de confiance' ?",
-      "image_url": "apprentissage-semi-supervise_seuils_de_confiance_rejet_2.png",
-      "choices": {
-        "A": "pr\u00e9cision attendue sert a fiabiliser les d\u00e9cisions d'experimentation ; limiter les faux positifs quand une alerte incorrecte coute cher pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Seuils de confiance, trade-off couverture est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer trade-off couverture en production.",
-        "C": "Dans Seuils de confiance, rejet est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rejet en production.",
-        "D": "Le role de score de confiance est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score de confiance en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de rejet dans Seuils de confiance. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (pr\u00e9cision attendue sert a fiabiliser les d\u00e9cisions d'experimentation ; limiter les faux positifs quand une ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Seuils de confiance, trade-off couverture est mobilise pour fiabiliser les d\u00e9cisions d'experimentation...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Seuils de confiance, rejet est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser c...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de score de confiance est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement p...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
       "type": "text",
-      "question": "Dans 'Seuils de confiance', quelle situation de terrain montre le mieux quand utiliser rejet ?",
+      "question": "Qu'est-ce que le score de confiance dans le contexte de l'apprentissage semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Dans une phase d'experimentation de Seuils de confiance, l'\u00e9quipe applique pr\u00e9cision attendue pour fiabiliser les d\u00e9cisions d'experimentation ; limiter les faux positifs quand une alerte incorrecte coute cher.",
-        "B": "En contexte r\u00e9el sur Seuils de confiance, trade-off couverture est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer trade-off couverture en production.",
-        "C": "En contexte r\u00e9el sur Seuils de confiance, rejet est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rejet en production.",
-        "D": "Pendant une phase d'experimentation, score de confiance est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score de confiance en production tout en surveillant le risque de sur-optimiser score de confiance localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car rejet y sert de levier de d\u00e9cision principal dans Seuils de confiance. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une phase d'experimentation de Seuils de confiance, l'\u00e9quipe applique pr\u00e9cision attendue pour fiabilis...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Seuils de confiance, trade-off couverture est choisi afin de fiabiliser les d\u00e9cisions ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Seuils de confiance, rejet est choisi afin de fiabiliser les d\u00e9cisions d'experimentati...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une phase d'experimentation, score de confiance est utile pour fiabiliser les d\u00e9cisions d'experimen...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "trade-off couverture: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Seuils de confiance' ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Seuils de confiance, score de confiance est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score de confiance en production.",
-        "B": "Pendant une phase d'experimentation, pr\u00e9cision attendue est utile pour fiabiliser les d\u00e9cisions d'experimentation ; limiter les faux positifs quand une alerte incorrecte coute cher tout en surveillant le risque de sur-optimiser pr\u00e9cision attendue localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Dans une phase d'experimentation de Seuils de confiance, l'\u00e9quipe applique rejet pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rejet en production.",
-        "D": "Dans une phase d'experimentation de Seuils de confiance, l'\u00e9quipe applique trade-off couverture pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer trade-off couverture en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car trade-off couverture y sert de levier de d\u00e9cision principal dans Seuils de confiance. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Seuils de confiance, score de confiance est choisi afin de fiabiliser les d\u00e9cisions d'...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une phase d'experimentation, pr\u00e9cision attendue est utile pour fiabiliser les d\u00e9cisions d'experimen...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une phase d'experimentation de Seuils de confiance, l'\u00e9quipe applique rejet pour fiabiliser les decisi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une phase d'experimentation de Seuils de confiance, l'\u00e9quipe applique trade-off couverture pour fiabil...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Seuils de confiance', quel est le role le plus determinant de rejet pour un cas assurance ?",
-      "image_url": null,
-      "choices": {
-        "A": "rejet sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rejet en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Seuils de confiance, score de confiance est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score de confiance en production.",
-        "C": "Le role de pr\u00e9cision attendue est de fiabiliser les d\u00e9cisions d'experimentation ; limiter les faux positifs quand une alerte incorrecte coute cher.",
-        "D": "trade-off couverture sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer trade-off couverture en production pour guider une d\u00e9cision exploitable."
+        "A": "Une estimation de la probabilité qu'une prédiction soit correcte.",
+        "B": "La fréquence des prédictions correctes sur l'ensemble de test.",
+        "C": "La moyenne des labels de l'ensemble d'apprentissage.",
+        "D": "Un nombre fixe défini au début de l'entraînement."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie rejet \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (rejet sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider q...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Seuils de confiance, score de confiance est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de pr\u00e9cision attendue est de fiabiliser les d\u00e9cisions d'experimentation ; limiter les faux positifs...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (trade-off couverture sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le score de confiance est une estimation de probabilité qui indique à quel point un modèle est sûr de sa prédiction. B est la définition de l'accuracy et C est une statistique de l'ensemble d'apprentissage, tandis que D n'a pas de sens dans ce contexte.",
       "difficulty": "easy"
     },
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec score de confiance dans 'Seuils de confiance' ?",
-      "image_url": "apprentissage-semi-supervise_seuils_de_confiance_score_de_confiance_2.png",
-      "choices": {
-        "A": "Dans Seuils de confiance, rejet est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rejet en production.",
-        "B": "Dans Seuils de confiance, score de confiance est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score de confiance en production.",
-        "C": "Le role de pr\u00e9cision attendue est de fiabiliser les d\u00e9cisions d'experimentation ; limiter les faux positifs quand une alerte incorrecte coute cher.",
-        "D": "trade-off couverture sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer trade-off couverture en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de score de confiance dans Seuils de confiance. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Seuils de confiance, rejet est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser c...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Seuils de confiance, score de confiance est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de pr\u00e9cision attendue est de fiabiliser les d\u00e9cisions d'experimentation ; limiter les faux positifs...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (trade-off couverture sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
       "type": "text",
-      "question": "Dans 'Seuils de confiance' (cybersecurite), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment pr\u00e9cision attendue ?",
+      "question": "Comment la précision attendue peut-elle être augmentée lorsque le score de confiance est utilisé ?",
       "image_url": null,
       "choices": {
-        "A": "Dans Seuils de confiance, graphe de similarite se comprend comme un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de graphe de similarite dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "propagation iterative designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de propagation iterative dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "lissage correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de lissage dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Seuils de confiance.",
-        "D": "pr\u00e9cision attendue correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il mesure la proportion de predictions positives qui sont effectivement correctes, ce qui structure l'analyse dans Seuils de confiance."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de pr\u00e9cision attendue dans Seuils de confiance, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que graphe de similarite, propagation iterative, lissage restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Seuils de confiance, graphe de similarite se comprend comme un concept interm\u00e9diaire en apprentissage ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (propagation iterative designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le ro...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (lissage correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de lis...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (pr\u00e9cision attendue correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il mesure la pro...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Seuils de confiance', quel commentaire du schema traduit le mieux le role de trade-off couverture ?",
-      "image_url": "apprentissage-semi-supervise_seuils_de_confiance_trade_off_couverture_2.png",
-      "choices": {
-        "A": "Dans Seuils de confiance, score de confiance est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score de confiance en production.",
-        "B": "Le role de pr\u00e9cision attendue est de fiabiliser les d\u00e9cisions d'experimentation ; limiter les faux positifs quand une alerte incorrecte coute cher.",
-        "C": "rejet sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rejet en production pour guider une d\u00e9cision exploitable.",
-        "D": "trade-off couverture sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer trade-off couverture en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de trade-off couverture dans Seuils de confiance. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Seuils de confiance, score de confiance est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de pr\u00e9cision attendue est de fiabiliser les d\u00e9cisions d'experimentation ; limiter les faux positifs...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (rejet sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider q...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (trade-off couverture sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de ...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Seuils de confiance', quelle erreur autour de rejet est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec score de confiance est de sur-optimiser score de confiance localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Si pr\u00e9cision attendue est mal utilise, on observe souvent sur-optimiser pr\u00e9cision attendue localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Le piege principal autour de trade-off couverture est sur-optimiser trade-off couverture localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Le piege principal autour de rejet est sur-optimiser rejet localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de rejet. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec score de confiance est de sur-optimiser score de confiance localement en ignorant ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si pr\u00e9cision attendue est mal utilise, on observe souvent sur-optimiser pr\u00e9cision attendue localement en ig...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour de trade-off couverture est sur-optimiser trade-off couverture localement en igno...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour de rejet est sur-optimiser rejet localement en ignorant ses interactions avec fea...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "trade-off couverture: pourquoi ce concept est-il crucial pour une \u00e9quipe banque dans 'Seuils de confiance' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role de rejet est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rejet en production.",
-        "B": "Le role de trade-off couverture est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer trade-off couverture en production.",
-        "C": "score de confiance sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score de confiance en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Seuils de confiance, pr\u00e9cision attendue est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; limiter les faux positifs quand une alerte incorrecte coute cher."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie trade-off couverture \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de rejet est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de trade-off couverture est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (score de confiance sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Seuils de confiance, pr\u00e9cision attendue est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Seuils de confiance', quelle situation de terrain montre le mieux quand utiliser score de confiance ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Seuils de confiance, rejet est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rejet en production.",
-        "B": "En contexte r\u00e9el sur Seuils de confiance, score de confiance est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score de confiance en production.",
-        "C": "Pendant une phase d'experimentation, pr\u00e9cision attendue est utile pour fiabiliser les d\u00e9cisions d'experimentation ; limiter les faux positifs quand une alerte incorrecte coute cher tout en surveillant le risque de sur-optimiser pr\u00e9cision attendue localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation de Seuils de confiance, l'\u00e9quipe applique trade-off couverture pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer trade-off couverture en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car score de confiance y sert de levier de d\u00e9cision principal dans Seuils de confiance. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Seuils de confiance, rejet est choisi afin de fiabiliser les d\u00e9cisions d'experimentati...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Seuils de confiance, score de confiance est choisi afin de fiabiliser les d\u00e9cisions d'...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, pr\u00e9cision attendue est utile pour fiabiliser les d\u00e9cisions d'experimen...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation de Seuils de confiance, l'\u00e9quipe applique trade-off couverture pour fiabil...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "rejet: quelle proposition en donne la meilleure d\u00e9finition dans 'Seuils de confiance' (contexte assurance) ?",
-      "image_url": null,
-      "choices": {
-        "A": "vues complementaires designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de vues complementaires dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "rejet designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de rejet dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "lissage correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de lissage dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Seuils de confiance.",
-        "D": "Dans Seuils de confiance, voisins fiables se comprend comme un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de voisins fiables dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de rejet dans Seuils de confiance, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte assurance, alors que lissage, voisins fiables, vues complementaires restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (vues complementaires designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le rol...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (rejet designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de rejet dans...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (lissage correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de lis...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans Seuils de confiance, voisins fiables se comprend comme un concept interm\u00e9diaire en apprentissage semi ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Seuils de confiance', quel est le principal mode d'echec quand trade-off couverture est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si trade-off couverture est mal utilise, on observe souvent sur-optimiser trade-off couverture localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de score de confiance est sur-optimiser score de confiance localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Un risque classique avec pr\u00e9cision attendue est de sur-optimiser pr\u00e9cision attendue localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Si rejet est mal utilise, on observe souvent sur-optimiser rejet localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "En fixant un seuil élevé pour le score de confiance afin d'accepter uniquement les prédictions avec haute certitude.",
+        "B": "En réduisant la taille de l'ensemble de test.",
+        "C": "En ignorants les données avec le score de confiance le plus bas.",
+        "D": "En utilisant le score de confiance pour augmenter la taille de l'ensemble de formation."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de trade-off couverture. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si trade-off couverture est mal utilise, on observe souvent sur-optimiser trade-off couverture localement e...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de score de confiance est sur-optimiser score de confiance localement en ignorant...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec pr\u00e9cision attendue est de sur-optimiser pr\u00e9cision attendue localement en ignorant ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si rejet est mal utilise, on observe souvent sur-optimiser rejet localement en ignorant ses interactions av...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "En fixant un seuil élevé, seules les prédictions avec un score de confiance élevé sont acceptées, augmentant ainsi la précision attendue. B ne modifie pas la précision intrinsèque. C pourrait conduire à des biais et D n'est pas une méthode pour augmenter la précision directement.",
+      "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Face a un besoin cybersecurite dans 'Seuils de confiance', pourquoi pr\u00e9cision attendue est-il prioritaire ?",
+      "question": "Quel est le principe du trade-off couverture-précision dans les systèmes de rejet ?",
       "image_url": null,
       "choices": {
-        "A": "trade-off couverture sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer trade-off couverture en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Seuils de confiance, rejet est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rejet en production.",
-        "C": "Dans Seuils de confiance, pr\u00e9cision attendue est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; limiter les faux positifs quand une alerte incorrecte coute cher.",
-        "D": "Le role de score de confiance est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score de confiance en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie pr\u00e9cision attendue \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (trade-off couverture sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Seuils de confiance, rejet est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser c...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Seuils de confiance, pr\u00e9cision attendue est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de score de confiance est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement p...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Seuils de confiance', quel est le role le plus determinant de score de confiance pour un cas industrie ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Seuils de confiance, pr\u00e9cision attendue est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; limiter les faux positifs quand une alerte incorrecte coute cher.",
-        "B": "Le role de trade-off couverture est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer trade-off couverture en production.",
-        "C": "rejet sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rejet en production pour guider une d\u00e9cision exploitable.",
-        "D": "score de confiance sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score de confiance en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie score de confiance \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Seuils de confiance, pr\u00e9cision attendue est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de trade-off couverture est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (rejet sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider q...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (score de confiance sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'Seuils de confiance', quel exemple met pr\u00e9cision attendue au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une phase d'experimentation, pr\u00e9cision attendue est utile pour fiabiliser les d\u00e9cisions d'experimentation ; limiter les faux positifs quand une alerte incorrecte coute cher tout en surveillant le risque de sur-optimiser pr\u00e9cision attendue localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Dans une phase d'experimentation de Seuils de confiance, l'\u00e9quipe applique score de confiance pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score de confiance en production.",
-        "C": "En contexte r\u00e9el sur Seuils de confiance, trade-off couverture est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer trade-off couverture en production.",
-        "D": "Pendant une phase d'experimentation, rejet est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rejet en production tout en surveillant le risque de sur-optimiser rejet localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Augmenter la couverture réduit souvent la précision car plus de prédictions incertaines sont acceptées.",
+        "B": "Augmenter la précision n'a pas d'effet sur la couverture.",
+        "C": "Réduire la couverture augmente toujours la taille de l'ensemble de validation.",
+        "D": "Une couverture élevée augmente automatiquement la précision sans compromis."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car pr\u00e9cision attendue y sert de levier de d\u00e9cision principal dans Seuils de confiance. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une phase d'experimentation, pr\u00e9cision attendue est utile pour fiabiliser les d\u00e9cisions d'experimen...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une phase d'experimentation de Seuils de confiance, l'\u00e9quipe applique score de confiance pour fiabilis...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Seuils de confiance, trade-off couverture est choisi afin de fiabiliser les d\u00e9cisions ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une phase d'experimentation, rejet est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'ut...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le trade-off signifie que pour avoir une couverture élevée (plus de prédictions acceptées), on accepte aussi plus d'erreurs, réduisant ainsi la précision. B, C et D ne s'alignent pas sur ce principe et sont incorrects.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Dans quel cas le rejet est-il utilisé pour améliorer les performances d'un modèle ?",
+      "image_url": null,
+      "choices": {
+        "A": "Lorsqu'une prédiction a un score de confiance en dessous d'un seuil prédéfini.",
+        "B": "Quand toutes les prédictions d'un modèle ne répondent pas aux attentes.",
+        "C": "Pour éliminer les données anomalies pendant le prétraitement.",
+        "D": "Pour augmenter la taille de l'ensemble d'entraînement utilisable."
+      },
+      "correct_answer": "A",
+      "explanation": "Le rejet permet d'exclure des prédictions dont le score de confiance est trop bas, diminuant le risque d'erreur. B n'est pas spécifique au concept de rejet tel qu'appliqué dans l'apprentissage semi-supervisé et C touche principalement le prétraitement, tandis que D est incorrect.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'impact principal d'un score de confiance mal calibré ?",
+      "image_url": null,
+      "choices": {
+        "A": "L'acceptation incorrecte ou le rejet de prédictions bien segmentées en termes de certitude.",
+        "B": "La multiplication directe du score de confiance avec le label pour ajuster la prédiction.",
+        "C": "Une distribution correcte des prédictions à travers les classes.",
+        "D": "Une réduction significative de la taille des ensembles d'entraînement et de test."
+      },
+      "correct_answer": "A",
+      "explanation": "Un score de confiance mal calibré entraînera des erreurs dans l'acceptation ou le rejet des prédictions puisqu'il ne reflètera pas fidèlement la certitude d'une prédiction. B est incorrect car on ne multiplie pas le score de confiance par le label et C, D n'ont pas de lien avec les effets d'un mauvais calibrage.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi le rejet peut-il réduire les erreurs de classification ?",
+      "image_url": null,
+      "choices": {
+        "A": "Parce qu'il permet d'ignorer des prédictions incertaines susceptibles d'être incorrectes.",
+        "B": "Parce que les modèles ne sont entraînés que sur des données rejetées.",
+        "C": "Parce qu'il remplace les prédictions rejetées par des prédictions aléatoires correctes.",
+        "D": "Parce que le rejet diminue automatiquement le taux de rappel du modèle."
+      },
+      "correct_answer": "A",
+      "explanation": "Le rejet améliore la précision en omettant les prédictions incertaines, finissant potentiellement erronées. B est incorrect car le rejet ne définit pas la base d'entraînement des modèles, C est faux puisque le rejet ne fournit pas de prédictions de remplacement, et D mélange deux concepts différents.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment la sélection d'un seuil de score de confiance impacte-t-elle la couverture ?",
+      "image_url": null,
+      "choices": {
+        "A": "Un seuil plus élevé diminue la couverture en rejetant plus de prédictions.",
+        "B": "Un seuil plus élevé augmente la couverture puisqu'il accepte plus de prédictions.",
+        "C": "Un seuil plus bas augmente nécessairement la précision.",
+        "D": "Un seuil plus bas n'impacte pas la couverture ni la précision du modèle."
+      },
+      "correct_answer": "A",
+      "explanation": "Un seuil plus élevé signifie que seules les prédictions avec une certitude plus grande sont acceptées, ce qui réduit la couverture. B est incorrect car un seuil plus élevé diminue généralement la couverture et C, D sont erronés quant à l'impact des seuils sur couverture et précision.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel avantage offre une bonne calibration du score de confiance ?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle permet une meilleure prise de décision basée sur la certitude du modèle.",
+        "B": "Elle garantit un taux de faux positifs nul.",
+        "C": "Elle permet l'ajustement automatique de l'algorithme pendant le test.",
+        "D": "Elle assure que le modèle ne nécessite plus d'ensembles d'entraînement labellisés."
+      },
+      "correct_answer": "A",
+      "explanation": "Une bonne calibration mène à une amélioration des décisions fondées sur les scores de confiance des modèles. B, C et D sont inexactes: B est impossible à garantir même avec une bonne calibration, et C, D ne décrivent pas correctement les bénéfices de la calibration.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'effet d'un seuil de score de confiance très bas sur le modèle ?",
+      "image_url": null,
+      "choices": {
+        "A": "Il augmente la couverture mais peut réduire la précision du modèle.",
+        "B": "Il réduit la couverture et améliore la précision du modèle.",
+        "C": "Il élimine automatiquement tous les faux positifs.",
+        "D": "Il rend le modèle inutile car il n'effectue aucune prédiction."
+      },
+      "correct_answer": "A",
+      "explanation": "Un seuil très bas accepte presque toutes les prédictions, augmentant la couverture mais potentiellement au prix de la précision si des prédictions incertaines passent. B confond la relation entre seuil, couverture et précision, et C, D sont factuellement incorrects.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans quel cas un score de confiance n'est pas utile ?",
+      "image_url": null,
+      "choices": {
+        "A": "Lorsque toutes les données de test sont précédemment vu et parfaitement prédites.",
+        "B": "Lorsqu'un modèle a une précision perfectible sur l'ensemble d'entraînement.",
+        "C": "Pour augmenter la taille de l'ensemble d'essai.",
+        "D": "Quand le score de confiance est utilisé pour ajuster dynamiquement les poids des classes pendant l'apprentissage."
+      },
+      "correct_answer": "A",
+      "explanation": "Si toutes les données de test ont déjà été vues et prédites avec précision, le score de confiance est redondant. B et D ne répondent pas à la question, car ils concernent l'entraînement, et C n'est pas une fonction du score de confiance.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un bénéfice majeur de l'utilisation des scores de confiance dans le rejet ?",
+      "image_url": null,
+      "choices": {
+        "A": "Réduire les erreurs de classification en enlevant les prédictions incertaines.",
+        "B": "Augmenter automatiquement la précision de l'ensemble d'entraînement.",
+        "C": "Remplacer les données d'entraînement inexistant par des générateurs aléatoires.",
+        "D": "Permettre au modèle d'ignorer des labels incorrects directement."
+      },
+      "correct_answer": "A",
+      "explanation": "Le rejet améliore l'exactitude en écartant les prédictions dont la fiabilité est faible. B est incorrect car le score de confiance ne modifie pas directement la précision de l'entraînement, et C, D n'ont rien à voir avec le rejet basé sur les scores de confiance.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment un modèle doit-il être ajusté pour prendre en compte un seuil de score de confiance mal calibré et trop restrictif ?",
+      "image_url": null,
+      "choices": {
+        "A": "Réduire le seuil pour augmenter la couverture des prédictions acceptées.",
+        "B": "Augmenter le nombre de classes de sortie pour compenser le degré élevé de déséquilibre.",
+        "C": "Réentraîner le modèle complètement sans tenir compte du seuil.",
+        "D": "Utiliser un modèle différent qui ignore les scores de confiance."
+      },
+      "correct_answer": "A",
+      "explanation": "Si le seuil est trop restrictif, baisser légèrement le score peut aider à équilibrer couverture et précision. B n'a pas de rapport et C n'est pas nécessaire, alors que D n'est pas réalisable car les scores de confiance sont souvent éléments cruciaux des systèmes de décision.",
       "difficulty": "hard"
     },
     {
-      "type": "image",
-      "question": "Dans 'Seuils de confiance' et en contexte industrie, quelle interpretation du schema appuie le mieux l'analyse de score de confiance ?",
-      "image_url": "apprentissage-semi-supervise_seuils_de_confiance_score_de_confiance_1.png",
+      "type": "text",
+      "question": "Dans quel scénario l'utilisation d'un score de confiance peut-elle entraîner des biais ?",
+      "image_url": null,
       "choices": {
-        "A": "Lecture du visuel: trade-off couverture est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer trade-off couverture en production dans Seuils de confiance.",
-        "B": "Le signal visible est coh\u00e9rent avec rejet, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rejet en production.",
-        "C": "Le signal visible est coh\u00e9rent avec score de confiance, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer score de confiance en production.",
-        "D": "Le schema illustre une d\u00e9cision basee sur pr\u00e9cision attendue: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; limiter les faux positifs quand une alerte incorrecte coute cher."
+        "A": "Si le score est mal calibré et favorise des classes spécifiques.",
+        "B": "Si le score de confiance est appliqué uniformément à travers toutes les classes.",
+        "C": "Si le score est uniquement utilisé pour sélectionner des échantillons d'entraînement.",
+        "D": "Si le score est uniquement calculé sur l'ensemble de test."
       },
-      "correct_answer": "C",
-      "explanation": "Les indices visuels vont dans le sens de score de confiance: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Lecture du visuel: trade-off couverture est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'ut...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Le signal visible est coh\u00e9rent avec rejet, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est correcte (Le signal visible est coh\u00e9rent avec score de confiance, car l'objectif est fiabiliser les d\u00e9cisions d'exper...) car la lecture visuelle colle au signal principal observe. D'est moins pertinente (Le schema illustre une d\u00e9cision basee sur pr\u00e9cision attendue: les indices orientent vers fiabiliser les dec...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Un score mal calibré pouvant favoriser certaines classes introduira un biais. B et C ne causaliseront pas un biais lié aux scores de confiance, alors que D est une mauvaise pratique mais pas un facteur de biais intrinsèque.",
       "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi une courbe d'acceptation-rejet équilibrée est-elle importante ?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour éviter que le modèle ne soit trop conservateur ou trop permissif dans sa prédiction.",
+        "B": "Pour réduire le temps nécessaire à l'entraînement du modèle.",
+        "C": "Pour éviter l'overfitting durant le processus de test.",
+        "D": "Pour garantir que chaque classe ait des instances sélectionnées proportionnellement."
+      },
+      "correct_answer": "A",
+      "explanation": "Une courbe d'acceptation-rejet équilibrée assure que le modèle ne soit pas excessivement prudent ou laxiste, maintenant une balance entre couverture et précision. B, C, et D n'expliquent pas correctement le besoin d'une courbe équilibrée.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment un seuil strict de score de confiance affecte-t-il la performance globale d'un modèle ?",
+      "image_url": null,
+      "choices": {
+        "A": "Il peut réduire les erreurs de classification mais aussi diminuer le taux de couverture.",
+        "B": "Il augmente automatiquement la taille d'échantillons labellisés disponibles.",
+        "C": "Il garantit que toutes les prédictions sont exactes et précises.",
+        "D": "Il affecte uniquement la complexité computationnelle mais pas la précision directe."
+      },
+      "correct_answer": "A",
+      "explanation": "Un seuil stricte améliore souvent la précision en rejetant les incertains mais avec un coût potentiel sur la couverture. B et D sont incorrects et C est impossible car n'existe pas un seuil magique qui assure une précison totale.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "En apprentissage semi-supervisé, que représente généralement le score de confiance associé à une prédiction ?",
+      "image_url": null,
+      "choices": {
+        "A": "La probabilité estimée qu'une prédiction soit correcte.",
+        "B": "La différence entre les prédictions les plus élevées et les plus faibles.",
+        "C": "La somme des probabilités des classes possibles pour une prédiction.",
+        "D": "La précision moyenne de toutes les prédictions effectuées."
+      },
+      "correct_answer": "A",
+      "explanation": "Le score de confiance est la probabilité estimée qu'une prédiction soit correcte, utilisée pour évaluer la fiabilité de cette prédiction. La réponse B est incorrecte car la différence entre les prédictions les plus élevées et les plus faibles ne se réfère pas au score de confiance. La réponse C est fausse puisqu'il s'agit de la somme des probabilités des classes, qui totalise généralement 1, sans indiquer la confiance. La réponse D est incorrecte, car elle décrit la moyenne des précisions, et non un score individuel de confiance.",
+      "difficulty": "easy"
     }
   ]
 }

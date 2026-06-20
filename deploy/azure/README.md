@@ -102,6 +102,31 @@ Si PostgreSQL est active:
 - Ouverture d'un quiz OK
 - Soumission d'un quiz OK
 
+## 6) Generation LLM (OpenAI) du contenu quiz
+
+Nouveau script standalone:
+
+- backend/quizzes/llm_quiz_generator.py
+
+Prerequis:
+
+- installer dependances backend (inclut openai)
+- definir OPENAI_API_KEY
+
+Exemples:
+
+Generer un module:
+
+python backend/quizzes/llm_quiz_generator.py --category apprentissage-supervise --level Beginner --module "Fondamentaux du supervise" --output backend/data/modules/apprentissage-supervise/beginner/fondamentaux-du-supervise.json --model gpt-4o
+
+Voir uniquement le prompt:
+
+python backend/quizzes/llm_quiz_generator.py --category apprentissage-supervise --level Beginner --module "Fondamentaux du supervise" --dry-run
+
+Generer tous les modules d'une categorie:
+
+python backend/quizzes/llm_quiz_generator.py --category apprentissage-supervise --all --output-dir backend/data/modules --model gpt-4o
+
 ## Notes compte etudiant
 
 - Sur compte etudiant, surveille le cout App Service B1 et PostgreSQL

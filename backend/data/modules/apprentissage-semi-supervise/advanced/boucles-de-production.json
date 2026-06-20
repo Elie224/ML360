@@ -4,451 +4,451 @@
   "module": "Boucles de production",
   "questions": [
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec rollback dans 'Boucles de production' ?",
-      "image_url": "apprentissage-semi-supervise_boucles_de_production_rollback_2.png",
-      "choices": {
-        "A": "versioning sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer versioning en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Boucles de production, validation humaine est mobilise pour supporter des arbitrages de production ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "C": "Dans Boucles de production, rollback est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollback en production.",
-        "D": "Le role de rafraichissement de labels est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rafraichissement de labels en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de rollback dans Boucles de production. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (versioning sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Boucles de production, validation humaine est mobilise pour supporter des arbitrages de production ; r...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Boucles de production, rollback est mobilise pour supporter des arbitrages de production ; l'utiliser ...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de rafraichissement de labels est de supporter des arbitrages de production ; l'utiliser correcteme...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
       "type": "text",
-      "question": "Dans 'Boucles de production' (assurance), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment versioning ?",
+      "question": "Quel est l'objectif principal du rafraîchissement de labels dans une boucle de production en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Dans Boucles de production, drift de confiance se comprend comme un levier avance en apprentissage semi supervise ; il mesure une d\u00e9rive entre les conditions d'entrainement et les conditions d'exploitation.",
-        "B": "erreurs silencieuses designe un levier avance en apprentissage semi supervise ; il formalise le role d'erreurs silencieuses dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "alerte correspond a un levier avance en apprentissage semi supervise ; il formalise le role d'alerte dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Boucles de production.",
-        "D": "versioning correspond a un levier avance en apprentissage semi supervise ; il formalise le role de versioning dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Boucles de production."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de versioning dans Boucles de production, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte assurance, alors que drift de confiance, erreurs silencieuses, alerte restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Boucles de production, drift de confiance se comprend comme un levier avance en apprentissage semi sup...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (erreurs silencieuses designe un levier avance en apprentissage semi supervise ; il formalise le role d'err...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (alerte correspond a un levier avance en apprentissage semi supervise ; il formalise le role d'alerte dans ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (versioning correspond a un levier avance en apprentissage semi supervise ; il formalise le role de versioni...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "validation humaine: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Boucles de production' ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Boucles de production, rafraichissement de labels est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rafraichissement de labels en production.",
-        "B": "Pendant une revue pre-deploiement, versioning est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer versioning en production tout en surveillant le risque d'optimiser versioning en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Dans une revue pre-deploiement de Boucles de production, l'\u00e9quipe applique rollback pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollback en production.",
-        "D": "Dans une revue pre-deploiement de Boucles de production, l'\u00e9quipe applique validation humaine pour supporter des arbitrages de production ; reduire le risque de surestimer la performance sur donn\u00e9es futures."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car validation humaine y sert de levier de d\u00e9cision principal dans Boucles de production. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Boucles de production, rafraichissement de labels est choisi afin de supporter des arb...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une revue pre-deploiement, versioning est utile pour supporter des arbitrages de production ; l'uti...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une revue pre-deploiement de Boucles de production, l'\u00e9quipe applique rollback pour supporter des arbi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une revue pre-deploiement de Boucles de production, l'\u00e9quipe applique validation humaine pour supporte...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin assurance dans 'Boucles de production', pourquoi versioning est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "validation humaine sert a supporter des arbitrages de production ; reduire le risque de surestimer la performance sur donn\u00e9es futures pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Boucles de production, rollback est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollback en production.",
-        "C": "Dans Boucles de production, versioning est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer versioning en production.",
-        "D": "Le role de rafraichissement de labels est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rafraichissement de labels en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie versioning \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (validation humaine sert a supporter des arbitrages de production ; reduire le risque de surestimer la perfo...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Boucles de production, rollback est mobilise pour supporter des arbitrages de production ; l'utiliser ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Boucles de production, versioning est mobilise pour supporter des arbitrages de production ; l'utilise...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de rafraichissement de labels est de supporter des arbitrages de production ; l'utiliser correcteme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Boucles de production', quelle situation de terrain montre le mieux quand utiliser rollback ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une revue pre-deploiement de Boucles de production, l'\u00e9quipe applique versioning pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer versioning en production.",
-        "B": "En contexte r\u00e9el sur Boucles de production, validation humaine est choisi afin de supporter des arbitrages de production ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "C": "En contexte r\u00e9el sur Boucles de production, rollback est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollback en production.",
-        "D": "Pendant une revue pre-deploiement, rafraichissement de labels est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rafraichissement de labels en production tout en surveillant le risque d'optimiser rafraichissement de labels en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car rollback y sert de levier de d\u00e9cision principal dans Boucles de production. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une revue pre-deploiement de Boucles de production, l'\u00e9quipe applique versioning pour supporter des ar...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Boucles de production, validation humaine est choisi afin de supporter des arbitrages ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Boucles de production, rollback est choisi afin de supporter des arbitrages de product...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une revue pre-deploiement, rafraichissement de labels est utile pour supporter des arbitrages de pr...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Boucles de production', quel est le role le plus determinant de rollback pour un cas marketing ?",
-      "image_url": null,
-      "choices": {
-        "A": "rollback sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollback en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Boucles de production, rafraichissement de labels est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rafraichissement de labels en production.",
-        "C": "Le role de versioning est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer versioning en production.",
-        "D": "validation humaine sert a supporter des arbitrages de production ; reduire le risque de surestimer la performance sur donn\u00e9es futures pour guider une d\u00e9cision exploitable."
+        "A": "Améliorer la qualité des prédictions en utilisant de nouvelles données étiquetées.",
+        "B": "Accélérer le processus d'entraînement du modèle en réduisant la taille des données.",
+        "C": "Éliminer les biais dans les données en supprimant les anciennes étiquettes.",
+        "D": "Augmenter la diversité des données en ajoutant des étiquettes aléatoires."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie rollback \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (rollback sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider qu...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Boucles de production, rafraichissement de labels est mobilise pour supporter des arbitrages de produc...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de versioning est de supporter des arbitrages de production ; l'utiliser correctement permet de mie...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (validation humaine sert a supporter des arbitrages de production ; reduire le risque de surestimer la perfo...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le rafraîchissement de labels vise à intégrer de nouvelles données étiquetées pour améliorer la précision du modèle. Option B est incorrecte car le rafraîchissement ne réduit pas la taille des données. Option C est fallacieuse car il ne s'agit pas de supprimer les anciennes étiquettes. Option D est incorrecte car la diversité ne passe pas par des étiquettes aléatoires.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour un cas operationnel de 'Boucles de production', quel exemple met versioning au c\u0153ur de la d\u00e9cision ?",
+      "question": "Pourquoi est-il important de gérer le versioning des modèles en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Pendant une revue pre-deploiement, versioning est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer versioning en production tout en surveillant le risque d'optimiser versioning en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Dans une revue pre-deploiement de Boucles de production, l'\u00e9quipe applique rafraichissement de labels pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rafraichissement de labels en production.",
-        "C": "En contexte r\u00e9el sur Boucles de production, validation humaine est choisi afin de supporter des arbitrages de production ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "D": "Pendant une revue pre-deploiement, rollback est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollback en production tout en surveillant le risque d'optimiser rollback en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Pour suivre les modifications et évaluations des modèles au fil du temps.",
+        "B": "Pour augmenter la taille de données utilisées à chaque itération.",
+        "C": "Pour simplifier l'architecture du réseau de neurones.",
+        "D": "Pour automatiser le nettoyage des données brutes avant chaque formation."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car versioning y sert de levier de d\u00e9cision principal dans Boucles de production. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une revue pre-deploiement, versioning est utile pour supporter des arbitrages de production ; l'uti...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une revue pre-deploiement de Boucles de production, l'\u00e9quipe applique rafraichissement de labels pour ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Boucles de production, validation humaine est choisi afin de supporter des arbitrages ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une revue pre-deploiement, rollback est utile pour supporter des arbitrages de production ; l'utili...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Boucles de production', quel commentaire du schema traduit le mieux le role de validation humaine ?",
-      "image_url": "apprentissage-semi-supervise_boucles_de_production_validation_humaine_2.png",
-      "choices": {
-        "A": "Dans Boucles de production, rafraichissement de labels est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rafraichissement de labels en production.",
-        "B": "Le role de versioning est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer versioning en production.",
-        "C": "rollback sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollback en production pour guider une d\u00e9cision exploitable.",
-        "D": "validation humaine sert a supporter des arbitrages de production ; reduire le risque de surestimer la performance sur donn\u00e9es futures pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de validation humaine dans Boucles de production. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Boucles de production, rafraichissement de labels est mobilise pour supporter des arbitrages de produc...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de versioning est de supporter des arbitrages de production ; l'utiliser correctement permet de mie...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (rollback sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider qu...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (validation humaine sert a supporter des arbitrages de production ; reduire le risque de surestimer la perfo...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le versioning permet de suivre les modifications des modèles et d'évaluer leur performance au fil du temps. Option B n'est pas une fonction du versioning. Option C est incorrecte car la gestion d'architecture n'est pas liée au versioning. Option D est erronée car le versioning ne s'occupe pas du nettoyage automatisé des données.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "validation humaine: pourquoi ce concept est-il crucial pour une \u00e9quipe sante dans 'Boucles de production' ?",
+      "question": "Dans une boucle de production, que signifie la validation humaine des données étiquetées?",
       "image_url": null,
       "choices": {
-        "A": "Le role de rollback est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollback en production.",
-        "B": "Le role de validation humaine est de supporter des arbitrages de production ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "C": "rafraichissement de labels sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rafraichissement de labels en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Boucles de production, versioning est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer versioning en production."
+        "A": "Vérification manuelle des étiquettes pour assurer leur exactitude.",
+        "B": "Remplacement des étiquettes générées automatiquement par des étiquettes aléatoires.",
+        "C": "Utilisation d'un algorithme pour générer des étiquettes similaires.",
+        "D": "Automatisation complète de l'étiquetage des nouvelles données sans intervention humaine."
       },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie validation humaine \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de rollback est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de validation humaine est de supporter des arbitrages de production ; reduire le risque de surestim...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (rafraichissement de labels sert a supporter des arbitrages de production ; l'utiliser correctement permet d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Boucles de production, versioning est mobilise pour supporter des arbitrages de production ; l'utilise...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La validation humaine consiste à vérifier manuellement les étiquettes pour en assurer l'exactitude. L'option B est fausse car remplacer par des étiquettes aléatoires ne validerait pas les données. L'option C est incorrecte car elle ne décrit pas une validation humaine. L'option D est fausse car elle exclut l'intervention humaine, ce qui n'est pas le cas dans une validation humaine.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Boucles de production', quel est le principal mode d'echec quand validation humaine est mal applique ?",
+      "question": "Quel est le rôle principal d'un mécanisme de rollback dans une boucle de production de modèles semi-supervisés?",
       "image_url": null,
       "choices": {
-        "A": "Si validation humaine est mal utilise, on observe souvent optimiser validation humaine en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de rafraichissement de labels est optimiser rafraichissement de labels en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Un risque classique avec versioning est d'optimiser versioning en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Si rollback est mal utilise, on observe souvent optimiser rollback en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Revenir à un modèle précédent en cas de défaillance ou de baisse de performance.",
+        "B": "Supprimer toutes les données de formation pour commencer de zéro.",
+        "C": "Modifier automatiquement les hyperparamètres pour améliorer les performances.",
+        "D": "Développer de nouveaux modèles sans considération pour le modèle actuel."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de validation humaine. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si validation humaine est mal utilise, on observe souvent optimiser validation humaine en silo et introduir...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de rafraichissement de labels est optimiser rafraichissement de labels en silo et...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec versioning est d'optimiser versioning en silo et introduire des modes d'echec cac...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si rollback est mal utilise, on observe souvent optimiser rollback en silo et introduire des modes d'echec ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec rafraichissement de labels dans 'Boucles de production' ?",
-      "image_url": "apprentissage-semi-supervise_boucles_de_production_rafraichissement_de_labels_2.png",
-      "choices": {
-        "A": "Dans Boucles de production, rollback est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollback en production.",
-        "B": "Dans Boucles de production, rafraichissement de labels est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rafraichissement de labels en production.",
-        "C": "Le role de versioning est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer versioning en production.",
-        "D": "validation humaine sert a supporter des arbitrages de production ; reduire le risque de surestimer la performance sur donn\u00e9es futures pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de rafraichissement de labels dans Boucles de production. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Boucles de production, rollback est mobilise pour supporter des arbitrages de production ; l'utiliser ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Boucles de production, rafraichissement de labels est mobilise pour supporter des arbitrages de produc...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de versioning est de supporter des arbitrages de production ; l'utiliser correctement permet de mie...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (validation humaine sert a supporter des arbitrages de production ; reduire le risque de surestimer la perfo...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le rollback permet de revenir à une version antérieure d'un modèle si une nouvelle version ne fonctionne pas correctement. Option B est incorrecte, car le rollback ne concerne pas la suppression des données de formation. Option C est erronée, le rollback ne modifie pas les hyperparamètres. Option D est fausse car ignorer le modèle actuel n’est pas lié au rollback.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Boucles de production', quelle erreur autour de rollback est la plus critique ?",
+      "question": "Quel est un défi courant lors de l'implémentation d'un système de rafraîchissement de labels?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec rafraichissement de labels est d'optimiser rafraichissement de labels en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Si versioning est mal utilise, on observe souvent optimiser versioning en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de validation humaine est optimiser validation humaine en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour de rollback est optimiser rollback en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de rollback. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec rafraichissement de labels est d'optimiser rafraichissement de labels en silo et ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si versioning est mal utilise, on observe souvent optimiser versioning en silo et introduire des modes d'ec...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour de validation humaine est optimiser validation humaine en silo et introduire des ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour de rollback est optimiser rollback en silo et introduire des modes d'echec caches...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe sante dans 'Boucles de production', quelle d\u00e9finition de validation humaine est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "alerte correspond a un levier avance en apprentissage semi supervise ; il formalise le role d'alerte dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Boucles de production.",
-        "B": "Dans Boucles de production, rafraichissement de labels se comprend comme un levier avance en apprentissage semi supervise ; il formalise le role de rafraichissement de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Boucles de production, validation humaine se comprend comme un levier avance en apprentissage semi supervise ; il structure l'\u00e9valuation hors entrainement pour estimer la g\u00e9n\u00e9ralisation r\u00e9elle.",
-        "D": "erreurs silencieuses designe un levier avance en apprentissage semi supervise ; il formalise le role d'erreurs silencieuses dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de validation humaine dans Boucles de production, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que erreurs silencieuses, alerte, rafraichissement de labels restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (alerte correspond a un levier avance en apprentissage semi supervise ; il formalise le role d'alerte dans ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Boucles de production, rafraichissement de labels se comprend comme un levier avance en apprentissage ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Boucles de production, validation humaine se comprend comme un levier avance en apprentissage semi sup...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (erreurs silencieuses designe un levier avance en apprentissage semi supervise ; il formalise le role d'err...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "rollback: quelle proposition en donne la meilleure d\u00e9finition dans 'Boucles de production' (contexte marketing) ?",
-      "image_url": null,
-      "choices": {
-        "A": "versioning designe un levier avance en apprentissage semi supervise ; il formalise le role de versioning dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "rollback designe un levier avance en apprentissage semi supervise ; il formalise le role de rollback dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "alerte correspond a un levier avance en apprentissage semi supervise ; il formalise le role d'alerte dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Boucles de production.",
-        "D": "Dans Boucles de production, rafraichissement de labels se comprend comme un levier avance en apprentissage semi supervise ; il formalise le role de rafraichissement de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de rollback dans Boucles de production, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que alerte, rafraichissement de labels, versioning restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (versioning designe un levier avance en apprentissage semi supervise ; il formalise le role de versioning da...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (rollback designe un levier avance en apprentissage semi supervise ; il formalise le role de rollback dans u...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (alerte correspond a un levier avance en apprentissage semi supervise ; il formalise le role d'alerte dans ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans Boucles de production, rafraichissement de labels se comprend comme un levier avance en apprentissage ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "versioning: quel risque est le plus directement lie a son mauvais usage en production dans 'Boucles de production' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec rollback est d'optimiser rollback en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Un risque classique avec versioning est d'optimiser versioning en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Si rafraichissement de labels est mal utilise, on observe souvent optimiser rafraichissement de labels en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour de validation humaine est optimiser validation humaine en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de versioning. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec rollback est d'optimiser rollback en silo et introduire des modes d'echec caches ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec versioning est d'optimiser versioning en silo et introduire des modes d'echec cac...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si rafraichissement de labels est mal utilise, on observe souvent optimiser rafraichissement de labels en s...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de validation humaine est optimiser validation humaine en silo et introduire des ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Boucles de production', quel est le role le plus determinant de rafraichissement de labels pour un cas banque ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Boucles de production, versioning est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer versioning en production.",
-        "B": "Le role de validation humaine est de supporter des arbitrages de production ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "C": "rollback sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollback en production pour guider une d\u00e9cision exploitable.",
-        "D": "rafraichissement de labels sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rafraichissement de labels en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie rafraichissement de labels \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Boucles de production, versioning est mobilise pour supporter des arbitrages de production ; l'utilise...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de validation humaine est de supporter des arbitrages de production ; reduire le risque de surestim...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (rollback sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider qu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (rafraichissement de labels sert a supporter des arbitrages de production ; l'utiliser correctement permet d...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "versioning: dans un cas assurance, quelle interpretation correspond le mieux au schema ML de 'Boucles de production' ?",
-      "image_url": "apprentissage-semi-supervise_boucles_de_production_versioning_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur rollback: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollback en production.",
-        "B": "Le schema illustre une d\u00e9cision basee sur versioning: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer versioning en production.",
-        "C": "Lecture du visuel: rafraichissement de labels est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rafraichissement de labels en production dans Boucles de production.",
-        "D": "Le signal visible est coh\u00e9rent avec validation humaine, car l'objectif est supporter des arbitrages de production ; reduire le risque de surestimer la performance sur donn\u00e9es futures."
-      },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de versioning: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur rollback: les indices orientent vers supporter des arbitrages de ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur versioning: les indices orientent vers supporter des arbitrages d...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: rafraichissement de labels est mobilise pour supporter des arbitrages de production ; l'...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec validation humaine, car l'objectif est supporter des arbitrages de prod...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Boucles de production', quelle situation de terrain montre le mieux quand utiliser rafraichissement de labels ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Boucles de production, rollback est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollback en production.",
-        "B": "En contexte r\u00e9el sur Boucles de production, rafraichissement de labels est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rafraichissement de labels en production.",
-        "C": "Pendant une revue pre-deploiement, versioning est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer versioning en production tout en surveillant le risque d'optimiser versioning en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Dans une revue pre-deploiement de Boucles de production, l'\u00e9quipe applique validation humaine pour supporter des arbitrages de production ; reduire le risque de surestimer la performance sur donn\u00e9es futures."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car rafraichissement de labels y sert de levier de d\u00e9cision principal dans Boucles de production. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Boucles de production, rollback est choisi afin de supporter des arbitrages de product...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Boucles de production, rafraichissement de labels est choisi afin de supporter des arb...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une revue pre-deploiement, versioning est utile pour supporter des arbitrages de production ; l'uti...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une revue pre-deploiement de Boucles de production, l'\u00e9quipe applique validation humaine pour supporte...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "versioning: dans 'Boucles de production', un schema met en evidence ce comportement. Quelle lecture est la plus juste ?",
-      "image_url": "apprentissage-semi-supervise_boucles_de_production_versioning_2.png",
-      "choices": {
-        "A": "Le role de versioning est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer versioning en production.",
-        "B": "rafraichissement de labels sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rafraichissement de labels en production pour guider une d\u00e9cision exploitable.",
-        "C": "Dans Boucles de production, validation humaine est mobilise pour supporter des arbitrages de production ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "D": "Le role de rollback est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollback en production."
+        "A": "Identifier les nouvelles données pertinentes à étiqueter sans biais.",
+        "B": "Réduire le coût du matériel nécessaire pour l'étiquetage manuel.",
+        "C": "Automatiser totalement le processus d'étiquetage sans supervision.",
+        "D": "Développer un modèle sans biais après chaque rafraîchissement."
       },
       "correct_answer": "A",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de versioning dans Boucles de production. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est correcte (Le role de versioning est de supporter des arbitrages de production ; l'utiliser correctement permet de mie...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. B est moins pertinente (rafraichissement de labels sert a supporter des arbitrages de production ; l'utiliser correctement permet d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (Dans Boucles de production, validation humaine est mobilise pour supporter des arbitrages de production ; r...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (Le role de rollback est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Boucles de production' et en contexte marketing, quelle interpretation du schema appuie le mieux l'analyse de rollback ?",
-      "image_url": "apprentissage-semi-supervise_boucles_de_production_rollback_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur rafraichissement de labels: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rafraichissement de labels en production.",
-        "B": "Lecture du visuel: versioning est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer versioning en production dans Boucles de production.",
-        "C": "Le signal visible est coh\u00e9rent avec validation humaine, car l'objectif est supporter des arbitrages de production ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "D": "Le signal visible est coh\u00e9rent avec rollback, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollback en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Les indices visuels vont dans le sens de rollback: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur rafraichissement de labels: les indices orientent vers supporter ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Lecture du visuel: versioning est mobilise pour supporter des arbitrages de production ; l'utiliser correct...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le signal visible est coh\u00e9rent avec validation humaine, car l'objectif est supporter des arbitrages de prod...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est correcte (Le signal visible est coh\u00e9rent avec rollback, car l'objectif est supporter des arbitrages de production ; l...) car la lecture visuelle colle au signal principal observe. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Un défi est de choisir les données qui ont besoin d'un rafraîchissement d'étiquettes avec un minimum de biais. Option B est incorrecte, car ce défi ne se concentre pas uniquement sur le coût matériel. Option C est erronée, car l'automatisation totale n'est pas toujours possible ni souhaitable. Option D est incorrecte, car chaque rafraîchissement ne garantit pas l'absence de biais.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "rafraichissement de labels: quelle proposition en donne la meilleure d\u00e9finition dans 'Boucles de production' (contexte banque) ?",
+      "question": "Quel aspect est crucial pour une gestion efficace de versioning dans un système semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "rafraichissement de labels designe un levier avance en apprentissage semi supervise ; il formalise le role de rafraichissement de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "degradation des pseudo-labels correspond a un levier avance en apprentissage semi supervise ; il exploite des exemples non etiquetes en injectant des labels estimes sous controle de confiance, ce qui structure l'analyse dans Boucles de production.",
-        "C": "Dans Boucles de production, drift de confiance se comprend comme un levier avance en apprentissage semi supervise ; il mesure une d\u00e9rive entre les conditions d'entrainement et les conditions d'exploitation.",
-        "D": "erreurs silencieuses designe un levier avance en apprentissage semi supervise ; il formalise le role d'erreurs silencieuses dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Documentation détaillée des changements de modèle et des jeux de données utilisés.",
+        "B": "Augmentation continue du nombre de paramètres de modèle sans documentation.",
+        "C": "Organisation de l'équipe de développement selon les versions de modèle.",
+        "D": "Utilisation exclusive de modèles pré-entraînés pour toutes les versions."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de rafraichissement de labels dans Boucles de production, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que degradation des pseudo-labels, drift de confiance, erreurs silencieuses restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (rafraichissement de labels designe un levier avance en apprentissage semi supervise ; il formalise le role ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (degradation des pseudo-labels correspond a un levier avance en apprentissage semi supervise ; il exploite d...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Boucles de production, drift de confiance se comprend comme un levier avance en apprentissage semi sup...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (erreurs silencieuses designe un levier avance en apprentissage semi supervise ; il formalise le role d'err...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Une gestion efficace du versioning comprend la documentation des modifications au modèle et les jeux de données utilisés. Option B est erronée car ajouter des paramètres sans documentation n'est pas une bonne gestion du versioning. Option C est incorrecte, car le versioning ne concerne pas seulement l'organisation de l'équipe. Option D est incorrecte, l'usage exclusif de modèles pré-entraînés n'est pas lié au versioning.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Boucles de production', quelle erreur autour de rafraichissement de labels est la plus critique ?",
+      "question": "Comment la validation humaine peut-elle être intégrée dans une boucle de production d'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Si validation humaine est mal utilise, on observe souvent optimiser validation humaine en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de rollback est optimiser rollback en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de rafraichissement de labels est optimiser rafraichissement de labels en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Un risque classique avec versioning est d'optimiser versioning en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de rafraichissement de labels. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si validation humaine est mal utilise, on observe souvent optimiser validation humaine en silo et introduir...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour de rollback est optimiser rollback en silo et introduire des modes d'echec caches...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de rafraichissement de labels est optimiser rafraichissement de labels en silo et...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec versioning est d'optimiser versioning en silo et introduire des modes d'echec cac...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Boucles de production' et en contexte banque, quelle interpretation du schema appuie le mieux l'analyse de rafraichissement de labels ?",
-      "image_url": "apprentissage-semi-supervise_boucles_de_production_rafraichissement_de_labels_1.png",
-      "choices": {
-        "A": "Lecture du visuel: validation humaine est mobilise pour supporter des arbitrages de production ; reduire le risque de surestimer la performance sur donn\u00e9es futures dans Boucles de production.",
-        "B": "Le signal visible est coh\u00e9rent avec rollback, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollback en production.",
-        "C": "Le signal visible est coh\u00e9rent avec rafraichissement de labels, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rafraichissement de labels en production.",
-        "D": "Le schema illustre une d\u00e9cision basee sur versioning: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer versioning en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Les indices visuels vont dans le sens de rafraichissement de labels: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Lecture du visuel: validation humaine est mobilise pour supporter des arbitrages de production ; reduire le...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Le signal visible est coh\u00e9rent avec rollback, car l'objectif est supporter des arbitrages de production ; l...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est correcte (Le signal visible est coh\u00e9rent avec rafraichissement de labels, car l'objectif est supporter des arbitrages...) car la lecture visuelle colle au signal principal observe. D'est moins pertinente (Le schema illustre une d\u00e9cision basee sur versioning: les indices orientent vers supporter des arbitrages d...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Observation visuelle (Boucles de production) - pour un contexte sante, quelle lecture du schema est la plus pertinente pour validation humaine ?",
-      "image_url": "apprentissage-semi-supervise_boucles_de_production_validation_humaine_1.png",
-      "choices": {
-        "A": "Lecture du visuel: validation humaine est mobilise pour supporter des arbitrages de production ; reduire le risque de surestimer la performance sur donn\u00e9es futures dans Boucles de production.",
-        "B": "Le signal visible est coh\u00e9rent avec rafraichissement de labels, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rafraichissement de labels en production.",
-        "C": "Le schema illustre une d\u00e9cision basee sur versioning: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer versioning en production.",
-        "D": "Lecture du visuel: rollback est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollback en production dans Boucles de production."
+        "A": "Comme étape de correction des étiquettes après un cycle de prédiction.",
+        "B": "Comme processus où les modèles remplacent entièrement les analystes.",
+        "C": "Comme moyen pour augmenter le nombre de données synthétiques étiquetées.",
+        "D": "Exclusivement pour créer des étiquettes depuis zéro sans apport algorithmique."
       },
       "correct_answer": "A",
-      "explanation": "Les indices visuels vont dans le sens de validation humaine: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est correcte (Lecture du visuel: validation humaine est mobilise pour supporter des arbitrages de production ; reduire le...) car la lecture visuelle colle au signal principal observe. B est moins pertinente (Le signal visible est coh\u00e9rent avec rafraichissement de labels, car l'objectif est supporter des arbitrages...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le schema illustre une d\u00e9cision basee sur versioning: les indices orientent vers supporter des arbitrages d...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Lecture du visuel: rollback est mobilise pour supporter des arbitrages de production ; l'utiliser correctem...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "La validation humaine intervient pour corriger les étiquettes malréalisées par les modèles après prédiction. L'option B est incorrecte car les modèles ne remplacent pas entièrement les analystes. L'option C est incorrecte car la validation humaine ne vise pas à synthétiser des étiquettes. L'option D est erronée, car la validation humaine ne part pas toujours de zéro; elle ajuste souvent les résultats algorithmiques.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Objectif (Boucles de production) - supporter des arbitrages de production ; reduire le risque de surestimer la performance sur donn\u00e9es futures. Quel concept est le plus coh\u00e9rent ?",
+      "question": "Pourquoi le rollback est-il essentiel après un cycle d'apprentissage semi-supervisé échoué?",
       "image_url": null,
       "choices": {
-        "A": "stabilit\u00e9: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production.",
-        "B": "validation humaine est utilise pour supporter des arbitrages de production ; reduire le risque de surestimer la performance sur donn\u00e9es futures, ce qui correspond a \u00e9valuation robuste de la g\u00e9n\u00e9ralisation.",
-        "C": "La finalit\u00e9 de fiabilit\u00e9 est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer fiabilit\u00e9 en production.",
-        "D": "Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production, augmentation forte est le concept associe."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est validation humaine: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans Boucles de production. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est moins pertinente (stabilit\u00e9: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mi...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. B est correcte (validation humaine est utilise pour supporter des arbitrages de production ; reduire le risque de surestime...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. C'est moins pertinente (La finalit\u00e9 de fiabilit\u00e9 est de supporter des arbitrages de production ; l'utiliser correctement permet de ...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. D'est moins pertinente (Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Boucles de production', quel concept repond le mieux a cet objectif: supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollback en production.",
-      "image_url": null,
-      "choices": {
-        "A": "La finalit\u00e9 de rollback est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollback en production.",
-        "B": "Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production, augmentation forte est le concept associe.",
-        "C": "stabilit\u00e9: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production.",
-        "D": "domain shift est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production, ce qui correspond a usage operationnel de domain shift."
+        "A": "Pour assurer la continuité opérationnelle avec le dernier modèle stable.",
+        "B": "Pour forcer les utilisateurs à redémarrer le système.",
+        "C": "Pour supprimer définitivement toutes les modifications apportées aux données.",
+        "D": "Pour ajuster automatiquement la taille du jeu de données utilisé."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est rollback: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans Boucles de production. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est correcte (La finalit\u00e9 de rollback est de supporter des arbitrages de production ; l'utiliser correctement permet de m...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. B est moins pertinente (Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. C'est moins pertinente (stabilit\u00e9: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mi...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. D'est moins pertinente (domain shift est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mi...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Le rollback assure la continuité en permettant de retourner à la dernière version stable du modèle. Option B est incorrecte, car le rollback ne force pas un redémarrage du système par utilisateur. Option C est fausse, car le rollback ne supprime pas définitivement des données. Option D est erronée, car la taille des données n'est pas ajustée par le rollback.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Boucles de production', quel concept correspond le mieux a cette description: un levier avance en apprentissage semi supervise ; il structure l'\u00e9valuation hors entrainement pour estimer la g\u00e9n\u00e9ralisation r\u00e9elle.",
+      "question": "Quelle stratégie est souvent utilisée pour minimiser les erreurs lors du rafraîchissement des labels?",
       "image_url": null,
       "choices": {
-        "A": "augmentation forte correspond a un levier avance en apprentissage semi supervise ; il formalise le role d'augmentation forte dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel d'augmentation forte.",
-        "B": "Le concept stabilit\u00e9 se reconnait par un levier avance en apprentissage semi supervise ; il formalise le role de stabilit\u00e9 dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Quand une d\u00e9finition insiste sur un levier avance en apprentissage semi supervise ; il structure l'\u00e9valuation hors entrainement pour estimer la g\u00e9n\u00e9ralisation r\u00e9elle, elle renvoie a validation humaine.",
-        "D": "fiabilit\u00e9: un levier avance en apprentissage semi supervise ; il formalise le role de fiabilit\u00e9 dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "Le concept attendu est validation humaine, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Boucles de production. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (augmentation forte correspond a un levier avance en apprentissage semi supervise ; il formalise le role de ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est moins pertinente (Le concept stabilit\u00e9 se reconnait par un levier avance en apprentissage semi supervise ; il formalise le ro...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est correcte (Quand une d\u00e9finition insiste sur un levier avance en apprentissage semi supervise ; il structure l'evaluati...) car la d\u00e9finition correspond exactement au concept attendu. D'est moins pertinente (fiabilit\u00e9: un levier avance en apprentissage semi supervise ; il formalise le role de fiabilit\u00e9 dans un pip...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Quel concept de 'Boucles de production' est le plus align\u00e9 avec cet objectif: supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer versioning en production.",
-      "image_url": null,
-      "choices": {
-        "A": "La finalit\u00e9 de fiabilit\u00e9 est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer fiabilit\u00e9 en production.",
-        "B": "Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production, augmentation forte est le concept associe.",
-        "C": "versioning: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer versioning en production.",
-        "D": "selection prudente est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection prudente en production, ce qui correspond a usage operationnel de selection prudente."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est versioning: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans Boucles de production. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est moins pertinente (La finalit\u00e9 de fiabilit\u00e9 est de supporter des arbitrages de production ; l'utiliser correctement permet de ...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. B est moins pertinente (Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. C'est correcte (versioning: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de m...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. D'est moins pertinente (selection prudente est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Description experte (Boucles de production) - un levier avance en apprentissage semi supervise ; il formalise le role de versioning dans un pipeline ML, avec ses hypotheses et ses limites pratiques. Quel concept est le plus exact ?",
-      "image_url": null,
-      "choices": {
-        "A": "Quand une d\u00e9finition insiste sur un levier avance en apprentissage semi supervise ; il formalise le role de selection prudente dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a selection prudente.",
-        "B": "fiabilit\u00e9: un levier avance en apprentissage semi supervise ; il formalise le role de fiabilit\u00e9 dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "augmentation forte correspond a un levier avance en apprentissage semi supervise ; il formalise le role d'augmentation forte dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel d'augmentation forte.",
-        "D": "Le concept versioning se reconnait par un levier avance en apprentissage semi supervise ; il formalise le role de versioning dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "D",
-      "explanation": "Le concept attendu est versioning, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Boucles de production. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (Quand une d\u00e9finition insiste sur un levier avance en apprentissage semi supervise ; il formalise le role de...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est moins pertinente (fiabilit\u00e9: un levier avance en apprentissage semi supervise ; il formalise le role de fiabilit\u00e9 dans un pip...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est moins pertinente (augmentation forte correspond a un levier avance en apprentissage semi supervise ; il formalise le role de ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est correcte (Le concept versioning se reconnait par un levier avance en apprentissage semi supervise ; il formalise le r...) car la d\u00e9finition correspond exactement au concept attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Boucles de production', quel concept repond le mieux a cet objectif: supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rafraichissement de labels en production.",
-      "image_url": null,
-      "choices": {
-        "A": "temperature scaling: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer temperature scaling en production.",
-        "B": "selection prudente est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection prudente en production, ce qui correspond a usage operationnel de selection prudente.",
-        "C": "La finalit\u00e9 de fiabilit\u00e9 est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer fiabilit\u00e9 en production.",
-        "D": "Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rafraichissement de labels en production, rafraichissement de labels est le concept associe."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est rafraichissement de labels: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans Boucles de production. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est moins pertinente (temperature scaling: objectif principal supporter des arbitrages de production ; l'utiliser correctement pe...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. B est moins pertinente (selection prudente est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. C'est moins pertinente (La finalit\u00e9 de fiabilit\u00e9 est de supporter des arbitrages de production ; l'utiliser correctement permet de ...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. D'est correcte (Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "A partir de cette description issue de 'Boucles de production' (un levier avance en apprentissage semi supervise ; il formalise le role de rollback dans un pipeline ML, avec ses hypotheses et ses limites pratiques.), quel concept faut-il retenir ?",
-      "image_url": null,
-      "choices": {
-        "A": "Quand une d\u00e9finition insiste sur un levier avance en apprentissage semi supervise ; il formalise le role de domain shift dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a domain shift.",
-        "B": "rollback: un levier avance en apprentissage semi supervise ; il formalise le role de rollback dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "augmentation forte correspond a un levier avance en apprentissage semi supervise ; il formalise le role d'augmentation forte dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel d'augmentation forte.",
-        "D": "Le concept stabilit\u00e9 se reconnait par un levier avance en apprentissage semi supervise ; il formalise le role de stabilit\u00e9 dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "B",
-      "explanation": "Le concept attendu est rollback, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Boucles de production. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (Quand une d\u00e9finition insiste sur un levier avance en apprentissage semi supervise ; il formalise le role de...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est correcte (rollback: un levier avance en apprentissage semi supervise ; il formalise le role de rollback dans un pipel...) car la d\u00e9finition correspond exactement au concept attendu. C'est moins pertinente (augmentation forte correspond a un levier avance en apprentissage semi supervise ; il formalise le role de ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est moins pertinente (Le concept stabilit\u00e9 se reconnait par un levier avance en apprentissage semi supervise ; il formalise le ro...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "A partir de cette description issue de 'Boucles de production' (un levier avance en apprentissage semi supervise ; il formalise le role de rafraichissement de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques.), quel concept faut-il retenir ?",
-      "image_url": null,
-      "choices": {
-        "A": "rafraichissement de labels correspond a un levier avance en apprentissage semi supervise ; il formalise le role de rafraichissement de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel de rafraichissement de labels.",
-        "B": "Le concept temperature scaling se reconnait par un levier avance en apprentissage semi supervise ; il formalise le role de temperature scaling dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Quand une d\u00e9finition insiste sur un levier avance en apprentissage semi supervise ; il formalise le role de selection prudente dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a selection prudente.",
-        "D": "fiabilit\u00e9: un levier avance en apprentissage semi supervise ; il formalise le role de fiabilit\u00e9 dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Utilisation d'un ensemble d'évaluateurs multiples pour un consensus sur l'étiquette.",
+        "B": "Automatisation totale sans intervention humaine pour rapidité.",
+        "C": "Limiter le rafraîchissement à des échantillons déjà étiquetés à 100%.",
+        "D": "Changer l'algorithme de modèle pour chaque nouveau cycle."
       },
       "correct_answer": "A",
-      "explanation": "Le concept attendu est rafraichissement de labels, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Boucles de production. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est correcte (rafraichissement de labels correspond a un levier avance en apprentissage semi supervise ; il formalise le ...) car la d\u00e9finition correspond exactement au concept attendu. B est moins pertinente (Le concept temperature scaling se reconnait par un levier avance en apprentissage semi supervise ; il forma...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est moins pertinente (Quand une d\u00e9finition insiste sur un levier avance en apprentissage semi supervise ; il formalise le role de...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est moins pertinente (fiabilit\u00e9: un levier avance en apprentissage semi supervise ; il formalise le role de fiabilit\u00e9 dans un pip...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Les évaluateurs multiples permettent d'atteindre un consensus et de minimiser les biais d'étiquetage. Option B est fausse car l'automatisation complète peut entraîner des erreurs non détectées. Option C est incorrecte, le rafraîchissement ne se limite pas aux échantillons déjà entièrement étiquetés. Option D est erronée car il n'est pas nécessaire de changer d'algorithme à chaque cycle pour rafraîchir les labels.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel obstacle peut survenir dans le versioning en apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Confusion autour des décisions à prendre suite à des résultats non concluants.",
+        "B": "Baisse des performances à chaque version car non optimisée.",
+        "C": "Conflit entre la validation humaine et la génération automatique d'étiquettes.",
+        "D": "Aucun besoin de former des données étiquetées dans le versioning."
+      },
+      "correct_answer": "A",
+      "explanation": "Les résultats non concluants peuvent rendre difficile la décision sur quelle version conserver. Option B est incorrecte, car même avec des versions non optimisées, cela ne signifie pas nécessairement une baisse de performance. Option C est erronée, car le versioning concerne la gestion des versions plutôt que des conflits d'étiquetage. Option D est fausse car le versioning nécessite toujours des données étiquetées.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans quel cas un rollback peut-il être particulièrement complexe à réaliser dans les systèmes de semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Lorsque le modèle a été modifié avec des jeux de données interactifs non réversibles.",
+        "B": "Lorsqu'il n'y a eu aucun changement dans les hyperparamètres du modèle.",
+        "C": "Quand des versions successives ont utilisé les mêmes jeux de données statiques.",
+        "D": "Quand seules des modifications de documentation ont été faites sans modèle touché."
+      },
+      "correct_answer": "A",
+      "explanation": "Les jeux de données interactifs qui modifient l'état du modèle de façon irréversible compliquent le rollback. Option B est incorrecte car des changements d'hyperparamètres peuvent être gérés individuellement. Option C est erronée, car l'usage de jeux de données statiques facilite plutôt le rollback. Option D est fausse, car une rollback n'est pas nécessaire si seule la documentation a été modifiée.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle méthode pourrait faussement sembler bénéfique lors du rafraîchissement de labels, mais compromettre la qualité des données?",
+      "image_url": null,
+      "choices": {
+        "A": "Automatisation complète du renouvellement des étiquettes sans validation humaine.",
+        "B": "Utilisation d'indicateurs de performance historiques pour guider le rafraîchissement.",
+        "C": "Inclusion de feedback utilisateur pour prioriser l'étiquetage.",
+        "D": "Exclusion totale des utilisateurs finaux dans le processus de rafraîchissement."
+      },
+      "correct_answer": "A",
+      "explanation": "La non-intégration de validation humaine peut engendrer des erreurs systématiques non détectées. Option B est incorrecte car les indicateurs de performance guidés créent un cadre rationnel. Option C est erronée car le feedback utilisateur est souvent valide dans l’affinement du label. Option D est incorrecte car ignorer les utilisateurs finaux peut biaiser les résultats.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi le suivi des versions est-il important pour un modèle en apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour analyser l'impact des modifications sur chaque aspect du modèle.",
+        "B": "Pour obliger les mises à jour continues des modèles en production.",
+        "C": "Pour supprimer régulièrement des versions obsolètes.",
+        "D": "Pour empêcher toute modification une fois le modèle déployé."
+      },
+      "correct_answer": "A",
+      "explanation": "Suivre les versions permet d'analyser comment chaque modification impacte les performances du modèle. Option B est fausse, car cela ne force pas les mises à jour continues. Option C est incorrecte, car le but n'est pas uniquement de supprimer des versions. Option D est incorrecte, le versioning n'empêche pas les modifications après déploiement.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'un des facteurs limitant l'efficacité d'un mécanisme de rollback en apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Non-disponibilité d'une version antérieure stabilisée.",
+        "B": "Impossible de répliquer le processus de validation humaine précédente.",
+        "C": "Absence d'étiquettes perpétuelles et statiques.",
+        "D": "Trop de dépendance sur des modèles open source."
+      },
+      "correct_answer": "A",
+      "explanation": "Le manque d'une version antérieure qui a déjà été validée et considérée comme stable peut compliquer le rollback. Option B est incorrecte, car la validation humaine antérieure n'est pas répétée pendant un rollback. Option C est erronée, car l'absence d'étiquettes perpétuelles n'est pas un problème direct de rollback. D est incorrect car la dépendance vers des modèles open source n’affecte pas directement le rollback.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle question cruciale se pose lors de l'implémentation de mécanismes de rafraîchissement de labels?",
+      "image_url": null,
+      "choices": {
+        "A": "Quel seuil de confiance justifie une réévaluation complète des étiquettes?",
+        "B": "Comment diminuer les performances des modèles récemment déployés?",
+        "C": "Pourquoi éviter l'intégration des feedbacks utilisateurs dans le processus?",
+        "D": "Quand restreindre le nombre d'itérations de validation humaine avant interruption?"
+      },
+      "correct_answer": "A",
+      "explanation": "L’établissement d’un seuil de confiance critique les étiquettes pour réévaluation indique une nécessité de justifier le rafraîchissement. Option B est incorrecte car le but est d’améliorer, non diminuer la performance. Option C est incorrecte, car l’intégration de feedback est normalement souhaitée. Option D est erronée car l'itération est gérée par d'autres paramètres que le nombre restreint.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel problème majeur serait engendré par un échec de rollback approprié?",
+      "image_url": null,
+      "choices": {
+        "A": "Modèles largement utilisés mais non optimisés entraînant des failles de production.",
+        "B": "Augmentation du nombre de faux négatifs dans l'entraînement en raison d'un mauvais traitement des données.",
+        "C": "Augmentation des ressources allouées à une itération non consistante.",
+        "D": "Information défragmentée au sein d'une communauté de pratique en raison d'un feedback inapproprié."
+      },
+      "correct_answer": "A",
+      "explanation": "Un rollback inefficace peut amener à utiliser des modèles non optimisés sur une grande échelle, entrainant des problèmes de production. Option B n’est pas une conséquence directe de l’échec de rollback mais de la qualité d’initialisation. La ressource ajoutée, option C, pourrait être gérée indépendamment. D est incorrect car le rollback ne cause pas des problèmes de feedback inappropriés.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment le versioning impacte-t-il la traçabilité dans l'apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "En créant des enregistrements systématiques de modèles qui identifient les changements.",
+        "B": "En masquant les modifications pour maintenir la confidentialité.",
+        "C": "En fusionnant toutes les modifications dans un modèle final.",
+        "D": "En limitant la diffusion des changements à l'équipe de développeurs."
+      },
+      "correct_answer": "A",
+      "explanation": "Le versioning améliore la traçabilité en conservant des enregistrements précis des versions et changements. B est incorrect car la confidentialité n’est pas l’objectif de traceabilité. C est incorrect car mélanger tous les changements gênerait la traçabilité. D est incorrect car limiter les données ne facilite pas le suivi.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une bonne pratique lors du développement d'un système de rollback pour l'apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Tester régulièrement les versions antérieures pour leur stabilité.",
+        "B": "Utiliser exclusivement des modèles pré-entraînés sans ajustements.",
+        "C": "Ignorez les conflits de données issus de versions ultérieures.",
+        "D": "Effectuer un rollback automatiquement sans processus de validation."
+      },
+      "correct_answer": "A",
+      "explanation": "La stabilité du modèle via des tests réguliers est cruciale pour maintenir une base fiable lors de rollback. B est incorrect car ignorer les ajustements personnalisés limite l’efficacité. C est incorrect car les conflits doivent être gérés, pas ignorés. D est incorrect car une validation est nécessaire pour s'assurer des rollbacks appropriés.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi l'écriture d'une documentation détaillée des versions est-elle importante dans l'apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle permet d'identifier les erreurs exactes survenues à chaque cycle.",
+        "B": "Elle invite à automatiser le transfert des versions sans suivi.",
+        "C": "Elle limite le nombre de tests à chaque itération de modèles.",
+        "D": "Elle allège l'équipe de leur tâche de validation manuelle."
+      },
+      "correct_answer": "A",
+      "explanation": "La documentation des versions aide à identifier exactement les erreurs lors de chaque cycle. B est incorrect car la documentation n'automatise pas le transfert. C est incorrect car la documentation n’influence pas le nombre de tests à itérer. D est incorrect, car elle ne réduit pas la tâche de validation manuelle.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel risque existe-t-il lors d'une mauvaise gestion de versioning dans le cadre d'un apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Une confusion concernant les performances attendues des modèles.",
+        "B": "Un accroissement involontaire du coût de stockage des données mises à jour.",
+        "C": "Réduction du besoin de la validation humaine dans le processus.",
+        "D": "La simplification des processus d'entraînement des modèles."
+      },
+      "correct_answer": "A",
+      "explanation": "Une mauvaise gestion du versioning peut mener à la confusion sur les performances des diverses versions de modèles. B est incorrect car le coût est généralement bien géré en versioning. C est incorrect car la validation humaine reste primordiale. D est incorrect car elle ne simplifie pas le processus d'entraînement.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est l'utilité du rafraîchissement de labels dans un système d'apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Corriger les biais potentiels en mettant à jour les étiquettes obsolètes ou erronées.",
+        "B": "Réduire la taille de jeu de données en supprimant des étiquettes incorrectes.",
+        "C": "Optimiser le temps de calcul en réduisant la fréquence des mises à jour.",
+        "D": "Augmenter le taux d'apprentissage en ajoutant plus de données non étiquetées."
+      },
+      "correct_answer": "A",
+      "explanation": "Le rafraîchissement de labels implique la mise à jour des labels pour réduire les biais, contrairement à réduire ou optimiser uniquement le volume de données.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel aspect est crucial pour le versioning des modèles en apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Maintenir un historique des modifications du modèle et des données utilisées.",
+        "B": "Minimiser le stockage en ne sauvegardant que la dernière version du modèle.",
+        "C": "Prioriser les versions ayant les meilleures performances uniquement.",
+        "D": "Inclure seulement les versions qui ont des changements significatifs d'architecture."
+      },
+      "correct_answer": "A",
+      "explanation": "Le versioning consiste à garder une trace de toutes les versions pour comprendre l'évolution et la performance du modèle, au-delà de simplement stocker les meilleures ou dernières versions.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment la validation humaine peut-elle être intégrée dans le cycle d'un modèle semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Par vérification et ajustement des étiquettes générées automatiquement.",
+        "B": "En remplaçant complètement l'apprentissage automatique par des étiquettes manuelles.",
+        "C": "En éliminant les biais des algorithmes en changeant leurs hyperparamètres.",
+        "D": "En automatisant totalement le processus de labelisation sans retour humain."
+      },
+      "correct_answer": "A",
+      "explanation": "La validation humaine consiste à vérifier et éventuellement corriger les labels prédits automatiquement, contrairement à supprimer ou remplacer complètement le processus automatique.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le rôle du rollback dans les systèmes d'apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Revenir à une version antérieure du modèle en cas de problème de performance.",
+        "B": "Effacer définitivement toutes les versions du modèle pour commencer de zéro.",
+        "C": "Automatiser l'achat d'une infrastructure de calcul plus performante.",
+        "D": "Générer de nouvelles étiquettes pour augmenter le taux de classification."
+      },
+      "correct_answer": "A",
+      "explanation": "Le rollback permet de retourner à une version antérieure fiable du système, plutôt que d'éliminer les versions ou de modifier directement l'infrastructure matérielle.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le principal objectif du rafraîchissement de labels dans l'apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Actualiser les labels des données non étiquetées à l'aide d'un modèle pour améliorer la précision.",
+        "B": "Supprimer toutes les données non étiquetées du dataset pour affiner les résultats.",
+        "C": "Augmenter la taille du dataset en ajoutant des données synthétiques non étiquetées.",
+        "D": "Convertir toutes les données non étiquetées en données étiquetées en utilisant des labels aléatoires."
+      },
+      "correct_answer": "A",
+      "explanation": "Le rafraîchissement de labels vise à ré-étiqueter les données non étiquetées, généralement en utilisant un modèle, pour améliorer la précision globale des prédictions. Supprimer des données non étiquetées (réponse B) réduirait le volume d'information. Augmenter la taille (réponse C) ne garantit pas des labels corrects. Utiliser des labels aléatoires (réponse D) n'apporte aucune valeur prédictive.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'avantage du versioning dans les boucles de production d'apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Permet de suivre l'évolution des modèles et datasets pour reproduire les résultats.",
+        "B": "Augmente la vitesse d'entraînement des modèles en utilisant des versions anciennes.",
+        "C": "Assure que tous les utilisateurs disposent des dernières mises à jour instantanément.",
+        "D": "Élimine le besoin de validation humaine par versioning des modèles efficacement."
+      },
+      "correct_answer": "A",
+      "explanation": "Le versioning permet de garder une trace des différentes versions des modèles et des datasets, assurant ainsi la reproduction des résultats. Réponse B est fausse, car le versioning ne concerne pas la vitesse d'entraînement. Réponse C est incorrecte, car le versioning n'implique pas de mises à jour simultanées pour tous les utilisateurs. Réponse D est incorrecte, car le versioning ne remplace pas la validation humaine.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi la validation humaine est-elle importante dans un pipeline d'apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle garantit que les données étiquetées automatiquement sont correctes et de haute qualité.",
+        "B": "Elle permet de réduire les coûts en évitant l'utilisation de modèles coûteux.",
+        "C": "Elle remplace la phase de test d'un modèle avant sa mise en production.",
+        "D": "Elle augmente la complexité du modèle pour améliorer ses performances."
+      },
+      "correct_answer": "A",
+      "explanation": "La validation humaine est cruciale pour assurer la qualité des labels générés automatiquement par les modèles. Réponse B est incorrecte, car même si cela peut réduire certains coûts, le but principal est la qualité des labels. Réponse C est fausse, car la validation humaine n'est pas un substitut aux tests de modèles. Réponse D est inexacte, car elle n'a pas pour but d'augmenter la complexité du modèle.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est l'utilité d'un rollback dans une boucle de production en apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Rétablir une version antérieure d'un modèle ou d'un dataset en cas de mauvaise performance.",
+        "B": "Doubler la capacité de traitement d'un modèle en utilisant des états antérieurs.",
+        "C": "Optimiser les hyperparamètres d'un modèle pour chaque version restaurée.",
+        "D": "Combiner les résultats de plusieurs versions précédentes pour améliorer la précision."
+      },
+      "correct_answer": "A",
+      "explanation": "Un rollback permet de revenir à une version précédente du modèle ou du dataset en cas de dégradations des performances. Réponse B n'est pas pertinente car un rollback ne change pas la capacité de traitement d'un modèle. Réponse C est incorrecte car un rollback ne modifie pas les hyperparamètres. Réponse D est fausse car un rollback n'implique pas une combinaison de résultats multiples.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans le contexte de l'apprentissage semi-supervisé, pourquoi est-il important de rafraîchir les labels au fil du temps?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour s'assurer que le modèle apprend des représentations à jour et pertinentes.",
+        "B": "Parce que le rafraîchissement des labels améliore automatiquement la performance de tous les modèles.",
+        "C": "Pour réduire le besoin de puissance de calcul, car cela simplifie les modèles.",
+        "D": "Parce que c'est requis par toutes les lois sur la confidentialité des données."
+      },
+      "correct_answer": "A",
+      "explanation": "Le rafraîchissement des labels est crucial car les données peuvent évoluer, et les modèles doivent apprendre des informations à jour pour rester pertinents. B est faux car la performance n'est pas améliorée automatiquement sans un apprentissage correct. C est erroné car le rafraîchissement n'a pas d'impact direct sur la simplification des modèles. D est incorrect car le rafraîchissement n'est pas une exigence légale spécifique.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le rôle du versioning dans les boucles de production de l'apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Le versioning permet de sauvegarder différentes versions d'un modèle pour référence future.",
+        "B": "Le versioning accélère le temps de formation des nouveaux modèles.",
+        "C": "Le versioning élimine le besoin de validation humaine en traçant les erreurs.",
+        "D": "Le versioning limite l'expérimentation à une seule version stable de modèle."
+      },
+      "correct_answer": "A",
+      "explanation": "Le versioning permet de garder une trace des différentes versions des modèles, facilitant l'analyse comparative et la régression lorsqu'une nouvelle version est déployée. B est faux car cela n'affecte pas directement le temps de formation. C est incorrect parce que la traçabilité ne remplace pas la validation humaine, essentielle pour garantir la qualité. D est faux car le versioning encourage justement l'expérimentation.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il crucial d'impliquer des humains dans la validation des modèles semi-supervisés?",
+      "image_url": null,
+      "choices": {
+        "A": "Parce que les données partiellement étiquetées peuvent contenir des erreurs que le modèle ne peut détecter seul.",
+        "B": "Pour réduire les coûts associés à l'entraînement du modèle.",
+        "C": "Parce que cela augmente la vitesse de convergence du modèle.",
+        "D": "Parce que les humains peuvent remplacer le besoin de toute autre évaluation automatique."
+      },
+      "correct_answer": "A",
+      "explanation": "La validation humaine est essentielle pour identifier des erreurs ou des ambiguïtés dans les données entraînées semi-supervisées, ce que les modèles automatiques ne peuvent pas toujours faire. B est incorrect car impliquer des humains augmente généralement les coûts. C est faux car la validation humaine n'accélère pas la convergence du modèle. D est erroné car elle complète, et non remplace, les évaluations automatiques.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce que le rollback et pourquoi est-il utilisé dans une boucle de production de modèles semi-supervisés?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour revenir à une version antérieure du modèle lorsque des problèmes sont détectés.",
+        "B": "Pour effacer toutes les données d'entraînement en cas d'erreur critique.",
+        "C": "Pour augmenter la complexité des données d'entrée et améliorer la robustesse du modèle.",
+        "D": "Pour automatiser le processus d'étiquetage des données non supervisées."
+      },
+      "correct_answer": "A",
+      "explanation": "Le rollback permet de revenir à une version précédente et stable du modèle lorsque des problèmes sont rencontrés, minimisant ainsi les perturbations et les erreurs potentielles. B est incorrect car le rollback ne concerne pas la suppression de données. C est erroné car il ne traite pas de la complexité des données mais des versions de modèles. D est faux car le rollback n'automatise pas l'étiquetage des données.",
       "difficulty": "hard"
     }
   ]

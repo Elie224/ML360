@@ -4,312 +4,312 @@
   "module": "Pipelines et experimentation",
   "questions": [
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec pipeline dans 'Pipelines et experimentation' ?",
-      "image_url": "apprentissage-supervise_pipelines_et_experimentation_pipeline_2.png",
+      "type": "text",
+      "question": "Quel est l'avantage principal de l'utilisation des pipelines en apprentissage supervisé ?",
+      "image_url": null,
       "choices": {
-        "A": "Dans Pipelines et experimentation, reproductibilite est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'experiences, audit et retour arriere en production.",
-        "B": "Dans Pipelines et experimentation, pipeline est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer pipeline en production.",
-        "C": "Le role de modele baseline est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele baseline en production.",
-        "D": "recherche d'hyperparametres sert a fiabiliser les d\u00e9cisions d'experimentation ; trouver le meilleur compromis biais-variance pour le contexte m\u00e9tier pour guider une d\u00e9cision exploitable."
+        "A": "Ils standardisent et automatisent le flux de travail du prétraitement à la prédiction.",
+        "B": "Ils rendent le modèle plus complexe et nuisent à la performance.",
+        "C": "Ils sont utilisés uniquement pour l'analyse des données exploratoires.",
+        "D": "Ils augmentent toujours la précision du modèle en ajoutant des étapes de prétraitement."
       },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de pipeline dans Pipelines et experimentation. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Pipelines et experimentation, reproductibilite est mobilise pour fiabiliser les d\u00e9cisions d'experiment...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Pipelines et experimentation, pipeline est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; ...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de modele baseline est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perm...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (recherche d'hyperparametres sert a fiabiliser les d\u00e9cisions d'experimentation ; trouver le meilleur comprom...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Les pipelines standardisent et automatisent le flux de travail, ce qui aide à éviter les erreurs humaines et assure reproductibilité et traçabilité. Option B est incorrect car ils simplifient le flux de traitement, pas le complexifient. Option C est fausse car les pipelines sont conçus pour le processus end-to-end du prétraitement à la prédiction, pas uniquement l'analyse exploratoire. Option D est fausse car l'ajout de processus dans un pipeline ne garantit pas toujours une meilleure performance.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Pipelines et experimentation' (assurance), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment modele baseline ?",
+      "question": "Pourquoi est-il important d'établir un modèle baseline avant d'expérimenter d'autres modèles complexes ?",
       "image_url": null,
       "choices": {
-        "A": "Dans Pipelines et experimentation, validation set se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; il structure l'\u00e9valuation hors entrainement pour estimer la g\u00e9n\u00e9ralisation r\u00e9elle.",
-        "B": "stratification designe un concept interm\u00e9diaire en apprentissage supervise ; elle preserve les proportions de classes dans les splits train/validation/test.",
-        "C": "early stopping correspond a un concept interm\u00e9diaire en apprentissage supervise ; il arrete l'entrainement quand la performance de validation cesse de progresser, ce qui structure l'analyse dans Pipelines et experimentation.",
-        "D": "modele baseline correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de modele baseline dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Pipelines et experimentation."
+        "A": "Pour disposer d'un point de référence afin d'évaluer les performances des modèles plus avancés.",
+        "B": "Parce qu'il est généralement plus précis que les modèles plus complexes.",
+        "C": "Car les modèles baseline n'ont pas besoin de validation croisée.",
+        "D": "Parce qu'ils nécessitent plus de ressources informatiques, ce qui les rend idéaux pour les grands ensembles de données."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de modele baseline dans Pipelines et experimentation, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte assurance, alors que validation set, stratification, early stopping restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Pipelines et experimentation, validation set se comprend comme un concept interm\u00e9diaire en apprentissa...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (stratification designe un concept interm\u00e9diaire en apprentissage supervise ; elle preserve les proportions ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (early stopping correspond a un concept interm\u00e9diaire en apprentissage supervise ; il arrete l'entrainement ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (modele baseline correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Un modèle baseline fournit un point de référence pour évaluer si les modèles plus complexes offrent réellement une amélioration. Option B est incorrecte, car les modèles complexes sont généralement conçu pour améliorer la précision du baseline. Option C est fausse car la validation croisée est également nécessaire pour bien évaluer les baselines. Option D est incorrecte car les baselines sont généralement simples et requièrent moins de ressources.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Pipelines et experimentation', quel est le role le plus determinant de pipeline pour un cas banque ?",
+      "question": "Quel est le but principal de la recherche d'hyperparamètres ?",
       "image_url": null,
       "choices": {
-        "A": "Dans Pipelines et experimentation, modele baseline est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele baseline en production.",
-        "B": "Le role de recherche d'hyperparametres est de fiabiliser les d\u00e9cisions d'experimentation ; trouver le meilleur compromis biais-variance pour le contexte m\u00e9tier.",
-        "C": "reproductibilite sert a fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'experiences, audit et retour arriere en production pour guider une d\u00e9cision exploitable.",
-        "D": "pipeline sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer pipeline en production pour guider une d\u00e9cision exploitable."
+        "A": "Optimiser les performances d'un modèle en ajustant des paramètres non entraînables.",
+        "B": "Améliorer la vitesse de convergence de l'algorithme.",
+        "C": "Fixer les poids initiaux des modèles de réseaux de neurones.",
+        "D": "Augmenter la taille du jeu de données d'entraînement."
       },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie pipeline \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Pipelines et experimentation, modele baseline est mobilise pour fiabiliser les d\u00e9cisions d'experimenta...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de recherche d'hyperparametres est de fiabiliser les d\u00e9cisions d'experimentation ; trouver le meill...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (reproductibilite sert a fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'experiences, ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (pipeline sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux decide...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La recherche d'hyperparamètres vise à trouver les paramètres optimaux pour améliorer les performances du modèle, comme le taux d'apprentissage ou le nombre de voisins dans k-NN. Option B est fausse car même si cela peut influencer la convergence, ce n'est pas le but principal. Option C est incorrecte, car les poids initiaux ne sont pas des hyperparamètres typiques ajustés lors de cette étape. Option D est fallacieuse car cette recherche ne concerne pas la taille des données d'entrée.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Pipelines et experimentation', quelle situation de terrain montre le mieux quand utiliser pipeline ?",
+      "question": "Quel rôle la reproductibilité joue-t-elle dans les expérimentations en machine learning ?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Pipelines et experimentation, reproductibilite est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'experiences, audit et retour arriere en production.",
-        "B": "En contexte r\u00e9el sur Pipelines et experimentation, pipeline est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer pipeline en production.",
-        "C": "Pendant une phase d'experimentation, modele baseline est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele baseline en production tout en surveillant le risque de sur-optimiser modele baseline localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation de Pipelines et experimentation, l'\u00e9quipe applique recherche d'hyperparametres pour fiabiliser les d\u00e9cisions d'experimentation ; trouver le meilleur compromis biais-variance pour le contexte m\u00e9tier."
+        "A": "Elle garantit que les résultats d'une expérience sont fiables et peuvent être répliqués.",
+        "B": "Elle permet d'améliorer les performances d'un modèle en le réentraînant plusieurs fois.",
+        "C": "Elle nécessite l'utilisation de jeux de données distincts pour chaque expérience.",
+        "D": "Elle rend le modèle moins susceptible au surapprentissage en le simplifiant."
       },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car pipeline y sert de levier de d\u00e9cision principal dans Pipelines et experimentation. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Pipelines et experimentation, reproductibilite est choisi afin de fiabiliser les decis...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Pipelines et experimentation, pipeline est choisi afin de fiabiliser les d\u00e9cisions d'e...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, modele baseline est utile pour fiabiliser les d\u00e9cisions d'experimentat...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation de Pipelines et experimentation, l'\u00e9quipe applique recherche d'hyperparame...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec reproductibilite dans 'Pipelines et experimentation' ?",
-      "image_url": "apprentissage-supervise_pipelines_et_experimentation_reproductibilite_2.png",
-      "choices": {
-        "A": "modele baseline sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele baseline en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Pipelines et experimentation, recherche d'hyperparametres est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; trouver le meilleur compromis biais-variance pour le contexte m\u00e9tier.",
-        "C": "Dans Pipelines et experimentation, reproductibilite est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'experiences, audit et retour arriere en production.",
-        "D": "Le role de pipeline est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer pipeline en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de reproductibilite dans Pipelines et experimentation. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (modele baseline sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Pipelines et experimentation, recherche d'hyperparametres est mobilise pour fiabiliser les d\u00e9cisions d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Pipelines et experimentation, reproductibilite est mobilise pour fiabiliser les d\u00e9cisions d'experiment...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de pipeline est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de m...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La reproductibilité garantit que les résultats peuvent être répliqués avec exactement les mêmes étapes et paramètres, assurant fiabilité et validité. Option B est incorrecte; réentraîner ne garantit pas la reproductibilité, c'est la méthode et les paramètres utilisés qui le font. Option C est fallacieuse; elle ne concerne pas l'exclusivité des jeux de données mais bien la cohérence des processus. Option D est hors-sujet; simplifier un modèle n'améliore pas la reproductibilité.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Face a un besoin assurance dans 'Pipelines et experimentation', pourquoi modele baseline est-il prioritaire ?",
+      "question": "Quelle est une étape typique incluse dans un pipeline de données ?",
       "image_url": null,
       "choices": {
-        "A": "recherche d'hyperparametres sert a fiabiliser les d\u00e9cisions d'experimentation ; trouver le meilleur compromis biais-variance pour le contexte m\u00e9tier pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Pipelines et experimentation, reproductibilite est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'experiences, audit et retour arriere en production.",
-        "C": "Dans Pipelines et experimentation, modele baseline est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele baseline en production.",
-        "D": "Le role de pipeline est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer pipeline en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie modele baseline \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (recherche d'hyperparametres sert a fiabiliser les d\u00e9cisions d'experimentation ; trouver le meilleur comprom...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Pipelines et experimentation, reproductibilite est mobilise pour fiabiliser les d\u00e9cisions d'experiment...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Pipelines et experimentation, modele baseline est mobilise pour fiabiliser les d\u00e9cisions d'experimenta...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de pipeline est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de m...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "recherche d'hyperparametres: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Pipelines et experimentation' ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Pipelines et experimentation, pipeline est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer pipeline en production.",
-        "B": "Pendant une phase d'experimentation, modele baseline est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele baseline en production tout en surveillant le risque de sur-optimiser modele baseline localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Dans une phase d'experimentation de Pipelines et experimentation, l'\u00e9quipe applique reproductibilite pour fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'experiences, audit et retour arriere en production.",
-        "D": "Dans une phase d'experimentation de Pipelines et experimentation, l'\u00e9quipe applique recherche d'hyperparametres pour fiabiliser les d\u00e9cisions d'experimentation ; trouver le meilleur compromis biais-variance pour le contexte m\u00e9tier."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car recherche d'hyperparametres y sert de levier de d\u00e9cision principal dans Pipelines et experimentation. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Pipelines et experimentation, pipeline est choisi afin de fiabiliser les d\u00e9cisions d'e...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une phase d'experimentation, modele baseline est utile pour fiabiliser les d\u00e9cisions d'experimentat...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une phase d'experimentation de Pipelines et experimentation, l'\u00e9quipe applique reproductibilite pour f...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une phase d'experimentation de Pipelines et experimentation, l'\u00e9quipe applique recherche d'hyperparame...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Pipelines et experimentation', quelle situation de terrain montre le mieux quand utiliser reproductibilite ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une phase d'experimentation de Pipelines et experimentation, l'\u00e9quipe applique modele baseline pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele baseline en production.",
-        "B": "En contexte r\u00e9el sur Pipelines et experimentation, recherche d'hyperparametres est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; trouver le meilleur compromis biais-variance pour le contexte m\u00e9tier.",
-        "C": "En contexte r\u00e9el sur Pipelines et experimentation, reproductibilite est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'experiences, audit et retour arriere en production.",
-        "D": "Pendant une phase d'experimentation, pipeline est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer pipeline en production tout en surveillant le risque de sur-optimiser pipeline localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car reproductibilite y sert de levier de d\u00e9cision principal dans Pipelines et experimentation. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une phase d'experimentation de Pipelines et experimentation, l'\u00e9quipe applique modele baseline pour fi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Pipelines et experimentation, recherche d'hyperparametres est choisi afin de fiabilise...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Pipelines et experimentation, reproductibilite est choisi afin de fiabiliser les decis...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une phase d'experimentation, pipeline est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "pipeline: quelle proposition en donne la meilleure d\u00e9finition dans 'Pipelines et experimentation' (contexte banque) ?",
-      "image_url": null,
-      "choices": {
-        "A": "pipeline designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de pipeline dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "cross-validation correspond a un concept interm\u00e9diaire en apprentissage supervise ; il structure l'\u00e9valuation hors entrainement pour estimer la g\u00e9n\u00e9ralisation r\u00e9elle, ce qui structure l'analyse dans Pipelines et experimentation.",
-        "C": "Dans Pipelines et experimentation, validation set se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; il structure l'\u00e9valuation hors entrainement pour estimer la g\u00e9n\u00e9ralisation r\u00e9elle.",
-        "D": "stratification designe un concept interm\u00e9diaire en apprentissage supervise ; elle preserve les proportions de classes dans les splits train/validation/test."
+        "A": "Imputation des valeurs manquantes.",
+        "B": "Création automatique de nouvelles fonctionnalités non supervisées.",
+        "C": "Génération aléatoire de données d'entraînement supplémentaires.",
+        "D": "Réduction du jeu de données pour optimiser le coût de calcul."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de pipeline dans Pipelines et experimentation, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que cross-validation, validation set, stratification restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (pipeline designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de pipeline dan...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (cross-validation correspond a un concept interm\u00e9diaire en apprentissage supervise ; il structure l'evaluati...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Pipelines et experimentation, validation set se comprend comme un concept interm\u00e9diaire en apprentissa...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (stratification designe un concept interm\u00e9diaire en apprentissage supervise ; elle preserve les proportions ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
+      "explanation": "L'imputation des valeurs manquantes est une étape standard des pipelines pour préparer les données avant la modélisation. Option B est incorrecte: la création de fonctionnalités automatiques mais non supervisées n'est pas typique dans des pipelines standards. Option C est incorrecte: générer des données de façon aléatoire n'est pas un processus inclus. Option D est fausse puisque la réduction automatique du jeu de données ne fait pas partie d'un pipeline standard.",
+      "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Pour un cas operationnel de 'Pipelines et experimentation', quel exemple met modele baseline au c\u0153ur de la d\u00e9cision ?",
+      "question": "Comment les pipelines aident-ils à éviter le biais de fuite d'information lors de l'évaluation d'un modèle ?",
       "image_url": null,
       "choices": {
-        "A": "Pendant une phase d'experimentation, modele baseline est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele baseline en production tout en surveillant le risque de sur-optimiser modele baseline localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Dans une phase d'experimentation de Pipelines et experimentation, l'\u00e9quipe applique pipeline pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer pipeline en production.",
-        "C": "En contexte r\u00e9el sur Pipelines et experimentation, recherche d'hyperparametres est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; trouver le meilleur compromis biais-variance pour le contexte m\u00e9tier.",
-        "D": "Pendant une phase d'experimentation, reproductibilite est utile pour fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'experiences, audit et retour arriere en production tout en surveillant le risque de sur-optimiser reproductibilite localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "En appliquant des transformations seulement après la séparation des données d'entraînement et de test.",
+        "B": "En réentraînant le modèle sur le jeu de test pour améliorer les performances.",
+        "C": "En combinant toutes les étapes du pipeline pour analyser le jeu de données complet.",
+        "D": "En utilisant les mêmes données pour l'entraînement et le test pour garantir une cohérence."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car modele baseline y sert de levier de d\u00e9cision principal dans Pipelines et experimentation. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une phase d'experimentation, modele baseline est utile pour fiabiliser les d\u00e9cisions d'experimentat...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une phase d'experimentation de Pipelines et experimentation, l'\u00e9quipe applique pipeline pour fiabilise...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Pipelines et experimentation, recherche d'hyperparametres est choisi afin de fiabilise...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une phase d'experimentation, reproductibilite est utile pour fiabiliser les d\u00e9cisions d'experimenta...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Les pipelines automatisent les transformations de sorte qu'elles soient appliquées après la séparation des jeux d'entraînement et de test, évitant ainsi la fuite d'informations. Option B est incorrecte car cela introduit un biais et invalide les résultats. Option C renforce la fuite d'information en mélangeant les jeux. Option D va complètement à l'encontre de pratiques rigoureuses.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Pipelines et experimentation', quel est le role le plus determinant de reproductibilite pour un cas marketing ?",
+      "question": "Quel type de modèle est souvent utilisé comme modèle baseline en apprentissage supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "reproductibilite sert a fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'experiences, audit et retour arriere en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Pipelines et experimentation, pipeline est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer pipeline en production.",
-        "C": "Le role de modele baseline est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele baseline en production.",
-        "D": "recherche d'hyperparametres sert a fiabiliser les d\u00e9cisions d'experimentation ; trouver le meilleur compromis biais-variance pour le contexte m\u00e9tier pour guider une d\u00e9cision exploitable."
+        "A": "Un modèle de régression linéaire ou un arbre de décision simple.",
+        "B": "Un réseau neuronal profond complètement connecté.",
+        "C": "Une version augmentée d'un modèle d'ensemble (ensemble method).",
+        "D": "Un modèle probabiliste avec une complexité algorithmique élevée."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie reproductibilite \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (reproductibilite sert a fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'experiences, ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Pipelines et experimentation, pipeline est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de modele baseline est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perm...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (recherche d'hyperparametres sert a fiabiliser les d\u00e9cisions d'experimentation ; trouver le meilleur comprom...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Les modèles baseline sont souvent des modèles simples tels qu'une régression linéaire ou un arbre de décision pour avoir un point simple de comparaison. Option B est trop complexe pour une baseline. Option C représente des méthodes d'ensemble qui sont généralement plus avancées et pas appropriées comme baseline. Option D est incorrecte, car les baselines ne sont généralement pas complexes en terme d'algorithme.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Pipelines et experimentation', quelle erreur autour de pipeline est la plus critique ?",
+      "question": "Lors de la recherche d'hyperparamètres, pourquoi est-il conseillé d'utiliser la validation croisée ?",
       "image_url": null,
       "choices": {
-        "A": "Si recherche d'hyperparametres est mal utilise, on observe souvent sur-optimiser recherche d'hyperparametres localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de reproductibilite est sur-optimiser reproductibilite localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Le piege principal autour de pipeline est sur-optimiser pipeline localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Un risque classique avec modele baseline est de sur-optimiser modele baseline localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Pour estimer les performances du modèle de manière plus fiable sur des sous-ensembles de données variés.",
+        "B": "Parce qu'elle réduit le temps de calcul global nécessaire pour entraîner le modèle.",
+        "C": "Elle permet de maximiser automatiquement le nombre de classes dans le jeu de données.",
+        "D": "Elle garantit que seulement les itérations avec la meilleure précision sont retenues."
       },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de pipeline. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si recherche d'hyperparametres est mal utilise, on observe souvent sur-optimiser recherche d'hyperparametre...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour de reproductibilite est sur-optimiser reproductibilite localement en ignorant ses...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de pipeline est sur-optimiser pipeline localement en ignorant ses interactions av...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec modele baseline est de sur-optimiser modele baseline localement en ignorant ses in...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Pipelines et experimentation', quel commentaire du schema traduit le mieux le role de recherche d'hyperparametres ?",
-      "image_url": "apprentissage-supervise_pipelines_et_experimentation_recherche_d_hyperparametres_2.png",
-      "choices": {
-        "A": "Dans Pipelines et experimentation, pipeline est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer pipeline en production.",
-        "B": "Le role de modele baseline est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele baseline en production.",
-        "C": "reproductibilite sert a fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'experiences, audit et retour arriere en production pour guider une d\u00e9cision exploitable.",
-        "D": "recherche d'hyperparametres sert a fiabiliser les d\u00e9cisions d'experimentation ; trouver le meilleur compromis biais-variance pour le contexte m\u00e9tier pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de recherche d'hyperparametres dans Pipelines et experimentation. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Pipelines et experimentation, pipeline est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de modele baseline est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perm...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (reproductibilite sert a fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'experiences, ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (recherche d'hyperparametres sert a fiabiliser les d\u00e9cisions d'experimentation ; trouver le meilleur comprom...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La validation croisée permet de mieux estimer les performances d'un modèle en utilisant plusieurs sous-ensembles, évitant ainsi le sur-ajustement à un ensemble unique. Option B est incorrecte car la validation croisée exige plus de temps de calcul. Option C est incorrecte, la validation croisée ne modifie pas les classes d'un dataset. Option D est trompeuse, elle compare toutes les itérations mais ne choisit pas uniquement les meilleures automatiquement.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "recherche d'hyperparametres: pourquoi ce concept est-il crucial pour une \u00e9quipe sante dans 'Pipelines et experimentation' ?",
+      "question": "Quelle méthodologie est cruciale pour assurer la reproductibilité en machine learning ?",
       "image_url": null,
       "choices": {
-        "A": "Le role de reproductibilite est de fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'experiences, audit et retour arriere en production.",
-        "B": "Le role de recherche d'hyperparametres est de fiabiliser les d\u00e9cisions d'experimentation ; trouver le meilleur compromis biais-variance pour le contexte m\u00e9tier.",
-        "C": "pipeline sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer pipeline en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Pipelines et experimentation, modele baseline est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele baseline en production."
+        "A": "Fixer les graines aléatoires pour toutes les opérations stochastiques.",
+        "B": "Utiliser exclusivement des algorithmes déterministes.",
+        "C": "Changer les sources de données régulièrement pour éviter le biais.",
+        "D": "Éviter d'utiliser des bibliothèques high-level pour un meilleur contrôle des variables."
+      },
+      "correct_answer": "A",
+      "explanation": "Fixer les graines aléatoires est essentiel pour que les mêmes opérations stochastiques produisent les mêmes résultats. Option B est incorrecte, car les algorithmes stochastiques ont leur propre importance. Option C est faux: changer de source de données impacte la consistance des résultats. Option D est inexact puisque les bibliothèques high-level sont conçues pour faciliter plutôt que compliquer la reproductibilité.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Chaque étape d'un pipeline en machine learning doit-elle être optimisée pour la performance maximum du modèle final ?",
+      "image_url": null,
+      "choices": {
+        "A": "Non, chaque étape doit être functionalement correcte avant d'être optimisée.",
+        "B": "Oui, car toute optimisation partielle conduit à de meilleures prédictions.",
+        "C": "Oui, car le pipeline ré-solve automatiquement les erreurs de prétraitement.",
+        "D": "Non, seule l'étape finale de modélisation doit être optimisée."
+      },
+      "correct_answer": "A",
+      "explanation": "La priorité initiale est d'établir des étapes correctes et fonctionnelles du pipeline; ensuite, l'optimisation peut être faite où nécessaire. Option B est incorrecte puisque l'optimisation sans validation peut mener à des résultats incorrects. Option C est fausse, un pipeline ne corrige pas automatiquement les erreurs humaines. Option D suggère à tort que le prétraitement n'a pas besoin d'attention quant à la performance.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans le contexte d'un modèle baseline, pourquoi peut-on utiliser la stratégie du 'Majority Class' pour les problèmes de classification ?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour fournir une comparaison simple et intuitive de performance pour les modèles plus complexes.",
+        "B": "Parce qu'elle garantit toujours une performance supérieure en précision.",
+        "C": "Parce qu'elle n'affecte pas le score F1 du modèle.",
+        "D": "Parce qu'elle fonctionne bien même si les classes sont parfaitement équilibrées."
+      },
+      "correct_answer": "A",
+      "explanation": "Utiliser la prédiction de la classe majoritaire fournit un benchmark simple de performance, même si cette approche est souvent naïve. Option B est fausse car la performance en précision peut être tendancieuse pour les classes majoritaires. Option C est incorrecte puisque la prédiction biaisée peut fausser le score F1. Option D est incorrecte: cette stratégie est particulièrement biaisée si les classes sont équilibrées.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quels sont les risques de ne pas utiliser un pipeline en machine learning ?",
+      "image_url": null,
+      "choices": {
+        "A": "Augmentation des risques de fuite d'informations et incohérences d'assurance qualité.",
+        "B": "Cela force les modèles à toujours sous-performer par rapport à la baseline.",
+        "C": "Les hyperparamètres ne peuvent être ajustés qu'une seule fois pour toute la durée du projet.",
+        "D": "Les résultats des modèles sont toujours moins interprétables et explicables."
+      },
+      "correct_answer": "A",
+      "explanation": "Sans pipeline, les étapes peuvent être mal gérées, entraînant de possibles fuites d'informations et des incohérences dans la qualité des données. Option B est fausse: l'absence de pipeline ne force pas nécessairement les modèles à sous-performer. Option C est incorrecte: les hyperparamètres peuvent encore être ajustés sans pipeline. Option D est incorrecte: l'interprétabilité n'est pas diminuée par l'absence de pipeline.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel critère clé aide à sélectionner les hyperparamètres pour un modèle d'arbre de décision ?",
+      "image_url": null,
+      "choices": {
+        "A": "La profondeur maximale de l'arbre pour éviter le surapprentissage.",
+        "B": "Le choix des classes à labeler lors de l'entraînement.",
+        "C": "L'ordre des features lors de l'arborescence.",
+        "D": "La fréquence d'actualisation des predictions pendant l'entraînement."
+      },
+      "correct_answer": "A",
+      "explanation": "La profondeur maximale est couramment ajustée pour éviter le surapprentissage et améliorer la généralisation. Option B ne concerne pas les hyperparamètres d'un arbre de décision. Option C est incorrecte: l'ordre des features n'est pas un hyperparamètre pertinent pour la construction d'un arbre. Option D est erronée car l'arbre est entraîné en une fois, pas par étapes multiples.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quels sont les avantages d'une recherche en grille (Grid Search) pour l'optimisation des hyperparamètres ?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle évalue de manière exhaustive toutes les combinaisons de paramètres spécifiées.",
+        "B": "Elle navigue dynamiquement dans l'espace de recherche pour trouver rapidement un optimum global.",
+        "C": "Elle réduit la complexité computationnelle en limitant la recherche à quelques choix cruciaux.",
+        "D": "Elle garantit d'ignorer les configurations de paramètres redondantes."
+      },
+      "correct_answer": "A",
+      "explanation": "La recherche en grille évalue toutes les combinaisons possibles de paramètres données, assurant une couverture exhaustive. Option B décrit plutôt un type de recherche plus dynamique comme la Recherche aléatoire (Random Search). Option C est incorrecte car le Grid Search peut être computationnellement intense. Option D est inexacte: le Grid Search teste toutes les combinaisons possibles, redondantes ou non.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "En quoi consiste principalement l'approche de recherche d'hyperparamètres par validation croisée imbriquée ?",
+      "image_url": null,
+      "choices": {
+        "A": "Les hyperparamètres sont ajustés sur un ensemble d'entraînement et validés sur un ensemble de test distinct.",
+        "B": "Les modèles sont entraînés et testés sur le même ensemble de données pour une performance améliorée.",
+        "C": "Elle combine la recherche d'hyperparamètres et la validation croisée de manière incrémentielle.",
+        "D": "Elle assure que les transformations sont appliquées après l'optimisation des hyperparamètres."
+      },
+      "correct_answer": "A",
+      "explanation": "L'approche pour une recherche imbriquée utilise l'ensemble d'entraînement pour l'optimisation, puis évalue sur un jeu de test séparé, avec des validations en boucle interne et externe. Option B est fausse: toujours évaluer sur un set de test séparé. Option C confond des étapes distinctes d'optimisation/validation. Option D est trompeuse: le but n'est pas l'ordre des transformations mais la structuration des phases de validation.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un défi potentiellement majeur lors de l'établissement d'un modèle baseline ?",
+      "image_url": null,
+      "choices": {
+        "A": "Déterminer si le modèle déjà complexe ne va pas sur-apprendre par rapport à la baseline.",
+        "B": "Bien définir ce qu'est une performance médiocre par rapport à celle d'un modèle avancé.",
+        "C": "Assurer que le modèle baseline est de complexité égale à n'importe quel modèle d'ensemble.",
+        "D": "Maintenir une précision parfaite pour toutes les observations."
       },
       "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie recherche d'hyperparametres \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de reproductibilite est de fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'ex...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de recherche d'hyperparametres est de fiabiliser les d\u00e9cisions d'experimentation ; trouver le meill...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (pipeline sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux decide...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Pipelines et experimentation, modele baseline est mobilise pour fiabiliser les d\u00e9cisions d'experimenta...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Une bonne baseline est essentielle pour évaluer la réussite des modèles plus complexes, d'où l'importance de définir clairement ce qu'est et n'est pas une bonne performance. Option A inverse la complexité du baseline. C est faux, baseline ne doit pas être d'une telle complexité. D est irréaliste: la baseline n'est pas censée être parfaite.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans une expérimentation basée sur un pipeline, quelle étape peut impacter directement la reproductibilité des résultats ?",
+      "image_url": null,
+      "choices": {
+        "A": "La fixation des graines aléatoires utilisées lors du prétraitement.",
+        "B": "L'ordre des éléments dans votre code source.",
+        "C": "L'utilisation de fonctions statiques dans le code.",
+        "D": "La répartition des responsabilités entre les membres de l'équipe de développement."
+      },
+      "correct_answer": "A",
+      "explanation": "Fixer les graines aléatoires garantit que les résultats des méthodes stochastiques peuvent être reproduits de manière fiable. Option B n'a généralement pas d'impact à moins qu'il y ait des dépendances non gérées. Option C est incorrecte car l'utilisation de fonctions statiques ne garantit pas la reproductibilité par elle-même. Option D est inexacte: la division du travail n'affecte pas à elle seule la reproductibilité des pipelines.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Identifier un inconvénient potentiel de l'automatisation excessive des pipelines dans les expérimentations ML.",
+      "image_url": null,
+      "choices": {
+        "A": "Perte de contrôle et compréhension des données par les expérimentateurs.",
+        "B": "Automatisation conduit généralement à moins de précision.",
+        "C": "Réduit la flexibilité de l'algorithme de classification.",
+        "D": "Empêche l'utilisation d'approches ensemblistes."
+      },
+      "correct_answer": "A",
+      "explanation": "Trop d'automatisation peut rendre les expérimentateurs moins conscients des transformations appliquées, réduisant la compréhension du processus global. B est incorrect car l'automatisation n'affecte pas directement la précision. C est inexacte puisque le pipeline gère le flux de données, pas l'algorithme lui-même. D est incorrect car un bon pipeline peut intégrer des approches ensemblistes.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel processus est essentiel pour améliorer l'efficacité lors de l'utilisation de la recherche en grille pour optimiser les hyperparamètres ?",
+      "image_url": null,
+      "choices": {
+        "A": "Utilisation de parallélisme ou distribution des calculs si la structure le permet.",
+        "B": "Limitation des essais à une seule configuration par exécution.",
+        "C": "Augmentation du budget de temps d'entraînement pour chaque combinaison.",
+        "D": "Combinaison de Grid Search avec Random Search simultanément pour meilleures chances."
+      },
+      "correct_answer": "A",
+      "explanation": "L'utilisation du parallélisme améliore l'efficacité en rendant la recherche plus rapide en testant différentes combinaisons en parallèle. Option B limite artificiellement l'efficacité de la recherche en grille. C amène à un calcul potentiellement redondant. D proposer des méthodes combinées non optimisées souvent peu conventionnelles et non nécessairement efficaces.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel problème se pose fréquemment lors de l'utilisation d'ensembles de données volumineux sans pipeline structuré ?",
+      "image_url": null,
+      "choices": {
+        "A": "Risque accru de traitements incohérents due à des étapes manuelles variées.",
+        "B": "Le calcul de modèles baselines devient impossible.",
+        "C": "Les modèles d'ensemble sont automatiquement disqualifiés.",
+        "D": "L'accès aux données en mémoire empêche la validation croisée."
+      },
+      "correct_answer": "A",
+      "explanation": "Sans un pipeline pour standardiser le flux de travail, la gestion manuelle d'étapes variées sur de gros volumes de données peut vite devenir incohérente quantitativement et qualitativement. B et C sont incorrectes, l'absence de pipeline n'interdit pas ces pratiques. D est erronée: l'accès aux données en mémoire n'empêche pas la validation croisée, d'autres infrastructures peuvent le permettre.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'avantage principal de l'utilisation d'un pipeline dans l'apprentissage supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Gérer la complexité en enchaînant les étapes de traitement des données et de modélisation.",
+        "B": "Accélérer l'entraînement du modèle en réduisant le volume de données d'entraînement.",
+        "C": "Améliorer la précision du modèle en ajoutant automatiquement des caractéristiques non supervisées.",
+        "D": "Éviter la nécessité de valider les modèles en cours d'entraînement."
+      },
+      "correct_answer": "A",
+      "explanation": "Un pipeline en machine learning permet de gérer la complexité en intégrant et en enchaînant de manière reproductible toutes les étapes du prétraitement et de la modélisation. B est incorrect car les pipelines organisent le flux de travail mais ne réduisent pas le volume de données. C est incorrect, car un pipeline organise les étapes mais ne crée pas de caractéristiques automatiquement. D est faux, car les pipelines facilitent la validation des modèles, non l'évitent.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il important de définir un modèle baseline lors de l'expérimentation en apprentissage supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour comparer les performances des modèles avancés avec un point de référence simple.",
+        "B": "Pour s'assurer que tous les modèles entraînés utilisent les mêmes hyperparamètres.",
+        "C": "Pour éviter la surapprentissage en utilisant des modèles moins complexes.",
+        "D": "Pour garantir que le modèle entraîné est le plus rapide possible."
+      },
+      "correct_answer": "A",
+      "explanation": "Un modèle baseline fournit une référence simple pour évaluer la performance des modèles plus complexes. B est incorrect car un modèle baseline permet la comparaison et non l'unification des hyperparamètres. C est incorrect, car éviter le surapprentissage est lié au choix et au paramétrage des modèles, plutôt qu'au concept de modèle baseline. D est faux, car la rapidité n'est pas le critère principal d'un modèle baseline.",
       "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Pipelines et experimentation', quel est le principal mode d'echec quand recherche d'hyperparametres est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si recherche d'hyperparametres est mal utilise, on observe souvent sur-optimiser recherche d'hyperparametres localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de pipeline est sur-optimiser pipeline localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Un risque classique avec modele baseline est de sur-optimiser modele baseline localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Si reproductibilite est mal utilise, on observe souvent sur-optimiser reproductibilite localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de recherche d'hyperparametres. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si recherche d'hyperparametres est mal utilise, on observe souvent sur-optimiser recherche d'hyperparametre...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de pipeline est sur-optimiser pipeline localement en ignorant ses interactions av...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec modele baseline est de sur-optimiser modele baseline localement en ignorant ses in...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si reproductibilite est mal utilise, on observe souvent sur-optimiser reproductibilite localement en ignora...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Pipelines et experimentation', quelle erreur autour de reproductibilite est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec pipeline est de sur-optimiser pipeline localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Si modele baseline est mal utilise, on observe souvent sur-optimiser modele baseline localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Le piege principal autour de recherche d'hyperparametres est sur-optimiser recherche d'hyperparametres localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Le piege principal autour de reproductibilite est sur-optimiser reproductibilite localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de reproductibilite. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec pipeline est de sur-optimiser pipeline localement en ignorant ses interactions ave...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si modele baseline est mal utilise, on observe souvent sur-optimiser modele baseline localement en ignorant...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour de recherche d'hyperparametres est sur-optimiser recherche d'hyperparametres loca...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour de reproductibilite est sur-optimiser reproductibilite localement en ignorant ses...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe sante dans 'Pipelines et experimentation', quelle d\u00e9finition de recherche d'hyperparametres est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "early stopping correspond a un concept interm\u00e9diaire en apprentissage supervise ; il arrete l'entrainement quand la performance de validation cesse de progresser, ce qui structure l'analyse dans Pipelines et experimentation.",
-        "B": "Dans Pipelines et experimentation, F1 score se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; il combine pr\u00e9cision et rappel via leur moyenne harmonique pour evaluer un classifieur en classes desequilibrees.",
-        "C": "Dans Pipelines et experimentation, recherche d'hyperparametres se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; il regroupe les reglages externes du modele (profondeur, taux d'apprentissage, regularisation) fixes avant apprentissage.",
-        "D": "stratification designe un concept interm\u00e9diaire en apprentissage supervise ; elle preserve les proportions de classes dans les splits train/validation/test."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de recherche d'hyperparametres dans Pipelines et experimentation, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que stratification, early stopping, F1 score restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (early stopping correspond a un concept interm\u00e9diaire en apprentissage supervise ; il arrete l'entrainement ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Pipelines et experimentation, F1 score se comprend comme un concept interm\u00e9diaire en apprentissage sup...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Pipelines et experimentation, recherche d'hyperparametres se comprend comme un concept interm\u00e9diaire e...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (stratification designe un concept interm\u00e9diaire en apprentissage supervise ; elle preserve les proportions ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "modele baseline: quel risque est le plus directement lie a son mauvais usage en production dans 'Pipelines et experimentation' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec reproductibilite est de sur-optimiser reproductibilite localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Un risque classique avec modele baseline est de sur-optimiser modele baseline localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Si pipeline est mal utilise, on observe souvent sur-optimiser pipeline localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Le piege principal autour de recherche d'hyperparametres est sur-optimiser recherche d'hyperparametres localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de modele baseline. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec reproductibilite est de sur-optimiser reproductibilite localement en ignorant ses ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec modele baseline est de sur-optimiser modele baseline localement en ignorant ses in...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si pipeline est mal utilise, on observe souvent sur-optimiser pipeline localement en ignorant ses interacti...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de recherche d'hyperparametres est sur-optimiser recherche d'hyperparametres loca...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "reproductibilite: quelle proposition en donne la meilleure d\u00e9finition dans 'Pipelines et experimentation' (contexte marketing) ?",
-      "image_url": null,
-      "choices": {
-        "A": "ROC-AUC designe un concept interm\u00e9diaire en apprentissage supervise ; il mesure la capacite du modele a separer classes positives et negatives sur tous les seuils.",
-        "B": "reproductibilite designe un concept interm\u00e9diaire en apprentissage supervise ; elle garantit qu'un meme pipeline redonne les memes resultats avec memes donn\u00e9es, code et seeds.",
-        "C": "early stopping correspond a un concept interm\u00e9diaire en apprentissage supervise ; il arrete l'entrainement quand la performance de validation cesse de progresser, ce qui structure l'analyse dans Pipelines et experimentation.",
-        "D": "Dans Pipelines et experimentation, F1 score se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; il combine pr\u00e9cision et rappel via leur moyenne harmonique pour evaluer un classifieur en classes desequilibrees."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de reproductibilite dans Pipelines et experimentation, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que early stopping, F1 score, ROC-AUC restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (ROC-AUC designe un concept interm\u00e9diaire en apprentissage supervise ; il mesure la capacite du modele a sep...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (reproductibilite designe un concept interm\u00e9diaire en apprentissage supervise ; elle garantit qu'un meme pip...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (early stopping correspond a un concept interm\u00e9diaire en apprentissage supervise ; il arrete l'entrainement ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans Pipelines et experimentation, F1 score se comprend comme un concept interm\u00e9diaire en apprentissage sup...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "modele baseline: dans un cas assurance, quelle interpretation correspond le mieux au schema ML de 'Pipelines et experimentation' ?",
-      "image_url": "apprentissage-supervise_pipelines_et_experimentation_modele_baseline_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur reproductibilite: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'experiences, audit et retour arriere en production.",
-        "B": "Le schema illustre une d\u00e9cision basee sur modele baseline: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele baseline en production.",
-        "C": "Lecture du visuel: pipeline est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer pipeline en production dans Pipelines et experimentation.",
-        "D": "Le signal visible est coh\u00e9rent avec recherche d'hyperparametres, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; trouver le meilleur compromis biais-variance pour le contexte m\u00e9tier."
-      },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de modele baseline: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur reproductibilite: les indices orientent vers fiabiliser les decis...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur modele baseline: les indices orientent vers fiabiliser les decisi...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: pipeline est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser corre...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec recherche d'hyperparametres, car l'objectif est fiabiliser les d\u00e9cision...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Pipelines et experimentation' et en contexte banque, quelle interpretation du schema appuie le mieux l'analyse de pipeline ?",
-      "image_url": "apprentissage-supervise_pipelines_et_experimentation_pipeline_1.png",
-      "choices": {
-        "A": "Lecture du visuel: recherche d'hyperparametres est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; trouver le meilleur compromis biais-variance pour le contexte m\u00e9tier dans Pipelines et experimentation.",
-        "B": "Le signal visible est coh\u00e9rent avec reproductibilite, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'experiences, audit et retour arriere en production.",
-        "C": "Le signal visible est coh\u00e9rent avec pipeline, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer pipeline en production.",
-        "D": "Le schema illustre une d\u00e9cision basee sur modele baseline: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele baseline en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Les indices visuels vont dans le sens de pipeline: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Lecture du visuel: recherche d'hyperparametres est mobilise pour fiabiliser les d\u00e9cisions d'experimentation...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Le signal visible est coh\u00e9rent avec reproductibilite, car l'objectif est fiabiliser les d\u00e9cisions d'experim...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est correcte (Le signal visible est coh\u00e9rent avec pipeline, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation...) car la lecture visuelle colle au signal principal observe. D'est moins pertinente (Le schema illustre une d\u00e9cision basee sur modele baseline: les indices orientent vers fiabiliser les decisi...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "modele baseline: dans 'Pipelines et experimentation', un schema met en evidence ce comportement. Quelle lecture est la plus juste ?",
-      "image_url": "apprentissage-supervise_pipelines_et_experimentation_modele_baseline_2.png",
-      "choices": {
-        "A": "Le role de modele baseline est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele baseline en production.",
-        "B": "pipeline sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer pipeline en production pour guider une d\u00e9cision exploitable.",
-        "C": "Dans Pipelines et experimentation, recherche d'hyperparametres est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; trouver le meilleur compromis biais-variance pour le contexte m\u00e9tier.",
-        "D": "Le role de reproductibilite est de fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'experiences, audit et retour arriere en production."
-      },
-      "correct_answer": "A",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de modele baseline dans Pipelines et experimentation. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est correcte (Le role de modele baseline est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perm...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. B est moins pertinente (pipeline sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux decide...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (Dans Pipelines et experimentation, recherche d'hyperparametres est mobilise pour fiabiliser les d\u00e9cisions d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (Le role de reproductibilite est de fiabiliser les d\u00e9cisions d'experimentation ; fiabiliser comparaison d'ex...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
     }
   ]
 }

@@ -5,170 +5,170 @@
   "questions": [
     {
       "type": "text",
-      "question": "inertie: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Introduction au clustering' ?",
+      "question": "Qu'est-ce qu'un cluster en apprentissage non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Introduction au clustering, cluster est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; extraire une structure exploitable sans labels explicites.",
-        "B": "Pendant un atelier de cadrage, centroide est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer centroide en production tout en surveillant le risque d'appliquer centroide par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Dans un atelier de cadrage d'Introduction au clustering, l'\u00e9quipe applique assignation pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer assignation en production.",
-        "D": "Dans un atelier de cadrage d'Introduction au clustering, l'\u00e9quipe applique inertie pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer inertie en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car inertie y sert de levier de d\u00e9cision principal dans Introduction au clustering. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Introduction au clustering, cluster est choisi afin d'installer un raisonnement fiabl...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant un atelier de cadrage, centroide est utile pour installer un raisonnement fiable des le d\u00e9but ; l'u...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans un atelier de cadrage d'Introduction au clustering, l'\u00e9quipe applique assignation pour installer un r...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans un atelier de cadrage d'Introduction au clustering, l'\u00e9quipe applique inertie pour installer un raiso...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec cluster dans 'Introduction au clustering' ?",
-      "image_url": "apprentissage-non-supervise_introduction_au_clustering_cluster_2.png",
-      "choices": {
-        "A": "Dans Introduction au clustering, assignation est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer assignation en production.",
-        "B": "Dans Introduction au clustering, cluster est mobilise pour installer un raisonnement fiable des le d\u00e9but ; extraire une structure exploitable sans labels explicites.",
-        "C": "Le role de centroide est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer centroide en production.",
-        "D": "inertie sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer inertie en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de cluster dans Introduction au clustering. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Introduction au clustering, assignation est mobilise pour installer un raisonnement fiable des le debu...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Introduction au clustering, cluster est mobilise pour installer un raisonnement fiable des le d\u00e9but ; ...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de centroide est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (inertie sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux deci...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Introduction au clustering', quel commentaire du schema traduit le mieux le role d'inertie ?",
-      "image_url": "apprentissage-non-supervise_introduction_au_clustering_inertie_2.png",
-      "choices": {
-        "A": "Dans Introduction au clustering, cluster est mobilise pour installer un raisonnement fiable des le d\u00e9but ; extraire une structure exploitable sans labels explicites.",
-        "B": "Le role de centroide est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer centroide en production.",
-        "C": "assignation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer assignation en production pour guider une d\u00e9cision exploitable.",
-        "D": "inertie sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer inertie en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'inertie dans Introduction au clustering. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Introduction au clustering, cluster est mobilise pour installer un raisonnement fiable des le d\u00e9but ; ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de centroide est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (assignation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (inertie sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux deci...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec assignation dans 'Introduction au clustering' ?",
-      "image_url": "apprentissage-non-supervise_introduction_au_clustering_assignation_2.png",
-      "choices": {
-        "A": "centroide sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer centroide en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Introduction au clustering, inertie est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer inertie en production.",
-        "C": "Dans Introduction au clustering, assignation est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer assignation en production.",
-        "D": "Le role de cluster est d'installer un raisonnement fiable des le d\u00e9but ; extraire une structure exploitable sans labels explicites."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'assignation dans Introduction au clustering. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (centroide sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux de...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Introduction au clustering, inertie est mobilise pour installer un raisonnement fiable des le d\u00e9but ; ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Introduction au clustering, assignation est mobilise pour installer un raisonnement fiable des le debu...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de cluster est d'installer un raisonnement fiable des le d\u00e9but ; extraire une structure exploitabl...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Introduction au clustering', quel est le principal mode d'echec quand inertie est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si inertie est mal utilise, on observe souvent appliquer inertie par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Le piege principal autour de cluster est appliquer cluster par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Un risque classique avec centroide est d'appliquer centroide par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Si assignation est mal utilise, on observe souvent appliquer assignation par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "Un groupement de points de données qui partagent des caractéristiques similaires.",
+        "B": "Un seul point de données utilisé comme référence pour d'autres points.",
+        "C": "Une limite prédéfinie pour classifier les points de données.",
+        "D": "Une méthode pour réduire la dimensionnalité de l'espace de données."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'inertie. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si inertie est mal utilise, on observe souvent appliquer inertie par automatisme sans verifier hypotheses, ...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de cluster est appliquer cluster par automatisme sans verifier hypotheses, qualit...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec centroide est d'appliquer centroide par automatisme sans verifier hypotheses, qua...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si assignation est mal utilise, on observe souvent appliquer assignation par automatisme sans verifier hypo...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Un cluster est défini comme un groupement de points de données dans un espace multi-dimensionnel qui partagent des caractéristiques similaires. La réponse B est incorrecte car elle décrit un centroïde, pas un cluster tout entier. La réponse C est fausse car cela décrit plutôt une frontière ou un seuil. La réponse D décrit la réduction de dimensionnalité, pas la définition d'un cluster.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Introduction au clustering' (cybersecurite), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment centroide ?",
+      "question": "Quel est le rôle d'un centroïde dans le clustering k-means?",
       "image_url": null,
       "choices": {
-        "A": "Dans Introduction au clustering, donn\u00e9e non \u00e9tiquet\u00e9e se comprend comme une notion de base en apprentissage non supervise ; il formalise le role de donn\u00e9e non \u00e9tiquet\u00e9e dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "structure cachee designe une notion de base en apprentissage non supervise ; il formalise le role de structure cachee dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "similarite correspond a une notion de base en apprentissage non supervise ; il formalise le role de similarite dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Introduction au clustering.",
-        "D": "centroide correspond a une notion de base en apprentissage non supervise ; il formalise le role de centroide dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Introduction au clustering."
+        "A": "Il représente le centre d'un cluster et est utilisé pour attribuer des points de données aux clusters.",
+        "B": "Il définit le nombre total de clusters dans l'algorithme.",
+        "C": "Il est utilisé pour mesurer la distance entre les différents clusters.",
+        "D": "Il détermine le seuil de convergence de l'algorithme."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de centroide dans Introduction au clustering, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que donn\u00e9e non \u00e9tiquet\u00e9e, structure cachee, similarite restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Introduction au clustering, donn\u00e9e non \u00e9tiquet\u00e9e se comprend comme une notion de base en apprentissage...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (structure cachee designe une notion de base en apprentissage non supervise ; il formalise le role de struct...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (similarite correspond a une notion de base en apprentissage non supervise ; il formalise le role de similar...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (centroide correspond a une notion de base en apprentissage non supervise ; il formalise le role de centroid...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Un centroïde est le point moyen d'un cluster en termes de ses paramètres; il est utilisé par l'algorithme k-means pour réassigner les points de données aux clusters les plus proches. La réponse B est incorrecte car le nombre de clusters est défini par k. La réponse C est incorrecte car la distance entre clusters se mesure généralement entre les centroïdes, mais le centroïde n'est pas un outil de mesure. La réponse D est incorrecte car le centroïde n'influence pas le seuil de convergence.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "inertie: pourquoi ce concept est-il crucial pour une \u00e9quipe banque dans 'Introduction au clustering' ?",
+      "question": "Comment l'inertie est-elle utilisée dans le clustering k-means?",
       "image_url": null,
       "choices": {
-        "A": "Le role d'assignation est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer assignation en production.",
-        "B": "Le role d'inertie est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer inertie en production.",
-        "C": "cluster sert a installer un raisonnement fiable des le d\u00e9but ; extraire une structure exploitable sans labels explicites pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Introduction au clustering, centroide est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer centroide en production."
+        "A": "Comme mesure de la somme des distances au carré entre les points de données et leur centroïde respectif.",
+        "B": "Pour déterminer la séparation entre différents clusters.",
+        "C": "Pour ajuster dynamiquement le nombre de clusters dans l'algorithme.",
+        "D": "Pour évaluer l'algorithme en termes de temps de convergence."
       },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie inertie \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role d'assignation est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement perme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role d'inertie est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (cluster sert a installer un raisonnement fiable des le d\u00e9but ; extraire une structure exploitable sans labe...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Introduction au clustering, centroide est mobilise pour installer un raisonnement fiable des le d\u00e9but ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "L'inertie mesure la compactitude des clusters; elle est calculée comme la somme des distances au carré entre chaque point de données et son centroïde. La réponse B est incorrecte car la séparation n'est pas mesurée par l'inertie mais souvent par un autre indicateur, comme le coefficient de silhouette. La réponse C est incorrecte car k est fixé avant l'exécution de l'algorithme k-means. La réponse D est fausse car l'inertie ne concerne pas la vitesse de convergence mais la qualité des clusters formés.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Introduction au clustering', quelle situation de terrain montre le mieux quand utiliser cluster ?",
+      "question": "Qu'est-ce que l'assignation dans le contexte de l'algorithme k-means?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Introduction au clustering, assignation est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer assignation en production.",
-        "B": "En contexte r\u00e9el sur Introduction au clustering, cluster est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; extraire une structure exploitable sans labels explicites.",
-        "C": "Pendant un atelier de cadrage, centroide est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer centroide en production tout en surveillant le risque d'appliquer centroide par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Dans un atelier de cadrage d'Introduction au clustering, l'\u00e9quipe applique inertie pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer inertie en production."
+        "A": "L'étape où chaque point de données est affecté au cluster avec le centroïde le plus proche.",
+        "B": "Le processus de calcul des centroïdes initiaux basés sur des données aléatoires.",
+        "C": "La méthode utilisée pour décider de la valeur de k avant l'exécution de l'algorithme.",
+        "D": "L'étape où les centroides sont recalculés après l'assignation initiale des points."
       },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car cluster y sert de levier de d\u00e9cision principal dans Introduction au clustering. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Introduction au clustering, assignation est choisi afin d'installer un raisonnement f...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Introduction au clustering, cluster est choisi afin d'installer un raisonnement fiabl...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant un atelier de cadrage, centroide est utile pour installer un raisonnement fiable des le d\u00e9but ; l'u...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans un atelier de cadrage d'Introduction au clustering, l'\u00e9quipe applique inertie pour installer un raiso...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "L'assignation dans k-means se réfère à l'étape où chaque point de données est affecté au cluster dont il est le plus proche, déterminé par le centroïde. La réponse B est incorrecte car elle décrit le démarrage de l'algorithme, pas l'assignation. La réponse C est incorrecte car elle décrit un choix préliminaire nécessaire pour débuter l'algorithme. La réponse D est fausse car elle décrit la mise à jour des centroïdes, une étape différente des assignations.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il important de choisir la valeur correcte de k dans l'algorithme k-means?",
+      "image_url": null,
+      "choices": {
+        "A": "Un k incorrect peut entraîner soit une sursegmentation soit une sous-segmentation des données.",
+        "B": "Il affecte directement la vitesse de convergence de l'algorithme.",
+        "C": "Un petit k est toujours meilleur car il réduit la complexité computationnelle.",
+        "D": "Un grand k est préférable car il assure une classification détaillée des données."
+      },
+      "correct_answer": "A",
+      "explanation": "Choisir un k incorrect peut entraîner un mauvais groupement des données : une valeur trop petite peut sous-segmenter (groupements trop larges), tandis qu'une valeur trop grande peut sursegmenter (groupements trop restreints). La réponse B est incorrecte car bien que ça puisse influencer la vitesse, l'impact principal est sur la qualité de clustering. Les choix C et D sont faux car ni un petit k ni un grand k ne sont systématiquement meilleurs ; ils doivent être choisis en fonction des données.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la meilleure approche pour initialiser les centroïdes dans k-means?",
+      "image_url": null,
+      "choices": {
+        "A": "Utiliser k-means++ pour améliorer la robustesse et la convergence rapide.",
+        "B": "Toujours choisir le premier k points de données comme centroïdes initiaux.",
+        "C": "Affecter aléatoirement chaque point de données à un cluster dès le début.",
+        "D": "Utiliser la moyenne globale de toutes les données comme premier centroïde."
+      },
+      "correct_answer": "A",
+      "explanation": "k-means++ est une méthode d'initialisation intelligente des centroïdes qui améliore significativement la convergence et l'efficacité par rapport à une sélection purement aléatoire. La réponse B est incorrecte car choisir les premiers points peut ne pas bien représenter l'ensemble du dataset. La réponse C est incorrecte car elle laisse la sélection de départ au hasard pur. La réponse D est fausse car un seul centroïde ne suffirait pas pour commencer l'algorithme.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Dans l'algorithme k-means, que se passe-t-il si aucun point ne change de cluster lors d'une itération?",
+      "image_url": null,
+      "choices": {
+        "A": "L'algorithme converge et l'exécution se termine.",
+        "B": "Cela indique que l'algorithme doit commencer une nouvelle initialisation de centroïdes.",
+        "C": "Il montre que les distances entre les points doivent être recalculées.",
+        "D": "Les centroïdes sont automatiquement réinitialisés à leurs valeurs d'origine."
+      },
+      "correct_answer": "A",
+      "explanation": "Si aucune réaffectation de points ne se produit, cela signifie que les centroïdes sont stables et que l'algorithme a convergé. La réponse B est incorrecte car cela impliquerait une non-convergence, ce qui est contraire à la situation décrite. Les choix C et D sont faux car ni un recalcul des distances ni une réinitialisation des centroïdes n'est nécessaire en cas de convergence.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une limite principale de l'algorithme k-means?",
+      "image_url": null,
+      "choices": {
+        "A": "Il incline à détecter les clusters sphériques de taille comparable.",
+        "B": "Il ne peut être exécuté que sur des données à 2 dimensions.",
+        "C": "Il ne reconnait pas les clusters qui se chevauchent.",
+        "D": "Il nécessite une structure hiérarchique préalable des données."
+      },
+      "correct_answer": "A",
+      "explanation": "K-means présume des clusters sphériques de taille similaire, ce qui peut conduire à de mauvais résultats pour des clusters de formes ou tailles diverses. La réponse B est incorrecte car k-means fonctionne sur des données de toute dimension tant qu'elles sont numériques. La réponse C est en partie vraie mais A capture l'essence de la limitation spécifique. La réponse D est fausse, car cela s'applique à des méthodes de clustering hiérarchiques, pas à k-means.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une \u00e9quipe banque dans 'Introduction au clustering', quelle d\u00e9finition d'inertie est la plus juste ?",
+      "question": "Quel est le critère principal pour stopper une exécution de l'algorithme k-means?",
       "image_url": null,
       "choices": {
-        "A": "similarite correspond a une notion de base en apprentissage non supervise ; il formalise le role de similarite dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Introduction au clustering.",
-        "B": "Dans Introduction au clustering, segmentation se comprend comme une notion de base en apprentissage non supervise ; il formalise le role de segmentation dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Introduction au clustering, inertie se comprend comme une notion de base en apprentissage non supervise ; il formalise le role d'inertie dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "structure cachee designe une notion de base en apprentissage non supervise ; il formalise le role de structure cachee dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Inertie minimale atteinte ou aucune réaffectation de points.",
+        "B": "Nombre d'itérations surpassant 1000, peu importe l'état des clusters.",
+        "C": "Variation de couleur entre les clusters n'est plus significative.",
+        "D": "Tous les centroïdes sont situés sur les coordonnées d'origine (0,0)."
       },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'inertie dans Introduction au clustering, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que structure cachee, similarite, segmentation restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (similarite correspond a une notion de base en apprentissage non supervise ; il formalise le role de similar...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Introduction au clustering, segmentation se comprend comme une notion de base en apprentissage non sup...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Introduction au clustering, inertie se comprend comme une notion de base en apprentissage non supervis...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (structure cachee designe une notion de base en apprentissage non supervise ; il formalise le role de struct...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "L'algorithme peut s'arrêter s'il atteint une inertie suffisamment petite ou si les points ne se réaffectent plus à de nouveaux clusters. La réponse B est incorrecte car bien que le nombre d'itérations soit parfois limité, l'important est la convergence. La réponse C est incorrecte car la couleur n'est pas un facteur dans un algorithme mathématique tel que k-means. La réponse D est fausse car il est improbable et inutile que tous les centroïdes se retrouvent en (0,0).",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Introduction au clustering', quel est le role le plus determinant de cluster pour un cas industrie ?",
+      "question": "Quel impact un point de données anormalement distant peut-il avoir sur l'algorithme k-means?",
       "image_url": null,
       "choices": {
-        "A": "Dans Introduction au clustering, centroide est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer centroide en production.",
-        "B": "Le role d'inertie est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer inertie en production.",
-        "C": "assignation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer assignation en production pour guider une d\u00e9cision exploitable.",
-        "D": "cluster sert a installer un raisonnement fiable des le d\u00e9but ; extraire une structure exploitable sans labels explicites pour guider une d\u00e9cision exploitable."
+        "A": "Il peut faussement tirer un centroïde vers lui, perturber l'intégrité des clusters.",
+        "B": "Il est généralement écarté comme bruit et n'affecte pas l'algorithme.",
+        "C": "Il aide à identifier automatiquement un cluster de points anomalies.",
+        "D": "Il remet à zéro tous les autres centroïdes dans l'algorithme."
       },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie cluster \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Introduction au clustering, centroide est mobilise pour installer un raisonnement fiable des le d\u00e9but ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role d'inertie est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (assignation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (cluster sert a installer un raisonnement fiable des le d\u00e9but ; extraire une structure exploitable sans labe...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Les points anormaux peuvent influencer un centroïde et détourner son positionnement, faussant ainsi le clustering. La réponse B est incorrecte car, sans technique spécifique, k-means ne considère pas le bruit de cette manière. La réponse C est incorrecte car l'identification de clusters d'anomalies n'est pas automatiquement effectuée par k-means. D est fausse car un seul point ne peut pas remettre à zéro les centroïdes.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Face a un besoin cybersecurite dans 'Introduction au clustering', pourquoi centroide est-il prioritaire ?",
+      "question": "Comment détecter le bon choix de k dans k-means pour un dataset inconnu?",
       "image_url": null,
       "choices": {
-        "A": "inertie sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer inertie en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Introduction au clustering, assignation est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer assignation en production.",
-        "C": "Dans Introduction au clustering, centroide est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer centroide en production.",
-        "D": "Le role de cluster est d'installer un raisonnement fiable des le d\u00e9but ; extraire une structure exploitable sans labels explicites."
+        "A": "En employant la méthode du coude sur un graphique d'inertie.",
+        "B": "En évaluant la taille des clusters après la première itération.",
+        "C": "En utilisant le nombre d'attributs des données comme valeur de k.",
+        "D": "En maximisant aléatoirement le nombre de k jusqu'à convergence."
       },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie centroide \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (inertie sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux deci...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Introduction au clustering, assignation est mobilise pour installer un raisonnement fiable des le debu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Introduction au clustering, centroide est mobilise pour installer un raisonnement fiable des le d\u00e9but ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de cluster est d'installer un raisonnement fiable des le d\u00e9but ; extraire une structure exploitabl...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La méthode du coude est une technique graphique où l'on choisit k au niveau de l'inflexion de la courbe d'inertie. La réponse B est incorrecte car l'examen des clusters après une seule itération n'indique pas la solution optimale. La réponse C est fausse car le nombre d'attributs n'est pas une indication fiable pour k. La réponse D est incorrecte car k-means ne requiert pas la maximisation aléatoire puisque cela ne garantit pas une convergence optimale.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Introduction au clustering', quelle situation de terrain montre le mieux quand utiliser assignation ?",
+      "question": "Quel problème peut survenir avec des clusters de tailles très différentes dans l'algorithme k-means?",
       "image_url": null,
       "choices": {
-        "A": "Dans un atelier de cadrage d'Introduction au clustering, l'\u00e9quipe applique centroide pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer centroide en production.",
-        "B": "En contexte r\u00e9el sur Introduction au clustering, inertie est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer inertie en production.",
-        "C": "En contexte r\u00e9el sur Introduction au clustering, assignation est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer assignation en production.",
-        "D": "Pendant un atelier de cadrage, cluster est utile pour installer un raisonnement fiable des le d\u00e9but ; extraire une structure exploitable sans labels explicites tout en surveillant le risque d'appliquer cluster par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "K-means pourrait faussement attribuer des points des petits clusters aux gros.",
+        "B": "Il pourrait ne pas reconnaître les petits clusters et les fusionner toujours.",
+        "C": "Il classera automatiquement le plus petit cluster comme bruit.",
+        "D": "Il n'est pas capable de traiter des petits clusters, ignorant les gros."
       },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car assignation y sert de levier de d\u00e9cision principal dans Introduction au clustering. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans un atelier de cadrage d'Introduction au clustering, l'\u00e9quipe applique centroide pour installer un rai...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Introduction au clustering, inertie est choisi afin d'installer un raisonnement fiabl...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Introduction au clustering, assignation est choisi afin d'installer un raisonnement f...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant un atelier de cadrage, cluster est utile pour installer un raisonnement fiable des le d\u00e9but ; extra...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "K-means attribue totalement en fonction de la distance au centroïde le plus proche, donc des clusters plus petits peuvent se voir affecter par un gros cluster en raison de cette distance relative. La réponse B est fausse car l'agglomération n'est pas systématique sans calcul additionnel. La réponse C est incorrecte car k-means ne classifie pas le bruit de manière automatique. La réponse D ne pourrait pas être correcte puisque k-means traite tous les clusters proportionnellement.",
       "difficulty": "hard"
     }
   ]

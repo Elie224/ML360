@@ -5,198 +5,198 @@
   "questions": [
     {
       "type": "text",
-      "question": "lissage: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Label propagation' ?",
+      "question": "Quel est le rôle d'un graphe de similarité dans l'apprentissage semi-supervisé par propagation de labels?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Label propagation, graphe de similarite est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer graphe de similarite en production.",
-        "B": "Pendant une phase d'experimentation, propagation iterative est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer propagation iterative en production tout en surveillant le risque de sur-optimiser propagation iterative localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Dans une phase d'experimentation de Label propagation, l'\u00e9quipe applique voisins fiables pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisins fiables en production.",
-        "D": "Dans une phase d'experimentation de Label propagation, l'\u00e9quipe applique lissage pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lissage en production."
+        "A": "Représenter les relations entre échantillons, où les arêtes représentent des similarités.",
+        "B": "Compiler les statistiques de distribution des labels.",
+        "C": "Servir uniquement à classifier les données non étiquetées.",
+        "D": "Calculer les taux d'erreur pour les itérations du modèle."
       },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car lissage y sert de levier de d\u00e9cision principal dans Label propagation. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Label propagation, graphe de similarite est choisi afin de fiabiliser les d\u00e9cisions d'...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une phase d'experimentation, propagation iterative est utile pour fiabiliser les d\u00e9cisions d'experi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une phase d'experimentation de Label propagation, l'\u00e9quipe applique voisins fiables pour fiabiliser le...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une phase d'experimentation de Label propagation, l'\u00e9quipe applique lissage pour fiabiliser les decisi...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Label propagation', quel commentaire du schema traduit le mieux le role de lissage ?",
-      "image_url": "apprentissage-semi-supervise_label_propagation_lissage_2.png",
-      "choices": {
-        "A": "Dans Label propagation, graphe de similarite est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer graphe de similarite en production.",
-        "B": "Le role de propagation iterative est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer propagation iterative en production.",
-        "C": "voisins fiables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisins fiables en production pour guider une d\u00e9cision exploitable.",
-        "D": "lissage sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lissage en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de lissage dans Label propagation. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Label propagation, graphe de similarite est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de propagation iterative est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctemen...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (voisins fiables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (lissage sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Un graphe de similarité représente les relations de proximité entre les échantillons, indiquant où la propagation de labels doit être appliquée. Les échantillons sont des nœuds et la similarité est indiquée par les arêtes. Compiler des statistiques de distribution ou calculer des taux d'erreur ne fait pas partie de la construction du graphe et le graphe n'est pas utilisé uniquement pour les données non étiquetées.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Label propagation', quel est le principal mode d'echec quand lissage est mal applique ?",
+      "question": "Pourquoi la propagation itérative est-elle cruciale en label propagation?",
       "image_url": null,
       "choices": {
-        "A": "Si lissage est mal utilise, on observe souvent sur-optimiser lissage localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de graphe de similarite est sur-optimiser graphe de similarite localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Un risque classique avec propagation iterative est de sur-optimiser propagation iterative localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Si voisins fiables est mal utilise, on observe souvent sur-optimiser voisins fiables localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Elle affine progressivement les prédictions en transmettant les labels le long des arêtes du graphe.",
+        "B": "Elle permet d'ajuster les poids des arêtes après chaque itération.",
+        "C": "Elle minimise la perte de classification à chaque étape.",
+        "D": "Elle est utilisée pour reclasser les nœuds déjà étiquetés après chaque cycle."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de lissage. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si lissage est mal utilise, on observe souvent sur-optimiser lissage localement en ignorant ses interaction...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de graphe de similarite est sur-optimiser graphe de similarite localement en igno...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec propagation iterative est de sur-optimiser propagation iterative localement en ign...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si voisins fiables est mal utilise, on observe souvent sur-optimiser voisins fiables localement en ignorant...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La propagation itérative affine les prédictions en faisant circuler de manière répétée les labels le long du graphe, ce qui la rend essentielle pour exploiter les similarités entre échantillons. Ajuster les poids des arêtes ou minimiser la perte de classification ne sont pas directement associés au processus de propagation de labels. Reclassement des nœuds déjà étiquetés n'est pas le but de la propagation itérative.",
       "difficulty": "easy"
     },
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec voisins fiables dans 'Label propagation' ?",
-      "image_url": "apprentissage-semi-supervise_label_propagation_voisins_fiables_2.png",
-      "choices": {
-        "A": "propagation iterative sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer propagation iterative en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Label propagation, lissage est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lissage en production.",
-        "C": "Dans Label propagation, voisins fiables est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisins fiables en production.",
-        "D": "Le role de graphe de similarite est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer graphe de similarite en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de voisins fiables dans Label propagation. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (propagation iterative sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Label propagation, lissage est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser c...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Label propagation, voisins fiables est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'ut...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de graphe de similarite est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
       "type": "text",
-      "question": "lissage: pourquoi ce concept est-il crucial pour une \u00e9quipe industrie dans 'Label propagation' ?",
+      "question": "Qu'est-ce que le lissage dans le contexte de la propagation de labels?",
       "image_url": null,
       "choices": {
-        "A": "Le role de voisins fiables est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisins fiables en production.",
-        "B": "Le role de lissage est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lissage en production.",
-        "C": "graphe de similarite sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer graphe de similarite en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Label propagation, propagation iterative est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer propagation iterative en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie lissage \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de voisins fiables est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perm...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de lissage est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (graphe de similarite sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Label propagation, propagation iterative est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec graphe de similarite dans 'Label propagation' ?",
-      "image_url": "apprentissage-semi-supervise_label_propagation_graphe_de_similarite_2.png",
-      "choices": {
-        "A": "Dans Label propagation, voisins fiables est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisins fiables en production.",
-        "B": "Dans Label propagation, graphe de similarite est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer graphe de similarite en production.",
-        "C": "Le role de propagation iterative est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer propagation iterative en production.",
-        "D": "lissage sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lissage en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de graphe de similarite dans Label propagation. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Label propagation, voisins fiables est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'ut...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Label propagation, graphe de similarite est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de propagation iterative est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctemen...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (lissage sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe industrie dans 'Label propagation', quelle d\u00e9finition de lissage est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "graphe de similarite correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de graphe de similarite dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Label propagation.",
-        "B": "Dans Label propagation, propagation iterative se comprend comme un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de propagation iterative dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Label propagation, lissage se comprend comme un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de lissage dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "accumulation d'erreurs designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'accumulation d'erreurs dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de lissage dans Label propagation, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte industrie, alors que accumulation d'erreurs, graphe de similarite, propagation iterative restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (graphe de similarite correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise l...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Label propagation, propagation iterative se comprend comme un concept interm\u00e9diaire en apprentissage s...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Label propagation, lissage se comprend comme un concept interm\u00e9diaire en apprentissage semi supervise ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (accumulation d'erreurs designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le r...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Label propagation' (e-commerce), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment propagation iterative ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Label propagation, selection confiante se comprend comme un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de selection confiante dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "accumulation d'erreurs designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'accumulation d'erreurs dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "graphe de similarite correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de graphe de similarite dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Label propagation.",
-        "D": "propagation iterative correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de propagation iterative dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Label propagation."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de propagation iterative dans Label propagation, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que selection confiante, accumulation d'erreurs, graphe de similarite restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Label propagation, selection confiante se comprend comme un concept interm\u00e9diaire en apprentissage sem...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (accumulation d'erreurs designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le r...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (graphe de similarite correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise l...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (propagation iterative correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Label propagation', quelle situation de terrain montre le mieux quand utiliser voisins fiables ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une phase d'experimentation de Label propagation, l'\u00e9quipe applique propagation iterative pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer propagation iterative en production.",
-        "B": "En contexte r\u00e9el sur Label propagation, lissage est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lissage en production.",
-        "C": "En contexte r\u00e9el sur Label propagation, voisins fiables est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisins fiables en production.",
-        "D": "Pendant une phase d'experimentation, graphe de similarite est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer graphe de similarite en production tout en surveillant le risque de sur-optimiser graphe de similarite localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car voisins fiables y sert de levier de d\u00e9cision principal dans Label propagation. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une phase d'experimentation de Label propagation, l'\u00e9quipe applique propagation iterative pour fiabili...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Label propagation, lissage est choisi afin de fiabiliser les d\u00e9cisions d'experimentati...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Label propagation, voisins fiables est choisi afin de fiabiliser les d\u00e9cisions d'exper...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une phase d'experimentation, graphe de similarite est utile pour fiabiliser les d\u00e9cisions d'experim...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin e-commerce dans 'Label propagation', pourquoi propagation iterative est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "lissage sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lissage en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Label propagation, voisins fiables est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisins fiables en production.",
-        "C": "Dans Label propagation, propagation iterative est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer propagation iterative en production.",
-        "D": "Le role de graphe de similarite est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer graphe de similarite en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie propagation iterative \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (lissage sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Label propagation, voisins fiables est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'ut...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Label propagation, propagation iterative est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de graphe de similarite est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Label propagation', quelle situation de terrain montre le mieux quand utiliser graphe de similarite ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Label propagation, voisins fiables est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisins fiables en production.",
-        "B": "En contexte r\u00e9el sur Label propagation, graphe de similarite est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer graphe de similarite en production.",
-        "C": "Pendant une phase d'experimentation, propagation iterative est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer propagation iterative en production tout en surveillant le risque de sur-optimiser propagation iterative localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation de Label propagation, l'\u00e9quipe applique lissage pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lissage en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car graphe de similarite y sert de levier de d\u00e9cision principal dans Label propagation. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Label propagation, voisins fiables est choisi afin de fiabiliser les d\u00e9cisions d'exper...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Label propagation, graphe de similarite est choisi afin de fiabiliser les d\u00e9cisions d'...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, propagation iterative est utile pour fiabiliser les d\u00e9cisions d'experi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation de Label propagation, l'\u00e9quipe applique lissage pour fiabiliser les decisi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Label propagation', quel est le role le plus determinant de voisins fiables pour un cas cybersecurite ?",
-      "image_url": null,
-      "choices": {
-        "A": "voisins fiables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisins fiables en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Label propagation, graphe de similarite est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer graphe de similarite en production.",
-        "C": "Le role de propagation iterative est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer propagation iterative en production.",
-        "D": "lissage sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lissage en production pour guider une d\u00e9cision exploitable."
+        "A": "Un processus qui réduit les sauts brusques de labels entre nœuds similaires.",
+        "B": "Une méthode pour augmenter artificiellement le nombre d'échantillons étiquetés.",
+        "C": "Une technique de prévention des sur-apprentissages du modèle.",
+        "D": "Un mécanisme de normalisation des caractéristiques des données d'entrée."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie voisins fiables \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (voisins fiables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Label propagation, graphe de similarite est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de propagation iterative est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctemen...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (lissage sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Le lissage réduit les différences de prévision de labels entre nœuds voisines sur le graphe, assurant ainsi que des nœuds similaires obtiennent des labels similaires. Augmenter les échantillons, prévenir le sur-apprentissage ou normaliser les caractéristiques ne sont pas des objectifs du lissage dans la propagation de labels.",
+      "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Label propagation', quel est le role le plus determinant de graphe de similarite pour un cas marketing ?",
+      "question": "Dans l'algorithme de label propagation, pourquoi les voisins fiables sont-ils importants?",
       "image_url": null,
       "choices": {
-        "A": "Dans Label propagation, propagation iterative est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer propagation iterative en production.",
-        "B": "Le role de lissage est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lissage en production.",
-        "C": "voisins fiables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisins fiables en production pour guider une d\u00e9cision exploitable.",
-        "D": "graphe de similarite sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer graphe de similarite en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie graphe de similarite \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Label propagation, propagation iterative est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de lissage est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (voisins fiables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (graphe de similarite sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'Label propagation', quel exemple met propagation iterative au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une phase d'experimentation, propagation iterative est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer propagation iterative en production tout en surveillant le risque de sur-optimiser propagation iterative localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Dans une phase d'experimentation de Label propagation, l'\u00e9quipe applique graphe de similarite pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer graphe de similarite en production.",
-        "C": "En contexte r\u00e9el sur Label propagation, lissage est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lissage en production.",
-        "D": "Pendant une phase d'experimentation, voisins fiables est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer voisins fiables en production tout en surveillant le risque de sur-optimiser voisins fiables localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Ils assurent une propagation plus précise des labels vers des nœuds voisins.",
+        "B": "Ils augmentent la vitesse d'itération de l'algorithme.",
+        "C": "Ils brevetent automatiquement la solution de l'algorithme.",
+        "D": "Ils réduisent la mémoire nécessaire pour stocker le graphe."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car propagation iterative y sert de levier de d\u00e9cision principal dans Label propagation. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une phase d'experimentation, propagation iterative est utile pour fiabiliser les d\u00e9cisions d'experi...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une phase d'experimentation de Label propagation, l'\u00e9quipe applique graphe de similarite pour fiabilis...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Label propagation, lissage est choisi afin de fiabiliser les d\u00e9cisions d'experimentati...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une phase d'experimentation, voisins fiables est utile pour fiabiliser les d\u00e9cisions d'experimentat...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Les voisins fiables garantissent que les labels se propagent de manière précise vers les nœuds ayant des similarités vérifiées, améliorant la qualité de la classification. Cette fiabilité ne modifie ni la vitesse de l'algorithme, ne brevetent pas la solution et n'influe pas sur la mémoire requise.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une caractéristique clé d'un graphe de similarité utilisé en propagation de labels?",
+      "image_url": null,
+      "choices": {
+        "A": "Les arêtes reflètent une fonction de similarité entre les nœuds.",
+        "B": "Chaque arête du graphe est orientée pour indiquer le sens correct de propagation.",
+        "C": "Les nœuds ne représentent que des échantillons non étiquetés.",
+        "D": "Les nœuds du graphe sont classés par importance avant la propagation."
+      },
+      "correct_answer": "A",
+      "explanation": "Les arêtes d'un graphe de similarité reflètent comment les nœuds sont similaires entre eux, guidant la propagation. Dans la propagation de labels, les arêtes ne sont pas orientées et les nœuds incluent à la fois étiquetés et non étiquetés. Les nœuds ne sont pas classés par importance avant la propagation.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un aspect critique lors du choix de la fonction de similarité pour un graphe en label propagation?",
+      "image_url": null,
+      "choices": {
+        "A": "La fonction doit bien séparer les échantillons de classes différentes.",
+        "B": "La fonction doit être capable de normaliser les échantillons.",
+        "C": "La fonction doit éliminer automatiquement les outliers.",
+        "D": "La fonction doit minimiser la distance euclidienne entre tous les nœuds."
+      },
+      "correct_answer": "A",
+      "explanation": "Une bonne fonction de similarité devrait séparer distinctement les échantillons de classes différentes pour une propagation effective. La normalisation, l'élimination des outliers ou réduire toute distance entre nœuds ne sont pas des objectifs directs de cette fonction.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle stratégie peut améliorer la robustesse d'un modèle de propagation de labels?",
+      "image_url": null,
+      "choices": {
+        "A": "Utiliser un échantillonnage pondéré pour sélectionner les voisins les plus sûrs.",
+        "B": "Augmenter le nombre d'itérations quel que soit le seuil de convergence.",
+        "C": "Rendre chaque nœud du graphe accessible à l'utilisateur pour les corrections manuelles.",
+        "D": "Réduire systématiquement le nombre de nœuds dans le graphe."
+      },
+      "correct_answer": "A",
+      "explanation": "Sélectionner les voisins les plus sûrs via un échantillonnage pondéré peut réduire les erreurs dans la propagation. Augmenter le nombre d'itérations sans raison, rendre tous les nœuds accessibles ou réduire le nombre de nœuds ne contribuent pas directement à la robustesse du modèle.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la conséquence d'un choix inadéquat du graphe de similarité dans la propagation de labels?",
+      "image_url": null,
+      "choices": {
+        "A": "Mauvaise propagation des labels, entraînant une perte de précision.",
+        "B": "Augmentation du nombre d'échantillons étiquetés.",
+        "C": "Diminution du nombre de classes prédictes.",
+        "D": "Accélération incorrecte du temps de convergence de l'algorithme."
+      },
+      "correct_answer": "A",
+      "explanation": "Un mauvais choix de graphe de similarité peut entraîner une propagation incorrecte des labels et une perte de précision. Cela n'augmente pas le nombre d'échantillons, ne diminue pas le nombre de classes ni n'accélère le temps de convergence de manière intentionnelle.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment le lissage affecte-t-il les résultats de la propagation de labels?",
+      "image_url": null,
+      "choices": {
+        "A": "Il améliore la cohérence locale des labels attribués.",
+        "B": "Il décide des clusters basés sur la distance maximale.",
+        "C": "Il préfère les échantillons avec plus de caractéristiques.",
+        "D": "Il sature les nœuds non étiquetés avec des valeurs aléatoires."
+      },
+      "correct_answer": "A",
+      "explanation": "Le lissage améliore la cohérence locale en s'assurant que des nœuds proches et similaires aient des labels cohérents. Il ne décide pas de clusters via des distances maximales, ne privilégie pas les échantillons par nombre de caractéristiques et ne remplit pas aléatoirement les labels.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi doit-on se méfier des voisins non fiables dans une propagation de labels?",
+      "image_url": null,
+      "choices": {
+        "A": "Ils peuvent mener à des erreurs de propagation de labels.",
+        "B": "Ils ralentissent considérablement le calcul des mises à jour des labels.",
+        "C": "Ils augmentent la taille du graphe au-delà de la capacité logicielle.",
+        "D": "Ils font systématiquement diminuer la distance entre différents clusters."
+      },
+      "correct_answer": "A",
+      "explanation": "Les voisins non fiables peuvent propager des labels erronés, diminuant la qualité des prédictions. Ils ne ralentissent pas considérablement les calculs, n'augmentent pas démesurément la taille du graphe et n'impactent pas directement la distance entre clusters.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'objectif principal d'utiliser des voisins fiables en label propagation?",
+      "image_url": null,
+      "choices": {
+        "A": "Maximiser l'exactitude des labels propagés aux données non étiquetées.",
+        "B": "Réduire le nombre total d'itérations du processus de propagation.",
+        "C": "Contrôler directement la taille de chaque cluster formé.",
+        "D": "Éliminer complètement la nécessité des données étiquetées initiales."
+      },
+      "correct_answer": "A",
+      "explanation": "Des voisins fiables aident à maximiser la précision des labels propagés, car seules les connexions sûres sont favorisées. Cela ne réduit pas nécessairement le nombre d'itérations, ne contrôle pas directement la taille des clusters et ne remplace pas les données étiquetées initiales.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans le contexte de la méthode de propagation de labels, qu'est-ce qu'un graphe de similarité?",
+      "image_url": null,
+      "choices": {
+        "A": "Une structure de données qui définit des relations de proximité entre échantillons basées sur une métrique de similarité.",
+        "B": "Un graphe où les nœuds représentent les classes et les arêtes les décisions de classification.",
+        "C": "Un graphe complet où chaque nœud est connecté à tous les autres nœuds.",
+        "D": "Une forêt d'arbres où chaque arbre représente un modèle séparé pour la classification."
+      },
+      "correct_answer": "A",
+      "explanation": "Un graphe de similarité est une structure où les nœuds représentent les échantillons et les arêtes pondérées expriment leur similitude, utilisée pour partager des labels entre les voisins proches. B est faux car il ne s'agit pas de représenter des classes mais des échantillons. C est incorrect car la structure n'est pas nécessairement complète; seules les connexions proches sont pertinentes. D est incorrect car une forêt d'arbres décrit plutôt un ensemble de modèles comme dans les forêts aléatoires.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la caractéristique principale de la propagation itérative des labels dans un graphe?",
+      "image_url": null,
+      "choices": {
+        "A": "Le label de chaque nœud est mis à jour en fonction des labels de ses voisins jusqu'à convergence.",
+        "B": "Les labels sont initialisés aléatoirement et ne sont pas actualisés au cours du processus.",
+        "C": "Les labels sont mis à jour par rétropropagation d'erreurs, de manière similaire aux réseaux de neurones.",
+        "D": "Les labels de chaque nœud sont fixés et ne dépendent que de leur classe attribuée initialement."
+      },
+      "correct_answer": "A",
+      "explanation": "La propagation itérative consiste à réviser continuellement les labels des nœuds selon une règle de mise à jour fondée sur les labels de leurs voisins directs, jusqu'à ce qu'il n'y ait plus de changements significatifs (convergence). B est faux car les labels évoluent vers un état stable. C est incorrect car la propagation de labels n'utilise pas la rétropropagation d'erreurs. D est incorrect car une des caractéristiques essentielles est justement le raffinement des labels initiaux.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans le contexte de la propagation des labels, que signifie le concept de lissage par les voisins fiables?",
+      "image_url": null,
+      "choices": {
+        "A": "Attribuer un label incertain à un nœud s'il n'a pas de voisins étiquetés.",
+        "B": "Utiliser les labels des voisins les plus similaires pour stabiliser la prédiction.",
+        "C": "Lissage signifie appliquer un filtre pour ignorer les différences mineures dans les labels.",
+        "D": "Considérer uniquement les voisins avec déjà une forte probabilité de label correct."
+      },
+      "correct_answer": "B",
+      "explanation": "Le lissage par les voisins fiables consiste à réviser les labels d'un nœud par une moyenne pondérée des labels de ses voisins les plus similaires. A est faux car même les voisins incertains peuvent contribuer. C est incorrect car le lissage ne signifie pas simplement éliminer des petites différences. D est faux car l'importance de la similarité prévaut, sans forcément restreindre aux labels les plus probables a priori, permettant une révision plus fine fondée sur la proximité.",
       "difficulty": "hard"
     }
   ]

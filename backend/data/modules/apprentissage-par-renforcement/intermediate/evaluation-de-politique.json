@@ -5,283 +5,283 @@
   "questions": [
     {
       "type": "text",
-      "question": "variance: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans '\u00c9valuation de politique' ?",
+      "question": "Qu'est-ce qu'un 'rollout' dans le contexte de l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur \u00c9valuation de politique, rollout est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollout en production.",
-        "B": "Pendant une phase d'experimentation, moyenne episodique est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer moyenne episodique en production tout en surveillant le risque de sur-optimiser moyenne episodique localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Dans une phase d'experimentation d'\u00c9valuation de politique, l'\u00e9quipe applique comparaison de politiques pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer comparaison de politiques en production.",
-        "D": "Dans une phase d'experimentation d'\u00c9valuation de politique, l'\u00e9quipe applique variance pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance en production."
+        "A": "Une séquence d'actions et de récompenses obtenue en suivant une politique jusqu'à la fin de l'épisode.",
+        "B": "Un processus de comparaison entre deux politiques différentes pour évaluer leur performance.",
+        "C": "La variation de récompense attendue due à des perturbations stochastiques externes.",
+        "D": "Une mise à jour incrémentale de la fonction de valeur d'action."
       },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car variance y sert de levier de d\u00e9cision principal dans \u00c9valuation de politique. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur \u00c9valuation de politique, rollout est choisi afin de fiabiliser les d\u00e9cisions d'experim...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une phase d'experimentation, moyenne episodique est utile pour fiabiliser les d\u00e9cisions d'experimen...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une phase d'experimentation d'\u00c9valuation de politique, l'\u00e9quipe applique comparaison de politiques po...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une phase d'experimentation d'\u00c9valuation de politique, l'\u00e9quipe applique variance pour fiabiliser les...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec rollout dans '\u00c9valuation de politique' ?",
-      "image_url": "apprentissage-par-renforcement_evaluation_de_politique_rollout_2.png",
-      "choices": {
-        "A": "Dans \u00c9valuation de politique, comparaison de politiques est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer comparaison de politiques en production.",
-        "B": "Dans \u00c9valuation de politique, rollout est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollout en production.",
-        "C": "Le role de moyenne episodique est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer moyenne episodique en production.",
-        "D": "variance sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de rollout dans \u00c9valuation de politique. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans \u00c9valuation de politique, comparaison de politiques est mobilise pour fiabiliser les d\u00e9cisions d'experi...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans \u00c9valuation de politique, rollout est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'util...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de moyenne episodique est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement p...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (variance sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux decide...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Dans '\u00c9valuation de politique', quel commentaire du schema traduit le mieux le role de variance ?",
-      "image_url": "apprentissage-par-renforcement_evaluation_de_politique_variance_2.png",
-      "choices": {
-        "A": "Dans \u00c9valuation de politique, rollout est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollout en production.",
-        "B": "Le role de moyenne episodique est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer moyenne episodique en production.",
-        "C": "comparaison de politiques sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer comparaison de politiques en production pour guider une d\u00e9cision exploitable.",
-        "D": "variance sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de variance dans \u00c9valuation de politique. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans \u00c9valuation de politique, rollout est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'util...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de moyenne episodique est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement p...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (comparaison de politiques sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perme...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (variance sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux decide...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Un 'rollout' consiste à simuler l'application d'une politique sur plusieurs étapes, créant une séquence d'état-action-récompense. La comparaison de politiques et la mise à jour de la fonction de valeur ne sont pas impliquées directement. La variation stochastique se réfère à un concept distinct lié à l'exploration.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans '\u00c9valuation de politique', quel est le role le plus determinant de rollout pour un cas sante ?",
+      "question": "Comment est calculée la moyenne episodique dans l'évaluation d'une politique?",
       "image_url": null,
       "choices": {
-        "A": "Dans \u00c9valuation de politique, moyenne episodique est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer moyenne episodique en production.",
-        "B": "Le role de variance est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance en production.",
-        "C": "comparaison de politiques sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer comparaison de politiques en production pour guider une d\u00e9cision exploitable.",
-        "D": "rollout sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollout en production pour guider une d\u00e9cision exploitable."
+        "A": "En calculant la moyenne des récompenses totales obtenues par épisode pour plusieurs essais.",
+        "B": "En intégrant la variance des récompenses sur tous les épisodes.",
+        "C": "En prenant la récompense maximale obtenue lors d'un seul épisode.",
+        "D": "En exponentiant la somme des récompenses sur un épisode unique."
       },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie rollout \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans \u00c9valuation de politique, moyenne episodique est mobilise pour fiabiliser les d\u00e9cisions d'experimentati...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de variance est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de m...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (comparaison de politiques sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (rollout sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La moyenne episodique est la moyenne des récompenses cumulées sur des essais multiples sous une politique donnée. La variance n'est pas incluse dans ce calcul, et il ne s'agit pas d'une récompense maximale ni d'une opération exponentielle.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans '\u00c9valuation de politique', quel est le principal mode d'echec quand variance est mal applique ?",
+      "question": "Quel impact une haute variance a-t-elle lors de l'évaluation des politiques en apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Si variance est mal utilise, on observe souvent sur-optimiser variance localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de rollout est sur-optimiser rollout localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Un risque classique avec moyenne episodique est de sur-optimiser moyenne episodique localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Si comparaison de politiques est mal utilise, on observe souvent sur-optimiser comparaison de politiques localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Elle peut rendre difficile la distinction entre les performances des différentes politiques.",
+        "B": "Elle améliore automatiquement l'algorithme de politique en fonction des récompenses.",
+        "C": "Elle assure que toutes les politiques convergent vers la même valeur de récompense.",
+        "D": "Elle garantit que les récompenses accumulées augmentent systématiquement à chaque épisode."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de variance. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si variance est mal utilise, on observe souvent sur-optimiser variance localement en ignorant ses interacti...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de rollout est sur-optimiser rollout localement en ignorant ses interactions avec...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec moyenne episodique est de sur-optimiser moyenne episodique localement en ignorant ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si comparaison de politiques est mal utilise, on observe souvent sur-optimiser comparaison de politiques lo...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Une haute variance peut rendre les performances observées moins fiables en raison de la fluctuation aléatoire des récompenses, rendant la comparaison difficile. Elle n'améliore pas les algorithmes automatiquement, n'assure pas la convergence des valeurs, et n'augmente pas systématiquement les récompenses.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans '\u00c9valuation de politique', quelle situation de terrain montre le mieux quand utiliser rollout ?",
+      "question": "Quel critère est souvent utilisé pour comparer deux politiques dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur \u00c9valuation de politique, comparaison de politiques est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer comparaison de politiques en production.",
-        "B": "En contexte r\u00e9el sur \u00c9valuation de politique, rollout est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollout en production.",
-        "C": "Pendant une phase d'experimentation, moyenne episodique est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer moyenne episodique en production tout en surveillant le risque de sur-optimiser moyenne episodique localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation d'\u00c9valuation de politique, l'\u00e9quipe applique variance pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car rollout y sert de levier de d\u00e9cision principal dans \u00c9valuation de politique. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur \u00c9valuation de politique, comparaison de politiques est choisi afin de fiabiliser les d...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur \u00c9valuation de politique, rollout est choisi afin de fiabiliser les d\u00e9cisions d'experim...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, moyenne episodique est utile pour fiabiliser les d\u00e9cisions d'experimen...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation d'\u00c9valuation de politique, l'\u00e9quipe applique variance pour fiabiliser les...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "variance: pourquoi ce concept est-il crucial pour une \u00e9quipe e-commerce dans '\u00c9valuation de politique' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role de comparaison de politiques est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer comparaison de politiques en production.",
-        "B": "Le role de variance est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance en production.",
-        "C": "rollout sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollout en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans \u00c9valuation de politique, moyenne episodique est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer moyenne episodique en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie variance \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de comparaison de politiques est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correct...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de variance est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de m...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (rollout sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans \u00c9valuation de politique, moyenne episodique est mobilise pour fiabiliser les d\u00e9cisions d'experimentati...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans '\u00c9valuation de politique' (marketing), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment moyenne episodique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans \u00c9valuation de politique, equation de Bellman se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'equation de Bellman dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "bootstrapping designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de bootstrapping dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "target update correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de target update dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans \u00c9valuation de politique.",
-        "D": "moyenne episodique correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de moyenne episodique dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans \u00c9valuation de politique."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de moyenne episodique dans \u00c9valuation de politique, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que equation de Bellman, bootstrapping, target update restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans \u00c9valuation de politique, equation de Bellman se comprend comme un concept interm\u00e9diaire en apprentissa...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (bootstrapping designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (target update correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le rol...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (moyenne episodique correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise l...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe e-commerce dans '\u00c9valuation de politique', quelle d\u00e9finition de variance est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "target update correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de target update dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans \u00c9valuation de politique.",
-        "B": "Dans \u00c9valuation de politique, erreur temporelle se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'erreur temporelle dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans \u00c9valuation de politique, variance se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de variance dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "bootstrapping designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de bootstrapping dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de variance dans \u00c9valuation de politique, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que bootstrapping, target update, erreur temporelle restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (target update correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le rol...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans \u00c9valuation de politique, erreur temporelle se comprend comme un concept interm\u00e9diaire en apprentissage...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans \u00c9valuation de politique, variance se comprend comme un concept interm\u00e9diaire en apprentissage par renf...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (bootstrapping designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin marketing dans '\u00c9valuation de politique', pourquoi moyenne episodique est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "variance sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans \u00c9valuation de politique, comparaison de politiques est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer comparaison de politiques en production.",
-        "C": "Dans \u00c9valuation de politique, moyenne episodique est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer moyenne episodique en production.",
-        "D": "Le role de rollout est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollout en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie moyenne episodique \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (variance sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux decide...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans \u00c9valuation de politique, comparaison de politiques est mobilise pour fiabiliser les d\u00e9cisions d'experi...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans \u00c9valuation de politique, moyenne episodique est mobilise pour fiabiliser les d\u00e9cisions d'experimentati...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de rollout est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "rollout: quelle proposition en donne la meilleure d\u00e9finition dans '\u00c9valuation de politique' (contexte sante) ?",
-      "image_url": null,
-      "choices": {
-        "A": "rollout designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de rollout dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "greedy action correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de greedy action dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans \u00c9valuation de politique.",
-        "C": "Dans \u00c9valuation de politique, equation de Bellman se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'equation de Bellman dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "bootstrapping designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de bootstrapping dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "La valeur attendue de la somme des récompenses cumulées.",
+        "B": "La rapidité de convergence d'une politique vers la solution optimale.",
+        "C": "La simplicité de calcul des dérivées stochastiques.",
+        "D": "La couleur du graphe représentant la politique."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de rollout dans \u00c9valuation de politique, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que greedy action, equation de Bellman, bootstrapping restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (rollout designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de rollou...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (greedy action correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le rol...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans \u00c9valuation de politique, equation de Bellman se comprend comme un concept interm\u00e9diaire en apprentissa...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (bootstrapping designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec comparaison de politiques dans '\u00c9valuation de politique' ?",
-      "image_url": "apprentissage-par-renforcement_evaluation_de_politique_comparaison_de_politiques_2.png",
-      "choices": {
-        "A": "moyenne episodique sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer moyenne episodique en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans \u00c9valuation de politique, variance est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance en production.",
-        "C": "Dans \u00c9valuation de politique, comparaison de politiques est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer comparaison de politiques en production.",
-        "D": "Le role de rollout est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollout en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de comparaison de politiques dans \u00c9valuation de politique. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (moyenne episodique sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans \u00c9valuation de politique, variance est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'uti...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans \u00c9valuation de politique, comparaison de politiques est mobilise pour fiabiliser les d\u00e9cisions d'experi...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de rollout est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
+      "explanation": "Pour comparer deux politiques, on utilise souvent la valeur attendue des récompenses cumulées pour évaluer leur performance. La rapidité de convergence est importante mais n'est pas le critère principal. La simplicité des dérivées et la couleur du graphe ne sont pas pertinentes dans ce contexte.",
+      "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de '\u00c9valuation de politique', quelle erreur autour de rollout est la plus critique ?",
+      "question": "Pourquoi est-il important de considérer la variance lors de l'évaluation de politiques?",
       "image_url": null,
       "choices": {
-        "A": "Si variance est mal utilise, on observe souvent sur-optimiser variance localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de comparaison de politiques est sur-optimiser comparaison de politiques localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Le piege principal autour de rollout est sur-optimiser rollout localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Un risque classique avec moyenne episodique est de sur-optimiser moyenne episodique localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de rollout. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si variance est mal utilise, on observe souvent sur-optimiser variance localement en ignorant ses interacti...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour de comparaison de politiques est sur-optimiser comparaison de politiques localeme...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de rollout est sur-optimiser rollout localement en ignorant ses interactions avec...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec moyenne episodique est de sur-optimiser moyenne episodique localement en ignorant ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de '\u00c9valuation de politique', quel exemple met moyenne episodique au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une phase d'experimentation, moyenne episodique est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer moyenne episodique en production tout en surveillant le risque de sur-optimiser moyenne episodique localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Dans une phase d'experimentation d'\u00c9valuation de politique, l'\u00e9quipe applique rollout pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollout en production.",
-        "C": "En contexte r\u00e9el sur \u00c9valuation de politique, variance est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance en production.",
-        "D": "Pendant une phase d'experimentation, comparaison de politiques est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer comparaison de politiques en production tout en surveillant le risque de sur-optimiser comparaison de politiques localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Elle influence l'interprétation de la stabilité des performances d'une politique.",
+        "B": "Elle permet de prédire correctement les prochaines récompenses d'une séquence.",
+        "C": "Elle assure des oscillations positives dans les schémas de récompenses.",
+        "D": "Elle optimise directement la sélection des actions par la politique."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car moyenne episodique y sert de levier de d\u00e9cision principal dans \u00c9valuation de politique. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une phase d'experimentation, moyenne episodique est utile pour fiabiliser les d\u00e9cisions d'experimen...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une phase d'experimentation d'\u00c9valuation de politique, l'\u00e9quipe applique rollout pour fiabiliser les ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur \u00c9valuation de politique, variance est choisi afin de fiabiliser les d\u00e9cisions d'experi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une phase d'experimentation, comparaison de politiques est utile pour fiabiliser les d\u00e9cisions d'ex...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La variance influence l'interprétation de la stabilité des performances, donnant un aperçu de la fiabilité des politiques. Elle ne permet pas de prédire ou d'optimiser la sélection d'actions directement, ni de créer des oscillations positives.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Lors d'un 'rollout', pourquoi est-il nécessaire de suivre une politique prédéfinie?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour collecter des séquences de données cohérentes qui peuvent être utilisées pour estimer la valeur de la politique.",
+        "B": "Pour garantir que chaque action choisie est naturellement celle qui rapporte le plus de récompenses selon les observations passées.",
+        "C": "Pour éviter toute forme d'exploration supplémentaire qui pourrait biaiser les résultats.",
+        "D": "Pour appliquer la mise à jour directe des poids des modèles d'apprentissage supervisé en temps réel."
+      },
+      "correct_answer": "A",
+      "explanation": "Un 'rollout' avec une politique prédéfinie permet de collecter des données nécessaires pour estimer la valeur de la politique de manière cohérente et fiable. Choisir seulement les actions avec le plus de récompenses peut conduire à un biais. L'exploration fait partie de l'apprentissage par renforcement, et il n'y a pas de mise à jour directe des poids en temps réel dans ce contexte.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans '\u00c9valuation de politique', quelle situation de terrain montre le mieux quand utiliser comparaison de politiques ?",
+      "question": "Quel est l'avantage principal d'une faible variance lors de l'évaluation d'une politique de renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Dans une phase d'experimentation d'\u00c9valuation de politique, l'\u00e9quipe applique moyenne episodique pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer moyenne episodique en production.",
-        "B": "En contexte r\u00e9el sur \u00c9valuation de politique, variance est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance en production.",
-        "C": "En contexte r\u00e9el sur \u00c9valuation de politique, comparaison de politiques est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer comparaison de politiques en production.",
-        "D": "Pendant une phase d'experimentation, rollout est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollout en production tout en surveillant le risque de sur-optimiser rollout localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Elle permet une évaluation plus fiable de la performance réelle de la politique.",
+        "B": "Elle garantit une meilleure exploration de l'espace d'état-action.",
+        "C": "Elle assure que chaque action prise est optimisée pour toutes les situations possibles.",
+        "D": "Elle facilite la convergence vers une politique avec des récompenses maximales dans tous les scénarios."
       },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car comparaison de politiques y sert de levier de d\u00e9cision principal dans \u00c9valuation de politique. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une phase d'experimentation d'\u00c9valuation de politique, l'\u00e9quipe applique moyenne episodique pour fiab...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur \u00c9valuation de politique, variance est choisi afin de fiabiliser les d\u00e9cisions d'experi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur \u00c9valuation de politique, comparaison de politiques est choisi afin de fiabiliser les d...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une phase d'experimentation, rollout est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Une faible variance offre une meilleure indication de la performance véritable d'une politique, réduisant le bruit dans les résultats. Elle n'assure pas une meilleure exploration, ne garantit pas l'optimisation des actions dans tous les cas, et ne facilite pas nécessairement la convergence.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans quel cas l'évaluation de politiques peut-elle être particulièrement influencée par une haute variance?",
+      "image_url": null,
+      "choices": {
+        "A": "Lorsqu'il y a une grande incertitude dans les environnements stochastiques.",
+        "B": "Lorsque toutes les actions possibles ont une récompense identique.",
+        "C": "Lorsqu'une politique atteint toujours une performance maximale.",
+        "D": "Lorsque les agents interagissent dans un environnement entièrement déterministe."
+      },
+      "correct_answer": "A",
+      "explanation": "Une haute variance peut avoir un impact important dans des environnements stochastiques où l'incertitude est élevée. Si les actions ont des récompenses identiques ou si une politique atteint toujours le maximum, la variance est moins influente. Dans un environnement déterministe, la variance est généralement faible.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un des effets négatifs possibles d'une haute variance sur l'apprentissage d'une politique?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle peut conduire à un surajustement du modèle sur quelques épisodes.",
+        "B": "Elle réduit la flexibilité de la politique à s'adapter à de nouveaux états.",
+        "C": "Elle garantit que la convergence vers l'optimum prend plus de temps.",
+        "D": "Elle complique l'intégration des modèles de deep learning dans les processus de renforcement."
+      },
+      "correct_answer": "A",
+      "explanation": "Une haute variance peut entraîner un surajustement aux épisodes particuliers au lieu d'une généralisation. Elle ne réduit pas la flexibilité d'adaptation aux nouveaux états par elle-même, ne garantit pas simplement des temps de convergence prolongés, et n'est pas directement liée à la difficulté d'intégration du deep learning.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Lors de la comparaison de politiques, pourquoi est-il préférable d'utiliser la moyenne episodique plutôt qu'une seule réalisation épisodique?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour obtenir une estimation plus stable et représentative de la performance à travers les variations stochastiques.",
+        "B": "Pour corriger les biais systématiques présents dans les données initiales de l'environnement.",
+        "C": "Pour maximiser les récompenses instantanées de manière continue au long de l'apprentissage.",
+        "D": "Pour garantir une convergence stricte vers une politique epsilon-greedy optimisée."
+      },
+      "correct_answer": "A",
+      "explanation": "La moyenne episodique fournit une estimation plus fiable des performances globales d'une politique, prenant en compte les écarts aléatoires. Elle ne corrige pas les biais dans les données de l'environnement, ne maximise pas les récompenses instantanées, ni garantie la convergence vers une politique epsilon-greedy.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'inconvénient de baser la comparaison de deux politiques uniquement sur la moyenne des récompenses instantanées?",
+      "image_url": null,
+      "choices": {
+        "A": "Cela peut négliger la consistance des performances à long terme.",
+        "B": "Cela mène souvent à des solutions qui ne considèrent pas le coût computationnel.",
+        "C": "Cela garantit une convergence biaisée vers la première politique testée.",
+        "D": "Cela promeut l'exclusion des politiques stochastiques bénéfiques."
+      },
+      "correct_answer": "A",
+      "explanation": "Comparer des politiques uniquement sur les récompenses instantanées peut ignorer les performances à long terme et la robustesse face aux variations. Cela ne concerne pas les coûts computationnels, n'entraîne pas directement des biais liés au test en premier, et n'exclut pas spécifiquement les politiques stochastiques.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel scénario illustre l'usage d'une stratégie de 'rollout' pour évaluer une nouvelle politique?",
+      "image_url": null,
+      "choices": {
+        "A": "Exécuter la politique dans l'environnement simulation pour un nombre déterminé d'épisodes et analyser les récompenses cumulées.",
+        "B": "Adapter la politique en cours d'épisodes selon les actions de politiques concurrentes.",
+        "C": "Minimiser les ressources de calcul pour atteindre des décisions optimisées.",
+        "D": "Augmenter les couches du réseau neuronal pour diversifier les décisions de la politique."
+      },
+      "correct_answer": "A",
+      "explanation": "Utiliser une stratégie de 'rollout' implique d'exécuter la politique dans l'environnement et d'évaluer ses performances sur plusieurs épisodes. Il ne s'agit pas d'adaptation ou d'ajustement en temps réel par rapport aux politiques concurrentes. La minimisation des ressources de calcul et l'ajout de couches au réseau ne sont pas directement pertinents.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi la variance est-elle un facteur crucial lors de la validation des résultats d'une politique d'apprentissage par renforcement?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle permet de déterminer la fiabilité des récompenses moyennes observées.",
+        "B": "Elle améliore l'efficacité computationnelle de la mise à jour de la politique.",
+        "C": "Elle simplifie le processus de sélection des actions lors de l'exécution de la politique.",
+        "D": "Elle neutralise l'impact des agents adversaires dans un environnement multi-agents."
+      },
+      "correct_answer": "A",
+      "explanation": "La variance aide à apprécier la fiabilité des récompenses moyennes, indiquant la stabilité des performances observées. Elle n'est pas directement liée à l'efficacité computationnelle, à la simplification de la sélection d'actions, ni à la neutralisation des adversaires dans des environnements multi-agents.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Lorsque deux politiques sont comparées dans un environnement incertain, quel indicateur est crucial pour une évaluation juste?",
+      "image_url": null,
+      "choices": {
+        "A": "La moyenne et la variance des récompenses obtenues sur un nombre substantiel d'épisodes.",
+        "B": "La vitesse d'exécution des actions de la politique.",
+        "C": "Le nombre minimal de règles implémentées dans la politique.",
+        "D": "La longueur moyenne du code source de la politique."
+      },
+      "correct_answer": "A",
+      "explanation": "Comparer des politiques nécessite d'observer à la fois la moyenne et la variance des récompenses pour comprendre leur performance et fiabilité. La vitesse d'exécution, le nombre de règles, et la longueur du code source sont rarement utilisés seuls pour une évaluation pertinente.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment l'ajout de 'rollout' lors de l'évaluation d'une politique peut-il influencer la précision des résultats?",
+      "image_url": null,
+      "choices": {
+        "A": "Il augmente la précision en offrant une vue échelonnée sur les performances des politiques testées.",
+        "B": "Il diminue la précision en augmentant la complexité algorithmique sans clair bénéfice.",
+        "C": "Il substitue aux métriques traditionnelles et offre une seule évaluation discrète.",
+        "D": "Il garantit que la politique converge plus rapidement vers l'état optimal à chaque essai."
+      },
+      "correct_answer": "A",
+      "explanation": "L'utilisation de 'rollouts' permet d'obtenir une évaluation plus précise et échelonnée des performances, car elle tient compte des fluctuations à travers plusieurs épisodes. Cela n'augmente pas la complexité au détriment de la précision, ne remplace pas totalement les autres métriques, et ne garantit pas une convergence rapide par elle-même.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans '\u00c9valuation de politique', quel est le role le plus determinant de comparaison de politiques pour un cas industrie ?",
+      "question": "Quelle erreur commune peut affecter la comparaison de politiques à variance élevée lors d'une évaluation?",
       "image_url": null,
       "choices": {
-        "A": "comparaison de politiques sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer comparaison de politiques en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans \u00c9valuation de politique, rollout est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollout en production.",
-        "C": "Le role de moyenne episodique est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer moyenne episodique en production.",
-        "D": "variance sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance en production pour guider une d\u00e9cision exploitable."
+        "A": "Confondre une variance élevée avec une politique supérieure en termes de performance.",
+        "B": "Supposer qu'une politique stable favorisera une évolution aléatoire dans l'environnement.",
+        "C": "S'attendre à des performances uniformes malgré des différences stochastiques importantes.",
+        "D": "Croire que toutes les actions sélectionnées automatiquement neutraliseront l'incertitude."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie comparaison de politiques \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (comparaison de politiques sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perme...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans \u00c9valuation de politique, rollout est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'util...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de moyenne episodique est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement p...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (variance sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux decide...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans '\u00c9valuation de politique' et en contexte sante, quelle interpretation du schema appuie le mieux l'analyse de rollout ?",
-      "image_url": "apprentissage-par-renforcement_evaluation_de_politique_rollout_1.png",
-      "choices": {
-        "A": "Lecture du visuel: variance est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance en production dans \u00c9valuation de politique.",
-        "B": "Le signal visible est coh\u00e9rent avec comparaison de politiques, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer comparaison de politiques en production.",
-        "C": "Le signal visible est coh\u00e9rent avec rollout, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollout en production.",
-        "D": "Le schema illustre une d\u00e9cision basee sur moyenne episodique: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer moyenne episodique en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Les indices visuels vont dans le sens de rollout: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Lecture du visuel: variance est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser corre...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Le signal visible est coh\u00e9rent avec comparaison de politiques, car l'objectif est fiabiliser les d\u00e9cisions ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est correcte (Le signal visible est coh\u00e9rent avec rollout, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ...) car la lecture visuelle colle au signal principal observe. D'est moins pertinente (Le schema illustre une d\u00e9cision basee sur moyenne episodique: les indices orientent vers fiabiliser les dec...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Un piège consiste à confondre une haute variance avec de meilleures performances car des résultats extrêmes peuvent fausser la perspective. Une variance élevée ne favorise pas nécessairement l'évolution aléatoire ni ne promet une uniformité des performances ou la neutralisation de l'incertitude par seules actions.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "moyenne episodique: quel risque est le plus directement lie a son mauvais usage en production dans '\u00c9valuation de politique' ?",
+      "question": "Pourquoi devons-nous être prudents lors de la généralisation des résultats basés sur le 'rollout' dans des environnements déterministes?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec comparaison de politiques est de sur-optimiser comparaison de politiques localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Un risque classique avec moyenne episodique est de sur-optimiser moyenne episodique localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Si rollout est mal utilise, on observe souvent sur-optimiser rollout localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Le piege principal autour de variance est sur-optimiser variance localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de moyenne episodique. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec comparaison de politiques est de sur-optimiser comparaison de politiques localemen...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec moyenne episodique est de sur-optimiser moyenne episodique localement en ignorant ...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si rollout est mal utilise, on observe souvent sur-optimiser rollout localement en ignorant ses interaction...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de variance est sur-optimiser variance localement en ignorant ses interactions av...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "moyenne episodique: dans un cas marketing, quelle interpretation correspond le mieux au schema ML de '\u00c9valuation de politique' ?",
-      "image_url": "apprentissage-par-renforcement_evaluation_de_politique_moyenne_episodique_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur comparaison de politiques: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer comparaison de politiques en production.",
-        "B": "Le schema illustre une d\u00e9cision basee sur moyenne episodique: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer moyenne episodique en production.",
-        "C": "Lecture du visuel: rollout est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollout en production dans \u00c9valuation de politique.",
-        "D": "Le signal visible est coh\u00e9rent avec variance, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de moyenne episodique: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur comparaison de politiques: les indices orientent vers fiabiliser ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur moyenne episodique: les indices orientent vers fiabiliser les dec...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: rollout est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correc...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec variance, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "moyenne episodique: dans '\u00c9valuation de politique', un schema met en evidence ce comportement. Quelle lecture est la plus juste ?",
-      "image_url": "apprentissage-par-renforcement_evaluation_de_politique_moyenne_episodique_2.png",
-      "choices": {
-        "A": "Le role de moyenne episodique est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer moyenne episodique en production.",
-        "B": "rollout sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer rollout en production pour guider une d\u00e9cision exploitable.",
-        "C": "Dans \u00c9valuation de politique, variance est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance en production.",
-        "D": "Le role de comparaison de politiques est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer comparaison de politiques en production."
+        "A": "Parce que les résultats obtenus peuvent ne pas capturer les dynamiques dans des environnements incertains.",
+        "B": "Parce que les rollouts garantissent une uniformité dans les résultats dans tous types d'environnements.",
+        "C": "Parce que les techniques déterministes ne requièrent pas de politiques pour analyser les résultats.",
+        "D": "Parce qu'on peut ignorer les gains potentiels découlant d'une exploration variée des états non déterministes."
       },
       "correct_answer": "A",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de moyenne episodique dans \u00c9valuation de politique. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est correcte (Le role de moyenne episodique est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement p...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. B est moins pertinente (rollout sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (Dans \u00c9valuation de politique, variance est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'uti...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (Le role de comparaison de politiques est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correct...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Les rollouts dans des environnements déterministes peuvent manquer d'illustrer la variabilité et l'incertitude présentes dans des environnements plus réalistes. Cela ne garantit pas une uniformité dans tous les environnements, n'élimine pas le besoin de politiques, et n'ignore pas les gains potentiels d'exploration variée par simple omission.",
       "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans une évaluation avec une variance élevée, quand est-il justifié de continuer avec une politique particulière?",
+      "image_url": null,
+      "choices": {
+        "A": "Lorsqu'il y a une compréhension des causes sous-jacentes de la variance, indiquant une possible amélioration future.",
+        "B": "Lorsque la politique a déjà été implémentée et le changement suggèrerait un coût élevé.",
+        "C": "Lorsque toutes les autres politiques présentent une performance sans variance notable.",
+        "D": "Lorsque l'état final de l'épisode aboutit toujours à la même récompense positive maximale."
+      },
+      "correct_answer": "A",
+      "explanation": "Continuer avec une politique ayant une variance élevée est raisonnable si l'on comprend les causes derrière cette variance, ce qui peut être corrigé ou exploité. La rétention pour des raisons de coûts, ou en raison du manque de variance chez d'autres politiques, n'est pas toujours judicieux sans analyse approfondie. Un état final constant ne compense pas forcément les phases variées intermédiaires.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans le contexte de l'apprentissage par renforcement, qu'est-ce qu'un 'rollout'?",
+      "image_url": null,
+      "choices": {
+        "A": "C'est un processus de simulation dans lequel on exécute une politique donnée pour un certain nombre d'étapes pour estimer sa performance.",
+        "B": "C'est l'itération jusqu'à convergence des valeurs d'état dans un modèle déterministe.",
+        "C": "C'est la méthode d'entraînement d'un modèle par retour arriéré à travers le temps.",
+        "D": "C'est l'exploitation d'une politique optimale trouvée par un agent dans son environnement."
+      },
+      "correct_answer": "A",
+      "explanation": "Le 'rollout' est un processus consistant à exécuter une politique sur plusieurs épisodes pour estimer sa performance. B est incorrect car cela décrit l'itération de valeur. C se rapporte à la rétropropagation. D décrit l'exploitation d'une politique optimale plutôt que son évaluation.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la principale problématique de l'utilisation de la moyenne episodique pour comparer deux politiques?",
+      "image_url": null,
+      "choices": {
+        "A": "Cela n'informe pas sur la variance des retours obtenus, ce qui est crucial pour évaluer la robustesse.",
+        "B": "Elle ne peut pas capturer les politiques stochastiques dans leur globalité.",
+        "C": "Elle oublie de prendre en compte les récompenses intermédiaires entre le départ et l'arrivée.",
+        "D": "Elle ne prend en compte que les états finaux, ignorant les autres transitions."
+      },
+      "correct_answer": "A",
+      "explanation": "La moyenne episodique calcule le retour moyen d'une politique mais n'exprime pas la variance de ces retours. B est faux car les politiques stochastiques sont correctement évaluées par cette moyenne. C est incorrect car toutes les récompenses intermédiaires sont prises en compte pour le calcul du retour total d'un épisode. D est incorrect car elle prend en compte toutes les transitions, pas uniquement l'état final.",
+      "difficulty": "medium"
     }
   ]
 }

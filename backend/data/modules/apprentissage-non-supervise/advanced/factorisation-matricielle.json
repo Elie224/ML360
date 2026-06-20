@@ -5,254 +5,254 @@
   "questions": [
     {
       "type": "text",
-      "question": "recommandation: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Factorisation matricielle' ?",
+      "question": "Quel est l'objectif principal de la factorisation matricielle dans la recommandation de systèmes?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Factorisation matricielle, decomposition est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decomposition en production.",
-        "B": "Pendant une revue pre-deploiement, facteurs latents est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer facteurs latents en production tout en surveillant le risque d'optimiser facteurs latents en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Dans une revue pre-deploiement de Factorisation matricielle, l'\u00e9quipe applique approximation basse dimension pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer approximation basse dimension en production.",
-        "D": "Dans une revue pre-deploiement de Factorisation matricielle, l'\u00e9quipe applique recommandation pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer recommandation en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car recommandation y sert de levier de d\u00e9cision principal dans Factorisation matricielle. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Factorisation matricielle, decomposition est choisi afin de supporter des arbitrages d...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une revue pre-deploiement, facteurs latents est utile pour supporter des arbitrages de production ;...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une revue pre-deploiement de Factorisation matricielle, l'\u00e9quipe applique approximation basse dimensio...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une revue pre-deploiement de Factorisation matricielle, l'\u00e9quipe applique recommandation pour supporte...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec decomposition dans 'Factorisation matricielle' ?",
-      "image_url": "apprentissage-non-supervise_factorisation_matricielle_decomposition_2.png",
-      "choices": {
-        "A": "Dans Factorisation matricielle, approximation basse dimension est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer approximation basse dimension en production.",
-        "B": "Dans Factorisation matricielle, decomposition est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decomposition en production.",
-        "C": "Le role de facteurs latents est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer facteurs latents en production.",
-        "D": "recommandation sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer recommandation en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de decomposition dans Factorisation matricielle. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Factorisation matricielle, approximation basse dimension est mobilise pour supporter des arbitrages de...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Factorisation matricielle, decomposition est mobilise pour supporter des arbitrages de production ; l'...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de facteurs latents est de supporter des arbitrages de production ; l'utiliser correctement permet ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (recommandation sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux deci...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Factorisation matricielle' (industrie), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment facteurs latents ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Factorisation matricielle, versioning de segments se comprend comme un levier avance en apprentissage non supervise ; il formalise le role de versioning de segments dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "rollback analytique designe un levier avance en apprentissage non supervise ; il formalise le role de rollback analytique dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Gaussian mixture correspond a un levier avance en apprentissage non supervise ; il formalise le role de Gaussian mixture dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Factorisation matricielle.",
-        "D": "facteurs latents correspond a un levier avance en apprentissage non supervise ; il formalise le role de facteurs latents dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Factorisation matricielle."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de facteurs latents dans Factorisation matricielle, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte industrie, alors que versioning de segments, rollback analytique, Gaussian mixture restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Factorisation matricielle, versioning de segments se comprend comme un levier avance en apprentissage ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (rollback analytique designe un levier avance en apprentissage non supervise ; il formalise le role de rollb...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Gaussian mixture correspond a un levier avance en apprentissage non supervise ; il formalise le role de Gau...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (facteurs latents correspond a un levier avance en apprentissage non supervise ; il formalise le role de fac...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Factorisation matricielle', quel commentaire du schema traduit le mieux le role de recommandation ?",
-      "image_url": "apprentissage-non-supervise_factorisation_matricielle_recommandation_2.png",
-      "choices": {
-        "A": "Dans Factorisation matricielle, decomposition est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decomposition en production.",
-        "B": "Le role de facteurs latents est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer facteurs latents en production.",
-        "C": "approximation basse dimension sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer approximation basse dimension en production pour guider une d\u00e9cision exploitable.",
-        "D": "recommandation sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer recommandation en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de recommandation dans Factorisation matricielle. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Factorisation matricielle, decomposition est mobilise pour supporter des arbitrages de production ; l'...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de facteurs latents est de supporter des arbitrages de production ; l'utiliser correctement permet ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (approximation basse dimension sert a supporter des arbitrages de production ; l'utiliser correctement perme...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (recommandation sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux deci...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Factorisation matricielle', quel est le principal mode d'echec quand recommandation est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si recommandation est mal utilise, on observe souvent optimiser recommandation en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de decomposition est optimiser decomposition en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Un risque classique avec facteurs latents est d'optimiser facteurs latents en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Si approximation basse dimension est mal utilise, on observe souvent optimiser approximation basse dimension en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Identifier les facteurs latents à partir des interactions utilisateur-objet",
+        "B": "Maximiser directement la précision des recommandations",
+        "C": "Simplifier les algorithmes de tri",
+        "D": "Automatiser l'acquisition de données utilisateur"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de recommandation. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si recommandation est mal utilise, on observe souvent optimiser recommandation en silo et introduire des mo...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de decomposition est optimiser decomposition en silo et introduire des modes d'ec...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec facteurs latents est d'optimiser facteurs latents en silo et introduire des modes...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si approximation basse dimension est mal utilise, on observe souvent optimiser approximation basse dimensio...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La factorisation matricielle cherche à décomposer une matrice utilisateur-objet en matrices de facteurs latents qui expliquent les interactions observées. Cette approche indirecte aide à révéler des préférences cachées. Maximiser la précision (B) est un objectif final mais pas spécifique à la factorisation. La simplification des algorithmes de tri (C) et l'automatisation de l'acquisition des données (D) ne sont pas pertinents pour la technique de factorisation en soi.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Face a un besoin industrie dans 'Factorisation matricielle', pourquoi facteurs latents est-il prioritaire ?",
+      "question": "En factorisation matricielle, quelle est la signification des 'facteurs latents'?",
       "image_url": null,
       "choices": {
-        "A": "recommandation sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer recommandation en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Factorisation matricielle, approximation basse dimension est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer approximation basse dimension en production.",
-        "C": "Dans Factorisation matricielle, facteurs latents est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer facteurs latents en production.",
-        "D": "Le role de decomposition est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decomposition en production."
+        "A": "Des variables cachées qui influencent les interactions observées",
+        "B": "Des matrices resultantes de dimensions differentes",
+        "C": "Des biais aléatoires dans les recommandations",
+        "D": "Des méthodes pour réduire le surapprentissage"
       },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie facteurs latents \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (recommandation sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux deci...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Factorisation matricielle, approximation basse dimension est mobilise pour supporter des arbitrages de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Factorisation matricielle, facteurs latents est mobilise pour supporter des arbitrages de production ;...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de decomposition est de supporter des arbitrages de production ; l'utiliser correctement permet de ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Les facteurs latents sont des caractéristiques cachées extraites des données qui capturent les relations sous-jacentes. B se réfère à la structure de la décomposition, C confond avec des erreurs de prédiction, et D concerne des techniques régulières d'amélioration des modèles.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Factorisation matricielle', quelle situation de terrain montre le mieux quand utiliser decomposition ?",
+      "question": "Quel est un défi majeur de la factorisation matricielle en présence de données manquantes?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Factorisation matricielle, approximation basse dimension est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer approximation basse dimension en production.",
-        "B": "En contexte r\u00e9el sur Factorisation matricielle, decomposition est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decomposition en production.",
-        "C": "Pendant une revue pre-deploiement, facteurs latents est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer facteurs latents en production tout en surveillant le risque d'optimiser facteurs latents en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Dans une revue pre-deploiement de Factorisation matricielle, l'\u00e9quipe applique recommandation pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer recommandation en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car decomposition y sert de levier de d\u00e9cision principal dans Factorisation matricielle. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Factorisation matricielle, approximation basse dimension est choisi afin de supporter ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Factorisation matricielle, decomposition est choisi afin de supporter des arbitrages d...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une revue pre-deploiement, facteurs latents est utile pour supporter des arbitrages de production ;...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une revue pre-deploiement de Factorisation matricielle, l'\u00e9quipe applique recommandation pour supporte...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Factorisation matricielle', quel est le role le plus determinant de decomposition pour un cas e-commerce ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Factorisation matricielle, facteurs latents est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer facteurs latents en production.",
-        "B": "Le role de recommandation est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer recommandation en production.",
-        "C": "approximation basse dimension sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer approximation basse dimension en production pour guider une d\u00e9cision exploitable.",
-        "D": "decomposition sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decomposition en production pour guider une d\u00e9cision exploitable."
+        "A": "Prévoir l'efficacité des algorithmes",
+        "B": "Optimiser la convergence des méthodes d'approximation",
+        "C": "Maintenir la précision des prédictions",
+        "D": "Gérer le biais induit par la surreprésentation des interactions connues"
       },
       "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie decomposition \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Factorisation matricielle, facteurs latents est mobilise pour supporter des arbitrages de production ;...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de recommandation est de supporter des arbitrages de production ; l'utiliser correctement permet de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (approximation basse dimension sert a supporter des arbitrages de production ; l'utiliser correctement perme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (decomposition sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux decid...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "La factorisation matricielle est sensible au biais introduit lorsqu'on entraîne sur des interactions connues et ignore les absences potentielles d'information. A et B se rapportent aux exigences générales d'un modèle, C est un objectif mais pas unique à la problématique des données manquantes.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour un cas operationnel de 'Factorisation matricielle', quel exemple met facteurs latents au c\u0153ur de la d\u00e9cision ?",
+      "question": "Comment la factorisation matricielle peut-elle être utilisée pour l'approximation basse dimension d'une matrice?",
       "image_url": null,
       "choices": {
-        "A": "Pendant une revue pre-deploiement, facteurs latents est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer facteurs latents en production tout en surveillant le risque d'optimiser facteurs latents en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Dans une revue pre-deploiement de Factorisation matricielle, l'\u00e9quipe applique decomposition pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decomposition en production.",
-        "C": "En contexte r\u00e9el sur Factorisation matricielle, recommandation est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer recommandation en production.",
-        "D": "Pendant une revue pre-deploiement, approximation basse dimension est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer approximation basse dimension en production tout en surveillant le risque d'optimiser approximation basse dimension en silo et introduire des modes d'echec caches au deploiement."
+        "A": "En décomposant la matrice d'origine en produits de matrices plus petites",
+        "B": "En extrayant seulement les valeurs supérieures à un certain seuil",
+        "C": "En augmentant la taille originale pour capturer plus d'informations",
+        "D": "En éliminant les lignes et colonnes redondantes"
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car facteurs latents y sert de levier de d\u00e9cision principal dans Factorisation matricielle. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une revue pre-deploiement, facteurs latents est utile pour supporter des arbitrages de production ;...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une revue pre-deploiement de Factorisation matricielle, l'\u00e9quipe applique decomposition pour supporter...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Factorisation matricielle, recommandation est choisi afin de supporter des arbitrages ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une revue pre-deploiement, approximation basse dimension est utile pour supporter des arbitrages de...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "La décomposition d'une matrice en produits de matrices plus petites aux dimensions réduites permet une approximation basse dimension, ce qui réduit la complexité tout en conservant l'information essentielle. B décrit un filtrage, C est erroné car augmenter la taille ne simplifie pas, et D décrit une sélection directe mais non basée sur la décomposition.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "recommandation: pourquoi ce concept est-il crucial pour une \u00e9quipe cybersecurite dans 'Factorisation matricielle' ?",
+      "question": "Quel algorithme est souvent utilisé pour la factorisation matricielle dans le cadre de la recommandation de films?",
       "image_url": null,
       "choices": {
-        "A": "Le role d'approximation basse dimension est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer approximation basse dimension en production.",
-        "B": "Le role de recommandation est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer recommandation en production.",
-        "C": "decomposition sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decomposition en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Factorisation matricielle, facteurs latents est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer facteurs latents en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie recommandation \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role d'approximation basse dimension est de supporter des arbitrages de production ; l'utiliser correct...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de recommandation est de supporter des arbitrages de production ; l'utiliser correctement permet de...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (decomposition sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux decid...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Factorisation matricielle, facteurs latents est mobilise pour supporter des arbitrages de production ;...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec approximation basse dimension dans 'Factorisation matricielle' ?",
-      "image_url": "apprentissage-non-supervise_factorisation_matricielle_approximation_basse_dimension_2.png",
-      "choices": {
-        "A": "facteurs latents sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer facteurs latents en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Factorisation matricielle, recommandation est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer recommandation en production.",
-        "C": "Dans Factorisation matricielle, approximation basse dimension est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer approximation basse dimension en production.",
-        "D": "Le role de decomposition est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decomposition en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'approximation basse dimension dans Factorisation matricielle. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (facteurs latents sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Factorisation matricielle, recommandation est mobilise pour supporter des arbitrages de production ; l...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Factorisation matricielle, approximation basse dimension est mobilise pour supporter des arbitrages de...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de decomposition est de supporter des arbitrages de production ; l'utiliser correctement permet de ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe cybersecurite dans 'Factorisation matricielle', quelle d\u00e9finition de recommandation est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "Gaussian mixture correspond a un levier avance en apprentissage non supervise ; il formalise le role de Gaussian mixture dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Factorisation matricielle.",
-        "B": "Dans Factorisation matricielle, probabilite d'appartenance se comprend comme un levier avance en apprentissage non supervise ; il formalise le role de probabilite d'appartenance dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Factorisation matricielle, recommandation se comprend comme un levier avance en apprentissage non supervise ; il formalise le role de recommandation dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "rollback analytique designe un levier avance en apprentissage non supervise ; il formalise le role de rollback analytique dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de recommandation dans Factorisation matricielle, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que rollback analytique, Gaussian mixture, probabilite d'appartenance restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Gaussian mixture correspond a un levier avance en apprentissage non supervise ; il formalise le role de Gau...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Factorisation matricielle, probabilite d'appartenance se comprend comme un levier avance en apprentiss...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Factorisation matricielle, recommandation se comprend comme un levier avance en apprentissage non supe...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (rollback analytique designe un levier avance en apprentissage non supervise ; il formalise le role de rollb...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Factorisation matricielle', quelle erreur autour de decomposition est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si recommandation est mal utilise, on observe souvent optimiser recommandation en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour d'approximation basse dimension est optimiser approximation basse dimension en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de decomposition est optimiser decomposition en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Un risque classique avec facteurs latents est d'optimiser facteurs latents en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de decomposition. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si recommandation est mal utilise, on observe souvent optimiser recommandation en silo et introduire des mo...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour d'approximation basse dimension est optimiser approximation basse dimension en s...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de decomposition est optimiser decomposition en silo et introduire des modes d'ec...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec facteurs latents est d'optimiser facteurs latents en silo et introduire des modes...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "decomposition: quelle proposition en donne la meilleure d\u00e9finition dans 'Factorisation matricielle' (contexte e-commerce) ?",
-      "image_url": null,
-      "choices": {
-        "A": "decomposition designe un levier avance en apprentissage non supervise ; il formalise le role de decomposition dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "rafraichissement periodique correspond a un levier avance en apprentissage non supervise ; il formalise le role de rafraichissement periodique dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Factorisation matricielle.",
-        "C": "Dans Factorisation matricielle, versioning de segments se comprend comme un levier avance en apprentissage non supervise ; il formalise le role de versioning de segments dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "rollback analytique designe un levier avance en apprentissage non supervise ; il formalise le role de rollback analytique dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Stochastic Gradient Descent (SGD)",
+        "B": "K-Nearest Neighbors (KNN)",
+        "C": "Decision Trees",
+        "D": "Naive Bayes"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de decomposition dans Factorisation matricielle, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que rafraichissement periodique, versioning de segments, rollback analytique restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (decomposition designe un levier avance en apprentissage non supervise ; il formalise le role de decompositi...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (rafraichissement periodique correspond a un levier avance en apprentissage non supervise ; il formalise le ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Factorisation matricielle, versioning de segments se comprend comme un levier avance en apprentissage ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (rollback analytique designe un levier avance en apprentissage non supervise ; il formalise le role de rollb...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Le SGD est fréquemment employé pour minimiser les erreurs de reconstruction lors de la factorisation matricielle. KNN (B) fonctionne différemment en cherchant des voisins proches, C et D ne sont pas généralement utilisés pour la décomposition de matrices.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Factorisation matricielle', quel est le role le plus determinant d'approximation basse dimension pour un cas banque ?",
+      "question": "Pourquoi la régularisation est-elle importante lors de l'utilisation de la SVD pour la factorisation matricielle?",
       "image_url": null,
       "choices": {
-        "A": "approximation basse dimension sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer approximation basse dimension en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Factorisation matricielle, decomposition est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decomposition en production.",
-        "C": "Le role de facteurs latents est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer facteurs latents en production.",
-        "D": "recommandation sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer recommandation en production pour guider une d\u00e9cision exploitable."
+        "A": "Pour éviter les solutions dégénérées",
+        "B": "Pour minimiser le temps de calcul",
+        "C": "Pour améliorer les performances en mémoire",
+        "D": "Pour garantir la symétrie des sous-matrices"
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie approximation basse dimension \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (approximation basse dimension sert a supporter des arbitrages de production ; l'utiliser correctement perme...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Factorisation matricielle, decomposition est mobilise pour supporter des arbitrages de production ; l'...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de facteurs latents est de supporter des arbitrages de production ; l'utiliser correctement permet ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (recommandation sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux deci...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "La régularisation aide à éviter les sur-ajustements causés par des facteurs latents qui pourraient s'adapter trop aux données de formation. B et C traitent de questions d'efficacité computationnelle, non spécifiquement liées à SVD, et D n'est pas un problème de la SVD qui ne se concentre pas sur la symétrie des matrices.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Factorisation matricielle', quelle situation de terrain montre le mieux quand utiliser approximation basse dimension ?",
+      "question": "Quel problème se pose si une matrice contient un très grand nombre de valeurs manquantes pour la factorisation matricielle?",
       "image_url": null,
       "choices": {
-        "A": "Dans une revue pre-deploiement de Factorisation matricielle, l'\u00e9quipe applique facteurs latents pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer facteurs latents en production.",
-        "B": "En contexte r\u00e9el sur Factorisation matricielle, recommandation est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer recommandation en production.",
-        "C": "En contexte r\u00e9el sur Factorisation matricielle, approximation basse dimension est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer approximation basse dimension en production.",
-        "D": "Pendant une revue pre-deploiement, decomposition est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decomposition en production tout en surveillant le risque d'optimiser decomposition en silo et introduire des modes d'echec caches au deploiement."
+        "A": "La factorisation nécessite des matrices carrées",
+        "B": "Les valeurs manquantes ne peuvent pas être imputées",
+        "C": "Cela peut exacerber les biais et conduire à des modèles peu généralisables",
+        "D": "Elle simplifie la computation de la décomposition"
       },
       "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car approximation basse dimension y sert de levier de d\u00e9cision principal dans Factorisation matricielle. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une revue pre-deploiement de Factorisation matricielle, l'\u00e9quipe applique facteurs latents pour suppor...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Factorisation matricielle, recommandation est choisi afin de supporter des arbitrages ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Factorisation matricielle, approximation basse dimension est choisi afin de supporter ...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une revue pre-deploiement, decomposition est utile pour supporter des arbitrages de production ; l'...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "L'absence d'une grande partie des données peut entraîner un biais sévère, car le modèle a peu de données d'interaction pour générer une bonne généralisation. A est incorrect car la factorisation fonctionne sur des matrices non carrées, B est faux puisque certaines méthodes comme le SGD peuvent gérer des valeurs manquantes, et D, simplifier computationnellement, n'est pas le cas.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "facteurs latents: quel risque est le plus directement lie a son mauvais usage en production dans 'Factorisation matricielle' ?",
+      "question": "À quel moment utiliseriez-vous une décomposition Non-negative Matrix Factorization (NMF)?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec approximation basse dimension est d'optimiser approximation basse dimension en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Un risque classique avec facteurs latents est d'optimiser facteurs latents en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Si decomposition est mal utilise, on observe souvent optimiser decomposition en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour de recommandation est optimiser recommandation en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Quand les données source contiennent uniquement des valeurs continues",
+        "B": "Quand les données doivent respecter une contrainte de positivité",
+        "C": "Quand les matrices sont symétriques",
+        "D": "Quand il n'y a absolument aucune donnée manquante"
       },
       "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de facteurs latents. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec approximation basse dimension est d'optimiser approximation basse dimension en si...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec facteurs latents est d'optimiser facteurs latents en silo et introduire des modes...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si decomposition est mal utilise, on observe souvent optimiser decomposition en silo et introduire des mode...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de recommandation est optimiser recommandation en silo et introduire des modes d'...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La NMF est spécifiquement utilisée pour des données où les valeurs sont par nature non-négatives, comme dans les images, les textes, etc. A est incorrect car la NMF n'est pas limitée à des valeurs continues, C ne concerne pas un critère de décomposition NMF, et D est fallacieux car la NMF peut aussi gérer des données incomplètes dans certains cas.",
       "difficulty": "hard"
     },
     {
-      "type": "image",
-      "question": "facteurs latents: dans un cas industrie, quelle interpretation correspond le mieux au schema ML de 'Factorisation matricielle' ?",
-      "image_url": "apprentissage-non-supervise_factorisation_matricielle_facteurs_latents_1.png",
+      "type": "text",
+      "question": "Quel type de régularisation est souvent appliqué dans la factorisation matricielle pour prévenir le sur-ajustement?",
+      "image_url": null,
       "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur approximation basse dimension: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer approximation basse dimension en production.",
-        "B": "Le schema illustre une d\u00e9cision basee sur facteurs latents: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer facteurs latents en production.",
-        "C": "Lecture du visuel: decomposition est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decomposition en production dans Factorisation matricielle.",
-        "D": "Le signal visible est coh\u00e9rent avec recommandation, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer recommandation en production."
+        "A": "L1 et L2 régularisation",
+        "B": "Régularisation dropout",
+        "C": "Régularisation data augmentation",
+        "D": "Régularisation ensembliste"
+      },
+      "correct_answer": "A",
+      "explanation": "L1 et L2 régularisations sont couramment utilisées pour ajouter des pénalités sur la taille des coefficients dans les modèles de factorisation pour éviter le sur-apprentissage. B est pertinent pour les réseaux neuronaux, C pour augmenter des exemples d'apprentissage, et D, reliée à combiner plusieurs modèles, n'est pas applicable directement à la factorisation.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un avantage clé de l'approche de la factorisation matricielle par rapport à l'approche basée sur les algorithmes de voisinage (ex: KNN) pour les recommandations?",
+      "image_url": null,
+      "choices": {
+        "A": "Capacité à découvrir des similarités implicites entre utilisateurs et objets",
+        "B": "Requiert moins de données d'entraînement",
+        "C": "Garde une complexité de calcul linéaire",
+        "D": "Facilité d'interprétation des résultats"
+      },
+      "correct_answer": "A",
+      "explanation": "La factorisation matricielle permet de révéler des similarités implicites par les facteurs latents, capturant les relations non évidentes non capturées par les approches de voisinage qui se basent sur des similarités directes. B, C, et D ne présentent pas les caractéristiques de la factorisation matricielle, étant potentiellement faux selon le contexte et les implémentations spécifiques.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce qui distingue l'approche de Singular Value Decomposition (SVD) dans la factorisation matricielle?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle décompose la matrice en diagonale propre",
+        "B": "Elle fonctionne exclusivement sur des données textuelles",
+        "C": "Elle est appliquée directement sur les matrices creuses sans modification",
+        "D": "Elle ne nécessite aucune régularisation supplémentaire"
+      },
+      "correct_answer": "A",
+      "explanation": "SVD décompose une matrice en trois matrices dont une est diagonale, permettant de capturer les singularités. B est incorrect car SVD n'est pas spécifique au texte, C n'est pas vrai car souvent une transformation préalable des données est nécessaire, et D est inexact car la régularisation peut souvent être appliquée pour de meilleures performances.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle méthode serait la meilleure pour gérer les matrices très éparses lors de la factorisation?",
+      "image_url": null,
+      "choices": {
+        "A": "Utiliser l'approche Matrix Completion",
+        "B": "Appliquer OCR pour compenser la sparsité",
+        "C": "Utiliser une réduction de dimension par PCA",
+        "D": "Remplacer les zéros par des petites valeurs aléatoires"
+      },
+      "correct_answer": "A",
+      "explanation": "L'approche de Matrix Completion vise à inférer les valeurs manquantes dans les matrices éparses, facilitant ainsi la factorisation exacte. B est incorrect, l'OCR est lié à la reconnaissance de caractères, pas à la factorisation. C n'est pas spécifiquement conçu pour la complète éparation de matrice et D pourrait introduire du bruit et biaiser les résultats.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans une application de recommandation, pourquoi privilégier la factorisation matricielle collaborative sur le filtrage par contenu?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle ne nécessite pas la création de profils utilisateur spécifiques",
+        "B": "Elle garantit une meilleure précision de prédiction",
+        "C": "Elle est moins coûteuse en termes de calcul",
+        "D": "Elle évite le besoin d'une infrastructure de données centralisée"
+      },
+      "correct_answer": "A",
+      "explanation": "La factorisation matricielle collaborative n'exige pas la spécification manuelle de caractéristiques utilisateur ou item, exploitant plutôt les mécanismes de similarité implicite. B n'est pas garanti par la méthode, C et D n'illustrent pas des points fort de la factorisation collaborative spécifiquement.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel problème peut survenir lorsque l'on choisit un taux de facteurisation trop faible dans la décomposition de la SVD?",
+      "image_url": null,
+      "choices": {
+        "A": "Augmentation des calculs nécessaires",
+        "B": "Pertes d'informations importantes et dégradations des prédictions",
+        "C": "Incapacité à capturer toute redondance dans les données originales",
+        "D": "Effort accru de post-traitement pour normaliser les résultats"
       },
       "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de facteurs latents: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur approximation basse dimension: les indices orientent vers support...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur facteurs latents: les indices orientent vers supporter des arbitr...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: decomposition est mobilise pour supporter des arbitrages de production ; l'utiliser corr...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec recommandation, car l'objectif est supporter des arbitrages de producti...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Un taux de facteurisation trop faible risque de simplifier excessivement la matrice, menant à une perte d'informations critiques et à des prédictions imprécises. A est faux car la réduction abaisse typiquement les calculs, C ne se rapporte pas au problème de trop simplifier, et D n'est pas une conséquence directe de la réduction de dimension.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel type de données est souvent nécessaire pour améliorer les résultats de la factorisation matricielle dans une application de recommandation?",
+      "image_url": null,
+      "choices": {
+        "A": "Données catégoriques stockées sous forme de facteurs explicites",
+        "B": "Données temporelles pour capturer l'évolution des préférences",
+        "C": "Méta-données sur l'utilisateur ou le produit",
+        "D": "Flux de données en temps réel sur les réseaux sociaux"
+      },
+      "correct_answer": "C",
+      "explanation": "Les méta-données peuvent enrichir la matrice de base des interactions utilisateur-produit et améliorer la qualité des prédictions. A n'est pas essentiellement intégré dans la factorisation elle-même, B pourrait être utile mais n'est pas directement liée aux matrices de base statiques, et D n'impacte pas directement le processus de la factorisation matricielle.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une limitation majeure de la factorisation matricielle par rapport aux modèles basés sur les réseaux neuronaux pour les recommandations?",
+      "image_url": null,
+      "choices": {
+        "A": "Son incapacité à recevoir des informations contextuelles dynamiques",
+        "B": "Une complexité algorithmique plus élevée",
+        "C": "Son besoin constant de réentrainement",
+        "D": "Son incapacité à être appliquée à des données hétérogènes"
+      },
+      "correct_answer": "A",
+      "explanation": "Contrairement aux réseaux neuronaux, la factorisation matricielle ne traite pas facilement les entrées enrichies par le contexte dynamique ou temporel associé aux utilisateurs. B, C et D sont incorrects car la factorisation offre souvent une complexité algorithmique réduite et moins d'effort de réentrainement par rapport aux réseaux neuronaux.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un problème fréquent lors de l'utilisation de la propagation des gradients pour optimiser la décomposition dans la factorisation matricielle?",
+      "image_url": null,
+      "choices": {
+        "A": "Le manque de convergence rapide due à l'inefficacité de l'algorithme",
+        "B": "L'instabilité numérique résultant de grandes matrices",
+        "C": "L'inexactitude inférée à partir des variations de température",
+        "D": "Le mauvais alignement des conditions aux limites de la matrice"
+      },
+      "correct_answer": "B",
+      "explanation": "Lors de l'optimisation des grandes matrices avec la propagation du gradient, on peut rencontrer des instabilités numériques qui peuvent dégrader l'apprentissage. A concerne la vitesse qui peut être optimale, C n'a pas de lien avec la température, et D ne s'applique pas ici.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle méthode de factorisation matricielle résout spécifiquement des problèmes où seules certaines entrées de la matrice sont connues?",
+      "image_url": null,
+      "choices": {
+        "A": "Stochastic Gradient Descent (SGD)",
+        "B": "Matrix Completion",
+        "C": "Principal Component Analysis (PCA)",
+        "D": "K-means clustering"
+      },
+      "correct_answer": "B",
+      "explanation": "Matrix Completion fournit une solution pour inférer des entrées manquantes basées sur des patterns observés dans une matrice partiellement observée. A correspond à un algorithme d'optimisation, pas une méthode dédiée à la gestion des données manquantes par complétion, C est utilisé pour la réduction de dimension complexe complète, D ne traite pas de factorisation.",
       "difficulty": "hard"
     }
   ]

@@ -5,283 +5,283 @@
   "questions": [
     {
       "type": "text",
-      "question": "Brier score: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Calibration et seuils' ?",
+      "question": "Qu'est-ce qu'une courbe de calibration dans l'apprentissage supervisé?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Calibration et seuils, courbe de calibration est choisi afin de supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier.",
-        "B": "Pendant une revue pre-deploiement, seuil de d\u00e9cision est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer seuil de d\u00e9cision en production tout en surveillant le risque d'optimiser seuil de d\u00e9cision en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Dans une revue pre-deploiement de Calibration et seuils, l'\u00e9quipe applique calibration des probabilites pour supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier.",
-        "D": "Dans une revue pre-deploiement de Calibration et seuils, l'\u00e9quipe applique Brier score pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Brier score en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car Brier score y sert de levier de d\u00e9cision principal dans Calibration et seuils. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Calibration et seuils, courbe de calibration est choisi afin de supporter des arbitrag...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une revue pre-deploiement, seuil de d\u00e9cision est utile pour supporter des arbitrages de production ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une revue pre-deploiement de Calibration et seuils, l'\u00e9quipe applique calibration des probabilites pou...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une revue pre-deploiement de Calibration et seuils, l'\u00e9quipe applique Brier score pour supporter des a...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Calibration et seuils', quel commentaire du schema traduit le mieux le role de Brier score ?",
-      "image_url": "apprentissage-supervise_calibration_et_seuils_brier_score_2.png",
-      "choices": {
-        "A": "Dans Calibration et seuils, courbe de calibration est mobilise pour supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier.",
-        "B": "Le role de seuil de d\u00e9cision est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer seuil de d\u00e9cision en production.",
-        "C": "calibration des probabilites sert a supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier pour guider une d\u00e9cision exploitable.",
-        "D": "Brier score sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Brier score en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de Brier score dans Calibration et seuils. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Calibration et seuils, courbe de calibration est mobilise pour supporter des arbitrages de production ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de seuil de d\u00e9cision est de supporter des arbitrages de production ; l'utiliser correctement permet...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (calibration des probabilites sert a supporter des arbitrages de production ; rendre les scores probabiliste...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (Brier score sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Brier score: pourquoi ce concept est-il crucial pour une \u00e9quipe sante dans 'Calibration et seuils' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role de calibration des probabilites est de supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier.",
-        "B": "Le role de Brier score est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Brier score en production.",
-        "C": "courbe de calibration sert a supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Calibration et seuils, seuil de d\u00e9cision est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer seuil de d\u00e9cision en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie Brier score \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de calibration des probabilites est de supporter des arbitrages de production ; rendre les scores p...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de Brier score est de supporter des arbitrages de production ; l'utiliser correctement permet de mi...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (courbe de calibration sert a supporter des arbitrages de production ; rendre les scores probabilistes utili...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Calibration et seuils, seuil de d\u00e9cision est mobilise pour supporter des arbitrages de production ; l'...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Calibration et seuils' (assurance), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment seuil de d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Calibration et seuils, attribut sensible se comprend comme un levier avance en apprentissage supervise ; il formalise le role d'attribut sensible dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "audit de biais designe un levier avance en apprentissage supervise ; il traite l'equite de d\u00e9cision entre groupes sensibles et la conformite des modeles.",
-        "C": "feature store correspond a un levier avance en apprentissage supervise ; il concerne la representation des variables utiles au modele et leur qualit\u00e9 predictive, ce qui structure l'analyse dans Calibration et seuils.",
-        "D": "seuil de d\u00e9cision correspond a un levier avance en apprentissage supervise ; il formalise le role de seuil de d\u00e9cision dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Calibration et seuils."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de seuil de d\u00e9cision dans Calibration et seuils, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte assurance, alors que attribut sensible, audit de biais, feature store restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Calibration et seuils, attribut sensible se comprend comme un levier avance en apprentissage supervise...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (audit de biais designe un levier avance en apprentissage supervise ; il traite l'equite de d\u00e9cision entre g...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (feature store correspond a un levier avance en apprentissage supervise ; il concerne la representation des ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (seuil de d\u00e9cision correspond a un levier avance en apprentissage supervise ; il formalise le role de seuil ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Calibration et seuils', quel est le principal mode d'echec quand Brier score est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si Brier score est mal utilise, on observe souvent optimiser Brier score en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de courbe de calibration est optimiser courbe de calibration en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Un risque classique avec seuil de d\u00e9cision est d'optimiser seuil de d\u00e9cision en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Si calibration des probabilites est mal utilise, on observe souvent optimiser calibration des probabilites en silo et introduire des modes d'echec caches au deploiement."
+        "A": "C'est un graphique comparant les probabilités prédites aux résultats observés.",
+        "B": "C'est une courbe représentant la précision en fonction du rappel.",
+        "C": "C'est un histogramme de l'erreur quadratique moyenne pour différentes classes.",
+        "D": "C'est une courbe ROC montrant le taux de faux positifs contre le taux de vrais positifs."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de Brier score. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si Brier score est mal utilise, on observe souvent optimiser Brier score en silo et introduire des modes d'...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de courbe de calibration est optimiser courbe de calibration en silo et introduir...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec seuil de d\u00e9cision est d'optimiser seuil de d\u00e9cision en silo et introduire des mod...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si calibration des probabilites est mal utilise, on observe souvent optimiser calibration des probabilites ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La courbe de calibration compare les probabilités prédites à celles observées pour évaluer la qualité de la probabilité prédictive. Les autres réponses décrivent à tort des méthodes spécifiques à l'analyse de performance, comme la courbe ROC ou des distributions d'erreur.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une \u00e9quipe sante dans 'Calibration et seuils', quelle d\u00e9finition de Brier score est la plus juste ?",
+      "question": "Quel est l'objectif principal de la calibration des probabilités dans les modèles de classification?",
       "image_url": null,
       "choices": {
-        "A": "feature store correspond a un levier avance en apprentissage supervise ; il concerne la representation des variables utiles au modele et leur qualit\u00e9 predictive, ce qui structure l'analyse dans Calibration et seuils.",
-        "B": "Dans Calibration et seuils, \u00e9valuation offline se comprend comme un levier avance en apprentissage supervise ; il formalise le role d'\u00e9valuation offline dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Calibration et seuils, Brier score se comprend comme un levier avance en apprentissage supervise ; il formalise le role de Brier score dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "audit de biais designe un levier avance en apprentissage supervise ; il traite l'equite de d\u00e9cision entre groupes sensibles et la conformite des modeles."
+        "A": "Faire en sorte que les probabilités prédites reflètent correctement la vérité sur le long terme.",
+        "B": "Augmenter systématiquement la précision du modèle.",
+        "C": "Réduire le taux de rappel tout en augmentant la précision.",
+        "D": "Maximiser la surface sous la courbe ROC."
       },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de Brier score dans Calibration et seuils, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que audit de biais, feature store, \u00e9valuation offline restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (feature store correspond a un levier avance en apprentissage supervise ; il concerne la representation des ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Calibration et seuils, \u00e9valuation offline se comprend comme un levier avance en apprentissage supervis...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Calibration et seuils, Brier score se comprend comme un levier avance en apprentissage supervise ; il ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (audit de biais designe un levier avance en apprentissage supervise ; il traite l'equite de d\u00e9cision entre g...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec courbe de calibration dans 'Calibration et seuils' ?",
-      "image_url": "apprentissage-supervise_calibration_et_seuils_courbe_de_calibration_2.png",
-      "choices": {
-        "A": "Dans Calibration et seuils, calibration des probabilites est mobilise pour supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier.",
-        "B": "Dans Calibration et seuils, courbe de calibration est mobilise pour supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier.",
-        "C": "Le role de seuil de d\u00e9cision est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer seuil de d\u00e9cision en production.",
-        "D": "Brier score sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Brier score en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de courbe de calibration dans Calibration et seuils. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Calibration et seuils, calibration des probabilites est mobilise pour supporter des arbitrages de prod...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Calibration et seuils, courbe de calibration est mobilise pour supporter des arbitrages de production ...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de seuil de d\u00e9cision est de supporter des arbitrages de production ; l'utiliser correctement permet...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (Brier score sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "L'objectif de la calibration des probabilités est de s'assurer que les estimations de probabilité correspondent aux fréquences observées. Les autres options mal interprètent les objectifs de précision, de rappel et d'AUC, qui ne concernent pas la calibration directe.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Face a un besoin assurance dans 'Calibration et seuils', pourquoi seuil de d\u00e9cision est-il prioritaire ?",
+      "question": "Quel indicateur quantifie l'erreur de probabilité dans les prédictions probabilistes?",
       "image_url": null,
       "choices": {
-        "A": "Brier score sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Brier score en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Calibration et seuils, calibration des probabilites est mobilise pour supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier.",
-        "C": "Dans Calibration et seuils, seuil de d\u00e9cision est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer seuil de d\u00e9cision en production.",
-        "D": "Le role de courbe de calibration est de supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie seuil de d\u00e9cision \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Brier score sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Calibration et seuils, calibration des probabilites est mobilise pour supporter des arbitrages de prod...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Calibration et seuils, seuil de d\u00e9cision est mobilise pour supporter des arbitrages de production ; l'...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de courbe de calibration est de supporter des arbitrages de production ; rendre les scores probabil...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Calibration et seuils', quel est le role le plus determinant de courbe de calibration pour un cas banque ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Calibration et seuils, seuil de d\u00e9cision est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer seuil de d\u00e9cision en production.",
-        "B": "Le role de Brier score est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Brier score en production.",
-        "C": "calibration des probabilites sert a supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier pour guider une d\u00e9cision exploitable.",
-        "D": "courbe de calibration sert a supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie courbe de calibration \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Calibration et seuils, seuil de d\u00e9cision est mobilise pour supporter des arbitrages de production ; l'...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de Brier score est de supporter des arbitrages de production ; l'utiliser correctement permet de mi...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (calibration des probabilites sert a supporter des arbitrages de production ; rendre les scores probabiliste...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (courbe de calibration sert a supporter des arbitrages de production ; rendre les scores probabilistes utili...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec calibration des probabilites dans 'Calibration et seuils' ?",
-      "image_url": "apprentissage-supervise_calibration_et_seuils_calibration_des_probabilites_2.png",
-      "choices": {
-        "A": "seuil de d\u00e9cision sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer seuil de d\u00e9cision en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Calibration et seuils, Brier score est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Brier score en production.",
-        "C": "Dans Calibration et seuils, calibration des probabilites est mobilise pour supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier.",
-        "D": "Le role de courbe de calibration est de supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de calibration des probabilites dans Calibration et seuils. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (seuil de d\u00e9cision sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Calibration et seuils, Brier score est mobilise pour supporter des arbitrages de production ; l'utilis...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Calibration et seuils, calibration des probabilites est mobilise pour supporter des arbitrages de prod...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de courbe de calibration est de supporter des arbitrages de production ; rendre les scores probabil...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'Calibration et seuils', quel exemple met seuil de d\u00e9cision au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une revue pre-deploiement, seuil de d\u00e9cision est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer seuil de d\u00e9cision en production tout en surveillant le risque d'optimiser seuil de d\u00e9cision en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Dans une revue pre-deploiement de Calibration et seuils, l'\u00e9quipe applique courbe de calibration pour supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier.",
-        "C": "En contexte r\u00e9el sur Calibration et seuils, Brier score est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Brier score en production.",
-        "D": "Pendant une revue pre-deploiement, calibration des probabilites est utile pour supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier tout en surveillant le risque d'optimiser calibration des probabilites en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Le Brier score.",
+        "B": "La superficie sous la courbe ROC.",
+        "C": "Le coefficient de corrélation de Pearson.",
+        "D": "Le score de F1."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car seuil de d\u00e9cision y sert de levier de d\u00e9cision principal dans Calibration et seuils. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une revue pre-deploiement, seuil de d\u00e9cision est utile pour supporter des arbitrages de production ...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une revue pre-deploiement de Calibration et seuils, l'\u00e9quipe applique courbe de calibration pour suppo...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Calibration et seuils, Brier score est choisi afin de supporter des arbitrages de prod...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une revue pre-deploiement, calibration des probabilites est utile pour supporter des arbitrages de ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Le Brier score évalue la précision des prévisions probabilistes, mesurant leur écarte par rapport aux valeurs réelles. Le coefficient de corrélation de Pearson, le score F1, et l'AUC ne se concentrent pas sur les probabilités de la même manière.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Calibration et seuils', quelle situation de terrain montre le mieux quand utiliser courbe de calibration ?",
+      "question": "Quel processus consiste à ajuster un seuil de décision dans un modèle de classification binaire?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Calibration et seuils, calibration des probabilites est choisi afin de supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier.",
-        "B": "En contexte r\u00e9el sur Calibration et seuils, courbe de calibration est choisi afin de supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier.",
-        "C": "Pendant une revue pre-deploiement, seuil de d\u00e9cision est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer seuil de d\u00e9cision en production tout en surveillant le risque d'optimiser seuil de d\u00e9cision en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Dans une revue pre-deploiement de Calibration et seuils, l'\u00e9quipe applique Brier score pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Brier score en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car courbe de calibration y sert de levier de d\u00e9cision principal dans Calibration et seuils. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Calibration et seuils, calibration des probabilites est choisi afin de supporter des a...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Calibration et seuils, courbe de calibration est choisi afin de supporter des arbitrag...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une revue pre-deploiement, seuil de d\u00e9cision est utile pour supporter des arbitrages de production ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une revue pre-deploiement de Calibration et seuils, l'\u00e9quipe applique Brier score pour supporter des a...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Calibration et seuils', quelle situation de terrain montre le mieux quand utiliser calibration des probabilites ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une revue pre-deploiement de Calibration et seuils, l'\u00e9quipe applique seuil de d\u00e9cision pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer seuil de d\u00e9cision en production.",
-        "B": "En contexte r\u00e9el sur Calibration et seuils, Brier score est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Brier score en production.",
-        "C": "En contexte r\u00e9el sur Calibration et seuils, calibration des probabilites est choisi afin de supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier.",
-        "D": "Pendant une revue pre-deploiement, courbe de calibration est utile pour supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier tout en surveillant le risque d'optimiser courbe de calibration en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car calibration des probabilites y sert de levier de d\u00e9cision principal dans Calibration et seuils. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une revue pre-deploiement de Calibration et seuils, l'\u00e9quipe applique seuil de d\u00e9cision pour supporter...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Calibration et seuils, Brier score est choisi afin de supporter des arbitrages de prod...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Calibration et seuils, calibration des probabilites est choisi afin de supporter des a...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une revue pre-deploiement, courbe de calibration est utile pour supporter des arbitrages de product...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "seuil de d\u00e9cision: quel risque est le plus directement lie a son mauvais usage en production dans 'Calibration et seuils' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec calibration des probabilites est d'optimiser calibration des probabilites en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Un risque classique avec seuil de d\u00e9cision est d'optimiser seuil de d\u00e9cision en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Si courbe de calibration est mal utilise, on observe souvent optimiser courbe de calibration en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour de Brier score est optimiser Brier score en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de seuil de d\u00e9cision. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec calibration des probabilites est d'optimiser calibration des probabilites en silo...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec seuil de d\u00e9cision est d'optimiser seuil de d\u00e9cision en silo et introduire des mod...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si courbe de calibration est mal utilise, on observe souvent optimiser courbe de calibration en silo et int...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de Brier score est optimiser Brier score en silo et introduire des modes d'echec ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Calibration et seuils', quel est le role le plus determinant de calibration des probabilites pour un cas marketing ?",
-      "image_url": null,
-      "choices": {
-        "A": "calibration des probabilites sert a supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Calibration et seuils, courbe de calibration est mobilise pour supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier.",
-        "C": "Le role de seuil de d\u00e9cision est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer seuil de d\u00e9cision en production.",
-        "D": "Brier score sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Brier score en production pour guider une d\u00e9cision exploitable."
+        "A": "Changer la sensibilité aux faux positifs et faux négatifs.",
+        "B": "Optimiser directement la fonction de coût du modèle.",
+        "C": "Augmenter le nombre de fausses alertes prédictives.",
+        "D": "Améliorer la calibration des probabilités prédites."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie calibration des probabilites \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (calibration des probabilites sert a supporter des arbitrages de production ; rendre les scores probabiliste...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Calibration et seuils, courbe de calibration est mobilise pour supporter des arbitrages de production ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de seuil de d\u00e9cision est de supporter des arbitrages de production ; l'utiliser correctement permet...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Brier score sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Ajuster le seuil de décision influence les taux de faux positifs et négatifs, ce qui affecte les sensibilités aux erreurs de décision. Les autres réponses font faussement référence à l'optimisation de la calibration ou de la fonction de coût sans ajustement de seuil.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "courbe de calibration: quelle proposition en donne la meilleure d\u00e9finition dans 'Calibration et seuils' (contexte banque) ?",
+      "question": "Qu'est-ce qu'une courbe de calibration dans le contexte de l'apprentissage supervisé?",
       "image_url": null,
       "choices": {
-        "A": "courbe de calibration designe un levier avance en apprentissage supervise ; elle ajuste les probabilites predites pour qu'elles refletent mieux les frequences observees.",
-        "B": "equal opportunity correspond a un levier avance en apprentissage supervise ; il traite l'equite de d\u00e9cision entre groupes sensibles et la conformite des modeles, ce qui structure l'analyse dans Calibration et seuils.",
-        "C": "Dans Calibration et seuils, attribut sensible se comprend comme un levier avance en apprentissage supervise ; il formalise le role d'attribut sensible dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "audit de biais designe un levier avance en apprentissage supervise ; il traite l'equite de d\u00e9cision entre groupes sensibles et la conformite des modeles."
+        "A": "Un graphique montrant la relation entre les probabilités prédites et les fréquences observées.",
+        "B": "Un graphique illustrant la relation entre le rappel et la précision.",
+        "C": "Un graphique décrivant les variations du coût de la fonction de perte au fil des itérations.",
+        "D": "Un graphique présentant le taux d'erreur en fonction de la taille de l'échantillon."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de courbe de calibration dans Calibration et seuils, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que equal opportunity, attribut sensible, audit de biais restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (courbe de calibration designe un levier avance en apprentissage supervise ; elle ajuste les probabilites pr...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (equal opportunity correspond a un levier avance en apprentissage supervise ; il traite l'equite de d\u00e9cision...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Calibration et seuils, attribut sensible se comprend comme un levier avance en apprentissage supervise...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (audit de biais designe un levier avance en apprentissage supervise ; il traite l'equite de d\u00e9cision entre g...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "La courbe de calibration compare les probabilités prédites par un modèle aux fréquences observées des événements pour évaluer l'exactitude probabiliste du modèle. La réponse B est incorrecte car elle décrit la courbe précision-rappel. La réponse C est fausse car elle explique une courbe d'apprentissage. La réponse D n'est pas correcte car elle concerne l'analyse par validation croisée.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Calibration et seuils', quelle erreur autour de courbe de calibration est la plus critique ?",
+      "question": "Quel est l'objectif principal de l'utilisation d'un seuil de décision dans un modèle de classification binaire?",
       "image_url": null,
       "choices": {
-        "A": "Si Brier score est mal utilise, on observe souvent optimiser Brier score en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de calibration des probabilites est optimiser calibration des probabilites en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de courbe de calibration est optimiser courbe de calibration en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Un risque classique avec seuil de d\u00e9cision est d'optimiser seuil de d\u00e9cision en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de courbe de calibration. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si Brier score est mal utilise, on observe souvent optimiser Brier score en silo et introduire des modes d'...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour de calibration des probabilites est optimiser calibration des probabilites en sil...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de courbe de calibration est optimiser courbe de calibration en silo et introduir...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec seuil de d\u00e9cision est d'optimiser seuil de d\u00e9cision en silo et introduire des mod...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "seuil de d\u00e9cision: dans un cas assurance, quelle interpretation correspond le mieux au schema ML de 'Calibration et seuils' ?",
-      "image_url": "apprentissage-supervise_calibration_et_seuils_seuil_de_decision_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur calibration des probabilites: les indices orientent vers supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier.",
-        "B": "Le schema illustre une d\u00e9cision basee sur seuil de d\u00e9cision: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer seuil de d\u00e9cision en production.",
-        "C": "Lecture du visuel: courbe de calibration est mobilise pour supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier dans Calibration et seuils.",
-        "D": "Le signal visible est coh\u00e9rent avec Brier score, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Brier score en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de seuil de d\u00e9cision: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur calibration des probabilites: les indices orientent vers supporte...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur seuil de d\u00e9cision: les indices orientent vers supporter des arbit...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: courbe de calibration est mobilise pour supporter des arbitrages de production ; rendre ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec Brier score, car l'objectif est supporter des arbitrages de production ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "seuil de d\u00e9cision: dans 'Calibration et seuils', un schema met en evidence ce comportement. Quelle lecture est la plus juste ?",
-      "image_url": "apprentissage-supervise_calibration_et_seuils_seuil_de_decision_2.png",
-      "choices": {
-        "A": "Le role de seuil de d\u00e9cision est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer seuil de d\u00e9cision en production.",
-        "B": "courbe de calibration sert a supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier pour guider une d\u00e9cision exploitable.",
-        "C": "Dans Calibration et seuils, Brier score est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Brier score en production.",
-        "D": "Le role de calibration des probabilites est de supporter des arbitrages de production ; rendre les scores probabilistes utilisables pour des d\u00e9cisions a seuil m\u00e9tier."
+        "A": "Convertir les probabilités prédites en classes discrètes.",
+        "B": "Maximiser la variance des prédictions.",
+        "C": "Réduire la biais lors de l'ajustement du modèle.",
+        "D": "Mesurer la précision des prédictions probabilistes."
       },
       "correct_answer": "A",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de seuil de d\u00e9cision dans Calibration et seuils. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est correcte (Le role de seuil de d\u00e9cision est de supporter des arbitrages de production ; l'utiliser correctement permet...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. B est moins pertinente (courbe de calibration sert a supporter des arbitrages de production ; rendre les scores probabilistes utili...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (Dans Calibration et seuils, Brier score est mobilise pour supporter des arbitrages de production ; l'utilis...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (Le role de calibration des probabilites est de supporter des arbitrages de production ; rendre les scores p...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le seuil de décision est utilisé pour transformer des prédictions probabilistes continues en décisions de classes discrètes, basées sur un seuil fixé. La réponse B est incorrecte car la maximisation de la variance n'est pas liée au seuil de décision. La réponse C est une mauvaise interprétation du rôle des seuils. La réponse D est inappropriée, le seuil n'étant pas utilisé pour mesurer la précision des prédictions.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel score évalue l'exactitude probabiliste d'un modèle de classification?",
+      "image_url": null,
+      "choices": {
+        "A": "Brier score",
+        "B": "F1 score",
+        "C": "Nombre de faux positifs",
+        "D": "Coefficient de corrélation de Pearson"
+      },
+      "correct_answer": "A",
+      "explanation": "Le Brier score mesure l'exactitude probabiliste des prédictions, calculant la moyenne des écarts quadratiques entre probabilités prédites et résultats réels. La réponse B évalue l'équilibre entre précision et rappel. La réponse C est un indicateur de performance des faux positifs. La réponse D mesure la relation linéaire entre deux variables, non applicable pour une évaluation probabiliste.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel concept décrit l'ajustement de la sortie d'un modèle pour qu'elle représente mieux les vraies probabilités d'occurrence?",
+      "image_url": null,
+      "choices": {
+        "A": "Calibration des probabilités",
+        "B": "Normalisation des données",
+        "C": "Réduction de la dimensionnalité",
+        "D": "Augmentation des données"
+      },
+      "correct_answer": "A",
+      "explanation": "La calibration des probabilités ajuste les prédictions d'un modèle pour qu'elles correspondent mieux aux probabilités réelles. La normalisation (réponse B) échelle les caractéristiques, la réduction de la dimensionnalité (réponse C) simplifie les modèles, et l'augmentation des données (réponse D) améliore la variété des échantillons d'entraînement.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment peut-on vérifier si un modèle est bien calibré?",
+      "image_url": null,
+      "choices": {
+        "A": "En utilisant une courbe de calibration.",
+        "B": "En minimisant simplement la métrique d'erreur quadratique mean squared error (MSE).",
+        "C": "En contrôlant la taille de l'échantillon d'entraînement.",
+        "D": "En augmentant le nombre de fonctionnalités utilisées dans le modèle."
+      },
+      "correct_answer": "A",
+      "explanation": "Une courbe de calibration permet de visualiser la calibration du modèle en comparant ses probabilités prédites aux résultats observés. La réponse B est fausse car le MSE est utilisé pour l'ajustement et non pour la calibration. La réponse C est incorrecte, car l'échantillon d'entraînement n'intervient pas directement dans la calibration. La réponse D est aussi incorrecte, augmenter les fonctionnalités ne garantit pas une meilleure calibration.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi une calibration inadéquate peut-elle poser problème dans l'utilisation d'un modèle prédictif?",
+      "image_url": null,
+      "choices": {
+        "A": "Parce que les décisions basées sur des probabilités peuvent être incorrectes.",
+        "B": "Parce que le modèle aura une complexité temporelle élevée.",
+        "C": "Parce que cela entraînera nécessairement une surestimation des rappels.",
+        "D": "Parce que cela maximise automatiquement le F1 score."
+      },
+      "correct_answer": "A",
+      "explanation": "Si un modèle est mal calibré, les probabilités prédites peuvent conduire à de mauvaises décisions, car elles ne reflètent pas fidèlement la réalité. La réponse B est fausse, la complexité n'est pas directement liée à la calibration. La réponse C est incorrecte, bien que la calibration puisse affecter le rappel, elle ne le surestime pas nécessairement. La réponse D est fausse, le F1 score n'est pas automatiquement maximisé par une calibration inadéquate.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Calibration et seuils', quelle erreur autour de calibration des probabilites est la plus critique ?",
+      "question": "Qu'est-ce qui pourrait indiquer un modèle de classification bien calibré?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec courbe de calibration est d'optimiser courbe de calibration en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Si seuil de d\u00e9cision est mal utilise, on observe souvent optimiser seuil de d\u00e9cision en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de Brier score est optimiser Brier score en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour de calibration des probabilites est optimiser calibration des probabilites en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Les probabilités prédites sont proches des fréquences observées.",
+        "B": "Le modèle sur-apprend et a de bonnes performances sur les données d'entraînement.",
+        "C": "Le modèle généralise bien sur des nouvelles données.",
+        "D": "Le modèle a une faible variance dans ses prédictions."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de calibration des probabilites. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec courbe de calibration est d'optimiser courbe de calibration en silo et introduire...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si seuil de d\u00e9cision est mal utilise, on observe souvent optimiser seuil de d\u00e9cision en silo et introduire ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour de Brier score est optimiser Brier score en silo et introduire des modes d'echec ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour de calibration des probabilites est optimiser calibration des probabilites en sil...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Un modèle bien calibré prédit des probabilités qui correspondent étroitement aux fréquences observées des classes. La réponse B décrit le surapprentissage, qui n'a pas de rapport direct avec la calibration. La réponse C concerne la généralisation, bien qu'importante, elle n'adresse pas la calibration spécifique. La réponse D fait référence à la variance, qui est plus liée à la fiabilité qu'à la calibration proprement dite.",
       "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel impact un seuil de décision mal choisi peut-il avoir sur un modèle de classification?",
+      "image_url": null,
+      "choices": {
+        "A": "Il peut causer un déséquilibre entre taux de faux positifs et vrais positifs.",
+        "B": "Il réduit automatiquement la complexité du modèle.",
+        "C": "Il augmente la surestimation des variables d'entrée.",
+        "D": "Il garantit que toutes les classes sont également représentées."
+      },
+      "correct_answer": "A",
+      "explanation": "Un seuil de décision mal choisi peut déséquilibrer le nombre de faux positifs et vrais positifs en contrôlant la transformée des probabilités en classes. La réponse B est fausse, le seuil affecte la classification et non la complexité du modèle. La réponse C est incorrecte, le seuil n'affecte pas l'estimation des variables d'entrée. La réponse D est également fausse, car le seuil ne garantit pas une répartition égale des classes.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel facteur est prioritaire lors de l'ajustement des probabilités prédites pour améliorer la calibration?",
+      "image_url": null,
+      "choices": {
+        "A": "Réduction des biais de prédiction.",
+        "B": "Augmentation de la mémoire disponible pour le calcul.",
+        "C": "Minimisation des incompatibilités matérielles.",
+        "D": "Amélioration des taux de variabilité des données."
+      },
+      "correct_answer": "A",
+      "explanation": "L'ajustement des biais de prédiction est crucial pour une bonne calibration, afin que les probabilités reflètent fidèlement les véritables probabilités des événements. La réponse B est incorrecte, la mémoire n'affecte pas la calibration. La réponse C est hors sujet car la calibration n'est pas affectée par des problèmes matériels. La réponse D est inappropriée, la variabilité des données concerne surtout la généralisation.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment un modèle peut-il être calibré après avoir été entraîné?",
+      "image_url": null,
+      "choices": {
+        "A": "En utilisant une méthode de Platt Scaling ou isotonic regression.",
+        "B": "En augmentant le nombre d'itérations d'entraînement.",
+        "C": "En supprimant les outliers des données d'entraînement.",
+        "D": "En ajoutant davantage de classes à prédire."
+      },
+      "correct_answer": "A",
+      "explanation": "Platt Scaling et isotonic regression sont des techniques de post-calibration utilisées pour ajuster les probabilités prédites d'un modèle. La réponse B est fausse, car augmenter le nombre d'itérations ne concerne que l'ajustement initial. La réponse C est incorrecte, bien que la suppression d'outliers puisse aider la précision, elle n'améliore pas directement la calibration. La réponse D est fausse, l'ajout de classes n'est pas un facteur de calibration.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un mauvais effet potentiel d'un modèle mal calibré dans une application médicale?",
+      "image_url": null,
+      "choices": {
+        "A": "Donner des assurances incorrectes aux patients sur leurs diagnostics.",
+        "B": "Augmenter la précision du model.",
+        "C": "Réduire le coût de traitement des données.",
+        "D": "Faciliter le surapprentissage des données."
+      },
+      "correct_answer": "A",
+      "explanation": "Un modèle mal calibré peut donner une fausse impression de confiance sur des diagnostics médicaux, ce qui a des implications critiques. La réponse B est fausse, une mauvaise calibration n'augmente pas la précision, mais souvent la diminue. La réponse C n'est pas correcte non plus, le coût n'est pas lié à la calibration. La réponse D est incorrecte, bien que la calibration puisse être impactée par le surapprentissage, elle ne le facilite pas directement.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'effet d'un faible Brier score pour un modèle prédictif?",
+      "image_url": null,
+      "choices": {
+        "A": "Indique que le modèle est bien calibré.",
+        "B": "Signifie que le modèle a une reconnaissance faible des patterns.",
+        "C": "Démontre que le modèle a surestimé les faux négatifs.",
+        "D": "Indique une hétérogénéité élevée dans les prédictions."
+      },
+      "correct_answer": "A",
+      "explanation": "Un faible Brier score signifie que les probabilités prédites sont proches des valeurs réelles, donc le modèle est bien calibré. La réponse B est fausse, la reconnaissance des patterns n'est pas liée au Brier score. La réponse C est incorrecte, le Brier score n'indique pas spécifiquement des erreurs de faux négatifs. La réponse D est aussi incorrecte, l'hétérogénéité élevée des prédictions n'est pas indiquée par le Brier score.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une méthode couramment utilisée pour évaluer la calibration d'un modèle?",
+      "image_url": null,
+      "choices": {
+        "A": "Courbe de calibration",
+        "B": "Courbe ROC",
+        "C": "Coefficient de Gini",
+        "D": "Analyse des composantes principales"
+      },
+      "correct_answer": "A",
+      "explanation": "La courbe de calibration est utilisée pour comparer les probabilités prédites par le modèle avec les probabilités observées, afin d'évaluer sa calibration. La réponse B décrit une courbe qui illustre la performance de classification binaire (taux de TP vs taux de FP). La réponse C concerne un mesure de distribution des valeurs, et la réponse D est une technique de réduction de dimensionnalité, non pour évaluer la calibration.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Que mesure le Brier score précisément pour un modèle de classification binaire?",
+      "image_url": null,
+      "choices": {
+        "A": "La moyenne des carrés des écarts entre les probabilités prédites et observées.",
+        "B": "La mitoyenneté de la distribution des classes.",
+        "C": "La covariance entre les prédictions et les vraies valeurs.",
+        "D": "Le gain en performance obtenu après la réduction de biais."
+      },
+      "correct_answer": "A",
+      "explanation": "Le Brier score mesure avec précision l'écart au carré entre les probabilités prédites et les résultats réels, facilitant l'évaluation de l'exactitude probabiliste. La réponse B est incorrecte puisqu'elle ne se rapporte pas au Brier score. La réponse C mentionne la covariance, qui est un concept statistique différent. La réponse D est fausse, car elle décrit un résultat hypothétique non lié directement au Brier score.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Que signifie une courbe de calibration en ligne droite à 45°?",
+      "image_url": null,
+      "choices": {
+        "A": "Le modèle est parfaitement calibré.",
+        "B": "Le modèle sous-estime systématiquement les probabilités.",
+        "C": "Le modèle surestime systématiquement les probabilités.",
+        "D": "Les prédictions du modèle sont indépendantes des données d'entrée."
+      },
+      "correct_answer": "A",
+      "explanation": "Une courbe de calibration en ligne droite à 45° indique que les prédictions probabilistes du modèle correspondent exactement aux fréquences observées, soit une calibration parfaite. La réponse B et C sont fausses car elles indiqueraient que les points sur la courbe se situeraient en dessous ou au-dessus de la diagonale respectivement. La réponse D est incorrecte car elle n'a aucun lien avec la calibration.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la principale utilité d'une courbe de calibration dans un modèle de classification binaire ?",
+      "image_url": null,
+      "choices": {
+        "A": "Évaluer la concordance entre les probabilités prédites et les résultats observés.",
+        "B": "Déterminer l'erreur quadratique moyenne des prédictions.",
+        "C": "Calculer la précision du modèle en termes de faux positifs et faux négatifs.",
+        "D": "Mesurer la corrélation entre deux variables indépendantes."
+      },
+      "correct_answer": "A",
+      "explanation": "Une courbe de calibration est utilisée pour évaluer la concordance entre les probabilités prédites par un modèle de classification et les résultats réels observés. Ceci est crucial pour vérifier que les probabilités de sortie peuvent être utilisées pour prendre des décisions informées. La réponse B décrit le Brier score, qui mesure l'erreur quadratique des probabilités prédites, mais n'évalue pas directement la calibration. La réponse C concerne la précision du modèle, qui est évaluée via d'autres métriques comme l'exactitude ou le F1 score, et non la calibration. La réponse D se réfère à une corrélation, qui n'est pas pertinente dans le contexte de la calibration des modèles.",
+      "difficulty": "medium"
     }
   ]
 }

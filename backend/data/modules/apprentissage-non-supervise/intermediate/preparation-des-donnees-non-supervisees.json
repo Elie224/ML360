@@ -4,171 +4,171 @@
   "module": "Preparation des donnees non supervisees",
   "questions": [
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec scaling dans 'Preparation des donn\u00e9es non supervisees' ?",
-      "image_url": "apprentissage-non-supervise_preparation_des_donnees_non_supervisees_scaling_2.png",
+      "type": "text",
+      "question": "Pourquoi est-il important de normaliser les données avant d'appliquer des méthodes algébriques comme la PCA?",
+      "image_url": null,
       "choices": {
-        "A": "Dans Preparation des donn\u00e9es non supervisees, curse of dimensionality est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer curse of dimensionality en production.",
-        "B": "Dans Preparation des donn\u00e9es non supervisees, scaling est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer scaling en production.",
-        "C": "Le role de gestion des outliers est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer gestion des outliers en production.",
-        "D": "selection de variables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de variables en production pour guider une d\u00e9cision exploitable."
+        "A": "Parce que la PCA est sensible à l'échelle des variables.",
+        "B": "Pour réduire le nombre de dimensions des données.",
+        "C": "Pour convertir les valeurs catégorielles en numériques.",
+        "D": "Pour neutraliser les effets des valeurs manquantes."
       },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de scaling dans Preparation des donn\u00e9es non supervisees. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Preparation des donn\u00e9es non supervisees, curse of dimensionality est mobilise pour fiabiliser les deci...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Preparation des donn\u00e9es non supervisees, scaling est mobilise pour fiabiliser les d\u00e9cisions d'experime...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de gestion des outliers est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (selection de variables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La PCA (analyse en composantes principales) est sensible à l'échelle des variables parce qu'elle repose sur les distances euclidiennes. Si les données ne sont pas normalisées, les variables avec des valeurs plus grandes influencent davantage les résultats. Réduire le nombre de dimensions est un effet de la PCA, mais pas lié à la normalisation. Convertir les valeurs catégorielles en numériques ou neutraliser les valeurs manquantes ne justifie pas la normalisation dans le contexte du PCA.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Preparation des donn\u00e9es non supervisees', quelle situation de terrain montre le mieux quand utiliser scaling ?",
+      "question": "Quelle approche est efficace pour traiter les outliers dans l'apprentissage non supervisé lorsque les mécanismes de génération sont inconnus?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Preparation des donn\u00e9es non supervisees, curse of dimensionality est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer curse of dimensionality en production.",
-        "B": "En contexte r\u00e9el sur Preparation des donn\u00e9es non supervisees, scaling est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer scaling en production.",
-        "C": "Pendant une phase d'experimentation, gestion des outliers est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer gestion des outliers en production tout en surveillant le risque de sur-optimiser gestion des outliers localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation de Preparation des donn\u00e9es non supervisees, l'\u00e9quipe applique selection de variables pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de variables en production."
+        "A": "Utiliser un algorithme robuste aux valeurs extrêmes, comme DBSCAN.",
+        "B": "Supprimer toutes les instances au-delà de 1.5 fois l'écart-type.",
+        "C": "Appliquer la normalisation min-max.",
+        "D": "Remplacer les outliers par la moyenne de l'ensemble des données."
       },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car scaling y sert de levier de d\u00e9cision principal dans Preparation des donn\u00e9es non supervisees. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Preparation des donn\u00e9es non supervisees, curse of dimensionality est choisi afin de fi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Preparation des donn\u00e9es non supervisees, scaling est choisi afin de fiabiliser les dec...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, gestion des outliers est utile pour fiabiliser les d\u00e9cisions d'experim...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation de Preparation des donn\u00e9es non supervisees, l'\u00e9quipe applique selection de...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "DBSCAN est un algorithme de clustering qui est robuste aux valeurs extrêmes puisqu'il ne considère pas les outliers dans la formation des clusters principaux. Supprimer toutes les instances au-delà de 1.5 fois l'écart-type peut éliminer trop de points pertinents. La normalisation min-max peut amplifier l'effet des outliers. Remplacer les outliers par la moyenne peut biaiser les données.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Preparation des donn\u00e9es non supervisees', quel est le role le plus determinant de scaling pour un cas e-commerce ?",
+      "question": "Quel est l'effet principal du 'curse of dimensionality' dans le cadre de l'apprentissage non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Dans Preparation des donn\u00e9es non supervisees, gestion des outliers est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer gestion des outliers en production.",
-        "B": "Le role de selection de variables est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de variables en production.",
-        "C": "curse of dimensionality sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer curse of dimensionality en production pour guider une d\u00e9cision exploitable.",
-        "D": "scaling sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer scaling en production pour guider une d\u00e9cision exploitable."
+        "A": "Les distances entre points deviennent moins discriminantes, rendant la séparation des clusters difficile.",
+        "B": "Il devient impossible de normaliser les données.",
+        "C": "Les algorithmes convergent plus vite mais avec moins de précision.",
+        "D": "La visualisation des données devient impossible."
       },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie scaling \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Preparation des donn\u00e9es non supervisees, gestion des outliers est mobilise pour fiabiliser les decisio...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de selection de variables est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correcteme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (curse of dimensionality sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (scaling sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Le 'curse of dimensionality', ou 'malédiction de la dimensionnalité', signifie que dans les espaces à haute dimension, les distances entre les points deviennent similaires, ce qui rend difficile la discrimination pour former des clusters. Il n'empêche pas la normalisation. Les algorithmes ne convergent pas nécessairement plus vite et la visualisation est difficile mais pas impossible.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "selection de variables: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Preparation des donn\u00e9es non supervisees' ?",
+      "question": "Lors de la sélection de variables en apprentissage non supervisé, pourquoi est-il conseillé de réduire les dimensions à l'aide de la PCA?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Preparation des donn\u00e9es non supervisees, scaling est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer scaling en production.",
-        "B": "Pendant une phase d'experimentation, gestion des outliers est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer gestion des outliers en production tout en surveillant le risque de sur-optimiser gestion des outliers localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Dans une phase d'experimentation de Preparation des donn\u00e9es non supervisees, l'\u00e9quipe applique curse of dimensionality pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer curse of dimensionality en production.",
-        "D": "Dans une phase d'experimentation de Preparation des donn\u00e9es non supervisees, l'\u00e9quipe applique selection de variables pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de variables en production."
+        "A": "Pour augmenter l'efficacité computationnelle et réduire le bruit des données.",
+        "B": "Pour s'assurer que chaque dimension représente une variable catégorielle.",
+        "C": "Pour rendre les données plus homogènes.",
+        "D": "Pour se débarrasser des données redondantes en les supprimant directement."
       },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car selection de variables y sert de levier de d\u00e9cision principal dans Preparation des donn\u00e9es non supervisees. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Preparation des donn\u00e9es non supervisees, scaling est choisi afin de fiabiliser les dec...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une phase d'experimentation, gestion des outliers est utile pour fiabiliser les d\u00e9cisions d'experim...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une phase d'experimentation de Preparation des donn\u00e9es non supervisees, l'\u00e9quipe applique curse of dim...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une phase d'experimentation de Preparation des donn\u00e9es non supervisees, l'\u00e9quipe applique selection de...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La PCA aide à réduire la dimensionalité en projetant les données sur un espace de dimension inférieure, ce qui réduit le bruit et augmente l'efficacité computationnelle. La PCA ne s'assure pas que les dimensions représentent des variables catégorielles, ne rend pas les données plus homogènes, ni ne supprime les données redondantes directement.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Preparation des donn\u00e9es non supervisees' (industrie), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment gestion des outliers ?",
+      "question": "Dans quel cas l'utilisation de la normalisation z-score est-elle plus avantageuse que la normalisation min-max?",
       "image_url": null,
       "choices": {
-        "A": "Dans Preparation des donn\u00e9es non supervisees, Calinski-Harabasz se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de Calinski-Harabasz dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "stabilit\u00e9 inter-runs designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de stabilit\u00e9 inter-runs dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "interpretation m\u00e9tier correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role d'interpretation m\u00e9tier dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Preparation des donn\u00e9es non supervisees.",
-        "D": "gestion des outliers correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de gestion des outliers dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Preparation des donn\u00e9es non supervisees."
+        "A": "Lorsque les données comportent des valeurs extrêmes mais suivent une distribution normale.",
+        "B": "Lorsque les données sont composées uniquement de variables binaires.",
+        "C": "Lorsque nous traitons exclusivement de variables catégorielles.",
+        "D": "Lorsque seules les valeurs manquantes doivent être traitées."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de gestion des outliers dans Preparation des donn\u00e9es non supervisees, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte industrie, alors que Calinski-Harabasz, stabilit\u00e9 inter-runs, interpretation m\u00e9tier restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Preparation des donn\u00e9es non supervisees, Calinski-Harabasz se comprend comme un concept interm\u00e9diaire ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (stabilit\u00e9 inter-runs designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (interpretation m\u00e9tier correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise l...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (gestion des outliers correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec curse of dimensionality dans 'Preparation des donn\u00e9es non supervisees' ?",
-      "image_url": "apprentissage-non-supervise_preparation_des_donnees_non_supervisees_curse_of_dimensionality_2.png",
-      "choices": {
-        "A": "gestion des outliers sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer gestion des outliers en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Preparation des donn\u00e9es non supervisees, selection de variables est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de variables en production.",
-        "C": "Dans Preparation des donn\u00e9es non supervisees, curse of dimensionality est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer curse of dimensionality en production.",
-        "D": "Le role de scaling est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer scaling en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de curse of dimensionality dans Preparation des donn\u00e9es non supervisees. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (gestion des outliers sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Preparation des donn\u00e9es non supervisees, selection de variables est mobilise pour fiabiliser les decis...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Preparation des donn\u00e9es non supervisees, curse of dimensionality est mobilise pour fiabiliser les deci...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de scaling est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La normalisation z-score est meilleure pour les données qui suivent une distribution normale car elle utilise la moyenne et l'écart-type pour centrer et réduire l'échelle des valeurs, ce qui amortit l'impact des outliers. La normalisation min-max est plus simple mais sensible aux valeurs extrêmes. Elle ne convient pas aux variables binaires ou catégorielles, ni ne résout le problème des valeurs manquantes.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Face a un besoin industrie dans 'Preparation des donn\u00e9es non supervisees', pourquoi gestion des outliers est-il prioritaire ?",
+      "question": "Pourquoi ne devrait-on pas toujours supprimer les outliers lors de la préparation des données non supervisées?",
       "image_url": null,
       "choices": {
-        "A": "selection de variables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de variables en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Preparation des donn\u00e9es non supervisees, curse of dimensionality est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer curse of dimensionality en production.",
-        "C": "Dans Preparation des donn\u00e9es non supervisees, gestion des outliers est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer gestion des outliers en production.",
-        "D": "Le role de scaling est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer scaling en production."
+        "A": "Parce qu'ils peuvent représenter des structures ou groupes d'intérêt dans les données.",
+        "B": "Parce qu'ils indiquent probablement une erreur de saisie toujours corrigible.",
+        "C": "Parce que les outliers n'ont pas d'impact sur les méthodes de clustering.",
+        "D": "Parce que les outliers sont toujours corrigés par la normalisation."
       },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie gestion des outliers \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (selection de variables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Preparation des donn\u00e9es non supervisees, curse of dimensionality est mobilise pour fiabiliser les deci...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Preparation des donn\u00e9es non supervisees, gestion des outliers est mobilise pour fiabiliser les decisio...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de scaling est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Preparation des donn\u00e9es non supervisees', quel commentaire du schema traduit le mieux le role de selection de variables ?",
-      "image_url": "apprentissage-non-supervise_preparation_des_donnees_non_supervisees_selection_de_variables_2.png",
-      "choices": {
-        "A": "Dans Preparation des donn\u00e9es non supervisees, scaling est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer scaling en production.",
-        "B": "Le role de gestion des outliers est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer gestion des outliers en production.",
-        "C": "curse of dimensionality sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer curse of dimensionality en production pour guider une d\u00e9cision exploitable.",
-        "D": "selection de variables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de variables en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de selection de variables dans Preparation des donn\u00e9es non supervisees. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Preparation des donn\u00e9es non supervisees, scaling est mobilise pour fiabiliser les d\u00e9cisions d'experime...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de gestion des outliers est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (curse of dimensionality sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (selection de variables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet d...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Les outliers peuvent potentiellement révéler des structures ou des anomalies intéressantes dans les données qu'on pourrait vouloir analyser davantage. Les considérer toujours comme des erreurs peut mener à la perte d'informations cruciales. Les outliers impactent les méthodes de clustering sensibles aux distances, et la normalisation seule ne corrige pas leur effet.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Preparation des donn\u00e9es non supervisees', quelle erreur autour de scaling est la plus critique ?",
+      "question": "Quelle méthode serait la plus appropriée pour traiter des données avec plusieurs variables catégorielles dans un clustering?",
       "image_url": null,
       "choices": {
-        "A": "Si selection de variables est mal utilise, on observe souvent sur-optimiser selection de variables localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de curse of dimensionality est sur-optimiser curse of dimensionality localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Le piege principal autour de scaling est sur-optimiser scaling localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Un risque classique avec gestion des outliers est de sur-optimiser gestion des outliers localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Utiliser une technique d'encodage comme l'encodage one-hot.",
+        "B": "Appliquer directement la PCA pour réduire la dimensionalité.",
+        "C": "Supprimer les variables catégorielles pour un modèle plus simple.",
+        "D": "Utiliser uniquement la normalisation min-max pour les variables numériques."
       },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de scaling. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si selection de variables est mal utilise, on observe souvent sur-optimiser selection de variables localeme...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour de curse of dimensionality est sur-optimiser curse of dimensionality localement e...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de scaling est sur-optimiser scaling localement en ignorant ses interactions avec...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec gestion des outliers est de sur-optimiser gestion des outliers localement en ignor...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "L'encodage one-hot transforme les variables catégorielles en un format binaire compatible avec les algorithmes de clustering qui nécessitent des données numériques. Appliquer la PCA aux données catégorielles n'est pas direct et les supprimer sans analyse peut faire perdre des informations. La normalisation min-max concerne seulement les variables numériques.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel serait l'impact sur le clustering de ne pas gérer correctement les outliers dans les données initiales?",
+      "image_url": null,
+      "choices": {
+        "A": "Les outliers peuvent fausser la formation de clusters en étant prépondérants dans les calculs de distance.",
+        "B": "Les algorithmes identifieraient automatiquement les outliers comme clusters indépendants.",
+        "C": "Les outliers n'ont aucun impact car les algorithmes les ignorent systématiquement.",
+        "D": "Les clusters ne sont pas affectés car les algorithmes de machine learning sont invariants aux outliers."
+      },
+      "correct_answer": "A",
+      "explanation": "Les outliers affectent la formation des clusters, notamment lorsqu'ils influencent les calculs de distance, rendant certains clusters plus dispersés ou mal formés. Les algorithmes ne détectent pas automatiquement les outliers comme clusters indépendants sauf s'ils sont explicitement conçus pour cela. Les outliers ont généralement un impact, sauf dans quelques algorithmes robustes comme DBSCAN.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi la sélection de variables est-elle cruciale dans l'apprentissage non supervisé sur des données multidimensionnelles?",
+      "image_url": null,
+      "choices": {
+        "A": "Parce qu'elle réduit la complexité des modèles tout en évitant le bruit superflu.",
+        "B": "Parce qu'elle est nécessaire uniquement lorsque les données ont des valeurs manquantes.",
+        "C": "Parce qu'elle augmente inévitablement la performance des algorithmes si on utilise toutes les variables.",
+        "D": "Parce qu'elle est utilisée uniquement pour les modèles supervisés."
+      },
+      "correct_answer": "A",
+      "explanation": "La sélection de variables réduit la complexité des modèles et élimine le bruit, améliorant potentiellement les résultats des algorithmes. Ce n'est pas uniquement nécessaire pour gérer les valeurs manquantes. L'utilisation de toutes les variables n'augmente pas toujours la performance. De plus, la sélection de variables est importante tant pour les modèles supervisés que non supervisés.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Preparation des donn\u00e9es non supervisees', quel est le principal mode d'echec quand selection de variables est mal applique ?",
+      "question": "Comment le 'curse of dimensionality' affecte-t-il la densité des données en apprentissage non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Si selection de variables est mal utilise, on observe souvent sur-optimiser selection de variables localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de scaling est sur-optimiser scaling localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Un risque classique avec gestion des outliers est de sur-optimiser gestion des outliers localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Si curse of dimensionality est mal utilise, on observe souvent sur-optimiser curse of dimensionality localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Les données deviennent éparses, rendant les concepts de densité moins significatifs.",
+        "B": "La densité des données augmente car chaque point est entouré par plus de points voisins.",
+        "C": "Les concepts de densité ne changent pas, ils ne sont pas influencés par la dimensionnalité.",
+        "D": "La densité est accrue car le volume de l'espace est réduit."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de selection de variables. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si selection de variables est mal utilise, on observe souvent sur-optimiser selection de variables localeme...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de scaling est sur-optimiser scaling localement en ignorant ses interactions avec...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec gestion des outliers est de sur-optimiser gestion des outliers localement en ignor...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si curse of dimensionality est mal utilise, on observe souvent sur-optimiser curse of dimensionality locale...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Dans des espaces de grande dimension, les données deviennent éparses et les notions de densité perdent de leur sens, car les points sont très séparés. La densité n'augmente pas, au contraire, elle devient difficilement mesurable. La densité et la signification des mesures de proximité sont fortement affectées par la dimensionnalité.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "scaling: quelle proposition en donne la meilleure d\u00e9finition dans 'Preparation des donn\u00e9es non supervisees' (contexte e-commerce) ?",
+      "question": "Que doit-on considérer lors de la gestion des données avec variables à échelle très différente dans l'apprentissage non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "scaling designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de scaling dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "Davies-Bouldin correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de Davies-Bouldin dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Preparation des donn\u00e9es non supervisees.",
-        "C": "Dans Preparation des donn\u00e9es non supervisees, Calinski-Harabasz se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de Calinski-Harabasz dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "stabilit\u00e9 inter-runs designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de stabilit\u00e9 inter-runs dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Appliquer une normalisation ou standardisation pour équilibrer l'influence des variables.",
+        "B": "Toujours supprimer les variables avec plus petite échelle.",
+        "C": "Préférer les distances Manhattan sur Euclidiennes uniquement.",
+        "D": "Utiliser uniquement des modèles basés sur des logarithmes."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de scaling dans Preparation des donn\u00e9es non supervisees, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que Davies-Bouldin, Calinski-Harabasz, stabilit\u00e9 inter-runs restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (scaling designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de scaling d...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (Davies-Bouldin correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Preparation des donn\u00e9es non supervisees, Calinski-Harabasz se comprend comme un concept interm\u00e9diaire ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (stabilit\u00e9 inter-runs designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Lorsque les données ont des variables sur des échelles très différentes, une normalisation ou standardisation est cruciale pour empêcher qu'une variable ait plus d'impact que nécessaire. Supprimer des variables selon leur échelle n'est pas justifié sans analyse. Les distances Manhattan ou Euclidiennes toutes deux seraient affectées sans normalisation, et les modèles basés sur logarithmes ne résolvent pas intrinsèquement le problème de l'échelle.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Preparation des donn\u00e9es non supervisees', quel est le role le plus determinant de curse of dimensionality pour un cas banque ?",
+      "question": "Quel est un risque potentiel de l'utilisation de trop de variables dans une analyse non supervisée, et comment peut-on le mitiger?",
       "image_url": null,
       "choices": {
-        "A": "curse of dimensionality sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer curse of dimensionality en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Preparation des donn\u00e9es non supervisees, scaling est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer scaling en production.",
-        "C": "Le role de gestion des outliers est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer gestion des outliers en production.",
-        "D": "selection de variables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de variables en production pour guider une d\u00e9cision exploitable."
+        "A": "La malédiction de la dimensionnalité qui rend les calculs complexes; on peut la mitiger avec une PCA.",
+        "B": "Risque d'overfitting qui est inévitable; on ne peut rien y faire.",
+        "C": "Risque de sur-densité rapide; il faut augmenter systématiquement le nombre de données.",
+        "D": "Les variables deviennent redondantes et difficiles à analyser individuellement; il faut ignorer les plus petites variables."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie curse of dimensionality \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (curse of dimensionality sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Preparation des donn\u00e9es non supervisees, scaling est mobilise pour fiabiliser les d\u00e9cisions d'experime...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de gestion des outliers est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (selection de variables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Avec trop de variables, on risque la malédiction de la dimensionnalité, qui augmente la complexité des calculs et rend les résultats moins utiles. L'utilisation de méthodes de réduction de dimensionnalité, comme la PCA, peut aider à mitiger ce problème. L'overfitting est un risque moindre en non supervisé et est pour la plupart évitable. Une sur-densité n'est pas réaliste dans de nombreuses dimensions, et ignorer les variables de moindre échelle n'est pas une solution viable.",
       "difficulty": "hard"
     }
   ]

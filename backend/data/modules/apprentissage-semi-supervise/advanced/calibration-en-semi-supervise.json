@@ -5,339 +5,339 @@
   "questions": [
     {
       "type": "text",
-      "question": "surconfiance: quelle proposition en donne la meilleure d\u00e9finition dans 'Calibration en semi supervise' (contexte assurance) ?",
+      "question": "Qu'est-ce que la surconfiance dans le contexte de l'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "surconfiance designe un levier avance en apprentissage semi supervise ; il formalise le role de surconfiance dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "temperature correspond a un levier avance en apprentissage semi supervise ; il formalise le role de temperature dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Calibration en semi supervise.",
-        "C": "Dans Calibration en semi supervise, label sharpening se comprend comme un levier avance en apprentissage semi supervise ; il formalise le role de label sharpening dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "correction iterative designe un levier avance en apprentissage semi supervise ; il formalise le role de correction iterative dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Un modèle émet une prédiction avec une probabilité élevée alors que l'incertitude réelle est sous-estimée.",
+        "B": "Un modèle accepte uniquement des labels sûrs en ignorant les incertitudes.",
+        "C": "Le processus de calibration des probabilités de prédiction d'un réseau neuronal.",
+        "D": "Un modèle qui atteint une haute précision en utilisant uniquement des données étiquetées."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de surconfiance dans Calibration en semi supervise, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte assurance, alors que temperature, label sharpening, correction iterative restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (surconfiance designe un levier avance en apprentissage semi supervise ; il formalise le role de surconfianc...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (temperature correspond a un levier avance en apprentissage semi supervise ; il formalise le role de tempera...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Calibration en semi supervise, label sharpening se comprend comme un levier avance en apprentissage se...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (correction iterative designe un levier avance en apprentissage semi supervise ; il formalise le role de cor...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La surconfiance se produit lorsqu'un modèle assigne des probabilités de prédiction élevées de manière injustifiée, sous-estimant son incertitude. La réponse B est incorrecte car elle décrit une approche de réduction de l'incertitude, pas la surconfiance. C parle de calibration, pas de surconfiance. D décrit une situation improbable sans rapport direct avec la surconfiance.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Calibration en semi supervise' (sante), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment temperature scaling ?",
+      "question": "Quelle est la principale utilité du temperature scaling dans les modèles semi-supervisés?",
       "image_url": null,
       "choices": {
-        "A": "Dans Calibration en semi supervise, label sharpening se comprend comme un levier avance en apprentissage semi supervise ; il formalise le role de label sharpening dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "correction iterative designe un levier avance en apprentissage semi supervise ; il formalise le role de correction iterative dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "shift domaine correspond a un levier avance en apprentissage semi supervise ; il formalise le role de shift domaine dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Calibration en semi supervise.",
-        "D": "temperature scaling correspond a un levier avance en apprentissage semi supervise ; il formalise le role de temperature scaling dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Calibration en semi supervise."
+        "A": "Ajuster les probabilités de sortie d'un modèle sans modifier ses décisions fondamentalement.",
+        "B": "Modifier les décisions de classification pour améliorer l’accuracy.",
+        "C": "Ajouter de nouvelles fonctionnalités aux modèles pour gérer des données bruitées.",
+        "D": "Améliorer la vitesse de convergence lors de l'entraînement du modèle."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de temperature scaling dans Calibration en semi supervise, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que label sharpening, correction iterative, shift domaine restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Calibration en semi supervise, label sharpening se comprend comme un levier avance en apprentissage se...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (correction iterative designe un levier avance en apprentissage semi supervise ; il formalise le role de cor...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (shift domaine correspond a un levier avance en apprentissage semi supervise ; il formalise le role de shift...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (temperature scaling correspond a un levier avance en apprentissage semi supervise ; il formalise le role de...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Le temperature scaling est une technique utilisée pour calibrer les probabilités de sortie d'un modèle, rendant les prédictions plus fiables sans modifier les classes prédites. B est incorrect parce qu'il ne modifie pas directement l'accuracy. C est incorrect car il ne concerne pas l'ajout de fonctionnalités. D est faux car le temperature scaling ne change pas la vitesse d'entraînement.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une \u00e9quipe marketing dans 'Calibration en semi supervise', quelle d\u00e9finition de selection prudente est la plus juste ?",
+      "question": "Pourquoi la sélection prudente est-elle importante dans une approche semi-supervisée?",
       "image_url": null,
       "choices": {
-        "A": "shift domaine correspond a un levier avance en apprentissage semi supervise ; il formalise le role de shift domaine dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Calibration en semi supervise.",
-        "B": "Dans Calibration en semi supervise, covariate shift se comprend comme un levier avance en apprentissage semi supervise ; il formalise le role de covariate shift dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Calibration en semi supervise, selection prudente se comprend comme un levier avance en apprentissage semi supervise ; il formalise le role de selection prudente dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "correction iterative designe un levier avance en apprentissage semi supervise ; il formalise le role de correction iterative dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Elle évite de propager de fausses étiquettes issues des données non étiquetées.",
+        "B": "Elle réduit le besoin de données étiquetées en utilisant uniquement les plus fiables.",
+        "C": "Elle minimise le surapprentissage en utilisant des modèles multiples.",
+        "D": "Elle assure l'étiquetage automatique de toutes les données disponibles."
+      },
+      "correct_answer": "A",
+      "explanation": "La sélection prudente choisit soigneusement les données non étiquetées à inclure pour éviter de propager des erreurs. B est incorrect car ce n'est pas une réduction du besoin mais une amélioration de la qualité. C est faux car cela se réfère au bagging ou à l'enembling. D est incorrect; la sélection prudente n'automatise pas l'étiquetage, elle le filtre.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment le concept de fiabilité s'applique-t-il aux modèles semi-supervisés?",
+      "image_url": null,
+      "choices": {
+        "A": "Il implique que les prédictions d'un modèle sont cohérentes avec la réalité observée.",
+        "B": "Un modèle fiable réduit la variance des données analysées.",
+        "C": "Il assure que les résultats du modèle sont toujours optimaux quel que soit le set de données utilisé.",
+        "D": "La fiabilité se concentre sur une performance plus rapide sur les datasets non annotés."
+      },
+      "correct_answer": "A",
+      "explanation": "La fiabilité vise à s'assurer que les probabilités prédites par un modèle sont alignées avec les vérités sous-jacentes. B est faux car il parle d'un autre aspect du model training. C n'est pas réaliste car la performance optimale n'est pas garantie. D est incorrect parce que la fiabilité ne concerne pas la rapidité.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Lors du temperature scaling, que représente le paramètre de température?",
+      "image_url": null,
+      "choices": {
+        "A": "Un facteur multiplicatif appliqué aux logits afin de calibrer les probabilités de sortie.",
+        "B": "Un coefficient de régularisation utilisé pour éviter le surapprentissage.",
+        "C": "Un seuil minimal de confiance pour accepter une étiquette prédite.",
+        "D": "Une fréquence d'ajustement des poids du modèle pendant l'entraînement."
+      },
+      "correct_answer": "A",
+      "explanation": "Dans le temperature scaling, le paramètre de température est utilisé pour ajuster les logits précédant la couche softmax, permettant de calibrer la confiance des prédictions. B est incorrect car régulariser n'est pas l'objectif du temperature scaling. C et D sont incorrects car ils ne sont pas liés au mécanisme de fonctionnement du temperature scaling.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment la surconfiance peut-elle affecter la performance d'un modèle semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle peut conduire à une généralisation excessive en raison de l'incertitude mal évaluée.",
+        "B": "Elle réduit les erreurs de prédiction en ignorant les données non fiables.",
+        "C": "Elle améliore la capacité du modèle à détecter des patterns dans les données bruitées.",
+        "D": "Elle stabilise la convergence lors des phases d'entraînement."
+      },
+      "correct_answer": "A",
+      "explanation": "La surconfiance peut mener à une généralisation excessive car le modèle ne reconnaît pas correctement l'incertitude, ce qui peut fausser ses conclusions. B est incorrect car elle ne réduit pas les erreurs, elle augmente souvent les décisions incorrectes. C est faux car la surconfiance ne détecte pas mieux les patterns, elle induit en erreur. D est incorrect car elle ne stabilise pas la convergence.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un défi commun associé à la calibration de la fiabilité des modèles semi-supervisés?",
+      "image_url": null,
+      "choices": {
+        "A": "Les estimations probabilistes sont biaisées par des échantillons non représentatifs.",
+        "B": "Les modèles ne supportent pas plus de deux classes à la fois.",
+        "C": "La calibration réduit l'espace de stockage disponible pour le modèle.",
+        "D": "L'entraînement non étiqueté ralentit considérablement les calculs de prédiction."
+      },
+      "correct_answer": "A",
+      "explanation": "Les échantillons non représentatifs peuvent causer un biais dans les estimations probabilistes, nuisant à la calibration. B est incorrect car le support multi-classes est inhérent aux techniques modernes. C est faux car la calibration ne touche pas l'espace de stockage. D est incorrect car l'impact sur la vitesse de prédiction n'est pas directement lié à l'entraînement non étiqueté.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il crucial d'appliquer des méthodes de calibration comme le temperature scaling après l'entraînement d'un modèle semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour corriger les biais des estimations de confiance dans les classes prédictives.",
+        "B": "Pour étendre la gamme d'applications potentielles des modèles non supervisés.",
+        "C": "Pour garantir une utilisation optimale de la puissance de calcul.",
+        "D": "Pour ajuster dynamiquement les hyperparamètres durant le déploiement."
+      },
+      "correct_answer": "A",
+      "explanation": "Le temperature scaling permet de corriger les biais dans les probabilités de confiance, rendant les prédictions plus alignées avec la réalité. B est incorrect car le temperature scaling ne transforme pas un modèle semi-supervisé en non-supervisé. C est faux car il ne concerne pas la puissance de calcul. D est incorrect car le temperature scaling n'ajuste pas les hyperparamètres après déploiement.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel problème potentiel le temperature scaling ne résout-il pas dans les modèles semi-supervisés?",
+      "image_url": null,
+      "choices": {
+        "A": "Le manque de diversité dans le jeu de données d'entraînement.",
+        "B": "La calibration inadéquate des probabilités de prédiction.",
+        "C": "L'homogénéité des classes prédictives parmi les sorties.",
+        "D": "Les lacunes en matière de robustesse du modèle face aux données environnantes."
+      },
+      "correct_answer": "A",
+      "explanation": "Le temperature scaling n'influence pas la diversité des données d'entraînement, qui est un problème de collecte de données, pas de calibration. B est incorrect car le temperature scaling vise précisément à résoudre les problèmes de calibration. C est faux et C n'est pas un point directement défini ou résolu par le temperature scaling. D est incorrect; bien que la calibration améliore la fiabilité, elle ne résout pas tous les problèmes de robustesse.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une limitation importante de la sélection prudente lorsqu'elle est appliquée aux données non étiquetées?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle peut maintenir les biais initiaux en privilégiant des échantillons déjà surreprésentés.",
+        "B": "Elle réduit automatiquement la complexité des modèles utilisés.",
+        "C": "Elle ignore les influences contextuelles issues des modèles supervisés.",
+        "D": "Elle garantit que toutes les étiquettes incertaines sont annulées."
+      },
+      "correct_answer": "A",
+      "explanation": "La sélection prudente peut privilégier des échantillons surreprésentés, renforçant des biais initiaux. B est incorrect car la sélection prudente ne touche pas à la complexité des modèles. C est faux car la sélection prudente se focalise sur l'échantillonnage, pas sur les influences contextuelles. D n'est pas vrai car la sélection prudente ne garantit pas l'élimination de toutes les incertitudes.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment peut-on évaluer la fiabilité de la calibration dans un cadre semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "À travers des métriques comme l'Expected Calibration Error (ECE) qui compare les probabilités prédites aux observations réelles.",
+        "B": "En utilisant exclusivement le taux d'acceptation des prédictions.",
+        "C": "Avec une évaluation manuelle de toutes les prédictions générées par le modèle.",
+        "D": "En focalisant sur les prédictions de classe majoritaire uniquement."
+      },
+      "correct_answer": "A",
+      "explanation": "L'Expected Calibration Error (ECE) évalue la calibration en comparant les probabilités prédites à la fréquence réelle des événements. B est incorrect car le taux d'acceptation ne mesure pas directement la calibration. C est faux car l'évaluation manuelle est irréaliste pour la scalabilité. D est incorrect car se focaliser sur la classe majoritaire n'offre pas une vision complète de la fiabilité.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'impact principal de la surconfiance sur l'échantillonnage des données non étiquetées?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle peut conduire à utiliser des données incorrectement étiquetées entraînant une dégradation du modèle.",
+        "B": "Elle facilite la réduction du bruit en éliminant les données incertaines.",
+        "C": "Elle améliore la diversité de l'échantillon en intégrant des segments sous-représentés.",
+        "D": "Elle stabilise les prédictions indépendamment de la qualité des données sources."
+      },
+      "correct_answer": "A",
+      "explanation": "La surconfiance peut amener à des décisions incorrectes, incluant des données mal étiquetées, nuisant ainsi à la qualité du modèle. B est incorrect car éliminer les données incertaines de manière systématique peut augmenter les erreurs. C est faux; inclure des segments sous-représentés nécessite une gestion consciente de l'échantillonnage. D est incorrect car la stabilisation requiert une évaluation prudente des incertitudes, non une surestimation.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi le temperature scaling est-il souvent préféré aux autres méthodes de calibration?",
+      "image_url": null,
+      "choices": {
+        "A": "Il est simple à implémenter et n'exige pas une reformation du modèle.",
+        "B": "Il supprime automatiquement les échantillons outliers du dataset.",
+        "C": "Il offre des performances meilleures pour les tasks réels sans ajustements spécifiques.",
+        "D": "Il modifie directement les étiquettes de classification pour refléter les incertitudes."
+      },
+      "correct_answer": "A",
+      "explanation": "Le temperature scaling est préféré pour sa simplicité, nécessitant peu d'altérations à l'architecture du modèle. B est incorrect; le temperature scaling n'élimine pas les outliers. C est faux car la calibration par temperature scaling demande souvent des ajustements spécifiques à chaque contexte. D est incorrect car le temperature scaling ne modifie pas les étiquettes, il ajuste les probabilités.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une erreur fréquente lors de l'application de la sélection prudente?",
+      "image_url": null,
+      "choices": {
+        "A": "Ignorer les effets temporaires dus à des changements contextuels dans les données.",
+        "B": "Appliquer une stricte séparation entre données étiquetées et non étiquetées.",
+        "C": "Assumer que toutes les classes ont des proportions égales parmi les données choisis.",
+        "D": "Réduire exagérément la variété de données utilisées durant l'entraînement."
+      },
+      "correct_answer": "A",
+      "explanation": "Les données peuvent avoir des biais temporaires dus à des événements contextuels qui influencent les échantillons choisis; ne pas le prendre en compte est un piège courant. B est incorrect car une séparation stricte n'est pas demandée lors de la sélection prudente. C est incorrect car la proportion égale de classes n'est pas assurée par la sélection prudente. D est faux car trop réduire la variété de données lors de l'entraînement n'est pas une implémentation directe de la sélection prudente.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce qui pourrait empêcher l'amélioration de la fiabilité malgré l'application du temperature scaling?",
+      "image_url": null,
+      "choices": {
+        "A": "La présence d'une distribution de classes non homogène dans le jeu de données.",
+        "B": "L'utilisation de modèles à faible capacité de généralisation.",
+        "C": "Les erreurs introduites dans les données d'entrée qui dépassent l'ajustement possible.",
+        "D": "La fréquence de mise à jour des paramètres du modèle pendant l'entraînement."
       },
       "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de selection prudente dans Calibration en semi supervise, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que correction iterative, shift domaine, covariate shift restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (shift domaine correspond a un levier avance en apprentissage semi supervise ; il formalise le role de shift...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Calibration en semi supervise, covariate shift se comprend comme un levier avance en apprentissage sem...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Calibration en semi supervise, selection prudente se comprend comme un levier avance en apprentissage ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (correction iterative designe un levier avance en apprentissage semi supervise ; il formalise le role de cor...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
+      "explanation": "Les erreurs importantes dans les données peuvent rendre l'effet de la calibration via le temperature scaling insuffisant pour améliorer la fiabilité, car l'erreur fondamentale reste. A est incorrect car le temperature scaling s'adapte à des distributions hétérogènes. B est faux car la faible capacité de généralisation affecte le modèle mais pas directement le temperature scaling. D est incorrect car la fréquence d'update n'a pas directement d'effet sur le résultat du temperature scaling.",
+      "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "fiabilit\u00e9: quelle proposition en donne la meilleure d\u00e9finition dans 'Calibration en semi supervise' (contexte e-commerce) ?",
+      "question": "Quelle métrique est souvent utilisée pour estimer la qualité de la calibration d'un modèle?",
       "image_url": null,
       "choices": {
-        "A": "alignement de distributions designe un levier avance en apprentissage semi supervise ; il formalise le role d'alignement de distributions dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "fiabilit\u00e9 designe un levier avance en apprentissage semi supervise ; il formalise le role de fiabilit\u00e9 dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "shift domaine correspond a un levier avance en apprentissage semi supervise ; il formalise le role de shift domaine dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Calibration en semi supervise.",
-        "D": "Dans Calibration en semi supervise, covariate shift se comprend comme un levier avance en apprentissage semi supervise ; il formalise le role de covariate shift dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de fiabilit\u00e9 dans Calibration en semi supervise, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que shift domaine, covariate shift, alignement de distributions restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (alignement de distributions designe un levier avance en apprentissage semi supervise ; il formalise le role...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (fiabilit\u00e9 designe un levier avance en apprentissage semi supervise ; il formalise le role de fiabilit\u00e9 dans...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (shift domaine correspond a un levier avance en apprentissage semi supervise ; il formalise le role de shift...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans Calibration en semi supervise, covariate shift se comprend comme un levier avance en apprentissage sem...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "A partir de cette description issue de 'Calibration en semi supervise' (un levier avance en apprentissage semi supervise ; il formalise le role de surconfiance dans un pipeline ML, avec ses hypotheses et ses limites pratiques.), quel concept faut-il retenir ?",
-      "image_url": null,
-      "choices": {
-        "A": "surconfiance correspond a un levier avance en apprentissage semi supervise ; il formalise le role de surconfiance dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel de surconfiance.",
-        "B": "Le concept audit se reconnait par un levier avance en apprentissage semi supervise ; il formalise le role d'audit dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Quand une d\u00e9finition insiste sur un levier avance en apprentissage semi supervise ; il formalise le role de mitigation dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a mitigation.",
-        "D": "degradation des pseudo-labels: un levier avance en apprentissage semi supervise ; il exploite des exemples non etiquetes en injectant des labels estimes sous controle de confiance."
+        "A": "Expected Calibration Error (ECE)",
+        "B": "Confusion Matrix",
+        "C": "Precision-Recall Curve",
+        "D": "Receiver Operating Characteristic (ROC) Curve"
       },
       "correct_answer": "A",
-      "explanation": "Le concept attendu est surconfiance, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Calibration en semi supervise. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est correcte (surconfiance correspond a un levier avance en apprentissage semi supervise ; il formalise le role de surcon...) car la d\u00e9finition correspond exactement au concept attendu. B est moins pertinente (Le concept audit se reconnait par un levier avance en apprentissage semi supervise ; il formalise le role d...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est moins pertinente (Quand une d\u00e9finition insiste sur un levier avance en apprentissage semi supervise ; il formalise le role de...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est moins pertinente (degradation des pseudo-labels: un levier avance en apprentissage semi supervise ; il exploite des exemples ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Description experte (Calibration en semi supervise) - un levier avance en apprentissage semi supervise ; il formalise le role de temperature scaling dans un pipeline ML, avec ses hypotheses et ses limites pratiques. Quel concept est le plus exact ?",
-      "image_url": null,
-      "choices": {
-        "A": "Quand une d\u00e9finition insiste sur un levier avance en apprentissage semi supervise ; il formalise le role de mitigation dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a mitigation.",
-        "B": "degradation des pseudo-labels: un levier avance en apprentissage semi supervise ; il exploite des exemples non etiquetes en injectant des labels estimes sous controle de confiance.",
-        "C": "drift de confiance correspond a un levier avance en apprentissage semi supervise ; il mesure une d\u00e9rive entre les conditions d'entrainement et les conditions d'exploitation, avec un perimetre centr\u00e9 sur surveillance de d\u00e9rive des donn\u00e9es ou du comportement.",
-        "D": "Le concept temperature scaling se reconnait par un levier avance en apprentissage semi supervise ; il formalise le role de temperature scaling dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "D",
-      "explanation": "Le concept attendu est temperature scaling, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Calibration en semi supervise. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (Quand une d\u00e9finition insiste sur un levier avance en apprentissage semi supervise ; il formalise le role de...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est moins pertinente (degradation des pseudo-labels: un levier avance en apprentissage semi supervise ; il exploite des exemples ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est moins pertinente (drift de confiance correspond a un levier avance en apprentissage semi supervise ; il mesure une d\u00e9rive ent...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est correcte (Le concept temperature scaling se reconnait par un levier avance en apprentissage semi supervise ; il forma...) car la d\u00e9finition correspond exactement au concept attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Calibration en semi supervise', quel concept correspond le mieux a cette description: un levier avance en apprentissage semi supervise ; il formalise le role de selection prudente dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-      "image_url": null,
-      "choices": {
-        "A": "drift de confiance correspond a un levier avance en apprentissage semi supervise ; il mesure une d\u00e9rive entre les conditions d'entrainement et les conditions d'exploitation, avec un perimetre centr\u00e9 sur surveillance de d\u00e9rive des donn\u00e9es ou du comportement.",
-        "B": "Le concept erreurs silencieuses se reconnait par un levier avance en apprentissage semi supervise ; il formalise le role d'erreurs silencieuses dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Quand une d\u00e9finition insiste sur un levier avance en apprentissage semi supervise ; il formalise le role de selection prudente dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a selection prudente.",
-        "D": "degradation des pseudo-labels: un levier avance en apprentissage semi supervise ; il exploite des exemples non etiquetes en injectant des labels estimes sous controle de confiance."
-      },
-      "correct_answer": "C",
-      "explanation": "Le concept attendu est selection prudente, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Calibration en semi supervise. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (drift de confiance correspond a un levier avance en apprentissage semi supervise ; il mesure une d\u00e9rive ent...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est moins pertinente (Le concept erreurs silencieuses se reconnait par un levier avance en apprentissage semi supervise ; il form...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est correcte (Quand une d\u00e9finition insiste sur un levier avance en apprentissage semi supervise ; il formalise le role de...) car la d\u00e9finition correspond exactement au concept attendu. D'est moins pertinente (degradation des pseudo-labels: un levier avance en apprentissage semi supervise ; il exploite des exemples ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "A partir de cette description issue de 'Calibration en semi supervise' (un levier avance en apprentissage semi supervise ; il formalise le role de fiabilit\u00e9 dans un pipeline ML, avec ses hypotheses et ses limites pratiques.), quel concept faut-il retenir ?",
-      "image_url": null,
-      "choices": {
-        "A": "Quand une d\u00e9finition insiste sur un levier avance en apprentissage semi supervise ; il formalise le role d'alerte dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a alerte.",
-        "B": "fiabilit\u00e9: un levier avance en apprentissage semi supervise ; il formalise le role de fiabilit\u00e9 dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "drift de confiance correspond a un levier avance en apprentissage semi supervise ; il mesure une d\u00e9rive entre les conditions d'entrainement et les conditions d'exploitation, avec un perimetre centr\u00e9 sur surveillance de d\u00e9rive des donn\u00e9es ou du comportement.",
-        "D": "Le concept erreurs silencieuses se reconnait par un levier avance en apprentissage semi supervise ; il formalise le role d'erreurs silencieuses dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "B",
-      "explanation": "Le concept attendu est fiabilit\u00e9, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Calibration en semi supervise. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (Quand une d\u00e9finition insiste sur un levier avance en apprentissage semi supervise ; il formalise le role de...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est correcte (fiabilit\u00e9: un levier avance en apprentissage semi supervise ; il formalise le role de fiabilit\u00e9 dans un pip...) car la d\u00e9finition correspond exactement au concept attendu. C'est moins pertinente (drift de confiance correspond a un levier avance en apprentissage semi supervise ; il mesure une d\u00e9rive ent...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est moins pertinente (Le concept erreurs silencieuses se reconnait par un levier avance en apprentissage semi supervise ; il form...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Calibration en semi supervise', quel est le role le plus determinant de surconfiance pour un cas assurance ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Calibration en semi supervise, temperature scaling est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer temperature scaling en production.",
-        "B": "Le role de selection prudente est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection prudente en production.",
-        "C": "fiabilit\u00e9 sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer fiabilit\u00e9 en production pour guider une d\u00e9cision exploitable.",
-        "D": "surconfiance sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surconfiance en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie surconfiance \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Calibration en semi supervise, temperature scaling est mobilise pour supporter des arbitrages de produ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de selection prudente est de supporter des arbitrages de production ; l'utiliser correctement perme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (fiabilit\u00e9 sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider q...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (surconfiance sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux decide...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "L'Expected Calibration Error (ECE) est une mesure qui quantifie l'erreur entre les probabilités prédites et les probabilités réelles. B est incorrect car la matrice de confusion montre les erreurs de classification pas de calibration. C est faux car Precision-Recall Curve est plus approprié pour les datasets déséquilibrés. D est incorrect car la courbe ROC évalue la différenciation mais pas la calibration.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Face a un besoin sante dans 'Calibration en semi supervise', pourquoi temperature scaling est-il prioritaire ?",
+      "question": "Pourquoi un modèle semi-supervisé peut-il avoir une mauvaise calibration initiale?",
       "image_url": null,
       "choices": {
-        "A": "selection prudente sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection prudente en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Calibration en semi supervise, fiabilit\u00e9 est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer fiabilit\u00e9 en production.",
-        "C": "Dans Calibration en semi supervise, temperature scaling est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer temperature scaling en production.",
-        "D": "Le role de surconfiance est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surconfiance en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie temperature scaling \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (selection prudente sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Calibration en semi supervise, fiabilit\u00e9 est mobilise pour supporter des arbitrages de production ; l'...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Calibration en semi supervise, temperature scaling est mobilise pour supporter des arbitrages de produ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de surconfiance est de supporter des arbitrages de production ; l'utiliser correctement permet de m...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "selection prudente: pourquoi ce concept est-il crucial pour une \u00e9quipe marketing dans 'Calibration en semi supervise' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role de fiabilit\u00e9 est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer fiabilit\u00e9 en production.",
-        "B": "Le role de selection prudente est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection prudente en production.",
-        "C": "surconfiance sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surconfiance en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Calibration en semi supervise, temperature scaling est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer temperature scaling en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie selection prudente \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de fiabilit\u00e9 est de supporter des arbitrages de production ; l'utiliser correctement permet de mieu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de selection prudente est de supporter des arbitrages de production ; l'utiliser correctement perme...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (surconfiance sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux decide...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Calibration en semi supervise, temperature scaling est mobilise pour supporter des arbitrages de produ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Calibration en semi supervise', quel est le role le plus determinant de fiabilit\u00e9 pour un cas e-commerce ?",
-      "image_url": null,
-      "choices": {
-        "A": "fiabilit\u00e9 sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer fiabilit\u00e9 en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Calibration en semi supervise, surconfiance est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surconfiance en production.",
-        "C": "Le role de temperature scaling est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer temperature scaling en production.",
-        "D": "selection prudente sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection prudente en production pour guider une d\u00e9cision exploitable."
+        "A": "Les données non étiquetées peuvent induire à des probabilités incorrectes lors de l'inférence.",
+        "B": "Les erreurs d'étiquetage ne sont jamais corrigées pendant l'apprentissage semi-supervisé.",
+        "C": "Le modèle n'est jamais exposé aux variations réelles pendant l'entraînement.",
+        "D": "Toutes les données disponibles sont utilisées de manière égale sans considération de condition."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie fiabilit\u00e9 \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (fiabilit\u00e9 sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider q...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Calibration en semi supervise, surconfiance est mobilise pour supporter des arbitrages de production ;...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de temperature scaling est de supporter des arbitrages de production ; l'utiliser correctement perm...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (selection prudente sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Les données non étiquetées peuvent fausser les estimations si elles sont traitées comme correctes, menant à une mauvaise calibration. B est incorrect car les méthodes semi-supervisées traitent souvent les erreurs. C est faux car l'exposition aux variations dépend du dataset et des méthodes. D est incorrect car l'erreur ne vient pas d'une utilisation égale mais non sélective ou prudente.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Calibration en semi supervise', quelle situation de terrain montre le mieux quand utiliser surconfiance ?",
+      "question": "Quel rôle joue la calibration dans l'utilisation des modèles semi-supervisés pour de la prise de décision critique?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Calibration en semi supervise, fiabilit\u00e9 est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer fiabilit\u00e9 en production.",
-        "B": "En contexte r\u00e9el sur Calibration en semi supervise, surconfiance est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surconfiance en production.",
-        "C": "Pendant une revue pre-deploiement, temperature scaling est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer temperature scaling en production tout en surveillant le risque d'optimiser temperature scaling en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Dans une revue pre-deploiement de Calibration en semi supervise, l'\u00e9quipe applique selection prudente pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection prudente en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car surconfiance y sert de levier de d\u00e9cision principal dans Calibration en semi supervise. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Calibration en semi supervise, fiabilit\u00e9 est choisi afin de supporter des arbitrages d...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Calibration en semi supervise, surconfiance est choisi afin de supporter des arbitrage...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une revue pre-deploiement, temperature scaling est utile pour supporter des arbitrages de productio...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une revue pre-deploiement de Calibration en semi supervise, l'\u00e9quipe applique selection prudente pour ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'Calibration en semi supervise', quel exemple met temperature scaling au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une revue pre-deploiement, temperature scaling est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer temperature scaling en production tout en surveillant le risque d'optimiser temperature scaling en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Dans une revue pre-deploiement de Calibration en semi supervise, l'\u00e9quipe applique surconfiance pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surconfiance en production.",
-        "C": "En contexte r\u00e9el sur Calibration en semi supervise, selection prudente est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection prudente en production.",
-        "D": "Pendant une revue pre-deploiement, fiabilit\u00e9 est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer fiabilit\u00e9 en production tout en surveillant le risque d'optimiser fiabilit\u00e9 en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Elle assure une estimation crédible des risques associée aux pronostics du modèle.",
+        "B": "Elle remplace le besoin d'un expert humain dans le processus de décision.",
+        "C": "Elle garantit une précision de 100% dans toutes les prévisions délivrées.",
+        "D": "Elle permet une interprétation qualitative des résultats plutôt qu'une interprétation quantitative."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car temperature scaling y sert de levier de d\u00e9cision principal dans Calibration en semi supervise. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une revue pre-deploiement, temperature scaling est utile pour supporter des arbitrages de productio...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une revue pre-deploiement de Calibration en semi supervise, l'\u00e9quipe applique surconfiance pour suppor...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Calibration en semi supervise, selection prudente est choisi afin de supporter des arb...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une revue pre-deploiement, fiabilit\u00e9 est utile pour supporter des arbitrages de production ; l'util...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La calibration assure que les probabilités prédites sont alignées avec le risque réel, important pour la prise de décision. B est incorrect car la calibration ne remplace pas l'expertise humaine. C est faux car elle améliore les prédictions sans garantir une précision absolue. D est incorrect car la calibration rend les résultats quantitatifs plus fidèles, n'en change pas la nature.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "selection prudente: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Calibration en semi supervise' ?",
+      "question": "Quel défaut est commun lorsqu'on utilise des méthodes de calibration comme le temperature scaling sans prétraitement approprié?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Calibration en semi supervise, surconfiance est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surconfiance en production.",
-        "B": "Pendant une revue pre-deploiement, temperature scaling est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer temperature scaling en production tout en surveillant le risque d'optimiser temperature scaling en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Dans une revue pre-deploiement de Calibration en semi supervise, l'\u00e9quipe applique fiabilit\u00e9 pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer fiabilit\u00e9 en production.",
-        "D": "Dans une revue pre-deploiement de Calibration en semi supervise, l'\u00e9quipe applique selection prudente pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection prudente en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car selection prudente y sert de levier de d\u00e9cision principal dans Calibration en semi supervise. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Calibration en semi supervise, surconfiance est choisi afin de supporter des arbitrage...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une revue pre-deploiement, temperature scaling est utile pour supporter des arbitrages de productio...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une revue pre-deploiement de Calibration en semi supervise, l'\u00e9quipe applique fiabilit\u00e9 pour supporter...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une revue pre-deploiement de Calibration en semi supervise, l'\u00e9quipe applique selection prudente pour ...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Calibration en semi supervise', quelle erreur autour de surconfiance est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si selection prudente est mal utilise, on observe souvent optimiser selection prudente en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de fiabilit\u00e9 est optimiser fiabilit\u00e9 en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de surconfiance est optimiser surconfiance en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Un risque classique avec temperature scaling est d'optimiser temperature scaling en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de surconfiance. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si selection prudente est mal utilise, on observe souvent optimiser selection prudente en silo et introduir...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour de fiabilit\u00e9 est optimiser fiabilit\u00e9 en silo et introduire des modes d'echec cach...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de surconfiance est optimiser surconfiance en silo et introduire des modes d'eche...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec temperature scaling est d'optimiser temperature scaling en silo et introduire des...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "temperature scaling: quel risque est le plus directement lie a son mauvais usage en production dans 'Calibration en semi supervise' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec fiabilit\u00e9 est d'optimiser fiabilit\u00e9 en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Un risque classique avec temperature scaling est d'optimiser temperature scaling en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Si surconfiance est mal utilise, on observe souvent optimiser surconfiance en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour de selection prudente est optimiser selection prudente en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de temperature scaling. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec fiabilit\u00e9 est d'optimiser fiabilit\u00e9 en silo et introduire des modes d'echec cache...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec temperature scaling est d'optimiser temperature scaling en silo et introduire des...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si surconfiance est mal utilise, on observe souvent optimiser surconfiance en silo et introduire des modes ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de selection prudente est optimiser selection prudente en silo et introduire des ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Calibration en semi supervise', quel est le principal mode d'echec quand selection prudente est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si selection prudente est mal utilise, on observe souvent optimiser selection prudente en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de surconfiance est optimiser surconfiance en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Un risque classique avec temperature scaling est d'optimiser temperature scaling en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Si fiabilit\u00e9 est mal utilise, on observe souvent optimiser fiabilit\u00e9 en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Une sous-calibration où les probabilités prédites sont plus faibles que la réalité.",
+        "B": "Une sur-calibration qui génère des logitos plus concentrés.",
+        "C": "Un biais permanent envers les classements majoritaires des données.",
+        "D": "Un effect d'efficacité où le temps d'inférence est systématiquement inférieur."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de selection prudente. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si selection prudente est mal utilise, on observe souvent optimiser selection prudente en silo et introduir...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de surconfiance est optimiser surconfiance en silo et introduire des modes d'eche...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec temperature scaling est d'optimiser temperature scaling en silo et introduire des...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si fiabilit\u00e9 est mal utilise, on observe souvent optimiser fiabilit\u00e9 en silo et introduire des modes d'eche...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Sans un prétraitement adapté, le temperature scaling peut entraîner une sous-calibration, où les prédictions sont distribuées trop timidement. B est incorrect; le sur-calibration n'est pas typique du temperature scaling. C est faux; bien calibrer ne créer pas un biais automatique. D est incorrect car le temperature scaling n'affecte pas la vitesse d'inférence.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Calibration en semi supervise', quelle erreur autour de fiabilit\u00e9 est la plus critique ?",
+      "question": "Comment la selection prudente peut-elle deteriorer l'apprentissage si elle est mal appliquée?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec surconfiance est d'optimiser surconfiance en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Si temperature scaling est mal utilise, on observe souvent optimiser temperature scaling en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de selection prudente est optimiser selection prudente en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour de fiabilit\u00e9 est optimiser fiabilit\u00e9 en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de fiabilit\u00e9. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec surconfiance est d'optimiser surconfiance en silo et introduire des modes d'echec...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si temperature scaling est mal utilise, on observe souvent optimiser temperature scaling en silo et introdu...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour de selection prudente est optimiser selection prudente en silo et introduire des ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour de fiabilit\u00e9 est optimiser fiabilit\u00e9 en silo et introduire des modes d'echec cach...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Calibration en semi supervise' et en contexte assurance, quelle interpretation du schema appuie le mieux l'analyse de surconfiance ?",
-      "image_url": "apprentissage-semi-supervise_calibration_en_semi_supervise_surconfiance_1.png",
-      "choices": {
-        "A": "Lecture du visuel: selection prudente est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection prudente en production dans Calibration en semi supervise.",
-        "B": "Le signal visible est coh\u00e9rent avec fiabilit\u00e9, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer fiabilit\u00e9 en production.",
-        "C": "Le signal visible est coh\u00e9rent avec surconfiance, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surconfiance en production.",
-        "D": "Le schema illustre une d\u00e9cision basee sur temperature scaling: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer temperature scaling en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Les indices visuels vont dans le sens de surconfiance: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Lecture du visuel: selection prudente est mobilise pour supporter des arbitrages de production ; l'utiliser...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Le signal visible est coh\u00e9rent avec fiabilit\u00e9, car l'objectif est supporter des arbitrages de production ; ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est correcte (Le signal visible est coh\u00e9rent avec surconfiance, car l'objectif est supporter des arbitrages de production...) car la lecture visuelle colle au signal principal observe. D'est moins pertinente (Le schema illustre une d\u00e9cision basee sur temperature scaling: les indices orientent vers supporter des arb...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "temperature scaling: dans un cas sante, quelle interpretation correspond le mieux au schema ML de 'Calibration en semi supervise' ?",
-      "image_url": "apprentissage-semi-supervise_calibration_en_semi_supervise_temperature_scaling_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur fiabilit\u00e9: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer fiabilit\u00e9 en production.",
-        "B": "Le schema illustre une d\u00e9cision basee sur temperature scaling: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer temperature scaling en production.",
-        "C": "Lecture du visuel: surconfiance est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surconfiance en production dans Calibration en semi supervise.",
-        "D": "Le signal visible est coh\u00e9rent avec selection prudente, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection prudente en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de temperature scaling: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur fiabilit\u00e9: les indices orientent vers supporter des arbitrages de...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur temperature scaling: les indices orientent vers supporter des arb...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: surconfiance est mobilise pour supporter des arbitrages de production ; l'utiliser corre...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec selection prudente, car l'objectif est supporter des arbitrages de prod...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Observation visuelle (Calibration en semi supervise) - pour un contexte marketing, quelle lecture du schema est la plus pertinente pour selection prudente ?",
-      "image_url": "apprentissage-semi-supervise_calibration_en_semi_supervise_selection_prudente_1.png",
-      "choices": {
-        "A": "Lecture du visuel: selection prudente est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection prudente en production dans Calibration en semi supervise.",
-        "B": "Le signal visible est coh\u00e9rent avec surconfiance, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surconfiance en production.",
-        "C": "Le schema illustre une d\u00e9cision basee sur temperature scaling: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer temperature scaling en production.",
-        "D": "Lecture du visuel: fiabilit\u00e9 est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer fiabilit\u00e9 en production dans Calibration en semi supervise."
+        "A": "En renforçant les biais préexistants par une sureprésentation des données dominantes.",
+        "B": "En limitant les itérations d'entraînement, entraînant une convergence accélérée.",
+        "C": "En forçant la modélisation dans des classes minoritaires.",
+        "D": "En ignorant systématiquement les données avec des incertitudes significatives."
       },
       "correct_answer": "A",
-      "explanation": "Les indices visuels vont dans le sens de selection prudente: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est correcte (Lecture du visuel: selection prudente est mobilise pour supporter des arbitrages de production ; l'utiliser...) car la lecture visuelle colle au signal principal observe. B est moins pertinente (Le signal visible est coh\u00e9rent avec surconfiance, car l'objectif est supporter des arbitrages de production...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le schema illustre une d\u00e9cision basee sur temperature scaling: les indices orientent vers supporter des arb...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Lecture du visuel: fiabilit\u00e9 est mobilise pour supporter des arbitrages de production ; l'utiliser correcte...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Une application incorrecte de la sélection prudente peut favoriser des biais existants si les données dominantes deviennent surreprésentées dans l'échantillonnage. B est incorrect car réduire les itérations n'est pas synonyme direct de mauvaise sélection prudente. C est faux; tourner la modélisation vers des classes minoritaires ne détériore pas l'apprentissage intrinsèquement. D ne précise pas que l’accent doit être mis sur une gestion des incertitudes, pas simplement leur élimination.",
       "difficulty": "hard"
     },
     {
-      "type": "image",
-      "question": "Dans 'Calibration en semi supervise' et en contexte e-commerce, quelle interpretation du schema appuie le mieux l'analyse de fiabilit\u00e9 ?",
-      "image_url": "apprentissage-semi-supervise_calibration_en_semi_supervise_fiabilite_1.png",
+      "type": "text",
+      "question": "Un modèle semi-supervisé présente des prédictions systématiquement plus confiantes que la réalité. Quelle action pourrait corriger cela?",
+      "image_url": null,
       "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur surconfiance: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surconfiance en production.",
-        "B": "Lecture du visuel: temperature scaling est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer temperature scaling en production dans Calibration en semi supervise.",
-        "C": "Le signal visible est coh\u00e9rent avec selection prudente, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection prudente en production.",
-        "D": "Le signal visible est coh\u00e9rent avec fiabilit\u00e9, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer fiabilit\u00e9 en production."
+        "A": "Appliquer le temperature scaling pour recalibrer les probabilités de sortie du modèle.",
+        "B": "Régler les hyperparamètres pour augmenter le nombre d'epochs.",
+        "C": "Réduire la taille du batch pour ralentir l'apprentissage.",
+        "D": "Supprimer les classes du dataset qui sont surreprésentées."
       },
-      "correct_answer": "D",
-      "explanation": "Les indices visuels vont dans le sens de fiabilit\u00e9: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur surconfiance: les indices orientent vers supporter des arbitrages...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Lecture du visuel: temperature scaling est mobilise pour supporter des arbitrages de production ; l'utilise...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le signal visible est coh\u00e9rent avec selection prudente, car l'objectif est supporter des arbitrages de prod...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est correcte (Le signal visible est coh\u00e9rent avec fiabilit\u00e9, car l'objectif est supporter des arbitrages de production ; ...) car la lecture visuelle colle au signal principal observe. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Le temperature scaling est conçu pour ajuster les probabilités et rendre le modèle plus fiable en alignant les confiances prédictives avec la réalité. B est incorrect car simplement augmenter les epochs ne corrige pas la calibration. C est faux; la taille du batch touche l'efficacité mais pas directement la confiance de prédiction. D est incorrect; éliminer des classes surreprésentées n'adresse pas directement la calibration des confiances.",
       "difficulty": "hard"
     },
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec surconfiance dans 'Calibration en semi supervise' ?",
-      "image_url": "apprentissage-semi-supervise_calibration_en_semi_supervise_surconfiance_2.png",
+      "type": "text",
+      "question": "Quel rôle joue la calibration reliable dans l'évaluation de la performance d'un modèle semi-supervisé en production?",
+      "image_url": null,
       "choices": {
-        "A": "Dans Calibration en semi supervise, fiabilit\u00e9 est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer fiabilit\u00e9 en production.",
-        "B": "Dans Calibration en semi supervise, surconfiance est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer surconfiance en production.",
-        "C": "Le role de temperature scaling est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer temperature scaling en production.",
-        "D": "selection prudente sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection prudente en production pour guider une d\u00e9cision exploitable."
+        "A": "Elle ajuste les probabilités de prédiction pour bien refléter la performance attendue.",
+        "B": "Elle élimine tous les biais rencontrés lors de l'entraînement et du test.",
+        "C": "Elle conduit des inférences beaucoup plus rapides en production.",
+        "D": "Elle intègre directement de nouveaux types de données au modèle sans nécessiter de réentraînement."
       },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de surconfiance dans Calibration en semi supervise. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Calibration en semi supervise, fiabilit\u00e9 est mobilise pour supporter des arbitrages de production ; l'...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Calibration en semi supervise, surconfiance est mobilise pour supporter des arbitrages de production ;...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de temperature scaling est de supporter des arbitrages de production ; l'utiliser correctement perm...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (selection prudente sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Une calibration fiable assure que les probabilités émises par le modèle reflètent effectivement sa performance, apportant de la crédibilité en production. B est incorrect car la calibration n'efface pas les biais formés. C est faux; la vitesse d'inférence n'est pas une fonction directe de la calibration. D est incorrect; les nouveaux types de données demandent bien souvent des ajustements au modèle.",
       "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce qu'une calibration appropriée d'un modèle vise à corriger dans un cadre semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Les différences entre les scores de probabilité prévus et obtenus.",
+        "B": "La durée d'entraînement nécessaire pour un apprentissage optimal.",
+        "C": "Le nombre total de classes pouvant être prédites.",
+        "D": "La disponibilité permanente de données d'entraînement étiquetées de haute qualité."
+      },
+      "correct_answer": "A",
+      "explanation": "Une calibration appropriée cherche à aligner les probabilités prédites par un modèle avec les résultats réels observés, réduisant ainsi l'écart entre eux. B est incorrect car la calibration ne touche pas le temps de l'entraînement. C est faux car cela ne restreint pas automatiquement le nombre de classes prédites. D n'est pas pertinent car la calibration ne concerne pas la disponibilité des données.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une technique courante pour réduire la surconfiance d'un modèle en apprentissage semi-supervisé ?",
+      "image_url": null,
+      "choices": {
+        "A": "Temperature scaling",
+        "B": "Augmenter la taille du modèle",
+        "C": "Utiliser des labels pseudo-aléatoires",
+        "D": "Régularisation du gradient"
+      },
+      "correct_answer": "A",
+      "explanation": "Le temperature scaling est une méthode de calibration qui ajuste la confiance des prédictions d'un modèle en appliquant une température à la distribution softmax. Cela réduit la surconfiance du modèle en rendant les prédictions moins extrêmes. Augmenter la taille du modèle peut augmenter la capacité mais pas forcément réduire la surconfiance sans calibration. Les labels pseudo-aléatoires ne corrigent pas la surconfiance, ils peuvent au contraire l'exacerber si mal sélectionnés. La régularisation du gradient est utilisée pour éviter le surajustement, pas spécifiquement pour corriger la surconfiance.",
+      "difficulty": "medium"
     }
   ]
 }

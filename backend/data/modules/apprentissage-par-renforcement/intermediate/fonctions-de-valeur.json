@@ -5,198 +5,198 @@
   "questions": [
     {
       "type": "text",
-      "question": "estimation: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Fonctions de valeur' ?",
+      "question": "Quel est le rôle principal d'une fonction de valeur dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Fonctions de valeur, value function est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer value function en production.",
-        "B": "Pendant une phase d'experimentation, Q-value est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Q-value en production tout en surveillant le risque de sur-optimiser Q-value localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Dans une phase d'experimentation de Fonctions de valeur, l'\u00e9quipe applique greedy action pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer greedy action en production.",
-        "D": "Dans une phase d'experimentation de Fonctions de valeur, l'\u00e9quipe applique estimation pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer estimation en production."
+        "A": "Évaluer l'espérance de récompenses futures à partir d'un état donné.",
+        "B": "Calculer la probabilité de transition entre deux états.",
+        "C": "Optimiser directement la politique en évitant toute exploration.",
+        "D": "Déterminer de manière exacte la suite des actions à réaliser."
       },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car estimation y sert de levier de d\u00e9cision principal dans Fonctions de valeur. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Fonctions de valeur, value function est choisi afin de fiabiliser les d\u00e9cisions d'expe...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une phase d'experimentation, Q-value est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une phase d'experimentation de Fonctions de valeur, l'\u00e9quipe applique greedy action pour fiabiliser le...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une phase d'experimentation de Fonctions de valeur, l'\u00e9quipe applique estimation pour fiabiliser les d...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Une fonction de valeur estime l'espérance des récompenses futures à partir d'un état, ce qui aide à déterminer les politiques optimales. (B) est incorrect car cela relève de la dynamique environnementale. (C) est faux, car optimiser direct sans exploration néglige la découverte de meilleures politiques. (D) est inexact, car elle ne prescrit pas exactement les actions mais guide leur choix.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Fonctions de valeur' (cybersecurite), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment Q-value ?",
+      "question": "Dans une Q-value, que représente la lettre 'Q'?",
       "image_url": null,
       "choices": {
-        "A": "Dans Fonctions de valeur, value function se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de value function dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "estimation designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'estimation dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "greedy action correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de greedy action dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Fonctions de valeur.",
-        "D": "Q-value correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de Q-value dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Fonctions de valeur."
+        "A": "Quality",
+        "B": "Query",
+        "C": "Quantity",
+        "D": "Quantum"
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de Q-value dans Fonctions de valeur, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que value function, estimation, greedy action restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Fonctions de valeur, value function se comprend comme un concept interm\u00e9diaire en apprentissage par re...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (estimation designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'est...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (greedy action correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le rol...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (Q-value correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de Q...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La Q-value, ou Quality value, évalue la qualité de l'action dans un état particulier, c'est-à-dire l'espérance de la récompense future. 'Query' (B) n'a pas de lien direct avec ce concept, 'Quantity' (C) est une notion de nombre, et 'Quantum' (D) appartient au domaine de la physique quantique.",
       "difficulty": "easy"
     },
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec greedy action dans 'Fonctions de valeur' ?",
-      "image_url": "apprentissage-par-renforcement_fonctions_de_valeur_greedy_action_2.png",
+      "type": "text",
+      "question": "Quel est le type de politique adopté par une stratégie d'action 'greedy'?",
+      "image_url": null,
       "choices": {
-        "A": "Q-value sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Q-value en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Fonctions de valeur, estimation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer estimation en production.",
-        "C": "Dans Fonctions de valeur, greedy action est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer greedy action en production.",
-        "D": "Le role de value function est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer value function en production."
+        "A": "Elle choisit toujours l'action avec la valeur la plus élevée connue.",
+        "B": "Elle explore systématiquement toutes les actions possibles.",
+        "C": "Elle alterne aléatoirement entre les actions disponibles.",
+        "D": "Elle choisit les actions de manière temporellement corrélée."
       },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de greedy action dans Fonctions de valeur. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Q-value sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Fonctions de valeur, estimation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utili...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Fonctions de valeur, greedy action est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'ut...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de value function est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perme...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Une stratégie 'greedy' sélectionne systématiquement l'action avec la Q-value la plus élevée, par rapport aux valeurs estimées. (B) décrit une politique explorative, (C) n'est pas structuré en vue de l'optimisation, et (D) n'exprime aucune rationalité spécifique.",
       "difficulty": "easy"
     },
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec value function dans 'Fonctions de valeur' ?",
-      "image_url": "apprentissage-par-renforcement_fonctions_de_valeur_value_function_2.png",
-      "choices": {
-        "A": "Dans Fonctions de valeur, greedy action est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer greedy action en production.",
-        "B": "Dans Fonctions de valeur, value function est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer value function en production.",
-        "C": "Le role de Q-value est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Q-value en production.",
-        "D": "estimation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer estimation en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de value function dans Fonctions de valeur. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Fonctions de valeur, greedy action est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'ut...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Fonctions de valeur, value function est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'u...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de Q-value est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (estimation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux deci...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Fonctions de valeur', quel commentaire du schema traduit le mieux le role d'estimation ?",
-      "image_url": "apprentissage-par-renforcement_fonctions_de_valeur_estimation_2.png",
-      "choices": {
-        "A": "Dans Fonctions de valeur, value function est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer value function en production.",
-        "B": "Le role de Q-value est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Q-value en production.",
-        "C": "greedy action sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer greedy action en production pour guider une d\u00e9cision exploitable.",
-        "D": "estimation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer estimation en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'estimation dans Fonctions de valeur. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Fonctions de valeur, value function est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'u...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de Q-value est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (greedy action sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (estimation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux deci...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
       "type": "text",
-      "question": "Face a un besoin cybersecurite dans 'Fonctions de valeur', pourquoi Q-value est-il prioritaire ?",
+      "question": "Quel problème peut survenir en utilisant exclusivement une politique greedy?",
       "image_url": null,
       "choices": {
-        "A": "estimation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer estimation en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Fonctions de valeur, greedy action est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer greedy action en production.",
-        "C": "Dans Fonctions de valeur, Q-value est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Q-value en production.",
-        "D": "Le role de value function est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer value function en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie Q-value \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (estimation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux deci...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Fonctions de valeur, greedy action est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'ut...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Fonctions de valeur, Q-value est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de value function est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "estimation: pourquoi ce concept est-il crucial pour une \u00e9quipe banque dans 'Fonctions de valeur' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role de greedy action est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer greedy action en production.",
-        "B": "Le role d'estimation est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer estimation en production.",
-        "C": "value function sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer value function en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Fonctions de valeur, Q-value est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Q-value en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie estimation \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de greedy action est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role d'estimation est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (value function sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Fonctions de valeur, Q-value est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Fonctions de valeur', quel est le principal mode d'echec quand estimation est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si estimation est mal utilise, on observe souvent sur-optimiser estimation localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de value function est sur-optimiser value function localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Un risque classique avec Q-value est de sur-optimiser Q-value localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Si greedy action est mal utilise, on observe souvent sur-optimiser greedy action localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Ignorer les actions optimales non explorées.",
+        "B": "Trop explorer des actions sous-optimales.",
+        "C": "Ne pas disposer de valeurs initialisées.",
+        "D": "Rendre l'algorithme de mise à jour inutile."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'estimation. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si estimation est mal utilise, on observe souvent sur-optimiser estimation localement en ignorant ses inter...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de value function est sur-optimiser value function localement en ignorant ses int...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec Q-value est de sur-optimiser Q-value localement en ignorant ses interactions avec ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si greedy action est mal utilise, on observe souvent sur-optimiser greedy action localement en ignorant ses...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La politique greedy peut ignorer des actions optimales si elles ne sont pas suffisamment explorées initialement. (B) correspond à une problématique d'exploration excessive, (C) concerne l'initialisation plutôt que la sélection, et (D) est incorrect car la mise à jour demeure essentielle.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour un cas operationnel de 'Fonctions de valeur', quel exemple met Q-value au c\u0153ur de la d\u00e9cision ?",
+      "question": "Quelle est la principale limitation d'une politique purement greedy au début d'un apprentissage?",
       "image_url": null,
       "choices": {
-        "A": "Pendant une phase d'experimentation, Q-value est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Q-value en production tout en surveillant le risque de sur-optimiser Q-value localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Dans une phase d'experimentation de Fonctions de valeur, l'\u00e9quipe applique value function pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer value function en production.",
-        "C": "En contexte r\u00e9el sur Fonctions de valeur, estimation est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer estimation en production.",
-        "D": "Pendant une phase d'experimentation, greedy action est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer greedy action en production tout en surveillant le risque de sur-optimiser greedy action localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Le manque d'exploration pour découvrir des actions optimales.",
+        "B": "Un trop grand biais vers l'exploration aléatoire.",
+        "C": "L'incapacité à ajuster la politique en temps réel.",
+        "D": "Une dépendance excessive à la modélisation de l'environnement."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car Q-value y sert de levier de d\u00e9cision principal dans Fonctions de valeur. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une phase d'experimentation, Q-value est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une phase d'experimentation de Fonctions de valeur, l'\u00e9quipe applique value function pour fiabiliser l...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Fonctions de valeur, estimation est choisi afin de fiabiliser les d\u00e9cisions d'experime...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une phase d'experimentation, greedy action est utile pour fiabiliser les d\u00e9cisions d'experimentatio...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Une politique purement greedy peut ne pas explorer suffisamment, ratant des actions potentiellement meilleures. (B) serait plutôt une caractéristique d'une politique epsilon-greedy. (C) est plus aligné avec des algorithmes plus lents, et (D) n'est pas inhérent à une politique greedy.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une \u00e9quipe banque dans 'Fonctions de valeur', quelle d\u00e9finition d'estimation est la plus juste ?",
+      "question": "Comment estimer les Q-values dans un processus d'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "greedy action correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de greedy action dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Fonctions de valeur.",
-        "B": "Dans Fonctions de valeur, equation de Bellman se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'equation de Bellman dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Fonctions de valeur, estimation se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'estimation dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "Q-value designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de Q-value dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'estimation dans Fonctions de valeur, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que Q-value, greedy action, equation de Bellman restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (greedy action correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le rol...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Fonctions de valeur, equation de Bellman se comprend comme un concept interm\u00e9diaire en apprentissage p...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Fonctions de valeur, estimation se comprend comme un concept interm\u00e9diaire en apprentissage par renfor...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (Q-value designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de Q-valu...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Fonctions de valeur', quelle situation de terrain montre le mieux quand utiliser greedy action ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une phase d'experimentation de Fonctions de valeur, l'\u00e9quipe applique Q-value pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Q-value en production.",
-        "B": "En contexte r\u00e9el sur Fonctions de valeur, estimation est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer estimation en production.",
-        "C": "En contexte r\u00e9el sur Fonctions de valeur, greedy action est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer greedy action en production.",
-        "D": "Pendant une phase d'experimentation, value function est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer value function en production tout en surveillant le risque de sur-optimiser value function localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car greedy action y sert de levier de d\u00e9cision principal dans Fonctions de valeur. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une phase d'experimentation de Fonctions de valeur, l'\u00e9quipe applique Q-value pour fiabiliser les deci...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Fonctions de valeur, estimation est choisi afin de fiabiliser les d\u00e9cisions d'experime...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Fonctions de valeur, greedy action est choisi afin de fiabiliser les d\u00e9cisions d'exper...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une phase d'experimentation, value function est utile pour fiabiliser les d\u00e9cisions d'experimentati...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Fonctions de valeur', quelle situation de terrain montre le mieux quand utiliser value function ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Fonctions de valeur, greedy action est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer greedy action en production.",
-        "B": "En contexte r\u00e9el sur Fonctions de valeur, value function est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer value function en production.",
-        "C": "Pendant une phase d'experimentation, Q-value est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Q-value en production tout en surveillant le risque de sur-optimiser Q-value localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation de Fonctions de valeur, l'\u00e9quipe applique estimation pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer estimation en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car value function y sert de levier de d\u00e9cision principal dans Fonctions de valeur. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Fonctions de valeur, greedy action est choisi afin de fiabiliser les d\u00e9cisions d'exper...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Fonctions de valeur, value function est choisi afin de fiabiliser les d\u00e9cisions d'expe...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, Q-value est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation de Fonctions de valeur, l'\u00e9quipe applique estimation pour fiabiliser les d...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Fonctions de valeur', quel est le role le plus determinant de greedy action pour un cas assurance ?",
-      "image_url": null,
-      "choices": {
-        "A": "greedy action sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer greedy action en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Fonctions de valeur, value function est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer value function en production.",
-        "C": "Le role de Q-value est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Q-value en production.",
-        "D": "estimation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer estimation en production pour guider une d\u00e9cision exploitable."
+        "A": "Par la méthode de Mise à Jour Temporelle (TD).",
+        "B": "En comptant simplement le nombre de fois qu'une action a été choisie.",
+        "C": "En calculant la valeur totale des récompenses futures uniques.",
+        "D": "En ajustant chaque action selon le feedback constant de l'environnement seulement à la fin."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie greedy action \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (greedy action sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Fonctions de valeur, value function est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'u...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de Q-value est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (estimation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux deci...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La méthode de Mise à Jour Temporelle (TD) permet d'estimer les Q-values en utilisant les récompenses immédiates et la valeur estimée future. (B) ne fournit pas d'estimation de valeur, (C) suggère une méthode non-historique, et (D) néglige les mises à jour continues requises pendant l'apprentissage.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'impact d'un paramètre 'epsilon' dans une politique epsilon-greedy?",
+      "image_url": null,
+      "choices": {
+        "A": "Permettre un équilibre entre exploration et exploitation.",
+        "B": "Garantir uniquement l'exploitation totale des actions.",
+        "C": "Détourner complètement l'agent vers des actions aléatoires.",
+        "D": "Assurer une exploration exhaustive des actions en séquence."
+      },
+      "correct_answer": "A",
+      "explanation": "Le paramètre 'epsilon' dans une politique epsilon-greedy aide à équilibrer exploration (actions aléatoires) et exploitation (actions optimales actuelles). (B) et (C) manquent de ce double objectif, et (D) est faux car ce n'est pas séquentiel mais stochastique.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment la fonction de valeur d'action est-elle généralement mise à jour dans l'algorithme Q-learning?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle utilise la récompense obtenue et la différence temporelle.",
+        "B": "Elle est remplacée par la moyenne mobile des récompenses.",
+        "C": "Elle est ajustée uniquement en cas de succès critère.",
+        "D": "Elle reste statique pendant l'évolution de l'environnement."
+      },
+      "correct_answer": "A",
+      "explanation": "Dans Q-learning, la Q-value est mise à jour à l'aide de la récompense actuelle et de la différence entre la valeur estimée actuelle et la meilleure Q-value future (différence temporelle). (B) n'utilise pas les futures estimations, (C) néglige l'apprentissage continuel, et (D) est incorrect car elle doit changer pour refléter les nouvelles informations.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quels sont les deux composants critiques qui définissent une estimation de valeur TD (Temporal Difference)?",
+      "image_url": null,
+      "choices": {
+        "A": "Différence de valeur et écart de politique.",
+        "B": "Variation de gradient et récompense instantanée.",
+        "C": "Récompense immédiate et valeur escomptée de l'état suivant.",
+        "D": "Erreur quadratique moyenne et dérivé temporel."
+      },
+      "correct_answer": "C",
+      "explanation": "Une estimation de valeur TD utilise la récompense immédiate et la valeur escomptée du prochain état pour calculer son approche itérative. (A) et (D) ne renvoient pas aux outils critiques de TD, et (B) mentionne des termes extérieurs au concept TD.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le principe fondamental derrière l'estimation de valeur Monte Carlo dans l'apprentissage par renforcement?",
+      "image_url": null,
+      "choices": {
+        "A": "Utiliser la moyenne des récompenses futures observées à partir de parties complètes.",
+        "B": "Évaluer les différences instantanées durant l'apprentissage.",
+        "C": "Extraire directement la dynamique de l'environnement sans exploration.",
+        "D": "Calculer des valeurs indépendamment des observations."
+      },
+      "correct_answer": "A",
+      "explanation": "L'estimation de valeur Monte Carlo s'appuie sur la moyenne des récompenses reçues à partir de jeux complets pour établir des estimations. (B) est typique de TD learning. (C) supprime la phase d'exploration importante et (D) ignore les données essentielles pour Monte Carlo.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Fonctions de valeur', quel est le role le plus determinant de value function pour un cas industrie ?",
+      "question": "Pourquoi une approche greedy pure est-elle souvent sous-optimale dans les environnements dynamiques?",
       "image_url": null,
       "choices": {
-        "A": "Dans Fonctions de valeur, Q-value est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer Q-value en production.",
-        "B": "Le role d'estimation est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer estimation en production.",
-        "C": "greedy action sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer greedy action en production pour guider une d\u00e9cision exploitable.",
-        "D": "value function sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer value function en production pour guider une d\u00e9cision exploitable."
+        "A": "Elle manque d'exploration pour identifier les changements dans les valeurs d'action.",
+        "B": "Elle nécessite des connaissances préalables de tous les scénarios possibles.",
+        "C": "Elle induit une complexité algorithmique excessive dans les calculs.",
+        "D": "Elle empêche l'utilisation de techniques supervisées pour le feedback."
       },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie value function \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Fonctions de valeur, Q-value est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role d'estimation est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (greedy action sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (value function sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Une approche greedy pure ne tient pas compte des possibles changements de valeurs d'action dus à l'évolution de l'environnement, inhibant l'exploration nécessaire. (B) est faux, c'est l'exploration qui découvre de nouvelles informations. (C) n'est pas nécessairement vrai, et (D) n'est pas pertinent dans le contexte de politiques 'greedy'.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans le contexte d'une fonction de valeur, quelle notion est cruciale pour converger vers des solutions optimales?",
+      "image_url": null,
+      "choices": {
+        "A": "La mise à jour itérative selon la différence temporelle.",
+        "B": "L'analyse directe des matrices de transition.",
+        "C": "Un calcul initial précis des valeurs finales.",
+        "D": "Une optimisation déterministe basée sur le modèle."
+      },
+      "correct_answer": "A",
+      "explanation": "La mise à jour itérative utilisant une différence temporelle permet une convergence potentiellement optimale de la fonction de valeur. (B) représente davantage l'analyse de modèle statique. (C) pourrait être implémenté dans des environnements simulés mais n'est pas pratique sans estimation. (D) échoue sans prendre en compte la stochastique essentielle de la dynamique.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'effet de l'utilisation d'une politique epsilon-greedy avec un epsilon proche de 1?",
+      "image_url": null,
+      "choices": {
+        "A": "L'agent explore souvent les actions, négligeant les actions greedy.",
+        "B": "L'agent suit strictement une seule ligne d'action prédéfinie.",
+        "C": "L'agent utilise une politique déterministe sans exploration.",
+        "D": "L'agent évite complètement les récompenses négatives."
+      },
+      "correct_answer": "A",
+      "explanation": "Un epsilon proche de 1 favorise l'exploration aléatoire, souvent au détriment des actions greedys, nécessaires ultérieurement pour l'exploitation. (B) et (C) contredisent l'effet d'un epsilon élevé en favorisant l'exploration. (D) n'est pas correct, car l'exploration peut conduire à des récompenses négatives.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle difficulté inhérente à l'estimation de la fonction de valeur est accentuée dans les environnements avec de grandes espaces d'état?",
+      "image_url": null,
+      "choices": {
+        "A": "La généralisation des valeurs d'état inconnus non explorés.",
+        "B": "L'acquisition immédiate de la valeur absolue des récompenses.",
+        "C": "La formulation précise des règles dynamiques sur l'instant.",
+        "D": "La transition entre politiques alternées sans conditions fixes."
+      },
+      "correct_answer": "A",
+      "explanation": "Dans de vastes espaces d'état, il est difficile de généraliser les valeurs pour des états peu ou non explorés, rendant l'apprentissage moins efficace. (B) manque l'idée de temporalité et de convergence. (C) se réfère à l'aspect modèle et non directement aux fonctions de valeur. (D) est hors sujet, ne touchant pas à l'estimation directe.",
       "difficulty": "hard"
     }
   ]

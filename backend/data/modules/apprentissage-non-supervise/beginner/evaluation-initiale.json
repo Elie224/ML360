@@ -5,213 +5,213 @@
   "questions": [
     {
       "type": "text",
-      "question": "separation: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans '\u00c9valuation initiale' ?",
+      "question": "Qu'est-ce que le Silhouette Score en apprentissage non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur \u00c9valuation initiale, silhouette score est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer silhouette score en production.",
-        "B": "Pendant un atelier de cadrage, cohesion est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cohesion en production tout en surveillant le risque d'appliquer cohesion par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique stabilit\u00e9 pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production.",
-        "D": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique separation pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer separation en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car separation y sert de levier de d\u00e9cision principal dans \u00c9valuation initiale. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur \u00c9valuation initiale, silhouette score est choisi afin d'installer un raisonnement fia...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant un atelier de cadrage, cohesion est utile pour installer un raisonnement fiable des le d\u00e9but ; l'ut...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique stabilit\u00e9 pour installer un raisonneme...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique separation pour installer un raisonnem...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec stabilit\u00e9 dans '\u00c9valuation initiale' ?",
-      "image_url": "apprentissage-non-supervise_evaluation_initiale_stabilite_2.png",
-      "choices": {
-        "A": "cohesion sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cohesion en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans \u00c9valuation initiale, separation est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer separation en production.",
-        "C": "Dans \u00c9valuation initiale, stabilit\u00e9 est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production.",
-        "D": "Le role de silhouette score est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer silhouette score en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de stabilit\u00e9 dans \u00c9valuation initiale. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (cohesion sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux dec...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans \u00c9valuation initiale, separation est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'ut...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans \u00c9valuation initiale, stabilit\u00e9 est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'uti...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de silhouette score est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans '\u00c9valuation initiale' (cybersecurite), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment cohesion ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans \u00c9valuation initiale, projection se comprend comme une notion de base en apprentissage non supervise ; il formalise le role de projection dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "variance expliquee designe une notion de base en apprentissage non supervise ; il formalise le role de variance expliquee dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "PCA correspond a une notion de base en apprentissage non supervise ; il projette les variables sur un sous-espace plus compact qui conserve l'essentiel de la variance utile, ce qui structure l'analyse dans \u00c9valuation initiale.",
-        "D": "cohesion correspond a une notion de base en apprentissage non supervise ; il formalise le role de cohesion dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans \u00c9valuation initiale."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de cohesion dans \u00c9valuation initiale, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que projection, variance expliquee, PCA restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans \u00c9valuation initiale, projection se comprend comme une notion de base en apprentissage non supervise ; ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (variance expliquee designe une notion de base en apprentissage non supervise ; il formalise le role de vari...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (PCA correspond a une notion de base en apprentissage non supervise ; il projette les variables sur un sous-...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (cohesion correspond a une notion de base en apprentissage non supervise ; il formalise le role de cohesion ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Dans '\u00c9valuation initiale', quel commentaire du schema traduit le mieux le role de separation ?",
-      "image_url": "apprentissage-non-supervise_evaluation_initiale_separation_2.png",
-      "choices": {
-        "A": "Dans \u00c9valuation initiale, silhouette score est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer silhouette score en production.",
-        "B": "Le role de cohesion est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cohesion en production.",
-        "C": "stabilit\u00e9 sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production pour guider une d\u00e9cision exploitable.",
-        "D": "separation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer separation en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de separation dans \u00c9valuation initiale. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans \u00c9valuation initiale, silhouette score est mobilise pour installer un raisonnement fiable des le d\u00e9but ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de cohesion est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (stabilit\u00e9 sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux de...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (separation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec silhouette score dans '\u00c9valuation initiale' ?",
-      "image_url": "apprentissage-non-supervise_evaluation_initiale_silhouette_score_2.png",
-      "choices": {
-        "A": "Dans \u00c9valuation initiale, stabilit\u00e9 est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production.",
-        "B": "Dans \u00c9valuation initiale, silhouette score est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer silhouette score en production.",
-        "C": "Le role de cohesion est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cohesion en production.",
-        "D": "separation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer separation en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de silhouette score dans \u00c9valuation initiale. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans \u00c9valuation initiale, stabilit\u00e9 est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'uti...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans \u00c9valuation initiale, silhouette score est mobilise pour installer un raisonnement fiable des le d\u00e9but ...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de cohesion est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (separation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "separation: pourquoi ce concept est-il crucial pour une \u00e9quipe banque dans '\u00c9valuation initiale' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role de stabilit\u00e9 est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production.",
-        "B": "Le role de separation est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer separation en production.",
-        "C": "silhouette score sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer silhouette score en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans \u00c9valuation initiale, cohesion est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cohesion en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie separation \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de stabilit\u00e9 est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de separation est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (silhouette score sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de m...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans \u00c9valuation initiale, cohesion est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'util...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quel est le principal mode d'echec quand separation est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si separation est mal utilise, on observe souvent appliquer separation par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Le piege principal autour de silhouette score est appliquer silhouette score par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Un risque classique avec cohesion est d'appliquer cohesion par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Si stabilit\u00e9 est mal utilise, on observe souvent appliquer stabilit\u00e9 par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "Une mesure de la qualité de clustering basée sur la distance moyenne entre points et les centres de leurs clusters.",
+        "B": "Un indicateur du nombre optimal de clusters dans un ensemble de données.",
+        "C": "Une méthode de réduction dimensionnelle pour visualiser des données.",
+        "D": "Un score utilisé pour évaluer la séparation d'un algorithme supervisé."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de separation. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si separation est mal utilise, on observe souvent appliquer separation par automatisme sans verifier hypoth...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de silhouette score est appliquer silhouette score par automatisme sans verifier ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec cohesion est d'appliquer cohesion par automatisme sans verifier hypotheses, quali...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si stabilit\u00e9 est mal utilise, on observe souvent appliquer stabilit\u00e9 par automatisme sans verifier hypothes...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le Silhouette Score évalue la qualité du clustering en mesurant dans quelle mesure un point de données est bien associé à son propre cluster par rapport aux clusters voisins. B parle de la détermination du nombre de clusters, C de réduction dimensionnelle, et D est incorrect car il parle de l'évaluation supervisée.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Face a un besoin cybersecurite dans '\u00c9valuation initiale', pourquoi cohesion est-il prioritaire ?",
+      "question": "Dans le contexte du clustering, que mesure la 'cohésion' d'un cluster?",
       "image_url": null,
       "choices": {
-        "A": "separation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer separation en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans \u00c9valuation initiale, stabilit\u00e9 est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production.",
-        "C": "Dans \u00c9valuation initiale, cohesion est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cohesion en production.",
-        "D": "Le role de silhouette score est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer silhouette score en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie cohesion \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (separation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans \u00c9valuation initiale, stabilit\u00e9 est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'uti...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans \u00c9valuation initiale, cohesion est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'util...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de silhouette score est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quelle situation de terrain montre le mieux quand utiliser stabilit\u00e9 ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique cohesion pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cohesion en production.",
-        "B": "En contexte r\u00e9el sur \u00c9valuation initiale, separation est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer separation en production.",
-        "C": "En contexte r\u00e9el sur \u00c9valuation initiale, stabilit\u00e9 est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production.",
-        "D": "Pendant un atelier de cadrage, silhouette score est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer silhouette score en production tout en surveillant le risque d'appliquer silhouette score par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car stabilit\u00e9 y sert de levier de d\u00e9cision principal dans \u00c9valuation initiale. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique cohesion pour installer un raisonnemen...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur \u00c9valuation initiale, separation est choisi afin d'installer un raisonnement fiable de...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur \u00c9valuation initiale, stabilit\u00e9 est choisi afin d'installer un raisonnement fiable des...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant un atelier de cadrage, silhouette score est utile pour installer un raisonnement fiable des le debu...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quel est le role le plus determinant de stabilit\u00e9 pour un cas assurance ?",
-      "image_url": null,
-      "choices": {
-        "A": "stabilit\u00e9 sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans \u00c9valuation initiale, silhouette score est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer silhouette score en production.",
-        "C": "Le role de cohesion est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cohesion en production.",
-        "D": "separation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer separation en production pour guider une d\u00e9cision exploitable."
+        "A": "La distance moyenne entre les points d'un même cluster.",
+        "B": "La distance la plus faible entre les points de différents clusters.",
+        "C": "La densité de points autour du centre du cluster.",
+        "D": "La taille moyenne des clusters dans un ensemble de données."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie stabilit\u00e9 \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (stabilit\u00e9 sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux de...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans \u00c9valuation initiale, silhouette score est mobilise pour installer un raisonnement fiable des le d\u00e9but ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de cohesion est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (separation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
+      "explanation": "La cohésion dans le clustering fait référence à la distance moyenne entre les points à l'intérieur d'un même cluster. B se réfère à la séparation, C à la densité qui est une autre mesure distincte, et D parle simplement de la taille, pas de cohésion.",
+      "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Pour un cas operationnel de '\u00c9valuation initiale', quel exemple met cohesion au c\u0153ur de la d\u00e9cision ?",
+      "question": "La 'séparation' dans un clustering fait référence à quoi?",
       "image_url": null,
       "choices": {
-        "A": "Pendant un atelier de cadrage, cohesion est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cohesion en production tout en surveillant le risque d'appliquer cohesion par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique silhouette score pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer silhouette score en production.",
-        "C": "En contexte r\u00e9el sur \u00c9valuation initiale, separation est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer separation en production.",
-        "D": "Pendant un atelier de cadrage, stabilit\u00e9 est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production tout en surveillant le risque d'appliquer stabilit\u00e9 par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "La distance moyenne entre les centres de différents clusters.",
+        "B": "La variance interne d'un cluster.",
+        "C": "Le nombre de points dans le plus grand cluster.",
+        "D": "L'entropie des données au sein d'un cluster."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car cohesion y sert de levier de d\u00e9cision principal dans \u00c9valuation initiale. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant un atelier de cadrage, cohesion est utile pour installer un raisonnement fiable des le d\u00e9but ; l'ut...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique silhouette score pour installer un rai...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur \u00c9valuation initiale, separation est choisi afin d'installer un raisonnement fiable de...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant un atelier de cadrage, stabilit\u00e9 est utile pour installer un raisonnement fiable des le d\u00e9but ; l'u...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La séparation évalue la distance entre les centres de différents clusters pour s'assurer qu'ils sont distincts. B parle de la variance, C du nombre de points dans un cluster, et D de l'entropie qui est une mesure d'incertitude, non de séparation.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel aspect évalue la 'stabilité' d'un algorithme de clustering?",
+      "image_url": null,
+      "choices": {
+        "A": "La consistance des résultats du clustering après plusieurs exécutions.",
+        "B": "La vitesse à laquelle l'algorithme converge vers une solution.",
+        "C": "La précision des prédictions après l'entraînement.",
+        "D": "La complexité algorithmique en termes de temps de calcul."
+      },
+      "correct_answer": "A",
+      "explanation": "La stabilité mesure si le résultat du clustering reste stable à travers différentes exécutions ou échantillons. B concerne la convergence, C est pour l'évaluation supervisée, et D parle de la complexité en termes de calcul, non de stabilité.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il important d'analyser la cohésion lors du clustering?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour s'assurer que les points d'un même cluster sont proches les uns des autres.",
+        "B": "Pour réduire le temps de calcul nécessaire pour le clustering.",
+        "C": "Pour augmenter le nombre de points par cluster.",
+        "D": "Pour s'assurer que chaque cluster a une taille similaire."
+      },
+      "correct_answer": "A",
+      "explanation": "Analyser la cohésion permet de vérifier que les points d'un même cluster sont bien regroupés, indiquant un bon clustering. B concerne l'optimisation du temps, C améliorerait seulement la taille, et D parle de la similitude de taille plutôt que de la distribution interne.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Que cherche-t-on à minimiser pour maximiser la séparation dans un clustering?",
+      "image_url": null,
+      "choices": {
+        "A": "Les entités entre les centres de clusters voisins.",
+        "B": "Les distances internes à un cluster.",
+        "C": "Le nombre de dimensions des données.",
+        "D": "Les mouvements centraux d'ensemble après l'ajustement."
+      },
+      "correct_answer": "A",
+      "explanation": "Pour maximiser la séparation, on cherche à minimiser la proximité entre les centres de clusters voisins. B se focalise sur la cohésion, C parle de la réduction dimensionnelle et D n'est pas clairement lié à la séparation.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Lors de l'analyse de la stabilité d'un clustering, quel test pourrait-on utiliser?",
+      "image_url": null,
+      "choices": {
+        "A": "Vérifier si le clustering est similaire sur plusieurs sous-échantillons de données.",
+        "B": "Observer si le score de silhouette est constant.",
+        "C": "Comparer la variance entre clusters dans un seul échantillon.",
+        "D": "Analyser le temps de convergence des algorithmes."
+      },
+      "correct_answer": "A",
+      "explanation": "Tester la stabilité implique de vérifier que le clustering produit des résultats similaires sur des échantillons différents. B parle de consistance des scores de silhouette, C parle de variance et D de performance, pas directement de stabilité.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Qu'indique un Silhouette Score moyen proche de 0 pour un clustering?",
+      "image_url": null,
+      "choices": {
+        "A": "Les observations sont sur la limite de deux clusters voisins.",
+        "B": "Les points sont particulièrement bien regroupés dans un seul cluster.",
+        "C": "Il y a une erreur dans la distance calculée entre les points.",
+        "D": "Les clusters ont une séparation exceptionnelle entre eux."
+      },
+      "correct_answer": "A",
+      "explanation": "Un Silhouette Score proche de 0 indique que les points se trouvent à la limite entre deux clusters. B serait un score élevé, C pourrait être une faute technique, et D ferait référence à un bon score positif, pas proche de 0.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un bon indicateur de faible cohésion dans un cluster donné?",
+      "image_url": null,
+      "choices": {
+        "A": "Une forte variance des distances entre les points et leur centre de cluster.",
+        "B": "Une faible distance entre le centre de ce cluster et celui d'un autre cluster.",
+        "C": "Un nombre élevé de points dans le cluster.",
+        "D": "Un nombre de dimensions réduit dans l'ensemble de données."
+      },
+      "correct_answer": "A",
+      "explanation": "Une forte variance des distances indique que les points ne sont pas proches, signifiant une faible cohésion. B mesure la séparation, C parle de taille et D concerne la complexité des données.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quand une faible séparation entre clusters est-elle problématique?",
+      "image_url": null,
+      "choices": {
+        "A": "Lorsque la distance entre clusters voisins est inférieure à la cohésion interne.",
+        "B": "Quand il y a un nombre élevé de clusters.",
+        "C": "Lorsque chaque cluster contient un nombre très petit de points.",
+        "D": "Une faible séparation est toujours favorable à plus de points par cluster."
+      },
+      "correct_answer": "A",
+      "explanation": "Une faible séparation est problématique si la distance entre clusters est inférieure à la cohésion interne, rendant les clusters indistincts. B et C ne sont pas des indicateurs directs de mauvaise séparation, et D est incorrect car plus de points n'implique pas une meilleure séparation.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une \u00e9quipe banque dans '\u00c9valuation initiale', quelle d\u00e9finition de separation est la plus juste ?",
+      "question": "Quel scénario peut entraîner une instabilité significative dans le clustering?",
       "image_url": null,
       "choices": {
-        "A": "PCA correspond a une notion de base en apprentissage non supervise ; il projette les variables sur un sous-espace plus compact qui conserve l'essentiel de la variance utile, ce qui structure l'analyse dans \u00c9valuation initiale.",
-        "B": "Dans \u00c9valuation initiale, visualisation se comprend comme une notion de base en apprentissage non supervise ; il formalise le role de visualisation dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans \u00c9valuation initiale, separation se comprend comme une notion de base en apprentissage non supervise ; il formalise le role de separation dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "variance expliquee designe une notion de base en apprentissage non supervise ; il formalise le role de variance expliquee dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Variation significative des résultats après chaque essai de clustering avec différents échantillons.",
+        "B": "Les mêmes résultats de clustering sont obtenus avec plusieurs méthodes.",
+        "C": "Les résultats de clustering changent légèrement avec des données entièrement différentes.",
+        "D": "Le clustering converge rapidement vers une solution unique."
       },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de separation dans \u00c9valuation initiale, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que variance expliquee, PCA, visualisation restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (PCA correspond a une notion de base en apprentissage non supervise ; il projette les variables sur un sous-...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans \u00c9valuation initiale, visualisation se comprend comme une notion de base en apprentissage non supervise...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans \u00c9valuation initiale, separation se comprend comme une notion de base en apprentissage non supervise ; ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (variance expliquee designe une notion de base en apprentissage non supervise ; il formalise le role de vari...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Variation significative des résultats indique une instabilité. B indique cohérence et robustesse, C pourrait être normal si les données sont complètement différentes, et D indique généralement une bonne performance.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quelle situation de terrain montre le mieux quand utiliser silhouette score ?",
+      "question": "Quel est un inconvénient potentiel d'une trop forte stabilité dans un algorithme de clustering?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur \u00c9valuation initiale, stabilit\u00e9 est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production.",
-        "B": "En contexte r\u00e9el sur \u00c9valuation initiale, silhouette score est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer silhouette score en production.",
-        "C": "Pendant un atelier de cadrage, cohesion est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cohesion en production tout en surveillant le risque d'appliquer cohesion par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique separation pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer separation en production."
+        "A": "Cela pourrait masquer des structures sous-jacentes plus fines dans les données.",
+        "B": "Il peut mener à une segmentation rapide mais inexacte des clusters.",
+        "C": "Cela empêche l'incorporation de nouvelles données dans les clusters existants.",
+        "D": "Génère immanquablement des résultats en surestimant le nombre de clusters."
       },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car silhouette score y sert de levier de d\u00e9cision principal dans \u00c9valuation initiale. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur \u00c9valuation initiale, stabilit\u00e9 est choisi afin d'installer un raisonnement fiable des...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur \u00c9valuation initiale, silhouette score est choisi afin d'installer un raisonnement fia...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant un atelier de cadrage, cohesion est utile pour installer un raisonnement fiable des le d\u00e9but ; l'ut...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique separation pour installer un raisonnem...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Une trop forte stabilité peut empêcher la détection de structures fines. B parle de vitesse, C concerne l'adaptabilité, et D n'est pas proprement relié à la stabilité, mais à la sur-segmentation.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quel est le role le plus determinant de silhouette score pour un cas industrie ?",
+      "question": "Quel facteur peut fausser l'évaluation du Silhouette Score?",
       "image_url": null,
       "choices": {
-        "A": "Dans \u00c9valuation initiale, cohesion est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cohesion en production.",
-        "B": "Le role de separation est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer separation en production.",
-        "C": "stabilit\u00e9 sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production pour guider une d\u00e9cision exploitable.",
-        "D": "silhouette score sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer silhouette score en production pour guider une d\u00e9cision exploitable."
+        "A": "L'utilisation de mesures de distance inappropriées pour les données.",
+        "B": "Calculs basés uniquement sur la taille des clusters.",
+        "C": "Applications sur des ensembles de données avec des valeurs négatives.",
+        "D": "Analyses effectuées sur un nombre constant de clusters."
       },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie silhouette score \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans \u00c9valuation initiale, cohesion est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'util...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de separation est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (stabilit\u00e9 sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (silhouette score sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de m...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "correct_answer": "A",
+      "explanation": "L'utilisation de mesures de distance inappropriées peut fausser le Silhouette Score en faussant les distances. B et C ne sont pas directement pertinents, et D mentionne la constance, ce qui n'affecte pas l'évaluation par score proprement.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de '\u00c9valuation initiale', quelle erreur autour de stabilit\u00e9 est la plus critique ?",
+      "question": "Quel est le rôle du silhouette score dans l'évaluation d'un modèle de clustering?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec silhouette score est d'appliquer silhouette score par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Si cohesion est mal utilise, on observe souvent appliquer cohesion par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Le piege principal autour de separation est appliquer separation par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Le piege principal autour de stabilit\u00e9 est appliquer stabilit\u00e9 par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "Il mesure dans quelle mesure les objets d'un cluster sont proches les uns des autres par rapport aux objets d'autres clusters.",
+        "B": "Il évalue la vitesse de convergence de l'algorithme de clustering.",
+        "C": "Il est utilisé pour normaliser les données avant le clustering.",
+        "D": "Il calcule le nombre total de clusters optimaux nécessaires pour les données."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de stabilit\u00e9. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec silhouette score est d'appliquer silhouette score par automatisme sans verifier h...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si cohesion est mal utilise, on observe souvent appliquer cohesion par automatisme sans verifier hypotheses...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour de separation est appliquer separation par automatisme sans verifier hypotheses, ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour de stabilit\u00e9 est appliquer stabilit\u00e9 par automatisme sans verifier hypotheses, qu...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "correct_answer": "A",
+      "explanation": "Le silhouette score mesure à quel point un point est similaire à son propre cluster par rapport aux autres clusters. Un score élevé indique que les échantillons sont bien regroupés. B est incorrect car il ne s'agit pas de la vitesse; C est faux parce que le score ne normalise pas les données; D est incorrect car le score ne détermine pas directement le nombre de clusters.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Dans le contexte du clustering, qu'est-ce que la cohésion?",
+      "image_url": null,
+      "choices": {
+        "A": "La mesure de la compacité des objets au sein d'un même cluster.",
+        "B": "La distance moyenne entre tous les clusters.",
+        "C": "La variance des données à l'intérieur d'un cluster.",
+        "D": "Le nombre de clusters identifiés dans les données."
+      },
+      "correct_answer": "A",
+      "explanation": "La cohésion est la mesure de la compacité des objets au sein du même cluster, indiquant à quel point les objets sont proches les uns des autres. B est incorrect car la distance inter-cluster concerne la séparation; C est presque correct mais la cohésion ne concerne pas uniquement la variance; D est incorrect car la cohésion concerne une propriété intra-cluster, pas le nombre de clusters.",
+      "difficulty": "medium"
     }
   ]
 }

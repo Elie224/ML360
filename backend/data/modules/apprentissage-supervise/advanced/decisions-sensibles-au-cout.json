@@ -5,366 +5,366 @@
   "questions": [
     {
       "type": "text",
-      "question": "matrice de cout: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'D\u00e9cisions sensibles au cout' ?",
+      "question": "Quel est l'impact d'un faux positif dans un système de détection de fraude ?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur D\u00e9cisions sensibles au cout, cout faux positif est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux positif en production.",
-        "B": "Pendant une revue pre-deploiement, cout faux negatif est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux negatif en production tout en surveillant le risque d'optimiser cout faux negatif en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Dans une revue pre-deploiement de D\u00e9cisions sensibles au cout, l'\u00e9quipe applique ajustement du seuil pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ajustement du seuil en production.",
-        "D": "Dans une revue pre-deploiement de D\u00e9cisions sensibles au cout, l'\u00e9quipe applique matrice de cout pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer matrice de cout en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car matrice de cout y sert de levier de d\u00e9cision principal dans D\u00e9cisions sensibles au cout. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur D\u00e9cisions sensibles au cout, cout faux positif est choisi afin de supporter des arbitr...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une revue pre-deploiement, cout faux negatif est utile pour supporter des arbitrages de production ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une revue pre-deploiement de D\u00e9cisions sensibles au cout, l'\u00e9quipe applique ajustement du seuil pour s...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une revue pre-deploiement de D\u00e9cisions sensibles au cout, l'\u00e9quipe applique matrice de cout pour suppo...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'D\u00e9cisions sensibles au cout' (banque), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment cout faux negatif ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans D\u00e9cisions sensibles au cout, biais eleve se comprend comme un levier avance en apprentissage supervise ; il traite l'equite de d\u00e9cision entre groupes sensibles et la conformite des modeles.",
-        "B": "variance elevee designe un levier avance en apprentissage supervise ; il formalise le role de variance elevee dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "courbe d'apprentissage correspond a un levier avance en apprentissage supervise ; il formalise le role de courbe d'apprentissage dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans D\u00e9cisions sensibles au cout.",
-        "D": "cout faux negatif correspond a un levier avance en apprentissage supervise ; il formalise le role de cout faux negatif dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans D\u00e9cisions sensibles au cout."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de cout faux negatif dans D\u00e9cisions sensibles au cout, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que biais eleve, variance elevee, courbe d'apprentissage restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans D\u00e9cisions sensibles au cout, biais eleve se comprend comme un levier avance en apprentissage supervise...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (variance elevee designe un levier avance en apprentissage supervise ; il formalise le role de variance elev...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (courbe d'apprentissage correspond a un levier avance en apprentissage supervise ; il formalise le role de c...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (cout faux negatif correspond a un levier avance en apprentissage supervise ; il formalise le role de cout f...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec cout faux positif dans 'D\u00e9cisions sensibles au cout' ?",
-      "image_url": "apprentissage-supervise_decisions_sensibles_au_cout_cout_faux_positif_2.png",
-      "choices": {
-        "A": "Dans D\u00e9cisions sensibles au cout, ajustement du seuil est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ajustement du seuil en production.",
-        "B": "Dans D\u00e9cisions sensibles au cout, cout faux positif est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux positif en production.",
-        "C": "Le role de cout faux negatif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux negatif en production.",
-        "D": "matrice de cout sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer matrice de cout en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de cout faux positif dans D\u00e9cisions sensibles au cout. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans D\u00e9cisions sensibles au cout, ajustement du seuil est mobilise pour supporter des arbitrages de product...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans D\u00e9cisions sensibles au cout, cout faux positif est mobilise pour supporter des arbitrages de productio...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de cout faux negatif est de supporter des arbitrages de production ; l'utiliser correctement permet...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (matrice de cout sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux dec...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin banque dans 'D\u00e9cisions sensibles au cout', pourquoi cout faux negatif est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "matrice de cout sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer matrice de cout en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans D\u00e9cisions sensibles au cout, ajustement du seuil est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ajustement du seuil en production.",
-        "C": "Dans D\u00e9cisions sensibles au cout, cout faux negatif est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux negatif en production.",
-        "D": "Le role de cout faux positif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux positif en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie cout faux negatif \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (matrice de cout sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux dec...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans D\u00e9cisions sensibles au cout, ajustement du seuil est mobilise pour supporter des arbitrages de product...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans D\u00e9cisions sensibles au cout, cout faux negatif est mobilise pour supporter des arbitrages de productio...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de cout faux positif est de supporter des arbitrages de production ; l'utiliser correctement permet...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'D\u00e9cisions sensibles au cout', quel commentaire du schema traduit le mieux le role de matrice de cout ?",
-      "image_url": "apprentissage-supervise_decisions_sensibles_au_cout_matrice_de_cout_2.png",
-      "choices": {
-        "A": "Dans D\u00e9cisions sensibles au cout, cout faux positif est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux positif en production.",
-        "B": "Le role de cout faux negatif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux negatif en production.",
-        "C": "ajustement du seuil sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ajustement du seuil en production pour guider une d\u00e9cision exploitable.",
-        "D": "matrice de cout sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer matrice de cout en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de matrice de cout dans D\u00e9cisions sensibles au cout. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans D\u00e9cisions sensibles au cout, cout faux positif est mobilise pour supporter des arbitrages de productio...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de cout faux negatif est de supporter des arbitrages de production ; l'utiliser correctement permet...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (ajustement du seuil sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (matrice de cout sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux dec...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec ajustement du seuil dans 'D\u00e9cisions sensibles au cout' ?",
-      "image_url": "apprentissage-supervise_decisions_sensibles_au_cout_ajustement_du_seuil_2.png",
-      "choices": {
-        "A": "cout faux negatif sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux negatif en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans D\u00e9cisions sensibles au cout, matrice de cout est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer matrice de cout en production.",
-        "C": "Dans D\u00e9cisions sensibles au cout, ajustement du seuil est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ajustement du seuil en production.",
-        "D": "Le role de cout faux positif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux positif en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'ajustement du seuil dans D\u00e9cisions sensibles au cout. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (cout faux negatif sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans D\u00e9cisions sensibles au cout, matrice de cout est mobilise pour supporter des arbitrages de production ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans D\u00e9cisions sensibles au cout, ajustement du seuil est mobilise pour supporter des arbitrages de product...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de cout faux positif est de supporter des arbitrages de production ; l'utiliser correctement permet...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'D\u00e9cisions sensibles au cout', quel est le principal mode d'echec quand matrice de cout est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si matrice de cout est mal utilise, on observe souvent optimiser matrice de cout en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de cout faux positif est optimiser cout faux positif en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Un risque classique avec cout faux negatif est d'optimiser cout faux negatif en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Si ajustement du seuil est mal utilise, on observe souvent optimiser ajustement du seuil en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Une transaction légitime est incorrrectement signalée comme frauduleuse.",
+        "B": "Une transaction frauduleuse passe inaperçue.",
+        "C": "Cela n'affecte pas la détection globale.",
+        "D": "Cela entraîne une augmentation des coûts pour chaque transaction suspecte."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de matrice de cout. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si matrice de cout est mal utilise, on observe souvent optimiser matrice de cout en silo et introduire des ...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de cout faux positif est optimiser cout faux positif en silo et introduire des mo...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec cout faux negatif est d'optimiser cout faux negatif en silo et introduire des mod...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si ajustement du seuil est mal utilise, on observe souvent optimiser ajustement du seuil en silo et introdu...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Un faux positif dans la détection de fraude signifie qu'une transaction non frauduleuse est faussement classée comme frauduleuse. Cela peut conduire à une gêne pour les utilisateurs et à des coûts opérationnels accrus. Un faux négatif, en revanche, signifie qu'une transaction frauduleuse n'est pas détectée.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "matrice de cout: pourquoi ce concept est-il crucial pour une \u00e9quipe assurance dans 'D\u00e9cisions sensibles au cout' ?",
+      "question": "Dans lequel des cas suivants un faux négatif peut-il être le plus coûteux ?",
       "image_url": null,
       "choices": {
-        "A": "Le role d'ajustement du seuil est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ajustement du seuil en production.",
-        "B": "Le role de matrice de cout est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer matrice de cout en production.",
-        "C": "cout faux positif sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux positif en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans D\u00e9cisions sensibles au cout, cout faux negatif est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux negatif en production."
+        "A": "Diagnostic de maladies graves.",
+        "B": "Publicité ciblée.",
+        "C": "Système de recommandation de films.",
+        "D": "Filtrage de spam dans les emails."
       },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie matrice de cout \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role d'ajustement du seuil est de supporter des arbitrages de production ; l'utiliser correctement perm...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de matrice de cout est de supporter des arbitrages de production ; l'utiliser correctement permet d...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (cout faux positif sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans D\u00e9cisions sensibles au cout, cout faux negatif est mobilise pour supporter des arbitrages de productio...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Dans le contexte du diagnostic de maladies graves, un faux négatif signifie ne pas détecter une maladie présente, ce qui peut avoir de graves conséquences sur la santé du patient. Pour la publicité ou les recommandations, les faux négatifs entraînent des opportunités manquées sans conséquences graves.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'D\u00e9cisions sensibles au cout', quel est le role le plus determinant d'ajustement du seuil pour un cas sante ?",
+      "question": "Quelle méthode peut être utilisée pour minimiser les erreurs coûteuses dans un modèle prédictif ?",
       "image_url": null,
       "choices": {
-        "A": "ajustement du seuil sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ajustement du seuil en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans D\u00e9cisions sensibles au cout, cout faux positif est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux positif en production.",
-        "C": "Le role de cout faux negatif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux negatif en production.",
-        "D": "matrice de cout sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer matrice de cout en production pour guider une d\u00e9cision exploitable."
+        "A": "Utilisation d'une matrice de coût.",
+        "B": "Réduction du surapprentissage par régularisation.",
+        "C": "Augmentation de la taille du jeu de données.",
+        "D": "Normalisation des caractéristiques en entrée."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie ajustement du seuil \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (ajustement du seuil sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans D\u00e9cisions sensibles au cout, cout faux positif est mobilise pour supporter des arbitrages de productio...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de cout faux negatif est de supporter des arbitrages de production ; l'utiliser correctement permet...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (matrice de cout sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux dec...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Une matrice de coût permet de pondérer différemment les erreurs où certaines erreurs (comme les faux négatifs ou les faux positifs) peuvent être plus coûteuses que d'autres. La réduction du surapprentissage, l'augmentation de la taille du jeu de données et la normalisation de l'entrée sont importantes mais ne ciblent pas spécifiquement les coûts des erreurs.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'D\u00e9cisions sensibles au cout', quelle situation de terrain montre le mieux quand utiliser cout faux positif ?",
+      "question": "Comment ajuster le seuil de décision peut-il améliorer un système de détection de fraude ?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur D\u00e9cisions sensibles au cout, ajustement du seuil est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ajustement du seuil en production.",
-        "B": "En contexte r\u00e9el sur D\u00e9cisions sensibles au cout, cout faux positif est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux positif en production.",
-        "C": "Pendant une revue pre-deploiement, cout faux negatif est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux negatif en production tout en surveillant le risque d'optimiser cout faux negatif en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Dans une revue pre-deploiement de D\u00e9cisions sensibles au cout, l'\u00e9quipe applique matrice de cout pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer matrice de cout en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car cout faux positif y sert de levier de d\u00e9cision principal dans D\u00e9cisions sensibles au cout. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur D\u00e9cisions sensibles au cout, ajustement du seuil est choisi afin de supporter des arbi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur D\u00e9cisions sensibles au cout, cout faux positif est choisi afin de supporter des arbitr...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une revue pre-deploiement, cout faux negatif est utile pour supporter des arbitrages de production ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une revue pre-deploiement de D\u00e9cisions sensibles au cout, l'\u00e9quipe applique matrice de cout pour suppo...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'D\u00e9cisions sensibles au cout', quelle situation de terrain montre le mieux quand utiliser ajustement du seuil ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une revue pre-deploiement de D\u00e9cisions sensibles au cout, l'\u00e9quipe applique cout faux negatif pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux negatif en production.",
-        "B": "En contexte r\u00e9el sur D\u00e9cisions sensibles au cout, matrice de cout est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer matrice de cout en production.",
-        "C": "En contexte r\u00e9el sur D\u00e9cisions sensibles au cout, ajustement du seuil est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ajustement du seuil en production.",
-        "D": "Pendant une revue pre-deploiement, cout faux positif est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux positif en production tout en surveillant le risque d'optimiser cout faux positif en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car ajustement du seuil y sert de levier de d\u00e9cision principal dans D\u00e9cisions sensibles au cout. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une revue pre-deploiement de D\u00e9cisions sensibles au cout, l'\u00e9quipe applique cout faux negatif pour sup...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur D\u00e9cisions sensibles au cout, matrice de cout est choisi afin de supporter des arbitrag...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur D\u00e9cisions sensibles au cout, ajustement du seuil est choisi afin de supporter des arbi...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une revue pre-deploiement, cout faux positif est utile pour supporter des arbitrages de production ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe assurance dans 'D\u00e9cisions sensibles au cout', quelle d\u00e9finition de matrice de cout est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "courbe d'apprentissage correspond a un levier avance en apprentissage supervise ; il formalise le role de courbe d'apprentissage dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans D\u00e9cisions sensibles au cout.",
-        "B": "Dans D\u00e9cisions sensibles au cout, decomposition de l'erreur se comprend comme un levier avance en apprentissage supervise ; il formalise le role de decomposition de l'erreur dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans D\u00e9cisions sensibles au cout, matrice de cout se comprend comme un levier avance en apprentissage supervise ; il formalise le role de matrice de cout dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "variance elevee designe un levier avance en apprentissage supervise ; il formalise le role de variance elevee dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de matrice de cout dans D\u00e9cisions sensibles au cout, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte assurance, alors que variance elevee, courbe d'apprentissage, decomposition de l'erreur restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (courbe d'apprentissage correspond a un levier avance en apprentissage supervise ; il formalise le role de c...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans D\u00e9cisions sensibles au cout, decomposition de l'erreur se comprend comme un levier avance en apprentis...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans D\u00e9cisions sensibles au cout, matrice de cout se comprend comme un levier avance en apprentissage super...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (variance elevee designe un levier avance en apprentissage supervise ; il formalise le role de variance elev...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'D\u00e9cisions sensibles au cout', quel exemple met cout faux negatif au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une revue pre-deploiement, cout faux negatif est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux negatif en production tout en surveillant le risque d'optimiser cout faux negatif en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Dans une revue pre-deploiement de D\u00e9cisions sensibles au cout, l'\u00e9quipe applique cout faux positif pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux positif en production.",
-        "C": "En contexte r\u00e9el sur D\u00e9cisions sensibles au cout, matrice de cout est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer matrice de cout en production.",
-        "D": "Pendant une revue pre-deploiement, ajustement du seuil est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ajustement du seuil en production tout en surveillant le risque d'optimiser ajustement du seuil en silo et introduire des modes d'echec caches au deploiement."
+        "A": "En équilibrant mieux le taux de faux positifs et de faux négatifs.",
+        "B": "En augmentant toujours le taux de vrais positifs.",
+        "C": "En réduisant la complexité du modèle.",
+        "D": "En assurant une performance stable à travers tous les échantillons."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car cout faux negatif y sert de levier de d\u00e9cision principal dans D\u00e9cisions sensibles au cout. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une revue pre-deploiement, cout faux negatif est utile pour supporter des arbitrages de production ...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une revue pre-deploiement de D\u00e9cisions sensibles au cout, l'\u00e9quipe applique cout faux positif pour sup...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur D\u00e9cisions sensibles au cout, matrice de cout est choisi afin de supporter des arbitrag...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une revue pre-deploiement, ajustement du seuil est utile pour supporter des arbitrages de productio...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Ajuster le seuil de décision permet de trouver un équilibre entre le taux de faux positifs et de faux négatifs, selon le coût des erreurs. Une augmentation du taux de vrais positifs ne garantit pas une réduction des faux négatifs, tandis que réduire la complexité du modèle ou chercher une performance uniforme ne traitent pas spécifiquement de la sensibilité au coût.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'D\u00e9cisions sensibles au cout', quel est le role le plus determinant de cout faux positif pour un cas cybersecurite ?",
+      "question": "Quels critères sont prioritaires lors du choix d'une matrice de coût adaptée ?",
       "image_url": null,
       "choices": {
-        "A": "Dans D\u00e9cisions sensibles au cout, cout faux negatif est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux negatif en production.",
-        "B": "Le role de matrice de cout est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer matrice de cout en production.",
-        "C": "ajustement du seuil sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ajustement du seuil en production pour guider une d\u00e9cision exploitable.",
-        "D": "cout faux positif sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux positif en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie cout faux positif \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans D\u00e9cisions sensibles au cout, cout faux negatif est mobilise pour supporter des arbitrages de productio...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de matrice de cout est de supporter des arbitrages de production ; l'utiliser correctement permet d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (ajustement du seuil sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (cout faux positif sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "ajustement du seuil: quelle proposition en donne la meilleure d\u00e9finition dans 'D\u00e9cisions sensibles au cout' (contexte sante) ?",
-      "image_url": null,
-      "choices": {
-        "A": "bagging designe un levier avance en apprentissage supervise ; il formalise le role de bagging dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "ajustement du seuil designe un levier avance en apprentissage supervise ; il formalise le role d'ajustement du seuil dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "courbe d'apprentissage correspond a un levier avance en apprentissage supervise ; il formalise le role de courbe d'apprentissage dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans D\u00e9cisions sensibles au cout.",
-        "D": "Dans D\u00e9cisions sensibles au cout, decomposition de l'erreur se comprend comme un levier avance en apprentissage supervise ; il formalise le role de decomposition de l'erreur dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'ajustement du seuil dans D\u00e9cisions sensibles au cout, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que courbe d'apprentissage, decomposition de l'erreur, bagging restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (bagging designe un levier avance en apprentissage supervise ; il formalise le role de bagging dans un pipel...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (ajustement du seuil designe un levier avance en apprentissage supervise ; il formalise le role d'ajustemen...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (courbe d'apprentissage correspond a un levier avance en apprentissage supervise ; il formalise le role de c...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans D\u00e9cisions sensibles au cout, decomposition de l'erreur se comprend comme un levier avance en apprentis...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'D\u00e9cisions sensibles au cout', quelle erreur autour de cout faux positif est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si matrice de cout est mal utilise, on observe souvent optimiser matrice de cout en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour d'ajustement du seuil est optimiser ajustement du seuil en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de cout faux positif est optimiser cout faux positif en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Un risque classique avec cout faux negatif est d'optimiser cout faux negatif en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de cout faux positif. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si matrice de cout est mal utilise, on observe souvent optimiser matrice de cout en silo et introduire des ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour d'ajustement du seuil est optimiser ajustement du seuil en silo et introduire de...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de cout faux positif est optimiser cout faux positif en silo et introduire des mo...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec cout faux negatif est d'optimiser cout faux negatif en silo et introduire des mod...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "cout faux negatif: dans un cas banque, quelle interpretation correspond le mieux au schema ML de 'D\u00e9cisions sensibles au cout' ?",
-      "image_url": "apprentissage-supervise_decisions_sensibles_au_cout_cout_faux_negatif_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur ajustement du seuil: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ajustement du seuil en production.",
-        "B": "Le schema illustre une d\u00e9cision basee sur cout faux negatif: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux negatif en production.",
-        "C": "Lecture du visuel: cout faux positif est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux positif en production dans D\u00e9cisions sensibles au cout.",
-        "D": "Le signal visible est coh\u00e9rent avec matrice de cout, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer matrice de cout en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de cout faux negatif: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur ajustement du seuil: les indices orientent vers supporter des arb...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur cout faux negatif: les indices orientent vers supporter des arbit...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: cout faux positif est mobilise pour supporter des arbitrages de production ; l'utiliser ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec matrice de cout, car l'objectif est supporter des arbitrages de product...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'D\u00e9cisions sensibles au cout', quelle erreur autour d'ajustement du seuil est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec cout faux positif est d'optimiser cout faux positif en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Si cout faux negatif est mal utilise, on observe souvent optimiser cout faux negatif en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de matrice de cout est optimiser matrice de cout en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour d'ajustement du seuil est optimiser ajustement du seuil en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'ajustement du seuil. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec cout faux positif est d'optimiser cout faux positif en silo et introduire des mod...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si cout faux negatif est mal utilise, on observe souvent optimiser cout faux negatif en silo et introduire ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour de matrice de cout est optimiser matrice de cout en silo et introduire des modes ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour d'ajustement du seuil est optimiser ajustement du seuil en silo et introduire de...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "cout faux negatif: quel risque est le plus directement lie a son mauvais usage en production dans 'D\u00e9cisions sensibles au cout' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec ajustement du seuil est d'optimiser ajustement du seuil en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Un risque classique avec cout faux negatif est d'optimiser cout faux negatif en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Si cout faux positif est mal utilise, on observe souvent optimiser cout faux positif en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour de matrice de cout est optimiser matrice de cout en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de cout faux negatif. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec ajustement du seuil est d'optimiser ajustement du seuil en silo et introduire des...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec cout faux negatif est d'optimiser cout faux negatif en silo et introduire des mod...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si cout faux positif est mal utilise, on observe souvent optimiser cout faux positif en silo et introduire ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de matrice de cout est optimiser matrice de cout en silo et introduire des modes ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "cout faux negatif: dans 'D\u00e9cisions sensibles au cout', un schema met en evidence ce comportement. Quelle lecture est la plus juste ?",
-      "image_url": "apprentissage-supervise_decisions_sensibles_au_cout_cout_faux_negatif_2.png",
-      "choices": {
-        "A": "Le role de cout faux negatif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux negatif en production.",
-        "B": "cout faux positif sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux positif en production pour guider une d\u00e9cision exploitable.",
-        "C": "Dans D\u00e9cisions sensibles au cout, matrice de cout est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer matrice de cout en production.",
-        "D": "Le role d'ajustement du seuil est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ajustement du seuil en production."
+        "A": "L'impact financier et opérationnel spécifique des erreurs.",
+        "B": "La précision globale du modèle.",
+        "C": "La complexité du modèle prédictif utilisé.",
+        "D": "La taille du jeu de test."
       },
       "correct_answer": "A",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de cout faux negatif dans D\u00e9cisions sensibles au cout. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est correcte (Le role de cout faux negatif est de supporter des arbitrages de production ; l'utiliser correctement permet...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. B est moins pertinente (cout faux positif sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (Dans D\u00e9cisions sensibles au cout, matrice de cout est mobilise pour supporter des arbitrages de production ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (Le role d'ajustement du seuil est de supporter des arbitrages de production ; l'utiliser correctement perm...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Lorsqu'on choisit une matrice de coût, il est crucial de considérer l'impact financier et opérationnel des erreurs spécifiques au contexte. La précision globale, la complexité et la taille du jeu de test sont des considérations importantes pour la modélisation en général, mais pas spécifiquement pour définir une matrice de coût.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "cout faux positif: quelle proposition en donne la meilleure d\u00e9finition dans 'D\u00e9cisions sensibles au cout' (contexte cybersecurite) ?",
+      "question": "Quel est l'avantage d'utiliser une matrice de coût dans un modèle de classification ?",
       "image_url": null,
       "choices": {
-        "A": "cout faux positif designe un levier avance en apprentissage supervise ; il formalise le role de cout faux positif dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "strat\u00e9gie de rollback correspond a un levier avance en apprentissage supervise ; il formalise le role de strat\u00e9gie de rollback dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans D\u00e9cisions sensibles au cout.",
-        "C": "Dans D\u00e9cisions sensibles au cout, biais eleve se comprend comme un levier avance en apprentissage supervise ; il traite l'equite de d\u00e9cision entre groupes sensibles et la conformite des modeles.",
-        "D": "variance elevee designe un levier avance en apprentissage supervise ; il formalise le role de variance elevee dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Prioriser la minimisation des erreurs selon leur impact spécifique.",
+        "B": "Augmenter la précision de manière uniforme pour tous les cas.",
+        "C": "Faciliter une meilleure visualisation des données.",
+        "D": "Améliorer le temps d'entraînement du modèle."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de cout faux positif dans D\u00e9cisions sensibles au cout, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que strat\u00e9gie de rollback, biais eleve, variance elevee restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (cout faux positif designe un levier avance en apprentissage supervise ; il formalise le role de cout faux p...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (strat\u00e9gie de rollback correspond a un levier avance en apprentissage supervise ; il formalise le role de st...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans D\u00e9cisions sensibles au cout, biais eleve se comprend comme un levier avance en apprentissage supervise...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (variance elevee designe un levier avance en apprentissage supervise ; il formalise le role de variance elev...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'D\u00e9cisions sensibles au cout' et en contexte sante, quelle interpretation du schema appuie le mieux l'analyse d'ajustement du seuil ?",
-      "image_url": "apprentissage-supervise_decisions_sensibles_au_cout_ajustement_du_seuil_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur cout faux positif: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux positif en production.",
-        "B": "Lecture du visuel: cout faux negatif est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux negatif en production dans D\u00e9cisions sensibles au cout.",
-        "C": "Le signal visible est coh\u00e9rent avec matrice de cout, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer matrice de cout en production.",
-        "D": "Le signal visible est coh\u00e9rent avec ajustement du seuil, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ajustement du seuil en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Les indices visuels vont dans le sens d'ajustement du seuil: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur cout faux positif: les indices orientent vers supporter des arbit...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Lecture du visuel: cout faux negatif est mobilise pour supporter des arbitrages de production ; l'utiliser ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le signal visible est coh\u00e9rent avec matrice de cout, car l'objectif est supporter des arbitrages de product...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est correcte (Le signal visible est coh\u00e9rent avec ajustement du seuil, car l'objectif est supporter des arbitrages de pro...) car la lecture visuelle colle au signal principal observe. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'D\u00e9cisions sensibles au cout' et en contexte cybersecurite, quelle interpretation du schema appuie le mieux l'analyse de cout faux positif ?",
-      "image_url": "apprentissage-supervise_decisions_sensibles_au_cout_cout_faux_positif_1.png",
-      "choices": {
-        "A": "Lecture du visuel: matrice de cout est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer matrice de cout en production dans D\u00e9cisions sensibles au cout.",
-        "B": "Le signal visible est coh\u00e9rent avec ajustement du seuil, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ajustement du seuil en production.",
-        "C": "Le signal visible est coh\u00e9rent avec cout faux positif, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux positif en production.",
-        "D": "Le schema illustre une d\u00e9cision basee sur cout faux negatif: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux negatif en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Les indices visuels vont dans le sens de cout faux positif: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Lecture du visuel: matrice de cout est mobilise pour supporter des arbitrages de production ; l'utiliser co...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Le signal visible est coh\u00e9rent avec ajustement du seuil, car l'objectif est supporter des arbitrages de pro...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est correcte (Le signal visible est coh\u00e9rent avec cout faux positif, car l'objectif est supporter des arbitrages de produ...) car la lecture visuelle colle au signal principal observe. D'est moins pertinente (Le schema illustre une d\u00e9cision basee sur cout faux negatif: les indices orientent vers supporter des arbit...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Observation visuelle (D\u00e9cisions sensibles au cout) - pour un contexte assurance, quelle lecture du schema est la plus pertinente pour matrice de cout ?",
-      "image_url": "apprentissage-supervise_decisions_sensibles_au_cout_matrice_de_cout_1.png",
-      "choices": {
-        "A": "Lecture du visuel: matrice de cout est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer matrice de cout en production dans D\u00e9cisions sensibles au cout.",
-        "B": "Le signal visible est coh\u00e9rent avec cout faux positif, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux positif en production.",
-        "C": "Le schema illustre une d\u00e9cision basee sur cout faux negatif: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux negatif en production.",
-        "D": "Lecture du visuel: ajustement du seuil est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ajustement du seuil en production dans D\u00e9cisions sensibles au cout."
-      },
-      "correct_answer": "A",
-      "explanation": "Les indices visuels vont dans le sens de matrice de cout: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est correcte (Lecture du visuel: matrice de cout est mobilise pour supporter des arbitrages de production ; l'utiliser co...) car la lecture visuelle colle au signal principal observe. B est moins pertinente (Le signal visible est coh\u00e9rent avec cout faux positif, car l'objectif est supporter des arbitrages de produ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le schema illustre une d\u00e9cision basee sur cout faux negatif: les indices orientent vers supporter des arbit...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Lecture du visuel: ajustement du seuil est mobilise pour supporter des arbitrages de production ; l'utilise...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "L'utilisation d'une matrice de coût permet de prioriser la minimisation des erreurs en fonction de leur impact, en attribuant des poids différents aux types d'erreurs (par exemple, faux positifs vs faux négatifs). Les autres choix traitent de cas d'améliorations globales ou techniques qui ne sont pas l'objectif principal d'une matrice de coût.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Objectif (D\u00e9cisions sensibles au cout) - supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer matrice de cout en production. Quel concept est le plus coh\u00e9rent ?",
+      "question": "Comment peut-on évaluer l'efficacité d'une matrice de coût en appliquant un modèle ?",
       "image_url": null,
       "choices": {
-        "A": "parite demographique: objectif principal supporter des arbitrages de production ; reduire les disparites de performance entre populations.",
-        "B": "matrice de cout est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer matrice de cout en production, ce qui correspond a usage operationnel de matrice de cout.",
-        "C": "La finalit\u00e9 de filtrage d'anomalies est de supporter des arbitrages de production ; declencher des actions de controle sur des cas atypiques critiques.",
-        "D": "Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer controle de coh\u00e9rence en production, controle de coh\u00e9rence est le concept associe."
+        "A": "Calculer les gains ou pertes financiers en fonction des prédictions.",
+        "B": "Augmenter la précision du modèle au-dessus de 90%.",
+        "C": "Réduire la variance en utilisant des techniques de régularisation.",
+        "D": "Utiliser l'analyse de variance (ANOVA) pour évaluer l'impact."
+      },
+      "correct_answer": "A",
+      "explanation": "L'efficacité d'une matrice de coût se mesure souvent en analysant les gains ou pertes financiers engendrés par le modèle en tenant compte des coûts associés aux types d'erreurs. Augmenter la précision ou réduire la variance ne sont pas directement liés à l'évaluation d'une matrice de coût. ANOVA est utilisé pour des analyses statistiques, pas pour évaluer directement une matrice de coût dans le machine learning.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "En quoi le choix d'un seuil affecte-t-il les coûts dans un système de classification binaire ?",
+      "image_url": null,
+      "choices": {
+        "A": "Il détermine le compromis entre faux positifs et faux négatifs.",
+        "B": "Il ne change que la précision globale du modèle.",
+        "C": "Il n'a d'impact que sur le temps de calcul des prédictions.",
+        "D": "Il change la structure de la matrice de confusion."
+      },
+      "correct_answer": "A",
+      "explanation": "Le choix d'un seuil dans un système de classification binaire affecte directement le compromis entre les faux positifs et les faux négatifs, influençant ainsi les coûts totaux associés aux erreurs de prédiction. Cela n'a pas d'impact direct sur la précision globale sans considération des coûts, le temps de calcul ou la structure de base de la matrice de confusion.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi pourrait-on vouloir augmenter intentionnellement le taux de faux positifs ?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour capturer le maximum de vrais positifs dans un contexte critique.",
+        "B": "Pour réduire les faux négatifs à zéro.",
+        "C": "Pour diminuer les faux positifs.",
+        "D": "Pour augmenter la précision globale du modèle."
+      },
+      "correct_answer": "A",
+      "explanation": "Dans certains contextes critiques, comme les situations où le coût d'un faux négatif est très élevé (par exemple, détecter une maladie mortelle), il peut être préférable d'accepter plus de faux positifs pour capturer un maximum de vrais positifs. Réduire les faux négatifs à zéro n'est généralement pas réaliste, et les autres réponses ne correspondent pas au compromis typique dans la gestion des coûts des erreurs.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel principe guide le choix de la configuration d'une matrice de coût ?",
+      "image_url": null,
+      "choices": {
+        "A": "L'équilibre entre précision et rappel pour toutes les classes.",
+        "B": "L'importance relative des coûts des différentes erreurs pour le contexte donné.",
+        "C": "L'uniformité entre les pondérations des erreurs de chaque type.",
+        "D": "Maximiser la vitesse de calcul en réduisant la complexité du modèle."
       },
       "correct_answer": "B",
-      "explanation": "La bonne reponse est matrice de cout: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans D\u00e9cisions sensibles au cout. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est moins pertinente (parite demographique: objectif principal supporter des arbitrages de production ; reduire les disparites de...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. B est correcte (matrice de cout est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. C'est moins pertinente (La finalit\u00e9 de filtrage d'anomalies est de supporter des arbitrages de production ; declencher des actions ...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. D'est moins pertinente (Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le choix d'une matrice de coût est guidé par l'importance relative des coûts des erreurs spécifiques au contexte de l'application. Contrairement à l'équilibre entre précision et rappel, ou à l'uniformité des pondérations, il s'agit de pondérer les erreurs en fonction de leurs implications pratiques. Maximiser la vitesse de calcul n'est pas un facteur direct pour ajuster la matrice de coût.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'D\u00e9cisions sensibles au cout', quel concept repond le mieux a cet objectif: supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux positif en production.",
+      "question": "Quel est l'effet de l'augmentation de la pénalité pour les faux négatifs dans une matrice de coût ?",
       "image_url": null,
       "choices": {
-        "A": "bruit de labels: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bruit de labels en production.",
-        "B": "loss robuste est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer loss robuste en production, ce qui correspond a usage operationnel de loss robuste.",
-        "C": "La finalit\u00e9 de filtrage d'anomalies est de supporter des arbitrages de production ; declencher des actions de controle sur des cas atypiques critiques.",
-        "D": "Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer cout faux positif en production, cout faux positif est le concept associe."
+        "A": "L'augmentation de la sensibilité du modèle.",
+        "B": "L'augmentation de la spécificité du modèle.",
+        "C": "La diminution du taux d'erreur totale.",
+        "D": "La réduction des faux positifs."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est cout faux positif: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans D\u00e9cisions sensibles au cout. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est moins pertinente (bruit de labels: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. B est moins pertinente (loss robuste est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mi...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. C'est moins pertinente (La finalit\u00e9 de filtrage d'anomalies est de supporter des arbitrages de production ; declencher des actions ...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. D'est correcte (Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "En augmentant la pénalité pour les faux négatifs, le modèle est ajusté pour être plus sensible et diminuer les faux négatifs, ce qui augmente généralement la sensibilité (capacité à détecter les cas positifs). Cela ne conduit pas directement à une augmentation de la spécificité, une diminution du taux d'erreur globale ou une réduction des faux positifs sans compromis.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans quelle situation serait-il justifié d'avoir un faible coût pour les faux positifs ?",
+      "image_url": null,
+      "choices": {
+        "A": "Lors d'une campagne publicitaire où la surcommunication est acceptable.",
+        "B": "Dans le diagnostic médical pour éviter des alarmes inutiles.",
+        "C": "Dans le filtrage de spams pour éviter d'envoyer d'importants emails en spam.",
+        "D": "Dans le contrôle de qualité rigoureux en production industrielle."
+      },
+      "correct_answer": "A",
+      "explanation": "Dans une campagne publicitaire, avoir des faux positifs (surcommunication) pourrait être moins coûteux que de manquer de cibler un client potentiel. Dans le domaine médical ou le contrôle de qualité, les faux positifs peuvent entraîner des coûts significatifs et de la désatisfaction, nécessitant des seuils plus stricts.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "En optimisation des coûts, comment un modèle saura-t-il détecter une erreur coûteuse ?",
+      "image_url": null,
+      "choices": {
+        "A": "Grâce à une spécification d'une matrice de coût adaptée aux différents types d'erreurs.",
+        "B": "En augmentant le nombre de classes cibles.",
+        "C": "En rééchantillonnant le jeu de données avant l'entraînement.",
+        "D": "En optimisant les hyperparamètres uniquement pour augmenter la précision générale."
+      },
+      "correct_answer": "A",
+      "explanation": "Définir une matrice de coût adaptée permet au modèle de détecter plus efficacement les erreurs coûteuses en assignant des poids différents. Augmenter le nombre de classes, rééchantillonner ou optimiser uniquement pour la précision ne répondent pas directement aux coûts des erreurs.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Parmi les stratégies suivantes, laquelle optimise les performances selon un coût préalablement défini ?",
+      "image_url": null,
+      "choices": {
+        "A": "Entraînement avec une matrice de coût définie pour chaque classe.",
+        "B": "Utilisation d'une fonction perte standard MSE (erreur quadratique moyenne).",
+        "C": "Réduction du nombre d'échantillons de test pour augmenter la précision.",
+        "D": "Entraînement avec un sur-échantillonnage des classes minoritaires."
+      },
+      "correct_answer": "A",
+      "explanation": "Utiliser une matrice de coût spécifique guide l'entraînement du modèle pour respecter les priorités stratégiques liées à chaque classe. Les autres options ne tiennent pas compte des coûts particuliers associés à des erreurs spécifiques et MSE ne concerne que les différences entre les valeurs réelles et prédites.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle technique peut être utilisée pour ajuster un modèle à des erreurs biaisées dans un enjeu financier crucial ?",
+      "image_url": null,
+      "choices": {
+        "A": "Application d'une matrice de confusion pondérée.",
+        "B": "Utilisation de K-Fold Cross-Validation.",
+        "C": "Augmentation du nombre de neurones dans un réseau neuronal.",
+        "D": "Simplification de l'architecture du modèle pour éviter un surapprentissage."
+      },
+      "correct_answer": "A",
+      "explanation": "Une matrice de confusion pondérée, ou matrice de coût, permet de pondérer différemment les types d'erreurs, fournissant ainsi des indications précieuses dans un contexte de coûts différenciés. Ni la validation croisée, ni le nombre de neurones, ni simplifier l'architecture ne valorisent directement l'optimisation des coûts spécifiques des erreurs.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment la définition d'un seuil basé sur le coût peut-elle affecter les résultats d'un modèle de classification ?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle ajustera le taux de faux positifs et faux négatifs pour minimiser le coût total.",
+        "B": "Elle augmentera automatiquement la précision pour toutes les classes.",
+        "C": "Elle élargira la taille du jeu de données d'entraînement pour améliorer l'apprentissage.",
+        "D": "Elle révélera l'erreur résiduelle optimale de manière analogue au réglage du réseau de neurones."
+      },
+      "correct_answer": "A",
+      "explanation": "Un seuil basé sur le coût permet de trouver un compromis optimal entre faux positifs et faux négatifs pour réduire le coût total. Cela n'augmente pas la précision uniformément, n'élargit pas le jeu de données d'entraînement et n'est pas directement lié à l'erreur résiduelle des réseaux de neurones.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel ajustement est essentiel pour un modèle soumis à une préoccupation de coûts asymétriques dans les prévisions ?",
+      "image_url": null,
+      "choices": {
+        "A": "Optimisation des différentes valeurs de seuil pour refléter les coûts.",
+        "B": "Augmentation du nombre d'échantillons d'entraînement.",
+        "C": "Entraînement avec une architecture de réseau de neurones plus grande.",
+        "D": "Utilisation d'un algorithme basé sur la distance, comme les K-means."
+      },
+      "correct_answer": "A",
+      "explanation": "Optimiser le seuil en fonction des coûts permet aux modèles de mieux gérer les erreurs coûteuses. Augmenter la taille des échantillons ou la complexité des modèles ou utiliser des algorithmes de clustering ne traitent pas directement les aspects des coûts asymétriques.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel concept de base est utilisé pour évaluer un modèle en gestion des coûts ?",
+      "image_url": null,
+      "choices": {
+        "A": "Retour sur investissement calculé par rapport aux coûts différenciés dus aux erreurs de prédiction.",
+        "B": "Analyse de variance basée sur l'erreur totale.",
+        "C": "Croissance de la complexité algorithmique en fonction des erreurs.",
+        "D": "La balance entre précision et rappel indépendamment des coûts spécifiques."
+      },
+      "correct_answer": "A",
+      "explanation": "Évaluer un modèle en gestion des coûts nécessite d'analyser le retour sur investissement en processus décisionnel et en prédiction, tenant compte des coûts des différentes erreurs. Les autres options ne considèrent pas le caractère différencié et mesurable des coûts associés aux erreurs.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel impact l'ajustement des seuils de classification a-t-il sur le coût d'opportunité en prise de décision ?",
+      "image_url": null,
+      "choices": {
+        "A": "Il influence le ratio erreur de type I/II en fonction des coûts perçus.",
+        "B": "Il améliore la complexité computationnelle du modèle.",
+        "C": "Il détermine la quantité d'échantillons nécessaires pour l'entraînement.",
+        "D": "Il automatise le processus d'amélioration de précision."
+      },
+      "correct_answer": "A",
+      "explanation": "L'ajustement des seuils de classification influence directement le ratio des erreurs de type I et II, ce qui permet d'ajuster la prise de décision en fonction des coûts d'opportunité perçus. Les autres réponses ne considèrent pas le contexte de coûts d'opportunité dérivés du classement des erreurs.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le raisonnement derrière le choix d'un seuil sensible au coût dans une classification ?",
+      "image_url": null,
+      "choices": {
+        "A": "Minimiser la somme pondérée des faux positifs et faux négatifs selon leur impact financier.",
+        "B": "Maximiser la précision de prédiction directe sans considération de coûts.",
+        "C": "Réduire la dimension du jeu de données pour augmenter les performances.",
+        "D": "Assurer une répartition équilibrée des classes dans la matrice de confusion."
+      },
+      "correct_answer": "A",
+      "explanation": "Le choix d'un seuil sensible au coût vise à minimiser la somme pondérée des erreurs selon leur impact financier. Les autres réponses traitent des aspects généraux de modélisation qui n'impliquent pas directement la prise en compte des coûts dans les erreurs de classification.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel résultat d'une configuration optimale avec une matrice de coût pourrait être le plus impactant ?",
+      "image_url": null,
+      "choices": {
+        "A": "Réduction significative des coûts associés aux faux négatifs.",
+        "B": "Augmentation générale de la précision à travers toutes les classes.",
+        "C": "Diminution de la complexité du paramétrage du modèle.",
+        "D": "Suppression de la variance du modèle sous-optimisé."
+      },
+      "correct_answer": "A",
+      "explanation": "Une bonne configuration de matrice de coût peut réduire efficacement les coûts associés à des erreurs spécifiques telles que les faux négatifs, très importants dans des situations comme la détection de maladies. L'augmentation générale de la précision, la diminution de la complexité ou la suppression de la variance ne sont pas des résultats directement visés par l'optimisation des coûts aléatoires.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle stratégie de modèle pourrait être utile pour équilibrer des coûts asymétriques de fausses prédictions ?",
+      "image_url": null,
+      "choices": {
+        "A": "Optimisation par apprentissage avec une pondération des classes.",
+        "B": "Utilisation de l'overfitting pour mieux adapter les échantillons.",
+        "C": "Équilibrage statique des classes sans utiliser de coût alternatif.",
+        "D": "Entraînement d'un modèle à partir d'un échantillonnage uniforme."
+      },
+      "correct_answer": "A",
+      "explanation": "L'apprentissage avec une pondération des classes permet de traiter l'impact disproportionné des erreurs en utilisant des coûts différents pour différents types d'erreurs. Continuer à suradapter (overfitting) ou l'entraînement à partir d'un échantillonnage uniforme ne traite pas des coûts asymétriques liés aux prévisions.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Que signifie ajuster le seuil lors de la décision sensible aux coûts ?",
+      "image_url": null,
+      "choices": {
+        "A": "Modifier le point de découpe dans la distribution des prédictions pour changer l'association coût-erreur.",
+        "B": "Augmenter directement le nombre de classes a posteriori.",
+        "C": "Réduire les dimensions cardinales pour obtenir une meilleure généralisation.",
+        "D": "Éliminer les déséquilibres en optimisant uniquement la précision."
+      },
+      "correct_answer": "A",
+      "explanation": "Ajuster le seuil de décision modifie le point de découpage dans la distribution des prédictions, ce qui peut entraîner des changements significatifs dans la façon dont les coûts et les erreurs de classification s'associent, contrairement aux ajustements de nombre de classes, de dimensions ou de balance unilatérale.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le principal impact d'un coût faux positif élevé dans un modèle d'apprentissage supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Il rend le modèle plus conservateur en déclenchant moins de prédictions positives.",
+        "B": "Il augmente le nombre de faux négatifs.",
+        "C": "Il n'affecte que le taux de faux positifs, sans impact sur la performance globale.",
+        "D": "Il réduit la nécessité de données d'entraînement étiquetées."
+      },
+      "correct_answer": "A",
+      "explanation": "Un coût faux positif élevé signifie que les erreurs où une prédiction positive est incorrecte sont coûteuses, poussant le modèle à être plus prudent avant de faire une prédiction positive. B est faux car cela ne diminue pas, mais peut augmenter les faux négatifs. C est faux car il a un impact sur l'équilibre du modèle. D est faux car cela concerne la performance du modèle, pas l'étiquetage des données.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans un contexte où le coût des faux négatifs est très élevé, quelle stratégie peut être pertinente pour optimiser un modèle d'apprentissage supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Ajuster le seuil de décision pour accroître le taux de détection.",
+        "B": "Augmenter volontairement le taux de faux positifs.",
+        "C": "Ignorer le coût des faux positifs.",
+        "D": "Utiliser uniquement des métriques de précision pour évaluer le modèle."
+      },
+      "correct_answer": "A",
+      "explanation": "Ajuster le seuil de décision permet d’augmenter le taux de détection pour réduire le nombre de faux négatifs, ce qui est crucial lorsque ces erreurs sont coûteuses. B est partiellement correct mais imprécis sans ajustement du seuil. C et D négligent l'importance de l'équilibre entre faux positifs et faux négatifs dans une évaluation globale correcte.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment une matrice de coût peut-elle être utilisée dans l'entraînement d'un modèle supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour pondérer différemment les erreurs de classification lors de l'optimisation.",
+        "B": "Pour éliminer la nécessité de la validation croisée.",
+        "C": "Pour remplacer les métriques de performance standards comme l'accuracy.",
+        "D": "Pour ignorer l'importance des faux négatifs dans le modèle final."
+      },
+      "correct_answer": "A",
+      "explanation": "Une matrice de coût est utilisée pour donner un poids différent aux différents types d'erreurs (faux positifs, faux négatifs) pendant l'entraînement, influençant les décisions optimales du modèle. B est incorrect car la validation croisée est toujours utile. C est incorrect car elle complète mais ne remplace pas les métriques standards. D est faux car la matrice de coût considère précisément l'importance relative des erreurs, y compris les faux négatifs.",
       "difficulty": "hard"
     }
   ]

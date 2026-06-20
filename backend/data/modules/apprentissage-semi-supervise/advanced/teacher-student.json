@@ -5,282 +5,282 @@
   "questions": [
     {
       "type": "text",
-      "question": "Dans 'Teacher-student' (sante), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment modele etudiant ?",
+      "question": "Quel est le rôle principal du modèle enseignant dans un cadre d'apprentissage semi-supervisé de type teacher-student?",
       "image_url": null,
       "choices": {
-        "A": "Dans Teacher-student, biais d'echantillonnage se comprend comme un levier avance en apprentissage semi supervise ; il traite l'equite de d\u00e9cision entre groupes sensibles et la conformite des modeles.",
-        "B": "groupes sous-representes designe un levier avance en apprentissage semi supervise ; il formalise le role de groupes sous-representes dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "audit correspond a un levier avance en apprentissage semi supervise ; il formalise le role d'audit dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Teacher-student.",
-        "D": "modele etudiant correspond a un levier avance en apprentissage semi supervise ; il formalise le role de modele etudiant dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Teacher-student."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de modele etudiant dans Teacher-student, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que biais d'echantillonnage, groupes sous-representes, audit restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Teacher-student, biais d'echantillonnage se comprend comme un levier avance en apprentissage semi supe...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (groupes sous-representes designe un levier avance en apprentissage semi supervise ; il formalise le role de...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (audit correspond a un levier avance en apprentissage semi supervise ; il formalise le role d'audit dans un...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (modele etudiant correspond a un levier avance en apprentissage semi supervise ; il formalise le role de mod...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "consistency loss: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Teacher-student' ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Teacher-student, modele enseignant est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele enseignant en production.",
-        "B": "Pendant une revue pre-deploiement, modele etudiant est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele etudiant en production tout en surveillant le risque d'optimiser modele etudiant en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Dans une revue pre-deploiement de Teacher-student, l'\u00e9quipe applique mise a jour EMA pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour EMA en production.",
-        "D": "Dans une revue pre-deploiement de Teacher-student, l'\u00e9quipe applique consistency loss pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer consistency loss en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car consistency loss y sert de levier de d\u00e9cision principal dans Teacher-student. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Teacher-student, modele enseignant est choisi afin de supporter des arbitrages de prod...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une revue pre-deploiement, modele etudiant est utile pour supporter des arbitrages de production ; ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une revue pre-deploiement de Teacher-student, l'\u00e9quipe applique mise a jour EMA pour supporter des arb...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une revue pre-deploiement de Teacher-student, l'\u00e9quipe applique consistency loss pour supporter des ar...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec mise a jour EMA dans 'Teacher-student' ?",
-      "image_url": "apprentissage-semi-supervise_teacher_student_mise_a_jour_ema_2.png",
-      "choices": {
-        "A": "modele etudiant sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele etudiant en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Teacher-student, consistency loss est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer consistency loss en production.",
-        "C": "Dans Teacher-student, mise a jour EMA est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour EMA en production.",
-        "D": "Le role de modele enseignant est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele enseignant en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de mise a jour EMA dans Teacher-student. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (modele etudiant sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux dec...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Teacher-student, consistency loss est mobilise pour supporter des arbitrages de production ; l'utilise...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Teacher-student, mise a jour EMA est mobilise pour supporter des arbitrages de production ; l'utiliser...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de modele enseignant est de supporter des arbitrages de production ; l'utiliser correctement permet...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin sante dans 'Teacher-student', pourquoi modele etudiant est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "consistency loss sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer consistency loss en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Teacher-student, mise a jour EMA est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour EMA en production.",
-        "C": "Dans Teacher-student, modele etudiant est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele etudiant en production.",
-        "D": "Le role de modele enseignant est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele enseignant en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie modele etudiant \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (consistency loss sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Teacher-student, mise a jour EMA est mobilise pour supporter des arbitrages de production ; l'utiliser...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Teacher-student, modele etudiant est mobilise pour supporter des arbitrages de production ; l'utiliser...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de modele enseignant est de supporter des arbitrages de production ; l'utiliser correctement permet...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec modele enseignant dans 'Teacher-student' ?",
-      "image_url": "apprentissage-semi-supervise_teacher_student_modele_enseignant_2.png",
-      "choices": {
-        "A": "Dans Teacher-student, mise a jour EMA est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour EMA en production.",
-        "B": "Dans Teacher-student, modele enseignant est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele enseignant en production.",
-        "C": "Le role de modele etudiant est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele etudiant en production.",
-        "D": "consistency loss sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer consistency loss en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de modele enseignant dans Teacher-student. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Teacher-student, mise a jour EMA est mobilise pour supporter des arbitrages de production ; l'utiliser...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Teacher-student, modele enseignant est mobilise pour supporter des arbitrages de production ; l'utilis...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de modele etudiant est de supporter des arbitrages de production ; l'utiliser correctement permet d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (consistency loss sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Teacher-student', quel commentaire du schema traduit le mieux le role de consistency loss ?",
-      "image_url": "apprentissage-semi-supervise_teacher_student_consistency_loss_2.png",
-      "choices": {
-        "A": "Dans Teacher-student, modele enseignant est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele enseignant en production.",
-        "B": "Le role de modele etudiant est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele etudiant en production.",
-        "C": "mise a jour EMA sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour EMA en production pour guider une d\u00e9cision exploitable.",
-        "D": "consistency loss sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer consistency loss en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de consistency loss dans Teacher-student. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Teacher-student, modele enseignant est mobilise pour supporter des arbitrages de production ; l'utilis...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de modele etudiant est de supporter des arbitrages de production ; l'utiliser correctement permet d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (mise a jour EMA sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux dec...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (consistency loss sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Teacher-student', quelle situation de terrain montre le mieux quand utiliser mise a jour EMA ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une revue pre-deploiement de Teacher-student, l'\u00e9quipe applique modele etudiant pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele etudiant en production.",
-        "B": "En contexte r\u00e9el sur Teacher-student, consistency loss est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer consistency loss en production.",
-        "C": "En contexte r\u00e9el sur Teacher-student, mise a jour EMA est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour EMA en production.",
-        "D": "Pendant une revue pre-deploiement, modele enseignant est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele enseignant en production tout en surveillant le risque d'optimiser modele enseignant en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car mise a jour EMA y sert de levier de d\u00e9cision principal dans Teacher-student. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une revue pre-deploiement de Teacher-student, l'\u00e9quipe applique modele etudiant pour supporter des arb...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Teacher-student, consistency loss est choisi afin de supporter des arbitrages de produ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Teacher-student, mise a jour EMA est choisi afin de supporter des arbitrages de produc...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une revue pre-deploiement, modele enseignant est utile pour supporter des arbitrages de production ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Teacher-student', quel est le principal mode d'echec quand consistency loss est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si consistency loss est mal utilise, on observe souvent optimiser consistency loss en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de modele enseignant est optimiser modele enseignant en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Un risque classique avec modele etudiant est d'optimiser modele etudiant en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Si mise a jour EMA est mal utilise, on observe souvent optimiser mise a jour EMA en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Fournir des pseudo-étiquettes aux données non étiquetées pour entraîner le modèle étudiant.",
+        "B": "Générer des données synthétiques pour augmenter l'ensemble de données.",
+        "C": "Servir de validation pour évaluer la performance finale du modèle étudiant.",
+        "D": "Appliquer des transformations de données pour améliorer la généralisation du modèle étudiant."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de consistency loss. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si consistency loss est mal utilise, on observe souvent optimiser consistency loss en silo et introduire de...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de modele enseignant est optimiser modele enseignant en silo et introduire des mo...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec modele etudiant est d'optimiser modele etudiant en silo et introduire des modes d...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si mise a jour EMA est mal utilise, on observe souvent optimiser mise a jour EMA en silo et introduire des ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Le modèle enseignant est utilisé pour créer des pseudo-étiquettes à partir de données non étiquetées, ce qui permet d'entraîner le modèle étudiant avec plus de données. Option B est incorrecte car la génération de données synthétiques est une tâche d'augmentation de données, pas spécifique au modèle enseignant. Option C est incorrecte car la validation est généralement réalisée avec un ensemble de test. Option D est fausse car les transformations de données sont une étape distincte indépendante du rôle du modèle enseignant.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Teacher-student', quel est le role le plus determinant de mise a jour EMA pour un cas e-commerce ?",
+      "question": "Dans l'apprentissage semi-supervisé, quel est le rôle du modèle étudiant?",
       "image_url": null,
       "choices": {
-        "A": "mise a jour EMA sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour EMA en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Teacher-student, modele enseignant est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele enseignant en production.",
-        "C": "Le role de modele etudiant est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele etudiant en production.",
-        "D": "consistency loss sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer consistency loss en production pour guider une d\u00e9cision exploitable."
+        "A": "Affiner ses prédictions en utilisant des pseudo-étiquettes fournies par le modèle enseignant.",
+        "B": "Calibrer les hyperparamètres automatiquement pour optimiser la performance.",
+        "C": "Stocker et comparer les performances des différents modèles au cours du temps.",
+        "D": "Contrôler les variations dans l'apprentissage non supervisé."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie mise a jour EMA \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (mise a jour EMA sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux dec...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Teacher-student, modele enseignant est mobilise pour supporter des arbitrages de production ; l'utilis...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de modele etudiant est de supporter des arbitrages de production ; l'utiliser correctement permet d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (consistency loss sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Le modèle étudiant apprend principalement à partir des pseudo-étiquettes fournies par le modèle enseignant et les données étiquetées réelles. Option B, calibration automatique des hyperparamètres n'est pas typique du rôle du modèle étudiant. Option C est incorrecte car la gestion des performances au fil du temps n'est pas une fonction centrale du modèle étudiant. Option D est fausse car le modèle étudiant n'est pas conçu pour contrôler les variations de l'apprentissage non supervisé.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "consistency loss: pourquoi ce concept est-il crucial pour une \u00e9quipe marketing dans 'Teacher-student' ?",
+      "question": "Quelle est la fonction d'une consistency loss dans un cadre teacher-student?",
       "image_url": null,
       "choices": {
-        "A": "Le role de mise a jour EMA est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour EMA en production.",
-        "B": "Le role de consistency loss est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer consistency loss en production.",
-        "C": "modele enseignant sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele enseignant en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Teacher-student, modele etudiant est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele etudiant en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie consistency loss \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de mise a jour EMA est de supporter des arbitrages de production ; l'utiliser correctement permet d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de consistency loss est de supporter des arbitrages de production ; l'utiliser correctement permet ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (modele enseignant sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Teacher-student, modele etudiant est mobilise pour supporter des arbitrages de production ; l'utiliser...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Teacher-student', quelle situation de terrain montre le mieux quand utiliser modele enseignant ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Teacher-student, mise a jour EMA est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour EMA en production.",
-        "B": "En contexte r\u00e9el sur Teacher-student, modele enseignant est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele enseignant en production.",
-        "C": "Pendant une revue pre-deploiement, modele etudiant est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele etudiant en production tout en surveillant le risque d'optimiser modele etudiant en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Dans une revue pre-deploiement de Teacher-student, l'\u00e9quipe applique consistency loss pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer consistency loss en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car modele enseignant y sert de levier de d\u00e9cision principal dans Teacher-student. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Teacher-student, mise a jour EMA est choisi afin de supporter des arbitrages de produc...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Teacher-student, modele enseignant est choisi afin de supporter des arbitrages de prod...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une revue pre-deploiement, modele etudiant est utile pour supporter des arbitrages de production ; ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une revue pre-deploiement de Teacher-student, l'\u00e9quipe applique consistency loss pour supporter des ar...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'Teacher-student', quel exemple met modele etudiant au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une revue pre-deploiement, modele etudiant est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele etudiant en production tout en surveillant le risque d'optimiser modele etudiant en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Dans une revue pre-deploiement de Teacher-student, l'\u00e9quipe applique modele enseignant pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele enseignant en production.",
-        "C": "En contexte r\u00e9el sur Teacher-student, consistency loss est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer consistency loss en production.",
-        "D": "Pendant une revue pre-deploiement, mise a jour EMA est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour EMA en production tout en surveillant le risque d'optimiser mise a jour EMA en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Assurer que les prédictions pour une même donnée restant cohérentes sous des augmentations aléatoires.",
+        "B": "Faire converger les poids du modèle étudiant vers ceux du modèle enseignant.",
+        "C": "Assurer que toutes les couches du réseau contribuent de manière égale à la décision finale.",
+        "D": "Évaluer la performance de l'ensemble du cadre d'apprentissage semi-supervisé."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car modele etudiant y sert de levier de d\u00e9cision principal dans Teacher-student. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une revue pre-deploiement, modele etudiant est utile pour supporter des arbitrages de production ; ...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une revue pre-deploiement de Teacher-student, l'\u00e9quipe applique modele enseignant pour supporter des a...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Teacher-student, consistency loss est choisi afin de supporter des arbitrages de produ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une revue pre-deploiement, mise a jour EMA est utile pour supporter des arbitrages de production ; ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La consistency loss vise à rendre les prédictions du modèle robuste aux variations dans les données d'entrée grâce à des augmentations aléatoires. Option B est fausse parce que l'alignement des poids n'est pas l'objectif de la consistency loss. Option C est incorrecte car l'implication égale des couches n'est pas gérée par la consistency loss. Option D n'est pas correcte car l'évaluation de la performance globale n'est pas faite par cette fonction de perte.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment se définit la mise à jour EMA (Exponential Moving Average) dans le contexte enseignant-étudiant?",
+      "image_url": null,
+      "choices": {
+        "A": "C'est une technique pour lisser les poids du modèle enseignant sur la base des poids passés.",
+        "B": "C'est une méthode pour ajuster les taux d'apprentissage du modèle étudiant en temps réel.",
+        "C": "C'est une manière de diminuer progressivement la robustesse de la loss function utilisée.",
+        "D": "C'est une stratégie pour synchroniser les évaluations entre le modèle enseignant et le modèle étudiant."
+      },
+      "correct_answer": "A",
+      "explanation": "La mise à jour EMA utilise une moyenne mobile exponentielle pour ajuster les poids du modèle enseignant en utilisant les poids passés pour garantir une stabilité et éviter les changements abrupts. Option B est incorrecte car EMA n'est pas pour ajuster les taux d'apprentissage. Option C est incorrecte, car EMA n'affecte pas directement la robustesse des fonctions de perte. Option D est fausse parce que l'EMA ne traite pas de la synchronisation de l'évaluation entre modèles.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'avantage principal de l'utilisation de la stratégie EMA dans un modèle enseignant dans l'apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Réduire la variance dans les décisions du modèle enseignant.",
+        "B": "Augmenter la vitesse d'entraînement du modèle étudiant.",
+        "C": "Permettre une mise à jour plus fréquente des étiquettes de l'ensemble de données.",
+        "D": "Optimiser automatiquement l'architecture du réseau de neurones."
+      },
+      "correct_answer": "A",
+      "explanation": "L'EMA aide à réduire la variance car elle prend en compte les poids passés, offrant un modèle enseignant plus stable et cohérent. Option B est incorrecte, l'EMA ne modifie pas la vitesse d'entraînement. Option C est incorrecte car l'EMA ne concerne pas la fréquence de mise à jour des étiquettes. Option D est incorrecte car EMA ne traite pas de l'optimisation de l'architecture du réseau de neurones.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il important que le modèle enseignant soit plus stable dans le cadre teacher-student?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour fournir des pseudo-étiquettes fiables sur lesquelles le modèle étudiant puisse s'appuyer.",
+        "B": "Pour réduire les coûts de calcul associés à l'entraînement.",
+        "C": "Pour simplifier le processus de rétropropagation dans les réseaux de neurones profonds.",
+        "D": "Pour augmenter la liberté d'architectures réseau utilisées pour le modèle étudiant."
+      },
+      "correct_answer": "A",
+      "explanation": "La stabilité du modèle enseignant permet de produire des pseudo-étiquettes fiables, essentielles pour la qualité de l'apprentissage du modèle étudiant. Option B est incorrecte car la stabilité ne concerne pas directement les coûts de calcul. Option C est incorrecte car la stabilité n'affecte pas directement la rétropropagation. Option D est fausse, bien que stabilité contribue à la qualité, elle n'augmente pas directement la liberté architecturale.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment une consistency loss améliore-t-elle la robustesse d'un modèle étudiant?",
+      "image_url": null,
+      "choices": {
+        "A": "En forçant le modèle à produire des prédictions similaires malgré les augmentations de données.",
+        "B": "En augmentant progressivement la complexité des fonctions d'activation utilisées.",
+        "C": "En réduisant la taille de l'ensemble de données requis pour l'apprentissage.",
+        "D": "En intégrant des techniques de régularisation avancées comme le dropout."
+      },
+      "correct_answer": "A",
+      "explanation": "La consistency loss améliore la robustesse en encourageant le modèle à rester stable sous des augmentations de données. Option B est incorrecte, la complexity des fonctions d'activation n'est pas modifiée par la consistency loss. Option C est fausse car la taille de l'ensemble de données n'est pas réduite par la consistency loss. Option D est incorrecte car l'intégration de régularisation comme le dropout est un processus distinct.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'effet de l'EMA sur la vitesse de convergence du modèle étudiant?",
+      "image_url": null,
+      "choices": {
+        "A": "Il n'affecte pas directement la vitesse de convergence, mais stabilise les mises à jour du modèle enseignant.",
+        "B": "Il accélère la convergence en augmentant les taux d'apprentissage.",
+        "C": "Il ralentit la convergence en introduisant plus de calculs.",
+        "D": "Il ne joue aucun rôle dans la convergence des modèles étudiants."
+      },
+      "correct_answer": "A",
+      "explanation": "L'EMA stabilise les poids du modèle enseignant, mais n'affecte pas directement la vitesse à laquelle le modèle étudiant converge. Option B est incorrecte car l'EMA n'augmente pas les taux d'apprentissage. Option C est incorrecte car il ne ralentit pas la convergence de cette manière, même s'il ajoute une petite surcharge. Option D est faux parce que l'indirecte influence de l'EMA sur la stabilité affecte la convergence du modèle étudiant.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Teacher-student', quel est le role le plus determinant de modele enseignant pour un cas assurance ?",
+      "question": "Comment le modèle enseignant influence-t-il l'étape de rétropropagation dans un modèle étudiant à travers des pseudo-étiquettes?",
       "image_url": null,
       "choices": {
-        "A": "Dans Teacher-student, modele etudiant est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele etudiant en production.",
-        "B": "Le role de consistency loss est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer consistency loss en production.",
-        "C": "mise a jour EMA sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour EMA en production pour guider une d\u00e9cision exploitable.",
-        "D": "modele enseignant sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele enseignant en production pour guider une d\u00e9cision exploitable."
+        "A": "Les pseudo-étiquettes servent de vérités terrain sans bruit et influencent directement la fonction de perte.",
+        "B": "Elles sont ignorées pendant la rétropropagation pour ne pas biaiser les mises à jour des poids.",
+        "C": "Elles sont utilisées pour ajouter un bruit gaussien aux gradients pendant la rétropropagation.",
+        "D": "Elles sont utilisées comme vérités terrain approximatives, influençant les gradients pendant l'apprentissage."
       },
       "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie modele enseignant \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Teacher-student, modele etudiant est mobilise pour supporter des arbitrages de production ; l'utiliser...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de consistency loss est de supporter des arbitrages de production ; l'utiliser correctement permet ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (mise a jour EMA sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux dec...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (modele enseignant sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Les pseudo-étiquettes agissent comme des vérités approximatives pendant la rétropropagation, permettant d’ajuster les poids du modèle étudiant en conséquence. Option A est incorrecte, les pseudo-étiquettes peuvent contenir du bruit. Option B est incorrecte, elles ne sont pas ignorées mais intégrées. Option C est incorrecte car elles ne sont pas utilisées pour ajouter du bruit aux gradients, bien qu’elles participent à l’ajustement des gradients.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pour une \u00e9quipe marketing dans 'Teacher-student', quelle d\u00e9finition de consistency loss est la plus juste ?",
+      "question": "Quelles sont les conséquences de ne pas utiliser l'EMA dans un modèle enseignant?",
       "image_url": null,
       "choices": {
-        "A": "audit correspond a un levier avance en apprentissage semi supervise ; il formalise le role d'audit dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Teacher-student.",
-        "B": "Dans Teacher-student, mitigation se comprend comme un levier avance en apprentissage semi supervise ; il formalise le role de mitigation dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Teacher-student, consistency loss se comprend comme un levier avance en apprentissage semi supervise ; il formalise le role de consistency loss dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "groupes sous-representes designe un levier avance en apprentissage semi supervise ; il formalise le role de groupes sous-representes dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de consistency loss dans Teacher-student, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que groupes sous-representes, audit, mitigation restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (audit correspond a un levier avance en apprentissage semi supervise ; il formalise le role d'audit dans un...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Teacher-student, mitigation se comprend comme un levier avance en apprentissage semi supervise ; il fo...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Teacher-student, consistency loss se comprend comme un levier avance en apprentissage semi supervise ;...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (groupes sous-representes designe un levier avance en apprentissage semi supervise ; il formalise le role de...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Teacher-student', quelle erreur autour de mise a jour EMA est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec modele enseignant est d'optimiser modele enseignant en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Si modele etudiant est mal utilise, on observe souvent optimiser modele etudiant en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de consistency loss est optimiser consistency loss en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour de mise a jour EMA est optimiser mise a jour EMA en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de mise a jour EMA. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec modele enseignant est d'optimiser modele enseignant en silo et introduire des mod...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si modele etudiant est mal utilise, on observe souvent optimiser modele etudiant en silo et introduire des ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour de consistency loss est optimiser consistency loss en silo et introduire des mode...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour de mise a jour EMA est optimiser mise a jour EMA en silo et introduire des modes ...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "modele etudiant: dans un cas sante, quelle interpretation correspond le mieux au schema ML de 'Teacher-student' ?",
-      "image_url": "apprentissage-semi-supervise_teacher_student_modele_etudiant_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur mise a jour EMA: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour EMA en production.",
-        "B": "Le schema illustre une d\u00e9cision basee sur modele etudiant: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele etudiant en production.",
-        "C": "Lecture du visuel: modele enseignant est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer modele enseignant en production dans Teacher-student.",
-        "D": "Le signal visible est coh\u00e9rent avec consistency loss, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer consistency loss en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de modele etudiant: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur mise a jour EMA: les indices orientent vers supporter des arbitra...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur modele etudiant: les indices orientent vers supporter des arbitra...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: modele enseignant est mobilise pour supporter des arbitrages de production ; l'utiliser ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec consistency loss, car l'objectif est supporter des arbitrages de produc...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "mise a jour EMA: quelle proposition en donne la meilleure d\u00e9finition dans 'Teacher-student' (contexte e-commerce) ?",
-      "image_url": null,
-      "choices": {
-        "A": "degradation des pseudo-labels designe un levier avance en apprentissage semi supervise ; il exploite des exemples non etiquetes en injectant des labels estimes sous controle de confiance.",
-        "B": "mise a jour EMA designe un levier avance en apprentissage semi supervise ; il formalise le role de mise a jour EMA dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "audit correspond a un levier avance en apprentissage semi supervise ; il formalise le role d'audit dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Teacher-student.",
-        "D": "Dans Teacher-student, mitigation se comprend comme un levier avance en apprentissage semi supervise ; il formalise le role de mitigation dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de mise a jour EMA dans Teacher-student, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que audit, mitigation, degradation des pseudo-labels restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (degradation des pseudo-labels designe un levier avance en apprentissage semi supervise ; il exploite des ex...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (mise a jour EMA designe un levier avance en apprentissage semi supervise ; il formalise le role de mise a j...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (audit correspond a un levier avance en apprentissage semi supervise ; il formalise le role d'audit dans un...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans Teacher-student, mitigation se comprend comme un levier avance en apprentissage semi supervise ; il fo...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Teacher-student', quelle erreur autour de modele enseignant est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si consistency loss est mal utilise, on observe souvent optimiser consistency loss en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de mise a jour EMA est optimiser mise a jour EMA en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de modele enseignant est optimiser modele enseignant en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Un risque classique avec modele etudiant est d'optimiser modele etudiant en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de modele enseignant. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si consistency loss est mal utilise, on observe souvent optimiser consistency loss en silo et introduire de...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour de mise a jour EMA est optimiser mise a jour EMA en silo et introduire des modes ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de modele enseignant est optimiser modele enseignant en silo et introduire des mo...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec modele etudiant est d'optimiser modele etudiant en silo et introduire des modes d...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "modele etudiant: quel risque est le plus directement lie a son mauvais usage en production dans 'Teacher-student' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec mise a jour EMA est d'optimiser mise a jour EMA en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Un risque classique avec modele etudiant est d'optimiser modele etudiant en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Si modele enseignant est mal utilise, on observe souvent optimiser modele enseignant en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour de consistency loss est optimiser consistency loss en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de modele etudiant. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec mise a jour EMA est d'optimiser mise a jour EMA en silo et introduire des modes d...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec modele etudiant est d'optimiser modele etudiant en silo et introduire des modes d...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si modele enseignant est mal utilise, on observe souvent optimiser modele enseignant en silo et introduire ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de consistency loss est optimiser consistency loss en silo et introduire des mode...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "modele enseignant: quelle proposition en donne la meilleure d\u00e9finition dans 'Teacher-student' (contexte assurance) ?",
-      "image_url": null,
-      "choices": {
-        "A": "modele enseignant designe un levier avance en apprentissage semi supervise ; il formalise le role de modele enseignant dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "regularisation correspond a un levier avance en apprentissage semi supervise ; il contraint la complexite du modele pour limiter le surapprentissage, ce qui structure l'analyse dans Teacher-student.",
-        "C": "Dans Teacher-student, biais d'echantillonnage se comprend comme un levier avance en apprentissage semi supervise ; il traite l'equite de d\u00e9cision entre groupes sensibles et la conformite des modeles.",
-        "D": "groupes sous-representes designe un levier avance en apprentissage semi supervise ; il formalise le role de groupes sous-representes dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Une plus grande instabilité dans les poids du modèle enseignant qui pourrait dégrader la qualité des pseudo-étiquettes.",
+        "B": "Un accroissement de la consommation mémoire pendant l'entraînement.",
+        "C": "Une évolution trop rapide de la structure des couches du modèle étudiant.",
+        "D": "Un besoin accru de données étiquetées pour générer des pseudo-étiquettes."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de modele enseignant dans Teacher-student, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte assurance, alors que regularisation, biais d'echantillonnage, groupes sous-representes restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (modele enseignant designe un levier avance en apprentissage semi supervise ; il formalise le role de modele...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (regularisation correspond a un levier avance en apprentissage semi supervise ; il contraint la complexite d...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Teacher-student, biais d'echantillonnage se comprend comme un levier avance en apprentissage semi supe...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (groupes sous-representes designe un levier avance en apprentissage semi supervise ; il formalise le role de...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Sans EMA, les poids peuvent changer drastiquement d'une étape à l'autre, rendant les pseudo-étiquettes moins fiables. Option B est incorrecte car l'EMA ne réduit pas la consommation mémoire de manière significative. Option C est incorrecte car l'EMA n'affecte pas la structure des couches du modèle étudiant. Option D est incorrecte car l'EMA n'apprend pas sur la quantité de données étiquetées requises pour générer des pseudo-étiquettes.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans un système teacher-student, pourquoi est-il crucial d'avoir une loss de cohérence bien configurée?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour prévenir les conflits lors de la mise à jour des poids du modèle enseignant.",
+        "B": "Pour garantir que les variations des données d'entrée ne modifient pas considérablement les prédictions.",
+        "C": "Pour permettre une diminution automatique du learning rate sans intervention humaine.",
+        "D": "Pour augmenter la complexité du modèle enseignant sans compromettre la performance."
+      },
+      "correct_answer": "B",
+      "explanation": "Une loss de cohérence bien configurée assure que les prédictions restent stables malgré les variations des données, améliorant ainsi la robustesse du modèle. Option A est incorrecte, car la loss de cohérence ne traite pas de la mise à jour des poids du modèle enseignant. Option C est incorrecte, la loss de cohérence ne gère pas les learning rates. Option D est incorrecte car la complexité du modèle enseignant n'est pas directement augmentée par la loss de cohérence.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel problème peut survenir si le modèle étudiant est beaucoup plus complexe que le modèle enseignant?",
+      "image_url": null,
+      "choices": {
+        "A": "Le modèle étudiant risque de surapprendre les pseudo-étiquettes biaisées du modèle enseignant.",
+        "B": "Le modèle enseignant ne pourra pas suivre les mises à jour rapides de l'étudiant.",
+        "C": "La rétropropagation des gradients pourrait être interrompue prématurément.",
+        "D": "Les mises à jour de l'EMA seraient inutiles pour le modèle enseignant."
+      },
+      "correct_answer": "A",
+      "explanation": "Un modèle étudiant plus complexe peut surapprendre les biais des pseudo-étiquettes, ce qui nuit généralement à la performance générale. Option B est incorrecte, car le modèle enseignant n’est pas conçu pour suivre les mises à jour de l’étudiant mais pour générer des prédictions stables. Option C est incorrecte car la complexité relative ne cause pas d’interruption dans la rétropropagation. Option D est incorrecte car les mises à jour EMA ne sont pas destinées à devenir inutiles simplement en raison de la complexité relative des modèles.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment un modèle student peut-il bénéficier de la diversité dans les prédictions du modèle teacher?",
+      "image_url": null,
+      "choices": {
+        "A": "En utilisant des prédictions variées pour généraliser mieux sur des samples inconnus.",
+        "B": "En général, en réduisant le temps de calcul nécessaire pour chaque epoch.",
+        "C": "En détectant automatiquement des outliers lors de la rétropropagation.",
+        "D": "En minimisant le besoin d'une couche d'activation sur la sortie."
+      },
+      "correct_answer": "A",
+      "explanation": "Une diversité dans les prédictions permet de couvrir une plus large gamme de scénarios, aidant ainsi le modèle étudiant à généraliser mieux. Option B est incorrecte, car la diversité des prédictions n’affecte pas directement le temps de calcul. Option C est incorrecte et la diversité inhérente ne se traduit pas par un mécanisme explicite pour détecter les outliers. Option D est incorrecte, car la nécessité d'une couche d'activation n'est pas liée à la diversité des prédictions du modèle teacher.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quels sont les risques impliqués lorsque la consistency loss est mal calibrée?",
+      "image_url": null,
+      "choices": {
+        "A": "Augmenter un phénomène d'underfitting en négligeant les vrais labels.",
+        "B": "Induire un surapprentissage de la distribution du bruit dans les données.",
+        "C": "Augmenter la complexité computationnelle sans améliorer de base le modèle.",
+        "D": "Réduire à zero la capacité du modèle à distinguer entre bruit et signal."
+      },
+      "correct_answer": "B",
+      "explanation": "Une mauvaise calibration de la consistency loss peut entraîner un ajustement trop précis à la distribution spécifique du bruit dans les données, ce qui peut être pernicieux pour la généralisation. Option A est incorrecte car la consistency loss n’implique pas nécessairement de négliger les vrais labels. Option C est incorrecte, elle n'affecte pas directement la complexité computationnelle au-delà de son propre calcul. Option D est incorrecte parce qu'elle ne compromet pas entièrement la capacité de distinguer entre bruit et signal mais pourrait affecter négativement la performance.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel défi majeur un modèle enseignant rencontre-t-il dans le cadre teacher-student lorsqu'il génère des pseudo-étiquettes?",
+      "image_url": null,
+      "choices": {
+        "A": "Préciser les pseudo-étiquettes de manière à être invariantes par transformation géométrique.",
+        "B": "Créer des pseudo-étiquettes qui entraînent une convergence rapide du modèle étudiant.",
+        "C": "Générer des pseudo-étiquettes suffisamment variées pour couvrir l'ensemble des cas d'usage.",
+        "D": "Produire des pseudo-étiquettes faute de l'accès continu aux vrais labels."
+      },
+      "correct_answer": "C",
+      "explanation": "Le plus grand défi pour le modèle enseignant est de générer des pseudo-étiquettes variées qui représentent bien la diversité des données réelles rencontrées. Option A est incorrecte bien que les invariances soient désirables, elles ne sont pas l’objectif principal. Option B est incorrecte, car bien que souhaitable, la convergence rapide du modèle étudiant ne repose pas seulement sur la qualité des pseudo-étiquettes. Option D est incorrecte, car le problème central est la qualité et la représentativité des pseudo-étiquettes, pas l'accès aux vrais labels.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi l'EMA est-elle souvent appliquée spécifiquement au modèle teacher et non pas au modèle student?",
+      "image_url": null,
+      "choices": {
+        "A": "Parce que la stabilité est plus critique pour les prédictions du teacher afin d’assurer la qualité des pseudo-étiquettes.",
+        "B": "Parce que le modèle student est généralement plus petit et moins sujet aux fluctuations.",
+        "C": "Parce que elle améliore significativement la rapidité d’entraînement du modèle student.",
+        "D": "Parce qu'elle automatise l'ajustement des taux d'apprentissage pour le student."
+      },
+      "correct_answer": "A",
+      "explanation": "L'EMA assure la stabilité des prédictions du modèle enseignant, ce qui est essentiel pour produire des pseudo-étiquettes fiables. Option B est incorrecte, la taille n'est pas nécessairement liée à la volatilité. Option C est incorrecte, l'EMA n'améliore pas principalement la vitesse de l'entraînement du modèle étudiant. Option D est incorrecte, car l'EMA ne gère pas l'ajustement des taux d'apprentissage.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'impact principal des pseudo-étiquettes incorrectes fournies par le teacher sur le modèle student?",
+      "image_url": null,
+      "choices": {
+        "A": "Elles peuvent induire un biais entraînant le student à mal généraliser.",
+        "B": "Elles réduisent automatiquement la dimensionnalité des features en apprentissage.",
+        "C": "Elles augmentent la capacité du student à détecter des anomalies dans les données.",
+        "D": "Elles améliorent la performance en raison de leur nature stochastique."
+      },
+      "correct_answer": "A",
+      "explanation": "Les pseudo-étiquettes incorrectes peuvent induire un biais qui affectera la capacité de généralisation du modèle student. Option B est incorrecte, car la réduction de la dimensionnalité des features n'est pas un effet direct des pseudo-étiquettes. Option C est incorrecte, elles ne contribuent pas directement à la détection d'anomalies. Option D est faux, car la nature stochastique d'étiquettes incorrectes ne conduit pas à une amélioration de la performance.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la conséquence directe d'une forte dépendance du modèle student aux pseudo-étiquettes générées par le modèle teacher?",
+      "image_url": null,
+      "choices": {
+        "A": "Risque de surajustement aux biais ou erreurs présentes dans les pseudo-étiquettes.",
+        "B": "Amélioration générale de la robustesse face aux données bruyantes.",
+        "C": "Augmentation linéaire du volume de données étiquetées requis.",
+        "D": "Diminution de la précision car les données non étiquetées sont ignorées."
+      },
+      "correct_answer": "A",
+      "explanation": "Le modèle student peut surajuster si les pseudo-étiquettes sont biaisées ou contiennent des erreurs, car elles influencent l'apprentissage. Option B est incorrecte, car la robustesse n'est généralement pas améliorée par des pseudo-étiquettes inexactes. Option C est incorrecte, car la dépendance ne change pas directement le volume de données étiquetées requis. Option D est faux, car les données non étiquetées sont justement valorisées par l'utilisation de pseudo-étiquettes.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment un modèle enseignant est-il typiquement utilisé dans l'apprentissage semi-supervisé avec une architecture teacher-student?",
+      "image_url": null,
+      "choices": {
+        "A": "Le modèle enseignant génère des pseudo-étiquettes pour les données non étiquetées pour améliorer l'apprentissage du modèle étudiant.",
+        "B": "Le modèle enseignant est entraîné en parallèle et ne partage aucun paramètre avec le modèle étudiant.",
+        "C": "Le modèle enseignant a une complexité plus faible que le modèle étudiant pour favoriser une convergence rapide.",
+        "D": "Le modèle enseignant utilise les erreurs du modèle étudiant pour ajuster ses propres paramètres."
+      },
+      "correct_answer": "A",
+      "explanation": "Dans l'architecture teacher-student, le modèle enseignant sert à générer des pseudo-étiquettes pour les données non étiquetées, ce qui aide le modèle étudiant à s'entraîner avec un volume de données élargi et diversifié. L'option B est incorrecte car le modèle étudiant utilise les informations du modèle enseignant, pas nécessairement de manière totalement indépendante. L'option C est incorrecte, car on préfère généralement que le modèle enseignant soit au moins aussi complexe que le modèle étudiant pour générer de bonnes pseudo-étiquettes. L'option D est incorrecte car c'est le modèle étudiant qui apprend à partir des sorties du modèle enseignant, pas l'inverse.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans le contexte des modèles teacher-student, qu'est-ce que la mise à jour EMA (Exponential Moving Average) affecte principalement?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle calcule une version lissée des poids du modèle enseignant au cours de l'entraînement.",
+        "B": "Elle ajuste dynamiquement le learning rate du modèle étudiant en fonction des performances passées.",
+        "C": "Elle met à jour les biais des couches denses du modèle étudiant pour éviter le surapprentissage.",
+        "D": "Elle normalise les sorties du modèle enseignant pour garantir la stabilité numérique."
+      },
+      "correct_answer": "A",
+      "explanation": "La mise à jour par moyenne mobile exponentielle (EMA) est utilisée pour lisser les poids du modèle enseignant afin de réduire les fluctuations et stabiliser son comportement au cours de l'entraînement. L'option B est incorrecte car EMA ne concerne pas l'ajustement du taux d'apprentissage. L'option C est inadéquate car EMA ne cible pas spécifiquement les biais des couches denses. L'option D est fausse car elle confond le rôle d'EMA avec des techniques telles que la normalisation de lot.",
       "difficulty": "hard"
     }
   ]

@@ -5,255 +5,255 @@
   "questions": [
     {
       "type": "text",
-      "question": "advantage: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Actor-critic' ?",
+      "question": "Dans le cadre de l'apprentissage par renforcement, quel est le rôle de l'actor dans un modèle actor-critic?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Actor-critic, actor est choisi afin de supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "B": "Pendant une revue pre-deploiement, critic est utile pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique tout en surveillant le risque d'optimiser critic en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Dans une revue pre-deploiement d'Actor-critic, l'\u00e9quipe applique mise a jour conjointe pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour conjointe en production.",
-        "D": "Dans une revue pre-deploiement d'Actor-critic, l'\u00e9quipe applique advantage pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer advantage en production."
+        "A": "L'actor choisit les actions à prendre en se basant sur une politique paramétrisée.",
+        "B": "L'actor évalue le critic pour améliorer la valeur d'une politique donnée.",
+        "C": "L'actor calcule un score pour chaque action possible dans un état donné.",
+        "D": "L'actor estime la fonction valeur d'un état donné."
       },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car advantage y sert de levier de d\u00e9cision principal dans Actor-critic. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Actor-critic, actor est choisi afin de supporter des arbitrages de production ; amelio...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une revue pre-deploiement, critic est utile pour supporter des arbitrages de production ; am\u00e9liorer...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une revue pre-deploiement d'Actor-critic, l'\u00e9quipe applique mise a jour conjointe pour supporter des ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une revue pre-deploiement d'Actor-critic, l'\u00e9quipe applique advantage pour supporter des arbitrages d...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "L'actor est responsable de sélectionner les actions à effectuer en suivant une politique paramétrisée, souvent basée sur la probabilité. La réponse B est incorrecte car c'est le critic qui évalue la politique. La réponse C est incorrecte car elle décrit la fonction q-learning. La réponse D traite du rôle du critic.",
       "difficulty": "medium"
     },
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec actor dans 'Actor-critic' ?",
-      "image_url": "apprentissage-par-renforcement_actor_critic_actor_2.png",
+      "type": "text",
+      "question": "Qu'est-ce que le critic dans le cadre de l'apprentissage par renforcement avec approche actor-critic?",
+      "image_url": null,
       "choices": {
-        "A": "Dans Actor-critic, mise a jour conjointe est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour conjointe en production.",
-        "B": "Dans Actor-critic, actor est mobilise pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "C": "Le role de critic est de supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "D": "advantage sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer advantage en production pour guider une d\u00e9cision exploitable."
+        "A": "Le critic évalue la qualité des actions prises par l'actor.",
+        "B": "Le critic génère directement les actions à exécuter.",
+        "C": "Le critic calcule le gradient de politique pour mettre à jour l'actor.",
+        "D": "Le critic optimise une politique en maximisant le retour attendu."
+      },
+      "correct_answer": "A",
+      "explanation": "Le critic évalue la politique en estimant les valeurs de retour d'une action empruntée par l'actor. La réponse B est incorrecte, car le critic ne génère pas d'actions. La réponse C concerne le calcul du gradient, qui est une étape dans l'update conjointe, pas le rôle spécifique du critic. La réponse D est partiellement correcte mais incomplète ; elle ne précise pas que le critic fait cela via l'estimation de la fonction valeur.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le rôle de l'avantage dans les modèles actor-critic?",
+      "image_url": null,
+      "choices": {
+        "A": "Il mesure combien une action se compare à la politique moyenne dans un état donné.",
+        "B": "Il est utilisé pour calculer la probabilité d'une action.",
+        "C": "Il optimize la fonction de récompense immédiate.",
+        "D": "Il élimine le besoin de la fonction valeur dans le critic."
+      },
+      "correct_answer": "A",
+      "explanation": "L'avantage mesure combien une action spécifique, dans un état, améliore ou détériore la performance par rapport à l'actuelle politique moyenne. La réponse B est fausse car l'avantage ne calcule pas de probabilités. La réponse C est incorrecte ; l'avantage est une estimation de l'amélioration, pas l'optimisation de la récompense immédiate. La réponse D est incorrecte, car le critic continue d'utiliser la fonction valeur.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il bénéfique de mettre à jour conjointement l'actor et le critic?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour garantir la convergence de l'actor et du critic vers des politiques optimales.",
+        "B": "Cela augmente la robustesse contre l'overfitting dans les politiques de l'actor.",
+        "C": "Cela facilite l'amélioration synchronisée des actions et des évaluations.",
+        "D": "Pour accélérer les calculs en réduisant le nombre d'états à explorer."
+      },
+      "correct_answer": "C",
+      "explanation": "La mise à jour conjointe facilite l'amélioration synchronisée, car l'actor adapte ses actions en se basant sur les évaluations de critic mises à jour simultanément. La réponse A est incorrecte car elle ne garantit pas nécessairement la convergence optimale. La réponse B est fausse, la mise à jour conjointe ne vise pas explicitement à traiter l'overfitting. La réponse D est incorrecte ; la mise à jour conjointe ne se focalise pas sur la réduction d'états à explorer.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans un modèle actor-critic, comment l'avantage est-il généralement calculé?",
+      "image_url": null,
+      "choices": {
+        "A": "En soustrayant la valeur de la fonction valeur d'état à la valeur Q.",
+        "B": "En ajoutant la récompense immédiate à l'estimation de la valeur de l'état suivant.",
+        "C": "En moyennant la politique actuelle sur une période de temps fixe.",
+        "D": "En normalisant la politique d'action pour éviter des valeurs extrêmes."
+      },
+      "correct_answer": "A",
+      "explanation": "L'avantage est souvent calculé en soustrayant la valeur estimée de l'état (fonction valeur) à la valeur Q d'une action particulière dans cet état. Cette méthode estime combien l'action choisie est meilleure ou pire que la moyenne. La réponse B est incorrecte car cela décrit une méthode de calcul de l'estimation future, pas de l'avantage. La réponse C confond avec l'approximation temporelle moyenne. La réponse D ne décrit pas un calcul d'avantage.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel impact la mise à jour du critic a-t-elle sur l'actor dans un modèle actor-critic?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle améliore les capacités de l'actor à anticiper les futures récompenses.",
+        "B": "Elle ajuste directement les probabilités d'action dans la politique.",
+        "C": "Elle fournit un gradient de politique plus précis à l'actor.",
+        "D": "Elle modifie la structure neuronale sous-jacente utilisée par l'actor."
+      },
+      "correct_answer": "C",
+      "explanation": "La mise à jour du critic fournit une estimation plus précise des valeurs, ce qui génère un gradient pour ajuster plus finement la politique de l'actor. La réponse A serait correcte pour le critic en termes de prédiction, mais ne décrit pas l'impact sur l'actor. La réponse B est incorrecte car l'impact est indirect via le gradient. La réponse D est incorrecte, étant donné que la mise à jour du critic affecte l'évaluation, pas la structure de l'acteur.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une des limitations potentielles des modèles actor-critic que la mise à jour conjointe cherche à adresser?",
+      "image_url": null,
+      "choices": {
+        "A": "La lenteur de convergence due aux évaluations séparées des actions.",
+        "B": "L'instabilité causée par l'asynchronicité entre politiques et évaluations.",
+        "C": "Les calculs intensifs nécessaires pour ajuster chaque paramètre indépendamment.",
+        "D": "Le manque de flexibilité dans l'adaptation aux environnements dynamiques."
       },
       "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'actor dans Actor-critic. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Actor-critic, mise a jour conjointe est mobilise pour supporter des arbitrages de production ; l'utili...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Actor-critic, actor est mobilise pour supporter des arbitrages de production ; am\u00e9liorer une politique...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de critic est de supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous inc...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (advantage sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider q...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
+      "explanation": "La mise à jour conjointe essaye d'adresser l'instabilité potentiellement causée par des ajustements asynchrones entre l'actor et le critic. La réponse A est incorrecte, car bien que cela puisse être le cas, la lenteur est davantage affectée par les traits des algorithmes et non pas simplement par le modèle actor-critic. La réponse C est fausse ; les calculs intensifs ne concernent pas de façon exclusive ce modèle, et ne sont pas résolus uniquement par la mise à jour conjointe. La réponse D est incorrecte, car la flexibilité est un avantage, pas une limitation.",
+      "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Actor-critic' (cybersecurite), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment critic ?",
+      "question": "Quel pourrait être un problème d'ajustement en utilisant une valeur d'avantage mal calculée dans l'actor-critic?",
       "image_url": null,
       "choices": {
-        "A": "Dans Actor-critic, etat dangereux se comprend comme un levier avance en apprentissage par renforcement ; il formalise le role d'etat dangereux dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "penalite designe un levier avance en apprentissage par renforcement ; il contraint la complexite du modele pour limiter le surapprentissage.",
-        "C": "garde-fou correspond a un levier avance en apprentissage par renforcement ; il formalise le role de garde-fou dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Actor-critic.",
-        "D": "critic correspond a un levier avance en apprentissage par renforcement ; il guide l'apprentissage de d\u00e9cisions sequentielles en maximisant un signal de recompense, ce qui structure l'analyse dans Actor-critic."
+        "A": "Il augmente la variance des estimations, rendant la convergence difficile.",
+        "B": "Il induit une dépendance excessive sur la fonction valeur d'état.",
+        "C": "Il fait confondre la récompense immédiate avec la récompense totale.",
+        "D": "Il entraîne une exploration insuffisante de l'espace d'état-action."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de critic dans Actor-critic, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que etat dangereux, penalite, garde-fou restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Actor-critic, etat dangereux se comprend comme un levier avance en apprentissage par renforcement ; il...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (penalite designe un levier avance en apprentissage par renforcement ; il contraint la complexite du modele ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (garde-fou correspond a un levier avance en apprentissage par renforcement ; il formalise le role de garde-f...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (critic correspond a un levier avance en apprentissage par renforcement ; il guide l'apprentissage de decisi...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Actor-critic', quel commentaire du schema traduit le mieux le role d'advantage ?",
-      "image_url": "apprentissage-par-renforcement_actor_critic_advantage_2.png",
-      "choices": {
-        "A": "Dans Actor-critic, actor est mobilise pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "B": "Le role de critic est de supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "C": "mise a jour conjointe sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour conjointe en production pour guider une d\u00e9cision exploitable.",
-        "D": "advantage sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer advantage en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'advantage dans Actor-critic. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Actor-critic, actor est mobilise pour supporter des arbitrages de production ; am\u00e9liorer une politique...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de critic est de supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous inc...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (mise a jour conjointe sert a supporter des arbitrages de production ; l'utiliser correctement permet de mie...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (advantage sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider q...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
+      "correct_answer": "A",
+      "explanation": "Une mauvaise estimation de l'avantage peut augmenter la variance des estimations, perturbant ainsi la stabilité de la convergence de l'algorithme. La réponse B est incorrecte, car l'avantage est déjà relié à la fonction valeur de facto. La réponse C est incorrecte ; la distinction entre les différentes formes de récompenses est claire dans les structures de l'actor-critic. La réponse D est incorrecte, l'avantage ne déterminant pas directement l'exploration.",
+      "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Actor-critic', quelle situation de terrain montre le mieux quand utiliser actor ?",
+      "question": "Lorsque l'actor utilise l'information du critic, quelle est une erreur courante qu'un programmeur pourrait commettre?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Actor-critic, mise a jour conjointe est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour conjointe en production.",
-        "B": "En contexte r\u00e9el sur Actor-critic, actor est choisi afin de supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "C": "Pendant une revue pre-deploiement, critic est utile pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique tout en surveillant le risque d'optimiser critic en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Dans une revue pre-deploiement d'Actor-critic, l'\u00e9quipe applique advantage pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer advantage en production."
+        "A": "Utiliser directement les valeurs Q pour décider des actions sans passage par la politique.",
+        "B": "Ignorer l'importance des rewards estimés à court terme au profit des récompenses futures.",
+        "C": "Adapter des gradients de politique basés uniquement sur les immediate returns.",
+        "D": "Entraîner le critic sur des trajectoires aléatoires sans vectorisation des états."
+      },
+      "correct_answer": "A",
+      "explanation": "L'actor ne doit pas simplement utiliser les valeurs Q sans tenir compte de la politique paramétrisée, car cela pourrait court-circuiter le processus prévu. La réponse B n'est pas directement une erreur du rôle de l'actor, mais pourrait être une simplification erronée de la dynamique des récompenses. La réponse C est incorrecte ; alors que cela pourrait être restrictif, ce n'est pas typique dans l'actor-critic. La réponse D est plus une question d'efficacité computationnelle qu'un choix d'implémentation de l'actor.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce qui pourrait conduire à la divergence dans un apprentissage actor-critic mal configuré?",
+      "image_url": null,
+      "choices": {
+        "A": "Un taux d'apprentissage identique non différencié pour l'actor et le critic.",
+        "B": "Une normalisation excessive des rewards avant mise à jour de la politique.",
+        "C": "Un recours systématique à des traces de gradients stochastiques.",
+        "D": "Une surévaluation des actions basées uniquement sur les valeurs empiriques."
+      },
+      "correct_answer": "A",
+      "explanation": "Utiliser le même taux d'apprentissage pour l'actor et le critic peut déséquilibrer leurs mises à jour, rendant difficile la stabilisation du système. C'est important car ils nécessitent souvent des vitesses d'apprentissage différentes. La réponse B pourrait ralentir les convergences, mais pas induire de divergence. La réponse C est incorrecte ; les traces de gradients stochastiques sont souvent utilisées pour plus de robustesse, pas de divergence. La réponse D est incorrecte, comme une surévaluation empirique pourrait conduire à des inefficacités, mais pas nécessairement à une divergence.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel impact principal une mauvaise estimation du critic pourrait-elle avoir sur l'actor?",
+      "image_url": null,
+      "choices": {
+        "A": "L'actor pourrait surestimer les risques d'une politique.",
+        "B": "L'actor pourrait tirer des valeurs de politiques sous-optimales.",
+        "C": "L'actor abandonnera systématiquement les politiques basées sur les rewards.",
+        "D": "L'acteur n'implémentera que les politiques conservatrices par excès."
       },
       "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car actor y sert de levier de d\u00e9cision principal dans Actor-critic. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Actor-critic, mise a jour conjointe est choisi afin de supporter des arbitrages de pro...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Actor-critic, actor est choisi afin de supporter des arbitrages de production ; amelio...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une revue pre-deploiement, critic est utile pour supporter des arbitrages de production ; am\u00e9liorer...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une revue pre-deploiement d'Actor-critic, l'\u00e9quipe applique advantage pour supporter des arbitrages d...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le critic génère des évaluations erronées de la politique pour l'actor, qui peuvent mener ce dernier à tirer des vérités inexactes, atteignant des politiques sous-optimales. La réponse A est incorrecte, car c'est plutôt une conséquence de la mauvaise estimation des états que des risques de politiques. La réponse C est incorrecte ; l'actor ne doit pas toujours rejeter basique sur les rewards. La réponse D est incorrecte ; bien qu'une surestimation puisse mener l'actor à être plus conservateur, un mauvais critic ne garantit pas ce comportement.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans le cadre des mises à jour de policy, pourquoi l'utilisation de l'avantage est-elle préférée à l'usage direct de Q-values?",
+      "image_url": null,
+      "choices": {
+        "A": "L'avantage offre une stabilité supérieure due à sa moyenne zéro.",
+        "B": "L'avantage demande moins de calculs pour convergence.",
+        "C": "L'avantage permet d'ignorer les fluctuations rapides observées dans les states.",
+        "D": "L'avantage élimine la nécessité de critiquer l'état actuel."
+      },
+      "correct_answer": "A",
+      "explanation": "L'avantage est généralement centré autour de zéro, limitant l'effet de décalage des valeurs élevées ou très faibles et augmentant la stabilité du gradient de politique. La réponse B est incorrecte car l'avantage n'est pas nécessairement plus économe en calcul. La réponse C est incorrecte, l'avantage s'applique toujours à l'évaluation de l'effet d'une action, pas aux fluctuations de l'état lui-même. La réponse D est fausse ; l'avantage est calculé en relation avec le critic et ne le rend pas obsolète.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle stratégie peut aider à éviter la divergence dans les entraînements actor-critic?",
+      "image_url": null,
+      "choices": {
+        "A": "Utiliser des taux d'apprentissage séparés et adaptés pour l'actor et le critic.",
+        "B": "Appliquer la rétropropagation temporelle à tous les niveaux.",
+        "C": "Prioriser uniquement les variations de politique avec reconnaissance d'état spatial.",
+        "D": "Limiter l'impact des récompenses positives sur le critic."
+      },
+      "correct_answer": "A",
+      "explanation": "L'utilisation de différents taux d'apprentissage pour l'actor et le critic assure que chaque modèle s'ajuste de manière appropriée, minimisant ainsi les risques d'instabilité et de divergence. La réponse B est incorrecte, bien que la rétropropagation temporelle soit utile, elle ne prévient pas spécifiquement la divergence sans autre ajustement. La réponse C est incorrecte ; se focaliser uniquement sur une variation de politique spécifique pourrait être réducteur. La réponse D est incorrecte ; en général, il est préférable d'incorporer à la fois des récompenses positives et négatives de manière équilibrée.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'un des principaux défis lors de la mise à jour conjointe de l'actor et du critic?",
+      "image_url": null,
+      "choices": {
+        "A": "Éviter la surcorrélation des gradients entre l'actor et le critic.",
+        "B": "Maintenir une complexité de calcul polynomiale minimale.",
+        "C": "Garantir l'indépendance totale entre les mises à jour.",
+        "D": "Optimiser la politique en utilisant des critères ad hoc seulement."
+      },
+      "correct_answer": "A",
+      "explanation": "Un des défis principaux est la possibilité que les gradients deviennent fortement corrélés, ce qui pourrait entraîner des oscillations non désirées et une convergence sous-optimale. La réponse B est incorrecte ; bien que la complexité soit importante, elle n'est pas spécifiquement un défi unique dans ce contexte. La réponse C est incorrecte, en pratique, les mises à jour dépendent les unes des autres, et ce n'est pas toujours possible ni souhaitable de les garder totalement indépendantes. La réponse D n'est pas correcte car l’optimisation doit être basée sur des méthodes robustes, pas uniquement sur critères arbitraires.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la relation typique entre les fonctions calculées par l'actor et le critic lorsqu'ils sont mis à jour conjointement?",
+      "image_url": null,
+      "choices": {
+        "A": "L'actor ajuste la probabilité d'une action tandis que le critic optimise ladite action.",
+        "B": "L'actor stabilise ses politiques indépendamment alors que le critic évolue en parallèle.",
+        "C": "L'actor modifie sa politique en fonction de l'analyse de performance effectuée par le critic.",
+        "D": "L'actor applique ses politiques retrouvées sans nécessairement incorporer les retours du critic."
+      },
+      "correct_answer": "C",
+      "explanation": "L'actor utilise l'évaluation de la politique fournie par le critic pour ajuster sa politique, ce qui représente une interaction dynamique essentielle au modèle actor-critic. La réponse A était incorrecte, car le critic n'optimise pas directement les actions. La réponse B est fausse car l'acteur et le critique travaillent ensemble, pas indépendamment. La réponse D est incorrecte, car elle ignore la back-propagation de l'information d'évaluation.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi une distribution normalisée est-elle souvent utilisée lors de la mise à jour des paramètres de policy dans les systèmes actor-critic?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour équilibrer les différences entre hautes et basses valeurs d'action.",
+        "B": "Pour noter l'impact des fluctuations d'états irrationnels.",
+        "C": "Pour maximiser l'espérance des gains via une distribution uniforme.",
+        "D": "Pour amplifier les corrections immédiates apportées au critère de récompense."
+      },
+      "correct_answer": "A",
+      "explanation": "Une distribution normalisée aide à prévenir que les hautes valeurs extrêmes d'actions ne dominent pas injustement l'apprentissage, facilitant ainsi une mise à jour plus stable et progressive des paramètres. La réponse B est incorrecte car elle se concentre sur l'état plutôt que sur l'action. La réponse C est incorrecte, normaliser ne maximise pas automatiquement l'espérance des gains. La réponse D est incorrecte, car l'amplification n'est pas le but de la normalisation aux moyens de l'évaluation des récompenses.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'effet potentiel du 'leakage' dans l'algorithme de convergence d'actor-critic?",
+      "image_url": null,
+      "choices": {
+        "A": "Il pourrait entraîner l'exploration continue de pathématiques irréalisables.",
+        "B": "Il permettrait une surspécialisation prématurée sur des politiques sous-optimales.",
+        "C": "Il empêcherait la convergence vers une politique stable en raison d'une mauvaise estimation.",
+        "D": "Il causerait une réduction des fonctionnalités de calcul lorsque les buffers sont pleins."
+      },
+      "correct_answer": "C",
+      "explanation": "Le 'leakage' peut engendrer des estimations incorrectes du critic, ce qui entraînera une stratégie qui oscille sans atteindre une convergence stable. La réponse A est peu probable car, même si l'exploration se poursuit, elle est souvent guidée par des récompenses plus faibles. La réponse B est inexacte, le 'leakage' ne mène pas automatiquement à une surspécialisation, mais à une dérive. La réponse D évoque une question de capacité et non de convergence mathématique des modèles.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans le contexte de l'apprentissage par renforcement avec l'approche actor-critic, quelle est la fonction principale de l'actor?",
+      "image_url": null,
+      "choices": {
+        "A": "Sélectionner les actions en se basant sur une politique qui est mise à jour pour maximiser les récompenses futures.",
+        "B": "Évaluer la valeur de l'état actuel et fournir le signal d'erreur de récompense pour ajuster la politique.",
+        "C": "Calculer l'avantage en combinant les valeurs des états et des actions pour la rétropropagation.",
+        "D": "Gérer la mise à jour des poids du réseau de neurones en fonction de la diminution de la perte moyenne."
+      },
+      "correct_answer": "A",
+      "explanation": "Dans l'approche actor-critic, l'actor est responsable de choisir les actions à exécuter en se basant sur une politique qui est améliorée au fil du temps pour maximiser les récompenses futures. Le critic, qui a pour fonction d'évaluer l'état actuel et de fournir un signal d'erreur pour l'apprentissage de la politique, est décrit dans le choix B. Le choix C est incorrect car le calcul de l'avantage n'est pas directement effectué par l'actor. Enfin, le choix D ne correspond pas au rôle ni de l'actor ni du critic dans ce cadre, mais à une étape générale de l'apprentissage supervisé.",
       "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin cybersecurite dans 'Actor-critic', pourquoi critic est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "advantage sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer advantage en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Actor-critic, mise a jour conjointe est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour conjointe en production.",
-        "C": "Dans Actor-critic, critic est mobilise pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "D": "Le role d'actor est de supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie critic \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (advantage sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider q...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Actor-critic, mise a jour conjointe est mobilise pour supporter des arbitrages de production ; l'utili...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Actor-critic, critic est mobilise pour supporter des arbitrages de production ; am\u00e9liorer une politiqu...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role d'actor est de supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous ince...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "advantage: pourquoi ce concept est-il crucial pour une \u00e9quipe banque dans 'Actor-critic' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role de mise a jour conjointe est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour conjointe en production.",
-        "B": "Le role d'advantage est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer advantage en production.",
-        "C": "actor sert a supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Actor-critic, critic est mobilise pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie advantage \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de mise a jour conjointe est de supporter des arbitrages de production ; l'utiliser correctement pe...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role d'advantage est de supporter des arbitrages de production ; l'utiliser correctement permet de mieu...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (actor sert a supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dyn...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Actor-critic, critic est mobilise pour supporter des arbitrages de production ; am\u00e9liorer une politiqu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Actor-critic', quel est le principal mode d'echec quand advantage est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si advantage est mal utilise, on observe souvent optimiser advantage en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour d'actor est optimiser actor en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Un risque classique avec critic est d'optimiser critic en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Si mise a jour conjointe est mal utilise, on observe souvent optimiser mise a jour conjointe en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'advantage. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si advantage est mal utilise, on observe souvent optimiser advantage en silo et introduire des modes d'eche...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour d'actor est optimiser actor en silo et introduire des modes d'echec caches au de...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec critic est d'optimiser critic en silo et introduire des modes d'echec caches au d...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si mise a jour conjointe est mal utilise, on observe souvent optimiser mise a jour conjointe en silo et int...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Actor-critic', quel est le role le plus determinant d'actor pour un cas industrie ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Actor-critic, critic est mobilise pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "B": "Le role d'advantage est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer advantage en production.",
-        "C": "mise a jour conjointe sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour conjointe en production pour guider une d\u00e9cision exploitable.",
-        "D": "actor sert a supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie actor \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Actor-critic, critic est mobilise pour supporter des arbitrages de production ; am\u00e9liorer une politiqu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role d'advantage est de supporter des arbitrages de production ; l'utiliser correctement permet de mieu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (mise a jour conjointe sert a supporter des arbitrages de production ; l'utiliser correctement permet de mie...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (actor sert a supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dyn...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'Actor-critic', quel exemple met critic au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une revue pre-deploiement, critic est utile pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique tout en surveillant le risque d'optimiser critic en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Dans une revue pre-deploiement d'Actor-critic, l'\u00e9quipe applique actor pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "C": "En contexte r\u00e9el sur Actor-critic, advantage est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer advantage en production.",
-        "D": "Pendant une revue pre-deploiement, mise a jour conjointe est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour conjointe en production tout en surveillant le risque d'optimiser mise a jour conjointe en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car critic y sert de levier de d\u00e9cision principal dans Actor-critic. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une revue pre-deploiement, critic est utile pour supporter des arbitrages de production ; am\u00e9liorer...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une revue pre-deploiement d'Actor-critic, l'\u00e9quipe applique actor pour supporter des arbitrages de pr...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Actor-critic, advantage est choisi afin de supporter des arbitrages de production ; l'...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une revue pre-deploiement, mise a jour conjointe est utile pour supporter des arbitrages de product...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe banque dans 'Actor-critic', quelle d\u00e9finition d'advantage est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "garde-fou correspond a un levier avance en apprentissage par renforcement ; il formalise le role de garde-fou dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Actor-critic.",
-        "B": "Dans Actor-critic, coordination se comprend comme un levier avance en apprentissage par renforcement ; il formalise le role de coordination dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Actor-critic, advantage se comprend comme un levier avance en apprentissage par renforcement ; il formalise le role d'advantage dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "penalite designe un levier avance en apprentissage par renforcement ; il contraint la complexite du modele pour limiter le surapprentissage."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'advantage dans Actor-critic, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que penalite, garde-fou, coordination restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (garde-fou correspond a un levier avance en apprentissage par renforcement ; il formalise le role de garde-f...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Actor-critic, coordination se comprend comme un levier avance en apprentissage par renforcement ; il f...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Actor-critic, advantage se comprend comme un levier avance en apprentissage par renforcement ; il form...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (penalite designe un levier avance en apprentissage par renforcement ; il contraint la complexite du modele ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec mise a jour conjointe dans 'Actor-critic' ?",
-      "image_url": "apprentissage-par-renforcement_actor_critic_mise_a_jour_conjointe_2.png",
-      "choices": {
-        "A": "critic sert a supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Actor-critic, advantage est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer advantage en production.",
-        "C": "Dans Actor-critic, mise a jour conjointe est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour conjointe en production.",
-        "D": "Le role d'actor est de supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de mise a jour conjointe dans Actor-critic. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (critic sert a supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dy...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Actor-critic, advantage est mobilise pour supporter des arbitrages de production ; l'utiliser correcte...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Actor-critic, mise a jour conjointe est mobilise pour supporter des arbitrages de production ; l'utili...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role d'actor est de supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous ince...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Actor-critic', quelle erreur autour d'actor est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si advantage est mal utilise, on observe souvent optimiser advantage en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de mise a jour conjointe est optimiser mise a jour conjointe en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour d'actor est optimiser actor en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Un risque classique avec critic est d'optimiser critic en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'actor. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si advantage est mal utilise, on observe souvent optimiser advantage en silo et introduire des modes d'eche...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour de mise a jour conjointe est optimiser mise a jour conjointe en silo et introduir...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour d'actor est optimiser actor en silo et introduire des modes d'echec caches au de...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec critic est d'optimiser critic en silo et introduire des modes d'echec caches au d...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "actor: quelle proposition en donne la meilleure d\u00e9finition dans 'Actor-critic' (contexte industrie) ?",
-      "image_url": null,
-      "choices": {
-        "A": "actor designe un levier avance en apprentissage par renforcement ; il guide l'apprentissage de d\u00e9cisions sequentielles en maximisant un signal de recompense.",
-        "B": "safe exploration correspond a un levier avance en apprentissage par renforcement ; il formalise le role de safe exploration dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Actor-critic.",
-        "C": "Dans Actor-critic, etat dangereux se comprend comme un levier avance en apprentissage par renforcement ; il formalise le role d'etat dangereux dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "penalite designe un levier avance en apprentissage par renforcement ; il contraint la complexite du modele pour limiter le surapprentissage."
-      },
-      "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'actor dans Actor-critic, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte industrie, alors que safe exploration, etat dangereux, penalite restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (actor designe un levier avance en apprentissage par renforcement ; il guide l'apprentissage de d\u00e9cisions se...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (safe exploration correspond a un levier avance en apprentissage par renforcement ; il formalise le role de ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Actor-critic, etat dangereux se comprend comme un levier avance en apprentissage par renforcement ; il...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (penalite designe un levier avance en apprentissage par renforcement ; il contraint la complexite du modele ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "critic: quel risque est le plus directement lie a son mauvais usage en production dans 'Actor-critic' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec mise a jour conjointe est d'optimiser mise a jour conjointe en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Un risque classique avec critic est d'optimiser critic en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Si actor est mal utilise, on observe souvent optimiser actor en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour d'advantage est optimiser advantage en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de critic. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec mise a jour conjointe est d'optimiser mise a jour conjointe en silo et introduire...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec critic est d'optimiser critic en silo et introduire des modes d'echec caches au d...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si actor est mal utilise, on observe souvent optimiser actor en silo et introduire des modes d'echec caches...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour d'advantage est optimiser advantage en silo et introduire des modes d'echec cach...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Actor-critic', quelle situation de terrain montre le mieux quand utiliser mise a jour conjointe ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une revue pre-deploiement d'Actor-critic, l'\u00e9quipe applique critic pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "B": "En contexte r\u00e9el sur Actor-critic, advantage est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer advantage en production.",
-        "C": "En contexte r\u00e9el sur Actor-critic, mise a jour conjointe est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour conjointe en production.",
-        "D": "Pendant une revue pre-deploiement, actor est utile pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique tout en surveillant le risque d'optimiser actor en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car mise a jour conjointe y sert de levier de d\u00e9cision principal dans Actor-critic. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une revue pre-deploiement d'Actor-critic, l'\u00e9quipe applique critic pour supporter des arbitrages de p...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Actor-critic, advantage est choisi afin de supporter des arbitrages de production ; l'...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Actor-critic, mise a jour conjointe est choisi afin de supporter des arbitrages de pro...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une revue pre-deploiement, actor est utile pour supporter des arbitrages de production ; am\u00e9liorer ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Actor-critic', quel est le role le plus determinant de mise a jour conjointe pour un cas assurance ?",
-      "image_url": null,
-      "choices": {
-        "A": "mise a jour conjointe sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour conjointe en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Actor-critic, actor est mobilise pour supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "C": "Le role de critic est de supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "D": "advantage sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer advantage en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie mise a jour conjointe \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (mise a jour conjointe sert a supporter des arbitrages de production ; l'utiliser correctement permet de mie...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Actor-critic, actor est mobilise pour supporter des arbitrages de production ; am\u00e9liorer une politique...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de critic est de supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous inc...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (advantage sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider q...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "critic: dans 'Actor-critic', un schema met en evidence ce comportement. Quelle lecture est la plus juste ?",
-      "image_url": "apprentissage-par-renforcement_actor_critic_critic_2.png",
-      "choices": {
-        "A": "Le role de critic est de supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique.",
-        "B": "actor sert a supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dynamique pour guider une d\u00e9cision exploitable.",
-        "C": "Dans Actor-critic, advantage est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer advantage en production.",
-        "D": "Le role de mise a jour conjointe est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour conjointe en production."
-      },
-      "correct_answer": "A",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de critic dans Actor-critic. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est correcte (Le role de critic est de supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous inc...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. B est moins pertinente (actor sert a supporter des arbitrages de production ; am\u00e9liorer une politique d'action sous incertitude dyn...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (Dans Actor-critic, advantage est mobilise pour supporter des arbitrages de production ; l'utiliser correcte...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (Le role de mise a jour conjointe est de supporter des arbitrages de production ; l'utiliser correctement pe...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
     }
   ]
 }

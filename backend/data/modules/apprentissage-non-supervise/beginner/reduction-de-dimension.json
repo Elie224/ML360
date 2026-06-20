@@ -5,185 +5,185 @@
   "questions": [
     {
       "type": "text",
-      "question": "PCA: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Reduction de dimension' ?",
+      "question": "Quel est le principal objectif de la réduction de dimension par projection?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Reduction de dimension, projection est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer projection en production.",
-        "B": "Pendant un atelier de cadrage, variance expliquee est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance expliquee en production tout en surveillant le risque d'appliquer variance expliquee par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Dans un atelier de cadrage de Reduction de dimension, l'\u00e9quipe applique visualisation pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer visualisation en production.",
-        "D": "Dans un atelier de cadrage de Reduction de dimension, l'\u00e9quipe applique PCA pour installer un raisonnement fiable des le d\u00e9but ; reduire bruit et cout de calcul tout en preservant l'information structurante."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car PCA y sert de levier de d\u00e9cision principal dans Reduction de dimension. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Reduction de dimension, projection est choisi afin d'installer un raisonnement fiable...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant un atelier de cadrage, variance expliquee est utile pour installer un raisonnement fiable des le de...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans un atelier de cadrage de Reduction de dimension, l'\u00e9quipe applique visualisation pour installer un rai...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans un atelier de cadrage de Reduction de dimension, l'\u00e9quipe applique PCA pour installer un raisonnement ...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Reduction de dimension', quel commentaire du schema traduit le mieux le role de PCA ?",
-      "image_url": "apprentissage-non-supervise_reduction_de_dimension_pca_2.png",
-      "choices": {
-        "A": "Dans Reduction de dimension, projection est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer projection en production.",
-        "B": "Le role de variance expliquee est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance expliquee en production.",
-        "C": "visualisation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer visualisation en production pour guider une d\u00e9cision exploitable.",
-        "D": "PCA sert a installer un raisonnement fiable des le d\u00e9but ; reduire bruit et cout de calcul tout en preservant l'information structurante pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de PCA dans Reduction de dimension. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Reduction de dimension, projection est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de variance expliquee est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctemen...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (visualisation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieu...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (PCA sert a installer un raisonnement fiable des le d\u00e9but ; reduire bruit et cout de calcul tout en preserva...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Reduction de dimension', quel est le principal mode d'echec quand PCA est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si PCA est mal utilise, on observe souvent appliquer PCA par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Le piege principal autour de projection est appliquer projection par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Un risque classique avec variance expliquee est d'appliquer variance expliquee par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Si visualisation est mal utilise, on observe souvent appliquer visualisation par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "Transformer les données dans un espace de dimension inférieure tout en préservant les caractéristiques importantes.",
+        "B": "Augmenter le nombre de dimensions pour obtenir plus de paramètres explicatifs.",
+        "C": "Réduire le bruit dans les données en excluant certaines observations.",
+        "D": "Améliorer la qualité de l'entraînement d'un modèle en ajoutant des échantillons."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de PCA. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si PCA est mal utilise, on observe souvent appliquer PCA par automatisme sans verifier hypotheses, qualit\u00e9 ...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de projection est appliquer projection par automatisme sans verifier hypotheses, ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec variance expliquee est d'appliquer variance expliquee par automatisme sans verifi...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si visualisation est mal utilise, on observe souvent appliquer visualisation par automatisme sans verifier ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec projection dans 'Reduction de dimension' ?",
-      "image_url": "apprentissage-non-supervise_reduction_de_dimension_projection_2.png",
-      "choices": {
-        "A": "Dans Reduction de dimension, visualisation est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer visualisation en production.",
-        "B": "Dans Reduction de dimension, projection est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer projection en production.",
-        "C": "Le role de variance expliquee est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance expliquee en production.",
-        "D": "PCA sert a installer un raisonnement fiable des le d\u00e9but ; reduire bruit et cout de calcul tout en preservant l'information structurante pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de projection dans Reduction de dimension. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Reduction de dimension, visualisation est mobilise pour installer un raisonnement fiable des le d\u00e9but ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Reduction de dimension, projection est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de variance expliquee est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctemen...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (PCA sert a installer un raisonnement fiable des le d\u00e9but ; reduire bruit et cout de calcul tout en preserva...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La projection en réduction de dimension vise à transformer les données dans un espace plus petit tout en préservant les caractéristiques importantes. B augmente les dimensions, ce qui est opposé à la réduction. C évoque le nettoyage de données, et D parle de l'augmentation de données, pas de réduction.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "PCA: pourquoi ce concept est-il crucial pour une \u00e9quipe marketing dans 'Reduction de dimension' ?",
+      "question": "Quelle métrique est généralement utilisée pour déterminer la quantité d'information préservée lors d'une réduction de dimension?",
       "image_url": null,
       "choices": {
-        "A": "Le role de visualisation est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer visualisation en production.",
-        "B": "Le role de PCA est d'installer un raisonnement fiable des le d\u00e9but ; reduire bruit et cout de calcul tout en preservant l'information structurante.",
-        "C": "projection sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer projection en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Reduction de dimension, variance expliquee est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance expliquee en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie PCA \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de visualisation est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement per...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de PCA est d'installer un raisonnement fiable des le d\u00e9but ; reduire bruit et cout de calcul tout ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (projection sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Reduction de dimension, variance expliquee est mobilise pour installer un raisonnement fiable des le d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec visualisation dans 'Reduction de dimension' ?",
-      "image_url": "apprentissage-non-supervise_reduction_de_dimension_visualisation_2.png",
-      "choices": {
-        "A": "variance expliquee sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance expliquee en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Reduction de dimension, PCA est mobilise pour installer un raisonnement fiable des le d\u00e9but ; reduire bruit et cout de calcul tout en preservant l'information structurante.",
-        "C": "Dans Reduction de dimension, visualisation est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer visualisation en production.",
-        "D": "Le role de projection est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer projection en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de visualisation dans Reduction de dimension. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (variance expliquee sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Reduction de dimension, PCA est mobilise pour installer un raisonnement fiable des le d\u00e9but ; reduire ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Reduction de dimension, visualisation est mobilise pour installer un raisonnement fiable des le d\u00e9but ...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de projection est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Reduction de dimension' (sante), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment variance expliquee ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Reduction de dimension, silhouette score se comprend comme une notion de base en apprentissage non supervise ; il formalise le role de silhouette score dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "cohesion designe une notion de base en apprentissage non supervise ; il formalise le role de cohesion dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "separation correspond a une notion de base en apprentissage non supervise ; il formalise le role de separation dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Reduction de dimension.",
-        "D": "variance expliquee correspond a une notion de base en apprentissage non supervise ; il formalise le role de variance expliquee dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Reduction de dimension."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de variance expliquee dans Reduction de dimension, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que silhouette score, cohesion, separation restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Reduction de dimension, silhouette score se comprend comme une notion de base en apprentissage non sup...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (cohesion designe une notion de base en apprentissage non supervise ; il formalise le role de cohesion dans ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (separation correspond a une notion de base en apprentissage non supervise ; il formalise le role de separat...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (variance expliquee correspond a une notion de base en apprentissage non supervise ; il formalise le role de...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe marketing dans 'Reduction de dimension', quelle d\u00e9finition de PCA est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "separation correspond a une notion de base en apprentissage non supervise ; il formalise le role de separation dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Reduction de dimension.",
-        "B": "Dans Reduction de dimension, stabilit\u00e9 se comprend comme une notion de base en apprentissage non supervise ; il formalise le role de stabilit\u00e9 dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Reduction de dimension, PCA se comprend comme une notion de base en apprentissage non supervise ; il projette les variables sur un sous-espace plus compact qui conserve l'essentiel de la variance utile.",
-        "D": "cohesion designe une notion de base en apprentissage non supervise ; il formalise le role de cohesion dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de PCA dans Reduction de dimension, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que cohesion, separation, stabilit\u00e9 restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (separation correspond a une notion de base en apprentissage non supervise ; il formalise le role de separat...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Reduction de dimension, stabilit\u00e9 se comprend comme une notion de base en apprentissage non supervise ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Reduction de dimension, PCA se comprend comme une notion de base en apprentissage non supervise ; il p...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (cohesion designe une notion de base en apprentissage non supervise ; il formalise le role de cohesion dans ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin sante dans 'Reduction de dimension', pourquoi variance expliquee est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "PCA sert a installer un raisonnement fiable des le d\u00e9but ; reduire bruit et cout de calcul tout en preservant l'information structurante pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Reduction de dimension, visualisation est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer visualisation en production.",
-        "C": "Dans Reduction de dimension, variance expliquee est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance expliquee en production.",
-        "D": "Le role de projection est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer projection en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie variance expliquee \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (PCA sert a installer un raisonnement fiable des le d\u00e9but ; reduire bruit et cout de calcul tout en preserva...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Reduction de dimension, visualisation est mobilise pour installer un raisonnement fiable des le d\u00e9but ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Reduction de dimension, variance expliquee est mobilise pour installer un raisonnement fiable des le d...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de projection est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Reduction de dimension', quelle situation de terrain montre le mieux quand utiliser projection ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Reduction de dimension, visualisation est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer visualisation en production.",
-        "B": "En contexte r\u00e9el sur Reduction de dimension, projection est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer projection en production.",
-        "C": "Pendant un atelier de cadrage, variance expliquee est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance expliquee en production tout en surveillant le risque d'appliquer variance expliquee par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Dans un atelier de cadrage de Reduction de dimension, l'\u00e9quipe applique PCA pour installer un raisonnement fiable des le d\u00e9but ; reduire bruit et cout de calcul tout en preservant l'information structurante."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car projection y sert de levier de d\u00e9cision principal dans Reduction de dimension. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Reduction de dimension, visualisation est choisi afin d'installer un raisonnement fia...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Reduction de dimension, projection est choisi afin d'installer un raisonnement fiable...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant un atelier de cadrage, variance expliquee est utile pour installer un raisonnement fiable des le de...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans un atelier de cadrage de Reduction de dimension, l'\u00e9quipe applique PCA pour installer un raisonnement ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Reduction de dimension', quel est le role le plus determinant de projection pour un cas assurance ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Reduction de dimension, variance expliquee est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance expliquee en production.",
-        "B": "Le role de PCA est d'installer un raisonnement fiable des le d\u00e9but ; reduire bruit et cout de calcul tout en preservant l'information structurante.",
-        "C": "visualisation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer visualisation en production pour guider une d\u00e9cision exploitable.",
-        "D": "projection sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer projection en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie projection \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Reduction de dimension, variance expliquee est mobilise pour installer un raisonnement fiable des le d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de PCA est d'installer un raisonnement fiable des le d\u00e9but ; reduire bruit et cout de calcul tout ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (visualisation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (projection sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Reduction de dimension', quelle situation de terrain montre le mieux quand utiliser visualisation ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans un atelier de cadrage de Reduction de dimension, l'\u00e9quipe applique variance expliquee pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance expliquee en production.",
-        "B": "En contexte r\u00e9el sur Reduction de dimension, PCA est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; reduire bruit et cout de calcul tout en preservant l'information structurante.",
-        "C": "En contexte r\u00e9el sur Reduction de dimension, visualisation est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer visualisation en production.",
-        "D": "Pendant un atelier de cadrage, projection est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer projection en production tout en surveillant le risque d'appliquer projection par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car visualisation y sert de levier de d\u00e9cision principal dans Reduction de dimension. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans un atelier de cadrage de Reduction de dimension, l'\u00e9quipe applique variance expliquee pour installer u...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Reduction de dimension, PCA est choisi afin d'installer un raisonnement fiable des le...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Reduction de dimension, visualisation est choisi afin d'installer un raisonnement fia...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant un atelier de cadrage, projection est utile pour installer un raisonnement fiable des le d\u00e9but ; l'...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Reduction de dimension', quel est le role le plus determinant de visualisation pour un cas e-commerce ?",
-      "image_url": null,
-      "choices": {
-        "A": "visualisation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer visualisation en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Reduction de dimension, projection est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer projection en production.",
-        "C": "Le role de variance expliquee est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variance expliquee en production.",
-        "D": "PCA sert a installer un raisonnement fiable des le d\u00e9but ; reduire bruit et cout de calcul tout en preservant l'information structurante pour guider une d\u00e9cision exploitable."
+        "A": "Variance expliquée.",
+        "B": "Erreur quadratique moyenne.",
+        "C": "Entropie de l'information.",
+        "D": "Précision du modèle."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie visualisation \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (visualisation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieu...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Reduction de dimension, projection est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de variance expliquee est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctemen...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (PCA sert a installer un raisonnement fiable des le d\u00e9but ; reduire bruit et cout de calcul tout en preserva...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La variance expliquée mesure la quantité d'information préservée après réduction de dimension. B est une métrique d'erreur pour l'évaluation de modèles prédictifs. C est utilisée pour les méthodes basées sur l'information. D concerne l'évaluation des performances des modèles prédictifs, pas la réduction de dimension.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Comment le PCA réduit-il la dimensionnalité des données?",
+      "image_url": null,
+      "choices": {
+        "A": "En projetant les données sur les vecteurs propres de la matrice de covariance.",
+        "B": "En supprimant les colonnes de données avec des valeurs nulles.",
+        "C": "En augmentant le nombre de caractéristiques pour obtenir plus d'informations.",
+        "D": "En utilisant des techniques d'encodage de type one-hot encoding."
+      },
+      "correct_answer": "A",
+      "explanation": "Le PCA projette les données sur les vecteurs propres de la matrice de covariance, ce qui maximise la variance. B concerne le traitement des valeurs manquantes, C augmente les dimensions et D est une technique pour transformer des variables catégorielles.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la première étape de la méthode PCA?",
+      "image_url": null,
+      "choices": {
+        "A": "Centraliser les données en supprimant la moyenne de chaque dimension.",
+        "B": "Calculer les centres de classes discrètes.",
+        "C": "Augmenter les dimensions avec de nouvelles caractéristiques polynomiales.",
+        "D": "Appliquer un arbre de décision pour la sélection de caractéristiques."
+      },
+      "correct_answer": "A",
+      "explanation": "La méthode PCA commence par la centralisation des données, c'est-à-dire la soustraction de la moyenne pour chaque dimension. B fait référence à des méthodes spécifiques à l'apprentissage supervisé, C est une méthode de génération de nouvelles caractéristiques, et D concerne les méthodes supervisées comme les arbres de décision pour la sélection des caractéristiques.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel outil de visualisation est couramment utilisé pour illustrer les résultats d'une réduction de dimension en deux dimensions?",
+      "image_url": null,
+      "choices": {
+        "A": "Nuage de points.",
+        "B": "Carte de chaleur.",
+        "C": "Histogramme.",
+        "D": "Boxplot."
+      },
+      "correct_answer": "A",
+      "explanation": "Un nuage de points est souvent utilisé pour visualiser des données dans un espace réduit à deux dimensions après une réduction. B est utilisé pour visualiser les matrices de corrélation ou de distances. C est plus approprié pour les distributions univariées, et D pour résumé statistique centré sur la médiane.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Dans le contexte du PCA, que signifie 'composante principale'?",
+      "image_url": null,
+      "choices": {
+        "A": "La direction de la plus grande variance dans les données.",
+        "B": "La colonne de données avec le plus de valeurs nulles.",
+        "C": "La dimension avec le moins d'influence sur la sortie du modèle.",
+        "D": "L'élément central dans un modèle basé sur des arbres."
+      },
+      "correct_answer": "A",
+      "explanation": "Une composante principale est la direction dans laquelle les données ont la plus grande variance. B traite des valeurs manquantes. C inverse la définition, et D est un terme qui ne s'applique pas au PCA mais aux modèles d'arbres.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un avantage clé de la réduction de dimension avant de visualiser les données?",
+      "image_url": null,
+      "choices": {
+        "A": "Réduire la complexité pour une interprétation plus claire des structures sous-jacentes.",
+        "B": "Augmenter la charge computationnelle pour une analyse plus précise.",
+        "C": "Supprimer toutes les variables catégorielles.",
+        "D": "Assurer la linéarité de toutes les relations entre les caractéristiques."
+      },
+      "correct_answer": "A",
+      "explanation": "La réduction de dimension simplifie la visualisation en clarifiant les structures importantes. B augmente les calculs inutilement. C ne concerne pas directement la réduction de dimension et D n'est pas garanti par la réduction de dimension.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il crucial de normaliser les données avant d'appliquer le PCA?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour s'assurer que chaque caractéristique contribue également à la variance totale.",
+        "B": "Pour remédier aux valeurs aberrantes.",
+        "C": "Pour lisser l'ensemble des données.",
+        "D": "Pour augmenter le nombre de dimensions analysées."
+      },
+      "correct_answer": "A",
+      "explanation": "La normalisation est cruciale pour que chaque caractéristique contribue de manière égale à la variance totale, sinon les variables à grande échelle domineraient les calculs. B traite des valeurs atypiques, C est le lissage de données, et D est incorrect en termes de réduction.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans le cadre de la variance expliquée, que signifie un 'elbow' dans la méthode de l'épaule?",
+      "image_url": null,
+      "choices": {
+        "A": "Un point où l'ajout de nouvelles composantes principales n'ajoute que peu de variance supplémentaire.",
+        "B": "Le point où la variance totale atteint 100%.",
+        "C": "L'endroit où la variance expliquée diminue continuellement.",
+        "D": "La première composante principale elle-même."
+      },
+      "correct_answer": "A",
+      "explanation": "Un 'elbow' indique le point où l'ajout de composantes n'accroît plus significativement la variance expliquée. B n'est pas typiquement atteint. C est l'inverse du concept recherché et D se réfère à une composante spécifique plutôt qu'à un concept d'analyse.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un défi courant rencontré lors de l'utilisation de la PCA pour la visualisation dans des espaces de haute dimension?",
+      "image_url": null,
+      "choices": {
+        "A": "L'impossibilité de capturer parfaitement les non-linéarités des données.",
+        "B": "La précision prédictive élevée menant à un surapprentissage.",
+        "C": "La réduction des dimensions entraîne une augmentation exponentielle du volume de données.",
+        "D": "La disparition des corrélations entre toutes les caractéristiques."
+      },
+      "correct_answer": "A",
+      "explanation": "La PCA, étant linéaire, a du mal à capturer les structures non-linéaires des données. B n'est pas directement pertinent pour la PCA car il touche à l'apprentissage supervisé. C est inexacte, la réduction diminue les dimensions, et D est incorrecte; PCA conserve souvent les corrélations.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle méthode avancée est souvent utilisée lorsque les données présentent des structures non-linéaires que la PCA ne peut pas capturer?",
+      "image_url": null,
+      "choices": {
+        "A": "t-SNE.",
+        "B": "Régression linéaire.",
+        "C": "k-Means.",
+        "D": "Analyse en composantes indépendantes (ICA)."
+      },
+      "correct_answer": "A",
+      "explanation": "t-SNE est une méthode de réduction de dimension non-linéaire efficace pour capturer les structures complexes. B est une technique supervisée. C est pour le clustering, et D se concentre sur la séparation des sources indépendantes plutôt que la réduction dimensionnelle des structures non-linéaires.",
       "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "En utilisant la réduction de dimension par PCA sur des données bruitées, quel effet pourrait s'avérer problématique?",
+      "image_url": null,
+      "choices": {
+        "A": "Amplification des composantes principales associées au bruit.",
+        "B": "Réduction des dimensions en zéro, entraînant une perte d'information totale.",
+        "C": "Augmentation de la précision grâce à l'analyse des petits composants.",
+        "D": "Augmentation du temps de calcul en raison de la complexité accrue."
+      },
+      "correct_answer": "A",
+      "explanation": "PCA peut amplifier des composantes principales associées au bruit lorsqu'elles captent une variance non négligeable. B est incorrect car on ne réduit pas à zéro dimension. C est un contresens car l'analyse des composants mineurs peut ajouter du bruit, et D est incorrect.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'objectif principal de l'Analyse en Composantes Principales (PCA) dans la réduction de dimension ?",
+      "image_url": null,
+      "choices": {
+        "A": "Maximiser la variance des données projetées sur les axes principaux.",
+        "B": "Minimiser le nombre d'échantillons dans le dataset.",
+        "C": "Augmenter le nombre de dimensions des données initiales.",
+        "D": "Réduire la variance des erreurs dans le modèle supervisé."
+      },
+      "correct_answer": "A",
+      "explanation": "L'Analyse en Composantes Principales (PCA) est une technique de réduction de dimension qui cherche à projeter les données sur un nouvel espace avec cette propriété: maximiser la variance des données projetées sur chaque axe principal. Cela permet de conserver le plus d'information possible tout en réduisant le nombre de dimensions. B est incorrect car la PCA ne concerne pas le nombre d'échantillons. C est faux parce que PCA réduit, et n'augmente pas, le nombre de dimensions. D est une conception erronée de PCA qui ne concerne pas la réduction de la variance des erreurs dans un modèle supervisé, mais bien la variance dans la distribution des données des composantes projetées.",
+      "difficulty": "easy"
     }
   ]
 }

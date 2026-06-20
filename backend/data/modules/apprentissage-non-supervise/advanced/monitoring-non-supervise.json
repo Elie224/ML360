@@ -4,424 +4,424 @@
   "module": "Monitoring non supervise",
   "questions": [
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec alerting dans 'Monitoring non supervise' ?",
-      "image_url": "apprentissage-non-supervise_monitoring_non_supervise_alerting_2.png",
-      "choices": {
-        "A": "evolution des centroides sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer evolution des centroides en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Monitoring non supervise, qualit\u00e9 de partition est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer qualit\u00e9 de partition en production.",
-        "C": "Dans Monitoring non supervise, alerting est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerting en production.",
-        "D": "Le role de drift de segments est de supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'alerting dans Monitoring non supervise. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (evolution des centroides sert a supporter des arbitrages de production ; l'utiliser correctement permet de ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Monitoring non supervise, qualit\u00e9 de partition est mobilise pour supporter des arbitrages de productio...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Monitoring non supervise, alerting est mobilise pour supporter des arbitrages de production ; l'utilis...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de drift de segments est de supporter des arbitrages de production ; detecter rapidement une perte ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
       "type": "text",
-      "question": "qualit\u00e9 de partition: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Monitoring non supervise' ?",
+      "question": "Quelle est la principale cause du 'drift de segments' dans un modèle de clustering non supervisé en production?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Monitoring non supervise, drift de segments est choisi afin de supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "B": "Pendant une revue pre-deploiement, evolution des centroides est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer evolution des centroides en production tout en surveillant le risque d'optimiser evolution des centroides en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Dans une revue pre-deploiement de Monitoring non supervise, l'\u00e9quipe applique alerting pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerting en production.",
-        "D": "Dans une revue pre-deploiement de Monitoring non supervise, l'\u00e9quipe applique qualit\u00e9 de partition pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer qualit\u00e9 de partition en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car qualit\u00e9 de partition y sert de levier de d\u00e9cision principal dans Monitoring non supervise. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Monitoring non supervise, drift de segments est choisi afin de supporter des arbitrage...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une revue pre-deploiement, evolution des centroides est utile pour supporter des arbitrages de prod...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une revue pre-deploiement de Monitoring non supervise, l'\u00e9quipe applique alerting pour supporter des a...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une revue pre-deploiement de Monitoring non supervise, l'\u00e9quipe applique qualit\u00e9 de partition pour sup...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Monitoring non supervise', quelle situation de terrain montre le mieux quand utiliser alerting ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une revue pre-deploiement de Monitoring non supervise, l'\u00e9quipe applique evolution des centroides pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer evolution des centroides en production.",
-        "B": "En contexte r\u00e9el sur Monitoring non supervise, qualit\u00e9 de partition est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer qualit\u00e9 de partition en production.",
-        "C": "En contexte r\u00e9el sur Monitoring non supervise, alerting est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerting en production.",
-        "D": "Pendant une revue pre-deploiement, drift de segments est utile pour supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier tout en surveillant le risque d'optimiser drift de segments en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car alerting y sert de levier de d\u00e9cision principal dans Monitoring non supervise. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une revue pre-deploiement de Monitoring non supervise, l'\u00e9quipe applique evolution des centroides pour...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Monitoring non supervise, qualit\u00e9 de partition est choisi afin de supporter des arbitr...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Monitoring non supervise, alerting est choisi afin de supporter des arbitrages de prod...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une revue pre-deploiement, drift de segments est utile pour supporter des arbitrages de production ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec drift de segments dans 'Monitoring non supervise' ?",
-      "image_url": "apprentissage-non-supervise_monitoring_non_supervise_drift_de_segments_2.png",
-      "choices": {
-        "A": "Dans Monitoring non supervise, alerting est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerting en production.",
-        "B": "Dans Monitoring non supervise, drift de segments est mobilise pour supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "C": "Le role d'evolution des centroides est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer evolution des centroides en production.",
-        "D": "qualit\u00e9 de partition sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer qualit\u00e9 de partition en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de drift de segments dans Monitoring non supervise. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Monitoring non supervise, alerting est mobilise pour supporter des arbitrages de production ; l'utilis...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Monitoring non supervise, drift de segments est mobilise pour supporter des arbitrages de production ;...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role d'evolution des centroides est de supporter des arbitrages de production ; l'utiliser correctement...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (qualit\u00e9 de partition sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieu...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Monitoring non supervise', quel est le role le plus determinant d'alerting pour un cas cybersecurite ?",
-      "image_url": null,
-      "choices": {
-        "A": "alerting sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerting en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Monitoring non supervise, drift de segments est mobilise pour supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "C": "Le role d'evolution des centroides est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer evolution des centroides en production.",
-        "D": "qualit\u00e9 de partition sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer qualit\u00e9 de partition en production pour guider une d\u00e9cision exploitable."
+        "A": "Modification des caractéristiques des données entrantes",
+        "B": "Augmentation de la capacité de mémoire du système",
+        "C": "Amélioration de la puissance de calcul du processeur",
+        "D": "Synchronisation des horloges du système"
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie alerting \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (alerting sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider qu...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Monitoring non supervise, drift de segments est mobilise pour supporter des arbitrages de production ;...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role d'evolution des centroides est de supporter des arbitrages de production ; l'utiliser correctement...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (qualit\u00e9 de partition sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Monitoring non supervise', quel commentaire du schema traduit le mieux le role de qualit\u00e9 de partition ?",
-      "image_url": "apprentissage-non-supervise_monitoring_non_supervise_qualite_de_partition_2.png",
-      "choices": {
-        "A": "Dans Monitoring non supervise, drift de segments est mobilise pour supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "B": "Le role d'evolution des centroides est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer evolution des centroides en production.",
-        "C": "alerting sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerting en production pour guider une d\u00e9cision exploitable.",
-        "D": "qualit\u00e9 de partition sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer qualit\u00e9 de partition en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de qualit\u00e9 de partition dans Monitoring non supervise. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Monitoring non supervise, drift de segments est mobilise pour supporter des arbitrages de production ;...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role d'evolution des centroides est de supporter des arbitrages de production ; l'utiliser correctement...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (alerting sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider qu...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (qualit\u00e9 de partition sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieu...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le 'drift de segments' se produit principalement lorsque les caractéristiques statistiques des données entrantes changent, affectant ainsi les segments de clustering. Les autres réponses sont fausses car elles ne changent pas les caractéristiques des données mais plutôt l'infrastructure technique.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Monitoring non supervise', quelle situation de terrain montre le mieux quand utiliser drift de segments ?",
+      "question": "Quelle approche est la plus efficace pour détecter une évolution des centroides dans un système de clustering non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Monitoring non supervise, alerting est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerting en production.",
-        "B": "En contexte r\u00e9el sur Monitoring non supervise, drift de segments est choisi afin de supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "C": "Pendant une revue pre-deploiement, evolution des centroides est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer evolution des centroides en production tout en surveillant le risque d'optimiser evolution des centroides en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Dans une revue pre-deploiement de Monitoring non supervise, l'\u00e9quipe applique qualit\u00e9 de partition pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer qualit\u00e9 de partition en production."
+        "A": "Calculer la distance entre les nouveaux et les anciens centroides régulièrement",
+        "B": "Augmenter la taille des clusters",
+        "C": "Réinitialiser les centroides toutes les heures",
+        "D": "Utiliser k-means++ pour initialiser les centroides"
       },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car drift de segments y sert de levier de d\u00e9cision principal dans Monitoring non supervise. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Monitoring non supervise, alerting est choisi afin de supporter des arbitrages de prod...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Monitoring non supervise, drift de segments est choisi afin de supporter des arbitrage...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une revue pre-deploiement, evolution des centroides est utile pour supporter des arbitrages de prod...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une revue pre-deploiement de Monitoring non supervise, l'\u00e9quipe applique qualit\u00e9 de partition pour sup...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La méthode la plus efficace pour détecter une évolution des centroides est de calculer la distance entre les nouveaux et les anciens centroides, indiquant ainsi des changements de clusters. Les autres choix proposent des mesures qui n'indiquent pas directement un changement des centroides.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Monitoring non supervise' (e-commerce), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment evolution des centroides ?",
+      "question": "Quel est un indicateur clé pour évaluer la 'qualité de partition' dans un clustering non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Dans Monitoring non supervise, rafraichissement periodique se comprend comme un levier avance en apprentissage non supervise ; il formalise le role de rafraichissement periodique dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "versioning de segments designe un levier avance en apprentissage non supervise ; il formalise le role de versioning de segments dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "rollback analytique correspond a un levier avance en apprentissage non supervise ; il formalise le role de rollback analytique dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Monitoring non supervise.",
-        "D": "evolution des centroides correspond a un levier avance en apprentissage non supervise ; il formalise le role d'evolution des centroides dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Monitoring non supervise."
+        "A": "La silhouette score",
+        "B": "Le taux d'erreur de classification",
+        "C": "Le temps de convergence",
+        "D": "Le pourcentage de variation expliquée"
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'evolution des centroides dans Monitoring non supervise, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que rafraichissement periodique, versioning de segments, rollback analytique restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Monitoring non supervise, rafraichissement periodique se comprend comme un levier avance en apprentiss...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (versioning de segments designe un levier avance en apprentissage non supervise ; il formalise le role de ve...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (rollback analytique correspond a un levier avance en apprentissage non supervise ; il formalise le role de ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (evolution des centroides correspond a un levier avance en apprentissage non supervise ; il formalise le rol...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La silhouette score mesure la similitude d'un point avec son propre cluster par rapport aux autres clusters, évaluant ainsi efficacement la qualité de la partition. Les autres choix ne sont pas directement liés à l'évaluation de la qualité de partition dans le clustering.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Monitoring non supervise', quel est le principal mode d'echec quand qualit\u00e9 de partition est mal applique ?",
+      "question": "Quel mécanisme d'alerting est le plus pertinent pour surveiller les changements de distribution des données dans un modèle de clustering non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Si qualit\u00e9 de partition est mal utilise, on observe souvent optimiser qualit\u00e9 de partition en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de drift de segments est optimiser drift de segments en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Un risque classique avec evolution des centroides est d'optimiser evolution des centroides en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Si alerting est mal utilise, on observe souvent optimiser alerting en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Détection d'anomalies sur les centroides mis à jour",
+        "B": "Alerte basée sur le temps de traitement des données",
+        "C": "Notification lors des mises à niveau du système",
+        "D": "Détection d'intrusions réseau"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de qualit\u00e9 de partition. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si qualit\u00e9 de partition est mal utilise, on observe souvent optimiser qualit\u00e9 de partition en silo et intro...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de drift de segments est optimiser drift de segments en silo et introduire des mo...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec evolution des centroides est d'optimiser evolution des centroides en silo et intr...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si alerting est mal utilise, on observe souvent optimiser alerting en silo et introduire des modes d'echec ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La détection d'anomalies sur les centroides mis à jour permet de surveiller les changements dans la distribution des données et de déclencher des alertes pertinentes. Les autres options sont soit non pertinentes pour la distribution des données, soit orientées vers la sécurité réseau.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Monitoring non supervise', quel est le role le plus determinant de drift de segments pour un cas marketing ?",
+      "question": "En quoi la surveillance de 'l'évolution des centroides' peut-elle aider à améliorer un système de clustering en production?",
       "image_url": null,
       "choices": {
-        "A": "Dans Monitoring non supervise, evolution des centroides est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer evolution des centroides en production.",
-        "B": "Le role de qualit\u00e9 de partition est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer qualit\u00e9 de partition en production.",
-        "C": "alerting sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerting en production pour guider une d\u00e9cision exploitable.",
-        "D": "drift de segments sert a supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier pour guider une d\u00e9cision exploitable."
+        "A": "Elle permet d'ajuster les modèles aux nouvelles tendances de données",
+        "B": "Elle réduit automatiquement le temps de calcul nécessaire",
+        "C": "Elle minimise les ressources mémoire utilisées",
+        "D": "Elle assure la sécurité des données transitant par le réseau"
       },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie drift de segments \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Monitoring non supervise, evolution des centroides est mobilise pour supporter des arbitrages de produ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de qualit\u00e9 de partition est de supporter des arbitrages de production ; l'utiliser correctement per...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (alerting sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider qu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (drift de segments sert a supporter des arbitrages de production ; detecter rapidement une perte de validite...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Surveiller l'évolution des centroides permet d'identifier les nouveaux schémas de données, aidant à ajuster les modèles et maintenir leur pertinence. Les autres propositions ne concernent pas directement l'évolution des centroides.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Monitoring non supervise', quelle erreur autour d'alerting est la plus critique ?",
+      "question": "Pourquoi est-il essentiel d'évaluer régulièrement la 'qualité de partition' dans un modèle de clustering non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec drift de segments est d'optimiser drift de segments en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Si evolution des centroides est mal utilise, on observe souvent optimiser evolution des centroides en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de qualit\u00e9 de partition est optimiser qualit\u00e9 de partition en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour d'alerting est optimiser alerting en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'alerting. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec drift de segments est d'optimiser drift de segments en silo et introduire des mod...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si evolution des centroides est mal utilise, on observe souvent optimiser evolution des centroides en silo ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour de qualit\u00e9 de partition est optimiser qualit\u00e9 de partition en silo et introduire ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour d'alerting est optimiser alerting en silo et introduire des modes d'echec caches...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin e-commerce dans 'Monitoring non supervise', pourquoi evolution des centroides est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "qualit\u00e9 de partition sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer qualit\u00e9 de partition en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Monitoring non supervise, alerting est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerting en production.",
-        "C": "Dans Monitoring non supervise, evolution des centroides est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer evolution des centroides en production.",
-        "D": "Le role de drift de segments est de supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie evolution des centroides \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (qualit\u00e9 de partition sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Monitoring non supervise, alerting est mobilise pour supporter des arbitrages de production ; l'utilis...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Monitoring non supervise, evolution des centroides est mobilise pour supporter des arbitrages de produ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de drift de segments est de supporter des arbitrages de production ; detecter rapidement une perte ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "qualit\u00e9 de partition: pourquoi ce concept est-il crucial pour une \u00e9quipe industrie dans 'Monitoring non supervise' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role d'alerting est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerting en production.",
-        "B": "Le role de qualit\u00e9 de partition est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer qualit\u00e9 de partition en production.",
-        "C": "drift de segments sert a supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Monitoring non supervise, evolution des centroides est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer evolution des centroides en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie qualit\u00e9 de partition \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role d'alerting est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de qualit\u00e9 de partition est de supporter des arbitrages de production ; l'utiliser correctement per...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (drift de segments sert a supporter des arbitrages de production ; detecter rapidement une perte de validite...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Monitoring non supervise, evolution des centroides est mobilise pour supporter des arbitrages de produ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe industrie dans 'Monitoring non supervise', quelle d\u00e9finition de qualit\u00e9 de partition est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "rollback analytique correspond a un levier avance en apprentissage non supervise ; il formalise le role de rollback analytique dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Monitoring non supervise.",
-        "B": "Dans Monitoring non supervise, Gaussian mixture se comprend comme un levier avance en apprentissage non supervise ; il formalise le role de Gaussian mixture dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Monitoring non supervise, qualit\u00e9 de partition se comprend comme un levier avance en apprentissage non supervise ; il formalise le role de qualit\u00e9 de partition dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "versioning de segments designe un levier avance en apprentissage non supervise ; il formalise le role de versioning de segments dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de qualit\u00e9 de partition dans Monitoring non supervise, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte industrie, alors que versioning de segments, rollback analytique, Gaussian mixture restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (rollback analytique correspond a un levier avance en apprentissage non supervise ; il formalise le role de ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Monitoring non supervise, Gaussian mixture se comprend comme un levier avance en apprentissage non sup...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Monitoring non supervise, qualit\u00e9 de partition se comprend comme un levier avance en apprentissage non...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (versioning de segments designe un levier avance en apprentissage non supervise ; il formalise le role de ve...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "alerting: quelle proposition en donne la meilleure d\u00e9finition dans 'Monitoring non supervise' (contexte cybersecurite) ?",
-      "image_url": null,
-      "choices": {
-        "A": "probabilite d'appartenance designe un levier avance en apprentissage non supervise ; il formalise le role de probabilite d'appartenance dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "alerting designe un levier avance en apprentissage non supervise ; il formalise le role d'alerting dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "rollback analytique correspond a un levier avance en apprentissage non supervise ; il formalise le role de rollback analytique dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Monitoring non supervise.",
-        "D": "Dans Monitoring non supervise, Gaussian mixture se comprend comme un levier avance en apprentissage non supervise ; il formalise le role de Gaussian mixture dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'alerting dans Monitoring non supervise, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que rollback analytique, Gaussian mixture, probabilite d'appartenance restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (probabilite d'appartenance designe un levier avance en apprentissage non supervise ; il formalise le role d...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (alerting designe un levier avance en apprentissage non supervise ; il formalise le role d'alerting dans un...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (rollback analytique correspond a un levier avance en apprentissage non supervise ; il formalise le role de ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans Monitoring non supervise, Gaussian mixture se comprend comme un levier avance en apprentissage non sup...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'Monitoring non supervise', quel exemple met evolution des centroides au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une revue pre-deploiement, evolution des centroides est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer evolution des centroides en production tout en surveillant le risque d'optimiser evolution des centroides en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Dans une revue pre-deploiement de Monitoring non supervise, l'\u00e9quipe applique drift de segments pour supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "C": "En contexte r\u00e9el sur Monitoring non supervise, qualit\u00e9 de partition est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer qualit\u00e9 de partition en production.",
-        "D": "Pendant une revue pre-deploiement, alerting est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerting en production tout en surveillant le risque d'optimiser alerting en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Pour assurer que les clusters restent représentatifs des données",
+        "B": "Pour maximiser l'utilisation de la bande passante",
+        "C": "Pour garantir la conformité à la réglementation",
+        "D": "Pour accélérer la compilation du code"
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car evolution des centroides y sert de levier de d\u00e9cision principal dans Monitoring non supervise. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une revue pre-deploiement, evolution des centroides est utile pour supporter des arbitrages de prod...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une revue pre-deploiement de Monitoring non supervise, l'\u00e9quipe applique drift de segments pour suppor...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Monitoring non supervise, qualit\u00e9 de partition est choisi afin de supporter des arbitr...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une revue pre-deploiement, alerting est utile pour supporter des arbitrages de production ; l'utili...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Évaluer la qualité de partition assure que les clusters restent pertinents et représentatifs des données actuelles. Les autres réponses n'ont pas de relation directe avec la qualité de partition.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Monitoring non supervise', quelle erreur autour de drift de segments est la plus critique ?",
+      "question": "Quel aspect est souvent surveillé pour prévenir le 'drift de segments' dans un modèle de clustering?",
       "image_url": null,
       "choices": {
-        "A": "Si qualit\u00e9 de partition est mal utilise, on observe souvent optimiser qualit\u00e9 de partition en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour d'alerting est optimiser alerting en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de drift de segments est optimiser drift de segments en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Un risque classique avec evolution des centroides est d'optimiser evolution des centroides en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de drift de segments. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si qualit\u00e9 de partition est mal utilise, on observe souvent optimiser qualit\u00e9 de partition en silo et intro...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour d'alerting est optimiser alerting en silo et introduire des modes d'echec caches...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de drift de segments est optimiser drift de segments en silo et introduire des mo...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec evolution des centroides est d'optimiser evolution des centroides en silo et intr...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "drift de segments: quelle proposition en donne la meilleure d\u00e9finition dans 'Monitoring non supervise' (contexte marketing) ?",
-      "image_url": null,
-      "choices": {
-        "A": "drift de segments designe un levier avance en apprentissage non supervise ; il mesure une d\u00e9rive entre les conditions d'entrainement et les conditions d'exploitation.",
-        "B": "pipeline batch correspond a un levier avance en apprentissage non supervise ; il formalise le role de pipeline batch dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Monitoring non supervise.",
-        "C": "Dans Monitoring non supervise, rafraichissement periodique se comprend comme un levier avance en apprentissage non supervise ; il formalise le role de rafraichissement periodique dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "versioning de segments designe un levier avance en apprentissage non supervise ; il formalise le role de versioning de segments dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Les statistiques des dimensions des données d'entrée",
+        "B": "Le nombre de machines virtuelles utilisées",
+        "C": "La version du logiciel de base de données",
+        "D": "L'interface utilisateur graphique"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de drift de segments dans Monitoring non supervise, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que pipeline batch, rafraichissement periodique, versioning de segments restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (drift de segments designe un levier avance en apprentissage non supervise ; il mesure une d\u00e9rive entre les ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (pipeline batch correspond a un levier avance en apprentissage non supervise ; il formalise le role de pipel...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Monitoring non supervise, rafraichissement periodique se comprend comme un levier avance en apprentiss...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (versioning de segments designe un levier avance en apprentissage non supervise ; il formalise le role de ve...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Surveiller les statistiques des dimensions des données d'entrée permet de détecter des changements susceptibles de provoquer un drift de segments. Les autres options ne sont pas directement liées au drift de segments.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "evolution des centroides: quel risque est le plus directement lie a son mauvais usage en production dans 'Monitoring non supervise' ?",
+      "question": "Quel est le principal défi de la mise en place d'un système d'alerting efficace pour un modèle de clustering non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec alerting est d'optimiser alerting en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Un risque classique avec evolution des centroides est d'optimiser evolution des centroides en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Si drift de segments est mal utilise, on observe souvent optimiser drift de segments en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour de qualit\u00e9 de partition est optimiser qualit\u00e9 de partition en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'evolution des centroides. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec alerting est d'optimiser alerting en silo et introduire des modes d'echec caches ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec evolution des centroides est d'optimiser evolution des centroides en silo et intr...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si drift de segments est mal utilise, on observe souvent optimiser drift de segments en silo et introduire ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de qualit\u00e9 de partition est optimiser qualit\u00e9 de partition en silo et introduire ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Monitoring non supervise' et en contexte cybersecurite, quelle interpretation du schema appuie le mieux l'analyse d'alerting ?",
-      "image_url": "apprentissage-non-supervise_monitoring_non_supervise_alerting_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur drift de segments: les indices orientent vers supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "B": "Lecture du visuel: evolution des centroides est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer evolution des centroides en production dans Monitoring non supervise.",
-        "C": "Le signal visible est coh\u00e9rent avec qualit\u00e9 de partition, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer qualit\u00e9 de partition en production.",
-        "D": "Le signal visible est coh\u00e9rent avec alerting, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerting en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Les indices visuels vont dans le sens d'alerting: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur drift de segments: les indices orientent vers supporter des arbit...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Lecture du visuel: evolution des centroides est mobilise pour supporter des arbitrages de production ; l'ut...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le signal visible est coh\u00e9rent avec qualit\u00e9 de partition, car l'objectif est supporter des arbitrages de pr...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est correcte (Le signal visible est coh\u00e9rent avec alerting, car l'objectif est supporter des arbitrages de production ; l...) car la lecture visuelle colle au signal principal observe. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "evolution des centroides: dans un cas e-commerce, quelle interpretation correspond le mieux au schema ML de 'Monitoring non supervise' ?",
-      "image_url": "apprentissage-non-supervise_monitoring_non_supervise_evolution_des_centroides_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur alerting: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerting en production.",
-        "B": "Le schema illustre une d\u00e9cision basee sur evolution des centroides: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer evolution des centroides en production.",
-        "C": "Lecture du visuel: drift de segments est mobilise pour supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier dans Monitoring non supervise.",
-        "D": "Le signal visible est coh\u00e9rent avec qualit\u00e9 de partition, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer qualit\u00e9 de partition en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens d'evolution des centroides: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur alerting: les indices orientent vers supporter des arbitrages de ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur evolution des centroides: les indices orientent vers supporter de...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: drift de segments est mobilise pour supporter des arbitrages de production ; detecter ra...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec qualit\u00e9 de partition, car l'objectif est supporter des arbitrages de pr...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "evolution des centroides: dans 'Monitoring non supervise', un schema met en evidence ce comportement. Quelle lecture est la plus juste ?",
-      "image_url": "apprentissage-non-supervise_monitoring_non_supervise_evolution_des_centroides_2.png",
-      "choices": {
-        "A": "Le role d'evolution des centroides est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer evolution des centroides en production.",
-        "B": "drift de segments sert a supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier pour guider une d\u00e9cision exploitable.",
-        "C": "Dans Monitoring non supervise, qualit\u00e9 de partition est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer qualit\u00e9 de partition en production.",
-        "D": "Le role d'alerting est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerting en production."
+        "A": "Déterminer les seuils appropriés pour les anomalies",
+        "B": "Assurer une haute disponibilité du réseau",
+        "C": "Intégrer des publicités contextuelles",
+        "D": "Calculer les taux de hashage optimaux"
       },
       "correct_answer": "A",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'evolution des centroides dans Monitoring non supervise. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est correcte (Le role d'evolution des centroides est de supporter des arbitrages de production ; l'utiliser correctement...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. B est moins pertinente (drift de segments sert a supporter des arbitrages de production ; detecter rapidement une perte de validite...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (Dans Monitoring non supervise, qualit\u00e9 de partition est mobilise pour supporter des arbitrages de productio...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (Le role d'alerting est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Déterminer les seuils appropriés pour les anomalies est crucial pour un alerting efficace afin d'éviter de fausses alertes. Les autres réponses concernent des aspects techniques qui ne sont pas directement liés à l'alerting pour le clustering.",
+      "difficulty": "medium"
     },
     {
-      "type": "image",
-      "question": "Dans 'Monitoring non supervise' et en contexte marketing, quelle interpretation du schema appuie le mieux l'analyse de drift de segments ?",
-      "image_url": "apprentissage-non-supervise_monitoring_non_supervise_drift_de_segments_1.png",
+      "type": "text",
+      "question": "Lors de la surveillance d'un modèle de clustering, pourquoi l'évolution des centroides est-elle un indicateur critique?",
+      "image_url": null,
       "choices": {
-        "A": "Lecture du visuel: qualit\u00e9 de partition est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer qualit\u00e9 de partition en production dans Monitoring non supervise.",
-        "B": "Le signal visible est coh\u00e9rent avec alerting, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerting en production.",
-        "C": "Le signal visible est coh\u00e9rent avec drift de segments, car l'objectif est supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "D": "Le schema illustre une d\u00e9cision basee sur evolution des centroides: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer evolution des centroides en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Les indices visuels vont dans le sens de drift de segments: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Lecture du visuel: qualit\u00e9 de partition est mobilise pour supporter des arbitrages de production ; l'utilis...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Le signal visible est coh\u00e9rent avec alerting, car l'objectif est supporter des arbitrages de production ; l...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est correcte (Le signal visible est coh\u00e9rent avec drift de segments, car l'objectif est supporter des arbitrages de produ...) car la lecture visuelle colle au signal principal observe. D'est moins pertinente (Le schema illustre une d\u00e9cision basee sur evolution des centroides: les indices orientent vers supporter de...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Observation visuelle (Monitoring non supervise) - pour un contexte industrie, quelle lecture du schema est la plus pertinente pour qualit\u00e9 de partition ?",
-      "image_url": "apprentissage-non-supervise_monitoring_non_supervise_qualite_de_partition_1.png",
-      "choices": {
-        "A": "Lecture du visuel: qualit\u00e9 de partition est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer qualit\u00e9 de partition en production dans Monitoring non supervise.",
-        "B": "Le signal visible est coh\u00e9rent avec drift de segments, car l'objectif est supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "C": "Le schema illustre une d\u00e9cision basee sur evolution des centroides: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer evolution des centroides en production.",
-        "D": "Lecture du visuel: alerting est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerting en production dans Monitoring non supervise."
+        "A": "Elle montre comment les schémas de données changent au fil du temps",
+        "B": "Elle améliore la latence des requêtes réseau",
+        "C": "Elle allonge la durée de vie des appareils",
+        "D": "Elle diminue les coûts de licences logicielles"
       },
       "correct_answer": "A",
-      "explanation": "Les indices visuels vont dans le sens de qualit\u00e9 de partition: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est correcte (Lecture du visuel: qualit\u00e9 de partition est mobilise pour supporter des arbitrages de production ; l'utilis...) car la lecture visuelle colle au signal principal observe. B est moins pertinente (Le signal visible est coh\u00e9rent avec drift de segments, car l'objectif est supporter des arbitrages de produ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le schema illustre une d\u00e9cision basee sur evolution des centroides: les indices orientent vers supporter de...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Lecture du visuel: alerting est mobilise pour supporter des arbitrages de production ; l'utiliser correctem...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "L'évolution des centroides indique comment les schémas de données changent et affecte la précision et la pertinence des clusters. Les autres choix ne sont pas directement liés à l'évolution des patterns dans les données.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Monitoring non supervise', quel concept repond le mieux a cet objectif: supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
+      "question": "Comment un système de 'qualité de partition' défectueux peut-il affecter un modèle de clustering non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "persona: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer persona en production.",
-        "B": "micro-segments est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer micro-segments en production, ce qui correspond a usage operationnel de micro-segments.",
-        "C": "La finalit\u00e9 d'action marketing est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer action marketing en production.",
-        "D": "Quand l'objectif est de supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier, drift de segments est le concept associe."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est drift de segments: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans Monitoring non supervise. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est moins pertinente (persona: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieu...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. B est moins pertinente (micro-segments est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de ...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. C'est moins pertinente (La finalit\u00e9 d'action marketing est de supporter des arbitrages de production ; l'utiliser correctement per...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. D'est correcte (Quand l'objectif est de supporter des arbitrages de production ; detecter rapidement une perte de validite ...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Monitoring non supervise', quel concept repond le mieux a cet objectif: supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerting en production.",
-      "image_url": null,
-      "choices": {
-        "A": "La finalit\u00e9 d'alerting est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerting en production.",
-        "B": "Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer priorisation en production, priorisation est le concept associe.",
-        "C": "bootstrap: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bootstrap en production.",
-        "D": "sensibilite au bruit est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer sensibilite au bruit en production, ce qui correspond a usage operationnel de sensibilite au bruit."
+        "A": "Il peut conduire à des segments qui ne représentent plus correctement les données",
+        "B": "Il ralentit la vitesse d'écriture des disques",
+        "C": "Il consomme plus de bande passante réseau",
+        "D": "Il réduit la fréquence des sauvegardes de données"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est alerting: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans Monitoring non supervise. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est correcte (La finalit\u00e9 d'alerting est de supporter des arbitrages de production ; l'utiliser correctement permet de m...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. B est moins pertinente (Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. C'est moins pertinente (bootstrap: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mi...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. D'est moins pertinente (sensibilite au bruit est utilise pour supporter des arbitrages de production ; l'utiliser correctement perm...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Une mauvaise qualité de partition peut signifier que les segments ne reflètent plus les données réelles, affectant l'utilité du clustering. Les autres propositions traitent de problématiques techniques non liées.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Objectif (Monitoring non supervise) - supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer qualit\u00e9 de partition en production. Quel concept est le plus coh\u00e9rent ?",
+      "question": "Quel indicateur peut suggérer un ‘drift de segments’ même si les volumes de données restent constants?",
       "image_url": null,
       "choices": {
-        "A": "bootstrap: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bootstrap en production.",
-        "B": "qualit\u00e9 de partition est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer qualit\u00e9 de partition en production, ce qui correspond a usage operationnel de qualit\u00e9 de partition.",
-        "C": "La finalit\u00e9 d'action marketing est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer action marketing en production.",
-        "D": "Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer priorisation en production, priorisation est le concept associe."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est qualit\u00e9 de partition: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans Monitoring non supervise. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est moins pertinente (bootstrap: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mi...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. B est correcte (qualit\u00e9 de partition est utilise pour supporter des arbitrages de production ; l'utiliser correctement perm...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. C'est moins pertinente (La finalit\u00e9 d'action marketing est de supporter des arbitrages de production ; l'utiliser correctement per...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. D'est moins pertinente (Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Quel concept de 'Monitoring non supervise' est le plus align\u00e9 avec cet objectif: supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer evolution des centroides en production.",
-      "image_url": null,
-      "choices": {
-        "A": "La finalit\u00e9 d'action marketing est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer action marketing en production.",
-        "B": "Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer priorisation en production, priorisation est le concept associe.",
-        "C": "evolution des centroides: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer evolution des centroides en production.",
-        "D": "micro-segments est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer micro-segments en production, ce qui correspond a usage operationnel de micro-segments."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est evolution des centroides: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans Monitoring non supervise. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est moins pertinente (La finalit\u00e9 d'action marketing est de supporter des arbitrages de production ; l'utiliser correctement per...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. B est moins pertinente (Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. C'est correcte (evolution des centroides: objectif principal supporter des arbitrages de production ; l'utiliser correcteme...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. D'est moins pertinente (micro-segments est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de ...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "A partir de cette description issue de 'Monitoring non supervise' (un levier avance en apprentissage non supervise ; il mesure une d\u00e9rive entre les conditions d'entrainement et les conditions d'exploitation.), quel concept faut-il retenir ?",
-      "image_url": null,
-      "choices": {
-        "A": "drift de segments correspond a un levier avance en apprentissage non supervise ; il mesure une d\u00e9rive entre les conditions d'entrainement et les conditions d'exploitation, avec un perimetre centr\u00e9 sur surveillance de d\u00e9rive des donn\u00e9es ou du comportement.",
-        "B": "Le concept persona se reconnait par un levier avance en apprentissage non supervise ; il formalise le role de persona dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Quand une d\u00e9finition insiste sur un levier avance en apprentissage non supervise ; il formalise le role de micro-segments dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a micro-segments.",
-        "D": "action marketing: un levier avance en apprentissage non supervise ; il formalise le role d'action marketing dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Variabilité accrue des caractéristiques au sein des clusters",
+        "B": "Augmentation des temps de réponse du serveur",
+        "C": "Hausse du nombre d'utilisateurs connectés",
+        "D": "Fréquence des sauvegardes automatiques"
       },
       "correct_answer": "A",
-      "explanation": "Le concept attendu est drift de segments, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Monitoring non supervise. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est correcte (drift de segments correspond a un levier avance en apprentissage non supervise ; il mesure une d\u00e9rive entre...) car la d\u00e9finition correspond exactement au concept attendu. B est moins pertinente (Le concept persona se reconnait par un levier avance en apprentissage non supervise ; il formalise le role ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est moins pertinente (Quand une d\u00e9finition insiste sur un levier avance en apprentissage non supervise ; il formalise le role de ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est moins pertinente (action marketing: un levier avance en apprentissage non supervise ; il formalise le role d'action marketin...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Une variabilité accrue des caractéristiques au sein des clusters peut indiquer que les données changent même si le volume est constant. Les autres points ne concernent pas directement le drift de segments.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Description experte (Monitoring non supervise) - un levier avance en apprentissage non supervise ; il formalise le role d'evolution des centroides dans un pipeline ML, avec ses hypotheses et ses limites pratiques. Quel concept est le plus exact ?",
+      "question": "Quel est un signe potentiel de l'évolution des centroides dans un modèle de clustering?",
       "image_url": null,
       "choices": {
-        "A": "Quand une d\u00e9finition insiste sur un levier avance en apprentissage non supervise ; il formalise le role de micro-segments dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a micro-segments.",
-        "B": "action marketing: un levier avance en apprentissage non supervise ; il formalise le role d'action marketing dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "priorisation correspond a un levier avance en apprentissage non supervise ; il formalise le role de priorisation dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel de priorisation.",
-        "D": "Le concept evolution des centroides se reconnait par un levier avance en apprentissage non supervise ; il formalise le role d'evolution des centroides dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Changement soudain des distances moyennes entre les données et les centroides",
+        "B": "Augmentation du budget IT de l'entreprise",
+        "C": "Croissance du nombre d'employés du service informatique",
+        "D": "Réduction des temps d'arrêt pour maintenance"
       },
-      "correct_answer": "D",
-      "explanation": "Le concept attendu est evolution des centroides, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Monitoring non supervise. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (Quand une d\u00e9finition insiste sur un levier avance en apprentissage non supervise ; il formalise le role de ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est moins pertinente (action marketing: un levier avance en apprentissage non supervise ; il formalise le role d'action marketin...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est moins pertinente (priorisation correspond a un levier avance en apprentissage non supervise ; il formalise le role de prioris...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est correcte (Le concept evolution des centroides se reconnait par un levier avance en apprentissage non supervise ; il f...) car la d\u00e9finition correspond exactement au concept attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Un changement dans les distances moyennes entre les données et les centroides peut indiquer une évolution des patterns dans les données. Les autres options ne sont pas reliées à des modifications dans le modèle de données.",
       "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi la qualité de partition peut-elle se dégrader lorsqu'une nouvelle source de données est intégrée?",
+      "image_url": null,
+      "choices": {
+        "A": "Les nouvelles données peuvent introduire des caractéristiques non-représentatives",
+        "B": "La nouvelle source utilise une ancienne version du protocole HTTP",
+        "C": "La source de données échoue à crypter ses paquets",
+        "D": "La source de données est physiquement distante"
+      },
+      "correct_answer": "A",
+      "explanation": "Des données nouvelles et non-représentatives peuvent créer des clusters qui ne sont plus uniformes ou significatifs. Les autres affirmations ne se rapportent pas à la qualité de partition en termes de données.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment un système d'alerting mal configuré affecte-t-il potentiel le modèle dans un modèle de clustering non supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Il pourrait déclencher trop de fausses alertes, détournant l'attention des problématiques réelles",
+        "B": "Il réduira automatiquement la capacité du disque",
+        "C": "Il augmentera artificiellement le débit réseau",
+        "D": "Il empêchera les mises à jour du système d'exploitation"
+      },
+      "correct_answer": "A",
+      "explanation": "Un système d'alerting mal configuré pourrait générer des alertes injustifiées, faussant les perceptions et les décisions. Les autres effets proposés n'ont pas de lien direct avec l'alerting.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce qui pourrait indiquer une mauvaise ‘qualité de partition’ suite à une mise à jour logicielle?",
+      "image_url": null,
+      "choices": {
+        "A": "Les anomalies intra-cluster augmentent soudainement",
+        "B": "La consommation de batterie des appareils augmente",
+        "C": "La température des serveurs diminue",
+        "D": "La latence des requêtes HTTP reste constante"
+      },
+      "correct_answer": "A",
+      "explanation": "Une augmentation des anomalies intra-cluster après une mise à jour peut signaler que les groupes sont moins cohérents. Les autres variables ne fournissent pas de feedback direct sur la qualité des clusters.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'avantage principal d'inclure un mécanisme d'alerting basé sur l'évolution des centroides?",
+      "image_url": null,
+      "choices": {
+        "A": "Il permet une adaptation rapide aux variations de données non supervisées",
+        "B": "Il optimise la consommation énergétique des serveurs",
+        "C": "Il crée automatiquement des logs de transactions",
+        "D": "Il réduit les coûts des équipements matériels"
+      },
+      "correct_answer": "A",
+      "explanation": "Surveiller l'évolution des centroides offre une adaptation proactive, garantissant que les modèles restent valides face aux changements de données. Les autres bénéfices suggérés ne sont pas directement reliés à des changement de données.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel facteur peut compliquer la détection du drift de segments dans des systèmes fortement dynamiques?",
+      "image_url": null,
+      "choices": {
+        "A": "La variabilité rapide des caractéristiques entrantes",
+        "B": "L'apparition sporadique de bugs logiciels",
+        "C": "Les fluctuations de tension électrique",
+        "D": "La rotation du personnel technique"
+      },
+      "correct_answer": "A",
+      "explanation": "Une rapide variabilité des caractéristiques peut rendre difficile la distinction entre des changements légitimes et du drift. Les autres options ne rendent pas directement la détection du drift difficile.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans le contexte de la 'qualité de partition', pourquoi les clusters de taille uniforme peuvent être une mauvaise pratique?",
+      "image_url": null,
+      "choices": {
+        "A": "Ils peuvent masquer l'hétérogénéité naturelle des données",
+        "B": "Ils minimisent l'efficacité de la compression des données",
+        "C": "Ils augmentent le recours aux buffers système",
+        "D": "Ils déséquilibrent les charges réseau"
+      },
+      "correct_answer": "A",
+      "explanation": "Forcer la taille uniforme des clusters peut tendre à masquer la diversité inhérente, diminuant ainsi la qualité de partition. Les autres affirmations ne ciblent pas les impacts liés à la cohérence des données.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel problème majeur pourrait affecter l'efficacité d'un modèle de clustering lorsque les alertes sont ignorées?",
+      "image_url": null,
+      "choices": {
+        "A": "Les problèmes graves passent inaperçus, biaisant ainsi les résultats",
+        "B": "Les coûts des licences logicielles augmentent",
+        "C": "Il y a une réduction des performances graphiques",
+        "D": "Les logs perdent de leur efficacité"
+      },
+      "correct_answer": "A",
+      "explanation": "Ignorer les alertes peut signifier que les drifts ou changements critiques ne sont pas traités, conduisant à des décisions biaisées. Les autres résultats proposés n'ont pas de lien direct avec l'impact sur le modèle.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans une surveillance avancée, pourquoi une détection précoce des drifts dans un cluster est-elle cruciale?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour pouvoir adapter le modèle avant que les performances ne se détériorent trop",
+        "B": "Pour gagner en vitesse de ventilation des unités centrales",
+        "C": "Pour garantir un cycle harmonisé des ressources de stockage",
+        "D": "Pour gérer l'alimentation électrique des serveurs"
+      },
+      "correct_answer": "A",
+      "explanation": "Détecter un drift tôt permet d'adapter les systèmes avant que les performances ne chutent, en maintenant leur pertinence. Les autres réponses proposent des bénéfices non liés aux modèles de données.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment la qualité de partition peut-elle être évaluée après des changements importants dans la population de données?",
+      "image_url": null,
+      "choices": {
+        "A": "En calculant les nouveaux scores de silhouette",
+        "B": "En contrôlant les performances du CPU",
+        "C": "En respectant la conformité des standards industriels",
+        "D": "En mesurant les temps de transmission réseau"
+      },
+      "correct_answer": "A",
+      "explanation": "Calculer les scores de silhouette après des changements permet de vérifier la cohésion et la séparation des clusters, indiquant leur qualité. Les autres options mentionnées ne mesurent pas directement la qualité de partition.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Lorsque le modèle de clustering signale une 'évolution des centroides', quelle est la meilleure réponse?",
+      "image_url": null,
+      "choices": {
+        "A": "Analyser les causes et régler le modèle pour maintenir sa pertinence",
+        "B": "Augmenter la densité des logs système",
+        "C": "Redémarrer tous les serveurs du réseau",
+        "D": "Mettre à jour la console de gestion du réseau"
+      },
+      "correct_answer": "A",
+      "explanation": "Analyser et ajuster le modèle suite à une évolution des centroides est essentiel pour conserver sa pertinence. Les autres actions proposées n'affectent pas directement la validité du modèles.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle métrique est cruciale pour un bon système d'alerting basé sur les drifts dans un environnement non supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Le taux de faux positifs",
+        "B": "Le nombre de fois où le système est réinitialisé",
+        "C": "La consommation énergétique des capteurs",
+        "D": "La vitesse de rotation des disques durs"
+      },
+      "correct_answer": "A",
+      "explanation": "Le taux de faux positifs est crucial car les alertes incorrectes peuvent réduire la confiance et l'efficacité du système d'alerting. Les autres choix ne sont pas directement liés à l'alerting basé sur les drifts.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pour quelles raisons un drift de segment pourrait-il ne pas être immédiatement apparent?",
+      "image_url": null,
+      "choices": {
+        "A": "Caractéristiques cachées des données ne changent pas immédiatement",
+        "B": "Les mises à jour des firmwares ne sont pas appliquées",
+        "C": "L'utilisation des CPU est limitée à des seuils bas",
+        "D": "Les bases de données restent chiffrées"
+      },
+      "correct_answer": "A",
+      "explanation": "Les caractéristiques cachées peuvent changer subtilement et ne pas être apparentes sans des analyses spécifiques. Les autres réponses ne concernent en rien l'apparence d'un drift de segment.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel défi est associé à la création d'alertes calibrées pour des évolutions de centroides?",
+      "image_url": null,
+      "choices": {
+        "A": "Éviter les alertes répétitives pour de petites modifications",
+        "B": "Optimiser la compression des logs",
+        "C": "Synchroniser les horloges internet de la compagnie",
+        "D": "Garantir l'isolation des serveurs en clusters"
+      },
+      "correct_answer": "A",
+      "explanation": "Des alertes calibrées doivent faire la distinction entre des changements significatifs et mineurs pour éviter l'épuisement par des alertes fréquentes. Les autres expressions rencontrées ne traitent pas de la calibration des alertes.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle approche peut améliorer la pertinence de l'alerting dans les systèmes dynamiques de volume de données?",
+      "image_url": null,
+      "choices": {
+        "A": "Implémenter des seuils dynamiques basés sur les statistiques en temps réel",
+        "B": "Augmenter l'éclairage des salles de serveurs",
+        "C": "Utiliser des interfaces utilisateur plus colorées",
+        "D": "Diminuer la redondance des liaisons réseau"
+      },
+      "correct_answer": "A",
+      "explanation": "Les seuils dynamiques s'ajustent aux variations en temps réel, permettant un alerting plus pertinent. Les autres stratégies n'améliorent pas directement l'efficacité de l'alerting.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi l'historicité des données est-elle importante pour établir des baselines de drifts?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle permet de reconnaître des patterns de changement significatifs",
+        "B": "Elle optimise l'empreinte carbone des systèmes",
+        "C": "Elle standardise les modules RAM dans le data center",
+        "D": "Elle allège l'infrastructure de backup"
+      },
+      "correct_answer": "A",
+      "explanation": "L'historicité des données offre des bases de référence qui aident à identifier des patterns de drift significatifs. Les autres propositions ne se liés pas aux baselines de drift de données.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel avantage apporte un score de silhouette élevé pendant l'évaluation de la qualité de partition?",
+      "image_url": null,
+      "choices": {
+        "A": "Assure une distinction nette entre les clusters",
+        "B": "Réduit la consommation d'électricité des centres de données",
+        "C": "Accélère le transfert des données sur le réseau",
+        "D": "Facilite la maintenance des systèmes informatiques"
+      },
+      "correct_answer": "A",
+      "explanation": "Un score de silhouette élevé signifie généralement que les clusters sont bien définis et distincts, améliorant la qualité globale du modèle. Les autres choix ne sont pas bénéfices directs d'un score de silhouette élevé.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quels sont les signes potentiels indiquant un détérioration rapide de la qualité de partition dans un modèle de clustering?",
+      "image_url": null,
+      "choices": {
+        "A": "Augmentation soudaine des distances intra-cluster",
+        "B": "Hausse des bugs d'affichage sur les interfaces utilisateurs",
+        "C": "Perte de paquets dans le réseau",
+        "D": "Augmentation des coûts de stockage des données"
+      },
+      "correct_answer": "A",
+      "explanation": "Une augmentation soudaine des distances intra-cluster signale souvent que les clusters deviennent moins cohérents. Les autres signes n'affectent pas directement la qualité de partition.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une méthode courante pour détecter un drift de segments dans un ensemble de données non supervisé ?",
+      "image_url": null,
+      "choices": {
+        "A": "Comparer les distribitions de segments à différents moments à l'aide de tests statistiques comme le test de Kolmogorov-Smirnov.",
+        "B": "Utiliser l'algorithme de descente de gradient pour ajuster les poids des segments.",
+        "C": "Appliquer un filtre de Kalman pour estimer la position des segments en fonction du temps.",
+        "D": "Utiliser une analyse de variance (ANOVA) pour évaluer les différences au sein du même segment au fil du temps."
+      },
+      "correct_answer": "A",
+      "explanation": "Le drift de segments signifie que la distribution des segments change au fil du temps. Pour le détecter, on compare souvent les distributions à différentes périodes avec des tests statistiques comme le test de Kolmogorov-Smirnov, qui mesure si deux distributions diffèrent. La descente de gradient (B) est inapplicable car elle est utilisée dans le contexte supervisé pour l'apprentissage des poids, pas pour comparer des distributions. Le filtre de Kalman (C) est inapproprié car il est utilisé pour le suivi et l'estimation d'états dynamiques, ce qui ne s'applique pas directement à comparer des distributions de segments non supervisées. L'analyse de variance (D) est utilisée pour comparer les moyennes de plusieurs groupes, mais elle n'est pas typiquement utilisée pour détecter des changements dans les distributions de segments non supervisés.",
+      "difficulty": "medium"
     }
   ]
 }

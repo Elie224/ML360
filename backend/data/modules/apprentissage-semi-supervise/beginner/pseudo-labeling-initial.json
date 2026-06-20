@@ -5,170 +5,170 @@
   "questions": [
     {
       "type": "text",
-      "question": "filtrage: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Pseudo-labeling initial' ?",
+      "question": "Qu'est-ce qu'un pseudo-label dans le cadre de l'apprentissage semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Pseudo-labeling initial, pseudo-label est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; augmenter la performance avec peu de labels humains.",
-        "B": "Pendant un atelier de cadrage, confiance est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production tout en surveillant le risque d'appliquer confiance par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Dans un atelier de cadrage de Pseudo-labeling initial, l'\u00e9quipe applique iteration pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer iteration en production.",
-        "D": "Dans un atelier de cadrage de Pseudo-labeling initial, l'\u00e9quipe applique filtrage pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer filtrage en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car filtrage y sert de levier de d\u00e9cision principal dans Pseudo-labeling initial. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Pseudo-labeling initial, pseudo-label est choisi afin d'installer un raisonnement fia...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant un atelier de cadrage, confiance est utile pour installer un raisonnement fiable des le d\u00e9but ; l'u...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans un atelier de cadrage de Pseudo-labeling initial, l'\u00e9quipe applique iteration pour installer un raison...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans un atelier de cadrage de Pseudo-labeling initial, l'\u00e9quipe applique filtrage pour installer un raisonn...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Pseudo-labeling initial' (marketing), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment confiance ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Pseudo-labeling initial, pr\u00e9cision des pseudo-labels se comprend comme une notion de base en apprentissage semi supervise ; il mesure la proportion de predictions positives qui sont effectivement correctes.",
-        "B": "drift des labels designe une notion de base en apprentissage semi supervise ; il mesure une d\u00e9rive entre les conditions d'entrainement et les conditions d'exploitation.",
-        "C": "surapprentissage correspond a une notion de base en apprentissage semi supervise ; il formalise le role de surapprentissage dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Pseudo-labeling initial.",
-        "D": "confiance correspond a une notion de base en apprentissage semi supervise ; il formalise le role de confiance dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Pseudo-labeling initial."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de confiance dans Pseudo-labeling initial, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que pr\u00e9cision des pseudo-labels, drift des labels, surapprentissage restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Pseudo-labeling initial, pr\u00e9cision des pseudo-labels se comprend comme une notion de base en apprentis...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (drift des labels designe une notion de base en apprentissage semi supervise ; il mesure une d\u00e9rive entre le...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (surapprentissage correspond a une notion de base en apprentissage semi supervise ; il formalise le role de ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (confiance correspond a une notion de base en apprentissage semi supervise ; il formalise le role de confian...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec iteration dans 'Pseudo-labeling initial' ?",
-      "image_url": "apprentissage-semi-supervise_pseudo_labeling_initial_iteration_2.png",
-      "choices": {
-        "A": "confiance sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Pseudo-labeling initial, filtrage est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer filtrage en production.",
-        "C": "Dans Pseudo-labeling initial, iteration est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer iteration en production.",
-        "D": "Le role de pseudo-label est d'installer un raisonnement fiable des le d\u00e9but ; augmenter la performance avec peu de labels humains."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'iteration dans Pseudo-labeling initial. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (confiance sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux de...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Pseudo-labeling initial, filtrage est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Pseudo-labeling initial, iteration est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de pseudo-label est d'installer un raisonnement fiable des le d\u00e9but ; augmenter la performance ave...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec pseudo-label dans 'Pseudo-labeling initial' ?",
-      "image_url": "apprentissage-semi-supervise_pseudo_labeling_initial_pseudo_label_2.png",
-      "choices": {
-        "A": "Dans Pseudo-labeling initial, iteration est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer iteration en production.",
-        "B": "Dans Pseudo-labeling initial, pseudo-label est mobilise pour installer un raisonnement fiable des le d\u00e9but ; augmenter la performance avec peu de labels humains.",
-        "C": "Le role de confiance est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production.",
-        "D": "filtrage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer filtrage en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de pseudo-label dans Pseudo-labeling initial. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Pseudo-labeling initial, iteration est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Pseudo-labeling initial, pseudo-label est mobilise pour installer un raisonnement fiable des le d\u00e9but ...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de confiance est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (filtrage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux dec...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Pseudo-labeling initial', quel commentaire du schema traduit le mieux le role de filtrage ?",
-      "image_url": "apprentissage-semi-supervise_pseudo_labeling_initial_filtrage_2.png",
-      "choices": {
-        "A": "Dans Pseudo-labeling initial, pseudo-label est mobilise pour installer un raisonnement fiable des le d\u00e9but ; augmenter la performance avec peu de labels humains.",
-        "B": "Le role de confiance est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production.",
-        "C": "iteration sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer iteration en production pour guider une d\u00e9cision exploitable.",
-        "D": "filtrage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer filtrage en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de filtrage dans Pseudo-labeling initial. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Pseudo-labeling initial, pseudo-label est mobilise pour installer un raisonnement fiable des le d\u00e9but ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de confiance est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (iteration sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux de...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (filtrage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux dec...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin marketing dans 'Pseudo-labeling initial', pourquoi confiance est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "filtrage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer filtrage en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Pseudo-labeling initial, iteration est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer iteration en production.",
-        "C": "Dans Pseudo-labeling initial, confiance est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production.",
-        "D": "Le role de pseudo-label est d'installer un raisonnement fiable des le d\u00e9but ; augmenter la performance avec peu de labels humains."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie confiance \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (filtrage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux dec...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Pseudo-labeling initial, iteration est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Pseudo-labeling initial, confiance est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de pseudo-label est d'installer un raisonnement fiable des le d\u00e9but ; augmenter la performance ave...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Pseudo-labeling initial', quel est le principal mode d'echec quand filtrage est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si filtrage est mal utilise, on observe souvent appliquer filtrage par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Le piege principal autour de pseudo-label est appliquer pseudo-label par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Un risque classique avec confiance est d'appliquer confiance par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Si iteration est mal utilise, on observe souvent appliquer iteration par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "Une étiquette prédite pour un échantillon non étiqueté en utilisant un modèle préalablement entraîné.",
+        "B": "Une étiquette assignée aléatoirement à un échantillon pour augmenter la diversité du dataset.",
+        "C": "Une étiquette fixée en fonction de la moyenne des prédictions de plusieurs modèles.",
+        "D": "Une étiquette assignée manuellement à un ensemble d'échantillons pour initialiser un modèle."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de filtrage. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si filtrage est mal utilise, on observe souvent appliquer filtrage par automatisme sans verifier hypotheses...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de pseudo-label est appliquer pseudo-label par automatisme sans verifier hypothes...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec confiance est d'appliquer confiance par automatisme sans verifier hypotheses, qua...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si iteration est mal utilise, on observe souvent appliquer iteration par automatisme sans verifier hypothes...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Un pseudo-label est une étiquette prédite pour un échantillon non étiqueté par un modèle préalablement entraîné, dans le but d'améliorer l'apprentissage. Les autres options sont fausses : B décrit l'étiquetage aléatoire, ce qui n'améliore pas l'apprentissage ; C se réfère au concept d'ensemble, pas de pseudo-labeling; D est manuel, donc pas un pseudo-label.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Pseudo-labeling initial', quel est le role le plus determinant de pseudo-label pour un cas sante ?",
+      "question": "Comment la 'confiance' est-elle généralement mesurée dans le processus de pseudo-labeling ?",
       "image_url": null,
       "choices": {
-        "A": "Dans Pseudo-labeling initial, confiance est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production.",
-        "B": "Le role de filtrage est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer filtrage en production.",
-        "C": "iteration sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer iteration en production pour guider une d\u00e9cision exploitable.",
-        "D": "pseudo-label sert a installer un raisonnement fiable des le d\u00e9but ; augmenter la performance avec peu de labels humains pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie pseudo-label \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Pseudo-labeling initial, confiance est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de filtrage est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (iteration sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (pseudo-label sert a installer un raisonnement fiable des le d\u00e9but ; augmenter la performance avec peu de la...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Pseudo-labeling initial', quelle situation de terrain montre le mieux quand utiliser iteration ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans un atelier de cadrage de Pseudo-labeling initial, l'\u00e9quipe applique confiance pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production.",
-        "B": "En contexte r\u00e9el sur Pseudo-labeling initial, filtrage est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer filtrage en production.",
-        "C": "En contexte r\u00e9el sur Pseudo-labeling initial, iteration est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer iteration en production.",
-        "D": "Pendant un atelier de cadrage, pseudo-label est utile pour installer un raisonnement fiable des le d\u00e9but ; augmenter la performance avec peu de labels humains tout en surveillant le risque d'appliquer pseudo-label par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car iteration y sert de levier de d\u00e9cision principal dans Pseudo-labeling initial. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans un atelier de cadrage de Pseudo-labeling initial, l'\u00e9quipe applique confiance pour installer un raison...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Pseudo-labeling initial, filtrage est choisi afin d'installer un raisonnement fiable ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Pseudo-labeling initial, iteration est choisi afin d'installer un raisonnement fiable...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant un atelier de cadrage, pseudo-label est utile pour installer un raisonnement fiable des le d\u00e9but ; ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "filtrage: pourquoi ce concept est-il crucial pour une \u00e9quipe e-commerce dans 'Pseudo-labeling initial' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role d'iteration est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer iteration en production.",
-        "B": "Le role de filtrage est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer filtrage en production.",
-        "C": "pseudo-label sert a installer un raisonnement fiable des le d\u00e9but ; augmenter la performance avec peu de labels humains pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Pseudo-labeling initial, confiance est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie filtrage \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role d'iteration est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de filtrage est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet d...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (pseudo-label sert a installer un raisonnement fiable des le d\u00e9but ; augmenter la performance avec peu de la...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Pseudo-labeling initial, confiance est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Pseudo-labeling initial', quel est le role le plus determinant d'iteration pour un cas industrie ?",
-      "image_url": null,
-      "choices": {
-        "A": "iteration sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer iteration en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Pseudo-labeling initial, pseudo-label est mobilise pour installer un raisonnement fiable des le d\u00e9but ; augmenter la performance avec peu de labels humains.",
-        "C": "Le role de confiance est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production.",
-        "D": "filtrage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer filtrage en production pour guider une d\u00e9cision exploitable."
+        "A": "En utilisant la probabilité issue de la distribution de sortie d'un modèle pour une prédiction donnée.",
+        "B": "En comptant le nombre de modèles ayant produit le même pseudo-label.",
+        "C": "En évaluant la différence entre la moyenne des prédictions et la prédiction individuelle.",
+        "D": "En mesurant le temps de calcul nécessaire pour produire le pseudo-label."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie iteration \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (iteration sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux de...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Pseudo-labeling initial, pseudo-label est mobilise pour installer un raisonnement fiable des le d\u00e9but ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de confiance est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (filtrage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux dec...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La confiance dans le pseudo-labeling est généralement mesurée par la probabilité associée à la prédiction dans la sortie du modèle. B décrit plutôt l'ensemble, C n'est pas pertinent à la confiance, et D n'a pas de lien direct avec celle-ci.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est l'utilité du filtrage dans le processus de pseudo-labeling ?",
+      "image_url": null,
+      "choices": {
+        "A": "Sélectionner uniquement les pseudo-labels ayant une confiance au-dessus d'un certain seuil.",
+        "B": "Créer un ensemble d'étiquettes complètement nouvelles pour un dataset.",
+        "C": "Mélanger de façon aléatoire les pseudo-labels pour un meilleur apprentissage.",
+        "D": "Supprimer automatiquement tous les pseudo-labels une fois le modèle entraîné."
+      },
+      "correct_answer": "A",
+      "explanation": "Le filtrage consiste à sélectionner les pseudo-labels ayant une confiance élevée pour éviter d'introduire du bruit dans le processus d'apprentissage. B et C n'ont pas de rapport avec la confiance ou qualité des labels, et D est une opération finale, non un choix stratégique.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle méthode peut-on utiliser pour réduire le bruit des pseudo-labels en confiance ?",
+      "image_url": null,
+      "choices": {
+        "A": "Appliquer un seuil minimum de confiance pour inclure un pseudo-label dans l'ensemble d'entraînement.",
+        "B": "Réduire la taille du dataset non étiqueté pour minimiser les erreurs.",
+        "C": "Étiqueter manuellement un pourcentage fixe du dataset pour minimiser le bruit.",
+        "D": "Augmenter la profondeur du réseau de neurones pour améliorer la prédiction."
+      },
+      "correct_answer": "A",
+      "explanation": "Utiliser un seuil de confiance aide à filtrer les pseudo-labels les plus fiables, minimisant ainsi le bruit. B réduit la taille sans rapport à la confiance, C est valide pour un petit ensemble mais pas pour pseudo-labeling, et D ne garantit pas la réduction du bruit.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le rôle des itérations dans le processus de pseudo-labeling ?",
+      "image_url": null,
+      "choices": {
+        "A": "Améliorer progressivement la qualité des pseudo-labels en ré-entraînant le modèle avec de nouveaux pseudo-labels à chaque itération.",
+        "B": "Augmenter la taille de l'ensemble d'entraînement en permanence pour converger plus rapidement.",
+        "C": "Réinitialiser automatiquement le modèle pour éviter le surapprentissage à chaque étape.",
+        "D": "Je ne sais pas."
+      },
+      "correct_answer": "A",
+      "explanation": "Les itérations permettent de ré-entraîner le modèle avec un ensemble de pseudo-labels de meilleure qualité à chaque cycle, améliorant ainsi la performance globale. Augmenter systématiquement la taille d'un dataset (B) ne garantit pas l'amélioration; C n'est pas communément lié au pseudo-labeling.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quels pseudo-labels sont souvent utilisés lors des premières itérations d'un processus de pseudo-labeling ?",
+      "image_url": null,
+      "choices": {
+        "A": "Ceux avec la confiance la plus élevée.",
+        "B": "Ceux avec la confiance la plus basse.",
+        "C": "Tous les pseudo-labels créés jusqu'à maintenant.",
+        "D": "Uniquement ceux qui sont manuellement vérifiés."
+      },
+      "correct_answer": "A",
+      "explanation": "Au début, les pseudo-labels ayant la plus haute confiance sont utilisés pour s'assurer de minimiser l'erreur d'étiquetage. Les options B et C risquent d'ajouter du bruit, tandis que D n'est pas viable pour de grands ensembles de données sans automatisation.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'effet d'utiliser des pseudo-labels de faible confiance sur un modèle d'apprentissage ?",
+      "image_url": null,
+      "choices": {
+        "A": "Cela peut augmenter le bruit dans les données et dégrader la performance du modèle.",
+        "B": "Cela assure que le modèle couvre de manière exhaustive toutes les classes.",
+        "C": "Cela accélère le temps d'entraînement du modèle en réduisant la complexité.",
+        "D": "Cela garantit que le modèle ne sur-apprend pas les données d'entraînement."
+      },
+      "correct_answer": "A",
+      "explanation": "Utiliser des pseudo-labels de faible confiance introduit plus de bruit, ce qui peut détériorer la performance du modèle. B, C et D décrivent des effets positifs incorrects; ils ne sont pas liés à l'usage des labels de faible confiance.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il important de réévaluer les pseudo-labels après plusieurs cycles d'itérations ?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour ajuster les labels avec la nouvelle compréhension du modèle et améliorer l'exactitude globale.",
+        "B": "Pour réduire le coût de l'entraînement en diminuant la taille du dataset utilisé.",
+        "C": "Pour garantir que tous les pseudo-labels soient finalement corrects.",
+        "D": "Pour supprimer les labels manuellement mal positionnés."
+      },
+      "correct_answer": "A",
+      "explanation": "Réévaluer permet d’adapter les labels à mesure que le modèle s'améliore, augmentant ainsi la précision. B et D ne concernent pas la qualité des pseudo-labels, et C est illogique car aucun modèle ne garantit 100% de correction.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment le pseudo-labeling peut-il contribuer à réduire le biais dans un modèle supervisé ?",
+      "image_url": null,
+      "choices": {
+        "A": "En appliquant des adaptations continues selon les données nouvellement étiquetées automatiquement.",
+        "B": "En augmentant strictement la diversité des pseudo-labels avec des mutations aléatoires.",
+        "C": "En substituant toutes les étiquettes d'origine avec des pseudo-labels pour plus d'homogénéité.",
+        "D": "En entraînant le modèle uniquement avec des pseudo-labels plutôt qu'avec des données étiquetées manuellement."
+      },
+      "correct_answer": "A",
+      "explanation": "Les adaptations basées sur les pseudo-labels permettent de constamment ajuster le modèle pour mieux refléter les données réelles, réduisant potentiellement le biais. B ne décrit pas un processus de pseudo-labeling, C et D altéreraient les fondements du modèle au lieu de l'améliorer.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une limitation du pseudo-labeling en termes de performance de modèle ?",
+      "image_url": null,
+      "choices": {
+        "A": "L'ajout de bruit à travers des labels incorrects prédits, affectant la généralisation.",
+        "B": "Le besoin excessif en temps pour entraîner le modèle sur de petits ensembles de données.",
+        "C": "L'existence de biais dans les étiquetages qui sont exclusivement supervisés.",
+        "D": "Le besoin accru de ressources humaines pour vérifier chaque pseudo-label."
+      },
+      "correct_answer": "A",
+      "explanation": "Une limitation est que les labels incorrects peuvent ajouter du bruit et dégrader la performance. B est incorrect car pseudo-labeling est typiquement utilisé avec des datasets large; C n’exploite pas le concept semi-supervisé; D va à l'encontre de l'automatisation propre au pseudo-labeling.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel critère est souvent utilisé pour choisir les pseudo-labels à utiliser en apprentissage semi-supervisé avancé ?",
+      "image_url": null,
+      "choices": {
+        "A": "La divergence de Jensen-Shannon entre les prédictions et la distribution cible attendue.",
+        "B": "La différence absolue entre la précision du modèle et un seuil de tolérance fixé.",
+        "C": "La quantité de données initialement étiquetées manuellement.",
+        "D": "Le nombre total de cycles d'itérations déjà accomplis."
+      },
+      "correct_answer": "A",
+      "explanation": "La divergence de Jensen-Shannon est parfois utilisée pour évaluer la différence entre les prédictions modèle et la distribution de la vérité, aidant à filtrer les pseudo-labels viables. Les autres options ne prennent pas en compte la viabilité qualitative des pseudo-labels.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Pseudo-labeling initial', quelle situation de terrain montre le mieux quand utiliser pseudo-label ?",
+      "question": "Pour quoi le concept de méta-apprentissage peut-il être appliqué au pseudo-labeling ?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Pseudo-labeling initial, iteration est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer iteration en production.",
-        "B": "En contexte r\u00e9el sur Pseudo-labeling initial, pseudo-label est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; augmenter la performance avec peu de labels humains.",
-        "C": "Pendant un atelier de cadrage, confiance est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production tout en surveillant le risque d'appliquer confiance par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Dans un atelier de cadrage de Pseudo-labeling initial, l'\u00e9quipe applique filtrage pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer filtrage en production."
+        "A": "Pour optimiser la sélection et l'application des pseudo-labels dans divers contextes de données inconnues.",
+        "B": "Pour entraîner des modèles exclusivement sur des jeux de données déjà pré-étiquetés manuellement.",
+        "C": "Pour réduire le besoin de révisions manuelles basées sur des hypothèses d'itération constante.",
+        "D": "Pour garantir que le processus reste conforme à un cadre fixe de supervision humaine."
       },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car pseudo-label y sert de levier de d\u00e9cision principal dans Pseudo-labeling initial. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Pseudo-labeling initial, iteration est choisi afin d'installer un raisonnement fiable...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Pseudo-labeling initial, pseudo-label est choisi afin d'installer un raisonnement fia...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant un atelier de cadrage, confiance est utile pour installer un raisonnement fiable des le d\u00e9but ; l'u...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans un atelier de cadrage de Pseudo-labeling initial, l'\u00e9quipe applique filtrage pour installer un raisonn...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Le méta-apprentissage peut optimiser l'approche de pseudo-labeling pour différents scénarios de données. B ne concerne pas les pseudo-labels, C sans optimisation intelligente perd son sens, D réduit l'automatisation inhérente au pseudo-labeling.",
       "difficulty": "hard"
     }
   ]

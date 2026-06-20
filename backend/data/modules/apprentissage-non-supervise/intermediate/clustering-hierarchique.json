@@ -5,213 +5,213 @@
   "questions": [
     {
       "type": "text",
-      "question": "dendrogramme: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Clustering hierarchique' ?",
+      "question": "Quelle différence principale distingue la liaison simple de la liaison complète dans le clustering hiérarchique?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Clustering hierarchique, liaison simple est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison simple en production.",
-        "B": "Pendant une phase d'experimentation, liaison complete est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison complete en production tout en surveillant le risque de sur-optimiser liaison complete localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Dans une phase d'experimentation de Clustering hierarchique, l'\u00e9quipe applique coupe de clusters pour fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites.",
-        "D": "Dans une phase d'experimentation de Clustering hierarchique, l'\u00e9quipe applique dendrogramme pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dendrogramme en production."
+        "A": "La liaison simple utilise la distance minimale entre deux clusters, alors que la liaison complète utilise la distance maximale.",
+        "B": "La liaison simple utilise la distance moyenne, tandis que la liaison complète utilise la distance minimale.",
+        "C": "La liaison simple utilise les centres de gravité des clusters, tandis que la liaison complète utilise la distance entre points aléatoires.",
+        "D": "La liaison simple utilise la distance moyenne, tandis que la liaison complète utilise la distance médiane."
       },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car dendrogramme y sert de levier de d\u00e9cision principal dans Clustering hierarchique. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Clustering hierarchique, liaison simple est choisi afin de fiabiliser les d\u00e9cisions d'...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une phase d'experimentation, liaison complete est utile pour fiabiliser les d\u00e9cisions d'experimenta...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une phase d'experimentation de Clustering hierarchique, l'\u00e9quipe applique coupe de clusters pour fiabi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une phase d'experimentation de Clustering hierarchique, l'\u00e9quipe applique dendrogramme pour fiabiliser...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec liaison simple dans 'Clustering hierarchique' ?",
-      "image_url": "apprentissage-non-supervise_clustering_hierarchique_liaison_simple_2.png",
-      "choices": {
-        "A": "Dans Clustering hierarchique, coupe de clusters est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites.",
-        "B": "Dans Clustering hierarchique, liaison simple est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison simple en production.",
-        "C": "Le role de liaison complete est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison complete en production.",
-        "D": "dendrogramme sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dendrogramme en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de liaison simple dans Clustering hierarchique. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Clustering hierarchique, coupe de clusters est mobilise pour fiabiliser les d\u00e9cisions d'experimentatio...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Clustering hierarchique, liaison simple est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de liaison complete est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement per...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (dendrogramme sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux de...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Clustering hierarchique', quel commentaire du schema traduit le mieux le role de dendrogramme ?",
-      "image_url": "apprentissage-non-supervise_clustering_hierarchique_dendrogramme_2.png",
-      "choices": {
-        "A": "Dans Clustering hierarchique, liaison simple est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison simple en production.",
-        "B": "Le role de liaison complete est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison complete en production.",
-        "C": "coupe de clusters sert a fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites pour guider une d\u00e9cision exploitable.",
-        "D": "dendrogramme sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dendrogramme en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de dendrogramme dans Clustering hierarchique. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Clustering hierarchique, liaison simple est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de liaison complete est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement per...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (coupe de clusters sert a fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sa...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (dendrogramme sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux de...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La liaison simple relie les clusters basés sur la distance minimale entre leurs points les plus proches, ce qui peut mener à la formation de chaînes de clusters. La liaison complète utilise la distance maximale entre leurs points les plus éloignés, formant des clusters plus compacts.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Clustering hierarchique' (marketing), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment liaison complete ?",
+      "question": "Dans un dendrogramme, que représente un point de fusion des branches?",
       "image_url": null,
       "choices": {
-        "A": "Dans Clustering hierarchique, liaison simple se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de liaison simple dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "dendrogramme designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de dendrogramme dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "coupe de clusters correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il organise des observations non \u00e9tiquet\u00e9es en groupes coh\u00e9rents selon une logique de similarite, ce qui structure l'analyse dans Clustering hierarchique.",
-        "D": "liaison complete correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de liaison complete dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Clustering hierarchique."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de liaison complete dans Clustering hierarchique, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que liaison simple, dendrogramme, coupe de clusters restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Clustering hierarchique, liaison simple se comprend comme un concept interm\u00e9diaire en apprentissage no...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (dendrogramme designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de dend...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (coupe de clusters correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il organise des ob...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (liaison complete correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le rol...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec coupe de clusters dans 'Clustering hierarchique' ?",
-      "image_url": "apprentissage-non-supervise_clustering_hierarchique_coupe_de_clusters_2.png",
-      "choices": {
-        "A": "liaison complete sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison complete en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Clustering hierarchique, dendrogramme est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dendrogramme en production.",
-        "C": "Dans Clustering hierarchique, coupe de clusters est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites.",
-        "D": "Le role de liaison simple est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison simple en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de coupe de clusters dans Clustering hierarchique. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (liaison complete sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieu...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Clustering hierarchique, dendrogramme est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Clustering hierarchique, coupe de clusters est mobilise pour fiabiliser les d\u00e9cisions d'experimentatio...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de liaison simple est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perme...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Clustering hierarchique', quel est le principal mode d'echec quand dendrogramme est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si dendrogramme est mal utilise, on observe souvent sur-optimiser dendrogramme localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de liaison simple est sur-optimiser liaison simple localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Un risque classique avec liaison complete est de sur-optimiser liaison complete localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Si coupe de clusters est mal utilise, on observe souvent sur-optimiser coupe de clusters localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Un point de fusion représente la distance à laquelle deux clusters sont combinés.",
+        "B": "Un point de fusion indique le temps computationnel pris pour l'ajout d'un nouveau cluster.",
+        "C": "Un point de fusion montre la similarité interne d'un cluster unique.",
+        "D": "Un point de fusion définit la taille moyenne des clusters fusionnés."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de dendrogramme. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si dendrogramme est mal utilise, on observe souvent sur-optimiser dendrogramme localement en ignorant ses i...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de liaison simple est sur-optimiser liaison simple localement en ignorant ses int...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec liaison complete est de sur-optimiser liaison complete localement en ignorant ses ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si coupe de clusters est mal utilise, on observe souvent sur-optimiser coupe de clusters localement en igno...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
+      "explanation": "Un point de fusion dans un dendrogramme montre la distance à laquelle deux clusters ont été combinés pour former un cluster plus grand. Il ne montre ni le temps de calcul (B), ni la similarité interne (C), ni la taille des clusters (D).",
+      "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Clustering hierarchique', quel est le role le plus determinant de liaison simple pour un cas sante ?",
+      "question": "Lequel de ces énoncés est vrai à propos de la coupe de clusters dans un dendrogramme?",
       "image_url": null,
       "choices": {
-        "A": "Dans Clustering hierarchique, liaison complete est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison complete en production.",
-        "B": "Le role de dendrogramme est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dendrogramme en production.",
-        "C": "coupe de clusters sert a fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites pour guider une d\u00e9cision exploitable.",
-        "D": "liaison simple sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison simple en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie liaison simple \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Clustering hierarchique, liaison complete est mobilise pour fiabiliser les d\u00e9cisions d'experimentation...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de dendrogramme est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (coupe de clusters sert a fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sa...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (liaison simple sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin marketing dans 'Clustering hierarchique', pourquoi liaison complete est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "dendrogramme sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dendrogramme en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Clustering hierarchique, coupe de clusters est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites.",
-        "C": "Dans Clustering hierarchique, liaison complete est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison complete en production.",
-        "D": "Le role de liaison simple est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison simple en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie liaison complete \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (dendrogramme sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Clustering hierarchique, coupe de clusters est mobilise pour fiabiliser les d\u00e9cisions d'experimentatio...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Clustering hierarchique, liaison complete est mobilise pour fiabiliser les d\u00e9cisions d'experimentation...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de liaison simple est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "dendrogramme: pourquoi ce concept est-il crucial pour une \u00e9quipe e-commerce dans 'Clustering hierarchique' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role de coupe de clusters est de fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites.",
-        "B": "Le role de dendrogramme est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dendrogramme en production.",
-        "C": "liaison simple sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison simple en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Clustering hierarchique, liaison complete est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison complete en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie dendrogramme \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de coupe de clusters est de fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exp...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de dendrogramme est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (liaison simple sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Clustering hierarchique, liaison complete est mobilise pour fiabiliser les d\u00e9cisions d'experimentation...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Clustering hierarchique', quelle situation de terrain montre le mieux quand utiliser liaison simple ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Clustering hierarchique, coupe de clusters est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites.",
-        "B": "En contexte r\u00e9el sur Clustering hierarchique, liaison simple est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison simple en production.",
-        "C": "Pendant une phase d'experimentation, liaison complete est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison complete en production tout en surveillant le risque de sur-optimiser liaison complete localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation de Clustering hierarchique, l'\u00e9quipe applique dendrogramme pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dendrogramme en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car liaison simple y sert de levier de d\u00e9cision principal dans Clustering hierarchique. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Clustering hierarchique, coupe de clusters est choisi afin de fiabiliser les d\u00e9cisions...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Clustering hierarchique, liaison simple est choisi afin de fiabiliser les d\u00e9cisions d'...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, liaison complete est utile pour fiabiliser les d\u00e9cisions d'experimenta...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation de Clustering hierarchique, l'\u00e9quipe applique dendrogramme pour fiabiliser...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Clustering hierarchique', quelle situation de terrain montre le mieux quand utiliser coupe de clusters ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une phase d'experimentation de Clustering hierarchique, l'\u00e9quipe applique liaison complete pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison complete en production.",
-        "B": "En contexte r\u00e9el sur Clustering hierarchique, dendrogramme est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dendrogramme en production.",
-        "C": "En contexte r\u00e9el sur Clustering hierarchique, coupe de clusters est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites.",
-        "D": "Pendant une phase d'experimentation, liaison simple est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison simple en production tout en surveillant le risque de sur-optimiser liaison simple localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car coupe de clusters y sert de levier de d\u00e9cision principal dans Clustering hierarchique. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une phase d'experimentation de Clustering hierarchique, l'\u00e9quipe applique liaison complete pour fiabil...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Clustering hierarchique, dendrogramme est choisi afin de fiabiliser les d\u00e9cisions d'ex...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Clustering hierarchique, coupe de clusters est choisi afin de fiabiliser les d\u00e9cisions...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une phase d'experimentation, liaison simple est utile pour fiabiliser les d\u00e9cisions d'experimentati...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe e-commerce dans 'Clustering hierarchique', quelle d\u00e9finition de dendrogramme est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "coupe de clusters correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il organise des observations non \u00e9tiquet\u00e9es en groupes coh\u00e9rents selon une logique de similarite, ce qui structure l'analyse dans Clustering hierarchique.",
-        "B": "Dans Clustering hierarchique, DBSCAN se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ; il organise des observations non \u00e9tiquet\u00e9es en groupes coh\u00e9rents selon une logique de similarite.",
-        "C": "Dans Clustering hierarchique, dendrogramme se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de dendrogramme dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "liaison complete designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de liaison complete dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de dendrogramme dans Clustering hierarchique, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que liaison complete, coupe de clusters, DBSCAN restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (coupe de clusters correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il organise des ob...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Clustering hierarchique, DBSCAN se comprend comme un concept interm\u00e9diaire en apprentissage non superv...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Clustering hierarchique, dendrogramme se comprend comme un concept interm\u00e9diaire en apprentissage non ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (liaison complete designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Clustering hierarchique', quel est le role le plus determinant de coupe de clusters pour un cas industrie ?",
-      "image_url": null,
-      "choices": {
-        "A": "coupe de clusters sert a fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Clustering hierarchique, liaison simple est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison simple en production.",
-        "C": "Le role de liaison complete est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison complete en production.",
-        "D": "dendrogramme sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dendrogramme en production pour guider une d\u00e9cision exploitable."
+        "A": "Une coupe horizontale dans un dendrogramme détermine le nombre de clusters à un certain seuil de distance.",
+        "B": "Une coupe verticale dans un dendrogramme révèle la similarité entre points individuels.",
+        "C": "Une coupe de clusters décide automatiquement de l'algorithme de clustering le mieux adapté.",
+        "D": "Une coupe de clusters combine les clusters pour former un seul cluster global."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie coupe de clusters \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (coupe de clusters sert a fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sa...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Clustering hierarchique, liaison simple est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de liaison complete est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement per...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (dendrogramme sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Une coupe horizontale dans un dendrogramme à une certaine hauteur détermine le nombre de clusters en indiquant où les éléments sont regroupés ensemble. Une coupe verticale est incorrecte car elle ne détermine pas les similarités (B), elle ne choisit pas d'algorithme (C) et ne produit pas un seul cluster (D).",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Lorsque vous utilisez la liaison complète pour le clustering, quel effet principal attendez-vous sur la forme des clusters?",
+      "image_url": null,
+      "choices": {
+        "A": "Les clusters sont généralement plus compacts et globulaires.",
+        "B": "Les clusters sont généralement en forme de chaîne ou allongés.",
+        "C": "La forme des clusters ne change pas, quel que soit le type de liaison.",
+        "D": "Les clusters trouvent toujours le centre de gravité commun."
+      },
+      "correct_answer": "A",
+      "explanation": "La liaison complète a tendance à produire des clusters plus compacts et globulaires en minimisant la distance maximale entre les clusters. Elle ne forme pas des chaînes (B) et ne garde pas la forme inchangée (C), et elle ne calcule pas le centre de gravité (D).",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une limitation commune du dendrogramme dans le contexte du clustering hiérarchique?",
+      "image_url": null,
+      "choices": {
+        "A": "Il devient difficilement lisible avec un grand nombre de points de données.",
+        "B": "Il ne peut être utilisé qu'avec la liaison simple.",
+        "C": "Il affiche uniquement les distances maximales entre tous les points.",
+        "D": "Il ne fournit aucune information sur la croissance des clusters au fil du temps."
+      },
+      "correct_answer": "A",
+      "explanation": "Le dendrogramme devient difficilement lisible avec un grand nombre de points (A). Il peut être utilisé avec tous types de liaisons, pas seulement simple (B). Il affiche des fusions, pas seulement des distances maximales (C) et présentes les croissances des clusters (D).",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi la coupe de clusters à une hauteur spécifique dans un dendrogramme est-elle critique?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle détermine directement le nombre de clusters, influençant leur cohésion et séparabilité.",
+        "B": "Elle est essentielle pour optimiser l'algorithme utilisé pour générer le dendrogramme.",
+        "C": "Elle ajuste dynamiquement la taille des données d'entrée pour équilibrer les clusters.",
+        "D": "Elle garantit que chaque cluster obtenu a le même nombre de points de données."
+      },
+      "correct_answer": "A",
+      "explanation": "La coupe est critique car elle fixe le nombre de clusters, impactant directement leur cohésion et séparabilité (A). Elle ne modifie pas l'algorithme en soi (B), ne rajuste pas les données d'entrée (C), et ne garantit pas un même nombre de points dans chaque cluster (D).",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans un scénario à forte variance de données, pourquoi la liaison simple peut-elle être problématique?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle peut provoquer le chaînage, formant des clusters allongés peu représentatifs.",
+        "B": "Elle tend à regrouper les éléments en maximisant la distance entre points éloignés.",
+        "C": "Elle privilégie la formation de grands clusters compacts.",
+        "D": "Elle maximise toujours la variance interne des clusters."
+      },
+      "correct_answer": "A",
+      "explanation": "La liaison simple peut créer des chaînes de points allongées (A), ce qui est problématique avec une forte variance. Elle ne maximise pas la distance (B), ne privilégie pas les grands clusters (C) et ne maximise pas la variance (D).",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel type de données nécessite généralement un prétraitement avant l'application du clustering hiérarchique?",
+      "image_url": null,
+      "choices": {
+        "A": "Données avec des caractéristiques à échelles très différentes.",
+        "B": "Données issues d'une seule distribution gaussienne.",
+        "C": "Données statiques sans mis à jour fréquente.",
+        "D": "Données avec un faible nombre de dimensions."
+      },
+      "correct_answer": "A",
+      "explanation": "Les données avec des caractéristiques à échelles très différentes (A) nécessitent un prétraitement comme la normalisation. Les données gaussiennes (B), statiques (C) ou de faible dimension (D) ne posent généralement pas ce problème.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'impact de l'utilisation de la distance euclidienne dans la liaison complète pour des données de forte dimension?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle accroît les chances de 'curse of dimensionality', rendant les distances peu discriminantes.",
+        "B": "Elle optimise la séparation inter-clusters en toutes dimensions.",
+        "C": "Elle réduit le besoin de calculs complexes au sein de chaque dimension.",
+        "D": "Elle ne présente aucun inconvénient significatif par rapport aux faibles dimensions."
+      },
+      "correct_answer": "A",
+      "explanation": "En fortes dimensions, la distance euclidienne souffre du 'curse of dimensionality', rendant les distances moins discriminantes (A). Elle ne sépare pas mieux (B), ne réduit pas les calculs (C) et a plus d'inconvénients que (D).",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "En utilisant la liaison simple, comment se comportent les clusters en présence de bruit (outliers)?",
+      "image_url": null,
+      "choices": {
+        "A": "Les clusters peuvent facilement s'étendre pour inclure des points de bruit.",
+        "B": "Les clusters se contractent pour éviter le bruit à tout prix.",
+        "C": "La présence de bruit n'a aucun impact sur les clusters.",
+        "D": "Les clusters forment plus de subdivisions internes, isolant le bruit."
+      },
+      "correct_answer": "A",
+      "explanation": "La liaison simple peut facilement entraîner l'inclusion de points de bruit dans les clusters en raison du chaînage (A). Elle ne se contracte pas (B), est impactée par le bruit (C), et ne subdivise pas particulièrement (D).",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pour un cas operationnel de 'Clustering hierarchique', quel exemple met liaison complete au c\u0153ur de la d\u00e9cision ?",
+      "question": "Quel est un avantage de la visualisation des dendrogrammes malgré leur complexité apparente avec de grandes données?",
       "image_url": null,
       "choices": {
-        "A": "Pendant une phase d'experimentation, liaison complete est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison complete en production tout en surveillant le risque de sur-optimiser liaison complete localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Dans une phase d'experimentation de Clustering hierarchique, l'\u00e9quipe applique liaison simple pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer liaison simple en production.",
-        "C": "En contexte r\u00e9el sur Clustering hierarchique, dendrogramme est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dendrogramme en production.",
-        "D": "Pendant une phase d'experimentation, coupe de clusters est utile pour fiabiliser les d\u00e9cisions d'experimentation ; extraire une structure exploitable sans labels explicites tout en surveillant le risque de sur-optimiser coupe de clusters localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Ils permettent de visualiser hiérarchiquement la structure et les relations des clusters potentiels.",
+        "B": "Ils simplifient immédiatement les données complexes en graphiques à faible dimension.",
+        "C": "Ils permettent de déterminer directement la corrélation entre toutes les variables de données.",
+        "D": "Ils offrent une méthode pour optimiser dynamiquement le nombre de clusters en temps réel."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car liaison complete y sert de levier de d\u00e9cision principal dans Clustering hierarchique. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une phase d'experimentation, liaison complete est utile pour fiabiliser les d\u00e9cisions d'experimenta...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une phase d'experimentation de Clustering hierarchique, l'\u00e9quipe applique liaison simple pour fiabilis...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Clustering hierarchique, dendrogramme est choisi afin de fiabiliser les d\u00e9cisions d'ex...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une phase d'experimentation, coupe de clusters est utile pour fiabiliser les d\u00e9cisions d'experiment...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Les dendrogrammes permettent de visualiser hiérarchiquement les structures des clusters (A), mais pas de simplifier les données (B), d'établir des corrélations directes (C) ou d'optimiser dynamiquement en temps réel (D).",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "liaison simple: quelle proposition en donne la meilleure d\u00e9finition dans 'Clustering hierarchique' (contexte sante) ?",
+      "question": "Pourquoi l'échelle du dendrogramme est-elle importante lors de l'interprétation des groupes?",
       "image_url": null,
       "choices": {
-        "A": "liaison simple designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de liaison simple dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "choix de k correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de choix de k dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Clustering hierarchique.",
-        "C": "Dans Clustering hierarchique, liaison complete se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de liaison complete dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "dendrogramme designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de dendrogramme dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Elle influence les valeurs de distance à laquelle les fusions doivent être coupées pour déterminer les clusters.",
+        "B": "Elle ajuste automatiquement le format visuel du dendrogramme pour une meilleure apparence.",
+        "C": "Elle change le modèle sous-jacent de l'algorithme de clustering appliqué.",
+        "D": "Elle ne joue aucun rôle direct dans l'interprétation des groupes."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de liaison simple dans Clustering hierarchique, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que choix de k, liaison complete, dendrogramme restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (liaison simple designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de li...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (choix de k correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de c...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Clustering hierarchique, liaison complete se comprend comme un concept interm\u00e9diaire en apprentissage ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (dendrogramme designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de dend...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "L'échelle influence les valeurs de coupe des fusions dans le dendrogramme (A), mais ne change pas le format visuel (B), n'altère pas l'algorithme (C) et n'est pas insignifiante (D).",
       "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle caractéristique des données rendrait la liaison complète plus adaptée que la liaison simple?",
+      "image_url": null,
+      "choices": {
+        "A": "La nécessité de former des clusters globulaires distincts même avec bruit.",
+        "B": "Des données hautement concentrées près d'une centaine de pôles.",
+        "C": "Une très faible variance inter-clusters.",
+        "D": "Aucune distance entre les points n'étant exactement égale."
+      },
+      "correct_answer": "A",
+      "explanation": "La liaison complète est plus adaptée pour former des clusters compacts même en présence de bruit (A). Les autres options ne montrent pas de spécificités où la liaison complète serait favorable.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans quel scénario le choix de la distance Manhattan serait-il plus approprié pour le clustering hiérarchique?",
+      "image_url": null,
+      "choices": {
+        "A": "Lorsque les dimensions montrent des caractéristiques indépendantes et ont des différences similaires.",
+        "B": "Dans des données avec des interrelations complexes entre de multiples dimensions.",
+        "C": "Pour des données hautement sensibles à l'effet de distance euclidienne.",
+        "D": "Quand la corrélation entre toutes les dimensions est élevée."
+      },
+      "correct_answer": "A",
+      "explanation": "La distance Manhattan s'applique lorsque les dimensions sont indépendantes et similaires (A), contrairement à des interrelations (B), à l'effet euclidien (C), ou à forte corrélation (D).",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'impact principal d'utiliser la liaison simple dans le clustering hiérarchique?",
+      "image_url": null,
+      "choices": {
+        "A": "Cela peut créer des clusters en forme de chaîne car la distance minimale entre points est utilisée.",
+        "B": "Cela tend à créer des clusters de forme sphérique car la distance maximale entre points est utilisée.",
+        "C": "Cela mélange les clusters si la qualité du dendrogramme est incorrecte.",
+        "D": "Cela regroupe les clusters en créant des coupes horizontales précises."
+      },
+      "correct_answer": "A",
+      "explanation": "La liaison simple est une méthode de clustering qui définit la distance inter-cluster comme la distance minimale entre les points de deux clusters. Cela peut entraîner un effet de chaîne, où des points éloignés peuvent être incorporés dans le même cluster, car ils sont reliés à d'autres points par une chaîne de petites distances.\nB est incorrect car c'est la liaison complète qui utilise la distance maximale entre points, tendant à créer des clusters sphériques. \nC est incorrect car le concept de dendrogramme est un outil de visualisation et non une méthode de calcul des distances.\nD est incorrect car la coupe de clusters implique la sélection d'un niveau dans le dendrogramme, mais ce n'est pas spécifiquement lié à la précision des coupes par rapport à la méthode de liaison simple.",
+      "difficulty": "easy"
     }
   ]
 }

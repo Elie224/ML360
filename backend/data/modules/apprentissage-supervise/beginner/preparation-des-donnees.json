@@ -4,157 +4,157 @@
   "module": "Preparation des donnees",
   "questions": [
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec nettoyage dans 'Preparation des donn\u00e9es' ?",
-      "image_url": "apprentissage-supervise_preparation_des_donnees_nettoyage_2.png",
-      "choices": {
-        "A": "Dans Preparation des donn\u00e9es, split train-test est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split train-test en production.",
-        "B": "Dans Preparation des donn\u00e9es, nettoyage est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer nettoyage en production.",
-        "C": "Le role de normalisation est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer normalisation en production.",
-        "D": "encodage categoriel sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer encodage categoriel en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de nettoyage dans Preparation des donn\u00e9es. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Preparation des donn\u00e9es, split train-test est mobilise pour installer un raisonnement fiable des le de...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Preparation des donn\u00e9es, nettoyage est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de normalisation est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement per...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (encodage categoriel sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
       "type": "text",
-      "question": "Dans 'Preparation des donn\u00e9es' (marketing), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment normalisation ?",
+      "question": "Quel est l'objectif principal du nettoyage des données en machine learning?",
       "image_url": null,
       "choices": {
-        "A": "Dans Preparation des donn\u00e9es, pr\u00e9cision se comprend comme une notion de base en apprentissage supervise ; il mesure la proportion de predictions positives qui sont effectivement correctes.",
-        "B": "recall designe une notion de base en apprentissage supervise ; il mesure la proportion de cas positifs reels detectes par le modele.",
-        "C": "overfitting correspond a une notion de base en apprentissage supervise ; il formalise le role d'overfitting dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Preparation des donn\u00e9es.",
-        "D": "normalisation correspond a une notion de base en apprentissage supervise ; il formalise le role de normalisation dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Preparation des donn\u00e9es."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de normalisation dans Preparation des donn\u00e9es, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que pr\u00e9cision, recall, overfitting restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Preparation des donn\u00e9es, pr\u00e9cision se comprend comme une notion de base en apprentissage supervise ; i...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (recall designe une notion de base en apprentissage supervise ; il mesure la proportion de cas positifs r\u00e9el...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (overfitting correspond a une notion de base en apprentissage supervise ; il formalise le role d'overfittin...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (normalisation correspond a une notion de base en apprentissage supervise ; il formalise le role de normalis...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "encodage categoriel: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Preparation des donn\u00e9es' ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Preparation des donn\u00e9es, nettoyage est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer nettoyage en production.",
-        "B": "Pendant un atelier de cadrage, normalisation est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer normalisation en production tout en surveillant le risque d'appliquer normalisation par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Dans un atelier de cadrage de Preparation des donn\u00e9es, l'\u00e9quipe applique split train-test pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split train-test en production.",
-        "D": "Dans un atelier de cadrage de Preparation des donn\u00e9es, l'\u00e9quipe applique encodage categoriel pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer encodage categoriel en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car encodage categoriel y sert de levier de d\u00e9cision principal dans Preparation des donn\u00e9es. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Preparation des donn\u00e9es, nettoyage est choisi afin d'installer un raisonnement fiable...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant un atelier de cadrage, normalisation est utile pour installer un raisonnement fiable des le d\u00e9but ;...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans un atelier de cadrage de Preparation des donn\u00e9es, l'\u00e9quipe applique split train-test pour installer un...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans un atelier de cadrage de Preparation des donn\u00e9es, l'\u00e9quipe applique encodage categoriel pour installer...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Preparation des donn\u00e9es', quel est le role le plus determinant de nettoyage pour un cas sante ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Preparation des donn\u00e9es, normalisation est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer normalisation en production.",
-        "B": "Le role d'encodage categoriel est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer encodage categoriel en production.",
-        "C": "split train-test sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split train-test en production pour guider une d\u00e9cision exploitable.",
-        "D": "nettoyage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer nettoyage en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie nettoyage \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Preparation des donn\u00e9es, normalisation est mobilise pour installer un raisonnement fiable des le d\u00e9but...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role d'encodage categoriel est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correcteme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (split train-test sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de m...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (nettoyage sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux de...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec split train-test dans 'Preparation des donn\u00e9es' ?",
-      "image_url": "apprentissage-supervise_preparation_des_donnees_split_train_test_2.png",
-      "choices": {
-        "A": "normalisation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer normalisation en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Preparation des donn\u00e9es, encodage categoriel est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer encodage categoriel en production.",
-        "C": "Dans Preparation des donn\u00e9es, split train-test est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split train-test en production.",
-        "D": "Le role de nettoyage est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer nettoyage en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de split train-test dans Preparation des donn\u00e9es. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (normalisation sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieu...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Preparation des donn\u00e9es, encodage categoriel est mobilise pour installer un raisonnement fiable des le...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Preparation des donn\u00e9es, split train-test est mobilise pour installer un raisonnement fiable des le de...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de nettoyage est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Preparation des donn\u00e9es', quelle situation de terrain montre le mieux quand utiliser nettoyage ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Preparation des donn\u00e9es, split train-test est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split train-test en production.",
-        "B": "En contexte r\u00e9el sur Preparation des donn\u00e9es, nettoyage est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer nettoyage en production.",
-        "C": "Pendant un atelier de cadrage, normalisation est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer normalisation en production tout en surveillant le risque d'appliquer normalisation par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Dans un atelier de cadrage de Preparation des donn\u00e9es, l'\u00e9quipe applique encodage categoriel pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer encodage categoriel en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car nettoyage y sert de levier de d\u00e9cision principal dans Preparation des donn\u00e9es. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Preparation des donn\u00e9es, split train-test est choisi afin d'installer un raisonnement...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Preparation des donn\u00e9es, nettoyage est choisi afin d'installer un raisonnement fiable...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant un atelier de cadrage, normalisation est utile pour installer un raisonnement fiable des le d\u00e9but ;...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans un atelier de cadrage de Preparation des donn\u00e9es, l'\u00e9quipe applique encodage categoriel pour installer...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin marketing dans 'Preparation des donn\u00e9es', pourquoi normalisation est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "encodage categoriel sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer encodage categoriel en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Preparation des donn\u00e9es, split train-test est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split train-test en production.",
-        "C": "Dans Preparation des donn\u00e9es, normalisation est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer normalisation en production.",
-        "D": "Le role de nettoyage est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer nettoyage en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie normalisation \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (encodage categoriel sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Preparation des donn\u00e9es, split train-test est mobilise pour installer un raisonnement fiable des le de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Preparation des donn\u00e9es, normalisation est mobilise pour installer un raisonnement fiable des le d\u00e9but...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de nettoyage est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Preparation des donn\u00e9es', quel commentaire du schema traduit le mieux le role d'encodage categoriel ?",
-      "image_url": "apprentissage-supervise_preparation_des_donnees_encodage_categoriel_2.png",
-      "choices": {
-        "A": "Dans Preparation des donn\u00e9es, nettoyage est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer nettoyage en production.",
-        "B": "Le role de normalisation est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer normalisation en production.",
-        "C": "split train-test sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split train-test en production pour guider une d\u00e9cision exploitable.",
-        "D": "encodage categoriel sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer encodage categoriel en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'encodage categoriel dans Preparation des donn\u00e9es. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Preparation des donn\u00e9es, nettoyage est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de normalisation est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement per...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (split train-test sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de m...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (encodage categoriel sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet d...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Preparation des donn\u00e9es', quelle situation de terrain montre le mieux quand utiliser split train-test ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans un atelier de cadrage de Preparation des donn\u00e9es, l'\u00e9quipe applique normalisation pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer normalisation en production.",
-        "B": "En contexte r\u00e9el sur Preparation des donn\u00e9es, encodage categoriel est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer encodage categoriel en production.",
-        "C": "En contexte r\u00e9el sur Preparation des donn\u00e9es, split train-test est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split train-test en production.",
-        "D": "Pendant un atelier de cadrage, nettoyage est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer nettoyage en production tout en surveillant le risque d'appliquer nettoyage par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car split train-test y sert de levier de d\u00e9cision principal dans Preparation des donn\u00e9es. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans un atelier de cadrage de Preparation des donn\u00e9es, l'\u00e9quipe applique normalisation pour installer un ra...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Preparation des donn\u00e9es, encodage categoriel est choisi afin d'installer un raisonnem...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Preparation des donn\u00e9es, split train-test est choisi afin d'installer un raisonnement...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant un atelier de cadrage, nettoyage est utile pour installer un raisonnement fiable des le d\u00e9but ; l'u...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'Preparation des donn\u00e9es', quel exemple met normalisation au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant un atelier de cadrage, normalisation est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer normalisation en production tout en surveillant le risque d'appliquer normalisation par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Dans un atelier de cadrage de Preparation des donn\u00e9es, l'\u00e9quipe applique nettoyage pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer nettoyage en production.",
-        "C": "En contexte r\u00e9el sur Preparation des donn\u00e9es, encodage categoriel est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer encodage categoriel en production.",
-        "D": "Pendant un atelier de cadrage, split train-test est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split train-test en production tout en surveillant le risque d'appliquer split train-test par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "Supprimer ou corriger les valeurs manquantes et aberrantes",
+        "B": "Augmenter la taille du jeu de données initial",
+        "C": "Transformer toutes les données en texte",
+        "D": "Réduire le coût computationnel des algorithmes de machine learning"
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car normalisation y sert de levier de d\u00e9cision principal dans Preparation des donn\u00e9es. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant un atelier de cadrage, normalisation est utile pour installer un raisonnement fiable des le d\u00e9but ;...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans un atelier de cadrage de Preparation des donn\u00e9es, l'\u00e9quipe applique nettoyage pour installer un raison...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Preparation des donn\u00e9es, encodage categoriel est choisi afin d'installer un raisonnem...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant un atelier de cadrage, split train-test est utile pour installer un raisonnement fiable des le debu...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le nettoyage des données consiste principalement à traiter les valeurs manquantes et les données aberrantes pour garantir l'exactitude et la qualité des données. B est faux car augmenter la taille n'est pas l'objectif principal du nettoyage. C est incorrect car toutes les données n'ont pas besoin d'être transformées en texte. D est incorrect car bien que la qualité des données puisse influencer la performance, ce n'est pas le but principal du nettoyage.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi la normalisation des données est-elle souvent nécessaire en apprentissage supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour s'assurer que toutes les caractéristiques contribuent de façon égale à la distance dans les algorithmes comme KNN",
+        "B": "Pour augmenter la variabilité entre les différentes classes",
+        "C": "Pour réduire le nombre de variables dans le modèle",
+        "D": "Pour rendre les variables catégorielles utilisables par les modèles de machine learning"
+      },
+      "correct_answer": "A",
+      "explanation": "La normalisation met les caractéristiques sur la même échelle, garantissant qu'elles ont toutes un impact similaire sur les calculs de distance utilisés dans certains algorithmes. B est incorrect car la variabilité entre classes n'est pas directement affectée par la normalisation. C est faux puisqu'il ne réduit pas le nombre de variables, ça affecte seulement leur échelle. D concerne l'encodage et non la normalisation.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle méthode d'encodage catégoriel transforme les valeurs catégorielles en colonnes binaires?",
+      "image_url": null,
+      "choices": {
+        "A": "One-hot encoding",
+        "B": "Label encoding",
+        "C": "Frequent encoding",
+        "D": "Binary encoding"
+      },
+      "correct_answer": "A",
+      "explanation": "Le one-hot encoding crée une colonne binaire pour chaque catégorie possible. B est faux car le label encoding attribue une valeur numérique unique à chaque catégorie, sans créer de colonnes supplémentaires. C et D ne sont pas des techniques standards d'encodage.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une pratique recommandée lors du split train-test des données?",
+      "image_url": null,
+      "choices": {
+        "A": "Préserver la distribution des classes dans train et test sets",
+        "B": "Utiliser tout le dataset pour l'entraînement si son volume est réduit",
+        "C": "Inclure plus d'échantillons dans le jeu de test que dans le jeu d'entraînement",
+        "D": "Ne pas appliquer de normalisation avant le split"
+      },
+      "correct_answer": "A",
+      "explanation": "Il est essentiel de préserver le même ratio de classes dans les ensembles train et test pour une bonne représentation des données. B est incorrect car cela empêcherait de tester le modèle. C est faux car l'entraînement nécessite généralement plus de données. D est faux car la normalisation devrait idéalement être déterminée sur les données d'entraînement.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle erreur peut survenir si l'encodage catégoriel n'est pas appliqué correctement?",
+      "image_url": null,
+      "choices": {
+        "A": "Les modèles peuvent percevoir une relation d'ordre qui n'existe pas",
+        "B": "Le modèle sera incapable de détecter les valeurs aberrantes",
+        "C": "Les données numériques ne seront pas normalisées",
+        "D": "Le modèle risque d'avoir un biais de sélection"
+      },
+      "correct_answer": "A",
+      "explanation": "Si le label encoding est utilisé pour des catégories ordinales, il peut faussement suggérer une relation d'ordre. B est faux car la détection des valeurs aberrantes n'est pas liée à l'encodage. C ne concerne pas l'encodage mais plutôt la normalisation. D n'est pas directement lié à l'encodage.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel ratio de split train-test est souvent utilisé dans les petits datasets?",
+      "image_url": null,
+      "choices": {
+        "A": "80% entraînement, 20% test",
+        "B": "90% entraînement, 10% test",
+        "C": "50% entraînement, 50% test",
+        "D": "30% entraînement, 70% test"
+      },
+      "correct_answer": "A",
+      "explanation": "Un ratio de 80/20 permet généralement une bonne balance entre les données disponibles pour l'entraînement et le test, surtout dans des petits datasets. B est parfois utilisé, mais moins commun. C et D sont peu probables avec de petits datasets, qui nécessitent plus de données pour l'entraînement.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quels problèmes peuvent survenir si les données d'entraînement et de test sont normalisées ensemble?",
+      "image_url": null,
+      "choices": {
+        "A": "Fuite de données entre l'entraînement et le test",
+        "B": "Résultats plus précis",
+        "C": "Diminution de la complexité du modèle",
+        "D": "Augmente la variance des résultats"
+      },
+      "correct_answer": "A",
+      "explanation": "Normaliser les jeux de données ensemble peut introduire de la fuite de données, ce qui faussera les performances lors du test. B est faux parce que cela favoriserait des résultats optimistes non représentatifs de la réalité. C est faux car cela ne décomplexifie pas le modèle. D est incorrect car il n'influence pas la variance.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle technique d'encodage catégoriel doit être évitée pour les features fortement catégorielles?",
+      "image_url": null,
+      "choices": {
+        "A": "One-hot encoding",
+        "B": "Label encoding",
+        "C": "Ordinal encoding",
+        "D": "Target encoding"
+      },
+      "correct_answer": "A",
+      "explanation": "One-hot encoding peut devenir inefficace pour les features contenant un grand nombre de catégories, augmentant considérablement le nombre de dimensions. B, C, et D n'augmentent pas directement le nombre de dimensions de cette manière.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une des conséquences de l'utilisation incorrecte de la normalisation lors du pré-traitement des données?",
+      "image_url": null,
+      "choices": {
+        "A": "Influence insuffisante de certaines variables",
+        "B": "Création de bruit dans les variables catégorielles",
+        "C": "Augmentation excessive de la précision",
+        "D": "Ensablement des données"
+      },
+      "correct_answer": "A",
+      "explanation": "Une mauvaise normalisation peut faire en sorte que certaines variables ont peu d'effet sur le modèle si elles ne sont pas correctement mises à l'échelle. B est faux, car le bruit n'est pas introduit dans les variables catégorielles. C est incorrect car la précision est généralement compromise, pas augmentée excessivement. D n'a pas de sens dans ce contexte.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il important d'évaluer les performances sur le jeu de test après l'entraînement?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour évaluer la généralisation du modèle aux données non vues",
+        "B": "Pour améliorer le processus de nettoyage des données",
+        "C": "Pour ajuster les hyperparamètres sur ce même dataset",
+        "D": "Pour normaliser les données d'entraînement"
+      },
+      "correct_answer": "A",
+      "explanation": "Évaluer sur le jeu de test permet de comprendre comment le modèle se généralise à des données non vues. B n'est pas directement lié à l'évaluation du test. C ne doit pas se faire avec le dataset de test pour éviter le surapprentissage. D est confus car la normalisation concerne principalement le jeu d'entraînement.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Preparation des donn\u00e9es', quel est le principal mode d'echec quand encodage categoriel est mal applique ?",
+      "question": "Quel est un piège potentiel si le ratio de classes n'est pas maintenu pendant le split train-test?",
       "image_url": null,
       "choices": {
-        "A": "Si encodage categoriel est mal utilise, on observe souvent appliquer encodage categoriel par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Le piege principal autour de nettoyage est appliquer nettoyage par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Un risque classique avec normalisation est d'appliquer normalisation par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Si split train-test est mal utilise, on observe souvent appliquer split train-test par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "Le modèle surentraîné peut se produire facilement",
+        "B": "Le dataset n'atteindra pas la taille nécessaire",
+        "C": "Mauvaise précision due à un biais de classification",
+        "D": "Réduction de la complexité des caractéristiques"
       },
-      "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'encodage categoriel. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si encodage categoriel est mal utilise, on observe souvent appliquer encodage categoriel par automatisme sa...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de nettoyage est appliquer nettoyage par automatisme sans verifier hypotheses, qu...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec normalisation est d'appliquer normalisation par automatisme sans verifier hypothe...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si split train-test est mal utilise, on observe souvent appliquer split train-test par automatisme sans ver...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "C",
+      "explanation": "Ne pas maintenir le ratio de classes peut introduire un biais de classification, faussant les résultats de précision. A est faux car les biais de classe n'entrainent pas typiquement un surentraînement. B est incorrect car cela concerne la distribution des classes. D est incorrect car cela ne concerne pas la complexité des caractéristiques.",
       "difficulty": "hard"
     }
   ]

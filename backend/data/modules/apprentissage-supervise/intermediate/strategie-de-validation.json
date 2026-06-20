@@ -5,226 +5,226 @@
   "questions": [
     {
       "type": "text",
-      "question": "cross-validation: quelle proposition en donne la meilleure d\u00e9finition dans 'Strat\u00e9gie de validation' (contexte sante) ?",
+      "question": "Quelle est la principale raison d'utiliser la cross-validation?",
       "image_url": null,
       "choices": {
-        "A": "cross-validation designe un concept interm\u00e9diaire en apprentissage supervise ; il structure l'\u00e9valuation hors entrainement pour estimer la g\u00e9n\u00e9ralisation r\u00e9elle.",
-        "B": "interpretabilite correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role d'interpretabilite dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Strat\u00e9gie de validation.",
-        "C": "Dans Strat\u00e9gie de validation, split se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de split dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "profondeur maximale designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de profondeur maximale dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Pour évaluer la performance d'un modèle sur différents sous-ensembles des données",
+        "B": "Pour entraîner le modèle plusieurs fois sur les mêmes données",
+        "C": "Pour réduire le nombre total de données nécessaires pour l'apprentissage",
+        "D": "Pour éviter complètement le surajustement"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de cross-validation dans Strat\u00e9gie de validation, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que interpretabilite, split, profondeur maximale restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (cross-validation designe un concept interm\u00e9diaire en apprentissage supervise ; il structure l'\u00e9valuation ho...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (interpretabilite correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Strat\u00e9gie de validation, split se comprend comme un concept interm\u00e9diaire en apprentissage supervise ;...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (profondeur maximale designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de p...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La cross-validation est une méthode pour évaluer la performance d'un modèle en le testant sur différents sous-ensembles des données. L'option B est incorrecte car elle n'implique pas forcément des ensembles différents. C est faux car la cross-validation ne réduit pas la quantité nécessaire de données. D est incorrect car la cross-validation à elle seule ne peut pas éviter tout surajustement.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Strat\u00e9gie de validation' (marketing), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment validation set ?",
+      "question": "Comment le 'k' dans k-fold cross-validation affecte-t-il le processus?",
       "image_url": null,
       "choices": {
-        "A": "Dans Strat\u00e9gie de validation, split se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de split dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "profondeur maximale designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de profondeur maximale dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "random forest correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de random forest dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Strat\u00e9gie de validation.",
-        "D": "validation set correspond a un concept interm\u00e9diaire en apprentissage supervise ; il structure l'\u00e9valuation hors entrainement pour estimer la g\u00e9n\u00e9ralisation r\u00e9elle, ce qui structure l'analyse dans Strat\u00e9gie de validation."
+        "A": "Il détermine combien de fois chaque échantillon sera utilisé pour la validation",
+        "B": "Il fixe la taille des ensembles de données",
+        "C": "Il limite le nombre de caractéristiques utilisées",
+        "D": "Il indique combien de fois le modèle sera entraîné"
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de validation set dans Strat\u00e9gie de validation, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que split, profondeur maximale, random forest restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Strat\u00e9gie de validation, split se comprend comme un concept interm\u00e9diaire en apprentissage supervise ;...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (profondeur maximale designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de p...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (random forest correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de ra...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (validation set correspond a un concept interm\u00e9diaire en apprentissage supervise ; il structure l'\u00e9valuation...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Dans k-fold cross-validation, 'k' représente le nombre de sous-ensembles (folds) dans lesquels les données sont divisées, et chaque échantillon est utilisé pour la validation exactement une fois sur l'ensemble des k étapes. B est incorrect car 'k' ne fixe pas la taille mais le nombre de divisions. C ne concerne pas la réduction des caractéristiques. D est faux car cela n'indique pas combien de fois le modèle est entraîné indépendamment de chaque fold.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Pour une \u00e9quipe e-commerce dans 'Strat\u00e9gie de validation', quelle d\u00e9finition de stratification est la plus juste ?",
+      "question": "Quel est le rôle d'un set de validation lors de l'entraînement d'un modèle de machine learning?",
       "image_url": null,
       "choices": {
-        "A": "random forest correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de random forest dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Strat\u00e9gie de validation.",
-        "B": "Dans Strat\u00e9gie de validation, importance des variables se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role d'importance des variables dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Strat\u00e9gie de validation, stratification se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; elle preserve les proportions de classes dans les splits train/validation/test.",
-        "D": "profondeur maximale designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de profondeur maximale dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Estimer les performances généralisées du modèle sur des données non vues",
+        "B": "Former partiellement le modèle avant la phase finale",
+        "C": "Évaluer la performance sur les mêmes données d'entraînement",
+        "D": "Tester des hyperparamètres sans affecter le résultat du test final"
       },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de stratification dans Strat\u00e9gie de validation, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que profondeur maximale, random forest, importance des variables restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (random forest correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de ra...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Strat\u00e9gie de validation, importance des variables se comprend comme un concept interm\u00e9diaire en appren...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Strat\u00e9gie de validation, stratification se comprend comme un concept interm\u00e9diaire en apprentissage su...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (profondeur maximale designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de p...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "D",
+      "explanation": "Un set de validation est utilisé pour ajuster et évaluer les hyperparamètres pendant le développement d'un modèle, sans affecter le résultat final qui est évalué avec un test set. A est incorrect car c'est le rôle d'un test set. B est faux car le modèle n'est pas formé par le set de validation, mais évalué. C est incorrect car le set de validation et d'entraînement doivent être distincts.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "early stopping: quelle proposition en donne la meilleure d\u00e9finition dans 'Strat\u00e9gie de validation' (contexte industrie) ?",
+      "question": "Pourquoi la stratification est-elle importante lorsque l'on divise les données en folds pour la cross-validation?",
       "image_url": null,
       "choices": {
-        "A": "cross-validation designe un concept interm\u00e9diaire en apprentissage supervise ; il structure l'\u00e9valuation hors entrainement pour estimer la g\u00e9n\u00e9ralisation r\u00e9elle.",
-        "B": "early stopping designe un concept interm\u00e9diaire en apprentissage supervise ; il arrete l'entrainement quand la performance de validation cesse de progresser.",
-        "C": "random forest correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de random forest dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Strat\u00e9gie de validation.",
-        "D": "Dans Strat\u00e9gie de validation, importance des variables se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role d'importance des variables dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Elle garantit que chaque fold est équilibré en termes de distribution de classes",
+        "B": "Elle assure que chaque fold contienne le même nombre d'échantillons",
+        "C": "Elle augmente le volume des données disponibles pour l'entraînement",
+        "D": "Elle est utilisée pour réduire la variance des prédictions finales"
       },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'early stopping dans Strat\u00e9gie de validation, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte industrie, alors que random forest, importance des variables, cross-validation restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (cross-validation designe un concept interm\u00e9diaire en apprentissage supervise ; il structure l'\u00e9valuation ho...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (early stopping designe un concept interm\u00e9diaire en apprentissage supervise ; il arrete l'entrainement quand...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (random forest correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de ra...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans Strat\u00e9gie de validation, importance des variables se comprend comme un concept interm\u00e9diaire en appren...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La stratification assure que chaque fold a une distribution de classes similaire, ce qui est essentiel pour un apprentissage équilibré. B est incorrect car la stratification vise l'équilibre des classes et non le même nombre d'échantillons. C est faux car elle n'augmente pas les données. D est incorrect car si la stratification peut réduire certaines variations, ce n'est pas son but principal.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "A partir de cette description issue de 'Strat\u00e9gie de validation' (un concept interm\u00e9diaire en apprentissage supervise ; il structure l'\u00e9valuation hors entrainement pour estimer la g\u00e9n\u00e9ralisation r\u00e9elle.), quel concept faut-il retenir ?",
+      "question": "Quelle est l'intention principale de la technique d'early stopping?",
       "image_url": null,
       "choices": {
-        "A": "cross-validation correspond a un concept interm\u00e9diaire en apprentissage supervise ; il structure l'\u00e9valuation hors entrainement pour estimer la g\u00e9n\u00e9ralisation r\u00e9elle, avec un perimetre centr\u00e9 sur \u00e9valuation robuste de la g\u00e9n\u00e9ralisation.",
-        "B": "Le concept pipeline se reconnait par un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de pipeline dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Quand une d\u00e9finition insiste sur un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de modele baseline dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a modele baseline.",
-        "D": "recherche d'hyperparametres: un concept interm\u00e9diaire en apprentissage supervise ; il regroupe les reglages externes du modele (profondeur, taux d'apprentissage, regularisation) fixes avant apprentissage."
+        "A": "Prévenir le surajustement en arrêtant l'entraînement lorsqu'il n'y a plus d'amélioration",
+        "B": "Réduire la taille du modèle en supprimant des paramètres",
+        "C": "Augmenter la vitesse d'entraînement en utilisant moins de données",
+        "D": "Multiplier les itérations d'entraînement pour augmenter la précision"
       },
       "correct_answer": "A",
-      "explanation": "Le concept attendu est cross-validation, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Strat\u00e9gie de validation. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est correcte (cross-validation correspond a un concept interm\u00e9diaire en apprentissage supervise ; il structure l'evaluati...) car la d\u00e9finition correspond exactement au concept attendu. B est moins pertinente (Le concept pipeline se reconnait par un concept interm\u00e9diaire en apprentissage supervise ; il formalise le ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est moins pertinente (Quand une d\u00e9finition insiste sur un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est moins pertinente (recherche d'hyperparametres: un concept interm\u00e9diaire en apprentissage supervise ; il regroupe les reglages...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "L'early stopping arrête l'entraînement d'un modèle lorsque la performance sur un set de validation cesse de s'améliorer, ce qui aide à éviter le surajustement. B est incorrect car il ne supprime pas de paramètres. C est faux car il utilise les données disponibles selon l'état des performances. D est incorrect car cela va à l'encontre du but de l'early stopping qui est d'arrêter pour éviter un ajustement excessif.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Description experte (Strat\u00e9gie de validation) - un concept interm\u00e9diaire en apprentissage supervise ; il structure l'\u00e9valuation hors entrainement pour estimer la g\u00e9n\u00e9ralisation r\u00e9elle. Quel concept est le plus exact ?",
+      "question": "Lors de la validation croisée, que se passe-t-il si k est choisi trop grand?",
       "image_url": null,
       "choices": {
-        "A": "Quand une d\u00e9finition insiste sur un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de modele baseline dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a modele baseline.",
-        "B": "recherche d'hyperparametres: un concept interm\u00e9diaire en apprentissage supervise ; il regroupe les reglages externes du modele (profondeur, taux d'apprentissage, regularisation) fixes avant apprentissage.",
-        "C": "reproductibilite correspond a un concept interm\u00e9diaire en apprentissage supervise ; elle garantit qu'un meme pipeline redonne les memes resultats avec memes donn\u00e9es, code et seeds, avec un perimetre centr\u00e9 sur stabilit\u00e9 experimentale et auditabilite.",
-        "D": "Le concept validation set se reconnait par un concept interm\u00e9diaire en apprentissage supervise ; il structure l'\u00e9valuation hors entrainement pour estimer la g\u00e9n\u00e9ralisation r\u00e9elle."
-      },
-      "correct_answer": "D",
-      "explanation": "Le concept attendu est validation set, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Strat\u00e9gie de validation. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (Quand une d\u00e9finition insiste sur un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est moins pertinente (recherche d'hyperparametres: un concept interm\u00e9diaire en apprentissage supervise ; il regroupe les reglages...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est moins pertinente (reproductibilite correspond a un concept interm\u00e9diaire en apprentissage supervise ; elle garantit qu'un mem...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est correcte (Le concept validation set se reconnait par un concept interm\u00e9diaire en apprentissage supervise ; il structu...) car la d\u00e9finition correspond exactement au concept attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Strat\u00e9gie de validation', quel est le role le plus determinant de cross-validation pour un cas sante ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Strat\u00e9gie de validation, validation set est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "B": "Le role de stratification est de fiabiliser les d\u00e9cisions d'experimentation ; eviter des evaluations biaisees dues a une repartition non representative.",
-        "C": "early stopping sert a fiabiliser les d\u00e9cisions d'experimentation ; limiter le surapprentissage et reduire le cout de calcul inutile pour guider une d\u00e9cision exploitable.",
-        "D": "cross-validation sert a fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestimer la performance sur donn\u00e9es futures pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie cross-validation \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Strat\u00e9gie de validation, validation set est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de stratification est de fiabiliser les d\u00e9cisions d'experimentation ; eviter des evaluations biaise...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (early stopping sert a fiabiliser les d\u00e9cisions d'experimentation ; limiter le surapprentissage et reduire l...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (cross-validation sert a fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestimer la per...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin marketing dans 'Strat\u00e9gie de validation', pourquoi validation set est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "stratification sert a fiabiliser les d\u00e9cisions d'experimentation ; eviter des evaluations biaisees dues a une repartition non representative pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Strat\u00e9gie de validation, early stopping est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; limiter le surapprentissage et reduire le cout de calcul inutile.",
-        "C": "Dans Strat\u00e9gie de validation, validation set est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "D": "Le role de cross-validation est de fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestimer la performance sur donn\u00e9es futures."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie validation set \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (stratification sert a fiabiliser les d\u00e9cisions d'experimentation ; eviter des evaluations biaisees dues a u...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Strat\u00e9gie de validation, early stopping est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Strat\u00e9gie de validation, validation set est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de cross-validation est de fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surest...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "stratification: pourquoi ce concept est-il crucial pour une \u00e9quipe e-commerce dans 'Strat\u00e9gie de validation' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role d'early stopping est de fiabiliser les d\u00e9cisions d'experimentation ; limiter le surapprentissage et reduire le cout de calcul inutile.",
-        "B": "Le role de stratification est de fiabiliser les d\u00e9cisions d'experimentation ; eviter des evaluations biaisees dues a une repartition non representative.",
-        "C": "cross-validation sert a fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestimer la performance sur donn\u00e9es futures pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Strat\u00e9gie de validation, validation set est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestimer la performance sur donn\u00e9es futures."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie stratification \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role d'early stopping est de fiabiliser les d\u00e9cisions d'experimentation ; limiter le surapprentissage e...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de stratification est de fiabiliser les d\u00e9cisions d'experimentation ; eviter des evaluations biaise...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (cross-validation sert a fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestimer la per...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Strat\u00e9gie de validation, validation set est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Strat\u00e9gie de validation', quel est le role le plus determinant d'early stopping pour un cas industrie ?",
-      "image_url": null,
-      "choices": {
-        "A": "early stopping sert a fiabiliser les d\u00e9cisions d'experimentation ; limiter le surapprentissage et reduire le cout de calcul inutile pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Strat\u00e9gie de validation, cross-validation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "C": "Le role de validation set est de fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "D": "stratification sert a fiabiliser les d\u00e9cisions d'experimentation ; eviter des evaluations biaisees dues a une repartition non representative pour guider une d\u00e9cision exploitable."
+        "A": "Chaque fold devient trop petit, et la variance de l'estimation augmente",
+        "B": "Le modèle devient nécessairement sous-ajusté",
+        "C": "Les résultats sont plus biaisés mais avec une variance plus faible",
+        "D": "Le temps de calcul diminue considérablement"
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie early stopping \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (early stopping sert a fiabiliser les d\u00e9cisions d'experimentation ; limiter le surapprentissage et reduire l...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Strat\u00e9gie de validation, cross-validation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de validation set est de fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestim...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (stratification sert a fiabiliser les d\u00e9cisions d'experimentation ; eviter des evaluations biaisees dues a u...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Si k est trop grand, chaque fold contient peu d'exemples, ce qui peut augmenter la variance des estimations. B est incorrect car un grand k ne sous-ajuste pas forcément un modèle. C est faux, le biais diminue avec plus de folds. D est faux car généralement, augmenter k augmente le temps de calcul en multipliant les évaluations.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Strat\u00e9gie de validation', quelle erreur autour de cross-validation est la plus critique ?",
+      "question": "Comment un ensemble de validation diffère-t-il d'un test set?",
       "image_url": null,
       "choices": {
-        "A": "Si stratification est mal utilise, on observe souvent sur-optimiser stratification localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour d'early stopping est sur-optimiser early stopping localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Le piege principal autour de cross-validation est sur-optimiser cross-validation localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Un risque classique avec validation set est de sur-optimiser validation set localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de cross-validation. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si stratification est mal utilise, on observe souvent sur-optimiser stratification localement en ignorant s...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour d'early stopping est sur-optimiser early stopping localement en ignorant ses int...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de cross-validation est sur-optimiser cross-validation localement en ignorant ses...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec validation set est de sur-optimiser validation set localement en ignorant ses inte...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "validation set: quel risque est le plus directement lie a son mauvais usage en production dans 'Strat\u00e9gie de validation' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec early stopping est de sur-optimiser early stopping localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Un risque classique avec validation set est de sur-optimiser validation set localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Si cross-validation est mal utilise, on observe souvent sur-optimiser cross-validation localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Le piege principal autour de stratification est sur-optimiser stratification localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de validation set. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec early stopping est de sur-optimiser early stopping localement en ignorant ses inte...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec validation set est de sur-optimiser validation set localement en ignorant ses inte...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si cross-validation est mal utilise, on observe souvent sur-optimiser cross-validation localement en ignora...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de stratification est sur-optimiser stratification localement en ignorant ses int...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Strat\u00e9gie de validation' et en contexte industrie, quelle interpretation du schema appuie le mieux l'analyse d'early stopping ?",
-      "image_url": "apprentissage-supervise_strategie_de_validation_early_stopping_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur cross-validation: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "B": "Lecture du visuel: validation set est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestimer la performance sur donn\u00e9es futures dans Strat\u00e9gie de validation.",
-        "C": "Le signal visible est coh\u00e9rent avec stratification, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; eviter des evaluations biaisees dues a une repartition non representative.",
-        "D": "Le signal visible est coh\u00e9rent avec early stopping, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; limiter le surapprentissage et reduire le cout de calcul inutile."
-      },
-      "correct_answer": "D",
-      "explanation": "Les indices visuels vont dans le sens d'early stopping: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur cross-validation: les indices orientent vers fiabiliser les decis...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Lecture du visuel: validation set est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; reduire le...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le signal visible est coh\u00e9rent avec stratification, car l'objectif est fiabiliser les d\u00e9cisions d'experimen...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est correcte (Le signal visible est coh\u00e9rent avec early stopping, car l'objectif est fiabiliser les d\u00e9cisions d'experimen...) car la lecture visuelle colle au signal principal observe. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Strat\u00e9gie de validation' et en contexte sante, quelle interpretation du schema appuie le mieux l'analyse de cross-validation ?",
-      "image_url": "apprentissage-supervise_strategie_de_validation_cross_validation_1.png",
-      "choices": {
-        "A": "Lecture du visuel: stratification est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; eviter des evaluations biaisees dues a une repartition non representative dans Strat\u00e9gie de validation.",
-        "B": "Le signal visible est coh\u00e9rent avec early stopping, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; limiter le surapprentissage et reduire le cout de calcul inutile.",
-        "C": "Le signal visible est coh\u00e9rent avec cross-validation, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "D": "Le schema illustre une d\u00e9cision basee sur validation set: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestimer la performance sur donn\u00e9es futures."
-      },
-      "correct_answer": "C",
-      "explanation": "Les indices visuels vont dans le sens de cross-validation: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Lecture du visuel: stratification est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; eviter des...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Le signal visible est coh\u00e9rent avec early stopping, car l'objectif est fiabiliser les d\u00e9cisions d'experimen...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est correcte (Le signal visible est coh\u00e9rent avec cross-validation, car l'objectif est fiabiliser les d\u00e9cisions d'experim...) car la lecture visuelle colle au signal principal observe. D'est moins pertinente (Le schema illustre une d\u00e9cision basee sur validation set: les indices orientent vers fiabiliser les decisio...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "validation set: dans un cas marketing, quelle interpretation correspond le mieux au schema ML de 'Strat\u00e9gie de validation' ?",
-      "image_url": "apprentissage-supervise_strategie_de_validation_validation_set_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur early stopping: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; limiter le surapprentissage et reduire le cout de calcul inutile.",
-        "B": "Le schema illustre une d\u00e9cision basee sur validation set: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "C": "Lecture du visuel: cross-validation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestimer la performance sur donn\u00e9es futures dans Strat\u00e9gie de validation.",
-        "D": "Le signal visible est coh\u00e9rent avec stratification, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; eviter des evaluations biaisees dues a une repartition non representative."
-      },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de validation set: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur early stopping: les indices orientent vers fiabiliser les decisio...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur validation set: les indices orientent vers fiabiliser les decisio...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: cross-validation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; reduire ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec stratification, car l'objectif est fiabiliser les d\u00e9cisions d'experimen...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Observation visuelle (Strat\u00e9gie de validation) - pour un contexte e-commerce, quelle lecture du schema est la plus pertinente pour stratification ?",
-      "image_url": "apprentissage-supervise_strategie_de_validation_stratification_1.png",
-      "choices": {
-        "A": "Lecture du visuel: stratification est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; eviter des evaluations biaisees dues a une repartition non representative dans Strat\u00e9gie de validation.",
-        "B": "Le signal visible est coh\u00e9rent avec cross-validation, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "C": "Le schema illustre une d\u00e9cision basee sur validation set: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; reduire le risque de surestimer la performance sur donn\u00e9es futures.",
-        "D": "Lecture du visuel: early stopping est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; limiter le surapprentissage et reduire le cout de calcul inutile dans Strat\u00e9gie de validation."
+        "A": "Il est utilisé pour ajuster les hyperparamètres contrairement au test set",
+        "B": "Il vérifie la capacité d'apprentissage, tandis que le test set est pour la performance",
+        "C": "Il est plus important que le test set pour l'évaluation finale",
+        "D": "Il est toujours une sous-partie des données de test"
       },
       "correct_answer": "A",
-      "explanation": "Les indices visuels vont dans le sens de stratification: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est correcte (Lecture du visuel: stratification est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; eviter des...) car la lecture visuelle colle au signal principal observe. B est moins pertinente (Le signal visible est coh\u00e9rent avec cross-validation, car l'objectif est fiabiliser les d\u00e9cisions d'experim...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le schema illustre une d\u00e9cision basee sur validation set: les indices orientent vers fiabiliser les decisio...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Lecture du visuel: early stopping est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; limiter le...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Un ensemble de validation est utilisé pour tester différentes configurations d'hyperparamètres et les ajuster avant de finaliser le modèle. B est incorrect car les deux ensembles testent des aspects différents mais pas de cette manière. C est faux, l'évaluation finale utilise le test set. D est incorrect car l'ensemble de validation n'a pas à être une sous-partie du test",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce qu'une 'fold' lors de la validation croisée?",
+      "image_url": null,
+      "choices": {
+        "A": "Un sous-ensemble des données utilisé pour le test dans l'une des étapes",
+        "B": "Une itération complète de formation du modèle",
+        "C": "Un seul modèle que l'on entraîne lors d'une session",
+        "D": "Une technique d'agrégation de modèles utilisée pour augmenter la robustesse"
+      },
+      "correct_answer": "A",
+      "explanation": "Lors de la validation croisée, chaque 'fold' est un sous-ensemble différent des données utilisées pour tester le modèle, tandis que les autres folds servent à l'entraînement. B est incorrect parce qu'une fold n'est pas une itération de formation entière. C est faux parce qu'une fold n'est pas un modèle entier. D est incorrect car une fold n'est pas une technique d'agrégation mais une partition des données.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un potentiel désavantage de l'early stopping sans set de validation?",
+      "image_url": null,
+      "choices": {
+        "A": "Augmenter le surajustement car il n'y a pas d'indicateur externe d'arrêt",
+        "B": "Réduire l'entraînement prématurément et sous-optimiser le modèle",
+        "C": "Nécessite plus de ressources de calcul car il doit recalculer les gradients",
+        "D": "Utiliser davantage de données d'entraînement en raison de l'arrêt anticipé"
+      },
+      "correct_answer": "B",
+      "explanation": "Sans set de validation, le modèle risque de s'arrêter trop tôt car il n'y a aucun autre indicateur mesurant l'amélioration de la performance que le jeu de données d'entraînement. A est incorrect parce que l'absence de validation augmente le risque de sous-apprentissage, pas nécessairement de surajustement. C est faux car l'early stopping ne perturbe pas le calcul des gradients. D est incorrect car cela n'utilise pas plus de données d'entraînement.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il souvent conseillé de normaliser les données avant d'effectuer une validation croisée?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour assurer une distribution identique dans chaque fold",
+        "B": "Pour réduire le nombre d'erreurs lors de l'entraînement",
+        "C": "Pour minimiser l'impact des hyperparamètres",
+        "D": "Pour garantir que les caractéristiques soient à des échelles similaires"
+      },
+      "correct_answer": "D",
+      "explanation": "Normaliser les données assure que les différentes caractéristiques soient à des échelles similaires, ce qui est important pour éviter que certaines dominent l'apprentissage. A est incorrect car normaliser ne rend pas les distributions forcément identiques. B est faux, les erreurs ne sont pas directement liées à la normalisation. C est incorrect car les hyperparamètres peuvent encore avoir un impact significatif même après normalisation.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans quelles situations la stratification de la validation croisée est-elle critique?",
+      "image_url": null,
+      "choices": {
+        "A": "Quand les données présentent un déséquilibre dans les classes",
+        "B": "Quand les données d'entrée comportent des valeurs manquantes",
+        "C": "Quand la taille des données est extrêmement large",
+        "D": "Quand l'objectif est de diminuer le biais des prédictions"
+      },
+      "correct_answer": "A",
+      "explanation": "La stratification est essentielle dans la validation croisée lorsque les données présentent un déséquilibre important au niveau des classes pour garantir une distribution similaire dans chaque fold. B est incorrect car la gestion des valeurs manquantes n'est pas adressée par la stratification. C est faux car la taille des données n'exige pas obligatoirement une stratification. D est incorrect car la réduction du biais n'est pas directement résolue par la stratification.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans le cadre de l'early stopping, quel indicateur clé est utilisé pour décider d'arrêter l'entraînement?",
+      "image_url": null,
+      "choices": {
+        "A": "La performance sur les données de validation cesse de s'améliorer",
+        "B": "Le taux d'apprentissage atteint un seuil minimal",
+        "C": "Les erreurs sur les données d'entraînement sont à zéro",
+        "D": "Les performances sur l'ensemble de test augmentent continuellement"
+      },
+      "correct_answer": "A",
+      "explanation": "Lors de l'early stopping, on arrête l'entraînement quand la performance sur les données de validation n'améliore plus, prévenant ainsi le surajustement. B est incorrect car la décision d'arrêter ne repose pas sur le taux d'apprentissage. C est faux, car les erreurs à zéro sur les données d'entraînement n'assurent pas une bonne généralisation. D est incorrect car les tests ne sont pas directement impliqués dans l'arrêt.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi utiliser une validation croisée avec stratification pour des données déséquilibrées?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour homogénéiser la distribution des classes dans tous les folds",
+        "B": "Pour diviser uniformément les données avec des valeurs manquantes",
+        "C": "Pour augmenter le nombre total de données pour l'entraînement",
+        "D": "Pour éviter la normalisation des caractéristiques"
+      },
+      "correct_answer": "A",
+      "explanation": "La stratification dans une validation croisée est cruciale pour maintenir une distribution constante des classes entre tous les folds, surtout pour des données déséquilibrées. B est incorrect car elle ne concerne pas les valeurs manquantes. C est faux, car elle ne modifie pas la quantité totale de données disponibles pour l'entraînement. D est incorrect car la stratification n'empêche pas la normalisation des caractéristiques.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Lors de l'utilisation de la cross-validation, pourquoi est-il conseillé de randomiser les données?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour éviter que l'ordre des données n'influence la performance du modèle",
+        "B": "Pour réduire le temps de calcul global",
+        "C": "Pour rendre le modèle invariant aux changements d'échelle des données",
+        "D": "Pour ajuster les hyperparamètres automatiquement"
+      },
+      "correct_answer": "A",
+      "explanation": "La randomisation des données avant la cross-validation permet d'assurer que l'ordre d'origine ne fausse pas les résultats en créant un biais lors de l'entraînement et du test. B est incorrect car randomiser peut bien augmenter le temps, surtout dans certains cas. C est faux car l'invariance aux échelles est traitée par des techniques comme la normalisation. D est incorrect car la randomisation n'ajuste pas les hyperparamètres.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment la validation croisée peut-elle aider à identifier le surajustement d'un modèle?",
+      "image_url": null,
+      "choices": {
+        "A": "En montrant une performance cohérente entre les ensembles de test et de validation",
+        "B": "En révélant une meilleure performance sur l'entraînement que sur la validation",
+        "C": "En augmentant la taille des données à travers la répétition",
+        "D": "En redéfinissant les hyperparamètres de manière aléatoire"
+      },
+      "correct_answer": "B",
+      "explanation": "La validation croisée peut montrer des signes de surajustement si le modèle a une performance sensiblement meilleure sur l'ensemble d'entraînement que sur les ensembles de validation. A est incorrect car la cohérence ne signifie pas directement surajustement. C est faux car elle n'augmente pas la taille des données. D est incorrect car redéfinir aléatoirement les hyperparamètres ne détectera pas le surajustement.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quand la stratification des folds n'est-elle pas nécessaire dans la cross-validation?",
+      "image_url": null,
+      "choices": {
+        "A": "Quand les données ont une distribution uniforme et équilibrée entre les classes",
+        "B": "Quand seules les performances en temps de calcul sont prioritaires",
+        "C": "Quand les caractéristiques des données sont toutes quantitatives",
+        "D": "Quand les données sont structurées par groupes temporels ou séquentiels"
+      },
+      "correct_answer": "A",
+      "explanation": "Si les données sont naturellement équilibrées dans chaque classe, la stratification des folds perd son avantage car chaque fold possédera déjà un équilibre naturel. B est incorrect car le temps de calcul n'est pas directement résolu par la stratification. C est faux, car quantitative ou non, les classes déséquilibrées motivent la stratification. D est incorrect car les données temporelles ont besoin d'une approche qui respecte leur séquence.",
       "difficulty": "hard"
     }
   ]

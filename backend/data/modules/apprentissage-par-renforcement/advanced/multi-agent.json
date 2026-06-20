@@ -5,394 +5,394 @@
   "questions": [
     {
       "type": "text",
-      "question": "equilibre: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Multi-agent' ?",
+      "question": "Dans un environnement multi-agent, quel type de coordination nécessite une communication explicite entre les agents?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Multi-agent, coordination est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coordination en production.",
-        "B": "Pendant une revue pre-deploiement, competition est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer competition en production tout en surveillant le risque d'optimiser competition en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Dans une revue pre-deploiement de Multi-agent, l'\u00e9quipe applique credit assignment pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer credit assignment en production.",
-        "D": "Dans une revue pre-deploiement de Multi-agent, l'\u00e9quipe applique equilibre pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equilibre en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car equilibre y sert de levier de d\u00e9cision principal dans Multi-agent. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Multi-agent, coordination est choisi afin de supporter des arbitrages de production ; ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une revue pre-deploiement, competition est utile pour supporter des arbitrages de production ; l'ut...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une revue pre-deploiement de Multi-agent, l'\u00e9quipe applique credit assignment pour supporter des arbit...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une revue pre-deploiement de Multi-agent, l'\u00e9quipe applique equilibre pour supporter des arbitrages de...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Multi-agent' (industrie), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment competition ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Multi-agent, cout simulation se comprend comme un levier avance en apprentissage par renforcement ; il formalise le role de cout simulation dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "safe exploration designe un levier avance en apprentissage par renforcement ; il formalise le role de safe exploration dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "etat dangereux correspond a un levier avance en apprentissage par renforcement ; il formalise le role d'etat dangereux dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Multi-agent.",
-        "D": "competition correspond a un levier avance en apprentissage par renforcement ; il formalise le role de competition dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Multi-agent."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de competition dans Multi-agent, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte industrie, alors que cout simulation, safe exploration, etat dangereux restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Multi-agent, cout simulation se comprend comme un levier avance en apprentissage par renforcement ; il...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (safe exploration designe un levier avance en apprentissage par renforcement ; il formalise le role de safe ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (etat dangereux correspond a un levier avance en apprentissage par renforcement ; il formalise le role d'et...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (competition correspond a un levier avance en apprentissage par renforcement ; il formalise le role de compe...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec coordination dans 'Multi-agent' ?",
-      "image_url": "apprentissage-par-renforcement_multi_agent_coordination_2.png",
-      "choices": {
-        "A": "Dans Multi-agent, credit assignment est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer credit assignment en production.",
-        "B": "Dans Multi-agent, coordination est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coordination en production.",
-        "C": "Le role de competition est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer competition en production.",
-        "D": "equilibre sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equilibre en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de coordination dans Multi-agent. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Multi-agent, credit assignment est mobilise pour supporter des arbitrages de production ; l'utiliser c...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Multi-agent, coordination est mobilise pour supporter des arbitrages de production ; l'utiliser correc...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de competition est de supporter des arbitrages de production ; l'utiliser correctement permet de mi...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (equilibre sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider q...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Multi-agent', quel commentaire du schema traduit le mieux le role d'equilibre ?",
-      "image_url": "apprentissage-par-renforcement_multi_agent_equilibre_2.png",
-      "choices": {
-        "A": "Dans Multi-agent, coordination est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coordination en production.",
-        "B": "Le role de competition est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer competition en production.",
-        "C": "credit assignment sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer credit assignment en production pour guider une d\u00e9cision exploitable.",
-        "D": "equilibre sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equilibre en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'equilibre dans Multi-agent. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Multi-agent, coordination est mobilise pour supporter des arbitrages de production ; l'utiliser correc...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de competition est de supporter des arbitrages de production ; l'utiliser correctement permet de mi...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (credit assignment sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (equilibre sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider q...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Multi-agent', quel est le principal mode d'echec quand equilibre est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si equilibre est mal utilise, on observe souvent optimiser equilibre en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de coordination est optimiser coordination en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Un risque classique avec competition est d'optimiser competition en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Si credit assignment est mal utilise, on observe souvent optimiser credit assignment en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Coordination directe",
+        "B": "Coordination implicite",
+        "C": "Coordination concurrente",
+        "D": "Coordination centralisée"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'equilibre. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si equilibre est mal utilise, on observe souvent optimiser equilibre en silo et introduire des modes d'eche...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de coordination est optimiser coordination en silo et introduire des modes d'eche...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec competition est d'optimiser competition en silo et introduire des modes d'echec c...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si credit assignment est mal utilise, on observe souvent optimiser credit assignment en silo et introduire ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La coordination directe nécessite une communication explicite car les agents échangent des informations entre eux. La coordination implicite repose sur des signaux environnementaux. La coordination concurrente n'existe pas en tant que concept bien défini, et la coordination centralisée implique un agent ou une entité centralisée pour coordonner les actions.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Face a un besoin industrie dans 'Multi-agent', pourquoi competition est-il prioritaire ?",
+      "question": "Quel concept décrit un équilibre où aucun agent ne peut améliorer sa récompense en unilatéralement modifiant sa stratégie?",
       "image_url": null,
       "choices": {
-        "A": "equilibre sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equilibre en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Multi-agent, credit assignment est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer credit assignment en production.",
-        "C": "Dans Multi-agent, competition est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer competition en production.",
-        "D": "Le role de coordination est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coordination en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie competition \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (equilibre sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider q...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Multi-agent, credit assignment est mobilise pour supporter des arbitrages de production ; l'utiliser c...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Multi-agent, competition est mobilise pour supporter des arbitrages de production ; l'utiliser correct...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de coordination est de supporter des arbitrages de production ; l'utiliser correctement permet de m...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec credit assignment dans 'Multi-agent' ?",
-      "image_url": "apprentissage-par-renforcement_multi_agent_credit_assignment_2.png",
-      "choices": {
-        "A": "competition sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer competition en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Multi-agent, equilibre est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equilibre en production.",
-        "C": "Dans Multi-agent, credit assignment est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer credit assignment en production.",
-        "D": "Le role de coordination est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coordination en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de credit assignment dans Multi-agent. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (competition sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Multi-agent, equilibre est mobilise pour supporter des arbitrages de production ; l'utiliser correctem...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Multi-agent, credit assignment est mobilise pour supporter des arbitrages de production ; l'utiliser c...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de coordination est de supporter des arbitrages de production ; l'utiliser correctement permet de m...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Multi-agent', quelle situation de terrain montre le mieux quand utiliser coordination ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Multi-agent, credit assignment est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer credit assignment en production.",
-        "B": "En contexte r\u00e9el sur Multi-agent, coordination est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coordination en production.",
-        "C": "Pendant une revue pre-deploiement, competition est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer competition en production tout en surveillant le risque d'optimiser competition en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Dans une revue pre-deploiement de Multi-agent, l'\u00e9quipe applique equilibre pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equilibre en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car coordination y sert de levier de d\u00e9cision principal dans Multi-agent. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Multi-agent, credit assignment est choisi afin de supporter des arbitrages de producti...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Multi-agent, coordination est choisi afin de supporter des arbitrages de production ; ...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une revue pre-deploiement, competition est utile pour supporter des arbitrages de production ; l'ut...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une revue pre-deploiement de Multi-agent, l'\u00e9quipe applique equilibre pour supporter des arbitrages de...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "equilibre: pourquoi ce concept est-il crucial pour une \u00e9quipe cybersecurite dans 'Multi-agent' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role de credit assignment est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer credit assignment en production.",
-        "B": "Le role d'equilibre est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equilibre en production.",
-        "C": "coordination sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coordination en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Multi-agent, competition est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer competition en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie equilibre \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de credit assignment est de supporter des arbitrages de production ; l'utiliser correctement permet...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role d'equilibre est de supporter des arbitrages de production ; l'utiliser correctement permet de mieu...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (coordination sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux decide...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Multi-agent, competition est mobilise pour supporter des arbitrages de production ; l'utiliser correct...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'Multi-agent', quel exemple met competition au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une revue pre-deploiement, competition est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer competition en production tout en surveillant le risque d'optimiser competition en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Dans une revue pre-deploiement de Multi-agent, l'\u00e9quipe applique coordination pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coordination en production.",
-        "C": "En contexte r\u00e9el sur Multi-agent, equilibre est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equilibre en production.",
-        "D": "Pendant une revue pre-deploiement, credit assignment est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer credit assignment en production tout en surveillant le risque d'optimiser credit assignment en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Équilibre de Nash",
+        "B": "Borne de Pareto",
+        "C": "Optimum de Pareto",
+        "D": "Équilibre bayésien"
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car competition y sert de levier de d\u00e9cision principal dans Multi-agent. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une revue pre-deploiement, competition est utile pour supporter des arbitrages de production ; l'ut...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une revue pre-deploiement de Multi-agent, l'\u00e9quipe applique coordination pour supporter des arbitrages...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Multi-agent, equilibre est choisi afin de supporter des arbitrages de production ; l'u...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une revue pre-deploiement, credit assignment est utile pour supporter des arbitrages de production ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "L'équilibre de Nash est un concept où chaque agent choisit sa meilleure réponse compte tenu des stratégies des autres. Une borne de Pareto concerne l'optimalité sans pouvoir améliorer l'un sans détériorer l'autre. L'optimum de Pareto est également sur l'efficacité, mais pas sur des stratégies unilatérales. L'équilibre bayésien intègre des croyances probabilistes et n'est pas nécessairement une situation stable.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel défi majeur rencontre la stratégie de compétition dans les environnements multi-agent?",
+      "image_url": null,
+      "choices": {
+        "A": "Oscillations chaotiques",
+        "B": "Synchronisation involontaire",
+        "C": "Problème d'information imparfaite",
+        "D": "Explosion combinatoire de l'espace des stratégies"
+      },
+      "correct_answer": "C",
+      "explanation": "Le problème d'information imparfaite est crucial car les agents ne connaissent pas toujours les actions des autres, ce qui peut influencer les résultats. Les oscillations chaotiques sont plus typiques des systèmes dynamiques. La synchronisation involontaire n'est pas un problème reconnu dans ce contexte, et l'explosion combinatoire est plus liée à la complexité de calcul.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment les agents résolvent-ils typiquement le problème de l'assignation de crédit dans un cadre multi-agent coopératif?",
+      "image_url": null,
+      "choices": {
+        "A": "Utilisation de techniques de factorisation de valeurs",
+        "B": "Application de règles de majoration-minoration",
+        "C": "Adoption de mécanismes de punitions et récompenses",
+        "D": "Intégration des gradients de politique partagés"
+      },
+      "correct_answer": "A",
+      "explanation": "Les techniques de factorisation de valeurs permettent d'estimer les contributions individuelles des agents dans un cadre collectif. Les règles de majoration-minoration ne s'appliquent pas directement à l'assignation de crédit. Les punitions et récompenses sont appliquées de manière locale, et les gradients de politique partagés concernent plus l'apprentissage de politiques communes.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Lors d'une interaction multi-agent compétitive, quel est le résultat d'un équilibre imparfait?",
+      "image_url": null,
+      "choices": {
+        "A": "Un ou plusieurs agents peuvent augmenter leur gain en changeant leur stratégie",
+        "B": "Tous les agents maximisent leurs gains",
+        "C": "Tous les agents subissent une perte minimale",
+        "D": "L'ensemble des stratégies convergent vers une optimalité commune"
+      },
+      "correct_answer": "A",
+      "explanation": "Un équilibre imparfait signifie qu'il existe encore une possibilité pour un ou plusieurs agents d'augmenter leur gain en changeant de stratégie. Les options où tous maximisent ou minimisent leurs pertes supposent un équilibre parfait, et la convergence vers une optimalité commune est plus pertinente dans des scénarios coopératifs.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans un système multi-agent, quelle méthode favorise l'apprentissage de l'environnement global par les agents?",
+      "image_url": null,
+      "choices": {
+        "A": "Apprentissage par imitation",
+        "B": "Apprentissage par renforcement indivisible",
+        "C": "Apprentissage autonome sans communication",
+        "D": "Apprentissage par transfert d'expertise"
+      },
+      "correct_answer": "A",
+      "explanation": "L'apprentissage par imitation permet aux agents d'observer et de copier le comportement des plus performants ou d'un professeur, favorisant ainsi la compréhension globale. L'apprentissage par renforcement indivisible est moins fréquent en multi-agent, l'autonomie sans communication limite la vision globale, et le transfert d'expertise s'applique plus à l'apprentissage humain-computérisé.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le principal défi de l'assignation de crédit dans un jeu coopératif multi-agent?",
+      "image_url": null,
+      "choices": {
+        "A": "Les interactions dynamiques entre agents",
+        "B": "Les récompenses différées et partagées",
+        "C": "L'espace d'action continu",
+        "D": "Le niveau d'aléatoire de l'environnement"
+      },
+      "correct_answer": "B",
+      "explanation": "Les récompenses différées et partagées posent un défi significatif pour l'assignation de crédit, car il est difficile d'évaluer l'impact individuel sur des résultats collectifs. Les interactions dynamiques influencent plutôt la coordination, l'espace d'action concerne la complexité du calcul, et la randomness affecte plus la robustesse.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle approche est utilisée pour améliorer la coordination des agents dans des environnements avec compétition?",
+      "image_url": null,
+      "choices": {
+        "A": "Utilisation de réseaux d'intentions partagées",
+        "B": "Intégration de modèles de comportement aléatoire",
+        "C": "Renforcement de contraintes rigides",
+        "D": "Autonomie individuelle des agents"
+      },
+      "correct_answer": "A",
+      "explanation": "Les réseaux d'intentions partagées permettent de coordonner les actions malgré la compétition en alignant des objectifs individuels communs. Des comportements aléatoires ou autonomes n'améliorent pas directement la coordination, et les contraintes rigides peuvent limiter la flexibilité nécessaire pour coordonner.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'effet principal de stratégies purement compétitives dans une équipe multi-agent?",
+      "image_url": null,
+      "choices": {
+        "A": "Augmentation de la synergie",
+        "B": "Efficacité collective réduite",
+        "C": "Équilibre de Nash atteint plus rapidement",
+        "D": "Meilleure exploration de l'espace d'action"
+      },
+      "correct_answer": "B",
+      "explanation": "Les stratégies purement compétitives peuvent nuire à l'efficacité collective en provoquant des conflits de ressources ou de stratégie. La synergie est généralement une conséquence d'actions coopératives. L'équilibre de Nash n'est pas nécessairement atteint plus rapidement, et la compétition intense ne garantit pas une exploration plus efficace.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment le modèle d'apprentissage par renforcement pour multi-agent traite-t-il les scénarios de récompense nulle?",
+      "image_url": null,
+      "choices": {
+        "A": "En ajustant les poids de récompense négative",
+        "B": "En ignorant les mises à jour de politique",
+        "C": "En augmentant le taux d'exploration",
+        "D": "En replongeant dans la distribution de probabilité"
+      },
+      "correct_answer": "C",
+      "explanation": "Quand les récompenses sont nulles, augmenter le taux d'exploration peut aider à découvrir de nouvelles stratégies efficaces. Ajuster des poids de récompense n'est pas direct, ignorer les mises à jour empêche l'apprentissage, et la distribution de probabilité est plus pertinente dans le contexte des modèles probabilistes explicites.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Multi-agent', quel est le role le plus determinant de coordination pour un cas e-commerce ?",
+      "question": "Quel mécanisme de consensus permet de coordonner les agents en évitant le sur-ajustement lors des étapes finales d'apprentissage?",
       "image_url": null,
       "choices": {
-        "A": "Dans Multi-agent, competition est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer competition en production.",
-        "B": "Le role d'equilibre est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equilibre en production.",
-        "C": "credit assignment sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer credit assignment en production pour guider une d\u00e9cision exploitable.",
-        "D": "coordination sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coordination en production pour guider une d\u00e9cision exploitable."
+        "A": "Renforcement de politique à variation lente",
+        "B": "Consensus de moyenne pondérée",
+        "C": "Synchronisation de boucle de rétroaction",
+        "D": "Échantillonnage aléatoire distribué"
+      },
+      "correct_answer": "B",
+      "explanation": "Un consensus de moyenne pondérée permet de combiner les stratégies des agents de manière équilibrée, évitant le sur-ajustement. Le renforcement à variation lente ne cible pas le consensus, la synchronisation s'adresse à l'alignement temporel, et l'échantillonnage distribué ne garantit pas le consensus.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans un environnement concurrentiel, quel trait est significatif pour garantir l'équité entre agents?",
+      "image_url": null,
+      "choices": {
+        "A": "Uniformité des règles du jeu",
+        "B": "Niveau de transparence des algorithmes",
+        "C": "Accès égal aux ressources de calcul",
+        "D": "Probabilité égale de succès initial"
+      },
+      "correct_answer": "A",
+      "explanation": "L'uniformité des règles garantit que tous les agents jouent sous les mêmes conditions. La transparence d'un algorithme ne garantit pas à elle seule l'équité. L'accès aux ressources concerne plus le déploiement technique, et la probabilité de succès initial est un problème lié à la formation initiale des agents.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel problème majeur l'assignation centralisée de tâches dans les systèmes multi-agent tente-t-elle d'éviter?",
+      "image_url": null,
+      "choices": {
+        "A": "La compétition pour les identifiants d'agent",
+        "B": "Le couplage serré des agents",
+        "C": "Le phénomène de défaillance partielle",
+        "D": "La tâche de surenchère des performances"
+      },
+      "correct_answer": "B",
+      "explanation": "L'assignation centralisée de tâches cherche à éviter le couplage serré, qui peut limiter la flexibilité et la scalabilité du système. La compétition pour les identifiants d'agent est un problème différent, tout comme les défaillances partielles qui concernent davantage la robustesse, tandis que la surenchère est une question de récompense compétitive.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle méthode est souvent nécessaire pour stabiliser des environnements multi-agent où la compétition est intense?",
+      "image_url": null,
+      "choices": {
+        "A": "Distribution équitable des récompenses",
+        "B": "Modification des variables d'état",
+        "C": "Implémentation de punitions pour erreurs",
+        "D": "Alternance de l'ordre des actions"
+      },
+      "correct_answer": "A",
+      "explanation": "Distribuer équitablement les récompenses peut apaiser les tensions entre agents en compétition et encourager la coopération intermittente. Modifier les variables d'état ou punir les erreurs n'adressent pas spécifiquement la compétition directe. Alterner l'ordre des actions n'est pas un mécanisme de stabilisation.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un avantage des systèmes multi-agent dans la gestion des asymétries d'information?",
+      "image_url": null,
+      "choices": {
+        "A": "Partage rapide de l'information",
+        "B": "Réduction des coûts computationnels",
+        "C": "Robustesse contre les déconnexions temporaires",
+        "D": "Perception directe des intentions adverses"
+      },
+      "correct_answer": "A",
+      "explanation": "Les systèmes multi-agent peuvent permettre un partage rapide de l'information, atténuant les asymétries d'information. Les coûts computationnels peuvent augmenter en raison de la complexité accrue. La robustesse aux déconnexions et la perception des intentions adverses dépendent plus des algorithmes spécifiques utilisés que du multi-agent en lui-même.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans une situation d'équilibre dans un système multi-agent coopératif, quel énoncé est vrai?",
+      "image_url": null,
+      "choices": {
+        "A": "Chaque agent maximise son utilité individuelle sans coordination",
+        "B": "La somme des utilités est maximisée également pour chaque agent",
+        "C": "Les agents peuvent changer de stratégie sans influencer le résultat des autres",
+        "D": "Les actions des agents sont optimisées pour un objectif global commun"
       },
       "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie coordination \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Multi-agent, competition est mobilise pour supporter des arbitrages de production ; l'utiliser correct...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role d'equilibre est de supporter des arbitrages de production ; l'utiliser correctement permet de mieu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (credit assignment sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (coordination sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux decide...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Dans un système coopératif équilibré, les actions des agents sont optimisées pour un objectif global commun. La maximisation individuelle sans coordination n'est pas coopérative, et la somme des utilités maximisée pour chaque agent individuellement est contradictoire. Dans ce contexte, modifier sa stratégie affecte souvent les autres.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Multi-agent', quel est le role le plus determinant de credit assignment pour un cas banque ?",
+      "question": "Quel outil permet aux agents d'anticiper les comportements adverses dans un environnement compétitif?",
       "image_url": null,
       "choices": {
-        "A": "credit assignment sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer credit assignment en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Multi-agent, coordination est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coordination en production.",
-        "C": "Le role de competition est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer competition en production.",
-        "D": "equilibre sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equilibre en production pour guider une d\u00e9cision exploitable."
+        "A": "Théorie des jeux différentielle",
+        "B": "Modèle Markovien caché",
+        "C": "Renforcement avec apprentissage par conduction",
+        "D": "Calcul formel des stratégies optimistes"
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie credit assignment \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (credit assignment sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Multi-agent, coordination est mobilise pour supporter des arbitrages de production ; l'utiliser correc...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de competition est de supporter des arbitrages de production ; l'utiliser correctement permet de mi...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (equilibre sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider q...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La théorie des jeux différentielle aide à modéliser et anticiper le comportement adversarial dans un cadre compétitif. Les modèles Markoviens cachés traitent des états non observés, le renforcement par conduction n'est pas une technique répandue, et le calcul formel des stratégies optimistes n'existe pas en tant que concept technique.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Multi-agent', quelle situation de terrain montre le mieux quand utiliser credit assignment ?",
+      "question": "Quel aspect est souvent sous-exploré dans les études multi-agent en comparaison avec la complexité des interactions et de l'environnement?",
       "image_url": null,
       "choices": {
-        "A": "Dans une revue pre-deploiement de Multi-agent, l'\u00e9quipe applique competition pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer competition en production.",
-        "B": "En contexte r\u00e9el sur Multi-agent, equilibre est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equilibre en production.",
-        "C": "En contexte r\u00e9el sur Multi-agent, credit assignment est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer credit assignment en production.",
-        "D": "Pendant une revue pre-deploiement, coordination est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coordination en production tout en surveillant le risque d'optimiser coordination en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car credit assignment y sert de levier de d\u00e9cision principal dans Multi-agent. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une revue pre-deploiement de Multi-agent, l'\u00e9quipe applique competition pour supporter des arbitrages ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Multi-agent, equilibre est choisi afin de supporter des arbitrages de production ; l'u...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Multi-agent, credit assignment est choisi afin de supporter des arbitrages de producti...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une revue pre-deploiement, coordination est utile pour supporter des arbitrages de production ; l'u...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe cybersecurite dans 'Multi-agent', quelle d\u00e9finition d'equilibre est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "etat dangereux correspond a un levier avance en apprentissage par renforcement ; il formalise le role d'etat dangereux dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Multi-agent.",
-        "B": "Dans Multi-agent, penalite se comprend comme un levier avance en apprentissage par renforcement ; il contraint la complexite du modele pour limiter le surapprentissage.",
-        "C": "Dans Multi-agent, equilibre se comprend comme un levier avance en apprentissage par renforcement ; il formalise le role d'equilibre dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "safe exploration designe un levier avance en apprentissage par renforcement ; il formalise le role de safe exploration dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'equilibre dans Multi-agent, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que safe exploration, etat dangereux, penalite restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (etat dangereux correspond a un levier avance en apprentissage par renforcement ; il formalise le role d'et...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Multi-agent, penalite se comprend comme un levier avance en apprentissage par renforcement ; il contra...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Multi-agent, equilibre se comprend comme un levier avance en apprentissage par renforcement ; il forma...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (safe exploration designe un levier avance en apprentissage par renforcement ; il formalise le role de safe ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Multi-agent', quelle erreur autour de coordination est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si equilibre est mal utilise, on observe souvent optimiser equilibre en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de credit assignment est optimiser credit assignment en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de coordination est optimiser coordination en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Un risque classique avec competition est d'optimiser competition en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de coordination. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si equilibre est mal utilise, on observe souvent optimiser equilibre en silo et introduire des modes d'eche...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour de credit assignment est optimiser credit assignment en silo et introduire des mo...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de coordination est optimiser coordination en silo et introduire des modes d'eche...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec competition est d'optimiser competition en silo et introduire des modes d'echec c...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "competition: quel risque est le plus directement lie a son mauvais usage en production dans 'Multi-agent' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec credit assignment est d'optimiser credit assignment en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Un risque classique avec competition est d'optimiser competition en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Si coordination est mal utilise, on observe souvent optimiser coordination en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour d'equilibre est optimiser equilibre en silo et introduire des modes d'echec caches au deploiement."
+        "A": "L'impact de la variabilité de l'environnement",
+        "B": "Le facteur émotionnel des agents",
+        "C": "L'échelle temporelle des interactions",
+        "D": "La compatibilité algorithmique entre agents"
       },
       "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de competition. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec credit assignment est d'optimiser credit assignment en silo et introduire des mod...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec competition est d'optimiser competition en silo et introduire des modes d'echec c...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si coordination est mal utilise, on observe souvent optimiser coordination en silo et introduire des modes ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour d'equilibre est optimiser equilibre en silo et introduire des modes d'echec cach...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le facteur émotionnel des agents est rarement considéré dans les études multi-agent techniques, bien que cela puisse avoir un impact dans des simulations réalistes ou biologiques. La variabilité de l'environnement, l'échelle temporelle et la compatibilité algorithmique sont souvent essentielles et donc plus explorées.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "coordination: quelle proposition en donne la meilleure d\u00e9finition dans 'Multi-agent' (contexte e-commerce) ?",
+      "question": "Dans le contexte de l'alignement des politiques multi-agent, pourquoi est-il crucial de désigner clairement une allocation de crédit?",
       "image_url": null,
       "choices": {
-        "A": "coordination designe un levier avance en apprentissage par renforcement ; il formalise le role de coordination dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "batch learning correspond a un levier avance en apprentissage par renforcement ; il formalise le role de batch learning dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Multi-agent.",
-        "C": "Dans Multi-agent, cout simulation se comprend comme un levier avance en apprentissage par renforcement ; il formalise le role de cout simulation dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "safe exploration designe un levier avance en apprentissage par renforcement ; il formalise le role de safe exploration dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Pour réduire le coût d'exécution parallèle",
+        "B": "Pour mieux répartir les ressources informatiques",
+        "C": "Pour éviter le biais dans l'apprentissage politique",
+        "D": "Pour maximiser l'engagement des agents au long terme"
+      },
+      "correct_answer": "C",
+      "explanation": "Une allocation de crédit claire aide à éviter le biais dans l'apprentissage politique, car chaque agent doit comprendre sa contribution pour s'améliorer. Cela ne réduit pas directement le coût d'exécution ni répartit les ressources informatiques, et l'engagement des agents n'est pas lié à l'alignement des politiques.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle stratégie de communication maximise l'efficacité dans des équipes hétérogènes multi-agents?",
+      "image_url": null,
+      "choices": {
+        "A": "Protocoles de consensus dynamique",
+        "B": "Broadcasting d'une politique unique",
+        "C": "Paire à paire avec validation continue",
+        "D": "Synchronisation de réseaux statiques"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de coordination dans Multi-agent, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que batch learning, cout simulation, safe exploration restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (coordination designe un levier avance en apprentissage par renforcement ; il formalise le role de coordinat...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (batch learning correspond a un levier avance en apprentissage par renforcement ; il formalise le role de ba...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Multi-agent, cout simulation se comprend comme un levier avance en apprentissage par renforcement ; il...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (safe exploration designe un levier avance en apprentissage par renforcement ; il formalise le role de safe ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "competition: dans un cas industrie, quelle interpretation correspond le mieux au schema ML de 'Multi-agent' ?",
-      "image_url": "apprentissage-par-renforcement_multi_agent_competition_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur credit assignment: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer credit assignment en production.",
-        "B": "Le schema illustre une d\u00e9cision basee sur competition: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer competition en production.",
-        "C": "Lecture du visuel: coordination est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coordination en production dans Multi-agent.",
-        "D": "Le signal visible est coh\u00e9rent avec equilibre, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equilibre en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de competition: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur credit assignment: les indices orientent vers supporter des arbit...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur competition: les indices orientent vers supporter des arbitrages ...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: coordination est mobilise pour supporter des arbitrages de production ; l'utiliser corre...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec equilibre, car l'objectif est supporter des arbitrages de production ; ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Les protocoles de consensus dynamique permettent d'adapter les communications à des contextes changeants, maximisant ainsi l'efficacité. Le broadcasting d'une politique unique peut ne pas être adaptable, le pair à pair est limité en échelle, et la synchronisation des réseaux statiques n'est souvent pas assez flexible.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "credit assignment: quelle proposition en donne la meilleure d\u00e9finition dans 'Multi-agent' (contexte banque) ?",
+      "question": "Dans un modèle multi-agent, qu'est-ce qu'un équilibre général cherche principalement à optimiser?",
       "image_url": null,
       "choices": {
-        "A": "garde-fou designe un levier avance en apprentissage par renforcement ; il formalise le role de garde-fou dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "credit assignment designe un levier avance en apprentissage par renforcement ; il formalise le role de credit assignment dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "etat dangereux correspond a un levier avance en apprentissage par renforcement ; il formalise le role d'etat dangereux dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Multi-agent.",
-        "D": "Dans Multi-agent, penalite se comprend comme un levier avance en apprentissage par renforcement ; il contraint la complexite du modele pour limiter le surapprentissage."
+        "A": "Les performances individuelles de chaque agent",
+        "B": "La coordination minimale requise",
+        "C": "La somme des utilités dans le système",
+        "D": "La vitesse de convergence des actions"
       },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de credit assignment dans Multi-agent, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que etat dangereux, penalite, garde-fou restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (garde-fou designe un levier avance en apprentissage par renforcement ; il formalise le role de garde-fou da...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (credit assignment designe un levier avance en apprentissage par renforcement ; il formalise le role de cred...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (etat dangereux correspond a un levier avance en apprentissage par renforcement ; il formalise le role d'et...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans Multi-agent, penalite se comprend comme un levier avance en apprentissage par renforcement ; il contra...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "C",
+      "explanation": "Un équilibre général vise à optimiser la somme des utilités dans le système, atteignant un compromis entre agents. Les performances individuelles maximales et la coordination minimale ne sont pas l'objectif principal, tandis que la vitesse de convergence concerne la dynamique du processus.",
       "difficulty": "hard"
     },
     {
-      "type": "image",
-      "question": "competition: dans 'Multi-agent', un schema met en evidence ce comportement. Quelle lecture est la plus juste ?",
-      "image_url": "apprentissage-par-renforcement_multi_agent_competition_2.png",
+      "type": "text",
+      "question": "Pourquoi l'assignation de crédit est-elle un problème dans les systèmes hétérogènes multi-agent?",
+      "image_url": null,
       "choices": {
-        "A": "Le role de competition est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer competition en production.",
-        "B": "coordination sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coordination en production pour guider une d\u00e9cision exploitable.",
-        "C": "Dans Multi-agent, equilibre est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equilibre en production.",
-        "D": "Le role de credit assignment est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer credit assignment en production."
+        "A": "Parce que les agents utilisent des métriques de performance différentes",
+        "B": "Parce que les agents ne peuvent pas communiquer entre eux",
+        "C": "Parce que les agents opèrent dans des délais différents",
+        "D": "Parce que les agents sont de complexité algorithmique semblable"
       },
       "correct_answer": "A",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de competition dans Multi-agent. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est correcte (Le role de competition est de supporter des arbitrages de production ; l'utiliser correctement permet de mi...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. B est moins pertinente (coordination sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux decide...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (Dans Multi-agent, equilibre est mobilise pour supporter des arbitrages de production ; l'utiliser correctem...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (Le role de credit assignment est de supporter des arbitrages de production ; l'utiliser correctement permet...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Dans des systèmes hétérogènes, les agents peuvent utiliser des métriques de performance différentes, rendant difficile l'assignation claire de crédits. Tous les agents n'ont pas les mêmes contraintes de communication ni de décloisonnement temporel, et une complexité algorithmique semblable ne génère pas intrinsèquement des problèmes d'assignation de crédit.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Multi-agent', quelle erreur autour de credit assignment est la plus critique ?",
+      "question": "Quel est l'objectif principal du mécanisme de récompense dans les environnements multi-agent coopératifs?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec coordination est d'optimiser coordination en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Si competition est mal utilise, on observe souvent optimiser competition en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour d'equilibre est optimiser equilibre en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour de credit assignment est optimiser credit assignment en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Isoler les contributions des agents individuels",
+        "B": "Favoriser la compétition saine entre agents",
+        "C": "Maximiser l'altruisme d'agent individuel",
+        "D": "Encourager la synergie d'équipe vers l'objectif global"
       },
       "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de credit assignment. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec coordination est d'optimiser coordination en silo et introduire des modes d'echec...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si competition est mal utilise, on observe souvent optimiser competition en silo et introduire des modes d'...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour d'equilibre est optimiser equilibre en silo et introduire des modes d'echec cach...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour de credit assignment est optimiser credit assignment en silo et introduire des mo...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Multi-agent' et en contexte e-commerce, quelle interpretation du schema appuie le mieux l'analyse de coordination ?",
-      "image_url": "apprentissage-par-renforcement_multi_agent_coordination_1.png",
-      "choices": {
-        "A": "Lecture du visuel: equilibre est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equilibre en production dans Multi-agent.",
-        "B": "Le signal visible est coh\u00e9rent avec credit assignment, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer credit assignment en production.",
-        "C": "Le signal visible est coh\u00e9rent avec coordination, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coordination en production.",
-        "D": "Le schema illustre une d\u00e9cision basee sur competition: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer competition en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Les indices visuels vont dans le sens de coordination: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Lecture du visuel: equilibre est mobilise pour supporter des arbitrages de production ; l'utiliser correcte...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Le signal visible est coh\u00e9rent avec credit assignment, car l'objectif est supporter des arbitrages de produ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est correcte (Le signal visible est coh\u00e9rent avec coordination, car l'objectif est supporter des arbitrages de production...) car la lecture visuelle colle au signal principal observe. D'est moins pertinente (Le schema illustre une d\u00e9cision basee sur competition: les indices orientent vers supporter des arbitrages ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Multi-agent' et en contexte banque, quelle interpretation du schema appuie le mieux l'analyse de credit assignment ?",
-      "image_url": "apprentissage-par-renforcement_multi_agent_credit_assignment_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur coordination: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coordination en production.",
-        "B": "Lecture du visuel: competition est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer competition en production dans Multi-agent.",
-        "C": "Le signal visible est coh\u00e9rent avec equilibre, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equilibre en production.",
-        "D": "Le signal visible est coh\u00e9rent avec credit assignment, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer credit assignment en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Les indices visuels vont dans le sens de credit assignment: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur coordination: les indices orientent vers supporter des arbitrages...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Lecture du visuel: competition est mobilise pour supporter des arbitrages de production ; l'utiliser correc...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le signal visible est coh\u00e9rent avec equilibre, car l'objectif est supporter des arbitrages de production ; ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est correcte (Le signal visible est coh\u00e9rent avec credit assignment, car l'objectif est supporter des arbitrages de produ...) car la lecture visuelle colle au signal principal observe. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Observation visuelle (Multi-agent) - pour un contexte cybersecurite, quelle lecture du schema est la plus pertinente pour equilibre ?",
-      "image_url": "apprentissage-par-renforcement_multi_agent_equilibre_1.png",
-      "choices": {
-        "A": "Lecture du visuel: equilibre est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equilibre en production dans Multi-agent.",
-        "B": "Le signal visible est coh\u00e9rent avec coordination, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coordination en production.",
-        "C": "Le schema illustre une d\u00e9cision basee sur competition: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer competition en production.",
-        "D": "Lecture du visuel: credit assignment est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer credit assignment en production dans Multi-agent."
-      },
-      "correct_answer": "A",
-      "explanation": "Les indices visuels vont dans le sens d'equilibre: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est correcte (Lecture du visuel: equilibre est mobilise pour supporter des arbitrages de production ; l'utiliser correcte...) car la lecture visuelle colle au signal principal observe. B est moins pertinente (Le signal visible est coh\u00e9rent avec coordination, car l'objectif est supporter des arbitrages de production...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le schema illustre une d\u00e9cision basee sur competition: les indices orientent vers supporter des arbitrages ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Lecture du visuel: credit assignment est mobilise pour supporter des arbitrages de production ; l'utiliser ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Dans les environnements coopératifs, le mécanisme de récompense aide à encourager la synergie d'équipe pour atteindre un objectif global commun. Isoler les contributions personnelles est moins pertinent dans la coopération, et maximiser l'altruisme sans synergie n'atteint pas nécessairement l'objectif commun.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Objectif (Multi-agent) - supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equilibre en production. Quel concept est le plus coh\u00e9rent ?",
+      "question": "Quel défi clé est associé à la bonne intégration de politiques multi-agent hétérogènes?",
       "image_url": null,
       "choices": {
-        "A": "coverage: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coverage en production.",
-        "B": "equilibre est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equilibre en production, ce qui correspond a usage operationnel d'equilibre.",
-        "C": "La finalit\u00e9 de bias-variance est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bias-variance en production.",
-        "D": "Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer estimation offline en production, estimation offline est le concept associe."
+        "A": "Surcharge des réseaux de communication",
+        "B": "Incompatibilités de formats de données",
+        "C": "Alignement des horizons temporels de prise de décision",
+        "D": "Restrictions causées par la synchronisation temporelle stricte"
+      },
+      "correct_answer": "C",
+      "explanation": "L'alignement des horizons temporels de prise de décision est crucial, car les agents peuvent avoir des intervalles de décision différents affectant la coordination globale. La surcharge réseau et les incompatibilités de format ne sont pas directement liés à l'intégration des politiques. Les restrictions de synchronisation sont plus un défi technique à part.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment s'assurer que les agents multi-agent conservent chacun leur identité distincte malgré la coopération?",
+      "image_url": null,
+      "choices": {
+        "A": "Par la diversification des informations énergétiques",
+        "B": "En employant des fonctions de coût distinctes",
+        "C": "Par la synchronisation des états internes",
+        "D": "En utilisant un registre centralisé de l'individualité"
       },
       "correct_answer": "B",
-      "explanation": "La bonne reponse est equilibre: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans Multi-agent. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est moins pertinente (coverage: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mie...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. B est correcte (equilibre est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. C'est moins pertinente (La finalit\u00e9 de bias-variance est de supporter des arbitrages de production ; l'utiliser correctement permet...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. D'est moins pertinente (Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "En utilisant des fonctions de coût distinctes, chaque agent peut optimiser ses propres objectifs tout en contribuant à la coopération. La diversification énergétique n'est pas un concept applicable, synchroniser les états risque de réduire la distinction, et un registre centralisé ne s'applique pas directement au niveau de l'algorithme.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Multi-agent', quel concept repond le mieux a cet objectif: supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coordination en production.",
+      "question": "Quel rôle crucial joue l'observabilité partielle dans les systèmes multi-agent dynamiques?",
       "image_url": null,
       "choices": {
-        "A": "mise a jour conjointe: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour conjointe en production.",
-        "B": "importance sampling est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer importance sampling en production, ce qui correspond a usage operationnel d'importance sampling.",
-        "C": "La finalit\u00e9 de bias-variance est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bias-variance en production.",
-        "D": "Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coordination en production, coordination est le concept associe."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est coordination: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans Multi-agent. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est moins pertinente (mise a jour conjointe: objectif principal supporter des arbitrages de production ; l'utiliser correctement ...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. B est moins pertinente (importance sampling est utilise pour supporter des arbitrages de production ; l'utiliser correctement perme...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. C'est moins pertinente (La finalit\u00e9 de bias-variance est de supporter des arbitrages de production ; l'utiliser correctement permet...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. D'est correcte (Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Quel concept de 'Multi-agent' est le plus align\u00e9 avec cet objectif: supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer competition en production.",
-      "image_url": null,
-      "choices": {
-        "A": "La finalit\u00e9 de bias-variance est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bias-variance en production.",
-        "B": "Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer estimation offline en production, estimation offline est le concept associe.",
-        "C": "competition: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer competition en production.",
-        "D": "importance sampling est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer importance sampling en production, ce qui correspond a usage operationnel d'importance sampling."
+        "A": "Elle simplifie les calculs en réduisant l'espace d'observation",
+        "B": "Elle génère davantage de consensus inter-agents rapidement",
+        "C": "Elle limite l'information accessible, influençant la stratégie",
+        "D": "Elle permet une prédiction linéaire des états futurs"
       },
       "correct_answer": "C",
-      "explanation": "La bonne reponse est competition: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans Multi-agent. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est moins pertinente (La finalit\u00e9 de bias-variance est de supporter des arbitrages de production ; l'utiliser correctement permet...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. B est moins pertinente (Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. C'est correcte (competition: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de ...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. D'est moins pertinente (importance sampling est utilise pour supporter des arbitrages de production ; l'utiliser correctement perme...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Avec une observabilité partielle, les agents ne perçoivent pas l'état complet du système, ce qui influe directement sur les stratégies. Elle ne simplifie généralement pas les calculs ni n'accélère le consensus. La prédiction linéaire des états est peu probable en raison de l'incertitude introduite.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Multi-agent', quel concept repond le mieux a cet objectif: supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer credit assignment en production.",
+      "question": "Quel enjeu majeur est rendu plus complexe avec la présence de multi-agents dans un environnement concurrentiel?",
       "image_url": null,
       "choices": {
-        "A": "La finalit\u00e9 de credit assignment est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer credit assignment en production.",
-        "B": "Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer estimation offline en production, estimation offline est le concept associe.",
-        "C": "coverage: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coverage en production.",
-        "D": "recompense dense est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer recompense dense en production, ce qui correspond a usage operationnel de recompense dense."
+        "A": "La gestion de la redondance des actions",
+        "B": "La negociation des priorités d'exécution",
+        "C": "L'augmentation exponentielle de l'espace des actions possibles",
+        "D": "La garantie d'un flux de communication unique"
       },
-      "correct_answer": "A",
-      "explanation": "La bonne reponse est credit assignment: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans Multi-agent. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est correcte (La finalit\u00e9 de credit assignment est de supporter des arbitrages de production ; l'utiliser correctement pe...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. B est moins pertinente (Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. C'est moins pertinente (coverage: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mie...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. D'est moins pertinente (recompense dense est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet d...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "C",
+      "explanation": "Dans un environnement concurrentiel multi-agent, l'espace des actions possibles croît exponentiellement avec le nombre d'agents, rendant la planification plus complexe. La redondance d'actions et la négociation des priorités sont des problèmes distincts, et un flux de communication unique est souvent non nécessaire au principe.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans les systèmes multi-agents, quel est le rôle des politiques de suivi des récompenses différées?",
+      "image_url": null,
+      "choices": {
+        "A": "Optimisation immédiate des résultats",
+        "B": "Réduction de la variance dans la performance",
+        "C": "Anticipation d'une meilleure convergence interactive",
+        "D": "Atténuation des biais systématiques immédiats"
+      },
+      "correct_answer": "D",
+      "explanation": "Les politiques qui suivent les récompenses différées permettent d'atténuer les biais introduits par des politiques qui se concentrent uniquement sur les récompenses immédiates, alignant mieux l'apprentissage à long terme. Elles ne visent pas principalement l'optimisation instantanée, la réduction de variance ou la convergence.",
       "difficulty": "hard"
     }
   ]

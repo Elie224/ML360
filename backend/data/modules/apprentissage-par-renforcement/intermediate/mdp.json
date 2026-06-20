@@ -4,171 +4,171 @@
   "module": "MDP",
   "questions": [
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec horizon dans 'MDP' ?",
-      "image_url": "apprentissage-par-renforcement_mdp_horizon_2.png",
-      "choices": {
-        "A": "dynamique de transition sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dynamique de transition en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans MDP, reward immediate est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reward immediate en production.",
-        "C": "Dans MDP, horizon est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer horizon en production.",
-        "D": "Le role d'etat de Markov est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer etat de Markov en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'horizon dans MDP. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (dynamique de transition sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans MDP, reward immediate est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correc...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans MDP, horizon est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement pe...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role d'etat de Markov est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perme...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
       "type": "text",
-      "question": "reward immediate: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'MDP' ?",
+      "question": "Qu'est-ce qu'une chaîne de Markov peut caractériser spécifiquement dans un cadre Markov Decision Process (MDP) ?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur MDP, etat de Markov est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer etat de Markov en production.",
-        "B": "Pendant une phase d'experimentation, dynamique de transition est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dynamique de transition en production tout en surveillant le risque de sur-optimiser dynamique de transition localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Dans une phase d'experimentation de MDP, l'\u00e9quipe applique horizon pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer horizon en production.",
-        "D": "Dans une phase d'experimentation de MDP, l'\u00e9quipe applique reward immediate pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reward immediate en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car reward immediate y sert de levier de d\u00e9cision principal dans MDP. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur MDP, etat de Markov est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une phase d'experimentation, dynamique de transition est utile pour fiabiliser les d\u00e9cisions d'expe...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une phase d'experimentation de MDP, l'\u00e9quipe applique horizon pour fiabiliser les d\u00e9cisions d'experime...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une phase d'experimentation de MDP, l'\u00e9quipe applique reward immediate pour fiabiliser les d\u00e9cisions d...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec etat de Markov dans 'MDP' ?",
-      "image_url": "apprentissage-par-renforcement_mdp_etat_de_markov_2.png",
-      "choices": {
-        "A": "Dans MDP, horizon est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer horizon en production.",
-        "B": "Dans MDP, etat de Markov est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer etat de Markov en production.",
-        "C": "Le role de dynamique de transition est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dynamique de transition en production.",
-        "D": "reward immediate sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reward immediate en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'etat de Markov dans MDP. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans MDP, horizon est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement pe...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans MDP, etat de Markov est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correcte...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de dynamique de transition est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctem...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (reward immediate sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieu...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'MDP', quelle situation de terrain montre le mieux quand utiliser horizon ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une phase d'experimentation de MDP, l'\u00e9quipe applique dynamique de transition pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dynamique de transition en production.",
-        "B": "En contexte r\u00e9el sur MDP, reward immediate est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reward immediate en production.",
-        "C": "En contexte r\u00e9el sur MDP, horizon est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer horizon en production.",
-        "D": "Pendant une phase d'experimentation, etat de Markov est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer etat de Markov en production tout en surveillant le risque de sur-optimiser etat de Markov localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car horizon y sert de levier de d\u00e9cision principal dans MDP. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une phase d'experimentation de MDP, l'\u00e9quipe applique dynamique de transition pour fiabiliser les deci...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur MDP, reward immediate est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur MDP, horizon est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utilise...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une phase d'experimentation, etat de Markov est utile pour fiabiliser les d\u00e9cisions d'experimentati...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'MDP', quel commentaire du schema traduit le mieux le role de reward immediate ?",
-      "image_url": "apprentissage-par-renforcement_mdp_reward_immediate_2.png",
-      "choices": {
-        "A": "Dans MDP, etat de Markov est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer etat de Markov en production.",
-        "B": "Le role de dynamique de transition est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dynamique de transition en production.",
-        "C": "horizon sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer horizon en production pour guider une d\u00e9cision exploitable.",
-        "D": "reward immediate sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reward immediate en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de reward immediate dans MDP. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans MDP, etat de Markov est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correcte...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de dynamique de transition est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctem...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (horizon sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (reward immediate sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieu...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'MDP', quelle situation de terrain montre le mieux quand utiliser etat de Markov ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur MDP, horizon est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer horizon en production.",
-        "B": "En contexte r\u00e9el sur MDP, etat de Markov est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer etat de Markov en production.",
-        "C": "Pendant une phase d'experimentation, dynamique de transition est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dynamique de transition en production tout en surveillant le risque de sur-optimiser dynamique de transition localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation de MDP, l'\u00e9quipe applique reward immediate pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reward immediate en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car etat de Markov y sert de levier de d\u00e9cision principal dans MDP. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur MDP, horizon est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utilise...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur MDP, etat de Markov est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, dynamique de transition est utile pour fiabiliser les d\u00e9cisions d'expe...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation de MDP, l'\u00e9quipe applique reward immediate pour fiabiliser les d\u00e9cisions d...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'MDP', quel est le role le plus determinant d'horizon pour un cas cybersecurite ?",
-      "image_url": null,
-      "choices": {
-        "A": "horizon sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer horizon en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans MDP, etat de Markov est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer etat de Markov en production.",
-        "C": "Le role de dynamique de transition est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dynamique de transition en production.",
-        "D": "reward immediate sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reward immediate en production pour guider une d\u00e9cision exploitable."
+        "A": "Chaque état ne dépend que de l'état précédent",
+        "B": "Chaque réward dépend uniquement de l'action précédente",
+        "C": "Le prochain état dépend de tous les états précédents",
+        "D": "L'action courante dépend de plusieurs états futurs"
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie horizon \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (horizon sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans MDP, etat de Markov est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correcte...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de dynamique de transition est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctem...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (reward immediate sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
+      "explanation": "Un processus de décision markovien (MDP) suit la propriété Markov: l'état futur dépend uniquement de l'état courant, et non de la séquence d'états antérieurs. Les réponses incorrectes décrivent des dépendances temporelles qui ne sont pas markoviennes.",
+      "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'MDP', quel est le principal mode d'echec quand reward immediate est mal applique ?",
+      "question": "Dans le cadre d'un MDP, que décrit la fonction de transition ?",
       "image_url": null,
       "choices": {
-        "A": "Si reward immediate est mal utilise, on observe souvent sur-optimiser reward immediate localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour d'etat de Markov est sur-optimiser etat de Markov localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Un risque classique avec dynamique de transition est de sur-optimiser dynamique de transition localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Si horizon est mal utilise, on observe souvent sur-optimiser horizon localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "La probabilité d'atteindre un état donné à partir d'un autre état en exécutant une action spécifique",
+        "B": "Le gain immédiat obtenu après une transition",
+        "C": "La durée minimale pour passer d'un état à un autre",
+        "D": "La somme des réwards futurs attendus"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de reward immediate. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si reward immediate est mal utilise, on observe souvent sur-optimiser reward immediate localement en ignora...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour d'etat de Markov est sur-optimiser etat de Markov localement en ignorant ses int...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec dynamique de transition est de sur-optimiser dynamique de transition localement en...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si horizon est mal utilise, on observe souvent sur-optimiser horizon localement en ignorant ses interaction...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La fonction de transition définit la probabilité de passer d'un état à un autre après avoir pris une action. Les autres options concernent soit les récompenses, soit des concepts temporels qui ne sont pas la fonction de transition spécifique.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le rôle principal de la fonction de réward immédiate dans un MDP ?",
+      "image_url": null,
+      "choices": {
+        "A": "Attribuer une valeur à chaque transition pour guider les décisions futures",
+        "B": "Estimer la durée des transitions entre états",
+        "C": "Calculer la probabilité des transitions d'état",
+        "D": "Déterminer l'état final optimal d'un MDP"
+      },
+      "correct_answer": "A",
+      "explanation": "La fonction de réward immédiate attribue une valeur à chaque transition, fournissant ainsi une incitation pour choisir certaines actions. Les autres choix se rapportent à des propriétés des transitions, mais pas à la réward immédiate.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Dans le contexte d'un MDP, qu'implique un horizon fini ?",
+      "image_url": null,
+      "choices": {
+        "A": "Le processus de décision s'arrête après un nombre déterminé d'étapes",
+        "B": "L'agent peut prendre une infinité d'actions sans s'arrêter",
+        "C": "Les récompenses sont nulles après une certaine durée",
+        "D": "Les transitions d'état deviennent indépendantes au-delà d'un certain point"
+      },
+      "correct_answer": "A",
+      "explanation": "Un horizon fini dans un MDP signifie que le processus de décision s'arrête après un nombre fixe d'étapes. Les autres choix évoquent des idées incorrectes comme des durées infinies ou des changements dans la nature des transitions.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'MDP', quel est le role le plus determinant d'etat de Markov pour un cas marketing ?",
+      "question": "Pourquoi est-il crucial de bien définir la dynamique de transition dans un MDP ?",
       "image_url": null,
       "choices": {
-        "A": "Dans MDP, dynamique de transition est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dynamique de transition en production.",
-        "B": "Le role de reward immediate est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reward immediate en production.",
-        "C": "horizon sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer horizon en production pour guider une d\u00e9cision exploitable.",
-        "D": "etat de Markov sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer etat de Markov en production pour guider une d\u00e9cision exploitable."
+        "A": "Pour modéliser avec précision les changements d'état et optimiser les politiques",
+        "B": "Pour minimiser le nombre d'états nécessaires dans le MDP",
+        "C": "Pour maximiser le réward immédiat dans chaque état",
+        "D": "Pour garantir que chaque état est atteint de manière séquentielle"
+      },
+      "correct_answer": "A",
+      "explanation": "La dynamique de transition modélise les probabilités de passage entre états, ce qui est essentiel pour trouver et optimiser les politiques. Les autres réponses décrivent des concepts erronés ou incomplets car elles confondent optimisation de la politique avec structure de l'état ou des récompenses.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment les chaînes de Markov sont-elles utilisées dans les MDP pour simplifier l'analyse des états ?",
+      "image_url": null,
+      "choices": {
+        "A": "En supposant que la probabilité de chaque état n'interagit pas avec les actions",
+        "B": "En réduisant l'espace des états potentiels à un seul état récurrent",
+        "C": "En permettant que chaque état soit analysé indépendamment grâce à la mémoire d'état",
+        "D": "En utilisant l'indépendance des états passés pour simplifier les calculs futurs"
       },
       "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie etat de Markov \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans MDP, dynamique de transition est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de reward immediate est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement per...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (horizon sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (etat de Markov sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Les chaînes de Markov simplifient l'analyse MDP en ne nécessitant que l'état courant pour définir les transitions futures, éliminant ainsi la nécessité de se souvenir des états passés. Les autres choix incorrects minimisent, ignorent ou obligent des contraintes qui ne sont pas présentes dans les chaînes de Markov.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel effet un horizon infini a-t-il sur l'évaluation des politiques dans un MDP ?",
+      "image_url": null,
+      "choices": {
+        "A": "Il nécessite une pondération des réwards futurs par un facteur de discount",
+        "B": "Il permet d'ignorer complètement les transitions d'état",
+        "C": "Il garantit que toutes les combinaisons d'actions seront testées",
+        "D": "Il rend le calcul des réwards futurs constants"
+      },
+      "correct_answer": "A",
+      "explanation": "Un horizon infini demande un facteur de discount pour éviter la somme infinie des réwards. Les choix B et C sont faux car ils ne respectent pas les dynamiques et les évaluations des MDP. D est incorrect car les réwards futurs ne deviennent pas constants par nature d'un horizon infini.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans un MDP, à quoi sert la fonction de valeur d'état ?",
+      "image_url": null,
+      "choices": {
+        "A": "Estimer la somme des réwards futurs attendus depuis cet état",
+        "B": "Calculer la probabilité de chaque action dans l'état",
+        "C": "Déterminer la durée nécessaire pour atteindre l'état terminal",
+        "D": "Contrôler l'ordre séquentiel des états dans le MDP"
+      },
+      "correct_answer": "A",
+      "explanation": "La fonction de valeur d'état estime les réwards futurs attendus à partir d'un état donné. Les autres choix sont incorrects : B se concentre sur les actions, C et D sur les temps et séquences, qui ne sont pas les rôles de la fonction de valeur d'état.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la conséquence de modifier la fonction de réward dans un MDP ?",
+      "image_url": null,
+      "choices": {
+        "A": "Cela peut conduire à une politique optimale différente",
+        "B": "Cela ne change pas les transitions d'état",
+        "C": "Cela rend toutes les actions également probables",
+        "D": "Cela garantit que l'horizon infini est atteint"
+      },
+      "correct_answer": "A",
+      "explanation": "Modifier la fonction de réward peut changer les incitations et ainsi conduire à des politiques optimales différentes. B est vrai mais n'est pas une conséquence directe des réwards. C et D sont incorrects : un nouveau réward ne rend pas les actions égales ou garantit la longueur de l'horizon.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "reward immediate: pourquoi ce concept est-il crucial pour une \u00e9quipe industrie dans 'MDP' ?",
+      "question": "Comment les MDP gèrent-ils les incertitudes dans les actions prises par un agent ?",
       "image_url": null,
       "choices": {
-        "A": "Le role d'horizon est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer horizon en production.",
-        "B": "Le role de reward immediate est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reward immediate en production.",
-        "C": "etat de Markov sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer etat de Markov en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans MDP, dynamique de transition est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer dynamique de transition en production."
+        "A": "En modélisant les probabilités de transition entre les états pour chaque action",
+        "B": "En contraignant chaque action à générer la même récompense immédiate",
+        "C": "En ignorant les actions sans conséquences immédiates",
+        "D": "En définissant un seul trajet optimal strict pour toutes les actions"
       },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie reward immediate \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role d'horizon est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de reward immediate est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement per...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (etat de Markov sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans MDP, dynamique de transition est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Les MDP incluent les incertitudes des actions via les probabilités de transition. B, C, et D ne sont pas des approches correctes : B et C ignorent les variations des réwards et transitions, D impose une structure inflexible, contraire à la flexibilité des MDP.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'MDP' (e-commerce), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment dynamique de transition ?",
+      "question": "Quelle est une limite importante du modèle MDP à horizon infini ?",
       "image_url": null,
       "choices": {
-        "A": "Dans MDP, mise a jour hors politique se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de mise a jour hors politique dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "max target designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de max target dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "table Q correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de table Q dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans MDP.",
-        "D": "dynamique de transition correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de dynamique de transition dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans MDP."
+        "A": "Le risque de surestimer les réwards futurs sans discounting",
+        "B": "L'obligation de prendre toutes les actions possibles en même temps",
+        "C": "L'incapacité à modéliser des chaînes de Markov simples",
+        "D": "La réduction du nombre d'états possibles à un seul"
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de dynamique de transition dans MDP, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que mise a jour hors politique, max target, table Q restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans MDP, mise a jour hors politique se comprend comme un concept interm\u00e9diaire en apprentissage par renfor...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (max target designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de max...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (table Q correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de t...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (dynamique de transition correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formal...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Sans discounting, un MDP à horizon infini peut surestimer l'importance des réwards futurs, rendant les politiques incertaines. B, C, et D sont fausses : B parle d'actions non limitées, C ne concerne pas la limite des MDP, et D fait une confusion sur l'espace d'état.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'MDP', quelle erreur autour d'horizon est la plus critique ?",
+      "question": "Dans un MDP, quelle stratégie permet d'améliorer la robustesse des politiques face aux changements de transition ?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec etat de Markov est de sur-optimiser etat de Markov localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Si dynamique de transition est mal utilise, on observe souvent sur-optimiser dynamique de transition localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Le piege principal autour de reward immediate est sur-optimiser reward immediate localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Le piege principal autour d'horizon est sur-optimiser horizon localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "L'utilisation de politiques prudentes qui minimisent les pertes potentielles",
+        "B": "L'évitement complet des états à faible réward",
+        "C": "La fixation des transitions d'état immuables",
+        "D": "L'annulation des fonctions de réward immédiates"
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'horizon. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec etat de Markov est de sur-optimiser etat de Markov localement en ignorant ses inte...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si dynamique de transition est mal utilise, on observe souvent sur-optimiser dynamique de transition locale...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour de reward immediate est sur-optimiser reward immediate localement en ignorant ses...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour d'horizon est sur-optimiser horizon localement en ignorant ses interactions avec...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Les politiques prudentes prennent en compte les pires scénarios possibles pour renforcer la robustesse. B, C, et D ne sont pas viables : B peut ignorer des chemins optimaux, C fixe les transitions et D annule les incitations à agir.",
       "difficulty": "hard"
     }
   ]

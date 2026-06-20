@@ -4,213 +4,213 @@
   "module": "Arbres de decision",
   "questions": [
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec split dans 'Arbres de d\u00e9cision' ?",
-      "image_url": "apprentissage-supervise_arbres_de_decision_split_2.png",
+      "type": "text",
+      "question": "Quel critère de séparation est couramment utilisé dans les arbres de décision pour la classification?",
+      "image_url": null,
       "choices": {
-        "A": "Dans Arbres de d\u00e9cision, importance des variables est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer importance des variables en production.",
-        "B": "Dans Arbres de d\u00e9cision, split est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split en production.",
-        "C": "Le role de profondeur maximale est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer profondeur maximale en production.",
-        "D": "random forest sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random forest en production pour guider une d\u00e9cision exploitable."
+        "A": "L'indice de Gini",
+        "B": "Le coefficient de corrélation",
+        "C": "La distance Euclidienne",
+        "D": "La régression logistique"
       },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de split dans Arbres de d\u00e9cision. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Arbres de d\u00e9cision, importance des variables est mobilise pour fiabiliser les d\u00e9cisions d'experimentat...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Arbres de d\u00e9cision, split est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser co...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de profondeur maximale est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (random forest sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "L'indice de Gini mesure l'impureté d'un noeud, ce qui aide à décider quelle caractéristique de données permet de faire les meilleures séparations. Le coefficient de corrélation et la distance Euclidienne ne sont pas utilisés pour cela dans les arbres de décision, et la régression logistique est un modèle différent.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "random forest: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Arbres de d\u00e9cision' ?",
+      "question": "Que représente la profondeur maximale dans un arbre de décision?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Arbres de d\u00e9cision, split est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split en production.",
-        "B": "Pendant une phase d'experimentation, profondeur maximale est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer profondeur maximale en production tout en surveillant le risque de sur-optimiser profondeur maximale localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Dans une phase d'experimentation d'Arbres de d\u00e9cision, l'\u00e9quipe applique importance des variables pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer importance des variables en production.",
-        "D": "Dans une phase d'experimentation d'Arbres de d\u00e9cision, l'\u00e9quipe applique random forest pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random forest en production."
+        "A": "Le nombre maximal de niveaux de noeuds dans l'arbre",
+        "B": "Le nombre total de feuilles dans l'arbre",
+        "C": "Le nombre moyen de données par feuille",
+        "D": "Le nombre de caractéristiques utilisées"
       },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car random forest y sert de levier de d\u00e9cision principal dans Arbres de d\u00e9cision. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Arbres de d\u00e9cision, split est choisi afin de fiabiliser les d\u00e9cisions d'experimentatio...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une phase d'experimentation, profondeur maximale est utile pour fiabiliser les d\u00e9cisions d'experime...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une phase d'experimentation d'Arbres de d\u00e9cision, l'\u00e9quipe applique importance des variables pour fia...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une phase d'experimentation d'Arbres de d\u00e9cision, l'\u00e9quipe applique random forest pour fiabiliser les...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La profondeur maximale limite le nombre de niveaux du modèle, ce qui aide à contrôler la complexité et à prévenir le surapprentissage. Le nombre de feuilles, caractéristiques ou données par feuille ne sont pas directement liés à la profondeur.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Arbres de d\u00e9cision', quelle situation de terrain montre le mieux quand utiliser split ?",
+      "question": "Quelle méthode aide à réduire la variance d'un arbre de décision?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Arbres de d\u00e9cision, importance des variables est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer importance des variables en production.",
-        "B": "En contexte r\u00e9el sur Arbres de d\u00e9cision, split est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split en production.",
-        "C": "Pendant une phase d'experimentation, profondeur maximale est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer profondeur maximale en production tout en surveillant le risque de sur-optimiser profondeur maximale localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation d'Arbres de d\u00e9cision, l'\u00e9quipe applique random forest pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random forest en production."
+        "A": "Random Forest",
+        "B": "Augmenter la profondeur maximale",
+        "C": "Utiliser toute la base de données d'entraînement",
+        "D": "Réduire le nombre de caractéristiques"
       },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car split y sert de levier de d\u00e9cision principal dans Arbres de d\u00e9cision. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Arbres de d\u00e9cision, importance des variables est choisi afin de fiabiliser les decisio...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Arbres de d\u00e9cision, split est choisi afin de fiabiliser les d\u00e9cisions d'experimentatio...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, profondeur maximale est utile pour fiabiliser les d\u00e9cisions d'experime...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation d'Arbres de d\u00e9cision, l'\u00e9quipe applique random forest pour fiabiliser les...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Le Random Forest utilise des ensembles de nombreux arbres de décision formés sur des sous-échantillons et moyennés pour réduire la variance. Accroître la profondeur augmente potentiellement la variance, et utiliser l'ensemble de la base ou moins de caractéristiques n'adresse pas directement la variance.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Arbres de d\u00e9cision', quel est le role le plus determinant de split pour un cas e-commerce ?",
+      "question": "Quel est l'impact de ne pas limiter la profondeur maximale d'un arbre de décision?",
       "image_url": null,
       "choices": {
-        "A": "Dans Arbres de d\u00e9cision, profondeur maximale est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer profondeur maximale en production.",
-        "B": "Le role de random forest est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random forest en production.",
-        "C": "importance des variables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer importance des variables en production pour guider une d\u00e9cision exploitable.",
-        "D": "split sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie split \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Arbres de d\u00e9cision, profondeur maximale est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de random forest est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (importance des variables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (split sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider q...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Arbres de d\u00e9cision', quel commentaire du schema traduit le mieux le role de random forest ?",
-      "image_url": "apprentissage-supervise_arbres_de_decision_random_forest_2.png",
-      "choices": {
-        "A": "Dans Arbres de d\u00e9cision, split est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split en production.",
-        "B": "Le role de profondeur maximale est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer profondeur maximale en production.",
-        "C": "importance des variables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer importance des variables en production pour guider une d\u00e9cision exploitable.",
-        "D": "random forest sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random forest en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de random forest dans Arbres de d\u00e9cision. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Arbres de d\u00e9cision, split est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser co...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de profondeur maximale est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (importance des variables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (random forest sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Arbres de d\u00e9cision', quel est le principal mode d'echec quand random forest est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si random forest est mal utilise, on observe souvent sur-optimiser random forest localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de split est sur-optimiser split localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Un risque classique avec profondeur maximale est de sur-optimiser profondeur maximale localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Si importance des variables est mal utilise, on observe souvent sur-optimiser importance des variables localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Surapprentissage",
+        "B": "Sous-apprentissage",
+        "C": "Les résultats restent les mêmes",
+        "D": "Amélioration garantie de la performance"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de random forest. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si random forest est mal utilise, on observe souvent sur-optimiser random forest localement en ignorant ses...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de split est sur-optimiser split localement en ignorant ses interactions avec fea...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec profondeur maximale est de sur-optimiser profondeur maximale localement en ignoran...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si importance des variables est mal utilise, on observe souvent sur-optimiser importance des variables loca...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Une profondeur non limitée permet à l'arbre de capturer des bruits aléatoires, conduisant au surapprentissage. Cela n'améliore pas nécessairement la performance sur des données non vues, contrairement à l'idée reçue qu'une complexité accrue règle toujours mieux un problème.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Arbres de d\u00e9cision' (industrie), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment profondeur maximale ?",
+      "question": "En quoi consiste l'importance des variables dans un arbre de décision?",
       "image_url": null,
       "choices": {
-        "A": "Dans Arbres de d\u00e9cision, prevention de fuite se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de prevention de fuite dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "coefficient designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de coefficient dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "regularisation correspond a un concept interm\u00e9diaire en apprentissage supervise ; il contraint la complexite du modele pour limiter le surapprentissage, ce qui structure l'analyse dans Arbres de d\u00e9cision.",
-        "D": "profondeur maximale correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de profondeur maximale dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Arbres de d\u00e9cision."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de profondeur maximale dans Arbres de d\u00e9cision, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte industrie, alors que prevention de fuite, coefficient, regularisation restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Arbres de d\u00e9cision, prevention de fuite se comprend comme un concept interm\u00e9diaire en apprentissage su...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (coefficient designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de coefficie...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (regularisation correspond a un concept interm\u00e9diaire en apprentissage supervise ; il contraint la complexit...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (profondeur maximale correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec importance des variables dans 'Arbres de d\u00e9cision' ?",
-      "image_url": "apprentissage-supervise_arbres_de_decision_importance_des_variables_2.png",
-      "choices": {
-        "A": "profondeur maximale sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer profondeur maximale en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Arbres de d\u00e9cision, random forest est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random forest en production.",
-        "C": "Dans Arbres de d\u00e9cision, importance des variables est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer importance des variables en production.",
-        "D": "Le role de split est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'importance des variables dans Arbres de d\u00e9cision. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (profondeur maximale sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de m...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Arbres de d\u00e9cision, random forest est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'uti...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Arbres de d\u00e9cision, importance des variables est mobilise pour fiabiliser les d\u00e9cisions d'experimentat...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de split est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieu...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin industrie dans 'Arbres de d\u00e9cision', pourquoi profondeur maximale est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "random forest sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random forest en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Arbres de d\u00e9cision, importance des variables est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer importance des variables en production.",
-        "C": "Dans Arbres de d\u00e9cision, profondeur maximale est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer profondeur maximale en production.",
-        "D": "Le role de split est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie profondeur maximale \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (random forest sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Arbres de d\u00e9cision, importance des variables est mobilise pour fiabiliser les d\u00e9cisions d'experimentat...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Arbres de d\u00e9cision, profondeur maximale est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de split est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Arbres de d\u00e9cision', quelle erreur autour de split est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si random forest est mal utilise, on observe souvent sur-optimiser random forest localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour d'importance des variables est sur-optimiser importance des variables localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Le piege principal autour de split est sur-optimiser split localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Un risque classique avec profondeur maximale est de sur-optimiser profondeur maximale localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de split. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si random forest est mal utilise, on observe souvent sur-optimiser random forest localement en ignorant ses...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour d'importance des variables est sur-optimiser importance des variables localement...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de split est sur-optimiser split localement en ignorant ses interactions avec fea...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec profondeur maximale est de sur-optimiser profondeur maximale localement en ignoran...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "random forest: pourquoi ce concept est-il crucial pour une \u00e9quipe cybersecurite dans 'Arbres de d\u00e9cision' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role d'importance des variables est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer importance des variables en production.",
-        "B": "Le role de random forest est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random forest en production.",
-        "C": "split sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Arbres de d\u00e9cision, profondeur maximale est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer profondeur maximale en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie random forest \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role d'importance des variables est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correcte...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de random forest est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (split sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider q...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Arbres de d\u00e9cision, profondeur maximale est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ;...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "split: quelle proposition en donne la meilleure d\u00e9finition dans 'Arbres de d\u00e9cision' (contexte e-commerce) ?",
-      "image_url": null,
-      "choices": {
-        "A": "split designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de split dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "variables derivees correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de variables derivees dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Arbres de d\u00e9cision.",
-        "C": "Dans Arbres de d\u00e9cision, prevention de fuite se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de prevention de fuite dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "coefficient designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de coefficient dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "L'évaluation de la contribution de chaque variable à la prédiction",
+        "B": "La fréquence d'apparition dans le jeu de données",
+        "C": "Le type de donnée (continue ou catégorielle)",
+        "D": "Leur taille en mémoire"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de split dans Arbres de d\u00e9cision, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que variables derivees, prevention de fuite, coefficient restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (split designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de split dans un p...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (variables derivees correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Arbres de d\u00e9cision, prevention de fuite se comprend comme un concept interm\u00e9diaire en apprentissage su...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (coefficient designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de coefficie...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "L'importance des variables est mesurée par la contribution à la réduction des impuretés. Ce n'est pas simplement leur fréquence ou type, ni leur taille en mémoire.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une \u00e9quipe cybersecurite dans 'Arbres de d\u00e9cision', quelle d\u00e9finition de random forest est la plus juste ?",
+      "question": "Pourquoi un Random Forest est-il moins susceptible de surapprendre qu'un seul arbre de décision?",
       "image_url": null,
       "choices": {
-        "A": "regularisation correspond a un concept interm\u00e9diaire en apprentissage supervise ; il contraint la complexite du modele pour limiter le surapprentissage, ce qui structure l'analyse dans Arbres de d\u00e9cision.",
-        "B": "Dans Arbres de d\u00e9cision, log-odds se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de log-odds dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Arbres de d\u00e9cision, random forest se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de random forest dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "coefficient designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de coefficient dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de random forest dans Arbres de d\u00e9cision, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que coefficient, regularisation, log-odds restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (regularisation correspond a un concept interm\u00e9diaire en apprentissage supervise ; il contraint la complexit...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Arbres de d\u00e9cision, log-odds se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; i...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Arbres de d\u00e9cision, random forest se comprend comme un concept interm\u00e9diaire en apprentissage supervis...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (coefficient designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de coefficie...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'Arbres de d\u00e9cision', quel exemple met profondeur maximale au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une phase d'experimentation, profondeur maximale est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer profondeur maximale en production tout en surveillant le risque de sur-optimiser profondeur maximale localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Dans une phase d'experimentation d'Arbres de d\u00e9cision, l'\u00e9quipe applique split pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split en production.",
-        "C": "En contexte r\u00e9el sur Arbres de d\u00e9cision, random forest est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random forest en production.",
-        "D": "Pendant une phase d'experimentation, importance des variables est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer importance des variables en production tout en surveillant le risque de sur-optimiser importance des variables localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Il combine les prédictions de plusieurs arbres",
+        "B": "Il utilise toujours moins de données",
+        "C": "Il ne nécessite pas de critères de séparation",
+        "D": "Tous les arbres dans la forêt sont indépendants"
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car profondeur maximale y sert de levier de d\u00e9cision principal dans Arbres de d\u00e9cision. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une phase d'experimentation, profondeur maximale est utile pour fiabiliser les d\u00e9cisions d'experime...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une phase d'experimentation d'Arbres de d\u00e9cision, l'\u00e9quipe applique split pour fiabiliser les decisio...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Arbres de d\u00e9cision, random forest est choisi afin de fiabiliser les d\u00e9cisions d'experi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une phase d'experimentation, importance des variables est utile pour fiabiliser les d\u00e9cisions d'exp...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le Random Forest agrège les résultats de plusieurs arbres, ce qui minimise la variance et donc réduit le risque de surapprentissage. Utiliser moins de données ou ignorer les critères de séparation ne sont pas des attributs du modèle; la dépendance des arbres par le sous-échantillonnage montre leur interdépendance partielle.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'effet d'un sous-arbre trop profond dans un modèle Random Forest?",
+      "image_url": null,
+      "choices": {
+        "A": "Augmentation de la variance",
+        "B": "Réduction de l'interprétabilité",
+        "C": "Amélioration de la montée d'échelle",
+        "D": "Les erreurs de biais sont accentuées"
+      },
+      "correct_answer": "A",
+      "explanation": "Des sous-arbres trop profonds peuvent capturer le bruit, augmentant la variance. La montée en échelle et l'accentuation du biais ne sont pas fortement affectées; la réduction d'interprétabilité intervient, mais n'est pas le principal effet.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment l'algorithme Random Forest gère-t-il les caractéristiques corrélées?",
+      "image_url": null,
+      "choices": {
+        "A": "En choisissant aléatoirement un sous-ensemble de caractéristiques pour chaque arbre",
+        "B": "En éliminant automatiquement les caractéristiques corrélées",
+        "C": "En ajoutant un terme de pénalité pour les corrélations",
+        "D": "En augmentant la taille de l'échantillon"
+      },
+      "correct_answer": "A",
+      "explanation": "Le choix aléatoire de sous-ensembles de caractéristiques diminue l'influence des caractéristiques corrélées sur l'ensemble du modèle. Éliminer automatiquement ou pénaliser les corrélations n'est pas spécifique au Random Forest, et l'augmentation de la taille d'échantillon ne concerne pas directement ce problème.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Que signifie 'bootstrap' dans le contexte de Random Forest?",
+      "image_url": null,
+      "choices": {
+        "A": "Utiliser un sous-échantillon aléatoire avec retour pour entraîner chaque arbre",
+        "B": "Calculer l'erreur quadratique moyenne pour l'évaluation du modèle",
+        "C": "Croiser des validations successives des modèles",
+        "D": "Ajuster les hyperparamètres automatiquement"
+      },
+      "correct_answer": "A",
+      "explanation": "Le bootstrap dans Random Forest se réfère à l'utilisation de samples avec replacement pour chaque arbre, optimisant ainsi la qualité du modèle. Les erreurs quadratiques, validations croisées, ou ajustements automatiques d'hyperparamètres ne sont pas directement liés au concept de bootstrap.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans un modèle d'Arbre de Décision, comment une diminution de 'min_samples_split' affecte-t-elle l'arbre?",
+      "image_url": null,
+      "choices": {
+        "A": "Il devient potentiellement plus profond et complexe",
+        "B": "Il augmente le biais global du modèle",
+        "C": "Il résout mieux le problème d'échantillons déséquilibrés",
+        "D": "Il améliore le temps de formation du modèle"
+      },
+      "correct_answer": "A",
+      "explanation": "Réduire 'min_samples_split' peut conduire à un arbre plus complexe en divisant plus de nœuds, ce qui augmente potentiellement le surajustement. Cela n'affecte pas directement le biais global, ni les échantillons équilibrés, et le temps de formation n'est pas nécessairement amélioré.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Arbres de d\u00e9cision', quel est le role le plus determinant d'importance des variables pour un cas banque ?",
+      "question": "Quel est un symptômes commun lorsque l'importance des variables d'un arbre de décision montre des valeurs similaires pour toutes les caractéristiques?",
       "image_url": null,
       "choices": {
-        "A": "importance des variables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer importance des variables en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Arbres de d\u00e9cision, split est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer split en production.",
-        "C": "Le role de profondeur maximale est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer profondeur maximale en production.",
-        "D": "random forest sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer random forest en production pour guider une d\u00e9cision exploitable."
+        "A": "Les caractéristiques peuvent être peu informatives",
+        "B": "Le modèle a un biais élevé",
+        "C": "Les caractéristiques sont trop pertinentes",
+        "D": "Une erreur d'implémentation dans le calcul de l'importance"
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie importance des variables \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (importance des variables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Arbres de d\u00e9cision, split est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser co...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de profondeur maximale est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (random forest sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Des importances similaires peuvent indiquer que les caractéristiques fournissent peu d'informations discriminatives, un problème de modèle mal formé ou de bruit. Un biais élevé ou des caractéristiques trop pertinentes ne correspond pas à cette situation. Une erreur de calcul d'importance est possible mais pas garantie.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel avantage apporte la méthode de bagging utilisée dans le Random Forest?",
+      "image_url": null,
+      "choices": {
+        "A": "Réduction de la variance du modèle",
+        "B": "Amélioration du biais de façon systématique",
+        "C": "Suppression des caractéristiques dépendantes",
+        "D": "Augmentation significative de la précision pour les petits datasets"
+      },
+      "correct_answer": "A",
+      "explanation": "Le bagging réduit surtout la variance du modèle en moyenne les erreurs sur des sous-ensembles. Il n'améliore pas directement le biais élevé de certains modèles et ne traite pas spécifiquement des caractéristiques dépendantes ni de gains spécifiques pour des petits ensembles.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans un Random Forest, comment l'aléatoire aide-t-il à prévenir le surapprentissage?",
+      "image_url": null,
+      "choices": {
+        "A": "En créant différents modèles grâce à des sous-échantillonnages des données et des caractéristiques",
+        "B": "En utilisant des seuils fixes pour tous les arbres",
+        "C": "En construisant des arbres avec profondeur égale",
+        "D": "En affectant la même importance à toutes les variables"
+      },
+      "correct_answer": "A",
+      "explanation": "L'aléatoire, via sous-échantillonnage des données et caractéristiques, diversifie les arbres, ce qui aide à généraliser et réduire la variance. Les seuils fixes, les profondeurs égales ou une importance uniforme ne capitalisent pas sur l'aléatoire pour éviter le surapprentissage.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi l'indice de Gini est-il mieux adapté que l'entropie dans certains cas pour les arbres de décision?",
+      "image_url": null,
+      "choices": {
+        "A": "Il est plus rapide à calculer que l'entropie",
+        "B": "Il prend en compte plus de classes par défaut",
+        "C": "Il n'a aucune limitation mathématique par rapport à l'entropie",
+        "D": "Il favorise les classes équilibrées"
+      },
+      "correct_answer": "A",
+      "explanation": "L'indice de Gini est plus rapide à calculer car il ne nécessite pas de logarithmes, contrairement à l'entropie. Cela ne concerne pas le nombre de classes, la limitation mathématique ou le traitement des classes pour faire pencher le travail dans son sens.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le rôle principal des arbres de décision dans un modèle de Random Forest?",
+      "image_url": null,
+      "choices": {
+        "A": "Fournir une base diversifiée de prédictions à agréger",
+        "B": "Éliminer les erreurs de biais systématique",
+        "C": "Créer un consensus basé sur l'arbre le plus précis",
+        "D": "Calculer l'importance des variables pour optimiser les prochaines séparations"
+      },
+      "correct_answer": "A",
+      "explanation": "Dans un Random Forest, chaque arbre fournit une prédiction qui est ensuite moyennée ou majorée, offrant une diversité qui réduit la variance et, par conséquent, le surapprentissage. Les biais ne sont pas nécessairement corrigés par l'arbre le plus précis ou l'optimisation future.",
       "difficulty": "hard"
     }
   ]

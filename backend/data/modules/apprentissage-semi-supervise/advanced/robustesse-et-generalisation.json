@@ -5,366 +5,366 @@
   "questions": [
     {
       "type": "text",
-      "question": "domain shift: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Robustesse et g\u00e9n\u00e9ralisation' ?",
+      "question": "Quel est le principal avantage de l'augmentation forte dans l'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Robustesse et g\u00e9n\u00e9ralisation, augmentation forte est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production.",
-        "B": "Pendant une revue pre-deploiement, stabilit\u00e9 est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production tout en surveillant le risque d'optimiser stabilit\u00e9 en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Dans une revue pre-deploiement de Robustesse et g\u00e9n\u00e9ralisation, l'\u00e9quipe applique regularisation pour supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance.",
-        "D": "Dans une revue pre-deploiement de Robustesse et g\u00e9n\u00e9ralisation, l'\u00e9quipe applique domain shift pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production."
+        "A": "Il permet d'augmenter la diversité des données d'entrainement.",
+        "B": "Il réduit le besoin de données étiquetées.",
+        "C": "Il garantit une convergence plus rapide des algorithmes.",
+        "D": "Il élimine complètement le surapprentissage."
       },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car domain shift y sert de levier de d\u00e9cision principal dans Robustesse et g\u00e9n\u00e9ralisation. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Robustesse et g\u00e9n\u00e9ralisation, augmentation forte est choisi afin de supporter des arbi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une revue pre-deploiement, stabilit\u00e9 est utile pour supporter des arbitrages de production ; l'util...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une revue pre-deploiement de Robustesse et g\u00e9n\u00e9ralisation, l'\u00e9quipe applique regularisation pour suppo...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une revue pre-deploiement de Robustesse et g\u00e9n\u00e9ralisation, l'\u00e9quipe applique domain shift pour support...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "L'augmentation forte consiste à appliquer des transformations substantielles aux données existantes pour créer de nouvelles instances, augmentant ainsi la diversité. Bien qu'il puisse réduire le besoin de données étiquetées et contribue à la lutte contre le surapprentissage, ces derniers ne sont que des effets indirects et non garantis. Réduire totalement le surapprentissage ou garantir la convergence n'est pas assuré par l'augmentation forte.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Robustesse et g\u00e9n\u00e9ralisation' (assurance), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment stabilit\u00e9 ?",
+      "question": "Comment peut-on définir la stabilité dans le contexte de l'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Dans Robustesse et g\u00e9n\u00e9ralisation, temperature se comprend comme un levier avance en apprentissage semi supervise ; il formalise le role de temperature dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "label sharpening designe un levier avance en apprentissage semi supervise ; il formalise le role de label sharpening dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "correction iterative correspond a un levier avance en apprentissage semi supervise ; il formalise le role de correction iterative dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Robustesse et g\u00e9n\u00e9ralisation.",
-        "D": "stabilit\u00e9 correspond a un levier avance en apprentissage semi supervise ; il formalise le role de stabilit\u00e9 dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Robustesse et g\u00e9n\u00e9ralisation."
+        "A": "C'est la capacité d'un modèle à fournir des prédictions fiables malgré des perturbations mineures des données d'entrée.",
+        "B": "C'est la capacité d'un modèle à interagir avec différentes API.",
+        "C": "C'est la capacité d'un modèle à se reconfigurer dynamiquement en fonction de nouvelles données.",
+        "D": "C'est la capacité d'un modèle à augmenter sa complexité pour améliorer la précision."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de stabilit\u00e9 dans Robustesse et g\u00e9n\u00e9ralisation, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte assurance, alors que temperature, label sharpening, correction iterative restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Robustesse et g\u00e9n\u00e9ralisation, temperature se comprend comme un levier avance en apprentissage semi sup...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (label sharpening designe un levier avance en apprentissage semi supervise ; il formalise le role de label s...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (correction iterative correspond a un levier avance en apprentissage semi supervise ; il formalise le role d...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (stabilit\u00e9 correspond a un levier avance en apprentissage semi supervise ; il formalise le role de stabilit\u00e9...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La stabilité désigne la résilience d'un modèle lorsqu'il est confronté à des variations mineures de données, un aspect crucial pour un apprentissage fiable et robuste. L'interaction avec les API (B), la reconfiguration dynamique (C), et l'augmentation de complexité (D) ne sont pas directement liées à la stabilité.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Face a un besoin assurance dans 'Robustesse et g\u00e9n\u00e9ralisation', pourquoi stabilit\u00e9 est-il prioritaire ?",
+      "question": "Qu'entend-on par 'domain shift' dans un contexte d'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "domain shift sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Robustesse et g\u00e9n\u00e9ralisation, regularisation est mobilise pour supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance.",
-        "C": "Dans Robustesse et g\u00e9n\u00e9ralisation, stabilit\u00e9 est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production.",
-        "D": "Le role d'augmentation forte est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production."
+        "A": "Le changement des distributions de données entre l'entraînement et le test.",
+        "B": "Un modèle qui s'entraîne sur plusieurs contextes simultanément.",
+        "C": "L'utilisation de transfert d'apprentissage pour améliorer les performances.",
+        "D": "La modification de l'algorithme d'apprentissage en temps réel."
+      },
+      "correct_answer": "A",
+      "explanation": "Domain shift se réfère aux modifications des distributions de données entre les ensembles d'entraînement et de test. Cela peut entraîner des performances médiocres si un modèle n'est pas robuste à ces changements. Les autres options (B, C, D) concernent des pratiques ou aspects différents de l'apprentissage.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi la régularisation est-elle importante dans l'apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle aide à prévenir le surapprentissage en pénalisant les modèles trop complexes.",
+        "B": "Elle réalise le prétraitement des données brutes.",
+        "C": "Elle assure la création de nouvelles données d'entraînement.",
+        "D": "Elle garantit que toutes les entrées sont normalisées."
+      },
+      "correct_answer": "A",
+      "explanation": "La régularisation introduit des pénalités contre les modèles complexes pour prévenir le surajustement. Elle ne s'occupe pas du prétraitement (B), de la génération de données (C), ou de la normalisation des entrées (D).",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle technique est souvent utilisée pour renforcer la robustesse d'un modèle en présence de domain shift?",
+      "image_url": null,
+      "choices": {
+        "A": "Adaptation de domaine",
+        "B": "Augmentation des dimensions des données",
+        "C": "Clustering des données brutes",
+        "D": "Ensemble de données clairsemées"
+      },
+      "correct_answer": "A",
+      "explanation": "L'adaptation de domaine cherche à ajuster les modèles pour qu'ils soient plus performants malgré les changements de distribution de données. Augmenter les dimensions (B), effectuer du clustering (C), ou utiliser des données clairsemées (D) ne ciblent pas spécifiquement les problèmes liés au domain shift.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce qui caractérise une forte régularisation dans un modèle d'apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Utilisation de taux de pénalité élevés sur les termes réguliers.",
+        "B": "La création de plus de fonctionnalités d'entrée.",
+        "C": "Une adaptation à moindre coût des biais de l'ensemble de données.",
+        "D": "La minimisation de la taille des ensembles de test."
+      },
+      "correct_answer": "A",
+      "explanation": "Une forte régularisation implique des taux de pénalité élevés pour les termes réguliers, limitant donc la complexité du modèle. Les autres options (B: création de fonctionnalités, C: biais, D: taille du test) ne se rapportent pas à la régularisation.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans un environnement avec un domain shift, quel est un inconvénient clé d'un modèle non robuste?",
+      "image_url": null,
+      "choices": {
+        "A": "Il peut générer des prédictions fiables sur des données non vues.",
+        "B": "Il peut na pas s'adapter à de nouvelles classifications.",
+        "C": "Il se surajuste aux données d'entraînement.",
+        "D": "Il réduit le nombre de caractéristiques utilisées."
       },
       "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie stabilit\u00e9 \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (domain shift sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux decide...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Robustesse et g\u00e9n\u00e9ralisation, regularisation est mobilise pour supporter des arbitrages de production ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Robustesse et g\u00e9n\u00e9ralisation, stabilit\u00e9 est mobilise pour supporter des arbitrages de production ; l'u...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role d'augmentation forte est de supporter des arbitrages de production ; l'utiliser correctement perme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec regularisation dans 'Robustesse et g\u00e9n\u00e9ralisation' ?",
-      "image_url": "apprentissage-semi-supervise_robustesse_et_generalisation_regularisation_2.png",
-      "choices": {
-        "A": "stabilit\u00e9 sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Robustesse et g\u00e9n\u00e9ralisation, domain shift est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production.",
-        "C": "Dans Robustesse et g\u00e9n\u00e9ralisation, regularisation est mobilise pour supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance.",
-        "D": "Le role d'augmentation forte est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de regularisation dans Robustesse et g\u00e9n\u00e9ralisation. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (stabilit\u00e9 sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider q...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Robustesse et g\u00e9n\u00e9ralisation, domain shift est mobilise pour supporter des arbitrages de production ; ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Robustesse et g\u00e9n\u00e9ralisation, regularisation est mobilise pour supporter des arbitrages de production ...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role d'augmentation forte est de supporter des arbitrages de production ; l'utiliser correctement perme...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Robustesse et g\u00e9n\u00e9ralisation', quel commentaire du schema traduit le mieux le role de domain shift ?",
-      "image_url": "apprentissage-semi-supervise_robustesse_et_generalisation_domain_shift_2.png",
-      "choices": {
-        "A": "Dans Robustesse et g\u00e9n\u00e9ralisation, augmentation forte est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production.",
-        "B": "Le role de stabilit\u00e9 est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production.",
-        "C": "regularisation sert a supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance pour guider une d\u00e9cision exploitable.",
-        "D": "domain shift sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de domain shift dans Robustesse et g\u00e9n\u00e9ralisation. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Robustesse et g\u00e9n\u00e9ralisation, augmentation forte est mobilise pour supporter des arbitrages de product...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de stabilit\u00e9 est de supporter des arbitrages de production ; l'utiliser correctement permet de mieu...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (regularisation sert a supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en c...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (domain shift sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux decide...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Un modèle non robuste en présence d'un domain shift est susceptible de surajuster les données d'entraînement, échouant sur de nouvelles instances non vues. Les autres problèmes (A, B, D) sont moins courants ou non pertinents dans ce contexte.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "domain shift: pourquoi ce concept est-il crucial pour une \u00e9quipe sante dans 'Robustesse et g\u00e9n\u00e9ralisation' ?",
+      "question": "Quelle stratégie peut minimiser l'impact du domain shift lorsqu'on déploie un modèle?",
       "image_url": null,
       "choices": {
-        "A": "Le role de regularisation est de supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance.",
-        "B": "Le role de domain shift est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production.",
-        "C": "augmentation forte sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Robustesse et g\u00e9n\u00e9ralisation, stabilit\u00e9 est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production."
+        "A": "Mise à jour continue avec de nouvelles données sur l'environnement de déploiement.",
+        "B": "Augmentation du compteur de couches dans le réseau de neurones.",
+        "C": "Supprimer les prédicteurs ayant des corrélations faibles.",
+        "D": "Augmentation de la régularisation des couches cachées."
       },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie domain shift \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de regularisation est de supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echan...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de domain shift est de supporter des arbitrages de production ; l'utiliser correctement permet de m...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (augmentation forte sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Robustesse et g\u00e9n\u00e9ralisation, stabilit\u00e9 est mobilise pour supporter des arbitrages de production ; l'u...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La mise à jour continue avec de nouvelles données sur l'environnement de déploiement permet d'adapter le modèle aux nouveaux contextes et réduire l'impact du domain shift. Les autres options (B, C, D) ne ciblent pas directement le problème du domain shift.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Robustesse et g\u00e9n\u00e9ralisation', quel est le principal mode d'echec quand domain shift est mal applique ?",
+      "question": "Quelle approche de régularisation est souvent utilisée pour prévenir le surapprentissage dans le deep learning semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Si domain shift est mal utilise, on observe souvent optimiser domain shift en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour d'augmentation forte est optimiser augmentation forte en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Un risque classique avec stabilit\u00e9 est d'optimiser stabilit\u00e9 en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Si regularisation est mal utilise, on observe souvent optimiser regularisation en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Dropout",
+        "B": "Détendez les poids",
+        "C": "Interpolation linéaire",
+        "D": "Surcharge de nœuds"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de domain shift. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si domain shift est mal utilise, on observe souvent optimiser domain shift en silo et introduire des modes ...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour d'augmentation forte est optimiser augmentation forte en silo et introduire des ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec stabilit\u00e9 est d'optimiser stabilit\u00e9 en silo et introduire des modes d'echec cache...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si regularisation est mal utilise, on observe souvent optimiser regularisation en silo et introduire des mo...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec augmentation forte dans 'Robustesse et g\u00e9n\u00e9ralisation' ?",
-      "image_url": "apprentissage-semi-supervise_robustesse_et_generalisation_augmentation_forte_2.png",
-      "choices": {
-        "A": "Dans Robustesse et g\u00e9n\u00e9ralisation, regularisation est mobilise pour supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance.",
-        "B": "Dans Robustesse et g\u00e9n\u00e9ralisation, augmentation forte est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production.",
-        "C": "Le role de stabilit\u00e9 est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production.",
-        "D": "domain shift sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'augmentation forte dans Robustesse et g\u00e9n\u00e9ralisation. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Robustesse et g\u00e9n\u00e9ralisation, regularisation est mobilise pour supporter des arbitrages de production ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Robustesse et g\u00e9n\u00e9ralisation, augmentation forte est mobilise pour supporter des arbitrages de product...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de stabilit\u00e9 est de supporter des arbitrages de production ; l'utiliser correctement permet de mieu...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (domain shift sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux decide...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le Dropout est une technique de régularisation commune qui désactive aléatoirement des nœuds dans un réseau de neurones pour réduire le surapprentissage. Les autres choix (B, C, D) ne constituent pas des méthodes de régularisation commune.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour un cas operationnel de 'Robustesse et g\u00e9n\u00e9ralisation', quel exemple met stabilit\u00e9 au c\u0153ur de la d\u00e9cision ?",
+      "question": "Quelle est une méthode courante pour quantifier la stabilité d'un modèle semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Pendant une revue pre-deploiement, stabilit\u00e9 est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production tout en surveillant le risque d'optimiser stabilit\u00e9 en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Dans une revue pre-deploiement de Robustesse et g\u00e9n\u00e9ralisation, l'\u00e9quipe applique augmentation forte pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production.",
-        "C": "En contexte r\u00e9el sur Robustesse et g\u00e9n\u00e9ralisation, domain shift est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production.",
-        "D": "Pendant une revue pre-deploiement, regularisation est utile pour supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance tout en surveillant le risque d'optimiser regularisation en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Cross-validation",
+        "B": "Test de permutation",
+        "C": "Analyse spectrale",
+        "D": "Réseau bayésien"
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car stabilit\u00e9 y sert de levier de d\u00e9cision principal dans Robustesse et g\u00e9n\u00e9ralisation. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une revue pre-deploiement, stabilit\u00e9 est utile pour supporter des arbitrages de production ; l'util...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une revue pre-deploiement de Robustesse et g\u00e9n\u00e9ralisation, l'\u00e9quipe applique augmentation forte pour s...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Robustesse et g\u00e9n\u00e9ralisation, domain shift est choisi afin de supporter des arbitrages...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une revue pre-deploiement, regularisation est utile pour supporter des arbitrages de production ; a...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La Cross-validation permet d'évaluer comment un modèle réagit à la variation de l'ensemble de données, quantifiant ainsi sa stabilité. Les autres méthodes (B, C, D) ne sont pas spécifiquement utilisées pour mesurer la stabilité.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment l'apprentissage par transduction peut-il atténuer l'effet d'un 'domain shift'?",
+      "image_url": null,
+      "choices": {
+        "A": "En adaptant directement le modèle aux données cibles.",
+        "B": "En augmentant l'entropie des sorties prédictives.",
+        "C": "En se concentrant uniquement sur les données d'entraînement.",
+        "D": "En élargissant l'espace des caractéristiques d'entrée."
+      },
+      "correct_answer": "A",
+      "explanation": "L'apprentissage par transduction se focalise sur une généralisation directe aux données cibles, aidant à gérer les changements de domaine. Les autres choix (B, C, D) ne traitent pas spécifiquement des problèmes de domain shift au travers de la transduction.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la limitation principale d'une surexploitation de l'augmentation forte dans les modèles semi-supervisés?",
+      "image_url": null,
+      "choices": {
+        "A": "Les transformations artificielles peuvent ne pas toujours refléter les cas réels.",
+        "B": "L'augmentation forte entraine un biais systématique vers les données étiquetées.",
+        "C": "Elle conduit à une diminution constante de la régularisation nécessaire.",
+        "D": "Elle nécessite toujours des labels d'entrainement experts."
+      },
+      "correct_answer": "A",
+      "explanation": "L'augmentation forte repose sur la création de variantes synthétiques qui peuvent ne pas représenter fidèlement le monde réel. Le biais (B), la régularisation (C), et la nécessité de labels experts (D) ne sont pas des limitations fondamentalement liées à cette approche.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pour quelle raison un modèle robuste est-il moins affecté par des distributions de données non prévues (domain shift)?",
+      "image_url": null,
+      "choices": {
+        "A": "Il est capable de généraliser grâce à des régularisations adéquates.",
+        "B": "Il ignore les nouvelles données jusqu'à une reformation complète.",
+        "C": "Il privilégie les échantillons déjà étiquetés.",
+        "D": "Il est totalement indépendant des données d'entraînement initiales."
+      },
+      "correct_answer": "A",
+      "explanation": "Un modèle robuste peut généraliser les résultats en utilisant des techniques de régularisation, permettant une meilleure adaptation au domain shift. Les solutions B, C, D n'offrent aucune mesure efficace contre le domain shift.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un avantage d'utiliser la contrainte de Laplacien pour renforcer la stabilité en apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Cela exploite la structure géométrique des données.",
+        "B": "Elle réduit la dimensionnalité des données.",
+        "C": "Elle maximise la covariance entre les échantillons.",
+        "D": "Elle élimine la nécessité de toute donnée étiquetée."
+      },
+      "correct_answer": "A",
+      "explanation": "La contrainte de Laplacien tire parti de la structure géométrique des données, liant étroitement les points de données voisins, ce qui améliore la stabilité. Les autres choix (B, C, D) ne se rapportent pas correctement à l'action des contraintes de Laplacien.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle implication a un réglage incorrect des hyperparamètres de régularisation en apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Cela peut entraîner un modèle sous-ajusté ou sur-ajusté.",
+        "B": "Cela rend impossible la normalisation des données d'entrée.",
+        "C": "Cela évite d'élargir la capacité de l'ensemble de validation.",
+        "D": "Cela conduit toujours à un modèle convergent."
+      },
+      "correct_answer": "A",
+      "explanation": "Un mauvais réglage des hyperparamètres de régularisation peut mener à des modèles sous-ajustés ou sur-ajustés. Les autres réponses (B, C, D) ne sont pas des résultats liés aux ajustements des hyperparamètres de régularisation.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel rôle joue le 'consistency regularization' dans l'apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Il maintient des prédictions similaires sur des perturbations mineures des données.",
+        "B": "Il se concentre sur l'augmentation de biases structurels.",
+        "C": "Il maximise la divergence de prédiction entre les échantillons étiquetés.",
+        "D": "Il désactive artificiellement les nœuds durant l'entraînement."
+      },
+      "correct_answer": "A",
+      "explanation": "Le 'consistency regularization' force le modèle à donner des prédictions invariantes même lorsque de légères perturbations sont appliquées. Les autres options sont incorrectes ou sans rapport: B se concentre sur les biais, C cherche la divergence, D décrit le dropout.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quand devrait-on particulièrement envisager l'utilisation de l'adaptation de domaine?",
+      "image_url": null,
+      "choices": {
+        "A": "Lorsqu'il y a une différence notable entre les distributions d'entraînement et de test.",
+        "B": "Lorsque les données étiquetées sont abondantes et facilement disponibles.",
+        "C": "Lorsque l'architecture d'apprentissage est déjà optimisée au maximum.",
+        "D": "Lorsqu'il n'y a pas de donnée cible définie."
+      },
+      "correct_answer": "A",
+      "explanation": "L'adaptation de domaine est utilisée pour ajuster un modèle lorsque les distributions des données d'entraînement et de test diffèrent. B est incorrect car l'abondance de données étiquetées réduit souvent le besoin. C et D ne justifient pas l'utilisation de l'adaptation de domaine.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment peut-on réduire le domain shift en modifiant la procédure d'échantillonnage?",
+      "image_url": null,
+      "choices": {
+        "A": "En utilisant un échantillonnage stratifié qui reflète les distributions des classes cibles.",
+        "B": "En maximisant le nombre d'échantillons de très peu de classes dominantes.",
+        "C": "En rééchantillonnant uniquement les données étiquetées.",
+        "D": "En rendant l'échantillonnage totalement aléatoire à chaque itération."
+      },
+      "correct_answer": "A",
+      "explanation": "Un échantillonnage stratifié visant à égaliser les distributions de classes entre les ensembles d'entraînement et de test aide à réduire le domain shift. B, C, D ne résolvent pas spécifiquement les problèmes de décalage de domaine.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une approche efficace pour éviter le surapprentissage causé par une forte augmentation dans le contexte d'un domain shift?",
+      "image_url": null,
+      "choices": {
+        "A": "Combiner l'augmentation forte avec une validation croisée rigoureuse.",
+        "B": "Augmenter uniquement les classes les moins représentées dans le jeu de données.",
+        "C": "Diminuer la régularisation des dernières couches du modèle.",
+        "D": "Encadrer chaque itération par une élimination des sorties non fiables."
+      },
+      "correct_answer": "A",
+      "explanation": "Combiner une augmentation forte avec une validation croisée aide à identifier les risques de surapprentissage et à ajuster le modèle en conséquence. B n'est pas suffisant, C diminue la robustesse, et D est une opération qui peut perturber l'apprentissage.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pour quelle raison principale utilise-t-on l'augmentation forte avec prudence dans l'apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour éviter de biaiser le modèle avec des transformations irréalistes.",
+        "B": "Pour se conformer aux limitations matérielles.",
+        "C": "Pour garantir une mémoire de modèle plus agréable.",
+        "D": "Pour assurer une convergence lente et continue du modèle."
+      },
+      "correct_answer": "A",
+      "explanation": "Une utilisation excessive de transformations irréalistes peut biaiser le modèle, rendant l'augmentation forte une stratégie potentiellement risquée si mal gérée. Les autres choix (B, C, D) ne traitent pas directement du risque associé à l'augmentation forte.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce qui peut causer une grande variabilité dans les performances des modèles semi-supervisés après un domain shift?",
+      "image_url": null,
+      "choices": {
+        "A": "Diversité dans la stratégie de régularisation adoptée.",
+        "B": "Utilisation de couches cachées de taille modérée.",
+        "C": "Augmentation du nombre de données étiquetées de façon exponentielle.",
+        "D": "Modification du schéma d'annotations pendant la formation."
+      },
+      "correct_answer": "A",
+      "explanation": "Différentes stratégies de régularisation peuvent avoir des impacts variés sur la capacité du modèle à s'adapter aux changements de domaine. B, C, D ne causent pas directement de variabilité en termes de capacité d'adaptation.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment se distingue le 'strong augmentation' du 'basic data manipulation' dans les modèles semi-supervisés?",
+      "image_url": null,
+      "choices": {
+        "A": "Le strong augmentation implique des transformations complexes et génératives.",
+        "B": "Le strong augmentation utilise exclusivement des modifications pixellaires.",
+        "C": "Le strong augmentation procède en supprimant les caractéristiques redondantes.",
+        "D": "Le strong augmentation reflète le passage à une régulation adaptative."
+      },
+      "correct_answer": "A",
+      "explanation": "Le 'strong augmentation' fait référence à l'application de transformations substantielles et génératives, impliquant des modifications plus complexes que la simple manipulation des données de base. Les autres options ne dépeignent pas précisément le concept de strong augmentation.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel effet secondaire potentiel peut avoir une mauvaise implémentation de la régularisation dans l'apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle peut entraîner une sur-pénalisation des modèles, limitant leur capacité d'apprentissage.",
+        "B": "Elle fait systématiquement disparaître le bruit présent dans les données d'entrée.",
+        "C": "Elle provoque automatiquement une normalisation unitaire des sorties.",
+        "D": "Elle bloque le protocole de communication avec l'API de test."
+      },
+      "correct_answer": "A",
+      "explanation": "Une régularisation excessivement forte peut rendre un modèle trop contraint, empêchant un apprentissage efficace. B, C, D ne sont pas directement liés aux problématiques de régularisation dans le semi-supervisé.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce que l'augmentation forte dans le context de l'apprentissage semi-supervisé ?",
+      "image_url": null,
+      "choices": {
+        "A": "Une technique où des transformations agressives sont utilisées sur des données étiquetées et non étiquetées pour aider à la robustesse du modèle.",
+        "B": "Cela consiste à augmenter uniquement les exemples étiquetés pour assurer leur pertinence.",
+        "C": "L'application de transformations minimes pour préserver la structure originale des données.",
+        "D": "La répétition excessive des mêmes données pendant l'entraînement pour améliorer la stabilité."
+      },
+      "correct_answer": "A",
+      "explanation": "L'augmentation forte utilise des transformations agressives comme rotations, retournements ou modifications de couleur pour enrichir le jeu de données et améliorer la résistance à la variance des données. B est faux car cibler uniquement les étiquetés limite l'exploitation des données non annotées. C est incorrect parce que de faibles transformations n'encouragent pas la robustesse. D est erroné car répéter les mêmes données conduit à un surapprentissage, entravant la généralisation.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une \u00e9quipe sante dans 'Robustesse et g\u00e9n\u00e9ralisation', quelle d\u00e9finition de domain shift est la plus juste ?",
+      "question": "Comment la stabilité contribue-t-elle à la généralisation dans l'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "correction iterative correspond a un levier avance en apprentissage semi supervise ; il formalise le role de correction iterative dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Robustesse et g\u00e9n\u00e9ralisation.",
-        "B": "Dans Robustesse et g\u00e9n\u00e9ralisation, shift domaine se comprend comme un levier avance en apprentissage semi supervise ; il formalise le role de shift domaine dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Robustesse et g\u00e9n\u00e9ralisation, domain shift se comprend comme un levier avance en apprentissage semi supervise ; il formalise le role de domain shift dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "label sharpening designe un levier avance en apprentissage semi supervise ; il formalise le role de label sharpening dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de domain shift dans Robustesse et g\u00e9n\u00e9ralisation, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que label sharpening, correction iterative, shift domaine restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (correction iterative correspond a un levier avance en apprentissage semi supervise ; il formalise le role d...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Robustesse et g\u00e9n\u00e9ralisation, shift domaine se comprend comme un levier avance en apprentissage semi s...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Robustesse et g\u00e9n\u00e9ralisation, domain shift se comprend comme un levier avance en apprentissage semi su...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (label sharpening designe un levier avance en apprentissage semi supervise ; il formalise le role de label s...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Robustesse et g\u00e9n\u00e9ralisation', quelle situation de terrain montre le mieux quand utiliser regularisation ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une revue pre-deploiement de Robustesse et g\u00e9n\u00e9ralisation, l'\u00e9quipe applique stabilit\u00e9 pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production.",
-        "B": "En contexte r\u00e9el sur Robustesse et g\u00e9n\u00e9ralisation, domain shift est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production.",
-        "C": "En contexte r\u00e9el sur Robustesse et g\u00e9n\u00e9ralisation, regularisation est choisi afin de supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance.",
-        "D": "Pendant une revue pre-deploiement, augmentation forte est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production tout en surveillant le risque d'optimiser augmentation forte en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car regularisation y sert de levier de d\u00e9cision principal dans Robustesse et g\u00e9n\u00e9ralisation. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une revue pre-deploiement de Robustesse et g\u00e9n\u00e9ralisation, l'\u00e9quipe applique stabilit\u00e9 pour supporter ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Robustesse et g\u00e9n\u00e9ralisation, domain shift est choisi afin de supporter des arbitrages...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Robustesse et g\u00e9n\u00e9ralisation, regularisation est choisi afin de supporter des arbitrag...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une revue pre-deploiement, augmentation forte est utile pour supporter des arbitrages de production...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Robustesse et g\u00e9n\u00e9ralisation', quel est le role le plus determinant de regularisation pour un cas marketing ?",
-      "image_url": null,
-      "choices": {
-        "A": "regularisation sert a supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Robustesse et g\u00e9n\u00e9ralisation, augmentation forte est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production.",
-        "C": "Le role de stabilit\u00e9 est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production.",
-        "D": "domain shift sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production pour guider une d\u00e9cision exploitable."
+        "A": "Elle assure que de petites perturbations des données d'entrée n'engendrent pas de changements drastiques des prédictions.",
+        "B": "Elle garantit que tous les échantillons non étiquetés sont classés correctement.",
+        "C": "Elle se concentre sur l'amélioration des performances avec des données parfaitement étiquetées uniquement.",
+        "D": "Elle augmente la complexité du modèle pour qu'il s'adapte mieux à toutes les variations possibles."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie regularisation \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (regularisation sert a supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en c...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Robustesse et g\u00e9n\u00e9ralisation, augmentation forte est mobilise pour supporter des arbitrages de product...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de stabilit\u00e9 est de supporter des arbitrages de production ; l'utiliser correctement permet de mieu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (domain shift sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux decide...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La stabilité permet à un modèle de résister aux petites perturbations des données, ce qui favorise sa robustesse et sa capacité de généralisation. B est faux car le but n'est pas l'exactitude des non-étiquetés individuellement, mais la cohérence globale. C est incorrect car cela ne concerne pas uniquement les données étiquetées. D est faux car une complexité excessive peut conduire à un surapprentissage, réduisant la généralisation.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Robustesse et g\u00e9n\u00e9ralisation', quel est le role le plus determinant d'augmentation forte pour un cas banque ?",
+      "question": "Quel rôle joue la régularisation dans la gestion du domain shift en apprentissage semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Dans Robustesse et g\u00e9n\u00e9ralisation, stabilit\u00e9 est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production.",
-        "B": "Le role de domain shift est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production.",
-        "C": "regularisation sert a supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance pour guider une d\u00e9cision exploitable.",
-        "D": "augmentation forte sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie augmentation forte \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Robustesse et g\u00e9n\u00e9ralisation, stabilit\u00e9 est mobilise pour supporter des arbitrages de production ; l'u...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de domain shift est de supporter des arbitrages de production ; l'utiliser correctement permet de m...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (regularisation sert a supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en c...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (augmentation forte sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Robustesse et g\u00e9n\u00e9ralisation', quelle situation de terrain montre le mieux quand utiliser augmentation forte ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Robustesse et g\u00e9n\u00e9ralisation, regularisation est choisi afin de supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance.",
-        "B": "En contexte r\u00e9el sur Robustesse et g\u00e9n\u00e9ralisation, augmentation forte est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production.",
-        "C": "Pendant une revue pre-deploiement, stabilit\u00e9 est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production tout en surveillant le risque d'optimiser stabilit\u00e9 en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Dans une revue pre-deploiement de Robustesse et g\u00e9n\u00e9ralisation, l'\u00e9quipe applique domain shift pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car augmentation forte y sert de levier de d\u00e9cision principal dans Robustesse et g\u00e9n\u00e9ralisation. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Robustesse et g\u00e9n\u00e9ralisation, regularisation est choisi afin de supporter des arbitrag...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Robustesse et g\u00e9n\u00e9ralisation, augmentation forte est choisi afin de supporter des arbi...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une revue pre-deploiement, stabilit\u00e9 est utile pour supporter des arbitrages de production ; l'util...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une revue pre-deploiement de Robustesse et g\u00e9n\u00e9ralisation, l'\u00e9quipe applique domain shift pour support...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "stabilit\u00e9: quel risque est le plus directement lie a son mauvais usage en production dans 'Robustesse et g\u00e9n\u00e9ralisation' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec regularisation est d'optimiser regularisation en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Un risque classique avec stabilit\u00e9 est d'optimiser stabilit\u00e9 en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Si augmentation forte est mal utilise, on observe souvent optimiser augmentation forte en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour de domain shift est optimiser domain shift en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de stabilit\u00e9. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec regularisation est d'optimiser regularisation en silo et introduire des modes d'e...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec stabilit\u00e9 est d'optimiser stabilit\u00e9 en silo et introduire des modes d'echec cache...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si augmentation forte est mal utilise, on observe souvent optimiser augmentation forte en silo et introduir...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de domain shift est optimiser domain shift en silo et introduire des modes d'eche...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "stabilit\u00e9: dans un cas assurance, quelle interpretation correspond le mieux au schema ML de 'Robustesse et g\u00e9n\u00e9ralisation' ?",
-      "image_url": "apprentissage-semi-supervise_robustesse_et_generalisation_stabilite_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur regularisation: les indices orientent vers supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance.",
-        "B": "Le schema illustre une d\u00e9cision basee sur stabilit\u00e9: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production.",
-        "C": "Lecture du visuel: augmentation forte est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production dans Robustesse et g\u00e9n\u00e9ralisation.",
-        "D": "Le signal visible est coh\u00e9rent avec domain shift, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de stabilit\u00e9: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur regularisation: les indices orientent vers supporter des arbitrag...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur stabilit\u00e9: les indices orientent vers supporter des arbitrages de...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: augmentation forte est mobilise pour supporter des arbitrages de production ; l'utiliser...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec domain shift, car l'objectif est supporter des arbitrages de production...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Robustesse et g\u00e9n\u00e9ralisation', quelle erreur autour de regularisation est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec augmentation forte est d'optimiser augmentation forte en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Si stabilit\u00e9 est mal utilise, on observe souvent optimiser stabilit\u00e9 en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de domain shift est optimiser domain shift en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour de regularisation est optimiser regularisation en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de regularisation. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec augmentation forte est d'optimiser augmentation forte en silo et introduire des m...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si stabilit\u00e9 est mal utilise, on observe souvent optimiser stabilit\u00e9 en silo et introduire des modes d'eche...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour de domain shift est optimiser domain shift en silo et introduire des modes d'eche...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour de regularisation est optimiser regularisation en silo et introduire des modes d'...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "stabilit\u00e9: dans 'Robustesse et g\u00e9n\u00e9ralisation', un schema met en evidence ce comportement. Quelle lecture est la plus juste ?",
-      "image_url": "apprentissage-semi-supervise_robustesse_et_generalisation_stabilite_2.png",
-      "choices": {
-        "A": "Le role de stabilit\u00e9 est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production.",
-        "B": "augmentation forte sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production pour guider une d\u00e9cision exploitable.",
-        "C": "Dans Robustesse et g\u00e9n\u00e9ralisation, domain shift est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production.",
-        "D": "Le role de regularisation est de supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance."
+        "A": "Elle évite le surajustement aux données de formation en ajoutant une pénalité basée sur la complexité du modèle.",
+        "B": "Elle assure l'égalité de distribution entre les données de formation et de test.",
+        "C": "Elle oblige le modèle à ignorer complètement les signaux des données de test pour éviter le surajustement.",
+        "D": "Elle divise le jeu de données initial en plusieurs clusters homogènes pour faciliter la formation."
       },
       "correct_answer": "A",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de stabilit\u00e9 dans Robustesse et g\u00e9n\u00e9ralisation. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est correcte (Le role de stabilit\u00e9 est de supporter des arbitrages de production ; l'utiliser correctement permet de mieu...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. B est moins pertinente (augmentation forte sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (Dans Robustesse et g\u00e9n\u00e9ralisation, domain shift est mobilise pour supporter des arbitrages de production ; ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (Le role de regularisation est de supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echan...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "regularisation: quelle proposition en donne la meilleure d\u00e9finition dans 'Robustesse et g\u00e9n\u00e9ralisation' (contexte marketing) ?",
-      "image_url": null,
-      "choices": {
-        "A": "covariate shift designe un levier avance en apprentissage semi supervise ; il formalise le role de covariate shift dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "regularisation designe un levier avance en apprentissage semi supervise ; il contraint la complexite du modele pour limiter le surapprentissage.",
-        "C": "correction iterative correspond a un levier avance en apprentissage semi supervise ; il formalise le role de correction iterative dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Robustesse et g\u00e9n\u00e9ralisation.",
-        "D": "Dans Robustesse et g\u00e9n\u00e9ralisation, shift domaine se comprend comme un levier avance en apprentissage semi supervise ; il formalise le role de shift domaine dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de regularisation dans Robustesse et g\u00e9n\u00e9ralisation, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que correction iterative, shift domaine, covariate shift restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (covariate shift designe un levier avance en apprentissage semi supervise ; il formalise le role de covariat...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (regularisation designe un levier avance en apprentissage semi supervise ; il contraint la complexite du mod...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (correction iterative correspond a un levier avance en apprentissage semi supervise ; il formalise le role d...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans Robustesse et g\u00e9n\u00e9ralisation, shift domaine se comprend comme un levier avance en apprentissage semi s...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "augmentation forte: quelle proposition en donne la meilleure d\u00e9finition dans 'Robustesse et g\u00e9n\u00e9ralisation' (contexte banque) ?",
-      "image_url": null,
-      "choices": {
-        "A": "augmentation forte designe un levier avance en apprentissage semi supervise ; il formalise le role d'augmentation forte dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "filtre de confiance correspond a un levier avance en apprentissage semi supervise ; il formalise le role de filtre de confiance dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Robustesse et g\u00e9n\u00e9ralisation.",
-        "C": "Dans Robustesse et g\u00e9n\u00e9ralisation, temperature se comprend comme un levier avance en apprentissage semi supervise ; il formalise le role de temperature dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "label sharpening designe un levier avance en apprentissage semi supervise ; il formalise le role de label sharpening dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'augmentation forte dans Robustesse et g\u00e9n\u00e9ralisation, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que filtre de confiance, temperature, label sharpening restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (augmentation forte designe un levier avance en apprentissage semi supervise ; il formalise le role d'augme...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (filtre de confiance correspond a un levier avance en apprentissage semi supervise ; il formalise le role de...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Robustesse et g\u00e9n\u00e9ralisation, temperature se comprend comme un levier avance en apprentissage semi sup...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (label sharpening designe un levier avance en apprentissage semi supervise ; il formalise le role de label s...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Robustesse et g\u00e9n\u00e9ralisation', quelle erreur autour d'augmentation forte est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si domain shift est mal utilise, on observe souvent optimiser domain shift en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de regularisation est optimiser regularisation en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour d'augmentation forte est optimiser augmentation forte en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Un risque classique avec stabilit\u00e9 est d'optimiser stabilit\u00e9 en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'augmentation forte. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si domain shift est mal utilise, on observe souvent optimiser domain shift en silo et introduire des modes ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour de regularisation est optimiser regularisation en silo et introduire des modes d'...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour d'augmentation forte est optimiser augmentation forte en silo et introduire des ...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec stabilit\u00e9 est d'optimiser stabilit\u00e9 en silo et introduire des modes d'echec cache...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Robustesse et g\u00e9n\u00e9ralisation' et en contexte marketing, quelle interpretation du schema appuie le mieux l'analyse de regularisation ?",
-      "image_url": "apprentissage-semi-supervise_robustesse_et_generalisation_regularisation_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur augmentation forte: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production.",
-        "B": "Lecture du visuel: stabilit\u00e9 est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production dans Robustesse et g\u00e9n\u00e9ralisation.",
-        "C": "Le signal visible est coh\u00e9rent avec domain shift, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production.",
-        "D": "Le signal visible est coh\u00e9rent avec regularisation, car l'objectif est supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance."
-      },
-      "correct_answer": "D",
-      "explanation": "Les indices visuels vont dans le sens de regularisation: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur augmentation forte: les indices orientent vers supporter des arbi...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Lecture du visuel: stabilit\u00e9 est mobilise pour supporter des arbitrages de production ; l'utiliser correcte...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le signal visible est coh\u00e9rent avec domain shift, car l'objectif est supporter des arbitrages de production...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est correcte (Le signal visible est coh\u00e9rent avec regularisation, car l'objectif est supporter des arbitrages de producti...) car la lecture visuelle colle au signal principal observe. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Robustesse et g\u00e9n\u00e9ralisation' et en contexte banque, quelle interpretation du schema appuie le mieux l'analyse d'augmentation forte ?",
-      "image_url": "apprentissage-semi-supervise_robustesse_et_generalisation_augmentation_forte_1.png",
-      "choices": {
-        "A": "Lecture du visuel: domain shift est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production dans Robustesse et g\u00e9n\u00e9ralisation.",
-        "B": "Le signal visible est coh\u00e9rent avec regularisation, car l'objectif est supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance.",
-        "C": "Le signal visible est coh\u00e9rent avec augmentation forte, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production.",
-        "D": "Le schema illustre une d\u00e9cision basee sur stabilit\u00e9: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Les indices visuels vont dans le sens d'augmentation forte: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Lecture du visuel: domain shift est mobilise pour supporter des arbitrages de production ; l'utiliser corre...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Le signal visible est coh\u00e9rent avec regularisation, car l'objectif est supporter des arbitrages de producti...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est correcte (Le signal visible est coh\u00e9rent avec augmentation forte, car l'objectif est supporter des arbitrages de prod...) car la lecture visuelle colle au signal principal observe. D'est moins pertinente (Le schema illustre une d\u00e9cision basee sur stabilit\u00e9: les indices orientent vers supporter des arbitrages de...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Observation visuelle (Robustesse et g\u00e9n\u00e9ralisation) - pour un contexte sante, quelle lecture du schema est la plus pertinente pour domain shift ?",
-      "image_url": "apprentissage-semi-supervise_robustesse_et_generalisation_domain_shift_1.png",
-      "choices": {
-        "A": "Lecture du visuel: domain shift est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production dans Robustesse et g\u00e9n\u00e9ralisation.",
-        "B": "Le signal visible est coh\u00e9rent avec augmentation forte, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer augmentation forte en production.",
-        "C": "Le schema illustre une d\u00e9cision basee sur stabilit\u00e9: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer stabilit\u00e9 en production.",
-        "D": "Lecture du visuel: regularisation est mobilise pour supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance dans Robustesse et g\u00e9n\u00e9ralisation."
-      },
-      "correct_answer": "A",
-      "explanation": "Les indices visuels vont dans le sens de domain shift: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est correcte (Lecture du visuel: domain shift est mobilise pour supporter des arbitrages de production ; l'utiliser corre...) car la lecture visuelle colle au signal principal observe. B est moins pertinente (Le signal visible est coh\u00e9rent avec augmentation forte, car l'objectif est supporter des arbitrages de prod...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le schema illustre une d\u00e9cision basee sur stabilit\u00e9: les indices orientent vers supporter des arbitrages de...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Lecture du visuel: regularisation est mobilise pour supporter des arbitrages de production ; am\u00e9liorer la s...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Robustesse et g\u00e9n\u00e9ralisation', quel concept repond le mieux a cet objectif: supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance.",
-      "image_url": null,
-      "choices": {
-        "A": "La finalit\u00e9 de regularisation est de supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors echantillon en controlant la variance.",
-        "B": "Quand l'objectif est de supporter des arbitrages de production ; augmenter la performance avec peu de labels humains, degradation des pseudo-labels est le concept associe.",
-        "C": "drift de confiance: objectif principal supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "D": "erreurs silencieuses est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer erreurs silencieuses en production, ce qui correspond a usage operationnel d'erreurs silencieuses."
-      },
-      "correct_answer": "A",
-      "explanation": "La bonne reponse est regularisation: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans Robustesse et g\u00e9n\u00e9ralisation. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est correcte (La finalit\u00e9 de regularisation est de supporter des arbitrages de production ; am\u00e9liorer la stabilit\u00e9 hors e...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. B est moins pertinente (Quand l'objectif est de supporter des arbitrages de production ; augmenter la performance avec peu de label...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. C'est moins pertinente (drift de confiance: objectif principal supporter des arbitrages de production ; detecter rapidement une per...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. D'est moins pertinente (erreurs silencieuses est utilise pour supporter des arbitrages de production ; l'utiliser correctement perm...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Objectif (Robustesse et g\u00e9n\u00e9ralisation) - supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production. Quel concept est le plus coh\u00e9rent ?",
-      "image_url": null,
-      "choices": {
-        "A": "drift de confiance: objectif principal supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "B": "domain shift est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer domain shift en production, ce qui correspond a usage operationnel de domain shift.",
-        "C": "La finalit\u00e9 de mitigation est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mitigation en production.",
-        "D": "Quand l'objectif est de supporter des arbitrages de production ; augmenter la performance avec peu de labels humains, degradation des pseudo-labels est le concept associe."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est domain shift: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans Robustesse et g\u00e9n\u00e9ralisation. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est moins pertinente (drift de confiance: objectif principal supporter des arbitrages de production ; detecter rapidement une per...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. B est correcte (domain shift est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mi...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. C'est moins pertinente (La finalit\u00e9 de mitigation est de supporter des arbitrages de production ; l'utiliser correctement permet de...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. D'est moins pertinente (Quand l'objectif est de supporter des arbitrages de production ; augmenter la performance avec peu de label...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La régularisation aide à éviter le surajustement aux données de formation en pénalisant des modèles trop complexes, ce qui améliore la capacité à généraliser face au domain shift. B est faux car on ne peut pas contrôler directement la distribution des données. C est incorrect car ignorer les signaux de test ne permet pas d'informer la généralisation. D est erroné puisque la segmentation en clusters n'est pas une tâche de la régularisation mais une technique de prétraitement.",
       "difficulty": "hard"
     }
   ]

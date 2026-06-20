@@ -4,241 +4,241 @@
   "module": "Mismatch de distribution",
   "questions": [
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec adaptation dans 'Mismatch de distribution' ?",
-      "image_url": "apprentissage-semi-supervise_mismatch_de_distribution_adaptation_2.png",
+      "type": "text",
+      "question": "Qu'est-ce qu'un 'shift de domaine' dans le contexte de l'apprentissage semi-supervisé?",
+      "image_url": null,
       "choices": {
-        "A": "covariate shift sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer covariate shift en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Mismatch de distribution, alignement de distributions est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alignement de distributions en production.",
-        "C": "Dans Mismatch de distribution, adaptation est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer adaptation en production.",
-        "D": "Le role de shift domaine est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer shift domaine en production."
+        "A": "Un changement dans la distribution des données d'entraînement par rapport aux données de test.",
+        "B": "Une augmentation du bruit dans les données d'entraînement.",
+        "C": "Une diminution de la taille de l'ensemble de données d'entraînement.",
+        "D": "Une modification de l'architecture du modèle utilisé pour l'apprentissage."
       },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'adaptation dans Mismatch de distribution. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (covariate shift sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux dec...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Mismatch de distribution, alignement de distributions est mobilise pour supporter des arbitrages de pr...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Mismatch de distribution, adaptation est mobilise pour supporter des arbitrages de production ; l'util...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de shift domaine est de supporter des arbitrages de production ; l'utiliser correctement permet de ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Un 'shift de domaine' se réfère à une situation où la distribution des données d'entraînement diffère de celle des données de test, ce qui peut causer une baisse des performances du modèle. Le bruit (B) et la taille des données (C) ne sont pas directement liés au shift de domaine, et la modification de l'architecture du modèle (D) ne concerne pas la distribution des données.",
       "difficulty": "medium"
     },
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec shift domaine dans 'Mismatch de distribution' ?",
-      "image_url": "apprentissage-semi-supervise_mismatch_de_distribution_shift_domaine_2.png",
+      "type": "text",
+      "question": "Comment le 'covariate shift' peut-il être problématique pour la généralisation d'un modèle?",
+      "image_url": null,
       "choices": {
-        "A": "Dans Mismatch de distribution, adaptation est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer adaptation en production.",
-        "B": "Dans Mismatch de distribution, shift domaine est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer shift domaine en production.",
-        "C": "Le role de covariate shift est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer covariate shift en production.",
-        "D": "alignement de distributions sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alignement de distributions en production pour guider une d\u00e9cision exploitable."
+        "A": "Les prédictions du modèle sont biaisées car les covariantes en entrée ont des distributions différentes entre l'entraînement et le test.",
+        "B": "Le modèle a une complexité algorithmique trop élevée.",
+        "C": "Il y a une sur-représentation de certaines classes dans les données d'entraînement.",
+        "D": "Les données de test contiennent des classes non vues pendant l'entraînement."
+      },
+      "correct_answer": "A",
+      "explanation": "Le 'covariate shift' se produit lorsque la distribution des caractéristiques en entrée change entre l'entraînement et le test, ce qui peut biaiser les prédictions. La complexité algorithmique (B) et la sur-représentation de classes (C) sont des problèmes distincts. Les classes non vues (D) touchent davantage au problème de 'shift de domaine'.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le rôle de l'alignement de distributions dans l'adaptation de domaine?",
+      "image_url": null,
+      "choices": {
+        "A": "Réduire la divergence entre les distributions source et cible pour améliorer la robustesse du modèle.",
+        "B": "Augmenter la taille de l'ensemble de données pour offrir plus d'exemples d'entraînement.",
+        "C": "Supprimer les outliers dans les données pour obtenir une meilleure performance modèle.",
+        "D": "Changer le modèle de machine learning utilisé pour une meilleure précision."
+      },
+      "correct_answer": "A",
+      "explanation": "L'alignement des distributions vise à réduire la divergence entre la distribution source et cible, ce qui facilite l'adaptation de domaine. Augmenter la taille (B), supprimer les outliers (C) et changer le modèle (D) ne traitent pas directement les différences de distribution.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi l'adaptation de domaine est-elle importante en apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle permet de transférer un modèle pré-entraîné d'un domaine source à un domaine cible ayant peu de labels.",
+        "B": "Elle augmente la vitesse d'entraînement du modèle.",
+        "C": "Elle simplifie la structure du modèle sans perte de performance.",
+        "D": "Elle réduit le besoin de données d'entrée bruyantes."
+      },
+      "correct_answer": "A",
+      "explanation": "L'adaptation de domaine permet de tirer parti des connaissances acquises dans un domaine riche en données pour un domaine cible avec peu de données labellisées. Elle ne vise pas à optimiser la vitesse d'entraînement (B), simplifier le modèle (C) ou réduire le bruit (D).",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel problème spécifiquement le 'covariate shift' cherche-t-il à résoudre?",
+      "image_url": null,
+      "choices": {
+        "A": "Différence de distribution des covariantes entre entrainement et test.",
+        "B": "Imbalance de classes lors de l'apprentissage.",
+        "C": "Différence dans la complexité des données entre les ensembles d'entraînement.",
+        "D": "Manque de diversité dans les classes cibles."
+      },
+      "correct_answer": "A",
+      "explanation": "Le 'covariate shift' cible la différence de distribution des covariantes entre les ensembles d'entraînement et de test. L'imbalance de classes (B), la complexité des données (C) et la diversité (D) sont des problèmes différents.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un symptôme typique d'un 'shift de domaine' non corrigé?",
+      "image_url": null,
+      "choices": {
+        "A": "Performance diminuée du modèle sur les données de test.",
+        "B": "Augmentation de la complexité du modèle au-delà de sa capacité de généralisation.",
+        "C": "Accélération inattendue du temps d'entraînement.",
+        "D": "Incapacité à détecter des outliers dans le dataset."
+      },
+      "correct_answer": "A",
+      "explanation": "Un 'shift de domaine' non adressé entraîne souvent une baisse des performances sur les données de test. La complexité du modèle (B), le temps d'entraînement (C), et la détection d'outliers (D) ne sont pas des conséquences directes d'un 'shift de domaine'.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle méthode n'est PAS couramment utilisée pour l'adaptation de domaine?",
+      "image_url": null,
+      "choices": {
+        "A": "Augmentation des données dans le domaine cible.",
+        "B": "Réduction des caractéristiques inutiles.",
+        "C": "Transfert d'apprentissage avec congruence des caractéristiques.",
+        "D": "Apprentissage de l'alignement des distributions grâce aux réseaux adverses."
       },
       "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de shift domaine dans Mismatch de distribution. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Mismatch de distribution, adaptation est mobilise pour supporter des arbitrages de production ; l'util...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Mismatch de distribution, shift domaine est mobilise pour supporter des arbitrages de production ; l'u...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de covariate shift est de supporter des arbitrages de production ; l'utiliser correctement permet d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (alignement de distributions sert a supporter des arbitrages de production ; l'utiliser correctement permet ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Mismatch de distribution' (e-commerce), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment covariate shift ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Mismatch de distribution, versioning se comprend comme un levier avance en apprentissage semi supervise ; il formalise le role de versioning dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "validation humaine designe un levier avance en apprentissage semi supervise ; il structure l'\u00e9valuation hors entrainement pour estimer la g\u00e9n\u00e9ralisation r\u00e9elle.",
-        "C": "rollback correspond a un levier avance en apprentissage semi supervise ; il formalise le role de rollback dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Mismatch de distribution.",
-        "D": "covariate shift correspond a un levier avance en apprentissage semi supervise ; il formalise le role de covariate shift dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Mismatch de distribution."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de covariate shift dans Mismatch de distribution, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que versioning, validation humaine, rollback restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Mismatch de distribution, versioning se comprend comme un levier avance en apprentissage semi supervis...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (validation humaine designe un levier avance en apprentissage semi supervise ; il structure l'\u00e9valuation hor...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (rollback correspond a un levier avance en apprentissage semi supervise ; il formalise le role de rollback d...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (covariate shift correspond a un levier avance en apprentissage semi supervise ; il formalise le role de cov...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Mismatch de distribution', quelle situation de terrain montre le mieux quand utiliser adaptation ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une revue pre-deploiement de Mismatch de distribution, l'\u00e9quipe applique covariate shift pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer covariate shift en production.",
-        "B": "En contexte r\u00e9el sur Mismatch de distribution, alignement de distributions est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alignement de distributions en production.",
-        "C": "En contexte r\u00e9el sur Mismatch de distribution, adaptation est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer adaptation en production.",
-        "D": "Pendant une revue pre-deploiement, shift domaine est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer shift domaine en production tout en surveillant le risque d'optimiser shift domaine en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car adaptation y sert de levier de d\u00e9cision principal dans Mismatch de distribution. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une revue pre-deploiement de Mismatch de distribution, l'\u00e9quipe applique covariate shift pour supporte...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Mismatch de distribution, alignement de distributions est choisi afin de supporter des...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Mismatch de distribution, adaptation est choisi afin de supporter des arbitrages de pr...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une revue pre-deploiement, shift domaine est utile pour supporter des arbitrages de production ; l'...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin e-commerce dans 'Mismatch de distribution', pourquoi covariate shift est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "alignement de distributions sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alignement de distributions en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Mismatch de distribution, adaptation est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer adaptation en production.",
-        "C": "Dans Mismatch de distribution, covariate shift est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer covariate shift en production.",
-        "D": "Le role de shift domaine est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer shift domaine en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie covariate shift \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (alignement de distributions sert a supporter des arbitrages de production ; l'utiliser correctement permet ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Mismatch de distribution, adaptation est mobilise pour supporter des arbitrages de production ; l'util...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Mismatch de distribution, covariate shift est mobilise pour supporter des arbitrages de production ; l...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de shift domaine est de supporter des arbitrages de production ; l'utiliser correctement permet de ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Mismatch de distribution', quelle situation de terrain montre le mieux quand utiliser shift domaine ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Mismatch de distribution, adaptation est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer adaptation en production.",
-        "B": "En contexte r\u00e9el sur Mismatch de distribution, shift domaine est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer shift domaine en production.",
-        "C": "Pendant une revue pre-deploiement, covariate shift est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer covariate shift en production tout en surveillant le risque d'optimiser covariate shift en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Dans une revue pre-deploiement de Mismatch de distribution, l'\u00e9quipe applique alignement de distributions pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alignement de distributions en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car shift domaine y sert de levier de d\u00e9cision principal dans Mismatch de distribution. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Mismatch de distribution, adaptation est choisi afin de supporter des arbitrages de pr...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Mismatch de distribution, shift domaine est choisi afin de supporter des arbitrages de...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une revue pre-deploiement, covariate shift est utile pour supporter des arbitrages de production ; ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une revue pre-deploiement de Mismatch de distribution, l'\u00e9quipe applique alignement de distributions p...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Réduire les caractéristiques inutiles est moins pertinent car ce n'est pas directement une technique d'adaptation de domaine. L'augmentation des données (A), l'utilisation du transfert d'apprentissage (C), et les réseaux adverses pour aligner les distributions (D) sont des techniques fréquentes d'adaptation.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "alignement de distributions: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Mismatch de distribution' ?",
+      "question": "Dans quel cas l'alignement de distributions est-il le plus crucial?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Mismatch de distribution, shift domaine est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer shift domaine en production.",
-        "B": "Pendant une revue pre-deploiement, covariate shift est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer covariate shift en production tout en surveillant le risque d'optimiser covariate shift en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Dans une revue pre-deploiement de Mismatch de distribution, l'\u00e9quipe applique adaptation pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer adaptation en production.",
-        "D": "Dans une revue pre-deploiement de Mismatch de distribution, l'\u00e9quipe applique alignement de distributions pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alignement de distributions en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car alignement de distributions y sert de levier de d\u00e9cision principal dans Mismatch de distribution. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Mismatch de distribution, shift domaine est choisi afin de supporter des arbitrages de...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une revue pre-deploiement, covariate shift est utile pour supporter des arbitrages de production ; ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une revue pre-deploiement de Mismatch de distribution, l'\u00e9quipe applique adaptation pour supporter des...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une revue pre-deploiement de Mismatch de distribution, l'\u00e9quipe applique alignement de distributions p...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Mismatch de distribution', quel est le role le plus determinant de shift domaine pour un cas marketing ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Mismatch de distribution, covariate shift est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer covariate shift en production.",
-        "B": "Le role d'alignement de distributions est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alignement de distributions en production.",
-        "C": "adaptation sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer adaptation en production pour guider une d\u00e9cision exploitable.",
-        "D": "shift domaine sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer shift domaine en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie shift domaine \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Mismatch de distribution, covariate shift est mobilise pour supporter des arbitrages de production ; l...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role d'alignement de distributions est de supporter des arbitrages de production ; l'utiliser correctem...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (adaptation sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (shift domaine sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux decid...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Mismatch de distribution', quel est le role le plus determinant d'adaptation pour un cas cybersecurite ?",
-      "image_url": null,
-      "choices": {
-        "A": "adaptation sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer adaptation en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Mismatch de distribution, shift domaine est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer shift domaine en production.",
-        "C": "Le role de covariate shift est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer covariate shift en production.",
-        "D": "alignement de distributions sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alignement de distributions en production pour guider une d\u00e9cision exploitable."
+        "A": "Lorsque les ensembles de données source et cible ont des caractéristiques semblables mais diffèrent par la distribution.",
+        "B": "Quand les labels manquent totalement dans l'ensemble de données cible.",
+        "C": "Quand les classes d'intérêt sont entièrement nouvelles entre les domaines.",
+        "D": "Quand les ensembles de données source et cible sont de tailles équivalentes."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie adaptation \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (adaptation sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Mismatch de distribution, shift domaine est mobilise pour supporter des arbitrages de production ; l'u...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de covariate shift est de supporter des arbitrages de production ; l'utiliser correctement permet d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (alignement de distributions sert a supporter des arbitrages de production ; l'utiliser correctement permet ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "L'alignement de distributions est crucial lorsque les caractéristiques sont semblables mais leurs distributions diffèrent. Un manque total de labels (B), des classes entièrement nouvelles (C), et des tailles similaires (D) ne nécessitent pas nécessairement l'alignement des distributions.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pour un cas operationnel de 'Mismatch de distribution', quel exemple met covariate shift au c\u0153ur de la d\u00e9cision ?",
+      "question": "Quel est un signe d'un bon alignement des distributions après une adaptation de domaine réussie?",
       "image_url": null,
       "choices": {
-        "A": "Pendant une revue pre-deploiement, covariate shift est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer covariate shift en production tout en surveillant le risque d'optimiser covariate shift en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Dans une revue pre-deploiement de Mismatch de distribution, l'\u00e9quipe applique shift domaine pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer shift domaine en production.",
-        "C": "En contexte r\u00e9el sur Mismatch de distribution, alignement de distributions est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alignement de distributions en production.",
-        "D": "Pendant une revue pre-deploiement, adaptation est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer adaptation en production tout en surveillant le risque d'optimiser adaptation en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Une performance similaire sur les données de source et de cible.",
+        "B": "Une diminution significative des échantillons de taille de batch.",
+        "C": "Une réduction du surajustement du modèle sur les données de test.",
+        "D": "Une augmentation de la variance dans les prédictions du modèle."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car covariate shift y sert de levier de d\u00e9cision principal dans Mismatch de distribution. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une revue pre-deploiement, covariate shift est utile pour supporter des arbitrages de production ; ...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une revue pre-deploiement de Mismatch de distribution, l'\u00e9quipe applique shift domaine pour supporter ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Mismatch de distribution, alignement de distributions est choisi afin de supporter des...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une revue pre-deploiement, adaptation est utile pour supporter des arbitrages de production ; l'uti...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Un alignement réussi se manifeste par une performance similaire sur les données de source et de cible. La taille de batch (B), le surajustement sur les données de test (C), et la variance des prédictions (D) ne sont pas des indicateurs directs d'un tel alignement.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Mismatch de distribution', quelle erreur autour d'adaptation est la plus critique ?",
+      "question": "Quel problème le 'covariate shift' pose-t-il spécifiquement pour les méthodes basées sur des modèles linéaires?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec shift domaine est d'optimiser shift domaine en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Si covariate shift est mal utilise, on observe souvent optimiser covariate shift en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour d'alignement de distributions est optimiser alignement de distributions en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour d'adaptation est optimiser adaptation en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Il peut biaiser les coefficients estimés en raison de la distribution changeante des attributs.",
+        "B": "Il entraîne une augmentation du temps de formation pour les modèles linéaires.",
+        "C": "Il exige des ensembles de données beaucoup plus grands pour assurer la convergence.",
+        "D": "Il impose des modifications des hyperparamètres pour stabiliser la formation."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'adaptation. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec shift domaine est d'optimiser shift domaine en silo et introduire des modes d'ech...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si covariate shift est mal utilise, on observe souvent optimiser covariate shift en silo et introduire des ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour d'alignement de distributions est optimiser alignement de distributions en silo ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour d'adaptation est optimiser adaptation en silo et introduire des modes d'echec ca...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Mismatch de distribution', quel commentaire du schema traduit le mieux le role d'alignement de distributions ?",
-      "image_url": "apprentissage-semi-supervise_mismatch_de_distribution_alignement_de_distributions_2.png",
-      "choices": {
-        "A": "Dans Mismatch de distribution, shift domaine est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer shift domaine en production.",
-        "B": "Le role de covariate shift est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer covariate shift en production.",
-        "C": "adaptation sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer adaptation en production pour guider une d\u00e9cision exploitable.",
-        "D": "alignement de distributions sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alignement de distributions en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'alignement de distributions dans Mismatch de distribution. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Mismatch de distribution, shift domaine est mobilise pour supporter des arbitrages de production ; l'u...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de covariate shift est de supporter des arbitrages de production ; l'utiliser correctement permet d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (adaptation sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (alignement de distributions sert a supporter des arbitrages de production ; l'utiliser correctement permet ...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Le 'covariate shift' peut biaiser les coefficients des modèles linéaires, car ces modèles sont sensibles aux changements de distribution des covariantes. Le temps de formation (B), la taille des ensembles (C) et les hyperparamètres (D) ne sont pas directement liés au problème de la distribution changeante dans le contexte des modèles linéaires.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Mismatch de distribution', quelle erreur autour de shift domaine est la plus critique ?",
+      "question": "Quelle technique permet de gérer efficacement un 'shift de domaine'?",
       "image_url": null,
       "choices": {
-        "A": "Si alignement de distributions est mal utilise, on observe souvent optimiser alignement de distributions en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour d'adaptation est optimiser adaptation en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de shift domaine est optimiser shift domaine en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Un risque classique avec covariate shift est d'optimiser covariate shift en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Domain adversarial neural networks (DANN).",
+        "B": "Utilisation des réseaux profonds entièrement connectés.",
+        "C": "Augmentation simple des données d'entraînement.",
+        "D": "Application d'une régularisation L1 agressive."
+      },
+      "correct_answer": "A",
+      "explanation": "Les Domain adversarial neural networks (DANN) sont conçus pour réduire l'écart entre les distributions source et cible. Les réseaux profonds entièrement connectés (B), l'augmentation simple des données (C), et une régularisation L1 agressive (D) ne ciblent pas spécifiquement le problème de shift de domaine.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel défi l'adaptation de domaine cherche-t-elle spécialement à surmonter?",
+      "image_url": null,
+      "choices": {
+        "A": "Transfert fonctionnel de connaissance d'un domaine riche en données vers un domaine pauvre en données.",
+        "B": "Réduction de la taille des modèles pour minimiser la consommation de mémoire.",
+        "C": "Augmentation systématique de la diversité des caractéristiques dans les données.",
+        "D": "Optimisation des hyperparamètres pour améliorer la performance sur le même domaine."
+      },
+      "correct_answer": "A",
+      "explanation": "L'adaptation de domaine consiste à transférer le savoir d'un domaine riche en données à un domaine avec moins de données labellisées. Les préoccupations concernant la taille du modèle (B), la diversité des caractéristiques (C), et l'optimisation des hyperparamètres (D) sont distinctes de cet objectif principal.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce qu'une technique commune pour corriger le 'covariate shift' non corrigé?",
+      "image_url": null,
+      "choices": {
+        "A": "Rééquilibrage des données d'entraînement via le repondération des échantillons.",
+        "B": "Augmenter la profondeur du réseau de neurones.",
+        "C": "Supprimer les échantillons avec des hautes valeurs de variance.",
+        "D": "Utiliser une version simplifiée du modèle pour éviter le surajustement."
+      },
+      "correct_answer": "A",
+      "explanation": "Le rééquilibrage des données par repondération est une technique courante pour corriger le 'covariate shift'. Augmenter la profondeur (B), supprimer les variantes élevées (C), et utiliser des modèles simplifiés (D) ne résolvent pas spécifiquement le problème de la distribution du 'covariate shift'.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Parmi les options suivantes, laquelle est essentielle pour une adaptation de domaine réussie?",
+      "image_url": null,
+      "choices": {
+        "A": "Capacité à ajuster les distributions de données d'entrée à travers des techniques d'alignement.",
+        "B": "Capacité à diminuer la consommation d'énergie du modèle en production.",
+        "C": "Capacité à entraîner le modèle plus rapidement sur le même ensemble de données.",
+        "D": "Capacité à simplifier les données d'entrée en réduisant leur dimensionnalité."
+      },
+      "correct_answer": "A",
+      "explanation": "L'adaptation de domaine réussie repose sur la capacité à ajuster les distributions de données d'entrée via des techniques d'alignement. La consommation d'énergie (B), la rapidité d'entraînement (C), et la réduction de dimensionnalité (D) ne sont pas fondamentales pour l'adaptation de domaine.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle affirmation est FAUSSE concernant l'alignement des distributions en adaptation de domaine?",
+      "image_url": null,
+      "choices": {
+        "A": "L'alignement des distributions permet au modèle de généraliser entre les domaines source et cible.",
+        "B": "Cela implique souvent une transformation explicite des caractéristiques de données.",
+        "C": "L'alignement empêche toute forme d'overfitting sur les données d'entraînement.",
+        "D": "Il peut nécessiter l'utilisation de techniques d'apprentissage non supervisées."
       },
       "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de shift domaine. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si alignement de distributions est mal utilise, on observe souvent optimiser alignement de distributions en...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour d'adaptation est optimiser adaptation en silo et introduire des modes d'echec ca...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de shift domaine est optimiser shift domaine en silo et introduire des modes d'ec...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec covariate shift est d'optimiser covariate shift en silo et introduire des modes d...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "L'alignement des distributions ne prévient pas l'overfitting; il facilite la généralisation. Les affirmations A, B, et D sont vraies: il aide la généralisation (A), peut impliquer des transformations de caractéristiques (B), et parfois des techniques non supervisées (D).",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Mismatch de distribution', quel est le principal mode d'echec quand alignement de distributions est mal applique ?",
+      "question": "Lequel des énoncés suivants n'est pas un exemple de 'shift de domaine'?",
       "image_url": null,
       "choices": {
-        "A": "Si alignement de distributions est mal utilise, on observe souvent optimiser alignement de distributions en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de shift domaine est optimiser shift domaine en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Un risque classique avec covariate shift est d'optimiser covariate shift en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Si adaptation est mal utilise, on observe souvent optimiser adaptation en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Un système de reconnaissance faciale formé sur des images de jour testé sur des images de nuit.",
+        "B": "Un modèle de prédiction météorologique développé en été utilisé en hiver.",
+        "C": "Un modèle de classification de texte anglais appliqué à du texte espagnol.",
+        "D": "Un modèle d'analyse de sentiment appliqué à un corpus de données non labellisées."
+      },
+      "correct_answer": "D",
+      "explanation": "D n'est pas un exemple typique de 'shift de domaine', car il concerne l'absence de labels, non la distribution changeante. A, B, et C sont tous des exemples de distributions de données d'entraînement différentes des distributions de données de test.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un effet possible de ne pas traiter le 'covariate shift' dans un modèle supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Le modèle pourrait surestimer sa performance prédictive réelle sur les données de test.",
+        "B": "Le modèle pourrait fonctionner correctement même sans données d'étiquettes.",
+        "C": "Le modèle pourrait nécessiter plus de données d'entraînement pour convergence.",
+        "D": "Le modèle pourrait utiliser efficacement les données d'entraînement inutilisées."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'alignement de distributions. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si alignement de distributions est mal utilise, on observe souvent optimiser alignement de distributions en...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de shift domaine est optimiser shift domaine en silo et introduire des modes d'ec...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec covariate shift est d'optimiser covariate shift en silo et introduire des modes d...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si adaptation est mal utilise, on observe souvent optimiser adaptation en silo et introduire des modes d'ec...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "shift domaine: quelle proposition en donne la meilleure d\u00e9finition dans 'Mismatch de distribution' (contexte marketing) ?",
-      "image_url": null,
-      "choices": {
-        "A": "shift domaine designe un levier avance en apprentissage semi supervise ; il formalise le role de shift domaine dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "rafraichissement de labels correspond a un levier avance en apprentissage semi supervise ; il formalise le role de rafraichissement de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Mismatch de distribution.",
-        "C": "Dans Mismatch de distribution, versioning se comprend comme un levier avance en apprentissage semi supervise ; il formalise le role de versioning dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "validation humaine designe un levier avance en apprentissage semi supervise ; il structure l'\u00e9valuation hors entrainement pour estimer la g\u00e9n\u00e9ralisation r\u00e9elle."
-      },
-      "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de shift domaine dans Mismatch de distribution, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que rafraichissement de labels, versioning, validation humaine restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (shift domaine designe un levier avance en apprentissage semi supervise ; il formalise le role de shift doma...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (rafraichissement de labels correspond a un levier avance en apprentissage semi supervise ; il formalise le ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Mismatch de distribution, versioning se comprend comme un levier avance en apprentissage semi supervis...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (validation humaine designe un levier avance en apprentissage semi supervise ; il structure l'\u00e9valuation hor...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "adaptation: quelle proposition en donne la meilleure d\u00e9finition dans 'Mismatch de distribution' (contexte cybersecurite) ?",
-      "image_url": null,
-      "choices": {
-        "A": "temperature designe un levier avance en apprentissage semi supervise ; il formalise le role de temperature dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "adaptation designe un levier avance en apprentissage semi supervise ; il formalise le role d'adaptation dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "rollback correspond a un levier avance en apprentissage semi supervise ; il formalise le role de rollback dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Mismatch de distribution.",
-        "D": "Dans Mismatch de distribution, filtre de confiance se comprend comme un levier avance en apprentissage semi supervise ; il formalise le role de filtre de confiance dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'adaptation dans Mismatch de distribution, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que rollback, filtre de confiance, temperature restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (temperature designe un levier avance en apprentissage semi supervise ; il formalise le role de temperature ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (adaptation designe un levier avance en apprentissage semi supervise ; il formalise le role d'adaptation da...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (rollback correspond a un levier avance en apprentissage semi supervise ; il formalise le role de rollback d...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans Mismatch de distribution, filtre de confiance se comprend comme un levier avance en apprentissage semi...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Mismatch de distribution' et en contexte marketing, quelle interpretation du schema appuie le mieux l'analyse de shift domaine ?",
-      "image_url": "apprentissage-semi-supervise_mismatch_de_distribution_shift_domaine_1.png",
-      "choices": {
-        "A": "Lecture du visuel: alignement de distributions est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alignement de distributions en production dans Mismatch de distribution.",
-        "B": "Le signal visible est coh\u00e9rent avec adaptation, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer adaptation en production.",
-        "C": "Le signal visible est coh\u00e9rent avec shift domaine, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer shift domaine en production.",
-        "D": "Le schema illustre une d\u00e9cision basee sur covariate shift: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer covariate shift en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Les indices visuels vont dans le sens de shift domaine: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Lecture du visuel: alignement de distributions est mobilise pour supporter des arbitrages de production ; l...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Le signal visible est coh\u00e9rent avec adaptation, car l'objectif est supporter des arbitrages de production ;...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est correcte (Le signal visible est coh\u00e9rent avec shift domaine, car l'objectif est supporter des arbitrages de productio...) car la lecture visuelle colle au signal principal observe. D'est moins pertinente (Le schema illustre une d\u00e9cision basee sur covariate shift: les indices orientent vers supporter des arbitra...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Ne pas traiter le 'covariate shift' signifie que le modèle pourrait mal généraliser, surestimant ainsi ses performances réelles prédictives. B, C, et D sont incorrects: ils ne sont pas des effets directs de l'absence de traitement du 'covariate shift'.",
       "difficulty": "hard"
     }
   ]

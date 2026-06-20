@@ -5,310 +5,310 @@
   "questions": [
     {
       "type": "text",
-      "question": "AIC: quelle proposition en donne la meilleure d\u00e9finition dans 'Selection de modeles non supervises' (contexte banque) ?",
+      "question": "Quel critère l'AIC tente-t-il de minimiser dans le cadre de la sélection de modèles non supervisés?",
       "image_url": null,
       "choices": {
-        "A": "AIC designe un levier avance en apprentissage non supervise ; il formalise le role d'AIC dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "embedding spectral correspond a un levier avance en apprentissage non supervise ; il formalise le role d'embedding spectral dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Selection de modeles non supervises.",
-        "C": "Dans Selection de modeles non supervises, decomposition se comprend comme un levier avance en apprentissage non supervise ; il formalise le role de decomposition dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "facteurs latents designe un levier avance en apprentissage non supervise ; il formalise le role de facteurs latents dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "L'information perdue avec une pénalité en fonction du nombre de paramètres",
+        "B": "Le logarithme de la vraisemblance sans se soucier du nombre de paramètres",
+        "C": "La variance totale expliquée par le modèle",
+        "D": "La distance euclidienne moyenne entre les points de données"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'AIC dans Selection de modeles non supervises, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que embedding spectral, decomposition, facteurs latents restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (AIC designe un levier avance en apprentissage non supervise ; il formalise le role d'AIC dans un pipeline ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (embedding spectral correspond a un levier avance en apprentissage non supervise ; il formalise le role d'e...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Selection de modeles non supervises, decomposition se comprend comme un levier avance en apprentissage...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (facteurs latents designe un levier avance en apprentissage non supervise ; il formalise le role de facteurs...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "L'Akaike Information Criterion (AIC) cherche à minimiser l'information perdue, en ajoutant une pénalité liée au nombre de paramètres pour éviter le sur-ajustement. Le choix B néglige la pénalité qui est essentielle pour éviter le surajustement. Le choix C concerne plutôt des méthodes comme l'ACP. Le choix D n'est pas pertinent pour l'AIC.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Selection de modeles non supervises' (assurance), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment BIC ?",
+      "question": "Comment le BIC diffère-t-il de l'AIC?",
       "image_url": null,
       "choices": {
-        "A": "Dans Selection de modeles non supervises, decomposition se comprend comme un levier avance en apprentissage non supervise ; il formalise le role de decomposition dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "facteurs latents designe un levier avance en apprentissage non supervise ; il formalise le role de facteurs latents dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "recommandation correspond a un levier avance en apprentissage non supervise ; il formalise le role de recommandation dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Selection de modeles non supervises.",
-        "D": "BIC correspond a un levier avance en apprentissage non supervise ; il formalise le role de BIC dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Selection de modeles non supervises."
+        "A": "Le BIC pénalise davantage les modèles avec plus de paramètres que l'AIC",
+        "B": "Le BIC ignore complètement le nombre de paramètres du modèle",
+        "C": "Le BIC privilégie toujours les modèles plus complexes que l'AIC",
+        "D": "Le BIC utilise la même formule que l'AIC mais avec des noms différents"
+      },
+      "correct_answer": "A",
+      "explanation": "Le Bayesian Information Criterion (BIC) inclut une pénalité plus forte pour le nombre de paramètres que l'AIC, car il prend en compte le nombre d'observations, ce qui le rend plus restrictif. Le choix B est incorrect puisque le BIC pénalise bel et bien les modèles plus complexes. Le choix C est faux car le BIC est en fait plus conservateur, pas moins. Le choix D est incorrect car la structure des pénalités diffère.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Lors de la sélection du nombre optimal de clusters (k) dans un clustering, quelle technique est souvent utilisée?",
+      "image_url": null,
+      "choices": {
+        "A": "La méthode du coude",
+        "B": "La méthode du rapport d'asymétrie",
+        "C": "La méthode de la médiane glissante",
+        "D": "La méthode de la corrélation"
+      },
+      "correct_answer": "A",
+      "explanation": "La méthode du coude est utilisée pour visualiser la somme des carrés intra-clusters par rapport au nombre de clusters pour détecter un 'coude' où l'ajout de nouveaux clusters n'améliore plus significativement la modélisation. Le choix B n'est pas pertinent pour ce type de problématique. Le choix C n'est pas une méthode reconnue pour la sélection de k. Le choix D est insensé dans ce contexte.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pour quel type de problème est-il crucial de trouver un compromis entre complexité et interprétabilité dans les modèles non supervisés?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour les modèles de clustering à nombreux clusters",
+        "B": "Dans les arbres de décision",
+        "C": "Pour les modèles de régression linéaire",
+        "D": "Dans les réseaux de neurones convolutifs"
+      },
+      "correct_answer": "A",
+      "explanation": "Dans le clustering, plus de clusters augmentent la complexité et peuvent perturber l'interprétabilité des résultats, d'où la nécessité de trouver un compromis approprié. Le choix B concerne plutôt les modèles supervisés. Le choix C, bien qu'impliquant une certaine interprétabilité, concerne des modèles supervisés. Le choix D ne concerne pas les méthodes non supervisées.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans le cadre de l'ACP (analyse en composantes principales), que signifie un compromis entre complexité et précision?",
+      "image_url": null,
+      "choices": {
+        "A": "Garder suffisamment de composantes principales pour expliquer la variance significative sans toutes les utiliser",
+        "B": "Utiliser toutes les variables d'origine pour plus de précision",
+        "C": "Ignorer la variance en utilisant un seul composant principal",
+        "D": "Ajuster les hyper-paramètres pour améliorer la précision de prédiction"
+      },
+      "correct_answer": "A",
+      "explanation": "L'ACP consiste à réduire la dimension des données en retenant les composantes qui expliquent une variance significative tout en limitant le nombre de composantes pour éviter une trop grande complexité. Le choix B est faux car utiliser toutes les variables ne réduit pas la complexité. Le choix C n'est pas efficace car un seul composant ne capte généralement pas toute la variance. Le choix D ne s'applique pas à l'analyse non supervisée.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le principal désavantage de l'utilisation excessive de paramètres dans un modèle non supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Surajustement sur les données de formation, rendant le modèle peu généralisable",
+        "B": "Augmentation automatique de la précision de validation croisée",
+        "C": "Diminution de la complexité et augmentation de l'efficacité",
+        "D": "Convergence plus rapide des algorithmes d'entraînement"
+      },
+      "correct_answer": "A",
+      "explanation": "Un excès de paramètres peut entraîner un surajustement, où le modèle s'ajuste trop étroitement aux données de formation et ne se généralise pas bien à de nouvelles données. Le choix B est incorrect car le surajustement n'améliore généralement pas la précision sur des ensembles de validation. Le choix C est faux car plus de paramètres augmentent la complexité. Le choix D est incorrect car une complexité accrue ralentit généralement la convergence.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce qui distingue fondamentalement le problème de la sélection de k dans le clustering des méthodes de paramétrisation en apprentissage supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "La sélection de k n'influence pas l'ajustement du modèle aux données",
+        "B": "La sélection de k est basée sur des critères internes sans jeu de données étiqueté",
+        "C": "La sélection de k repose sur les mêmes techniques que pour ajuster un modèle supervisé",
+        "D": "La sélection de k est arbitraire et ne repose sur aucun fondement théorique"
+      },
+      "correct_answer": "B",
+      "explanation": "La sélection de k dans le clustering est unique car elle s'effectue sans accès à des étiquettes, elle repose donc souvent sur des critères internes et heuristiques tels que la méthode du coude. Le choix A est faux car la sélection de k influence fortement la structure de clustering. Le choix C est incorrect car les techniques de validation diffèrent entre supervisé et non supervisé. Le choix D est incorrect car la sélection de k repose effectivement sur des critères bien établis.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pour réduire le surajustement dans une méthode de clustering, quel aspect du modèle devriez-vous ajuster?",
+      "image_url": null,
+      "choices": {
+        "A": "Réduire le nombre de clusters",
+        "B": "Augmenter le nombre de dimensions",
+        "C": "Augmenter le nombre de données d'apprentissage",
+        "D": "Réduire le nombre d'itérations dans l'algorithme"
+      },
+      "correct_answer": "A",
+      "explanation": "Réduire le nombre de clusters peut prévenir le surajustement en évitant de segmenter à outrance les données, ce qui rend le modèle plus généralisable. Le choix B est faux car augmenter les dimensions complexe généralement le modèle. Le choix C peut aider au surajustement mais n'implique pas directement une modification du modèle. Le choix D n'adresse pas le surajustement mais peut affecter la convergence.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "En quel cas le BIC pourrait être préféré à l'AIC pour la sélection de modèle dans un contexte de clustering?",
+      "image_url": null,
+      "choices": {
+        "A": "Lorsque le nombre d'observations est relativement grand",
+        "B": "Lorsque le modèle doit maximiser la variance expliquée",
+        "C": "Lorsque les données présentent une forte colinéarité",
+        "D": "Lorsqu'un ajustement exceptionnellement précis est nécessaire"
+      },
+      "correct_answer": "A",
+      "explanation": "Le BIC incorpore une plus forte pénalité pour le nombre de paramètres lorsque le nombre d'observations est élevé, ce qui peut le rendre plus adapté dans ces situations pour éviter le surajustement. Le choix B concerne plutôt l'analyse en composantes principales. Le choix C n'est pas pertinent pour les critères d'information. Le choix D favorise l'AIC, qui est généralement moins pénalisant, donc plus apte à ajuster précisément.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une conséquence possible d'un compromis mal géré entre complexité et performance dans un modèle non supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Un biais élevé et une variance faible",
+        "B": "Une variance élevé et un biais faible",
+        "C": "Des performances similaires sur les données d'entraînement et de test",
+        "D": "Des performances de test sensiblement inférieures à celles de l'entraînement"
       },
       "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de BIC dans Selection de modeles non supervises, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte assurance, alors que decomposition, facteurs latents, recommandation restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Selection de modeles non supervises, decomposition se comprend comme un levier avance en apprentissage...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (facteurs latents designe un levier avance en apprentissage non supervise ; il formalise le role de facteurs...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (recommandation correspond a un levier avance en apprentissage non supervise ; il formalise le role de recom...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (BIC correspond a un levier avance en apprentissage non supervise ; il formalise le role de BIC dans un pipe...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
+      "explanation": "Gérer incorrectement le compromis entre complexité et performance peut entraîner une parfaite adéquation aux données d'entraînement sans généralisation, entraînant ainsi de mauvaises performances sur les données de test (haut différentiel entre train et test). Le choix A se réfère à un modèle sous-ajusté. Le choix B se réfère à un modèle surajusté mais simplifié. Le choix C indiquerait une excellente généralisation, ce qui est l'opposé d'une mauvaise gestion de compromis.",
+      "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pour une \u00e9quipe sante dans 'Selection de modeles non supervises', quelle d\u00e9finition de selection de k est la plus juste ?",
+      "question": "Lors de l'évaluation du nombre optimal de composantes principales, quel aspect crucial faut-il équilibrer?",
       "image_url": null,
       "choices": {
-        "A": "recommandation correspond a un levier avance en apprentissage non supervise ; il formalise le role de recommandation dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Selection de modeles non supervises.",
-        "B": "Dans Selection de modeles non supervises, approximation basse dimension se comprend comme un levier avance en apprentissage non supervise ; il formalise le role d'approximation basse dimension dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Selection de modeles non supervises, selection de k se comprend comme un levier avance en apprentissage non supervise ; il formalise le role de selection de k dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "facteurs latents designe un levier avance en apprentissage non supervise ; il formalise le role de facteurs latents dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de selection de k dans Selection de modeles non supervises, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que facteurs latents, recommandation, approximation basse dimension restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (recommandation correspond a un levier avance en apprentissage non supervise ; il formalise le role de recom...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Selection de modeles non supervises, approximation basse dimension se comprend comme un levier avance ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Selection de modeles non supervises, selection de k se comprend comme un levier avance en apprentissag...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (facteurs latents designe un levier avance en apprentissage non supervise ; il formalise le role de facteurs...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "compromis complexite: quelle proposition en donne la meilleure d\u00e9finition dans 'Selection de modeles non supervises' (contexte marketing) ?",
-      "image_url": null,
-      "choices": {
-        "A": "isolation designe un levier avance en apprentissage non supervise ; il formalise le role d'isolation dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "compromis complexite designe un levier avance en apprentissage non supervise ; il formalise le role de compromis complexite dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "recommandation correspond a un levier avance en apprentissage non supervise ; il formalise le role de recommandation dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Selection de modeles non supervises.",
-        "D": "Dans Selection de modeles non supervises, approximation basse dimension se comprend comme un levier avance en apprentissage non supervise ; il formalise le role d'approximation basse dimension dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de compromis complexite dans Selection de modeles non supervises, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que recommandation, approximation basse dimension, isolation restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (isolation designe un levier avance en apprentissage non supervise ; il formalise le role d'isolation dans ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (compromis complexite designe un levier avance en apprentissage non supervise ; il formalise le role de comp...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (recommandation correspond a un levier avance en apprentissage non supervise ; il formalise le role de recom...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans Selection de modeles non supervises, approximation basse dimension se comprend comme un levier avance ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "A partir de cette description issue de 'Selection de modeles non supervises' (un levier avance en apprentissage non supervise ; il formalise le role d'AIC dans un pipeline ML, avec ses hypotheses et ses limites pratiques.), quel concept faut-il retenir ?",
-      "image_url": null,
-      "choices": {
-        "A": "AIC correspond a un levier avance en apprentissage non supervise ; il formalise le role d'AIC dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel d'AIC.",
-        "B": "Le concept pipeline batch se reconnait par un levier avance en apprentissage non supervise ; il formalise le role de pipeline batch dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Quand une d\u00e9finition insiste sur un levier avance en apprentissage non supervise ; il formalise le role de rafraichissement periodique dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a rafraichissement periodique.",
-        "D": "versioning de segments: un levier avance en apprentissage non supervise ; il formalise le role de versioning de segments dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Le pourcentage de variance expliquée et le nombre de composantes retenues",
+        "B": "La p-value statistique de chaque composante principale",
+        "C": "L'usage d'autoencodeurs pour évaluer les composantes",
+        "D": "Le choix du centre de chaque composante principale"
       },
       "correct_answer": "A",
-      "explanation": "Le concept attendu est AIC, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Selection de modeles non supervises. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est correcte (AIC correspond a un levier avance en apprentissage non supervise ; il formalise le role d'AIC dans un pipe...) car la d\u00e9finition correspond exactement au concept attendu. B est moins pertinente (Le concept pipeline batch se reconnait par un levier avance en apprentissage non supervise ; il formalise l...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est moins pertinente (Quand une d\u00e9finition insiste sur un levier avance en apprentissage non supervise ; il formalise le role de ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est moins pertinente (versioning de segments: un levier avance en apprentissage non supervise ; il formalise le role de versionin...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Description experte (Selection de modeles non supervises) - un levier avance en apprentissage non supervise ; il formalise le role de BIC dans un pipeline ML, avec ses hypotheses et ses limites pratiques. Quel concept est le plus exact ?",
-      "image_url": null,
-      "choices": {
-        "A": "Quand une d\u00e9finition insiste sur un levier avance en apprentissage non supervise ; il formalise le role de rafraichissement periodique dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a rafraichissement periodique.",
-        "B": "versioning de segments: un levier avance en apprentissage non supervise ; il formalise le role de versioning de segments dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "rollback analytique correspond a un levier avance en apprentissage non supervise ; il formalise le role de rollback analytique dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel de rollback analytique.",
-        "D": "Le concept BIC se reconnait par un levier avance en apprentissage non supervise ; il formalise le role de BIC dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "D",
-      "explanation": "Le concept attendu est BIC, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Selection de modeles non supervises. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (Quand une d\u00e9finition insiste sur un levier avance en apprentissage non supervise ; il formalise le role de ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est moins pertinente (versioning de segments: un levier avance en apprentissage non supervise ; il formalise le role de versionin...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est moins pertinente (rollback analytique correspond a un levier avance en apprentissage non supervise ; il formalise le role de ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est correcte (Le concept BIC se reconnait par un levier avance en apprentissage non supervise ; il formalise le role de B...) car la d\u00e9finition correspond exactement au concept attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Selection de modeles non supervises', quel concept correspond le mieux a cette description: un levier avance en apprentissage non supervise ; il formalise le role de selection de k dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-      "image_url": null,
-      "choices": {
-        "A": "rollback analytique correspond a un levier avance en apprentissage non supervise ; il formalise le role de rollback analytique dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel de rollback analytique.",
-        "B": "Le concept Gaussian mixture se reconnait par un levier avance en apprentissage non supervise ; il formalise le role de Gaussian mixture dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Quand une d\u00e9finition insiste sur un levier avance en apprentissage non supervise ; il formalise le role de selection de k dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a selection de k.",
-        "D": "versioning de segments: un levier avance en apprentissage non supervise ; il formalise le role de versioning de segments dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "Le concept attendu est selection de k, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Selection de modeles non supervises. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (rollback analytique correspond a un levier avance en apprentissage non supervise ; il formalise le role de ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est moins pertinente (Le concept Gaussian mixture se reconnait par un levier avance en apprentissage non supervise ; il formalise...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est correcte (Quand une d\u00e9finition insiste sur un levier avance en apprentissage non supervise ; il formalise le role de ...) car la d\u00e9finition correspond exactement au concept attendu. D'est moins pertinente (versioning de segments: un levier avance en apprentissage non supervise ; il formalise le role de versionin...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "A partir de cette description issue de 'Selection de modeles non supervises' (un levier avance en apprentissage non supervise ; il formalise le role de compromis complexite dans un pipeline ML, avec ses hypotheses et ses limites pratiques.), quel concept faut-il retenir ?",
-      "image_url": null,
-      "choices": {
-        "A": "Quand une d\u00e9finition insiste sur un levier avance en apprentissage non supervise ; il formalise le role de probabilite d'appartenance dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a probabilite d'appartenance.",
-        "B": "compromis complexite: un levier avance en apprentissage non supervise ; il formalise le role de compromis complexite dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "rollback analytique correspond a un levier avance en apprentissage non supervise ; il formalise le role de rollback analytique dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel de rollback analytique.",
-        "D": "Le concept Gaussian mixture se reconnait par un levier avance en apprentissage non supervise ; il formalise le role de Gaussian mixture dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "B",
-      "explanation": "Le concept attendu est compromis complexite, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Selection de modeles non supervises. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (Quand une d\u00e9finition insiste sur un levier avance en apprentissage non supervise ; il formalise le role de ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est correcte (compromis complexite: un levier avance en apprentissage non supervise ; il formalise le role de compromis c...) car la d\u00e9finition correspond exactement au concept attendu. C'est moins pertinente (rollback analytique correspond a un levier avance en apprentissage non supervise ; il formalise le role de ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est moins pertinente (Le concept Gaussian mixture se reconnait par un levier avance en apprentissage non supervise ; il formalise...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Pour déterminer le nombre optimal de composantes principales, il est essentiel d'équilibrer la quantité de variance des données retenue par le modèle et la simplicité structurelle du modèle (nombre de composantes). Le choix B concerne souvent des analyses statistiques incomparables avec PCA. Le choix C implique une technique avancée mais n'est pas standard pour l'évaluation des composantes principales. Le choix D n'est pas un ajustement applicable dans l'ACP.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Selection de modeles non supervises', quel est le role le plus determinant d'AIC pour un cas banque ?",
+      "question": "Pourquoi est-il risqué de choisir un k trop haut dans le cas d'un clustering hiérarchique?",
       "image_url": null,
       "choices": {
-        "A": "Dans Selection de modeles non supervises, BIC est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer BIC en production.",
-        "B": "Le role de selection de k est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de k en production.",
-        "C": "compromis complexite sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compromis complexite en production pour guider une d\u00e9cision exploitable.",
-        "D": "AIC sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer AIC en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie AIC \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Selection de modeles non supervises, BIC est mobilise pour supporter des arbitrages de production ; l'...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de selection de k est de supporter des arbitrages de production ; l'utiliser correctement permet de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (compromis complexite sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (AIC sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand e...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin assurance dans 'Selection de modeles non supervises', pourquoi BIC est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "selection de k sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de k en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Selection de modeles non supervises, compromis complexite est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compromis complexite en production.",
-        "C": "Dans Selection de modeles non supervises, BIC est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer BIC en production.",
-        "D": "Le role d'AIC est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer AIC en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie BIC \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (selection de k sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux deci...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Selection de modeles non supervises, compromis complexite est mobilise pour supporter des arbitrages d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Selection de modeles non supervises, BIC est mobilise pour supporter des arbitrages de production ; l'...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role d'AIC est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux deci...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "selection de k: pourquoi ce concept est-il crucial pour une \u00e9quipe sante dans 'Selection de modeles non supervises' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role de compromis complexite est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compromis complexite en production.",
-        "B": "Le role de selection de k est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de k en production.",
-        "C": "AIC sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer AIC en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Selection de modeles non supervises, BIC est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer BIC en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie selection de k \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de compromis complexite est de supporter des arbitrages de production ; l'utiliser correctement per...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de selection de k est de supporter des arbitrages de production ; l'utiliser correctement permet de...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (AIC sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand e...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Selection de modeles non supervises, BIC est mobilise pour supporter des arbitrages de production ; l'...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Selection de modeles non supervises', quel est le role le plus determinant de compromis complexite pour un cas marketing ?",
-      "image_url": null,
-      "choices": {
-        "A": "compromis complexite sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compromis complexite en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Selection de modeles non supervises, AIC est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer AIC en production.",
-        "C": "Le role de BIC est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer BIC en production.",
-        "D": "selection de k sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de k en production pour guider une d\u00e9cision exploitable."
+        "A": "Cela peut entraîner des clusters trop spécifiques, rendant la généralisation difficile",
+        "B": "Un k élevé signifie toujours une meilleure représentation des données",
+        "C": "Un k élevé diminue la robustesse face aux changements des données d'entrée",
+        "D": "Un k élevé accroît généralement l'overfitting lors de l'entraînement"
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie compromis complexite \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (compromis complexite sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieu...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Selection de modeles non supervises, AIC est mobilise pour supporter des arbitrages de production ; l'...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de BIC est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux deci...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (selection de k sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux deci...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Choisir un k trop haut en clustering hiérarchique peut créer des clusters qui ne s'appliquent qu'étroitement aux données d'entraînement, nuisant ainsi à la généralisation. Le choix B est faux, un k élevé ne signifie pas nécessairement une meilleure qualité. Le choix C est incorrect car la robustesse n'est pas directement reliée à k dans ce contexte. Le choix D est une attribution qui s'applique plus généralement aux modèles supervisés que non supervisés comme le clustering.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Selection de modeles non supervises', quelle situation de terrain montre le mieux quand utiliser AIC ?",
+      "question": "Quelle stratégie est essentielle pour éviter de surévaluer les performances d'un modèle non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Selection de modeles non supervises, compromis complexite est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compromis complexite en production.",
-        "B": "En contexte r\u00e9el sur Selection de modeles non supervises, AIC est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer AIC en production.",
-        "C": "Pendant une revue pre-deploiement, BIC est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer BIC en production tout en surveillant le risque d'optimiser BIC en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Dans une revue pre-deploiement de Selection de modeles non supervises, l'\u00e9quipe applique selection de k pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de k en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car AIC y sert de levier de d\u00e9cision principal dans Selection de modeles non supervises. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Selection de modeles non supervises, compromis complexite est choisi afin de supporter...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Selection de modeles non supervises, AIC est choisi afin de supporter des arbitrages d...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une revue pre-deploiement, BIC est utile pour supporter des arbitrages de production ; l'utiliser c...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une revue pre-deploiement de Selection de modeles non supervises, l'\u00e9quipe applique selection de k pou...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'Selection de modeles non supervises', quel exemple met BIC au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une revue pre-deploiement, BIC est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer BIC en production tout en surveillant le risque d'optimiser BIC en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Dans une revue pre-deploiement de Selection de modeles non supervises, l'\u00e9quipe applique AIC pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer AIC en production.",
-        "C": "En contexte r\u00e9el sur Selection de modeles non supervises, selection de k est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de k en production.",
-        "D": "Pendant une revue pre-deploiement, compromis complexite est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compromis complexite en production tout en surveillant le risque d'optimiser compromis complexite en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Utiliser des ensembles de validation indépendants",
+        "B": "Maximiser l'ajustement aux données d'entraînement",
+        "C": "Toujours utiliser un modèle avec le plus de paramètres possibles",
+        "D": "Éviter l'utilisation de critères d'ajustement comme l'AIC ou le BIC"
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car BIC y sert de levier de d\u00e9cision principal dans Selection de modeles non supervises. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une revue pre-deploiement, BIC est utile pour supporter des arbitrages de production ; l'utiliser c...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une revue pre-deploiement de Selection de modeles non supervises, l'\u00e9quipe applique AIC pour supporter...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Selection de modeles non supervises, selection de k est choisi afin de supporter des a...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une revue pre-deploiement, compromis complexite est utile pour supporter des arbitrages de producti...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Utiliser des ensembles de validation indépendants est crucial pour evaluer la performance réelle d'un modèle non supervisé et éviter de surévaluer ses performances. Le choix B amène au surajustement. Le choix C est exactement ce qu'il faut éviter pour ne pas rentrer dans le surajustement. Le choix D est erroné car les critères comme l'AIC et le BIC sont critiques pour la sélection de modèles appropriés.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Selection de modeles non supervises', quelle erreur autour d'AIC est la plus critique ?",
+      "question": "Quelle est la limitation principale de l'utilisation du critère BIC dans le cas de petites tailles d'échantillons?",
       "image_url": null,
       "choices": {
-        "A": "Si selection de k est mal utilise, on observe souvent optimiser selection de k en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de compromis complexite est optimiser compromis complexite en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour d'AIC est optimiser AIC en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Un risque classique avec BIC est d'optimiser BIC en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'AIC. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si selection de k est mal utilise, on observe souvent optimiser selection de k en silo et introduire des mo...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour de compromis complexite est optimiser compromis complexite en silo et introduire ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour d'AIC est optimiser AIC en silo et introduire des modes d'echec caches au deploi...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec BIC est d'optimiser BIC en silo et introduire des modes d'echec caches au deploie...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "BIC: quel risque est le plus directement lie a son mauvais usage en production dans 'Selection de modeles non supervises' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec compromis complexite est d'optimiser compromis complexite en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Un risque classique avec BIC est d'optimiser BIC en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Si AIC est mal utilise, on observe souvent optimiser AIC en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour de selection de k est optimiser selection de k en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de BIC. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec compromis complexite est d'optimiser compromis complexite en silo et introduire d...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec BIC est d'optimiser BIC en silo et introduire des modes d'echec caches au deploie...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si AIC est mal utilise, on observe souvent optimiser AIC en silo et introduire des modes d'echec caches au ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de selection de k est optimiser selection de k en silo et introduire des modes d'...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Selection de modeles non supervises', quel est le principal mode d'echec quand selection de k est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si selection de k est mal utilise, on observe souvent optimiser selection de k en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour d'AIC est optimiser AIC en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Un risque classique avec BIC est d'optimiser BIC en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Si compromis complexite est mal utilise, on observe souvent optimiser compromis complexite en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Il risque de favoriser les modèles plus simples",
+        "B": "Il ne tient pas compte de la pénalité pour le nombre de paramètres",
+        "C": "Il conduit automatiquement à l'overfitting",
+        "D": "Il suppose que les erreurs suivent une distribution non gaussienne"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de selection de k. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si selection de k est mal utilise, on observe souvent optimiser selection de k en silo et introduire des mo...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour d'AIC est optimiser AIC en silo et introduire des modes d'echec caches au deploi...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec BIC est d'optimiser BIC en silo et introduire des modes d'echec caches au deploie...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si compromis complexite est mal utilise, on observe souvent optimiser compromis complexite en silo et intro...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le BIC peut être biaisé en faveur de modèles plus simples quand le nombre d'échantillons est petit, car il pénalise fortement le nombre de paramètres. Le choix B est incorrect puisque le BIC inclut explicitement une pénalité pour les paramètres. Le choix C est faux, car BIC penche vers une simplification. Le choix D ne concerne pas la présomption des erreurs dans le BIC.",
       "difficulty": "hard"
     },
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec AIC dans 'Selection de modeles non supervises' ?",
-      "image_url": "apprentissage-non-supervise_selection_de_modeles_non_supervises_aic_2.png",
+      "type": "text",
+      "question": "Pourquoi l'AIC peut-il être favorisé par rapport au BIC malgré un nombre élevé de paramètres de modèle?",
+      "image_url": null,
       "choices": {
-        "A": "Dans Selection de modeles non supervises, compromis complexite est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compromis complexite en production.",
-        "B": "Dans Selection de modeles non supervises, AIC est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer AIC en production.",
-        "C": "Le role de BIC est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer BIC en production.",
-        "D": "selection de k sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de k en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'AIC dans Selection de modeles non supervises. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Selection de modeles non supervises, compromis complexite est mobilise pour supporter des arbitrages d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Selection de modeles non supervises, AIC est mobilise pour supporter des arbitrages de production ; l'...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de BIC est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux deci...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (selection de k sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux deci...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Selection de modeles non supervises' et en contexte banque, quelle interpretation du schema appuie le mieux l'analyse d'AIC ?",
-      "image_url": "apprentissage-non-supervise_selection_de_modeles_non_supervises_aic_1.png",
-      "choices": {
-        "A": "Lecture du visuel: selection de k est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de k en production dans Selection de modeles non supervises.",
-        "B": "Le signal visible est coh\u00e9rent avec compromis complexite, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compromis complexite en production.",
-        "C": "Le signal visible est coh\u00e9rent avec AIC, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer AIC en production.",
-        "D": "Le schema illustre une d\u00e9cision basee sur BIC: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer BIC en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Les indices visuels vont dans le sens d'AIC: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Lecture du visuel: selection de k est mobilise pour supporter des arbitrages de production ; l'utiliser cor...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Le signal visible est coh\u00e9rent avec compromis complexite, car l'objectif est supporter des arbitrages de pr...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est correcte (Le signal visible est coh\u00e9rent avec AIC, car l'objectif est supporter des arbitrages de production ; l'util...) car la lecture visuelle colle au signal principal observe. D'est moins pertinente (Le schema illustre une d\u00e9cision basee sur BIC: les indices orientent vers supporter des arbitrages de produ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "BIC: dans un cas assurance, quelle interpretation correspond le mieux au schema ML de 'Selection de modeles non supervises' ?",
-      "image_url": "apprentissage-non-supervise_selection_de_modeles_non_supervises_bic_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur compromis complexite: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compromis complexite en production.",
-        "B": "Le schema illustre une d\u00e9cision basee sur BIC: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer BIC en production.",
-        "C": "Lecture du visuel: AIC est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer AIC en production dans Selection de modeles non supervises.",
-        "D": "Le signal visible est coh\u00e9rent avec selection de k, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de k en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de BIC: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur compromis complexite: les indices orientent vers supporter des ar...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur BIC: les indices orientent vers supporter des arbitrages de produ...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: AIC est mobilise pour supporter des arbitrages de production ; l'utiliser correctement p...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec selection de k, car l'objectif est supporter des arbitrages de producti...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Observation visuelle (Selection de modeles non supervises) - pour un contexte sante, quelle lecture du schema est la plus pertinente pour selection de k ?",
-      "image_url": "apprentissage-non-supervise_selection_de_modeles_non_supervises_selection_de_k_1.png",
-      "choices": {
-        "A": "Lecture du visuel: selection de k est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de k en production dans Selection de modeles non supervises.",
-        "B": "Le signal visible est coh\u00e9rent avec AIC, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer AIC en production.",
-        "C": "Le schema illustre une d\u00e9cision basee sur BIC: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer BIC en production.",
-        "D": "Lecture du visuel: compromis complexite est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compromis complexite en production dans Selection de modeles non supervises."
+        "A": "Il est moins conservateur et peut sélectionner des modèles plus flexibles",
+        "B": "Il n'ajoute aucune pénalité pour des modèles complexes",
+        "C": "Il maximise systématiquement l'ajustement des données de test",
+        "D": "Il élimine complètement le risque de surajustement"
       },
       "correct_answer": "A",
-      "explanation": "Les indices visuels vont dans le sens de selection de k: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est correcte (Lecture du visuel: selection de k est mobilise pour supporter des arbitrages de production ; l'utiliser cor...) car la lecture visuelle colle au signal principal observe. B est moins pertinente (Le signal visible est coh\u00e9rent avec AIC, car l'objectif est supporter des arbitrages de production ; l'util...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le schema illustre une d\u00e9cision basee sur BIC: les indices orientent vers supporter des arbitrages de produ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Lecture du visuel: compromis complexite est mobilise pour supporter des arbitrages de production ; l'utilis...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "L'AIC est moins conservateur que le BIC, ce qui peut le rendre avantageux pour explorer des modèles plus flexibles, surtout lorsque l'équilibrage entre ajustement et complexité est négligé. Le choix B est faux car l'AIC intègre une pénalité pour le nombre de paramètres. Le choix C est une perspective erronée puisque l'AIC évalue l'ajustement global basé sur le modèle et les données d'entraînement. Le choix D est incorrect, car l'AIC ne garantit pas contre le surajustement.",
       "difficulty": "hard"
     },
     {
-      "type": "image",
-      "question": "Dans 'Selection de modeles non supervises' et en contexte marketing, quelle interpretation du schema appuie le mieux l'analyse de compromis complexite ?",
-      "image_url": "apprentissage-non-supervise_selection_de_modeles_non_supervises_compromis_complexite_1.png",
+      "type": "text",
+      "question": "Dans un scénario où l'on cherche à modéliser la diversité maximale des drapeaux d'un ensemble de données, quel modèle pourrait minimiser l'AIC?",
+      "image_url": null,
       "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur AIC: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer AIC en production.",
-        "B": "Lecture du visuel: BIC est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer BIC en production dans Selection de modeles non supervises.",
-        "C": "Le signal visible est coh\u00e9rent avec selection de k, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de k en production.",
-        "D": "Le signal visible est coh\u00e9rent avec compromis complexite, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compromis complexite en production."
+        "A": "Un modèle parcimonieux mais adéquat pour retenir l'essentiel de la diversité",
+        "B": "Un modèle qui maximise uniquement le nombre de dimensions",
+        "C": "Un modèle qui utilise tous les points de données en tant que clusters individuels",
+        "D": "Un modèle qui minimise le nombre total de cluster au détriment de la diversité interne"
       },
-      "correct_answer": "D",
-      "explanation": "Les indices visuels vont dans le sens de compromis complexite: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur AIC: les indices orientent vers supporter des arbitrages de produ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Lecture du visuel: BIC est mobilise pour supporter des arbitrages de production ; l'utiliser correctement p...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le signal visible est coh\u00e9rent avec selection de k, car l'objectif est supporter des arbitrages de producti...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est correcte (Le signal visible est coh\u00e9rent avec compromis complexite, car l'objectif est supporter des arbitrages de pr...) car la lecture visuelle colle au signal principal observe. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Un modèle parcimonieux mais adéquat en termes de rétention de diversité minimize l'AIC car il équilibre ajustement et complexité. Le choix B, par contre, ignore l'équilibre essentiel entre complexité et ajustement. Le choix C aboutit à un surajustement typique avec une pénalité sévère de l'AIC. Le choix D pourrait simplifier le modèle, mais se ferait probablement avec une perte excessive de diversité, ce qui n'est pas le but principal ici.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment la notion de parcimonie influence-t-elle la sélection de modèle non supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle privilégie les modèles avec moins de paramètres si l'ajustement est équivalent",
+        "B": "Elle privilégie toujours les modèles avec plus de paramètres et d'itérations",
+        "C": "Elle ignore totalement le nombre de dimensions dans les données",
+        "D": "Elle amène les modèles à se concentrer d'abord sur la réduction du temps de calcul"
+      },
+      "correct_answer": "A",
+      "explanation": "La parcimonie dans la sélection de modèle signifie choisir des solutions plus simples tant que la perte en termes d'ajustement est négligeable, d'où le choix A correct. Le choix B ignore la pénalisation de la complexité excessive. Le choix C est faux car la parcimonie considère la réduction des dimensions comme un objectif secondaire si cela n'entrave pas la performance. Le choix D n'est pas un objectif principal de la parcimonie qui se concentre plutôt sur le modèle lui-même et non sur les ressources computielles.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel critère AIC ou BIC est le plus adapté lorsque le but est d'expliquer les patterns et d'explorer les hypothèses avec un échantillon limité?",
+      "image_url": null,
+      "choices": {
+        "A": "L'AIC, pour ses attributs d'adaptabilité dans les explorations de données",
+        "B": "Le BIC, pour une forte régularisation qui oriente vers les petits modèles",
+        "C": "N'importe lequel, tel que la taille d'échantillon n'influe pas sur ces critères",
+        "D": "L'utilisation combinée des deux critères pour des résultats contradictoires"
+      },
+      "correct_answer": "A",
+      "explanation": "L'AIC est souvent préféré pour l'exploratoire, particulièrement avec de petits échantillons, parce qu'il tend moins à sous-estimer les modèles complexes comme le ferait le BIC. Le choix B guiderait plus vers la consolidation que l'exploration. Le choix C est incorrect car la taille de l'échantillon impacte directement le BIC. Le choix D n'est pas vraiment fonctionnel car des résultats contradictoires ne sont pas nécessairement instructifs sans un critère dominant.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans un clustering, pourquoi l'utilisation de l'Indice de silhouette est-elle souvent cruciale pour la validation interne?",
+      "image_url": null,
+      "choices": {
+        "A": "Parce qu'il évalue la cohésion interne et la séparation externe des clusters",
+        "B": "Parce qu'il est spécifiquement conçu pour améliorer le temps de traitement",
+        "C": "Parce qu'il dépend totalement de paramètres heuristiques fournies par l'utilisateur",
+        "D": "Parce qu'il supprime le besoin de validation externe"
+      },
+      "correct_answer": "A",
+      "explanation": "L’indice de silhouette est un outil qui mesure à la fois la cohésion (à quel point les instances sont proches des autres dans le même cluster) et la séparation (la distance moyenne vers le cluster le plus proche dont l'instance ne fait pas partie). Le choix B est incorrect, car l'indice de silhouette concerne la qualité du clustering, pas l'efficacité de traitement. Le choix C est faux, ce critère est principalement dérivé des données. Le choix D est erroné, la validation externe demeure importante.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelles seraient les implications possibles de l'application du BIC avec une forte hypothèse a priori de distribution non normale pour les modèles non supervisés?",
+      "image_url": null,
+      "choices": {
+        "A": "Une pénalité inadéquate des paramètres conduisant à des modèles non optimaux",
+        "B": "Une maximisation automatique de l'information mutuelle",
+        "C": "Une guérison rapide des modèles biaisés",
+        "D": "Une utilisation plus efficace du clustering hiérarchique"
+      },
+      "correct_answer": "A",
+      "explanation": "Le BIC suppose un modèle de vraisemblance basé souvent sur une hypothèse de normalité; une distribution non-normale pourrait mal ajuster cette pénalité, entraînant un choix de modèle sous-optimal. Le choix B n'est pas pertinent, car BIC ne se focalise pas directement sur l'information mutuelle. C est invraisemblable car le BIC ne guérit pas les biais de modèle. D est inexact; le BIC n'augmente pas spécifiquement l'effet sur les clustering hiérarchiques.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Un modèle de clustering non supervisé avec un AIC plus faible indique généralement quoi?",
+      "image_url": null,
+      "choices": {
+        "A": "Un meilleur compromis entre l'ajustement du modèle et sa simplicité",
+        "B": "Une plus grande complexité des relations découvertes",
+        "C": "Un ajustement parfait sans aucun biais",
+        "D": "Une sur-optimisation pour les données d'entraînement spécifiques"
+      },
+      "correct_answer": "A",
+      "explanation": "Un AIC faible suggère que le modèle a réussi à garder un bon équilibre entre un ajustement adéquat aux données et une minimisation de la complexité modèle. Le choix B suggère généralement le contraire: la complexité peut indiquer une pente à surajuster. Le choix C est fondamentalement mauvais, car un ajustement parfait est rare et souvent un indicateur de surajustement. Le choix D encore plus, ce qui s'oppose à un faible AIC.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quels facteurs influencent principalement le choix final d'un modèle non supervisé au-delà des critères AIC et BIC?",
+      "image_url": null,
+      "choices": {
+        "A": "Interprétabilité, domaine d'application et échelle de la donnée",
+        "B": "Restrictions juridiques, préférences personnelles du chercheur",
+        "C": "Infinité de combinaisons de données d'entrée",
+        "D": "Langage de programmation utilisé pour l'implémentation"
+      },
+      "correct_answer": "A",
+      "explanation": "Outre les mesures quantitatives comme AIC et BIC, des considérations pratiques comme l'interprétabilité, le domaine spécifique, et l'échelle de données jouent un rôle critique dans le choix final. Le choix B est incorrect : bien que non négligeables, ces facteurs ne déterminent pas directement le choix modèle. Le choix C est une exagération irréaliste. Le choix D n'est pas pertinent car le langage n'impacte pas le modèle lui-même.",
       "difficulty": "hard"
     }
   ]

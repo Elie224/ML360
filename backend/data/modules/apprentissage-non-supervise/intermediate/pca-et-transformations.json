@@ -5,255 +5,255 @@
   "questions": [
     {
       "type": "text",
-      "question": "compression: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'PCA et transformations' ?",
+      "question": "Quel est l'objectif principal de la méthode PCA (Analyse en Composantes Principales) ?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur PCA et transformations, composante principale est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer composante principale en production.",
-        "B": "Pendant une phase d'experimentation, decorrelation est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decorrelation en production tout en surveillant le risque de sur-optimiser decorrelation localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Dans une phase d'experimentation de PCA et transformations, l'\u00e9quipe applique reconstruction pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reconstruction en production.",
-        "D": "Dans une phase d'experimentation de PCA et transformations, l'\u00e9quipe applique compression pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compression en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car compression y sert de levier de d\u00e9cision principal dans PCA et transformations. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur PCA et transformations, composante principale est choisi afin de fiabiliser les decisi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une phase d'experimentation, decorrelation est utile pour fiabiliser les d\u00e9cisions d'experimentatio...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une phase d'experimentation de PCA et transformations, l'\u00e9quipe applique reconstruction pour fiabilise...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une phase d'experimentation de PCA et transformations, l'\u00e9quipe applique compression pour fiabiliser l...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'PCA et transformations' (sante), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment decorrelation ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans PCA et transformations, choix de k se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de choix de k dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "liaison simple designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de liaison simple dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "liaison complete correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de liaison complete dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans PCA et transformations.",
-        "D": "decorrelation correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de decorrelation dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans PCA et transformations."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de decorrelation dans PCA et transformations, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que choix de k, liaison simple, liaison complete restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans PCA et transformations, choix de k se comprend comme un concept interm\u00e9diaire en apprentissage non sup...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (liaison simple designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de li...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (liaison complete correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le rol...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (decorrelation correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role d...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin sante dans 'PCA et transformations', pourquoi decorrelation est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "compression sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compression en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans PCA et transformations, reconstruction est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reconstruction en production.",
-        "C": "Dans PCA et transformations, decorrelation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decorrelation en production.",
-        "D": "Le role de composante principale est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer composante principale en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie decorrelation \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (compression sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux dec...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans PCA et transformations, reconstruction est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans PCA et transformations, decorrelation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de composante principale est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctemen...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec reconstruction dans 'PCA et transformations' ?",
-      "image_url": "apprentissage-non-supervise_pca_et_transformations_reconstruction_2.png",
-      "choices": {
-        "A": "decorrelation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decorrelation en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans PCA et transformations, compression est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compression en production.",
-        "C": "Dans PCA et transformations, reconstruction est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reconstruction en production.",
-        "D": "Le role de composante principale est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer composante principale en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de reconstruction dans PCA et transformations. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (decorrelation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans PCA et transformations, compression est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'u...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans PCA et transformations, reconstruction est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; ...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de composante principale est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctemen...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'PCA et transformations', quel commentaire du schema traduit le mieux le role de compression ?",
-      "image_url": "apprentissage-non-supervise_pca_et_transformations_compression_2.png",
-      "choices": {
-        "A": "Dans PCA et transformations, composante principale est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer composante principale en production.",
-        "B": "Le role de decorrelation est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decorrelation en production.",
-        "C": "reconstruction sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reconstruction en production pour guider une d\u00e9cision exploitable.",
-        "D": "compression sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compression en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de compression dans PCA et transformations. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans PCA et transformations, composante principale est mobilise pour fiabiliser les d\u00e9cisions d'experimenta...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de decorrelation est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (reconstruction sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (compression sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux dec...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'PCA et transformations', quel est le principal mode d'echec quand compression est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si compression est mal utilise, on observe souvent sur-optimiser compression localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de composante principale est sur-optimiser composante principale localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Un risque classique avec decorrelation est de sur-optimiser decorrelation localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Si reconstruction est mal utilise, on observe souvent sur-optimiser reconstruction localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Réduire la dimensionnalité des données tout en préservant le plus de variance possible.",
+        "B": "Augmenter la dimensionnalité des données pour améliorer la classification.",
+        "C": "Corriger les erreurs systématiques dans les données en appliquant des transformations linéaires.",
+        "D": "Classer les données en fonction de leur similarité sans réduire leur dimensionnalité."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de compression. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si compression est mal utilise, on observe souvent sur-optimiser compression localement en ignorant ses int...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de composante principale est sur-optimiser composante principale localement en ig...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec decorrelation est de sur-optimiser decorrelation localement en ignorant ses intera...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si reconstruction est mal utilise, on observe souvent sur-optimiser reconstruction localement en ignorant s...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
+      "explanation": "L'objectif principal de PCA est de réduire la dimensionnalité des données tout en conservant le plus de variance possible. La réponse B est incorrecte car elle mélange avec des techniques comme le kernel PCA visant des transformations non linéaires. La réponse C est fausse car PCA ne corrige pas mais transforme pour maximiser la variance. La réponse D est inexacte car PCA ne classifie pas mais transforme.",
+      "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "compression: pourquoi ce concept est-il crucial pour une \u00e9quipe marketing dans 'PCA et transformations' ?",
+      "question": "Quelle propriété est significativement associée à la première composante principale dans PCA ?",
       "image_url": null,
       "choices": {
-        "A": "Le role de reconstruction est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reconstruction en production.",
-        "B": "Le role de compression est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compression en production.",
-        "C": "composante principale sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer composante principale en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans PCA et transformations, decorrelation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decorrelation en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie compression \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de reconstruction est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de compression est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet d...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (composante principale sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans PCA et transformations, decorrelation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec composante principale dans 'PCA et transformations' ?",
-      "image_url": "apprentissage-non-supervise_pca_et_transformations_composante_principale_2.png",
-      "choices": {
-        "A": "Dans PCA et transformations, reconstruction est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reconstruction en production.",
-        "B": "Dans PCA et transformations, composante principale est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer composante principale en production.",
-        "C": "Le role de decorrelation est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decorrelation en production.",
-        "D": "compression sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compression en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de composante principale dans PCA et transformations. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans PCA et transformations, reconstruction est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans PCA et transformations, composante principale est mobilise pour fiabiliser les d\u00e9cisions d'experimenta...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de decorrelation est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (compression sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux dec...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'PCA et transformations', quelle situation de terrain montre le mieux quand utiliser reconstruction ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une phase d'experimentation de PCA et transformations, l'\u00e9quipe applique decorrelation pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decorrelation en production.",
-        "B": "En contexte r\u00e9el sur PCA et transformations, compression est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compression en production.",
-        "C": "En contexte r\u00e9el sur PCA et transformations, reconstruction est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reconstruction en production.",
-        "D": "Pendant une phase d'experimentation, composante principale est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer composante principale en production tout en surveillant le risque de sur-optimiser composante principale localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car reconstruction y sert de levier de d\u00e9cision principal dans PCA et transformations. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une phase d'experimentation de PCA et transformations, l'\u00e9quipe applique decorrelation pour fiabiliser...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur PCA et transformations, compression est choisi afin de fiabiliser les d\u00e9cisions d'expe...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur PCA et transformations, reconstruction est choisi afin de fiabiliser les d\u00e9cisions d'e...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une phase d'experimentation, composante principale est utile pour fiabiliser les d\u00e9cisions d'experi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe marketing dans 'PCA et transformations', quelle d\u00e9finition de compression est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "liaison complete correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de liaison complete dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans PCA et transformations.",
-        "B": "Dans PCA et transformations, dendrogramme se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de dendrogramme dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans PCA et transformations, compression se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de compression dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "liaison simple designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de liaison simple dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de compression dans PCA et transformations, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que liaison simple, liaison complete, dendrogramme restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (liaison complete correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le rol...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans PCA et transformations, dendrogramme se comprend comme un concept interm\u00e9diaire en apprentissage non s...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans PCA et transformations, compression se comprend comme un concept interm\u00e9diaire en apprentissage non su...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (liaison simple designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de li...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'PCA et transformations', quel exemple met decorrelation au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une phase d'experimentation, decorrelation est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decorrelation en production tout en surveillant le risque de sur-optimiser decorrelation localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Dans une phase d'experimentation de PCA et transformations, l'\u00e9quipe applique composante principale pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer composante principale en production.",
-        "C": "En contexte r\u00e9el sur PCA et transformations, compression est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compression en production.",
-        "D": "Pendant une phase d'experimentation, reconstruction est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reconstruction en production tout en surveillant le risque de sur-optimiser reconstruction localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Elle capture la plus grande variance dans les données.",
+        "B": "Elle correspond à l'axe avec le moins de signaux de bruit.",
+        "C": "Elle maximise la dépendance entre les différentes dimensions.",
+        "D": "Elle est toujours alignée avec un des axes d'origine de l'espace de données."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car decorrelation y sert de levier de d\u00e9cision principal dans PCA et transformations. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une phase d'experimentation, decorrelation est utile pour fiabiliser les d\u00e9cisions d'experimentatio...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une phase d'experimentation de PCA et transformations, l'\u00e9quipe applique composante principale pour fi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur PCA et transformations, compression est choisi afin de fiabiliser les d\u00e9cisions d'expe...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une phase d'experimentation, reconstruction est utile pour fiabiliser les d\u00e9cisions d'experimentati...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
+      "explanation": "La première composante principale capture la plus grande variance dans les données. La réponse B est incorrecte car la PCA ne vise pas principalement à réduire le bruit mais à maximiser la variance. La réponse C est fausse car PCA vise à réduire la redondance, non à maximiser la dépendance. La réponse D est incorrecte car la composante principale est rarement alignée avec les axes d'origine.",
+      "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'PCA et transformations', quel est le role le plus determinant de reconstruction pour un cas e-commerce ?",
+      "question": "Que signifie la decorrelation en contexte de PCA ?",
       "image_url": null,
       "choices": {
-        "A": "reconstruction sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reconstruction en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans PCA et transformations, composante principale est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer composante principale en production.",
-        "C": "Le role de decorrelation est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decorrelation en production.",
-        "D": "compression sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compression en production pour guider une d\u00e9cision exploitable."
+        "A": "Les composantes principales sont orthogonales entre elles.",
+        "B": "Les données originales n'ont plus de variance.",
+        "C": "Les données sont transformées en une distribution uniformément répartie.",
+        "D": "Les composantes principales sont alignées avec les données originales."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie reconstruction \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (reconstruction sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans PCA et transformations, composante principale est mobilise pour fiabiliser les d\u00e9cisions d'experimenta...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de decorrelation est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (compression sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux dec...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La decorrelation dans le contexte de la PCA signifie que les composantes principales sont orthogonales entre elles et donc non corrélées. La réponse B est incorrecte car la variance est redistribuée et non supprimée. La réponse C est fausse car PCA n'égalise pas la distribution des données mais les transforme pour maximiser la variance capturée. La réponse D est incorrecte car les composantes ne sont généralement pas alignées avec les axes d'origine.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la première étape dans la procédure de PCA ?",
+      "image_url": null,
+      "choices": {
+        "A": "Centrage des données.",
+        "B": "Calcul des valeurs propres de la matrice de covariance.",
+        "C": "Normalisation des vecteurs propres.",
+        "D": "Construction de la matrice de covariance."
+      },
+      "correct_answer": "A",
+      "explanation": "La première étape dans la procédure de PCA est le centrage des données en soustrayant leur moyenne pour chaque dimension. La réponse B vient après que la matrice de covariance a été construite. La réponse C concerne l'étape de normalisation des vecteurs propres, mais elle est après l'obtention de ces vecteurs. La réponse D est incorrecte comme première étape car le centrage doit précéder la construction de la matrice de covariance.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Comment le concept de reconstruction est-il appliqué dans PCA ?",
+      "image_url": null,
+      "choices": {
+        "A": "En approchant les données originales via les composantes réduites.",
+        "B": "En modifiant les données initiales pour ajuster les erreurs.",
+        "C": "En augmentant la variance pour minimiser la perte de données.",
+        "D": "En alignant les données reconstruites avec les données d'origine."
+      },
+      "correct_answer": "A",
+      "explanation": "En PCA, la reconstruction consiste à approcher les données originales via les composantes réduites, minimisant ainsi l'erreur de reconstruction. La réponse B est fausse car la PCA ne modifie pas les données initiales mais seulement leur représentation. La réponse C est incorrecte car la PCA ne vise pas à augmenter la variance mais à la préserver. La réponse D est fausse car les données reconstruites ne peuvent pas toujours être parfaitement alignées avec les données d'origine sans perte d'information.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'PCA et transformations', quelle situation de terrain montre le mieux quand utiliser composante principale ?",
+      "question": "Quel est le principal défi de la compression utilisant PCA ?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur PCA et transformations, reconstruction est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reconstruction en production.",
-        "B": "En contexte r\u00e9el sur PCA et transformations, composante principale est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer composante principale en production.",
-        "C": "Pendant une phase d'experimentation, decorrelation est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decorrelation en production tout en surveillant le risque de sur-optimiser decorrelation localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation de PCA et transformations, l'\u00e9quipe applique compression pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compression en production."
+        "A": "La sélection du nombre de composantes à conserver.",
+        "B": "La nécessité de données étiquetées pour s'entraîner.",
+        "C": "L'impossibilité d'inverser la transformation.",
+        "D": "L'augmentation inévitable du bruit après la transformation."
+      },
+      "correct_answer": "A",
+      "explanation": "Le principal défi de la compression avec PCA est de choisir un nombre approprié de composantes principales à conserver pour maintenir un équilibre entre la réduction de la dimension et la perte d'information. La réponse B est incorrecte car la PCA ne nécessite pas de données étiquetées. La réponse C est fausse car la PCA est une transformation linéaire et réversible, même si des informations peuvent être perdues. La réponse D est incorrecte puisque la PCA ne vise pas à augmenter le bruit, bien que certaines informations puissent être perdues.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il important de centrer les données avant de réaliser une PCA ?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour garantir que la première composante principale est la plus informative.",
+        "B": "Pour éviter de biaiser le calcul des valeurs propres.",
+        "C": "Pour réduire la taille des vecteurs propres calculés.",
+        "D": "Pour s'assurer que les dimensions sont normalisées."
       },
       "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car composante principale y sert de levier de d\u00e9cision principal dans PCA et transformations. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur PCA et transformations, reconstruction est choisi afin de fiabiliser les d\u00e9cisions d'e...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur PCA et transformations, composante principale est choisi afin de fiabiliser les decisi...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, decorrelation est utile pour fiabiliser les d\u00e9cisions d'experimentatio...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation de PCA et transformations, l'\u00e9quipe applique compression pour fiabiliser l...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Centrer les données est crucial pour éviter de biaiser le calcul des valeurs propres et pour que les directions principales capturent efficacement la variance. La réponse A est incorrecte car ce n'est pas seulement le centrage qui rend la première composante principale informative. La réponse C est fausse car le centrage n'affecte pas la taille des vecteurs propres. La réponse D est incorrecte car le centrage ne normalise pas les dimensions, il assure seulement que les calculs de covariance se concentrent sur les variations réelles.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans la PCA, comment les composantes principales sont-elles ordonnées ?",
+      "image_url": null,
+      "choices": {
+        "A": "Par ordre décroissant de variance capturée.",
+        "B": "Par ordre croissant de corrélation avec les dimensions originales.",
+        "C": "Dans l'ordre où elles sont calculées.",
+        "D": "Selon leur capacité à capturer du bruit."
+      },
+      "correct_answer": "A",
+      "explanation": "Dans la PCA, les composantes principales sont ordonnées par ordre décroissant de variance qu'elles capturent. La réponse B est incorrecte car les composantes ne sont pas ordonnées par leur corrélation avec les dimensions originales. La réponse C est fausse parce que l'ordre de calcul peut ne pas correspondre aux propriétés statistiques capturées. La réponse D est inexacte puisque les composantes principales ne capturent pas le bruit intentionnellement.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel outil mathématique est utilisé dans PCA pour générer les composantes principales ?",
+      "image_url": null,
+      "choices": {
+        "A": "Les vecteurs et valeurs propres de la matrice de covariance.",
+        "B": "La transformation de Fourier discrète.",
+        "C": "La distribution normale des données centrées.",
+        "D": "L'algorithme de k-moyennes pour la sélection des axes."
+      },
+      "correct_answer": "A",
+      "explanation": "En PCA, les vecteurs et valeurs propres de la matrice de covariance sont utilisés pour déterminer les composantes principales. La réponse B est incorrecte car elle concerne une technique pour analyser les signaux, pas pour réduire la dimensionnalité. La réponse C est fausse car bien que les données soient souvent normalisées, cela ne génère pas les composantes principales. La réponse D est incorrecte, car k-moyennes est un algorithme de clustering, pas une méthode de transformation de dimensionnalité.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi une transformation inverse est-elle possible dans la PCA ?",
+      "image_url": null,
+      "choices": {
+        "A": "Parce que les transformations sont linéaires.",
+        "B": "Parce que la matrice de corrélation est unitaire.",
+        "C": "Parce que toutes les dimensions ont la même variance.",
+        "D": "Parce que les vecteurs propres sont non-négatifs."
+      },
+      "correct_answer": "A",
+      "explanation": "La transformation inverse est possible en PCA car les transformations sont linéaires. La réponse B est incorrecte car la PCA utilise la matrice de covariance, pas la matrice de corrélation unitaire. La réponse C est fausse puisque ce n'est pas la variance égale des dimensions qui permet l'inversibilité. La réponse D est incorrecte car les vecteurs propres peuvent avoir des valeurs négatives, la contrainte n'est pas basée sur les signes mais sur l'orthogonalité.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment le calcul des composantes principales impacte-t-il la reconstruction des données originales ?",
+      "image_url": null,
+      "choices": {
+        "A": "Plus de composantes principales maintiennent mieux les données originales.",
+        "B": "Moins de composantes principales augmentent la variance des données reconstruites.",
+        "C": "Le nombre de composantes principales n'influence pas la fidélité de la reconstruction.",
+        "D": "Un nombre égal de composantes à celui des dimensions d'origine assure toujours une reconstruction parfaite."
+      },
+      "correct_answer": "A",
+      "explanation": "Utiliser plus de composantes principales permet de maintenir davantage de l'information des données originales, ce qui impacte positivement la fidélité de la reconstruction. La réponse B est incorrecte car moins de composantes réduisent la variance totale capturée, ce qui peut introduire des erreurs dans les données reconstruites. La réponse C est clairement fausse, car le nombre de composantes est crucial pour la qualité de la reconstruction. La réponse D est incorrecte si les composantes supprimées étaient significatives en termes de variance capturée.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel problème peut survenir si les données ne sont pas normalisées avant d'appliquer la PCA ?",
+      "image_url": null,
+      "choices": {
+        "A": "Les variables avec des échelles différentes peuvent dominer les premières composantes principales.",
+        "B": "La PCA n'est pas capable d'opérer du tout sans normalisation.",
+        "C": "Les composantes principales deviennent dépendantes des vecots propres.",
+        "D": "Les vecteurs propres calculés sont ceux des dimensions d'origine."
+      },
+      "correct_answer": "A",
+      "explanation": "Si les données ne sont pas normalisées, les variables avec des échelles plus grandes peuvent dominer les premières composantes principales, menant à des biais. La réponse B est incorrecte car la PCA peut toujours fonctionner sans normalisation mais elle peut ne pas être pertinente avec des données déséquilibrées. La réponse C ne se concentre pas sur une conséquence de l'absence de normalisation, mais sur un malentendu de dépendances mathématiques. La réponse D est incorrecte car elle confond les résultats de la PCA avec le fait que les vecteurs propres ne reflètent pas les dimensions d'origine.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "En quoi la PCA aide-t-elle à la compression des données ?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle priorise les dimensions par variance, permettant de conserver les plus significatives.",
+        "B": "Elle augmente la taille des vecteurs pour mieux capturer l'information.",
+        "C": "Elle transforme les données en utilisant des transformations non linéaires pour réduire les dimensions.",
+        "D": "Elle génère de nouvelles données qui remplacent les anciennes pour lisser les valeurs."
+      },
+      "correct_answer": "A",
+      "explanation": "La PCA aide à la compression en priorisant les dimensions par variance, permettant de conserver les plus significatives pour réduire la dimensionnalité tout en limitant la perte d'information. La réponse B est erronée car elle va à l'encontre du principe de réduction de dimension. La réponse C est incorrecte, car PCA est une technique linéaire. La réponse D est incorrecte puisque PCA ne génère pas de nouvelles données mais transforme les existantes pour maximiser la structure.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'PCA et transformations', quel est le role le plus determinant de composante principale pour un cas assurance ?",
+      "question": "Quel est un signe que trop de composantes ont été retirées lors d'une compression par PCA ?",
       "image_url": null,
       "choices": {
-        "A": "Dans PCA et transformations, decorrelation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decorrelation en production.",
-        "B": "Le role de compression est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compression en production.",
-        "C": "reconstruction sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reconstruction en production pour guider une d\u00e9cision exploitable.",
-        "D": "composante principale sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer composante principale en production pour guider une d\u00e9cision exploitable."
+        "A": "Une large perte de variance avec des reconstructions floues.",
+        "B": "Un gain facile en performances de classification.",
+        "C": "Une meilleure corrélation entre les dimensions restantes.",
+        "D": "Une capacité d'adaptation accrue pour des constructions ultérieures."
       },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie composante principale \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans PCA et transformations, decorrelation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de compression est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (reconstruction sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (composante principale sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "decorrelation: dans un cas sante, quelle interpretation correspond le mieux au schema ML de 'PCA et transformations' ?",
-      "image_url": "apprentissage-non-supervise_pca_et_transformations_decorrelation_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur reconstruction: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reconstruction en production.",
-        "B": "Le schema illustre une d\u00e9cision basee sur decorrelation: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer decorrelation en production.",
-        "C": "Lecture du visuel: composante principale est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer composante principale en production dans PCA et transformations.",
-        "D": "Le signal visible est coh\u00e9rent avec compression, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer compression en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de decorrelation: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur reconstruction: les indices orientent vers fiabiliser les decisio...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur decorrelation: les indices orientent vers fiabiliser les d\u00e9cision...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: composante principale est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'u...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec compression, car l'objectif est fiabiliser les d\u00e9cisions d'experimentat...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Trop de composantes retirées entraînent une perte substantielle de la variance, rendant les reconstructions floues et moins fidèles aux données originales. La réponse B est incorrecte, retirer trop de composantes dégrade généralement les performances. La réponse C est fausse puisque moins de dimensions signifie moins de redondance. La réponse D est inexacte car le retrait excessif rend les composantes inutiles pour des reconstructions futures fidèles.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'PCA et transformations', quelle erreur autour de reconstruction est la plus critique ?",
+      "question": "Quelle condition indique qu'une PCA est nécessaire avant de poursuivre avec d'autres analyses ?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec composante principale est de sur-optimiser composante principale localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Si decorrelation est mal utilise, on observe souvent sur-optimiser decorrelation localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Le piege principal autour de compression est sur-optimiser compression localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Le piege principal autour de reconstruction est sur-optimiser reconstruction localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Quand il existe une haute corrélation entre les caractéristiques des données.",
+        "B": "Quand les données sont déjà dans un espace de haute dimension.",
+        "C": "Quand toutes les caractéristiques sont normalisées.",
+        "D": "Quand les données sont déjà décorélées."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de reconstruction. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec composante principale est de sur-optimiser composante principale localement en ign...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si decorrelation est mal utilise, on observe souvent sur-optimiser decorrelation localement en ignorant ses...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour de compression est sur-optimiser compression localement en ignorant ses interacti...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour de reconstruction est sur-optimiser reconstruction localement en ignorant ses int...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La PCA est particulièrement utile quand il y a une forte corrélation entre les caractéristiques, car elle peut réduire les redondances et consolider l'information. La réponse B est incorrecte par elle-même, une dimension élevée n'impose pas d'emblée l'usage de PCA. La réponse C est incorrecte car la normalisation seule ne justifie pas la PCA, bien qu'elle soit souvent pré-requise. La réponse D est fausse car si les données sont déjà décorélées, la PCA n'offre pas d'avantage significatif en termes de réduction de redondance.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "decorrelation: quel risque est le plus directement lie a son mauvais usage en production dans 'PCA et transformations' ?",
+      "question": "Quel aspect critique doit être considéré lors de l'interprétation des composantes principales ?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec reconstruction est de sur-optimiser reconstruction localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Un risque classique avec decorrelation est de sur-optimiser decorrelation localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Si composante principale est mal utilise, on observe souvent sur-optimiser composante principale localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Le piege principal autour de compression est sur-optimiser compression localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Les composantes ne représentent pas toujours des caractéristiques interprétables concrètes.",
+        "B": "Les composantes ont généralement une signification spatiale linéaire.",
+        "C": "Les composantes principales identifient souvent des clusters dans les données.",
+        "D": "Les composantes principales sont invariantes face aux transformations non linéaires des données."
       },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de decorrelation. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec reconstruction est de sur-optimiser reconstruction localement en ignorant ses inte...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec decorrelation est de sur-optimiser decorrelation localement en ignorant ses intera...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si composante principale est mal utilise, on observe souvent sur-optimiser composante principale localement...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de compression est sur-optimiser compression localement en ignorant ses interacti...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Un aspect critique de l'interprétation des composantes principales est qu'elles ne représentent pas nécessairement des caractéristiques directement interprétables, car elles sont des combinaisons linéaires des variables originales. La réponse B est erronée car les composantes n'ont pas toujours une signification directe en termes spatiaux. La réponse C est incorrecte, bien que PCA puisse être utilisé pour la visualisation, il n'identifie pas activement les clusters. La réponse D est fausse, car PCA est sensible aux transformations non linéaires.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "reconstruction: quelle proposition en donne la meilleure d\u00e9finition dans 'PCA et transformations' (contexte e-commerce) ?",
+      "question": "Quelle est la caractéristique principale d'une composante principale générée par l'analyse en composantes principales (PCA) ?",
       "image_url": null,
       "choices": {
-        "A": "coupe de clusters designe un concept interm\u00e9diaire en apprentissage non supervise ; il organise des observations non \u00e9tiquet\u00e9es en groupes coh\u00e9rents selon une logique de similarite.",
-        "B": "reconstruction designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de reconstruction dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "liaison complete correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de liaison complete dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans PCA et transformations.",
-        "D": "Dans PCA et transformations, dendrogramme se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de dendrogramme dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Elle maximize la variance des données projetées.",
+        "B": "Elle minimise la distance entre les points de données projetés.",
+        "C": "Elle maximise le nombre de données après projection.",
+        "D": "Elle minimise l'erreur quadratique des données projetées."
       },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de reconstruction dans PCA et transformations, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que liaison complete, dendrogramme, coupe de clusters restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (coupe de clusters designe un concept interm\u00e9diaire en apprentissage non supervise ; il organise des observa...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (reconstruction designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de re...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (liaison complete correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le rol...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans PCA et transformations, dendrogramme se comprend comme un concept interm\u00e9diaire en apprentissage non s...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "correct_answer": "A",
+      "explanation": "La caractéristique principale d'une composante principale est qu'elle maximise la variance des données projetées. PCA est utilisé pour réduire la dimensionnalité tout en conservant autant que possible la variance des données. La réponse B est fausse car minimiser la distance entre les points est typique d'autres techniques comme le clustering. La réponse C est incorrecte car la PCA ne se préoccupe pas du nombre de points, mais de la variance. La réponse D est incorrecte car minimiser l'erreur quadratique est typique des modèles de régression, et non de PCA.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Dans le contexte de la PCA, que signifie 'decorrelation' des données ?",
+      "image_url": null,
+      "choices": {
+        "A": "Les composantes principales sont orthogonales entre elles.",
+        "B": "Les données initiales sont normalisées à une même échelle.",
+        "C": "Les composantes principales sont dépendantes dans un espace orthogonal.",
+        "D": "Les données sont centrées autour de zéro."
+      },
+      "correct_answer": "A",
+      "explanation": "La décorrelation signifie que les composantes principales sont orthogonales entre elles, c'est-à-dire statistiquement indépendantes. Cela facilite l'interprétation et l'analyse des données en réduisant la redondance. La réponse B est incorrecte car elle concerne la normalisation, pas la décorrelation. La réponse C est fausse car les composantes doivent être indépendantes, donc non-dépendantes. La réponse D concerne la centration des données, qui est une étape préalable mais n'implique pas nécessairement la décorrelation.",
+      "difficulty": "medium"
     }
   ]
 }

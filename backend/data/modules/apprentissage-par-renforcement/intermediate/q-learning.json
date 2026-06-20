@@ -5,254 +5,254 @@
   "questions": [
     {
       "type": "text",
-      "question": "mise a jour hors politique: quelle proposition en donne la meilleure d\u00e9finition dans 'Q-learning' (contexte marketing) ?",
+      "question": "Quelle est la principale caractéristique de l'apprentissage par renforcement hors politique (off-policy) ?",
       "image_url": null,
       "choices": {
-        "A": "mise a jour hors politique designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de mise a jour hors politique dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "variance correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de variance dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Q-learning.",
-        "C": "Dans Q-learning, comparaison de politiques se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de comparaison de politiques dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "g\u00e9n\u00e9ralisation designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de g\u00e9n\u00e9ralisation dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "L'agent apprend en utilisant une politique différente de celle utilisée pour générer les données.",
+        "B": "L'agent met à jour ses actions exclusivement sur la politique suivie pour générer les données.",
+        "C": "Les mises à jour des états s'effectuent en utilisant des récompenses globales.",
+        "D": "L'agent ne met à jour ses valeurs que lorsque l'état final est atteint."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de mise a jour hors politique dans Q-learning, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que variance, comparaison de politiques, g\u00e9n\u00e9ralisation restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (mise a jour hors politique designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalis...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (variance correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Q-learning, comparaison de politiques se comprend comme un concept interm\u00e9diaire en apprentissage par ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (g\u00e9n\u00e9ralisation designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "En off-policy, l'agent peut apprendre une politique différente de celle utilisée pour explorer, ce qui est caractéristique du Q-learning. B est incorrect car cela décrit on-policy. C est faux car les mises à jour se basent sur des récompenses immédiates. D est incorrect car les mises à jour sont intégrées continuellement.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Q-learning' (e-commerce), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment max target ?",
+      "question": "Quelle est la définition du 'max target' dans le contexte du Q-learning ?",
       "image_url": null,
       "choices": {
-        "A": "Dans Q-learning, comparaison de politiques se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de comparaison de politiques dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "g\u00e9n\u00e9ralisation designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de g\u00e9n\u00e9ralisation dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "features d'etat correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il concerne la representation des variables utiles au modele et leur qualit\u00e9 predictive, ce qui structure l'analyse dans Q-learning.",
-        "D": "max target correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de max target dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Q-learning."
+        "A": "C'est la valeur maximale future escomptée parmi toutes les actions possibles depuis le nouvel état atteint.",
+        "B": "C'est la moyenne des récompenses futures escomptées pour toutes les actions possibles.",
+        "C": "C'est la valeur Q actuelle plus la récompense immédiate obtenue.",
+        "D": "C'est le produit des valeurs Q de l'état actuel et de l'état suivant."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de max target dans Q-learning, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que comparaison de politiques, g\u00e9n\u00e9ralisation, features d'etat restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Q-learning, comparaison de politiques se comprend comme un concept interm\u00e9diaire en apprentissage par ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (g\u00e9n\u00e9ralisation designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (features d'etat correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il concerne la re...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (max target correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Le 'max target' en Q-learning est défini comme la meilleure estimation de la valeur future, souvent calculée comme le max des valeurs Q du nouvel état. B est faux car il s'agit d'une moyenne, et C et D ne suivent pas la définition formelle du max target.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Pour une \u00e9quipe industrie dans 'Q-learning', quelle d\u00e9finition de table Q est la plus juste ?",
+      "question": "Quel rôle joue la table Q dans l'algorithme de Q-learning ?",
       "image_url": null,
       "choices": {
-        "A": "features d'etat correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il concerne la representation des variables utiles au modele et leur qualit\u00e9 predictive, ce qui structure l'analyse dans Q-learning.",
-        "B": "Dans Q-learning, approximateur se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'approximateur dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Q-learning, table Q se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de table Q dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "g\u00e9n\u00e9ralisation designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de g\u00e9n\u00e9ralisation dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Elle stocke les estimations de la valeur de chaque action à partir de chaque état.",
+        "B": "Elle enregistre les états-visites successifs pour éviter les re-boucles.",
+        "C": "Elle contient uniquement la liste des récompenses immédiates obtenues.",
+        "D": "Elle sert à tracer l'historique des décisions prises par l'agent."
       },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de table Q dans Q-learning, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte industrie, alors que g\u00e9n\u00e9ralisation, features d'etat, approximateur restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (features d'etat correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il concerne la re...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Q-learning, approximateur se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Q-learning, table Q se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement ; il ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (g\u00e9n\u00e9ralisation designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La table Q est une structure où les valeurs Q, qui quantifient l'utilité des actions données des états, sont enregistrées. B et D concernent plutôt le traçage des visites ou des décisions, et C est incorrect car la table ne stocke pas seulement les récompenses immédiates.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "convergence: quelle proposition en donne la meilleure d\u00e9finition dans 'Q-learning' (contexte cybersecurite) ?",
+      "question": "Comment la convergence est-elle atteinte dans le Q-learning ?",
       "image_url": null,
       "choices": {
-        "A": "instabilite designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'instabilite dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "convergence designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de convergence dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "features d'etat correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il concerne la representation des variables utiles au modele et leur qualit\u00e9 predictive, ce qui structure l'analyse dans Q-learning.",
-        "D": "Dans Q-learning, approximateur se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'approximateur dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "En visitant toutes les paires état-action suffisamment de fois avec une politique exploratrice.",
+        "B": "En réduisant les valeurs Q progressivement à chaque itération jusqu'à ce qu'elles soient minimales.",
+        "C": "En augmentant progressivement le taux d'apprentissage lors des mises à jour des valeurs Q.",
+        "D": "En appliquant les mêmes actions successivement jusqu'à ce que les récompenses se stabilisent."
       },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de convergence dans Q-learning, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que features d'etat, approximateur, instabilite restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (instabilite designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'in...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (convergence designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de co...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (features d'etat correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il concerne la re...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans Q-learning, approximateur se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Le Q-learning converge vers l'optimum en s'assurant que toutes les paires état-action sont explorées, généralement via une politique epsilon-greedy. B et C sont incorrects car la convergence nécessite un taux d'apprentissage diminuant. D est faux car la convergence ne se base pas sur des actions répétées.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "A partir de cette description issue de 'Q-learning' (un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de mise a jour hors politique dans un pipeline ML, avec ses hypotheses et ses limites pratiques.), quel concept faut-il retenir ?",
+      "question": "Pourquoi le Q-learning est-il considéré comme un algorithme hors politique ?",
       "image_url": null,
       "choices": {
-        "A": "mise a jour hors politique correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de mise a jour hors politique dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel de mise a jour hors politique.",
-        "B": "Le concept target update se reconnait par un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de target update dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Quand une d\u00e9finition insiste sur un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'erreur temporelle dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a erreur temporelle.",
-        "D": "epsilon-greedy: un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'epsilon-greedy dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Car il utilise une politique comportementale pour explorer et une autre pour mettre à jour.",
+        "B": "Car il met à jour les valeurs Q sans jamais explorer l'environnement.",
+        "C": "Car il utilise plusieurs politiques simultanément pour explorer et exploiter.",
+        "D": "Car il n'a pas besoin de politique pour choisir ses actions."
       },
       "correct_answer": "A",
-      "explanation": "Le concept attendu est mise a jour hors politique, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Q-learning. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est correcte (mise a jour hors politique correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il for...) car la d\u00e9finition correspond exactement au concept attendu. B est moins pertinente (Le concept target update se reconnait par un concept interm\u00e9diaire en apprentissage par renforcement ; il f...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est moins pertinente (Quand une d\u00e9finition insiste sur un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est moins pertinente (epsilon-greedy: un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'epsilo...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "En Q-learning, l'agent peut explorer avec une politique (e.g., epsilon-greedy) et mettre à jour ses valeurs Q en se basant sur une politique optimale (meilleure action), ce qui le caractérise comme off-policy. B, C et D sont incorrects car ils déforment cette indépendance entre exploration et mise à jour.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Description experte (Q-learning) - un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de max target dans un pipeline ML, avec ses hypotheses et ses limites pratiques. Quel concept est le plus exact ?",
+      "question": "Comment le concept de 'max target' contribue-t-il à la stabilité du Q-learning ?",
       "image_url": null,
       "choices": {
-        "A": "Quand une d\u00e9finition insiste sur un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'erreur temporelle dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a erreur temporelle.",
-        "B": "epsilon-greedy: un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'epsilon-greedy dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "optimisme correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'optimisme dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel d'optimisme.",
-        "D": "Le concept max target se reconnait par un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de max target dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "D",
-      "explanation": "Le concept attendu est max target, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Q-learning. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (Quand une d\u00e9finition insiste sur un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est moins pertinente (epsilon-greedy: un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'epsilo...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est moins pertinente (optimisme correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est correcte (Le concept max target se reconnait par un concept interm\u00e9diaire en apprentissage par renforcement ; il form...) car la d\u00e9finition correspond exactement au concept attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Q-learning', quel concept correspond le mieux a cette description: un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de table Q dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-      "image_url": null,
-      "choices": {
-        "A": "optimisme correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'optimisme dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel d'optimisme.",
-        "B": "Le concept trade-off se reconnait par un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de trade-off dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Quand une d\u00e9finition insiste sur un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de table Q dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a table Q.",
-        "D": "epsilon-greedy: un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'epsilon-greedy dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "Le concept attendu est table Q, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Q-learning. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (optimisme correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est moins pertinente (Le concept trade-off se reconnait par un concept interm\u00e9diaire en apprentissage par renforcement ; il forma...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est correcte (Quand une d\u00e9finition insiste sur un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise ...) car la d\u00e9finition correspond exactement au concept attendu. D'est moins pertinente (epsilon-greedy: un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'epsilo...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Q-learning', quel est le role le plus determinant de mise a jour hors politique pour un cas marketing ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Q-learning, max target est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer max target en production.",
-        "B": "Le role de table Q est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer table Q en production.",
-        "C": "convergence sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer convergence en production pour guider une d\u00e9cision exploitable.",
-        "D": "mise a jour hors politique sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour hors politique en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie mise a jour hors politique \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Q-learning, max target est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser corre...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de table Q est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (convergence sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux dec...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (mise a jour hors politique sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perm...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin e-commerce dans 'Q-learning', pourquoi max target est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "table Q sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer table Q en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Q-learning, convergence est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer convergence en production.",
-        "C": "Dans Q-learning, max target est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer max target en production.",
-        "D": "Le role de mise a jour hors politique est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour hors politique en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie max target \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (table Q sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Q-learning, convergence est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser corr...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Q-learning, max target est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser corre...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de mise a jour hors politique est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correc...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "table Q: pourquoi ce concept est-il crucial pour une \u00e9quipe industrie dans 'Q-learning' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role de convergence est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer convergence en production.",
-        "B": "Le role de table Q est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer table Q en production.",
-        "C": "mise a jour hors politique sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour hors politique en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Q-learning, max target est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer max target en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie table Q \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de convergence est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de table Q est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (mise a jour hors politique sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perm...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Q-learning, max target est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser corre...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Q-learning', quel est le role le plus determinant de convergence pour un cas cybersecurite ?",
-      "image_url": null,
-      "choices": {
-        "A": "convergence sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer convergence en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Q-learning, mise a jour hors politique est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour hors politique en production.",
-        "C": "Le role de max target est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer max target en production.",
-        "D": "table Q sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer table Q en production pour guider une d\u00e9cision exploitable."
+        "A": "Il évite l'accumulation d'erreurs en s'appuyant sur la meilleure évaluation future.",
+        "B": "Il accélère l'exploration en récompensant toujours la même action.",
+        "C": "Il utilise des moyennes réduisant la variance des mises à jour.",
+        "D": "Il ignore les valeurs futures pour se concentrer sur l'état actuel."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie convergence \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (convergence sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux dec...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Q-learning, mise a jour hors politique est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de max target est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (table Q sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le 'max target' contribue à la stabilité en évitant la propagation d'erreurs en fournissant toujours le meilleur estimateur de la valeur future. B et D n'impliquent pas l'utilisation prévisionnelle, et C parle de moyennes alors que le max n'est pas une moyenne.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Q-learning', quelle situation de terrain montre le mieux quand utiliser mise a jour hors politique ?",
+      "question": "Dans le Q-learning, pourquoi la table Q peut-elle devenir très grande ?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Q-learning, convergence est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer convergence en production.",
-        "B": "En contexte r\u00e9el sur Q-learning, mise a jour hors politique est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour hors politique en production.",
-        "C": "Pendant une phase d'experimentation, max target est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer max target en production tout en surveillant le risque de sur-optimiser max target localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation de Q-learning, l'\u00e9quipe applique table Q pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer table Q en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car mise a jour hors politique y sert de levier de d\u00e9cision principal dans Q-learning. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Q-learning, convergence est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Q-learning, mise a jour hors politique est choisi afin de fiabiliser les d\u00e9cisions d'e...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, max target est utile pour fiabiliser les d\u00e9cisions d'experimentation ;...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation de Q-learning, l'\u00e9quipe applique table Q pour fiabiliser les d\u00e9cisions d'e...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Q-learning', quelle erreur autour de mise a jour hors politique est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si table Q est mal utilise, on observe souvent sur-optimiser table Q localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de convergence est sur-optimiser convergence localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Le piege principal autour de mise a jour hors politique est sur-optimiser mise a jour hors politique localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Un risque classique avec max target est de sur-optimiser max target localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de mise a jour hors politique. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si table Q est mal utilise, on observe souvent sur-optimiser table Q localement en ignorant ses interaction...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour de convergence est sur-optimiser convergence localement en ignorant ses interacti...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de mise a jour hors politique est sur-optimiser mise a jour hors politique locale...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec max target est de sur-optimiser max target localement en ignorant ses interactions...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "max target: quel risque est le plus directement lie a son mauvais usage en production dans 'Q-learning' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec convergence est de sur-optimiser convergence localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Un risque classique avec max target est de sur-optimiser max target localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Si mise a jour hors politique est mal utilise, on observe souvent sur-optimiser mise a jour hors politique localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Le piege principal autour de table Q est sur-optimiser table Q localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de max target. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec convergence est de sur-optimiser convergence localement en ignorant ses interactio...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec max target est de sur-optimiser max target localement en ignorant ses interactions...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si mise a jour hors politique est mal utilise, on observe souvent sur-optimiser mise a jour hors politique ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de table Q est sur-optimiser table Q localement en ignorant ses interactions avec...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Q-learning' et en contexte cybersecurite, quelle interpretation du schema appuie le mieux l'analyse de convergence ?",
-      "image_url": "apprentissage-par-renforcement_q_learning_convergence_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur mise a jour hors politique: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour hors politique en production.",
-        "B": "Lecture du visuel: max target est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer max target en production dans Q-learning.",
-        "C": "Le signal visible est coh\u00e9rent avec table Q, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer table Q en production.",
-        "D": "Le signal visible est coh\u00e9rent avec convergence, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer convergence en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Les indices visuels vont dans le sens de convergence: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur mise a jour hors politique: les indices orientent vers fiabiliser...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Lecture du visuel: max target est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser cor...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le signal visible est coh\u00e9rent avec table Q, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est correcte (Le signal visible est coh\u00e9rent avec convergence, car l'objectif est fiabiliser les d\u00e9cisions d'experimentat...) car la lecture visuelle colle au signal principal observe. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Q-learning' et en contexte marketing, quelle interpretation du schema appuie le mieux l'analyse de mise a jour hors politique ?",
-      "image_url": "apprentissage-par-renforcement_q_learning_mise_a_jour_hors_politique_1.png",
-      "choices": {
-        "A": "Lecture du visuel: table Q est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer table Q en production dans Q-learning.",
-        "B": "Le signal visible est coh\u00e9rent avec convergence, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer convergence en production.",
-        "C": "Le signal visible est coh\u00e9rent avec mise a jour hors politique, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour hors politique en production.",
-        "D": "Le schema illustre une d\u00e9cision basee sur max target: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer max target en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Les indices visuels vont dans le sens de mise a jour hors politique: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Lecture du visuel: table Q est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correc...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Le signal visible est coh\u00e9rent avec convergence, car l'objectif est fiabiliser les d\u00e9cisions d'experimentat...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est correcte (Le signal visible est coh\u00e9rent avec mise a jour hors politique, car l'objectif est fiabiliser les d\u00e9cisions...) car la lecture visuelle colle au signal principal observe. D'est moins pertinente (Le schema illustre une d\u00e9cision basee sur max target: les indices orientent vers fiabiliser les d\u00e9cisions d...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "max target: dans un cas e-commerce, quelle interpretation correspond le mieux au schema ML de 'Q-learning' ?",
-      "image_url": "apprentissage-par-renforcement_q_learning_max_target_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur convergence: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer convergence en production.",
-        "B": "Le schema illustre une d\u00e9cision basee sur max target: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer max target en production.",
-        "C": "Lecture du visuel: mise a jour hors politique est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour hors politique en production dans Q-learning.",
-        "D": "Le signal visible est coh\u00e9rent avec table Q, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer table Q en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de max target: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur convergence: les indices orientent vers fiabiliser les d\u00e9cisions ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur max target: les indices orientent vers fiabiliser les d\u00e9cisions d...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: mise a jour hors politique est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec table Q, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Observation visuelle (Q-learning) - pour un contexte industrie, quelle lecture du schema est la plus pertinente pour table Q ?",
-      "image_url": "apprentissage-par-renforcement_q_learning_table_q_1.png",
-      "choices": {
-        "A": "Lecture du visuel: table Q est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer table Q en production dans Q-learning.",
-        "B": "Le signal visible est coh\u00e9rent avec mise a jour hors politique, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer mise a jour hors politique en production.",
-        "C": "Le schema illustre une d\u00e9cision basee sur max target: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer max target en production.",
-        "D": "Lecture du visuel: convergence est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer convergence en production dans Q-learning."
+        "A": "Parce que chaque combinaison possible d'état et d'action est stockée.",
+        "B": "Parce qu'elle inclut toutes les récompenses reçues durant les épisodes.",
+        "C": "Parce qu'elle garde un historique de toutes les transitions vécues par l'agent.",
+        "D": "Parce qu'elle multiplie les états par le nombre d'itérations."
       },
       "correct_answer": "A",
-      "explanation": "Les indices visuels vont dans le sens de table Q: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est correcte (Lecture du visuel: table Q est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correc...) car la lecture visuelle colle au signal principal observe. B est moins pertinente (Le signal visible est coh\u00e9rent avec mise a jour hors politique, car l'objectif est fiabiliser les d\u00e9cisions...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le schema illustre une d\u00e9cision basee sur max target: les indices orientent vers fiabiliser les d\u00e9cisions d...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Lecture du visuel: convergence est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser co...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La taille de la table Q dépend du nombre d'états et d'actions, car elle stocke chaque combinaison. B, C, et D sont incorrects car ils ne concernent pas la structure fondamentale ou ajoutent des données non pertinentes.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment la notion de 'convergence' est-elle assurée précautionneusement en Q-learning ?",
+      "image_url": null,
+      "choices": {
+        "A": "En ajustant le taux d'apprentissage à un niveau décroissant au fil des épisodes.",
+        "B": "En choisissant une valeur fixe et élevée pour le taux de récompense.",
+        "C": "En évitant toute forme d'exploration après un certain seuil d'épisodes.",
+        "D": "En adoptant une politique statique sans mise à jour."
+      },
+      "correct_answer": "A",
+      "explanation": "Un taux d'apprentissage qui diminue avec le temps garantit la convergence grâce à des ajustements de plus en plus subtiles. B est incorrect car un taux de récompense ne contrôle pas directement l'apprentissage. C et D réduisent la qualité de l'exploration, freinant la convergence.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel aspect du Q-learning permet sa flexibilité dans l'apprentissage de différentes politiques ?",
+      "image_url": null,
+      "choices": {
+        "A": "La capacité à moduler entre exploration et exploitation indépendamment.",
+        "B": "L'absence totale de fonction de récompense définie.",
+        "C": "La fonctionnalité intégrée pour analyser l'environnement en détail.",
+        "D": "Le mécanisme de réinitialisation fréquente des tables Q pour explorer de nouvelles stratégies."
+      },
+      "correct_answer": "A",
+      "explanation": "L'indépendance entre exploration (extension des connaissances de l'environnement) et exploitation (utilisation des connaissances actuelles pour maximiser la récompense) confère une grande flexibilité au Q-learning. B est faux car la fonction de récompense est centrale. C et D ne concernent pas des ajustements entre politiques.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment l'utilisation d'une 'politique epsilon-greedy' affecte-t-elle le Q-learning ?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle introduit un équilibre entre l'exploration et l'exploitation.",
+        "B": "Elle assure que l'agent n'explore jamais l'environnement.",
+        "C": "Elle élimine la nécessité d'une fonction de récompense.",
+        "D": "Elle optimise exclusivement pour les actions à court terme."
+      },
+      "correct_answer": "A",
+      "explanation": "La stratégie epsilon-greedy garantit un juste milieu entre essayer de nouvelles actions (exploration) et choisir les meilleures actions connues (exploitation). B est incorrect car elle favorise l'exploration. C est faux, le besoin de récompense est toujours intact. D réduit l'objectif de l'algorithme.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi le Q-learning est-il susceptible de ne pas converger dans certaines situations ?",
+      "image_url": null,
+      "choices": {
+        "A": "Si l'epsilon de la politique epsilon-greedy n'est jamais réduit, favorisant trop l'exploration.",
+        "B": "Si le taux de récompense décroît trop rapidement, limitant l'effet des récompenses immédiates.",
+        "C": "Si toutes les valeurs de la table Q sont initialisées à zéro.",
+        "D": "Si l'agent change constamment sa politique d'apprentissage à chaque épisode."
+      },
+      "correct_answer": "A",
+      "explanation": "Une valeur epsilon trop élevée maintenue en permanence empêche l'exploitation efficace, empêchant ainsi la convergence. B est erroné car cela ne concerne pas directement la convergence. C est faux car on peut converger même avec une table initialisée à zéro. D est incorrect car changer la politique n'empêche pas nécessairement la convergence, surtout si les politiques convergent vers un optimum.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans quelle situation la convergence du Q-learning peut-elle être ralentie ?",
+      "image_url": null,
+      "choices": {
+        "A": "Si le taux d'apprentissage est trop élevé, entraînant des mises à jour instables.",
+        "B": "Si toutes les récompenses sont instantanément maximisées.",
+        "C": "Si le nombre d'actions possibles est trop restreint.",
+        "D": "Si l'agent suit strictement sa politique optimale dès le début."
+      },
+      "correct_answer": "A",
+      "explanation": "Un taux d'apprentissage élevé peut rendre le système instable en provoquant de grands sauts dans les mises à jour Q, ralentissant ou empêchant la convergence. B et C ne ralentissent pas la convergence. D est incorrect car un suivi trop précoce de la politique optimale ne ralentit pas directement la convergence mais peut échouer à découvrir de meilleures politiques.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment la 'politique epsilon-greedy' peut-elle recevoir une modification stratégique pour le Q-learning ?",
+      "image_url": null,
+      "choices": {
+        "A": "En diminuant progressivement epsilon au cours de l'apprentissage pour accroître l'exploitation.",
+        "B": "En augmentant epsilon au fil du temps pour continuer à explorer.",
+        "C": "En fixant epsilon à un niveau très élevé pour éviter toute exploitation.",
+        "D": "En fixant epsilon à zéro dès le début pour toujours exploiter."
+      },
+      "correct_answer": "A",
+      "explanation": "Réduire epsilon au fil du temps permet de passer d'une exploration intensive à une exploitation de ce que l'on a appris, optimisant ainsi progressivement les actions. B retarderait l'exploitation critique pour la convergence. C empêcherait l'agent d'apprendre efficacement les récompenses maximales. D annihile l'exploration nécessaire pour un apprentissage efficace.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce qui distingue le Q-learning de l'algorithme SARSA ?",
+      "image_url": null,
+      "choices": {
+        "A": "Q-learning utilise une mise à jour 'max' tandis que SARSA utilise une mise à jour basée sur l'action actuelle.",
+        "B": "SARSA n'est pas capable d'exploiter l'échantillonnage on-policy comme le Q-learning.",
+        "C": "Le Q-learning nécessite une fonction de récompense temporelle tandis que SARSA est purement aléatoire.",
+        "D": "Le Q-learning met à jour toutes les valeurs Q en même temps, contrairement à SARSA."
+      },
+      "correct_answer": "A",
+      "explanation": "En Q-learning, la mise à jour se fait avec 'max' pour calculer le meilleur futur possible (hors politique), alors que SARSA utilise la prochaine action définie par sa politique courante (on-policy). B est erroné car SARSA est conçu pour l'on-policy. C fausse la nature déterministe des récompenses dans les deux. D est incorrect car Q-learning, comme SARSA, met à jour état par état.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle stratégie pourrait renforcer la convergence pour des environnements avec de très grandes tables Q ?",
+      "image_url": null,
+      "choices": {
+        "A": "Utiliser une représentation par fonction approximative comme les réseaux de neurones.",
+        "B": "Accroître la taille de la table Q proportionnellement aux itérations.",
+        "C": "Réduire la taille des états représentés pour un échantillonnage plus rapide.",
+        "D": "Multiplier par deux toutes les récompenses reçues par l'agent."
+      },
+      "correct_answer": "A",
+      "explanation": "Les réseaux de neurones et autres approches de approximations fonctionnelles traitent les contraintes de grande dimensionnalité en généralisant les états dans la table Q. B ne donne pas une solution réaliste pour la convergence. C réduit la fidélité des représentations d'état. D amplifie des récompenses arbitrairement sans résolution des problèmes de convergence.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi trop d'exploration en Q-learning peut-il inhiber efficacement la convergence ?",
+      "image_url": null,
+      "choices": {
+        "A": "Parce que cela rend encore imprécises les estimations Q des actions optimales découvertes.",
+        "B": "Parce que cela augmente systématiquement la taille de la table Q.",
+        "C": "Parce que l'agent n'applique aucune politique pratique à tester dans l'environnement.",
+        "D": "Parce que l'absence totale d'exploitation nuit à l'évolution des taux d'apprentissage."
+      },
+      "correct_answer": "A",
+      "explanation": "Un déséquilibre pro-exploration entraîne à répéter des actions moins bénéfiques, ne permettant pas le renforcement suffisant des actions optimales. B et C confondent exploration avec la structure de la table et non la stratégie de décision. D ignore le rôle clé de l'équilibre entre exploration et l'exploitation.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel impact a une récompense future fortement escomptée dans le calcul du 'max target' ?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle peut survaloriser des décisions futures, rendant les récompenses à court terme moins pertinentes.",
+        "B": "Elle favorise uniquement les actions immédiates en négligeant totalement l'avenir.",
+        "C": "Elle maintient constante la valeur des actions indépendamment du résultat obtenu.",
+        "D": "Elle neutralise toutes les valeurs de récompenses immédiates fixées au zéro."
+      },
+      "correct_answer": "A",
+      "explanation": "Les récompenses escomptées futures jouent fortement lorsqu'elles encouragent des décisions intentionnées qui priorisent le long terme. B évite l'attention sur le futur, et C, D mal interprètent comment l'escompte affecte les calculs Q.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle condition n'est pas absolue mais recommandée pour atteindre la convergence du Q-learning ?",
+      "image_url": null,
+      "choices": {
+        "A": "Réduire epsilon pour prioriser davantage l'exploitation après suffisamment d'exploration.",
+        "B": "Assurer que toutes les paires état-action soient visitées assez souvent.",
+        "C": "Utiliser un taux d'apprentissage fixe chaque fois qu'une mise à jour est faite.",
+        "D": "Adapter régulièrement le taux d'escompte pour améliorer la valeur future."
+      },
+      "correct_answer": "C",
+      "explanation": "Otenir une convergence stable implique souvent un taux d'apprentissage qui diminue avec le temps, plutôt que de rester fixe. A et B sont critères réalistes pour convergence, et D encourage l'évaluation précise des valeurs futures, bien que réajustable.",
       "difficulty": "hard"
     }
   ]

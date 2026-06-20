@@ -5,171 +5,171 @@
   "questions": [
     {
       "type": "text",
-      "question": "Dans 'Self-training' (banque), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment re-entrainement ?",
+      "question": "Quel est le rôle principal de l'enseignant initial dans le self-training en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Dans Self-training, reponderation se comprend comme un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de reponderation dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "ensemble teacher-student designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'ensemble teacher-student dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "enseignant initial correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'enseignant initial dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Self-training.",
-        "D": "re-entrainement correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de re-entrainement dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Self-training."
+        "A": "Fournir un modèle de base capable de faire des prédictions initiales sur les données non étiquetées.",
+        "B": "Servir de validation croisée pour ajuster les hyperparamètres.",
+        "C": "Ajuster directement les poids du modèle pour l'optimisation.",
+        "D": "Générer de nouvelles fonctionnalités pour enrichir les données."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de re-entrainement dans Self-training, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que reponderation, ensemble teacher-student, enseignant initial restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Self-training, reponderation se comprend comme un concept interm\u00e9diaire en apprentissage semi supervis...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (ensemble teacher-student designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (enseignant initial correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (re-entrainement correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le rol...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "L'enseignant initial est un modèle formé sur les données étiquetées et est utilisé pour prédire des étiquettes sur les données non étiquetées. B est incorrect parce que la validation croisée n'est pas le rôle de l'enseignant initial. C est faux, car il ne s'agit pas d'optimisation directe des poids. D est erroné, car l'enseignant n'enrichit pas les données avec de nouvelles fonctionnalités.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "selection confiante: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Self-training' ?",
+      "question": "Dans le processus de re-entrainement en self-training, que se passe-t-il après avoir sélectionné des exemples confiants?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Self-training, enseignant initial est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer enseignant initial en production.",
-        "B": "Pendant une phase d'experimentation, re-entrainement est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer re-entrainement en production tout en surveillant le risque de sur-optimiser re-entrainement localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Dans une phase d'experimentation de Self-training, l'\u00e9quipe applique accumulation d'erreurs pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accumulation d'erreurs en production.",
-        "D": "Dans une phase d'experimentation de Self-training, l'\u00e9quipe applique selection confiante pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection confiante en production."
+        "A": "Les exemples confiants sont ajoutés à l'ensemble d'entraînement étiqueté pour améliorer le modèle.",
+        "B": "Les exemples confiants sont éliminés pour réduire le surajustement.",
+        "C": "Le modèle ajuste ses hyperparamètres pour réduire le taux d'erreur.",
+        "D": "Les exemples confiants sont utilisés pour créer un ensemble de données de validation."
       },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car selection confiante y sert de levier de d\u00e9cision principal dans Self-training. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Self-training, enseignant initial est choisi afin de fiabiliser les d\u00e9cisions d'experi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une phase d'experimentation, re-entrainement est utile pour fiabiliser les d\u00e9cisions d'experimentat...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une phase d'experimentation de Self-training, l'\u00e9quipe applique accumulation d'erreurs pour fiabiliser...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une phase d'experimentation de Self-training, l'\u00e9quipe applique selection confiante pour fiabiliser le...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Les exemples confiants, définis comme ceux avec des prédictions à haute probabilité, sont ajoutés à l'ensemble d'apprentissage étiqueté, permettant un apprentissage progressif. B est incorrect, car il ne s'agit pas d'éliminer les exemples confiants. C et D sont faux, car ils ne représentent pas l'étape de réentraînement caractéristique du self-training.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Face a un besoin banque dans 'Self-training', pourquoi re-entrainement est-il prioritaire ?",
+      "question": "Quel est un risque majeur associé à l'accumulation d'erreurs dans le self-training?",
       "image_url": null,
       "choices": {
-        "A": "selection confiante sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection confiante en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Self-training, accumulation d'erreurs est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accumulation d'erreurs en production.",
-        "C": "Dans Self-training, re-entrainement est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer re-entrainement en production.",
-        "D": "Le role d'enseignant initial est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer enseignant initial en production."
+        "A": "L'auto-renforcement des prédictions incorrectes qui dégradent la qualité du modèle.",
+        "B": "L'augmentation de la complexité temporelle du modèle final.",
+        "C": "La diminution de la taille de l'ensemble de données non étiquetées.",
+        "D": "L'optimisation des hyperparamètres du modèle sans supervision."
       },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie re-entrainement \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (selection confiante sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de m...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Self-training, accumulation d'erreurs est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Self-training, re-entrainement est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utilis...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role d'enseignant initial est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement p...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "L'accumulation d'erreurs survient lorsque des prédictions incorrectes sont ajoutées à l'ensemble de données étiquetées, ce qui peut biaiser le modèle. B est incorrect car cela ne concerne pas directement l'erreur. C est faux car ce point est orthogonal à la quantité de données non étiquetées. D ne se rapporte pas au principe même de l'accumulation d'erreurs.",
       "difficulty": "easy"
     },
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec enseignant initial dans 'Self-training' ?",
-      "image_url": "apprentissage-semi-supervise_self_training_enseignant_initial_2.png",
+      "type": "text",
+      "question": "Lors du self-training, quel scénario conduirait à une accumulation d'erreurs dans l'ensemble de données entraîné?",
+      "image_url": null,
       "choices": {
-        "A": "Dans Self-training, accumulation d'erreurs est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accumulation d'erreurs en production.",
-        "B": "Dans Self-training, enseignant initial est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer enseignant initial en production.",
-        "C": "Le role de re-entrainement est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer re-entrainement en production.",
-        "D": "selection confiante sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection confiante en production pour guider une d\u00e9cision exploitable."
+        "A": "Inclure des exemples avec de faibles probabilités de prédiction comme étiquettes confiantes.",
+        "B": "Utiliser une validation croisée après chaque itération.",
+        "C": "Augmenter la taille de l'ensemble de validation.",
+        "D": "Réduire le paramètre de régularisation du modèle."
       },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'enseignant initial dans Self-training. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Self-training, accumulation d'erreurs est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Self-training, enseignant initial est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'uti...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de re-entrainement est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perm...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (selection confiante sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de m...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Étiqueter et ajouter des exemples à faible confiance peut conduire à l'inclusion de données incorrectes dans le jeu d'étiquettes, entraînant une accumulation des erreurs. B et C sont sans relation directe avec l'accumulation d'erreurs. D ne s'applique pas car la régularisation n'affecte pas directement l'accumulation d'erreurs liée aux mauvaises étiquettes.",
       "difficulty": "medium"
     },
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec accumulation d'erreurs dans 'Self-training' ?",
-      "image_url": "apprentissage-semi-supervise_self_training_accumulation_d_erreurs_2.png",
+      "type": "text",
+      "question": "Quel est l’effet d’un re-entrainement répété avec des exemples erronés sur le modèle de self-training?",
+      "image_url": null,
       "choices": {
-        "A": "re-entrainement sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer re-entrainement en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Self-training, selection confiante est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection confiante en production.",
-        "C": "Dans Self-training, accumulation d'erreurs est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accumulation d'erreurs en production.",
-        "D": "Le role d'enseignant initial est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer enseignant initial en production."
+        "A": "Il peut renforcer les erreurs et entraîner le biais du modèle.",
+        "B": "Il diminue le temps de convergence du modèle.",
+        "C": "Il améliore la généralisation sur le jeu de données de test.",
+        "D": "Il n'a aucun effet significatif si le modèle est suffisamment régularisé."
       },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'accumulation d'erreurs dans Self-training. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (re-entrainement sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Self-training, selection confiante est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'ut...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Self-training, accumulation d'erreurs est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role d'enseignant initial est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement p...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Un réentraînement avec de mauvais exemples amplifie les erreurs au fur et à mesure des itérations, ce qui provoque un biais du modèle. B est opposé à ce qui se passe parce que les erreurs prolongent souvent le temps de convergence. C est faux, car généralement les erreurs de base dégradent la généralisation. D est incorrect, car même avec la régularisation, la qualité basique des données étiquetées est essentielle.",
       "difficulty": "medium"
     },
     {
-      "type": "image",
-      "question": "Dans 'Self-training', quel commentaire du schema traduit le mieux le role de selection confiante ?",
-      "image_url": "apprentissage-semi-supervise_self_training_selection_confiante_2.png",
+      "type": "text",
+      "question": "Dans un modèle de self-training, comment éviter efficacement l’accumulation des erreurs?",
+      "image_url": null,
       "choices": {
-        "A": "Dans Self-training, enseignant initial est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer enseignant initial en production.",
-        "B": "Le role de re-entrainement est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer re-entrainement en production.",
-        "C": "accumulation d'erreurs sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accumulation d'erreurs en production pour guider une d\u00e9cision exploitable.",
-        "D": "selection confiante sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection confiante en production pour guider une d\u00e9cision exploitable."
+        "A": "En utilisant un seuil élevé de confiance pour accepter les prédictions comme étiquettes.",
+        "B": "En supprimant toutes les données initiales et en recommençant.",
+        "C": "En maximisant les itérations de formation sans restriction.",
+        "D": "En diminuant la taille du réseau de neurones."
+      },
+      "correct_answer": "A",
+      "explanation": "Un haut seuil de confiance garantit que seules les prédictions fiables sont ajoutées, ce qui prévient l'accumulation d'erreurs. B est improductif car cela élimine potentiellement des informations pertinentes. C ne prévient pas l'accumulation d'erreurs, mais l'aggrave. D n'est pas spécifique au self-training, mais à la capacité du modèle.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi le réentraînement est-il crucial dans un self-training efficace?",
+      "image_url": null,
+      "choices": {
+        "A": "Parce qu'il permet au modèle d'incorporer systématiquement des données nouvellement étiquetées.",
+        "B": "Parce qu'il diminue le surapprentissage critique à chaque itération.",
+        "C": "Parce qu'il élimine les cas incorrectement classifiés antérieurement.",
+        "D": "Parce qu'il optimise automatiquement le paramètre de tassement."
+      },
+      "correct_answer": "A",
+      "explanation": "Le ré-entraînement permet au modèle self-training d'apprendre continuellement à partir d'étiquettes auto-générées de manière confiantes, intégrant ainsi des informations supplémentaires dans le processus. B est factuellement incorrect car le surapprentissage peut augmenter les erreurs ne sont pas gérées correctement. C est inexact puisque les cas mal classifiés ne sont pas retirés automatiquement. D est hors de propos, le paramètre de tassement n'est pas impliqué.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment un modèle de self-training gère-t-il les échantillons de données pour éviter une accumulation d’erreurs?",
+      "image_url": null,
+      "choices": {
+        "A": "En maintenant une communication entre les différents modèles entraîneurs pour les comparaisons continues.",
+        "B": "En échantillonnant avec des approches de batch en contradiction avec l'apprentissage en ligne continu.",
+        "C": "En implémentant des stratégies de méta-apprentissage alternées au fil du temps.",
+        "D": "En utilisant des seuils de confiance dynamiques basés sur la performance de validation continue."
       },
       "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de selection confiante dans Self-training. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Self-training, enseignant initial est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'uti...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de re-entrainement est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perm...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (accumulation d'erreurs sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (selection confiante sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de m...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "L'utilisation de seuils de confiance dynamiques fondés sur la performance de validation permet au modèle de s'adapter en fonction des données étiquetées automatiquement. A est incorrect, la communication inter-modèles n’est pas typique dans ce contexte. B est factuellement erroné car il est contradictoire avec le self-training. C est incorrect car le méta-apprentissage n'est pas directement utilisé dans la majorité des implémentations self-training.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Self-training', quel est le principal mode d'echec quand selection confiante est mal applique ?",
+      "question": "Quelle technique vient habituellement compenser la tendance à l’accumulation d’erreurs dans le self-training?",
       "image_url": null,
       "choices": {
-        "A": "Si selection confiante est mal utilise, on observe souvent sur-optimiser selection confiante localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour d'enseignant initial est sur-optimiser enseignant initial localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Un risque classique avec re-entrainement est de sur-optimiser re-entrainement localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Si accumulation d'erreurs est mal utilise, on observe souvent sur-optimiser accumulation d'erreurs localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de selection confiante. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si selection confiante est mal utilise, on observe souvent sur-optimiser selection confiante localement en ...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour d'enseignant initial est sur-optimiser enseignant initial localement en ignorant...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec re-entrainement est de sur-optimiser re-entrainement localement en ignorant ses in...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si accumulation d'erreurs est mal utilise, on observe souvent sur-optimiser accumulation d'erreurs localeme...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'Self-training', quel exemple met re-entrainement au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une phase d'experimentation, re-entrainement est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer re-entrainement en production tout en surveillant le risque de sur-optimiser re-entrainement localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Dans une phase d'experimentation de Self-training, l'\u00e9quipe applique enseignant initial pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer enseignant initial en production.",
-        "C": "En contexte r\u00e9el sur Self-training, selection confiante est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection confiante en production.",
-        "D": "Pendant une phase d'experimentation, accumulation d'erreurs est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accumulation d'erreurs en production tout en surveillant le risque de sur-optimiser accumulation d'erreurs localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car re-entrainement y sert de levier de d\u00e9cision principal dans Self-training. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une phase d'experimentation, re-entrainement est utile pour fiabiliser les d\u00e9cisions d'experimentat...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une phase d'experimentation de Self-training, l'\u00e9quipe applique enseignant initial pour fiabiliser les...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Self-training, selection confiante est choisi afin de fiabiliser les d\u00e9cisions d'exper...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une phase d'experimentation, accumulation d'erreurs est utile pour fiabiliser les d\u00e9cisions d'exper...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Self-training', quelle situation de terrain montre le mieux quand utiliser enseignant initial ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Self-training, accumulation d'erreurs est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accumulation d'erreurs en production.",
-        "B": "En contexte r\u00e9el sur Self-training, enseignant initial est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer enseignant initial en production.",
-        "C": "Pendant une phase d'experimentation, re-entrainement est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer re-entrainement en production tout en surveillant le risque de sur-optimiser re-entrainement localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation de Self-training, l'\u00e9quipe applique selection confiante pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection confiante en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car enseignant initial y sert de levier de d\u00e9cision principal dans Self-training. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Self-training, accumulation d'erreurs est choisi afin de fiabiliser les d\u00e9cisions d'ex...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Self-training, enseignant initial est choisi afin de fiabiliser les d\u00e9cisions d'experi...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, re-entrainement est utile pour fiabiliser les d\u00e9cisions d'experimentat...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation de Self-training, l'\u00e9quipe applique selection confiante pour fiabiliser le...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "selection confiante: pourquoi ce concept est-il crucial pour une \u00e9quipe assurance dans 'Self-training' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role d'accumulation d'erreurs est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accumulation d'erreurs en production.",
-        "B": "Le role de selection confiante est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection confiante en production.",
-        "C": "enseignant initial sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer enseignant initial en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Self-training, re-entrainement est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer re-entrainement en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie selection confiante \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role d'accumulation d'erreurs est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correcteme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de selection confiante est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (enseignant initial sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Self-training, re-entrainement est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utilis...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Self-training', quel est le role le plus determinant d'accumulation d'erreurs pour un cas sante ?",
-      "image_url": null,
-      "choices": {
-        "A": "accumulation d'erreurs sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accumulation d'erreurs en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Self-training, enseignant initial est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer enseignant initial en production.",
-        "C": "Le role de re-entrainement est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer re-entrainement en production.",
-        "D": "selection confiante sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection confiante en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie accumulation d'erreurs \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (accumulation d'erreurs sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet d...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Self-training, enseignant initial est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'uti...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de re-entrainement est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perm...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (selection confiante sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de m...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Self-training', quelle situation de terrain montre le mieux quand utiliser accumulation d'erreurs ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une phase d'experimentation de Self-training, l'\u00e9quipe applique re-entrainement pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer re-entrainement en production.",
-        "B": "En contexte r\u00e9el sur Self-training, selection confiante est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection confiante en production.",
-        "C": "En contexte r\u00e9el sur Self-training, accumulation d'erreurs est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accumulation d'erreurs en production.",
-        "D": "Pendant une phase d'experimentation, enseignant initial est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer enseignant initial en production tout en surveillant le risque de sur-optimiser enseignant initial localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "La validation croisée basée sur les données non étiquetées.",
+        "B": "La réétiquetage manuel après chaque cycle.",
+        "C": "Un recalibrage périodique du modèle par un sous-ensemble de données étiquetées validées.",
+        "D": "L'application d'un modèle externe d'apprentissage par renforcement."
       },
       "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car accumulation d'erreurs y sert de levier de d\u00e9cision principal dans Self-training. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une phase d'experimentation de Self-training, l'\u00e9quipe applique re-entrainement pour fiabiliser les de...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Self-training, selection confiante est choisi afin de fiabiliser les d\u00e9cisions d'exper...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Self-training, accumulation d'erreurs est choisi afin de fiabiliser les d\u00e9cisions d'ex...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une phase d'experimentation, enseignant initial est utile pour fiabiliser les d\u00e9cisions d'experimen...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Recalibrer le modèle périodiquement avec des échantillons étiquetés réduit le risque que des erreurs systématiques se propagent. A est incorrect, car la validation croisée n’agit pas directement sur les données non étiquetées. B est peu pratique car extrêmement coûteux. D est hors de propos pour le champ du self-training qui ne se base pas sur l'apprentissage par renforcement.",
       "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Parmi les stratégies de self-training, laquelle contribue à minimiser l'erreur de modèle en se basant sur la validation et l'évaluation continues?",
+      "image_url": null,
+      "choices": {
+        "A": "Ajuster les seuils de confiance à chaque période d'évaluation de performance.",
+        "B": "Éliminer les itérations encore plus fréquemment pour éviter le surapprentissage.",
+        "C": "Conserver tous les échantillons fortement où faiblement confidentiels, en atténuant la portée.",
+        "D": "Limiter le modèle à fonctionner uniquement sur des échantillons initialement étiquetés."
+      },
+      "correct_answer": "A",
+      "explanation": "L'ajustement régulier des seuils de confiance permet de s'assurer que le self-training s'adapte à la performance actuelle du modèle et évite d'incorporer des prédictions incertaines. B pourrait augmenter le surapprentissage en l'absence de continuité fiable. C est erroné car mélanger les échantillons douteux compromet la fiabilité. D est contre-productif, car il limite excessivement le modèle et oblitère l'avantage dynamique du self-training.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce que l'enseignant initial en apprentissage semi-supervisé, particulièrement dans le contexte de self-training?",
+      "image_url": null,
+      "choices": {
+        "A": "Un modèle entraîné sur l'ensemble des données initialement étiquetées.",
+        "B": "Une technique qui consiste à générer de nouvelles étiquettes pour les données non étiquetées.",
+        "C": "Un algorithme qui ajuste dynamiquement les étiquettes en fonction des performances.",
+        "D": "Un processus de validation des données non étiquetées avant l'entraînement."
+      },
+      "correct_answer": "A",
+      "explanation": "L'enseignant initial est un modèle construit uniquement à partir des données étiquetées disponibles, servant de base pour étiqueter de manière prédictive les données non étiquetées. La sélection confiante et le réentraînement ne font pas partie de ce processus initial, rendant les options B et C incorrectes. D décrit un processus de validation qui ne caractérise pas le rôle de l'enseignant initial.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Dans un algorithme de self-training, que signifie la sélection confiante et pourquoi est-elle importante?",
+      "image_url": null,
+      "choices": {
+        "A": "Sélection des prédictions avec des scores de confiance élevés pour ré-entraîner le modèle.",
+        "B": "Choisir les données les plus faciles à classer pour améliorer l'accuracy globale.",
+        "C": "Utiliser un sous-ensemble de données varié pour éviter le surajustement.",
+        "D": "Étiqueter aléatoirement les données non étiquetées pour augmenter la taille de l'ensemble d'entraînement."
+      },
+      "correct_answer": "A",
+      "explanation": "La sélection confiante implique de choisir les prédictions avec des scores de confiance élevés afin de minimiser le risque d'accumulation d'erreurs lors du ré-entraînement du modèle. L'option B est incorrecte car cela ne garantit pas la fiabilité des étiquettes prédictives. C n'est pas pertinent ici car la diversité ne joue pas le rôle premier dans la sélection confiante. D est incorrect car l'étiquetage aléatoire ne prend pas en compte la précision et augmente simplement le risque d'erreurs.",
+      "difficulty": "medium"
     }
   ]
 }

@@ -5,282 +5,282 @@
   "questions": [
     {
       "type": "text",
-      "question": "lift: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Regles d'association' ?",
+      "question": "Qu'est-ce que le support dans les règles d'association?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Regles d'association, support est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer support en production.",
-        "B": "Pendant une phase d'experimentation, confiance est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production tout en surveillant le risque de sur-optimiser confiance localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Dans une phase d'experimentation de Regles d'association, l'\u00e9quipe applique market basket pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer market basket en production.",
-        "D": "Dans une phase d'experimentation de Regles d'association, l'\u00e9quipe applique lift pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lift en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car lift y sert de levier de d\u00e9cision principal dans Regles d'association. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Regles d'association, support est choisi afin de fiabiliser les d\u00e9cisions d'experiment...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une phase d'experimentation, confiance est utile pour fiabiliser les d\u00e9cisions d'experimentation ; ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une phase d'experimentation de Regles d'association, l'\u00e9quipe applique market basket pour fiabiliser l...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une phase d'experimentation de Regles d'association, l'\u00e9quipe applique lift pour fiabiliser les decisi...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Regles d'association' (banque), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment confiance ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Regles d'association, mise a jour des centroides se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de mise a jour des centroides dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "convergence designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de convergence dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "choix de k correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de choix de k dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Regles d'association.",
-        "D": "confiance correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de confiance dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Regles d'association."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de confiance dans Regles d'association, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que mise a jour des centroides, convergence, choix de k restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Regles d'association, mise a jour des centroides se comprend comme un concept interm\u00e9diaire en apprent...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (convergence designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de conve...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (choix de k correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de c...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (confiance correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de co...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec support dans 'Regles d'association' ?",
-      "image_url": "apprentissage-non-supervise_regles_d_association_support_2.png",
-      "choices": {
-        "A": "Dans Regles d'association, market basket est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer market basket en production.",
-        "B": "Dans Regles d'association, support est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer support en production.",
-        "C": "Le role de confiance est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production.",
-        "D": "lift sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lift en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de support dans Regles d'association. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Regles d'association, market basket est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'u...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Regles d'association, support est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utilise...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de confiance est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (lift sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider qu...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Regles d'association', quel commentaire du schema traduit le mieux le role de lift ?",
-      "image_url": "apprentissage-non-supervise_regles_d_association_lift_2.png",
-      "choices": {
-        "A": "Dans Regles d'association, support est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer support en production.",
-        "B": "Le role de confiance est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production.",
-        "C": "market basket sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer market basket en production pour guider une d\u00e9cision exploitable.",
-        "D": "lift sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lift en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de lift dans Regles d'association. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Regles d'association, support est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utilise...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de confiance est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (market basket sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (lift sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider qu...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Regles d'association', quel est le principal mode d'echec quand lift est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si lift est mal utilise, on observe souvent sur-optimiser lift localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de support est sur-optimiser support localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Un risque classique avec confiance est de sur-optimiser confiance localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Si market basket est mal utilise, on observe souvent sur-optimiser market basket localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "La fréquence avec laquelle un ensemble d'articles apparaît dans un dataset.",
+        "B": "La probabilité qu'un article spécifique soit acheté.",
+        "C": "La corrélation entre deux ensembles d'articles.",
+        "D": "La fiabilité d'une règle d'association donnée."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de lift. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si lift est mal utilise, on observe souvent sur-optimiser lift localement en ignorant ses interactions avec...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de support est sur-optimiser support localement en ignorant ses interactions avec...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec confiance est de sur-optimiser confiance localement en ignorant ses interactions a...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si market basket est mal utilise, on observe souvent sur-optimiser market basket localement en ignorant ses...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le support est défini comme la fréquence avec laquelle un ensemble d'items apparaît dans le dataset. Il ne s'agit pas de probabilité d'achat d'un seul article (B), ni de corrélation entre articles (C), ni de la fiabilité (D).",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Face a un besoin banque dans 'Regles d'association', pourquoi confiance est-il prioritaire ?",
+      "question": "Comment la confiance d'une règle est-elle calculée dans les règles d'association?",
       "image_url": null,
       "choices": {
-        "A": "lift sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lift en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Regles d'association, market basket est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer market basket en production.",
-        "C": "Dans Regles d'association, confiance est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production.",
-        "D": "Le role de support est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer support en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie confiance \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (lift sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider qu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Regles d'association, market basket est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'u...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Regles d'association, confiance est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utili...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de support est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec market basket dans 'Regles d'association' ?",
-      "image_url": "apprentissage-non-supervise_regles_d_association_market_basket_2.png",
-      "choices": {
-        "A": "confiance sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Regles d'association, lift est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lift en production.",
-        "C": "Dans Regles d'association, market basket est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer market basket en production.",
-        "D": "Le role de support est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer support en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de market basket dans Regles d'association. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (confiance sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux decid...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Regles d'association, lift est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser c...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Regles d'association, market basket est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'u...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de support est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "lift: pourquoi ce concept est-il crucial pour une \u00e9quipe assurance dans 'Regles d'association' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role de market basket est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer market basket en production.",
-        "B": "Le role de lift est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lift en production.",
-        "C": "support sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer support en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Regles d'association, confiance est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie lift \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de market basket est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de lift est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (support sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Regles d'association, confiance est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utili...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Regles d'association', quelle situation de terrain montre le mieux quand utiliser support ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Regles d'association, market basket est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer market basket en production.",
-        "B": "En contexte r\u00e9el sur Regles d'association, support est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer support en production.",
-        "C": "Pendant une phase d'experimentation, confiance est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production tout en surveillant le risque de sur-optimiser confiance localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation de Regles d'association, l'\u00e9quipe applique lift pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lift en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car support y sert de levier de d\u00e9cision principal dans Regles d'association. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Regles d'association, market basket est choisi afin de fiabiliser les d\u00e9cisions d'expe...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Regles d'association, support est choisi afin de fiabiliser les d\u00e9cisions d'experiment...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, confiance est utile pour fiabiliser les d\u00e9cisions d'experimentation ; ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation de Regles d'association, l'\u00e9quipe applique lift pour fiabiliser les decisi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe assurance dans 'Regles d'association', quelle d\u00e9finition de lift est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "choix de k correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de choix de k dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Regles d'association.",
-        "B": "Dans Regles d'association, liaison simple se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de liaison simple dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Regles d'association, lift se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de lift dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "convergence designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de convergence dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de lift dans Regles d'association, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte assurance, alors que convergence, choix de k, liaison simple restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (choix de k correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de c...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Regles d'association, liaison simple se comprend comme un concept interm\u00e9diaire en apprentissage non s...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Regles d'association, lift se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ;...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (convergence designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de conve...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Regles d'association', quel est le role le plus determinant de market basket pour un cas sante ?",
-      "image_url": null,
-      "choices": {
-        "A": "market basket sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer market basket en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Regles d'association, support est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer support en production.",
-        "C": "Le role de confiance est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production.",
-        "D": "lift sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lift en production pour guider une d\u00e9cision exploitable."
+        "A": "Support(A ∪ B) / Support(A)",
+        "B": "Support(A) x Support(B)",
+        "C": "Lift(A → B) / Support(A ∪ B)",
+        "D": "Support(A) + Support(B) - Support(A ∪ B)"
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie market basket \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (market basket sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Regles d'association, support est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utilise...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de confiance est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (lift sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider qu...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
+      "explanation": "La confiance d'une règle est calculée en divisant le support de l'union des items par le support de l'item présent dans l'antécédent de la règle. Les autres formules n'appliquent pas la définition de la confiance.",
+      "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Pour un cas operationnel de 'Regles d'association', quel exemple met confiance au c\u0153ur de la d\u00e9cision ?",
+      "question": "Quel est l'objectif principal de l'utilisation du lift dans les règles d'association?",
       "image_url": null,
       "choices": {
-        "A": "Pendant une phase d'experimentation, confiance est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production tout en surveillant le risque de sur-optimiser confiance localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Dans une phase d'experimentation de Regles d'association, l'\u00e9quipe applique support pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer support en production.",
-        "C": "En contexte r\u00e9el sur Regles d'association, lift est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lift en production.",
-        "D": "Pendant une phase d'experimentation, market basket est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer market basket en production tout en surveillant le risque de sur-optimiser market basket localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Évaluer l'indépendance statistique entre les items.",
+        "B": "Augmenter le support des articles individuels.",
+        "C": "Rendre le calcul de la confiance plus précis.",
+        "D": "Identifier la fiabilité temporelle des règles d'association."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car confiance y sert de levier de d\u00e9cision principal dans Regles d'association. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une phase d'experimentation, confiance est utile pour fiabiliser les d\u00e9cisions d'experimentation ; ...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une phase d'experimentation de Regles d'association, l'\u00e9quipe applique support pour fiabiliser les dec...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Regles d'association, lift est choisi afin de fiabiliser les d\u00e9cisions d'experimentati...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une phase d'experimentation, market basket est utile pour fiabiliser les d\u00e9cisions d'experimentatio...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
+      "explanation": "Le lift est une mesure pour évaluer si les articles A et B sont indépendants. Il ne s'agit pas d'augmenter le support (B), de calculer la confiance (C) ou d'évaluer la fiabilité temporelle (D).",
+      "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Regles d'association', quelle situation de terrain montre le mieux quand utiliser market basket ?",
+      "question": "Parmi les options suivantes, laquelle représente une méthode correcte pour identifier un market basket dans le retail?",
       "image_url": null,
       "choices": {
-        "A": "Dans une phase d'experimentation de Regles d'association, l'\u00e9quipe applique confiance pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production.",
-        "B": "En contexte r\u00e9el sur Regles d'association, lift est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lift en production.",
-        "C": "En contexte r\u00e9el sur Regles d'association, market basket est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer market basket en production.",
-        "D": "Pendant une phase d'experimentation, support est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer support en production tout en surveillant le risque de sur-optimiser support localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car market basket y sert de levier de d\u00e9cision principal dans Regles d'association. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une phase d'experimentation de Regles d'association, l'\u00e9quipe applique confiance pour fiabiliser les d...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Regles d'association, lift est choisi afin de fiabiliser les d\u00e9cisions d'experimentati...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Regles d'association, market basket est choisi afin de fiabiliser les d\u00e9cisions d'expe...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une phase d'experimentation, support est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Regles d'association', quel est le role le plus determinant de support pour un cas cybersecurite ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Regles d'association, confiance est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production.",
-        "B": "Le role de lift est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lift en production.",
-        "C": "market basket sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer market basket en production pour guider une d\u00e9cision exploitable.",
-        "D": "support sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer support en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie support \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Regles d'association, confiance est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utili...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de lift est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (market basket sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (support sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Regles d'association', quelle erreur autour de support est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si lift est mal utilise, on observe souvent sur-optimiser lift localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de market basket est sur-optimiser market basket localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Le piege principal autour de support est sur-optimiser support localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Un risque classique avec confiance est de sur-optimiser confiance localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de support. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si lift est mal utilise, on observe souvent sur-optimiser lift localement en ignorant ses interactions avec...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour de market basket est sur-optimiser market basket localement en ignorant ses inter...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de support est sur-optimiser support localement en ignorant ses interactions avec...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec confiance est de sur-optimiser confiance localement en ignorant ses interactions a...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "confiance: dans un cas banque, quelle interpretation correspond le mieux au schema ML de 'Regles d'association' ?",
-      "image_url": "apprentissage-non-supervise_regles_d_association_confiance_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur market basket: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer market basket en production.",
-        "B": "Le schema illustre une d\u00e9cision basee sur confiance: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer confiance en production.",
-        "C": "Lecture du visuel: support est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer support en production dans Regles d'association.",
-        "D": "Le signal visible est coh\u00e9rent avec lift, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer lift en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de confiance: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur market basket: les indices orientent vers fiabiliser les d\u00e9cision...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur confiance: les indices orientent vers fiabiliser les d\u00e9cisions d'...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: support est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correc...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec lift, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "market basket: quelle proposition en donne la meilleure d\u00e9finition dans 'Regles d'association' (contexte sante) ?",
-      "image_url": null,
-      "choices": {
-        "A": "liaison complete designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de liaison complete dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "market basket designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de market basket dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "choix de k correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de choix de k dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Regles d'association.",
-        "D": "Dans Regles d'association, liaison simple se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de liaison simple dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de market basket dans Regles d'association, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que choix de k, liaison simple, liaison complete restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (liaison complete designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (market basket designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de mar...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (choix de k correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de c...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans Regles d'association, liaison simple se comprend comme un concept interm\u00e9diaire en apprentissage non s...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "confiance: quel risque est le plus directement lie a son mauvais usage en production dans 'Regles d'association' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec market basket est de sur-optimiser market basket localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Un risque classique avec confiance est de sur-optimiser confiance localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Si support est mal utilise, on observe souvent sur-optimiser support localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Le piege principal autour de lift est sur-optimiser lift localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de confiance. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec market basket est de sur-optimiser market basket localement en ignorant ses intera...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec confiance est de sur-optimiser confiance localement en ignorant ses interactions a...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si support est mal utilise, on observe souvent sur-optimiser support localement en ignorant ses interaction...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de lift est sur-optimiser lift localement en ignorant ses interactions avec featu...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Regles d'association', quelle erreur autour de market basket est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec support est de sur-optimiser support localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Si confiance est mal utilise, on observe souvent sur-optimiser confiance localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Le piege principal autour de lift est sur-optimiser lift localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Le piege principal autour de market basket est sur-optimiser market basket localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de market basket. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec support est de sur-optimiser support localement en ignorant ses interactions avec ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si confiance est mal utilise, on observe souvent sur-optimiser confiance localement en ignorant ses interac...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour de lift est sur-optimiser lift localement en ignorant ses interactions avec featu...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour de market basket est sur-optimiser market basket localement en ignorant ses inter...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "support: quelle proposition en donne la meilleure d\u00e9finition dans 'Regles d'association' (contexte cybersecurite) ?",
-      "image_url": null,
-      "choices": {
-        "A": "support designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de support dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "initialisation correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role d'initialisation dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Regles d'association.",
-        "C": "Dans Regles d'association, mise a jour des centroides se comprend comme un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de mise a jour des centroides dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "convergence designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de convergence dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Analyser les transactions pour regrouper fréquemment achetés ensemble.",
+        "B": "Ajouter maximalement des items non achetés dans le panier d'achat.",
+        "C": "Calculer la moyenne des ventes par article.",
+        "D": "Evaluer la corrélation spatiale des produits dans un magasin."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de support dans Regles d'association, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que initialisation, mise a jour des centroides, convergence restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (support designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de support d...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (initialisation correspond a un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Regles d'association, mise a jour des centroides se comprend comme un concept interm\u00e9diaire en apprent...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (convergence designe un concept interm\u00e9diaire en apprentissage non supervise ; il formalise le role de conve...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Identifier un market basket implique de regrouper des articles qui sont fréquemment achetés ensemble. Les autres options ne correspondent pas à cet objectif.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une conséquence directe d'un lift supérieur à 1?",
+      "image_url": null,
+      "choices": {
+        "A": "Les items sont plus fréquemment achetés ensemble que par hasard.",
+        "B": "Il est sûr que les clients aiment ces items.",
+        "C": "Le support des items doit être augmenté.",
+        "D": "La règle a une confiance minimale garantie."
+      },
+      "correct_answer": "A",
+      "explanation": "Un lift supérieur à 1 indique que les items sont achetés ensemble plus souvent que si les achats étaient indépendants. B, C et D ne sont pas des conséquences directes du lift.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il important de considérer le support lors de la génération de règles d'association?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour éviter de générer des règles basées sur des événements rares.",
+        "B": "Pour maximiser la confiance de chaque règle.",
+        "C": "Pour garantir que toutes les règles ont un lift faible.",
+        "D": "Pour remplacer le besoin en confiance élevée."
+      },
+      "correct_answer": "A",
+      "explanation": "Le support aide à ne considérer que les règles basées sur des ensembles d'items fréquent afin d'éviter des événements rares qui peuvent ne pas être significatifs. Maximiser la confiance (B) et remplacer (D) sont incorrects, tandis que garantir un lift faible (C) n'est pas l'objectif.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "En quoi le market basket analysis diffère-t-il d'une simple analyse de vente par produit?",
+      "image_url": null,
+      "choices": {
+        "A": "Il se concentre sur les associations entre produits plutôt que sur les ventes individuelles.",
+        "B": "Il détermine les prix optimaux des produits.",
+        "C": "Il nécessite toujours des données temporelles précises.",
+        "D": "Il prédit la popularité des produits pendant les soldes."
+      },
+      "correct_answer": "A",
+      "explanation": "Le market basket analysis se concentre sur les associations entre produits plutôt que sur les ventes individuelles (B, C, D). C'est cette relation qui le distingue d'une simple analyse des ventes.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment la confiance d'une règle est-elle influencée par le support faible d'un antécédent?",
+      "image_url": null,
+      "choices": {
+        "A": "La confiance peut être élevée même avec un support faible.",
+        "B": "La confiance ne dépend pas du support de l'antécédent.",
+        "C": "Un support faible diminue toujours la confiance.",
+        "D": "Une grande taille du dataset compense un support faible."
+      },
+      "correct_answer": "A",
+      "explanation": "La confiance peut être élevée avec un support faible si les items de la conclusion apparaissent systématiquement lorsque les items de l'antécédent apparaissent, malgré la rareté. La confiance dépend du support (B faux), le support faible n'affecte pas directement (C incorrect), et la taille du dataset n'influe pas (D faux).",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Lorsqu'une règle d'association a un lift égal à 1, que peut-on en déduire?",
+      "image_url": null,
+      "choices": {
+        "A": "Les items de l'antécédent et du conséquent sont indépendants.",
+        "B": "La règle est statistiquement significative.",
+        "C": "Le support de la règle est maximal.",
+        "D": "La confiance de la règle est nulle."
+      },
+      "correct_answer": "A",
+      "explanation": "Un lift de 1 indique que les items sont indépendants, car leur co-occurrence est équivalente à celle attendue par hasard. B, C et D sont des interprétations incorrectes de la métrique de lift.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi utilise-t-on des seuils de support minimum dans l'analyse de règles d'association?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour réduire le nombre de règles générées et se concentrer sur les plus significatives.",
+        "B": "Parce qu'une confiance élevée dans les règles n'est pas nécessairement fiable.",
+        "C": "Pour garantir que toutes les règles ont un lift supérieur à 1.",
+        "D": "Pour remplacer la nécessité de définir un seuil de confiance minimum."
+      },
+      "correct_answer": "A",
+      "explanation": "Les seuils de support minimum aident à réduire le nombre de règles en se concentrant sur celles qui sont basées sur des occurrences fréquentes, contrairement à B, C, et D.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle mesure permet d'évaluer l'intérêt d'une règle par rapport à la co-occurrence aléatoire des items?",
+      "image_url": null,
+      "choices": {
+        "A": "Lift",
+        "B": "Support",
+        "C": "Confiance",
+        "D": "Fréquence absolue"
+      },
+      "correct_answer": "A",
+      "explanation": "Le lift mesure l'intérêt d'une règle par rapport à ce que l'on pourrait attendre par hasard. B (Support) et C (Confiance) mesurent des aspects différents, et D (Fréquence absolue) n'est pas appropriée.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un inconvénient majeur de la métrique de support seule?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle ne reflète pas la relation de cause à effet entre les items.",
+        "B": "Elle est sensible aux fluctuations de prix.",
+        "C": "Elle surestime toujours les règles de faible confiance.",
+        "D": "Elle réduit automatiquement le nombre de règles générées."
+      },
+      "correct_answer": "A",
+      "explanation": "Le support ne reflète pas la relation de cause à effet entre les items, il est purement une mesure de fréquence. B, C et D ne sont pas corrects car ils n'évaluent pas ce que le support mesure réellement.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il problématique d'utiliser uniquement le support et la confiance sans considérer le lift dans certaines analyses?",
+      "image_url": null,
+      "choices": {
+        "A": "Cela peut ignorer le fait que les items coexistent souvent par hasard.",
+        "B": "Cela garantit une analyse temporelle incorrecte.",
+        "C": "Cela surestime systématiquement le niveau de support.",
+        "D": "Cela rend impossible l'analyse de grande échelle."
+      },
+      "correct_answer": "A",
+      "explanation": "Sans le lift, on risque de ne pas détecter que certaines co-occurrences pourraient être dues au hasard. B, C et D ne sont pas pertinents car ils ne concernent pas cette omission spécifique.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Si le support minimum est fixé trop bas, quel est le principal risque pour l'analyse des règles d'association?",
+      "image_url": null,
+      "choices": {
+        "A": "Générer trop de règles basées sur des données non significatives.",
+        "B": "Ignorer les relations importantes entre les items.",
+        "C": "Augmenter artificiellement la confiance des règles.",
+        "D": "Diminuer la probabilité que les règles soient utiles pour la segmentation de la clientèle."
+      },
+      "correct_answer": "A",
+      "explanation": "Un support minimum trop bas peut entraîner la génération de règles basées sur des occurrences rares et probablement non significatives. B, C et D sont conceptuellement incorrects dans ce contexte.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel indicateur offre une meilleure indication de la causalité potentielle dans un dataset: support, confiance ou lift?",
+      "image_url": null,
+      "choices": {
+        "A": "Lift",
+        "B": "Support",
+        "C": "Confiance",
+        "D": "Fréquence absolue des items"
+      },
+      "correct_answer": "A",
+      "explanation": "Le lift fournit une indication de l'importance relative et potentiellement causale des relations entre items. Le support et la confiance relèvent plus de la fréquence et de la fiabilité, mais pas de la causalité (D 'fréquence absolue' est une distraction).",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "À quoi faut-il être particulièrement attentif lorsque l'on interprète des règles avec un bon support mais une faible confiance et un lift bas?",
+      "image_url": null,
+      "choices": {
+        "A": "Ces règles pourraient être non informatives car les items se trouvent déjà ensemble par hasard.",
+        "B": "Ces règles sont plus fiables et doivent être mises en priorité dans un déploiement stratégique.",
+        "C": "Ces règles indiquent toujours une tendance cachée.",
+        "D": "Ces règles devraient toujours être regroupées pour hauteur d'analyse."
+      },
+      "correct_answer": "A",
+      "explanation": "Des règles avec un bas lift et faible confiance malgré un bon support peuvent simplement indiquer que la co-occurrence d'items est due au hasard. B, C et D sont incorrects car ils présument que ces règles sont plus significatives qu'elles ne le sont réellement.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un problème potentiel causé par un lift excessivement élevé sans analyse complémentaire?",
+      "image_url": null,
+      "choices": {
+        "A": "Cela pourrait indiquer des co-occurrences rares mais non significatives.",
+        "B": "Il peut conduire à l'ignorance des règles à support élevé.",
+        "C": "Cela entraîne une dépendance accrue sur le support.",
+        "D": "Cela fausse la confiance des règles peu fréquentes."
+      },
+      "correct_answer": "A",
+      "explanation": "Un lift élevé pourrait résulter de co-occurrences qui sont statistiquement rares et non informatives sans support adéquat. B, C, et D proposent des explications incorrectes de la signification d'un lift élevé.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Lorsque l'on utilise le market basket analysis pour optimiser l'agencement d'un magasin, que faudrait-il éviter de baser exclusivement sur le support des articles?",
+      "image_url": null,
+      "choices": {
+        "A": "L'agencement des produits devrait également tenir compte de la confiance pour les associations.",
+        "B": "L'évolution des prix devrait uniquement refléter le support.",
+        "C": "Les promotions devraient être alignées sur le support seul.",
+        "D": "Le service client devrait être réorganisé selon le support."
+      },
+      "correct_answer": "A",
+      "explanation": "Un simple calcul de support pourrait ne pas révéler la vraie nature des relations utiles pour l'agencement. Tenir compte de la confiance permet de mieux comprendre les réelles associations de produits. B, C et D sont également malavisés car ils attribuent une perspective unilatérale au support.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi le simple fait d'avoir une confiance élevée ne garantit pas qu'une règle soit utile dans le contexte d'analyses commerciales?",
+      "image_url": null,
+      "choices": {
+        "A": "Parce que cela pourrait ne pas être significatif sans un lift élevé.",
+        "B": "Parce que la confiance ne mesure pas le support absolu.",
+        "C": "Parce que les règles de haute confiance sont souvent moins fréquentes.",
+        "D": "Parce que la confiance est généralement substituée par le support dans les analyses prédictives."
+      },
+      "correct_answer": "A",
+      "explanation": "Une confiance élevée sans lift significatif peut simplement représenter une relation non causale. B, C, et D confondent la notion de confiance avec d'autres concepts.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel aspect du market basket analysis est crucial pour éviter la surinterprétation des règles d'association?",
+      "image_url": null,
+      "choices": {
+        "A": "Vérifier les règles par multiple méthodes, y compris le lift.",
+        "B": "Se concentrer uniquement sur la fréquence des transactions.",
+        "C": "Éviter de tenir compte des règles avec un faible support.",
+        "D": "Ne pas utiliser de seuil pour le lift."
+      },
+      "correct_answer": "A",
+      "explanation": "Il est important de vérifier les règles par plusieurs méthodes, comme le support, la confiance et le lift, pour éviter la surinterprétation. B, C et D sont incorrects car ils offriraient une vision biaisée des décisions basées sur le market basket analysis.",
       "difficulty": "hard"
     }
   ]

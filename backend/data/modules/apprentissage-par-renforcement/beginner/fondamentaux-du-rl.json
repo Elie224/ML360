@@ -5,142 +5,142 @@
   "questions": [
     {
       "type": "text",
-      "question": "etat: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Fondamentaux du RL' ?",
+      "question": "Qu'est-ce qu'un agent dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Fondamentaux du RL, agent est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer agent en production.",
-        "B": "Pendant un atelier de cadrage, environnement est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer environnement en production tout en surveillant le risque d'appliquer environnement par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Dans un atelier de cadrage de Fondamentaux du RL, l'\u00e9quipe applique action pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer action en production.",
-        "D": "Dans un atelier de cadrage de Fondamentaux du RL, l'\u00e9quipe applique etat pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer etat en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car etat y sert de levier de d\u00e9cision principal dans Fondamentaux du RL. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Fondamentaux du RL, agent est choisi afin d'installer un raisonnement fiable des le d...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant un atelier de cadrage, environnement est utile pour installer un raisonnement fiable des le d\u00e9but ;...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans un atelier de cadrage de Fondamentaux du RL, l'\u00e9quipe applique action pour installer un raisonnement f...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans un atelier de cadrage de Fondamentaux du RL, l'\u00e9quipe applique etat pour installer un raisonnement fia...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec agent dans 'Fondamentaux du RL' ?",
-      "image_url": "apprentissage-par-renforcement_fondamentaux_du_rl_agent_2.png",
-      "choices": {
-        "A": "Dans Fondamentaux du RL, action est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer action en production.",
-        "B": "Dans Fondamentaux du RL, agent est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer agent en production.",
-        "C": "Le role d'environnement est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer environnement en production.",
-        "D": "etat sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer etat en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'agent dans Fondamentaux du RL. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Fondamentaux du RL, action est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utilise...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Fondamentaux du RL, agent est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role d'environnement est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement per...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (etat sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec action dans 'Fondamentaux du RL' ?",
-      "image_url": "apprentissage-par-renforcement_fondamentaux_du_rl_action_2.png",
-      "choices": {
-        "A": "environnement sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer environnement en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Fondamentaux du RL, etat est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer etat en production.",
-        "C": "Dans Fondamentaux du RL, action est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer action en production.",
-        "D": "Le role d'agent est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer agent en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'action dans Fondamentaux du RL. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (environnement sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieu...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Fondamentaux du RL, etat est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Fondamentaux du RL, action est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utilise...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role d'agent est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de m...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Fondamentaux du RL', quel commentaire du schema traduit le mieux le role d'etat ?",
-      "image_url": "apprentissage-par-renforcement_fondamentaux_du_rl_etat_2.png",
-      "choices": {
-        "A": "Dans Fondamentaux du RL, agent est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer agent en production.",
-        "B": "Le role d'environnement est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer environnement en production.",
-        "C": "action sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer action en production pour guider une d\u00e9cision exploitable.",
-        "D": "etat sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer etat en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'etat dans Fondamentaux du RL. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Fondamentaux du RL, agent est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role d'environnement est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement per...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (action sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux decid...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (etat sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Fondamentaux du RL', quel est le principal mode d'echec quand etat est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si etat est mal utilise, on observe souvent appliquer etat par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Le piege principal autour d'agent est appliquer agent par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Un risque classique avec environnement est d'appliquer environnement par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Si action est mal utilise, on observe souvent appliquer action par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "Une entité qui prend des actions dans un environnement pour maximiser une récompense cumulée.",
+        "B": "Un algorithme qui prédit les prix des actions en bourse.",
+        "C": "Un logiciel utilisé pour optimiser les bases de données.",
+        "D": "Une technique de clustering pour segmenter les données."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'etat. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si etat est mal utilise, on observe souvent appliquer etat par automatisme sans verifier hypotheses, qualit...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour d'agent est appliquer agent par automatisme sans verifier hypotheses, qualit\u00e9 de...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec environnement est d'appliquer environnement par automatisme sans verifier hypothe...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si action est mal utilise, on observe souvent appliquer action par automatisme sans verifier hypotheses, qu...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Un agent dans le contexte de l'apprentissage par renforcement est une entité qui interagit avec l'environnement en prenant des actions pour maximiser sa récompense cumulée. Les autres choix décrivent des concepts qui ne sont pas pertinents au RL : B décrit un système de prédiction, C touche à l'optimisation de bases de données, et D se réfère à une technique de clustering.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Fondamentaux du RL', quel est le role le plus determinant d'action pour un cas banque ?",
+      "question": "Quel est le rôle de l'environnement dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "action sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer action en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Fondamentaux du RL, agent est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer agent en production.",
-        "C": "Le role d'environnement est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer environnement en production.",
-        "D": "etat sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer etat en production pour guider une d\u00e9cision exploitable."
+        "A": "Fournir des retours basés sur les actions de l'agent.",
+        "B": "Générer les données d'entraînement pour un réseau de neurones.",
+        "C": "Contrôler les hyperparamètres d'un modèle d'apprentissage supervisé.",
+        "D": "Stocker les modèles et hyperparamètres pour divers algorithmes."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie action \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (action sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux decid...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Fondamentaux du RL, agent est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role d'environnement est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement per...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (etat sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "L'environnement fournit des retours, tels que des états et des récompenses, en réponse aux actions prises par l'agent. Les autres réponses fausses ne décrivent pas le rôle de l'environnement en RL : B est lié à l'apprentissage supervisé, C touche à une tâche de réglage de paramètres, et D est une fonction de stockage non liée.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Fondamentaux du RL', quelle situation de terrain montre le mieux quand utiliser agent ?",
+      "question": "Dans un contexte de RL, que représente un 'état'?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Fondamentaux du RL, action est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer action en production.",
-        "B": "En contexte r\u00e9el sur Fondamentaux du RL, agent est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer agent en production.",
-        "C": "Pendant un atelier de cadrage, environnement est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer environnement en production tout en surveillant le risque d'appliquer environnement par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Dans un atelier de cadrage de Fondamentaux du RL, l'\u00e9quipe applique etat pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer etat en production."
+        "A": "Une représentation des conditions actuelles que l'agent perçoit de l'environnement.",
+        "B": "La politique d'apprentissage utilisée par l'agent pour déterminer ses actions.",
+        "C": "La séquence de toutes les actions passées prises par l'agent.",
+        "D": "Un paramètre fixe dans un modèle de machine learning."
       },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car agent y sert de levier de d\u00e9cision principal dans Fondamentaux du RL. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Fondamentaux du RL, action est choisi afin d'installer un raisonnement fiable des le ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Fondamentaux du RL, agent est choisi afin d'installer un raisonnement fiable des le d...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant un atelier de cadrage, environnement est utile pour installer un raisonnement fiable des le d\u00e9but ;...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans un atelier de cadrage de Fondamentaux du RL, l'\u00e9quipe applique etat pour installer un raisonnement fia...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Un 'état' est la représentation des conditions ou de la situation actuelle que l'agent perçoit de l'environnement. B décrit une politique d'apprentissage, C fait référence à un historique d'actions et non à un état, et D parle d'un paramètre fixe, ce qui n'est pas pertinent ici.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la définition d'une action dans l'apprentissage par renforcement?",
+      "image_url": null,
+      "choices": {
+        "A": "Une décision ou un mouvement que l'agent peut prendre à partir d'un état donné.",
+        "B": "Une variable indépendante mesurée pour prédire une réponse.",
+        "C": "Un événement externe qui modifie les paramètres d'un modèle.",
+        "D": "Un algorithme de recherche pour optimiser des fonctions."
+      },
+      "correct_answer": "A",
+      "explanation": "Dans le RL, une action est une décision ou un mouvement exécuté par l'agent à partir d'un état donné. B concerne les variables en statistiques, C se réfère à un événement externe non lié, et D concerne l'optimisation et n'est pas pertinent ici.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Comment l'agent apprend-il à choisir ses actions?",
+      "image_url": null,
+      "choices": {
+        "A": "En recevant des récompenses pour ses actions et en ajustant sa politique en conséquence.",
+        "B": "En calculant la dérivée des mesures statistiques.",
+        "C": "En suivant strictement une séquence prédéfinie d'étapes.",
+        "D": "En optimisant une fonction de perte quadratique uniquement."
+      },
+      "correct_answer": "A",
+      "explanation": "L'agent apprend par l'expérience, en recevant des récompenses pour ses actions et en ajustant sa politique pour maximiser ces récompenses. B, C et D sont incorrects car ils ne décrivent pas le processus de choix d'actions dans le RL : B est lié au calcul différentiel, C infère un chemin d'action non dynamique, et D est spécifique à une mesure de perte qui n'est pas utilisée singulièrement.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la meilleure action à prendre lorsque l'agent est dans un état inconnu?",
+      "image_url": null,
+      "choices": {
+        "A": "Effectuer de l'exploration en choisissant une action aléatoire.",
+        "B": "Revenir à l'état initial et recommencer.",
+        "C": "Toujours choisir l'action avec le plus haut gain historique.",
+        "D": "Ne prendre aucune action jusqu'à ce que plus d'informations soient disponibles."
+      },
+      "correct_answer": "A",
+      "explanation": "Dans le cadre du dilemme exploration-exploitation, lorsque l'agent est dans un état inconnu, il est souvent sage de choisir une action aléatoire, c'est-à-dire explorer, pour recueillir plus d'informations. B implique un retour inutile à l'état initial, C pourrait être trop exploitatif et non efficace si l'état est réellement nouveau, et D retarderait l'apprentissage.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le résultat attendu lorsque l'agent applique une politique?",
+      "image_url": null,
+      "choices": {
+        "A": "Une séquence d'actions qui maximise la récompense cumulée attendue.",
+        "B": "Un modèle d'entraînement avec des époques spécifiques.",
+        "C": "Une liste de données d'entrée pour le prochain entraînement.",
+        "D": "Un ensemble d'algorithmes optimisés pour la précision."
+      },
+      "correct_answer": "A",
+      "explanation": "En appliquant une politique, l'agent vise à maximiser la récompense cumulée attendue par une séquence d'actions. B se réfère à des aspects de l'apprentissage supervisé, C décrit la préparation des données non pertinente ici, et D se concentre sur des algorithmes optimisés pour la précision, ce qui n'est pas approprié ici.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Fondamentaux du RL' (industrie), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment environnement ?",
+      "question": "Quand dit-on qu'un agent converge dans un problème de RL?",
       "image_url": null,
       "choices": {
-        "A": "Dans Fondamentaux du RL, policy se comprend comme une notion de base en apprentissage par renforcement ; il guide l'apprentissage de d\u00e9cisions sequentielles en maximisant un signal de recompense.",
-        "B": "choix d'action designe une notion de base en apprentissage par renforcement ; il formalise le role de choix d'action dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "comportement correspond a une notion de base en apprentissage par renforcement ; il formalise le role de comportement dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Fondamentaux du RL.",
-        "D": "environnement correspond a une notion de base en apprentissage par renforcement ; il formalise le role d'environnement dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Fondamentaux du RL."
+        "A": "Quand il commence à suivre la politique optimale ou proche de ce qui maximise la récompense.",
+        "B": "Quand toutes ses actions génèrent une récompense immédiate positive.",
+        "C": "Quand il n'a plus besoin d'un retour de son environnement.",
+        "D": "Quand il dépasse toujours un certain seuil de précision sur les données d'entraînement."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'environnement dans Fondamentaux du RL, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte industrie, alors que policy, choix d'action, comportement restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Fondamentaux du RL, policy se comprend comme une notion de base en apprentissage par renforcement ; il...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (choix d'action designe une notion de base en apprentissage par renforcement ; il formalise le role de choix...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (comportement correspond a une notion de base en apprentissage par renforcement ; il formalise le role de co...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (environnement correspond a une notion de base en apprentissage par renforcement ; il formalise le role d'e...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Un agent converge lorsqu'il suit une politique optimale ou suffisamment efficace pour maximiser les récompenses. B est faux car les actions peuvent inclure des récompenses retardées, C ne fait pas de sens dans le contexte RL où le retour est essentiel, et D est un concept purement lié à l'apprentissage supervisé.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Fondamentaux du RL', quelle situation de terrain montre le mieux quand utiliser action ?",
+      "question": "Quelle est l'importance du facteur de discount dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Dans un atelier de cadrage de Fondamentaux du RL, l'\u00e9quipe applique environnement pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer environnement en production.",
-        "B": "En contexte r\u00e9el sur Fondamentaux du RL, etat est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer etat en production.",
-        "C": "En contexte r\u00e9el sur Fondamentaux du RL, action est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer action en production.",
-        "D": "Pendant un atelier de cadrage, agent est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer agent en production tout en surveillant le risque d'appliquer agent par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "Il détermine l'importance des récompenses futures par rapport aux récompenses immédiates.",
+        "B": "Il corrige les biais dans les données d'entraînement.",
+        "C": "Il ajuste la taille des lots pour l'entraînement.",
+        "D": "Il regularise le modèle pour éviter le surapprentissage."
       },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car action y sert de levier de d\u00e9cision principal dans Fondamentaux du RL. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans un atelier de cadrage de Fondamentaux du RL, l'\u00e9quipe applique environnement pour installer un raisonn...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Fondamentaux du RL, etat est choisi afin d'installer un raisonnement fiable des le de...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Fondamentaux du RL, action est choisi afin d'installer un raisonnement fiable des le ...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant un atelier de cadrage, agent est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utili...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Le facteur de discount (ou taux d'actualisation) permet de peser l'importance des récompenses futures par rapport aux récompenses immédiates. B, C et D ne concernent pas le RL : B se réfère au prétraitement statistique, C à la configuration de l'entraînement batch, et D à la regularisation dans l'apprentissage profond.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Fondamentaux du RL', quel est le role le plus determinant d'agent pour un cas e-commerce ?",
+      "question": "Quelle stratégie est utilisée par un agent RL pour résoudre le dilemme exploration-exploitation?",
       "image_url": null,
       "choices": {
-        "A": "Dans Fondamentaux du RL, environnement est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer environnement en production.",
-        "B": "Le role d'etat est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer etat en production.",
-        "C": "action sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer action en production pour guider une d\u00e9cision exploitable.",
-        "D": "agent sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer agent en production pour guider une d\u00e9cision exploitable."
+        "A": "Équilibrer entre explorer de nouvelles actions et exploiter les meilleures actions connues à travers une stratégie comme ε-greedy.",
+        "B": "Construire des histogrammes de fréquence pour toutes les actions possibles.",
+        "C": "Appliquer un découpage en fenêtres glissantes pour l'évaluation de performance.",
+        "D": "Utiliser les algorithmes de dérivée pour accélérer l'apprentissage."
       },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie agent \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Fondamentaux du RL, environnement est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role d'etat est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mi...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (action sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux decid...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (agent sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux decide...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La stratégie d'ε-greedy est couramment utilisée pour arbitrer entre l'exploration de nouvelles actions et l'exploitation des meilleures actions connues. B ne gère pas efficacement ce dilemme, C est une technique d'analyse statistique et temporelle, et D, bien qu'utile en apprentissage, ne gère pas spécifiquement le dilemme exploration-exploitation.",
       "difficulty": "hard"
     }
   ]

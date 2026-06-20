@@ -5,254 +5,254 @@
   "questions": [
     {
       "type": "text",
-      "question": "Dans 'Desiquilibre de classes' (marketing), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment ROC-AUC ?",
+      "question": "Quelle formule definit le F1 score?",
       "image_url": null,
       "choices": {
-        "A": "Dans Desiquilibre de classes, split se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de split dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "profondeur maximale designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de profondeur maximale dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "random forest correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de random forest dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Desiquilibre de classes.",
-        "D": "ROC-AUC correspond a un concept interm\u00e9diaire en apprentissage supervise ; il mesure la capacite du modele a separer classes positives et negatives sur tous les seuils, ce qui structure l'analyse dans Desiquilibre de classes."
+        "A": "2 x (precision x rappel) / (precision + rappel)",
+        "B": "accuracy = (TP+TN)/N",
+        "C": "(rappel + precision) / 2",
+        "D": "precision x rappel"
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de ROC-AUC dans Desiquilibre de classes, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que split, profondeur maximale, random forest restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Desiquilibre de classes, split se comprend comme un concept interm\u00e9diaire en apprentissage supervise ;...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (profondeur maximale designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de p...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (random forest correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de ra...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (ROC-AUC correspond a un concept interm\u00e9diaire en apprentissage supervise ; il mesure la capacite du modele ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec F1 score dans 'Desiquilibre de classes' ?",
-      "image_url": "apprentissage-supervise_desiquilibre_de_classes_f1_score_2.png",
-      "choices": {
-        "A": "Dans Desiquilibre de classes, resampling est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; am\u00e9liorer l'apprentissage sur classes minoritaires sans ignorer les majoritaires.",
-        "B": "Dans Desiquilibre de classes, F1 score est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; arbitrer entre faux positifs et faux negatifs lorsque l'exactitude globale est trompeuse.",
-        "C": "Le role de ROC-AUC est de fiabiliser les d\u00e9cisions d'experimentation ; comparer des modeles de classification independamment d'un seuil de d\u00e9cision unique.",
-        "D": "class weights sert a fiabiliser les d\u00e9cisions d'experimentation ; forcer le modele a mieux prendre en compte les classes rares pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de F1 score dans Desiquilibre de classes. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Desiquilibre de classes, resampling est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; ame...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Desiquilibre de classes, F1 score est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; arbit...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de ROC-AUC est de fiabiliser les d\u00e9cisions d'experimentation ; comparer des modeles de classificati...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (class weights sert a fiabiliser les d\u00e9cisions d'experimentation ; forcer le modele a mieux prendre en compt...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Le F1 score est la moyenne harmonique de la precision et du rappel, formulee comme 2 x (precision x rappel) / (precision + rappel). B est la formule pour l'exactitude, C est la moyenne arithmetique, et D ne prend pas en compte l'inverse des valeurs.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "class weights: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Desiquilibre de classes' ?",
+      "question": "Que mesure l'aire sous la courbe ROC (ROC-AUC) dans le contexte des classes déséquilibrées?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Desiquilibre de classes, F1 score est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; arbitrer entre faux positifs et faux negatifs lorsque l'exactitude globale est trompeuse.",
-        "B": "Pendant une phase d'experimentation, ROC-AUC est utile pour fiabiliser les d\u00e9cisions d'experimentation ; comparer des modeles de classification independamment d'un seuil de d\u00e9cision unique tout en surveillant le risque de sur-optimiser ROC-AUC localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Dans une phase d'experimentation de Desiquilibre de classes, l'\u00e9quipe applique resampling pour fiabiliser les d\u00e9cisions d'experimentation ; am\u00e9liorer l'apprentissage sur classes minoritaires sans ignorer les majoritaires.",
-        "D": "Dans une phase d'experimentation de Desiquilibre de classes, l'\u00e9quipe applique class weights pour fiabiliser les d\u00e9cisions d'experimentation ; forcer le modele a mieux prendre en compte les classes rares."
+        "A": "La capacité du modèle à séparer les classes",
+        "B": "La précision du modèle uniquement sur la classe majoritaire",
+        "C": "La différence entre rappel et précision",
+        "D": "Le nombre de vrais positifs sur le total"
       },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car class weights y sert de levier de d\u00e9cision principal dans Desiquilibre de classes. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Desiquilibre de classes, F1 score est choisi afin de fiabiliser les d\u00e9cisions d'experi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une phase d'experimentation, ROC-AUC est utile pour fiabiliser les d\u00e9cisions d'experimentation ; co...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une phase d'experimentation de Desiquilibre de classes, l'\u00e9quipe applique resampling pour fiabiliser l...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une phase d'experimentation de Desiquilibre de classes, l'\u00e9quipe applique class weights pour fiabilise...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Le ROC-AUC mesure la capacité du modèle à séparer les classes en évaluant la trade-off entre le taux de vrais positifs et le taux de faux positifs. B est incorrect car le ROC-AUC prend en compte toutes les classes, C décrit une autre métrique, et D est une mauvaise interprétation du taux de vrais positifs.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Face a un besoin marketing dans 'Desiquilibre de classes', pourquoi ROC-AUC est-il prioritaire ?",
+      "question": "Dans un problème de déséquilibre de classes, comment les 'class weights' aident-ils?",
       "image_url": null,
       "choices": {
-        "A": "class weights sert a fiabiliser les d\u00e9cisions d'experimentation ; forcer le modele a mieux prendre en compte les classes rares pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Desiquilibre de classes, resampling est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; am\u00e9liorer l'apprentissage sur classes minoritaires sans ignorer les majoritaires.",
-        "C": "Dans Desiquilibre de classes, ROC-AUC est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; comparer des modeles de classification independamment d'un seuil de d\u00e9cision unique.",
-        "D": "Le role de F1 score est de fiabiliser les d\u00e9cisions d'experimentation ; arbitrer entre faux positifs et faux negatifs lorsque l'exactitude globale est trompeuse."
+        "A": "En modifiant la fonction d'erreur pour donner plus d'importance aux classes minoritaires",
+        "B": "En augmentant le nombre de données pour la classe majoritaire",
+        "C": "En supprimant des données pour équilibrer les classes",
+        "D": "En calculant uniquement la précision des classes majoritaires"
       },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie ROC-AUC \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (class weights sert a fiabiliser les d\u00e9cisions d'experimentation ; forcer le modele a mieux prendre en compt...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Desiquilibre de classes, resampling est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; ame...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Desiquilibre de classes, ROC-AUC est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; compar...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de F1 score est de fiabiliser les d\u00e9cisions d'experimentation ; arbitrer entre faux positifs et fau...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Les 'class weights' ajustent la fonction de coût pour pénaliser davantage les erreurs sur les classes minoritaires, sans modifier les données. B et C décrivent des techniques de rééchantillonnage, et D est incorrect car ce serait contradictoire au but de corriger le déséquilibre.",
       "difficulty": "easy"
     },
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec resampling dans 'Desiquilibre de classes' ?",
-      "image_url": "apprentissage-supervise_desiquilibre_de_classes_resampling_2.png",
-      "choices": {
-        "A": "ROC-AUC sert a fiabiliser les d\u00e9cisions d'experimentation ; comparer des modeles de classification independamment d'un seuil de d\u00e9cision unique pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Desiquilibre de classes, class weights est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; forcer le modele a mieux prendre en compte les classes rares.",
-        "C": "Dans Desiquilibre de classes, resampling est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; am\u00e9liorer l'apprentissage sur classes minoritaires sans ignorer les majoritaires.",
-        "D": "Le role de F1 score est de fiabiliser les d\u00e9cisions d'experimentation ; arbitrer entre faux positifs et faux negatifs lorsque l'exactitude globale est trompeuse."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de resampling dans Desiquilibre de classes. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (ROC-AUC sert a fiabiliser les d\u00e9cisions d'experimentation ; comparer des modeles de classification independ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Desiquilibre de classes, class weights est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Desiquilibre de classes, resampling est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; ame...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de F1 score est de fiabiliser les d\u00e9cisions d'experimentation ; arbitrer entre faux positifs et fau...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
       "type": "text",
-      "question": "Dans 'Desiquilibre de classes', quel est le role le plus determinant de F1 score pour un cas sante ?",
+      "question": "Quelle méthode de rééchantillonnage consiste à dupliquer des exemples de la classe minoritaire?",
       "image_url": null,
       "choices": {
-        "A": "Dans Desiquilibre de classes, ROC-AUC est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; comparer des modeles de classification independamment d'un seuil de d\u00e9cision unique.",
-        "B": "Le role de class weights est de fiabiliser les d\u00e9cisions d'experimentation ; forcer le modele a mieux prendre en compte les classes rares.",
-        "C": "resampling sert a fiabiliser les d\u00e9cisions d'experimentation ; am\u00e9liorer l'apprentissage sur classes minoritaires sans ignorer les majoritaires pour guider une d\u00e9cision exploitable.",
-        "D": "F1 score sert a fiabiliser les d\u00e9cisions d'experimentation ; arbitrer entre faux positifs et faux negatifs lorsque l'exactitude globale est trompeuse pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie F1 score \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Desiquilibre de classes, ROC-AUC est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; compar...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de class weights est de fiabiliser les d\u00e9cisions d'experimentation ; forcer le modele a mieux prend...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (resampling sert a fiabiliser les d\u00e9cisions d'experimentation ; am\u00e9liorer l'apprentissage sur classes minori...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (F1 score sert a fiabiliser les d\u00e9cisions d'experimentation ; arbitrer entre faux positifs et faux negatifs ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Desiquilibre de classes', quelle situation de terrain montre le mieux quand utiliser F1 score ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Desiquilibre de classes, resampling est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; am\u00e9liorer l'apprentissage sur classes minoritaires sans ignorer les majoritaires.",
-        "B": "En contexte r\u00e9el sur Desiquilibre de classes, F1 score est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; arbitrer entre faux positifs et faux negatifs lorsque l'exactitude globale est trompeuse.",
-        "C": "Pendant une phase d'experimentation, ROC-AUC est utile pour fiabiliser les d\u00e9cisions d'experimentation ; comparer des modeles de classification independamment d'un seuil de d\u00e9cision unique tout en surveillant le risque de sur-optimiser ROC-AUC localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation de Desiquilibre de classes, l'\u00e9quipe applique class weights pour fiabiliser les d\u00e9cisions d'experimentation ; forcer le modele a mieux prendre en compte les classes rares."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car F1 score y sert de levier de d\u00e9cision principal dans Desiquilibre de classes. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Desiquilibre de classes, resampling est choisi afin de fiabiliser les d\u00e9cisions d'expe...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Desiquilibre de classes, F1 score est choisi afin de fiabiliser les d\u00e9cisions d'experi...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, ROC-AUC est utile pour fiabiliser les d\u00e9cisions d'experimentation ; co...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation de Desiquilibre de classes, l'\u00e9quipe applique class weights pour fiabilise...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'Desiquilibre de classes', quel exemple met ROC-AUC au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une phase d'experimentation, ROC-AUC est utile pour fiabiliser les d\u00e9cisions d'experimentation ; comparer des modeles de classification independamment d'un seuil de d\u00e9cision unique tout en surveillant le risque de sur-optimiser ROC-AUC localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Dans une phase d'experimentation de Desiquilibre de classes, l'\u00e9quipe applique F1 score pour fiabiliser les d\u00e9cisions d'experimentation ; arbitrer entre faux positifs et faux negatifs lorsque l'exactitude globale est trompeuse.",
-        "C": "En contexte r\u00e9el sur Desiquilibre de classes, class weights est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; forcer le modele a mieux prendre en compte les classes rares.",
-        "D": "Pendant une phase d'experimentation, resampling est utile pour fiabiliser les d\u00e9cisions d'experimentation ; am\u00e9liorer l'apprentissage sur classes minoritaires sans ignorer les majoritaires tout en surveillant le risque de sur-optimiser resampling localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Sur-échantillonnage",
+        "B": "Sous-échantillonnage",
+        "C": "Échantillonnage stratifié",
+        "D": "Échantillonnage aléatoire"
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car ROC-AUC y sert de levier de d\u00e9cision principal dans Desiquilibre de classes. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une phase d'experimentation, ROC-AUC est utile pour fiabiliser les d\u00e9cisions d'experimentation ; co...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une phase d'experimentation de Desiquilibre de classes, l'\u00e9quipe applique F1 score pour fiabiliser les...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Desiquilibre de classes, class weights est choisi afin de fiabiliser les d\u00e9cisions d'e...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une phase d'experimentation, resampling est utile pour fiabiliser les d\u00e9cisions d'experimentation ;...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Desiquilibre de classes', quel commentaire du schema traduit le mieux le role de class weights ?",
-      "image_url": "apprentissage-supervise_desiquilibre_de_classes_class_weights_2.png",
-      "choices": {
-        "A": "Dans Desiquilibre de classes, F1 score est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; arbitrer entre faux positifs et faux negatifs lorsque l'exactitude globale est trompeuse.",
-        "B": "Le role de ROC-AUC est de fiabiliser les d\u00e9cisions d'experimentation ; comparer des modeles de classification independamment d'un seuil de d\u00e9cision unique.",
-        "C": "resampling sert a fiabiliser les d\u00e9cisions d'experimentation ; am\u00e9liorer l'apprentissage sur classes minoritaires sans ignorer les majoritaires pour guider une d\u00e9cision exploitable.",
-        "D": "class weights sert a fiabiliser les d\u00e9cisions d'experimentation ; forcer le modele a mieux prendre en compte les classes rares pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de class weights dans Desiquilibre de classes. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Desiquilibre de classes, F1 score est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; arbit...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de ROC-AUC est de fiabiliser les d\u00e9cisions d'experimentation ; comparer des modeles de classificati...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (resampling sert a fiabiliser les d\u00e9cisions d'experimentation ; am\u00e9liorer l'apprentissage sur classes minori...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (class weights sert a fiabiliser les d\u00e9cisions d'experimentation ; forcer le modele a mieux prendre en compt...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
+      "explanation": "Le sur-échantillonnage augmente la proportion de la classe minoritaire en dupliquant ses instances. Le sous-échantillonnage (B) réduit la classe majoritaire, C est une technique pour répartir les échantillons de manière représentative, et D ne garantit pas de traitement du déséquilibre.",
+      "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Desiquilibre de classes', quelle situation de terrain montre le mieux quand utiliser resampling ?",
+      "question": "Comment le F1 score réagit-il souvent lors d'un fort déséquilibre de classes?",
       "image_url": null,
       "choices": {
-        "A": "Dans une phase d'experimentation de Desiquilibre de classes, l'\u00e9quipe applique ROC-AUC pour fiabiliser les d\u00e9cisions d'experimentation ; comparer des modeles de classification independamment d'un seuil de d\u00e9cision unique.",
-        "B": "En contexte r\u00e9el sur Desiquilibre de classes, class weights est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; forcer le modele a mieux prendre en compte les classes rares.",
-        "C": "En contexte r\u00e9el sur Desiquilibre de classes, resampling est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; am\u00e9liorer l'apprentissage sur classes minoritaires sans ignorer les majoritaires.",
-        "D": "Pendant une phase d'experimentation, F1 score est utile pour fiabiliser les d\u00e9cisions d'experimentation ; arbitrer entre faux positifs et faux negatifs lorsque l'exactitude globale est trompeuse tout en surveillant le risque de sur-optimiser F1 score localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car resampling y sert de levier de d\u00e9cision principal dans Desiquilibre de classes. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une phase d'experimentation de Desiquilibre de classes, l'\u00e9quipe applique ROC-AUC pour fiabiliser les ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Desiquilibre de classes, class weights est choisi afin de fiabiliser les d\u00e9cisions d'e...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Desiquilibre de classes, resampling est choisi afin de fiabiliser les d\u00e9cisions d'expe...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une phase d'experimentation, F1 score est utile pour fiabiliser les d\u00e9cisions d'experimentation ; a...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Desiquilibre de classes', quel est le principal mode d'echec quand class weights est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si class weights est mal utilise, on observe souvent sur-optimiser class weights localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de F1 score est sur-optimiser F1 score localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Un risque classique avec ROC-AUC est de sur-optimiser ROC-AUC localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Si resampling est mal utilise, on observe souvent sur-optimiser resampling localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Indique un faible compromis entre précision et rappel",
+        "B": "Reste constant quel que soit le déséquilibre",
+        "C": "Favorise toujours les classes minoritaires",
+        "D": "Est identique à l'exactitude lors du déséquilibre"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de class weights. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si class weights est mal utilise, on observe souvent sur-optimiser class weights localement en ignorant ses...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de F1 score est sur-optimiser F1 score localement en ignorant ses interactions av...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec ROC-AUC est de sur-optimiser ROC-AUC localement en ignorant ses interactions avec ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si resampling est mal utilise, on observe souvent sur-optimiser resampling localement en ignorant ses inter...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Avec un déséquilibre, le F1 score est essentiel pour montrer le compromis entre précision et rappel, surtout quand l'une est élevée mais pas l'autre. Il ne restera pas constant (B) et ne favorisera pas les classes minoritaires (C) sans ajustements. Il diffère de l'exactitude (D).",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Desiquilibre de classes', quel est le role le plus determinant de resampling pour un cas industrie ?",
+      "question": "Pourquoi un ROC-AUC élevé peut-il être trompeur avec des classes fortement déséquilibrées?",
       "image_url": null,
       "choices": {
-        "A": "resampling sert a fiabiliser les d\u00e9cisions d'experimentation ; am\u00e9liorer l'apprentissage sur classes minoritaires sans ignorer les majoritaires pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Desiquilibre de classes, F1 score est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; arbitrer entre faux positifs et faux negatifs lorsque l'exactitude globale est trompeuse.",
-        "C": "Le role de ROC-AUC est de fiabiliser les d\u00e9cisions d'experimentation ; comparer des modeles de classification independamment d'un seuil de d\u00e9cision unique.",
-        "D": "class weights sert a fiabiliser les d\u00e9cisions d'experimentation ; forcer le modele a mieux prendre en compte les classes rares pour guider une d\u00e9cision exploitable."
+        "A": "Il peut ne pas refléter la performance réelle des classes minoritaires",
+        "B": "Il mesure uniquement la précision",
+        "C": "Il est biaisé en faveur de la classe minoritaire",
+        "D": "Il influence directement les class weights"
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie resampling \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (resampling sert a fiabiliser les d\u00e9cisions d'experimentation ; am\u00e9liorer l'apprentissage sur classes minori...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Desiquilibre de classes, F1 score est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; arbit...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de ROC-AUC est de fiabiliser les d\u00e9cisions d'experimentation ; comparer des modeles de classificati...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (class weights sert a fiabiliser les d\u00e9cisions d'experimentation ; forcer le modele a mieux prendre en compt...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Avec un déséquilibre, le ROC-AUC peut indiquer une bonne performance globale tout en ignorants erreurs rares mais critiques sur la classe minoritaire, qui sont moins pondérées. B est faux, C est l'inverse, et D lie incorrectement ROC-AUC aux poids de classe.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "class weights: pourquoi ce concept est-il crucial pour une \u00e9quipe e-commerce dans 'Desiquilibre de classes' ?",
+      "question": "Quel impact l'utilisation de 'class weights' incorrectement configurés peut-elle avoir?",
       "image_url": null,
       "choices": {
-        "A": "Le role de resampling est de fiabiliser les d\u00e9cisions d'experimentation ; am\u00e9liorer l'apprentissage sur classes minoritaires sans ignorer les majoritaires.",
-        "B": "Le role de class weights est de fiabiliser les d\u00e9cisions d'experimentation ; forcer le modele a mieux prendre en compte les classes rares.",
-        "C": "F1 score sert a fiabiliser les d\u00e9cisions d'experimentation ; arbitrer entre faux positifs et faux negatifs lorsque l'exactitude globale est trompeuse pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Desiquilibre de classes, ROC-AUC est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; comparer des modeles de classification independamment d'un seuil de d\u00e9cision unique."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie class weights \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de resampling est de fiabiliser les d\u00e9cisions d'experimentation ; am\u00e9liorer l'apprentissage sur cla...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de class weights est de fiabiliser les d\u00e9cisions d'experimentation ; forcer le modele a mieux prend...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (F1 score sert a fiabiliser les d\u00e9cisions d'experimentation ; arbitrer entre faux positifs et faux negatifs ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Desiquilibre de classes, ROC-AUC est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; compar...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "F1 score: quelle proposition en donne la meilleure d\u00e9finition dans 'Desiquilibre de classes' (contexte sante) ?",
-      "image_url": null,
-      "choices": {
-        "A": "F1 score designe un concept interm\u00e9diaire en apprentissage supervise ; il combine pr\u00e9cision et rappel via leur moyenne harmonique pour evaluer un classifieur en classes desequilibrees.",
-        "B": "interpretabilite correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role d'interpretabilite dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Desiquilibre de classes.",
-        "C": "Dans Desiquilibre de classes, split se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de split dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "profondeur maximale designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de profondeur maximale dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Surapprentissage des classes minoritaires",
+        "B": "Amélioration de l'exactitude globale",
+        "C": "Augmentation de l'équilibre des classes dans l'ensemble de données",
+        "D": "Répartition identique des erreurs entre classes"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de F1 score dans Desiquilibre de classes, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que interpretabilite, split, profondeur maximale restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (F1 score designe un concept interm\u00e9diaire en apprentissage supervise ; il combine pr\u00e9cision et rappel via l...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (interpretabilite correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Desiquilibre de classes, split se comprend comme un concept interm\u00e9diaire en apprentissage supervise ;...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (profondeur maximale designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de p...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Des poids de class trop importants peuvent mener à un surapprentissage des classes minoritaires aux dépens de la classe majoritaire. B confond 'class weights' avec d'autres métriques, C n'est pas une fonction des 'class weights' et D assume une impossible équité.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle technique applique un équilibrage en supprimant des exemples de la classe majoritaire?",
+      "image_url": null,
+      "choices": {
+        "A": "Sous-échantillonnage",
+        "B": "Sur-échantillonnage",
+        "C": "Échantillonnage par grappe",
+        "D": "Échantillonnage de quota"
+      },
+      "correct_answer": "A",
+      "explanation": "Le sous-échantillonnage élimine des instances de la classe majoritaire pour équilibrer les données, tandis que le sur-échantillonnage (B) travaille sur la classe minoritaire. C et D ne se concentrent pas sur le déséquilibre de classe.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi l'accuracy n'est-elle pas une bonne métrique pour évaluer les modèles sur des classes déséquilibrées?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle peut ignorer complètement la classe minoritaire",
+        "B": "Elle surpondère les faux négatifs",
+        "C": "Elle mesure la somme des confusion entre classes",
+        "D": "Elle ne tient pas compte de la taille des classes"
+      },
+      "correct_answer": "A",
+      "explanation": "L'accuracy peut être élevée quand le modèle prédit majoritairement la classe majoritaire, ignorant les performances sur la classe minoritaire. B, C, et D ne sont pas corrects en expliquant pourquoi l'accuracy est une métrique inadéquate ici.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle stratégie est souvent utilisée conjointement avec les 'class weights' pour traiter les classes déséquilibrées?",
+      "image_url": null,
+      "choices": {
+        "A": "Échantillonnage (sur-échantillonnage ou sous-échantillonnage)",
+        "B": "Prédiction par majority voting",
+        "C": "Augmentation des données de la classe majoritaire",
+        "D": "Application de réduction de dimension"
+      },
+      "correct_answer": "A",
+      "explanation": "Des techniques comme le sur-échantillonnage ou sous-échantillonnage intégrées avec 'class weights' traitent efficacement le déséquilibre. B n'est pas relié spécifiquement aux class weights et C/D n'abordent pas directement le déséquilibre.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment un AUC proche de 0.5 est-il interprété dans un problème de classification binaire?",
+      "image_url": null,
+      "choices": {
+        "A": "Le modèle ne parvient pas à séparer les classes",
+        "B": "Le modèle prédit parfaitement les deux classes",
+        "C": "Le modèle est biaisé vers la classe majoritaire",
+        "D": "Le modèle privilégie la prédiction des faux positifs"
+      },
+      "correct_answer": "A",
+      "explanation": "Un AUC proche de 0.5 indique une performance équivalente à une prédiction aléatoire, signifiant que le modèle ne sépare pas bien les classes. B serait un AUC proche de 1, C et D sont de mauvaises interprétations.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel effet un générateur de classes synthétiques, comme SMOTE, a-t-il dans le contexte des data déséquilibrées?",
+      "image_url": null,
+      "choices": {
+        "A": "Il créer des exemples synthétiques pour la classe minoritaire",
+        "B": "Il réduit les caractéristiques de la classe majoritaire",
+        "C": "Il simule des données pour augmenter toutes les classes",
+        "D": "Il remplace des valeurs manquantes par la classe majoritaire"
+      },
+      "correct_answer": "A",
+      "explanation": "SMOTE génère de nouveaux exemples synthétiques pour la classe minoritaire pour aider à corriger le déséquilibre. B ne traite pas correctement la question de déséquilibre, C fait faussement référence à toutes les classes et D est erroné concernant la gestion manquante.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle métrique est la plus robuste face à des classes très déséquilibrées?",
+      "image_url": null,
+      "choices": {
+        "A": "F1 score",
+        "B": "Precision",
+        "C": "Accuracy",
+        "D": "Specificity"
+      },
+      "correct_answer": "A",
+      "explanation": "L'F1 score est robuste dans des situations de déséquilibre en combinant précision et rappel, particulièrement sensible aux performances sur la classe minoritaire. B évalue seulement une dimension, et C/D ne tiennent pas suffisamment compte de la distribution des classes.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Desiquilibre de classes', quelle erreur autour de F1 score est la plus critique ?",
+      "question": "Quel problème peut survenir lors de l'utilisation de l'oversampling pour équilibrer les classes?",
       "image_url": null,
       "choices": {
-        "A": "Si class weights est mal utilise, on observe souvent sur-optimiser class weights localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de resampling est sur-optimiser resampling localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Le piege principal autour de F1 score est sur-optimiser F1 score localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Un risque classique avec ROC-AUC est de sur-optimiser ROC-AUC localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Introduction de biais par la répétition excessive des mêmes exemples",
+        "B": "Augmentation de la variance des classes majoritaires",
+        "C": "Amélioration inéquitable des classes minoritaires",
+        "D": "Réduction de la précision pour toutes les classes"
       },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de F1 score. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si class weights est mal utilise, on observe souvent sur-optimiser class weights localement en ignorant ses...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour de resampling est sur-optimiser resampling localement en ignorant ses interaction...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de F1 score est sur-optimiser F1 score localement en ignorant ses interactions av...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec ROC-AUC est de sur-optimiser ROC-AUC localement en ignorant ses interactions avec ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "L'oversampling peut entraîner un surajustement là où des exemples identiques de la classe mineure sont répétés trop souvent. B est incorrect car il affecte les minorités, C implique un gain sans obstacle, et D déforme l'objectif de l'oversampling.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pour une \u00e9quipe e-commerce dans 'Desiquilibre de classes', quelle d\u00e9finition de class weights est la plus juste ?",
+      "question": "Quelle erreur est courante lorsque l'on évalue un modèle sur des données déséquilibrées?",
       "image_url": null,
       "choices": {
-        "A": "random forest correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de random forest dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Desiquilibre de classes.",
-        "B": "Dans Desiquilibre de classes, importance des variables se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role d'importance des variables dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Desiquilibre de classes, class weights se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; il attribue un cout plus fort aux erreurs sur classes minoritaires dans la fonction de perte.",
-        "D": "profondeur maximale designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de profondeur maximale dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "S'appuyer uniquement sur l'accuracy pour la performance globale",
+        "B": "Privilégier le recall sur la precision",
+        "C": "Ajuster excessivement le modèle pour la majorité",
+        "D": "Utiliser le F1 score pour évaluer la classe majoritaire"
       },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de class weights dans Desiquilibre de classes, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que profondeur maximale, random forest, importance des variables restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (random forest correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de ra...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Desiquilibre de classes, importance des variables se comprend comme un concept interm\u00e9diaire en appren...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Desiquilibre de classes, class weights se comprend comme un concept interm\u00e9diaire en apprentissage sup...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (profondeur maximale designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de p...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "L'accuracy mal appliquée sur des ensembles déséquilibrés ne représente pas la performance sur les classes minoritaires. B est plus une favorisance méthodologique qu'une erreur factuelle, et C/D n'évaluent pas correctement le déséquilibre de classes.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "ROC-AUC: quel risque est le plus directement lie a son mauvais usage en production dans 'Desiquilibre de classes' ?",
+      "question": "Pourquoi l'échelle logarithmique de la précision est-elle négligeable face à des classes déséquilibrées?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec resampling est de sur-optimiser resampling localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Un risque classique avec ROC-AUC est de sur-optimiser ROC-AUC localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Si F1 score est mal utilise, on observe souvent sur-optimiser F1 score localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Le piege principal autour de class weights est sur-optimiser class weights localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Elle ne capture pas les différences significatives dans le taux d'erreur",
+        "B": "Elle n'applique qu'aux variables continues",
+        "C": "Elle modifie le taux de rappel linéairement",
+        "D": "Elle affecte plus les faux négatifs que les faux positifs"
       },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de ROC-AUC. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec resampling est de sur-optimiser resampling localement en ignorant ses interactions...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec ROC-AUC est de sur-optimiser ROC-AUC localement en ignorant ses interactions avec ...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si F1 score est mal utilise, on observe souvent sur-optimiser F1 score localement en ignorant ses interacti...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de class weights est sur-optimiser class weights localement en ignorant ses inter...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Une échelle logarithmique mesure mal la performance entre classes disproportionnées, négligeant des asymétries clés. B/C/D n'interprètent pas correctement le recours à des échelles log pour traiter les classes.",
       "difficulty": "hard"
     },
     {
-      "type": "image",
-      "question": "Dans 'Desiquilibre de classes' et en contexte sante, quelle interpretation du schema appuie le mieux l'analyse de F1 score ?",
-      "image_url": "apprentissage-supervise_desiquilibre_de_classes_f1_score_1.png",
+      "type": "text",
+      "question": "Quel ajustement apporté par une validation croisée aide-t-il à équilibrer l'évaluation de classes déséquilibrées?",
+      "image_url": null,
       "choices": {
-        "A": "Lecture du visuel: class weights est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; forcer le modele a mieux prendre en compte les classes rares dans Desiquilibre de classes.",
-        "B": "Le signal visible est coh\u00e9rent avec resampling, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; am\u00e9liorer l'apprentissage sur classes minoritaires sans ignorer les majoritaires.",
-        "C": "Le signal visible est coh\u00e9rent avec F1 score, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; arbitrer entre faux positifs et faux negatifs lorsque l'exactitude globale est trompeuse.",
-        "D": "Le schema illustre une d\u00e9cision basee sur ROC-AUC: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; comparer des modeles de classification independamment d'un seuil de d\u00e9cision unique."
+        "A": "Utilisation de plis stratifiés",
+        "B": "Augmentation directe de la classe majoritaire",
+        "C": "Prédiction par ensemble avec aléatoire",
+        "D": "Réduction du taux de faux positifs"
       },
-      "correct_answer": "C",
-      "explanation": "Les indices visuels vont dans le sens de F1 score: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Lecture du visuel: class weights est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; forcer le m...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Le signal visible est coh\u00e9rent avec resampling, car l'objectif est fiabiliser les d\u00e9cisions d'experimentati...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est correcte (Le signal visible est coh\u00e9rent avec F1 score, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation...) car la lecture visuelle colle au signal principal observe. D'est moins pertinente (Le schema illustre une d\u00e9cision basee sur ROC-AUC: les indices orientent vers fiabiliser les d\u00e9cisions d'ex...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Les plis stratifiés gardent une représentation proportionnelle des classes dans chaque pli, crucial pour une évaluation utile des modèles déséquilibrés. B/C/D sont des actions indépendantes de la validation croisée spécifique aux déséquilibres.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel avantage a l'équilibrage via 'class weights' comparé au rééchantillonnage?",
+      "image_url": null,
+      "choices": {
+        "A": "Évite de modifier le nombre total d'exemples",
+        "B": "Augmente la diversité des données",
+        "C": "Nécessite moins de calculs pour la précision",
+        "D": "Minimise les faux négatifs en priorité"
+      },
+      "correct_answer": "A",
+      "explanation": "L'utilisation de 'class weights' garde le dataset inchangé en taille, tandis que le rééchantillonnage modifie le nombre total d'exemples. B supposerait une variation de données erronée, C ne cible pas spécifiquement le calcul impliqué, et D n'est pas un attribut automatique.",
       "difficulty": "hard"
     }
   ]

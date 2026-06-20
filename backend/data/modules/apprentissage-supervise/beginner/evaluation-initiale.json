@@ -5,212 +5,212 @@
   "questions": [
     {
       "type": "text",
-      "question": "recall: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans '\u00c9valuation initiale' ?",
+      "question": "Qu'est-ce que l'accuracy dans le contexte de l'apprentissage supervisé?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur \u00c9valuation initiale, accuracy est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accuracy en production.",
-        "B": "Pendant un atelier de cadrage, pr\u00e9cision est utile pour installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher tout en surveillant le risque d'appliquer pr\u00e9cision par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique overfitting pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer overfitting en production.",
-        "D": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique recall pour installer un raisonnement fiable des le d\u00e9but ; reduire les faux negatifs quand rater un cas est critique."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car recall y sert de levier de d\u00e9cision principal dans \u00c9valuation initiale. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur \u00c9valuation initiale, accuracy est choisi afin d'installer un raisonnement fiable des ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant un atelier de cadrage, pr\u00e9cision est utile pour installer un raisonnement fiable des le d\u00e9but ; lim...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique overfitting pour installer un raisonne...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique recall pour installer un raisonnement ...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec accuracy dans '\u00c9valuation initiale' ?",
-      "image_url": "apprentissage-supervise_evaluation_initiale_accuracy_2.png",
-      "choices": {
-        "A": "Dans \u00c9valuation initiale, overfitting est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer overfitting en production.",
-        "B": "Dans \u00c9valuation initiale, accuracy est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accuracy en production.",
-        "C": "Le role de pr\u00e9cision est d'installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher.",
-        "D": "recall sert a installer un raisonnement fiable des le d\u00e9but ; reduire les faux negatifs quand rater un cas est critique pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'accuracy dans \u00c9valuation initiale. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans \u00c9valuation initiale, overfitting est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'u...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans \u00c9valuation initiale, accuracy est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'util...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de pr\u00e9cision est d'installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (recall sert a installer un raisonnement fiable des le d\u00e9but ; reduire les faux negatifs quand rater un cas ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Dans '\u00c9valuation initiale', quel commentaire du schema traduit le mieux le role de recall ?",
-      "image_url": "apprentissage-supervise_evaluation_initiale_recall_2.png",
-      "choices": {
-        "A": "Dans \u00c9valuation initiale, accuracy est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accuracy en production.",
-        "B": "Le role de pr\u00e9cision est d'installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher.",
-        "C": "overfitting sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer overfitting en production pour guider une d\u00e9cision exploitable.",
-        "D": "recall sert a installer un raisonnement fiable des le d\u00e9but ; reduire les faux negatifs quand rater un cas est critique pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de recall dans \u00c9valuation initiale. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans \u00c9valuation initiale, accuracy est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'util...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de pr\u00e9cision est d'installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (overfitting sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (recall sert a installer un raisonnement fiable des le d\u00e9but ; reduire les faux negatifs quand rater un cas ...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec overfitting dans '\u00c9valuation initiale' ?",
-      "image_url": "apprentissage-supervise_evaluation_initiale_overfitting_2.png",
-      "choices": {
-        "A": "pr\u00e9cision sert a installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher pour guider une d\u00e9cision exploitable.",
-        "B": "Dans \u00c9valuation initiale, recall est mobilise pour installer un raisonnement fiable des le d\u00e9but ; reduire les faux negatifs quand rater un cas est critique.",
-        "C": "Dans \u00c9valuation initiale, overfitting est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer overfitting en production.",
-        "D": "Le role d'accuracy est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accuracy en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'overfitting dans \u00c9valuation initiale. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (pr\u00e9cision sert a installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans \u00c9valuation initiale, recall est mobilise pour installer un raisonnement fiable des le d\u00e9but ; reduire ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans \u00c9valuation initiale, overfitting est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'u...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role d'accuracy est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quel est le principal mode d'echec quand recall est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si recall est mal utilise, on observe souvent appliquer recall par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Le piege principal autour d'accuracy est appliquer accuracy par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Un risque classique avec pr\u00e9cision est d'appliquer pr\u00e9cision par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Si overfitting est mal utilise, on observe souvent appliquer overfitting par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "La proportion de prédictions correctes sur le total des prédictions effectuées",
+        "B": "La proportion de vrais positifs sur le total des prédictions positives",
+        "C": "La proportion de vrais positifs sur le total des cas positifs réels",
+        "D": "Le risque de surestimation de la capacité prédictive d'un modèle"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de recall. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si recall est mal utilise, on observe souvent appliquer recall par automatisme sans verifier hypotheses, qu...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour d'accuracy est appliquer accuracy par automatisme sans verifier hypotheses, qual...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec pr\u00e9cision est d'appliquer pr\u00e9cision par automatisme sans verifier hypotheses, qua...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si overfitting est mal utilise, on observe souvent appliquer overfitting par automatisme sans verifier hypo...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "L'accuracy est la proportion de prédictions correctes parmi toutes les prédictions effectuées. B décrit la précision et C décrit le rappel. D est une définition d'overfitting.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "recall: pourquoi ce concept est-il crucial pour une \u00e9quipe banque dans '\u00c9valuation initiale' ?",
+      "question": "Quelle formule définit l'accuracy?",
       "image_url": null,
       "choices": {
-        "A": "Le role d'overfitting est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer overfitting en production.",
-        "B": "Le role de recall est d'installer un raisonnement fiable des le d\u00e9but ; reduire les faux negatifs quand rater un cas est critique.",
-        "C": "accuracy sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accuracy en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans \u00c9valuation initiale, pr\u00e9cision est mobilise pour installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie recall \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role d'overfitting est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement perme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de recall est d'installer un raisonnement fiable des le d\u00e9but ; reduire les faux negatifs quand ra...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (accuracy sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux dec...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans \u00c9valuation initiale, pr\u00e9cision est mobilise pour installer un raisonnement fiable des le d\u00e9but ; limit...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans '\u00c9valuation initiale' (cybersecurite), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment pr\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans \u00c9valuation initiale, classe se comprend comme une notion de base en apprentissage supervise ; il formalise le role de classe dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "frontiere de d\u00e9cision designe une notion de base en apprentissage supervise ; il formalise le role de frontiere de d\u00e9cision dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "r\u00e9gression logistique correspond a une notion de base en apprentissage supervise ; il formalise le role de r\u00e9gression logistique dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans \u00c9valuation initiale.",
-        "D": "pr\u00e9cision correspond a une notion de base en apprentissage supervise ; il mesure la proportion de predictions positives qui sont effectivement correctes, ce qui structure l'analyse dans \u00c9valuation initiale."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de pr\u00e9cision dans \u00c9valuation initiale, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que classe, frontiere de d\u00e9cision, r\u00e9gression logistique restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans \u00c9valuation initiale, classe se comprend comme une notion de base en apprentissage supervise ; il forma...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (frontiere de d\u00e9cision designe une notion de base en apprentissage supervise ; il formalise le role de front...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (r\u00e9gression logistique correspond a une notion de base en apprentissage supervise ; il formalise le role de ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (pr\u00e9cision correspond a une notion de base en apprentissage supervise ; il mesure la proportion de predictio...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe banque dans '\u00c9valuation initiale', quelle d\u00e9finition de recall est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "r\u00e9gression logistique correspond a une notion de base en apprentissage supervise ; il formalise le role de r\u00e9gression logistique dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans \u00c9valuation initiale.",
-        "B": "Dans \u00c9valuation initiale, matrice de confusion se comprend comme une notion de base en apprentissage supervise ; elle decompose les predictions en vrais positifs, vrais negatifs, faux positifs et faux negatifs.",
-        "C": "Dans \u00c9valuation initiale, recall se comprend comme une notion de base en apprentissage supervise ; il mesure la proportion de cas positifs reels detectes par le modele.",
-        "D": "frontiere de d\u00e9cision designe une notion de base en apprentissage supervise ; il formalise le role de frontiere de d\u00e9cision dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de recall dans \u00c9valuation initiale, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que frontiere de d\u00e9cision, r\u00e9gression logistique, matrice de confusion restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (r\u00e9gression logistique correspond a une notion de base en apprentissage supervise ; il formalise le role de ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans \u00c9valuation initiale, matrice de confusion se comprend comme une notion de base en apprentissage superv...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans \u00c9valuation initiale, recall se comprend comme une notion de base en apprentissage supervise ; il mesur...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (frontiere de d\u00e9cision designe une notion de base en apprentissage supervise ; il formalise le role de front...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quelle situation de terrain montre le mieux quand utiliser accuracy ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur \u00c9valuation initiale, overfitting est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer overfitting en production.",
-        "B": "En contexte r\u00e9el sur \u00c9valuation initiale, accuracy est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accuracy en production.",
-        "C": "Pendant un atelier de cadrage, pr\u00e9cision est utile pour installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher tout en surveillant le risque d'appliquer pr\u00e9cision par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique recall pour installer un raisonnement fiable des le d\u00e9but ; reduire les faux negatifs quand rater un cas est critique."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car accuracy y sert de levier de d\u00e9cision principal dans \u00c9valuation initiale. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur \u00c9valuation initiale, overfitting est choisi afin d'installer un raisonnement fiable d...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur \u00c9valuation initiale, accuracy est choisi afin d'installer un raisonnement fiable des ...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant un atelier de cadrage, pr\u00e9cision est utile pour installer un raisonnement fiable des le d\u00e9but ; lim...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique recall pour installer un raisonnement ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin cybersecurite dans '\u00c9valuation initiale', pourquoi pr\u00e9cision est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "recall sert a installer un raisonnement fiable des le d\u00e9but ; reduire les faux negatifs quand rater un cas est critique pour guider une d\u00e9cision exploitable.",
-        "B": "Dans \u00c9valuation initiale, overfitting est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer overfitting en production.",
-        "C": "Dans \u00c9valuation initiale, pr\u00e9cision est mobilise pour installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher.",
-        "D": "Le role d'accuracy est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accuracy en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie pr\u00e9cision \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (recall sert a installer un raisonnement fiable des le d\u00e9but ; reduire les faux negatifs quand rater un cas ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans \u00c9valuation initiale, overfitting est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'u...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans \u00c9valuation initiale, pr\u00e9cision est mobilise pour installer un raisonnement fiable des le d\u00e9but ; limit...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role d'accuracy est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quel est le role le plus determinant d'accuracy pour un cas industrie ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans \u00c9valuation initiale, pr\u00e9cision est mobilise pour installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher.",
-        "B": "Le role de recall est d'installer un raisonnement fiable des le d\u00e9but ; reduire les faux negatifs quand rater un cas est critique.",
-        "C": "overfitting sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer overfitting en production pour guider une d\u00e9cision exploitable.",
-        "D": "accuracy sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accuracy en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie accuracy \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans \u00c9valuation initiale, pr\u00e9cision est mobilise pour installer un raisonnement fiable des le d\u00e9but ; limit...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de recall est d'installer un raisonnement fiable des le d\u00e9but ; reduire les faux negatifs quand ra...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (overfitting sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (accuracy sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux dec...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quelle situation de terrain montre le mieux quand utiliser overfitting ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique pr\u00e9cision pour installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher.",
-        "B": "En contexte r\u00e9el sur \u00c9valuation initiale, recall est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; reduire les faux negatifs quand rater un cas est critique.",
-        "C": "En contexte r\u00e9el sur \u00c9valuation initiale, overfitting est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer overfitting en production.",
-        "D": "Pendant un atelier de cadrage, accuracy est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accuracy en production tout en surveillant le risque d'appliquer accuracy par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car overfitting y sert de levier de d\u00e9cision principal dans \u00c9valuation initiale. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique pr\u00e9cision pour installer un raisonneme...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur \u00c9valuation initiale, recall est choisi afin d'installer un raisonnement fiable des le...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur \u00c9valuation initiale, overfitting est choisi afin d'installer un raisonnement fiable d...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant un atelier de cadrage, accuracy est utile pour installer un raisonnement fiable des le d\u00e9but ; l'ut...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de '\u00c9valuation initiale', quel exemple met pr\u00e9cision au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant un atelier de cadrage, pr\u00e9cision est utile pour installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher tout en surveillant le risque d'appliquer pr\u00e9cision par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique accuracy pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accuracy en production.",
-        "C": "En contexte r\u00e9el sur \u00c9valuation initiale, recall est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; reduire les faux negatifs quand rater un cas est critique.",
-        "D": "Pendant un atelier de cadrage, overfitting est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer overfitting en production tout en surveillant le risque d'appliquer overfitting par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "(TP + TN) / (TP + TN + FP + FN)",
+        "B": "TP / (TP + FP)",
+        "C": "TP / (TP + FN)",
+        "D": "(FP + FN) / (TP + TN + FP + FN)"
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car pr\u00e9cision y sert de levier de d\u00e9cision principal dans \u00c9valuation initiale. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant un atelier de cadrage, pr\u00e9cision est utile pour installer un raisonnement fiable des le d\u00e9but ; lim...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans un atelier de cadrage d'\u00c9valuation initiale, l'\u00e9quipe applique accuracy pour installer un raisonnemen...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur \u00c9valuation initiale, recall est choisi afin d'installer un raisonnement fiable des le...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant un atelier de cadrage, overfitting est utile pour installer un raisonnement fiable des le d\u00e9but ; l...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "L'accuracy est définie comme le nombre de prédictions correctes (vrais positifs plus vrais négatifs) sur le total des cas. B correspond à la précision, C au rappel, et D n'est pas une métrique standard.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle métrique décrit le mieux la capacité d'un modèle à éviter les faux positifs?",
+      "image_url": null,
+      "choices": {
+        "A": "Précision",
+        "B": "Rappel",
+        "C": "Accuracy",
+        "D": "F1 Score"
+      },
+      "correct_answer": "A",
+      "explanation": "La précision se concentre sur la proportion de vrais positifs parmi le total des prédictions positives, donc moins de faux positifs. Le rappel (B) traite les cas positifs réels, l'accuracy (C) considère toutes les prédictions, et le F1 score (D) est une moyenne harmonique de précision et de rappel.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'effet principal de l'overfitting sur un modèle d'apprentissage supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Le modèle fonctionne bien sur les données d'entraînement mais mal sur les nouvelles données",
+        "B": "Le modèle diminue la variance des données de test",
+        "C": "Le modèle améliore la précision de toutes les prédictions",
+        "D": "Le modèle augmente le nombre de faux négatifs"
+      },
+      "correct_answer": "A",
+      "explanation": "L'overfitting signifie que le modèle mémorise plutôt qu'il n'apprene, ce qui conduit à de bonnes performances sur les données d'entraînement mais à des résultats médiocres sur de nouvelles données. B, C, et D ne décrivent pas les conséquences typiques de l'overfitting.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Que mesure le rappel dans un modèle de classification?",
+      "image_url": null,
+      "choices": {
+        "A": "La proportion de vrais positifs parmi tous les cas positifs réels",
+        "B": "La proportion de vrais positifs parmi toutes les prédictions positives",
+        "C": "La différence entre vrais positifs et faux positifs",
+        "D": "Le taux global de prédictions incorrectes"
+      },
+      "correct_answer": "A",
+      "explanation": "Le rappel, ou sensibilité, est la mesure de la proportion de vrais positifs correctement identifiés parmi tous les cas qui sont réellement positifs. B décrit la précision, C n'est pas une métrique standard, et D décrit une erreur.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est l'une des causes principales de l'overfitting?",
+      "image_url": null,
+      "choices": {
+        "A": "Un modèle trop complexe par rapport au volume de données d'entraînement",
+        "B": "Un modèle avec trop peu de paramètres",
+        "C": "Un modèle entraîné avec trop peu de données étiquetées",
+        "D": "Un taux d'apprentissage trop élevé"
+      },
+      "correct_answer": "A",
+      "explanation": "L'overfitting survient souvent lorsque le modèle est trop complexe et capture le bruit des données d'entraînement au lieu des véritables tendances. B évoque l'underfitting, C est un facteur contributif mais pas direct, et D se rapporte à la vitesse d'apprentissage plutôt qu'à l'overfitting.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "En apprentissage supervisé, quelle métrique est utilisée pour évaluer la proportion de prédictions positives correctement identifiées?",
+      "image_url": null,
+      "choices": {
+        "A": "Précision",
+        "B": "Rappel",
+        "C": "Exactitude",
+        "D": "Erreur quadratique moyenne"
+      },
+      "correct_answer": "A",
+      "explanation": "La précision mesure la proportion de prédictions positives qui étaient correctes. Le rappel (B) traite les cas positifs réels, l'exactitude (C), ou l'accuracy, se concentre sur toutes les prédictions, et l'erreur quadratique moyenne (D) est une métrique de régression.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel problème peut survenir si un modèle est trop simple par rapport aux données?",
+      "image_url": null,
+      "choices": {
+        "A": "Underfitting",
+        "B": "Overfitting",
+        "C": "Augmentation du bruit",
+        "D": "Dérive du concept"
+      },
+      "correct_answer": "A",
+      "explanation": "L'underfitting se produit lorsqu'un modèle est trop simple pour capturer les schémas sous-jacents des données. B est opposé à l'underfitting, C est un ajout de données non pertinentes, et D concerne les changements temporels dans les données.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel effet un jeu de données de test très petit peut-il avoir sur l'évaluation d'un modèle?",
+      "image_url": null,
+      "choices": {
+        "A": "Rendre l'évaluation peu fiable",
+        "B": "Supprimer le besoin de validation croisée",
+        "C": "Augmenter la généralisation",
+        "D": "Améliorer les scores de précision"
+      },
+      "correct_answer": "A",
+      "explanation": "Un petit jeu de test peut ne pas refléter adéquatement la performance du modèle sur de nouvelles données. B est faux car la validation croisée est souvent plus nécessaire, C et D ne sont pas typiques d'un petit échantillon de test.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Dans un modèle de classification, que se passe-t-il si le seuil de décision est trop bas?",
+      "image_url": null,
+      "choices": {
+        "A": "Augmentation du nombre de faux positifs",
+        "B": "Réduction du nombre de vrais positifs",
+        "C": "Augmentation du nombre de faux négatifs",
+        "D": "Réduction des faux positifs"
+      },
+      "correct_answer": "A",
+      "explanation": "Un seuil bas peut conduire à beaucoup de prédictions positives, augmentant le risque de faux positifs. B et D sont l'inverse de ce qui est observé, et C est incorrect car les faux négatifs ne sont généralement pas augmentés.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans '\u00c9valuation initiale', quel est le role le plus determinant d'overfitting pour un cas assurance ?",
+      "question": "Quelle stratégie permet de réduire l'overfitting?",
       "image_url": null,
       "choices": {
-        "A": "overfitting sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer overfitting en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans \u00c9valuation initiale, accuracy est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accuracy en production.",
-        "C": "Le role de pr\u00e9cision est d'installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand une alerte incorrecte coute cher.",
-        "D": "recall sert a installer un raisonnement fiable des le d\u00e9but ; reduire les faux negatifs quand rater un cas est critique pour guider une d\u00e9cision exploitable."
+        "A": "Utiliser la régularisation",
+        "B": "Augmenter la complexité du modèle",
+        "C": "Réduire la taille des données d'entraînement",
+        "D": "Augmenter le taux d'apprentissage"
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie overfitting \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (overfitting sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans \u00c9valuation initiale, accuracy est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'util...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de pr\u00e9cision est d'installer un raisonnement fiable des le d\u00e9but ; limiter les faux positifs quand...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (recall sert a installer un raisonnement fiable des le d\u00e9but ; reduire les faux negatifs quand rater un cas ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La régularisation pénalise la complexité excessive d'un modèle, aidant à prévenir l'overfitting. B exacerbe l'overfitting, C est contre-productif, et D concerne davantage la vitesse d'apprentissage que l'overfitting.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans quel cas l'accuracy peut-elle être trompeuse?",
+      "image_url": null,
+      "choices": {
+        "A": "Dans un ensemble de données déséquilibré",
+        "B": "Dans un ensemble de données équilibré",
+        "C": "Lorsqu'un modèle sous-apprend",
+        "D": "Quand tous les prédicteurs sont continus"
+      },
+      "correct_answer": "A",
+      "explanation": "Dans des données déséquilibrées, un modèle pourrait obtenir un haut score d'accuracy en prédisant toujours la classe majoritaire. B est incorrect car l'accuracy est plus fiable dans des ensembles équilibrés. C et D ne se rapportent pas directement à la tromperie par l'accuracy.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle méthode est souvent utilisée pour estimer la capacité de généralisation d'un modèle?",
+      "image_url": null,
+      "choices": {
+        "A": "Validation croisée",
+        "B": "Régularisation",
+        "C": "Augmentation du jeu de données d'entraînement",
+        "D": "Entraînement sur un jeu de données déséquilibré"
+      },
+      "correct_answer": "A",
+      "explanation": "La validation croisée permet d'estimer comment le modèle va se comporter sur un ensemble de données indépendant en testant plusieurs segments du jeu de données. B diminue l'overfitting, C peut aider mais ne donne pas une estimation immédiate, et D est souvent problématique plutôt que bénéfique.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Que représente le compromis entre biais et variance?",
+      "image_url": null,
+      "choices": {
+        "A": "Le compromis entre underfitting et overfitting",
+        "B": "La précision et le rappel",
+        "C": "L'erreur quadratique moyenne",
+        "D": "La sélection de caractéristiques"
+      },
+      "correct_answer": "A",
+      "explanation": "Le compromis biais-variance représente l'équilibre entre biais élevé (underfitting) et variance élevée (overfitting). B est un compromis entre deux mesures de performance, C n'est pas directement lié au biais-variance, et D concerne l'ingénierie des caractéristiques.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de '\u00c9valuation initiale', quelle erreur autour d'accuracy est la plus critique ?",
+      "question": "Quels sont les impacts possibles des données bruitées sur un modèle linéaire?",
       "image_url": null,
       "choices": {
-        "A": "Si recall est mal utilise, on observe souvent appliquer recall par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Le piege principal autour d'overfitting est appliquer overfitting par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Le piege principal autour d'accuracy est appliquer accuracy par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Un risque classique avec pr\u00e9cision est d'appliquer pr\u00e9cision par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "Augmentation du risque d'overfitting",
+        "B": "Amélioration des prédictions",
+        "C": "Invariance du modèle aux changements",
+        "D": "Réduction du risque de variance élevée"
       },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'accuracy. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si recall est mal utilise, on observe souvent appliquer recall par automatisme sans verifier hypotheses, qu...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour d'overfitting est appliquer overfitting par automatisme sans verifier hypotheses...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour d'accuracy est appliquer accuracy par automatisme sans verifier hypotheses, qual...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec pr\u00e9cision est d'appliquer pr\u00e9cision par automatisme sans verifier hypotheses, qua...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Les données bruitées peuvent mener à l'overfitting car le modèle pourrait essayer d'ajuster le bruit plutôt que de capturer le signal sous-jacent. B est faux car les prédictions se détériorent généralement, C n'est pas typique, et D est incorrect car le bruit peut même aggraver la variance.",
       "difficulty": "hard"
     }
   ]

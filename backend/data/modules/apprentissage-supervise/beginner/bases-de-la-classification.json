@@ -4,185 +4,185 @@
   "module": "Bases de la classification",
   "questions": [
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec classe dans 'Bases de la classification' ?",
-      "image_url": "apprentissage-supervise_bases_de_la_classification_classe_2.png",
-      "choices": {
-        "A": "Dans Bases de la classification, matrice de confusion est mobilise pour installer un raisonnement fiable des le d\u00e9but ; diagnostiquer pr\u00e9cis\u00e9ment les types d'erreurs avant d'ajuster le modele.",
-        "B": "Dans Bases de la classification, classe est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer classe en production.",
-        "C": "Le role de frontiere de d\u00e9cision est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer frontiere de d\u00e9cision en production.",
-        "D": "r\u00e9gression logistique sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer r\u00e9gression logistique en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de classe dans Bases de la classification. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Bases de la classification, matrice de confusion est mobilise pour installer un raisonnement fiable de...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Bases de la classification, classe est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de frontiere de d\u00e9cision est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correcte...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (r\u00e9gression logistique sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
       "type": "text",
-      "question": "Dans 'Bases de la classification', quelle situation de terrain montre le mieux quand utiliser classe ?",
+      "question": "Qu'est-ce qu'une classe dans un problème de classification supervisée?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Bases de la classification, matrice de confusion est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; diagnostiquer pr\u00e9cis\u00e9ment les types d'erreurs avant d'ajuster le modele.",
-        "B": "En contexte r\u00e9el sur Bases de la classification, classe est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer classe en production.",
-        "C": "Pendant un atelier de cadrage, frontiere de d\u00e9cision est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer frontiere de d\u00e9cision en production tout en surveillant le risque d'appliquer frontiere de d\u00e9cision par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Dans un atelier de cadrage de Bases de la classification, l'\u00e9quipe applique r\u00e9gression logistique pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer r\u00e9gression logistique en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car classe y sert de levier de d\u00e9cision principal dans Bases de la classification. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Bases de la classification, matrice de confusion est choisi afin d'installer un raiso...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Bases de la classification, classe est choisi afin d'installer un raisonnement fiable...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant un atelier de cadrage, frontiere de d\u00e9cision est utile pour installer un raisonnement fiable des le...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans un atelier de cadrage de Bases de la classification, l'\u00e9quipe applique r\u00e9gression logistique pour inst...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "r\u00e9gression logistique: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Bases de la classification' ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Bases de la classification, classe est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer classe en production.",
-        "B": "Pendant un atelier de cadrage, frontiere de d\u00e9cision est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer frontiere de d\u00e9cision en production tout en surveillant le risque d'appliquer frontiere de d\u00e9cision par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Dans un atelier de cadrage de Bases de la classification, l'\u00e9quipe applique matrice de confusion pour installer un raisonnement fiable des le d\u00e9but ; diagnostiquer pr\u00e9cis\u00e9ment les types d'erreurs avant d'ajuster le modele.",
-        "D": "Dans un atelier de cadrage de Bases de la classification, l'\u00e9quipe applique r\u00e9gression logistique pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer r\u00e9gression logistique en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car r\u00e9gression logistique y sert de levier de d\u00e9cision principal dans Bases de la classification. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Bases de la classification, classe est choisi afin d'installer un raisonnement fiable...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant un atelier de cadrage, frontiere de d\u00e9cision est utile pour installer un raisonnement fiable des le...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans un atelier de cadrage de Bases de la classification, l'\u00e9quipe applique matrice de confusion pour insta...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans un atelier de cadrage de Bases de la classification, l'\u00e9quipe applique r\u00e9gression logistique pour inst...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Bases de la classification', quel est le role le plus determinant de classe pour un cas industrie ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Bases de la classification, frontiere de d\u00e9cision est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer frontiere de d\u00e9cision en production.",
-        "B": "Le role de r\u00e9gression logistique est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer r\u00e9gression logistique en production.",
-        "C": "matrice de confusion sert a installer un raisonnement fiable des le d\u00e9but ; diagnostiquer pr\u00e9cis\u00e9ment les types d'erreurs avant d'ajuster le modele pour guider une d\u00e9cision exploitable.",
-        "D": "classe sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer classe en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie classe \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Bases de la classification, frontiere de d\u00e9cision est mobilise pour installer un raisonnement fiable d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de r\u00e9gression logistique est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correcte...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (matrice de confusion sert a installer un raisonnement fiable des le d\u00e9but ; diagnostiquer pr\u00e9cis\u00e9ment les t...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (classe sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux decid...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec matrice de confusion dans 'Bases de la classification' ?",
-      "image_url": "apprentissage-supervise_bases_de_la_classification_matrice_de_confusion_2.png",
-      "choices": {
-        "A": "frontiere de d\u00e9cision sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer frontiere de d\u00e9cision en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Bases de la classification, r\u00e9gression logistique est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer r\u00e9gression logistique en production.",
-        "C": "Dans Bases de la classification, matrice de confusion est mobilise pour installer un raisonnement fiable des le d\u00e9but ; diagnostiquer pr\u00e9cis\u00e9ment les types d'erreurs avant d'ajuster le modele.",
-        "D": "Le role de classe est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer classe en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de matrice de confusion dans Bases de la classification. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (frontiere de d\u00e9cision sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Bases de la classification, r\u00e9gression logistique est mobilise pour installer un raisonnement fiable d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Bases de la classification, matrice de confusion est mobilise pour installer un raisonnement fiable de...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de classe est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Bases de la classification' (cybersecurite), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment frontiere de d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Bases de la classification, donn\u00e9e \u00e9tiquet\u00e9e se comprend comme une notion de base en apprentissage supervise ; il formalise le role de donn\u00e9e \u00e9tiquet\u00e9e dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "feature designe une notion de base en apprentissage supervise ; il concerne la representation des variables utiles au modele et leur qualit\u00e9 predictive.",
-        "C": "target correspond a une notion de base en apprentissage supervise ; il formalise le role de target dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Bases de la classification.",
-        "D": "frontiere de d\u00e9cision correspond a une notion de base en apprentissage supervise ; il formalise le role de frontiere de d\u00e9cision dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Bases de la classification."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de frontiere de d\u00e9cision dans Bases de la classification, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que donn\u00e9e \u00e9tiquet\u00e9e, feature, target restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Bases de la classification, donn\u00e9e \u00e9tiquet\u00e9e se comprend comme une notion de base en apprentissage sup...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (feature designe une notion de base en apprentissage supervise ; il concerne la representation des variables...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (target correspond a une notion de base en apprentissage supervise ; il formalise le role de target dans un ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (frontiere de d\u00e9cision correspond a une notion de base en apprentissage supervise ; il formalise le role de ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Bases de la classification', quelle erreur autour de classe est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si r\u00e9gression logistique est mal utilise, on observe souvent appliquer r\u00e9gression logistique par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Le piege principal autour de matrice de confusion est appliquer matrice de confusion par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Le piege principal autour de classe est appliquer classe par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Un risque classique avec frontiere de d\u00e9cision est d'appliquer frontiere de d\u00e9cision par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de classe. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si r\u00e9gression logistique est mal utilise, on observe souvent appliquer r\u00e9gression logistique par automatism...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour de matrice de confusion est appliquer matrice de confusion par automatisme sans v...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de classe est appliquer classe par automatisme sans verifier hypotheses, qualit\u00e9 ...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec frontiere de d\u00e9cision est d'appliquer frontiere de d\u00e9cision par automatisme sans ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Bases de la classification', quel commentaire du schema traduit le mieux le role de r\u00e9gression logistique ?",
-      "image_url": "apprentissage-supervise_bases_de_la_classification_regression_logistique_2.png",
-      "choices": {
-        "A": "Dans Bases de la classification, classe est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer classe en production.",
-        "B": "Le role de frontiere de d\u00e9cision est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer frontiere de d\u00e9cision en production.",
-        "C": "matrice de confusion sert a installer un raisonnement fiable des le d\u00e9but ; diagnostiquer pr\u00e9cis\u00e9ment les types d'erreurs avant d'ajuster le modele pour guider une d\u00e9cision exploitable.",
-        "D": "r\u00e9gression logistique sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer r\u00e9gression logistique en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de r\u00e9gression logistique dans Bases de la classification. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Bases de la classification, classe est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de frontiere de d\u00e9cision est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correcte...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (matrice de confusion sert a installer un raisonnement fiable des le d\u00e9but ; diagnostiquer pr\u00e9cis\u00e9ment les t...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (r\u00e9gression logistique sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "r\u00e9gression logistique: pourquoi ce concept est-il crucial pour une \u00e9quipe banque dans 'Bases de la classification' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role de matrice de confusion est d'installer un raisonnement fiable des le d\u00e9but ; diagnostiquer pr\u00e9cis\u00e9ment les types d'erreurs avant d'ajuster le modele.",
-        "B": "Le role de r\u00e9gression logistique est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer r\u00e9gression logistique en production.",
-        "C": "classe sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer classe en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Bases de la classification, frontiere de d\u00e9cision est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer frontiere de d\u00e9cision en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie r\u00e9gression logistique \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de matrice de confusion est d'installer un raisonnement fiable des le d\u00e9but ; diagnostiquer precis...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de r\u00e9gression logistique est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correcte...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (classe sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux decid...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Bases de la classification, frontiere de d\u00e9cision est mobilise pour installer un raisonnement fiable d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "classe: quelle proposition en donne la meilleure d\u00e9finition dans 'Bases de la classification' (contexte industrie) ?",
-      "image_url": null,
-      "choices": {
-        "A": "classe designe une notion de base en apprentissage supervise ; il formalise le role de classe dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "overfitting correspond a une notion de base en apprentissage supervise ; il formalise le role d'overfitting dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Bases de la classification.",
-        "C": "Dans Bases de la classification, donn\u00e9e \u00e9tiquet\u00e9e se comprend comme une notion de base en apprentissage supervise ; il formalise le role de donn\u00e9e \u00e9tiquet\u00e9e dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "feature designe une notion de base en apprentissage supervise ; il concerne la representation des variables utiles au modele et leur qualit\u00e9 predictive."
+        "A": "Une catégorie définie dans laquelle un exemple peut être classé.",
+        "B": "Un algorithme utilisé pour entraîner un modèle de classification.",
+        "C": "Une fonction mathématique pour séparer deux groupes de données.",
+        "D": "Une métrique pour évaluer la performance d'un classificateur."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de classe dans Bases de la classification, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte industrie, alors que overfitting, donn\u00e9e \u00e9tiquet\u00e9e, feature restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (classe designe une notion de base en apprentissage supervise ; il formalise le role de classe dans un pipel...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (overfitting correspond a une notion de base en apprentissage supervise ; il formalise le role d'overfittin...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Bases de la classification, donn\u00e9e \u00e9tiquet\u00e9e se comprend comme une notion de base en apprentissage sup...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (feature designe une notion de base en apprentissage supervise ; il concerne la representation des variables...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Une classe est une catégorie ou un label assigné à un ensemble de données dans un problème de classification. L'option B décrit un algorithme, l'option C fait référence à la frontière de décision, et l'option D est une métrique d'évaluation.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce qu'une frontière de décision dans la classification?",
+      "image_url": null,
+      "choices": {
+        "A": "Une hypersurface séparant différentes classes dans l'espace des caractéristiques.",
+        "B": "Un nombre total de classes dans le jeu de données.",
+        "C": "Un réseau de neurones utilisé pour le regroupement de données.",
+        "D": "Une méthode d'optimisation pour ajuster les poids d'un modèle."
+      },
+      "correct_answer": "A",
+      "explanation": "Une frontière de décision est une hypersurface qui définit comment les classes sont séparées dans l'espace des caractéristiques. L'option B parle du nombre total de classes, l'option C décrit un type de modèle, et l'option D évoque une technique d'optimisation.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'objectif principal de la régression logistique?",
+      "image_url": null,
+      "choices": {
+        "A": "Prédire des probabilités pour une variable catégorielle binaire.",
+        "B": "Prédire des valeurs continues pour une sortie numérique.",
+        "C": "Regrouper des données similaires en clusters.",
+        "D": "Calculer la distance entre les points de données dans un espace vectoriel."
+      },
+      "correct_answer": "A",
+      "explanation": "La régression logistique est utilisée pour prédire la probabilité d'occurrence d'une des deux classes possibles d'une variable catégorielle. L'option B décrit la régression linéaire, l'option C parle de clustering (non supervisé), et l'option D décrit un calcul de distance.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Que représente une matrice de confusion?",
+      "image_url": null,
+      "choices": {
+        "A": "Le nombre de prédictions correctes et incorrectes par classe.",
+        "B": "Un graphique montrant les performances des algorithmes de clustering.",
+        "C": "La somme des erreurs accumulées pendant la formation.",
+        "D": "Une mesure du temps pris pour entraîner un modèle."
+      },
+      "correct_answer": "A",
+      "explanation": "Une matrice de confusion montre le nombre de prédictions correctes et incorrectes pour chaque classe, aidant à évaluer la performance d'un classificateur. L'option B se réfère au clustering, C parle d'une mesure d'erreur totale, et D concerne le temps d'entraînement.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Dans une matrice de confusion, que signifie la cellule contenant les faux négatifs (FN)?",
+      "image_url": null,
+      "choices": {
+        "A": "Les échantillons de la classe positive mal classés comme négatifs.",
+        "B": "Les échantillons prédits correctement comme positifs.",
+        "C": "Les échantillons de la classe négative bien classés comme négatifs.",
+        "D": "Les échantillons non assignés car leurs caractéristiques sont ambiguës."
+      },
+      "correct_answer": "A",
+      "explanation": "Les faux négatifs (FN) représentent les instances de la classe positive qui ont été incorrectement prédites comme appartenant à la classe négative. L'option B décrit les vrais positifs, C les vrais négatifs, et D est un distracteur incorrect conceptuellement.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel rôle joue la fonction sigmoïde dans la régression logistique?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle convertit une valeur linéaire en probabilité entre 0 et 1.",
+        "B": "Elle répartit des données en clusters par distance.",
+        "C": "Elle classe des données en calculant des distances hyperplanes.",
+        "D": "Elle génère des hyperparamètres pour optimiser l'entraînement."
+      },
+      "correct_answer": "A",
+      "explanation": "La fonction sigmoïde convertit les valeurs linéaires en probabilités, ce qui est crucial pour l'interprétation des résultats de la régression logistique. L'option B concerne le clustering, C parle de distances hyperplanes pour la classification, et D un processus d'optimisation des hyperparamètres.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi la précision n'est-elle pas toujours une bonne mesure de performance?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle peut être trompeuse dans un ensemble de données déséquilibré.",
+        "B": "Elle n'est pas interprétable dans le contexte de la classification.",
+        "C": "Elle ne prend pas en compte la matrice de confusion dans ses calculs.",
+        "D": "Elle nécessite de connaître la distribution exacte des caractéristiques."
+      },
+      "correct_answer": "A",
+      "explanation": "La précision peut être trompeuse dans des ensembles de données déséquilibrés où une classe peut dominer l'autre, donnant une fausse impression de performance. L'option B est fausse car la précision est interprétable, C est inexact car elle est liée à la matrice de confusion, et D ne concerne pas la précision.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle erreur conceptuelle pourrait-on faire en utilisant une frontière de décision linéaire?",
+      "image_url": null,
+      "choices": {
+        "A": "Préférer faussement une capacité de séparation linéaire où elle n'existe pas.",
+        "B": "Utiliser des valeurs de probabilité au lieu de classes discrètes.",
+        "C": "Regrouper incorrectement des données sur la base de similarités.",
+        "D": "Choisir des méthodes d'optimisation non appropriées pour la régression."
+      },
+      "correct_answer": "A",
+      "explanation": "Utiliser une frontière de décision linéaire alors que les classes ne sont pas linéairement séparables peut mener à de mauvaises classifications. L'option B se réfère à l'interprétation des sorties, C est du clustering et non de la classification, et D parle de régression, hors-sujet ici.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Bases de la classification', quel est le principal mode d'echec quand r\u00e9gression logistique est mal applique ?",
+      "question": "Dans une matrice de confusion, que signifie un grand nombre de faux positifs (FP)?",
       "image_url": null,
       "choices": {
-        "A": "Si r\u00e9gression logistique est mal utilise, on observe souvent appliquer r\u00e9gression logistique par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "B": "Le piege principal autour de classe est appliquer classe par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "C": "Un risque classique avec frontiere de d\u00e9cision est d'appliquer frontiere de d\u00e9cision par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier.",
-        "D": "Si matrice de confusion est mal utilise, on observe souvent appliquer matrice de confusion par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "Le modèle identifie incorrectement de nombreux échantillons négatifs comme positifs.",
+        "B": "Le modèle manque de prédire correctement les échantillons négatifs.",
+        "C": "Le modèle ajuste mal les frontières de décision entre les échantillons.",
+        "D": "La précision du modèle est inévitablement augmentée."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de r\u00e9gression logistique. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si r\u00e9gression logistique est mal utilise, on observe souvent appliquer r\u00e9gression logistique par automatism...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de classe est appliquer classe par automatisme sans verifier hypotheses, qualit\u00e9 ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec frontiere de d\u00e9cision est d'appliquer frontiere de d\u00e9cision par automatisme sans ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si matrice de confusion est mal utilise, on observe souvent appliquer matrice de confusion par automatisme ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Les faux positifs signifient que le modèle prédit à tort les échantillons de la classe négative comme positifs. L'option B suggère une mauvaise compréhension des FN, C parle de l'ajustement général du modèle mais n'explique pas spécifiquement FP, et D est incorrect car la précision peut être affectée négativement.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle caractéristique de la régression logistique la distingue de la régression linéaire?",
+      "image_url": null,
+      "choices": {
+        "A": "Utilise une fonction sigmoïde pour modéliser des probabilités.",
+        "B": "Optimise un critère de moindre carrés pour l'ajustement.",
+        "C": "Prend en entrée des données polynomiales uniquement.",
+        "D": "Utilise des matrices de covariances pour l'analyse des erreurs."
+      },
+      "correct_answer": "A",
+      "explanation": "La régression logistique utilise une fonction sigmoïde pour produire des probabilités de classe, contrairement à la régression linéaire qui se concentre sur une sortie numérique en utilisant les moindres carrés. L'option B est spécifique à la régression linéaire, C et D sont de mauvais attributs pour distinguer ces méthodes.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Lorsqu'une frontière de décision est non linéaire, quel problème cela peut-il poser pour certains classificateurs?",
+      "image_url": null,
+      "choices": {
+        "A": "Certains classificateurs linéaires peuvent avoir une capacité trop limitée pour correctement séparer les classes.",
+        "B": "Les probabilités prédites ne peuvent pas être interprétées.",
+        "C": "Tous les classificateurs nécessitent alors un pré-traitement des données supplémentaire.",
+        "D": "Cela impose l'utilisation obligatoire d'optimisation bayésienne."
+      },
+      "correct_answer": "A",
+      "explanation": "Les classificateurs linéaires peuvent être incapables de séparer les classes lorsque la frontière de décision est non linéaire. L'option B est incorrecte car elle confond le concept de décision avec celui de prédiction, C est faux car cela dépend de l'algorithme, et D est une confusion sur les exigences des méthodes.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Bases de la classification', quelle situation de terrain montre le mieux quand utiliser matrice de confusion ?",
+      "question": "Quand est-il inapproprié d'utiliser une régression logistique?",
       "image_url": null,
       "choices": {
-        "A": "Dans un atelier de cadrage de Bases de la classification, l'\u00e9quipe applique frontiere de d\u00e9cision pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer frontiere de d\u00e9cision en production.",
-        "B": "En contexte r\u00e9el sur Bases de la classification, r\u00e9gression logistique est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer r\u00e9gression logistique en production.",
-        "C": "En contexte r\u00e9el sur Bases de la classification, matrice de confusion est choisi afin d'installer un raisonnement fiable des le d\u00e9but ; diagnostiquer pr\u00e9cis\u00e9ment les types d'erreurs avant d'ajuster le modele.",
-        "D": "Pendant un atelier de cadrage, classe est utile pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer classe en production tout en surveillant le risque d'appliquer classe par automatisme sans verifier hypotheses, qualit\u00e9 des donn\u00e9es et objectif m\u00e9tier."
+        "A": "Quand la relation entre les variables indépendantes et la réponse n'est pas logistique.",
+        "B": "Quand vous avez plus de deux classes pour la variable dépendante.",
+        "C": "Quand les variables explicatives sont catégoriques.",
+        "D": "Quand la sortie attendue est une valeur continue quantitative."
       },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car matrice de confusion y sert de levier de d\u00e9cision principal dans Bases de la classification. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans un atelier de cadrage de Bases de la classification, l'\u00e9quipe applique frontiere de d\u00e9cision pour inst...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Bases de la classification, r\u00e9gression logistique est choisi afin d'installer un rais...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Bases de la classification, matrice de confusion est choisi afin d'installer un raiso...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant un atelier de cadrage, classe est utile pour installer un raisonnement fiable des le d\u00e9but ; l'util...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "D",
+      "explanation": "La régression logistique n'est pas appropriée pour les prévisions quantitatives continues, car elle est conçue pour des résultats catégoriels binaires. L'option A se méprend sur le type de relation, B est résolu par des extensions multi-classes, et C n'est pas un problème spécifique pour la régression logistique.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Face a un besoin cybersecurite dans 'Bases de la classification', pourquoi frontiere de d\u00e9cision est-il prioritaire ?",
+      "question": "Pourquoi est-il crucial de bien comprendre la matrice de confusion lors de l'évaluation d'un modèle?",
       "image_url": null,
       "choices": {
-        "A": "r\u00e9gression logistique sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer r\u00e9gression logistique en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Bases de la classification, matrice de confusion est mobilise pour installer un raisonnement fiable des le d\u00e9but ; diagnostiquer pr\u00e9cis\u00e9ment les types d'erreurs avant d'ajuster le modele.",
-        "C": "Dans Bases de la classification, frontiere de d\u00e9cision est mobilise pour installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer frontiere de d\u00e9cision en production.",
-        "D": "Le role de classe est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer classe en production."
+        "A": "Elle fournit une compréhension détaillée des prédictions correctes et incorrectes par classe.",
+        "B": "Elle indique la vitesse à laquelle un modèle peut s'exécuter.",
+        "C": "Elle est uniquement nécessaire pour ajuster les biais des diviseurs de classes.",
+        "D": "Elle explique pourquoi la précision est la meilleure métrique de performance."
       },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie frontiere de d\u00e9cision \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (r\u00e9gression logistique sert a installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Bases de la classification, matrice de confusion est mobilise pour installer un raisonnement fiable de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Bases de la classification, frontiere de d\u00e9cision est mobilise pour installer un raisonnement fiable d...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de classe est d'installer un raisonnement fiable des le d\u00e9but ; l'utiliser correctement permet de ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La matrice de confusion fournit une vue d'ensemble détaillée des prédictions correctes et incorrectes, facilitant des évaluations complètes. L'option B parle des performances temporelles, C est une description incorrecte de l'utilisation de la matrice, et D exagère l'importance de la précision sans justifier sa complexité.",
       "difficulty": "hard"
     }
   ]

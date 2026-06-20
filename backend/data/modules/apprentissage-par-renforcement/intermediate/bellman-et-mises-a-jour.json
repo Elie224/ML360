@@ -5,212 +5,212 @@
   "questions": [
     {
       "type": "text",
-      "question": "target update: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Bellman et mises a jour' ?",
+      "question": "Quelle est l'équation de Bellman pour une valeur d'état dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Bellman et mises a jour, equation de Bellman est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equation de Bellman en production.",
-        "B": "Pendant une phase d'experimentation, bootstrapping est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bootstrapping en production tout en surveillant le risque de sur-optimiser bootstrapping localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Dans une phase d'experimentation de Bellman et mises a jour, l'\u00e9quipe applique erreur temporelle pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer erreur temporelle en production.",
-        "D": "Dans une phase d'experimentation de Bellman et mises a jour, l'\u00e9quipe applique target update pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer target update en production."
+        "A": "V(s) = max_a [R(s,a) + γ Σ P(s'|s,a)V(s')]",
+        "B": "V(s) = Σ P(s'|s,a)Q(s,a)",
+        "C": "V(s) = R(s) + γ V(s')",
+        "D": "V(s) = max[V(s') + Q(s,a)]"
       },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car target update y sert de levier de d\u00e9cision principal dans Bellman et mises a jour. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Bellman et mises a jour, equation de Bellman est choisi afin de fiabiliser les decisio...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une phase d'experimentation, bootstrapping est utile pour fiabiliser les d\u00e9cisions d'experimentatio...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une phase d'experimentation de Bellman et mises a jour, l'\u00e9quipe applique erreur temporelle pour fiabi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une phase d'experimentation de Bellman et mises a jour, l'\u00e9quipe applique target update pour fiabilise...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "L'équation de Bellman pour une valeur d'état (V) s'exprime par : V(s) = max_a [R(s,a) + γ Σ P(s'|s,a)V(s')]. B et D ne définissent pas le concept de combinaison des récompenses et probabilités de transition. C omet l'aspect de maximisation et la somme sur les probabilités d'état suivant.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Bellman et mises a jour' (marketing), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment bootstrapping ?",
+      "question": "En quoi consiste le bootstrapping dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Dans Bellman et mises a jour, equation de Bellman se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'equation de Bellman dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "target update designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de target update dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "erreur temporelle correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'erreur temporelle dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Bellman et mises a jour.",
-        "D": "bootstrapping correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de bootstrapping dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Bellman et mises a jour."
+        "A": "Mettre à jour l'estimation actuelle en utilisant les estimations futures comme partie de la mise à jour",
+        "B": "Utiliser les expériences passées pour prédire la récompense immédiate exacte",
+        "C": "Mettre à jour uniquement après recevoir la récompense finale à la fin de l'épisode",
+        "D": "Utiliser une approche par recherche totale d'espace de politique"
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de bootstrapping dans Bellman et mises a jour, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que equation de Bellman, target update, erreur temporelle restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Bellman et mises a jour, equation de Bellman se comprend comme un concept interm\u00e9diaire en apprentissa...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (target update designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (erreur temporelle correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (bootstrapping correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le rol...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Le bootstrapping utilise les estimations futures pour améliorer celles présentes. B est incorrect car ce n'est pas axé uniquement sur la récompense immédiate. C décrit l'apprentissage Monte Carlo, et D n'est pas lié au concept de bootstrapping.",
       "difficulty": "easy"
     },
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec erreur temporelle dans 'Bellman et mises a jour' ?",
-      "image_url": "apprentissage-par-renforcement_bellman_et_mises_a_jour_erreur_temporelle_2.png",
+      "type": "text",
+      "question": "Quelle est la différence principale entre le policy iteration et le value iteration dans le calcul des mises à jour?",
+      "image_url": null,
       "choices": {
-        "A": "bootstrapping sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bootstrapping en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Bellman et mises a jour, target update est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer target update en production.",
-        "C": "Dans Bellman et mises a jour, erreur temporelle est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer erreur temporelle en production.",
-        "D": "Le role d'equation de Bellman est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equation de Bellman en production."
+        "A": "Le policy iteration décompose les étapes de calcul de valeurs et de politique, tandis que le value iteration les combine",
+        "B": "Le value iteration utilise l'exploration, tandis que le policy iteration utilise l'exploitation",
+        "C": "Le policy iteration considère uniquement la récompense immédiate, alors que le value iteration n'utilise pas la récompense",
+        "D": "Le value iteration est une méthode non déterministe, le policy iteration est déterministe"
       },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'erreur temporelle dans Bellman et mises a jour. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (bootstrapping sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Bellman et mises a jour, target update est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Bellman et mises a jour, erreur temporelle est mobilise pour fiabiliser les d\u00e9cisions d'experimentatio...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role d'equation de Bellman est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Le policy iteration procède en deux phases distinctes: un calcul de valeur (value evaluation) et une amélioration de politique. Le value iteration réalise simultanément l'amélioration de la politique au cours de la mise à jour de valeur. B et D confondent exploration/exploitation et déterminisme. C déforme le rôle des récompenses.",
       "difficulty": "easy"
     },
     {
-      "type": "image",
-      "question": "Dans 'Bellman et mises a jour', quel commentaire du schema traduit le mieux le role de target update ?",
-      "image_url": "apprentissage-par-renforcement_bellman_et_mises_a_jour_target_update_2.png",
-      "choices": {
-        "A": "Dans Bellman et mises a jour, equation de Bellman est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equation de Bellman en production.",
-        "B": "Le role de bootstrapping est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bootstrapping en production.",
-        "C": "erreur temporelle sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer erreur temporelle en production pour guider une d\u00e9cision exploitable.",
-        "D": "target update sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer target update en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de target update dans Bellman et mises a jour. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Bellman et mises a jour, equation de Bellman est mobilise pour fiabiliser les d\u00e9cisions d'experimentat...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de bootstrapping est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (erreur temporelle sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mie...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (target update sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec equation de Bellman dans 'Bellman et mises a jour' ?",
-      "image_url": "apprentissage-par-renforcement_bellman_et_mises_a_jour_equation_de_bellman_2.png",
-      "choices": {
-        "A": "Dans Bellman et mises a jour, erreur temporelle est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer erreur temporelle en production.",
-        "B": "Dans Bellman et mises a jour, equation de Bellman est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equation de Bellman en production.",
-        "C": "Le role de bootstrapping est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bootstrapping en production.",
-        "D": "target update sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer target update en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'equation de Bellman dans Bellman et mises a jour. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Bellman et mises a jour, erreur temporelle est mobilise pour fiabiliser les d\u00e9cisions d'experimentatio...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Bellman et mises a jour, equation de Bellman est mobilise pour fiabiliser les d\u00e9cisions d'experimentat...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de bootstrapping est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (target update sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
       "type": "text",
-      "question": "Face a un besoin marketing dans 'Bellman et mises a jour', pourquoi bootstrapping est-il prioritaire ?",
+      "question": "Quelle méthode utilise une estimation ponctuelle et une mise à jour directe de l'estimation de l'état-action?",
       "image_url": null,
       "choices": {
-        "A": "target update sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer target update en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Bellman et mises a jour, erreur temporelle est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer erreur temporelle en production.",
-        "C": "Dans Bellman et mises a jour, bootstrapping est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bootstrapping en production.",
-        "D": "Le role d'equation de Bellman est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equation de Bellman en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie bootstrapping \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (target update sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Bellman et mises a jour, erreur temporelle est mobilise pour fiabiliser les d\u00e9cisions d'experimentatio...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Bellman et mises a jour, bootstrapping est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role d'equation de Bellman est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Bellman et mises a jour', quel est le principal mode d'echec quand target update est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si target update est mal utilise, on observe souvent sur-optimiser target update localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour d'equation de Bellman est sur-optimiser equation de Bellman localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Un risque classique avec bootstrapping est de sur-optimiser bootstrapping localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Si erreur temporelle est mal utilise, on observe souvent sur-optimiser erreur temporelle localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Q-learning",
+        "B": "Monte Carlo Control",
+        "C": "SARSA",
+        "D": "A3C"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de target update. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si target update est mal utilise, on observe souvent sur-optimiser target update localement en ignorant ses...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour d'equation de Bellman est sur-optimiser equation de Bellman localement en ignora...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec bootstrapping est de sur-optimiser bootstrapping localement en ignorant ses intera...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si erreur temporelle est mal utilise, on observe souvent sur-optimiser erreur temporelle localement en igno...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le Q-learning met à jour directement les valeurs Q par une estimation ponctuelle des récompenses futures. C est une mise à jour basée sur un état-action séquentiel en ligne. B attend la fin de l'épisode pour ajuster. D est un modèle asynchrone d'apprentissage par renforcement.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "target update: pourquoi ce concept est-il crucial pour une \u00e9quipe e-commerce dans 'Bellman et mises a jour' ?",
+      "question": "Pourquoi l'erreur de différence temporelle (TD_error) est-elle cruciale dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Le role d'erreur temporelle est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer erreur temporelle en production.",
-        "B": "Le role de target update est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer target update en production.",
-        "C": "equation de Bellman sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equation de Bellman en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Bellman et mises a jour, bootstrapping est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bootstrapping en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie target update \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role d'erreur temporelle est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement pe...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de target update est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (equation de Bellman sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de m...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Bellman et mises a jour, bootstrapping est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Bellman et mises a jour', quel est le role le plus determinant d'equation de Bellman pour un cas sante ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Bellman et mises a jour, bootstrapping est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bootstrapping en production.",
-        "B": "Le role de target update est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer target update en production.",
-        "C": "erreur temporelle sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer erreur temporelle en production pour guider une d\u00e9cision exploitable.",
-        "D": "equation de Bellman sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equation de Bellman en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie equation de Bellman \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Bellman et mises a jour, bootstrapping est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de target update est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (erreur temporelle sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mie...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (equation de Bellman sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de m...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'Bellman et mises a jour', quel exemple met bootstrapping au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une phase d'experimentation, bootstrapping est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bootstrapping en production tout en surveillant le risque de sur-optimiser bootstrapping localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Dans une phase d'experimentation de Bellman et mises a jour, l'\u00e9quipe applique equation de Bellman pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equation de Bellman en production.",
-        "C": "En contexte r\u00e9el sur Bellman et mises a jour, target update est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer target update en production.",
-        "D": "Pendant une phase d'experimentation, erreur temporelle est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer erreur temporelle en production tout en surveillant le risque de sur-optimiser erreur temporelle localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Elle permet une mise à jour en ligne après chaque étape avec une rétroaction immédiate",
+        "B": "Elle corrige toutes les prévisions de politique dès le départ",
+        "C": "Elle élimine le besoin d'une fonction de récompense différée",
+        "D": "Elle assure que seules les récompenses immédiates sont évaluées"
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car bootstrapping y sert de levier de d\u00e9cision principal dans Bellman et mises a jour. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une phase d'experimentation, bootstrapping est utile pour fiabiliser les d\u00e9cisions d'experimentatio...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une phase d'experimentation de Bellman et mises a jour, l'\u00e9quipe applique equation de Bellman pour fia...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Bellman et mises a jour, target update est choisi afin de fiabiliser les d\u00e9cisions d'e...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une phase d'experimentation, erreur temporelle est utile pour fiabiliser les d\u00e9cisions d'experiment...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "L'erreur TD permet de mettre à jour les estimations de valeurs à mesure que les retours (feedback) sont reçus en continu. B est faux car la rétroaction n'est pas immédiate pour toutes les prévisions. C est incorrect, car elle inclut bien les récompenses différées avec γ, et D ignore la notion de récompenses futures.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Bellman et mises a jour', quelle situation de terrain montre le mieux quand utiliser erreur temporelle ?",
+      "question": "Quel est l'objectif de la mise à jour de cible (target update) dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Dans une phase d'experimentation de Bellman et mises a jour, l'\u00e9quipe applique bootstrapping pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bootstrapping en production.",
-        "B": "En contexte r\u00e9el sur Bellman et mises a jour, target update est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer target update en production.",
-        "C": "En contexte r\u00e9el sur Bellman et mises a jour, erreur temporelle est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer erreur temporelle en production.",
-        "D": "Pendant une phase d'experimentation, equation de Bellman est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equation de Bellman en production tout en surveillant le risque de sur-optimiser equation de Bellman localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car erreur temporelle y sert de levier de d\u00e9cision principal dans Bellman et mises a jour. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une phase d'experimentation de Bellman et mises a jour, l'\u00e9quipe applique bootstrapping pour fiabilise...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Bellman et mises a jour, target update est choisi afin de fiabiliser les d\u00e9cisions d'e...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Bellman et mises a jour, erreur temporelle est choisi afin de fiabiliser les d\u00e9cisions...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une phase d'experimentation, equation de Bellman est utile pour fiabiliser les d\u00e9cisions d'experime...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe e-commerce dans 'Bellman et mises a jour', quelle d\u00e9finition de target update est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "erreur temporelle correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'erreur temporelle dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Bellman et mises a jour.",
-        "B": "Dans Bellman et mises a jour, epsilon-greedy se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role d'epsilon-greedy dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Bellman et mises a jour, target update se comprend comme un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de target update dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "bootstrapping designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de bootstrapping dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de target update dans Bellman et mises a jour, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que bootstrapping, erreur temporelle, epsilon-greedy restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (erreur temporelle correspond a un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Bellman et mises a jour, epsilon-greedy se comprend comme un concept interm\u00e9diaire en apprentissage pa...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Bellman et mises a jour, target update se comprend comme un concept interm\u00e9diaire en apprentissage par...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (bootstrapping designe un concept interm\u00e9diaire en apprentissage par renforcement ; il formalise le role de ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Bellman et mises a jour', quelle situation de terrain montre le mieux quand utiliser equation de Bellman ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Bellman et mises a jour, erreur temporelle est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer erreur temporelle en production.",
-        "B": "En contexte r\u00e9el sur Bellman et mises a jour, equation de Bellman est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equation de Bellman en production.",
-        "C": "Pendant une phase d'experimentation, bootstrapping est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bootstrapping en production tout en surveillant le risque de sur-optimiser bootstrapping localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation de Bellman et mises a jour, l'\u00e9quipe applique target update pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer target update en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car equation de Bellman y sert de levier de d\u00e9cision principal dans Bellman et mises a jour. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Bellman et mises a jour, erreur temporelle est choisi afin de fiabiliser les d\u00e9cisions...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Bellman et mises a jour, equation de Bellman est choisi afin de fiabiliser les decisio...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, bootstrapping est utile pour fiabiliser les d\u00e9cisions d'experimentatio...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation de Bellman et mises a jour, l'\u00e9quipe applique target update pour fiabilise...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Bellman et mises a jour', quel est le role le plus determinant d'erreur temporelle pour un cas industrie ?",
-      "image_url": null,
-      "choices": {
-        "A": "erreur temporelle sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer erreur temporelle en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Bellman et mises a jour, equation de Bellman est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer equation de Bellman en production.",
-        "C": "Le role de bootstrapping est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bootstrapping en production.",
-        "D": "target update sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer target update en production pour guider une d\u00e9cision exploitable."
+        "A": "Stabiliser l'apprentissage en séparant les valeurs cibles des valeurs prédictives",
+        "B": "Améliorer l'exploration en augmentant les échecs initiaux",
+        "C": "Rendre l'algorithme plus complexe pour des calculs plus précis",
+        "D": "Affiner la politique jusqu'à ce qu'elle converge immédiatement"
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie erreur temporelle \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (erreur temporelle sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mie...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Bellman et mises a jour, equation de Bellman est mobilise pour fiabiliser les d\u00e9cisions d'experimentat...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de bootstrapping est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (target update sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Les target updates stabilisent l'apprentissage en utilisant des valeurs séparées pour guider les estimations futures. B et D ne concernent pas la stabilité de la convergence. C n'améliore pas directement la précision des calculs, mais peut compliquer le modèle.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans une mise à jour par différence temporelle (TD), quelle formule représente correctement l'erreur à utiliser?",
+      "image_url": null,
+      "choices": {
+        "A": "TD_error = R + γ V(s') - V(s)",
+        "B": "TD_error = R - [γ Σ P(s'|s,a)V(s')]",
+        "C": "TD_error = V(s') - [R + γ V(s)]",
+        "D": "TD_error = γ [V(s) - V(s')] + R"
+      },
+      "correct_answer": "A",
+      "explanation": "L'erreur TD est la différence entre la récompense obtenue plus la valeur estimée de l'état suivant et la valeur de l'état actuel. B isole la récompense, C inverse la logique de transition, et D mixe incorrectement les termes.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel type d'approche précise adopter pour minimiser la variance dans les estimations avec Monte Carlo?",
+      "image_url": null,
+      "choices": {
+        "A": "Utiliser des mises à jour après chaque acte, pas seulement à la fin d'une séquence complète",
+        "B": "Effectuer des évaluations à la fin de chaque épisode complet",
+        "C": "Se concentrer exclusivement sur les récompenses immédiates pour réduire la variance",
+        "D": "Ignorer les états finaux lors de l'estimation des valeurs"
+      },
+      "correct_answer": "B",
+      "explanation": "L'approche Monte Carlo fait des mises à jour de valeurs une fois les épisodes entièrement terminés, ce qui aide à moyenner les résultats et à réduire la variance. A représenterait un TD ou SARSA. C n'intègre pas l'ensemble des récompenses. D supprime des informations cruciales.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment la propagation de l'estimation des récompenses futures diffère-t-elle entre SARSA et Q-learning?",
+      "image_url": null,
+      "choices": {
+        "A": "SARSA utilise une transition basique de politique, tandis que Q-learning optimise une politique arbitraire",
+        "B": "Q-learning intègre directement la politique future, tandis que SARSA évalue les récompenses passées",
+        "C": "SARSA utilise la prochain action réelle pour la mise à jour, Q-learning suppose l'action future optimale",
+        "D": "Les deux méthodes n'ont aucune différence en termes d'évaluation de politique"
+      },
+      "correct_answer": "C",
+      "explanation": "SARSA met à jour les valeurs en utilisant l'action réellement exécutée, ce qui dépend du policy actuel, tandis que Q-learning met à jour en considérant l'action optimale suivante indépendamment de la politique courante. A et D sont erronés concepts de politique. B mélange les temporalités des récompenses.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le principal avantage d'utiliser les méthodes TD par rapport aux méthodes Monte Carlo pour l'apprentissage?",
+      "image_url": null,
+      "choices": {
+        "A": "Elles nécessitent moins de ressources en calcul car aucune récompense future n'est considérée",
+        "B": "Elles conduisent à des mises à jour plus fréquentes, incorporant une rétroaction anticipée",
+        "C": "Elles évitent le biais de subséquence en ignorant certains états initiaux",
+        "D": "Elles nécessitent des épisodes plus courts permettant plus de flexibilité"
+      },
+      "correct_answer": "B",
+      "explanation": "Les méthodes TD bénéficient d'un apprentissage en ligne avec des mises à jour fréquentes lorsque de nouvelles données sont disponibles. A est incorrect sur la gestion des récompenses futures. C est faux car les biais de séquence ne sont pas explicitement réduits. D entraîne une méprise sur le fonctionnement épisodique.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "bootstrapping: quel risque est le plus directement lie a son mauvais usage en production dans 'Bellman et mises a jour' ?",
+      "question": "Comment le écart (gap) entre Q_learning et SARSA peut-il être quantifié en termes de convergence?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec erreur temporelle est de sur-optimiser erreur temporelle localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Un risque classique avec bootstrapping est de sur-optimiser bootstrapping localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Si equation de Bellman est mal utilise, on observe souvent sur-optimiser equation de Bellman localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Le piege principal autour de target update est sur-optimiser target update localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Q-learning converge toujours plus rapidement que SARSA dans des environnements stochastiques",
+        "B": "SARSA converge plus rapidement dans des environnements complexes en raison de sa dépendance à la politique comportementale",
+        "C": "Q-learning est insensible à la politique de comportement et peut converger plus rapidement dans certaines conditions",
+        "D": "La convergence n'est jamais véritablement atteinte dans aucune des méthodes"
+      },
+      "correct_answer": "C",
+      "explanation": "Q-learning est indépendant de la politique de comportement, rendant la convergence plus souple dans certains cas, contrairement à SARSA qui est on-policy. A et B généralisent des comportements erronés. D est incorrect car la convergence est l'objectif mais dépend des paramètres et contextes.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi l'algorithme double Q-learning est-il une extension importante du Q-learning de base?",
+      "image_url": null,
+      "choices": {
+        "A": "Il réduit le surajustement par l'utilisation de deux réseaux pour décorréler les mises à jour",
+        "B": "Il accélère l'apprentissage grâce à une politique du Fed-exploratoire",
+        "C": "Il permet une politique directement dérivée des valeurs d'actions associées",
+        "D": "Il remplace entièrement la fonction gamma par des poids variables"
+      },
+      "correct_answer": "A",
+      "explanation": "Double Q-learning adresse le problème de surévaluation en utilisant deux ensembles indépendants de mises à jour Q-values pour réduire la corrélation des biais d'estimation. B et C décrivent des fonctionnalités non présentées dans Q-learning. D change incorrectement le rôle de γ.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la conséquence possible de ne pas correctement régler le paramètre gamma dans une méthode TD?",
+      "image_url": null,
+      "choices": {
+        "A": "Une valeur gamma élevée pourrait conduire à ignorer les récompenses à long terme",
+        "B": "Un gamma faible pourrait n'inclure que des récompenses futures lointaines",
+        "C": "Un mauvais gamma peut provoquer une convergence plus lente ou même une non-convergence",
+        "D": "Cela empêche l'utilisation de l'algorithme de Bellman directement"
+      },
+      "correct_answer": "C",
+      "explanation": "Un gamma inadéquat peut perturber l'équilibre entre l'impact des récompenses immédiates et futures, ralentissant ou stoppant la convergence. A inverserait l'effet escompté de gamma. B illustre mal son utilisation. D compromet mal la fonction de γ dans l'équation de Bellman.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Lors de l'utilisation de la méthode Actor-Critic, quel est le rôle principal de l'Actor?",
+      "image_url": null,
+      "choices": {
+        "A": "Évaluer la différence de valeur prévue entre les états",
+        "B": "Modifier la politique en optimisant partiellement les actions",
+        "C": "Décider des actions spécifiques en se basant sur la valeur des états",
+        "D": "Actualiser la fonction de valeur directement sans transition implicite"
       },
       "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de bootstrapping. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec erreur temporelle est de sur-optimiser erreur temporelle localement en ignorant se...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec bootstrapping est de sur-optimiser bootstrapping localement en ignorant ses intera...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si equation de Bellman est mal utilise, on observe souvent sur-optimiser equation de Bellman localement en ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de target update est sur-optimiser target update localement en ignorant ses inter...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Dans Actor-Critic, l'Actor ajuste la politique basée sur l'évaluation critique des performances, en optimisant les actions prises. A désigne la tâche principale du Critic. C pourrait décrire une politique de Q-learning plutôt. D est une fausse compréhension des rôles conjunctionnels.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel mécanisme dirige la sélection d'actions par epsilon-greedy dans l'exploration de politiques?",
+      "image_url": null,
+      "choices": {
+        "A": "Il exploite toujours la meilleure action perçue à partir Q-values exclusifs",
+        "B": "Il explore aléatoirement toutes les actions possibles avec un bêta déterminé",
+        "C": "Il balance exploration et exploitation, choisissant souvent la meilleure action selon l'épsilon définit",
+        "D": "Il optimise uniquement pour les contextes en ligne avec la récompense maximale prévisible"
+      },
+      "correct_answer": "C",
+      "explanation": "L'épsilon-greedy favorise généralement l'action ayant la meilleure espérance, tout en choisissant aléatoirement d'explorer avec une petite probabilité (épsilon). A ne permet pas de variation aléatoire. B confond les variables aléatoires et structure de probabilité. D faussement fixe un cadre optimal.",
       "difficulty": "hard"
     }
   ]

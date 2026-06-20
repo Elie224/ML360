@@ -5,170 +5,170 @@
   "questions": [
     {
       "type": "text",
-      "question": "variables derivees: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Ingenierie des features' ?",
+      "question": "Quelle est la principale raison d'utiliser la standardisation des données avant l'entraînement d'un modèle?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Ingenierie des features, standardisation est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer standardisation en production.",
-        "B": "Pendant une phase d'experimentation, selection de variables est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de variables en production tout en surveillant le risque de sur-optimiser selection de variables localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Dans une phase d'experimentation d'Ingenierie des features, l'\u00e9quipe applique prevention de fuite pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer prevention de fuite en production.",
-        "D": "Dans une phase d'experimentation d'Ingenierie des features, l'\u00e9quipe applique variables derivees pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variables derivees en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car variables derivees y sert de levier de d\u00e9cision principal dans Ingenierie des features. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Ingenierie des features, standardisation est choisi afin de fiabiliser les d\u00e9cisions d...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une phase d'experimentation, selection de variables est utile pour fiabiliser les d\u00e9cisions d'exper...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une phase d'experimentation d'Ingenierie des features, l'\u00e9quipe applique prevention de fuite pour fia...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une phase d'experimentation d'Ingenierie des features, l'\u00e9quipe applique variables derivees pour fiab...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec standardisation dans 'Ingenierie des features' ?",
-      "image_url": "apprentissage-supervise_ingenierie_des_features_standardisation_2.png",
-      "choices": {
-        "A": "Dans Ingenierie des features, prevention de fuite est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer prevention de fuite en production.",
-        "B": "Dans Ingenierie des features, standardisation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer standardisation en production.",
-        "C": "Le role de selection de variables est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de variables en production.",
-        "D": "variables derivees sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variables derivees en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de standardisation dans Ingenierie des features. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Ingenierie des features, prevention de fuite est mobilise pour fiabiliser les d\u00e9cisions d'experimentat...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Ingenierie des features, standardisation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de selection de variables est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correcteme...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (variables derivees sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec prevention de fuite dans 'Ingenierie des features' ?",
-      "image_url": "apprentissage-supervise_ingenierie_des_features_prevention_de_fuite_2.png",
-      "choices": {
-        "A": "selection de variables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de variables en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Ingenierie des features, variables derivees est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variables derivees en production.",
-        "C": "Dans Ingenierie des features, prevention de fuite est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer prevention de fuite en production.",
-        "D": "Le role de standardisation est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer standardisation en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de prevention de fuite dans Ingenierie des features. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (selection de variables sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Ingenierie des features, variables derivees est mobilise pour fiabiliser les d\u00e9cisions d'experimentati...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Ingenierie des features, prevention de fuite est mobilise pour fiabiliser les d\u00e9cisions d'experimentat...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de standardisation est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perm...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Ingenierie des features', quel est le role le plus determinant de standardisation pour un cas sante ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Ingenierie des features, selection de variables est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de variables en production.",
-        "B": "Le role de variables derivees est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variables derivees en production.",
-        "C": "prevention de fuite sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer prevention de fuite en production pour guider une d\u00e9cision exploitable.",
-        "D": "standardisation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer standardisation en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie standardisation \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Ingenierie des features, selection de variables est mobilise pour fiabiliser les d\u00e9cisions d'experimen...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de variables derivees est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement p...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (prevention de fuite sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de m...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (standardisation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Ingenierie des features' (marketing), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment selection de variables ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Ingenierie des features, profondeur maximale se comprend comme un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de profondeur maximale dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "random forest designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de random forest dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "importance des variables correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role d'importance des variables dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Ingenierie des features.",
-        "D": "selection de variables correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de selection de variables dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Ingenierie des features."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de selection de variables dans Ingenierie des features, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte marketing, alors que profondeur maximale, random forest, importance des variables restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Ingenierie des features, profondeur maximale se comprend comme un concept interm\u00e9diaire en apprentissa...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (random forest designe un concept interm\u00e9diaire en apprentissage supervise ; il formalise le role de random ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (importance des variables correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (selection de variables correspond a un concept interm\u00e9diaire en apprentissage supervise ; il formalise le r...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Ingenierie des features', quel commentaire du schema traduit le mieux le role de variables derivees ?",
-      "image_url": "apprentissage-supervise_ingenierie_des_features_variables_derivees_2.png",
-      "choices": {
-        "A": "Dans Ingenierie des features, standardisation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer standardisation en production.",
-        "B": "Le role de selection de variables est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de variables en production.",
-        "C": "prevention de fuite sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer prevention de fuite en production pour guider une d\u00e9cision exploitable.",
-        "D": "variables derivees sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variables derivees en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de variables derivees dans Ingenierie des features. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Ingenierie des features, standardisation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de selection de variables est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correcteme...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (prevention de fuite sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de m...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (variables derivees sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Ingenierie des features', quelle situation de terrain montre le mieux quand utiliser standardisation ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Ingenierie des features, prevention de fuite est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer prevention de fuite en production.",
-        "B": "En contexte r\u00e9el sur Ingenierie des features, standardisation est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer standardisation en production.",
-        "C": "Pendant une phase d'experimentation, selection de variables est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de variables en production tout en surveillant le risque de sur-optimiser selection de variables localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation d'Ingenierie des features, l'\u00e9quipe applique variables derivees pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variables derivees en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car standardisation y sert de levier de d\u00e9cision principal dans Ingenierie des features. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Ingenierie des features, prevention de fuite est choisi afin de fiabiliser les decisio...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Ingenierie des features, standardisation est choisi afin de fiabiliser les d\u00e9cisions d...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, selection de variables est utile pour fiabiliser les d\u00e9cisions d'exper...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation d'Ingenierie des features, l'\u00e9quipe applique variables derivees pour fiab...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Ingenierie des features', quel est le principal mode d'echec quand variables derivees est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si variables derivees est mal utilise, on observe souvent sur-optimiser variables derivees localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de standardisation est sur-optimiser standardisation localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Un risque classique avec selection de variables est de sur-optimiser selection de variables localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Si prevention de fuite est mal utilise, on observe souvent sur-optimiser prevention de fuite localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Améliorer la convergence de l'algorithme d'optimisation",
+        "B": "Ne pas avoir à traiter les valeurs manquantes",
+        "C": "Réduire la taille du dataset",
+        "D": "Préserver l'ordre des classes cibles"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de variables derivees. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si variables derivees est mal utilise, on observe souvent sur-optimiser variables derivees localement en ig...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de standardisation est sur-optimiser standardisation localement en ignorant ses i...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec selection de variables est de sur-optimiser selection de variables localement en i...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si prevention de fuite est mal utilise, on observe souvent sur-optimiser prevention de fuite localement en ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La standardisation met les données sur une échelle commune, souvent nécessaire pour assurer une convergence rapide et stable dans de nombreux algorithmes d'optimisation. La standardisation n'élimine pas les valeurs manquantes (B), ne réduit pas la taille du dataset (C) et n'affecte pas l'ordre des classes cibles (D).",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'impact principal d'une mauvaise sélection de variables pour un modèle supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Réduction de la performance générale du modèle",
+        "B": "Augmentation de la taille physique des données",
+        "C": "Amélioration automatique des métriques de test",
+        "D": "Prévention des doublons dans les données"
+      },
+      "correct_answer": "A",
+      "explanation": "Une mauvaise sélection de variables peut inclure des variables non pertinentes qui ajoutent du bruit, réduisant ainsi la performance du modèle (A). Elle n'affecte pas nécessairement la taille physique des données (B) sauf si elle réduit les dimensions, n'améliore pas automatiquement les métriques de test (C) et ne s'occupe pas des doublons (D).",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Laquelle de ces techniques est utilisée pour créer de nouvelles variables à partir de données existantes?",
+      "image_url": null,
+      "choices": {
+        "A": "Encodage one-hot",
+        "B": "Variables dérivées",
+        "C": "Réduction de dimension",
+        "D": "Filtrage de caractéristiques"
+      },
+      "correct_answer": "B",
+      "explanation": "Les variables dérivées sont générées à partir de transformations logiques ou arithmétiques sur les données existantes (B). L'encodage one-hot (A) transforme des variables catégorielles en variables binaires, la réduction de dimension (C) réduit la taille des données, et le filtrage de caractéristiques (D) supprime des variables.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il important de séparer les données d'entraînement et de validation lors de la création de variables dérivées?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour éviter la fuite de données",
+        "B": "Pour économiser de l'espace de stockage",
+        "C": "Pour accélérer le temps d'entraînement",
+        "D": "Pour améliorer la normalisation des données"
+      },
+      "correct_answer": "A",
+      "explanation": "Séparer les ensembles évite la fuite de données, où des informations du set de validation contamineraient le set d'entraînement, biaisant les résultats (A). Cela n'économise pas l'espace de stockage (B), n'accélère pas l'entraînement (C) ou n'améliore pas directement la normalisation (D).",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Face a un besoin marketing dans 'Ingenierie des features', pourquoi selection de variables est-il prioritaire ?",
+      "question": "Lors de la standardisation, pourquoi est-il important de calculer les statistiques de normalisation uniquement sur le jeu d'entraînement?",
       "image_url": null,
       "choices": {
-        "A": "variables derivees sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variables derivees en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Ingenierie des features, prevention de fuite est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer prevention de fuite en production.",
-        "C": "Dans Ingenierie des features, selection de variables est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de variables en production.",
-        "D": "Le role de standardisation est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer standardisation en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie selection de variables \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (variables derivees sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Ingenierie des features, prevention de fuite est mobilise pour fiabiliser les d\u00e9cisions d'experimentat...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Ingenierie des features, selection de variables est mobilise pour fiabiliser les d\u00e9cisions d'experimen...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de standardisation est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perm...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Ingenierie des features', quelle situation de terrain montre le mieux quand utiliser prevention de fuite ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une phase d'experimentation d'Ingenierie des features, l'\u00e9quipe applique selection de variables pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de variables en production.",
-        "B": "En contexte r\u00e9el sur Ingenierie des features, variables derivees est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variables derivees en production.",
-        "C": "En contexte r\u00e9el sur Ingenierie des features, prevention de fuite est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer prevention de fuite en production.",
-        "D": "Pendant une phase d'experimentation, standardisation est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer standardisation en production tout en surveillant le risque de sur-optimiser standardisation localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car prevention de fuite y sert de levier de d\u00e9cision principal dans Ingenierie des features. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une phase d'experimentation d'Ingenierie des features, l'\u00e9quipe applique selection de variables pour ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Ingenierie des features, variables derivees est choisi afin de fiabiliser les d\u00e9cision...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Ingenierie des features, prevention de fuite est choisi afin de fiabiliser les decisio...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une phase d'experimentation, standardisation est utile pour fiabiliser les d\u00e9cisions d'experimentat...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "variables derivees: pourquoi ce concept est-il crucial pour une \u00e9quipe e-commerce dans 'Ingenierie des features' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role de prevention de fuite est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer prevention de fuite en production.",
-        "B": "Le role de variables derivees est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variables derivees en production.",
-        "C": "standardisation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer standardisation en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Ingenierie des features, selection de variables est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de variables en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie variables derivees \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role de prevention de fuite est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de variables derivees est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement p...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (standardisation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Ingenierie des features, selection de variables est mobilise pour fiabiliser les d\u00e9cisions d'experimen...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Ingenierie des features', quel est le role le plus determinant de prevention de fuite pour un cas industrie ?",
-      "image_url": null,
-      "choices": {
-        "A": "prevention de fuite sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer prevention de fuite en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Ingenierie des features, standardisation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer standardisation en production.",
-        "C": "Le role de selection de variables est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer selection de variables en production.",
-        "D": "variables derivees sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer variables derivees en production pour guider une d\u00e9cision exploitable."
+        "A": "Pour garantir que le modèle est évalué de manière juste et indépendante",
+        "B": "Pour minimiser les erreurs de codage",
+        "C": "Pour maximiser la taille du jeu d'entraînement",
+        "D": "Pour faciliter l'interprétation des résultats"
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie prevention de fuite \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (prevention de fuite sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de m...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Ingenierie des features, standardisation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de selection de variables est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correcteme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (variables derivees sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mi...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Calculer les statistiquessur le jeu d'entraînement assure que les informations du jeu de test ne biaisent pas le modèle, préservant ainsi une évaluation juste et indépendante (A). Cela n'affecte pas les erreurs de codage (B) ou la taille du jeu (C), ni ne facilite l'interprétation des résultats directement (D).",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un problème courant lorsque l'on n'élimine pas les variables inutiles pour un modèle de régression linéaire?",
+      "image_url": null,
+      "choices": {
+        "A": "Surgénéralisation du modèle",
+        "B": "Multicolinéarité accrue",
+        "C": "Réduction du biais",
+        "D": "Amélioration de la précision"
+      },
+      "correct_answer": "B",
+      "explanation": "Garder des variables inutiles peut accroître la multicolinéarité, rendant les coefficients du modèle instables (B). Cela ne cause pas la surgénéralisation (A), n'affecte pas directement le biais (C), et diminue souvent la précision (D), au lieu de l'améliorer.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle approche vous permettrait de sélectionner les variables les plus pertinentes pour votre modèle sans biaiser les résultats?",
+      "image_url": null,
+      "choices": {
+        "A": "Utilisation d'un ensemble de validation distinct",
+        "B": "Utilisation des moyennes mobiles",
+        "C": "Inclusion de toutes les variables possibles",
+        "D": "Supprimer aléatoirement des variables"
+      },
+      "correct_answer": "A",
+      "explanation": "Utiliser un ensemble de validation permet d'évaluer la pertinence des variables de manière objective (A). Les moyennes mobiles (B) sont une technique de lissage temporel, inclure toutes les variables possibles (C) peut entraîner la suradéquation, et supprimer aléatoirement (D) manque de logique cohérente.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle méthode est particulièrement sensible à la standardisation de ses variables d'entrée?",
+      "image_url": null,
+      "choices": {
+        "A": "Réseaux de neurones",
+        "B": "Arbres de décision",
+        "C": "Naïve Bayes",
+        "D": "K-means"
+      },
+      "correct_answer": "D",
+      "explanation": "Les méthodes de clustering comme K-means sont sensibles aux échelles des données car elles calculent des distances (D). Les réseaux de neurones (A) bénéficient aussi de la standardisation, mais ne sont pas aussi dépendants. Les arbres de décision (B) et Naïve Bayes (C) ne sont pas influencés par les échelles.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi la génération de variables dérivées peut-elle parfois entraîner une fuite de données?",
+      "image_url": null,
+      "choices": {
+        "A": "Car elle peut inclure des informations du futur",
+        "B": "Car elle pourrait augmenter la pression sur les ressources CPU",
+        "C": "Car elle simplifie les modèles en éliminant des paramètres",
+        "D": "Car elle réduit la taille du dataset"
+      },
+      "correct_answer": "A",
+      "explanation": "La génération de variables dérivées peut inclure des informations futures dans les variables, menant à une fuite (A). Cela n’a pas d'impact direct sur la pression sur les ressources CPU (B), ne simplifie pas nécessairement les modèles (C) et n'entraîne pas une réduction de taille du dataset (D).",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans le contexte de la prévention de fuite, pourquoi est-il dangereux d'utiliser des statistiques de jeu test pour le prétraitement des données?",
+      "image_url": null,
+      "choices": {
+        "A": "Parce que cela augmente artificiellement les performances du modèle",
+        "B": "Parce que cela facilite le surapprentissage",
+        "C": "Parce que cela empêche la permutation des étiquettes",
+        "D": "Parce que cela réduit la variance de la sortie cible"
+      },
+      "correct_answer": "A",
+      "explanation": "Utiliser des statistiques de test dans le prétraitement entraîne une fuite, car cela offre au modèle des informations qu'il n'aurait pas lors d'une prédiction réelle, augmentant artificiellement les performances (A). Cela ne facilite pas directement le surapprentissage (B), n'empêche pas la permutation (C) et ne réduit pas la variance cible (D).",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Lorsque l'on parle de fuites de données, pourquoi est-il nécessaire de séparer certaines étapes de prétraitement entre jeu de validation et jeu d'entraînement?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour s'assurer que les métriques sont représentatives en conditions réelles",
+        "B": "Pour vérifier la capacité des modèles à mémoriser les échantillons",
+        "C": "Pour augmenter la taille du pipeline d'entraînement",
+        "D": "Pour éliminer la corrélation entre les variables dérivées"
+      },
+      "correct_answer": "A",
+      "explanation": "Séparer les étapes de prétraitement assure que l'évaluation reflète une situation indépendante, ce qui implique des métriques représentatives en conditions réelles (A). Cela ne vérifie pas la capacité de mémorisation (B), n'augmente pas le pipeline (C) et ne diminue pas directement les corrélations (D).",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Lequel des problèmes suivants est le moins affecté par une normalisation incorrecte des données d'entrée dans le cadre d'une sélection de variables?",
+      "image_url": null,
+      "choices": {
+        "A": "Régression logistique",
+        "B": "Arbre de décision",
+        "C": "SVM avec noyau linéaire",
+        "D": "Réseau de neurones"
+      },
+      "correct_answer": "B",
+      "explanation": "Les arbres de décision (B) ne sont pas affectés par la normalisation parce qu'ils se basent sur des séparations binaires. Les régressions logistiques (A), SVMs avec un noyau linéaire (C), et réseaux de neurones (D) sont plus sensibles aux échelles des variables d'entrée.",
       "difficulty": "hard"
     }
   ]

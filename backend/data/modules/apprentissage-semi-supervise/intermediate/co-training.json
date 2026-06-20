@@ -5,212 +5,212 @@
   "questions": [
     {
       "type": "text",
-      "question": "echange de labels: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Co-training' ?",
+      "question": "Quelle est l'idée centrale de l'algorithme de co-training en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Co-training, vues complementaires est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer vues complementaires en production.",
-        "B": "Pendant une phase d'experimentation, independance conditionnelle est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer independance conditionnelle en production tout en surveillant le risque de sur-optimiser independance conditionnelle localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Dans une phase d'experimentation de Co-training, l'\u00e9quipe applique accord entre modeles pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accord entre modeles en production.",
-        "D": "Dans une phase d'experimentation de Co-training, l'\u00e9quipe applique echange de labels pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer echange de labels en production."
+        "A": "Utiliser deux modèles avec des vues complémentaires pour échanger des labels pour les données non étiquetées.",
+        "B": "Former un seul modèle à partir de tous les sous-ensembles de données disponibles.",
+        "C": "Rendre les modèles dépendants l'un de l'autre pour renforcer la performance.",
+        "D": "Fusionner les prédictions de multiples modèles pour améliorer l'accuracy."
       },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car echange de labels y sert de levier de d\u00e9cision principal dans Co-training. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Co-training, vues complementaires est choisi afin de fiabiliser les d\u00e9cisions d'experi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une phase d'experimentation, independance conditionnelle est utile pour fiabiliser les d\u00e9cisions d'...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une phase d'experimentation de Co-training, l'\u00e9quipe applique accord entre modeles pour fiabiliser les...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une phase d'experimentation de Co-training, l'\u00e9quipe applique echange de labels pour fiabiliser les de...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Le co-training se base sur deux modèles formés sur des vues complémentaires, qui s'échangent des labels pour mieux étiqueter les données non labellisées. B implique un modèle unique, C parle de dépendance au lieu d'indépendance, et D décrit le bagging, non applicable ici.",
       "difficulty": "easy"
     },
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec accord entre modeles dans 'Co-training' ?",
-      "image_url": "apprentissage-semi-supervise_co_training_accord_entre_modeles_2.png",
+      "type": "text",
+      "question": "En co-training, qu'entend-on par 'vues complémentaires' ?",
+      "image_url": null,
       "choices": {
-        "A": "independance conditionnelle sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer independance conditionnelle en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Co-training, echange de labels est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer echange de labels en production.",
-        "C": "Dans Co-training, accord entre modeles est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accord entre modeles en production.",
-        "D": "Le role de vues complementaires est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer vues complementaires en production."
+        "A": "Des descriptions de données qui sont conditionnellement indépendantes mais fournissent des informations complètes ensemble.",
+        "B": "Des jeux de données qui se ressemblent mais sont collectés indépendamment.",
+        "C": "Des subsets de données qui sont séparés temporellement.",
+        "D": "Des représentations de données qui nécessitent le même algorithme de modèle."
       },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'accord entre modeles dans Co-training. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (independance conditionnelle sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement per...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Co-training, echange de labels est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utilis...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Co-training, accord entre modeles est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'uti...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de vues complementaires est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "'Vues complémentaires' fait référence à des perspectives de données conditionnellement indépendantes qui combinées offrent une vue complète. B parle de similarité sans complémentarité, C se concentre sur le temps non pertinent, et D ne respecte pas l'indépendance requise.",
       "difficulty": "easy"
     },
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec vues complementaires dans 'Co-training' ?",
-      "image_url": "apprentissage-semi-supervise_co_training_vues_complementaires_2.png",
+      "type": "text",
+      "question": "Quel rôle joue l'indépendance conditionnelle dans le co-training?",
+      "image_url": null,
       "choices": {
-        "A": "Dans Co-training, accord entre modeles est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accord entre modeles en production.",
-        "B": "Dans Co-training, vues complementaires est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer vues complementaires en production.",
-        "C": "Le role d'independance conditionnelle est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer independance conditionnelle en production.",
-        "D": "echange de labels sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer echange de labels en production pour guider une d\u00e9cision exploitable."
+        "A": "Elle assure que les erreurs des modèles sur chaque vue ne se renforcent pas mutuellement.",
+        "B": "Elle garantit que chaque modèle atteint une haute précision seul.",
+        "C": "Elle évite la surapprentissage en partitionnant aléatoirement les données.",
+        "D": "Elle réduit le nombre total d'exemples nécessaires pour le training."
       },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de vues complementaires dans Co-training. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Co-training, accord entre modeles est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'uti...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Co-training, vues complementaires est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'uti...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role d'independance conditionnelle est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser corre...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (echange de labels sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mie...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "L'indépendance conditionnelle évite que les erreurs se propagent entre les modèles en assurant qu'elles ne se supportent pas mutuellement. B confond avec la validation croisée, C décrit une autre technique, et D est une conséquence, pas une explication directe.",
       "difficulty": "easy"
     },
     {
-      "type": "image",
-      "question": "Dans 'Co-training', quel commentaire du schema traduit le mieux le role d'echange de labels ?",
-      "image_url": "apprentissage-semi-supervise_co_training_echange_de_labels_2.png",
-      "choices": {
-        "A": "Dans Co-training, vues complementaires est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer vues complementaires en production.",
-        "B": "Le role d'independance conditionnelle est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer independance conditionnelle en production.",
-        "C": "accord entre modeles sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accord entre modeles en production pour guider une d\u00e9cision exploitable.",
-        "D": "echange de labels sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer echange de labels en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'echange de labels dans Co-training. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Co-training, vues complementaires est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'uti...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role d'independance conditionnelle est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser corre...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (accord entre modeles sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (echange de labels sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mie...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
       "type": "text",
-      "question": "Dans 'Co-training', quel est le principal mode d'echec quand echange de labels est mal applique ?",
+      "question": "En quoi l'échange de labels améliore-t-il l'apprentissage des modèles en co-training?",
       "image_url": null,
       "choices": {
-        "A": "Si echange de labels est mal utilise, on observe souvent sur-optimiser echange de labels localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de vues complementaires est sur-optimiser vues complementaires localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Un risque classique avec independance conditionnelle est de sur-optimiser independance conditionnelle localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Si accord entre modeles est mal utilise, on observe souvent sur-optimiser accord entre modeles localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "En permettant aux modèles d'améliorer leurs généralisations respectives via des données supposées fiables.",
+        "B": "En augmentant directement la taille du dataset étiqueté initial.",
+        "C": "En contrôlant spécifiquement la variance des prédictions de chaque modèle.",
+        "D": "En réduisant le nombre d'erreurs faits par le jeu de données test."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'echange de labels. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si echange de labels est mal utilise, on observe souvent sur-optimiser echange de labels localement en igno...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de vues complementaires est sur-optimiser vues complementaires localement en igno...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec independance conditionnelle est de sur-optimiser independance conditionnelle local...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si accord entre modeles est mal utilise, on observe souvent sur-optimiser accord entre modeles localement e...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Grâce à l'échange de labels, chaque modèle s'appuie sur les prédictions de l'autre comme sur des données supposées fiables, affinant ainsi sa généralisation. B ne concerne pas l'augmentation initiale, C parle de biais-variance non direct en co-training, et D est une conséquence sans lien d'amélioration direct.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Co-training', quel est le role le plus determinant d'accord entre modeles pour un cas banque ?",
+      "question": "Quel mécanisme est crucial pour garantir un succès en co-training?",
       "image_url": null,
       "choices": {
-        "A": "accord entre modeles sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accord entre modeles en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Co-training, vues complementaires est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer vues complementaires en production.",
-        "C": "Le role d'independance conditionnelle est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer independance conditionnelle en production.",
-        "D": "echange de labels sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer echange de labels en production pour guider une d\u00e9cision exploitable."
+        "A": "L'accord entre modèles sur les données non étiquetées avant l'échange de labels.",
+        "B": "L'utilisation du même ensemble de features pour chaque modèle.",
+        "C": "L'optimisation synchrone des deux modèles sur les mêmes instances.",
+        "D": "La contrainte que les modèles ne doivent jamais échanger de labels de manière bidirectionnelle."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie accord entre modeles \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (accord entre modeles sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Co-training, vues complementaires est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'uti...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role d'independance conditionnelle est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser corre...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (echange de labels sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mie...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "L'accord entre modèles est important pour éviter de propager des erreurs. B va à l'encontre de l'idée de vues complémentaires, C parle de processus d'entraînement synchronisé, pas typique en co-training, et D est faux car l'échange est bidirectionnel par design.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Co-training' (industrie), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment independance conditionnelle ?",
+      "question": "Pourquoi le co-training sur des vues dépendantes pourrait-il échouer?",
       "image_url": null,
       "choices": {
-        "A": "Dans Co-training, bruit de labels se comprend comme un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de bruit de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "correction designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de correction dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "reponderation correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de reponderation dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Co-training.",
-        "D": "independance conditionnelle correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'independance conditionnelle dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Co-training."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'independance conditionnelle dans Co-training, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte industrie, alors que bruit de labels, correction, reponderation restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Co-training, bruit de labels se comprend comme un concept interm\u00e9diaire en apprentissage semi supervis...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (correction designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de corre...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (reponderation correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (independance conditionnelle correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il form...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Co-training', quelle situation de terrain montre le mieux quand utiliser accord entre modeles ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une phase d'experimentation de Co-training, l'\u00e9quipe applique independance conditionnelle pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer independance conditionnelle en production.",
-        "B": "En contexte r\u00e9el sur Co-training, echange de labels est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer echange de labels en production.",
-        "C": "En contexte r\u00e9el sur Co-training, accord entre modeles est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accord entre modeles en production.",
-        "D": "Pendant une phase d'experimentation, vues complementaires est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer vues complementaires en production tout en surveillant le risque de sur-optimiser vues complementaires localement en ignorant ses interactions avec features, metriques et protocoles de validation."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car accord entre modeles y sert de levier de d\u00e9cision principal dans Co-training. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une phase d'experimentation de Co-training, l'\u00e9quipe applique independance conditionnelle pour fiabili...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Co-training, echange de labels est choisi afin de fiabiliser les d\u00e9cisions d'experimen...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Co-training, accord entre modeles est choisi afin de fiabiliser les d\u00e9cisions d'experi...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une phase d'experimentation, vues complementaires est utile pour fiabiliser les d\u00e9cisions d'experim...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Co-training', quelle situation de terrain montre le mieux quand utiliser vues complementaires ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Co-training, accord entre modeles est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accord entre modeles en production.",
-        "B": "En contexte r\u00e9el sur Co-training, vues complementaires est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer vues complementaires en production.",
-        "C": "Pendant une phase d'experimentation, independance conditionnelle est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer independance conditionnelle en production tout en surveillant le risque de sur-optimiser independance conditionnelle localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation de Co-training, l'\u00e9quipe applique echange de labels pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer echange de labels en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car vues complementaires y sert de levier de d\u00e9cision principal dans Co-training. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Co-training, accord entre modeles est choisi afin de fiabiliser les d\u00e9cisions d'experi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Co-training, vues complementaires est choisi afin de fiabiliser les d\u00e9cisions d'experi...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, independance conditionnelle est utile pour fiabiliser les d\u00e9cisions d'...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation de Co-training, l'\u00e9quipe applique echange de labels pour fiabiliser les de...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "echange de labels: pourquoi ce concept est-il crucial pour une \u00e9quipe cybersecurite dans 'Co-training' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role d'accord entre modeles est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accord entre modeles en production.",
-        "B": "Le role d'echange de labels est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer echange de labels en production.",
-        "C": "vues complementaires sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer vues complementaires en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Co-training, independance conditionnelle est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer independance conditionnelle en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie echange de labels \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role d'accord entre modeles est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role d'echange de labels est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement pe...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (vues complementaires sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Co-training, independance conditionnelle est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Co-training', quel est le role le plus determinant de vues complementaires pour un cas e-commerce ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Co-training, independance conditionnelle est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer independance conditionnelle en production.",
-        "B": "Le role d'echange de labels est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer echange de labels en production.",
-        "C": "accord entre modeles sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accord entre modeles en production pour guider une d\u00e9cision exploitable.",
-        "D": "vues complementaires sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer vues complementaires en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie vues complementaires \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Co-training, independance conditionnelle est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role d'echange de labels est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement pe...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (accord entre modeles sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (vues complementaires sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin industrie dans 'Co-training', pourquoi independance conditionnelle est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "echange de labels sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer echange de labels en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Co-training, accord entre modeles est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accord entre modeles en production.",
-        "C": "Dans Co-training, independance conditionnelle est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer independance conditionnelle en production.",
-        "D": "Le role de vues complementaires est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer vues complementaires en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie independance conditionnelle \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (echange de labels sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mie...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Co-training, accord entre modeles est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'uti...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Co-training, independance conditionnelle est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de vues complementaires est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe cybersecurite dans 'Co-training', quelle d\u00e9finition d'echange de labels est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "reponderation correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de reponderation dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Co-training.",
-        "B": "Dans Co-training, ensemble teacher-student se comprend comme un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'ensemble teacher-student dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Co-training, echange de labels se comprend comme un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'echange de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "correction designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de correction dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'echange de labels dans Co-training, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que correction, reponderation, ensemble teacher-student restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (reponderation correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Co-training, ensemble teacher-student se comprend comme un concept interm\u00e9diaire en apprentissage semi...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Co-training, echange de labels se comprend comme un concept interm\u00e9diaire en apprentissage semi superv...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (correction designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de corre...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "accord entre modeles: quelle proposition en donne la meilleure d\u00e9finition dans 'Co-training' (contexte banque) ?",
-      "image_url": null,
-      "choices": {
-        "A": "enseignant initial designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'enseignant initial dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "accord entre modeles designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'accord entre modeles dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "reponderation correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de reponderation dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Co-training.",
-        "D": "Dans Co-training, ensemble teacher-student se comprend comme un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'ensemble teacher-student dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'accord entre modeles dans Co-training, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que reponderation, ensemble teacher-student, enseignant initial restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (enseignant initial designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (accord entre modeles designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le rol...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (reponderation correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans Co-training, ensemble teacher-student se comprend comme un concept interm\u00e9diaire en apprentissage semi...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'Co-training', quel exemple met independance conditionnelle au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une phase d'experimentation, independance conditionnelle est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer independance conditionnelle en production tout en surveillant le risque de sur-optimiser independance conditionnelle localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Dans une phase d'experimentation de Co-training, l'\u00e9quipe applique vues complementaires pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer vues complementaires en production.",
-        "C": "En contexte r\u00e9el sur Co-training, echange de labels est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer echange de labels en production.",
-        "D": "Pendant une phase d'experimentation, accord entre modeles est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer accord entre modeles en production tout en surveillant le risque de sur-optimiser accord entre modeles localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Parce que les erreurs dans les prédictions peuvent se renforcer mutuellement.",
+        "B": "Parce que les modèles ont moins de paramètres pour capturer de la complexité.",
+        "C": "Parce que le set de données devient trop petit pour entraîner efficacement.",
+        "D": "Parce que les modèles deviennent identiques rapidement, brisant l'indépendance."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car independance conditionnelle y sert de levier de d\u00e9cision principal dans Co-training. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une phase d'experimentation, independance conditionnelle est utile pour fiabiliser les d\u00e9cisions d'...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une phase d'experimentation de Co-training, l'\u00e9quipe applique vues complementaires pour fiabiliser les...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Co-training, echange de labels est choisi afin de fiabiliser les d\u00e9cisions d'experimen...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une phase d'experimentation, accord entre modeles est utile pour fiabiliser les d\u00e9cisions d'experim...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Sans indépendance conditionnelle, les erreurs de prédiction se renforcent. B ne concerne pas le rôle des vues, C est une question de dataset non liée, et D explique l'état final sans viser la cause initiale de divergence.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment l'inadéquation des vues affecte-t-elle les performances du co-training?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle limite le transfert d'informations fiables, conduisant à une mauvaise généralisation.",
+        "B": "Elle augmente la précision mais réduit le rappel en influençant les caractéristiques.",
+        "C": "Elle conduit souvent à une augmentation de la complexité computationnelle.",
+        "D": "Elle joue un rôle mineur car la diversité des données reste prioritaire."
+      },
+      "correct_answer": "A",
+      "explanation": "L'inadéquation des vues restreint l'information échangée, affectant négativement la généralisation. B aborde précision/rappel non directement touchée, C implique une complexité technique non justifiée par vues, et D minimise de manière inexacte l'importance des vues adéquates.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Un modèle correct de co-training exploite quelles caractéristiques?",
+      "image_url": null,
+      "choices": {
+        "A": "Deux classes de modèle ayant des accès indépendants mais complémentaires à différentes caractéristiques.",
+        "B": "Une fusion de modèle sans accès séparé aux features individualisées.",
+        "C": "Une architecture de réseau neural unique permettant le partage de poids.",
+        "D": "Un modèle non supervisé qui limite son influence aux vues équitablement."
+      },
+      "correct_answer": "A",
+      "explanation": "Les modèles fonctionnent sur des vues indépendantes mais complémentaires pour composer des labels. B ne sépare pas les vues, C mêle métriques non applicables, D ajoute des restrictions en dehors du champ supervisé.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "En co-training, qu'est-ce qui démontre un bon accord entre les modèles?",
+      "image_url": null,
+      "choices": {
+        "A": "Une haute concordance dans leurs prédictions sur des données non étiquetées.",
+        "B": "L'utilisation de plusieurs modèles jusqu'à obtenir une convergence d'accord.",
+        "C": "L'implémentation de techniques de boosting pour réduire l'erreur globale.",
+        "D": "Une comparaison continue des erreurs de classification obtenues par chaque modèle."
+      },
+      "correct_answer": "A",
+      "explanation": "Le bon accord en co-training se vérifie par la similarité des prédictions sur données non étiquetées. B n'est pas spécifique à co-training, C se rattache à une approche différentielle, et D suit une autre métrique que la notion de 'concordance'.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Que devient l'erreur lorsque les modèles ne s'accordent pas sur les prédictions en co-training?",
+      "image_url": null,
+      "choices": {
+        "A": "L'erreur totale peut augmenter car les labels échangés sont peu fiables.",
+        "B": "L'erreur totale reste identique, car les modèles sont indépendants.",
+        "C": "L'erreur totale ne change que si un jeu de données est plus grand que l'autre.",
+        "D": "L'erreur totale diminue forcément car la diversité des modèles est assurée."
+      },
+      "correct_answer": "A",
+      "explanation": "Des désaccords engendrent l'augmentation des erreurs dues à l'échange de labels moins fiables. B fausse l'indépendance comme bénéfice anti-erreur, C relie incorrectement taille et erreur, et D suppose erronément une diminution automatique des erreurs par diversité de modèle.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel défi majeur doit être traité pour le succès en co-training?",
+      "image_url": null,
+      "choices": {
+        "A": "Assurer que les deux modèles perçoivent des données vraiment indépendantes.",
+        "B": "Trouver un moyen de partager les poids entre toutes les couches du réseau.",
+        "C": "Maximiser l'apprentissage automatique en n'utilisant qu'une seule vue.",
+        "D": "Minimiser la mémoire utilisée par l'entraînement de deux modèles."
+      },
+      "correct_answer": "A",
+      "explanation": "Le succès du co-training repose sur l'indépendance des vues. B, partage de poids, déforme l'idée des vues indépendantes, C oppose vue unique à la notion centrale, D, rentabilité mémoire, évite la question qualitative.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel impact a un mauvais choix de perspectives complémentaires en co-training?",
+      "image_url": null,
+      "choices": {
+        "A": "Il réduit l'effet bénéfique d'étiqueter de nouveaux exemples avec précision.",
+        "B": "Il augmente automatiquement la convergence du modèle si bien ajusté.",
+        "C": "Il a un effet négligeable vu que les données demeurent constantes.",
+        "D": "Il permet une meilleure compréhension mais réduit la précision."
+      },
+      "correct_answer": "A",
+      "explanation": "Choisir des perspectives inappropriées diminue la qualité des labels prédits, ce qui fausse les performances. B suppose à tort une amélioration garantie, C minimise indûment l'impact, et D décrit faussement une compréhension au détriment de la précision.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment le co-training gère-t-il le bruit intrinsèque des données?",
+      "image_url": null,
+      "choices": {
+        "A": "En diminuant l'influence de chaque modèle individuel par leurs échanges de labels.",
+        "B": "En fusionnant les vues pour réduire les biais des données bruyantes.",
+        "C": "En isolant les erreurs dans un seul modèle pour limiter leur propagation.",
+        "D": "En recalibrant les prédictions selon un seuil défini de bruit de données."
+      },
+      "correct_answer": "A",
+      "explanation": "Le co-training réduit le bruit en permettant aux vues de se valider mutuellement via l'échange, équilibrant ainsi les inadéquations. B propose à tort une fusion de vues, C concentre les erreurs non souhaitées et D, le recalibrage n'est pas la norme en co-training.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'un des risques d'une mauvaise implementation de co-training?",
+      "image_url": null,
+      "choices": {
+        "A": "Propagation de fausses étiquettes entre modèles conduisant à une baisse de performance.",
+        "B": "Augmentation forcée du nombre de classes pour inclure tous les échantillons.",
+        "C": "Réduction du temps d'entrainement en supprimant certaines vues de prédiction.",
+        "D": "Conversion non désirée de données en format non supervisé."
+      },
+      "correct_answer": "A",
+      "explanation": "Sans gestion adéquate, le co-training peut amplifier les erreurs via la propagation de fausses étiquettes. B resserre la diversité, C diminue des perspectives essentielles par rapidité, D incorpore mal un format non supervisé inapproprié.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle stratégie peut optimiser l'accord entre modèles dans un schéma de co-training?",
+      "image_url": null,
+      "choices": {
+        "A": "Choisir des algorithmes avec une performance similaire mais des biais différents.",
+        "B": "Toujours utiliser les mêmes hyperparamètres pour les deux modèles.",
+        "C": "Limiter la taille des ensembles de données non étiquetées.",
+        "D": "Figer les architectures et les empêcher de mutuellement s'ajuster."
+      },
+      "correct_answer": "A",
+      "explanation": "Utiliser des algorithmes avec des performances similaires mais des biais différents favorise une complémentarité renforcée. B n'explore pas assez la diversité dans l'apprentissage, C limite indûment l'information, et D fige l'évolution bénéfique.",
       "difficulty": "hard"
     }
   ]

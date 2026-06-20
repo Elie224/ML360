@@ -4,311 +4,311 @@
   "module": "Explicabilite",
   "questions": [
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec SHAP dans 'Explicabilite' ?",
-      "image_url": "apprentissage-supervise_explicabilite_shap_2.png",
-      "choices": {
-        "A": "Dans Explicabilite, explication locale est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer explication locale en production.",
-        "B": "Dans Explicabilite, SHAP est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SHAP en production.",
-        "C": "Le role de partial dependence est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer partial dependence en production.",
-        "D": "permutation importance sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer permutation importance en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de SHAP dans Explicabilite. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Explicabilite, explication locale est mobilise pour supporter des arbitrages de production ; l'utilise...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Explicabilite, SHAP est mobilise pour supporter des arbitrages de production ; l'utiliser correctement...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de partial dependence est de supporter des arbitrages de production ; l'utiliser correctement perme...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (permutation importance sert a supporter des arbitrages de production ; l'utiliser correctement permet de mi...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
       "type": "text",
-      "question": "Dans 'Explicabilite', quelle situation de terrain montre le mieux quand utiliser SHAP ?",
+      "question": "Quelle méthode est utilisée pour calculer l'importance des variables en perturbant leurs valeurs dans le contexte de l'explicabilité de modèle ?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Explicabilite, explication locale est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer explication locale en production.",
-        "B": "En contexte r\u00e9el sur Explicabilite, SHAP est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SHAP en production.",
-        "C": "Pendant une revue pre-deploiement, partial dependence est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer partial dependence en production tout en surveillant le risque d'optimiser partial dependence en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Dans une revue pre-deploiement d'Explicabilite, l'\u00e9quipe applique permutation importance pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer permutation importance en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car SHAP y sert de levier de d\u00e9cision principal dans Explicabilite. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Explicabilite, explication locale est choisi afin de supporter des arbitrages de produ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Explicabilite, SHAP est choisi afin de supporter des arbitrages de production ; l'util...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une revue pre-deploiement, partial dependence est utile pour supporter des arbitrages de production...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une revue pre-deploiement d'Explicabilite, l'\u00e9quipe applique permutation importance pour supporter de...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Explicabilite' (banque), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment partial dependence ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Explicabilite, matrice de cout se comprend comme un levier avance en apprentissage supervise ; il formalise le role de matrice de cout dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "ajustement du seuil designe un levier avance en apprentissage supervise ; il formalise le role d'ajustement du seuil dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "bruit de labels correspond a un levier avance en apprentissage supervise ; il formalise le role de bruit de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Explicabilite.",
-        "D": "partial dependence correspond a un levier avance en apprentissage supervise ; il formalise le role de partial dependence dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Explicabilite."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de partial dependence dans Explicabilite, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que matrice de cout, ajustement du seuil, bruit de labels restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Explicabilite, matrice de cout se comprend comme un levier avance en apprentissage supervise ; il form...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (ajustement du seuil designe un levier avance en apprentissage supervise ; il formalise le role d'ajustemen...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (bruit de labels correspond a un levier avance en apprentissage supervise ; il formalise le role de bruit de...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (partial dependence correspond a un levier avance en apprentissage supervise ; il formalise le role de parti...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "permutation importance: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Explicabilite' ?",
-      "image_url": null,
-      "choices": {
-        "A": "En contexte r\u00e9el sur Explicabilite, SHAP est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SHAP en production.",
-        "B": "Pendant une revue pre-deploiement, partial dependence est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer partial dependence en production tout en surveillant le risque d'optimiser partial dependence en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Dans une revue pre-deploiement d'Explicabilite, l'\u00e9quipe applique explication locale pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer explication locale en production.",
-        "D": "Dans une revue pre-deploiement d'Explicabilite, l'\u00e9quipe applique permutation importance pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer permutation importance en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car permutation importance y sert de levier de d\u00e9cision principal dans Explicabilite. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Explicabilite, SHAP est choisi afin de supporter des arbitrages de production ; l'util...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une revue pre-deploiement, partial dependence est utile pour supporter des arbitrages de production...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une revue pre-deploiement d'Explicabilite, l'\u00e9quipe applique explication locale pour supporter des ar...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une revue pre-deploiement d'Explicabilite, l'\u00e9quipe applique permutation importance pour supporter de...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Explicabilite', quel est le role le plus determinant de SHAP pour un cas cybersecurite ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Explicabilite, partial dependence est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer partial dependence en production.",
-        "B": "Le role de permutation importance est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer permutation importance en production.",
-        "C": "explication locale sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer explication locale en production pour guider une d\u00e9cision exploitable.",
-        "D": "SHAP sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SHAP en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie SHAP \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Explicabilite, partial dependence est mobilise pour supporter des arbitrages de production ; l'utilise...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de permutation importance est de supporter des arbitrages de production ; l'utiliser correctement p...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (explication locale sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (SHAP sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec explication locale dans 'Explicabilite' ?",
-      "image_url": "apprentissage-supervise_explicabilite_explication_locale_2.png",
-      "choices": {
-        "A": "partial dependence sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer partial dependence en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Explicabilite, permutation importance est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer permutation importance en production.",
-        "C": "Dans Explicabilite, explication locale est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer explication locale en production.",
-        "D": "Le role de SHAP est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SHAP en production."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'explication locale dans Explicabilite. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (partial dependence sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Explicabilite, permutation importance est mobilise pour supporter des arbitrages de production ; l'uti...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Explicabilite, explication locale est mobilise pour supporter des arbitrages de production ; l'utilise...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de SHAP est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux dec...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin banque dans 'Explicabilite', pourquoi partial dependence est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "permutation importance sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer permutation importance en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Explicabilite, explication locale est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer explication locale en production.",
-        "C": "Dans Explicabilite, partial dependence est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer partial dependence en production.",
-        "D": "Le role de SHAP est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SHAP en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie partial dependence \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (permutation importance sert a supporter des arbitrages de production ; l'utiliser correctement permet de mi...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Explicabilite, explication locale est mobilise pour supporter des arbitrages de production ; l'utilise...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Explicabilite, partial dependence est mobilise pour supporter des arbitrages de production ; l'utilise...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de SHAP est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux dec...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Explicabilite', quelle erreur autour de SHAP est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si permutation importance est mal utilise, on observe souvent optimiser permutation importance en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour d'explication locale est optimiser explication locale en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de SHAP est optimiser SHAP en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Un risque classique avec partial dependence est d'optimiser partial dependence en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de SHAP. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si permutation importance est mal utilise, on observe souvent optimiser permutation importance en silo et i...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour d'explication locale est optimiser explication locale en silo et introduire des ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de SHAP est optimiser SHAP en silo et introduire des modes d'echec caches au depl...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec partial dependence est d'optimiser partial dependence en silo et introduire des m...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Explicabilite', quel est le role le plus determinant d'explication locale pour un cas sante ?",
-      "image_url": null,
-      "choices": {
-        "A": "explication locale sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer explication locale en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Explicabilite, SHAP est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SHAP en production.",
-        "C": "Le role de partial dependence est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer partial dependence en production.",
-        "D": "permutation importance sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer permutation importance en production pour guider une d\u00e9cision exploitable."
+        "A": "Permutation importance",
+        "B": "SHAP",
+        "C": "Partial dependence",
+        "D": "Local surrogate models"
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie explication locale \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (explication locale sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux ...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Explicabilite, SHAP est mobilise pour supporter des arbitrages de production ; l'utiliser correctement...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de partial dependence est de supporter des arbitrages de production ; l'utiliser correctement perme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (permutation importance sert a supporter des arbitrages de production ; l'utiliser correctement permet de mi...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "La permutation importance évalue l'importance d'une variable en perturbant ses valeurs aléatoirement. SHAP calcule des valeurs basées sur des jeux coopératifs. Les partial dependence plots montrent l'impact d'une variable en la gardant continue et les modèles local surrogates expliquent les prédictions au niveau local.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Explicabilite', quelle situation de terrain montre le mieux quand utiliser explication locale ?",
+      "question": "Qu'est-ce que la valeur de SHAP cherche à quantifier dans l'explication d'un modèle ?",
       "image_url": null,
       "choices": {
-        "A": "Dans une revue pre-deploiement d'Explicabilite, l'\u00e9quipe applique partial dependence pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer partial dependence en production.",
-        "B": "En contexte r\u00e9el sur Explicabilite, permutation importance est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer permutation importance en production.",
-        "C": "En contexte r\u00e9el sur Explicabilite, explication locale est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer explication locale en production.",
-        "D": "Pendant une revue pre-deploiement, SHAP est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SHAP en production tout en surveillant le risque d'optimiser SHAP en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car explication locale y sert de levier de d\u00e9cision principal dans Explicabilite. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une revue pre-deploiement d'Explicabilite, l'\u00e9quipe applique partial dependence pour supporter des ar...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Explicabilite, permutation importance est choisi afin de supporter des arbitrages de p...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Explicabilite, explication locale est choisi afin de supporter des arbitrages de produ...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une revue pre-deploiement, SHAP est utile pour supporter des arbitrages de production ; l'utiliser ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Explicabilite', quel commentaire du schema traduit le mieux le role de permutation importance ?",
-      "image_url": "apprentissage-supervise_explicabilite_permutation_importance_2.png",
-      "choices": {
-        "A": "Dans Explicabilite, SHAP est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SHAP en production.",
-        "B": "Le role de partial dependence est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer partial dependence en production.",
-        "C": "explication locale sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer explication locale en production pour guider une d\u00e9cision exploitable.",
-        "D": "permutation importance sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer permutation importance en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de permutation importance dans Explicabilite. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Explicabilite, SHAP est mobilise pour supporter des arbitrages de production ; l'utiliser correctement...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de partial dependence est de supporter des arbitrages de production ; l'utiliser correctement perme...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (explication locale sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (permutation importance sert a supporter des arbitrages de production ; l'utiliser correctement permet de mi...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Explicabilite', quel est le principal mode d'echec quand permutation importance est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si permutation importance est mal utilise, on observe souvent optimiser permutation importance en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de SHAP est optimiser SHAP en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Un risque classique avec partial dependence est d'optimiser partial dependence en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Si explication locale est mal utilise, on observe souvent optimiser explication locale en silo et introduire des modes d'echec caches au deploiement."
+        "A": "La contribution de chaque feature à la prédiction d'un modèle",
+        "B": "L'effet moyen d'une feature sur la prédiction",
+        "C": "La performance globale d'un modèle",
+        "D": "La variance de la prédiction due à une feature"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de permutation importance. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si permutation importance est mal utilise, on observe souvent optimiser permutation importance en silo et i...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de SHAP est optimiser SHAP en silo et introduire des modes d'echec caches au depl...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec partial dependence est d'optimiser partial dependence en silo et introduire des m...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si explication locale est mal utilise, on observe souvent optimiser explication locale en silo et introduir...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Les valeurs de SHAP quantifient la contribution de chaque feature individuelle à une prédiction donnée. L'effet moyen d'une feature est quantifié par les partial dependence plots, la performance globale est mesurée par des scores tel que l'accuracy, et la variance de la prédiction due à une feature n'est pas directement capturée par les valeurs SHAP.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour un cas operationnel de 'Explicabilite', quel exemple met partial dependence au c\u0153ur de la d\u00e9cision ?",
+      "question": "Quelle approche parmi les suivantes fournit des explications locales pour les prédictions de modèles de machine learning ?",
       "image_url": null,
       "choices": {
-        "A": "Pendant une revue pre-deploiement, partial dependence est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer partial dependence en production tout en surveillant le risque d'optimiser partial dependence en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Dans une revue pre-deploiement d'Explicabilite, l'\u00e9quipe applique SHAP pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SHAP en production.",
-        "C": "En contexte r\u00e9el sur Explicabilite, permutation importance est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer permutation importance en production.",
-        "D": "Pendant une revue pre-deploiement, explication locale est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer explication locale en production tout en surveillant le risque d'optimiser explication locale en silo et introduire des modes d'echec caches au deploiement."
+        "A": "LIME (Local Interpretable Model-agnostic Explanations)",
+        "B": "Ridge Regression",
+        "C": "Ensemble Learning",
+        "D": "Z-score scaling"
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car partial dependence y sert de levier de d\u00e9cision principal dans Explicabilite. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une revue pre-deploiement, partial dependence est utile pour supporter des arbitrages de production...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une revue pre-deploiement d'Explicabilite, l'\u00e9quipe applique SHAP pour supporter des arbitrages de pr...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Explicabilite, permutation importance est choisi afin de supporter des arbitrages de p...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une revue pre-deploiement, explication locale est utile pour supporter des arbitrages de production...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "LIME est une méthode qui donne des explications locales, c'est-à-dire au niveau de la prédiction individuelle. Ridge Regression est une méthode de modélisation, l'ensemble learning est une technique d'amélioration de modèle et le scaling de Z-score est une technique de prétraitement.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "SHAP: quelle proposition en donne la meilleure d\u00e9finition dans 'Explicabilite' (contexte cybersecurite) ?",
+      "question": "Que signifie SHAP dans le contexte de l'explicabilité en machine learning?",
       "image_url": null,
       "choices": {
-        "A": "SHAP designe un levier avance en apprentissage supervise ; il formalise le role de SHAP dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "cout faux negatif correspond a un levier avance en apprentissage supervise ; il formalise le role de cout faux negatif dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Explicabilite.",
-        "C": "Dans Explicabilite, matrice de cout se comprend comme un levier avance en apprentissage supervise ; il formalise le role de matrice de cout dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "ajustement du seuil designe un levier avance en apprentissage supervise ; il formalise le role d'ajustement du seuil dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "SHapley Additive exPlanations",
+        "B": "Simple Hierarchical Analysis Procedure",
+        "C": "Statistical Hypothesis Adjustment Process",
+        "D": "Sparse Hybrid Approximation Protocol"
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de SHAP dans Explicabilite, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que cout faux negatif, matrice de cout, ajustement du seuil restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (SHAP designe un levier avance en apprentissage supervise ; il formalise le role de SHAP dans un pipeline ML...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (cout faux negatif correspond a un levier avance en apprentissage supervise ; il formalise le role de cout f...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Explicabilite, matrice de cout se comprend comme un levier avance en apprentissage supervise ; il form...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (ajustement du seuil designe un levier avance en apprentissage supervise ; il formalise le role d'ajustemen...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "SHAP, ou SHapley Additive exPlanations, est une méthode basée sur la théorie des jeux pour expliquer les prédictions individuelles en attribuant à chaque caractéristique une valeur de Shapley. Les autres choix sont incorrects car ils n'ont pas de lien avec SHAP ni l'explicabilité.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "permutation importance: pourquoi ce concept est-il crucial pour une \u00e9quipe assurance dans 'Explicabilite' ?",
+      "question": "Quel est le principe fondamental du calcul des valeurs de Shapley dans SHAP?",
       "image_url": null,
       "choices": {
-        "A": "Le role d'explication locale est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer explication locale en production.",
-        "B": "Le role de permutation importance est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer permutation importance en production.",
-        "C": "SHAP sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SHAP en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Explicabilite, partial dependence est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer partial dependence en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie permutation importance \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role d'explication locale est de supporter des arbitrages de production ; l'utiliser correctement perme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de permutation importance est de supporter des arbitrages de production ; l'utiliser correctement p...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (SHAP sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Explicabilite, partial dependence est mobilise pour supporter des arbitrages de production ; l'utilise...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "explication locale: quelle proposition en donne la meilleure d\u00e9finition dans 'Explicabilite' (contexte sante) ?",
-      "image_url": null,
-      "choices": {
-        "A": "filtrage d'anomalies designe un levier avance en apprentissage supervise ; il permet d'identifier des observations rares ou incoherentes avec le comportement normal.",
-        "B": "explication locale designe un levier avance en apprentissage supervise ; il formalise le role d'explication locale dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "bruit de labels correspond a un levier avance en apprentissage supervise ; il formalise le role de bruit de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Explicabilite.",
-        "D": "Dans Explicabilite, loss robuste se comprend comme un levier avance en apprentissage supervise ; il formalise le role de loss robuste dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'explication locale dans Explicabilite, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que bruit de labels, loss robuste, filtrage d'anomalies restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (filtrage d'anomalies designe un levier avance en apprentissage supervise ; il permet d'identifier des obser...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (explication locale designe un levier avance en apprentissage supervise ; il formalise le role d'explicatio...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (bruit de labels correspond a un levier avance en apprentissage supervise ; il formalise le role de bruit de...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans Explicabilite, loss robuste se comprend comme un levier avance en apprentissage supervise ; il formali...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe assurance dans 'Explicabilite', quelle d\u00e9finition de permutation importance est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "bruit de labels correspond a un levier avance en apprentissage supervise ; il formalise le role de bruit de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Explicabilite.",
-        "B": "Dans Explicabilite, loss robuste se comprend comme un levier avance en apprentissage supervise ; il formalise le role de loss robuste dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Explicabilite, permutation importance se comprend comme un levier avance en apprentissage supervise ; il formalise le role de permutation importance dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "ajustement du seuil designe un levier avance en apprentissage supervise ; il formalise le role d'ajustement du seuil dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de permutation importance dans Explicabilite, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte assurance, alors que ajustement du seuil, bruit de labels, loss robuste restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (bruit de labels correspond a un levier avance en apprentissage supervise ; il formalise le role de bruit de...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Explicabilite, loss robuste se comprend comme un levier avance en apprentissage supervise ; il formali...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Explicabilite, permutation importance se comprend comme un levier avance en apprentissage supervise ; ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (ajustement du seuil designe un levier avance en apprentissage supervise ; il formalise le role d'ajustemen...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Explicabilite', quelle erreur autour d'explication locale est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec SHAP est d'optimiser SHAP en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Si partial dependence est mal utilise, on observe souvent optimiser partial dependence en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de permutation importance est optimiser permutation importance en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour d'explication locale est optimiser explication locale en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'explication locale. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec SHAP est d'optimiser SHAP en silo et introduire des modes d'echec caches au deplo...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si partial dependence est mal utilise, on observe souvent optimiser partial dependence en silo et introduir...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour de permutation importance est optimiser permutation importance en silo et introdu...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour d'explication locale est optimiser explication locale en silo et introduire des ...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "partial dependence: dans un cas banque, quelle interpretation correspond le mieux au schema ML de 'Explicabilite' ?",
-      "image_url": "apprentissage-supervise_explicabilite_partial_dependence_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur explication locale: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer explication locale en production.",
-        "B": "Le schema illustre une d\u00e9cision basee sur partial dependence: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer partial dependence en production.",
-        "C": "Lecture du visuel: SHAP est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SHAP en production dans Explicabilite.",
-        "D": "Le signal visible est coh\u00e9rent avec permutation importance, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer permutation importance en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de partial dependence: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur explication locale: les indices orientent vers supporter des arbi...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur partial dependence: les indices orientent vers supporter des arbi...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: SHAP est mobilise pour supporter des arbitrages de production ; l'utiliser correctement ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec permutation importance, car l'objectif est supporter des arbitrages de ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "partial dependence: quel risque est le plus directement lie a son mauvais usage en production dans 'Explicabilite' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec explication locale est d'optimiser explication locale en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Un risque classique avec partial dependence est d'optimiser partial dependence en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Si SHAP est mal utilise, on observe souvent optimiser SHAP en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour de permutation importance est optimiser permutation importance en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de partial dependence. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec explication locale est d'optimiser explication locale en silo et introduire des m...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec partial dependence est d'optimiser partial dependence en silo et introduire des m...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si SHAP est mal utilise, on observe souvent optimiser SHAP en silo et introduire des modes d'echec caches a...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de permutation importance est optimiser permutation importance en silo et introdu...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Explicabilite' et en contexte cybersecurite, quelle interpretation du schema appuie le mieux l'analyse de SHAP ?",
-      "image_url": "apprentissage-supervise_explicabilite_shap_1.png",
-      "choices": {
-        "A": "Lecture du visuel: permutation importance est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer permutation importance en production dans Explicabilite.",
-        "B": "Le signal visible est coh\u00e9rent avec explication locale, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer explication locale en production.",
-        "C": "Le signal visible est coh\u00e9rent avec SHAP, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SHAP en production.",
-        "D": "Le schema illustre une d\u00e9cision basee sur partial dependence: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer partial dependence en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Les indices visuels vont dans le sens de SHAP: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Lecture du visuel: permutation importance est mobilise pour supporter des arbitrages de production ; l'util...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Le signal visible est coh\u00e9rent avec explication locale, car l'objectif est supporter des arbitrages de prod...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est correcte (Le signal visible est coh\u00e9rent avec SHAP, car l'objectif est supporter des arbitrages de production ; l'uti...) car la lecture visuelle colle au signal principal observe. D'est moins pertinente (Le schema illustre une d\u00e9cision basee sur partial dependence: les indices orientent vers supporter des arbi...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "partial dependence: dans 'Explicabilite', un schema met en evidence ce comportement. Quelle lecture est la plus juste ?",
-      "image_url": "apprentissage-supervise_explicabilite_partial_dependence_2.png",
-      "choices": {
-        "A": "Le role de partial dependence est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer partial dependence en production.",
-        "B": "SHAP sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer SHAP en production pour guider une d\u00e9cision exploitable.",
-        "C": "Dans Explicabilite, permutation importance est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer permutation importance en production.",
-        "D": "Le role d'explication locale est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer explication locale en production."
+        "A": "La contribution d'une caractéristique est évaluée en tenant compte de toutes les combinaisons possibles de caractéristiques.",
+        "B": "La contribution est estimée uniquement sur la base des observations erronées.",
+        "C": "La contribution d'une caractéristique est calculée en utilisant une moyenne pondérée des coefficients de régression.",
+        "D": "Le calcul est basé sur la fréquence d'apparition d'une variable dans l'ensemble d'entraînement."
       },
       "correct_answer": "A",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de partial dependence dans Explicabilite. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est correcte (Le role de partial dependence est de supporter des arbitrages de production ; l'utiliser correctement perme...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. B est moins pertinente (SHAP sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (Dans Explicabilite, permutation importance est mobilise pour supporter des arbitrages de production ; l'uti...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (Le role d'explication locale est de supporter des arbitrages de production ; l'utiliser correctement perme...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Les valeurs de Shapley sont calculées en évaluant la contribution marginale d'une caractéristique à travers toutes les combinaisons possibles de caractéristiques. Les autres options sont incorrectes car elles simplifient à tort ou dénaturent le calcul des valeurs de Shapley.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la fonction principale d'un graphique de Partial Dependence (PDP)?",
+      "image_url": null,
+      "choices": {
+        "A": "Montrer l'impact moyen d'une ou plusieurs caractéristiques sur la prédiction du modèle.",
+        "B": "Identifier les corrélations entre toutes les caractéristiques.",
+        "C": "Comparer la précision des modèles avec et sans une caractéristique particulière.",
+        "D": "Afficher les distributions de probabilité des sorties prédictives."
+      },
+      "correct_answer": "A",
+      "explanation": "Un graphique de Partial Dependence montre comment chaque variable affecte en moyenne la prédiction faite par le modèle. Les autres options sont incorrectes, car elles concernent des objectifs non liés aux PDP.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans l'analyse de l'importance par permutation, qu'est-ce qui est permuté?",
+      "image_url": null,
+      "choices": {
+        "A": "Les valeurs d'une caractéristique spécifique pour évaluer leur impact sur l'erreur du modèle.",
+        "B": "Les étiquettes de classe dans l'ensemble de validation.",
+        "C": "Les coefficients de poids dans une régression linéaire.",
+        "D": "Les hyperparamètres pendant le processus d'apprentissage."
+      },
+      "correct_answer": "A",
+      "explanation": "L'analyse de l'importance par permutation implique de permuter les valeurs d'une caractéristique sur l'ensemble de validation pour voir comment cela influence l'erreur prédictive. Les autres options sont incorrectes car elles impliquent des processus de permutation non pertinents pour cette méthode.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel aspect l'explication locale cherche-t-elle à éclaircir?",
+      "image_url": null,
+      "choices": {
+        "A": "Comment une approche de modélisation génère une prédiction pour une instance spécifique.",
+        "B": "Comment toutes les instances d'un dataset influencent le modèle global.",
+        "C": "La précision moyenne des prédictions du modèle.",
+        "D": "La stabilité des hyperparamètres sur l'ensemble d'entraînement."
+      },
+      "correct_answer": "A",
+      "explanation": "L'explication locale vise à comprendre comment une seule prédiction est générée par le modèle en analysant les contributions individuelles des caractéristiques pour cette instance. Les autres options ne se concentrent pas sur le niveau d'une instance individuelle.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Que mesure l'approche SHAP dans l'explicabilité de modèle?",
+      "image_url": null,
+      "choices": {
+        "A": "L'attribution de l'importance des features en utilisant les valeurs de Shapley.",
+        "B": "L'interaction entre les features en calculant les gradients.",
+        "C": "La métrique de performance des modèles après permutation des étiquettes.",
+        "D": "La robustesse d'un modèle en injectant du bruit dans les données d'entrée."
+      },
+      "correct_answer": "A",
+      "explanation": "SHAP (SHapley Additive exPlanations) utilise les valeurs de Shapley pour attribuer l'importance à chaque feature. B est faux car les gradients ne sont pas utilisés dans SHAP. C est incorrect car il s'agit de permutation importance, et D décrit un test de robustesse, pas SHAP.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle méthode permet de visualiser l'effet moyen d'une feature sur la prédiction d'un modèle?",
+      "image_url": null,
+      "choices": {
+        "A": "Courbes de dépendance partielle (PDP)",
+        "B": "SHAP",
+        "C": "Permutation importance",
+        "D": "Gradient boosting"
+      },
+      "correct_answer": "A",
+      "explanation": "Les courbes de dépendance partielle (PDP) montrent l'effet moyen d'une feature sur la prédiction. B est incorrect car SHAP explique les contributions individuelles. C mesure l'importance en permutant les valeurs, et D est une technique de modélisation, pas d'explication.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la principale utilité de l'importance par permutation?",
+      "image_url": null,
+      "choices": {
+        "A": "Évaluer l'importance des features en mesurant la diminution de performance après permutation.",
+        "B": "Obtenir une meilleure précision du modèle en ajustant l'hyperparamètre.",
+        "C": "Calculer la corrélation entre les features d'entrée.",
+        "D": "Augmenter la taille du jeu de données pour l'entraînement."
+      },
+      "correct_answer": "A",
+      "explanation": "La permutation importance mesure comment la performance du modèle diminue lorsque les valeurs d'une feature sont permutées. B est faux car il ne s'agit pas d'optimisation. C et D concernent les relations et la taille des données, non pas l'évaluation d'importance.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Dans quel contexte utiliseriez-vous une explication locale pour un modèle?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour comprendre des prédictions spécifiques pour un seul échantillon.",
+        "B": "Pour évaluer la performance globale d'un modèle sur un ensemble de test.",
+        "C": "Pour déterminer les hyperparamètres optimaux pour un modèle.",
+        "D": "Pour réduire le surapprentissage en ajoutant une régularisation."
+      },
+      "correct_answer": "A",
+      "explanation": "Les explications locales sont utilisées pour expliciter pourquoi une prédiction donnée a été faite pour un échantillon spécifique. B est incorrect car il concerne la performance globale. C et D se concentrent sur le réglage du modèle, pas sur l'explication individuelle.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Comment les valeurs de Shapley sont-elles calculées pour SHAP?",
+      "image_url": null,
+      "choices": {
+        "A": "En évaluant toutes les combinaisons possibles de valeurs de features.",
+        "B": "En calculant les dérivées partielles des features.",
+        "C": "En utilisant uniquement les interactions des deux premières features.",
+        "D": "En optimisant la fonction de perte avec SGD."
+      },
+      "correct_answer": "A",
+      "explanation": "Les valeurs de Shapley sont calculées en évaluant toutes les combinaisons possibles de valeurs de features et leur effet sur la prédiction. B est faux car il omet les combinaisons. C ignore les autres features, et D décrit une méthode d'optimisation, pas d'explication.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quels sont les indicateurs principaux d'une courbe de dépendance partielle?",
+      "image_url": null,
+      "choices": {
+        "A": "Variations de prédiction selon la valeur de la feature tracée.",
+        "B": "Les gradients des poids du modèle.",
+        "C": "La réduction de variance associée à chaque feature.",
+        "D": "Le nombre d'itérations lors de l'entraînement du modèle."
+      },
+      "correct_answer": "A",
+      "explanation": "Les courbes de dépendance partielle montrent comment les prédictions changent avec les valeurs des features. B et D sont incorrects car ils concernent l'optimisation du modèle, et C se réfère à la sélection des features, pas aux PDP.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel problème peut survenir lorsqu'on utilise l'importance par permutation?",
+      "image_url": null,
+      "choices": {
+        "A": "Sous-estimation de l'importance des features corrélées.",
+        "B": "Problème de non-convergence des gradients.",
+        "C": "Augmentation de la complexité du modèle.",
+        "D": "Réduction automatique des features non pertinentes."
+      },
+      "correct_answer": "A",
+      "explanation": "L'importance par permutation peut sous-estimer l'importance des features corrélées car elle évalue chaque feature indépendamment. B est faux car cela s'applique aux algorithmes d'entraînement. C et D ne sont pas des résultats de l'importance par permutation.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est une limitation typique des explications locales?",
+      "image_url": null,
+      "choices": {
+        "A": "Elles peuvent ne pas généraliser à d'autres échantillons.",
+        "B": "Elles nécessitent un modèle linéaire sous-jacent.",
+        "C": "Elles augmentent la variance du modèle.",
+        "D": "Elles ont besoin d'une grande quantité de données d'entraînement."
+      },
+      "correct_answer": "A",
+      "explanation": "Les explications locales sont spécifiques à un échantillon particulier et ne généralisent pas à d'autres. B est faux car n'importe quel modèle peut être expliqué localement. C est incorrect car cela concerne l'entraînement du modèle. D est une exigence posée sur le modèle, pas l'explication.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'avantage principal de l'utilisation de SHAP?",
+      "image_url": null,
+      "choices": {
+        "A": "Fournir des explications cohérentes et globales des modèles basées sur les théories du jeu.",
+        "B": "Minimiser l'erreur de prédiction grâce à une meilleure régularisation.",
+        "C": "Optimiser la performance en ajustant automatiquement les paramètres.",
+        "D": "Détecter des anomalies dans les données d'entraînement"
+      },
+      "correct_answer": "A",
+      "explanation": "SHAP utilise les valeurs de Shapley pour fournir des explications cohérentes basées sur la théorie des jeux. B et C concernent l'optimisation du modèle, et D n'est pas l'objectif principal de SHAP.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment une explication locale peut-elle être générée pour un modèle complexe?",
+      "image_url": null,
+      "choices": {
+        "A": "En utilisant des méthodes comme LIME ou une version simplifiée du modèle.",
+        "B": "En appliquant une réduction de dimension pour simplifier les features.",
+        "C": "En ajustant les hyperparamètres pour maximiser la justesse.",
+        "D": "En partitionnant le dataset et en utilisant l'arbre moyen."
+      },
+      "correct_answer": "A",
+      "explanation": "Les méthodes comme LIME approximant localement le comportement d'un modèle complexe avec un modèle simple. B utilise la réduction de dimension qui n'explique pas spécifiquement le modèle. C et D ne sont pas des techniques d'explicabilité.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un indicateur d'erreur lors de l'utilisation de courbes de dépendance partielle?",
+      "image_url": null,
+      "choices": {
+        "A": "Prétendre que la variation d'une seule feature n'affecte pas les autres.",
+        "B": "Assumer que les données sont distribuées uniformément.",
+        "C": "Ne pas utiliser de validation croisée pendant l'entraînement.",
+        "D": "Régulariser excessivement pour éviter le surajustement."
+      },
+      "correct_answer": "A",
+      "explanation": "Les courbes de dépendance partielle supposent que seule une feature est modifiée à la fois, ce qui peut être erroné si les features interagissent. B, C et D concernent des aspects de modélisation, pas un problème direct lié aux PDP.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce qui est essentiel pour interpréter l'importance par permutation correctement?",
+      "image_url": null,
+      "choices": {
+        "A": "L'absence de corrélation entre les features.",
+        "B": "Un modèle avec une fonction de coût quadratique.",
+        "C": "Un ensemble de données de test de grande taille.",
+        "D": "La présence de plusieurs hyperparamètres réglés."
+      },
+      "correct_answer": "A",
+      "explanation": "L'importance par permutation repose sur l'hypothèse que les features ne sont pas corrélées pour fournir des résultats précis. B, C, et D ne sont pas directement liés à l'interprétation correcte de la permutation importance.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi les valeurs de Shapley sont-elles considérées équitables?",
+      "image_url": null,
+      "choices": {
+        "A": "Elles attribuent une contribution à chaque feature basée sur toutes ses permutations.",
+        "B": "Elles maximisent l'accuracy du modèle global.",
+        "C": "Elles réduisent l'overfitting en simplifiant le modèle.",
+        "D": "Elles garantissent que chaque feature est incluse au moins une fois dans l'entraînement."
+      },
+      "correct_answer": "A",
+      "explanation": "Les valeurs de Shapley calculent la contribution de chaque feature en analysant toutes ses permutations, garantissant ainsi une distribution équitable. B et C concernent la performance du modèle, et D est incorrect car elle ne concerne pas l'équité.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un avantage clé des explications locales par rapport aux explications globales?",
+      "image_url": null,
+      "choices": {
+        "A": "Elles fournissent des informations détaillées sur une décision spécifique.",
+        "B": "Elles sont toujours moins coûteuses en temps de calcul.",
+        "C": "Elles peuvent s'appliquer directement à tout le système sans ajustement.",
+        "D": "Elles ne nécessitent aucun modèle sous-jacent pour fonctionner."
+      },
+      "correct_answer": "A",
+      "explanation": "Les explications locales fournissent des informations précises sur les décisions spécifiques d'un modèle. B est faux car le coût dépend du modèle. C et D sont incorrects car les explications locales sont spécifiques et nécessitent un modèle sous-jacent.",
       "difficulty": "hard"
     }
   ]

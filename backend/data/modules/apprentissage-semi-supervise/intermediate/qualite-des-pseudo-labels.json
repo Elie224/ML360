@@ -5,311 +5,311 @@
   "questions": [
     {
       "type": "text",
-      "question": "bruit de labels: quelle proposition en donne la meilleure d\u00e9finition dans 'Qualit\u00e9 des pseudo-labels' (contexte e-commerce) ?",
+      "question": "Quel est l'impact principal du bruit de labels sur les pseudo-labels en apprentissage semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "bruit de labels designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de bruit de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "independance conditionnelle correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'independance conditionnelle dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Qualit\u00e9 des pseudo-labels.",
-        "C": "Dans Qualit\u00e9 des pseudo-labels, echange de labels se comprend comme un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'echange de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "accord entre modeles designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'accord entre modeles dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Le bruit peut entraîner une diminution de la précision des modèles en cascade.",
+        "B": "Le bruit améliore systématiquement la généralisation du modèle.",
+        "C": "Le bruit n'affecte que la vitesse de convergence, pas la performance finale.",
+        "D": "Le bruit des labels augmente la complexité de calcul des pseudo-labels."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de bruit de labels dans Qualit\u00e9 des pseudo-labels, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte e-commerce, alors que independance conditionnelle, echange de labels, accord entre modeles restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (bruit de labels designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (independance conditionnelle correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il form...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Qualit\u00e9 des pseudo-labels, echange de labels se comprend comme un concept interm\u00e9diaire en apprentissa...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (accord entre modeles designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le rol...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le bruit dans les labels peut entraîner une diminution de la précision du modèle car les modèles se basent sur des informations erronées ou floues. Contrairement à l'affirmation B, le bruit ne conduit pas systématiquement à une meilleure généralisation. L'affirmation C est incorrecte car le bruit peut aussi affecter la performance finale. D est incorrect car le bruit ne modifie pas directement la complexité de calcul.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans 'Qualit\u00e9 des pseudo-labels' (industrie), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment correction ?",
+      "question": "Quel mécanisme est couramment utilisé pour corriger les erreurs de pseudo-label dues au bruit ?",
       "image_url": null,
       "choices": {
-        "A": "Dans Qualit\u00e9 des pseudo-labels, echange de labels se comprend comme un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'echange de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "accord entre modeles designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'accord entre modeles dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "score de confiance correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de score de confiance dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Qualit\u00e9 des pseudo-labels.",
-        "D": "correction correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de correction dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Qualit\u00e9 des pseudo-labels."
+        "A": "Utiliser un modèle de confiance pour écarter les labels les moins fiables.",
+        "B": "Augmenter la taille de l'ensemble de données sans filtrage.",
+        "C": "Ajouter du bruit supplémentaire pour masquer les erreurs existantes.",
+        "D": "Réduire le nombre de classes dans le problème."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de correction dans Qualit\u00e9 des pseudo-labels, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte industrie, alors que echange de labels, accord entre modeles, score de confiance restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Qualit\u00e9 des pseudo-labels, echange de labels se comprend comme un concept interm\u00e9diaire en apprentissa...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (accord entre modeles designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le rol...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (score de confiance correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (correction correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "L'utilisation d'un modèle de confiance pour écarter les labels les moins fiables aide à corriger les erreurs dues au bruit. Augmenter la taille sans filtrage (choix B) ne corrige pas spécifiquement le bruit. Ajouter du bruit (choix C) aggrave le problème. Réduire le nombre de classes (choix D) ne traite pas directement le bruit.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Pour une \u00e9quipe cybersecurite dans 'Qualit\u00e9 des pseudo-labels', quelle d\u00e9finition de reponderation est la plus juste ?",
+      "question": "Quelle est la principale raison d'utiliser des techniques de réponderation des labels en apprentissage semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "score de confiance correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de score de confiance dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Qualit\u00e9 des pseudo-labels.",
-        "B": "Dans Qualit\u00e9 des pseudo-labels, pr\u00e9cision attendue se comprend comme un concept interm\u00e9diaire en apprentissage semi supervise ; il mesure la proportion de predictions positives qui sont effectivement correctes.",
-        "C": "Dans Qualit\u00e9 des pseudo-labels, reponderation se comprend comme un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de reponderation dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "accord entre modeles designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'accord entre modeles dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Atténuer l'impact des labels bruyants sur l'apprentissage du modèle.",
+        "B": "Éliminer complètement le bruit des pseudo-labels.",
+        "C": "Faire converger le modèle plus rapidement.",
+        "D": "Augmenter artificiellement le nombre de labels disponibles."
       },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de reponderation dans Qualit\u00e9 des pseudo-labels, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que accord entre modeles, score de confiance, pr\u00e9cision attendue restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (score de confiance correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Qualit\u00e9 des pseudo-labels, pr\u00e9cision attendue se comprend comme un concept interm\u00e9diaire en apprentiss...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Qualit\u00e9 des pseudo-labels, reponderation se comprend comme un concept interm\u00e9diaire en apprentissage s...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (accord entre modeles designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le rol...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La réponderation des labels est utilisée pour atténuer l'impact des labels bruyants et améliorer l'apprentissage. Éliminer complètement le bruit (B) est généralement irréaliste. Bien que C soit un effet possible, ce n'est pas la raison principale. D est incorrect car la réponderation ne crée pas de nouveaux labels.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "ensemble teacher-student: quelle proposition en donne la meilleure d\u00e9finition dans 'Qualit\u00e9 des pseudo-labels' (contexte banque) ?",
+      "question": "Dans une approche teacher-student, quel est le rôle principal du modèle teacher ?",
       "image_url": null,
       "choices": {
-        "A": "trade-off couverture designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de trade-off couverture dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "ensemble teacher-student designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'ensemble teacher-student dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "score de confiance correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de score de confiance dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Qualit\u00e9 des pseudo-labels.",
-        "D": "Dans Qualit\u00e9 des pseudo-labels, pr\u00e9cision attendue se comprend comme un concept interm\u00e9diaire en apprentissage semi supervise ; il mesure la proportion de predictions positives qui sont effectivement correctes."
+        "A": "Il génère des pseudo-labels pour guider l'entraînement du modèle student.",
+        "B": "Il ajuste directement les paramètres du modèle student.",
+        "C": "Il augmente la capacité de calcul globale du système.",
+        "D": "Il évalue la performance du modèle student après l'entraînement."
       },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'ensemble teacher-student dans Qualit\u00e9 des pseudo-labels, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que score de confiance, pr\u00e9cision attendue, trade-off couverture restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (trade-off couverture designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le rol...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (ensemble teacher-student designe un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (score de confiance correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans Qualit\u00e9 des pseudo-labels, pr\u00e9cision attendue se comprend comme un concept interm\u00e9diaire en apprentiss...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Le modèle teacher génère des pseudo-labels qui sont ensuite utilisés pour guider le modèle student. B est incorrect car le teacher ne modifie pas directement les paramètres du student. C est incorrect car la capacité de calcul n'est pas directement augmentée par cette relation. D est incorrect, car bien que l'évaluation soit possible, ce n'est pas sa fonction principale.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "A partir de cette description issue de 'Qualit\u00e9 des pseudo-labels' (un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de bruit de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques.), quel concept faut-il retenir ?",
+      "question": "Quel problème peut survenir si les pseudo-labels générés par le modèle teacher sont beaucoup trop confiants ?",
       "image_url": null,
       "choices": {
-        "A": "bruit de labels correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de bruit de labels dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel de bruit de labels.",
-        "B": "Le concept reponderation se reconnait par un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de reponderation dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Quand une d\u00e9finition insiste sur un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'ensemble teacher-student dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a ensemble teacher-student.",
-        "D": "enseignant initial: un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'enseignant initial dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "Le modèle student peut surapprendre sur les erreurs commises par le teacher.",
+        "B": "Le modèle teacher cesse de générer de nouveaux labels.",
+        "C": "Le modèle student devient indépendant du modèle teacher.",
+        "D": "Le modèle total perd la capacité de généralisation."
       },
       "correct_answer": "A",
-      "explanation": "Le concept attendu est bruit de labels, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Qualit\u00e9 des pseudo-labels. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est correcte (bruit de labels correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le rol...) car la d\u00e9finition correspond exactement au concept attendu. B est moins pertinente (Le concept reponderation se reconnait par un concept interm\u00e9diaire en apprentissage semi supervise ; il for...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est moins pertinente (Quand une d\u00e9finition insiste sur un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est moins pertinente (enseignant initial: un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'ense...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Si les pseudo-labels sont trop confiants, le modèle student pourrait renforcer les erreurs, menant à un surapprentissage. B est faux car la génération de labels se poursuit indépendamment de la confiance. C est incorrect car le student ne devient pas automatiquement indépendant. D est faux car la perte de généralisation n'est pas directement causée par la confiance des labels.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Description experte (Qualit\u00e9 des pseudo-labels) - un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de correction dans un pipeline ML, avec ses hypotheses et ses limites pratiques. Quel concept est le plus exact ?",
+      "question": "Comment un modèle student peut-il être entraîné pour ignorer les pseudo-labels les moins fiables ?",
       "image_url": null,
       "choices": {
-        "A": "Quand une d\u00e9finition insiste sur un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'ensemble teacher-student dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a ensemble teacher-student.",
-        "B": "enseignant initial: un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'enseignant initial dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "re-entrainement correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de re-entrainement dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel de re-entrainement.",
-        "D": "Le concept correction se reconnait par un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de correction dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "D",
-      "explanation": "Le concept attendu est correction, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Qualit\u00e9 des pseudo-labels. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (Quand une d\u00e9finition insiste sur un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est moins pertinente (enseignant initial: un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'ense...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est moins pertinente (re-entrainement correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le rol...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est correcte (Le concept correction se reconnait par un concept interm\u00e9diaire en apprentissage semi supervise ; il formal...) car la d\u00e9finition correspond exactement au concept attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Qualit\u00e9 des pseudo-labels', quel concept correspond le mieux a cette description: un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de reponderation dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-      "image_url": null,
-      "choices": {
-        "A": "re-entrainement correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de re-entrainement dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel de re-entrainement.",
-        "B": "Le concept selection confiante se reconnait par un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de selection confiante dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Quand une d\u00e9finition insiste sur un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de reponderation dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a reponderation.",
-        "D": "enseignant initial: un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'enseignant initial dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "Le concept attendu est reponderation, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Qualit\u00e9 des pseudo-labels. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (re-entrainement correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le rol...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est moins pertinente (Le concept selection confiante se reconnait par un concept interm\u00e9diaire en apprentissage semi supervise ; ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est correcte (Quand une d\u00e9finition insiste sur un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le...) car la d\u00e9finition correspond exactement au concept attendu. D'est moins pertinente (enseignant initial: un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'ense...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "A partir de cette description issue de 'Qualit\u00e9 des pseudo-labels' (un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'ensemble teacher-student dans un pipeline ML, avec ses hypotheses et ses limites pratiques.), quel concept faut-il retenir ?",
-      "image_url": null,
-      "choices": {
-        "A": "Quand une d\u00e9finition insiste sur un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'accumulation d'erreurs dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a accumulation d'erreurs.",
-        "B": "ensemble teacher-student: un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d'ensemble teacher-student dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "re-entrainement correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de re-entrainement dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel de re-entrainement.",
-        "D": "Le concept selection confiante se reconnait par un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role de selection confiante dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "B",
-      "explanation": "Le concept attendu est ensemble teacher-student, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Qualit\u00e9 des pseudo-labels. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (Quand une d\u00e9finition insiste sur un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est correcte (ensemble teacher-student: un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le role d...) car la d\u00e9finition correspond exactement au concept attendu. C'est moins pertinente (re-entrainement correspond a un concept interm\u00e9diaire en apprentissage semi supervise ; il formalise le rol...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est moins pertinente (Le concept selection confiante se reconnait par un concept interm\u00e9diaire en apprentissage semi supervise ; ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Qualit\u00e9 des pseudo-labels', quel est le role le plus determinant de bruit de labels pour un cas e-commerce ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Qualit\u00e9 des pseudo-labels, correction est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer correction en production.",
-        "B": "Le role de reponderation est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reponderation en production.",
-        "C": "ensemble teacher-student sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ensemble teacher-student en production pour guider une d\u00e9cision exploitable.",
-        "D": "bruit de labels sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bruit de labels en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie bruit de labels \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Qualit\u00e9 des pseudo-labels, correction est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role de reponderation est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (ensemble teacher-student sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (bruit de labels sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin industrie dans 'Qualit\u00e9 des pseudo-labels', pourquoi correction est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "reponderation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reponderation en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Qualit\u00e9 des pseudo-labels, ensemble teacher-student est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ensemble teacher-student en production.",
-        "C": "Dans Qualit\u00e9 des pseudo-labels, correction est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer correction en production.",
-        "D": "Le role de bruit de labels est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bruit de labels en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie correction \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (reponderation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Qualit\u00e9 des pseudo-labels, ensemble teacher-student est mobilise pour fiabiliser les d\u00e9cisions d'exper...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Qualit\u00e9 des pseudo-labels, correction est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de bruit de labels est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement perm...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "reponderation: pourquoi ce concept est-il crucial pour une \u00e9quipe cybersecurite dans 'Qualit\u00e9 des pseudo-labels' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role d'ensemble teacher-student est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ensemble teacher-student en production.",
-        "B": "Le role de reponderation est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reponderation en production.",
-        "C": "bruit de labels sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bruit de labels en production pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Qualit\u00e9 des pseudo-labels, correction est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer correction en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie reponderation \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role d'ensemble teacher-student est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correcte...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role de reponderation est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (bruit de labels sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Qualit\u00e9 des pseudo-labels, correction est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Qualit\u00e9 des pseudo-labels', quel est le role le plus determinant d'ensemble teacher-student pour un cas banque ?",
-      "image_url": null,
-      "choices": {
-        "A": "ensemble teacher-student sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ensemble teacher-student en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Qualit\u00e9 des pseudo-labels, bruit de labels est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bruit de labels en production.",
-        "C": "Le role de correction est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer correction en production.",
-        "D": "reponderation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reponderation en production pour guider une d\u00e9cision exploitable."
+        "A": "En appliquant une réponderation basée sur la confiance estimée des labels.",
+        "B": "En doublant la taille de l'ensemble de données.",
+        "C": "En remplaçant les pseudo-labels non fiables par des labels aléatoires.",
+        "D": "En réduisant le nombre d'époques d'entraînement."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie ensemble teacher-student \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (ensemble teacher-student sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Qualit\u00e9 des pseudo-labels, bruit de labels est mobilise pour fiabiliser les d\u00e9cisions d'experimentatio...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de correction est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (reponderation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La réponderation basée sur la confiance permet de diminuer l'impact des labels peu fiables. Doubler la taille (B) ne cible pas directement les labels. C est faux car des choix aléatoires n'améliorent pas la fiabilité. Réduire les époques (D) ne traite pas spécifiquement le problème des labels non fiables.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Qualit\u00e9 des pseudo-labels', quelle situation de terrain montre le mieux quand utiliser bruit de labels ?",
+      "question": "Quelle méthode de correction des labels pourrait aider à améliorer la qualité des pseudo-labels ?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Qualit\u00e9 des pseudo-labels, ensemble teacher-student est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ensemble teacher-student en production.",
-        "B": "En contexte r\u00e9el sur Qualit\u00e9 des pseudo-labels, bruit de labels est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bruit de labels en production.",
-        "C": "Pendant une phase d'experimentation, correction est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer correction en production tout en surveillant le risque de sur-optimiser correction localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Dans une phase d'experimentation de Qualit\u00e9 des pseudo-labels, l'\u00e9quipe applique reponderation pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reponderation en production."
+        "A": "Utiliser un réseau de confusion pour identifier les erreurs systématiques.",
+        "B": "Rendre tous les pseudo-labels équi-probables.",
+        "C": "Standardiser les features des données d'entrée.",
+        "D": "Capturer plus de données d'entraînement simples."
       },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car bruit de labels y sert de levier de d\u00e9cision principal dans Qualit\u00e9 des pseudo-labels. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Qualit\u00e9 des pseudo-labels, ensemble teacher-student est choisi afin de fiabiliser les ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Qualit\u00e9 des pseudo-labels, bruit de labels est choisi afin de fiabiliser les d\u00e9cisions...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une phase d'experimentation, correction est utile pour fiabiliser les d\u00e9cisions d'experimentation ;...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une phase d'experimentation de Qualit\u00e9 des pseudo-labels, l'\u00e9quipe applique reponderation pour fiabili...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Un réseau de confusion peut mettre en évidence les erreurs systématiques dans les labels. B est incorrect car rendre les labels équi-probables ignore complètement la variation naturelle des données. C est lié à la pré-traitement des features, pas à la correction des labels. D ne traite pas les erreurs de labels existantes.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour un cas operationnel de 'Qualit\u00e9 des pseudo-labels', quel exemple met correction au c\u0153ur de la d\u00e9cision ?",
+      "question": "Quelle situation peut provoquer un surajustement lors de l'utilisation d'un ensemble teacher-student ?",
       "image_url": null,
       "choices": {
-        "A": "Pendant une phase d'experimentation, correction est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer correction en production tout en surveillant le risque de sur-optimiser correction localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Dans une phase d'experimentation de Qualit\u00e9 des pseudo-labels, l'\u00e9quipe applique bruit de labels pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bruit de labels en production.",
-        "C": "En contexte r\u00e9el sur Qualit\u00e9 des pseudo-labels, reponderation est choisi afin de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reponderation en production.",
-        "D": "Pendant une phase d'experimentation, ensemble teacher-student est utile pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ensemble teacher-student en production tout en surveillant le risque de sur-optimiser ensemble teacher-student localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Le modèle student apprend trop exclusivement à partir des pseudo-labels du teacher.",
+        "B": "Le teacher produit systématiquement des labels incorrects.",
+        "C": "Les données d'entraînement sont excessivement variées.",
+        "D": "Le student ne reçoit jamais de rétroaction sur ses erreurs."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car correction y sert de levier de d\u00e9cision principal dans Qualit\u00e9 des pseudo-labels. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une phase d'experimentation, correction est utile pour fiabiliser les d\u00e9cisions d'experimentation ;...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une phase d'experimentation de Qualit\u00e9 des pseudo-labels, l'\u00e9quipe applique bruit de labels pour fiabi...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Qualit\u00e9 des pseudo-labels, reponderation est choisi afin de fiabiliser les d\u00e9cisions d...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une phase d'experimentation, ensemble teacher-student est utile pour fiabiliser les d\u00e9cisions d'exp...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le surajustement peut se produire si le student apprend trop exclusivement des pseudo-labels produits par le teacher, incluant les éventuelles erreurs. B contribuerait à un surajustement s'il n'y avait pas d'autres sources de données, mais les termes du problème sont différents. C n'est pas un facteur de surajustement, et D est incorrect car le student reçoit souvent des rétroactions.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Qualit\u00e9 des pseudo-labels', quelle erreur autour de bruit de labels est la plus critique ?",
+      "question": "Pourquoi l'étalonnage des modèles est-il crucial lors de l'utilisation de pseudo-labels ?",
       "image_url": null,
       "choices": {
-        "A": "Si reponderation est mal utilise, on observe souvent sur-optimiser reponderation localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour d'ensemble teacher-student est sur-optimiser ensemble teacher-student localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Le piege principal autour de bruit de labels est sur-optimiser bruit de labels localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Un risque classique avec correction est de sur-optimiser correction localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Il assure que les probabilités des sorties sont interprétées correctement.",
+        "B": "Il rééquilibre automatiquement la distribution des classes.",
+        "C": "Il permet d'augmenter la vitesse d'entraînement.",
+        "D": "Il garantit une utilisation optimale de la mémoire."
       },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de bruit de labels. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si reponderation est mal utilise, on observe souvent sur-optimiser reponderation localement en ignorant ses...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour d'ensemble teacher-student est sur-optimiser ensemble teacher-student localement...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de bruit de labels est sur-optimiser bruit de labels localement en ignorant ses i...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec correction est de sur-optimiser correction localement en ignorant ses interactions...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "L'étalonnage assure que les probabilités de sorties reflètent correctement la confiance en un label, pertinent pour l'interprétation et l'ajustement du modèle. B ne concerne pas directement l'étalonnage. C et D ne sont pas des fonctions primaires de l'étalonnage.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel bénéfice apporte la validation croisée sur les pseudo-labels dans un ensemble teacher-student ?",
+      "image_url": null,
+      "choices": {
+        "A": "Évaluer la fiabilité des pseudo-labels générés.",
+        "B": "Réduire la taille totale de l'ensemble de données.",
+        "C": "Transformer les données brutes en features.",
+        "D": "Assurer la symétrie dans la structure du modèle."
+      },
+      "correct_answer": "A",
+      "explanation": "La validation croisée permet d'évaluer la fiabilité des pseudo-labels en observant leur performance préliminaire. B est incorrect et C concerne le prétraitement des données, pas l'évaluation des labels. D est un concept lié à la structure des modèles, pas à l'évaluation des labels.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "En apprentissage semi-supervisé, que signifie 'nettoyer' les pseudo-labels ?",
+      "image_url": null,
+      "choices": {
+        "A": "Supprimer ou corriger les pseudo-labels identifiés comme bruyants.",
+        "B": "Normaliser les caractéristiques de la donnée au niveau du dataset.",
+        "C": "Redistribuer uniformément les classes cibles.",
+        "D": "Augmenter la taille des mini-lots pendant l'entraînement."
+      },
+      "correct_answer": "A",
+      "explanation": "'Nettoyer' les pseudo-labels signifie ajuster ou écarter ceux qui ont été identifiés comme incorrects ou peu fiables. B et C traitent des données de manière générale, non spécifiquement des pseudo-labels. D, bien que pertinent pour l'entraînement, ne modifie en rien les pseudo-labels.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le risque d'utiliser des pseudo-labels trop tôt dans le processus d'apprentissage semi-supervisé ?",
+      "image_url": null,
+      "choices": {
+        "A": "Le modèle peut amplifier les erreurs initiales.",
+        "B": "Le modèle cesse de mettre à jour ses paramètres.",
+        "C": "Les données d'entrée deviennent biaisées.",
+        "D": "La structure du modèle pourrait être modifiée de manière non supervisée."
+      },
+      "correct_answer": "A",
+      "explanation": "Utiliser trop tôt des pseudo-labels peut amener le modèle à amplifier les erreurs initiales, car il ne peut pas encore distinguer efficacement le signal du bruit. B est incorrect puisque le modèle continue de s'adapter. C est une conséquence, mais pas un risque direct dans cette phase. D concerne la construction du modèle, pas l'utilisation de pseudo-labels.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quelle stratégie pourrait aider à améliorer la robustesse d'un modèle student ?",
+      "image_url": null,
+      "choices": {
+        "A": "Utiliser des ensembliers pour générer les pseudo-labels.",
+        "B": "Réduire la dimensionnalité des données d'entrée.",
+        "C": "Modifier la fonction de perte pour minimiser l'entropie.",
+        "D": "Remplacer les activations non-linéaires par des linéaires."
+      },
+      "correct_answer": "A",
+      "explanation": "Utiliser des ensembliers pour générer des pseudo-labels peut aider à réduire le biais et augmenter la robustesse. B et D sont des transformations des données ou des architectures qui n'améliorent pas spécifiquement la sécurité des pseudo-labels. C, bien que pertinent pour ajuster l'attention sur certaines entrées, ne touche pas directement à la robustesse face aux labels biaisés.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel indicateur pourrait suggérer une amélioration nécessaire des pseudo-labels générés par le modèle teacher ?",
+      "image_url": null,
+      "choices": {
+        "A": "Une convergence rapide avec résultats insatisfaisants.",
+        "B": "Des temps d'entraînement allongés.",
+        "C": "Un nombre croissant d'erreurs système lors de l'inférence.",
+        "D": "Des pertes modérément élevées avec forte précision individuelle."
+      },
+      "correct_answer": "A",
+      "explanation": "Une convergence rapide suivie de résultats insatisfaisants pourrait indiquer que les pseudo-labels ne sont pas assez qualitatifs pour promouvoir un apprentissage pertinent. B est souvent indépendant de la qualité, et C ne s'applique pas aux labels. D est plus une anomalie de métrique qu'un indicatif de qualité.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il important d'évaluer régulièrement la qualité des pseudo-labels en cours de formation ?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour ajuster l'entraînement et réduire le risque d'apprentissage négatif.",
+        "B": "Pour assurer une convergence à un maximum global.",
+        "C": "Pour minimiser le temps de calcul par mini-lot.",
+        "D": "Pour synchroniser l'entraînement sur plusieurs machines."
+      },
+      "correct_answer": "A",
+      "explanation": "Évaluer les pseudo-labels permet d'ajuster la formation et d'éviter l'apprentissage négatif qui pourrait empêcher une bonne généralisation. B est un objectif, mais pas directement lié à la qualité des labels. C est une optimisation de la performance plutôt que du label. D, bien que pertinent pour le calcul distribué, ne concerne pas la qualité des pseudo-labels.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "correction: quel risque est le plus directement lie a son mauvais usage en production dans 'Qualit\u00e9 des pseudo-labels' ?",
+      "question": "Quel est un indicateur de bruit de labels qui pourrait nécessiter une repondération des pseudo-labels ?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec ensemble teacher-student est de sur-optimiser ensemble teacher-student localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Un risque classique avec correction est de sur-optimiser correction localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Si bruit de labels est mal utilise, on observe souvent sur-optimiser bruit de labels localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Le piege principal autour de reponderation est sur-optimiser reponderation localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Un désaccord persistant entre prédictions et observations sur un sous-ensemble.",
+        "B": "Un excès de convergence sur les premières époques.",
+        "C": "Un nombre égal de faux positifs et faux négatifs.",
+        "D": "Une disparition soudaine de gradient lors de l'entraînement."
       },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de correction. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec ensemble teacher-student est de sur-optimiser ensemble teacher-student localement ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec correction est de sur-optimiser correction localement en ignorant ses interactions...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si bruit de labels est mal utilise, on observe souvent sur-optimiser bruit de labels localement en ignorant...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour de reponderation est sur-optimiser reponderation localement en ignorant ses inter...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "Un désaccord constant pourrait indiquer la présence d'un bruit de label, nécessaire pour une intervention telle que la repondération. B pourrait être attribué à d'autres causes comme l'overfitting précoce. C ne reflète pas nécessairement un bruit de label, et D est généralement lié à des problèmes d'apprentissage indépendants des labels.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Qualit\u00e9 des pseudo-labels', quel est le principal mode d'echec quand reponderation est mal applique ?",
+      "question": "Quelle est une conséquence possible de la surpondération des pseudo-labels considérés comme sûrs ?",
       "image_url": null,
       "choices": {
-        "A": "Si reponderation est mal utilise, on observe souvent sur-optimiser reponderation localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "B": "Le piege principal autour de bruit de labels est sur-optimiser bruit de labels localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "C": "Un risque classique avec correction est de sur-optimiser correction localement en ignorant ses interactions avec features, metriques et protocoles de validation.",
-        "D": "Si ensemble teacher-student est mal utilise, on observe souvent sur-optimiser ensemble teacher-student localement en ignorant ses interactions avec features, metriques et protocoles de validation."
+        "A": "Le surapprentissage des exemples considérés comme sûrs.",
+        "B": "Réduction de la génération des fonctionnalités non supervisées.",
+        "C": "Divergence rapide de la fonction de coût.",
+        "D": "Inversion des gradients de confirmation."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de reponderation. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si reponderation est mal utilise, on observe souvent sur-optimiser reponderation localement en ignorant ses...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de bruit de labels est sur-optimiser bruit de labels localement en ignorant ses i...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec correction est de sur-optimiser correction localement en ignorant ses interactions...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si ensemble teacher-student est mal utilise, on observe souvent sur-optimiser ensemble teacher-student loca...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "La surpondération de pseudo-labels sûr peut conduire à un surapprentissage de ces exemples, négligeant la variabilité globale des données. B, C et D ne sont ni des conséquences directes de cet ajustement, ni définies dans le contexte de reponderation.",
       "difficulty": "hard"
     },
     {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec bruit de labels dans 'Qualit\u00e9 des pseudo-labels' ?",
-      "image_url": "apprentissage-semi-supervise_qualite_des_pseudo_labels_bruit_de_labels_2.png",
+      "type": "text",
+      "question": "Quel problème peut survenir si l'ajustement des poids pour compenser le bruit de labels est excessif ?",
+      "image_url": null,
       "choices": {
-        "A": "Dans Qualit\u00e9 des pseudo-labels, ensemble teacher-student est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ensemble teacher-student en production.",
-        "B": "Dans Qualit\u00e9 des pseudo-labels, bruit de labels est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bruit de labels en production.",
-        "C": "Le role de correction est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer correction en production.",
-        "D": "reponderation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reponderation en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de bruit de labels dans Qualit\u00e9 des pseudo-labels. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Qualit\u00e9 des pseudo-labels, ensemble teacher-student est mobilise pour fiabiliser les d\u00e9cisions d'exper...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Qualit\u00e9 des pseudo-labels, bruit de labels est mobilise pour fiabiliser les d\u00e9cisions d'experimentatio...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de correction est de fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (reponderation sert a fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Qualit\u00e9 des pseudo-labels' et en contexte e-commerce, quelle interpretation du schema appuie le mieux l'analyse de bruit de labels ?",
-      "image_url": "apprentissage-semi-supervise_qualite_des_pseudo_labels_bruit_de_labels_1.png",
-      "choices": {
-        "A": "Lecture du visuel: reponderation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reponderation en production dans Qualit\u00e9 des pseudo-labels.",
-        "B": "Le signal visible est coh\u00e9rent avec ensemble teacher-student, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ensemble teacher-student en production.",
-        "C": "Le signal visible est coh\u00e9rent avec bruit de labels, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bruit de labels en production.",
-        "D": "Le schema illustre une d\u00e9cision basee sur correction: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer correction en production."
-      },
-      "correct_answer": "C",
-      "explanation": "Les indices visuels vont dans le sens de bruit de labels: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Lecture du visuel: reponderation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Le signal visible est coh\u00e9rent avec ensemble teacher-student, car l'objectif est fiabiliser les d\u00e9cisions d...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est correcte (Le signal visible est coh\u00e9rent avec bruit de labels, car l'objectif est fiabiliser les d\u00e9cisions d'experime...) car la lecture visuelle colle au signal principal observe. D'est moins pertinente (Le schema illustre une d\u00e9cision basee sur correction: les indices orientent vers fiabiliser les d\u00e9cisions d...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "correction: dans un cas industrie, quelle interpretation correspond le mieux au schema ML de 'Qualit\u00e9 des pseudo-labels' ?",
-      "image_url": "apprentissage-semi-supervise_qualite_des_pseudo_labels_correction_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur ensemble teacher-student: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ensemble teacher-student en production.",
-        "B": "Le schema illustre une d\u00e9cision basee sur correction: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer correction en production.",
-        "C": "Lecture du visuel: bruit de labels est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bruit de labels en production dans Qualit\u00e9 des pseudo-labels.",
-        "D": "Le signal visible est coh\u00e9rent avec reponderation, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reponderation en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de correction: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur ensemble teacher-student: les indices orientent vers fiabiliser l...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur correction: les indices orientent vers fiabiliser les d\u00e9cisions d...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: bruit de labels est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utilise...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec reponderation, car l'objectif est fiabiliser les d\u00e9cisions d'experiment...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Observation visuelle (Qualit\u00e9 des pseudo-labels) - pour un contexte cybersecurite, quelle lecture du schema est la plus pertinente pour reponderation ?",
-      "image_url": "apprentissage-semi-supervise_qualite_des_pseudo_labels_reponderation_1.png",
-      "choices": {
-        "A": "Lecture du visuel: reponderation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reponderation en production dans Qualit\u00e9 des pseudo-labels.",
-        "B": "Le signal visible est coh\u00e9rent avec bruit de labels, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bruit de labels en production.",
-        "C": "Le schema illustre une d\u00e9cision basee sur correction: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer correction en production.",
-        "D": "Lecture du visuel: ensemble teacher-student est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ensemble teacher-student en production dans Qualit\u00e9 des pseudo-labels."
+        "A": "Compromission de la diversité du modèle en formation.",
+        "B": "Réduction du cadre d'hyperparamètres possibles.",
+        "C": "Boost imposé sur les classes sous-représentées.",
+        "D": "Augmentation de l'instabilité du gradient pendant l'entraînement."
       },
       "correct_answer": "A",
-      "explanation": "Les indices visuels vont dans le sens de reponderation: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est correcte (Lecture du visuel: reponderation est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser ...) car la lecture visuelle colle au signal principal observe. B est moins pertinente (Le signal visible est coh\u00e9rent avec bruit de labels, car l'objectif est fiabiliser les d\u00e9cisions d'experime...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le schema illustre une d\u00e9cision basee sur correction: les indices orientent vers fiabiliser les d\u00e9cisions d...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Lecture du visuel: ensemble teacher-student est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; ...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Un ajustement excessif des poids peut compromettre la diversité en focalisant trop l'apprentissage, négligeant d'autres aspects de généralisation. B ne concerne pas directement ce type de modulation et C, bien que correct dans un autre contexte, n'est pas la conséquence immédiate d'un ajustement excessif lié au bruit. D est plausible, mais il est moins fréquemment perçu que la diversification compromise.",
       "difficulty": "hard"
     },
     {
-      "type": "image",
-      "question": "Dans 'Qualit\u00e9 des pseudo-labels' et en contexte banque, quelle interpretation du schema appuie le mieux l'analyse d'ensemble teacher-student ?",
-      "image_url": "apprentissage-semi-supervise_qualite_des_pseudo_labels_ensemble_teacher_student_1.png",
+      "type": "text",
+      "question": "Dans un ensemble teacher-student, pourquoi pourrait-on introduire une régularisation sur le modèle student ?",
+      "image_url": null,
       "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur bruit de labels: les indices orientent vers fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bruit de labels en production.",
-        "B": "Lecture du visuel: correction est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer correction en production dans Qualit\u00e9 des pseudo-labels.",
-        "C": "Le signal visible est coh\u00e9rent avec reponderation, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer reponderation en production.",
-        "D": "Le signal visible est coh\u00e9rent avec ensemble teacher-student, car l'objectif est fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer ensemble teacher-student en production."
+        "A": "Pour prévenir le surapprentissage des erreurs du teacher.",
+        "B": "Pour accélérer l'apprentissage du modèle par le teacher.",
+        "C": "Pour diluer l'influence des données étiquetées.",
+        "D": "Pour améliorer la communication entre teacher et student."
       },
-      "correct_answer": "D",
-      "explanation": "Les indices visuels vont dans le sens d'ensemble teacher-student: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur bruit de labels: les indices orientent vers fiabiliser les decisi...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Lecture du visuel: correction est mobilise pour fiabiliser les d\u00e9cisions d'experimentation ; l'utiliser cor...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le signal visible est coh\u00e9rent avec reponderation, car l'objectif est fiabiliser les d\u00e9cisions d'experiment...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est correcte (Le signal visible est coh\u00e9rent avec ensemble teacher-student, car l'objectif est fiabiliser les d\u00e9cisions d...) car la lecture visuelle colle au signal principal observe. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "correct_answer": "A",
+      "explanation": "La régularisation du modèle student peut limiter l'attention excessive sur les erreurs commises par le modèle teacher, évitant ainsi le surapprentissage de ces erreurs. B est incorrect car l'objectif n'est pas d'accélérer l'apprentissage par le teacher. C n'est pas pertinent dans ce contexte, et D est incorrect car la régularisation n'améliore pas la communication directe.",
       "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le rôle d'une fonction de coût asymétrique dans la gestion des pseudo-labels ?",
+      "image_url": null,
+      "choices": {
+        "A": "Penaliser plus fortement les erreurs sur les pseudo-labels.",
+        "B": "Favoriser un balance entre temps de traitement et précision.",
+        "C": "Ajuster dynamiquement la distribution des données d'entrée.",
+        "D": "Maximiser l'écart entre précision et rappel."
+      },
+      "correct_answer": "A",
+      "explanation": "Une fonction de coût asymétrique peut pénaliser plus sévèrement les erreurs sur des pseudo-labels pour favoriser la correction des erreurs systématiques. B, C et D sont des interprétations erronées de l'objectif principal de l'asymétrie dans une fonction de coût.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'effet du bruit de labels sur les pseudo-labels dans un cadre d'apprentissage semi-supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Il peut conduire à une propagation d'erreurs dans le modèle d'étiquetage.",
+        "B": "Il améliore la généralisation du modèle en ajoutant de la diversité.",
+        "C": "Il n'a pas d'impact significatif sur la qualité des pseudo-labels.",
+        "D": "Il est nécessaire pour entraîner un modèle ensemble teacher-student."
+      },
+      "correct_answer": "A",
+      "explanation": "Le bruit de labels fait référence aux erreurs dans les informations de classe fournies, ce qui peut propager des erreurs et diminuer la précision du modèle lorsque les pseudo-labels sont générés sur des échantillons non étiquetés. Choix B est incorrect car le bruit ne sert pas à améliorer la généralisation mais peut nuire aux performances. Choix C est inexact car le bruit a un impact significatif sur la qualité des pseudo-labels. Choix D est incorrect car le bruit n'est pas nécessaire pour entraîner un modèle ensemble teacher-student.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le rôle principal de la reponderation dans la gestion des pseudo-labels bruités?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle ajuste l'importance de chaque pseudo-label basé sur sa fiabilité estimée.",
+        "B": "Elle diminue systématiquement le poids des pseudo-labels les plus récents.",
+        "C": "Elle augmente le poids des pseudo-labels correspondant aux classes majoritaires.",
+        "D": "Elle élimine complètement les pseudo-labels associés à des classes rares."
+      },
+      "correct_answer": "A",
+      "explanation": "La reponderation est utilisée pour attribuer un poids différent aux pseudo-labels en fonction de leur fiabilité estimée, minimisant ainsi l'impact des erreurs due au bruit. Choix B est incorrect car la reponderation n'affecte pas les pseudo-labels en fonction du temps. Choix C est incorrect car augmenter le poids des classes majoritaires pourrait aggraver le déséquilibre des données. Choix D est inexact car l'élimination complète des pseudo-labels de classes rares peut entraîner des pertes d'information critiques.",
+      "difficulty": "medium"
     }
   ]
 }

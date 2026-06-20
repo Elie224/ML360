@@ -5,450 +5,450 @@
   "questions": [
     {
       "type": "text",
-      "question": "drift de politique: quelle proposition en donne la meilleure d\u00e9finition dans 'Monitoring RL' (contexte cybersecurite) ?",
+      "question": "Qu'est-ce que le drift de politique dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "drift de politique designe un levier avance en apprentissage par renforcement ; il mesure une d\u00e9rive entre les conditions d'entrainement et les conditions d'exploitation.",
-        "B": "safe exploration correspond a un levier avance en apprentissage par renforcement ; il formalise le role de safe exploration dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Monitoring RL.",
-        "C": "Dans Monitoring RL, etat dangereux se comprend comme un levier avance en apprentissage par renforcement ; il formalise le role d'etat dangereux dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "penalite designe un levier avance en apprentissage par renforcement ; il contraint la complexite du modele pour limiter le surapprentissage."
+        "A": "Un changement non désiré dans la stratégie de décision de l'agent au fil du temps.",
+        "B": "Un ajustement intentionnel de la politique pour améliorer les performances.",
+        "C": "Un phénomène où un agent réduit les explorations pour optimiser le rendement.",
+        "D": "La diversification des politiques pour atteindre des objectifs multiples."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de drift de politique dans Monitoring RL, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte cybersecurite, alors que safe exploration, etat dangereux, penalite restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est correcte (drift de politique designe un levier avance en apprentissage par renforcement ; il mesure une d\u00e9rive entre ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. B est moins pertinente (safe exploration correspond a un levier avance en apprentissage par renforcement ; il formalise le role de ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (Dans Monitoring RL, etat dangereux se comprend comme un levier avance en apprentissage par renforcement ; i...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (penalite designe un levier avance en apprentissage par renforcement ; il contraint la complexite du modele ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le drift de politique fait référence à une dérive non contrôlée des décisions de l'agent, souvent causée par un changement dynamique de l'environnement. B est faux car il s'agit d'un ajustement intentionnel, C est incorrect car réduire l'exploration est une stratégie délibérée et D parle de diversification intentionnelle, pas de drift.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Monitoring RL' (banque), quel \u00e9nonc\u00e9 d\u00e9crit le plus pr\u00e9cis\u00e9ment regret ?",
+      "question": "Quel est le concept de regret dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Dans Monitoring RL, etat dangereux se comprend comme un levier avance en apprentissage par renforcement ; il formalise le role d'etat dangereux dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "penalite designe un levier avance en apprentissage par renforcement ; il contraint la complexite du modele pour limiter le surapprentissage.",
-        "C": "garde-fou correspond a un levier avance en apprentissage par renforcement ; il formalise le role de garde-fou dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Monitoring RL.",
-        "D": "regret correspond a un levier avance en apprentissage par renforcement ; il formalise le role de regret dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Monitoring RL."
-      },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el de regret dans Monitoring RL, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte banque, alors que etat dangereux, penalite, garde-fou restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (Dans Monitoring RL, etat dangereux se comprend comme un levier avance en apprentissage par renforcement ; i...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (penalite designe un levier avance en apprentissage par renforcement ; il contraint la complexite du modele ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est moins pertinente (garde-fou correspond a un levier avance en apprentissage par renforcement ; il formalise le role de garde-f...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est correcte (regret correspond a un levier avance en apprentissage par renforcement ; il formalise le role de regret dan...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pour une \u00e9quipe assurance dans 'Monitoring RL', quelle d\u00e9finition d'effondrement de performance est la plus juste ?",
-      "image_url": null,
-      "choices": {
-        "A": "garde-fou correspond a un levier avance en apprentissage par renforcement ; il formalise le role de garde-fou dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Monitoring RL.",
-        "B": "Dans Monitoring RL, coordination se comprend comme un levier avance en apprentissage par renforcement ; il formalise le role de coordination dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Dans Monitoring RL, effondrement de performance se comprend comme un levier avance en apprentissage par renforcement ; il formalise le role d'effondrement de performance dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "D": "penalite designe un levier avance en apprentissage par renforcement ; il contraint la complexite du modele pour limiter le surapprentissage."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'effondrement de performance dans Monitoring RL, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte assurance, alors que penalite, garde-fou, coordination restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (garde-fou correspond a un levier avance en apprentissage par renforcement ; il formalise le role de garde-f...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est moins pertinente (Dans Monitoring RL, coordination se comprend comme un levier avance en apprentissage par renforcement ; il ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. C'est correcte (Dans Monitoring RL, effondrement de performance se comprend comme un levier avance en apprentissage par ren...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. D'est moins pertinente (penalite designe un levier avance en apprentissage par renforcement ; il contraint la complexite du modele ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "alerte operationnelle: quelle proposition en donne la meilleure d\u00e9finition dans 'Monitoring RL' (contexte sante) ?",
-      "image_url": null,
-      "choices": {
-        "A": "competition designe un levier avance en apprentissage par renforcement ; il formalise le role de competition dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "B": "alerte operationnelle designe un levier avance en apprentissage par renforcement ; il formalise le role d'alerte operationnelle dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "garde-fou correspond a un levier avance en apprentissage par renforcement ; il formalise le role de garde-fou dans un pipeline ML, avec ses hypotheses et ses limites pratiques, ce qui structure l'analyse dans Monitoring RL.",
-        "D": "Dans Monitoring RL, coordination se comprend comme un levier avance en apprentissage par renforcement ; il formalise le role de coordination dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse est celle qui explique le role r\u00e9el d'alerte operationnelle dans Monitoring RL, pas juste une d\u00e9finition scolaire. Elle montre ce que ce concept permet de d\u00e9cider dans un contexte sante, alors que garde-fou, coordination, competition restent proches mais ne couvrent pas le meme perimetre. Le reflexe a garder: verifier ce que le concept change concretement dans la d\u00e9cision, pas seulement sa formulation. A est moins pertinente (competition designe un levier avance en apprentissage par renforcement ; il formalise le role de competitio...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. B est correcte (alerte operationnelle designe un levier avance en apprentissage par renforcement ; il formalise le role de ...) car elle identifie clairement le concept et ce qu'il change dans la d\u00e9cision. C'est moins pertinente (garde-fou correspond a un levier avance en apprentissage par renforcement ; il formalise le role de garde-f...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. D'est moins pertinente (Dans Monitoring RL, coordination se comprend comme un levier avance en apprentissage par renforcement ; il ...) car elle parle d'une id\u00e9e proche, mais pas du concept exact demande. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "A partir de cette description issue de 'Monitoring RL' (un levier avance en apprentissage par renforcement ; il mesure une d\u00e9rive entre les conditions d'entrainement et les conditions d'exploitation.), quel concept faut-il retenir ?",
-      "image_url": null,
-      "choices": {
-        "A": "drift de politique correspond a un levier avance en apprentissage par renforcement ; il mesure une d\u00e9rive entre les conditions d'entrainement et les conditions d'exploitation, avec un perimetre centr\u00e9 sur surveillance de d\u00e9rive des donn\u00e9es ou du comportement.",
-        "B": "Le concept bias-variance se reconnait par un levier avance en apprentissage par renforcement ; il formalise le role de bias-variance dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Quand une d\u00e9finition insiste sur un levier avance en apprentissage par renforcement ; il formalise le role d'estimation offline dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a estimation offline.",
-        "D": "coverage: un levier avance en apprentissage par renforcement ; il formalise le role de coverage dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
+        "A": "La différence cumulée entre la récompense optimale et celle réellement obtenue.",
+        "B": "La perte de récompenses due à l'exploration excessive.",
+        "C": "La réduction des performances lorsque l'agent suit une mauvaise stratégie.",
+        "D": "Le temps total perdu à cause d'erreurs de politique."
       },
       "correct_answer": "A",
-      "explanation": "Le concept attendu est drift de politique, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Monitoring RL. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est correcte (drift de politique correspond a un levier avance en apprentissage par renforcement ; il mesure une d\u00e9rive e...) car la d\u00e9finition correspond exactement au concept attendu. B est moins pertinente (Le concept bias-variance se reconnait par un levier avance en apprentissage par renforcement ; il formalise...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est moins pertinente (Quand une d\u00e9finition insiste sur un levier avance en apprentissage par renforcement ; il formalise le role ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est moins pertinente (coverage: un levier avance en apprentissage par renforcement ; il formalise le role de coverage dans un pip...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Le regret mesure la performance d'un agent par rapport à une politique optimale. B est incorrect car le regret n'est pas uniquement lié à l'exploration, C décrit un effondrement de performance, et D parle d'un concept général de temps, pas de comparaison cumulative.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Description experte (Monitoring RL) - un levier avance en apprentissage par renforcement ; il formalise le role de regret dans un pipeline ML, avec ses hypotheses et ses limites pratiques. Quel concept est le plus exact ?",
+      "question": "Comment peut-on détecter un effondrement de performance d'un agent RL?",
       "image_url": null,
       "choices": {
-        "A": "Quand une d\u00e9finition insiste sur un levier avance en apprentissage par renforcement ; il formalise le role d'estimation offline dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a estimation offline.",
-        "B": "coverage: un levier avance en apprentissage par renforcement ; il formalise le role de coverage dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "recompense dense correspond a un levier avance en apprentissage par renforcement ; il formalise le role de recompense dense dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel de recompense dense.",
-        "D": "Le concept regret se reconnait par un levier avance en apprentissage par renforcement ; il formalise le role de regret dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "D",
-      "explanation": "Le concept attendu est regret, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Monitoring RL. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (Quand une d\u00e9finition insiste sur un levier avance en apprentissage par renforcement ; il formalise le role ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est moins pertinente (coverage: un levier avance en apprentissage par renforcement ; il formalise le role de coverage dans un pip...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est moins pertinente (recompense dense correspond a un levier avance en apprentissage par renforcement ; il formalise le role de ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est correcte (Le concept regret se reconnait par un levier avance en apprentissage par renforcement ; il formalise le rol...) car la d\u00e9finition correspond exactement au concept attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Monitoring RL', quel concept correspond le mieux a cette description: un levier avance en apprentissage par renforcement ; il formalise le role d'effondrement de performance dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-      "image_url": null,
-      "choices": {
-        "A": "recompense dense correspond a un levier avance en apprentissage par renforcement ; il formalise le role de recompense dense dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel de recompense dense.",
-        "B": "Le concept guidage se reconnait par un levier avance en apprentissage par renforcement ; il formalise le role de guidage dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "Quand une d\u00e9finition insiste sur un levier avance en apprentissage par renforcement ; il formalise le role d'effondrement de performance dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a effondrement de performance.",
-        "D": "coverage: un levier avance en apprentissage par renforcement ; il formalise le role de coverage dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "C",
-      "explanation": "Le concept attendu est effondrement de performance, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Monitoring RL. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (recompense dense correspond a un levier avance en apprentissage par renforcement ; il formalise le role de ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est moins pertinente (Le concept guidage se reconnait par un levier avance en apprentissage par renforcement ; il formalise le ro...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. C'est correcte (Quand une d\u00e9finition insiste sur un levier avance en apprentissage par renforcement ; il formalise le role ...) car la d\u00e9finition correspond exactement au concept attendu. D'est moins pertinente (coverage: un levier avance en apprentissage par renforcement ; il formalise le role de coverage dans un pip...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "A partir de cette description issue de 'Monitoring RL' (un levier avance en apprentissage par renforcement ; il formalise le role d'alerte operationnelle dans un pipeline ML, avec ses hypotheses et ses limites pratiques.), quel concept faut-il retenir ?",
-      "image_url": null,
-      "choices": {
-        "A": "Quand une d\u00e9finition insiste sur un levier avance en apprentissage par renforcement ; il formalise le role de risque d'hacking dans un pipeline ML, avec ses hypotheses et ses limites pratiques, elle renvoie a risque d'hacking.",
-        "B": "alerte operationnelle: un levier avance en apprentissage par renforcement ; il formalise le role d'alerte operationnelle dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
-        "C": "recompense dense correspond a un levier avance en apprentissage par renforcement ; il formalise le role de recompense dense dans un pipeline ML, avec ses hypotheses et ses limites pratiques, avec un perimetre centr\u00e9 sur usage operationnel de recompense dense.",
-        "D": "Le concept guidage se reconnait par un levier avance en apprentissage par renforcement ; il formalise le role de guidage dans un pipeline ML, avec ses hypotheses et ses limites pratiques."
-      },
-      "correct_answer": "B",
-      "explanation": "Le concept attendu est alerte operationnelle, car la d\u00e9finition donn\u00e9e correspond exactement a son role et a ses limites dans Monitoring RL. Les autres noms representent des techniques proches, ce qui les rend plausibles, mais ils ne collent pas au perimetre precise de la d\u00e9finition. Cette capacite de distinction est essentielle en certification et en pratique, car elle evite de melanger conception, optimisation et \u00e9valuation. A est moins pertinente (Quand une d\u00e9finition insiste sur un levier avance en apprentissage par renforcement ; il formalise le role ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. B est correcte (alerte operationnelle: un levier avance en apprentissage par renforcement ; il formalise le role d'alerte ...) car la d\u00e9finition correspond exactement au concept attendu. C'est moins pertinente (recompense dense correspond a un levier avance en apprentissage par renforcement ; il formalise le role de ...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. D'est moins pertinente (Le concept guidage se reconnait par un levier avance en apprentissage par renforcement ; il formalise le ro...) car le nom semble correct, mais la d\u00e9finition ne colle pas compl\u00e8tement. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Monitoring RL', quel est le role le plus determinant de drift de politique pour un cas cybersecurite ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans Monitoring RL, regret est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer regret en production.",
-        "B": "Le role d'effondrement de performance est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer effondrement de performance en production.",
-        "C": "alerte operationnelle sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerte operationnelle en production pour guider une d\u00e9cision exploitable.",
-        "D": "drift de politique sert a supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "Ici, la bonne proposition est celle qui relie drift de politique \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Dans Monitoring RL, regret est mobilise pour supporter des arbitrages de production ; l'utiliser correcteme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Le role d'effondrement de performance est de supporter des arbitrages de production ; l'utiliser correctem...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (alerte operationnelle sert a supporter des arbitrages de production ; l'utiliser correctement permet de mie...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est correcte (drift de politique sert a supporter des arbitrages de production ; detecter rapidement une perte de validit...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Face a un besoin banque dans 'Monitoring RL', pourquoi regret est-il prioritaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "effondrement de performance sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer effondrement de performance en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Monitoring RL, alerte operationnelle est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerte operationnelle en production.",
-        "C": "Dans Monitoring RL, regret est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer regret en production.",
-        "D": "Le role de drift de politique est de supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier."
-      },
-      "correct_answer": "C",
-      "explanation": "Ici, la bonne proposition est celle qui relie regret \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (effondrement de performance sert a supporter des arbitrages de production ; l'utiliser correctement permet ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est moins pertinente (Dans Monitoring RL, alerte operationnelle est mobilise pour supporter des arbitrages de production ; l'util...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est correcte (Dans Monitoring RL, regret est mobilise pour supporter des arbitrages de production ; l'utiliser correcteme...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. D'est moins pertinente (Le role de drift de politique est de supporter des arbitrages de production ; detecter rapidement une perte...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "effondrement de performance: pourquoi ce concept est-il crucial pour une \u00e9quipe assurance dans 'Monitoring RL' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le role d'alerte operationnelle est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerte operationnelle en production.",
-        "B": "Le role d'effondrement de performance est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer effondrement de performance en production.",
-        "C": "drift de politique sert a supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier pour guider une d\u00e9cision exploitable.",
-        "D": "Dans Monitoring RL, regret est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer regret en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ici, la bonne proposition est celle qui relie effondrement de performance \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est moins pertinente (Le role d'alerte operationnelle est de supporter des arbitrages de production ; l'utiliser correctement pe...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. B est correcte (Le role d'effondrement de performance est de supporter des arbitrages de production ; l'utiliser correctem...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. C'est moins pertinente (drift de politique sert a supporter des arbitrages de production ; detecter rapidement une perte de validit...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (Dans Monitoring RL, regret est mobilise pour supporter des arbitrages de production ; l'utiliser correcteme...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Monitoring RL', quel est le role le plus determinant d'alerte operationnelle pour un cas sante ?",
-      "image_url": null,
-      "choices": {
-        "A": "alerte operationnelle sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerte operationnelle en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Monitoring RL, drift de politique est mobilise pour supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "C": "Le role de regret est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer regret en production.",
-        "D": "effondrement de performance sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer effondrement de performance en production pour guider une d\u00e9cision exploitable."
+        "A": "Suivre la récompense moyenne sur plusieurs épisodes.",
+        "B": "Observer les temps d'exécution des algorithmes.",
+        "C": "Evaluer la complexité temporelle des décisions de l'agent.",
+        "D": "Mesurer la satisfaction des utilisateurs par enquête."
       },
       "correct_answer": "A",
-      "explanation": "Ici, la bonne proposition est celle qui relie alerte operationnelle \u00e0 un objectif utile pour l'\u00e9quipe, pas \u00e0 une simple id\u00e9e annexe. Les autres options peuvent sembler correctes, mais elles d\u00e9placent le focus vers des effets secondaires. En pratique, il faut toujours se demander: est-ce que cette option aide vraiment \u00e0 prendre la bonne d\u00e9cision m\u00e9tier ? A est correcte (alerte operationnelle sert a supporter des arbitrages de production ; l'utiliser correctement permet de mie...) car elle pointe la vraie finalit\u00e9 m\u00e9tier, celle qui guide l'arbitrage. B est moins pertinente (Dans Monitoring RL, drift de politique est mobilise pour supporter des arbitrages de production ; detecter ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. C'est moins pertinente (Le role de regret est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. D'est moins pertinente (effondrement de performance sert a supporter des arbitrages de production ; l'utiliser correctement permet ...) car elle vise un objectif utile, mais pas la finalit\u00e9 principale de la question. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "L'effondrement de performance peut être détecté par une diminution de la récompense moyenne sur le temps, indiquant que l'agent ne parvient plus à optimiser son comportement. B concerne l'efficacité de calcul, C est une mesure computationnelle et D est subjectif, lié à l'expérience utilisateur.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Monitoring RL', quelle situation de terrain montre le mieux quand utiliser drift de politique ?",
+      "question": "Quelle action immédiate peut-on prendre lors d'une alerte opérationnelle en RL?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Monitoring RL, alerte operationnelle est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerte operationnelle en production.",
-        "B": "En contexte r\u00e9el sur Monitoring RL, drift de politique est choisi afin de supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "C": "Pendant une revue pre-deploiement, regret est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer regret en production tout en surveillant le risque d'optimiser regret en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Dans une revue pre-deploiement de Monitoring RL, l'\u00e9quipe applique effondrement de performance pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer effondrement de performance en production."
-      },
-      "correct_answer": "B",
-      "explanation": "Ce sc\u00e9nario est le bon car drift de politique y sert de levier de d\u00e9cision principal dans Monitoring RL. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Monitoring RL, alerte operationnelle est choisi afin de supporter des arbitrages de pr...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est correcte (En contexte r\u00e9el sur Monitoring RL, drift de politique est choisi afin de supporter des arbitrages de produ...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. C'est moins pertinente (Pendant une revue pre-deploiement, regret est utile pour supporter des arbitrages de production ; l'utilise...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Dans une revue pre-deploiement de Monitoring RL, l'\u00e9quipe applique effondrement de performance pour support...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour un cas operationnel de 'Monitoring RL', quel exemple met regret au c\u0153ur de la d\u00e9cision ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pendant une revue pre-deploiement, regret est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer regret en production tout en surveillant le risque d'optimiser regret en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Dans une revue pre-deploiement de Monitoring RL, l'\u00e9quipe applique drift de politique pour supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "C": "En contexte r\u00e9el sur Monitoring RL, effondrement de performance est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer effondrement de performance en production.",
-        "D": "Pendant une revue pre-deploiement, alerte operationnelle est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerte operationnelle en production tout en surveillant le risque d'optimiser alerte operationnelle en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Mettre en pause l'exécution de l'agent pour diagnostic.",
+        "B": "Changer la fonction de récompense de l'agent.",
+        "C": "Augmenter la fréquence d'exploration pour l'agent.",
+        "D": "Reprogrammer l'agent pour un nouvel environnement."
       },
       "correct_answer": "A",
-      "explanation": "Ce sc\u00e9nario est le bon car regret y sert de levier de d\u00e9cision principal dans Monitoring RL. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est correcte (Pendant une revue pre-deploiement, regret est utile pour supporter des arbitrages de production ; l'utilise...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. B est moins pertinente (Dans une revue pre-deploiement de Monitoring RL, l'\u00e9quipe applique drift de politique pour supporter des ar...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (En contexte r\u00e9el sur Monitoring RL, effondrement de performance est choisi afin de supporter des arbitrages...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est moins pertinente (Pendant une revue pre-deploiement, alerte operationnelle est utile pour supporter des arbitrages de product...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Lorsqu'une alerte opérationnelle survient, mettre l'agent en pause permet de diagnostiquer le problème avant de continuer. B et C sont des changements dans le fonctionnement de l'agent qui pourraient aggraver le problème, et D nécessite une redéfinition des objectifs, ce qui n'est pas une réaction immédiate.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "effondrement de performance: quel sc\u00e9nario illustre le mieux son usage r\u00e9el dans 'Monitoring RL' ?",
+      "question": "Quelle technique est utilisée pour minimiser le regret dans un cadre RL connu?",
       "image_url": null,
       "choices": {
-        "A": "En contexte r\u00e9el sur Monitoring RL, drift de politique est choisi afin de supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "B": "Pendant une revue pre-deploiement, regret est utile pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer regret en production tout en surveillant le risque d'optimiser regret en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Dans une revue pre-deploiement de Monitoring RL, l'\u00e9quipe applique alerte operationnelle pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerte operationnelle en production.",
-        "D": "Dans une revue pre-deploiement de Monitoring RL, l'\u00e9quipe applique effondrement de performance pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer effondrement de performance en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Ce sc\u00e9nario est le bon car effondrement de performance y sert de levier de d\u00e9cision principal dans Monitoring RL. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (En contexte r\u00e9el sur Monitoring RL, drift de politique est choisi afin de supporter des arbitrages de produ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (Pendant une revue pre-deploiement, regret est utile pour supporter des arbitrages de production ; l'utilise...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est moins pertinente (Dans une revue pre-deploiement de Monitoring RL, l'\u00e9quipe applique alerte operationnelle pour supporter des...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. D'est correcte (Dans une revue pre-deploiement de Monitoring RL, l'\u00e9quipe applique effondrement de performance pour support...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Monitoring RL', quelle situation de terrain montre le mieux quand utiliser alerte operationnelle ?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans une revue pre-deploiement de Monitoring RL, l'\u00e9quipe applique regret pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer regret en production.",
-        "B": "En contexte r\u00e9el sur Monitoring RL, effondrement de performance est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer effondrement de performance en production.",
-        "C": "En contexte r\u00e9el sur Monitoring RL, alerte operationnelle est choisi afin de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerte operationnelle en production.",
-        "D": "Pendant une revue pre-deploiement, drift de politique est utile pour supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier tout en surveillant le risque d'optimiser drift de politique en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "Ce sc\u00e9nario est le bon car alerte operationnelle y sert de levier de d\u00e9cision principal dans Monitoring RL. Les autres options racontent des situations possibles, mais pas celle qui fait vraiment avancer l'arbitrage. Repere utile: dans un sc\u00e9nario pro, choisis l'option qui change l'action a mener, pas celle qui sonne juste en theorie. A est moins pertinente (Dans une revue pre-deploiement de Monitoring RL, l'\u00e9quipe applique regret pour supporter des arbitrages de ...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. B est moins pertinente (En contexte r\u00e9el sur Monitoring RL, effondrement de performance est choisi afin de supporter des arbitrages...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. C'est correcte (En contexte r\u00e9el sur Monitoring RL, alerte operationnelle est choisi afin de supporter des arbitrages de pr...) car elle d\u00e9crit le seul cas ou ce concept devient le levier principal. D'est moins pertinente (Pendant une revue pre-deploiement, drift de politique est utile pour supporter des arbitrages de production...) car le sc\u00e9nario est plausible, mais il ne pilote pas la d\u00e9cision centrale. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec drift de politique dans 'Monitoring RL' ?",
-      "image_url": "apprentissage-par-renforcement_monitoring_rl_drift_de_politique_2.png",
-      "choices": {
-        "A": "Dans Monitoring RL, alerte operationnelle est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerte operationnelle en production.",
-        "B": "Dans Monitoring RL, drift de politique est mobilise pour supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "C": "Le role de regret est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer regret en production.",
-        "D": "effondrement de performance sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer effondrement de performance en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "B",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de drift de politique dans Monitoring RL. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Monitoring RL, alerte operationnelle est mobilise pour supporter des arbitrages de production ; l'util...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est correcte (Dans Monitoring RL, drift de politique est mobilise pour supporter des arbitrages de production ; detecter ...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. C'est moins pertinente (Le role de regret est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (effondrement de performance sert a supporter des arbitrages de production ; l'utiliser correctement permet ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Pour une mise en production de 'Monitoring RL', quelle erreur autour de drift de politique est la plus critique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si effondrement de performance est mal utilise, on observe souvent optimiser effondrement de performance en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour d'alerte operationnelle est optimiser alerte operationnelle en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour de drift de politique est optimiser drift de politique en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Un risque classique avec regret est d'optimiser regret en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de drift de politique. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Si effondrement de performance est mal utilise, on observe souvent optimiser effondrement de performance en...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Le piege principal autour d'alerte operationnelle est optimiser alerte operationnelle en silo et introduir...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est correcte (Le piege principal autour de drift de politique est optimiser drift de politique en silo et introduire des ...) car elle cible le risque prioritaire, celui a neutraliser en premier. D'est moins pertinente (Un risque classique avec regret est d'optimiser regret en silo et introduire des modes d'echec caches au d...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "regret: quel risque est le plus directement lie a son mauvais usage en production dans 'Monitoring RL' ?",
-      "image_url": null,
-      "choices": {
-        "A": "Un risque classique avec alerte operationnelle est d'optimiser alerte operationnelle en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Un risque classique avec regret est d'optimiser regret en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Si drift de politique est mal utilise, on observe souvent optimiser drift de politique en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour d'effondrement de performance est optimiser effondrement de performance en silo et introduire des modes d'echec caches au deploiement."
-      },
-      "correct_answer": "B",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour de regret. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec alerte operationnelle est d'optimiser alerte operationnelle en silo et introduire...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est correcte (Un risque classique avec regret est d'optimiser regret en silo et introduire des modes d'echec caches au d...) car elle cible le risque prioritaire, celui a neutraliser en premier. C'est moins pertinente (Si drift de politique est mal utilise, on observe souvent optimiser drift de politique en silo et introduir...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Le piege principal autour d'effondrement de performance est optimiser effondrement de performance en silo ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Dans 'Monitoring RL', quel est le principal mode d'echec quand effondrement de performance est mal applique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Si effondrement de performance est mal utilise, on observe souvent optimiser effondrement de performance en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Le piege principal autour de drift de politique est optimiser drift de politique en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Un risque classique avec regret est d'optimiser regret en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Si alerte operationnelle est mal utilise, on observe souvent optimiser alerte operationnelle en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Bandits multi-bras avec exploration-exploitation.",
+        "B": "Une politique de politique sous-optimale pour réduire la variance.",
+        "C": "Réduction de l'espace d'action pour limiter les choix.",
+        "D": "Utilisation d'environnements statiques fixes pour l'entraînement."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'effondrement de performance. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est correcte (Si effondrement de performance est mal utilise, on observe souvent optimiser effondrement de performance en...) car elle cible le risque prioritaire, celui a neutraliser en premier. B est moins pertinente (Le piege principal autour de drift de politique est optimiser drift de politique en silo et introduire des ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Un risque classique avec regret est d'optimiser regret en silo et introduire des modes d'echec caches au d...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est moins pertinente (Si alerte operationnelle est mal utilise, on observe souvent optimiser alerte operationnelle en silo et int...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "La stratégie multi-bras utilise un équilibre exploration-exploitation pour minimiser le regret en choisissant constamment entre explorer de nouvelles actions et exploiter les connaissances actuelles. B et D mènent à des dégradations de performances, tandis que C limite artificiellement l'apprentissage.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pour une mise en production de 'Monitoring RL', quelle erreur autour d'alerte operationnelle est la plus critique ?",
+      "question": "Quelle est l'importance de surveiller le drift de politique en continu?",
       "image_url": null,
       "choices": {
-        "A": "Un risque classique avec drift de politique est d'optimiser drift de politique en silo et introduire des modes d'echec caches au deploiement.",
-        "B": "Si regret est mal utilise, on observe souvent optimiser regret en silo et introduire des modes d'echec caches au deploiement.",
-        "C": "Le piege principal autour d'effondrement de performance est optimiser effondrement de performance en silo et introduire des modes d'echec caches au deploiement.",
-        "D": "Le piege principal autour d'alerte operationnelle est optimiser alerte operationnelle en silo et introduire des modes d'echec caches au deploiement."
+        "A": "Prévenir les divergences importantes qui rendent l'agent inefficace.",
+        "B": "Garantir que l'agent alterne régulièrement entre exploration et exploitation.",
+        "C": "Optimiser le temps de calcul en réduisant les redondances dans les décisions.",
+        "D": "Ajuster automatiquement les hyperparamètres d'apprentissage."
+      },
+      "correct_answer": "A",
+      "explanation": "Surveiller le drift de politique permet de maintenir l'efficacité de l'agent en évitant des changements imprévus dans les décisions. B est un moyen de contrôle stratégique général, C n'est pas directement lié au drift, et D est une optimisation automatique qui ne corrige pas le drift.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'effet d'un effondrement de performance sur le long terme dans un système RL?",
+      "image_url": null,
+      "choices": {
+        "A": "L'agent peut finir par ne plus explorer de nouvelles actions.",
+        "B": "L'agent ajustera automatiquement sa politique pour maximiser les récompenses immédiates.",
+        "C": "L'agent augmentera la variabilité de ses décisions.",
+        "D": "L'agent pourrait commencer à ignorer complètement les récompenses passées."
+      },
+      "correct_answer": "A",
+      "explanation": "Un effondrement de performance peut conduire à une politique conservatrice où l'agent cesse d'explorer des actions potentiellement meilleures. B serait correct si l'agent était intrinsèquement adaptatif à court terme, C et D sont des variations comportementales non directement liées à un effondrement.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel paramètre critique ajuste directement le taux de regret dans un algorithme RL?",
+      "image_url": null,
+      "choices": {
+        "A": "Le taux d'apprentissage (learning rate).",
+        "B": "La fréquence des mises à jour de la politique.",
+        "C": "Le taux de décroissance gamma des futurs récompenses.",
+        "D": "Le ratio exploration-exploitation epsilon-greedy."
       },
       "correct_answer": "D",
-      "explanation": "La bonne reponse pointe le piege qui fait vraiment tomber les projets autour d'alerte operationnelle. Les autres risques existent, mais ils ne sont pas le point de rupture principal dans ce cas. Bon reflexe terrain: identifier d'abord le risque qui casse la fiabilit\u00e9, puis definir un garde-fou concret. A est moins pertinente (Un risque classique avec drift de politique est d'optimiser drift de politique en silo et introduire des m...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. B est moins pertinente (Si regret est mal utilise, on observe souvent optimiser regret en silo et introduire des modes d'echec cach...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. C'est moins pertinente (Le piege principal autour d'effondrement de performance est optimiser effondrement de performance en silo ...) car elle cite un risque r\u00e9el, mais pas le plus critique a traiter en premier. D'est correcte (Le piege principal autour d'alerte operationnelle est optimiser alerte operationnelle en silo et introduir...) car elle cible le risque prioritaire, celui a neutraliser en premier. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "L'équilibre epsilon-greedy gère le compromis entre exploiter une politique connue et explorer pour réduire le regret. A ajuste la convergence, B affecte la reactivité mais pas directement le regret, C influence la prévision à long terme, pas le regret direct.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans 'Monitoring RL', quel concept repond le mieux a cet objectif: supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
+      "question": "Comment un système peut-il émettre une alerte opérationnelle en cas de détection de dérive de politique?",
       "image_url": null,
       "choices": {
-        "A": "bias-variance: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer bias-variance en production.",
-        "B": "estimation offline est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer estimation offline en production, ce qui correspond a usage operationnel d'estimation offline.",
-        "C": "La finalit\u00e9 de coverage est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coverage en production.",
-        "D": "Quand l'objectif est de supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier, drift de politique est le concept associe."
+        "A": "En comparant la distribution des actions choisies avec celles d'une politique de référence.",
+        "B": "En mesurant la latence d'exécution de l'algorithme.",
+        "C": "En surveillant les variations d'utilisation de la mémoire durant les décisions.",
+        "D": "En contrôlant la synchronisation des mises à jours des modèles."
       },
-      "correct_answer": "D",
-      "explanation": "La bonne reponse est drift de politique: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans Monitoring RL. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est moins pertinente (bias-variance: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet d...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. B est moins pertinente (estimation offline est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. C'est moins pertinente (La finalit\u00e9 de coverage est de supporter des arbitrages de production ; l'utiliser correctement permet de m...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. D'est correcte (Quand l'objectif est de supporter des arbitrages de production ; detecter rapidement une perte de validite ...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "correct_answer": "A",
+      "explanation": "Comparer à une politique de référence permet de détecter des dérives dans le comportement de l'agent. B, C et D sont des mesures de performance technique, mais ne détectent pas directement une dérive comportementale.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Quel concept de 'Monitoring RL' est le plus align\u00e9 avec cet objectif: supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer regret en production.",
+      "question": "Quelle approche est inefficace pour contrôler le drift de politique en apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "La finalit\u00e9 de coverage est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coverage en production.",
-        "B": "Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer recompense dense en production, recompense dense est le concept associe.",
-        "C": "regret: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer regret en production.",
-        "D": "estimation offline est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer estimation offline en production, ce qui correspond a usage operationnel d'estimation offline."
+        "A": "Ignorer le problème de drift jusqu'à une chute mesurable de performance.",
+        "B": "Enregistrer et analyser des logs d'actions pour détecter des variantes reproduites.",
+        "C": "Exécuter des tests A/B réguliers pour valider la consistance des décisions.",
+        "D": "Enrichir le modèle avec des données de test pour vérifier sa robustesse."
       },
-      "correct_answer": "C",
-      "explanation": "La bonne reponse est regret: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans Monitoring RL. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est moins pertinente (La finalit\u00e9 de coverage est de supporter des arbitrages de production ; l'utiliser correctement permet de m...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. B est moins pertinente (Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. C'est correcte (regret: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieux...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. D'est moins pertinente (estimation offline est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "correct_answer": "A",
+      "explanation": "Ignorer le drift est inefficace car cela peut engendrer des problèmes de performance non anticipés. Les réponses B, C et D incluent des stratégies proactives de détection et de prévention de drift.",
+      "difficulty": "medium"
     },
     {
-      "type": "image",
-      "question": "Dans 'Monitoring RL' et en contexte cybersecurite, quelle interpretation du schema appuie le mieux l'analyse de drift de politique ?",
-      "image_url": "apprentissage-par-renforcement_monitoring_rl_drift_de_politique_1.png",
+      "type": "text",
+      "question": "Pourquoi est-il difficile de quantifier le regret dans des environnements dynamiques?",
+      "image_url": null,
       "choices": {
-        "A": "Lecture du visuel: effondrement de performance est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer effondrement de performance en production dans Monitoring RL.",
-        "B": "Le signal visible est coh\u00e9rent avec alerte operationnelle, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerte operationnelle en production.",
-        "C": "Le signal visible est coh\u00e9rent avec drift de politique, car l'objectif est supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "D": "Le schema illustre une d\u00e9cision basee sur regret: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer regret en production."
+        "A": "Parce que les environnements dynamiques changent les récompenses de manière imprévisible.",
+        "B": "Car les agents d'apprentissage par renforcement n'ont pas de but fixe.",
+        "C": "Parce que le modèle mathématique de ces environnements est souvent linéaire.",
+        "D": "Car les algorithmes de renforcement sont paramétrés avec des taux fixes d'exploration."
       },
-      "correct_answer": "C",
-      "explanation": "Les indices visuels vont dans le sens de drift de politique: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Lecture du visuel: effondrement de performance est mobilise pour supporter des arbitrages de production ; l...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Le signal visible est coh\u00e9rent avec alerte operationnelle, car l'objectif est supporter des arbitrages de p...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est correcte (Le signal visible est coh\u00e9rent avec drift de politique, car l'objectif est supporter des arbitrages de prod...) car la lecture visuelle colle au signal principal observe. D'est moins pertinente (Le schema illustre une d\u00e9cision basee sur regret: les indices orientent vers supporter des arbitrages de pr...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "correct_answer": "A",
+      "explanation": "Dans des environnements dynamiques, les récompenses et transitions d'état peuvent changer, rendant difficile la quantification du regret par rapport à une politique optimale. B décrit un concept erroné, car les agents ont des objectifs définis par leurs fonctions de récompense. C est faux car les modèles ne sont pas nécessairement linéaires. D est incorrect car les taux d'exploration peuvent s'adapter.",
+      "difficulty": "medium"
     },
     {
-      "type": "image",
-      "question": "regret: dans un cas banque, quelle interpretation correspond le mieux au schema ML de 'Monitoring RL' ?",
-      "image_url": "apprentissage-par-renforcement_monitoring_rl_regret_1.png",
+      "type": "text",
+      "question": "Quel indicateur ne signale pas forcément un effondrement de performance en apprentissage par renforcement?",
+      "image_url": null,
       "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur alerte operationnelle: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerte operationnelle en production.",
-        "B": "Le schema illustre une d\u00e9cision basee sur regret: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer regret en production.",
-        "C": "Lecture du visuel: drift de politique est mobilise pour supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier dans Monitoring RL.",
-        "D": "Le signal visible est coh\u00e9rent avec effondrement de performance, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer effondrement de performance en production."
+        "A": "Une diminution légère mais régulière de la récompense moyenne par épisode.",
+        "B": "Une réduction des ressources matérielles disponibles pour exécuter l'algorithme.",
+        "C": "Une stagnation prolongée des améliorations de performances.",
+        "D": "Une oscillation fréquente des décisions de politique entre solutions sous-optimales."
       },
       "correct_answer": "B",
-      "explanation": "Les indices visuels vont dans le sens de regret: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur alerte operationnelle: les indices orientent vers supporter des a...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est correcte (Le schema illustre une d\u00e9cision basee sur regret: les indices orientent vers supporter des arbitrages de pr...) car la lecture visuelle colle au signal principal observe. C'est moins pertinente (Lecture du visuel: drift de politique est mobilise pour supporter des arbitrages de production ; detecter r...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Le signal visible est coh\u00e9rent avec effondrement de performance, car l'objectif est supporter des arbitrage...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Observation visuelle (Monitoring RL) - pour un contexte assurance, quelle lecture du schema est la plus pertinente pour effondrement de performance ?",
-      "image_url": "apprentissage-par-renforcement_monitoring_rl_effondrement_de_performance_1.png",
-      "choices": {
-        "A": "Lecture du visuel: effondrement de performance est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer effondrement de performance en production dans Monitoring RL.",
-        "B": "Le signal visible est coh\u00e9rent avec drift de politique, car l'objectif est supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "C": "Le schema illustre une d\u00e9cision basee sur regret: les indices orientent vers supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer regret en production.",
-        "D": "Lecture du visuel: alerte operationnelle est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerte operationnelle en production dans Monitoring RL."
-      },
-      "correct_answer": "A",
-      "explanation": "Les indices visuels vont dans le sens d'effondrement de performance: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est correcte (Lecture du visuel: effondrement de performance est mobilise pour supporter des arbitrages de production ; l...) car la lecture visuelle colle au signal principal observe. B est moins pertinente (Le signal visible est coh\u00e9rent avec drift de politique, car l'objectif est supporter des arbitrages de prod...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le schema illustre une d\u00e9cision basee sur regret: les indices orientent vers supporter des arbitrages de pr...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est moins pertinente (Lecture du visuel: alerte operationnelle est mobilise pour supporter des arbitrages de production ; l'utili...) car la lecture visuelle est partielle et rate le signal qui fait la difference. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Monitoring RL' et en contexte sante, quelle interpretation du schema appuie le mieux l'analyse d'alerte operationnelle ?",
-      "image_url": "apprentissage-par-renforcement_monitoring_rl_alerte_operationnelle_1.png",
-      "choices": {
-        "A": "Le schema illustre une d\u00e9cision basee sur drift de politique: les indices orientent vers supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "B": "Lecture du visuel: regret est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer regret en production dans Monitoring RL.",
-        "C": "Le signal visible est coh\u00e9rent avec effondrement de performance, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer effondrement de performance en production.",
-        "D": "Le signal visible est coh\u00e9rent avec alerte operationnelle, car l'objectif est supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerte operationnelle en production."
-      },
-      "correct_answer": "D",
-      "explanation": "Les indices visuels vont dans le sens d'alerte operationnelle: c'est la lecture qui colle le mieux a la d\u00e9cision a prendre. Les autres propositions captent parfois un morceau du signal, mais pas l'image d'ensemble. Quand tu lis un schema, cherche d'abord le signal qui explique l'action, puis elimine le reste. A est moins pertinente (Le schema illustre une d\u00e9cision basee sur drift de politique: les indices orientent vers supporter des arbi...) car la lecture visuelle est partielle et rate le signal qui fait la difference. B est moins pertinente (Lecture du visuel: regret est mobilise pour supporter des arbitrages de production ; l'utiliser correctemen...) car la lecture visuelle est partielle et rate le signal qui fait la difference. C'est moins pertinente (Le signal visible est coh\u00e9rent avec effondrement de performance, car l'objectif est supporter des arbitrage...) car la lecture visuelle est partielle et rate le signal qui fait la difference. D'est correcte (Le signal visible est coh\u00e9rent avec alerte operationnelle, car l'objectif est supporter des arbitrages de p...) car la lecture visuelle colle au signal principal observe. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "B est externe à la performance comportementale de l'agent et pourrait être lié à d'autres facteurs techniques. A, C, et D sont liés directement à la performance et à la stabilité de la politique de l'agent.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Objectif (Monitoring RL) - supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer effondrement de performance en production. Quel concept est le plus coh\u00e9rent ?",
+      "question": "Quel est le principal défi des alertes opérationnelles dans les systèmes RL en temps réel?",
       "image_url": null,
       "choices": {
-        "A": "guidage: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer guidage en production.",
-        "B": "effondrement de performance est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer effondrement de performance en production, ce qui correspond a usage operationnel d'effondrement de performance.",
-        "C": "La finalit\u00e9 de coverage est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer coverage en production.",
-        "D": "Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer recompense dense en production, recompense dense est le concept associe."
+        "A": "La sensibilité à déclencher une alerte basé sur des politiques fluctuantes.",
+        "B": "Les difficultés de communication entre les modules RL et les interfaces utilisateur.",
+        "C": "L'absence de modification automatique de la fonction de récompense.",
+        "D": "Le manque de standardisation des algorithmes de notification dans l'industrie."
+      },
+      "correct_answer": "A",
+      "explanation": "La nature dynamique et parfois stochastique des politiques en RL pose un défi pour la sensibilité des alertes en temps réel. B, C et D concernent des aspects techniques ou organisationnels sans un impact direct sur les seuils d'alerte.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle mesure permet de réagir efficacement aux alertes opérationnelles dues à des dérives imprévues?",
+      "image_url": null,
+      "choices": {
+        "A": "Implémenter des contre-mesures automatisées pour adapter la politique.",
+        "B": "Ajuster manuellement chaque paramètre de l'algorithme pour corriger les dérives.",
+        "C": "Réinitialiser la politique et recommencer l'entraînement depuis zéro.",
+        "D": "Ignorer les alertes jusqu'à l'occurrence d'une panne critique."
+      },
+      "correct_answer": "A",
+      "explanation": "La réponse proactive et automatisée aux alertes permet de résoudre immédiatement des dérives sans intervention manuelle excessive. B est inefficace en raison de la complexité et C ne préserve pas les acquis d'apprentissage. D est dangereux et irresponsable.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est l'importance d'identifier correctement le type de drift de politique?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour appliquer les correctifs les plus adaptés au contexte.",
+        "B": "Pour pouvoir entièrement corriger les erreurs de précision de modèle.",
+        "C": "Pour garantir une réduction drastique du besoin d'exploration future.",
+        "D": "Pour rendre l'agent définitif et immuable dans ses décisions."
+      },
+      "correct_answer": "A",
+      "explanation": "Identifier le type de drift permet d'appliquer des actions correctives pertinentes. B méconnaît la nature du drift, qui n'est pas une simple erreur de modèle. C oublie que l'exploration reste nécessaire. D décrit une mauvaise compréhension de la flexibilité requise pour un agent RL.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Parmi les suivants, quel outil est souvent utilisé pour surveiller le drift de politique en ligne?",
+      "image_url": null,
+      "choices": {
+        "A": "Analyses en temps réel des journaux d'action de l'agent.",
+        "B": "Simulation stochastique des politiques passées.",
+        "C": "Cartographie des dépendances de code dans les modules RL.",
+        "D": "Accumulation de données historiques pour un benchmark post-mortem."
+      },
+      "correct_answer": "A",
+      "explanation": "Analyser les journaux en temps réel des actions de l'agent identifie les dérives en ligne. B est prospectif mais n'évalue pas en temps réel, C est un support technique plutôt qu'évaluation de performance, et D sert à l'analyse après coup.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel rôle jouent les fonctions de récompense dans la gestion du regret en RL?",
+      "image_url": null,
+      "choices": {
+        "A": "Elles définissent ce qui est optimal pour minimiser le regret en fixant des cibles de performance.",
+        "B": "Elles n'ont aucun impact sur le regret car elles ne changent pas avec les politiques.",
+        "C": "Elles augmentent le besoin de correction dynamique des actions choisies.",
+        "D": "Elles induisent une exploration accrue indépendamment des performances actuelles."
+      },
+      "correct_answer": "A",
+      "explanation": "Les fonctions de récompense définissent ce que l'agent doit maximiser, donc influencent directement le calcul du regret par rapport à l'optimum. B est faux car elles influencent directement l'objectif d'apprentissage. C invite à des corrections comportementales sans lien direct avec le concept de regret, et D n'évoque pas correctement leur impact sur l'exploration.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle méthode peut réduire durablement le drift de politique dans RL?",
+      "image_url": null,
+      "choices": {
+        "A": "Utiliser des processus de validation croisée en continu pour ajuster les stratégies.",
+        "B": "Appliquer un redémarrage fréquent du moteur RL avec différents hyperparamètres.",
+        "C": "Relier la fréquence d'exploration à des balises temporelles fixes.",
+        "D": "Éviter tout ajustement de l'agent une fois une politique stable obtenue."
+      },
+      "correct_answer": "A",
+      "explanation": "La validation croisée continue permet d'ajuster les stratégies et de contrôler les dérives. B et D ne gèrent pas le drift, et C risque de rendre l'agent inflexible et sous-optimal.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle stratégie peut aggraver le problème d'effondrement de performance?",
+      "image_url": null,
+      "choices": {
+        "A": "Optimiser la performance en se basant uniquement sur les dernières données collectées.",
+        "B": "Renforcer l'exploration en introduisant rapidement de nouvelles actions.",
+        "C": "Observer les schémas décisionnels passés pour ajuster le comportement.",
+        "D": "Interdire toute exploration une fois la convergence initiale atteinte."
+      },
+      "correct_answer": "A",
+      "explanation": "Se baser seulement sur les données récentes entraîne une myopie qui peut causer un effondrement. B et C sont des pratiques qui enrichissent le modèle contre l'effondrement, alors que D retire des mécanismes essentiels d'adaptation.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "En quoi consiste l'application de tests de fidélité pour éviter le drift de politique?",
+      "image_url": null,
+      "choices": {
+        "A": "Evaluer régulièrement la cohérence et l'adéquation des actions dans des environnements simulés.",
+        "B": "Augmenter la complexité des environnements réels pour stresser les politiques.",
+        "C": "Utiliser uniquement des politiques statiques comme référence.",
+        "D": "Surveiller exclusivement les décisions de l'agent pour s'assurer qu'elles sont stables."
+      },
+      "correct_answer": "A",
+      "explanation": "Les tests de fidélité évaluent la cohérence des actions selon une politique de référence dans des simulations pour détecter des drifts de politique. B et C ne sont pas centrés sur une évaluation de cohérence, tandis que D peut ne pas révéler les contextes dans lesquels les décisions sont prises.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi les interruptions fréquentes d'un agent RL pour inspection peuvent-elles être problématiques?",
+      "image_url": null,
+      "choices": {
+        "A": "Elles peuvent dégrader la convergence de l'agent en interrompant le processus d'apprentissage.",
+        "B": "Elles garantissent une stabilité excessive et limitent l'exploration nécessaire.",
+        "C": "Elles perturbent la distribution des récompenses qui devraient rester constantes.",
+        "D": "Elles empêchent l'agent de tirer parti de toute connaissance antérieure acquise."
+      },
+      "correct_answer": "A",
+      "explanation": "Les interruptions fréquentes peuvent perturber le processus d'apprentissage et affecter la convergence. B est incorrect car il n'y a pas de 'sûreté excessive', C ne comprend pas l'effet sur les processus décisionnels plutôt que sur les récompenses elles-mêmes, et D néglige que les disruptions n'annulent pas les connaissances précédentes.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Dans quel cas l'émission fréquente d'alertes opérationnelles pourrait devenir moins efficace?",
+      "image_url": null,
+      "choices": {
+        "A": "Si les seuils d'alerte sont définis de manière trop sensible, causant des faux positifs.",
+        "B": "Lorsqu'elles sont ignorées systématiquement par les opérateurs pour réduire les interruptions.",
+        "C": "En cumulant les alertes pour un examen en fin de journée plutôt qu'instantanément.",
+        "D": "Si elles ne sont déclenchées que lorsque les performances dépassent un seuil critique."
+      },
+      "correct_answer": "A",
+      "explanation": "Une sensibilité excessive peut entraîner de nombreux faux positifs, rendant les alertes moins utiles. B est une conséquence de (A), mais pas la cause. C et D concernent la gestion des alertes existantes, mais ne s'adressent pas à l'efficacité vis-à-vis de la sensibilité intrinsèque.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel aspect ne contribue pas à une détection proactive du drift de politique?",
+      "image_url": null,
+      "choices": {
+        "A": "Sélection de seuils de performance basés sur des statistiques historiques uniquement.",
+        "B": "Analyse en temps réel des écarts de performance entre épisodes d'apprentissage.",
+        "C": "Implémentation de mécanismes de retour d'expérience utilisateur.",
+        "D": "Utilisation d'agents de surveillance indépendants intégrés aux réseaux RL."
+      },
+      "correct_answer": "A",
+      "explanation": "Utiliser seulement l'historique pour fixer des seuils de performance n'intègre pas les dynamiques actuelles ou la variabilité actuelle. B, C et D sont des approches qui permettent une surveillance en temps réel et une réactivité face aux dérives de politique.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel facteur est souvent ignoré mais crucial dans la gestion du regret pour les systèmes RL en temps réel?",
+      "image_url": null,
+      "choices": {
+        "A": "Le délai entre l'action et l'obtention de la récompense.",
+        "B": "L'héritage de modèles RL antérieurs dans un processus de réentraînement.",
+        "C": "La multiplicité des canaux de communication entre les agents.",
+        "D": "La scalabilité horizontale des architectures RL mises en œuvre."
+      },
+      "correct_answer": "A",
+      "explanation": "Le délai affecte la mesure du regret car le retour de récompense peut ne pas être immédiat, compliquant l'évaluation optimale de l'action. B n'est pas directement lié au regret, C concerne la coordination, mais pas directement le regret, et D englobe la capacité à supporter plus de charge, sans lien direct avec les calculs de regret.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel mécanisme assure une alerte efficace lors d'une dérive importante dans le modèle RL?",
+      "image_url": null,
+      "choices": {
+        "A": "Comparaison continue entre différentes générations de politiques pour identifier les écarts.",
+        "B": "Exécution sporadique d'une fonction de pénalité pour limiter les écarts.",
+        "C": "Récupération de modèles sauvegardés à des intervalles intermittents.",
+        "D": "Adoption d'un système de suivi passif basé uniquement sur des métriques historiques."
+      },
+      "correct_answer": "A",
+      "explanation": "Comparer les politiques de différentes générations permet de détecter efficacement des dérives significatives. B est réactionnel mais ponctuel, C se concentre sur la restauration et pas sur l'identification proactive, et D repose sur le passé, ce qui peut ignorer des drifts soudains.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la principale menace d'un effondrement de performance répétitif dans un environnement RL dynamique?",
+      "image_url": null,
+      "choices": {
+        "A": "L'adoption par l'agent d'un comportement sous-optimisé de façon persistante.",
+        "B": "Le recours croissant à l'exploration après chaque effondrement.",
+        "C": "Le développement d'une circulation excessive d'informations entre les modules RL.",
+        "D": "L'augmentation exponentielle des besoins en stockage de données pour la traçabilité."
+      },
+      "correct_answer": "A",
+      "explanation": "Le danger réside dans un comportement sous-optimal chronique, menant à une performance inférieure continue. B traduit une action proactive positive, C une implication technique, mais pas un effondrement et D un modèle de croissance de besoins technique annexe.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi le monitoring de la redondance des actions est-il essentiel pour éviter un effondrement de performance?",
+      "image_url": null,
+      "choices": {
+        "A": "Il permet de détecter l'effet d'exploration excessive et sans but.",
+        "B": "Il souligne les failles dans la compréhension des récompenses futures.",
+        "C": "Il expose les cycles de récompense que l'agent pourrait exploiter.",
+        "D": "Il corrige automatiquement les stratégies sans intervention humaine."
+      },
+      "correct_answer": "A",
+      "explanation": "La redondance des actions peut indiquer une exploration excessive qui n'apporte aucun gain, affectant ainsi la performance. B traite plutôt d'une anticipation de récompenses mal modélisée, C serait plus une détection de patterns exploitables, et D surestime la capacité corrective autonome du monitoring.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce qui rend difficile la mise à jour dynamique d'alertes opérationnelles en raison du drift de politique?",
+      "image_url": null,
+      "choices": {
+        "A": "Les heuristiques changeantes de sélection d'alerte en fonction des conditions de l'environnement.",
+        "B": "La vitesse d'accumulation des données qui rendent les seuils obsolètes.",
+        "C": "L'incapacité d'incorporer des interventions en temps réel dans le pipeline RL.",
+        "D": "La dépendance excessive à des politiques de régression des diverses adaptations."
+      },
+      "correct_answer": "A",
+      "explanation": "Les heuristiques utilisées pour déterminer les alertes doivent être adaptées aux conditions changeantes, rendant la mise à jour complexe. B évoque une obsolescence, mais les seuils doivent se refondre avec des données valides. C et D se concentrent respectivement sur l'intégration technique et la dépendance conceptuelle, mais pas directement sur la dynamique de détection.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Comment l'effet de gamme peut-il masquer un drift de politique?",
+      "image_url": null,
+      "choices": {
+        "A": "En utilisant des échantillons biaisés pour illustrer une grande diversité de résultats.",
+        "B": "En fixant arbitrairement les actions sur une plage plus large pour lisser les approches.",
+        "C": "En encourageant une exploration qui ne change pas radicalement les politiques.",
+        "D": "En appliquant des variabilités aléatoires uniformes sur l'espace d'action."
       },
       "correct_answer": "B",
-      "explanation": "La bonne reponse est effondrement de performance: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans Monitoring RL. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est moins pertinente (guidage: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieu...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. B est correcte (effondrement de performance est utilise pour supporter des arbitrages de production ; l'utiliser correcteme...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. C'est moins pertinente (La finalit\u00e9 de coverage est de supporter des arbitrages de production ; l'utiliser correctement permet de m...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. D'est moins pertinente (Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Fixer les actions à une large plage limite la détection des dérives fines de la politique. A explique plutôt comment un biais peut être introduit dans les résultats. C traite simultanément de l'effet d'une exploration sur la politique sans adresser un masque, et D implémente une variabilité qui influence directement l'observation des drifts.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans 'Monitoring RL', quel concept repond le mieux a cet objectif: supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerte operationnelle en production.",
+      "question": "Quel obstacle commun rend un système d'alertes inefficace dans la détection des effondrements en RL?",
       "image_url": null,
       "choices": {
-        "A": "La finalit\u00e9 d'alerte operationnelle est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerte operationnelle en production.",
-        "B": "Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer recompense dense en production, recompense dense est le concept associe.",
-        "C": "guidage: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer guidage en production.",
-        "D": "risque d'hacking est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer risque d'hacking en production, ce qui correspond a usage operationnel de risque d'hacking."
+        "A": "La prolifération des dépendances inter-modulaires sans stratégie d'intégration.",
+        "B": "L'absence de mise à jour des mécanismes d'alerte avec l'évolution de l'agent.",
+        "C": "L'effondrement des structures décisionnelles par rapport aux systèmes distribués.",
+        "D": "Le manque d'un algorithme de classification pour trier efficacement les alertes."
+      },
+      "correct_answer": "B",
+      "explanation": "Sans mise à jour continue des mécanismes d'alerte, les changements dans l'agent peuvent ne pas être bien capturés. A peut poser problème dans l'implémentation, mais pas spécifiquement dans l'alerte. C parle plutôt de complexité structurelle que d'un système d'alerte. D se trompe sur l'objectif de classification, qui ne permet pas forcément une gestion efficace des alertes liées à l'effondrement.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Qu'est-ce que le drift de politique en apprentissage par renforcement?",
+      "image_url": null,
+      "choices": {
+        "A": "C'est lorsque la politique apprend à changer de manière inattendue en raison de changements dans l'environnement.",
+        "B": "C'est l'inadéquation entre les actions prises par la politique et celles suggérées par le modèle optimal.",
+        "C": "C'est une méthode de mise à jour des poids basée sur le gradient politique.",
+        "D": "C'est un mécanisme pour réduire le bruit dans les récompenses observées."
       },
       "correct_answer": "A",
-      "explanation": "La bonne reponse est alerte operationnelle: son objectif est parfaitement align\u00e9 avec le resultat operationnel attendu dans Monitoring RL. Les autres options sont des concepts adjacents, donc credibles, mais leur finalit\u00e9 n'est pas celle decrite dans la question. Dans un contexte entreprise, cette pr\u00e9cision permet de mieux prioriser les efforts entre performance modele, controle du risque et impact m\u00e9tier. A est correcte (La finalit\u00e9 d'alerte operationnelle est de supporter des arbitrages de production ; l'utiliser correctemen...) car l'objectif d\u00e9crit est align\u00e9 avec ce concept, sans ambiguite. B est moins pertinente (Quand l'objectif est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux de...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. C'est moins pertinente (guidage: objectif principal supporter des arbitrages de production ; l'utiliser correctement permet de mieu...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. D'est moins pertinente (risque d'hacking est utilise pour supporter des arbitrages de production ; l'utiliser correctement permet ...) car le concept est voisin, mais son objectif r\u00e9el n'est pas celui attendu. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
+      "explanation": "Le drift de politique se produit lorsque la politique évolue de manière inattendue en raison de variations dans l'environnement, ce qui peut affecter la stratégie de l'agent. La réponse B décrit le regret, une mesure de la différence entre les performances actuelles et optimales. La réponse C concerne l'optimisation par gradient politique, une méthode d'entraînement des modèles. La réponse D concerne l'amélioration de la qualité du signal de récompense, ce qui n'entraîne pas directement un drift de politique.",
+      "difficulty": "medium"
     },
     {
-      "type": "image",
-      "question": "regret: dans 'Monitoring RL', un schema met en evidence ce comportement. Quelle lecture est la plus juste ?",
-      "image_url": "apprentissage-par-renforcement_monitoring_rl_regret_2.png",
+      "type": "text",
+      "question": "Quel est le rôle d'une alerte opérationnelle dans un système d'apprentissage par renforcement?",
+      "image_url": null,
       "choices": {
-        "A": "Le role de regret est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer regret en production.",
-        "B": "drift de politique sert a supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier pour guider une d\u00e9cision exploitable.",
-        "C": "Dans Monitoring RL, effondrement de performance est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer effondrement de performance en production.",
-        "D": "Le role d'alerte operationnelle est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerte operationnelle en production."
+        "A": "Elle notifie les opérateurs de changements inattendus dans les performances de l'agent.",
+        "B": "Elle ajuste automatiquement les hyperparamètres en réponse aux modifications de l'environnement.",
+        "C": "Elle corrige les erreurs dans le modèle de l'agent en temps réel.",
+        "D": "Elle prévient l'épuisement des ressources lors de l'entraînement en réduisant la charge de calcul."
       },
       "correct_answer": "A",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret de regret dans Monitoring RL. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est correcte (Le role de regret est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. B est moins pertinente (drift de politique sert a supporter des arbitrages de production ; detecter rapidement une perte de validit...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (Dans Monitoring RL, effondrement de performance est mobilise pour supporter des arbitrages de production ; ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est moins pertinente (Le role d'alerte operationnelle est de supporter des arbitrages de production ; l'utiliser correctement pe...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Dans 'Monitoring RL', quel commentaire du schema traduit le mieux le role d'effondrement de performance ?",
-      "image_url": "apprentissage-par-renforcement_monitoring_rl_effondrement_de_performance_2.png",
-      "choices": {
-        "A": "Dans Monitoring RL, drift de politique est mobilise pour supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier.",
-        "B": "Le role de regret est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer regret en production.",
-        "C": "alerte operationnelle sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerte operationnelle en production pour guider une d\u00e9cision exploitable.",
-        "D": "effondrement de performance sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer effondrement de performance en production pour guider une d\u00e9cision exploitable."
-      },
-      "correct_answer": "D",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'effondrement de performance dans Monitoring RL. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (Dans Monitoring RL, drift de politique est mobilise pour supporter des arbitrages de production ; detecter ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Le role de regret est de supporter des arbitrages de production ; l'utiliser correctement permet de mieux d...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est moins pertinente (alerte operationnelle sert a supporter des arbitrages de production ; l'utiliser correctement permet de mie...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. D'est correcte (effondrement de performance sert a supporter des arbitrages de production ; l'utiliser correctement permet ...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "image",
-      "question": "Quel diagnostic du schema est le plus coh\u00e9rent avec alerte operationnelle dans 'Monitoring RL' ?",
-      "image_url": "apprentissage-par-renforcement_monitoring_rl_alerte_operationnelle_2.png",
-      "choices": {
-        "A": "regret sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer regret en production pour guider une d\u00e9cision exploitable.",
-        "B": "Dans Monitoring RL, effondrement de performance est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer effondrement de performance en production.",
-        "C": "Dans Monitoring RL, alerte operationnelle est mobilise pour supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quand et comment appliquer alerte operationnelle en production.",
-        "D": "Le role de drift de politique est de supporter des arbitrages de production ; detecter rapidement une perte de validite du modele avant impact m\u00e9tier."
-      },
-      "correct_answer": "C",
-      "explanation": "La meilleure interpretation est celle qui relie clairement le schema au role concret d'alerte operationnelle dans Monitoring RL. Elle permet de passer d'une observation visuelle \u00e0 une d\u00e9cision exploitable. Les autres options restent partielles: utiles pour comprendre, insuffisantes pour trancher proprement. A est moins pertinente (regret sert a supporter des arbitrages de production ; l'utiliser correctement permet de mieux d\u00e9cider quan...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. B est moins pertinente (Dans Monitoring RL, effondrement de performance est mobilise pour supporter des arbitrages de production ; ...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. C'est correcte (Dans Monitoring RL, alerte operationnelle est mobilise pour supporter des arbitrages de production ; l'util...) car elle relie bien le visuel a la d\u00e9cision operationnelle attendue. D'est moins pertinente (Le role de drift de politique est de supporter des arbitrages de production ; detecter rapidement une perte...) car l'interpretation est cr\u00e9dible, mais pas assez solide pour guider l'action. En pratique, la bonne m\u00e9thode consiste a valider trois points: le role du concept, le risque principal, et l'action qui en decoule. Si ces trois elements sont alignes, la d\u00e9cision est generalement robuste en production. C'est exactement la logique attendue dans les certifications ML/cloud et dans les projets reels.",
+      "explanation": "Les alertes opérationnelles sont essentielles pour informer les opérateurs des problèmes tels que le déclin des performances, ce qui peut indiquer des problèmes comme le drift de politique. La réponse B décrit un système automatique de réglage d'hyperparamètres, qui ne relève pas des alertes. La réponse C concerne la correction en temps réel, ce qui est techniquement difficile et non lié à la notification d'alerte. La réponse D concerne la gestion des ressources, ce qui est un aspect différent de la surveillance opérationnelle.",
       "difficulty": "hard"
     }
   ]
