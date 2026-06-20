@@ -5,170 +5,170 @@
   "questions": [
     {
       "type": "text",
-      "question": "Qu'est-ce qu'une variable continue dans un contexte de régression ?",
+      "question": "Qu'est-ce qu'une variable continue dans la régression?",
       "image_url": null,
       "choices": {
-        "A": "Une variable qui peut prendre une infinité de valeurs dans un intervalle donné.",
-        "B": "Une variable qui ne peut prendre que des valeurs discrètes.",
-        "C": "Une variable dont les valeurs sont uniquement prédéfinies.",
-        "D": "Une variable qui est composée uniquement de valeurs binaires."
+        "A": "Une variable qui peut prendre des valeurs infinies dans un intervalle.",
+        "B": "Une variable qui ne prend que des valeurs entières.",
+        "C": "Une variable décrite par des catégories.",
+        "D": "Une variable qui prend des valeurs fixes et discrètes."
       },
       "correct_answer": "A",
-      "explanation": "Une variable continue peut en effet prendre une infinité de valeurs dans un intervalle donné, comme la température ou la distance, ce qui en fait un élément clé en régression pour établir des modèles précis. La réponse B est fausse car elle décrit une variable discrète, qui ne prend que des valeurs distinctes et isolées, contrairement aux variables continues. La réponse C est également incorrecte, car elle implique des valeurs prédéfinies qui ne sont typiquement pas un champ d'application des variables continues. Enfin, la réponse D dépeint des variables binaires, qui se limitent seulement à deux valeurs possibles, généralement 0 ou 1, ce qui n'est pas le cas des variables continues.",
+      "explanation": "Une variable continue dans la régression est une variable qui peut prendre un nombre infini de valeurs dans un certain intervalle, comme la température ou le temps. A est correct car il décrit précisément une telle variable. B est faux car une variable entière ne prend que des valeurs discrètes, pas continues. C est incorrect puisque les variables décrites par des catégories sont qualitatives, non continues. D est également inexact parce que des valeurs fixes et discrètes ne sont pas infinies dans l’intervalle. Les variables continues sont fondamentales pour modéliser des phénomènes qui n’ont pas de valeurs prédéfinies et fixes.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quel est le bon calcul pour les résidus dans une régression linéaire ?",
+      "question": "Que représente un résidu dans la régression linéaire?",
       "image_url": null,
       "choices": {
-        "A": "Résidu = Prédiction du modèle + Valeur observée",
-        "B": "Résidu = Valeur observée - Prédiction du modèle",
-        "C": "Résidu = Prédiction du modèle / Valeur observée",
-        "D": "Résidu = Prédiction du modèle * Valeur observée"
-      },
-      "correct_answer": "B",
-      "explanation": "Le résidu, pour un modèle de régression linéaire, est calculé comme la différence entre la valeur observée et la prédiction du modèle. Cela permet de mesurer l'erreur pour chaque point de données. La réponse A est incorrecte car additionner la prédiction à la valeur observée n'aurait pas de sens pour évaluer l'erreur. La réponse C, utilisant une division, et D, utilisant une multiplication, sont également fausses car elles ne calculent pas l'écart ou erreur entre les valeurs. Seule la soustraction permet d'obtenir un résidu qui montre comment la prédiction diffère de la réalité.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Qu'est-ce qu'une erreur quadratique moyenne (MSE) ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le carré de la somme des différences entre valeurs observées et prédites.",
-        "B": "La somme des erreurs absolues entre valeurs observées et prédites.",
-        "C": "La moyenne des carrés des erreurs entre les valeurs observées et prédites.",
-        "D": "La différence entre la valeur moyenne observée et la valeur prédite."
-      },
-      "correct_answer": "C",
-      "explanation": "L'erreur quadratique moyenne (MSE) est une mesure clé en apprentissage machine qui calcule la moyenne des carrés des écarts entre les valeurs observées et prédites, permettant ainsi de quantifier l'erreur globale du modèle. La réponse A, qui parle du carré de la somme, est incorrecte car elle ne fait pas référence à la moyenne des résultats. La réponse B décrit la somme des erreurs absolues, utilisée pour d'autres métriques, mais pas pour la MSE. Enfin, la réponse D parle d'une différence simple qui ne correspond en rien au calcul du MSE, qui s'intéresse à la dispersion des erreurs.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Quelle est la principale caractéristique de la régression linéaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "Elle ignore les relations entre les variables indépendantes.",
-        "B": "Elle utilise une courbe non linéaire pour décrire les relations.",
-        "C": "Elle est uniquement applicable aux données textuelles.",
-        "D": "Elle établit une relation linéaire entre la variable dépendante et les indépendantes."
-      },
-      "correct_answer": "D",
-      "explanation": "La principale caractéristique de la régression linéaire est qu'elle établit une relation linéaire entre la variable dépendante et les variables indépendantes à l'aide d'une équation linéaire. La réponse A est erronée car la régression prend en compte les relations entre variables, elle ne les ignore pas. La réponse B se réfère à la régression non linéaire, impliquant des courbes, et non à la linéaire qui utilise des lignes droites. Enfin, la réponse C est incorrecte car la régression linéaire n'est pas limitée aux données textuelles et s'applique principalement à des données numériques.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Dans une régression linéaire, que représente le coefficient de la variable indépendante ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le changement attendu dans la variable dépendante avec une unité de changement de la variable indépendante.",
-        "B": "Le point d'intersection sur l'axe des ordonnées.",
-        "C": "La somme des erreurs résiduelles.",
-        "D": "Le produit des valeurs dépendantes et indépendantes."
-      },
-      "correct_answer": "A",
-      "explanation": "Dans une régression linéaire, le coefficient d'une variable indépendante représente le changement attendu dans la variable dépendante pour une augmentation d'une unité de cette variable, illustrant ainsi son impact direct. La réponse B est incorrecte car elle confond avec l'ordonnée à l'origine, qui représente le point où la droite coupe l'axe des ordonnées. La réponse C réfère à la somme des erreurs résiduelles, qui ne décrit pas le coefficient. Quant à la réponse D, elle parle du produit des valeurs, ce qui n’a aucun lien avec la définition du coefficient dans ce contexte.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Pourquoi est-il important de minimiser l'erreur quadratique moyenne (MSE) ?",
-      "image_url": null,
-      "choices": {
-        "A": "Pour augmenter la probabilité des événements rares.",
-        "B": "Pour obtenir le modèle le plus précis en réduisant la somme des carrés des erreurs.",
-        "C": "Pour garantir que le modèle est non biaisé.",
-        "D": "Pour maximiser la variance des résidus."
-      },
-      "correct_answer": "B",
-      "explanation": "Minimiser l'erreur quadratique moyenne (MSE) est essentiel pour améliorer la précision du modèle de régression en réduisant l'écart moyen entre les valeurs prédites et réelles. Cela permet d’obtenir des prédictions plus fiables. La réponse A parle de probabilité des événements rares, non pertinente ici. La réponse C traite du biais, qui est un concept différent lié aux erreurs systématiques et non à la précision générale qu'améliore le MSE. Enfin, la réponse D est erronée car maximiser la variance des résidus contredit l'idée de minimiser les erreurs pour améliorer le modèle.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Que se passe-t-il si l'erreur quadratique moyenne (MSE) est élevée ?",
-      "image_url": null,
-      "choices": {
-        "A": "Le modèle montre qu'il a trop d'ajustements.",
-        "B": "Le modèle prédit parfaitement les valeurs observées.",
-        "C": "Le modèle prédit mal, car les erreurs au carré sont grandes en moyenne.",
-        "D": "Le modèle ne nécessite pas d'améliorations supplémentaires."
-      },
-      "correct_answer": "C",
-      "explanation": "Un MSE élevé indique que le modèle ne prédit pas bien, car les erreurs quadratiques moyennes, plus élevées, signalent des écarts importants entre valeurs observées et prédites. La réponse A mentionne le surajustement, qui concerne l'adaptation excessive à des données spécifiques, mais ce n'est pas directement lié à un MSE élevé. Réponse B induit en erreur en affirmant qu'un MSE élevé équivaut à une prédiction parfaite, ce qui est contraire à la définition même. Enfin, D est faux car un MSE élevé nécessite justement de réévaluer et d'améliorer le modèle, signifiant une mauvaise performance globale.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Que désigne le terme \"régression\" en régression linéaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "Une technique pour réduire le biais dans un ensemble de données.",
-        "B": "Une méthode pour classer des données catégorielles.",
-        "C": "Un processus pour détecter les similitudes entre deux ensembles de données.",
-        "D": "Une méthode statistique pour prédire la valeur d'une variable dépendante."
-      },
-      "correct_answer": "D",
-      "explanation": "En régression linéaire, le terme 'régression' désigne une méthode statistique utilisée pour prédire la valeur d'une variable dépendante à partir d'une ou plusieurs variables indépendantes. La réponse A confond régression avec une méthode pour réduire le biais, ce qui n'est pas l'objectif premier. La réponse B décrit la classification, qui est une catégorie différente de l'apprentissage machine. La réponse C concerne l'analyse de la similitude ou corrélation entre ensembles de données, distincte de l'analyse de la régression qui établit plus qu'une corrélation, mais une présomption de causalité directionnelle entre variables.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Comment interpréter le R carré dans un modèle de régression linéaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "Il indique la proportion de variance de la variable dépendante expliquée par les indépendantes.",
-        "B": "Il mesure la corrélation entre deux variables catégorielles.",
-        "C": "Il indique la somme des erreurs quadratiques.",
-        "D": "Il représente le coefficient de la variable indépendante."
-      },
-      "correct_answer": "A",
-      "explanation": "Le R carré, ou coefficient de détermination, indique la proportion de la variance de la variable dépendante qui est expliquée par les variables indépendantes dans un modèle de régression linéaire. C’est un indicateur de la qualité d'ajustement global du modèle. La réponse B est incorrecte car elle renvoie à une mesure de corrélation entre variables catégorielles, comme le test du chi-carré. C est incorrect car la somme des erreurs quadratiques est associée à la fonction de coût en régression. D est faux puisque le coefficient se réfère à la pente d'une variable indépendante dans le modèle et non à la performance globale du modèle représentée par R carré.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Quel est un résidu dans le contexte de la régression linéaire ?",
-      "image_url": null,
-      "choices": {
-        "A": "La somme des erreurs de toutes les prédictions.",
+        "A": "La somme des moindres carrés de la relation.",
         "B": "La différence entre la valeur observée et la valeur prédite.",
-        "C": "Le carré de la différence entre les valeurs prédite et observée.",
-        "D": "La moyenne des prédictions du modèle."
+        "C": "Le biais introduit par le modèle lors de la prédiction.",
+        "D": "Le produit entre la prédiction et la valeur observée."
       },
       "correct_answer": "B",
-      "explanation": "Dans le contexte de la régression linéaire, un résidu représente la différence entre la valeur observée et la valeur prédite par le modèle. C'est une mesure de l'erreur pour chaque point de données. Réponse A confond un résidu avec une somme globale d'erreurs, ce qui n'est pas correct. Réponse C décrit la valeur obtenue lorsqu'on élève cette différence au carré, concept utilisé pour le MSE, plutôt que pour un résidu individuel. La réponse D parle de la moyenne des prédictions, qui est une statistique du modèle, mais n'est pas liée au concept de résidu.",
-      "difficulty": "medium"
+      "explanation": "Un résidu est défini comme la différence entre la valeur observée et celle prédite pour une variable dépendante. B est la bonne réponse car il exprime cette différence. A est faux, car la somme des moindres carrés est employée pour minimiser l'erreur totale dans la régression. C est incorrect car le biais fait référence à une erreur systématique du modèle. D est inexact; un produit entre valeurs est utilisé dans d'autres contextes mathématiques, pas pour définir un résidu. Les résidus sont utiles pour évaluer l’ajustement du modèle en identifiant les écarts entre les valeurs prédictives et les observations réelles.",
+      "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quelle hypothèse font souvent les modèles de régression linéaire sur les résidus ?",
+      "question": "Quelle est l'erreur quadratique moyenne si les résidus sont 2, 3 et 1?",
       "image_url": null,
       "choices": {
-        "A": "Que les résidus augmentent avec le nombre de données.",
-        "B": "Que les résidus sont tous égaux à zéro.",
-        "C": "Que les résidus suivent une distribution normale.",
-        "D": "Que les résidus soient directement proportionnels aux valeurs indépendantes."
+        "A": "4.67",
+        "B": "6.00",
+        "C": "3.67",
+        "D": "2.00"
       },
       "correct_answer": "C",
-      "explanation": "Les modèles de régression linéaire supposent souvent que les résidus suivent une distribution normale, condition importante pour valider certaines hypothèses statistiques comme l'inférence valable des coefficients. La réponse A est fausse, car la taille de l'échantillon ne modifie pas les résidus. La réponse B est incorrecte : si les résidus étaient tous zéro, le modèle serait parfait, ce qui est rarement le cas. Enfin, la réponse D est erronée, car les résidus sont supposés être indépendants par rapport aux valeurs des variables indépendantes, et ne suivent pas une proportionnalité directe.",
-      "difficulty": "hard"
+      "explanation": "L'erreur quadratique moyenne (MSE) se calcule en prenant la moyenne des carrés des résidus. Ici: ((2²) + (3²) + (1²)) / 3 = (4 + 9 + 1) / 3 = 14 / 3 = 4.67. A est incorrect car le calcul pour 4.67 inclut des erreurs conceptuelles. B est inexact, il omet la division par nombre d'observations. C est faux car il donne la moyenne des résidus non-carres. Ce calcul critique évalue la précision d'un modèle de régression via une pénalisation plus forte des erreurs importantes par les carrés.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'objectif principal de la régression linéaire?",
+      "image_url": null,
+      "choices": {
+        "A": "Maximiser les valeurs prédites des données observées.",
+        "B": "Appliquer une transformation non linéaire aux données.",
+        "C": "Classer les données dans différentes catégories.",
+        "D": "Trouver la relation linéaire entre variables dépendantes et indépendantes."
+      },
+      "correct_answer": "D",
+      "explanation": "L'objectif principal de la régression linéaire est de décrire la relation linéaire entre une variable dépendante (cible) et une ou plusieurs variables indépendantes (prédicteurs). D est correct car il capture cette intention centrale. A est faux, car il ne s'agit pas de maximiser les valeurs mais de minimiser les erreurs entre valeurs observées et prédites. B est erroné puisque l'application de transformations non linéaires appartient à d'autres types de régression, pas à la régression linéaire. C est incorrect, car la classification implique de ranger les éléments en catégories, pas de mettre en évidence des relations linéaires.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un des indicateurs communs que la régression linéaire utilise pour évaluer son modèle?",
+      "image_url": null,
+      "choices": {
+        "A": "Coefficient de détermination R²",
+        "B": "Taux d'erreur de classification",
+        "C": "Ratio des vraisemblances",
+        "D": "Courbe ROC"
+      },
+      "correct_answer": "A",
+      "explanation": "Le coefficient de détermination (R²) est un indicateur communément utilisé pour évaluer la régression linéaire. A est correct car R² mesure la proportion de variance expliquée par le modèle par rapport à la variance totale. B est faux, puisque le taux d'erreur de classification concerne la performance des modèles de classification, pas de régression. C n'est pas pertinent ici, car le ratio des vraisemblances est utilisé pour évaluer des modèles basés sur la vraisemblance. D est incorrect, la courbe ROC étant réservée à illustrer la performance des modèles de classification binaire. R² aide à comprendre l'efficacité des prédictions du modèle.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Que signifie une haute valeur R² dans un modèle de régression linéaire?",
+      "image_url": null,
+      "choices": {
+        "A": "Le modèle est parfait et sans erreur.",
+        "B": "Le modèle explique bien la variance des données.",
+        "C": "Toutes les variables indépendantes sont statistiquement significatives.",
+        "D": "Le modèle est exempt de tout biais et variance."
+      },
+      "correct_answer": "B",
+      "explanation": "Une valeur élevée de R² indique que le modèle explique bien la variance de la variable dépendante grâce aux prédicteurs. B est correct car R² mesure précisément cette explication de la variance. A est incorrect, car un modèle parfait exigerait non seulement un R² élevé, mais aussi d'autres métriques sans erreurs. C est faux, car la significativité statistique de chaque variable indépendante requiert des tests comme le test de Student, pas juste un bon R². D est erroné puisque un bon R² n'exclut pas la présence de biais ou de variance. R² est un outil crucial pour évaluer la qualité d'ajustement d'un modèle de régression linéaire.",
+      "difficulty": "easy"
     },
     {
       "type": "image",
-      "question": "Pourquoi l'erreur quadratique moyenne (MSE) est-elle sensible aux valeurs aberrantes ?",
-      "image_url": "/images/modules/apprentissage-supervise-bases-de-la-regression.svg",
+      "question": "Dans une équation de régression linéaire simple, que représente b0?",
+      "image_url": "/images/generated/apprentissage-supervise-beginner-bases-de-la-regression-q07.png",
       "choices": {
-        "A": "Parce qu'elle est calculée uniquement avec les valeurs aberrantes.",
-        "B": "Parce qu'elle divise chaque erreur par la valeur aberrante.",
-        "C": "Parce qu'elle ignore toute valeur qui est significativement différente de la moyenne.",
-        "D": "Parce qu'elle met l'accent sur les erreurs en élevant ces dernières au carré."
+        "A": "La valeur prévue de la variable dépendante",
+        "B": "La pente de la ligne de régression",
+        "C": "L'ordonnée à l'origine, l'interception sur l'axe Y",
+        "D": "Le taux d'erreur du modèle de régression"
+      },
+      "correct_answer": "C",
+      "explanation": "Dans une équation de régression linéaire (Y = b0 + b1*X), b0 est l'ordonnée à l'origine, c'est-à-dire le point où la ligne de régression croise l'axe Y si X=0. C est correct car il définit la position initiale de la ligne. A est incorrect car b0 ne représente pas un prédiction spécifique, il s'agit de b0 et non de Y. B est faux, la pente est représentée par b1, pas par b0. D est inexact; b0 n’a pas de lien avec le taux d'erreur du modèle. L'ordonnée à l'origine est essentielle pour comprendre le comportement du modèle lorsque toutes les variables indépendantes sont nulles.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Comment calcule-t-on la pente (b1) dans une régression linéaire simple?",
+      "image_url": null,
+      "choices": {
+        "A": "Par la multiplication des fréquences de X et Y.",
+        "B": "Par la division de la somme des valeurs de Y par X.",
+        "C": "Par l'addition de toutes les valeurs de la variable dépendante.",
+        "D": "Par la covariance des variables divisée par la variance de la variable indépendante."
       },
       "correct_answer": "D",
-      "explanation": "Le MSE est sensible aux valeurs aberrantes car il prend en compte le carré des erreurs, ce qui amplifie disproportionnellement les écarts importants causés par celles-ci. Cette mise au carré alourdit donc l'impact des erreurs importantes, souvent générées par des valeurs aberrantes. Contrairement à cela, A est incorrect car le MSE n'est pas calculé uniquement avec les valeurs aberrantes; il inclut toutes les valeurs. B est faux parce qu'il ne divise pas les erreurs par les valeurs aberrantes. C induit en erreur en suggérant que le MSE ignore les écarts significatifs alors qu’il les intègre dans son calcul.",
+      "explanation": "La pente (b1) dans une régression linéaire simple est calculée par la covariance entre les variables dépendante et indépendante, divisée par la variance de la variable indépendante. D est correct car il décrit la formule adéquate pour déterminer b1. A est incorrect car multiplier des fréquences n'est pas pertinent dans ce contexte. B est faux parce que diviser la somme des valeurs de Y par X ne permet pas de déterminer la pente. C est erroné, additionner toutes les valeurs de Y ne se rapporte pas à la calcul de b1. Cela aide à comprendre l’augmentation attendue de Y en fonction de l’augmentation de X.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Lequel parmi les couples suit généralement le mieux une régression linéaire?",
+      "image_url": null,
+      "choices": {
+        "A": "(température en °C, consommation d'énergie)",
+        "B": "(niveau d'éducation, couleur des yeux)",
+        "C": "(précipitations, nombre de jours dans une année)",
+        "D": "(âge, type de cheveux)"
+      },
+      "correct_answer": "A",
+      "explanation": "La régression linéaire modélise mieux la relation entre la consommation d'énergie et la température car ces deux variables peuvent avoir une relation continue et linéaire. A est correct pour cette raison. B est erroné car la couleur des yeux ne varie pas en fonction du niveau d'éducation de manière continue. C est faux, puisque les précipitations ne dépendent pas du nombre fixe de jours dans une année. D est également incorrect car l'âge et le type de cheveux n'ont pas une relation linéaire directe. Les régressions linéaires sont efficaces lorsque les variables présentent une corrélation linéaire.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Que représente l'erreur quadratique moyenne (MSE)?",
+      "image_url": null,
+      "choices": {
+        "A": "La différence absolue entre toutes les observations et prédictions.",
+        "B": "La moyenne des carrés de toutes les erreurs entre observations et prédictions.",
+        "C": "La somme des carrés de toutes les observations.",
+        "D": "La variation totale entre deux séries de variables explicatives."
+      },
+      "correct_answer": "B",
+      "explanation": "La MSE est la moyenne des carrés des différences entre les valeurs observées et celles prédites par le modèle. B est incorrect car la différence absolue se réfère à l'erreur absolue moyenne (MAE), distincte de la MSE. C est erroné car elle ne prend pas en compte les prédictions mais les valeurs observées seules. D est inexact; cette définition conviendrait mieux à des analyses de variance. La MSE pèse plus lourdement sur les grandes erreurs que les petites, rendant les modèles très précis moins sensibles aux variations dans les observations.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Parmi les énoncés suivants, lequel est typiquement une erreur dans l'application de la régression linéaire?",
+      "image_url": null,
+      "choices": {
+        "A": "Normaliser les variables avant application.",
+        "B": "Convertir les variables catégoriques en variables binaires.",
+        "C": "Utiliser la régression linéaire pour des relations non linéaires visibles.",
+        "D": "Considérer le bruit résiduel comme non essentiel à supprimer."
+      },
+      "correct_answer": "C",
+      "explanation": "Utiliser la régression linéaire pour des relations non linéaires visibles est une erreur car cela mène souvent à un modèle mal ajusté. C est correct, car appliquer un modèle linéaire à des données non linéaires distordra les prédictions. A est incorrect, car normaliser les variables est souvent nécessaire, surtout avec des unités de mesures différentes. B est faux car convertir les variables catégoriques en binaires est une étape cruciale pour qu’elles soient intégrées dans un modèle de régression. D est erroné, car sous-estimer le bruit résiduel peut cacher des erreurs structurelles. Il est essentiel de s'assurer de l'adéquation du modèle appliqué.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Une régression linéaire simple multicolinéarité est-elle un problème?",
+      "image_url": null,
+      "choices": {
+        "A": "Cela peut affecter la précision statistique de l'estimateur lorsque plusieurs prédicteurs sont impliqués.",
+        "B": "Oui, cela affecte uniquement les prédictions de la variable dépendante.",
+        "C": "Seulement dans des modèles avec plusieurs prédicteurs.",
+        "D": "Non, la multicolinéarité n'affecte pas un seul prédicteur."
+      },
+      "correct_answer": "D",
+      "explanation": "La multicolinéarité est un problème lorsque plusieurs prédicteurs sont présents, mais pas dans une régression simple avec un seul prédicteur. D est correct, car en absence de plusieurs prédicteurs, la multicolinéarité n’a pas lieu d’être. A est incorrect car la multicolinéarité n'affecte pas directement un modèle avec un seul prédicteur. B et C sont également erronés puisqu'ils n'expliquent pas correctement les conditions de la multicolinéarité. En régression multiple, elle peut influencer la précision des estimateurs, mais ce n'est pas pertinent dans le contexte d'une régression simple avec une seule variable indépendante.",
       "difficulty": "hard"
     }
   ]

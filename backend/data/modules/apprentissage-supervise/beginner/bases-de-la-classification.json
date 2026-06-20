@@ -4,185 +4,185 @@
   "module": "Bases de la classification",
   "questions": [
     {
-      "type": "image",
-      "question": "Qu'est-ce qu'une classe dans un problème de classification ?",
-      "image_url": "/images/generated/apprentissage-supervise-beginner-bases-de-la-classification-q01.png",
+      "type": "text",
+      "question": "Qu'est-ce qu'une classe dans le contexte de la classification supervisée ?",
+      "image_url": null,
       "choices": {
-        "A": "Une catégorie ou étiquette attribuée à un exemple",
-        "B": "Une mesure de performance du modèle",
-        "C": "Un algorithme utilisé pour entraîner le modèle",
-        "D": "La précision des prédictions du modèle"
+        "A": "Une catégorie ou un label attribué à un ensemble d'observations",
+        "B": "La probabilité qu'un modèle prédise un résultat donné",
+        "C": "Une méthode pour évaluer la performance d'un modèle",
+        "D": "Un ensemble de points de données utilisés pour entraîner un modèle"
       },
       "correct_answer": "A",
-      "explanation": "Dans un problème de classification, une classe est une catégorie ou une étiquette que l'on assigne à un exemple, par exemple 'chat' ou 'chien'. La classification consiste à prédire ces étiquettes pour de nouveaux exemples. Le choix B est incorrect car il se réfère aux mesures de performance comme la précision ou le rappel. Le choix C concerne les algorithmes de classification, tels que la régression logistique ou les forêts d'arbres décisionnels, qui ne sont pas des classes. Le choix D, la précision, est une métrique d'évaluation du modèle et non une classe en soi.",
+      "explanation": "Dans le contexte de la classification supervisée, une 'classe' représente une catégorie ou un label, tel que 'chat' ou 'chien', auquel chaque observation peut être assignée. C'est essentiel pour le processus de classification car les modèles doivent apprendre à assigner des observations à l'une de ces classes. La réponse B est incorrecte car elle parle de la probabilité, qui est une sortie du modèle et non une classe. La réponse C est fausse car elle concerne l'évaluation et non la définition d'une classe. Enfin, la réponse D est incorrecte aussi, elle se réfère à l'ensemble d'entraînement, qui comprend des observations de diverses classes, mais n'est pas une classe en elle-même.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Qu'est-ce qu'une frontière de décision ?",
+      "question": "Quelle est la fonction principale de la frontière de décision dans un modèle de classification ?",
       "image_url": null,
       "choices": {
-        "A": "Un point où le modèle commence à entraîner",
-        "B": "Une ligne qui sépare différentes classes dans l'espace des caractéristiques",
-        "C": "Une métrique utilisée pour évaluer un modèle",
-        "D": "La dernière étape du processus de validation"
+        "A": "Elle ajuste les paramètres internes du modèle pour une meilleure performance",
+        "B": "Elle sépare les différentes classes dans l'espace de caractéristiques",
+        "C": "Elle améliore la vitesse d'apprentissage en divisant les données",
+        "D": "Elle effectue une validation croisée sur l'ensemble des données"
       },
       "correct_answer": "B",
-      "explanation": "Une frontière de décision est une ligne ou surface dans l'espace des caractéristiques d'un modèle de classification qui sépare différentes classes. Cela permet de déterminer à quelle classe un point donné appartient. Le choix A est incorrect, car la frontière de décision ne marque pas le début de l'entraînement du modèle. Le choix C est également faux, car une métrique évalue la performance mais ne sépare pas les classes. Le choix D ne décrit pas une frontière de décision, qui n'est pas la dernière étape du processus de validation mais une étape cruciale pendant la création du modèle.",
+      "explanation": "La frontière de décision dans un modèle de classification sert à séparer les différentes classes dans l'espace des caractéristiques. Elle détermine dans quelle classe chaque observation tombera en fonction de ses caractéristiques. La réponse A est incorrecte car elle décrit l'ajustement des paramètres du modèle, ce qui est un processus distinct. La réponse C est fausse car elle se réfère à l'amélioration de la vitesse d'apprentissage, ce qui n'est pas une fonction de la frontière de décision. Enfin, la réponse D parle de validation croisée, une méthode d'évaluation, qui n'a rien à voir avec la séparation des classes dans l'espace de caractéristiques.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quel est l'objectif principal de la régression logistique ?",
+      "question": "Quelle est la sortie d'un modèle de régression logistique dans un problème de classification binaire ?",
       "image_url": null,
       "choices": {
-        "A": "Maximiser le nombre de classes prédites",
-        "B": "Prédire une valeur continue à partir des données",
-        "C": "Prédire la probabilité d'appartenance à une classe binaire",
-        "D": "Minimiser l'erreur quadratique moyenne"
+        "A": "Une valeur discrète de 0 ou 1",
+        "B": "Un vecteur de coefficients",
+        "C": "Une probabilité entre 0 et 1 pour chaque classe",
+        "D": "Une courbe ROC"
       },
       "correct_answer": "C",
-      "explanation": "L'objectif principal de la régression logistique est de prédire la probabilité qu'un échantillon appartienne à une classe binaire. Elle évalue ainsi la chance d'être dans l'une des deux catégories. Le choix A est incorrect, car il n'augmente pas le nombre de classes prédites. Le choix B ne lui correspond pas non plus, car prédire des valeurs continues est un travail de régression linéaire, pas logistique. Enfin, le choix D est hors de propos puisqu'il concerne la minimisation des erreurs quadratiques, ce qui n'est pas pertinent pour la régression logistique qui se concentre sur la prédiction de probabilités.",
+      "explanation": "En régression logistique pour un problème de classification binaire, le résultat est une probabilité entre 0 et 1 indiquant la tendance qu'une observation appartient à une classe spécifique. Cette probabilité est ensuite utilisée pour déterminer à quelle classe appartient l'observation, en général en utilisant un seuil de 0.5. La réponse A est incorrecte car elle se réfère à une décision discrète (0 ou 1) qui vient après. La réponse B parle de coefficients qui sont des paramètres internes et non la sortie. La réponse D se réfère à une courbe d'évaluation, pas à une sortie de modèle.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Que représente une matrice de confusion ?",
+      "question": "Que représente le terme 'faux négatif' dans une matrice de confusion ?",
       "image_url": null,
       "choices": {
-        "A": "Un diagramme de flux d'opérations de classification",
-        "B": "Un graphique qui illustre la distribution des données d'entraînement",
-        "C": "Une mesure qui compare les performances de deux modèles",
-        "D": "Un tableau qui montre les prédictions correctes et incorrectes par classe"
+        "A": "Le nombre de cas où toutes les classes sont correctement prédites",
+        "B": "Le nombre de cas où la classe négative est mal identifiée comme positive",
+        "C": "Le nombre de cas correctement classés comme négatifs",
+        "D": "Le nombre de cas où la classe positive est mal identifiée comme négative"
       },
       "correct_answer": "D",
-      "explanation": "Une matrice de confusion est un tableau conçu pour visualiser les performances d'un modèle de classification en détaillant les vraies et fausses prédictions pour chaque classe. Chaque élément du tableau montre des résultats prédictifs corrects ou erronés. Le choix A propose à tort un diagramme de flux qui ne spécifie pas les prédictions. Le choix B mentionne une distribution de données, qui n'engage pas un classement des résultats prédits. Le choix C suggère faussement qu'elle compare deux modèles. Cependant, une matrice de confusion détaille individuellement les échecs et succès du modèle.",
+      "explanation": "Un 'faux négatif' se produit lorsque le modèle classifie incorrectement une instance positive comme étant négative. C'est une erreur critique où un événement qui devrait être détecté ne l'est pas. La réponse A est fausse car elle décrit une absence d'erreur de classification, non pertinente pour un faux négatif. La réponse B est fausse car elle décrit des faux positifs, qui sont l'opposé de faux négatifs. La réponse C fait référence à de vrais négatifs, correctitudes de classification négative, qui ne sont pas liées au concept de faux négatifs. D est la seule correcte pour un faux négatif.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quelle est la formule du rappel (recall) dans une matrice de confusion ?",
+      "question": "Dans une matrice de confusion de 50 prédictions, on a 20 vrais positifs, 15 vrais négatifs, 5 faux positifs et 10 faux négatifs. Quelle est l'accuracy du modèle?",
+      "image_url": null,
+      "choices": {
+        "A": "0.70",
+        "B": "0.60",
+        "C": "0.50",
+        "D": "0.80"
+      },
+      "correct_answer": "A",
+      "explanation": "L'accuracy d'un modèle est le ratio des prédictions correctes par rapport au nombre total de prédictions. Dans cette matrice de confusion, les prédictions correctes sont les vrais positifs (20) et les vrais négatifs (15). On calcule donc l'accuracy comme suit : (20 + 15) / 50 = 0.70. La réponse B est incorrecte car elle ne considère pas les vrais négatifs. La réponse C est inexacte car elle calcule la moitié des observations, sans se baser sur les valeurs spécifiques données. La réponse D suppose moins d'erreurs que présentes, augmentant artificiellement l'accuracy.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Comment peut-on définir la précision (precision) dans une classification binaire?",
       "image_url": null,
       "choices": {
         "A": "TP / (TP + FN)",
-        "B": "TN / (TN + FP)",
-        "C": "TP / (TP + FP)",
-        "D": "TN / (TN + FN)"
-      },
-      "correct_answer": "A",
-      "explanation": "Le rappel, ou 'recall', mesure la capacité du modèle à identifier tous les exemples pertinents d'une catégorie donnée et se calcule avec la formule TP / (TP + FN), où TP est le vrai positif et FN est le faux négatif. Le choix B (TN / (TN + FP)) et D (TN / (TN + FN)) concernent souvent la métrique de spécificité ou des concepts non liés au rappel. Le choix C (TP / (TP + FP)) calcule la précision, une métrique distincte qui mesure la proportion des prédictions positives correctes par rapport à toutes les prédictions positives effectuées.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Quelle est une propriété essentielle de la régression logistique ?",
-      "image_url": null,
-      "choices": {
-        "A": "Crée des arbres de décision en série",
-        "B": "Utilise la fonction sigmoïde pour calculer la probabilité",
-        "C": "Nécessite la transformation des variables en log",
-        "D": "Utilise la distance des plus proches voisins"
+        "B": "TP / (TP + FP)",
+        "C": "(TP + TN) / Total",
+        "D": "(FP + FN) / Total"
       },
       "correct_answer": "B",
-      "explanation": "La fonction sigmoïde en régression logistique est primordiale pour transformer des prédictions linéaires en probabilités comprises entre 0 et 1, essentielles pour les décisions binaires de classification. Le choix A est incorrect car il se réfère à la création d'arbres de décision, une approche distincte. Le choix C mentionne la transformation logarithmique, généralement associée à d'autres méthodes de régularisation. Le choix D implique une technique d'estimation basée sur la distance, propre à l'algorithme des k-plus proches voisins. Ainsi, seul le choix de la fonction sigmoïde est caractéristique de la régression logistique.",
+      "explanation": "La précision (precision) en classification binaire est définie par le quotient TP / (TP + FP), où TP représente les vrais positifs et FP les faux positifs. Cette mesure indique la proportion de prédictions positives correctes parmi toutes les prédictions positives. La réponse A, TP / (TP + FN), correspond au rappel (ou sensibilité), qui évalue la capacité à détecter les vrais cas positifs. La réponse C, (TP + TN) / Total, est le calcul de l'accuracy, qui mesure la proportion de prédictions correctes globales. Enfin, la réponse D, (FP + FN) / Total, ne représente aucune métrique standard reconnue dans la plupart des applications de classification.",
       "difficulty": "easy"
     },
     {
       "type": "image",
-      "question": "Pourquoi la classe déséquilibrée pose-t-elle un problème pour un modèle de classification ?",
+      "question": "Quel est le rôle du seuil de décision en régression logistique ?",
       "image_url": "/images/generated/apprentissage-supervise-beginner-bases-de-la-classification-q07.png",
       "choices": {
-        "A": "Elle réduit directement la capacité du modèle à s'entraîner",
-        "B": "Elle allonge le temps de calcul nécessaire pour l'entraînement",
-        "C": "Elle peut fausser l'évaluation en donnant une impression de haute précision",
-        "D": "Elle inhibe l'actualisation des poids durant l'entraînement"
+        "A": "Évaluer la qualité de la séparation entre classes.",
+        "B": "Déterminer les coefficients optimaux des variables.",
+        "C": "Convertir des probabilités en classes prédictes.",
+        "D": "Générer des probabilités de classe pour chaque observation."
       },
       "correct_answer": "C",
-      "explanation": "Dans un contexte de classification, les classes déséquilibrées peuvent fausser l'évaluation du modèle en donnant une impression de haute précision en raison de la prédiction majoritaire. Cela signifie que prédire constamment la classe la plus courante peut sembler correct et ainsi biaiser l'évaluation. Le choix A est incorrect, car même avec un déséquilibre, on peut toujours entraîner un modèle, bien que sa performance puisse être affectée. Le choix B est erroné parce que le déséquilibre des classes n'affecte pas directement le temps de calcul. Enfin, le choix D est faux, car la mise à jour des poids n'est pas influencée par l'équilibre des classes, mais par le gradient calculé lors de l'entraînement.",
+      "explanation": "Le seuil de décision en régression logistique transforme les probabilités prédites en classes binaires. Lorsqu'une probabilité dépasse ce seuil, souvent fixé à 0,5, l'observation est classée comme appartenant à la classe positive. Ainsi, le seuil de décision joue un rôle crucial dans la classification des données selon leur probabilité. La réponse A est fausse car elle concerne l'évaluation des performances du modèle, pas la transformation des probabilités. La réponse B est incorrecte car elle concerne l'optimisation des coefficients, qui précède la classification finale. La réponse D décrit le stade précédent le choix du seuil, où les probabilités sont générées.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Comment peut-on visualiser les performances d'un classificateur binaire ?",
+      "question": "Dans une matrice de confusion, quel est le calcul pour déterminer le taux de faux positifs (FPR) ?",
       "image_url": null,
       "choices": {
-        "A": "Avec une fonction de coût logarithmique",
-        "B": "Avec un diagramme en boîte et en moustaches",
-        "C": "Avec un histogramme des classes",
-        "D": "Avec une courbe ROC"
+        "A": "FN / (TP + FN)",
+        "B": "FP / (FP + FN)",
+        "C": "FP / Total",
+        "D": "FP / (FP + TN)"
       },
       "correct_answer": "D",
-      "explanation": "Une courbe ROC est une méthode pour visualiser les performances d'un classificateur binaire, expliquant le compromis entre le taux de vrais positifs et le taux de faux positifs à différents seuils. Le choix A fait référence à la fonction de coût logarithmique, qui est utile pendant l'entraînement, pas pour visualiser. Le choix B, concernant le diagramme en boîte et moustaches, est plus adapté pour résumer des statistiques de données. Le choix C, basé sur un histogramme, montre seulement la distribution des classes, sans fournir une vue sur la performance de classification.",
+      "explanation": "Le taux de faux positifs (FPR) est calculé avec la formule FP / (FP + TN). Ce taux mesure la proportion de négatifs réels incorrectement classés comme positifs. Comprendre ce taux est essentiel pour évaluer les erreurs dans les classifications. La réponse A, FN / (TP + FN), correspond aux faux négatifs par rapport aux positifs réels, et non aux faux positifs. La réponse B, FP / (FP + FN), mélange les concepts de faux positifs et faux négatifs. Enfin, la réponse C, FP / Total, ignore les vrais négatifs (TN), ce qui est crucial pour formuler précisément le FPR.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Quelle est la limite supérieure du nombre de classes dans un problème de classification binaire ?",
+      "question": "Quel indicateur utilise-t-on pour illustrer le compromis entre le taux de vrais positifs et le taux de faux positifs ?",
       "image_url": null,
       "choices": {
-        "A": "2",
-        "B": "1",
-        "C": "3",
-        "D": "4"
+        "A": "Courbe ROC",
+        "B": "Matrice de correlation",
+        "C": "Histogramme",
+        "D": "Boxplot"
       },
       "correct_answer": "A",
-      "explanation": "Dans une classification binaire, par définition, il ne peut y avoir que deux classes, représentant un échantillon positif et un négatif. Cela place la limite supérieure du nombre de classes à deux. Le choix B, une classe unique, est conceptuellement erroné car une classification exige de distinguer entre au moins deux états. Les choix C et D supposent un cadre de classification multiclasses, ce qui dépasse le cadre binaire qui repose sur une dichotomie stricte. Seules deux catégories (positif et négatif) forment la base d'une analyse binaire correctement définie, ce qui en fait l'utilisation typique dans des problèmes simplistes de distinction.",
+      "explanation": "La courbe ROC (Receiver Operating Characteristic) illustre le compromis entre le taux de vrais positifs (TPR) et le taux de faux positifs (FPR) à divers seuils de classification. Elle aide à sélectionner le seuil optimal pour un meilleur équilibre entre sensibilité et spécificité. La réponse B, la matrice de corrélation, est utilisée pour identifier des relations linéaires entre variables, sans rapport avec les taux TPR ou FPR. Les réponses C et D représentent des visualisations de distribution de données (histogramme et boxplot) et ne peuvent pas montrer le compromis TPR-FPR expressément requis dans une courbe ROC.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Que fait l'activation sigmoïde dans la régression logistique ?",
+      "question": "Que mesure le rappel (sensitivity) dans une métrique de classification binaire ?",
       "image_url": null,
       "choices": {
-        "A": "Normalise les valeurs d'entrée avant le calcul",
-        "B": "Transforme les prédictions linéaires en probabilités",
-        "C": "Améliore la vitesse de convergence de l'algorithme",
-        "D": "Élimine les variables non pertinentes du modèle"
+        "A": "TP / (TP + FP)",
+        "B": "TP / (TP + FN)",
+        "C": "TN / (TN + FP)",
+        "D": "FP / (FP + FN)"
       },
       "correct_answer": "B",
-      "explanation": "Dans la régression logistique, la fonction d'activation sigmoïde transforme les valeurs prédictives linéaires en probabilités comprises entre 0 et 1. C'est indispensable pour exprimer les probabilités d'appartenance à une classe dans un cadre binaire. Le choix A n'est pas correct car normaliser les entrées est un processus distinct d'avant calcul. Le choix C est incorrect car l'augmentation de la vitesse de convergence relève de techniques de régularisation et d'optimisation, pas de l'utilisation de la fonction sigmoïde. Enfin, le choix D se réfère à une sélection de caractéristiques, ce qui n'est pas la fonction de la sigmoïde dans la transformation des valeurs en probabilités.",
+      "explanation": "Le rappel ou sensibilité (sensitivity) est défini comme TP / (TP + FN), mesurant la proportion de vrais cas positifs capturés par le modèle. Il évalue la capacité du modèle à identifier correctement tous les positifs réels. La réponse A, TP / (TP + FP), correspond à la précision, qui évalue la proportion des positifs prédits qui sont exacts. La réponse C, TN / (TN + FP), mesure la spécificité, indiquant la proportion de négatifs correctement identifiés. La réponse D, FP / (FP + FN), ne correspond à aucune métrique standard reconnue dans les systèmes de classification binaire.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Quel mécanisme peut assurer un équilibre des classes lors de l'entraînement d'un modèle ?",
+      "question": "Dans le cadre de la régression logistique, quelle hypothèse est faite sur la relation entre les variables indépendantes et la probabilité de l'événement ?",
       "image_url": null,
       "choices": {
-        "A": "Exclusion de faux positifs connus",
-        "B": "Ajustement des hyperparamètres",
-        "C": "Échantillonnage sous ou sur-ajusté",
-        "D": "Augmentation du nombre de neurones dans un réseau"
+        "A": "Les prédicteurs influencent indépendamment l'événement sans relation définie",
+        "B": "Les prédicteurs ont une relation exponentielle avec la probabilité",
+        "C": "La relation linéaire entre les prédicteurs et le logit de la probabilité",
+        "D": "Une relation log-polynomiale est supposée pour les prédicteurs"
       },
       "correct_answer": "C",
-      "explanation": "L'échantillonnage sous et sur-ajusté est une technique qui ajuste le nombre d'exemples dans chaque classe pour équilibrer les données d'entraînement, améliorant ainsi la performance du modèle sur des classes minoritaires. Le choix A est incorrect car exclure des faux positifs n'équilibre pas les classes mais introduit un biais systématique. Le choix B, qui mentionne l'ajustement des hyperparamètres, ne s'applique pas au déséquilibre des données, mais à l'optimisation de l'algorithme. Le choix D est lui aussi éronné car augmenter le nombre de neurones modifie l'architecture du réseau mais n'a aucun effet sur la distribution des classes dans les données d'entraînement.",
+      "explanation": "La régression logistique modélise la relation entre les variables indépendantes et la probabilité d'un événement en considérant une relation linéaire entre les prédicteurs et le logit de la probabilité (c'est-à-dire le logarithme des chances). Cela permet de transformer la relation en une échelle linéaire, facilitant l'analyse statistique. La réponse A est incorrecte car elle suggère une influence déconnectée et non définie des prédicteurs, ce qui va à l'encontre du modèle structuré de la régression logistique. La réponse B évoque une relation exponentielle simple, alors que le modèle utilise le logit, pas une fonction exponentielle directe. Enfin, la réponse D suggère une approche log-polynomiale, ce qui est non standard en régression logistique.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Quelle métrique est généralement moins informative pour les classes déséquilibrées ?",
+      "question": "Quel scénario est le plus problématique avec un seuil de décision de 0.5 dans la régression logistique ?",
       "image_url": null,
       "choices": {
-        "A": "Spécificité",
-        "B": "F1 score",
-        "C": "Rappel (recall)",
-        "D": "Précision (accuracy)"
+        "A": "Nombre de features très élevé par rapport aux observations",
+        "B": "Toutes les données sont très bruyantes",
+        "C": "Variables sans tendance linéaire",
+        "D": "Classes très déséquilibrées"
       },
       "correct_answer": "D",
-      "explanation": "La précision peut paraître trompeuse dans les scénarios de classes déséquilibrées car elle se concentre uniquement sur le nombre total de prédictions correctes, ignorant la distribution des classes. Dans ces contextes, elle donne l'impression de haute performance même si une classe n'est guère prédite correctement. La spécificité se concentre sur les vrais négatifs, ce qui n'est pas spécifiquement affecté par un déséquilibre de classe. Le F1 score équilibre le rappel et la précision, ce qui le rend plus fiable pour les déséquilibres. Enfin, le rappel pointe les faux négatifs, essentiel pour des classes minoritaires justement identifiées malgré leur faible fréquence, le rendant plus informatif.",
+      "explanation": "Avec un seuil de décision de 0.5, les classes très déséquilibrées créent souvent un biais en faveur de la classe majoritaire, ce qui diminue la performance sur la classe minoritaire. Cela mène à une précision apparente élevée mais une sensibilité dramatiquement basse pour la classe minoritaire. Avoir des variables sans tendance linéaire (réponse C) ou des données bruyantes (réponse B) peut dégrader la performance générale du modèle mais n'introduit pas directement le biais lié au seuil. Enfin, un nombre élevé de caractéristiques (réponse A) peut complexifier le modèle, mais ce n'est pas une question de seuil de décision.",
       "difficulty": "hard"
     },
     {
-      "type": "image",
-      "question": "Quel scénario décrit une mauvaise interprétation des résultats de la régression logistique ?",
-      "image_url": "/images/generated/apprentissage-supervise-beginner-bases-de-la-classification-q13.png",
+      "type": "text",
+      "question": "Quelle transformation est souvent appliquée aux données avant d’utiliser la régression logistique?",
+      "image_url": null,
       "choices": {
-        "A": "Confondre les coefficients avec les probabilités directes",
-        "B": "Utiliser la régression logistique pour des prédictions continues",
-        "C": "Évaluer les performances par courbe ROC",
-        "D": "Méconnaître le fait que les classes doivent être étiquetées binaire"
+        "A": "Normalisation en utilisant Min-Max",
+        "B": "Standardisation sans chirurgicalité",
+        "C": "Logarithmisation des variables négatives",
+        "D": "scoring ordinal"
       },
       "correct_answer": "A",
-      "explanation": "Confondre les coefficients de la régression logistique avec des probabilités directes est une interprétation incorrecte, car les coefficients doivent être passés par une fonction sigmoïde pour être traduits en probabilités comprises entre 0 et 1. Le choix B est une mauvaise utilisation en visant des prédictions continues là où la régression logistique est pour des décisions binaires, mais ce n’est pas une erreur d'interprétation. Une courbe ROC (C) est au contraire une méthode valide pour évaluer la performance d'un modèle. Le choix D fait référence à un prérequis nécessaire à la régression logistique et non à une erreur d'interprétation des résultats du modèle lui-même.",
+      "explanation": "La normalisation en utilisant Min-Max est souvent employée avant d'appliquer la régression logistique pour mettre les valeurs dans une échelle uniforme de 0 à 1. Cela est particulièrement utile lorsque les modèles utilisent des calculs basés sur la distance. La réponse B, la standardisation, modifie la moyenne et l'écart-type, ce qui peut ne pas être approprié pour tous les algorithmes. La réponse C est déconseillée car le logarithme de valeurs négatives n'est pas défini. La réponse D n'est pas applicable ici, car la mise en échelle ordinale est utilisée pour des variables catégorielles, pas continues.",
       "difficulty": "hard"
     }
   ]

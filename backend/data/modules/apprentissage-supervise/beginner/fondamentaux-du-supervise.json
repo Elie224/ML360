@@ -5,143 +5,143 @@
   "questions": [
     {
       "type": "text",
-      "question": "Qu'est-ce qu'une donnée étiquetée en apprentissage supervisé?",
+      "question": "Quelle est la définition d'une donnée étiquetée dans l'apprentissage supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Un ensemble de données où chaque point a une réponse correcte associée",
-        "B": "Un ensemble de données sans réponses associées",
-        "C": "Un ensemble de données utilisé uniquement pour l'entraînement",
-        "D": "Un ensemble de données avec uniquement des fonctionnalités prédictives"
+        "A": "Des données qui incluent une entrée et une sortie connue utilisées pour entraîner les modèles.",
+        "B": "Des données collectées par des capteurs sans contexte.",
+        "C": "Des données uniquement visuelles étudiées en apprentissage.",
+        "D": "Des données que l'algorithme découvre seul."
       },
       "correct_answer": "A",
-      "explanation": "Dans l'apprentissage supervisé, une donnée étiquetée est un ensemble où chaque point comprend des caractéristiques et une réponse correcte (étiquette). Cette étiquette permet au modèle d'apprendre à faire des prédictions précises. Ainsi, l'option A est correcte. L'option B est incorrecte car elle décrit un scénario typique de l'apprentissage non supervisé, qui n'utilise pas d'étiquettes. L'option C est incomplète car elle ne mentionne pas les étiquettes nécessaires à l'apprentissage supervisé. Quant à l'option D, elle est fausse car elle ne précise pas que les données doivent inclure une étiquette, tandis qu'elles se concentrent uniquement sur les fonctionnalités prédictives.",
+      "explanation": "Dans l'apprentissage supervisé, une donnée étiquetée se compose d'une entrée avec une sortie connue, ce qui permet de former un modèle à effectuer des prédictions précises. L'option A indique correctement cette relation clé. En revanche, l'option B décrit des données brutes sans contexte d'étiquetage. L'option C mentionne uniquement des données visuelles, sans aborder l'aspect de l'étiquetage. L'option D se réfère au processus d'apprentissage non supervisé, où l'algorithme tente de découvrir des structures cachées dans les données sans étiquettes explicites, ce qui échappe au concept d'apprentissage supervisé focalisé sur les données étiquetées.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quelle est la principale caractéristique d'une 'feature' dans un jeu de données?",
+      "question": "Quel élément est une feature dans un ensemble de données pour prédire le prix des maisons?",
       "image_url": null,
       "choices": {
-        "A": "Elle est la valeur que l'on essaie de prédire",
-        "B": "Elle est une variable explicative dans le dataset",
-        "C": "Elle est uniquement un label utilisé pour la validation",
-        "D": "Elle ne joue aucun rôle dans le modèle prédictif"
+        "A": "Le prix estimé de la maison.",
+        "B": "La superficie de la maison.",
+        "C": "La tendance du marché.",
+        "D": "L'erreur de prédiction du modèle."
       },
       "correct_answer": "B",
-      "explanation": "Dans un jeu de données, une 'feature' est une variable explicative qui contribue à prédire la valeur de la variable cible (target). Par conséquent, l'option B est correcte. L'option A est incorrecte car elle décrit la cible à prédire, pas une feature. L'option C est fausse car les labels ne sont pas des features et ne servent pas à la validation; ils aident à guider le modèle pendant l'entraînement. Enfin, l'option D est incorrecte car les features jouent un rôle majeur dans la construction de modèles prédictifs, permettant d'interpréter et d'analyser les motifs dans les données.",
+      "explanation": "Les 'features' sont des variables d'entrée qui influencent les prédictions d'un modèle d'apprentissage supervisé. Dans le contexte de la prédiction du prix des maisons, la superficie est une 'feature' car elle affecte directement le prix, ce qui rend l'option B correcte. L'option A est incorrecte car elle désigne la variable cible, à savoir le prix estimé, et non une entrée. L'option C, bien que pertinente, n'est pas directement quantifiable comme une 'feature' tangible pour le modèle. L'option D, l'erreur de prédiction, concerne la performance et l'évaluation du modèle et n'appartient pas aux données d'entrée du modèle.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quelle est la 'target' dans un modèle d'apprentissage supervisé?",
+      "question": "Dans un ensemble de données, quelle est la cible (target)?",
       "image_url": null,
       "choices": {
-        "A": "Un ensemble de paramètres du modèle",
-        "B": "Une caractéristique du dataset",
-        "C": "La variable à prédire par le modèle",
-        "D": "Un élément de validation du modèle"
+        "A": "Les données incorrectes à corriger.",
+        "B": "Les entrées utilisées pour entraîner le modèle.",
+        "C": "La variable que le modèle doit prédire.",
+        "D": "Le processus d'optimisation du modèle."
       },
       "correct_answer": "C",
-      "explanation": "Dans un modèle d'apprentissage supervisé, la 'target' est la variable que le modèle doit prédire à partir des données d'entrée. Par conséquent, l'option C est correcte. L'option A est incorrecte car elle décrit les paramètres ou hyperparamètres du modèle, non la variable cible. L'option B est fausse car elle confond la target avec une feature des données. L'option D est également incorrecte parce qu'elle se rapporte plutôt au processus de validation du modèle, qui n'est pas directement lié à ce que le modèle doit prédire. Ainsi, connaître la bonne target est crucial pour entraîner un modèle supervisé.",
+      "explanation": "La cible, ou 'target', dans l'apprentissage supervisé est la variable que l'on cherche à prédire, comme le prix d'un bien immobilier ou la catégorie d'une image, ce qui correspond à l'option C. Cette variable est essentielle car elle détermine le succès du modèle. L'option A est incorrecte, car elle se réfère à des erreurs ou anomalies, qui ne sont pas la 'target'. L'option B fait référence aux 'features', c'est-à-dire les entrées qui servent à entraîner le modèle, et non à la cible. L'option D concerne l'optimisation du modèle, un aspect technique de l'entraînement, distinct de la définition de la variable à prédire.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quel rôle joue un modèle prédictif dans l'apprentissage supervisé?",
+      "question": "Quel est un exemple de modèle prédictif basique?",
       "image_url": null,
       "choices": {
-        "A": "Il mesure l'efficacité des caractéristiques",
-        "B": "Il détermine automatiquement les étiquettes correctes",
-        "C": "Il génère de nouvelles données d'entraînement",
-        "D": "Il produit une prédiction basée sur les données d'entrée"
+        "A": "Tri rapide.",
+        "B": "Tableau croisé dynamique.",
+        "C": "Matrice de confusion.",
+        "D": "Régression linéaire."
       },
       "correct_answer": "D",
-      "explanation": "Dans l'apprentissage supervisé, un modèle prédictif a pour rôle principal de produire une prédiction basée sur les données d'entrée. Cela signifie qu'il utilise les caractéristiques (ou features) fournies pour estimer une valeur cible, ce qui correspond à l'option D. L'option A est incorrecte parce que l'évaluation de l'efficacité des caractéristiques nécessite généralement une analyse distincte, souvent via des méthodes statistiques ou des visualisations, et non le modèle lui-même. L'option B est fausse car les étiquettes sont préalablement définies dans un apprentissage supervisé, et le modèle ne les détermine pas. L'option C est également incorrecte : le modèle n'est pas conçu pour créer de nouvelles données d'entraînement mais pour apprendre à partir de celles fournies.",
+      "explanation": "La régression linéaire est un modèle prédictif simple qui permet d'estimer la relation entre une variable dépendante et une ou plusieurs variables indépendantes. Cette méthode est souvent utilisée pour des prédictions sur des données continues, ce qui rend l'option D correcte. L'option A, le tri rapide, est un algorithme de tri et n'implique pas de prédiction. L'option B, un tableau croisé dynamique, est un outil d'analyse de données, non un modèle prédictif. L'option C, la matrice de confusion, sert à évaluer la performance d'un modèle mais ne fait pas de prédiction.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Comment se distingue l'apprentissage supervisé d'autres types d'apprentissage machine?",
+      "question": "Que signifie 'donnée étiquetée' dans le contexte de l'apprentissage supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Il nécessite des données étiquetées pour l'entraînement",
-        "B": "Il se concentre sur la réduction des erreurs de classification",
-        "C": "Il utilise des données sans supervision humaine",
-        "D": "Il est uniquement utilisé pour la prédiction de séries temporelles"
+        "A": "Des données qui ont des couples (entrée, sortie) connus.",
+        "B": "Des données utilisées pour détecter des anomalies.",
+        "C": "Des données qui ne contiennent que des champs textuels.",
+        "D": "Des données qui ne contiennent pas de valeurs manquantes."
       },
       "correct_answer": "A",
-      "explanation": "L'apprentissage supervisé se caractérise par la nécessité d'utiliser des données étiquetées pour entraîner le modèle, ce qui signifie que chaque instance de donnée a une étiquette préalablement déterminée, d'où la justesse de l'option A. L'option B n'est pas unique à l'apprentissage supervisé car la réduction des erreurs de classification est un objectif commun à d'autres approches d'apprentissage. L'option C est incorrecte, car elle décrit l'apprentissage non supervisé, où les données sont sans étiquettes humaines. Enfin, l'option D est fausse car l'apprentissage supervisé s'applique à une variété de domaines, pas seulement à la prédiction de séries temporelles, bien qu'il y soit effectivement utile.",
+      "explanation": "Dans l'apprentissage supervisé, une donnée étiquetée signifie que chaque donnée d'entrée est associée à un résultat connu, formant ainsi des couples (entrée, sortie). Cela permet au modèle de 'comprendre' les relations pour faire des prédictions sur de nouvelles données, ce qui correspond à l'option A. L'option B est fausse car la détection d'anomalies est souvent liée à l'apprentissage non supervisé. L'option C est incorrecte car elle décrit simplement un format de données, non l'idée d'étiquetage. L'option D se concentre sur l'intégrité des données, mais même des données complètes sans valeurs manquantes peuvent être non étiquetées et donc non supervisées.",
       "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Quelle est la première étape pour créer un modèle supervisé efficace?",
-      "image_url": null,
-      "choices": {
-        "A": "Appliquer immédiatement un algorithme de ML",
-        "B": "Collecter des données étiquetées de qualité",
-        "C": "Configurer les hyperparamètres",
-        "D": "Effectuer la validation croisée"
-      },
-      "correct_answer": "B",
-      "explanation": "Pour créer un modèle supervisé efficace, la première étape consiste à collecter des données étiquetées de haute qualité. Cela garantit que le modèle a une base solide pour apprendre et fait de l'option B la bonne réponse. L'option A est incorrecte car appliquer un algorithme sans données appropriées ne mène pas à de bons résultats. L'option C concerne l'optimisation du modèle, et D se rapporte à l'évaluation, qui sont des étapes ultérieures dans le processus de modélisation. Les données étiquetées définissent le cadre d'apprentissage pour le modèle, crucial pour sa performance future.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Pourquoi est-il important de séparer les données d'entraînement et de test?",
-      "image_url": null,
-      "choices": {
-        "A": "Pour améliorer la précision du modèle sur l'ensemble des données",
-        "B": "Pour construire un modèle plus simple",
-        "C": "Pour éviter la fuite de données durant l'évaluation",
-        "D": "Pour accélérer le processus d'entraînement"
-      },
-      "correct_answer": "C",
-      "explanation": "Séparer les données d'entraînement et de test vise à éviter la fuite de données, garantissant que le modèle est évalué sur des données variables et inconnues, d'où l'option C est correcte. L'option A est incorrecte, car la séparation ne vise pas à améliorer la précision sur l'ensemble des données, mais plutôt à évaluer une généralisation fiable. L'option B est fausse car la simplicité du modèle n'est pas dictée par la séparation des données. Enfin, D est incorrect, car cette division n'accélère pas l'entraînement, mais assure plutôt un évaluation non biaisée sur de nouvelles données.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Quel algorithme est généralement utilisé pour les problèmes de classification binaire?",
-      "image_url": null,
-      "choices": {
-        "A": "Régression Linéaire",
-        "B": "Réseau de neurones pour séries temporelles",
-        "C": "K-Nearest Neighbors pour clustering",
-        "D": "Logistic Regression"
-      },
-      "correct_answer": "D",
-      "explanation": "La régression logistique est l'algorithme couramment utilisé pour les problèmes de classification binaire, car elle modélise les probabilités des classes possibles. Donc, l'option D est correcte. L'option A, la régression linéaire, n'est pas adaptée car elle est utilisée pour des problèmes de régression continue. L'option B, un réseau de neurones axé sur des séries temporelles, n'est pas spécifique aux classifications binaires. L'option C décrit le K-Nearest Neighbors pour le clustering, qui bien qu’utile dans d’autres contextes de classification, n’est pas spécifiquement optimal pour de simples problèmes binaires comme la régression logistique.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pourquoi est-il essentiel d'évaluer un modèle sur des données jamais vues pendant l'entraînement?",
-      "image_url": null,
-      "choices": {
-        "A": "Pour obtenir une évaluation réaliste de sa performance sur de nouvelles données",
-        "B": "Pour obtenir un taux d'apprentissage amélioré",
-        "C": "Pour optimiser les hyperparamètres en fonction des données de test",
-        "D": "Pour détecter plus rapidement les erreurs de programmation"
-      },
-      "correct_answer": "A",
-      "explanation": "Évaluer un modèle sur des données jamais vues durant l'entraînement est crucial pour obtenir une estimation réaliste de sa performance réelle en dehors de l'échantillon d'entraînement. Par conséquent, l'option A est correcte. L'option B est incorrecte car le taux d'apprentissage se réfère au taux de mise à jour du modèle, pas à sa capacité à généraliser. L'option C est incorrecte car l'optimisation des hyperparamètres est généralement faite en utilisant des ensembles de validation et non les données de test. Enfin, D est incorrect car l'objectif principal est d'assurer la performance future, bien que des erreurs pourraient effectivement être détectées dans ce processus.",
-      "difficulty": "medium"
     },
     {
       "type": "image",
-      "question": "Dans l'apprentissage supervisé, comment pourrait-on détecter une fuite de données?",
-      "image_url": "/images/modules/apprentissage-supervise-fondamentaux-du-supervise.svg",
+      "question": "Qu'appelle-t-on 'feature' en apprentissage supervisé?",
+      "image_url": "/images/generated/apprentissage-supervise-beginner-fondamentaux-du-supervise-q06.png",
       "choices": {
-        "A": "Les performances en entraînement et test sont très similaires",
-        "B": "Le modèle montre une exactitude extrêmement élevée en test",
-        "C": "Les performances chutes drastiquement sur de nouvelles données",
-        "D": "Le modèle converge rapidement durant l'entraînement"
+        "A": "La sortie prédite par un modèle supervisé.",
+        "B": "Une colonne dans un ensemble de données qui décrit une caractéristique de l'observation.",
+        "C": "La précision d'un modèle après entraînement.",
+        "D": "Le modèle qui surapprend aux données d'entraînement."
       },
       "correct_answer": "B",
-      "explanation": "Une fuite de données est souvent détectée si un modèle montre une exactitude extrêmement élevée sur les données de test, car cela suggère qu'il a vu les données durant l'entraînement. Ainsi, l'option B est correcte. L'option A, où entraînement et test montrent des performances similaires, peut être normal et ne signale pas nécessairement une fuite. L'option C décrit plutôt un phénomène de surapprentissage lorsque le modèle ne généralise pas bien. L'option D, une convergence rapide, peut être dû à divers facteurs et n'indique pas spécifiquement une fuite de données. C'est la performance suspecte en test qui est le signe le plus révélateur.",
-      "difficulty": "hard"
+      "explanation": "Dans l'apprentissage supervisé, une 'feature' est une caractéristique mesurable d'une observation, souvent représentée par une colonne dans un dataset. Cela aide le modèle à générer des prédictions, alignant avec l'option B. L'option A est fausse car elle aborde la sortie du modèle, pas les données d'entrée. L'option C confond la précision d'un modèle avec une 'feature', qui est en fait un élément de données pertinent pour l'analyse. L'option D parle de surapprentissage, un problème de modèle quand il ne généralise pas bien, ce qui est distinct des 'features', qui sont les variables d'entrée utilisées pour l'entraînement.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Dans un contexte supervisé, que désigne le terme 'target'?",
+      "image_url": null,
+      "choices": {
+        "A": "Une mesure de similarité entre observations.",
+        "B": "Une technique pour normaliser les données.",
+        "C": "La sortie connue que l'on souhaite prédire.",
+        "D": "Une méthode de sélection de modèle."
+      },
+      "correct_answer": "C",
+      "explanation": "La 'target' dans un contexte supervisé est la variable que l'on cherche à prédire ou à estimer, ce qui est représenté par l'option C. Elle guide la formation du modèle grâce à l'apprentissage basé sur ces sorties connues. L'option A est incorrecte car elle se concentre sur la mesure de similarité, non sur la cible prédictive. L'option B dévie vers des processus de normalisation des données, sans lien direct avec la notion de cible. L'option D traite de la sélection de modèle, ce qui est une étape distincte de la définition de l'objectif du modèle.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la fonction principale d'un modèle prédictif en apprentissage supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Rendre les données indépendantes et identiquement distribuées (i.i.d.).",
+        "B": "Nettoyer les données en supprimant les valeurs aberrantes.",
+        "C": "Générer de nouvelles données d'entraînement automatiquement.",
+        "D": "Prédire les sorties avec l'entrée fournie après son entraînement."
+      },
+      "correct_answer": "D",
+      "explanation": "La fonction principale d'un modèle prédictif en apprentissage supervisé est de prédire les sorties à partir des entrées après avoir été correctement formé avec des données étiquetées, ce qui est représenté par l'option D. L'option A, bien qu'importante, concerne une hypothèse statistique et non une fonction de prédiction. L'option B implique le nettoyage des données, une étape distincte avant la modélisation. L'option C est incorrecte car les modèles ne génèrent pas eux-mêmes de nouvelles données d'entraînement. Chaque réponse incorrecte ne capte pas l'essence de la prévision de résultats à partir de nouvelles entrées fournies au modèle.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le rôle de la donnée étiquetée dans l'apprentissage supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Elle sert à entraîner le modèle en lui fournissant des exemples avec l'entrée et la sortie attendue.",
+        "B": "Elle est utilisée pour valider le modèle après l'entraînement pour estimer sa performance.",
+        "C": "Elle est générée par le modèle après l'entraînement pour affiner les prévisions.",
+        "D": "Elle est utilisée pour mesurer la complexité algorithmique du modèle."
+      },
+      "correct_answer": "A",
+      "explanation": "La donnée étiquetée dans l'apprentissage supervisé est constituée de paires entrée-sortie, ce qui permet de guider l'ajustement du modèle afin qu'il apprenne la relation entre les deux. L'idée est d'entraîner le modèle en utilisant ces données pour qu'il puisse réaliser des prédictions précises sur des entrées non vues. La réponse B est incorrecte : elle décrit le rôle des données de validation/test. La réponse C est fausse, car les données étiquetées ne sont pas générées par le modèle après l'entraînement. La réponse D est également erronée, puisque les données étiquetées ne mesurent pas la complexité algorithmique d'un modèle mais servent à l'entraîner.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Dans un modèle prédictif, que représente la 'target'?",
+      "image_url": null,
+      "choices": {
+        "A": "Les entrées fournies au modèle pour qu'il réalise des prédictions.",
+        "B": "La sortie prévue par le modèle pour un ensemble donné de features.",
+        "C": "Les transformations internes effectuées par le modèle sur les entrées.",
+        "D": "Les paramètres ajustés par le modèle lors de l'entraînement."
+      },
+      "correct_answer": "B",
+      "explanation": "Dans un modèle prédictif, la 'target' est la valeur que le modèle doit prédire basée sur un ensemble d'entrées, ce qui est représenté par l'option B. Il s'agit de l'objectif ultime de la prédiction. L'option A est incorrecte car elle parle des 'features', c'est-à-dire des données que le modèle utilise pour faire une prédiction. L'option C traite des transformations internes dans le modèle, qui concernent le traitement, non le concept de 'target'. L'option D renvoie à l'ajustement des paramètres pendant l'entraînement du modèle, ce qui est un aspect technique différent de la cible de prédiction.",
+      "difficulty": "medium"
     }
   ]
 }

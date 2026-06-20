@@ -66,6 +66,10 @@ REGLES OBLIGATOIRES:
 OPTION_LETTERS = ("A", "B", "C", "D")
 MIN_EXPLANATION_WORDS = 90
 MAX_EXPLANATION_WORDS = 120
+MIN_QUANTITATIVE_RATIO = 0.15
+BANNED_EXPLANATION_PHRASES = (
+    "la logique attendue dans les certifications ml/cloud et dans les projets reels",
+)
 IMAGE_RATIO_TARGET = 0.08
 MAX_IMAGE_QUESTIONS_PER_MODULE = 2
 DEFAULT_IMAGE_MODEL = "gpt-image-1"
@@ -73,6 +77,40 @@ DEFAULT_IMAGE_MODEL = "gpt-image-1"
 
 def _words_count(text: str) -> int:
     return len((text or "").split())
+
+
+def _quantitative_target(question_count: int) -> int:
+    if question_count <= 0:
+        return 0
+    return max(2, int(round(question_count * MIN_QUANTITATIVE_RATIO + 0.0001)))
+
+
+def _is_quantitative_question(question: dict) -> bool:
+    chunks = [str(question.get("question", ""))]
+    choices = question.get("choices") or {}
+    for letter in OPTION_LETTERS:
+        chunks.append(str(choices.get(letter, "")))
+    text = " ".join(chunks).lower()
+
+    # Basic formula / metric / code-like signals.
+    if re.search(r"\d", text):
+        return True
+    if re.search(r"[=+\-*/^%]", text):
+        return True
+    if re.search(
+        r"\b(f1|mse|rmse|mae|auc|roc|precision|rappel|recall|tp|fp|tn|fn|log-loss|cross-entropy|silhouette|inertie|cosinus|euclidienne|matrice|gradient|epoch|learning rate|lambda)\b",
+        text,
+    ):
+        return True
+    return False
+
+
+def _strip_banned_explanation_phrases(text: str) -> str:
+    normalized = text
+    for phrase in BANNED_EXPLANATION_PHRASES:
+        normalized = re.sub(re.escape(phrase), "", normalized, flags=re.IGNORECASE)
+    normalized = re.sub(r"\s+", " ", normalized).strip()
+    return normalized
 
 
 def _project_root() -> Path:
@@ -377,7 +415,7 @@ def _rewrite_explanations_batch(
 
 
 def _normalize_explanation_length(question: dict) -> str:
-    explanation = str(question.get("explanation", "")).strip()
+    explanation = _strip_banned_explanation_phrases(str(question.get("explanation", "")).strip())
     words = explanation.split()
     if len(words) > MAX_EXPLANATION_WORDS:
         return " ".join(words[:MAX_EXPLANATION_WORDS])
@@ -454,7 +492,7 @@ def _enforce_explanation_lengths(
         )
 
         for local_idx, global_idx in enumerate(pending_indexes):
-            normalized[global_idx]["explanation"] = rewritten[local_idx]
+            normalized[global_idx]["explanation"] = _strip_banned_explanation_phrases(rewritten[local_idx])
 
         pending_indexes = [
             idx
@@ -466,6 +504,83 @@ def _enforce_explanation_lengths(
     if pending_indexes:
         for idx in pending_indexes:
             normalized[idx]["explanation"] = _normalize_explanation_length(normalized[idx])
+
+    return normalized
+
+
+def _generate_quantitative_questions_batch(
+    *,
+    api_key: str,
+    model: str,
+    category_label: str,
+    level_name: str,
+    module_name: str,
+    concepts: list[str],
+    count: int,
+    existing_questions: list[dict],
+) -> list[dict]:
+    existing_titles = [str(q.get("question", "")).strip() for q in existing_questions]
+    prompt = (
+        build_user_prompt(
+            category_label=category_label,
+            level_name=level_name,
+            module_name=module_name,
+            concepts=concepts,
+            question_count=count,
+            difficulty_mix={"easy": count, "medium": 0, "hard": 0},
+        )
+        + "\n\nIMPORTANT: Genere UNIQUEMENT des questions quantitatives/calcul. "
+        "Chaque question doit demander un calcul de metrique, lecture de formule, "
+        "ou interpretation numerique explicite. Interdit: formulations vagues. "
+        f"Ne regenere pas ces questions existantes: {json.dumps(existing_titles, ensure_ascii=False)}"
+    )
+    raw = call_openai(prompt=prompt, api_key=api_key, model=model)
+    generated = parse_llm_response(raw=raw, level_name=level_name, expected_count=count, require_full=False)
+    return [q for q in generated if _is_quantitative_question(q)]
+
+
+def _enforce_quantitative_questions(
+    *,
+    api_key: str,
+    model: str,
+    category_label: str,
+    level_name: str,
+    module_name: str,
+    concepts: list[str],
+    questions: list[dict],
+) -> list[dict]:
+    normalized = [dict(q) for q in questions]
+    target = _quantitative_target(len(normalized))
+    current = sum(1 for q in normalized if _is_quantitative_question(q))
+    missing = max(0, target - current)
+    if missing == 0:
+        return normalized
+
+    replacements = _generate_quantitative_questions_batch(
+        api_key=api_key,
+        model=model,
+        category_label=category_label,
+        level_name=level_name,
+        module_name=module_name,
+        concepts=concepts,
+        count=missing,
+        existing_questions=normalized,
+    )
+    if not replacements:
+        return normalized
+
+    replacement_cursor = 0
+    for idx in range(len(normalized) - 1, -1, -1):
+        if replacement_cursor >= len(replacements):
+            break
+        if _is_quantitative_question(normalized[idx]):
+            continue
+        incoming = dict(replacements[replacement_cursor])
+        incoming["difficulty"] = normalized[idx].get("difficulty", incoming.get("difficulty", "medium"))
+        incoming["type"] = "text"
+        incoming["image_url"] = None
+        normalized[idx] = incoming
+        replacement_cursor += 1
 
     return normalized
 
@@ -518,6 +633,8 @@ Contraintes pedagogiques:
 - Evite les formulations meta du type 'coherent', 'plausible', 'annexe'.
 - Utilise definitions courtes, cas d'usage, erreurs classiques, comparaisons utiles.
 - Chaque explication doit contenir entre {MIN_EXPLANATION_WORDS} et {MAX_EXPLANATION_WORDS} mots utiles.
+- Interdit d'utiliser la phrase de cloture "la logique attendue dans les certifications ML/cloud et dans les projets reels".
+- Au moins 15% des questions du module (minimum 2) doivent etre quantitatives: formule, calcul de metrique, ou interpretation numerique explicite.
 - Repartis les bonnes reponses de maniere equilibree entre A/B/C/D (environ 25% chacune, marge de +-1 question selon la taille).
 - Le format JSON doit respecter exactement le schema demande.
 
@@ -730,6 +847,15 @@ def generate_module_quiz(
         raise ValueError(f"Generation impossible pour {module_name} apres {max_attempts} tentatives: {last_error}")
 
     questions = _rebalance_correct_answers(questions)
+    questions = _enforce_quantitative_questions(
+        api_key=api_key,
+        model=model,
+        category_label=category_label,
+        level_name=level_name,
+        module_name=module_name,
+        concepts=concepts,
+        questions=questions,
+    )
     questions = _enforce_explanation_lengths(
         api_key=api_key,
         model=model,

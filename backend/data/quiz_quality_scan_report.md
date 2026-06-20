@@ -19,12 +19,12 @@
 
 ## Top Option Prefixes (Potential Repetition)
 - 7x :: x2 x1 y2 y1
-- 6x :: r gression logistique
+- 5x :: r gression logistique
 - 5x :: pour r duire les co ts
-- 5x :: pour garantir que le mod le
 - 5x :: augmenter la taille de l'ensemble de
 - 4x :: r duire la dimensionnalit des donn
 - 4x :: elle augmente la complexit du mod
+- 4x :: pour garantir que le mod le
 - 4x :: pour r duire le temps de
 - 4x :: pour r duire le nombre de
 - 4x :: il met jour les valeurs q

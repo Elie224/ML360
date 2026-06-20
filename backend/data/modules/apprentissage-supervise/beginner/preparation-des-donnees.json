@@ -5,156 +5,156 @@
   "questions": [
     {
       "type": "text",
-      "question": "Quel est l'objectif principal du nettoyage des données?",
+      "question": "Quel est l'objectif principal du nettoyage des données ?",
       "image_url": null,
       "choices": {
-        "A": "Supprimer ou corriger les valeurs aberrantes",
-        "B": "Améliorer l'esthétique du dataset",
-        "C": "Réduire la taille du fichier",
-        "D": "Augmenter les valeurs numériques"
+        "A": "Supprimer ou imputer les valeurs manquantes.",
+        "B": "Convertir les données catégorielles en numériques.",
+        "C": "Diviser l'ensemble de données en sous-ensembles.",
+        "D": "Augmenter la taille des données."
       },
       "correct_answer": "A",
-      "explanation": "Le nettoyage des données a pour principal objectif de supprimer ou corriger les valeurs aberrantes, erreurs, et données manquantes afin de garantir l'intégrité et la qualité des données utilisées dans les modèles. L'option B est incorrecte car améliorer l'esthétique d'un dataset n'améliore pas sa qualité pour l'apprentissage machine. Réduire la taille du fichier, comme proposé en C, peut être une conséquence du nettoyage mais n'en est pas la finalité principale et peut nuire à l'intégrité des données. D est également incorrect, car augmenter toutes les valeurs numériques ne résout aucun problème de qualité et pourrait fausser les modèles.",
+      "explanation": "Le nettoyage des données vise à supprimer ou imputer les valeurs manquantes pour garantir l'exactitude et la qualité du jeu de données. Cela améliore la fiabilité des modèles de machine learning. La réponse B, qui suggère de convertir des données catégorielles en numériques, concerne l'encodage, une étape différente du nettoyage des données. La réponse C, diviser le dataset en sous-ensembles, est une étape de préparation des données pour l'entraînement et la validation, connue sous le nom de division en ensemble train-test. La réponse D, augmenter la taille des données, n'est pas pertinente dans le cadre du nettoyage des données, car l'objectif est d'améliorer la qualité, pas la quantité.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quel processus permet de mettre toutes les données sur une même échelle?",
+      "question": "Quelle technique est utilisée pour redimensionner les données entre 0 et 1 ?",
       "image_url": null,
       "choices": {
-        "A": "Agrégation",
-        "B": "Normalisation",
-        "C": "Codage binaire",
-        "D": "Filtrage par fréquence"
-      },
-      "correct_answer": "B",
-      "explanation": "La normalisation ajuste l'échelle des données pour qu'elles se situent généralement entre 0 et 1, permettant une contribution égale de chaque caractéristique dans un modèle. L'agrégation (A) regroupe différentes données sans ajuster leur échelle. Le codage binaire (C) transforme des données catégorielles en format numérique mais ne met pas les données sur une même échelle. Le filtrage par fréquence (D) est principalement utilisé pour analyser des signaux plutôt que pour échelonner des données. La normalisation est essentielle dans les modèles sensibles à l'échelle des caractéristiques, comme le k-NN ou la régression logistique.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Quel encodage est souvent utilisé pour transformer des variables catégorielles en variables numériques?",
-      "image_url": null,
-      "choices": {
-        "A": "Encodage binaire",
-        "B": "Encodage analogique",
+        "A": "Standardisation",
+        "B": "Normalisation min-max",
         "C": "One-hot encoding",
-        "D": "Encodage par fréquence"
-      },
-      "correct_answer": "C",
-      "explanation": "Le one-hot encoding transforme chaque catégorie d'une variable catégorielle en une colonne distincte dans le jeu de données, où chaque colonne est remplie de zéros et un seul '1' indique la présence de la catégorie. Cette technique est essentielle pour permettre aux algorithmes de machine learning de traiter les variables catégorielles. L'encodage binaire (A) n'est pas conçu spécifiquement pour les variables catégorielles mais convertit simplement des valeurs numériques en binaire. L'encodage analogique (B) est inexistant dans ce contexte. L'encodage par fréquence (D) attribue des valeurs basées sur la fréquence d'occurrence, ce qui peut biaiser l'importance relative des catégories comparé à l'objectif du one-hot encoding.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Quelle est la proportion typique pour diviser un dataset en ensembles d'entraînement et de test?",
-      "image_url": null,
-      "choices": {
-        "A": "50%/50%",
-        "B": "100%/0%",
-        "C": "90%/10%",
-        "D": "70%/30%"
-      },
-      "correct_answer": "D",
-      "explanation": "Une répartition de 70%/30% entre l'ensemble d'entraînement et l'ensemble de test est couramment utilisée car elle offre un bon équilibre : assez de données pour entraîner un modèle tout en gardant suffisamment de données indépendantes pour une évaluation correcte de ses performances. Une répartition 50%/50% (A) peut fournir trop peu de données d'entraînement, ce qui limite l'apprentissage. Un 90%/10% (C) peut entraîner un sous-échantillonnage des données de test, affectant la robustesse de l'évaluation. Le scénario 100%/0% (B) est impossible pour l'évaluation, car il n’y aurait pas de données indépendantes pour valider les performances du modèle.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Pourquoi est-il important de normaliser les données avant de les utiliser dans un modèle?",
-      "image_url": null,
-      "choices": {
-        "A": "Éviter que des caractéristiques dominent les autres",
-        "B": "Améliorer l'esthétique des visualisations",
-        "C": "Accélérer le temps d'exécution du modèle",
-        "D": "Augmenter la dimensionnalité des données"
-      },
-      "correct_answer": "A",
-      "explanation": "La normalisation des données est cruciale pour éviter qu'une caractéristique ayant des valeurs numériquement larges domine ou biaise l'apprentissage du modèle. Bien que cela améliore indirectement le temps d'exécution (A en partie vrai), ce n'est pas l'objectif premier. L'esthétique des visualisations (B) n'est pas concernée par la normalisation, qui vise une meilleure performance des modèles. La réponse D est fausse car la normalisation ne modifie pas la dimensionnalité des données; elle ajuste simplement leurs valeurs pour les ramener sur une échelle comparable, améliorant ainsi l'équité du poids de chaque caractéristique.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Quelle action devrait être prise si des valeurs manquantes sont présentes dans une colonne?",
-      "image_url": null,
-      "choices": {
-        "A": "Les supprimer toujours",
-        "B": "Les remplacer par la moyenne, médiane ou mode",
-        "C": "Ignorer les valeurs manquantes et continuer",
-        "D": "Ajouter une colonne pour indiquer les manques"
+        "D": "PCA"
       },
       "correct_answer": "B",
-      "explanation": "Remplacer les valeurs manquantes par la moyenne, la médiane ou le mode permet de conserver l'intégrité statistique du dataset, évitant la perte d'informations. Supprimer systématiquement ces valeurs (A) pourrait éliminer des informations importantes et biaiser les résultats. Ignorer les valeurs manquantes (C) mène souvent à des modèles biaisés et peu performants. Ajouter une colonne pour indiquer les valeurs manquantes (D) peut aider à mieux signaler les données manquantes mais ne traite pas directement leur remplacement. Utiliser des méthodes statistiques pour remplacer ces valeurs est donc une pratique reconnue en data science.",
+      "explanation": "La normalisation min-max redimensionne les données en les limitant à une échelle de 0 à 1, ce qui est essentiel pour certaines méthodes de machine learning, notamment celles utilisant des distances. La réponse A, standardisation, centre à zéro avec un écart-type de un, mais n'utilise pas l'échelle 0-1. La réponse C, One-hot encoding, est une technique de transformation des données catégorielles en variables binaires, sans rapport avec le redimensionnement entre 0 et 1. La réponse D, PCA (analyse en composantes principales), est une méthode de réduction de la dimensionnalité qui n'implique pas spécifiquement un redimensionnement des données dans une plage donnée.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quel problème survient si on ne split pas les données entre train et test?",
+      "question": "Quel est le but principal de diviser un dataset en ensembles d'entraînement et de test ?",
       "image_url": null,
       "choices": {
-        "A": "Le modèle sera trop performant",
-        "B": "Le modèle aura moins de données",
-        "C": "On ne peut pas évaluer objectivement la performance du modèle",
-        "D": "Les temps d'entraînement seront réduits"
+        "A": "Réduire le surapprentissage.",
+        "B": "Optimiser les hyperparamètres du modèle.",
+        "C": "Évaluer la performance du modèle sur des données non vues.",
+        "D": "Augmenter la taille des données."
       },
       "correct_answer": "C",
-      "explanation": "Sans séparer les données en ensembles d'entraînement et de test, on ne peut pas évaluer de manière objective la capacité d'un modèle à généraliser sur des données inédites. En utilisant les mêmes données pour apprendre et évaluer, un modèle semble souvent excessivement performant (A), alors qu'il s'agit d'un surapprentissage. L'option B est fausse, car ne pas diviser les données ne réduit pas leur quantité pour l'apprentissage. Les temps d'entraînement (D) ne sont pas directement liés à l'absence de séparation mais plutôt au volume et à la complexité des données. Le manque d'évaluation externe rend l'analyse de performance irréalisable.",
-      "difficulty": "medium"
+      "explanation": "Diviser un dataset en ensembles d'entraînement et de test a pour objectif principal d'évaluer la performance du modèle sur des données qu'il n'a pas vues auparavant. La réponse A, réduire le surapprentissage, est une conséquence potentielle mais pas l'objectif principal de la division des données. La réponse B, optimiser les hyperparamètres du modèle, est réalisée avec des ensembles de validation ou par validation croisée, non par la simple division train-test. La réponse D, augmenter la taille des données, est incorrecte car la division ne change pas la taille totale du dataset mais répartit simplement les données existantes.",
+      "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quel encodage est mieux adapté aux variables catégorielles ordinales?",
+      "question": "Quelle méthode est couramment utilisée pour encoder les catégories ayant une hiérarchie implicite ?",
       "image_url": null,
       "choices": {
         "A": "One-hot encoding",
-        "B": "Encodage par regroupement",
-        "C": "Encodage cyclique",
-        "D": "Encodage de classement"
+        "B": "Data augmentation",
+        "C": "Feature scaling",
+        "D": "Label encoding"
       },
       "correct_answer": "D",
-      "explanation": "L'encodage de classement est le mieux adapté pour les variables ordinales car il traduit l'ordre naturel des catégories en valeurs numériques, conservant ainsi l'information hiérarchique essentielle pour l'analyse. Le one-hot encoding (A) ignore l'ordre en créant uniquement des indicateurs de présence. L'encodage cyclique (C) est utilisé pour des données périodiques comme les dates, ce qui n'est pas pertinent ici. L'encodage par regroupement (B) regroupe des catégories basées sur une similarité mais ne maintient pas nécessairement l'ordre, ce qui est crucial pour les variables ordinales afin de préserver la progression de leur valeur.",
-      "difficulty": "medium"
+      "explanation": "La méthode de Label encoding est utilisée pour encoder des catégories ayant une hiérarchie implicite en leur attribuant des valeurs numériques ordonnées, préservant ainsi l'ordre. La réponse A, One-hot encoding, crée des colonnes binaires sans ordre, inadapté pour des relations hiérarchiques. La réponse B, data augmentation, est une technique pour augmenter la diversité du dataset, non pertinente pour l'encodage de catégories. La réponse C, feature scaling, ajuste les échelles des variables mais ne modifie pas l'encodage des catégories. La réponse D, n'appartient pas ici, car elle n'existe pas dans cette option.",
+      "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quel mécanisme évite le biais du modèle dû à la distribution inégale des classes lors de la séparation train-test?",
+      "question": "Comment gère-t-on les valeurs aberrantes lors de la normalisation min-max ?",
       "image_url": null,
       "choices": {
-        "A": "Validation croisée stratifiée",
-        "B": "Normalisation des classes",
-        "C": "Encodage fréquent",
-        "D": "Agrandissement des données"
+        "A": "Elles biaisent le résultat, car elles étendent l'échelle.",
+        "B": "Elles n'ont pas d'effet majeur sur le résultat.",
+        "C": "Elles sont exclues avant normalisation.",
+        "D": "Elles sont remplacées par la moyenne."
       },
       "correct_answer": "A",
-      "explanation": "La validation croisée stratifiée préserve la distribution proportionnelle des classes à travers les ensembles d'entraînement et de test, ce qui est crucial pour éviter le biais de modèle induit par une représentation inégale. L'encodage fréquent (C) n'a pas de lien avec la répartition des classes, il concerne l’encodage des données catégorielles. La normalisation des classes (B) n'est pas un concept pertinent dans ce contexte spécifique. Enfin, l'agrandissement des données (D) peut équilibrer les classes lors de l'apprentissage mais ne garantit pas une bonne répartition initiale des classes entre les ensembles d’entraînement et de test, contrairement à la validation croisée stratifiée.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Quelle étape critique suit le nettoyage et avant l'entraînement du modèle?",
-      "image_url": null,
-      "choices": {
-        "A": "Validation du modèle",
-        "B": "Partitionnement des données",
-        "C": "Génération de rapports",
-        "D": "Feature engineering"
-      },
-      "correct_answer": "B",
-      "explanation": "Après le nettoyage, la prochaine étape cruciale est le partitionnement des données entre ensembles d'entraînement et de test pour assurer une évaluation juste et probante des modèles de machine learning. La validation du modèle (A) n'intervient qu'après sa formation. Le feature engineering (C) est souvent une étape préalable, pendant laquelle des caractéristiques utiles sont créées ou choisies. La génération de rapports (D) relate les résultats obtenus mais n'interfère pas avec la préparation des données. Bien organiser les données en train et test est essentiel pour garantir la validité des résultats du modèle final.",
-      "difficulty": "hard"
+      "explanation": "Les valeurs aberrantes peuvent fausser la normalisation min-max en étendant la plage des données et en biaisant notablement les valeurs normalisées. La supposition A, qu'elles n'ont pas d'effet majeur, est fausse car leur présence peut fausser les résultats de nombreux algorithmes de machine learning. L'option C, les exclure, n'est pas une partie standard de la normalisation min-max qui traite toutes les données présentes. Quant à remplacer par la moyenne, proposé dans D, ce n'est pas applicable dans le contexte de la normalisation min-max, car cela altère la distribution naturelle des données.",
+      "difficulty": "easy"
     },
     {
       "type": "image",
-      "question": "Comment pourrait-on traiter un dataset avec beaucoup de valeurs extrêmes influençant les statistiques?",
-      "image_url": "/images/modules/apprentissage-supervise-preparation-des-donnees.svg",
+      "question": "Quelle méthode consiste à coder chaque catégorie distincte en une colonne binaire ?",
+      "image_url": "/images/generated/apprentissage-supervise-beginner-preparation-des-donnees-q06.png",
       "choices": {
-        "A": "Garder toutes les valeurs pour plus de précision",
-        "B": "Ignorer les valeurs extrêmes pour gagner du temps",
-        "C": "Utiliser une transformation log pour réduire les écarts extrêmes",
-        "D": "Doubler toutes les valeurs pour compenser"
+        "A": "Min-max scaling",
+        "B": "One-hot encoding",
+        "C": "Label encoding",
+        "D": "Standard scaling"
+      },
+      "correct_answer": "B",
+      "explanation": "Le One-hot encoding est une méthode qui consiste à transformer chaque catégorie distincte en une colonne binaire unique dans laquelle le 1 indique la présence de la catégorie et le 0 son absence. Cette méthode est utile pour représenter les variables catégorielles dans les modèles qui ne peuvent traiter que des valeurs numériques, sans présupposer de relation d'ordre entre les catégories. Le Min-max scaling, en revanche, redéfinit les valeurs numériques pour qu'elles se situent entre 0 et 1. Le Label encoding attribue un numéro entier aux catégories, ce qui implique un ordre inexistant. Enfin, le Standard scaling centre les données numériques autour de zéro avec un écart-type d'un.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Si un dataset contient {50, 100, 150}, quelle serait sa normalisation min-max ?",
+      "image_url": null,
+      "choices": {
+        "A": "{0.33, 0.66, 1.0}",
+        "B": "{1.0, 0.66, 0.33}",
+        "C": "{0.0, 0.5, 1.0}",
+        "D": "{0.5, 1.0, 1.5}"
       },
       "correct_answer": "C",
-      "explanation": "L'application d'une transformation logarithmique réduit les écarts dus aux valeurs extrêmes, ce qui aide à stabiliser la variance et à rendre les données plus conformes à une distribution normale. Cela améliore la robustesse des statistiques descriptives et inférentielles. Garder toutes les valeurs (A) sans transformation peut biaiser vos modèles, car les valeurs extrêmes influencent disproportionnellement les résultats. Ignorer les valeurs extrêmes (B) peut entraîner une perte d'information significative. Doubler toutes les valeurs (D) aggraverait les problèmes d'analyse statistique et n'aurait aucun sens pour atténuer l'effet des valeurs extrêmes. La transformation log est une meilleure solution pour réduire le biais des valeurs extrêmes.",
+      "explanation": "La normalisation min-max est une technique qui met à l'échelle les données pour qu'elles soient entre 0 et 1, en utilisant la formule (valeur-minimum)/(maximum-minimum). Pour le dataset {50, 100, 150}, le minimum est 50 et le maximum est 150. En appliquant la formule, 50 devient 0.0, 100 devient 0.5 et 150 devient 1.0, ce qui correspond à l'option C. L'option A inverse l'ordre des valeurs normalisées, indiquant un calcul erroné. L'option B présente également un ordre incorrect. L'option D propose des valeurs qui dépassent 1, indiquant un mauvais concept de normalisation. La normalisation min-max est cruciale pour uniformiser les données et minimiser l'influence disproportionnée de valeurs extrêmes sur le modèle.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel problème peut survenir si le split train-test n'est pas aléatoire ?",
+      "image_url": null,
+      "choices": {
+        "A": "Le dataset est trop petit.",
+        "B": "Le modèle ne peut pas être entraîné.",
+        "C": "Les valeurs manquantes augmentent dans le jeu de test.",
+        "D": "Les performances du modèle sont surestimées."
+      },
+      "correct_answer": "D",
+      "explanation": "Un train-test split non aléatoire peut biaiser les résultats et entraîner une surestimation des performances, car le modèle s'entraîne et est testé sur des ensembles de données aux caractéristiques trop similaires. La réponse A, indiquant que le dataset est trop petit, est incorrecte; le processus de séparation ne modifie pas la taille des données. La réponse B, affirmant que le modèle ne peut pas être entraîné, est fausse; le modèle peut néanmoins s'entraîner. La réponse C, qui prétend que les valeurs manquantes augmentent, n'est pas une conséquence directe d'un split non aléatoire.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il crucial de standardiser les caractéristiques lorsqu'on utilise des modèles fondés sur la distance ?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour que toutes les caractéristiques aient un impact égal.",
+        "B": "Pour éviter l'overfitting.",
+        "C": "Parce que les valeurs doivent être positives.",
+        "D": "Pour réduire la taille du dataset."
+      },
+      "correct_answer": "A",
+      "explanation": "La standardisation est cruciale dans les modèles fondés sur la distance pour s'assurer que chaque caractéristique contribue équitablement à la mesure de distance, en les mettant sur une échelle commune (moyenne de 0 et écart-type de 1). L'option B, éviter l'overfitting, bien qu'utile, ce n'est pas l'objectif principal ici. La réponse C, qui prétend que les valeurs doivent être positives, est incorrecte; les valeurs normalisées peuvent être négatives. La réponse D, réduire la taille du dataset, est erronée; la standardisation ne modifie pas la taille des données mais leur échelle.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "En utilisant la standardisation, quels seraient les résultats pour {2, 4, 6} ?",
+      "image_url": null,
+      "choices": {
+        "A": "{-1, 0, 1}",
+        "B": "{-1.22, 0, 1.22}",
+        "C": "{0, 0.5, 1}",
+        "D": "{1, 2, 3}"
+      },
+      "correct_answer": "B",
+      "explanation": "La standardisation transforme les données pour qu'elles aient une moyenne nulle et un écart-type de 1. Pour {2, 4, 6}, la moyenne est 4 et l'écart-type environ 1.63. En appliquant la formule (valeur - moyenne) / écart-type, on standardise les valeurs en {-1.22, 0, 1.22}. L'option A ne respecte pas cette méthode, proposant des résultats incorrects. C se rapproche davantage de la méthode min-max, tandis que D ignore toute transformation pour seulement renuméroter les données. Standardiser aide à gérer les différents ordres de grandeur entre les caractéristiques dans l'analyse de données, essentielles pour la plupart des algorithmes.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'effet principal de ne pas normaliser les données avant l'entraînement d'un modèle linéaire ?",
+      "image_url": null,
+      "choices": {
+        "A": "Aucun effet, les modèles linéaires sont insensibles aux échelles des données.",
+        "B": "Le coût de calcul augmente significativement.",
+        "C": "Les caractéristiques avec des plages plus grandes dominent.",
+        "D": "La précision des prédictions augmente."
+      },
+      "correct_answer": "C",
+      "explanation": "Ne pas normaliser les données avant d'entraîner un modèle linéaire peut amener les caractéristiques avec de larges plages de valeurs à dominer celles avec des plages plus petites. Cela se produit parce que les coefficients dans les modèles linéaires sont influencés par les variations en échelle des entrées. L'affirmation A est incorrecte car les modèles linéaires réagissent effectivement aux différences d'échelle. L'option B est fausse car la normalisation n'entraîne pas nécessairement une hausse du coût de calcul. Enfin, D prétend à tort que la précision s'améliore sans normalisation, alors que cela peut effectivement nuire à l'équilibre et à l'efficacité du modèle.",
       "difficulty": "hard"
     }
   ]
