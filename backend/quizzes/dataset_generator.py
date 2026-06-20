@@ -455,19 +455,19 @@ def iter_module_targets():
 def _build_concept(category_name, level_name, module_title, concept_name):
 	hint = _concept_semantic_hint(concept_name)
 	if level_name == 'Beginner':
-		definition = f"{concept_name} est une notion de base en {category_name.lower()} ; {hint['definition']}"
-		purpose = f"Dans {module_title}, {concept_name} vise à installer un raisonnement fiable dès le début : {hint['purpose']}"
-		pitfall = f"Une erreur fréquente est d'appliquer {concept_name} par automatisme sans vérifier les hypothèses, la qualité des données et l'objectif métier."
+		definition = f"une notion de base en {category_name.lower()} ; {hint['definition']}"
+		purpose = f"installer un raisonnement fiable des le debut ; {hint['purpose']}"
+		pitfall = f"appliquer {concept_name} par automatisme sans verifier hypotheses, qualite des donnees et objectif metier"
 		scenario = f"Un analyste junior mobilise {concept_name} dans un workflow introductif de {module_title} pour prendre une première décision fiable."
 	elif level_name == 'Intermediate':
-		definition = f"{concept_name} est un concept intermédiaire en {category_name.lower()} ; {hint['definition']}"
-		purpose = f"Dans {module_title}, {concept_name} sert à fiabiliser les décisions d'expérimentation : {hint['purpose']}"
-		pitfall = f"Un piège courant est de sur-optimiser {concept_name} localement en ignorant ses interactions avec les features, les métriques et les protocoles de validation."
+		definition = f"un concept intermediaire en {category_name.lower()} ; {hint['definition']}"
+		purpose = f"fiabiliser les decisions d'experimentation ; {hint['purpose']}"
+		pitfall = f"sur-optimiser {concept_name} localement en ignorant ses interactions avec features, metriques et protocoles de validation"
 		scenario = f"Un praticien ML ajuste {concept_name} dans un pipeline de {module_title} pour renforcer la robustesse sur des données inconnues."
 	else:
-		definition = f"{concept_name} est un levier avancé en {category_name.lower()} ; {hint['definition']}"
-		purpose = f"Dans {module_title}, {concept_name} permet des arbitrages de production : {hint['purpose']}"
-		pitfall = f"Un risque classique est d'optimiser {concept_name} en silo, ce qui introduit des modes d'échec cachés au déploiement."
+		definition = f"un levier avance en {category_name.lower()} ; {hint['definition']}"
+		purpose = f"supporter des arbitrages de production ; {hint['purpose']}"
+		pitfall = f"optimiser {concept_name} en silo et introduire des modes d'echec caches au deploiement"
 		scenario = f"Une équipe ML de production s'appuie sur {concept_name} dans {module_title} pour limiter les régressions en charge réelle."
 
 	return {
@@ -482,6 +482,78 @@ def _build_concept(category_name, level_name, module_title, concept_name):
 
 def _concept_semantic_hint(concept_name):
 	name = concept_name.lower()
+	if 'f1' in name:
+		return {
+			'definition': "il combine precision et rappel via leur moyenne harmonique pour evaluer un classifieur en classes desequilibrees.",
+			'purpose': "arbitrer entre faux positifs et faux negatifs lorsque l'exactitude globale est trompeuse.",
+			'descriptor': "metrique d'equilibre precision-rappel",
+		}
+	if 'precision' in name:
+		return {
+			'definition': "il mesure la proportion de predictions positives qui sont effectivement correctes.",
+			'purpose': "limiter les faux positifs quand une alerte incorrecte coute cher.",
+			'descriptor': "controle des faux positifs",
+		}
+	if 'rappel' in name or 'recall' in name:
+		return {
+			'definition': "il mesure la proportion de cas positifs reels detectes par le modele.",
+			'purpose': "reduire les faux negatifs quand rater un cas est critique.",
+			'descriptor': "controle des faux negatifs",
+		}
+	if 'roc-auc' in name or ('auc' in name and 'roc' in name):
+		return {
+			'definition': "il mesure la capacite du modele a separer classes positives et negatives sur tous les seuils.",
+			'purpose': "comparer des modeles de classification independamment d'un seuil de decision unique.",
+			'descriptor': "discrimination globale du classifieur",
+		}
+	if 'matrice de confusion' in name:
+		return {
+			'definition': "elle decompose les predictions en vrais positifs, vrais negatifs, faux positifs et faux negatifs.",
+			'purpose': "diagnostiquer precisement les types d'erreurs avant d'ajuster le modele.",
+			'descriptor': "diagnostic detaille des erreurs",
+		}
+	if 'resampling' in name or 'sur-echantill' in name or 'sous-echantill' in name:
+		return {
+			'definition': "il reequilibre la distribution des classes en augmentant ou reduisant certaines observations.",
+			'purpose': "ameliorer l'apprentissage sur classes minoritaires sans ignorer les majoritaires.",
+			'descriptor': "reequilibrage de classes",
+		}
+	if 'class weight' in name:
+		return {
+			'definition': "il attribue un cout plus fort aux erreurs sur classes minoritaires dans la fonction de perte.",
+			'purpose': "forcer le modele a mieux prendre en compte les classes rares.",
+			'descriptor': "pondération du cout d'erreur",
+		}
+	if 'stratification' in name:
+		return {
+			'definition': "elle preserve les proportions de classes dans les splits train/validation/test.",
+			'purpose': "eviter des evaluations biaisees dues a une repartition non representative.",
+			'descriptor': "echantillonnage representatif par classe",
+		}
+	if 'early stopping' in name:
+		return {
+			'definition': "il arrete l'entrainement quand la performance de validation cesse de progresser.",
+			'purpose': "limiter le surapprentissage et reduire le cout de calcul inutile.",
+			'descriptor': "controle du surapprentissage en entrainement",
+		}
+	if 'hyperparam' in name:
+		return {
+			'definition': "il regroupe les reglages externes du modele (profondeur, taux d'apprentissage, regularisation) fixes avant apprentissage.",
+			'purpose': "trouver le meilleur compromis biais-variance pour le contexte metier.",
+			'descriptor': "reglage des parametres de modelisation",
+		}
+	if 'reproductibilite' in name:
+		return {
+			'definition': "elle garantit qu'un meme pipeline redonne les memes resultats avec memes donnees, code et seeds.",
+			'purpose': "fiabiliser comparaison d'experiences, audit et retour arriere en production.",
+			'descriptor': "stabilite experimentale et auditabilite",
+		}
+	if 'calibration' in name:
+		return {
+			'definition': "elle ajuste les probabilites predites pour qu'elles refletent mieux les frequences observees.",
+			'purpose': "rendre les scores probabilistes utilisables pour des decisions a seuil metier.",
+			'descriptor': "fiabilite des probabilites predites",
+		}
 	if 'drift' in name:
 		return {
 			'definition': "il mesure une derive entre les conditions d'entrainement et les conditions d'exploitation.",
@@ -536,10 +608,34 @@ def _concept_semantic_hint(concept_name):
 			'purpose': "declencher des actions de controle sur des cas atypiques critiques.",
 			'descriptor': "detection de cas atypiques",
 		}
+	if 'pca' in name or 'reduction de dimension' in name:
+		return {
+			'definition': "il projette les variables sur un sous-espace plus compact qui conserve l'essentiel de la variance utile.",
+			'purpose': "reduire bruit et cout de calcul tout en preservant l'information structurante.",
+			'descriptor': "compression de representation",
+		}
+	if 'q-learning' in name:
+		return {
+			'definition': "il apprend une fonction de valeur d'action pour choisir progressivement les actions maximisant la recompense future.",
+			'purpose': "optimiser une politique sans modele explicite de l'environnement.",
+			'descriptor': "apprentissage de valeur d'action",
+		}
+	if 'policy gradient' in name:
+		return {
+			'definition': "il optimise directement les parametres de politique via le gradient de recompense attendue.",
+			'purpose': "ameliorer des politiques continues ou stochastiques avec un signal de retour global.",
+			'descriptor': "optimisation directe de politique",
+		}
+	if 'monitoring' in name:
+		return {
+			'definition': "il organise le suivi continu des metriques techniques et metier apres deploiement.",
+			'purpose': "detecter rapidement degradation de performance, derive et incidents.",
+			'descriptor': "surveillance operationnelle du systeme ML",
+		}
 	return {
-		'definition': "il apporte un cadre de decision exploitable pour passer d'une intuition a une action ML verifiable.",
-		'purpose': "ameliorer la qualite des decisions techniques et metier en conditions reelles.",
-		'descriptor': "levier de decision ML",
+		'definition': f"il formalise le role de {concept_name} dans un pipeline ML, avec ses hypotheses et ses limites pratiques.",
+		'purpose': f"l'utiliser correctement permet de mieux decider quand et comment appliquer {concept_name} en production.",
+		'descriptor': f"usage operationnel de {concept_name}",
 	}
 
 
@@ -733,9 +829,50 @@ def _choice_text(kind, target, option, module_title, level_name, slot):
 	is_target = option_name == target_name
 	module_ctx = module_title
 
+	def _clean_hint(text, fallback):
+		if not text:
+			return fallback
+		compact = re.sub(r'\s+', ' ', text).strip(' .;')
+		if ':' in compact:
+			compact = compact.split(':', 1)[1].strip(' .;')
+		return compact or fallback
+
+	def _learning_statement(base_kind):
+		descriptor = option.get('descriptor') or _concept_semantic_hint(option_name)['descriptor']
+		definition_hint = _clean_hint(option.get('definition', ''), descriptor)
+		purpose_hint = _clean_hint(option.get('purpose', ''), descriptor)
+		pitfall_hint = _clean_hint(option.get('pitfall', ''), descriptor)
+
+		if base_kind == 'definition':
+			templates = [
+				f"{option_name} designe {definition_hint}.",
+				f"{option_name} correspond a {definition_hint}, ce qui structure l'analyse dans {module_ctx}.",
+				f"Dans {module_ctx}, {option_name} se comprend comme {definition_hint}.",
+			]
+			return templates[slot % len(templates)]
+
+		if base_kind == 'purpose':
+			templates = [
+				f"Le role de {option_name} est de {purpose_hint}.",
+				f"{option_name} sert a {purpose_hint} pour guider une decision exploitable.",
+				f"Dans {module_ctx}, {option_name} est mobilise pour {purpose_hint}.",
+			]
+			return templates[slot % len(templates)]
+
+		if base_kind == 'pitfall':
+			templates = [
+				f"Un risque classique avec {option_name} est de {pitfall_hint}.",
+				f"Si {option_name} est mal utilise, on observe souvent {pitfall_hint}.",
+				f"Le piege principal autour de {option_name} est {pitfall_hint}.",
+			]
+			return templates[slot % len(templates)]
+
+		return f"{option_name} est lie a {descriptor}."
+
 	def scenario_text(visual=False):
 		option_descriptor = option.get('descriptor') or _concept_semantic_hint(option_name)['descriptor']
-		target_descriptor = target.get('descriptor') or _concept_semantic_hint(target_name)['descriptor']
+		option_purpose = _clean_hint(option.get('purpose', ''), option_descriptor)
+		option_pitfall = _clean_hint(option.get('pitfall', ''), option_descriptor)
 		if level_name == 'Beginner':
 			title = "un atelier de cadrage"
 		elif level_name == 'Intermediate':
@@ -743,102 +880,40 @@ def _choice_text(kind, target, option, module_title, level_name, slot):
 		else:
 			title = "une revue pre-deploiement"
 
-		if is_target:
-			if visual:
-				correct_templates = [
-					f"Sur ce schema de {module_ctx}, l'indice decisif pointe vers {option_name} ({option_descriptor}); c'est la lecture la plus exploitable en pratique.",
-					f"Le visuel raconte surtout {option_name} ({option_descriptor}); c'est ce qui permet de prendre la bonne decision sans sur-interpreter le reste.",
-					f"Ici, {option_name} est clairement au centre du schema ({option_descriptor}); cette interpretation relie bien signal observe et action a mener.",
-				]
-			else:
-				correct_templates = [
-					f"Dans {title} pour {module_ctx}, l'equipe s'appuie d'abord sur {option_name} ({option_descriptor}) pour trancher proprement avant d'avancer.",
-					f"En situation reelle sur {module_ctx}, {option_name} ({option_descriptor}) est le vrai point d'appui pour choisir une strategie fiable.",
-					f"Quand il faut arbitrer vite dans {module_ctx}, prioriser {option_name} ({option_descriptor}) evite les decisions superficielles.",
-				]
-			return correct_templates[slot % len(correct_templates)]
-
 		if visual:
-			wrong_templates = [
-				f"Le schema peut faire penser a {option_name} ({option_descriptor}), mais ce n'est pas l'element qui decide vraiment ici.",
-				f"Cette piste autour de {option_name} ({option_descriptor}) tient debout, mais elle rate l'indice principal du visuel.",
-				f"On retrouve un bout de logique de {option_name} ({option_descriptor}), sans expliquer le coeur du signal attendu pour {target_name}.",
+			templates = [
+				f"Le schema illustre une decision basee sur {option_name}: les indices orientent vers {option_purpose}.",
+				f"Lecture du visuel: {option_name} est mobilise pour {option_purpose} dans {module_ctx}.",
+				f"Le signal visible est coherent avec {option_name}, car l'objectif est {option_purpose}.",
 			]
-		else:
-			wrong_templates = [
-				f"Dans {title} de {module_ctx}, {option_name} ({option_descriptor}) peut aider, mais il reste sur un besoin annexe.",
-				f"Le scenario avec {option_name} ({option_descriptor}) est plausible, sauf qu'il ne traite pas l'enjeu central pilote par {target_name}.",
-				f"{option_name} ({option_descriptor}) apporte un angle utile, mais la decision prioritaire repose plutot sur {target_descriptor}.",
-			]
-		return wrong_templates[slot % len(wrong_templates)]
+			return templates[slot % len(templates)]
+
+		templates = [
+			f"Dans {title} de {module_ctx}, l'equipe applique {option_name} pour {option_purpose}.",
+			f"En contexte reel sur {module_ctx}, {option_name} est choisi afin de {option_purpose}.",
+			f"Pendant {title}, {option_name} est utile pour {option_purpose} tout en surveillant le risque de {option_pitfall}.",
+		]
+		return templates[slot % len(templates)]
 
 	def concept_statement(base_kind, visual=False):
-		option_descriptor = option.get('descriptor') or _concept_semantic_hint(option_name)['descriptor']
-		target_descriptor = target.get('descriptor') or _concept_semantic_hint(target_name)['descriptor']
 		if base_kind == 'definition':
-			base_text = option.get('definition', f"{option_name} est un concept pertinent du module {module_title}.")
-			if is_target:
-				templates = [
-					f"{base_text} C'est la definition qui tient le mieux la route pour cadrer {module_ctx}.",
-					f"Dans {module_ctx}, cette formulation de {option_name} est la plus nette pour bien demarrer l'analyse.",
-					f"Cette definition de {option_name} est la bonne: elle couvre le mecanisme vraiment attendu ici.",
-				]
-			else:
-				templates = [
-					f"{base_text} Proposition plausible, mais elle ne vise pas le concept central demande.",
-					f"Cette definition parle bien de {option_name} ({option_descriptor}), mais le coeur de la question est ailleurs.",
-					f"L'idee est proche, sauf qu'elle colle davantage a {option_name} qu'au vrai probleme pose.",
-				]
-			return templates[slot % len(templates)]
+			return _learning_statement('definition')
 
 		if base_kind == 'purpose':
-			base_text = option.get('purpose', f"{option_name} soutient un objectif operationnel dans {module_title}.")
-			if is_target:
-				templates = [
-					f"{base_text} C'est l'objectif prioritaire a retenir pour prendre une decision propre dans {module_ctx}.",
-					f"Dans {module_ctx}, {option_name} sert d'abord ce but: c'est ce qui rend cette reponse solide.",
-					f"Cet objectif est le plus coherent avec l'usage reel de {option_name} sur le terrain.",
-				]
-			else:
-				templates = [
-					f"{base_text} Objectif valable, mais pas le plus aligne avec ce qu'on te demande ici.",
-					f"Cette finalite colle plutot a {option_name} ({option_descriptor}) qu'au levier principal attendu.",
-					f"L'intention est credible, mais elle reste annexe par rapport a l'objectif central de {target_name}.",
-				]
-			return templates[slot % len(templates)]
+			return _learning_statement('purpose')
 
 		if base_kind == 'pitfall':
-			base_text = option.get('pitfall', f"Un risque frequemment observe concerne {option_name}.")
-			if is_target:
-				templates = [
-					f"{base_text} C'est le risque le plus critique, parce qu'il casse directement la fiabilite en production.",
-					f"Dans {module_ctx}, ce piege est prioritaire: c'est celui qui provoque le plus de regressions couteuses.",
-					f"Cette option pointe le mode d'echec central lie a {option_name}, celui qu'il faut traiter en premier.",
-				]
-			else:
-				templates = [
-					f"{base_text} Le risque existe, mais il reste moins central que celui lie a {target_name}.",
-					f"Ce point peut arriver autour de {option_name}, sans etre la cause principale d'echec dans ce cas.",
-					f"Menace plausible, oui, mais secondaire par rapport au risque coeur de la question.",
-				]
-			return templates[slot % len(templates)]
+			return _learning_statement('pitfall')
 
 		if visual:
-			if is_target:
-				templates = [
-					f"Le schema confirme bien le role de {option_name}: {option.get('purpose', '')}",
-					f"Visuellement, c'est la lecture la plus robuste car {option_name} porte l'objectif dominant.",
-					f"La bonne interpretation relie directement les indices du schema a {option_name}, sans forcer le raisonnement.",
-				]
-			else:
-				templates = [
-					f"Le visuel peut evoquer {option_name}, mais l'objectif dominant reste {target_descriptor}.",
-					f"Cette interpretation ne couvre qu'une partie du schema: insuffisant pour justifier la decision principale.",
-					f"Lecture partielle: elle decrit {option_name} ({option_descriptor}) sans expliquer le signal qui tranche vraiment.",
-				]
+			templates = [
+				f"Le schema met en evidence {option_name}: { _clean_hint(option.get('purpose', ''), option_name) }.",
+				f"Interpretation visuelle: {option_name} est pertinent quand l'objectif est de { _clean_hint(option.get('purpose', ''), option_name) }.",
+				f"L'image s'explique par {option_name}, notamment via { _clean_hint(option.get('definition', ''), option_name) }.",
+			]
 			return templates[slot % len(templates)]
 
-		return option.get('definition', f"{option_name} est un concept pertinent du module {module_title}.")
+		return _learning_statement('definition')
 
 	if kind == 'definition':
 		return concept_statement('definition')
@@ -854,33 +929,23 @@ def _choice_text(kind, target, option, module_title, level_name, slot):
 
 	if kind == 'name_from_definition':
 		descriptor = option.get('descriptor') or _concept_semantic_hint(option_name)['descriptor']
-		definition_hint = option.get('definition', '')
-		if ':' in definition_hint:
-			definition_hint = definition_hint.split(':', 1)[1].strip()
-		definition_hint = re.sub(r'\s+', ' ', definition_hint).strip(' .;')
-		if not definition_hint:
-			definition_hint = descriptor
+		definition_hint = _clean_hint(option.get('definition', ''), descriptor)
 		templates = [
-			f"{option_name} - ce concept renvoie surtout a {descriptor}, avec un accent sur {definition_hint}.",
-			f"Si l'on parle de {descriptor}, l'option la plus logique est {option_name} (indice: {definition_hint}).",
-			f"{option_name} est coherent ici: son perimetre couvre {descriptor} et la logique '{definition_hint}'.",
-			f"On reconnait {option_name} quand la definition insiste sur {descriptor}, notamment via {definition_hint}.",
+			f"{option_name}: {definition_hint}.",
+			f"{option_name} correspond a {definition_hint}, avec un perimetre centré sur {descriptor}.",
+			f"Le concept {option_name} se reconnait par {definition_hint}.",
+			f"Quand une definition insiste sur {definition_hint}, elle renvoie a {option_name}.",
 		]
 		return templates[slot % len(templates)]
 
 	if kind == 'name_from_purpose':
 		descriptor = option.get('descriptor') or _concept_semantic_hint(option_name)['descriptor']
-		purpose_hint = option.get('purpose', '')
-		if ':' in purpose_hint:
-			purpose_hint = purpose_hint.split(':', 1)[1].strip()
-		purpose_hint = re.sub(r'\s+', ' ', purpose_hint).strip(' .;')
-		if not purpose_hint:
-			purpose_hint = descriptor
+		purpose_hint = _clean_hint(option.get('purpose', ''), descriptor)
 		templates = [
-			f"{option_name} - objectif principal: {descriptor}; effet attendu: {purpose_hint}.",
-			f"Quand l'objectif vise {descriptor}, la reponse la plus alignée est {option_name} ({purpose_hint}).",
-			f"{option_name} se distingue par une finalite claire: {descriptor}, avec comme resultat {purpose_hint}.",
-			f"Pour atteindre {purpose_hint}, le concept a retenir est {option_name}, car il porte {descriptor}.",
+			f"{option_name}: objectif principal {purpose_hint}.",
+			f"{option_name} est utilise pour {purpose_hint}, ce qui correspond a {descriptor}.",
+			f"La finalite de {option_name} est de {purpose_hint}.",
+			f"Quand l'objectif est de {purpose_hint}, {option_name} est le concept associe.",
 		]
 		return templates[slot % len(templates)]
 

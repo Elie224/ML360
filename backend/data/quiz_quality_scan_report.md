@@ -12,24 +12,24 @@
 - duplicatePromptsByCategory: 0
 
 ## Correct Answer Distribution
-- A: 373 (22.74%)
-- B: 423 (25.79%)
+- A: 375 (22.87%)
+- B: 420 (25.61%)
 - C: 421 (25.67%)
-- D: 423 (25.79%)
+- D: 424 (25.85%)
 
 ## Top Option Prefixes (Potential Repetition)
-- 577x :: cette finalit colle plut t a
-- 577x :: l'intention est cr dible mais elle
-- 261x :: l'idee est proche sauf qu'elle colle
-- 233x :: cet objectif est le plus coh
-- 222x :: menace plausible oui mais secondaire par
-- 172x :: ce point peut arriver autour de
-- 163x :: le schema peut faire penser a
-- 163x :: on retrouve un bout de logique
-- 115x :: dans une revue pre deploiement de
-- 94x :: cette option pointe le mode d'echec
-- 77x :: un pi ge courant est de
-- 66x :: quand il faut arbitrer vite dans
-- 64x :: si l'on parle de levier de
-- 43x :: quand l'objectif vise levier de d
-- 42x :: pour atteindre am liorer la qualit
+- 239x :: le signal visible est coh rent
+- 215x :: le schema illustre une d cision
+- 143x :: dans une revue pre deploiement de
+- 88x :: quand une d finition insiste sur
+- 56x :: dans un atelier de cadrage de
+- 32x :: en contexte r el sur valuation
+- 31x :: quand l'objectif est de l'utiliser correctement
+- 19x :: dans un atelier de cadrage d'
+- 18x :: en contexte r el sur clustering
+- 18x :: en contexte r el sur monitoring
+- 18x :: en contexte r el sur robustesse
+- 16x :: dans donn es de grande dimension
+- 16x :: dans robustesse et g n ralisation
+- 16x :: dans d cisions sensibles au cout
+- 15x :: en contexte r el sur fondamentaux
