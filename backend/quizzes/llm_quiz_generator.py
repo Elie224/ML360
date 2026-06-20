@@ -65,10 +65,96 @@ REGLES OBLIGATOIRES:
 OPTION_LETTERS = ("A", "B", "C", "D")
 MIN_EXPLANATION_WORDS = 90
 MAX_EXPLANATION_WORDS = 120
+IMAGE_RATIO_TARGET = 0.2
 
 
 def _words_count(text: str) -> int:
     return len((text or "").split())
+
+
+def _project_root() -> Path:
+    return BACKEND_DIR.parent
+
+
+def _module_placeholder_name(category_key: str, module_name: str) -> str:
+    return f"{slugify(category_key)}-{slugify(module_name)}.svg"
+
+
+def _module_placeholder_url(category_key: str, module_name: str) -> str:
+    return f"/images/modules/{_module_placeholder_name(category_key, module_name)}"
+
+
+def _ensure_module_placeholder_image(category_key: str, module_name: str) -> str:
+    file_name = _module_placeholder_name(category_key, module_name)
+    out_dir = _project_root() / "frontend" / "public" / "images" / "modules"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_file = out_dir / file_name
+
+    if not out_file.exists():
+        safe_title = module_name.replace("&", "and")
+        svg = (
+            '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">'
+            '<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">'
+            '<stop offset="0%" stop-color="#0f172a"/><stop offset="100%" stop-color="#1d4ed8"/>'
+            '</linearGradient></defs>'
+            '<rect width="1200" height="630" fill="url(#bg)"/>'
+            '<rect x="64" y="64" width="1072" height="502" rx="28" fill="#ffffff" fill-opacity="0.08"/>'
+            '<text x="96" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="40" fill="#e2e8f0">ML360</text>'
+            f'<text x="96" y="250" font-family="Segoe UI, Arial, sans-serif" font-size="54" fill="#ffffff">{safe_title}</text>'
+            '<text x="96" y="322" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#cbd5e1">Question avec support visuel</text>'
+            '<text x="96" y="388" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#cbd5e1">Utiliser ce schema pour interpreter la situation et choisir la bonne reponse.</text>'
+            '</svg>'
+        )
+        out_file.write_text(svg, encoding="utf-8")
+
+    return _module_placeholder_url(category_key, module_name)
+
+
+def _image_quota_count(question_count: int) -> int:
+    if question_count <= 0:
+        return 0
+    return max(1, round(question_count * IMAGE_RATIO_TARGET))
+
+
+def _image_slot_indexes(question_count: int, image_count: int) -> list[int]:
+    if question_count <= 0 or image_count <= 0:
+        return []
+    if image_count >= question_count:
+        return list(range(question_count))
+    if image_count == 1:
+        return [question_count // 2]
+
+    indexes = {
+        round((i * (question_count - 1)) / (image_count - 1)) for i in range(image_count)
+    }
+    while len(indexes) < image_count:
+        for idx in range(question_count):
+            if idx not in indexes:
+                indexes.add(idx)
+                if len(indexes) == image_count:
+                    break
+    return sorted(indexes)
+
+
+def _enforce_image_quota(questions: list[dict], category_key: str, module_name: str) -> list[dict]:
+    normalized = [dict(q) for q in questions]
+    n = len(normalized)
+    target = _image_quota_count(n)
+    if target == 0:
+        return normalized
+
+    url = _ensure_module_placeholder_image(category_key=category_key, module_name=module_name)
+    image_indexes = set(_image_slot_indexes(question_count=n, image_count=target))
+
+    for idx, q in enumerate(normalized):
+        if idx in image_indexes:
+            q["type"] = "image"
+            q["image_url"] = url
+        else:
+            q["type"] = "text"
+            q["image_url"] = None
+
+    return normalized
 
 
 def _target_answer_sequence(question_count: int) -> list[str]:
@@ -540,6 +626,11 @@ def generate_module_quiz(
         level_name=level_name,
         module_name=module_name,
         questions=questions,
+    )
+    questions = _enforce_image_quota(
+        questions=questions,
+        category_key=category_key,
+        module_name=module_name,
     )
 
     return {
