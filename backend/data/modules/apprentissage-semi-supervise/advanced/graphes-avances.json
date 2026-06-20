@@ -14,7 +14,7 @@
         "D": "Identifier les hyperplans de décision optimaux dans un espace de caractéristiques."
       },
       "correct_answer": "A",
-      "explanation": "Le graphe k-NN connecte chaque point aux k points les plus proches, formant ainsi les arêtes du graphe nécessaire à la diffusion d'étiquettes par les méthodes semi-supervisées. L'option B décrit une tâche de modélisation, C fait référence aux méthodes supervisées et D relève des SVM.",
+      "explanation": "Le graphe k-NN connecte chaque point aux k points les plus proches, formant ainsi les arêtes du graphe nécessaire à la diffusion d'étiquettes par les méthodes semi-supervisées. L'option B décrit une tâche de modélisation, C fait référence aux méthodes supervisées et D relève des SVM. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Évaluer la densité de probabilité des étiquettes à partir des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Optimiser directement les étiquettes à partir des fonctions de perte.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Comment les poids d'arêtes sont-ils généralement définis dans un graphe k-NN?",
       "image_url": null,
       "choices": {
-        "A": "Par une fonction exponentielle de la distance euclidienne.",
-        "B": "En assignant la même valeur fixe à chaque arête.",
+        "A": "En assignant la même valeur fixe à chaque arête.",
+        "B": "Par une fonction exponentielle de la distance euclidienne.",
         "C": "En fonction de la corrélation entre les étiquettes.",
         "D": "Par l'inverse de la variance des points connectés."
       },
-      "correct_answer": "A",
-      "explanation": "Les poids des arêtes dans un graphe k-NN sont souvent définis comme une fonction exponentielle décroissante de la distance Euclidienne entre les points connectés. L'option B est inadéquate car elle ne capitalise pas la similitude, C définit le poids par une relation non standard et D ne prend pas en compte la distance directe.",
+      "correct_answer": "B",
+      "explanation": "Les poids des arêtes dans un graphe k-NN sont souvent définis comme une fonction exponentielle décroissante de la distance Euclidienne entre les points connectés. L'option B est inadéquate car elle ne capitalise pas la similitude, C définit le poids par une relation non standard et D ne prend pas en compte la distance directe. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En assignant la même valeur fixe à chaque arête.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En fonction de la corrélation entre les étiquettes.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quelle est une propriété clé des fonctions harmoniques dans les graphes?",
       "image_url": null,
       "choices": {
-        "A": "Elles conservent les valeurs aux nœuds labellisés constants tout en étant lisses ailleurs.",
+        "A": "Elles assignent une valeur nulle à tous les nœuds non-labelisés.",
         "B": "Elles maximisent la somme des différences au carré entre nœuds connectés.",
-        "C": "Elles assignent une valeur nulle à tous les nœuds non-labelisés.",
+        "C": "Elles conservent les valeurs aux nœuds labellisés constants tout en étant lisses ailleurs.",
         "D": "Elles segmentent les nœuds en clusters distincts par hyperplans."
       },
-      "correct_answer": "A",
-      "explanation": "Une fonction harmonique est essentiellement lisse sur le graphe, sauf sur les nœuds labellisés où elle doit conserver les mêmes valeurs. L’option B est contraire aux principes de lissage, l’option C décrit un comportement non pertinent et D relève d'une tâche de clustering.",
+      "correct_answer": "C",
+      "explanation": "Une fonction harmonique est essentiellement lisse sur le graphe, sauf sur les nœuds labellisés où elle doit conserver les mêmes valeurs. L’option B est contraire aux principes de lissage, l’option C décrit un comportement non pertinent et D relève d'une tâche de clustering. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elles assignent une valeur nulle à tous les nœuds non-labelisés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elles maximisent la somme des différences au carré entre nœuds connectés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quelle est l'utilité de la régularisation sur graphe dans l'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Favoriser la continuité des étiquettes le long des arêtes du graphe.",
+        "A": "Augmenter la variance totale des étiquettes à travers le graphe.",
         "B": "Minimiser le nombre de nœuds dans le graphe.",
         "C": "Accentuer les différences d'étiquettes entre tous les points.",
-        "D": "Augmenter la variance totale des étiquettes à travers le graphe."
+        "D": "Favoriser la continuité des étiquettes le long des arêtes du graphe."
       },
-      "correct_answer": "A",
-      "explanation": "La régularisation sur graphe soutient une transition douce des étiquettes entre les nœuds voisins. L’option B est incorrecte, car réduire les nœuds n'est pas l'objectif. C et D décrivent des processus opposés à ceux attendus d'un mécanisme de régularisation.",
+      "correct_answer": "D",
+      "explanation": "La régularisation sur graphe soutient une transition douce des étiquettes entre les nœuds voisins. L’option B est incorrecte, car réduire les nœuds n'est pas l'objectif. C et D décrivent des processus opposés à ceux attendus d'un mécanisme de régularisation. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmenter la variance totale des étiquettes à travers le graphe.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Minimiser le nombre de nœuds dans le graphe.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Accentuer les différences d'étiquettes entre tous les",
       "difficulty": "medium"
     },
     {
@@ -64,13 +64,13 @@
       "question": "Quelle méthode pourrait améliorer l'efficacité des calculs de graphes k-NN pour de grandes bases de données?",
       "image_url": null,
       "choices": {
-        "A": "Utilisation de la quantification des caractéristiques.",
+        "A": "Implémentation de structures de données comme les arbres ball pour accélérer la recherche k-NN.",
         "B": "Simplification des distances à l'aide de métriques de Hamming.",
-        "C": "Implémentation de structures de données comme les arbres ball pour accélérer la recherche k-NN.",
+        "C": "Utilisation de la quantification des caractéristiques.",
         "D": "Augmentation du nombre de voisins k jusqu'à la taille de l'ensemble de données."
       },
-      "correct_answer": "C",
-      "explanation": "Les structures comme les arbres ball permettent de réduire le temps de calcul en restreignant les recherches dans les espaces de données uniquement aux régions pertinentes. A et B ne sont pas suffisamment précises ou ne concernent pas des approches k-NN avancées, tandis que D est inefficace.",
+      "correct_answer": "A",
+      "explanation": "Les structures comme les arbres ball permettent de réduire le temps de calcul en restreignant les recherches dans les espaces de données uniquement aux régions pertinentes. A et B ne sont pas suffisamment précises ou ne concernent pas des approches k-NN avancées, tandis que D est inefficace. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Simplification des distances à l'aide de métriques de Hamming.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Utilisation de la quantification des caractéristiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Augmentation du",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Pourquoi est-il crucial de choisir un bon paramètre k dans k-NN?",
       "image_url": null,
       "choices": {
-        "A": "Il contrôle le biais et la variance du modèle.",
-        "B": "Il détermine la structure des couches cachées du réseau de neurones sous-jacent.",
+        "A": "Il détermine la structure des couches cachées du réseau de neurones sous-jacent.",
+        "B": "Il contrôle le biais et la variance du modèle.",
         "C": "Il ajuste la boucle d'entraînement itérative de convergence.",
         "D": "Il influence directement la normalisation des données d'entrée."
       },
-      "correct_answer": "A",
-      "explanation": "Le paramètre k dans un graphe k-NN affecte le biais et la variance, influençant la robustesse du modèle. B est incorrect, car les graphes k-NN ne sont pas liés à l'architecture neuronale, et C et D ne concernent pas des principes fondamentaux de k-NN.",
+      "correct_answer": "B",
+      "explanation": "Le paramètre k dans un graphe k-NN affecte le biais et la variance, influençant la robustesse du modèle. B est incorrect, car les graphes k-NN ne sont pas liés à l'architecture neuronale, et C et D ne concernent pas des principes fondamentaux de k-NN. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il détermine la structure des couches cachées du réseau de neurones sous-jacent.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il ajuste la boucle d'entraînement itérative de convergence.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "En quoi la propagation d'étiquettes sur les graphes se distingue-t-elle des méthodes supervisées?",
       "image_url": null,
       "choices": {
-        "A": "Elle ne nécessite pas de modèle global explicite.",
+        "A": "Elle dépend d'une fonction de perte strictement concave.",
         "B": "Elle se concentre uniquement sur les points de données non étiquetés.",
-        "C": "Elle dépend d'une fonction de perte strictement concave.",
+        "C": "Elle ne nécessite pas de modèle global explicite.",
         "D": "Elle n'est applicable que sur des ensembles de données très petits."
       },
-      "correct_answer": "A",
-      "explanation": "La propagation d'étiquettes repose sur la structure locale du graphe, propageant les informations sans établir de modèle explicite. B est faux, car elle exploite des données étiquetées; C ne correspond pas à son utilisation, et D n'est pas une contrainte pour cette méthode.",
+      "correct_answer": "C",
+      "explanation": "La propagation d'étiquettes repose sur la structure locale du graphe, propageant les informations sans établir de modèle explicite. B est faux, car elle exploite des données étiquetées; C ne correspond pas à son utilisation, et D n'est pas une contrainte pour cette méthode. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle dépend d'une fonction de perte strictement concave.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle se concentre uniquement sur les points de données non étiquetés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle n'est",
       "difficulty": "hard"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Pourquoi l'utilisation des fonctions harmoniques est-elle importante dans les graphes pour transduction?",
       "image_url": null,
       "choices": {
-        "A": "Parce qu'elles assurent une interpolation naturelle qui respecte les données les plus proches.",
+        "A": "Parce qu'elles fournissent une solution exactement linéaire entre chaque paire de nœuds.",
         "B": "Parce qu'elles maximisent explicitement la variance des étiquettes sur le graphe.",
         "C": "Parce qu'elles utilisent uniquement les nœuds avec une grande variance d'étiquettes.",
-        "D": "Parce qu'elles fournissent une solution exactement linéaire entre chaque paire de nœuds."
+        "D": "Parce qu'elles assurent une interpolation naturelle qui respecte les données les plus proches."
       },
-      "correct_answer": "A",
-      "explanation": "Les fonctions harmoniques permettent de lisser les étiquettes tout en conservant les valeurs à certains nœuds contraints, rendant la propagation harmonieuse. B et C sont incorrects, elles minimisent plutôt la variance et ne sélectionnent pas seulement sur la variance, et D n’est pas une propriété des solutions harmoniques.",
+      "correct_answer": "D",
+      "explanation": "Les fonctions harmoniques permettent de lisser les étiquettes tout en conservant les valeurs à certains nœuds contraints, rendant la propagation harmonieuse. B et C sont incorrects, elles minimisent plutôt la variance et ne sélectionnent pas seulement sur la variance, et D n’est pas une propriété des solutions harmoniques. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce qu'elles fournissent une solution exactement linéaire entre chaque paire de nœuds.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Parce qu'elles maximisent explicitement la variance des étiquettes sur le graphe.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     },
     {
@@ -126,7 +126,7 @@
         "D": "En utilisant une combinaison de clusterisation et de régression linéaire."
       },
       "correct_answer": "A",
-      "explanation": "La régularisation sur graphe, par sa fonction de lissage, permet d'interpoler les données manquantes de manière harmonieuse, tout en intégrant la topologie du graphe. B et C sont des approches inadéquates pour l’apprentissage, et D concerne des techniques non reliées directement à la régularisation sur graphe.",
+      "explanation": "La régularisation sur graphe, par sa fonction de lissage, permet d'interpoler les données manquantes de manière harmonieuse, tout en intégrant la topologie du graphe. B et C sont des approches inadéquates pour l’apprentissage, et D concerne des techniques non reliées directement à la régularisation sur graphe. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (En remplaçant les données manquantes par une moyenne préfixée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En les supprimant complètement pour préserver l'intégrité du graphe.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "hard"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Une méthode avancée de graphe introduit un paramètre d'influence gamma. Quel rôle joue gamma dans ce contexte?",
       "image_url": null,
       "choices": {
-        "A": "Gamma ajuste l'influence relative des nœuds étiquetés sur leurs voisins.",
-        "B": "Gamma contrôle la taille de chaque cluster segmenté par le graphe.",
+        "A": "Gamma contrôle la taille de chaque cluster segmenté par le graphe.",
+        "B": "Gamma ajuste l'influence relative des nœuds étiquetés sur leurs voisins.",
         "C": "Gamma détermine la fréquence des étiquettes initiales dans l'algorithme d'entraînement.",
         "D": "Gamma modifie la profondeur du graphe en ajustant le nombre de niveaux hiérarchiques."
       },
-      "correct_answer": "A",
-      "explanation": "En régularisation sur graphe, le paramètre gamma module l'étendue de l'influence que les nœuds étiquetés exercent sur leurs voisins, paramètre essentiel dans la diffusion d'étiquettes. B et D ne sont pas des applications de gamma dans ce contexte, et C ne concerne pas les paramètres typiques de diffusion.",
+      "correct_answer": "B",
+      "explanation": "En régularisation sur graphe, le paramètre gamma module l'étendue de l'influence que les nœuds étiquetés exercent sur leurs voisins, paramètre essentiel dans la diffusion d'étiquettes. B et D ne sont pas des applications de gamma dans ce contexte, et C ne concerne pas les paramètres typiques de diffusion. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Gamma contrôle la taille de chaque cluster segmenté par le graphe.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Gamma détermine la fréquence des étiquettes initiales dans l'algorithme d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "La minimisation de laquelle des composantes est un objectif crucial de la régularisation sur graphe?",
       "image_url": null,
       "choices": {
-        "A": "La variation globale des étiquettes entre nœuds connectés.",
+        "A": "Le produit scalaire des vecteurs de caractéristiques nodaux.",
         "B": "Le degré moyen de connectivité entre tous les nœuds.",
-        "C": "Le produit scalaire des vecteurs de caractéristiques nodaux.",
+        "C": "La variation globale des étiquettes entre nœuds connectés.",
         "D": "Les distances euclidiennes entre paires de nœuds aléatoires."
       },
-      "correct_answer": "A",
-      "explanation": "L'objectif de la régularisation sur graphe est de minimiser la variation entre les étiquettes des nœuds connectés pour une transition harmonieuse à travers le graphe. B, C, et D ne concernent pas directement la régularisation sur graphe.",
+      "correct_answer": "C",
+      "explanation": "L'objectif de la régularisation sur graphe est de minimiser la variation entre les étiquettes des nœuds connectés pour une transition harmonieuse à travers le graphe. B, C, et D ne concernent pas directement la régularisation sur graphe. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le produit scalaire des vecteurs de caractéristiques nodaux.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le degré moyen de connectivité entre tous les nœuds.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Les distances euclidiennes entre paires de nœuds aléatoires.) est plausible",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel est un avantage clé d'utiliser la méthode des fonctions harmoniques par rapport à d'autres techniques semi-supervisées?",
       "image_url": null,
       "choices": {
-        "A": "Elle fournit des solutions analytiques discrètes donc fiables.",
+        "A": "Elle s'applique exclusivement aux réseaux de neurones profonds.",
         "B": "Elle ne nécessite aucune information préalable sur les données.",
         "C": "Elle maximise l'entropie des paramètres modelisés.",
-        "D": "Elle s'applique exclusivement aux réseaux de neurones profonds."
+        "D": "Elle fournit des solutions analytiques discrètes donc fiables."
       },
-      "correct_answer": "A",
-      "explanation": "Les fonctions harmoniques permettent une modélisation analytique et fournissent des solutions continues mais intégrées à la discrétion nécessaire pour respecter le graphe. B est faux car elle repose sur la structure du graphe, C est erroné car elle minimise la variation, et D est incorrect, car elle n'est pas limitée aux réseaux de neurones.",
+      "correct_answer": "D",
+      "explanation": "Les fonctions harmoniques permettent une modélisation analytique et fournissent des solutions continues mais intégrées à la discrétion nécessaire pour respecter le graphe. B est faux car elle repose sur la structure du graphe, C est erroné car elle minimise la variation, et D est incorrect, car elle n'est pas limitée aux réseaux de neurones. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle s'applique exclusivement aux réseaux de neurones profonds.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle ne nécessite aucune information préalable sur les données.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Elle favorise le surajustement en s'appuyant exclusivement sur les étiquettes disponibles."
       },
       "correct_answer": "A",
-      "explanation": "L'augmentation de la régularisation réduit le surajustement en lissant les étiquettes, assurant une propagation homogène à travers le graphe. B est incorrect car elle réduit la variance, C n'est pas pertinent en termes de graphes, et D est contraire à l'objectif de régularisation.",
+      "explanation": "L'augmentation de la régularisation réduit le surajustement en lissant les étiquettes, assurant une propagation homogène à travers le graphe. B est incorrect car elle réduit la variance, C n'est pas pertinent en termes de graphes, et D est contraire à l'objectif de régularisation. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elle augmente la variance des étiquettes prédictes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle provoque une sur-segmentation des étiquettes dans le graphe.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle favorise le surajustement en",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quel est le rôle des graphes k-NN dans la classification multi-étiquettes semi-supervisée?",
       "image_url": null,
       "choices": {
-        "A": "Offrir une connectivité qui aligne la propagation d'étiquette multiple avec les données de similitude.",
-        "B": "Servir de base centrale pour l'auto-étiquetage indiscriminé de chaque point.",
+        "A": "Servir de base centrale pour l'auto-étiquetage indiscriminé de chaque point.",
+        "B": "Offrir une connectivité qui aligne la propagation d'étiquette multiple avec les données de similitude.",
         "C": "Segmenter internement les groupes étiquetés par degré de variance réduite.",
         "D": "Créer des sous-groupes où une étiquette unique prédomine irrévocablement."
       },
-      "correct_answer": "A",
-      "explanation": "Dans les graphes k-NN pour la classification multi-étiquettes, chaque nœud est relié à ses plus proches voisins, permettant de propager des étiquettes multiples cohérentes grâce à la similitude locale. B, C, et D ne décrivent pas l'utilisation de k-NN dans le contexte multi-étiquettes.",
+      "correct_answer": "B",
+      "explanation": "Dans les graphes k-NN pour la classification multi-étiquettes, chaque nœud est relié à ses plus proches voisins, permettant de propager des étiquettes multiples cohérentes grâce à la similitude locale. B, C, et D ne décrivent pas l'utilisation de k-NN dans le contexte multi-étiquettes. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Servir de base centrale pour l'auto-étiquetage indiscriminé de chaque point.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Segmenter internement les groupes étiquetés par degré de variance réduite.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Créer",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Pourquoi la régularisation sur graphe est-elle souvent combinée avec la descente de gradient?",
       "image_url": null,
       "choices": {
-        "A": "Pour minimiser l'erreur quadratique moyenne tout en maintenant la structure du graphe.",
+        "A": "Pour permettre la modification dynamique de la profondeur du graphe pendant l'entraînement.",
         "B": "Pour maximiser simultanément l'entropie d'étiquette dans le modèle.",
-        "C": "Pour permettre la modification dynamique de la profondeur du graphe pendant l'entraînement.",
+        "C": "Pour minimiser l'erreur quadratique moyenne tout en maintenant la structure du graphe.",
         "D": "Pour prioriser les étiquettes des nœuds isolés par rapport aux autres."
       },
-      "correct_answer": "A",
-      "explanation": "La combinaison de la régularisation sur graphe et de la descente de gradient vise à minimiser l'erreur tout en préservant la cohérence du graphe. B est erroné car la maximisation de l'entropie n’est pas souhaitée dans ce contexte, C et D sont incorrects car ne concernent pas la régularisation.",
+      "correct_answer": "C",
+      "explanation": "La combinaison de la régularisation sur graphe et de la descente de gradient vise à minimiser l'erreur tout en préservant la cohérence du graphe. B est erroné car la maximisation de l'entropie n’est pas souhaitée dans ce contexte, C et D sont incorrects car ne concernent pas la régularisation. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour permettre la modification dynamique de la profondeur du graphe pendant l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour maximiser simultanément l'entropie d'étiquette dans le modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Comment les fonctions harmoniques peuvent-elles être utilisées pour inférer des étiquettes manquantes sur un graphe?",
       "image_url": null,
       "choices": {
-        "A": "En résolvant une équation de Laplace réifiée pour équilibrer les étiquettes.",
+        "A": "En maximisant l'erreur quadratique moyenne pour les nœuds immuables.",
         "B": "En supprimant les arêtes des nœuds manquants pour compenser.",
         "C": "En minimisant l'entropie croisée entre nœuds uniquement non-étiquetés.",
-        "D": "En maximisant l'erreur quadratique moyenne pour les nœuds immuables."
+        "D": "En résolvant une équation de Laplace réifiée pour équilibrer les étiquettes."
       },
-      "correct_answer": "A",
-      "explanation": "Les fonctions harmoniques exploitent l'équation de Laplace pour équilibrer les valeurs manquantes en utilisant la propagation harmonique. B, C, et D sont impropres car inadéquats pour le respect de la topologie et la minimisation d'erreur.",
+      "correct_answer": "D",
+      "explanation": "Les fonctions harmoniques exploitent l'équation de Laplace pour équilibrer les valeurs manquantes en utilisant la propagation harmonique. B, C, et D sont impropres car inadéquats pour le respect de la topologie et la minimisation d'erreur. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En maximisant l'erreur quadratique moyenne pour les nœuds immuables.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En supprimant les arêtes des nœuds manquants pour compenser.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En minimisant l'entropie croisée entre nœuds uniquement non-étiquetés.) est plausible mais",
       "difficulty": "hard"
     },
     {
@@ -232,13 +232,13 @@
       "question": "Quelle est une caractéristique distinctive des poids d'arêtes dans un graphe pour un apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Ils sont souvent asymétriques pour représenter des similarités directionnelles.",
-        "B": "Ils sont fréquemment normalisés pour s'ajuster à la densité locale.",
+        "A": "Ils sont fréquemment normalisés pour s'ajuster à la densité locale.",
+        "B": "Ils sont souvent asymétriques pour représenter des similarités directionnelles.",
         "C": "Ils fixent l'étiquettage uniquement selon des intervalles prédéterminés.",
         "D": "Ils sont déterminés en ignorant généralement la distance spatiale."
       },
-      "correct_answer": "B",
-      "explanation": "Les poids d'arêtes dans un graphe semi-supervisé sont normalisés pour refléter la densité de connexion locale, harmonisant ainsi la propagation des étiquettes. A est peu courant car les graphes sont souvent considérés non dirigés, C et D n'exploitent pas correctement les distances.",
+      "correct_answer": "A",
+      "explanation": "Les poids d'arêtes dans un graphe semi-supervisé sont normalisés pour refléter la densité de connexion locale, harmonisant ainsi la propagation des étiquettes. A est peu courant car les graphes sont souvent considérés non dirigés, C et D n'exploitent pas correctement les distances. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Ils sont souvent asymétriques pour représenter des similarités directionnelles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ils fixent l'étiquettage uniquement selon des intervalles prédéterminés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Ils sont déterminés en ignorant",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Dans la diffusion sur graphe, quel est le principal avantage d'une symétrie des poids d'arêtes?",
       "image_url": null,
       "choices": {
-        "A": "Une meilleure conservation du flux d'étiquette bidirectionnel entre les nœuds.",
-        "B": "Une simplification de la topologie graphe en vue d’une calculabilité rapide.",
+        "A": "Une simplification de la topologie graphe en vue d’une calculabilité rapide.",
+        "B": "Une meilleure conservation du flux d'étiquette bidirectionnel entre les nœuds.",
         "C": "Réduction à zéro des erreurs de classification par uniformité.",
         "D": "Une adaptation universelle à tous types de nœuds quel que soit leur type de données."
       },
-      "correct_answer": "A",
-      "explanation": "La symétrie des poids garantit que l'influence d'une étiquette peut refluer de façon homogène entre voisins, améliorant ainsi la diffusion globale à travers le graphe. B et C ne sont pas assurées par la symétrie, et D est incorrect car la symétrie ne garantit pas une universalité d'adaptation.",
+      "correct_answer": "B",
+      "explanation": "La symétrie des poids garantit que l'influence d'une étiquette peut refluer de façon homogène entre voisins, améliorant ainsi la diffusion globale à travers le graphe. B et C ne sont pas assurées par la symétrie, et D est incorrect car la symétrie ne garantit pas une universalité d'adaptation. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une simplification de la topologie graphe en vue d’une calculabilité rapide.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Réduction à zéro des erreurs de classification par uniformité.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "hard"
     }
   ]

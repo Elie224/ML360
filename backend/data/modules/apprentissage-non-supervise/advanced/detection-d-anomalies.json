@@ -14,7 +14,7 @@
         "D": "Il utilise des réseaux neuronaux pour apprendre un seuil optimal."
       },
       "correct_answer": "A",
-      "explanation": "Isolation Forest isole les anomalies en utilisant des arbres de décision pour séparer les points. Les autres réponses sont incorrectes car elles décrivent des méthodes d'estimation de densité (B), une approche par transformation (C), et une méthode d'apprentissage supervisé (D).",
+      "explanation": "Isolation Forest isole les anomalies en utilisant des arbres de décision pour séparer les points. Les autres réponses sont incorrectes car elles décrivent des méthodes d'estimation de densité (B), une approche par transformation (C), et une méthode d'apprentissage supervisé (D). La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il nécessite une estimation de la densité locale des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il s'appuie sur une transformation en domaine fréquentiel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il utilise des réseaux neuronaux pour",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Comment le score d'anomalie est-il défini dans l'algorithme Isolation Forest ?",
       "image_url": null,
       "choices": {
-        "A": "En calculant la profondeur moyenne des chemins nécessaires pour isoler les points.",
-        "B": "En mesurant la distance euclidienne moyenne au centre des clusters.",
+        "A": "En mesurant la distance euclidienne moyenne au centre des clusters.",
+        "B": "En calculant la profondeur moyenne des chemins nécessaires pour isoler les points.",
         "C": "En utilisant la probabilité de chaque point d'appartenir à une distribution normale.",
         "D": "En déterminant le nombre de voisins proches par un algorithme de clustering."
       },
-      "correct_answer": "A",
-      "explanation": "Le score d'anomalie dans l'Isolation Forest est basé sur la profondeur moyenne requise pour isoler un point. Les choix B, C, et D décrivent des méthodes qui impliquent la densité (B), la distribution (C), ou le clustering (D), pas l'isolation.",
+      "correct_answer": "B",
+      "explanation": "Le score d'anomalie dans l'Isolation Forest est basé sur la profondeur moyenne requise pour isoler un point. Les choix B, C, et D décrivent des méthodes qui impliquent la densité (B), la distribution (C), ou le clustering (D), pas l'isolation. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En mesurant la distance euclidienne moyenne au centre des clusters.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En utilisant la probabilité de chaque point d'appartenir à une distribution normale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (En déterminant",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quelle est la fonction du paramètre de contamination dans un modèle de détection d'anomalies ?",
       "image_url": null,
       "choices": {
-        "A": "Il spécifie la proportion approximative de données anormales.",
+        "A": "Il détermine la variance acceptable des scores d'anomalie.",
         "B": "Il ajuste la taille minimale des clusters.",
-        "C": "Il détermine la variance acceptable des scores d'anomalie.",
+        "C": "Il spécifie la proportion approximative de données anormales.",
         "D": "Il définit le nombre d'itérations de l'apprentissage."
       },
-      "correct_answer": "A",
-      "explanation": "La contamination détermine la proportion de données suspectées d'être des anomalies. B concerne le clustering, C se réfère à la dispersion des scores sans lien avec la proportion, et D est relatif au contrôle des itérations d'algorithmes itératifs.",
+      "correct_answer": "C",
+      "explanation": "La contamination détermine la proportion de données suspectées d'être des anomalies. B concerne le clustering, C se réfère à la dispersion des scores sans lien avec la proportion, et D est relatif au contrôle des itérations d'algorithmes itératifs. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il détermine la variance acceptable des scores d'anomalie.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il ajuste la taille minimale des clusters.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il définit le nombre d'itérations de l'apprentissage.) est plausible mais faux",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quel est le rôle du seuil d'alerte dans un système de détection d'anomalies ?",
       "image_url": null,
       "choices": {
-        "A": "Il sépare les samples normaux des samples anormaux en fonction de leur score.",
+        "A": "Il régule le taux d'échantillonnage utilisé pour la validation croisée.",
         "B": "Il ajuste automatiquement la distance de Mahalanobis des points.",
         "C": "Il optimise la convergence du modèle de clustering.",
-        "D": "Il régule le taux d'échantillonnage utilisé pour la validation croisée."
+        "D": "Il sépare les samples normaux des samples anormaux en fonction de leur score."
       },
-      "correct_answer": "A",
-      "explanation": "Le seuil d'alerte distingue les anomalies des points normaux selon leur score. B, C, et D se rapportent à des techniques géométriques ou d'optimisation, non liées directement aux seuils pour détecter des anomalies.",
+      "correct_answer": "D",
+      "explanation": "Le seuil d'alerte distingue les anomalies des points normaux selon leur score. B, C, et D se rapportent à des techniques géométriques ou d'optimisation, non liées directement aux seuils pour détecter des anomalies. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il régule le taux d'échantillonnage utilisé pour la validation croisée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il ajuste automatiquement la distance de Mahalanobis des points.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il optimise la convergence du modèle de clustering.) est plausible mais faux",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Parce que le seuil dépend exclusivement de la taille de l'échantillon de test."
       },
       "correct_answer": "A",
-      "explanation": "Le choix du seuil d'alerte doit prendre en compte les implications des erreurs de classification qui varient selon les applications. B est incorrect car la distribution des scores d'anomalie ne suit pas nécessairement une Gaussienne. C est faux car le seuil peut être fixé par exploration, et non par apprentissage supervisé. D n'est pas correct car le seuil dépend de la variabilité des données, pas seulement de la taille de l'échantillon.",
+      "explanation": "Le choix du seuil d'alerte doit prendre en compte les implications des erreurs de classification qui varient selon les applications. B est incorrect car la distribution des scores d'anomalie ne suit pas nécessairement une Gaussienne. C est faux car le seuil peut être fixé par exploration, et non par apprentissage supervisé. D n'est pas correct car le seuil dépend de la variabilité des données, pas seulement de la taille de l'échantillon. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Parce que chaque score d'anomalie suit une distribution Gaussienne idéale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce que le",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "En quoi la méthode Isolation Forest est-elle sensible à la contamination des données d'apprentissage ?",
       "image_url": null,
       "choices": {
-        "A": "Elle peut augmenter les faux positifs si le taux de contamination est sous-estimé.",
-        "B": "Elle normalise automatiquement les données contaminées.",
+        "A": "Elle normalise automatiquement les données contaminées.",
+        "B": "Elle peut augmenter les faux positifs si le taux de contamination est sous-estimé.",
         "C": "Elle ne capture pas de comportements locaux complexes dans des ensembles de données bruitées.",
         "D": "Elle est conçue pour être robuste aux valeurs aberrantes extrêmes."
       },
-      "correct_answer": "A",
-      "explanation": "Une sous-estimation de la contamination dans Isolation Forest peut augmenter les faux positifs car l'algorithme considérera davantage de points normaux comme des anomalies. B est faux car la normalisation n'est pas assurée automatiquement par cette méthode. C est incorrect, le problème décrit est plus lié aux méthodes basées sur la densité ou le clustering. D est erroné car bien qu'il isole les valeurs aberrantes, il n'est pas intrinsèquement robuste aux extrêmes.",
+      "correct_answer": "B",
+      "explanation": "Une sous-estimation de la contamination dans Isolation Forest peut augmenter les faux positifs car l'algorithme considérera davantage de points normaux comme des anomalies. B est faux car la normalisation n'est pas assurée automatiquement par cette méthode. C est incorrect, le problème décrit est plus lié aux méthodes basées sur la densité ou le clustering. D est erroné car bien qu'il isole les valeurs aberrantes, il n'est pas intrinsèquement robuste aux extrêmes. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle normalise automatiquement les données contaminées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle ne capture pas de comportements locaux",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quelle est la meilleure approche pour ajuster dynamiquement le seuil d'alerte dans les systèmes de détection d'anomalies ?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser des évaluations périodiques des performances du modèle et ajuster sur la base de critères d'évaluation.",
+        "A": "Ajuster le seuil d'alerte en se basant uniquement sur la taille de l'échantillon de données.",
         "B": "Imposer un seuil fixe et éviter toute modification pour la consistance du modèle.",
-        "C": "Ajuster le seuil d'alerte en se basant uniquement sur la taille de l'échantillon de données.",
+        "C": "Utiliser des évaluations périodiques des performances du modèle et ajuster sur la base de critères d'évaluation.",
         "D": "Réduire progressivement le seuil jusqu'à ce que toutes les données soient considérées comme anormales."
       },
-      "correct_answer": "A",
-      "explanation": "L'évaluation périodique des performances permet d'adapter le seuil d'alerte en fonction des résultats souhaités selon les métriques d'évaluation. B est un contresens car un seuil fixe peut ne pas être applicable à toutes les situations. C est réducteur car la taille de l'échantillon n'est pas le seul facteur influençant la performance du seuil. D n'est pas idéal car pousser le seuil trop bas conduirait à une surdétection des anomalies.",
+      "correct_answer": "C",
+      "explanation": "L'évaluation périodique des performances permet d'adapter le seuil d'alerte en fonction des résultats souhaités selon les métriques d'évaluation. B est un contresens car un seuil fixe peut ne pas être applicable à toutes les situations. C est réducteur car la taille de l'échantillon n'est pas le seul facteur influençant la performance du seuil. D n'est pas idéal car pousser le seuil trop bas conduirait à une surdétection des anomalies. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ajuster le seuil d'alerte en se basant uniquement sur la taille de l'échantillon de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Comment l'Isolation Forest gère-t-il les données asymétriques typiques dans la détection d'anomalies ?",
       "image_url": null,
       "choices": {
-        "A": "En favorisant des découpages aléatoires indépendants du nombre de dimensions.",
+        "A": "En appliquant des méthodes de suréchantillonnage aux points minoritaires.",
         "B": "En adaptant dynamiquement la fonction de coût au déséquilibre de la classe.",
         "C": "En utilisant des arbres de décision réguliers plutôt que des arbres binaires.",
-        "D": "En appliquant des méthodes de suréchantillonnage aux points minoritaires."
+        "D": "En favorisant des découpages aléatoires indépendants du nombre de dimensions."
       },
-      "correct_answer": "A",
-      "explanation": "L'Isolation Forest découpe aléatoirement les données indépendamment de leur forme pour déceler les anomalies efficacement. B ne s'applique pas car il n'y a pas de fonction de coût dans Isolation Forest, qui repose sur une approche non supervisée. C et D sont incorrects car ils décrivent des modifications techniques non appliquées à l'Isolation Forest.",
+      "correct_answer": "D",
+      "explanation": "L'Isolation Forest découpe aléatoirement les données indépendamment de leur forme pour déceler les anomalies efficacement. B ne s'applique pas car il n'y a pas de fonction de coût dans Isolation Forest, qui repose sur une approche non supervisée. C et D sont incorrects car ils décrivent des modifications techniques non appliquées à l'Isolation Forest. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En appliquant des méthodes de suréchantillonnage aux points minoritaires.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En adaptant dynamiquement la fonction de coût au déséquilibre de la classe.) est plausible mais faux car il ne respecte pas",
       "difficulty": "hard"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Un apprentissage accéléré et un temps de convergence réduit."
       },
       "correct_answer": "A",
-      "explanation": "Un paramétrage incorrect de la contamination peut biaiser la détection, augmentant les erreurs de classification. B, C, et D ne sont pas liés à la contamination mais plutôt à des techniques de réduction de dimensionnalité, stabilisation de modèle, ou ajustements temporels, respectivement.",
+      "explanation": "Un paramétrage incorrect de la contamination peut biaiser la détection, augmentant les erreurs de classification. B, C, et D ne sont pas liés à la contamination mais plutôt à des techniques de réduction de dimensionnalité, stabilisation de modèle, ou ajustements temporels, respectivement. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Une réduction automatique de la dimensionnalité des variables d'entrée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une stabilisation du biais d'apprentissage du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Un apprentissage accéléré et un temps",
       "difficulty": "hard"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Pourquoi l'algorithme Isolation Forest est-il efficace pour des jeux de données à haute dimension, contrairement à d'autres méthodes comme k-means ?",
       "image_url": null,
       "choices": {
-        "A": "Car il ne repose pas sur la distance qui est moins pertinente en haute dimension.",
-        "B": "Car il diminue dynamiquement le nombre de dimensions avant chaque itération.",
+        "A": "Car il diminue dynamiquement le nombre de dimensions avant chaque itération.",
+        "B": "Car il ne repose pas sur la distance qui est moins pertinente en haute dimension.",
         "C": "Car il nécessite une phase de clustering préalable des données avant chaque étape d'isolation.",
         "D": "Car il rassemble dynamique les clusters distants pour minimiser la variance intra-cluster."
       },
-      "correct_answer": "A",
-      "explanation": "Isolation Forest est efficace en haute dimension car il n'utilise pas de mesures de distance, évitant ainsi la malédiction de la dimensionnalité. B est incorrect car l'algorithme n'implémente pas de réduction de dimension en amont. C et D décrivent des étapes non appliquées, notamment du clustering préalable, qui ne font pas partie du processus de l'Isolation Forest.",
+      "correct_answer": "B",
+      "explanation": "Isolation Forest est efficace en haute dimension car il n'utilise pas de mesures de distance, évitant ainsi la malédiction de la dimensionnalité. B est incorrect car l'algorithme n'implémente pas de réduction de dimension en amont. C et D décrivent des étapes non appliquées, notamment du clustering préalable, qui ne font pas partie du processus de l'Isolation Forest. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Car il diminue dynamiquement le nombre de dimensions avant chaque itération.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Car il nécessite une phase de clustering préalable des données avant chaque étape d'isolation.) est plausible",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Comment un seuil d'alerte mal calibré affecte-t-il la performance d'un système de détection d'anomalies ?",
       "image_url": null,
       "choices": {
-        "A": "Il peut fausser la classification, augmentant les taux de faux positifs ou de faux négatifs.",
+        "A": "Il améliore la précision des scores de similarité inter-clusters.",
         "B": "Il assure une efficacité constante, peu importe le jeu de données analysé.",
-        "C": "Il améliore la précision des scores de similarité inter-clusters.",
+        "C": "Il peut fausser la classification, augmentant les taux de faux positifs ou de faux négatifs.",
         "D": "Il régule le ratio de réduction dimensionnelle appliqué aux données."
       },
-      "correct_answer": "A",
-      "explanation": "Un seuil d'alerte inadéquat fausse la détection d'anomalies, augmentant les erreurs de classification possibles. Les choix B, C, et D confondent les impacts du seuil avec des métriques de clustering ou de réduction dimensionnelle, ce qui est inapproprié.",
+      "correct_answer": "C",
+      "explanation": "Un seuil d'alerte inadéquat fausse la détection d'anomalies, augmentant les erreurs de classification possibles. Les choix B, C, et D confondent les impacts du seuil avec des métriques de clustering ou de réduction dimensionnelle, ce qui est inapproprié. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il améliore la précision des scores de similarité inter-clusters.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il assure une efficacité constante, peu importe le jeu de données analysé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il régule le ratio de",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Pourquoi l'évaluation de la performance en détection d'anomalies est-elle difficile sans étiquettes de données précises ?",
       "image_url": null,
       "choices": {
-        "A": "Parce que les labels d'anomalie effectivement présents ne sont souvent pas connus.",
+        "A": "Parce que la détection d'anomalies ne peut jamais être évaluée objectivement.",
         "B": "Parce que la performance dépend strictement de la taille du dataset uniquement.",
         "C": "Parce que le processus de labellisation empêche toute évaluation statistique.",
-        "D": "Parce que la détection d'anomalies ne peut jamais être évaluée objectivement."
+        "D": "Parce que les labels d'anomalie effectivement présents ne sont souvent pas connus."
       },
-      "correct_answer": "A",
-      "explanation": "Sans labels d'anomalie connus, il est difficile de quantifier la précision des détections. B, C, et D sont incorrects car ils simplifient ou généralisent le processus d'évaluation indépendamment des aspects data et contextuels réels.",
+      "correct_answer": "D",
+      "explanation": "Sans labels d'anomalie connus, il est difficile de quantifier la précision des détections. B, C, et D sont incorrects car ils simplifient ou généralisent le processus d'évaluation indépendamment des aspects data et contextuels réels. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce que la détection d'anomalies ne peut jamais être évaluée objectivement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Parce que la performance dépend strictement de la taille du dataset uniquement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce que le processus de labellisation empêche",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Ils exécutent une pré-filtration automatique des points bruités avant l'apprentissage."
       },
       "correct_answer": "A",
-      "explanation": "Isolation Forest n'utilise pas la densité mais isole des points individuellement, ce qui atténue l'effet du bruit. B, C, et D sont faux car ils décrivent des approches complexes ou spécifiques non utilisées dans Isolation Forest.",
+      "explanation": "Isolation Forest n'utilise pas la densité mais isole des points individuellement, ce qui atténue l'effet du bruit. B, C, et D sont faux car ils décrivent des approches complexes ou spécifiques non utilisées dans Isolation Forest. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Ils appliquent une fonction de coût sophistiquée pour diminuer les biais inductifs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ils restructurent dynamiquement les partitions basées sur le bruit observé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Ils exécutent une pré-filtration automatique des",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quel type de données favorise le succès d'un système basé sur l'Isolation Forest ?",
       "image_url": null,
       "choices": {
-        "A": "Des ensembles de données avec des relations non linéaires et des distributions inégales.",
-        "B": "Des données catégorielles uniquement sans contexte numérique.",
+        "A": "Des données catégorielles uniquement sans contexte numérique.",
+        "B": "Des ensembles de données avec des relations non linéaires et des distributions inégales.",
         "C": "Des informations réduites à une seule dimension pour maximiser la vitesse de détection.",
         "D": "Des jeux de données présentant une homogénéité stricte sur toutes leurs dimensions."
       },
-      "correct_answer": "A",
-      "explanation": "Isolation Forest performe bien sur des jeux de données incompréhensibles par des méthodes plus rigides comme le clustering car il découpe aléatoirement l'espace. B est incorrect car les informations catégorielles nécessitent une transformation préalable. C et D diminuent les capacités du modèle à appréhender des variations complexes, ce qui nuit à sa performance.",
+      "correct_answer": "B",
+      "explanation": "Isolation Forest performe bien sur des jeux de données incompréhensibles par des méthodes plus rigides comme le clustering car il découpe aléatoirement l'espace. B est incorrect car les informations catégorielles nécessitent une transformation préalable. C et D diminuent les capacités du modèle à appréhender des variations complexes, ce qui nuit à sa performance. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Des données catégorielles uniquement sans contexte numérique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Des informations réduites à une seule dimension pour maximiser la vitesse de détection.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quel est le principe de l'algorithme Isolation Forest pour la détection d'anomalies ?",
       "image_url": null,
       "choices": {
-        "A": "Il isole les points de données par des divisions aléatoires pour identifier plus facilement les anomalies.",
+        "A": "Il observe les fréquences des occurrences pour déterminer les anomalies.",
         "B": "Il utilise une distance seuil pour séparer les anomalies du reste du jeu de données.",
-        "C": "Il observe les fréquences des occurrences pour déterminer les anomalies.",
+        "C": "Il isole les points de données par des divisions aléatoires pour identifier plus facilement les anomalies.",
         "D": "Il applique un clustering hiérarchique en divisant les données en petits groupes."
       },
-      "correct_answer": "A",
-      "explanation": "L'algorithme Isolation Forest fonctionne en isolant les points de données à l'aide de partitions aléatoires. Les anomalies sont isolées rapidement car elles nécessitent moins de partitions. Le choix B est incorrect car il ne repose pas sur une distance seuil. Le choix C se réfère à l'approche par histogrammes et fréquences, pas à l'isolation aléatoire. Le choix D est incorrect puisque l'isolation n'utilise pas de clustering hiérarchique.",
+      "correct_answer": "C",
+      "explanation": "L'algorithme Isolation Forest fonctionne en isolant les points de données à l'aide de partitions aléatoires. Les anomalies sont isolées rapidement car elles nécessitent moins de partitions. Le choix B est incorrect car il ne repose pas sur une distance seuil. Le choix C se réfère à l'approche par histogrammes et fréquences, pas à l'isolation aléatoire. Le choix D est incorrect puisque l'isolation n'utilise pas de clustering hiérarchique. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il observe les fréquences des occurrences pour déterminer les anomalies.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il utilise une distance seuil pour séparer",
       "difficulty": "medium"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Comment est généralement calculé le score d'anomalie dans un modèle de détection d'anomalies basé sur l'Isolation Forest ?",
       "image_url": null,
       "choices": {
-        "A": "En fonction du nombre de partitions nécessaires pour isoler un point.",
+        "A": "En déterminant la variance des points voisins immédiats.",
         "B": "En mesurant la distance moyenne du point à tous les autres points dans l'espace.",
         "C": "Par la somme des distances à tous les points du même cluster.",
-        "D": "En déterminant la variance des points voisins immédiats."
+        "D": "En fonction du nombre de partitions nécessaires pour isoler un point."
       },
-      "correct_answer": "A",
-      "explanation": "Le score d'anomalie dans Isolation Forest est calculé selon le nombre de partitions nécessaires pour isoler un point. Moins de partitions indiquent une anomalie. Le choix B est incorrect car il se réfère à une approche de distance pas utilisée dans Isolation Forest. Le choix C parle de clustering, non pertinent ici. Le choix D concernant la variance des voisins n'est pas utilisé par l'Isolation Forest.",
+      "correct_answer": "D",
+      "explanation": "Le score d'anomalie dans Isolation Forest est calculé selon le nombre de partitions nécessaires pour isoler un point. Moins de partitions indiquent une anomalie. Le choix B est incorrect car il se réfère à une approche de distance pas utilisée dans Isolation Forest. Le choix C parle de clustering, non pertinent ici. Le choix D concernant la variance des voisins n'est pas utilisé par l'Isolation Forest. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En déterminant la variance des points voisins immédiats.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En mesurant la distance moyenne du point à tous les",
       "difficulty": "medium"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Le degré de corrélation entre les caractéristiques des données."
       },
       "correct_answer": "A",
-      "explanation": "Le paramètre de contamination dans le contexte de détection d'anomalies représente la proportion estimée d'anomalies dans le jeu de données. Le choix B est incorrect car il se réfère à du bruit, pas directement lié à la proportion d'anomalies. Le choix C concernant la variance n'est pas pertinent pour définir la contamination. Le choix D sur la corrélation ne traite pas du pourcentage d'anomalies.",
+      "explanation": "Le paramètre de contamination dans le contexte de détection d'anomalies représente la proportion estimée d'anomalies dans le jeu de données. Le choix B est incorrect car il se réfère à du bruit, pas directement lié à la proportion d'anomalies. Le choix C concernant la variance n'est pas pertinent pour définir la contamination. Le choix D sur la corrélation ne traite pas du pourcentage d'anomalies. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Le niveau de bruit aléatoire dans les données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La variance maximale acceptée pour des données normales.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Quel rôle joue le seuil d'alerte dans un modèle de détection d'anomalies ?",
       "image_url": null,
       "choices": {
-        "A": "Il définit le point au-delà duquel un score de donnée est considéré comme une anomalie.",
-        "B": "Il détermine la pertinence de chaque caractéristique pour la détection.",
+        "A": "Il détermine la pertinence de chaque caractéristique pour la détection.",
+        "B": "Il définit le point au-delà duquel un score de donnée est considéré comme une anomalie.",
         "C": "Il contrôle la quantité de données utilisées pour l'apprentissage.",
         "D": "Il ajuste dynamiquement la taille des données envoyées au modèle."
       },
-      "correct_answer": "A",
-      "explanation": "Le seuil d'alerte définit le point au-delà duquel un score est considéré comme indiquant une anomalie. Le choix B est incorrect car la pertinence des caractéristiques n'est pas déterminée par un seuil d'alerte. Le choix C se réfère à une gestion de la taille d'échantillon, sans rapport avec le seuil. Le choix D évoque le traitement des données, pas le filtrage par score.",
+      "correct_answer": "B",
+      "explanation": "Le seuil d'alerte définit le point au-delà duquel un score est considéré comme indiquant une anomalie. Le choix B est incorrect car la pertinence des caractéristiques n'est pas déterminée par un seuil d'alerte. Le choix C se réfère à une gestion de la taille d'échantillon, sans rapport avec le seuil. Le choix D évoque le traitement des données, pas le filtrage par score. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il détermine la pertinence de chaque caractéristique pour la détection.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il contrôle la quantité de données utilisées pour l'apprentissage.) est plausible",
       "difficulty": "hard"
     },
     {
@@ -262,11 +262,11 @@
       "choices": {
         "A": "Le modèle peut identifier de nombreuses anomalies, y compris des faux positifs.",
         "B": "La capacité à détecter les vraies anomalies est augmentée.",
-        "C": "Le modèle ne fait pas de distinction entre données normales et anomalies.",
-        "D": "Les anomalies peuvent être ignorées, apparaissant comme des données normales."
+        "C": "Les anomalies peuvent être ignorées, apparaissant comme des données normales.",
+        "D": "Le modèle ne fait pas de distinction entre données normales et anomalies."
       },
-      "correct_answer": "D",
-      "explanation": "Sous-estimer le paramètre de contamination peut conduire à ignorer certaines anomalies, car le modèle s'attend à voir moins d'anomalies. Le choix A suggère une hausse des faux positifs, ce qui est plus lié à surestimer la contamination. Le choix B est incorrect car sous-estimer ne conduit pas à une meilleure détection. Le choix C se réfère à un modèle défaillant de manière générale, pas dû spécifiquement au paramètre de contamination.",
+      "correct_answer": "C",
+      "explanation": "Sous-estimer le paramètre de contamination peut conduire à ignorer certaines anomalies, car le modèle s'attend à voir moins d'anomalies. Le choix A suggère une hausse des faux positifs, ce qui est plus lié à surestimer la contamination. Le choix B est incorrect car sous-estimer ne conduit pas à une meilleure détection. Le choix C se réfère à un modèle défaillant de manière générale, pas dû spécifiquement au paramètre de contamination. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le modèle peut identifier de nombreuses anomalies, y compris des faux positifs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (La capacité",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Pourquoi est-il important de bien définir un seuil d'alerte dans une application de détection d'anomalies ?",
       "image_url": null,
       "choices": {
-        "A": "Pour minimiser les faux positifs et mieux distinguer les anomalies réelles.",
+        "A": "Pour normaliser l'échelle des caractéristiques avant l'apprentissage.",
         "B": "Pour maximiser le nombre d'anomalies détectées, quelles qu'elles soient.",
         "C": "Pour augmenter la taille du jeu de données utilisés pour l'entraînement.",
-        "D": "Pour normaliser l'échelle des caractéristiques avant l'apprentissage."
+        "D": "Pour minimiser les faux positifs et mieux distinguer les anomalies réelles."
       },
-      "correct_answer": "A",
-      "explanation": "Un bon seuil d'alerte aide à minimiser les faux positifs et à mieux distinguer les anomalies réelles. Le choix B bien que plausible, risque de noyer les vraies anomalies parmi les faux positifs. Le choix C est faux, la taille des données n'est pas impliquée par le seuil d'alerte. Le choix D concerne la prétraitement des données, sans lien avec la définition d'un seuil d'alerte.",
+      "correct_answer": "D",
+      "explanation": "Un bon seuil d'alerte aide à minimiser les faux positifs et à mieux distinguer les anomalies réelles. Le choix B bien que plausible, risque de noyer les vraies anomalies parmi les faux positifs. Le choix C est faux, la taille des données n'est pas impliquée par le seuil d'alerte. Le choix D concerne la prétraitement des données, sans lien avec la définition d'un seuil d'alerte. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour normaliser l'échelle des caractéristiques avant l'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour maximiser le nombre d'anomalies détectées, quelles qu'elles soient.) est plausible mais",
       "difficulty": "hard"
     }
   ]

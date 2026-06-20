@@ -14,7 +14,7 @@
         "D": "Générer de nouvelles fonctionnalités pour enrichir les données."
       },
       "correct_answer": "A",
-      "explanation": "L'enseignant initial est un modèle formé sur les données étiquetées et est utilisé pour prédire des étiquettes sur les données non étiquetées. B est incorrect parce que la validation croisée n'est pas le rôle de l'enseignant initial. C est faux, car il ne s'agit pas d'optimisation directe des poids. D est erroné, car l'enseignant n'enrichit pas les données avec de nouvelles fonctionnalités.",
+      "explanation": "L'enseignant initial est un modèle formé sur les données étiquetées et est utilisé pour prédire des étiquettes sur les données non étiquetées. B est incorrect parce que la validation croisée n'est pas le rôle de l'enseignant initial. C est faux, car il ne s'agit pas d'optimisation directe des poids. D est erroné, car l'enseignant n'enrichit pas les données avec de nouvelles fonctionnalités. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Servir de validation croisée pour ajuster les hyperparamètres.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ajuster directement les poids du modèle pour l'optimisation.) est plausible mais faux car il",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Dans le processus de re-entrainement en self-training, que se passe-t-il après avoir sélectionné des exemples confiants?",
       "image_url": null,
       "choices": {
-        "A": "Les exemples confiants sont ajoutés à l'ensemble d'entraînement étiqueté pour améliorer le modèle.",
-        "B": "Les exemples confiants sont éliminés pour réduire le surajustement.",
+        "A": "Les exemples confiants sont éliminés pour réduire le surajustement.",
+        "B": "Les exemples confiants sont ajoutés à l'ensemble d'entraînement étiqueté pour améliorer le modèle.",
         "C": "Le modèle ajuste ses hyperparamètres pour réduire le taux d'erreur.",
         "D": "Les exemples confiants sont utilisés pour créer un ensemble de données de validation."
       },
-      "correct_answer": "A",
-      "explanation": "Les exemples confiants, définis comme ceux avec des prédictions à haute probabilité, sont ajoutés à l'ensemble d'apprentissage étiqueté, permettant un apprentissage progressif. B est incorrect, car il ne s'agit pas d'éliminer les exemples confiants. C et D sont faux, car ils ne représentent pas l'étape de réentraînement caractéristique du self-training.",
+      "correct_answer": "B",
+      "explanation": "Les exemples confiants, définis comme ceux avec des prédictions à haute probabilité, sont ajoutés à l'ensemble d'apprentissage étiqueté, permettant un apprentissage progressif. B est incorrect, car il ne s'agit pas d'éliminer les exemples confiants. C et D sont faux, car ils ne représentent pas l'étape de réentraînement caractéristique du self-training. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les exemples confiants sont éliminés pour réduire le surajustement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le modèle ajuste ses hyperparamètres pour réduire le taux d'erreur.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quel est un risque majeur associé à l'accumulation d'erreurs dans le self-training?",
       "image_url": null,
       "choices": {
-        "A": "L'auto-renforcement des prédictions incorrectes qui dégradent la qualité du modèle.",
+        "A": "La diminution de la taille de l'ensemble de données non étiquetées.",
         "B": "L'augmentation de la complexité temporelle du modèle final.",
-        "C": "La diminution de la taille de l'ensemble de données non étiquetées.",
+        "C": "L'auto-renforcement des prédictions incorrectes qui dégradent la qualité du modèle.",
         "D": "L'optimisation des hyperparamètres du modèle sans supervision."
       },
-      "correct_answer": "A",
-      "explanation": "L'accumulation d'erreurs survient lorsque des prédictions incorrectes sont ajoutées à l'ensemble de données étiquetées, ce qui peut biaiser le modèle. B est incorrect car cela ne concerne pas directement l'erreur. C est faux car ce point est orthogonal à la quantité de données non étiquetées. D ne se rapporte pas au principe même de l'accumulation d'erreurs.",
+      "correct_answer": "C",
+      "explanation": "L'accumulation d'erreurs survient lorsque des prédictions incorrectes sont ajoutées à l'ensemble de données étiquetées, ce qui peut biaiser le modèle. B est incorrect car cela ne concerne pas directement l'erreur. C est faux car ce point est orthogonal à la quantité de données non étiquetées. D ne se rapporte pas au principe même de l'accumulation d'erreurs. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La diminution de la taille de l'ensemble de données non étiquetées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (L'augmentation de la complexité temporelle du modèle final.) est plausible mais faux car il ne respecte pas",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Lors du self-training, quel scénario conduirait à une accumulation d'erreurs dans l'ensemble de données entraîné?",
       "image_url": null,
       "choices": {
-        "A": "Inclure des exemples avec de faibles probabilités de prédiction comme étiquettes confiantes.",
+        "A": "Réduire le paramètre de régularisation du modèle.",
         "B": "Utiliser une validation croisée après chaque itération.",
         "C": "Augmenter la taille de l'ensemble de validation.",
-        "D": "Réduire le paramètre de régularisation du modèle."
+        "D": "Inclure des exemples avec de faibles probabilités de prédiction comme étiquettes confiantes."
       },
-      "correct_answer": "A",
-      "explanation": "Étiqueter et ajouter des exemples à faible confiance peut conduire à l'inclusion de données incorrectes dans le jeu d'étiquettes, entraînant une accumulation des erreurs. B et C sont sans relation directe avec l'accumulation d'erreurs. D ne s'applique pas car la régularisation n'affecte pas directement l'accumulation d'erreurs liée aux mauvaises étiquettes.",
+      "correct_answer": "D",
+      "explanation": "Étiqueter et ajouter des exemples à faible confiance peut conduire à l'inclusion de données incorrectes dans le jeu d'étiquettes, entraînant une accumulation des erreurs. B et C sont sans relation directe avec l'accumulation d'erreurs. D ne s'applique pas car la régularisation n'affecte pas directement l'accumulation d'erreurs liée aux mauvaises étiquettes. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire le paramètre de régularisation du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Utiliser une validation croisée après chaque itération.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Il n'a aucun effet significatif si le modèle est suffisamment régularisé."
       },
       "correct_answer": "A",
-      "explanation": "Un réentraînement avec de mauvais exemples amplifie les erreurs au fur et à mesure des itérations, ce qui provoque un biais du modèle. B est opposé à ce qui se passe parce que les erreurs prolongent souvent le temps de convergence. C est faux, car généralement les erreurs de base dégradent la généralisation. D est incorrect, car même avec la régularisation, la qualité basique des données étiquetées est essentielle.",
+      "explanation": "Un réentraînement avec de mauvais exemples amplifie les erreurs au fur et à mesure des itérations, ce qui provoque un biais du modèle. B est opposé à ce qui se passe parce que les erreurs prolongent souvent le temps de convergence. C est faux, car généralement les erreurs de base dégradent la généralisation. D est incorrect, car même avec la régularisation, la qualité basique des données étiquetées est essentielle. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il diminue le temps de convergence du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il améliore la généralisation sur le jeu",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Dans un modèle de self-training, comment éviter efficacement l’accumulation des erreurs?",
       "image_url": null,
       "choices": {
-        "A": "En utilisant un seuil élevé de confiance pour accepter les prédictions comme étiquettes.",
-        "B": "En supprimant toutes les données initiales et en recommençant.",
+        "A": "En supprimant toutes les données initiales et en recommençant.",
+        "B": "En utilisant un seuil élevé de confiance pour accepter les prédictions comme étiquettes.",
         "C": "En maximisant les itérations de formation sans restriction.",
         "D": "En diminuant la taille du réseau de neurones."
       },
-      "correct_answer": "A",
-      "explanation": "Un haut seuil de confiance garantit que seules les prédictions fiables sont ajoutées, ce qui prévient l'accumulation d'erreurs. B est improductif car cela élimine potentiellement des informations pertinentes. C ne prévient pas l'accumulation d'erreurs, mais l'aggrave. D n'est pas spécifique au self-training, mais à la capacité du modèle.",
+      "correct_answer": "B",
+      "explanation": "Un haut seuil de confiance garantit que seules les prédictions fiables sont ajoutées, ce qui prévient l'accumulation d'erreurs. B est improductif car cela élimine potentiellement des informations pertinentes. C ne prévient pas l'accumulation d'erreurs, mais l'aggrave. D n'est pas spécifique au self-training, mais à la capacité du modèle. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En supprimant toutes les données initiales et en recommençant.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En maximisant les itérations de formation sans restriction.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Pourquoi le réentraînement est-il crucial dans un self-training efficace?",
       "image_url": null,
       "choices": {
-        "A": "Parce qu'il permet au modèle d'incorporer systématiquement des données nouvellement étiquetées.",
+        "A": "Parce qu'il élimine les cas incorrectement classifiés antérieurement.",
         "B": "Parce qu'il diminue le surapprentissage critique à chaque itération.",
-        "C": "Parce qu'il élimine les cas incorrectement classifiés antérieurement.",
+        "C": "Parce qu'il permet au modèle d'incorporer systématiquement des données nouvellement étiquetées.",
         "D": "Parce qu'il optimise automatiquement le paramètre de tassement."
       },
-      "correct_answer": "A",
-      "explanation": "Le ré-entraînement permet au modèle self-training d'apprendre continuellement à partir d'étiquettes auto-générées de manière confiantes, intégrant ainsi des informations supplémentaires dans le processus. B est factuellement incorrect car le surapprentissage peut augmenter les erreurs ne sont pas gérées correctement. C est inexact puisque les cas mal classifiés ne sont pas retirés automatiquement. D est hors de propos, le paramètre de tassement n'est pas impliqué.",
+      "correct_answer": "C",
+      "explanation": "Le ré-entraînement permet au modèle self-training d'apprendre continuellement à partir d'étiquettes auto-générées de manière confiantes, intégrant ainsi des informations supplémentaires dans le processus. B est factuellement incorrect car le surapprentissage peut augmenter les erreurs ne sont pas gérées correctement. C est inexact puisque les cas mal classifiés ne sont pas retirés automatiquement. D est hors de propos, le paramètre de tassement n'est pas impliqué. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce qu'il élimine les cas incorrectement classifiés antérieurement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Parce qu'il diminue le surapprentissage critique à chaque itération.) est plausible mais",
       "difficulty": "medium"
     },
     {
@@ -112,7 +112,7 @@
         "D": "En utilisant des seuils de confiance dynamiques basés sur la performance de validation continue."
       },
       "correct_answer": "D",
-      "explanation": "L'utilisation de seuils de confiance dynamiques fondés sur la performance de validation permet au modèle de s'adapter en fonction des données étiquetées automatiquement. A est incorrect, la communication inter-modèles n’est pas typique dans ce contexte. B est factuellement erroné car il est contradictoire avec le self-training. C est incorrect car le méta-apprentissage n'est pas directement utilisé dans la majorité des implémentations self-training.",
+      "explanation": "L'utilisation de seuils de confiance dynamiques fondés sur la performance de validation permet au modèle de s'adapter en fonction des données étiquetées automatiquement. A est incorrect, la communication inter-modèles n’est pas typique dans ce contexte. B est factuellement erroné car il est contradictoire avec le self-training. C est incorrect car le méta-apprentissage n'est pas directement utilisé dans la majorité des implémentations self-training. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En maintenant une communication entre les différents modèles entraîneurs pour les comparaisons continues.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En échantillonnant avec des approches de batch en contradiction",
       "difficulty": "medium"
     },
     {
@@ -120,13 +120,13 @@
       "question": "Quelle technique vient habituellement compenser la tendance à l’accumulation d’erreurs dans le self-training?",
       "image_url": null,
       "choices": {
-        "A": "La validation croisée basée sur les données non étiquetées.",
+        "A": "Un recalibrage périodique du modèle par un sous-ensemble de données étiquetées validées.",
         "B": "La réétiquetage manuel après chaque cycle.",
-        "C": "Un recalibrage périodique du modèle par un sous-ensemble de données étiquetées validées.",
+        "C": "La validation croisée basée sur les données non étiquetées.",
         "D": "L'application d'un modèle externe d'apprentissage par renforcement."
       },
-      "correct_answer": "C",
-      "explanation": "Recalibrer le modèle périodiquement avec des échantillons étiquetés réduit le risque que des erreurs systématiques se propagent. A est incorrect, car la validation croisée n’agit pas directement sur les données non étiquetées. B est peu pratique car extrêmement coûteux. D est hors de propos pour le champ du self-training qui ne se base pas sur l'apprentissage par renforcement.",
+      "correct_answer": "A",
+      "explanation": "Recalibrer le modèle périodiquement avec des échantillons étiquetés réduit le risque que des erreurs systématiques se propagent. A est incorrect, car la validation croisée n’agit pas directement sur les données non étiquetées. B est peu pratique car extrêmement coûteux. D est hors de propos pour le champ du self-training qui ne se base pas sur l'apprentissage par renforcement. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La réétiquetage manuel après chaque cycle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La validation croisée basée sur les données non étiquetées.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Parmi les stratégies de self-training, laquelle contribue à minimiser l'erreur de modèle en se basant sur la validation et l'évaluation continues?",
       "image_url": null,
       "choices": {
-        "A": "Ajuster les seuils de confiance à chaque période d'évaluation de performance.",
-        "B": "Éliminer les itérations encore plus fréquemment pour éviter le surapprentissage.",
+        "A": "Éliminer les itérations encore plus fréquemment pour éviter le surapprentissage.",
+        "B": "Ajuster les seuils de confiance à chaque période d'évaluation de performance.",
         "C": "Conserver tous les échantillons fortement où faiblement confidentiels, en atténuant la portée.",
         "D": "Limiter le modèle à fonctionner uniquement sur des échantillons initialement étiquetés."
       },
-      "correct_answer": "A",
-      "explanation": "L'ajustement régulier des seuils de confiance permet de s'assurer que le self-training s'adapte à la performance actuelle du modèle et évite d'incorporer des prédictions incertaines. B pourrait augmenter le surapprentissage en l'absence de continuité fiable. C est erroné car mélanger les échantillons douteux compromet la fiabilité. D est contre-productif, car il limite excessivement le modèle et oblitère l'avantage dynamique du self-training.",
+      "correct_answer": "B",
+      "explanation": "L'ajustement régulier des seuils de confiance permet de s'assurer que le self-training s'adapte à la performance actuelle du modèle et évite d'incorporer des prédictions incertaines. B pourrait augmenter le surapprentissage en l'absence de continuité fiable. C est erroné car mélanger les échantillons douteux compromet la fiabilité. D est contre-productif, car il limite excessivement le modèle et oblitère l'avantage dynamique du self-training. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Éliminer les itérations encore plus fréquemment pour éviter le surapprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Conserver tous les échantillons fortement où faiblement confidentiels, en atténuant la portée.) est",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Qu'est-ce que l'enseignant initial en apprentissage semi-supervisé, particulièrement dans le contexte de self-training?",
       "image_url": null,
       "choices": {
-        "A": "Un modèle entraîné sur l'ensemble des données initialement étiquetées.",
+        "A": "Un algorithme qui ajuste dynamiquement les étiquettes en fonction des performances.",
         "B": "Une technique qui consiste à générer de nouvelles étiquettes pour les données non étiquetées.",
-        "C": "Un algorithme qui ajuste dynamiquement les étiquettes en fonction des performances.",
+        "C": "Un modèle entraîné sur l'ensemble des données initialement étiquetées.",
         "D": "Un processus de validation des données non étiquetées avant l'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "L'enseignant initial est un modèle construit uniquement à partir des données étiquetées disponibles, servant de base pour étiqueter de manière prédictive les données non étiquetées. La sélection confiante et le réentraînement ne font pas partie de ce processus initial, rendant les options B et C incorrectes. D décrit un processus de validation qui ne caractérise pas le rôle de l'enseignant initial.",
+      "correct_answer": "C",
+      "explanation": "L'enseignant initial est un modèle construit uniquement à partir des données étiquetées disponibles, servant de base pour étiqueter de manière prédictive les données non étiquetées. La sélection confiante et le réentraînement ne font pas partie de ce processus initial, rendant les options B et C incorrectes. D décrit un processus de validation qui ne caractérise pas le rôle de l'enseignant initial. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un algorithme qui ajuste dynamiquement les étiquettes en fonction des performances.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Une technique qui consiste à générer de nouvelles étiquettes pour les données",
       "difficulty": "easy"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Dans un algorithme de self-training, que signifie la sélection confiante et pourquoi est-elle importante?",
       "image_url": null,
       "choices": {
-        "A": "Sélection des prédictions avec des scores de confiance élevés pour ré-entraîner le modèle.",
+        "A": "Étiqueter aléatoirement les données non étiquetées pour augmenter la taille de l'ensemble d'entraînement.",
         "B": "Choisir les données les plus faciles à classer pour améliorer l'accuracy globale.",
         "C": "Utiliser un sous-ensemble de données varié pour éviter le surajustement.",
-        "D": "Étiqueter aléatoirement les données non étiquetées pour augmenter la taille de l'ensemble d'entraînement."
+        "D": "Sélection des prédictions avec des scores de confiance élevés pour ré-entraîner le modèle."
       },
-      "correct_answer": "A",
-      "explanation": "La sélection confiante implique de choisir les prédictions avec des scores de confiance élevés afin de minimiser le risque d'accumulation d'erreurs lors du ré-entraînement du modèle. L'option B est incorrecte car cela ne garantit pas la fiabilité des étiquettes prédictives. C n'est pas pertinent ici car la diversité ne joue pas le rôle premier dans la sélection confiante. D est incorrect car l'étiquetage aléatoire ne prend pas en compte la précision et augmente simplement le risque d'erreurs.",
+      "correct_answer": "D",
+      "explanation": "La sélection confiante implique de choisir les prédictions avec des scores de confiance élevés afin de minimiser le risque d'accumulation d'erreurs lors du ré-entraînement du modèle. L'option B est incorrecte car cela ne garantit pas la fiabilité des étiquettes prédictives. C n'est pas pertinent ici car la diversité ne joue pas le rôle premier dans la sélection confiante. D est incorrect car l'étiquetage aléatoire ne prend pas en compte la précision et augmente simplement le risque d'erreurs. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Étiqueter aléatoirement les données non étiquetées pour augmenter la taille de l'ensemble d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "medium"
     }
   ]

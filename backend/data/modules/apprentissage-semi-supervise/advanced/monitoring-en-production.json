@@ -14,7 +14,7 @@
         "D": "L'augmentation du nombre de données non étiquetées."
       },
       "correct_answer": "A",
-      "explanation": "La dégradation des pseudo-labels se produit lorsque les étiquettes prédictives deviennent de moins en moins précises au fil du temps. Une amélioration continue des performances et une réduction du temps de traitement ne sont pas des signes de dégradation. L'augmentation des données non étiquetées ne signifie pas nécessairement une dégradation.",
+      "explanation": "La dégradation des pseudo-labels se produit lorsque les étiquettes prédictives deviennent de moins en moins précises au fil du temps. Une amélioration continue des performances et une réduction du temps de traitement ne sont pas des signes de dégradation. L'augmentation des données non étiquetées ne signifie pas nécessairement une dégradation. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Une amélioration continue des performances du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La réduction du temps de traitement des données en lots.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Que signifie un drift de confiance dans le contexte du monitoring de production pour les modèles semi-supervisés ?",
       "image_url": null,
       "choices": {
-        "A": "Une variation significative dans les scores de confiance assignés aux prédictions.",
-        "B": "Une augmentation de la taille du jeu de données d'entraînement.",
+        "A": "Une augmentation de la taille du jeu de données d'entraînement.",
+        "B": "Une variation significative dans les scores de confiance assignés aux prédictions.",
         "C": "Une réduction de la diversité des données d'entrée.",
         "D": "Une augmentation de la vitesse de convergence pendant l'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "Le drift de confiance désigne une variation significative des scores de confiance que le modèle attribue à ses prédictions, indiquant une possible dérive des données ou une inadéquation du modèle. L'augmentation de la taille des données, la réduction de la diversité, et la vitesse de convergence ne sont pas directement liées au drift de confiance.",
+      "correct_answer": "B",
+      "explanation": "Le drift de confiance désigne une variation significative des scores de confiance que le modèle attribue à ses prédictions, indiquant une possible dérive des données ou une inadéquation du modèle. L'augmentation de la taille des données, la réduction de la diversité, et la vitesse de convergence ne sont pas directement liées au drift de confiance. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une augmentation de la taille du jeu de données d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une réduction de la diversité des données d'entrée.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Comment peut-on détecter les erreurs silencieuses dans un système d'apprentissage semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "En analysant les prédictions avec une faible confiance.",
+        "A": "En diminuant la taille du lot de données d'entraînement.",
         "B": "En augmentant la fréquence des mises à jour du modèle.",
-        "C": "En diminuant la taille du lot de données d'entraînement.",
+        "C": "En analysant les prédictions avec une faible confiance.",
         "D": "En utilisant uniquement des données étiquetées manuellement pour tester le modèle."
       },
-      "correct_answer": "A",
-      "explanation": "Les erreurs silencieuses peuvent être détectées en surveillant les prédictions qui ont une faible confiance, car celles-ci sont souvent incorrectes. Augmenter la fréquence des mises à jour, réduire la taille des lots, et utiliser uniquement des données étiquetées ne ciblent pas directement la détection d'erreurs silencieuses.",
+      "correct_answer": "C",
+      "explanation": "Les erreurs silencieuses peuvent être détectées en surveillant les prédictions qui ont une faible confiance, car celles-ci sont souvent incorrectes. Augmenter la fréquence des mises à jour, réduire la taille des lots, et utiliser uniquement des données étiquetées ne ciblent pas directement la détection d'erreurs silencieuses. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En diminuant la taille du lot de données d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En augmentant la fréquence des mises à jour du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quel pourrait être un critère pour déclencher une alerte dans un système de monitoring de modèles semi-supervisés ?",
       "image_url": null,
       "choices": {
-        "A": "Un changement statistiquement significatif dans la distribution des scores de confiance.",
+        "A": "Une diminution des besoins de ressources informatiques.",
         "B": "Un nombre constant de données entrantes.",
         "C": "Une augmentation prévisible du volume de données.",
-        "D": "Une diminution des besoins de ressources informatiques."
+        "D": "Un changement statistiquement significatif dans la distribution des scores de confiance."
       },
-      "correct_answer": "A",
-      "explanation": "Un changement notable dans la distribution des scores de confiance peut indiquer un problème avec le modèle ou les données, ce qui justifie une alerte. Un nombre constant de données, une augmentation prévisible du volume, et une réduction des ressources ne sont pas des raisons pour déclencher une alerte.",
+      "correct_answer": "D",
+      "explanation": "Un changement notable dans la distribution des scores de confiance peut indiquer un problème avec le modèle ou les données, ce qui justifie une alerte. Un nombre constant de données, une augmentation prévisible du volume, et une réduction des ressources ne sont pas des raisons pour déclencher une alerte. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une diminution des besoins de ressources informatiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Un nombre constant de données entrantes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une augmentation",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Une stabilité accrue du modèle à long terme."
       },
       "correct_answer": "A",
-      "explanation": "La dégradation des pseudo-labels conduit souvent à une diminution de la précision des prédictions, car le modèle apprend sur la base de données étiquetées incorrectement. Une augmentation des données étiquetées, un meilleur temps de traitement, et plus de stabilité ne sont généralement pas des conséquences directes.",
+      "explanation": "La dégradation des pseudo-labels conduit souvent à une diminution de la précision des prédictions, car le modèle apprend sur la base de données étiquetées incorrectement. Une augmentation des données étiquetées, un meilleur temps de traitement, et plus de stabilité ne sont généralement pas des conséquences directes. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Une augmentation du nombre total de données étiquetées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une amélioration du temps de traitement des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Une stabilité",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Pourquoi est-il crucial de surveiller le drift de confiance dans les systèmes semi-supervisés en production ?",
       "image_url": null,
       "choices": {
-        "A": "Pour détecter les changements possibles dans la distribution des données d'entrée.",
-        "B": "Pour maximiser l'utilisation des ressources matérielles.",
+        "A": "Pour maximiser l'utilisation des ressources matérielles.",
+        "B": "Pour détecter les changements possibles dans la distribution des données d'entrée.",
         "C": "Pour garantir un stockage efficace des données.",
         "D": "Pour réduire la complexité du modèle en production."
       },
-      "correct_answer": "A",
-      "explanation": "Le drift de confiance aide à identifier les changements potentiels dans la distribution des données, qui pourraient affecter la performance du modèle. Maximiser l'utilisation des ressources, le stockage efficace, et réduire la complexité ne sont pas liés à la surveillance du drift de confiance.",
+      "correct_answer": "B",
+      "explanation": "Le drift de confiance aide à identifier les changements potentiels dans la distribution des données, qui pourraient affecter la performance du modèle. Maximiser l'utilisation des ressources, le stockage efficace, et réduire la complexité ne sont pas liés à la surveillance du drift de confiance. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour maximiser l'utilisation des ressources matérielles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour garantir un stockage efficace des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Pour réduire la complexité du modèle en",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quel est un indicateur de dérive des données pouvant entraîner des erreurs silencieuses dans un environnement de production ?",
       "image_url": null,
       "choices": {
-        "A": "Une différence notable entre les distributions des données entrantes actuelles et celles d'entraînement.",
+        "A": "Une utilisation réduite de la mémoire de l'application.",
         "B": "Un temps de réponse plus rapide du système.",
-        "C": "Une utilisation réduite de la mémoire de l'application.",
+        "C": "Une différence notable entre les distributions des données entrantes actuelles et celles d'entraînement.",
         "D": "Une augmentation du nombre d'utilisateurs accédant au système."
       },
-      "correct_answer": "A",
-      "explanation": "Une différence entre les distributions des données actuelles et celles utilisées pour l'entraînement peut indiquer une dérive des données, entraînant des erreurs silencieuses. Le temps de réponse, l'utilisation de la mémoire, et le nombre d'utilisateurs ne sont pas indicateurs directs de dérive des données.",
+      "correct_answer": "C",
+      "explanation": "Une différence entre les distributions des données actuelles et celles utilisées pour l'entraînement peut indiquer une dérive des données, entraînant des erreurs silencieuses. Le temps de réponse, l'utilisation de la mémoire, et le nombre d'utilisateurs ne sont pas indicateurs directs de dérive des données. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une utilisation réduite de la mémoire de l'application.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Un temps de réponse plus rapide du système.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Une augmentation du nombre",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Pourquoi la détection d'erreurs silencieuses est-elle particulièrement challenging dans les modèles semi-supervisés en production ?",
       "image_url": null,
       "choices": {
-        "A": "Parce que le feedback direct sur les prédictions incorrectes est souvent absent.",
+        "A": "Parce que les erreurs silencieuses sont enregistrées dans les journaux système.",
         "B": "Parce que les modèles semi-supervisés n'utilisent pas de données non étiquetées.",
         "C": "Parce que ces modèles ne nécessitent pas de calibration des hyperparamètres.",
-        "D": "Parce que les erreurs silencieuses sont enregistrées dans les journaux système."
+        "D": "Parce que le feedback direct sur les prédictions incorrectes est souvent absent."
       },
-      "correct_answer": "A",
-      "explanation": "L'absence de feedback direct sur les prédictions incorrectes complique la détection des erreurs silencieuses. Les modèles semi-supervisés utilisent effectivement des données non étiquetées, nécessitent une calibration des hyperparamètres, et les erreurs silencieuses ne sont pas automatiquement enregistrées.",
+      "correct_answer": "D",
+      "explanation": "L'absence de feedback direct sur les prédictions incorrectes complique la détection des erreurs silencieuses. Les modèles semi-supervisés utilisent effectivement des données non étiquetées, nécessitent une calibration des hyperparamètres, et les erreurs silencieuses ne sont pas automatiquement enregistrées. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce que les erreurs silencieuses sont enregistrées dans les journaux système.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Parce que les modèles semi-supervisés n'utilisent pas de données non étiquetées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce que ces modèles ne",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Limiter l'utilisation des données non étiquetées."
       },
       "correct_answer": "A",
-      "explanation": "Mettre à jour le modèle avec des étiquettes vérifiées manuellement améliore la qualité des données étiquetées. Réduire la variabilité, augmenter la puissance de calcul ou limiter les données non étiquetées ne ciblent pas directement la qualité des pseudo-labels.",
+      "explanation": "Mettre à jour le modèle avec des étiquettes vérifiées manuellement améliore la qualité des données étiquetées. Réduire la variabilité, augmenter la puissance de calcul ou limiter les données non étiquetées ne ciblent pas directement la qualité des pseudo-labels. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Réduire la variabilité des données d'entrée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Augmenter la puissance de calcul utilisée pour l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Limiter l'utilisation des données non étiquetées.) est plausible mais faux car il",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Dans le cadre du monitoring d'un modèle, quelle action pourrait induire un faux positif dans le déclenchement d'alarmes pour drift de confiance ?",
       "image_url": null,
       "choices": {
-        "A": "Une modification dans la méthode de calcul du score de confiance sans ajustement du seuil.",
-        "B": "L'ajout de nouvelles fonctionnalités au modèle.",
+        "A": "L'ajout de nouvelles fonctionnalités au modèle.",
+        "B": "Une modification dans la méthode de calcul du score de confiance sans ajustement du seuil.",
         "C": "La suppression de fonctionnalités inutiles du modèle.",
         "D": "L'atteinte d'un plateau de performance optimale."
       },
-      "correct_answer": "A",
-      "explanation": "Changer la méthode de calcul du score de confiance sans réajuster le seuil peut entraîner des alertes injustifiées. L'ajout ou la suppression de fonctionnalités et l'atteinte d'un plateau n'induisent pas directement un faux positif concernant le drift de confiance.",
+      "correct_answer": "B",
+      "explanation": "Changer la méthode de calcul du score de confiance sans réajuster le seuil peut entraîner des alertes injustifiées. L'ajout ou la suppression de fonctionnalités et l'atteinte d'un plateau n'induisent pas directement un faux positif concernant le drift de confiance. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'ajout de nouvelles fonctionnalités au modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La suppression de fonctionnalités inutiles du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'atteinte d'un plateau de performance optimale.) est plausible mais faux car il",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Comment peut-on atténuer l'impact des dérives de données sur les modèles en production ?",
       "image_url": null,
       "choices": {
-        "A": "En mettant à jour régulièrement le modèle avec de nouvelles données.",
+        "A": "En réduisant le nombre de paramètres du modèle.",
         "B": "En utilisant des algorithmes plus complexes.",
-        "C": "En réduisant le nombre de paramètres du modèle.",
+        "C": "En mettant à jour régulièrement le modèle avec de nouvelles données.",
         "D": "En augmentant la taille du lot d'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "Mettre à jour régulièrement le modèle avec de nouvelles données permet d'adapter le modèle aux changements dans les données. Utiliser des algorithmes plus complexes, réduire les paramètres ou ajuster la taille du lot ne traitent pas directement les dérives de données.",
+      "correct_answer": "C",
+      "explanation": "Mettre à jour régulièrement le modèle avec de nouvelles données permet d'adapter le modèle aux changements dans les données. Utiliser des algorithmes plus complexes, réduire les paramètres ou ajuster la taille du lot ne traitent pas directement les dérives de données. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En réduisant le nombre de paramètres du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En utilisant des algorithmes plus complexes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (En augmentant la taille du lot d'entraînement.) est plausible",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel problème peut survenir si les alertes pour drift de confiance sont trop fréquentes dans un système semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "La probabilité de fatigue d'alerte qui réduit la vigilance aux vrais problèmes.",
+        "A": "Un besoin accru en stockage des données.",
         "B": "Un accroissement inattendu de la précision du modèle.",
         "C": "Une détérioration des performances de calcul.",
-        "D": "Un besoin accru en stockage des données."
+        "D": "La probabilité de fatigue d'alerte qui réduit la vigilance aux vrais problèmes."
       },
-      "correct_answer": "A",
-      "explanation": "La fatigue d'alerte se produit lorsque les alertes sont trop fréquentes, ce qui peut amener les opérateurs à les ignorer. Cela ne cause pas une augmentation de la précision, ni de la détérioration calculatrice directe, ni un besoin accru en stockage.",
+      "correct_answer": "D",
+      "explanation": "La fatigue d'alerte se produit lorsque les alertes sont trop fréquentes, ce qui peut amener les opérateurs à les ignorer. Cela ne cause pas une augmentation de la précision, ni de la détérioration calculatrice directe, ni un besoin accru en stockage. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un besoin accru en stockage des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Un accroissement inattendu de la précision du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une détérioration des performances de calcul.) est plausible",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "L'utilisation croissante des données synthétiques pour l'entraînement."
       },
       "correct_answer": "A",
-      "explanation": "L'évaluation continue des performances avec des données étiquetées permet de détecter rapidement les erreurs silencieuses. Garder le même ensemble de données d'entraînement, réduire la taille des données, ou augmenter l'utilisation des données synthétiques ne sont pas efficaces pour cette tâche.",
+      "explanation": "L'évaluation continue des performances avec des données étiquetées permet de détecter rapidement les erreurs silencieuses. Garder le même ensemble de données d'entraînement, réduire la taille des données, ou augmenter l'utilisation des données synthétiques ne sont pas efficaces pour cette tâche. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Le maintien du même ensemble de données d'entraînement sans mise à jour.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La réduction progressive de la taille des données d'entrée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'utilisation croissante des",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quel est l'avantage principal d'un système d'alerte bien calibré sur un modèle semi-supervisé en production ?",
       "image_url": null,
       "choices": {
-        "A": "Identification rapide des déviations significatives dans les prédictions.",
-        "B": "Réduction des besoins énergétiques du modèle.",
+        "A": "Réduction des besoins énergétiques du modèle.",
+        "B": "Identification rapide des déviations significatives dans les prédictions.",
         "C": "Simplification de l'architecture du modèle.",
         "D": "Augmentation du volume de données initialement étiquetées."
       },
-      "correct_answer": "A",
-      "explanation": "Un système d'alerte bien calibré aide à identifier rapidement les déviations significatives qui peuvent indiquer des problèmes de performance. Il ne réduit pas les besoins énergétiques, ne simplifie pas l'architecture du modèle, ni n'augmente le volume de données étiquetées.",
+      "correct_answer": "B",
+      "explanation": "Un système d'alerte bien calibré aide à identifier rapidement les déviations significatives qui peuvent indiquer des problèmes de performance. Il ne réduit pas les besoins énergétiques, ne simplifie pas l'architecture du modèle, ni n'augmente le volume de données étiquetées. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduction des besoins énergétiques du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Simplification de l'architecture du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Augmentation du volume de données initialement étiquetées.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Pourquoi les erreurs silencieuses peuvent-elles être particulièrement dangereuses dans un environnement de production ?",
       "image_url": null,
       "choices": {
-        "A": "Elles passent souvent inaperçues et peuvent entraîner des decisions erronées.",
+        "A": "Elles nécessitent des mises à jour logicielles complexes pour être éliminées.",
         "B": "Elles sont plus faciles à détecter et à corriger rétroactivement.",
-        "C": "Elles nécessitent des mises à jour logicielles complexes pour être éliminées.",
+        "C": "Elles passent souvent inaperçues et peuvent entraîner des decisions erronées.",
         "D": "Elles augmentent inévitablement les coûts en matériel."
       },
-      "correct_answer": "A",
-      "explanation": "Les erreurs silencieuses passent souvent inaperçues et peuvent causer des décisions basées sur des données incorrectes. Elles ne sont pas forcément plus faciles à corriger rétroactivement, nécessitent rarement des mises à jour logicielles complexes, et n'augmentent pas directement les coûts en matériel.",
+      "correct_answer": "C",
+      "explanation": "Les erreurs silencieuses passent souvent inaperçues et peuvent causer des décisions basées sur des données incorrectes. Elles ne sont pas forcément plus faciles à corriger rétroactivement, nécessitent rarement des mises à jour logicielles complexes, et n'augmentent pas directement les coûts en matériel. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elles nécessitent des mises à jour logicielles complexes pour être éliminées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elles sont plus faciles à détecter et à corriger rétroactivement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elles",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Lors de l'implémentation d'un système d'alerte pour un modèle, quelle métrique serait la plus pertinente à suivre ?",
       "image_url": null,
       "choices": {
-        "A": "La variation des scores de confiance dans les classes prédites.",
+        "A": "La température du matériel utilisé lors de l'entraînement.",
         "B": "Le temps nécessaire pour traiter un lot de données.",
         "C": "Le nombre de couches dans l'architecture du réseau de neurones.",
-        "D": "La température du matériel utilisé lors de l'entraînement."
+        "D": "La variation des scores de confiance dans les classes prédites."
       },
-      "correct_answer": "A",
-      "explanation": "La variation des scores de confiance des classes prédites indique des dérives potentielles. Le temps de traitement, le nombre de couches, ou la température du matériel ne sont pas directement pertinents pour vérifier la fiabilité des prédictions dans un système d'alerte.",
+      "correct_answer": "D",
+      "explanation": "La variation des scores de confiance des classes prédites indique des dérives potentielles. Le temps de traitement, le nombre de couches, ou la température du matériel ne sont pas directement pertinents pour vérifier la fiabilité des prédictions dans un système d'alerte. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (La température du matériel utilisé lors de l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le temps nécessaire pour traiter un lot de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le nombre de couches dans l'architecture",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "L'amélioration de la capacité de mise en cache des résultats."
       },
       "correct_answer": "A",
-      "explanation": "La validation continue avec un ensemble de test maintenu à jour permet de vérifier la robustesse du modèle face aux dérives de données. Ne pas mettre à jour les hyperparamètres, augmenter la régularisation, ou améliorer la mise en cache ne ciblent pas directement ce problème.",
+      "explanation": "La validation continue avec un ensemble de test maintenu à jour permet de vérifier la robustesse du modèle face aux dérives de données. Ne pas mettre à jour les hyperparamètres, augmenter la régularisation, ou améliorer la mise en cache ne ciblent pas directement ce problème. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La dé-priorisation de la mise à jour des hyperparamètres.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'augmentation de la régularisation durant l'entraînement initial.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'amélioration de la",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Quel type de drift est détecté lorsque le modèle change de comportement sans modification apparente dans la distribution des données d'entrée ?",
       "image_url": null,
       "choices": {
-        "A": "Le drift conceptuel, lié à des changements dans la relation entre les caractéristiques et la variable cible.",
-        "B": "Le drift covariant, qui touche les caractéristiques en elles-mêmes.",
+        "A": "Le drift covariant, qui touche les caractéristiques en elles-mêmes.",
+        "B": "Le drift conceptuel, lié à des changements dans la relation entre les caractéristiques et la variable cible.",
         "C": "Le drift de structure, impliquant une modification du modèle sous-jacent.",
         "D": "Le drift temporel, affectant les données en raison d'un intervalle d'observation prolongé."
       },
-      "correct_answer": "A",
-      "explanation": "Le drift conceptuel est lié à des changements dans la relation entre les caractéristiques et la variable cible, sans modification apparente de la distribution des entrées. Le drift covariant, de structure ou temporel est centré sur les données ou l'architecture en soi.",
+      "correct_answer": "B",
+      "explanation": "Le drift conceptuel est lié à des changements dans la relation entre les caractéristiques et la variable cible, sans modification apparente de la distribution des entrées. Le drift covariant, de structure ou temporel est centré sur les données ou l'architecture en soi. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le drift covariant, qui touche les caractéristiques en elles-mêmes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le drift de structure, impliquant une modification du modèle sous-jacent.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Le drift temporel,",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Quelle approche pourrait minimiser le faux déclenchement d'alertes dans un environnement de production ?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser un seuil adaptatif basé sur la variance des prédictions passées.",
+        "A": "Développer des modèles plus simples avec moins de paramètres.",
         "B": "Augmenter le volume de données analysées avant chaque alerte.",
-        "C": "Développer des modèles plus simples avec moins de paramètres.",
+        "C": "Utiliser un seuil adaptatif basé sur la variance des prédictions passées.",
         "D": "Réduire la cadence de vérification de l'intégrité des données."
       },
-      "correct_answer": "A",
-      "explanation": "Utiliser un seuil adaptatif fondé sur la variance historique permet de s'ajuster aux variations normales et d'atteindre une alerte plus précise. Augmenter le volume, simplifier les modèles, ou réduire la vérification de l'intégrité des données ne répondent pas efficacement à cette préoccupation.",
+      "correct_answer": "C",
+      "explanation": "Utiliser un seuil adaptatif fondé sur la variance historique permet de s'ajuster aux variations normales et d'atteindre une alerte plus précise. Augmenter le volume, simplifier les modèles, ou réduire la vérification de l'intégrité des données ne répondent pas efficacement à cette préoccupation. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Développer des modèles plus simples avec moins de paramètres.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter le volume de données analysées avant chaque alerte.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Réduire la cadence de",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Pour quelle raison les modèles semi-supervisés en production sont-ils souvent sensibles à la variabilité des pseudo-labels ?",
       "image_url": null,
       "choices": {
-        "A": "Ils s'appuient sur des étiquettes potentiellement erronées pour améliorer la généralisation.",
+        "A": "Ils utilisent davantage de ressources, ce qui impose une variabilité plus forte.",
         "B": "Ils nécessitent des données strictement étiquetées à la main pour chaque mise à jour.",
         "C": "Ils acceptent uniquement de nouvelles données étiquetées par des experts.",
-        "D": "Ils utilisent davantage de ressources, ce qui impose une variabilité plus forte."
+        "D": "Ils s'appuient sur des étiquettes potentiellement erronées pour améliorer la généralisation."
       },
-      "correct_answer": "A",
-      "explanation": "Étant donnés qu'ils utilisent les pseudo-labels pour aider à la généralisation, des erreurs dans ces labels peuvent influencer négativement les performances. Ces modèles ne nécessitent pas des données exclusivement étiquetées à la main, par des experts, ou n'ont pas une consommation de ressource causant de la variabilité.",
+      "correct_answer": "D",
+      "explanation": "Étant donnés qu'ils utilisent les pseudo-labels pour aider à la généralisation, des erreurs dans ces labels peuvent influencer négativement les performances. Ces modèles ne nécessitent pas des données exclusivement étiquetées à la main, par des experts, ou n'ont pas une consommation de ressource causant de la variabilité. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ils utilisent davantage de ressources, ce qui impose une variabilité plus forte.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Ils nécessitent des données strictement étiquetées à la main pour chaque mise à jour.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "La compatibilité avec tous les frameworks d'apprentissage automatique."
       },
       "correct_answer": "A",
-      "explanation": "Bien gérer l'incertitude des pseudo-labels est crucial pour les performances. La facilité de transcodage, l'absence totale de prétraitement, et la compatibilité ne sont pas aussi centraux pour le choix dans un contexte de mise en production.",
+      "explanation": "Bien gérer l'incertitude des pseudo-labels est crucial pour les performances. La facilité de transcodage, l'absence totale de prétraitement, et la compatibilité ne sont pas aussi centraux pour le choix dans un contexte de mise en production. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La facilité de transcodage en d'autres langages de programmation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'absence totale de prétraitement nécessaire pour les données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La compatibilité avec tous les frameworks d'apprentissage automatique.) est plausible mais",
       "difficulty": "hard"
     },
     {
@@ -302,13 +302,13 @@
       "question": "Pourquoi est-il important de surveiller l'évolution des scores de confiance dans un modèle semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Pour identifier les fluctuations qui pourraient indiquer une dérive des données.",
-        "B": "Pour compiler automatiquement les données sans intervention humaine.",
+        "A": "Pour compiler automatiquement les données sans intervention humaine.",
+        "B": "Pour identifier les fluctuations qui pourraient indiquer une dérive des données.",
         "C": "Pour respecter les réglementations sur la protection des données personnelles.",
         "D": "Pour optimiser la vitesse de calcul des prédictions."
       },
-      "correct_answer": "A",
-      "explanation": "Surveiller les scores de confiance permet de détecter les fluctuations susceptibles de signaler une dérive des données, essentielle pour la fiabilité du modèle. Compiler des données, respecter les réglementations, ou optimiser les calculs ne sont pas directement liés à cette surveillance.",
+      "correct_answer": "B",
+      "explanation": "Surveiller les scores de confiance permet de détecter les fluctuations susceptibles de signaler une dérive des données, essentielle pour la fiabilité du modèle. Compiler des données, respecter les réglementations, ou optimiser les calculs ne sont pas directement liés à cette surveillance. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour compiler automatiquement les données sans intervention humaine.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour respecter les réglementations sur la protection des données personnelles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Pour optimiser la vitesse de",
       "difficulty": "hard"
     },
     {
@@ -316,13 +316,13 @@
       "question": "En quoi le concept de pseudo-labels dégradés limite-t-il la performance d'un modèle semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Il entraîne l'apprentissage sur des étiquettes potentiellement incorrectes.",
+        "A": "Il complique l'intégration avec d'autres systèmes de données.",
         "B": "Il empêche toute mise à jour dynamique du modèle.",
-        "C": "Il complique l'intégration avec d'autres systèmes de données.",
+        "C": "Il entraîne l'apprentissage sur des étiquettes potentiellement incorrectes.",
         "D": "Il entraîne une surconsommation des ressources logicielles."
       },
-      "correct_answer": "A",
-      "explanation": "L'apprentissage sur des étiquettes incorrectes peut biaiser le modèle. Les pseudo-labels dégradés n'empêchent pas les mises à jour, ne compliquent pas l'intégration systématique, et n'entraînent pas une surconsommation des ressources intrinsèquement.",
+      "correct_answer": "C",
+      "explanation": "L'apprentissage sur des étiquettes incorrectes peut biaiser le modèle. Les pseudo-labels dégradés n'empêchent pas les mises à jour, ne compliquent pas l'intégration systématique, et n'entraînent pas une surconsommation des ressources intrinsèquement. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il complique l'intégration avec d'autres systèmes de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il empêche toute mise à jour dynamique du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il entraîne une surconsommation des ressources logicielles.) est plausible mais faux car il ne respecte pas",
       "difficulty": "hard"
     },
     {
@@ -330,13 +330,13 @@
       "question": "Quel est l'effet d'un drift conceptuel sur un modèle en production ?",
       "image_url": null,
       "choices": {
-        "A": "Le modèle devient obsolète car la relation entre variables change.",
+        "A": "Le modèle nécessite un temps d'entraînement plus court.",
         "B": "Le modèle nécessite plus de mémoire pour être opérationnel.",
         "C": "Le modèle traite plus lentement les données entrantes.",
-        "D": "Le modèle nécessite un temps d'entraînement plus court."
+        "D": "Le modèle devient obsolète car la relation entre variables change."
       },
-      "correct_answer": "A",
-      "explanation": "Un drift conceptuel modifie la relation entre les variables, rendant le modèle potentiellement obsolète. Cela n'entraîne pas intrinsèquement une nécessité de plus de mémoire, de traitement plus lent, ou de temps d'entraînement réduit.",
+      "correct_answer": "D",
+      "explanation": "Un drift conceptuel modifie la relation entre les variables, rendant le modèle potentiellement obsolète. Cela n'entraîne pas intrinsèquement une nécessité de plus de mémoire, de traitement plus lent, ou de temps d'entraînement réduit. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le modèle nécessite un temps d'entraînement plus court.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le modèle nécessite plus de mémoire pour être opérationnel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le modèle traite plus lentement les données entrantes.) est plausible mais faux car il",
       "difficulty": "hard"
     },
     {
@@ -350,7 +350,7 @@
         "D": "Appliquer une régularisation plus forte pour contrer la dérive."
       },
       "correct_answer": "A",
-      "explanation": "Réentraîner le modèle avec des données à jour permet de corriger la dérive conceptuelle. Modifier la taille des lots, la profondeur du réseau ou renforcer la régularisation ne traitent pas directement la dérive conceptuelle.",
+      "explanation": "Réentraîner le modèle avec des données à jour permet de corriger la dérive conceptuelle. Modifier la taille des lots, la profondeur du réseau ou renforcer la régularisation ne traitent pas directement la dérive conceptuelle. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Augmenter la taille des lots lors de l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Augmenter la profondeur du réseau de neurones.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Appliquer une régularisation plus forte pour contrer la dérive.) est plausible mais faux car il",
       "difficulty": "hard"
     },
     {
@@ -358,13 +358,13 @@
       "question": "Quelle est une pratique courante pour vérifier que les alertes reflètent un drift réel dans les données ?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser une validation croisée pour évaluer les nouvelles prédictions.",
-        "B": "Déployer des ensembles de données synthétiques pour simuler le comportement.",
+        "A": "Déployer des ensembles de données synthétiques pour simuler le comportement.",
+        "B": "Utiliser une validation croisée pour évaluer les nouvelles prédictions.",
         "C": "S'appuyer uniquement sur les erreurs prédictives visibles.",
         "D": "Augmenter l'intervalle de batch processing."
       },
-      "correct_answer": "A",
-      "explanation": "La validation croisée garantit que les alertes correspondent à des drifts réels en répétant plusieurs fois la vérification. L'utilisation de données synthétiques, les erreurs visibles seulement, et l'augmentation de l'intervalle de traitement ne fournissent pas une évaluation fiable du drift.",
+      "correct_answer": "B",
+      "explanation": "La validation croisée garantit que les alertes correspondent à des drifts réels en répétant plusieurs fois la vérification. L'utilisation de données synthétiques, les erreurs visibles seulement, et l'augmentation de l'intervalle de traitement ne fournissent pas une évaluation fiable du drift. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Déployer des ensembles de données synthétiques pour simuler le comportement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (S'appuyer uniquement sur les erreurs prédictives visibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Augmenter l'intervalle de batch processing.) est plausible",
       "difficulty": "hard"
     },
     {
@@ -372,13 +372,13 @@
       "question": "Quel est le risque principal si un modèle combine des inputs de faible confiance en des prédictions finales sans filtrage ?",
       "image_url": null,
       "choices": {
-        "A": "La propagation de l'incertitude aux décisions prises sur la base des résultats.",
+        "A": "L'amélioration automatique de la précision du modèle.",
         "B": "Une réduction de la charge de calcul nécessaire.",
-        "C": "L'amélioration automatique de la précision du modèle.",
+        "C": "La propagation de l'incertitude aux décisions prises sur la base des résultats.",
         "D": "L'assurance que les prédictions unifiées couvrent tous les cas d'usages possibles."
       },
-      "correct_answer": "A",
-      "explanation": "Utiliser des inputs de faible confiance peut propager de l'incertitude, affectant la décision finale. Cela n'entraîne pas intrinsèquement de réduction de charge calculatoire, n'améliore pas la précision automatiquement, et ne garantit pas la couverture de tous les cas d'usage.",
+      "correct_answer": "C",
+      "explanation": "Utiliser des inputs de faible confiance peut propager de l'incertitude, affectant la décision finale. Cela n'entraîne pas intrinsèquement de réduction de charge calculatoire, n'améliore pas la précision automatiquement, et ne garantit pas la couverture de tous les cas d'usage. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'amélioration automatique de la précision du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Une réduction de la charge de calcul nécessaire.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'assurance que les prédictions unifiées couvrent tous les cas d'usages",
       "difficulty": "hard"
     },
     {
@@ -386,13 +386,13 @@
       "question": "Comment peut-on définir une métrique d'alerte efficace pour un modèle en production ?",
       "image_url": null,
       "choices": {
-        "A": "En modélisant la variance des scores de crédibilité comme une distribution Gaussienne.",
+        "A": "En appliquant des algorithmes de clustering par K-means sur les données d'alerte.",
         "B": "En fixant un seuil statique pour tous les types de données.",
         "C": "En utilisant uniquement le taux de faux positifs du modèle pour établir l'alerte.",
-        "D": "En appliquant des algorithmes de clustering par K-means sur les données d'alerte."
+        "D": "En modélisant la variance des scores de crédibilité comme une distribution Gaussienne."
       },
-      "correct_answer": "A",
-      "explanation": "Modéliser la variance des scores en utilisant une distribution Gaussienne permet d'ajuster dynamiquement le seuil d'alerte. Fixer un seuil statique, se baser uniquement sur le taux de faux positifs, ou utiliser K-means ne garantissent pas une réactivité correcte.",
+      "correct_answer": "D",
+      "explanation": "Modéliser la variance des scores en utilisant une distribution Gaussienne permet d'ajuster dynamiquement le seuil d'alerte. Fixer un seuil statique, se baser uniquement sur le taux de faux positifs, ou utiliser K-means ne garantissent pas une réactivité correcte. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En appliquant des algorithmes de clustering par K-means sur les données d'alerte.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En fixant un seuil statique pour tous les types de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En utilisant uniquement",
       "difficulty": "hard"
     },
     {
@@ -406,7 +406,7 @@
         "D": "Augmenter continuellement la complexité des modèles utilisés."
       },
       "correct_answer": "A",
-      "explanation": "La revue humaine permet de remédier aux erreurs non détectées par le système. Ignorer certaines prédictions, journaux d'audit, et augmenter la complexité ne corrigent pas efficacement les erreurs silencieuses.",
+      "explanation": "La revue humaine permet de remédier aux erreurs non détectées par le système. Ignorer certaines prédictions, journaux d'audit, et augmenter la complexité ne corrigent pas efficacement les erreurs silencieuses. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Ignorer les prédictions faibles pour maximiser la précision.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Consolider les erreurs dans un journal d'audit électronique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Augmenter continuellement la complexité des modèles utilisés.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "hard"
     },
     {
@@ -414,13 +414,13 @@
       "question": "Dans quelle situation est-il critique de calibrer les seuils d'alerte pour un modèle semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Lorsque le modèle est exposé à des environnements de données hétérogènes.",
-        "B": "Lorsque les prélèvements de données sont tous manuels.",
+        "A": "Lorsque les prélèvements de données sont tous manuels.",
+        "B": "Lorsque le modèle est exposé à des environnements de données hétérogènes.",
         "C": "Lorsque le modèle réside exclusivement sur une infrastructure locale.",
         "D": "Lorsque le modèle n'a que deux classes de prédiction."
       },
-      "correct_answer": "A",
-      "explanation": "Un environnement de données hétérogènes nécessite une calibration fine pour éviter de faux positifs ou négatifs. Le prélèvement manuel, l'hébergement local, ou la bi-classification n'exigent pas intrinsèquement ces calibrations précises.",
+      "correct_answer": "B",
+      "explanation": "Un environnement de données hétérogènes nécessite une calibration fine pour éviter de faux positifs ou négatifs. Le prélèvement manuel, l'hébergement local, ou la bi-classification n'exigent pas intrinsèquement ces calibrations précises. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Lorsque les prélèvements de données sont tous manuels.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Lorsque le modèle réside exclusivement sur une infrastructure locale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Lorsque le modèle n'a que deux classes de prédiction.) est plausible mais faux car il ne respecte",
       "difficulty": "hard"
     }
   ]

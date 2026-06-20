@@ -14,7 +14,7 @@
         "D": "1 - cos(theta)"
       },
       "correct_answer": "A",
-      "explanation": "La distance euclidienne est calculée par la racine carrée de la somme des carrés des différences entre les coordonnées correspondantes. Le choix B est la distance de Manhattan, C est une somme simple sans considération géométrique, D est incorrect car c'est lié à la similarité cosinus.",
+      "explanation": "La distance euclidienne est calculée par la racine carrée de la somme des carrés des différences entre les coordonnées correspondantes. Le choix B est la distance de Manhattan, C est une somme simple sans considération géométrique, D est incorrect car c'est lié à la similarité cosinus. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (|x2-x1| + |y2-y1|) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C ((x2-x1) + (y2-y1)) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (1 - cos(theta)) est plausible mais faux car il ne respecte pas",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Qu'est-ce que la distance cosinus mesure entre deux vecteurs?",
       "image_url": null,
       "choices": {
-        "A": "L'angle entre les deux vecteurs.",
-        "B": "La somme des différences absolues entre les coordonnées des vecteurs.",
+        "A": "La somme des différences absolues entre les coordonnées des vecteurs.",
+        "B": "L'angle entre les deux vecteurs.",
         "C": "La racine carrée de la somme des carrés des différences entre les vecteurs.",
         "D": "Le produit scalaire des vecteurs."
       },
-      "correct_answer": "A",
-      "explanation": "La distance cosinus mesure l'angle entre deux vecteurs, exprimée souvent en termes de similarité cosinus 1 - cos(theta). B décrit la distance de Manhattan. C est la distance euclidienne, et D est utilisé pour calculer directement la similarité cosinus mais ne décrit pas la 'distance' en tant que telle.",
+      "correct_answer": "B",
+      "explanation": "La distance cosinus mesure l'angle entre deux vecteurs, exprimée souvent en termes de similarité cosinus 1 - cos(theta). B décrit la distance de Manhattan. C est la distance euclidienne, et D est utilisé pour calculer directement la similarité cosinus mais ne décrit pas la 'distance' en tant que telle. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (La somme des différences absolues entre les coordonnées des vecteurs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La racine carrée de la somme des carrés des différences entre les vecteurs.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quelle méthode est couramment utilisée pour normaliser les données de caractéristiques?",
       "image_url": null,
       "choices": {
-        "A": "Échelle de 0 à 1 (normalisation min-max)",
+        "A": "Réduction dimensionnelle par PCA",
         "B": "Transformation polynomiale des caractéristiques",
-        "C": "Réduction dimensionnelle par PCA",
+        "C": "Échelle de 0 à 1 (normalisation min-max)",
         "D": "Utilisation de moyennes glissantes"
       },
-      "correct_answer": "A",
-      "explanation": "La normalisation min-max ajuste l'échelle des données pour que leurs valeurs soient comprises entre 0 et 1. B concerne une transformation qui change la forme des données, C est pour réduire la dimensionnalité des données, et D est une technique statistique non spécifique à la normalisation des données.",
+      "correct_answer": "C",
+      "explanation": "La normalisation min-max ajuste l'échelle des données pour que leurs valeurs soient comprises entre 0 et 1. B concerne une transformation qui change la forme des données, C est pour réduire la dimensionnalité des données, et D est une technique statistique non spécifique à la normalisation des données. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduction dimensionnelle par PCA) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Transformation polynomiale des caractéristiques) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Utilisation de moyennes glissantes) est plausible mais faux",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quelle méthode permet de trouver un groupe de points proches dans un ensemble de données utilisant la distance euclidienne?",
       "image_url": null,
       "choices": {
-        "A": "Algorithme des k-plus proches voisins (k-NN)",
+        "A": "Boosting",
         "B": "Régression logistique",
         "C": "Gradient de descente",
-        "D": "Boosting"
+        "D": "Algorithme des k-plus proches voisins (k-NN)"
       },
-      "correct_answer": "A",
-      "explanation": "L'algorithme des k-plus proches voisins utilise la distance euclidienne pour trouver les k points les plus proches dans l'espace de caractéristiques. B est un algorithme de classification, C est une méthode d'optimisation, et D est une méthode d'ensemble et non basée sur la distance.",
+      "correct_answer": "D",
+      "explanation": "L'algorithme des k-plus proches voisins utilise la distance euclidienne pour trouver les k points les plus proches dans l'espace de caractéristiques. B est un algorithme de classification, C est une méthode d'optimisation, et D est une méthode d'ensemble et non basée sur la distance. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Boosting) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Régression logistique) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Gradient de descente) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Il transforme les données en un espace de plus faible dimension."
       },
       "correct_answer": "A",
-      "explanation": "Le voisinage aide à découvrir des structures telles que des clusters co-localisés dans des méthodes non supervisées. B décrit une méthode supervisée, C est incorrect car le voisinage n'affecte pas directement la complexité calculatoire globale, et D décrit un aspect de la réduction de dimension.",
+      "explanation": "Le voisinage aide à découvrir des structures telles que des clusters co-localisés dans des méthodes non supervisées. B décrit une méthode supervisée, C est incorrect car le voisinage n'affecte pas directement la complexité calculatoire globale, et D décrit un aspect de la réduction de dimension. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il détermine les labels de classe pour de nouvelles données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il réduit la complexité de calcul global.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il transforme",
       "difficulty": "easy"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Lors de l'utilisation de la distance cosinus, quel problème peut survenir si les données ne sont pas centrées correctement?",
       "image_url": null,
       "choices": {
-        "A": "Les vecteurs peuvent être faussement perçus comme éloignés même s'ils sont proches en direction.",
-        "B": "Les valeurs peuvent s'écarter au-delà de l'intervalle [0, 1].",
+        "A": "Les valeurs peuvent s'écarter au-delà de l'intervalle [0, 1].",
+        "B": "Les vecteurs peuvent être faussement perçus comme éloignés même s'ils sont proches en direction.",
         "C": "Les comparaisons entre vecteurs deviennent impossibles.",
         "D": "La matrice de covariances sera indéfinie."
       },
-      "correct_answer": "A",
-      "explanation": "Si les données ne sont pas centrées, la distance cosinus peut indiquer une distance élevée pour des vecteurs proches en direction (norme), générant ainsi des incohérences. B est incorrect, car la distance cosinus est toujours dans l'intervalle [-1, 1], C est faux, car les comparaisons restent possibles bien que biaisées, et D est faux car lié à une technique de covariance.",
+      "correct_answer": "B",
+      "explanation": "Si les données ne sont pas centrées, la distance cosinus peut indiquer une distance élevée pour des vecteurs proches en direction (norme), générant ainsi des incohérences. B est incorrect, car la distance cosinus est toujours dans l'intervalle [-1, 1], C est faux, car les comparaisons restent possibles bien que biaisées, et D est faux car lié à une technique de covariance. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les valeurs peuvent s'écarter au-delà de l'intervalle [0, 1].) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Les comparaisons entre vecteurs deviennent impossibles.) est plausible mais faux car il ne respecte",
       "difficulty": "easy"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quelle est une limitation notable de l'utilisation de la distance euclidienne pour les vecteurs de caractéristiques non normalisés?",
       "image_url": null,
       "choices": {
-        "A": "Les caractéristiques avec de plus grandes valeurs numériques domineront la distance.",
+        "A": "Elle ne fournit pas de résultats sur les données hors ligne.",
         "B": "Elle ne peut s'appliquer qu'aux données catégoriques.",
-        "C": "Elle ne fournit pas de résultats sur les données hors ligne.",
+        "C": "Les caractéristiques avec de plus grandes valeurs numériques domineront la distance.",
         "D": "Elle ne fonctionne que si les caractéristiques sont orthogonales."
       },
-      "correct_answer": "A",
-      "explanation": "La distance euclidienne peut être biaisée par des caractéristiques à grande échelle, ce qui nécessite une normalisation préalable. B est faux car la distance euclidienne s'applique principalement aux données numériques, C est incorrect, car elle est applicable indépendamment de l'état en ligne/hors ligne, et D est faux, car l'hypothèse d'orthogonalité n'est pas requise.",
+      "correct_answer": "C",
+      "explanation": "La distance euclidienne peut être biaisée par des caractéristiques à grande échelle, ce qui nécessite une normalisation préalable. B est faux car la distance euclidienne s'applique principalement aux données numériques, C est incorrect, car elle est applicable indépendamment de l'état en ligne/hors ligne, et D est faux, car l'hypothèse d'orthogonalité n'est pas requise. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle ne fournit pas de résultats sur les données hors ligne.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle ne peut s'appliquer qu'aux données catégoriques.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quel est l'effet de la normalisation par la z-score sur les distributions de caractéristiques?",
       "image_url": null,
       "choices": {
-        "A": "Elle centre la distribution sur zéro avec une variance d'unité.",
+        "A": "Elle produit des distributions fortement asymétriques.",
         "B": "Elle élimine les corrélations entre les caractéristiques.",
         "C": "Elle réduit la somme totale de toutes les caractéristiques à une.",
-        "D": "Elle produit des distributions fortement asymétriques."
+        "D": "Elle centre la distribution sur zéro avec une variance d'unité."
       },
-      "correct_answer": "A",
-      "explanation": "La normalisation par z-score met les données à une moyenne de 0 et une variance de 1, permettant de comparer des caractéristiques sur un pied d'égalité. B est incorrect, car elle ne change pas les corrélations, C concerne la normalisation min-max, et D est inexacte car elle ne crée pas d'asymétrie.",
+      "correct_answer": "D",
+      "explanation": "La normalisation par z-score met les données à une moyenne de 0 et une variance de 1, permettant de comparer des caractéristiques sur un pied d'égalité. B est incorrect, car elle ne change pas les corrélations, C concerne la normalisation min-max, et D est inexacte car elle ne crée pas d'asymétrie. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle produit des distributions fortement asymétriques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle élimine les corrélations entre les caractéristiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "(x2 - x1) + (y2 - y1)"
       },
       "correct_answer": "A",
-      "explanation": "La distance euclidienne est la racine carrée de la somme des carrés des différences entre les coordonnées correspondantes. L'option B décrit la distance de Manhattan, C est la formule pour la similarité cosinus, et D est simplement la somme des différences sans mise au carré ni racine carrée.",
+      "explanation": "La distance euclidienne est la racine carrée de la somme des carrés des différences entre les coordonnées correspondantes. L'option B décrit la distance de Manhattan, C est la formule pour la similarité cosinus, et D est simplement la somme des différences sans mise au carré ni racine carrée. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (|x2 - x1| + |y2 - y1|) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C ((x2 * x1 + y2 * y1) / (||A|| * ||B||)) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "easy"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Laquelle des propositions suivantes définit correctement la distance cosinus ?",
       "image_url": null,
       "choices": {
-        "A": "(x1 * x2 + y1 * y2) / (sqrt(x1^2 + y1^2) * sqrt(x2^2 + y2^2))",
-        "B": "√((x2 - x1)² + (y2 - y1)²)",
+        "A": "√((x2 - x1)² + (y2 - y1)²)",
+        "B": "(x1 * x2 + y1 * y2) / (sqrt(x1^2 + y1^2) * sqrt(x2^2 + y2^2))",
         "C": "|x2 - x1| + |y2 - y1|",
         "D": "(x1 - x2)² + (y1 - y2)²"
       },
-      "correct_answer": "A",
-      "explanation": "La distance cosinus (ou similarité cosinus) est calculée comme le produit scalaire normalisé des deux vecteurs. L'option B correspond à la distance euclidienne, C à la distance de Manhattan, et D ressemble à un calcul intermédiaire pour une variance mais n'est pas une distance cosinus.",
+      "correct_answer": "B",
+      "explanation": "La distance cosinus (ou similarité cosinus) est calculée comme le produit scalaire normalisé des deux vecteurs. L'option B correspond à la distance euclidienne, C à la distance de Manhattan, et D ressemble à un calcul intermédiaire pour une variance mais n'est pas une distance cosinus. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (√((x2 - x1)² + (y2 - y1)²)) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (|x2 - x1| + |y2 - y1|) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D ((x1 - x2)² + (y1",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Pourquoi la normalisation est-elle importante avant de calculer les distances dans les algorithmes de clustering ?",
       "image_url": null,
       "choices": {
-        "A": "Pour mettre chaque caractéristique sur la même échelle afin qu'elles aient une importance équivalente.",
+        "A": "Pour transformer des variables catégorielles en variables numériques.",
         "B": "Pour réduire toutes les valeurs à une plage entre -1 et 1.",
-        "C": "Pour transformer des variables catégorielles en variables numériques.",
+        "C": "Pour mettre chaque caractéristique sur la même échelle afin qu'elles aient une importance équivalente.",
         "D": "Pour augmenter la variance des données pour une meilleure séparation des clusters."
       },
-      "correct_answer": "A",
-      "explanation": "La normalisation assure que tous les attributs sont sur la même échelle, évitant que des mesures de grande échelle dominent la mesure de distance. B décrit la mise à l'échelle min-max qui ne garantit pas la normalisation, C est lié à l'encodage des variables catégorielles, et D augmenterait la variabilité inutilement plutôt que de normaliser.",
+      "correct_answer": "C",
+      "explanation": "La normalisation assure que tous les attributs sont sur la même échelle, évitant que des mesures de grande échelle dominent la mesure de distance. B décrit la mise à l'échelle min-max qui ne garantit pas la normalisation, C est lié à l'encodage des variables catégorielles, et D augmenterait la variabilité inutilement plutôt que de normaliser. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour transformer des variables catégorielles en variables numériques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour réduire toutes les valeurs à une plage entre -1 et 1.) est plausible mais faux car il ne respecte pas",
       "difficulty": "hard"
     }
   ]

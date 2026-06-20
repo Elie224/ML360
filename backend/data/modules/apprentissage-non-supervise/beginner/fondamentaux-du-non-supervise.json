@@ -14,7 +14,7 @@
         "D": "Des données qui sont bruitées sans information exploitable."
       },
       "correct_answer": "A",
-      "explanation": "Les données non étiquetées sont celles qui n'ont pas de labels prédéfinis. A est correct car ces données sont principalement utilisées pour découvrir des structures cachées. B est incorrect car elle décrit l'apprentissage supervisé. C est faux car les données non étiquetées sont cruciales pour l'apprentissage non supervisé. D est une mauvaise interprétation des données bruitées.",
+      "explanation": "Les données non étiquetées sont celles qui n'ont pas de labels prédéfinis. A est correct car ces données sont principalement utilisées pour découvrir des structures cachées. B est incorrect car elle décrit l'apprentissage supervisé. C est faux car les données non étiquetées sont cruciales pour l'apprentissage non supervisé. D est une mauvaise interprétation des données bruitées. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Des données ayant des labels, mais utilisées dans des clusters.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Des données qui sont inutiles pour l'entraînement des modèles.) est plausible mais faux car il ne respecte pas",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Quel est le but principal de l'apprentissage non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Découvrir des structures cachées dans des ensembles de données.",
-        "B": "Prédire des labels pour de nouvelles données.",
+        "A": "Prédire des labels pour de nouvelles données.",
+        "B": "Découvrir des structures cachées dans des ensembles de données.",
         "C": "Améliorer la précision de classification.",
         "D": "Générer des données étiquetées à partir de non-étiquetées."
       },
-      "correct_answer": "A",
-      "explanation": "L'apprentissage non supervisé vise à découvrir des structures ou des motifs cachés dans les données. B correspond à l'apprentissage supervisé. C n'est pas un objectif initial du non supervisé. D est incorrect, car l'apprentissage non supervisé ne génère pas directement des données étiquetées.",
+      "correct_answer": "B",
+      "explanation": "L'apprentissage non supervisé vise à découvrir des structures ou des motifs cachés dans les données. B correspond à l'apprentissage supervisé. C n'est pas un objectif initial du non supervisé. D est incorrect, car l'apprentissage non supervisé ne génère pas directement des données étiquetées. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Prédire des labels pour de nouvelles données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Améliorer la précision de classification.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Générer des données étiquetées à partir de non-étiquetées.) est",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Comment peut-on décrire la structure cachée dans un ensemble de données?",
       "image_url": null,
       "choices": {
-        "A": "Des motifs ou groupements dans les données détectés sans supervision.",
+        "A": "Des labels attribués manuellement aux données.",
         "B": "Des erreurs dans les données dues au bruit.",
-        "C": "Des labels attribués manuellement aux données.",
+        "C": "Des motifs ou groupements dans les données détectés sans supervision.",
         "D": "Des règles prédéfinies pour la classification."
       },
-      "correct_answer": "A",
-      "explanation": "La structure cachée se réfère aux motifs ou groupements qui émergent naturellement dans les données sans qu'un label soit utilisé, conforme à A. B confond la structure cachée avec des problèmes de données. C sort du cadre du non supervisé. D est faux, car la structure cachée n'est pas déterminée par des règles prédéfinies.",
+      "correct_answer": "C",
+      "explanation": "La structure cachée se réfère aux motifs ou groupements qui émergent naturellement dans les données sans qu'un label soit utilisé, conforme à A. B confond la structure cachée avec des problèmes de données. C sort du cadre du non supervisé. D est faux, car la structure cachée n'est pas déterminée par des règles prédéfinies. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Des labels attribués manuellement aux données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Des erreurs dans les données dues au bruit.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quelle métrique est utilisée pour mesurer la similarité entre les points de données?",
       "image_url": null,
       "choices": {
-        "A": "La distance Euclidienne.",
+        "A": "Le nombre de paramètres du modèle.",
         "B": "Le coefficient de Gini.",
         "C": "La p-value.",
-        "D": "Le nombre de paramètres du modèle."
+        "D": "La distance Euclidienne."
       },
-      "correct_answer": "A",
-      "explanation": "La distance Euclidienne est une métrique commune pour mesurer la similarité en calculant la distance entre les points de données dans un espace. B est utilisé pour l'homogénéité dans les distributions de catégorisation. C est une métrique statistique, pas de similarité. D est lié à la complexité du modèle, pas à la similarité.",
+      "correct_answer": "D",
+      "explanation": "La distance Euclidienne est une métrique commune pour mesurer la similarité en calculant la distance entre les points de données dans un espace. B est utilisé pour l'homogénéité dans les distributions de catégorisation. C est une métrique statistique, pas de similarité. D est lié à la complexité du modèle, pas à la similarité. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le nombre de paramètres du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le coefficient de Gini.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Pour améliorer la précision des modèles supervisés."
       },
       "correct_answer": "A",
-      "explanation": "La segmentation vise à diviser les données en sous-groupes cohérents et significatifs basé sur des similarités internes. B décrit la réduction de dimensionnalité. C est un aspect de l'apprentissage supervisé. D n'est pas un objectif principal dans l'apprentissage non supervisé.",
+      "explanation": "La segmentation vise à diviser les données en sous-groupes cohérents et significatifs basé sur des similarités internes. B décrit la réduction de dimensionnalité. C est un aspect de l'apprentissage supervisé. D n'est pas un objectif principal dans l'apprentissage non supervisé. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Pour réduire le nombre de features dans les données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour attribuer des labels à chaque donnée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Pour améliorer la précision des modèles supervisés.) est",
       "difficulty": "easy"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quel algorithme est couramment utilisé pour effectuer de la segmentation en apprentissage non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "K-Means.",
-        "B": "Réseaux de neurones profonds.",
+        "A": "Réseaux de neurones profonds.",
+        "B": "K-Means.",
         "C": "Régression logistique.",
         "D": "ADALINE."
       },
-      "correct_answer": "A",
-      "explanation": "K-Means est un algorithme classique pour segmenter des données en clusters distincts. B concerne un algorithme généralement utilisé supervisé avec backpropagation. C est un algorithme supervisé pour la classification. D est également un algorithme supervisé pour la classification.",
+      "correct_answer": "B",
+      "explanation": "K-Means est un algorithme classique pour segmenter des données en clusters distincts. B concerne un algorithme généralement utilisé supervisé avec backpropagation. C est un algorithme supervisé pour la classification. D est également un algorithme supervisé pour la classification. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réseaux de neurones profonds.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Régression logistique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (ADALINE.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En pratique,",
       "difficulty": "easy"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Comment différencie-t-on une approche supervisée d'une approche non supervisée?",
       "image_url": null,
       "choices": {
-        "A": "L'approche supervisée utilise des données étiquetées tandis que l'approche non supervisée ne le fait pas.",
+        "A": "L'approche non supervisée utilise des modèles plus simples que l'approche supervisée.",
         "B": "L'approche supervisée n'utilise que des données non étiquetées.",
-        "C": "L'approche non supervisée utilise des modèles plus simples que l'approche supervisée.",
+        "C": "L'approche supervisée utilise des données étiquetées tandis que l'approche non supervisée ne le fait pas.",
         "D": "Les approches non supervisées nécessitent toujours plus de données d'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "L’approche supervisée nécessite des données étiquetées, contrairement au non supervisé. B est l'inverse incorrect de A. C est un préjugé erroné, la complexité du modèle dépend du problème en question. D est faux car la quantité de données dépend du problème et non de la méthode par elle-même.",
+      "correct_answer": "C",
+      "explanation": "L’approche supervisée nécessite des données étiquetées, contrairement au non supervisé. B est l'inverse incorrect de A. C est un préjugé erroné, la complexité du modèle dépend du problème en question. D est faux car la quantité de données dépend du problème et non de la méthode par elle-même. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'approche non supervisée utilise des modèles plus simples que l'approche supervisée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (L'approche supervisée n'utilise que des données non étiquetées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quelle est une limitation courante des méthodes d'apprentissage non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Difficulté à valider les résultats obtenus sans labels.",
+        "A": "Ne fonctionne qu'avec de petits ensembles de données.",
         "B": "Incapacité totale à détecter des structures dans les données.",
         "C": "N'exige que des interactions humaines continuelles.",
-        "D": "Ne fonctionne qu'avec de petits ensembles de données."
+        "D": "Difficulté à valider les résultats obtenus sans labels."
       },
-      "correct_answer": "A",
-      "explanation": "Une limitation significative est la validation complexe des résultats sans disposer de labels. B est inexact, car ces méthodes détectent des structures. C est incorrect, car le processus est largement automatique après configuration. D est faux, car these méthodes s'appliquent à de grands ensembles.",
+      "correct_answer": "D",
+      "explanation": "Une limitation significative est la validation complexe des résultats sans disposer de labels. B est inexact, car ces méthodes détectent des structures. C est incorrect, car le processus est largement automatique après configuration. D est faux, car these méthodes s'appliquent à de grands ensembles. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ne fonctionne qu'avec de petits ensembles de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Incapacité totale à détecter des structures dans les données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (N'exige que des",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "La confusion matrix pour identifier les erreurs de clustering."
       },
       "correct_answer": "A",
-      "explanation": "Les métriques de silhouette mesurent comment les instances dans un cluster sont proches les unes des autres versus les autres groupes, essentiel dans le clustering. B n'est pas utilisé pour le clustering. C et D sont destinés aux algorithmes supervisés de classification.",
+      "explanation": "Les métriques de silhouette mesurent comment les instances dans un cluster sont proches les unes des autres versus les autres groupes, essentiel dans le clustering. B n'est pas utilisé pour le clustering. C et D sont destinés aux algorithmes supervisés de classification. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La p-value pour tester la signification statistique des clusters détectés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'accuracy pour mesurer la performance de clustering.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La confusion matrix pour identifier",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quelle est une méthode avancée pour découvrir une structure cachée complexe dans de grandes bases de données?",
       "image_url": null,
       "choices": {
-        "A": "Les modèles de mélange gaussien.",
-        "B": "La classification bayésienne naïve.",
+        "A": "La classification bayésienne naïve.",
+        "B": "Les modèles de mélange gaussien.",
         "C": "Les arbres de décision.",
         "D": "La recherche linéaire."
       },
-      "correct_answer": "A",
-      "explanation": "Les modèles de mélange gaussien permettent de capturer des structures complexes par une approche probabiliste spécifiant la distribution dans les données. B, C et D relèvent principalement de l'apprentissage supervisé et sont mal adaptés pour les structures cachées sophistiquées.",
+      "correct_answer": "B",
+      "explanation": "Les modèles de mélange gaussien permettent de capturer des structures complexes par une approche probabiliste spécifiant la distribution dans les données. B, C et D relèvent principalement de l'apprentissage supervisé et sont mal adaptés pour les structures cachées sophistiquées. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (La classification bayésienne naïve.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Les arbres de décision.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La recherche linéaire.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     }
   ]

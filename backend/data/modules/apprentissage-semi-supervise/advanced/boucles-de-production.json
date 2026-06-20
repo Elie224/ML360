@@ -14,7 +14,7 @@
         "D": "Augmenter la diversité des données en ajoutant des étiquettes aléatoires."
       },
       "correct_answer": "A",
-      "explanation": "Le rafraîchissement de labels vise à intégrer de nouvelles données étiquetées pour améliorer la précision du modèle. Option B est incorrecte car le rafraîchissement ne réduit pas la taille des données. Option C est fallacieuse car il ne s'agit pas de supprimer les anciennes étiquettes. Option D est incorrecte car la diversité ne passe pas par des étiquettes aléatoires.",
+      "explanation": "Le rafraîchissement de labels vise à intégrer de nouvelles données étiquetées pour améliorer la précision du modèle. Option B est incorrecte car le rafraîchissement ne réduit pas la taille des données. Option C est fallacieuse car il ne s'agit pas de supprimer les anciennes étiquettes. Option D est incorrecte car la diversité ne passe pas par des étiquettes aléatoires. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Accélérer le processus d'entraînement du modèle en réduisant la taille des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Éliminer les biais dans les données en supprimant les anciennes étiquettes.) est plausible",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Pourquoi est-il important de gérer le versioning des modèles en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Pour suivre les modifications et évaluations des modèles au fil du temps.",
-        "B": "Pour augmenter la taille de données utilisées à chaque itération.",
+        "A": "Pour augmenter la taille de données utilisées à chaque itération.",
+        "B": "Pour suivre les modifications et évaluations des modèles au fil du temps.",
         "C": "Pour simplifier l'architecture du réseau de neurones.",
         "D": "Pour automatiser le nettoyage des données brutes avant chaque formation."
       },
-      "correct_answer": "A",
-      "explanation": "Le versioning permet de suivre les modifications des modèles et d'évaluer leur performance au fil du temps. Option B n'est pas une fonction du versioning. Option C est incorrecte car la gestion d'architecture n'est pas liée au versioning. Option D est erronée car le versioning ne s'occupe pas du nettoyage automatisé des données.",
+      "correct_answer": "B",
+      "explanation": "Le versioning permet de suivre les modifications des modèles et d'évaluer leur performance au fil du temps. Option B n'est pas une fonction du versioning. Option C est incorrecte car la gestion d'architecture n'est pas liée au versioning. Option D est erronée car le versioning ne s'occupe pas du nettoyage automatisé des données. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour augmenter la taille de données utilisées à chaque itération.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour simplifier l'architecture du réseau de neurones.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Dans une boucle de production, que signifie la validation humaine des données étiquetées?",
       "image_url": null,
       "choices": {
-        "A": "Vérification manuelle des étiquettes pour assurer leur exactitude.",
+        "A": "Utilisation d'un algorithme pour générer des étiquettes similaires.",
         "B": "Remplacement des étiquettes générées automatiquement par des étiquettes aléatoires.",
-        "C": "Utilisation d'un algorithme pour générer des étiquettes similaires.",
+        "C": "Vérification manuelle des étiquettes pour assurer leur exactitude.",
         "D": "Automatisation complète de l'étiquetage des nouvelles données sans intervention humaine."
       },
-      "correct_answer": "A",
-      "explanation": "La validation humaine consiste à vérifier manuellement les étiquettes pour en assurer l'exactitude. L'option B est fausse car remplacer par des étiquettes aléatoires ne validerait pas les données. L'option C est incorrecte car elle ne décrit pas une validation humaine. L'option D est fausse car elle exclut l'intervention humaine, ce qui n'est pas le cas dans une validation humaine.",
+      "correct_answer": "C",
+      "explanation": "La validation humaine consiste à vérifier manuellement les étiquettes pour en assurer l'exactitude. L'option B est fausse car remplacer par des étiquettes aléatoires ne validerait pas les données. L'option C est incorrecte car elle ne décrit pas une validation humaine. L'option D est fausse car elle exclut l'intervention humaine, ce qui n'est pas le cas dans une validation humaine. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Utilisation d'un algorithme pour générer des étiquettes similaires.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Remplacement des étiquettes générées automatiquement par des étiquettes aléatoires.) est plausible mais faux car il ne respecte",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quel est le rôle principal d'un mécanisme de rollback dans une boucle de production de modèles semi-supervisés?",
       "image_url": null,
       "choices": {
-        "A": "Revenir à un modèle précédent en cas de défaillance ou de baisse de performance.",
+        "A": "Développer de nouveaux modèles sans considération pour le modèle actuel.",
         "B": "Supprimer toutes les données de formation pour commencer de zéro.",
         "C": "Modifier automatiquement les hyperparamètres pour améliorer les performances.",
-        "D": "Développer de nouveaux modèles sans considération pour le modèle actuel."
+        "D": "Revenir à un modèle précédent en cas de défaillance ou de baisse de performance."
       },
-      "correct_answer": "A",
-      "explanation": "Le rollback permet de revenir à une version antérieure d'un modèle si une nouvelle version ne fonctionne pas correctement. Option B est incorrecte, car le rollback ne concerne pas la suppression des données de formation. Option C est erronée, le rollback ne modifie pas les hyperparamètres. Option D est fausse car ignorer le modèle actuel n’est pas lié au rollback.",
+      "correct_answer": "D",
+      "explanation": "Le rollback permet de revenir à une version antérieure d'un modèle si une nouvelle version ne fonctionne pas correctement. Option B est incorrecte, car le rollback ne concerne pas la suppression des données de formation. Option C est erronée, le rollback ne modifie pas les hyperparamètres. Option D est fausse car ignorer le modèle actuel n’est pas lié au rollback. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Développer de nouveaux modèles sans considération pour le modèle actuel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Supprimer toutes les données de formation pour commencer de zéro.) est plausible mais faux",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Développer un modèle sans biais après chaque rafraîchissement."
       },
       "correct_answer": "A",
-      "explanation": "Un défi est de choisir les données qui ont besoin d'un rafraîchissement d'étiquettes avec un minimum de biais. Option B est incorrecte, car ce défi ne se concentre pas uniquement sur le coût matériel. Option C est erronée, car l'automatisation totale n'est pas toujours possible ni souhaitable. Option D est incorrecte, car chaque rafraîchissement ne garantit pas l'absence de biais.",
+      "explanation": "Un défi est de choisir les données qui ont besoin d'un rafraîchissement d'étiquettes avec un minimum de biais. Option B est incorrecte, car ce défi ne se concentre pas uniquement sur le coût matériel. Option C est erronée, car l'automatisation totale n'est pas toujours possible ni souhaitable. Option D est incorrecte, car chaque rafraîchissement ne garantit pas l'absence de biais. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Réduire le coût du matériel nécessaire pour l'étiquetage manuel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Automatiser totalement le processus d'étiquetage sans supervision.) est plausible mais faux car il ne respecte",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quel aspect est crucial pour une gestion efficace de versioning dans un système semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Documentation détaillée des changements de modèle et des jeux de données utilisés.",
-        "B": "Augmentation continue du nombre de paramètres de modèle sans documentation.",
+        "A": "Augmentation continue du nombre de paramètres de modèle sans documentation.",
+        "B": "Documentation détaillée des changements de modèle et des jeux de données utilisés.",
         "C": "Organisation de l'équipe de développement selon les versions de modèle.",
         "D": "Utilisation exclusive de modèles pré-entraînés pour toutes les versions."
       },
-      "correct_answer": "A",
-      "explanation": "Une gestion efficace du versioning comprend la documentation des modifications au modèle et les jeux de données utilisés. Option B est erronée car ajouter des paramètres sans documentation n'est pas une bonne gestion du versioning. Option C est incorrecte, car le versioning ne concerne pas seulement l'organisation de l'équipe. Option D est incorrecte, l'usage exclusif de modèles pré-entraînés n'est pas lié au versioning.",
+      "correct_answer": "B",
+      "explanation": "Une gestion efficace du versioning comprend la documentation des modifications au modèle et les jeux de données utilisés. Option B est erronée car ajouter des paramètres sans documentation n'est pas une bonne gestion du versioning. Option C est incorrecte, car le versioning ne concerne pas seulement l'organisation de l'équipe. Option D est incorrecte, l'usage exclusif de modèles pré-entraînés n'est pas lié au versioning. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmentation continue du nombre de paramètres de modèle sans documentation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Organisation de l'équipe de développement selon les versions de modèle.) est",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Comment la validation humaine peut-elle être intégrée dans une boucle de production d'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Comme étape de correction des étiquettes après un cycle de prédiction.",
+        "A": "Comme moyen pour augmenter le nombre de données synthétiques étiquetées.",
         "B": "Comme processus où les modèles remplacent entièrement les analystes.",
-        "C": "Comme moyen pour augmenter le nombre de données synthétiques étiquetées.",
+        "C": "Comme étape de correction des étiquettes après un cycle de prédiction.",
         "D": "Exclusivement pour créer des étiquettes depuis zéro sans apport algorithmique."
       },
-      "correct_answer": "A",
-      "explanation": "La validation humaine intervient pour corriger les étiquettes malréalisées par les modèles après prédiction. L'option B est incorrecte car les modèles ne remplacent pas entièrement les analystes. L'option C est incorrecte car la validation humaine ne vise pas à synthétiser des étiquettes. L'option D est erronée, car la validation humaine ne part pas toujours de zéro; elle ajuste souvent les résultats algorithmiques.",
+      "correct_answer": "C",
+      "explanation": "La validation humaine intervient pour corriger les étiquettes malréalisées par les modèles après prédiction. L'option B est incorrecte car les modèles ne remplacent pas entièrement les analystes. L'option C est incorrecte car la validation humaine ne vise pas à synthétiser des étiquettes. L'option D est erronée, car la validation humaine ne part pas toujours de zéro; elle ajuste souvent les résultats algorithmiques. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Comme moyen pour augmenter le nombre de données synthétiques étiquetées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Comme processus où les modèles remplacent entièrement les analystes.) est plausible mais",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Pourquoi le rollback est-il essentiel après un cycle d'apprentissage semi-supervisé échoué?",
       "image_url": null,
       "choices": {
-        "A": "Pour assurer la continuité opérationnelle avec le dernier modèle stable.",
+        "A": "Pour ajuster automatiquement la taille du jeu de données utilisé.",
         "B": "Pour forcer les utilisateurs à redémarrer le système.",
         "C": "Pour supprimer définitivement toutes les modifications apportées aux données.",
-        "D": "Pour ajuster automatiquement la taille du jeu de données utilisé."
+        "D": "Pour assurer la continuité opérationnelle avec le dernier modèle stable."
       },
-      "correct_answer": "A",
-      "explanation": "Le rollback assure la continuité en permettant de retourner à la dernière version stable du modèle. Option B est incorrecte, car le rollback ne force pas un redémarrage du système par utilisateur. Option C est fausse, car le rollback ne supprime pas définitivement des données. Option D est erronée, car la taille des données n'est pas ajustée par le rollback.",
+      "correct_answer": "D",
+      "explanation": "Le rollback assure la continuité en permettant de retourner à la dernière version stable du modèle. Option B est incorrecte, car le rollback ne force pas un redémarrage du système par utilisateur. Option C est fausse, car le rollback ne supprime pas définitivement des données. Option D est erronée, car la taille des données n'est pas ajustée par le rollback. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour ajuster automatiquement la taille du jeu de données utilisé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour forcer les utilisateurs à redémarrer le système.) est plausible mais faux car il",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Changer l'algorithme de modèle pour chaque nouveau cycle."
       },
       "correct_answer": "A",
-      "explanation": "Les évaluateurs multiples permettent d'atteindre un consensus et de minimiser les biais d'étiquetage. Option B est fausse car l'automatisation complète peut entraîner des erreurs non détectées. Option C est incorrecte, le rafraîchissement ne se limite pas aux échantillons déjà entièrement étiquetés. Option D est erronée car il n'est pas nécessaire de changer d'algorithme à chaque cycle pour rafraîchir les labels.",
+      "explanation": "Les évaluateurs multiples permettent d'atteindre un consensus et de minimiser les biais d'étiquetage. Option B est fausse car l'automatisation complète peut entraîner des erreurs non détectées. Option C est incorrecte, le rafraîchissement ne se limite pas aux échantillons déjà entièrement étiquetés. Option D est erronée car il n'est pas nécessaire de changer d'algorithme à chaque cycle pour rafraîchir les labels. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Automatisation totale sans intervention humaine pour rapidité.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Limiter le rafraîchissement à des échantillons déjà étiquetés à 100%.) est plausible mais faux car il ne",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quel obstacle peut survenir dans le versioning en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Confusion autour des décisions à prendre suite à des résultats non concluants.",
-        "B": "Baisse des performances à chaque version car non optimisée.",
+        "A": "Baisse des performances à chaque version car non optimisée.",
+        "B": "Confusion autour des décisions à prendre suite à des résultats non concluants.",
         "C": "Conflit entre la validation humaine et la génération automatique d'étiquettes.",
         "D": "Aucun besoin de former des données étiquetées dans le versioning."
       },
-      "correct_answer": "A",
-      "explanation": "Les résultats non concluants peuvent rendre difficile la décision sur quelle version conserver. Option B est incorrecte, car même avec des versions non optimisées, cela ne signifie pas nécessairement une baisse de performance. Option C est erronée, car le versioning concerne la gestion des versions plutôt que des conflits d'étiquetage. Option D est fausse car le versioning nécessite toujours des données étiquetées.",
+      "correct_answer": "B",
+      "explanation": "Les résultats non concluants peuvent rendre difficile la décision sur quelle version conserver. Option B est incorrecte, car même avec des versions non optimisées, cela ne signifie pas nécessairement une baisse de performance. Option C est erronée, car le versioning concerne la gestion des versions plutôt que des conflits d'étiquetage. Option D est fausse car le versioning nécessite toujours des données étiquetées. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Baisse des performances à chaque version car non optimisée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Conflit entre la validation humaine et la génération automatique d'étiquettes.) est plausible mais",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Dans quel cas un rollback peut-il être particulièrement complexe à réaliser dans les systèmes de semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Lorsque le modèle a été modifié avec des jeux de données interactifs non réversibles.",
+        "A": "Quand des versions successives ont utilisé les mêmes jeux de données statiques.",
         "B": "Lorsqu'il n'y a eu aucun changement dans les hyperparamètres du modèle.",
-        "C": "Quand des versions successives ont utilisé les mêmes jeux de données statiques.",
+        "C": "Lorsque le modèle a été modifié avec des jeux de données interactifs non réversibles.",
         "D": "Quand seules des modifications de documentation ont été faites sans modèle touché."
       },
-      "correct_answer": "A",
-      "explanation": "Les jeux de données interactifs qui modifient l'état du modèle de façon irréversible compliquent le rollback. Option B est incorrecte car des changements d'hyperparamètres peuvent être gérés individuellement. Option C est erronée, car l'usage de jeux de données statiques facilite plutôt le rollback. Option D est fausse, car une rollback n'est pas nécessaire si seule la documentation a été modifiée.",
+      "correct_answer": "C",
+      "explanation": "Les jeux de données interactifs qui modifient l'état du modèle de façon irréversible compliquent le rollback. Option B est incorrecte car des changements d'hyperparamètres peuvent être gérés individuellement. Option C est erronée, car l'usage de jeux de données statiques facilite plutôt le rollback. Option D est fausse, car une rollback n'est pas nécessaire si seule la documentation a été modifiée. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Quand des versions successives ont utilisé les mêmes jeux de données statiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Lorsqu'il n'y a eu aucun changement dans les hyperparamètres du modèle.) est",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quelle méthode pourrait faussement sembler bénéfique lors du rafraîchissement de labels, mais compromettre la qualité des données?",
       "image_url": null,
       "choices": {
-        "A": "Automatisation complète du renouvellement des étiquettes sans validation humaine.",
+        "A": "Exclusion totale des utilisateurs finaux dans le processus de rafraîchissement.",
         "B": "Utilisation d'indicateurs de performance historiques pour guider le rafraîchissement.",
         "C": "Inclusion de feedback utilisateur pour prioriser l'étiquetage.",
-        "D": "Exclusion totale des utilisateurs finaux dans le processus de rafraîchissement."
+        "D": "Automatisation complète du renouvellement des étiquettes sans validation humaine."
       },
-      "correct_answer": "A",
-      "explanation": "La non-intégration de validation humaine peut engendrer des erreurs systématiques non détectées. Option B est incorrecte car les indicateurs de performance guidés créent un cadre rationnel. Option C est erronée car le feedback utilisateur est souvent valide dans l’affinement du label. Option D est incorrecte car ignorer les utilisateurs finaux peut biaiser les résultats.",
+      "correct_answer": "D",
+      "explanation": "La non-intégration de validation humaine peut engendrer des erreurs systématiques non détectées. Option B est incorrecte car les indicateurs de performance guidés créent un cadre rationnel. Option C est erronée car le feedback utilisateur est souvent valide dans l’affinement du label. Option D est incorrecte car ignorer les utilisateurs finaux peut biaiser les résultats. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Exclusion totale des utilisateurs finaux dans le processus de rafraîchissement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Utilisation d'indicateurs de performance historiques pour guider le rafraîchissement.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Pour empêcher toute modification une fois le modèle déployé."
       },
       "correct_answer": "A",
-      "explanation": "Suivre les versions permet d'analyser comment chaque modification impacte les performances du modèle. Option B est fausse, car cela ne force pas les mises à jour continues. Option C est incorrecte, car le but n'est pas uniquement de supprimer des versions. Option D est incorrecte, le versioning n'empêche pas les modifications après déploiement.",
+      "explanation": "Suivre les versions permet d'analyser comment chaque modification impacte les performances du modèle. Option B est fausse, car cela ne force pas les mises à jour continues. Option C est incorrecte, car le but n'est pas uniquement de supprimer des versions. Option D est incorrecte, le versioning n'empêche pas les modifications après déploiement. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Pour obliger les mises à jour continues des modèles en production.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour supprimer régulièrement des versions obsolètes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quel est l'un des facteurs limitant l'efficacité d'un mécanisme de rollback en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Non-disponibilité d'une version antérieure stabilisée.",
-        "B": "Impossible de répliquer le processus de validation humaine précédente.",
+        "A": "Impossible de répliquer le processus de validation humaine précédente.",
+        "B": "Non-disponibilité d'une version antérieure stabilisée.",
         "C": "Absence d'étiquettes perpétuelles et statiques.",
         "D": "Trop de dépendance sur des modèles open source."
       },
-      "correct_answer": "A",
-      "explanation": "Le manque d'une version antérieure qui a déjà été validée et considérée comme stable peut compliquer le rollback. Option B est incorrecte, car la validation humaine antérieure n'est pas répétée pendant un rollback. Option C est erronée, car l'absence d'étiquettes perpétuelles n'est pas un problème direct de rollback. D est incorrect car la dépendance vers des modèles open source n’affecte pas directement le rollback.",
+      "correct_answer": "B",
+      "explanation": "Le manque d'une version antérieure qui a déjà été validée et considérée comme stable peut compliquer le rollback. Option B est incorrecte, car la validation humaine antérieure n'est pas répétée pendant un rollback. Option C est erronée, car l'absence d'étiquettes perpétuelles n'est pas un problème direct de rollback. D est incorrect car la dépendance vers des modèles open source n’affecte pas directement le rollback. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Impossible de répliquer le processus de validation humaine précédente.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Absence d'étiquettes perpétuelles et statiques.) est plausible mais faux car il",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quelle question cruciale se pose lors de l'implémentation de mécanismes de rafraîchissement de labels?",
       "image_url": null,
       "choices": {
-        "A": "Quel seuil de confiance justifie une réévaluation complète des étiquettes?",
+        "A": "Pourquoi éviter l'intégration des feedbacks utilisateurs dans le processus?",
         "B": "Comment diminuer les performances des modèles récemment déployés?",
-        "C": "Pourquoi éviter l'intégration des feedbacks utilisateurs dans le processus?",
+        "C": "Quel seuil de confiance justifie une réévaluation complète des étiquettes?",
         "D": "Quand restreindre le nombre d'itérations de validation humaine avant interruption?"
       },
-      "correct_answer": "A",
-      "explanation": "L’établissement d’un seuil de confiance critique les étiquettes pour réévaluation indique une nécessité de justifier le rafraîchissement. Option B est incorrecte car le but est d’améliorer, non diminuer la performance. Option C est incorrecte, car l’intégration de feedback est normalement souhaitée. Option D est erronée car l'itération est gérée par d'autres paramètres que le nombre restreint.",
+      "correct_answer": "C",
+      "explanation": "L’établissement d’un seuil de confiance critique les étiquettes pour réévaluation indique une nécessité de justifier le rafraîchissement. Option B est incorrecte car le but est d’améliorer, non diminuer la performance. Option C est incorrecte, car l’intégration de feedback est normalement souhaitée. Option D est erronée car l'itération est gérée par d'autres paramètres que le nombre restreint. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pourquoi éviter l'intégration des feedbacks utilisateurs dans le processus?) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Comment diminuer les performances des modèles récemment déployés?) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Quel problème majeur serait engendré par un échec de rollback approprié?",
       "image_url": null,
       "choices": {
-        "A": "Modèles largement utilisés mais non optimisés entraînant des failles de production.",
+        "A": "Information défragmentée au sein d'une communauté de pratique en raison d'un feedback inapproprié.",
         "B": "Augmentation du nombre de faux négatifs dans l'entraînement en raison d'un mauvais traitement des données.",
         "C": "Augmentation des ressources allouées à une itération non consistante.",
-        "D": "Information défragmentée au sein d'une communauté de pratique en raison d'un feedback inapproprié."
+        "D": "Modèles largement utilisés mais non optimisés entraînant des failles de production."
       },
-      "correct_answer": "A",
-      "explanation": "Un rollback inefficace peut amener à utiliser des modèles non optimisés sur une grande échelle, entrainant des problèmes de production. Option B n’est pas une conséquence directe de l’échec de rollback mais de la qualité d’initialisation. La ressource ajoutée, option C, pourrait être gérée indépendamment. D est incorrect car le rollback ne cause pas des problèmes de feedback inappropriés.",
+      "correct_answer": "D",
+      "explanation": "Un rollback inefficace peut amener à utiliser des modèles non optimisés sur une grande échelle, entrainant des problèmes de production. Option B n’est pas une conséquence directe de l’échec de rollback mais de la qualité d’initialisation. La ressource ajoutée, option C, pourrait être gérée indépendamment. D est incorrect car le rollback ne cause pas des problèmes de feedback inappropriés. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Information défragmentée au sein d'une communauté de pratique en raison d'un feedback inapproprié.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmentation du nombre de faux négatifs dans l'entraînement en raison d'un mauvais",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "En limitant la diffusion des changements à l'équipe de développeurs."
       },
       "correct_answer": "A",
-      "explanation": "Le versioning améliore la traçabilité en conservant des enregistrements précis des versions et changements. B est incorrect car la confidentialité n’est pas l’objectif de traceabilité. C est incorrect car mélanger tous les changements gênerait la traçabilité. D est incorrect car limiter les données ne facilite pas le suivi.",
+      "explanation": "Le versioning améliore la traçabilité en conservant des enregistrements précis des versions et changements. B est incorrect car la confidentialité n’est pas l’objectif de traceabilité. C est incorrect car mélanger tous les changements gênerait la traçabilité. D est incorrect car limiter les données ne facilite pas le suivi. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (En masquant les modifications pour maintenir la confidentialité.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En fusionnant toutes les modifications dans un modèle final.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Quelle est une bonne pratique lors du développement d'un système de rollback pour l'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Tester régulièrement les versions antérieures pour leur stabilité.",
-        "B": "Utiliser exclusivement des modèles pré-entraînés sans ajustements.",
+        "A": "Utiliser exclusivement des modèles pré-entraînés sans ajustements.",
+        "B": "Tester régulièrement les versions antérieures pour leur stabilité.",
         "C": "Ignorez les conflits de données issus de versions ultérieures.",
         "D": "Effectuer un rollback automatiquement sans processus de validation."
       },
-      "correct_answer": "A",
-      "explanation": "La stabilité du modèle via des tests réguliers est cruciale pour maintenir une base fiable lors de rollback. B est incorrect car ignorer les ajustements personnalisés limite l’efficacité. C est incorrect car les conflits doivent être gérés, pas ignorés. D est incorrect car une validation est nécessaire pour s'assurer des rollbacks appropriés.",
+      "correct_answer": "B",
+      "explanation": "La stabilité du modèle via des tests réguliers est cruciale pour maintenir une base fiable lors de rollback. B est incorrect car ignorer les ajustements personnalisés limite l’efficacité. C est incorrect car les conflits doivent être gérés, pas ignorés. D est incorrect car une validation est nécessaire pour s'assurer des rollbacks appropriés. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Utiliser exclusivement des modèles pré-entraînés sans ajustements.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ignorez les conflits de données issus de versions ultérieures.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Pourquoi l'écriture d'une documentation détaillée des versions est-elle importante dans l'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Elle permet d'identifier les erreurs exactes survenues à chaque cycle.",
+        "A": "Elle limite le nombre de tests à chaque itération de modèles.",
         "B": "Elle invite à automatiser le transfert des versions sans suivi.",
-        "C": "Elle limite le nombre de tests à chaque itération de modèles.",
+        "C": "Elle permet d'identifier les erreurs exactes survenues à chaque cycle.",
         "D": "Elle allège l'équipe de leur tâche de validation manuelle."
       },
-      "correct_answer": "A",
-      "explanation": "La documentation des versions aide à identifier exactement les erreurs lors de chaque cycle. B est incorrect car la documentation n'automatise pas le transfert. C est incorrect car la documentation n’influence pas le nombre de tests à itérer. D est incorrect, car elle ne réduit pas la tâche de validation manuelle.",
+      "correct_answer": "C",
+      "explanation": "La documentation des versions aide à identifier exactement les erreurs lors de chaque cycle. B est incorrect car la documentation n'automatise pas le transfert. C est incorrect car la documentation n’influence pas le nombre de tests à itérer. D est incorrect, car elle ne réduit pas la tâche de validation manuelle. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle limite le nombre de tests à chaque itération de modèles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle invite à automatiser le transfert des versions sans suivi.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Quel risque existe-t-il lors d'une mauvaise gestion de versioning dans le cadre d'un apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Une confusion concernant les performances attendues des modèles.",
+        "A": "La simplification des processus d'entraînement des modèles.",
         "B": "Un accroissement involontaire du coût de stockage des données mises à jour.",
         "C": "Réduction du besoin de la validation humaine dans le processus.",
-        "D": "La simplification des processus d'entraînement des modèles."
+        "D": "Une confusion concernant les performances attendues des modèles."
       },
-      "correct_answer": "A",
-      "explanation": "Une mauvaise gestion du versioning peut mener à la confusion sur les performances des diverses versions de modèles. B est incorrect car le coût est généralement bien géré en versioning. C est incorrect car la validation humaine reste primordiale. D est incorrect car elle ne simplifie pas le processus d'entraînement.",
+      "correct_answer": "D",
+      "explanation": "Une mauvaise gestion du versioning peut mener à la confusion sur les performances des diverses versions de modèles. B est incorrect car le coût est généralement bien géré en versioning. C est incorrect car la validation humaine reste primordiale. D est incorrect car elle ne simplifie pas le processus d'entraînement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (La simplification des processus d'entraînement des modèles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Un accroissement involontaire du coût de stockage des données mises à jour.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "Augmenter le taux d'apprentissage en ajoutant plus de données non étiquetées."
       },
       "correct_answer": "A",
-      "explanation": "Le rafraîchissement de labels implique la mise à jour des labels pour réduire les biais, contrairement à réduire ou optimiser uniquement le volume de données.",
+      "explanation": "Le rafraîchissement de labels implique la mise à jour des labels pour réduire les biais, contrairement à réduire ou optimiser uniquement le volume de données. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Réduire la taille de jeu de données en supprimant des étiquettes incorrectes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Optimiser le temps de calcul en réduisant la fréquence des mises à jour.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Augmenter le taux d'apprentissage en ajoutant plus de données non étiquetées.) est plausible mais",
       "difficulty": "medium"
     },
     {
@@ -302,13 +302,13 @@
       "question": "Quel aspect est crucial pour le versioning des modèles en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Maintenir un historique des modifications du modèle et des données utilisées.",
-        "B": "Minimiser le stockage en ne sauvegardant que la dernière version du modèle.",
+        "A": "Minimiser le stockage en ne sauvegardant que la dernière version du modèle.",
+        "B": "Maintenir un historique des modifications du modèle et des données utilisées.",
         "C": "Prioriser les versions ayant les meilleures performances uniquement.",
         "D": "Inclure seulement les versions qui ont des changements significatifs d'architecture."
       },
-      "correct_answer": "A",
-      "explanation": "Le versioning consiste à garder une trace de toutes les versions pour comprendre l'évolution et la performance du modèle, au-delà de simplement stocker les meilleures ou dernières versions.",
+      "correct_answer": "B",
+      "explanation": "Le versioning consiste à garder une trace de toutes les versions pour comprendre l'évolution et la performance du modèle, au-delà de simplement stocker les meilleures ou dernières versions. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Minimiser le stockage en ne sauvegardant que la dernière version du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Prioriser les versions ayant les meilleures performances uniquement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Inclure seulement les versions qui ont des changements significatifs d'architecture.) est plausible mais faux car il",
       "difficulty": "medium"
     },
     {
@@ -316,13 +316,13 @@
       "question": "Comment la validation humaine peut-elle être intégrée dans le cycle d'un modèle semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Par vérification et ajustement des étiquettes générées automatiquement.",
+        "A": "En éliminant les biais des algorithmes en changeant leurs hyperparamètres.",
         "B": "En remplaçant complètement l'apprentissage automatique par des étiquettes manuelles.",
-        "C": "En éliminant les biais des algorithmes en changeant leurs hyperparamètres.",
+        "C": "Par vérification et ajustement des étiquettes générées automatiquement.",
         "D": "En automatisant totalement le processus de labelisation sans retour humain."
       },
-      "correct_answer": "A",
-      "explanation": "La validation humaine consiste à vérifier et éventuellement corriger les labels prédits automatiquement, contrairement à supprimer ou remplacer complètement le processus automatique.",
+      "correct_answer": "C",
+      "explanation": "La validation humaine consiste à vérifier et éventuellement corriger les labels prédits automatiquement, contrairement à supprimer ou remplacer complètement le processus automatique. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En éliminant les biais des algorithmes en changeant leurs hyperparamètres.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En remplaçant complètement l'apprentissage automatique par des étiquettes manuelles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (En automatisant totalement le processus de labelisation sans retour humain.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "medium"
     },
     {
@@ -330,13 +330,13 @@
       "question": "Quel est le rôle du rollback dans les systèmes d'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Revenir à une version antérieure du modèle en cas de problème de performance.",
+        "A": "Générer de nouvelles étiquettes pour augmenter le taux de classification.",
         "B": "Effacer définitivement toutes les versions du modèle pour commencer de zéro.",
         "C": "Automatiser l'achat d'une infrastructure de calcul plus performante.",
-        "D": "Générer de nouvelles étiquettes pour augmenter le taux de classification."
+        "D": "Revenir à une version antérieure du modèle en cas de problème de performance."
       },
-      "correct_answer": "A",
-      "explanation": "Le rollback permet de retourner à une version antérieure fiable du système, plutôt que d'éliminer les versions ou de modifier directement l'infrastructure matérielle.",
+      "correct_answer": "D",
+      "explanation": "Le rollback permet de retourner à une version antérieure fiable du système, plutôt que d'éliminer les versions ou de modifier directement l'infrastructure matérielle. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Générer de nouvelles étiquettes pour augmenter le taux de classification.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Effacer définitivement toutes les versions du modèle pour commencer de zéro.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Automatiser l'achat d'une infrastructure de calcul plus performante.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "medium"
     },
     {
@@ -350,7 +350,7 @@
         "D": "Convertir toutes les données non étiquetées en données étiquetées en utilisant des labels aléatoires."
       },
       "correct_answer": "A",
-      "explanation": "Le rafraîchissement de labels vise à ré-étiqueter les données non étiquetées, généralement en utilisant un modèle, pour améliorer la précision globale des prédictions. Supprimer des données non étiquetées (réponse B) réduirait le volume d'information. Augmenter la taille (réponse C) ne garantit pas des labels corrects. Utiliser des labels aléatoires (réponse D) n'apporte aucune valeur prédictive.",
+      "explanation": "Le rafraîchissement de labels vise à ré-étiqueter les données non étiquetées, généralement en utilisant un modèle, pour améliorer la précision globale des prédictions. Supprimer des données non étiquetées (réponse B) réduirait le volume d'information. Augmenter la taille (réponse C) ne garantit pas des labels corrects. Utiliser des labels aléatoires (réponse D) n'apporte aucune valeur prédictive. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Supprimer toutes les données non étiquetées du dataset pour affiner les résultats.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Augmenter la taille du dataset en ajoutant des données synthétiques non étiquetées.) est plausible mais faux car",
       "difficulty": "medium"
     },
     {
@@ -358,13 +358,13 @@
       "question": "Quel est l'avantage du versioning dans les boucles de production d'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Permet de suivre l'évolution des modèles et datasets pour reproduire les résultats.",
-        "B": "Augmente la vitesse d'entraînement des modèles en utilisant des versions anciennes.",
+        "A": "Augmente la vitesse d'entraînement des modèles en utilisant des versions anciennes.",
+        "B": "Permet de suivre l'évolution des modèles et datasets pour reproduire les résultats.",
         "C": "Assure que tous les utilisateurs disposent des dernières mises à jour instantanément.",
         "D": "Élimine le besoin de validation humaine par versioning des modèles efficacement."
       },
-      "correct_answer": "A",
-      "explanation": "Le versioning permet de garder une trace des différentes versions des modèles et des datasets, assurant ainsi la reproduction des résultats. Réponse B est fausse, car le versioning ne concerne pas la vitesse d'entraînement. Réponse C est incorrecte, car le versioning n'implique pas de mises à jour simultanées pour tous les utilisateurs. Réponse D est incorrecte, car le versioning ne remplace pas la validation humaine.",
+      "correct_answer": "B",
+      "explanation": "Le versioning permet de garder une trace des différentes versions des modèles et des datasets, assurant ainsi la reproduction des résultats. Réponse B est fausse, car le versioning ne concerne pas la vitesse d'entraînement. Réponse C est incorrecte, car le versioning n'implique pas de mises à jour simultanées pour tous les utilisateurs. Réponse D est incorrecte, car le versioning ne remplace pas la validation humaine. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmente la vitesse d'entraînement des modèles en utilisant des versions anciennes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Assure que tous les utilisateurs disposent des dernières",
       "difficulty": "medium"
     },
     {
@@ -372,13 +372,13 @@
       "question": "Pourquoi la validation humaine est-elle importante dans un pipeline d'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Elle garantit que les données étiquetées automatiquement sont correctes et de haute qualité.",
+        "A": "Elle remplace la phase de test d'un modèle avant sa mise en production.",
         "B": "Elle permet de réduire les coûts en évitant l'utilisation de modèles coûteux.",
-        "C": "Elle remplace la phase de test d'un modèle avant sa mise en production.",
+        "C": "Elle garantit que les données étiquetées automatiquement sont correctes et de haute qualité.",
         "D": "Elle augmente la complexité du modèle pour améliorer ses performances."
       },
-      "correct_answer": "A",
-      "explanation": "La validation humaine est cruciale pour assurer la qualité des labels générés automatiquement par les modèles. Réponse B est incorrecte, car même si cela peut réduire certains coûts, le but principal est la qualité des labels. Réponse C est fausse, car la validation humaine n'est pas un substitut aux tests de modèles. Réponse D est inexacte, car elle n'a pas pour but d'augmenter la complexité du modèle.",
+      "correct_answer": "C",
+      "explanation": "La validation humaine est cruciale pour assurer la qualité des labels générés automatiquement par les modèles. Réponse B est incorrecte, car même si cela peut réduire certains coûts, le but principal est la qualité des labels. Réponse C est fausse, car la validation humaine n'est pas un substitut aux tests de modèles. Réponse D est inexacte, car elle n'a pas pour but d'augmenter la complexité du modèle. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle remplace la phase de test d'un modèle avant sa mise en production.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle permet de réduire",
       "difficulty": "hard"
     },
     {
@@ -386,13 +386,13 @@
       "question": "Quelle est l'utilité d'un rollback dans une boucle de production en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Rétablir une version antérieure d'un modèle ou d'un dataset en cas de mauvaise performance.",
+        "A": "Combiner les résultats de plusieurs versions précédentes pour améliorer la précision.",
         "B": "Doubler la capacité de traitement d'un modèle en utilisant des états antérieurs.",
         "C": "Optimiser les hyperparamètres d'un modèle pour chaque version restaurée.",
-        "D": "Combiner les résultats de plusieurs versions précédentes pour améliorer la précision."
+        "D": "Rétablir une version antérieure d'un modèle ou d'un dataset en cas de mauvaise performance."
       },
-      "correct_answer": "A",
-      "explanation": "Un rollback permet de revenir à une version précédente du modèle ou du dataset en cas de dégradations des performances. Réponse B n'est pas pertinente car un rollback ne change pas la capacité de traitement d'un modèle. Réponse C est incorrecte car un rollback ne modifie pas les hyperparamètres. Réponse D est fausse car un rollback n'implique pas une combinaison de résultats multiples.",
+      "correct_answer": "D",
+      "explanation": "Un rollback permet de revenir à une version précédente du modèle ou du dataset en cas de dégradations des performances. Réponse B n'est pas pertinente car un rollback ne change pas la capacité de traitement d'un modèle. Réponse C est incorrecte car un rollback ne modifie pas les hyperparamètres. Réponse D est fausse car un rollback n'implique pas une combinaison de résultats multiples. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Combiner les résultats de plusieurs versions précédentes pour améliorer la précision.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Doubler la capacité de traitement d'un modèle en utilisant des",
       "difficulty": "hard"
     },
     {
@@ -406,7 +406,7 @@
         "D": "Parce que c'est requis par toutes les lois sur la confidentialité des données."
       },
       "correct_answer": "A",
-      "explanation": "Le rafraîchissement des labels est crucial car les données peuvent évoluer, et les modèles doivent apprendre des informations à jour pour rester pertinents. B est faux car la performance n'est pas améliorée automatiquement sans un apprentissage correct. C est erroné car le rafraîchissement n'a pas d'impact direct sur la simplification des modèles. D est incorrect car le rafraîchissement n'est pas une exigence légale spécifique.",
+      "explanation": "Le rafraîchissement des labels est crucial car les données peuvent évoluer, et les modèles doivent apprendre des informations à jour pour rester pertinents. B est faux car la performance n'est pas améliorée automatiquement sans un apprentissage correct. C est erroné car le rafraîchissement n'a pas d'impact direct sur la simplification des modèles. D est incorrect car le rafraîchissement n'est pas une exigence légale spécifique. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Parce que le rafraîchissement des labels améliore automatiquement la performance de tous les modèles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour réduire le besoin de puissance",
       "difficulty": "medium"
     },
     {
@@ -414,13 +414,13 @@
       "question": "Quel est le rôle du versioning dans les boucles de production de l'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Le versioning permet de sauvegarder différentes versions d'un modèle pour référence future.",
-        "B": "Le versioning accélère le temps de formation des nouveaux modèles.",
+        "A": "Le versioning accélère le temps de formation des nouveaux modèles.",
+        "B": "Le versioning permet de sauvegarder différentes versions d'un modèle pour référence future.",
         "C": "Le versioning élimine le besoin de validation humaine en traçant les erreurs.",
         "D": "Le versioning limite l'expérimentation à une seule version stable de modèle."
       },
-      "correct_answer": "A",
-      "explanation": "Le versioning permet de garder une trace des différentes versions des modèles, facilitant l'analyse comparative et la régression lorsqu'une nouvelle version est déployée. B est faux car cela n'affecte pas directement le temps de formation. C est incorrect parce que la traçabilité ne remplace pas la validation humaine, essentielle pour garantir la qualité. D est faux car le versioning encourage justement l'expérimentation.",
+      "correct_answer": "B",
+      "explanation": "Le versioning permet de garder une trace des différentes versions des modèles, facilitant l'analyse comparative et la régression lorsqu'une nouvelle version est déployée. B est faux car cela n'affecte pas directement le temps de formation. C est incorrect parce que la traçabilité ne remplace pas la validation humaine, essentielle pour garantir la qualité. D est faux car le versioning encourage justement l'expérimentation. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le versioning accélère le temps de formation des nouveaux modèles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le versioning élimine le besoin de validation humaine en traçant les erreurs.)",
       "difficulty": "hard"
     },
     {
@@ -428,13 +428,13 @@
       "question": "Pourquoi est-il crucial d'impliquer des humains dans la validation des modèles semi-supervisés?",
       "image_url": null,
       "choices": {
-        "A": "Parce que les données partiellement étiquetées peuvent contenir des erreurs que le modèle ne peut détecter seul.",
+        "A": "Parce que cela augmente la vitesse de convergence du modèle.",
         "B": "Pour réduire les coûts associés à l'entraînement du modèle.",
-        "C": "Parce que cela augmente la vitesse de convergence du modèle.",
+        "C": "Parce que les données partiellement étiquetées peuvent contenir des erreurs que le modèle ne peut détecter seul.",
         "D": "Parce que les humains peuvent remplacer le besoin de toute autre évaluation automatique."
       },
-      "correct_answer": "A",
-      "explanation": "La validation humaine est essentielle pour identifier des erreurs ou des ambiguïtés dans les données entraînées semi-supervisées, ce que les modèles automatiques ne peuvent pas toujours faire. B est incorrect car impliquer des humains augmente généralement les coûts. C est faux car la validation humaine n'accélère pas la convergence du modèle. D est erroné car elle complète, et non remplace, les évaluations automatiques.",
+      "correct_answer": "C",
+      "explanation": "La validation humaine est essentielle pour identifier des erreurs ou des ambiguïtés dans les données entraînées semi-supervisées, ce que les modèles automatiques ne peuvent pas toujours faire. B est incorrect car impliquer des humains augmente généralement les coûts. C est faux car la validation humaine n'accélère pas la convergence du modèle. D est erroné car elle complète, et non remplace, les évaluations automatiques. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce que cela augmente la vitesse de convergence du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour réduire les coûts associés à l'entraînement du modèle.) est plausible",
       "difficulty": "hard"
     },
     {
@@ -442,13 +442,13 @@
       "question": "Qu'est-ce que le rollback et pourquoi est-il utilisé dans une boucle de production de modèles semi-supervisés?",
       "image_url": null,
       "choices": {
-        "A": "Pour revenir à une version antérieure du modèle lorsque des problèmes sont détectés.",
+        "A": "Pour automatiser le processus d'étiquetage des données non supervisées.",
         "B": "Pour effacer toutes les données d'entraînement en cas d'erreur critique.",
         "C": "Pour augmenter la complexité des données d'entrée et améliorer la robustesse du modèle.",
-        "D": "Pour automatiser le processus d'étiquetage des données non supervisées."
+        "D": "Pour revenir à une version antérieure du modèle lorsque des problèmes sont détectés."
       },
-      "correct_answer": "A",
-      "explanation": "Le rollback permet de revenir à une version précédente et stable du modèle lorsque des problèmes sont rencontrés, minimisant ainsi les perturbations et les erreurs potentielles. B est incorrect car le rollback ne concerne pas la suppression de données. C est erroné car il ne traite pas de la complexité des données mais des versions de modèles. D est faux car le rollback n'automatise pas l'étiquetage des données.",
+      "correct_answer": "D",
+      "explanation": "Le rollback permet de revenir à une version précédente et stable du modèle lorsque des problèmes sont rencontrés, minimisant ainsi les perturbations et les erreurs potentielles. B est incorrect car le rollback ne concerne pas la suppression de données. C est erroné car il ne traite pas de la complexité des données mais des versions de modèles. D est faux car le rollback n'automatise pas l'étiquetage des données. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour automatiser le processus d'étiquetage des données non supervisées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour effacer toutes les données d'entraînement en",
       "difficulty": "hard"
     }
   ]

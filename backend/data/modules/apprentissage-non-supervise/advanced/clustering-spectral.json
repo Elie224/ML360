@@ -14,7 +14,7 @@
         "D": "Normaliser les données pour un meilleur ajustement."
       },
       "correct_answer": "A",
-      "explanation": "Le graphe de similarité dans le clustering spectral reflète les relations de proximité entre les points de données. B est incorrect car la réduction de dimensionnalité n'est pas son rôle principal. C est faux car le clustering direct par k-means sans transformation n'utilise pas le graphe. D confond avec une étape de preprocessing.",
+      "explanation": "Le graphe de similarité dans le clustering spectral reflète les relations de proximité entre les points de données. B est incorrect car la réduction de dimensionnalité n'est pas son rôle principal. C est faux car le clustering direct par k-means sans transformation n'utilise pas le graphe. D confond avec une étape de preprocessing. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Réduire la dimensionnalité des données avant le clustering.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Calculer directement les clusters via k-means.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Que représente le Laplacien non normalisé dans le contexte de clustering spectral ?",
       "image_url": null,
       "choices": {
-        "A": "L = D - W, où D est la matrice diagonale des degrés et W la matrice de similarité.",
-        "B": "L = D + W, où W est la matrice des poids inverses.",
+        "A": "L = D + W, où W est la matrice des poids inverses.",
+        "B": "L = D - W, où D est la matrice diagonale des degrés et W la matrice de similarité.",
         "C": "L = W - D, où W est la matrice de distances euclidiennes.",
         "D": "L = D * W, où * est le produit élément par élément."
       },
-      "correct_answer": "A",
-      "explanation": "Le Laplacien non normalisé est L = D - W, qui représente la structure du graphe en mettant en avant les connexions locales. B est erronée car l'addition n'est pas utilisée et D n'a pas de sens dans ce contexte. C inverse la soustraction et ne décrit pas correctement le Laplacien.",
+      "correct_answer": "B",
+      "explanation": "Le Laplacien non normalisé est L = D - W, qui représente la structure du graphe en mettant en avant les connexions locales. B est erronée car l'addition n'est pas utilisée et D n'a pas de sens dans ce contexte. C inverse la soustraction et ne décrit pas correctement le Laplacien. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (L = D + W, où W est la matrice des poids inverses.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L = W - D, où W est la matrice de distances euclidiennes.) est plausible mais faux car il ne",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Pourquoi utilise-t-on les valeurs propres dans le clustering spectral ?",
       "image_url": null,
       "choices": {
-        "A": "Pour obtenir un sous-espace où les données sont plus séparables pour le clustering.",
+        "A": "Pour calculer directement les centres des clusters.",
         "B": "Pour mesurer la centralité des nœuds dans un graphe.",
-        "C": "Pour calculer directement les centres des clusters.",
+        "C": "Pour obtenir un sous-espace où les données sont plus séparables pour le clustering.",
         "D": "Pour normaliser le graphe de similarité afin de le rendre non-dirigé."
       },
-      "correct_answer": "A",
-      "explanation": "Les valeurs propres sont utilisées pour réduire la dimensionnalité des données et projeter ces données dans un espace où elles sont plus séparables. B décrit une application des valeurs propres mais pas spécifiquement pour le clustering spectral. C est faux, elles ne sont pas utilisées pour calculer directement les centres. D concerne potentiellement des prétraitements mais n’est pas pertinent ici.",
+      "correct_answer": "C",
+      "explanation": "Les valeurs propres sont utilisées pour réduire la dimensionnalité des données et projeter ces données dans un espace où elles sont plus séparables. B décrit une application des valeurs propres mais pas spécifiquement pour le clustering spectral. C est faux, elles ne sont pas utilisées pour calculer directement les centres. D concerne potentiellement des prétraitements mais n’est pas pertinent ici. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour calculer directement les centres des clusters.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour mesurer la centralité des nœuds dans un graphe.) est plausible mais faux car il ne respecte",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quel est le rôle de l'embedding spectral dans le processus de clustering spectral ?",
       "image_url": null,
       "choices": {
-        "A": "Projeter les nœuds du graphe dans un espace de plus faible dimension.",
+        "A": "Attribuer directement un label de cluster à chaque noeud.",
         "B": "Augmenter la dimension des données pour améliorer leur structuration.",
         "C": "Éliminer les outliers dans les données avant clustering.",
-        "D": "Attribuer directement un label de cluster à chaque noeud."
+        "D": "Projeter les nœuds du graphe dans un espace de plus faible dimension."
       },
-      "correct_answer": "A",
-      "explanation": "L'embedding spectral réduit la dimensionnalité en projetant les nœuds du graphe dans un nouvel espace où le clustering est facilité. B est l'inverse du processus typique. C n'est pas réalisé par l'embedding spectral. D est incorrect, car l'embedding est une transformation, non une attribution directe de labels.",
+      "correct_answer": "D",
+      "explanation": "L'embedding spectral réduit la dimensionnalité en projetant les nœuds du graphe dans un nouvel espace où le clustering est facilité. B est l'inverse du processus typique. C n'est pas réalisé par l'embedding spectral. D est incorrect, car l'embedding est une transformation, non une attribution directe de labels. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Attribuer directement un label de cluster à chaque noeud.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter la dimension des données pour améliorer leur structuration.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "L'impossibilité d'utiliser des méthodes de normalisation des données."
       },
       "correct_answer": "A",
-      "explanation": "Le calcul des valeurs propres peut être intensif en termes de ressources lorsque les matrices sont de grande taille. B est incorrect car le clustering spectral n'est pas basé sur la programmation linéaire. C est faux, car les transformations de Fourier ne sont pas utilisées dans le clustering spectral. D est incorrect car on peut normaliser les données si nécessaire.",
+      "explanation": "Le calcul des valeurs propres peut être intensif en termes de ressources lorsque les matrices sont de grande taille. B est incorrect car le clustering spectral n'est pas basé sur la programmation linéaire. C est faux, car les transformations de Fourier ne sont pas utilisées dans le clustering spectral. D est incorrect car on peut normaliser les données si nécessaire. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La nécessité de résoudre un problème de programmation linéaire complexe.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La complexité causée par les multiples transformations de Fourier nécessaires.) est plausible mais faux",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quel est l'effet d'utiliser le Laplacien normalisé au lieu du Laplacien non normalisé dans le clustering spectral ?",
       "image_url": null,
       "choices": {
-        "A": "Il rend les embeddings plus robustes aux variations de taille des clusters.",
-        "B": "Il élimine complètement la nécessité de calculer les valeurs propres.",
+        "A": "Il élimine complètement la nécessité de calculer les valeurs propres.",
+        "B": "Il rend les embeddings plus robustes aux variations de taille des clusters.",
         "C": "Il garantit que le graphe de similarité est dirigé.",
         "D": "Il augmente le nombre de clusters trouvés dans les données."
       },
-      "correct_answer": "A",
-      "explanation": "L'utilisation d'un Laplacien normalisé rend les embeddings plus robustes aux variations de taille des clusters. B est incorrect car les valeurs propres restent nécessaires. C est faux car normaliser le Laplacien n'affecte pas la direction du graphe. D est incorrect, le Laplacien normalisé n'influence pas directement le nombre de clusters mais la qualité de la séparation.",
+      "correct_answer": "B",
+      "explanation": "L'utilisation d'un Laplacien normalisé rend les embeddings plus robustes aux variations de taille des clusters. B est incorrect car les valeurs propres restent nécessaires. C est faux car normaliser le Laplacien n'affecte pas la direction du graphe. D est incorrect, le Laplacien normalisé n'influence pas directement le nombre de clusters mais la qualité de la séparation. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il élimine complètement la nécessité de calculer les valeurs propres.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il garantit que le graphe de similarité est dirigé.) est plausible mais faux car il ne respecte pas",
       "difficulty": "hard"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Comment l'échelle choisie dans le graphe de similarité affecte-t-elle le clustering spectral ?",
       "image_url": null,
       "choices": {
-        "A": "Elle influence la densité de liens, ce qui impacte la séparation des clusters.",
+        "A": "Elle change le type de Laplacien utilisé pour le graphe.",
         "B": "Elle détermine la dimension finale de l'embedding spectral.",
-        "C": "Elle change le type de Laplacien utilisé pour le graphe.",
+        "C": "Elle influence la densité de liens, ce qui impacte la séparation des clusters.",
         "D": "Elle dicte le nombre maximal de partitions possible dans les données."
       },
-      "correct_answer": "A",
-      "explanation": "L'échelle choisie dans le graphe de similarité influence la densité des liens, ce qui a un impact direct sur la manière dont les clusters sont séparés. B est incorrect, car l'échelle ne détermine pas la dimension de l'embedding. C est faux car l'échelle ne change pas le type de Laplacien utilisé. D est incorrect, car l'échelle affecte la structure du graphe, non le nombre de partitions.",
+      "correct_answer": "C",
+      "explanation": "L'échelle choisie dans le graphe de similarité influence la densité des liens, ce qui a un impact direct sur la manière dont les clusters sont séparés. B est incorrect, car l'échelle ne détermine pas la dimension de l'embedding. C est faux car l'échelle ne change pas le type de Laplacien utilisé. D est incorrect, car l'échelle affecte la structure du graphe, non le nombre de partitions. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle change le type de Laplacien utilisé pour le graphe.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle détermine la dimension finale de l'embedding spectral.)",
       "difficulty": "hard"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quel est un avantage de l'utilisation du Laplacien symétrique normalisé dans le clustering spectral ?",
       "image_url": null,
       "choices": {
-        "A": "Les valeurs propres de ce Laplacien sont toujours comprises entre 0 et 2.",
+        "A": "Il supprime la nécessité de prétraiter les données d'entrée.",
         "B": "Il permet de transformer les données en distribution uniforme.",
         "C": "Il réduit automatiquement le nombre de dimensions nécessaires.",
-        "D": "Il supprime la nécessité de prétraiter les données d'entrée."
+        "D": "Les valeurs propres de ce Laplacien sont toujours comprises entre 0 et 2."
       },
-      "correct_answer": "A",
-      "explanation": "Le Laplacien symétrique normalisé a la propriété que ses valeurs propres sont comprises entre 0 et 2, facilitant ainsi certaines analyses spectrales. B est incorrect car la transformation des données en distribution uniforme nécessite des techniques supplémentaires. C est faux, car il ne réduit pas intrinsèquement le nombre de dimensions. D est incorrect, car le prétraitement des données peut encore être nécessaire pour d'autres raisons.",
+      "correct_answer": "D",
+      "explanation": "Le Laplacien symétrique normalisé a la propriété que ses valeurs propres sont comprises entre 0 et 2, facilitant ainsi certaines analyses spectrales. B est incorrect car la transformation des données en distribution uniforme nécessite des techniques supplémentaires. C est faux, car il ne réduit pas intrinsèquement le nombre de dimensions. D est incorrect, car le prétraitement des données peut encore être nécessaire pour d'autres raisons. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il supprime la nécessité de prétraiter les données d'entrée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il permet de transformer les données en distribution uniforme.) est",
       "difficulty": "hard"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Parce qu'il prévient la formation de clusters non connectés."
       },
       "correct_answer": "A",
-      "explanation": "Le critère de similarité impacte directement la structure de la matrice de Laplacien, donc influence la qualité des clusters formés. B est incorrect, car le choix du critère de similarité n'améliore pas intrinsèquement la vitesse de calcul des valeurs propres. C est faux, car la validation croisée est une approche d’évaluation non liée directement au critère de similarité. D est incorrect, car bien que le critère de similarité soit crucial pour la structuration, il n'assure pas à lui seul l'interconnexion des clusters.",
+      "explanation": "Le critère de similarité impacte directement la structure de la matrice de Laplacien, donc influence la qualité des clusters formés. B est incorrect, car le choix du critère de similarité n'améliore pas intrinsèquement la vitesse de calcul des valeurs propres. C est faux, car la validation croisée est une approche d’évaluation non liée directement au critère de similarité. D est incorrect, car bien que le critère de similarité soit crucial pour la structuration, il n'assure pas à lui seul l'interconnexion des clusters. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Parce qu'il améliore la vitesse de calcul des valeurs propres.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "hard"
     },
     {
@@ -135,12 +135,12 @@
       "image_url": null,
       "choices": {
         "A": "Lorsque la distribution de similarité est uniforme.",
-        "B": "Lorsque les valeurs propres sont toutes distinctes.",
-        "C": "Lorsque le graphe est construit à partir de données bruitées.",
+        "B": "Lorsque le graphe est construit à partir de données bruitées.",
+        "C": "Lorsque les valeurs propres sont toutes distinctes.",
         "D": "Lorsque le nombre total de nœuds est hautement asymétrique dans chaque cluster."
       },
-      "correct_answer": "C",
-      "explanation": "Les données bruitées peuvent créer des liens incorrects, rendant la séparation de l'embedding spectral dans l'espace projeté moins précise. A est faux car une distribution uniforme minimise souvent les effets des liens extrêmes, mais n'entraîne pas intrinsèquement une mauvaise séparation. B est incorrect car la distinction entre valeurs propres n'impacte pas la qualité de séparation directement. D est imprécis car les asymétries de taille de cluster influencent mais ne déterminent pas à elles seules la séparation.",
+      "correct_answer": "B",
+      "explanation": "Les données bruitées peuvent créer des liens incorrects, rendant la séparation de l'embedding spectral dans l'espace projeté moins précise. A est faux car une distribution uniforme minimise souvent les effets des liens extrêmes, mais n'entraîne pas intrinsèquement une mauvaise séparation. B est incorrect car la distinction entre valeurs propres n'impacte pas la qualité de séparation directement. D est imprécis car les asymétries de taille de cluster influencent mais ne déterminent pas à elles seules la séparation. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Lorsque la distribution de similarité est uniforme.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Lorsque",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Dans le contexte du clustering spectral, quel indicateur doit être surveillé lors du choix du nombre de clusters ?",
       "image_url": null,
       "choices": {
-        "A": "La distribution des valeurs propres du Laplacien.",
+        "A": "La variance des diagonales dans la matrice de similarité.",
         "B": "Le produit scalaire des vecteurs propres.",
-        "C": "La variance des diagonales dans la matrice de similarité.",
+        "C": "La distribution des valeurs propres du Laplacien.",
         "D": "La somme ascendante des degrés dans le graphe de similarité."
       },
-      "correct_answer": "A",
-      "explanation": "La distribution des valeurs propres du Laplacien, en particulier les écarts, peut indiquer un meilleur découpage en clusters. B manque de pertinence car bien que les vecteurs propres soient essentiels, c'est leur écart en valeurs propres qui aide à identifier le nombre de clusters. C n'est pas pertinent en ce qui concerne la détermination des clusters. D, l'information sur la distribution des degrés, n'aide pas spécifiquement à choisir le nombre de clusters.",
+      "correct_answer": "C",
+      "explanation": "La distribution des valeurs propres du Laplacien, en particulier les écarts, peut indiquer un meilleur découpage en clusters. B manque de pertinence car bien que les vecteurs propres soient essentiels, c'est leur écart en valeurs propres qui aide à identifier le nombre de clusters. C n'est pas pertinent en ce qui concerne la détermination des clusters. D, l'information sur la distribution des degrés, n'aide pas spécifiquement à choisir le nombre de clusters. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La variance des diagonales dans la matrice de similarité.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le produit scalaire",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Qu'est-ce qui caractérise des valeurs propres nulles pour le Laplacien d'un graphe non lié ?",
       "image_url": null,
       "choices": {
-        "A": "Elles correspondent à des composantes connexes dans le graphe.",
+        "A": "Elles interpellent sur la nécessité d'un recalcul du critère de similarité.",
         "B": "Elles suggèrent une erreur de type floating-point.",
         "C": "Elles indiquent que le graphe correspond à une structure arborescente.",
-        "D": "Elles interpellent sur la nécessité d'un recalcul du critère de similarité."
+        "D": "Elles correspondent à des composantes connexes dans le graphe."
       },
-      "correct_answer": "A",
-      "explanation": "Les valeurs propres nulles du Laplacien d'un graphe indiquent le nombre de composantes connexes présentes. B est incorrect car les erreurs de floating-point ne sont pas liées à la nullité naturelle des valeurs propres. C ne définit pas correctement le phénomène, bien qu'il soit lié aux caractéristiques de connexité des graphes. D est incorrect car la nullité des valeurs ne suggère pas directement de revoir le critère de similarité.",
+      "correct_answer": "D",
+      "explanation": "Les valeurs propres nulles du Laplacien d'un graphe indiquent le nombre de composantes connexes présentes. B est incorrect car les erreurs de floating-point ne sont pas liées à la nullité naturelle des valeurs propres. C ne définit pas correctement le phénomène, bien qu'il soit lié aux caractéristiques de connexité des graphes. D est incorrect car la nullité des valeurs ne suggère pas directement de revoir le critère de similarité. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elles interpellent sur la nécessité d'un recalcul du critère de similarité.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elles suggèrent une erreur",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "La conversion des poids du graphe en une distribution gaussienne."
       },
       "correct_answer": "A",
-      "explanation": "Les réseaux épars risquent de perdre de l'information critique sur les connexions denses, qui sont essentielles pour une séparation efficace des clusters. B est incorrect, un Laplacien peut toujours être formulé même pour les graphes épars. C est faux, car ce ne sont pas nécessairement les valeurs propres élevées qui posent problème. D n'est pas en lien direct avec la nature éparse du réseau.",
+      "explanation": "Les réseaux épars risquent de perdre de l'information critique sur les connexions denses, qui sont essentielles pour une séparation efficace des clusters. B est incorrect, un Laplacien peut toujours être formulé même pour les graphes épars. C est faux, car ce ne sont pas nécessairement les valeurs propres élevées qui posent problème. D n'est pas en lien direct avec la nature éparse du réseau. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (L'incapacité de formuler un Laplacien approprié.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La prédominance des valeurs propres élevées.) est plausible mais faux car il ne respecte",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Comment le nombre d'arêtes dans le graphe impacte-t-il le calcul des vecteurs propres utiles pour l'embedding spectral ?",
       "image_url": null,
       "choices": {
-        "A": "Il peut faire varier le nombre de vecteurs propres nécessaires pour capturer la structure.",
-        "B": "Il n'impacte pas significativement la qualité des vecteurs propres.",
+        "A": "Il n'impacte pas significativement la qualité des vecteurs propres.",
+        "B": "Il peut faire varier le nombre de vecteurs propres nécessaires pour capturer la structure.",
         "C": "Il simplifie le calcul en réduisant automatiquement la dimensionnalité.",
         "D": "Il clarifie uniquement le choix de la fonction de similarité utilisée."
       },
-      "correct_answer": "A",
-      "explanation": "Le nombre d'arêtes influence la structure générale et peut nécessiter l'utilisation d'un nombre différent de vecteurs propres pour capturer la globalité des relations. B est incorrect, car un graphe moins connecté peut conduire à de moins bons vecteurs propres en termes de qualité d'information. C est faux car le calcul de la dimensionnalité ne dépend pas directement du nombre d'arêtes. D est incorrect, car l'impact du nombre d'arêtes s'étend bien au-delà du choix de la fonction de similarité.",
+      "correct_answer": "B",
+      "explanation": "Le nombre d'arêtes influence la structure générale et peut nécessiter l'utilisation d'un nombre différent de vecteurs propres pour capturer la globalité des relations. B est incorrect, car un graphe moins connecté peut conduire à de moins bons vecteurs propres en termes de qualité d'information. C est faux car le calcul de la dimensionnalité ne dépend pas directement du nombre d'arêtes. D est incorrect, car l'impact du nombre d'arêtes s'étend bien au-delà du choix de la fonction de similarité. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il n'impacte pas significativement la qualité des vecteurs propres.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quel facteur est crucial pour éviter la surcharge computationnelle dans le clustering spectral sur de très grands graphes ?",
       "image_url": null,
       "choices": {
-        "A": "L'utilisation de méthodes d'approximation des valeurs propres.",
+        "A": "La conversion du graphe en une matrice creuse.",
         "B": "La diminution artificielle du nombre de nœuds reconnus.",
-        "C": "La conversion du graphe en une matrice creuse.",
+        "C": "L'utilisation de méthodes d'approximation des valeurs propres.",
         "D": "L'intégration de techniques de montée locale d'optimisation."
       },
-      "correct_answer": "A",
-      "explanation": "Pour des graphes très grands, les méthodes d'approximation des valeurs propres sont essentielles pour réduire la charge computationnelle durant le calcul. B est faux, car réduire le nombre de nœuds ne préserverait pas la structure originale. C est partiellement correct, mais elle est davantage une étape de stockage que de traitement direct. D est non pertinent dans ce contexte car la montée locale tente plutôt d'affiner que de simplifier le clustering spectral.",
+      "correct_answer": "C",
+      "explanation": "Pour des graphes très grands, les méthodes d'approximation des valeurs propres sont essentielles pour réduire la charge computationnelle durant le calcul. B est faux, car réduire le nombre de nœuds ne préserverait pas la structure originale. C est partiellement correct, mais elle est davantage une étape de stockage que de traitement direct. D est non pertinent dans ce contexte car la montée locale tente plutôt d'affiner que de simplifier le clustering spectral. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La conversion du graphe en une matrice creuse.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (La diminution artificielle du",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Lorsque le graphe est trop dense, comment s'assurer que le clustering spectral reste efficace ?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser un seuil élevé pour limiter les connexions faibles.",
+        "A": "Simplifier en transformant en graphe non-orienté.",
         "B": "Augmenter la dimension de l'embedding spectral.",
         "C": "Renforcer la régularisation des valeurs propres élevées.",
-        "D": "Simplifier en transformant en graphe non-orienté."
+        "D": "Utiliser un seuil élevé pour limiter les connexions faibles."
       },
-      "correct_answer": "A",
-      "explanation": "Un seuil élevé pour limiter les connexions faibles aide à éliminer le bruit dû aux arêtes inutiles et à simplifier la structure. B est inapproprié, car augmenter la dimension désavantage le clustering. C est hors de contexte car la régularisation directe des valeurs propres n'est pas une measure traditionnelle ici. D, bien que parfois utile, ne garantit pas seule une efficacité augmentée.",
+      "correct_answer": "D",
+      "explanation": "Un seuil élevé pour limiter les connexions faibles aide à éliminer le bruit dû aux arêtes inutiles et à simplifier la structure. B est inapproprié, car augmenter la dimension désavantage le clustering. C est hors de contexte car la régularisation directe des valeurs propres n'est pas une measure traditionnelle ici. D, bien que parfois utile, ne garantit pas seule une efficacité augmentée. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Simplifier en transformant en graphe non-orienté.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter la dimension de l'embedding spectral.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "hard"
     },
     {

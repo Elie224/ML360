@@ -14,7 +14,7 @@
         "D": "Calculer les taux d'erreur pour les itérations du modèle."
       },
       "correct_answer": "A",
-      "explanation": "Un graphe de similarité représente les relations de proximité entre les échantillons, indiquant où la propagation de labels doit être appliquée. Les échantillons sont des nœuds et la similarité est indiquée par les arêtes. Compiler des statistiques de distribution ou calculer des taux d'erreur ne fait pas partie de la construction du graphe et le graphe n'est pas utilisé uniquement pour les données non étiquetées.",
+      "explanation": "Un graphe de similarité représente les relations de proximité entre les échantillons, indiquant où la propagation de labels doit être appliquée. Les échantillons sont des nœuds et la similarité est indiquée par les arêtes. Compiler des statistiques de distribution ou calculer des taux d'erreur ne fait pas partie de la construction du graphe et le graphe n'est pas utilisé uniquement pour les données non étiquetées. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Compiler les statistiques de distribution des labels.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Servir uniquement à classifier les données non étiquetées.) est plausible mais faux",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Pourquoi la propagation itérative est-elle cruciale en label propagation?",
       "image_url": null,
       "choices": {
-        "A": "Elle affine progressivement les prédictions en transmettant les labels le long des arêtes du graphe.",
-        "B": "Elle permet d'ajuster les poids des arêtes après chaque itération.",
+        "A": "Elle permet d'ajuster les poids des arêtes après chaque itération.",
+        "B": "Elle affine progressivement les prédictions en transmettant les labels le long des arêtes du graphe.",
         "C": "Elle minimise la perte de classification à chaque étape.",
         "D": "Elle est utilisée pour reclasser les nœuds déjà étiquetés après chaque cycle."
       },
-      "correct_answer": "A",
-      "explanation": "La propagation itérative affine les prédictions en faisant circuler de manière répétée les labels le long du graphe, ce qui la rend essentielle pour exploiter les similarités entre échantillons. Ajuster les poids des arêtes ou minimiser la perte de classification ne sont pas directement associés au processus de propagation de labels. Reclassement des nœuds déjà étiquetés n'est pas le but de la propagation itérative.",
+      "correct_answer": "B",
+      "explanation": "La propagation itérative affine les prédictions en faisant circuler de manière répétée les labels le long du graphe, ce qui la rend essentielle pour exploiter les similarités entre échantillons. Ajuster les poids des arêtes ou minimiser la perte de classification ne sont pas directement associés au processus de propagation de labels. Reclassement des nœuds déjà étiquetés n'est pas le but de la propagation itérative. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle permet d'ajuster les poids des arêtes après chaque itération.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle minimise la perte de classification à chaque étape.) est",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Qu'est-ce que le lissage dans le contexte de la propagation de labels?",
       "image_url": null,
       "choices": {
-        "A": "Un processus qui réduit les sauts brusques de labels entre nœuds similaires.",
+        "A": "Une technique de prévention des sur-apprentissages du modèle.",
         "B": "Une méthode pour augmenter artificiellement le nombre d'échantillons étiquetés.",
-        "C": "Une technique de prévention des sur-apprentissages du modèle.",
+        "C": "Un processus qui réduit les sauts brusques de labels entre nœuds similaires.",
         "D": "Un mécanisme de normalisation des caractéristiques des données d'entrée."
       },
-      "correct_answer": "A",
-      "explanation": "Le lissage réduit les différences de prévision de labels entre nœuds voisines sur le graphe, assurant ainsi que des nœuds similaires obtiennent des labels similaires. Augmenter les échantillons, prévenir le sur-apprentissage ou normaliser les caractéristiques ne sont pas des objectifs du lissage dans la propagation de labels.",
+      "correct_answer": "C",
+      "explanation": "Le lissage réduit les différences de prévision de labels entre nœuds voisines sur le graphe, assurant ainsi que des nœuds similaires obtiennent des labels similaires. Augmenter les échantillons, prévenir le sur-apprentissage ou normaliser les caractéristiques ne sont pas des objectifs du lissage dans la propagation de labels. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une technique de prévention des sur-apprentissages du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Une méthode pour augmenter artificiellement le nombre d'échantillons étiquetés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Dans l'algorithme de label propagation, pourquoi les voisins fiables sont-ils importants?",
       "image_url": null,
       "choices": {
-        "A": "Ils assurent une propagation plus précise des labels vers des nœuds voisins.",
+        "A": "Ils réduisent la mémoire nécessaire pour stocker le graphe.",
         "B": "Ils augmentent la vitesse d'itération de l'algorithme.",
         "C": "Ils brevetent automatiquement la solution de l'algorithme.",
-        "D": "Ils réduisent la mémoire nécessaire pour stocker le graphe."
+        "D": "Ils assurent une propagation plus précise des labels vers des nœuds voisins."
       },
-      "correct_answer": "A",
-      "explanation": "Les voisins fiables garantissent que les labels se propagent de manière précise vers les nœuds ayant des similarités vérifiées, améliorant la qualité de la classification. Cette fiabilité ne modifie ni la vitesse de l'algorithme, ne brevetent pas la solution et n'influe pas sur la mémoire requise.",
+      "correct_answer": "D",
+      "explanation": "Les voisins fiables garantissent que les labels se propagent de manière précise vers les nœuds ayant des similarités vérifiées, améliorant la qualité de la classification. Cette fiabilité ne modifie ni la vitesse de l'algorithme, ne brevetent pas la solution et n'influe pas sur la mémoire requise. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ils réduisent la mémoire nécessaire pour stocker le graphe.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Ils augmentent la vitesse d'itération de l'algorithme.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ils brevetent",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Les nœuds du graphe sont classés par importance avant la propagation."
       },
       "correct_answer": "A",
-      "explanation": "Les arêtes d'un graphe de similarité reflètent comment les nœuds sont similaires entre eux, guidant la propagation. Dans la propagation de labels, les arêtes ne sont pas orientées et les nœuds incluent à la fois étiquetés et non étiquetés. Les nœuds ne sont pas classés par importance avant la propagation.",
+      "explanation": "Les arêtes d'un graphe de similarité reflètent comment les nœuds sont similaires entre eux, guidant la propagation. Dans la propagation de labels, les arêtes ne sont pas orientées et les nœuds incluent à la fois étiquetés et non étiquetés. Les nœuds ne sont pas classés par importance avant la propagation. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Chaque arête du graphe est orientée pour indiquer le sens correct de propagation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Les nœuds ne représentent que des échantillons non étiquetés.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quel est un aspect critique lors du choix de la fonction de similarité pour un graphe en label propagation?",
       "image_url": null,
       "choices": {
-        "A": "La fonction doit bien séparer les échantillons de classes différentes.",
-        "B": "La fonction doit être capable de normaliser les échantillons.",
+        "A": "La fonction doit être capable de normaliser les échantillons.",
+        "B": "La fonction doit bien séparer les échantillons de classes différentes.",
         "C": "La fonction doit éliminer automatiquement les outliers.",
         "D": "La fonction doit minimiser la distance euclidienne entre tous les nœuds."
       },
-      "correct_answer": "A",
-      "explanation": "Une bonne fonction de similarité devrait séparer distinctement les échantillons de classes différentes pour une propagation effective. La normalisation, l'élimination des outliers ou réduire toute distance entre nœuds ne sont pas des objectifs directs de cette fonction.",
+      "correct_answer": "B",
+      "explanation": "Une bonne fonction de similarité devrait séparer distinctement les échantillons de classes différentes pour une propagation effective. La normalisation, l'élimination des outliers ou réduire toute distance entre nœuds ne sont pas des objectifs directs de cette fonction. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (La fonction doit être capable de normaliser les échantillons.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La fonction doit éliminer automatiquement les outliers.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La fonction doit minimiser la distance euclidienne entre tous les nœuds.)",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quelle stratégie peut améliorer la robustesse d'un modèle de propagation de labels?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser un échantillonnage pondéré pour sélectionner les voisins les plus sûrs.",
+        "A": "Rendre chaque nœud du graphe accessible à l'utilisateur pour les corrections manuelles.",
         "B": "Augmenter le nombre d'itérations quel que soit le seuil de convergence.",
-        "C": "Rendre chaque nœud du graphe accessible à l'utilisateur pour les corrections manuelles.",
+        "C": "Utiliser un échantillonnage pondéré pour sélectionner les voisins les plus sûrs.",
         "D": "Réduire systématiquement le nombre de nœuds dans le graphe."
       },
-      "correct_answer": "A",
-      "explanation": "Sélectionner les voisins les plus sûrs via un échantillonnage pondéré peut réduire les erreurs dans la propagation. Augmenter le nombre d'itérations sans raison, rendre tous les nœuds accessibles ou réduire le nombre de nœuds ne contribuent pas directement à la robustesse du modèle.",
+      "correct_answer": "C",
+      "explanation": "Sélectionner les voisins les plus sûrs via un échantillonnage pondéré peut réduire les erreurs dans la propagation. Augmenter le nombre d'itérations sans raison, rendre tous les nœuds accessibles ou réduire le nombre de nœuds ne contribuent pas directement à la robustesse du modèle. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Rendre chaque nœud du graphe accessible à l'utilisateur pour les corrections manuelles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter le nombre d'itérations quel que soit le seuil de convergence.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quelle est la conséquence d'un choix inadéquat du graphe de similarité dans la propagation de labels?",
       "image_url": null,
       "choices": {
-        "A": "Mauvaise propagation des labels, entraînant une perte de précision.",
+        "A": "Accélération incorrecte du temps de convergence de l'algorithme.",
         "B": "Augmentation du nombre d'échantillons étiquetés.",
         "C": "Diminution du nombre de classes prédictes.",
-        "D": "Accélération incorrecte du temps de convergence de l'algorithme."
+        "D": "Mauvaise propagation des labels, entraînant une perte de précision."
       },
-      "correct_answer": "A",
-      "explanation": "Un mauvais choix de graphe de similarité peut entraîner une propagation incorrecte des labels et une perte de précision. Cela n'augmente pas le nombre d'échantillons, ne diminue pas le nombre de classes ni n'accélère le temps de convergence de manière intentionnelle.",
+      "correct_answer": "D",
+      "explanation": "Un mauvais choix de graphe de similarité peut entraîner une propagation incorrecte des labels et une perte de précision. Cela n'augmente pas le nombre d'échantillons, ne diminue pas le nombre de classes ni n'accélère le temps de convergence de manière intentionnelle. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Accélération incorrecte du temps de convergence de l'algorithme.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmentation du nombre d'échantillons étiquetés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Diminution du nombre de classes prédictes.) est plausible mais faux",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Il sature les nœuds non étiquetés avec des valeurs aléatoires."
       },
       "correct_answer": "A",
-      "explanation": "Le lissage améliore la cohérence locale en s'assurant que des nœuds proches et similaires aient des labels cohérents. Il ne décide pas de clusters via des distances maximales, ne privilégie pas les échantillons par nombre de caractéristiques et ne remplit pas aléatoirement les labels.",
+      "explanation": "Le lissage améliore la cohérence locale en s'assurant que des nœuds proches et similaires aient des labels cohérents. Il ne décide pas de clusters via des distances maximales, ne privilégie pas les échantillons par nombre de caractéristiques et ne remplit pas aléatoirement les labels. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il décide des clusters basés sur la distance maximale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il préfère les échantillons avec plus de caractéristiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il sature les",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Pourquoi doit-on se méfier des voisins non fiables dans une propagation de labels?",
       "image_url": null,
       "choices": {
-        "A": "Ils peuvent mener à des erreurs de propagation de labels.",
-        "B": "Ils ralentissent considérablement le calcul des mises à jour des labels.",
+        "A": "Ils ralentissent considérablement le calcul des mises à jour des labels.",
+        "B": "Ils peuvent mener à des erreurs de propagation de labels.",
         "C": "Ils augmentent la taille du graphe au-delà de la capacité logicielle.",
         "D": "Ils font systématiquement diminuer la distance entre différents clusters."
       },
-      "correct_answer": "A",
-      "explanation": "Les voisins non fiables peuvent propager des labels erronés, diminuant la qualité des prédictions. Ils ne ralentissent pas considérablement les calculs, n'augmentent pas démesurément la taille du graphe et n'impactent pas directement la distance entre clusters.",
+      "correct_answer": "B",
+      "explanation": "Les voisins non fiables peuvent propager des labels erronés, diminuant la qualité des prédictions. Ils ne ralentissent pas considérablement les calculs, n'augmentent pas démesurément la taille du graphe et n'impactent pas directement la distance entre clusters. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ils ralentissent considérablement le calcul des mises à jour des labels.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ils augmentent la taille du graphe au-delà de la capacité logicielle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Ils font systématiquement diminuer la distance",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Quel est l'objectif principal d'utiliser des voisins fiables en label propagation?",
       "image_url": null,
       "choices": {
-        "A": "Maximiser l'exactitude des labels propagés aux données non étiquetées.",
+        "A": "Contrôler directement la taille de chaque cluster formé.",
         "B": "Réduire le nombre total d'itérations du processus de propagation.",
-        "C": "Contrôler directement la taille de chaque cluster formé.",
+        "C": "Maximiser l'exactitude des labels propagés aux données non étiquetées.",
         "D": "Éliminer complètement la nécessité des données étiquetées initiales."
       },
-      "correct_answer": "A",
-      "explanation": "Des voisins fiables aident à maximiser la précision des labels propagés, car seules les connexions sûres sont favorisées. Cela ne réduit pas nécessairement le nombre d'itérations, ne contrôle pas directement la taille des clusters et ne remplace pas les données étiquetées initiales.",
+      "correct_answer": "C",
+      "explanation": "Des voisins fiables aident à maximiser la précision des labels propagés, car seules les connexions sûres sont favorisées. Cela ne réduit pas nécessairement le nombre d'itérations, ne contrôle pas directement la taille des clusters et ne remplace pas les données étiquetées initiales. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Contrôler directement la taille de chaque cluster formé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Réduire le nombre total d'itérations du processus de propagation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Éliminer complètement la nécessité des",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Dans le contexte de la méthode de propagation de labels, qu'est-ce qu'un graphe de similarité?",
       "image_url": null,
       "choices": {
-        "A": "Une structure de données qui définit des relations de proximité entre échantillons basées sur une métrique de similarité.",
+        "A": "Une forêt d'arbres où chaque arbre représente un modèle séparé pour la classification.",
         "B": "Un graphe où les nœuds représentent les classes et les arêtes les décisions de classification.",
         "C": "Un graphe complet où chaque nœud est connecté à tous les autres nœuds.",
-        "D": "Une forêt d'arbres où chaque arbre représente un modèle séparé pour la classification."
+        "D": "Une structure de données qui définit des relations de proximité entre échantillons basées sur une métrique de similarité."
       },
-      "correct_answer": "A",
-      "explanation": "Un graphe de similarité est une structure où les nœuds représentent les échantillons et les arêtes pondérées expriment leur similitude, utilisée pour partager des labels entre les voisins proches. B est faux car il ne s'agit pas de représenter des classes mais des échantillons. C est incorrect car la structure n'est pas nécessairement complète; seules les connexions proches sont pertinentes. D est incorrect car une forêt d'arbres décrit plutôt un ensemble de modèles comme dans les forêts aléatoires.",
+      "correct_answer": "D",
+      "explanation": "Un graphe de similarité est une structure où les nœuds représentent les échantillons et les arêtes pondérées expriment leur similitude, utilisée pour partager des labels entre les voisins proches. B est faux car il ne s'agit pas de représenter des classes mais des échantillons. C est incorrect car la structure n'est pas nécessairement complète; seules les connexions proches sont pertinentes. D est incorrect car une forêt d'arbres décrit plutôt un ensemble de modèles comme dans les forêts aléatoires. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une forêt d'arbres où chaque arbre représente un modèle séparé pour la classification.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "easy"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Les labels de chaque nœud sont fixés et ne dépendent que de leur classe attribuée initialement."
       },
       "correct_answer": "A",
-      "explanation": "La propagation itérative consiste à réviser continuellement les labels des nœuds selon une règle de mise à jour fondée sur les labels de leurs voisins directs, jusqu'à ce qu'il n'y ait plus de changements significatifs (convergence). B est faux car les labels évoluent vers un état stable. C est incorrect car la propagation de labels n'utilise pas la rétropropagation d'erreurs. D est incorrect car une des caractéristiques essentielles est justement le raffinement des labels initiaux.",
+      "explanation": "La propagation itérative consiste à réviser continuellement les labels des nœuds selon une règle de mise à jour fondée sur les labels de leurs voisins directs, jusqu'à ce qu'il n'y ait plus de changements significatifs (convergence). B est faux car les labels évoluent vers un état stable. C est incorrect car la propagation de labels n'utilise pas la rétropropagation d'erreurs. D est incorrect car une des caractéristiques essentielles est justement le raffinement des labels initiaux. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Les labels sont initialisés aléatoirement et ne sont pas actualisés au cours du processus.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "medium"
     },
     {
@@ -196,7 +196,7 @@
         "D": "Considérer uniquement les voisins avec déjà une forte probabilité de label correct."
       },
       "correct_answer": "B",
-      "explanation": "Le lissage par les voisins fiables consiste à réviser les labels d'un nœud par une moyenne pondérée des labels de ses voisins les plus similaires. A est faux car même les voisins incertains peuvent contribuer. C est incorrect car le lissage ne signifie pas simplement éliminer des petites différences. D est faux car l'importance de la similarité prévaut, sans forcément restreindre aux labels les plus probables a priori, permettant une révision plus fine fondée sur la proximité.",
+      "explanation": "Le lissage par les voisins fiables consiste à réviser les labels d'un nœud par une moyenne pondérée des labels de ses voisins les plus similaires. A est faux car même les voisins incertains peuvent contribuer. C est incorrect car le lissage ne signifie pas simplement éliminer des petites différences. D est faux car l'importance de la similarité prévaut, sans forcément restreindre aux labels les plus probables a priori, permettant une révision plus fine fondée sur la proximité. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Attribuer un label incertain à un nœud s'il n'a pas de voisins étiquetés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     }
   ]

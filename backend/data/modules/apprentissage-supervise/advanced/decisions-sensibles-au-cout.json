@@ -14,7 +14,7 @@
         "D": "Cela entraîne une augmentation des coûts pour chaque transaction suspecte."
       },
       "correct_answer": "A",
-      "explanation": "Un faux positif dans la détection de fraude signifie qu'une transaction non frauduleuse est faussement classée comme frauduleuse. Cela peut conduire à une gêne pour les utilisateurs et à des coûts opérationnels accrus. Un faux négatif, en revanche, signifie qu'une transaction frauduleuse n'est pas détectée.",
+      "explanation": "Un faux positif dans la détection de fraude signifie qu'une transaction non frauduleuse est faussement classée comme frauduleuse. Cela peut conduire à une gêne pour les utilisateurs et à des coûts opérationnels accrus. Un faux négatif, en revanche, signifie qu'une transaction frauduleuse n'est pas détectée. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Une transaction frauduleuse passe inaperçue.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Cela n'affecte pas la détection globale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Cela entraîne une augmentation des coûts pour chaque",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Dans lequel des cas suivants un faux négatif peut-il être le plus coûteux ?",
       "image_url": null,
       "choices": {
-        "A": "Diagnostic de maladies graves.",
-        "B": "Publicité ciblée.",
+        "A": "Publicité ciblée.",
+        "B": "Diagnostic de maladies graves.",
         "C": "Système de recommandation de films.",
         "D": "Filtrage de spam dans les emails."
       },
-      "correct_answer": "A",
-      "explanation": "Dans le contexte du diagnostic de maladies graves, un faux négatif signifie ne pas détecter une maladie présente, ce qui peut avoir de graves conséquences sur la santé du patient. Pour la publicité ou les recommandations, les faux négatifs entraînent des opportunités manquées sans conséquences graves.",
+      "correct_answer": "B",
+      "explanation": "Dans le contexte du diagnostic de maladies graves, un faux négatif signifie ne pas détecter une maladie présente, ce qui peut avoir de graves conséquences sur la santé du patient. Pour la publicité ou les recommandations, les faux négatifs entraînent des opportunités manquées sans conséquences graves. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Publicité ciblée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Système de recommandation de films.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Filtrage de spam dans les emails.) est plausible mais faux car",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quelle méthode peut être utilisée pour minimiser les erreurs coûteuses dans un modèle prédictif ?",
       "image_url": null,
       "choices": {
-        "A": "Utilisation d'une matrice de coût.",
+        "A": "Augmentation de la taille du jeu de données.",
         "B": "Réduction du surapprentissage par régularisation.",
-        "C": "Augmentation de la taille du jeu de données.",
+        "C": "Utilisation d'une matrice de coût.",
         "D": "Normalisation des caractéristiques en entrée."
       },
-      "correct_answer": "A",
-      "explanation": "Une matrice de coût permet de pondérer différemment les erreurs où certaines erreurs (comme les faux négatifs ou les faux positifs) peuvent être plus coûteuses que d'autres. La réduction du surapprentissage, l'augmentation de la taille du jeu de données et la normalisation de l'entrée sont importantes mais ne ciblent pas spécifiquement les coûts des erreurs.",
+      "correct_answer": "C",
+      "explanation": "Une matrice de coût permet de pondérer différemment les erreurs où certaines erreurs (comme les faux négatifs ou les faux positifs) peuvent être plus coûteuses que d'autres. La réduction du surapprentissage, l'augmentation de la taille du jeu de données et la normalisation de l'entrée sont importantes mais ne ciblent pas spécifiquement les coûts des erreurs. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmentation de la taille du jeu de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Réduction du surapprentissage par régularisation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Comment ajuster le seuil de décision peut-il améliorer un système de détection de fraude ?",
       "image_url": null,
       "choices": {
-        "A": "En équilibrant mieux le taux de faux positifs et de faux négatifs.",
+        "A": "En assurant une performance stable à travers tous les échantillons.",
         "B": "En augmentant toujours le taux de vrais positifs.",
         "C": "En réduisant la complexité du modèle.",
-        "D": "En assurant une performance stable à travers tous les échantillons."
+        "D": "En équilibrant mieux le taux de faux positifs et de faux négatifs."
       },
-      "correct_answer": "A",
-      "explanation": "Ajuster le seuil de décision permet de trouver un équilibre entre le taux de faux positifs et de faux négatifs, selon le coût des erreurs. Une augmentation du taux de vrais positifs ne garantit pas une réduction des faux négatifs, tandis que réduire la complexité du modèle ou chercher une performance uniforme ne traitent pas spécifiquement de la sensibilité au coût.",
+      "correct_answer": "D",
+      "explanation": "Ajuster le seuil de décision permet de trouver un équilibre entre le taux de faux positifs et de faux négatifs, selon le coût des erreurs. Une augmentation du taux de vrais positifs ne garantit pas une réduction des faux négatifs, tandis que réduire la complexité du modèle ou chercher une performance uniforme ne traitent pas spécifiquement de la sensibilité au coût. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En assurant une performance stable à travers tous les échantillons.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En augmentant toujours le taux de vrais positifs.) est plausible mais faux car",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "La taille du jeu de test."
       },
       "correct_answer": "A",
-      "explanation": "Lorsqu'on choisit une matrice de coût, il est crucial de considérer l'impact financier et opérationnel des erreurs spécifiques au contexte. La précision globale, la complexité et la taille du jeu de test sont des considérations importantes pour la modélisation en général, mais pas spécifiquement pour définir une matrice de coût.",
+      "explanation": "Lorsqu'on choisit une matrice de coût, il est crucial de considérer l'impact financier et opérationnel des erreurs spécifiques au contexte. La précision globale, la complexité et la taille du jeu de test sont des considérations importantes pour la modélisation en général, mais pas spécifiquement pour définir une matrice de coût. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La précision globale du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La complexité du modèle prédictif utilisé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La taille du",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quel est l'avantage d'utiliser une matrice de coût dans un modèle de classification ?",
       "image_url": null,
       "choices": {
-        "A": "Prioriser la minimisation des erreurs selon leur impact spécifique.",
-        "B": "Augmenter la précision de manière uniforme pour tous les cas.",
+        "A": "Augmenter la précision de manière uniforme pour tous les cas.",
+        "B": "Prioriser la minimisation des erreurs selon leur impact spécifique.",
         "C": "Faciliter une meilleure visualisation des données.",
         "D": "Améliorer le temps d'entraînement du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "L'utilisation d'une matrice de coût permet de prioriser la minimisation des erreurs en fonction de leur impact, en attribuant des poids différents aux types d'erreurs (par exemple, faux positifs vs faux négatifs). Les autres choix traitent de cas d'améliorations globales ou techniques qui ne sont pas l'objectif principal d'une matrice de coût.",
+      "correct_answer": "B",
+      "explanation": "L'utilisation d'une matrice de coût permet de prioriser la minimisation des erreurs en fonction de leur impact, en attribuant des poids différents aux types d'erreurs (par exemple, faux positifs vs faux négatifs). Les autres choix traitent de cas d'améliorations globales ou techniques qui ne sont pas l'objectif principal d'une matrice de coût. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmenter la précision de manière uniforme pour tous les cas.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Faciliter une meilleure visualisation des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Comment peut-on évaluer l'efficacité d'une matrice de coût en appliquant un modèle ?",
       "image_url": null,
       "choices": {
-        "A": "Calculer les gains ou pertes financiers en fonction des prédictions.",
+        "A": "Réduire la variance en utilisant des techniques de régularisation.",
         "B": "Augmenter la précision du modèle au-dessus de 90%.",
-        "C": "Réduire la variance en utilisant des techniques de régularisation.",
+        "C": "Calculer les gains ou pertes financiers en fonction des prédictions.",
         "D": "Utiliser l'analyse de variance (ANOVA) pour évaluer l'impact."
       },
-      "correct_answer": "A",
-      "explanation": "L'efficacité d'une matrice de coût se mesure souvent en analysant les gains ou pertes financiers engendrés par le modèle en tenant compte des coûts associés aux types d'erreurs. Augmenter la précision ou réduire la variance ne sont pas directement liés à l'évaluation d'une matrice de coût. ANOVA est utilisé pour des analyses statistiques, pas pour évaluer directement une matrice de coût dans le machine learning.",
+      "correct_answer": "C",
+      "explanation": "L'efficacité d'une matrice de coût se mesure souvent en analysant les gains ou pertes financiers engendrés par le modèle en tenant compte des coûts associés aux types d'erreurs. Augmenter la précision ou réduire la variance ne sont pas directement liés à l'évaluation d'une matrice de coût. ANOVA est utilisé pour des analyses statistiques, pas pour évaluer directement une matrice de coût dans le machine learning. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire la variance en utilisant des techniques de régularisation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter la précision du modèle au-dessus de 90%.) est plausible",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "En quoi le choix d'un seuil affecte-t-il les coûts dans un système de classification binaire ?",
       "image_url": null,
       "choices": {
-        "A": "Il détermine le compromis entre faux positifs et faux négatifs.",
+        "A": "Il change la structure de la matrice de confusion.",
         "B": "Il ne change que la précision globale du modèle.",
         "C": "Il n'a d'impact que sur le temps de calcul des prédictions.",
-        "D": "Il change la structure de la matrice de confusion."
+        "D": "Il détermine le compromis entre faux positifs et faux négatifs."
       },
-      "correct_answer": "A",
-      "explanation": "Le choix d'un seuil dans un système de classification binaire affecte directement le compromis entre les faux positifs et les faux négatifs, influençant ainsi les coûts totaux associés aux erreurs de prédiction. Cela n'a pas d'impact direct sur la précision globale sans considération des coûts, le temps de calcul ou la structure de base de la matrice de confusion.",
+      "correct_answer": "D",
+      "explanation": "Le choix d'un seuil dans un système de classification binaire affecte directement le compromis entre les faux positifs et les faux négatifs, influençant ainsi les coûts totaux associés aux erreurs de prédiction. Cela n'a pas d'impact direct sur la précision globale sans considération des coûts, le temps de calcul ou la structure de base de la matrice de confusion. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il change la structure de la matrice de confusion.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il ne change que la précision globale du modèle.) est plausible mais faux car il ne",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Pour augmenter la précision globale du modèle."
       },
       "correct_answer": "A",
-      "explanation": "Dans certains contextes critiques, comme les situations où le coût d'un faux négatif est très élevé (par exemple, détecter une maladie mortelle), il peut être préférable d'accepter plus de faux positifs pour capturer un maximum de vrais positifs. Réduire les faux négatifs à zéro n'est généralement pas réaliste, et les autres réponses ne correspondent pas au compromis typique dans la gestion des coûts des erreurs.",
+      "explanation": "Dans certains contextes critiques, comme les situations où le coût d'un faux négatif est très élevé (par exemple, détecter une maladie mortelle), il peut être préférable d'accepter plus de faux positifs pour capturer un maximum de vrais positifs. Réduire les faux négatifs à zéro n'est généralement pas réaliste, et les autres réponses ne correspondent pas au compromis typique dans la gestion des coûts des erreurs. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Pour réduire les faux négatifs à zéro.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour diminuer les faux positifs.) est plausible mais faux car il ne",
       "difficulty": "medium"
     },
     {
@@ -140,7 +140,7 @@
         "D": "Maximiser la vitesse de calcul en réduisant la complexité du modèle."
       },
       "correct_answer": "B",
-      "explanation": "Le choix d'une matrice de coût est guidé par l'importance relative des coûts des erreurs spécifiques au contexte de l'application. Contrairement à l'équilibre entre précision et rappel, ou à l'uniformité des pondérations, il s'agit de pondérer les erreurs en fonction de leurs implications pratiques. Maximiser la vitesse de calcul n'est pas un facteur direct pour ajuster la matrice de coût.",
+      "explanation": "Le choix d'une matrice de coût est guidé par l'importance relative des coûts des erreurs spécifiques au contexte de l'application. Contrairement à l'équilibre entre précision et rappel, ou à l'uniformité des pondérations, il s'agit de pondérer les erreurs en fonction de leurs implications pratiques. Maximiser la vitesse de calcul n'est pas un facteur direct pour ajuster la matrice de coût. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'équilibre entre précision et rappel pour toutes les classes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'uniformité entre les pondérations des erreurs de chaque type.) est plausible mais faux car il",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Quel est l'effet de l'augmentation de la pénalité pour les faux négatifs dans une matrice de coût ?",
       "image_url": null,
       "choices": {
-        "A": "L'augmentation de la sensibilité du modèle.",
+        "A": "La diminution du taux d'erreur totale.",
         "B": "L'augmentation de la spécificité du modèle.",
-        "C": "La diminution du taux d'erreur totale.",
+        "C": "L'augmentation de la sensibilité du modèle.",
         "D": "La réduction des faux positifs."
       },
-      "correct_answer": "A",
-      "explanation": "En augmentant la pénalité pour les faux négatifs, le modèle est ajusté pour être plus sensible et diminuer les faux négatifs, ce qui augmente généralement la sensibilité (capacité à détecter les cas positifs). Cela ne conduit pas directement à une augmentation de la spécificité, une diminution du taux d'erreur globale ou une réduction des faux positifs sans compromis.",
+      "correct_answer": "C",
+      "explanation": "En augmentant la pénalité pour les faux négatifs, le modèle est ajusté pour être plus sensible et diminuer les faux négatifs, ce qui augmente généralement la sensibilité (capacité à détecter les cas positifs). Cela ne conduit pas directement à une augmentation de la spécificité, une diminution du taux d'erreur globale ou une réduction des faux positifs sans compromis. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La diminution du taux d'erreur totale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (L'augmentation de la spécificité du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Dans quelle situation serait-il justifié d'avoir un faible coût pour les faux positifs ?",
       "image_url": null,
       "choices": {
-        "A": "Lors d'une campagne publicitaire où la surcommunication est acceptable.",
+        "A": "Dans le contrôle de qualité rigoureux en production industrielle.",
         "B": "Dans le diagnostic médical pour éviter des alarmes inutiles.",
         "C": "Dans le filtrage de spams pour éviter d'envoyer d'importants emails en spam.",
-        "D": "Dans le contrôle de qualité rigoureux en production industrielle."
+        "D": "Lors d'une campagne publicitaire où la surcommunication est acceptable."
       },
-      "correct_answer": "A",
-      "explanation": "Dans une campagne publicitaire, avoir des faux positifs (surcommunication) pourrait être moins coûteux que de manquer de cibler un client potentiel. Dans le domaine médical ou le contrôle de qualité, les faux positifs peuvent entraîner des coûts significatifs et de la désatisfaction, nécessitant des seuils plus stricts.",
+      "correct_answer": "D",
+      "explanation": "Dans une campagne publicitaire, avoir des faux positifs (surcommunication) pourrait être moins coûteux que de manquer de cibler un client potentiel. Dans le domaine médical ou le contrôle de qualité, les faux positifs peuvent entraîner des coûts significatifs et de la désatisfaction, nécessitant des seuils plus stricts. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Dans le contrôle de qualité rigoureux en production industrielle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Dans le diagnostic médical pour éviter des alarmes inutiles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "En optimisant les hyperparamètres uniquement pour augmenter la précision générale."
       },
       "correct_answer": "A",
-      "explanation": "Définir une matrice de coût adaptée permet au modèle de détecter plus efficacement les erreurs coûteuses en assignant des poids différents. Augmenter le nombre de classes, rééchantillonner ou optimiser uniquement pour la précision ne répondent pas directement aux coûts des erreurs.",
+      "explanation": "Définir une matrice de coût adaptée permet au modèle de détecter plus efficacement les erreurs coûteuses en assignant des poids différents. Augmenter le nombre de classes, rééchantillonner ou optimiser uniquement pour la précision ne répondent pas directement aux coûts des erreurs. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (En augmentant le nombre de classes cibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En rééchantillonnant le jeu de données avant l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (En optimisant les hyperparamètres uniquement pour augmenter la",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Parmi les stratégies suivantes, laquelle optimise les performances selon un coût préalablement défini ?",
       "image_url": null,
       "choices": {
-        "A": "Entraînement avec une matrice de coût définie pour chaque classe.",
-        "B": "Utilisation d'une fonction perte standard MSE (erreur quadratique moyenne).",
+        "A": "Utilisation d'une fonction perte standard MSE (erreur quadratique moyenne).",
+        "B": "Entraînement avec une matrice de coût définie pour chaque classe.",
         "C": "Réduction du nombre d'échantillons de test pour augmenter la précision.",
         "D": "Entraînement avec un sur-échantillonnage des classes minoritaires."
       },
-      "correct_answer": "A",
-      "explanation": "Utiliser une matrice de coût spécifique guide l'entraînement du modèle pour respecter les priorités stratégiques liées à chaque classe. Les autres options ne tiennent pas compte des coûts particuliers associés à des erreurs spécifiques et MSE ne concerne que les différences entre les valeurs réelles et prédites.",
+      "correct_answer": "B",
+      "explanation": "Utiliser une matrice de coût spécifique guide l'entraînement du modèle pour respecter les priorités stratégiques liées à chaque classe. Les autres options ne tiennent pas compte des coûts particuliers associés à des erreurs spécifiques et MSE ne concerne que les différences entre les valeurs réelles et prédites. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Utilisation d'une fonction perte standard MSE (erreur quadratique moyenne).) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Réduction du nombre d'échantillons de test pour augmenter la précision.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quelle technique peut être utilisée pour ajuster un modèle à des erreurs biaisées dans un enjeu financier crucial ?",
       "image_url": null,
       "choices": {
-        "A": "Application d'une matrice de confusion pondérée.",
+        "A": "Augmentation du nombre de neurones dans un réseau neuronal.",
         "B": "Utilisation de K-Fold Cross-Validation.",
-        "C": "Augmentation du nombre de neurones dans un réseau neuronal.",
+        "C": "Application d'une matrice de confusion pondérée.",
         "D": "Simplification de l'architecture du modèle pour éviter un surapprentissage."
       },
-      "correct_answer": "A",
-      "explanation": "Une matrice de confusion pondérée, ou matrice de coût, permet de pondérer différemment les types d'erreurs, fournissant ainsi des indications précieuses dans un contexte de coûts différenciés. Ni la validation croisée, ni le nombre de neurones, ni simplifier l'architecture ne valorisent directement l'optimisation des coûts spécifiques des erreurs.",
+      "correct_answer": "C",
+      "explanation": "Une matrice de confusion pondérée, ou matrice de coût, permet de pondérer différemment les types d'erreurs, fournissant ainsi des indications précieuses dans un contexte de coûts différenciés. Ni la validation croisée, ni le nombre de neurones, ni simplifier l'architecture ne valorisent directement l'optimisation des coûts spécifiques des erreurs. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmentation du nombre de neurones dans un réseau neuronal.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Utilisation de K-Fold Cross-Validation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Simplification de l'architecture",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Comment la définition d'un seuil basé sur le coût peut-elle affecter les résultats d'un modèle de classification ?",
       "image_url": null,
       "choices": {
-        "A": "Elle ajustera le taux de faux positifs et faux négatifs pour minimiser le coût total.",
+        "A": "Elle révélera l'erreur résiduelle optimale de manière analogue au réglage du réseau de neurones.",
         "B": "Elle augmentera automatiquement la précision pour toutes les classes.",
         "C": "Elle élargira la taille du jeu de données d'entraînement pour améliorer l'apprentissage.",
-        "D": "Elle révélera l'erreur résiduelle optimale de manière analogue au réglage du réseau de neurones."
+        "D": "Elle ajustera le taux de faux positifs et faux négatifs pour minimiser le coût total."
       },
-      "correct_answer": "A",
-      "explanation": "Un seuil basé sur le coût permet de trouver un compromis optimal entre faux positifs et faux négatifs pour réduire le coût total. Cela n'augmente pas la précision uniformément, n'élargit pas le jeu de données d'entraînement et n'est pas directement lié à l'erreur résiduelle des réseaux de neurones.",
+      "correct_answer": "D",
+      "explanation": "Un seuil basé sur le coût permet de trouver un compromis optimal entre faux positifs et faux négatifs pour réduire le coût total. Cela n'augmente pas la précision uniformément, n'élargit pas le jeu de données d'entraînement et n'est pas directement lié à l'erreur résiduelle des réseaux de neurones. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle révélera l'erreur résiduelle optimale de manière analogue au réglage du réseau de neurones.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle augmentera automatiquement la précision pour toutes les classes.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Utilisation d'un algorithme basé sur la distance, comme les K-means."
       },
       "correct_answer": "A",
-      "explanation": "Optimiser le seuil en fonction des coûts permet aux modèles de mieux gérer les erreurs coûteuses. Augmenter la taille des échantillons ou la complexité des modèles ou utiliser des algorithmes de clustering ne traitent pas directement les aspects des coûts asymétriques.",
+      "explanation": "Optimiser le seuil en fonction des coûts permet aux modèles de mieux gérer les erreurs coûteuses. Augmenter la taille des échantillons ou la complexité des modèles ou utiliser des algorithmes de clustering ne traitent pas directement les aspects des coûts asymétriques. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Augmentation du nombre d'échantillons d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Entraînement avec une architecture de réseau de neurones plus grande.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Utilisation d'un algorithme basé sur la distance, comme",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Quel concept de base est utilisé pour évaluer un modèle en gestion des coûts ?",
       "image_url": null,
       "choices": {
-        "A": "Retour sur investissement calculé par rapport aux coûts différenciés dus aux erreurs de prédiction.",
-        "B": "Analyse de variance basée sur l'erreur totale.",
+        "A": "Analyse de variance basée sur l'erreur totale.",
+        "B": "Retour sur investissement calculé par rapport aux coûts différenciés dus aux erreurs de prédiction.",
         "C": "Croissance de la complexité algorithmique en fonction des erreurs.",
         "D": "La balance entre précision et rappel indépendamment des coûts spécifiques."
       },
-      "correct_answer": "A",
-      "explanation": "Évaluer un modèle en gestion des coûts nécessite d'analyser le retour sur investissement en processus décisionnel et en prédiction, tenant compte des coûts des différentes erreurs. Les autres options ne considèrent pas le caractère différencié et mesurable des coûts associés aux erreurs.",
+      "correct_answer": "B",
+      "explanation": "Évaluer un modèle en gestion des coûts nécessite d'analyser le retour sur investissement en processus décisionnel et en prédiction, tenant compte des coûts des différentes erreurs. Les autres options ne considèrent pas le caractère différencié et mesurable des coûts associés aux erreurs. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Analyse de variance basée sur l'erreur totale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Croissance de la complexité algorithmique en fonction des erreurs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La balance entre précision et rappel",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Quel impact l'ajustement des seuils de classification a-t-il sur le coût d'opportunité en prise de décision ?",
       "image_url": null,
       "choices": {
-        "A": "Il influence le ratio erreur de type I/II en fonction des coûts perçus.",
+        "A": "Il détermine la quantité d'échantillons nécessaires pour l'entraînement.",
         "B": "Il améliore la complexité computationnelle du modèle.",
-        "C": "Il détermine la quantité d'échantillons nécessaires pour l'entraînement.",
+        "C": "Il influence le ratio erreur de type I/II en fonction des coûts perçus.",
         "D": "Il automatise le processus d'amélioration de précision."
       },
-      "correct_answer": "A",
-      "explanation": "L'ajustement des seuils de classification influence directement le ratio des erreurs de type I et II, ce qui permet d'ajuster la prise de décision en fonction des coûts d'opportunité perçus. Les autres réponses ne considèrent pas le contexte de coûts d'opportunité dérivés du classement des erreurs.",
+      "correct_answer": "C",
+      "explanation": "L'ajustement des seuils de classification influence directement le ratio des erreurs de type I et II, ce qui permet d'ajuster la prise de décision en fonction des coûts d'opportunité perçus. Les autres réponses ne considèrent pas le contexte de coûts d'opportunité dérivés du classement des erreurs. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il détermine la quantité d'échantillons nécessaires pour l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il améliore la complexité computationnelle du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il automatise le",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Quel est le raisonnement derrière le choix d'un seuil sensible au coût dans une classification ?",
       "image_url": null,
       "choices": {
-        "A": "Minimiser la somme pondérée des faux positifs et faux négatifs selon leur impact financier.",
+        "A": "Assurer une répartition équilibrée des classes dans la matrice de confusion.",
         "B": "Maximiser la précision de prédiction directe sans considération de coûts.",
         "C": "Réduire la dimension du jeu de données pour augmenter les performances.",
-        "D": "Assurer une répartition équilibrée des classes dans la matrice de confusion."
+        "D": "Minimiser la somme pondérée des faux positifs et faux négatifs selon leur impact financier."
       },
-      "correct_answer": "A",
-      "explanation": "Le choix d'un seuil sensible au coût vise à minimiser la somme pondérée des erreurs selon leur impact financier. Les autres réponses traitent des aspects généraux de modélisation qui n'impliquent pas directement la prise en compte des coûts dans les erreurs de classification.",
+      "correct_answer": "D",
+      "explanation": "Le choix d'un seuil sensible au coût vise à minimiser la somme pondérée des erreurs selon leur impact financier. Les autres réponses traitent des aspects généraux de modélisation qui n'impliquent pas directement la prise en compte des coûts dans les erreurs de classification. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Assurer une répartition équilibrée des classes dans la matrice de confusion.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Maximiser la précision de prédiction directe sans considération de coûts.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "Suppression de la variance du modèle sous-optimisé."
       },
       "correct_answer": "A",
-      "explanation": "Une bonne configuration de matrice de coût peut réduire efficacement les coûts associés à des erreurs spécifiques telles que les faux négatifs, très importants dans des situations comme la détection de maladies. L'augmentation générale de la précision, la diminution de la complexité ou la suppression de la variance ne sont pas des résultats directement visés par l'optimisation des coûts aléatoires.",
+      "explanation": "Une bonne configuration de matrice de coût peut réduire efficacement les coûts associés à des erreurs spécifiques telles que les faux négatifs, très importants dans des situations comme la détection de maladies. L'augmentation générale de la précision, la diminution de la complexité ou la suppression de la variance ne sont pas des résultats directement visés par l'optimisation des coûts aléatoires. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Augmentation générale de la précision à travers toutes les classes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Diminution de la complexité du paramétrage du modèle.) est plausible mais faux car il",
       "difficulty": "hard"
     },
     {
@@ -302,13 +302,13 @@
       "question": "Quelle stratégie de modèle pourrait être utile pour équilibrer des coûts asymétriques de fausses prédictions ?",
       "image_url": null,
       "choices": {
-        "A": "Optimisation par apprentissage avec une pondération des classes.",
-        "B": "Utilisation de l'overfitting pour mieux adapter les échantillons.",
+        "A": "Utilisation de l'overfitting pour mieux adapter les échantillons.",
+        "B": "Optimisation par apprentissage avec une pondération des classes.",
         "C": "Équilibrage statique des classes sans utiliser de coût alternatif.",
         "D": "Entraînement d'un modèle à partir d'un échantillonnage uniforme."
       },
-      "correct_answer": "A",
-      "explanation": "L'apprentissage avec une pondération des classes permet de traiter l'impact disproportionné des erreurs en utilisant des coûts différents pour différents types d'erreurs. Continuer à suradapter (overfitting) ou l'entraînement à partir d'un échantillonnage uniforme ne traite pas des coûts asymétriques liés aux prévisions.",
+      "correct_answer": "B",
+      "explanation": "L'apprentissage avec une pondération des classes permet de traiter l'impact disproportionné des erreurs en utilisant des coûts différents pour différents types d'erreurs. Continuer à suradapter (overfitting) ou l'entraînement à partir d'un échantillonnage uniforme ne traite pas des coûts asymétriques liés aux prévisions. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Utilisation de l'overfitting pour mieux adapter les échantillons.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Équilibrage statique des classes sans utiliser de coût alternatif.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Entraînement d'un modèle à partir",
       "difficulty": "hard"
     },
     {
@@ -316,13 +316,13 @@
       "question": "Que signifie ajuster le seuil lors de la décision sensible aux coûts ?",
       "image_url": null,
       "choices": {
-        "A": "Modifier le point de découpe dans la distribution des prédictions pour changer l'association coût-erreur.",
+        "A": "Réduire les dimensions cardinales pour obtenir une meilleure généralisation.",
         "B": "Augmenter directement le nombre de classes a posteriori.",
-        "C": "Réduire les dimensions cardinales pour obtenir une meilleure généralisation.",
+        "C": "Modifier le point de découpe dans la distribution des prédictions pour changer l'association coût-erreur.",
         "D": "Éliminer les déséquilibres en optimisant uniquement la précision."
       },
-      "correct_answer": "A",
-      "explanation": "Ajuster le seuil de décision modifie le point de découpage dans la distribution des prédictions, ce qui peut entraîner des changements significatifs dans la façon dont les coûts et les erreurs de classification s'associent, contrairement aux ajustements de nombre de classes, de dimensions ou de balance unilatérale.",
+      "correct_answer": "C",
+      "explanation": "Ajuster le seuil de décision modifie le point de découpage dans la distribution des prédictions, ce qui peut entraîner des changements significatifs dans la façon dont les coûts et les erreurs de classification s'associent, contrairement aux ajustements de nombre de classes, de dimensions ou de balance unilatérale. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire les dimensions cardinales pour obtenir une meilleure généralisation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter directement le nombre de classes a posteriori.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "hard"
     },
     {
@@ -330,13 +330,13 @@
       "question": "Quel est le principal impact d'un coût faux positif élevé dans un modèle d'apprentissage supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Il rend le modèle plus conservateur en déclenchant moins de prédictions positives.",
+        "A": "Il réduit la nécessité de données d'entraînement étiquetées.",
         "B": "Il augmente le nombre de faux négatifs.",
         "C": "Il n'affecte que le taux de faux positifs, sans impact sur la performance globale.",
-        "D": "Il réduit la nécessité de données d'entraînement étiquetées."
+        "D": "Il rend le modèle plus conservateur en déclenchant moins de prédictions positives."
       },
-      "correct_answer": "A",
-      "explanation": "Un coût faux positif élevé signifie que les erreurs où une prédiction positive est incorrecte sont coûteuses, poussant le modèle à être plus prudent avant de faire une prédiction positive. B est faux car cela ne diminue pas, mais peut augmenter les faux négatifs. C est faux car il a un impact sur l'équilibre du modèle. D est faux car cela concerne la performance du modèle, pas l'étiquetage des données.",
+      "correct_answer": "D",
+      "explanation": "Un coût faux positif élevé signifie que les erreurs où une prédiction positive est incorrecte sont coûteuses, poussant le modèle à être plus prudent avant de faire une prédiction positive. B est faux car cela ne diminue pas, mais peut augmenter les faux négatifs. C est faux car il a un impact sur l'équilibre du modèle. D est faux car cela concerne la performance du modèle, pas l'étiquetage des données. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il réduit la nécessité de données d'entraînement étiquetées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il augmente le nombre de faux",
       "difficulty": "medium"
     },
     {
@@ -350,7 +350,7 @@
         "D": "Utiliser uniquement des métriques de précision pour évaluer le modèle."
       },
       "correct_answer": "A",
-      "explanation": "Ajuster le seuil de décision permet d’augmenter le taux de détection pour réduire le nombre de faux négatifs, ce qui est crucial lorsque ces erreurs sont coûteuses. B est partiellement correct mais imprécis sans ajustement du seuil. C et D négligent l'importance de l'équilibre entre faux positifs et faux négatifs dans une évaluation globale correcte.",
+      "explanation": "Ajuster le seuil de décision permet d’augmenter le taux de détection pour réduire le nombre de faux négatifs, ce qui est crucial lorsque ces erreurs sont coûteuses. B est partiellement correct mais imprécis sans ajustement du seuil. C et D négligent l'importance de l'équilibre entre faux positifs et faux négatifs dans une évaluation globale correcte. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Augmenter volontairement le taux de faux positifs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ignorer le coût des faux positifs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "hard"
     },
     {
@@ -358,13 +358,13 @@
       "question": "Comment une matrice de coût peut-elle être utilisée dans l'entraînement d'un modèle supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Pour pondérer différemment les erreurs de classification lors de l'optimisation.",
-        "B": "Pour éliminer la nécessité de la validation croisée.",
+        "A": "Pour éliminer la nécessité de la validation croisée.",
+        "B": "Pour pondérer différemment les erreurs de classification lors de l'optimisation.",
         "C": "Pour remplacer les métriques de performance standards comme l'accuracy.",
         "D": "Pour ignorer l'importance des faux négatifs dans le modèle final."
       },
-      "correct_answer": "A",
-      "explanation": "Une matrice de coût est utilisée pour donner un poids différent aux différents types d'erreurs (faux positifs, faux négatifs) pendant l'entraînement, influençant les décisions optimales du modèle. B est incorrect car la validation croisée est toujours utile. C est incorrect car elle complète mais ne remplace pas les métriques standards. D est faux car la matrice de coût considère précisément l'importance relative des erreurs, y compris les faux négatifs.",
+      "correct_answer": "B",
+      "explanation": "Une matrice de coût est utilisée pour donner un poids différent aux différents types d'erreurs (faux positifs, faux négatifs) pendant l'entraînement, influençant les décisions optimales du modèle. B est incorrect car la validation croisée est toujours utile. C est incorrect car elle complète mais ne remplace pas les métriques standards. D est faux car la matrice de coût considère précisément l'importance relative des erreurs, y compris les faux négatifs. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour éliminer la nécessité de la validation croisée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour remplacer les métriques de performance standards",
       "difficulty": "hard"
     }
   ]

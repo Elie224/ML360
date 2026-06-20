@@ -14,7 +14,7 @@
         "D": "Modifier dynamiquement la structure des données pour améliorer la classification supervisée."
       },
       "correct_answer": "A",
-      "explanation": "Le modèle de mélange de Gaussiennes (GMM) est utilisé pour modéliser la densité de probabilité d'un ensemble de données en le représentant comme une combinaison de plusieurs distributions normales (Gaussiennes). Réduire la dimensionnalité (B) est typique de PCA, classer en catégories discrètes est propre au clustering K-Means (C), et modifier la structure des données pour la classification supervisée (D) n'est pas une fonction directe du GMM.",
+      "explanation": "Le modèle de mélange de Gaussiennes (GMM) est utilisé pour modéliser la densité de probabilité d'un ensemble de données en le représentant comme une combinaison de plusieurs distributions normales (Gaussiennes). Réduire la dimensionnalité (B) est typique de PCA, classer en catégories discrètes est propre au clustering K-Means (C), et modifier la structure des données pour la classification supervisée (D) n'est pas une fonction directe du GMM. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Réduire la dimensionnalité des données tout en conservant la variance maximale, similaire à l'analyse en composantes principales.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Classer",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Dans un modèle de mélange Gaussien, comment la probabilité d'appartenance d'un point de données à un cluster est-elle calculée?",
       "image_url": null,
       "choices": {
-        "A": "En utilisant la formule de Bayes basée sur la densité de probabilité des Gaussiennes.",
-        "B": "En utilisant uniquement la distance euclidienne entre le point de données et le centre du cluster.",
+        "A": "En utilisant uniquement la distance euclidienne entre le point de données et le centre du cluster.",
+        "B": "En utilisant la formule de Bayes basée sur la densité de probabilité des Gaussiennes.",
         "C": "En calculant le produit scalaire entre le point de données et le centre du cluster.",
         "D": "En assignant le point de données au cluster avec le plus grand nombre d'observations."
       },
-      "correct_answer": "A",
-      "explanation": "La probabilité d'appartenance d'un point de données à un cluster dans un GMM est calculée en utilisant la formule de Bayes, qui incorpore les densités de probabilité des distributions Gaussiennes. La distance euclidienne (B) est typique de K-Means, et le produit scalaire (C) ou l'assignation basée sur la taille du cluster (D) n'ont pas de base dans le calcul des probabilités d'appartenance en GMM.",
+      "correct_answer": "B",
+      "explanation": "La probabilité d'appartenance d'un point de données à un cluster dans un GMM est calculée en utilisant la formule de Bayes, qui incorpore les densités de probabilité des distributions Gaussiennes. La distance euclidienne (B) est typique de K-Means, et le produit scalaire (C) ou l'assignation basée sur la taille du cluster (D) n'ont pas de base dans le calcul des probabilités d'appartenance en GMM. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En utilisant uniquement la distance euclidienne entre le point de données et le centre du cluster.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En calculant le produit",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quelle est la fonction principale de l'algorithme Expectation-Maximization (EM) dans le contexte des modèles de mélange?",
       "image_url": null,
       "choices": {
-        "A": "Maximiser la probabilité jointe des données et des variables latentes en alternant entre des étapes d'estimation et de maximisation.",
+        "A": "Assigner de façon déterministe chaque point de données au cluster le plus proche.",
         "B": "Déterminer directement la meilleure partition des données via une descente de gradient stochastique.",
-        "C": "Assigner de façon déterministe chaque point de données au cluster le plus proche.",
+        "C": "Maximiser la probabilité jointe des données et des variables latentes en alternant entre des étapes d'estimation et de maximisation.",
         "D": "Ajuster les paramètres d'apprentissage en réduisant le nombre de variables indépendantes."
       },
-      "correct_answer": "A",
-      "explanation": "L'algorithme EM est utilisé pour optimiser les paramètres des modèles de mélange en maximisant la probabilité jointe des données et des variables latentes, procédant par des étapes E (estimation) et M (maximisation). La descente de gradient (B) n'est pas spécifique à EM, l'assignation déterministe (C) est typique de K-Means, et la réduction des variables (D) est plus liée à la sélection de caractéristiques, pas à l'optimisation de modèle via EM.",
+      "correct_answer": "C",
+      "explanation": "L'algorithme EM est utilisé pour optimiser les paramètres des modèles de mélange en maximisant la probabilité jointe des données et des variables latentes, procédant par des étapes E (estimation) et M (maximisation). La descente de gradient (B) n'est pas spécifique à EM, l'assignation déterministe (C) est typique de K-Means, et la réduction des variables (D) est plus liée à la sélection de caractéristiques, pas à l'optimisation de modèle via EM. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Assigner de façon déterministe chaque point de données au cluster le plus proche.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Déterminer",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quel est l'impact d'utiliser une matrice de covariance diagonale dans un mélange Gaussien?",
       "image_url": null,
       "choices": {
-        "A": "Cela restreint les formes des composantes Gaussiennes à être des ellipses alignées avec les axes des données.",
+        "A": "Cela signifie que les composantes Gaussiennes doivent nécessairement être isotropes.",
         "B": "Cela permet aux composantes Gaussiennes de prendre toute forme elliptique possible dans l'espace de données.",
         "C": "Cela force toutes les composantes Gaussiennes à avoir la même forme et taille.",
-        "D": "Cela signifie que les composantes Gaussiennes doivent nécessairement être isotropes."
+        "D": "Cela restreint les formes des composantes Gaussiennes à être des ellipses alignées avec les axes des données."
       },
-      "correct_answer": "A",
-      "explanation": "Utiliser une matrice de covariance diagonale signifie que les axes principaux des ellipses des Gaussiennes sont alignés avec les axes des données, limitant ainsi les formes à ces orientations. Les formes elliptiques générales (B) nécessitent une matrice de covariance complète. Toutes les composantes ayant la même forme et taille (C) serait vrai si les matrices de covariance étaient identiques. L'isotropie (D) signifie que les formes sont également des sphères avec toutes les dimensions ayant la même variance, nécessitant une matrice scalaire de covariance, pas diagonale.",
+      "correct_answer": "D",
+      "explanation": "Utiliser une matrice de covariance diagonale signifie que les axes principaux des ellipses des Gaussiennes sont alignés avec les axes des données, limitant ainsi les formes à ces orientations. Les formes elliptiques générales (B) nécessitent une matrice de covariance complète. Toutes les composantes ayant la même forme et taille (C) serait vrai si les matrices de covariance étaient identiques. L'isotropie (D) signifie que les formes sont également des sphères avec toutes les dimensions ayant la même variance, nécessitant une matrice scalaire de covariance, pas diagonale. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Cela signifie que les composantes Gaussiennes doivent nécessairement être isotropes.) est plausible mais faux car il ne respecte pas",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Parce que le nombre de clusters est trop grand par rapport aux dimensions des données rendant l'inversion des matrices de covariance impossible."
       },
       "correct_answer": "A",
-      "explanation": "L'algorithme EM peut ne pas converger si les estimations initiales des densités des clusters sont trop similaires ou inadéquatement choisies, ce qui pourrait mener à une mauvaise différenciation entre les composantes Gaussiennes. Les raisons B, C, et D sont incorrectes; B parle d'une métrique qui n'est pas utilisée typiquement dans EM, C évoque un concept de descente de gradient qui n'est pas applicable, et D mentionne un problème d'inversion qui résulterait plutôt en une convergence incorrecte, pas une absence totale de convergence.",
+      "explanation": "L'algorithme EM peut ne pas converger si les estimations initiales des densités des clusters sont trop similaires ou inadéquatement choisies, ce qui pourrait mener à une mauvaise différenciation entre les composantes Gaussiennes. Les raisons B, C, et D sont incorrectes; B parle d'une métrique qui n'est pas utilisée typiquement dans EM, C évoque un concept de descente de gradient qui n'est pas applicable, et D mentionne un problème d'inversion qui résulterait plutôt en une convergence incorrecte, pas une absence totale de convergence. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Parce que l'algorithme requiert une initialisation sur l'hyperparamètre de bias pour chaque cluster.) est plausible mais faux car il ne respecte pas",
       "difficulty": "medium"
     },
     {
@@ -78,12 +78,12 @@
       "question": "Quelle est la complexité temporelle générale d'exécuter l'algorithme EM pour un modèle de mélange de Gaussiennes?",
       "image_url": null,
       "choices": {
-        "A": "O(n*k*d^2*i), où n est le nombre de données, k le nombre de clusters, d la dimension et i le nombre d'itérations.",
-        "B": "O(n*d*k^i), où chaque dimension est élevée au nombre d'itérations.",
+        "A": "O(n*d*k^i), où chaque dimension est élevée au nombre d'itérations.",
+        "B": "O(n*k*d^2*i), où n est le nombre de données, k le nombre de clusters, d la dimension et i le nombre d'itérations.",
         "C": "O(n^2*k*d), suggérant une dépendance quadratique vis-à-vis du nombre de données.",
         "D": "O(n*k^2*d^i), en supposant une dépendance quadratique au nombre de clusters par itération."
       },
-      "correct_answer": "A",
+      "correct_answer": "B",
       "explanation": "La complexité temporelle de l'algorithme EM pour un modèle de mélange de Gaussiennes est typiquement O(n*k*d^2*i), car à chaque étape EM, nous devons calculer les responsabilités (E-step) et recalculer les paramètres (M-step), chaque calcul nécessitant des opérations sur les données (n), les clusters (k), la dimension (d) et doit être répété jusqu'à convergence (i). La réponse B suppose que la dimension est élevée aux itérations, ce qui n'a pas de sens pratique, C suggère une complexité temporelle quadratique par rapport au nombre de données, ce qui n'est généralement pas le cas, et D suppose une croissance excessive par rapport au nombre de clusters, ce qui est incorrect.",
       "difficulty": "hard"
     },
@@ -92,13 +92,13 @@
       "question": "En quoi la sélection du nombre de clusters impacte-t-elle la performance d'un modèle de mélange Gaussien?",
       "image_url": null,
       "choices": {
-        "A": "Un nombre trop petit de clusters sous-modélise les données, entraînant une mauvaise approximation de la distribution.",
+        "A": "Le nombre de clusters n'impacte pas la performance car les clusters sont déterminés adaptativement par EM.",
         "B": "Un nombre trop grand de clusters diminue la convergence de l'algorithme EM vers un maximum local.",
-        "C": "Le nombre de clusters n'impacte pas la performance car les clusters sont déterminés adaptativement par EM.",
+        "C": "Un nombre trop petit de clusters sous-modélise les données, entraînant une mauvaise approximation de la distribution.",
         "D": "Un nombre trop petit de clusters augmente la probabilité jointe des données car cela favorise la généralisation."
       },
-      "correct_answer": "A",
-      "explanation": "Avec un nombre trop petit de clusters, le modèle sous-modélise les données, ne capturant pas la complexité de la distribution, et donc approximant mal les densités réelles. Bien qu'un nombre trop grand de clusters (B) puisse conduire à un surajustement, il n'affecte pas directement la convergence. C est incorrect car le nombre de clusters fixe le modèle, il n'est pas ajusté adaptativement, et D est incorrect parce qu'un trop petit nombre de clusters conduit généralement au contraire: une sous-modélisation plutôt qu'à une meilleure généralisation.",
+      "correct_answer": "C",
+      "explanation": "Avec un nombre trop petit de clusters, le modèle sous-modélise les données, ne capturant pas la complexité de la distribution, et donc approximant mal les densités réelles. Bien qu'un nombre trop grand de clusters (B) puisse conduire à un surajustement, il n'affecte pas directement la convergence. C est incorrect car le nombre de clusters fixe le modèle, il n'est pas ajusté adaptativement, et D est incorrect parce qu'un trop petit nombre de clusters conduit généralement au contraire: une sous-modélisation plutôt qu'à une meilleure généralisation. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le nombre de clusters n'impacte pas la performance car les clusters sont déterminés adaptativement par EM.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Dans quel scénario l'utilisation d'un modèle de mélange avec une matrice de covariance isotrope est-elle idéale?",
       "image_url": null,
       "choices": {
-        "A": "Lorsque les données sont homogènes avec la même variance dans toutes les directions.",
+        "A": "Si les distributions des données sont fortement inclinées (skewed) sur certaines dimensions mais pas d'autres.",
         "B": "Quand les données montrent une forte corrélation entre les dimensions.",
         "C": "Si les dimensions des données varient considérablement, nécessitant un ajustement individuel pour chaque dimension.",
-        "D": "Si les distributions des données sont fortement inclinées (skewed) sur certaines dimensions mais pas d'autres."
+        "D": "Lorsque les données sont homogènes avec la même variance dans toutes les directions."
       },
-      "correct_answer": "A",
-      "explanation": "Une matrice de covariance isotrope est idéale lorsque les données ont une variance homogène dans toutes les directions, car elle impose que chaque cluster soit sphérique et caractérise une même variance dans chaque dimension. Les corrélations fortes entre dimensions (B), nécessitent des matrices de covariance pleines pour capturer ces dépendances. Les variations considérables entre dimensions (C) nécessitent une approche qui permet un ajustement dimensionnel, et les distributions inclinées (D) nécessitent généralement une approche qui ne limite pas l'anisotropie des clusters.",
+      "correct_answer": "D",
+      "explanation": "Une matrice de covariance isotrope est idéale lorsque les données ont une variance homogène dans toutes les directions, car elle impose que chaque cluster soit sphérique et caractérise une même variance dans chaque dimension. Les corrélations fortes entre dimensions (B), nécessitent des matrices de covariance pleines pour capturer ces dépendances. Les variations considérables entre dimensions (C) nécessitent une approche qui permet un ajustement dimensionnel, et les distributions inclinées (D) nécessitent généralement une approche qui ne limite pas l'anisotropie des clusters. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Si les distributions des données sont fortement inclinées (skewed) sur certaines dimensions mais pas d'autres.) est plausible mais faux car il ne respecte pas",
       "difficulty": "hard"
     },
     {
@@ -134,13 +134,13 @@
       "question": "En appliquant un modèle de mélange gaussien, quel est un indicateur clé que les clusters identifiés ne représentent pas les tendances sous-jacentes des données?",
       "image_url": null,
       "choices": {
-        "A": "Lorsque les clusters formés ont des frontières qui semblent arbitraires et ne correspondent pas à des regroupements naturels observables visuellement.",
-        "B": "Les valeurs des fonctions de vraisemblance ne changent pas entre les itérations de l'EM.",
+        "A": "Les valeurs des fonctions de vraisemblance ne changent pas entre les itérations de l'EM.",
+        "B": "Lorsque les clusters formés ont des frontières qui semblent arbitraires et ne correspondent pas à des regroupements naturels observables visuellement.",
         "C": "Les clusters ont une taille assez uniforme, indépendamment de la distribution réelle des données.",
         "D": "Les itérations de l'algorithme EM convergent rapidement, après seulement une ou deux itérations."
       },
-      "correct_answer": "A",
-      "explanation": "Lorsque les clusters identifiés possèdent des frontières non naturelles et arbitraires, cela indique souvent que les clusters ne sont pas représentatifs des tendances sous-jacentes des données. Les valeurs de vraisemblance constantes (B) ou une convergence rapide (D) peuvent indiquer une stagnation ou un point de convergence prématuré, mais pas directement une preuve que les clusters ne sont pas alignés avec les caractéristiques réelles. La réponse C pourrait parfois être un indicateur, mais uniformité de la taille des clusters pourrait aussi être une propriété véridique des données.",
+      "correct_answer": "B",
+      "explanation": "Lorsque les clusters identifiés possèdent des frontières non naturelles et arbitraires, cela indique souvent que les clusters ne sont pas représentatifs des tendances sous-jacentes des données. Les valeurs de vraisemblance constantes (B) ou une convergence rapide (D) peuvent indiquer une stagnation ou un point de convergence prématuré, mais pas directement une preuve que les clusters ne sont pas alignés avec les caractéristiques réelles. La réponse C pourrait parfois être un indicateur, mais uniformité de la taille des clusters pourrait aussi être une propriété véridique des données. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les valeurs des fonctions de vraisemblance ne changent pas entre les itérations de l'EM.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Comment l'hypothèse de normalité affecte-t-elle l'utilisation des mélanges gaussiens pour le regroupement des données?",
       "image_url": null,
       "choices": {
-        "A": "Elle suppose que chaque cluster suit d'une distribution normale, ce qui peut être limitant pour les données multimodales.",
+        "A": "Elle interdit l'utilisation de transformations non-linéaires pour aligner les données le long de diverses dimensions.",
         "B": "Elle impose que toute l'espace de données soit isotropique, limitant sévèrement la flexibilité du modèle.",
-        "C": "Elle interdit l'utilisation de transformations non-linéaires pour aligner les données le long de diverses dimensions.",
+        "C": "Elle suppose que chaque cluster suit d'une distribution normale, ce qui peut être limitant pour les données multimodales.",
         "D": "Elle assure que les clusters résultants ont des tailles et des formes identiques, centrées autour d'une espérance nulle."
       },
-      "correct_answer": "A",
-      "explanation": "L'hypothèse de normalité requiert que chaque cluster soit modélisé par une distribution normale, ce qui peut être restrictif lorsque les données réelles sont multimodales ou ont des formes de distribution différentes. L'espace isotropique (B) serait une restriction d'une matrice de covariance isotrope, ce qui est plus limitatif que nécessaire. Les transformations non-linéaires (C) peuvent être appliquées indépendamment de l'hypothèse de normalité. Enfin (D), ayant des tailles et formes identiques, n'est pas intrinsèquement garanti par l'hypothèse de normalité mais par des spécifications de covariance égale.",
+      "correct_answer": "C",
+      "explanation": "L'hypothèse de normalité requiert que chaque cluster soit modélisé par une distribution normale, ce qui peut être restrictif lorsque les données réelles sont multimodales ou ont des formes de distribution différentes. L'espace isotropique (B) serait une restriction d'une matrice de covariance isotrope, ce qui est plus limitatif que nécessaire. Les transformations non-linéaires (C) peuvent être appliquées indépendamment de l'hypothèse de normalité. Enfin (D), ayant des tailles et formes identiques, n'est pas intrinsèquement garanti par l'hypothèse de normalité mais par des spécifications de covariance égale. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle interdit l'utilisation de transformations non-linéaires pour aligner les données le long de diverses dimensions.) est plausible mais faux car",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel est un défi majeur lors de l'initialisation des paramètres dans un modèle de mélange de Gaussiennes?",
       "image_url": null,
       "choices": {
-        "A": "Choisir des valeurs initiales pour les centres des clusters qui ne convergent pas vers des optima locaux.",
+        "A": "Choisir des initialisations désalignées intentionnellement entre les dimensions des données.",
         "B": "Éviter les initialisations où tous les clusters se chevauchent complètement dès le départ.",
         "C": "Assurer que les initialisations garantissent une distribution homogène des responsabilités dès le premier tour.",
-        "D": "Choisir des initialisations désalignées intentionnellement entre les dimensions des données."
+        "D": "Choisir des valeurs initiales pour les centres des clusters qui ne convergent pas vers des optima locaux."
       },
-      "correct_answer": "A",
-      "explanation": "L'un des défis majeurs lors de l'initialisation des paramètres dans un GMM est que des valeurs initiales mal choisies peuvent conduire à une convergence vers des optima locaux plutôt qu'à une solution plus globale appropriée. Une initialisation où tous les clusters se chevauchent (B) est moins un problème rencontré car d'habitude, les responsabilités sont ajustées via EM pour différencier les clusters. C, homogénéité des responsabilités, n'est pas nécessairement requise au départ. D parle de désalignement intentionnel, ce qui n'est généralement pas une pratique applicable ou bénéfique.",
+      "correct_answer": "D",
+      "explanation": "L'un des défis majeurs lors de l'initialisation des paramètres dans un GMM est que des valeurs initiales mal choisies peuvent conduire à une convergence vers des optima locaux plutôt qu'à une solution plus globale appropriée. Une initialisation où tous les clusters se chevauchent (B) est moins un problème rencontré car d'habitude, les responsabilités sont ajustées via EM pour différencier les clusters. C, homogénéité des responsabilités, n'est pas nécessairement requise au départ. D parle de désalignement intentionnel, ce qui n'est généralement pas une pratique applicable ou bénéfique. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Choisir des initialisations désalignées intentionnellement entre les dimensions des données.) est plausible mais faux car il ne respecte",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Quand il est critique de maximiser la parcimonie dans la représentation des data avec un nombre réduit de paramètres."
       },
       "correct_answer": "A",
-      "explanation": "L'utilisation de matrices de covariance pleines est préférée lorsque les corrélations entre différentes dimensions doivent être capturées, car elles permettent de modéliser toutes les variabilités conjointes entre dimensions à l'intérieur de chaque cluster. Les clusters isotropes (B) peuvent être bien captés par des covariances scalaires, pas pleines. C est en faveur d'un modèle à covariance diagonale qui accomode différentes variances individuelles. Enfin, maximiser la parcimonie (D) impliquerait idéalement limiter la complexité, passant souvent par l'utilisation de covariances diagonales.",
+      "explanation": "L'utilisation de matrices de covariance pleines est préférée lorsque les corrélations entre différentes dimensions doivent être capturées, car elles permettent de modéliser toutes les variabilités conjointes entre dimensions à l'intérieur de chaque cluster. Les clusters isotropes (B) peuvent être bien captés par des covariances scalaires, pas pleines. C est en faveur d'un modèle à covariance diagonale qui accomode différentes variances individuelles. Enfin, maximiser la parcimonie (D) impliquerait idéalement limiter la complexité, passant souvent par l'utilisation de covariances diagonales. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Quand los clusters sont distribués d'une manière isotrope tout au long des dimensions.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Dans un modèle de mélange Gaussien, quel est l'effet observé lorsque le nombre de composants est surestimé?",
       "image_url": null,
       "choices": {
-        "A": "Le modèle pourrait commencer à modéliser le bruit comme des composantes significatives.",
-        "B": "Cela garantit une convergence plus rapide grâce à des solutions initialement plus proches.",
+        "A": "Cela garantit une convergence plus rapide grâce à des solutions initialement plus proches.",
+        "B": "Le modèle pourrait commencer à modéliser le bruit comme des composantes significatives.",
         "C": "L'algorithme EM pourrait ne pas se converger du tout en raison des responsabilités mal définies.",
         "D": "Les composants supplémentaires convergeront toujours vers une seule grande composante à la fin."
       },
-      "correct_answer": "A",
-      "explanation": "Avec un nombre trop élevé de composants, le GMM peut surajuster en modélisant le bruit comme s'il s'agissait de caractéristiques significatives, ajoutant artificiellement des composants secondaires dans la densité. Une convergence plus rapide (B) n'est pas garantie et la responsabilité (C) mal définie en elle-même ne préviendrait pas la convergence mais pourrait poser des problèmes en termes de modèle de qualité. D est incorrect car tous les composants supplémentaires ne convergeront pas automatiquement vers une seule composante, ceci dépendra des données et des paramètres initiaux.",
+      "correct_answer": "B",
+      "explanation": "Avec un nombre trop élevé de composants, le GMM peut surajuster en modélisant le bruit comme s'il s'agissait de caractéristiques significatives, ajoutant artificiellement des composants secondaires dans la densité. Une convergence plus rapide (B) n'est pas garantie et la responsabilité (C) mal définie en elle-même ne préviendrait pas la convergence mais pourrait poser des problèmes en termes de modèle de qualité. D est incorrect car tous les composants supplémentaires ne convergeront pas automatiquement vers une seule composante, ceci dépendra des données et des paramètres initiaux. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Cela garantit une convergence plus rapide grâce à des solutions initialement plus proches.) est plausible mais faux car il",
       "difficulty": "hard"
     },
     {
@@ -204,12 +204,12 @@
       "question": "Quel est un avantage distinct des modèles de mélange Gaussiens par rapport aux algorithmes de clustering k-means?",
       "image_url": null,
       "choices": {
-        "A": "Ils fournissent une estimation probabiliste de l'appartenance de chaque point de données à un cluster, permettant un chevauchement des clusters.",
+        "A": "Ils forcent une stricte partition des données, assurant que chaque point de données appartient à exactement un cluster.",
         "B": "Ils sont toujours moins coûteux en termes de calcul que k-means pour un nombre fixe de itérations.",
-        "C": "Ils forcent une stricte partition des données, assurant que chaque point de données appartient à exactement un cluster.",
+        "C": "Ils fournissent une estimation probabiliste de l'appartenance de chaque point de données à un cluster, permettant un chevauchement des clusters.",
         "D": "Ils sont indépendants des initialisations aléatoires des centroids au départ."
       },
-      "correct_answer": "A",
+      "correct_answer": "C",
       "explanation": "Les GMMs fournissent une estimation probabiliste de l'appartenance de chaque point à un cluster, indiquant combien il appartient à chaque cluster, ce qu'il n'est pas le cas avec k-means qui attribue chaque point à un cluster unique. B est fausse, car GMMs peuvent être plus coûteux en raison de la complexité de calcul des probabilités et des covariances. C est la propriété de k-means, pas GMMs. D est incorrect, car bien que non centrés autour des moyennes réelles dès le départ, les points de départ peuvent quand même influencer les résultats finaux des GMMs.",
       "difficulty": "hard"
     }

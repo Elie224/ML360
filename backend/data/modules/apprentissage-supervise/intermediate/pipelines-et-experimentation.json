@@ -14,7 +14,7 @@
         "D": "Ils augmentent toujours la précision du modèle en ajoutant des étapes de prétraitement."
       },
       "correct_answer": "A",
-      "explanation": "Les pipelines standardisent et automatisent le flux de travail, ce qui aide à éviter les erreurs humaines et assure reproductibilité et traçabilité. Option B est incorrect car ils simplifient le flux de traitement, pas le complexifient. Option C est fausse car les pipelines sont conçus pour le processus end-to-end du prétraitement à la prédiction, pas uniquement l'analyse exploratoire. Option D est fausse car l'ajout de processus dans un pipeline ne garantit pas toujours une meilleure performance.",
+      "explanation": "Les pipelines standardisent et automatisent le flux de travail, ce qui aide à éviter les erreurs humaines et assure reproductibilité et traçabilité. Option B est incorrect car ils simplifient le flux de traitement, pas le complexifient. Option C est fausse car les pipelines sont conçus pour le processus end-to-end du prétraitement à la prédiction, pas uniquement l'analyse exploratoire. Option D est fausse car l'ajout de processus dans un pipeline ne garantit pas toujours une meilleure performance. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Ils rendent le modèle plus complexe et nuisent à la performance.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Pourquoi est-il important d'établir un modèle baseline avant d'expérimenter d'autres modèles complexes ?",
       "image_url": null,
       "choices": {
-        "A": "Pour disposer d'un point de référence afin d'évaluer les performances des modèles plus avancés.",
-        "B": "Parce qu'il est généralement plus précis que les modèles plus complexes.",
+        "A": "Parce qu'il est généralement plus précis que les modèles plus complexes.",
+        "B": "Pour disposer d'un point de référence afin d'évaluer les performances des modèles plus avancés.",
         "C": "Car les modèles baseline n'ont pas besoin de validation croisée.",
         "D": "Parce qu'ils nécessitent plus de ressources informatiques, ce qui les rend idéaux pour les grands ensembles de données."
       },
-      "correct_answer": "A",
-      "explanation": "Un modèle baseline fournit un point de référence pour évaluer si les modèles plus complexes offrent réellement une amélioration. Option B est incorrecte, car les modèles complexes sont généralement conçu pour améliorer la précision du baseline. Option C est fausse car la validation croisée est également nécessaire pour bien évaluer les baselines. Option D est incorrecte car les baselines sont généralement simples et requièrent moins de ressources.",
+      "correct_answer": "B",
+      "explanation": "Un modèle baseline fournit un point de référence pour évaluer si les modèles plus complexes offrent réellement une amélioration. Option B est incorrecte, car les modèles complexes sont généralement conçu pour améliorer la précision du baseline. Option C est fausse car la validation croisée est également nécessaire pour bien évaluer les baselines. Option D est incorrecte car les baselines sont généralement simples et requièrent moins de ressources. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce qu'il est généralement plus précis que les modèles plus complexes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Car les modèles baseline n'ont pas",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quel est le but principal de la recherche d'hyperparamètres ?",
       "image_url": null,
       "choices": {
-        "A": "Optimiser les performances d'un modèle en ajustant des paramètres non entraînables.",
+        "A": "Fixer les poids initiaux des modèles de réseaux de neurones.",
         "B": "Améliorer la vitesse de convergence de l'algorithme.",
-        "C": "Fixer les poids initiaux des modèles de réseaux de neurones.",
+        "C": "Optimiser les performances d'un modèle en ajustant des paramètres non entraînables.",
         "D": "Augmenter la taille du jeu de données d'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "La recherche d'hyperparamètres vise à trouver les paramètres optimaux pour améliorer les performances du modèle, comme le taux d'apprentissage ou le nombre de voisins dans k-NN. Option B est fausse car même si cela peut influencer la convergence, ce n'est pas le but principal. Option C est incorrecte, car les poids initiaux ne sont pas des hyperparamètres typiques ajustés lors de cette étape. Option D est fallacieuse car cette recherche ne concerne pas la taille des données d'entrée.",
+      "correct_answer": "C",
+      "explanation": "La recherche d'hyperparamètres vise à trouver les paramètres optimaux pour améliorer les performances du modèle, comme le taux d'apprentissage ou le nombre de voisins dans k-NN. Option B est fausse car même si cela peut influencer la convergence, ce n'est pas le but principal. Option C est incorrecte, car les poids initiaux ne sont pas des hyperparamètres typiques ajustés lors de cette étape. Option D est fallacieuse car cette recherche ne concerne pas la taille des données d'entrée. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Fixer les poids initiaux des modèles de réseaux de neurones.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quel rôle la reproductibilité joue-t-elle dans les expérimentations en machine learning ?",
       "image_url": null,
       "choices": {
-        "A": "Elle garantit que les résultats d'une expérience sont fiables et peuvent être répliqués.",
+        "A": "Elle rend le modèle moins susceptible au surapprentissage en le simplifiant.",
         "B": "Elle permet d'améliorer les performances d'un modèle en le réentraînant plusieurs fois.",
         "C": "Elle nécessite l'utilisation de jeux de données distincts pour chaque expérience.",
-        "D": "Elle rend le modèle moins susceptible au surapprentissage en le simplifiant."
+        "D": "Elle garantit que les résultats d'une expérience sont fiables et peuvent être répliqués."
       },
-      "correct_answer": "A",
-      "explanation": "La reproductibilité garantit que les résultats peuvent être répliqués avec exactement les mêmes étapes et paramètres, assurant fiabilité et validité. Option B est incorrecte; réentraîner ne garantit pas la reproductibilité, c'est la méthode et les paramètres utilisés qui le font. Option C est fallacieuse; elle ne concerne pas l'exclusivité des jeux de données mais bien la cohérence des processus. Option D est hors-sujet; simplifier un modèle n'améliore pas la reproductibilité.",
+      "correct_answer": "D",
+      "explanation": "La reproductibilité garantit que les résultats peuvent être répliqués avec exactement les mêmes étapes et paramètres, assurant fiabilité et validité. Option B est incorrecte; réentraîner ne garantit pas la reproductibilité, c'est la méthode et les paramètres utilisés qui le font. Option C est fallacieuse; elle ne concerne pas l'exclusivité des jeux de données mais bien la cohérence des processus. Option D est hors-sujet; simplifier un modèle n'améliore pas la reproductibilité. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle rend le modèle moins susceptible au surapprentissage en le simplifiant.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle permet d'améliorer",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Réduction du jeu de données pour optimiser le coût de calcul."
       },
       "correct_answer": "A",
-      "explanation": "L'imputation des valeurs manquantes est une étape standard des pipelines pour préparer les données avant la modélisation. Option B est incorrecte: la création de fonctionnalités automatiques mais non supervisées n'est pas typique dans des pipelines standards. Option C est incorrecte: générer des données de façon aléatoire n'est pas un processus inclus. Option D est fausse puisque la réduction automatique du jeu de données ne fait pas partie d'un pipeline standard.",
+      "explanation": "L'imputation des valeurs manquantes est une étape standard des pipelines pour préparer les données avant la modélisation. Option B est incorrecte: la création de fonctionnalités automatiques mais non supervisées n'est pas typique dans des pipelines standards. Option C est incorrecte: générer des données de façon aléatoire n'est pas un processus inclus. Option D est fausse puisque la réduction automatique du jeu de données ne fait pas partie d'un pipeline standard. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Création automatique de nouvelles fonctionnalités non supervisées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Génération aléatoire de données d'entraînement supplémentaires.) est",
       "difficulty": "easy"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Comment les pipelines aident-ils à éviter le biais de fuite d'information lors de l'évaluation d'un modèle ?",
       "image_url": null,
       "choices": {
-        "A": "En appliquant des transformations seulement après la séparation des données d'entraînement et de test.",
-        "B": "En réentraînant le modèle sur le jeu de test pour améliorer les performances.",
+        "A": "En réentraînant le modèle sur le jeu de test pour améliorer les performances.",
+        "B": "En appliquant des transformations seulement après la séparation des données d'entraînement et de test.",
         "C": "En combinant toutes les étapes du pipeline pour analyser le jeu de données complet.",
         "D": "En utilisant les mêmes données pour l'entraînement et le test pour garantir une cohérence."
       },
-      "correct_answer": "A",
-      "explanation": "Les pipelines automatisent les transformations de sorte qu'elles soient appliquées après la séparation des jeux d'entraînement et de test, évitant ainsi la fuite d'informations. Option B est incorrecte car cela introduit un biais et invalide les résultats. Option C renforce la fuite d'information en mélangeant les jeux. Option D va complètement à l'encontre de pratiques rigoureuses.",
+      "correct_answer": "B",
+      "explanation": "Les pipelines automatisent les transformations de sorte qu'elles soient appliquées après la séparation des jeux d'entraînement et de test, évitant ainsi la fuite d'informations. Option B est incorrecte car cela introduit un biais et invalide les résultats. Option C renforce la fuite d'information en mélangeant les jeux. Option D va complètement à l'encontre de pratiques rigoureuses. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En réentraînant le modèle sur le jeu de test pour améliorer les performances.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En combinant toutes les étapes du pipeline pour analyser le jeu de données complet.) est",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quel type de modèle est souvent utilisé comme modèle baseline en apprentissage supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Un modèle de régression linéaire ou un arbre de décision simple.",
+        "A": "Une version augmentée d'un modèle d'ensemble (ensemble method).",
         "B": "Un réseau neuronal profond complètement connecté.",
-        "C": "Une version augmentée d'un modèle d'ensemble (ensemble method).",
+        "C": "Un modèle de régression linéaire ou un arbre de décision simple.",
         "D": "Un modèle probabiliste avec une complexité algorithmique élevée."
       },
-      "correct_answer": "A",
-      "explanation": "Les modèles baseline sont souvent des modèles simples tels qu'une régression linéaire ou un arbre de décision pour avoir un point simple de comparaison. Option B est trop complexe pour une baseline. Option C représente des méthodes d'ensemble qui sont généralement plus avancées et pas appropriées comme baseline. Option D est incorrecte, car les baselines ne sont généralement pas complexes en terme d'algorithme.",
+      "correct_answer": "C",
+      "explanation": "Les modèles baseline sont souvent des modèles simples tels qu'une régression linéaire ou un arbre de décision pour avoir un point simple de comparaison. Option B est trop complexe pour une baseline. Option C représente des méthodes d'ensemble qui sont généralement plus avancées et pas appropriées comme baseline. Option D est incorrecte, car les baselines ne sont généralement pas complexes en terme d'algorithme. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une version augmentée d'un modèle d'ensemble (ensemble method).) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Un réseau neuronal profond complètement connecté.) est plausible mais faux car il ne",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Lors de la recherche d'hyperparamètres, pourquoi est-il conseillé d'utiliser la validation croisée ?",
       "image_url": null,
       "choices": {
-        "A": "Pour estimer les performances du modèle de manière plus fiable sur des sous-ensembles de données variés.",
+        "A": "Elle garantit que seulement les itérations avec la meilleure précision sont retenues.",
         "B": "Parce qu'elle réduit le temps de calcul global nécessaire pour entraîner le modèle.",
         "C": "Elle permet de maximiser automatiquement le nombre de classes dans le jeu de données.",
-        "D": "Elle garantit que seulement les itérations avec la meilleure précision sont retenues."
+        "D": "Pour estimer les performances du modèle de manière plus fiable sur des sous-ensembles de données variés."
       },
-      "correct_answer": "A",
-      "explanation": "La validation croisée permet de mieux estimer les performances d'un modèle en utilisant plusieurs sous-ensembles, évitant ainsi le sur-ajustement à un ensemble unique. Option B est incorrecte car la validation croisée exige plus de temps de calcul. Option C est incorrecte, la validation croisée ne modifie pas les classes d'un dataset. Option D est trompeuse, elle compare toutes les itérations mais ne choisit pas uniquement les meilleures automatiquement.",
+      "correct_answer": "D",
+      "explanation": "La validation croisée permet de mieux estimer les performances d'un modèle en utilisant plusieurs sous-ensembles, évitant ainsi le sur-ajustement à un ensemble unique. Option B est incorrecte car la validation croisée exige plus de temps de calcul. Option C est incorrecte, la validation croisée ne modifie pas les classes d'un dataset. Option D est trompeuse, elle compare toutes les itérations mais ne choisit pas uniquement les meilleures automatiquement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle garantit que seulement les itérations avec la meilleure précision sont retenues.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Parce qu'elle réduit le",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Éviter d'utiliser des bibliothèques high-level pour un meilleur contrôle des variables."
       },
       "correct_answer": "A",
-      "explanation": "Fixer les graines aléatoires est essentiel pour que les mêmes opérations stochastiques produisent les mêmes résultats. Option B est incorrecte, car les algorithmes stochastiques ont leur propre importance. Option C est faux: changer de source de données impacte la consistance des résultats. Option D est inexact puisque les bibliothèques high-level sont conçues pour faciliter plutôt que compliquer la reproductibilité.",
+      "explanation": "Fixer les graines aléatoires est essentiel pour que les mêmes opérations stochastiques produisent les mêmes résultats. Option B est incorrecte, car les algorithmes stochastiques ont leur propre importance. Option C est faux: changer de source de données impacte la consistance des résultats. Option D est inexact puisque les bibliothèques high-level sont conçues pour faciliter plutôt que compliquer la reproductibilité. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Utiliser exclusivement des algorithmes déterministes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Changer les sources de données régulièrement pour éviter le biais.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Chaque étape d'un pipeline en machine learning doit-elle être optimisée pour la performance maximum du modèle final ?",
       "image_url": null,
       "choices": {
-        "A": "Non, chaque étape doit être functionalement correcte avant d'être optimisée.",
-        "B": "Oui, car toute optimisation partielle conduit à de meilleures prédictions.",
+        "A": "Oui, car toute optimisation partielle conduit à de meilleures prédictions.",
+        "B": "Non, chaque étape doit être functionalement correcte avant d'être optimisée.",
         "C": "Oui, car le pipeline ré-solve automatiquement les erreurs de prétraitement.",
         "D": "Non, seule l'étape finale de modélisation doit être optimisée."
       },
-      "correct_answer": "A",
-      "explanation": "La priorité initiale est d'établir des étapes correctes et fonctionnelles du pipeline; ensuite, l'optimisation peut être faite où nécessaire. Option B est incorrecte puisque l'optimisation sans validation peut mener à des résultats incorrects. Option C est fausse, un pipeline ne corrige pas automatiquement les erreurs humaines. Option D suggère à tort que le prétraitement n'a pas besoin d'attention quant à la performance.",
+      "correct_answer": "B",
+      "explanation": "La priorité initiale est d'établir des étapes correctes et fonctionnelles du pipeline; ensuite, l'optimisation peut être faite où nécessaire. Option B est incorrecte puisque l'optimisation sans validation peut mener à des résultats incorrects. Option C est fausse, un pipeline ne corrige pas automatiquement les erreurs humaines. Option D suggère à tort que le prétraitement n'a pas besoin d'attention quant à la performance. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Oui, car toute optimisation partielle conduit à de meilleures prédictions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Oui, car le pipeline ré-solve automatiquement les erreurs de prétraitement.) est plausible",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Dans le contexte d'un modèle baseline, pourquoi peut-on utiliser la stratégie du 'Majority Class' pour les problèmes de classification ?",
       "image_url": null,
       "choices": {
-        "A": "Pour fournir une comparaison simple et intuitive de performance pour les modèles plus complexes.",
+        "A": "Parce qu'elle n'affecte pas le score F1 du modèle.",
         "B": "Parce qu'elle garantit toujours une performance supérieure en précision.",
-        "C": "Parce qu'elle n'affecte pas le score F1 du modèle.",
+        "C": "Pour fournir une comparaison simple et intuitive de performance pour les modèles plus complexes.",
         "D": "Parce qu'elle fonctionne bien même si les classes sont parfaitement équilibrées."
       },
-      "correct_answer": "A",
-      "explanation": "Utiliser la prédiction de la classe majoritaire fournit un benchmark simple de performance, même si cette approche est souvent naïve. Option B est fausse car la performance en précision peut être tendancieuse pour les classes majoritaires. Option C est incorrecte puisque la prédiction biaisée peut fausser le score F1. Option D est incorrecte: cette stratégie est particulièrement biaisée si les classes sont équilibrées.",
+      "correct_answer": "C",
+      "explanation": "Utiliser la prédiction de la classe majoritaire fournit un benchmark simple de performance, même si cette approche est souvent naïve. Option B est fausse car la performance en précision peut être tendancieuse pour les classes majoritaires. Option C est incorrecte puisque la prédiction biaisée peut fausser le score F1. Option D est incorrecte: cette stratégie est particulièrement biaisée si les classes sont équilibrées. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce qu'elle n'affecte pas le score F1 du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Parce qu'elle garantit toujours une performance supérieure en précision.) est plausible mais",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quels sont les risques de ne pas utiliser un pipeline en machine learning ?",
       "image_url": null,
       "choices": {
-        "A": "Augmentation des risques de fuite d'informations et incohérences d'assurance qualité.",
+        "A": "Les résultats des modèles sont toujours moins interprétables et explicables.",
         "B": "Cela force les modèles à toujours sous-performer par rapport à la baseline.",
         "C": "Les hyperparamètres ne peuvent être ajustés qu'une seule fois pour toute la durée du projet.",
-        "D": "Les résultats des modèles sont toujours moins interprétables et explicables."
+        "D": "Augmentation des risques de fuite d'informations et incohérences d'assurance qualité."
       },
-      "correct_answer": "A",
-      "explanation": "Sans pipeline, les étapes peuvent être mal gérées, entraînant de possibles fuites d'informations et des incohérences dans la qualité des données. Option B est fausse: l'absence de pipeline ne force pas nécessairement les modèles à sous-performer. Option C est incorrecte: les hyperparamètres peuvent encore être ajustés sans pipeline. Option D est incorrecte: l'interprétabilité n'est pas diminuée par l'absence de pipeline.",
+      "correct_answer": "D",
+      "explanation": "Sans pipeline, les étapes peuvent être mal gérées, entraînant de possibles fuites d'informations et des incohérences dans la qualité des données. Option B est fausse: l'absence de pipeline ne force pas nécessairement les modèles à sous-performer. Option C est incorrecte: les hyperparamètres peuvent encore être ajustés sans pipeline. Option D est incorrecte: l'interprétabilité n'est pas diminuée par l'absence de pipeline. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les résultats des modèles sont toujours moins interprétables et explicables.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Cela force les modèles à toujours sous-performer par rapport à la baseline.) est plausible",
       "difficulty": "medium"
     },
     {
@@ -182,7 +182,7 @@
         "D": "La fréquence d'actualisation des predictions pendant l'entraînement."
       },
       "correct_answer": "A",
-      "explanation": "La profondeur maximale est couramment ajustée pour éviter le surapprentissage et améliorer la généralisation. Option B ne concerne pas les hyperparamètres d'un arbre de décision. Option C est incorrecte: l'ordre des features n'est pas un hyperparamètre pertinent pour la construction d'un arbre. Option D est erronée car l'arbre est entraîné en une fois, pas par étapes multiples.",
+      "explanation": "La profondeur maximale est couramment ajustée pour éviter le surapprentissage et améliorer la généralisation. Option B ne concerne pas les hyperparamètres d'un arbre de décision. Option C est incorrecte: l'ordre des features n'est pas un hyperparamètre pertinent pour la construction d'un arbre. Option D est erronée car l'arbre est entraîné en une fois, pas par étapes multiples. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Le choix des classes à labeler lors de l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'ordre des features lors de l'arborescence.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "medium"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quels sont les avantages d'une recherche en grille (Grid Search) pour l'optimisation des hyperparamètres ?",
       "image_url": null,
       "choices": {
-        "A": "Elle évalue de manière exhaustive toutes les combinaisons de paramètres spécifiées.",
-        "B": "Elle navigue dynamiquement dans l'espace de recherche pour trouver rapidement un optimum global.",
+        "A": "Elle navigue dynamiquement dans l'espace de recherche pour trouver rapidement un optimum global.",
+        "B": "Elle évalue de manière exhaustive toutes les combinaisons de paramètres spécifiées.",
         "C": "Elle réduit la complexité computationnelle en limitant la recherche à quelques choix cruciaux.",
         "D": "Elle garantit d'ignorer les configurations de paramètres redondantes."
       },
-      "correct_answer": "A",
-      "explanation": "La recherche en grille évalue toutes les combinaisons possibles de paramètres données, assurant une couverture exhaustive. Option B décrit plutôt un type de recherche plus dynamique comme la Recherche aléatoire (Random Search). Option C est incorrecte car le Grid Search peut être computationnellement intense. Option D est inexacte: le Grid Search teste toutes les combinaisons possibles, redondantes ou non.",
+      "correct_answer": "B",
+      "explanation": "La recherche en grille évalue toutes les combinaisons possibles de paramètres données, assurant une couverture exhaustive. Option B décrit plutôt un type de recherche plus dynamique comme la Recherche aléatoire (Random Search). Option C est incorrecte car le Grid Search peut être computationnellement intense. Option D est inexacte: le Grid Search teste toutes les combinaisons possibles, redondantes ou non. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle navigue dynamiquement dans l'espace de recherche pour trouver rapidement un optimum global.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle réduit la complexité computationnelle en limitant la recherche à quelques choix",
       "difficulty": "medium"
     },
     {
@@ -204,13 +204,13 @@
       "question": "En quoi consiste principalement l'approche de recherche d'hyperparamètres par validation croisée imbriquée ?",
       "image_url": null,
       "choices": {
-        "A": "Les hyperparamètres sont ajustés sur un ensemble d'entraînement et validés sur un ensemble de test distinct.",
+        "A": "Elle combine la recherche d'hyperparamètres et la validation croisée de manière incrémentielle.",
         "B": "Les modèles sont entraînés et testés sur le même ensemble de données pour une performance améliorée.",
-        "C": "Elle combine la recherche d'hyperparamètres et la validation croisée de manière incrémentielle.",
+        "C": "Les hyperparamètres sont ajustés sur un ensemble d'entraînement et validés sur un ensemble de test distinct.",
         "D": "Elle assure que les transformations sont appliquées après l'optimisation des hyperparamètres."
       },
-      "correct_answer": "A",
-      "explanation": "L'approche pour une recherche imbriquée utilise l'ensemble d'entraînement pour l'optimisation, puis évalue sur un jeu de test séparé, avec des validations en boucle interne et externe. Option B est fausse: toujours évaluer sur un set de test séparé. Option C confond des étapes distinctes d'optimisation/validation. Option D est trompeuse: le but n'est pas l'ordre des transformations mais la structuration des phases de validation.",
+      "correct_answer": "C",
+      "explanation": "L'approche pour une recherche imbriquée utilise l'ensemble d'entraînement pour l'optimisation, puis évalue sur un jeu de test séparé, avec des validations en boucle interne et externe. Option B est fausse: toujours évaluer sur un set de test séparé. Option C confond des étapes distinctes d'optimisation/validation. Option D est trompeuse: le but n'est pas l'ordre des transformations mais la structuration des phases de validation. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle combine la recherche d'hyperparamètres et la validation croisée de manière incrémentielle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Les modèles sont entraînés et testés sur le même",
       "difficulty": "hard"
     },
     {
@@ -219,12 +219,12 @@
       "image_url": null,
       "choices": {
         "A": "Déterminer si le modèle déjà complexe ne va pas sur-apprendre par rapport à la baseline.",
-        "B": "Bien définir ce qu'est une performance médiocre par rapport à celle d'un modèle avancé.",
+        "B": "Maintenir une précision parfaite pour toutes les observations.",
         "C": "Assurer que le modèle baseline est de complexité égale à n'importe quel modèle d'ensemble.",
-        "D": "Maintenir une précision parfaite pour toutes les observations."
+        "D": "Bien définir ce qu'est une performance médiocre par rapport à celle d'un modèle avancé."
       },
-      "correct_answer": "B",
-      "explanation": "Une bonne baseline est essentielle pour évaluer la réussite des modèles plus complexes, d'où l'importance de définir clairement ce qu'est et n'est pas une bonne performance. Option A inverse la complexité du baseline. C est faux, baseline ne doit pas être d'une telle complexité. D est irréaliste: la baseline n'est pas censée être parfaite.",
+      "correct_answer": "D",
+      "explanation": "Une bonne baseline est essentielle pour évaluer la réussite des modèles plus complexes, d'où l'importance de définir clairement ce qu'est et n'est pas une bonne performance. Option A inverse la complexité du baseline. C est faux, baseline ne doit pas être d'une telle complexité. D est irréaliste: la baseline n'est pas censée être parfaite. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Déterminer si le modèle déjà complexe ne va pas sur-apprendre par rapport à la baseline.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Maintenir une précision parfaite pour toutes les observations.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "La répartition des responsabilités entre les membres de l'équipe de développement."
       },
       "correct_answer": "A",
-      "explanation": "Fixer les graines aléatoires garantit que les résultats des méthodes stochastiques peuvent être reproduits de manière fiable. Option B n'a généralement pas d'impact à moins qu'il y ait des dépendances non gérées. Option C est incorrecte car l'utilisation de fonctions statiques ne garantit pas la reproductibilité par elle-même. Option D est inexacte: la division du travail n'affecte pas à elle seule la reproductibilité des pipelines.",
+      "explanation": "Fixer les graines aléatoires garantit que les résultats des méthodes stochastiques peuvent être reproduits de manière fiable. Option B n'a généralement pas d'impact à moins qu'il y ait des dépendances non gérées. Option C est incorrecte car l'utilisation de fonctions statiques ne garantit pas la reproductibilité par elle-même. Option D est inexacte: la division du travail n'affecte pas à elle seule la reproductibilité des pipelines. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (L'ordre des éléments dans votre code source.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'utilisation de fonctions statiques dans le code.) est plausible mais faux car",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Identifier un inconvénient potentiel de l'automatisation excessive des pipelines dans les expérimentations ML.",
       "image_url": null,
       "choices": {
-        "A": "Perte de contrôle et compréhension des données par les expérimentateurs.",
-        "B": "Automatisation conduit généralement à moins de précision.",
+        "A": "Automatisation conduit généralement à moins de précision.",
+        "B": "Perte de contrôle et compréhension des données par les expérimentateurs.",
         "C": "Réduit la flexibilité de l'algorithme de classification.",
         "D": "Empêche l'utilisation d'approches ensemblistes."
       },
-      "correct_answer": "A",
-      "explanation": "Trop d'automatisation peut rendre les expérimentateurs moins conscients des transformations appliquées, réduisant la compréhension du processus global. B est incorrect car l'automatisation n'affecte pas directement la précision. C est inexacte puisque le pipeline gère le flux de données, pas l'algorithme lui-même. D est incorrect car un bon pipeline peut intégrer des approches ensemblistes.",
+      "correct_answer": "B",
+      "explanation": "Trop d'automatisation peut rendre les expérimentateurs moins conscients des transformations appliquées, réduisant la compréhension du processus global. B est incorrect car l'automatisation n'affecte pas directement la précision. C est inexacte puisque le pipeline gère le flux de données, pas l'algorithme lui-même. D est incorrect car un bon pipeline peut intégrer des approches ensemblistes. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Automatisation conduit généralement à moins de précision.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Réduit la flexibilité de l'algorithme de classification.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Quel processus est essentiel pour améliorer l'efficacité lors de l'utilisation de la recherche en grille pour optimiser les hyperparamètres ?",
       "image_url": null,
       "choices": {
-        "A": "Utilisation de parallélisme ou distribution des calculs si la structure le permet.",
+        "A": "Augmentation du budget de temps d'entraînement pour chaque combinaison.",
         "B": "Limitation des essais à une seule configuration par exécution.",
-        "C": "Augmentation du budget de temps d'entraînement pour chaque combinaison.",
+        "C": "Utilisation de parallélisme ou distribution des calculs si la structure le permet.",
         "D": "Combinaison de Grid Search avec Random Search simultanément pour meilleures chances."
       },
-      "correct_answer": "A",
-      "explanation": "L'utilisation du parallélisme améliore l'efficacité en rendant la recherche plus rapide en testant différentes combinaisons en parallèle. Option B limite artificiellement l'efficacité de la recherche en grille. C amène à un calcul potentiellement redondant. D proposer des méthodes combinées non optimisées souvent peu conventionnelles et non nécessairement efficaces.",
+      "correct_answer": "C",
+      "explanation": "L'utilisation du parallélisme améliore l'efficacité en rendant la recherche plus rapide en testant différentes combinaisons en parallèle. Option B limite artificiellement l'efficacité de la recherche en grille. C amène à un calcul potentiellement redondant. D proposer des méthodes combinées non optimisées souvent peu conventionnelles et non nécessairement efficaces. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmentation du budget de temps d'entraînement pour chaque combinaison.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Limitation des essais à une seule configuration par exécution.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Quel problème se pose fréquemment lors de l'utilisation d'ensembles de données volumineux sans pipeline structuré ?",
       "image_url": null,
       "choices": {
-        "A": "Risque accru de traitements incohérents due à des étapes manuelles variées.",
+        "A": "L'accès aux données en mémoire empêche la validation croisée.",
         "B": "Le calcul de modèles baselines devient impossible.",
         "C": "Les modèles d'ensemble sont automatiquement disqualifiés.",
-        "D": "L'accès aux données en mémoire empêche la validation croisée."
+        "D": "Risque accru de traitements incohérents due à des étapes manuelles variées."
       },
-      "correct_answer": "A",
-      "explanation": "Sans un pipeline pour standardiser le flux de travail, la gestion manuelle d'étapes variées sur de gros volumes de données peut vite devenir incohérente quantitativement et qualitativement. B et C sont incorrectes, l'absence de pipeline n'interdit pas ces pratiques. D est erronée: l'accès aux données en mémoire n'empêche pas la validation croisée, d'autres infrastructures peuvent le permettre.",
+      "correct_answer": "D",
+      "explanation": "Sans un pipeline pour standardiser le flux de travail, la gestion manuelle d'étapes variées sur de gros volumes de données peut vite devenir incohérente quantitativement et qualitativement. B et C sont incorrectes, l'absence de pipeline n'interdit pas ces pratiques. D est erronée: l'accès aux données en mémoire n'empêche pas la validation croisée, d'autres infrastructures peuvent le permettre. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'accès aux données en mémoire empêche la validation croisée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le calcul de modèles baselines devient impossible.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "Éviter la nécessité de valider les modèles en cours d'entraînement."
       },
       "correct_answer": "A",
-      "explanation": "Un pipeline en machine learning permet de gérer la complexité en intégrant et en enchaînant de manière reproductible toutes les étapes du prétraitement et de la modélisation. B est incorrect car les pipelines organisent le flux de travail mais ne réduisent pas le volume de données. C est incorrect, car un pipeline organise les étapes mais ne crée pas de caractéristiques automatiquement. D est faux, car les pipelines facilitent la validation des modèles, non l'évitent.",
+      "explanation": "Un pipeline en machine learning permet de gérer la complexité en intégrant et en enchaînant de manière reproductible toutes les étapes du prétraitement et de la modélisation. B est incorrect car les pipelines organisent le flux de travail mais ne réduisent pas le volume de données. C est incorrect, car un pipeline organise les étapes mais ne crée pas de caractéristiques automatiquement. D est faux, car les pipelines facilitent la validation des modèles, non l'évitent. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Accélérer l'entraînement du modèle en réduisant le volume de données d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "easy"
     },
     {
@@ -302,13 +302,13 @@
       "question": "Pourquoi est-il important de définir un modèle baseline lors de l'expérimentation en apprentissage supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Pour comparer les performances des modèles avancés avec un point de référence simple.",
-        "B": "Pour s'assurer que tous les modèles entraînés utilisent les mêmes hyperparamètres.",
+        "A": "Pour s'assurer que tous les modèles entraînés utilisent les mêmes hyperparamètres.",
+        "B": "Pour comparer les performances des modèles avancés avec un point de référence simple.",
         "C": "Pour éviter la surapprentissage en utilisant des modèles moins complexes.",
         "D": "Pour garantir que le modèle entraîné est le plus rapide possible."
       },
-      "correct_answer": "A",
-      "explanation": "Un modèle baseline fournit une référence simple pour évaluer la performance des modèles plus complexes. B est incorrect car un modèle baseline permet la comparaison et non l'unification des hyperparamètres. C est incorrect, car éviter le surapprentissage est lié au choix et au paramétrage des modèles, plutôt qu'au concept de modèle baseline. D est faux, car la rapidité n'est pas le critère principal d'un modèle baseline.",
+      "correct_answer": "B",
+      "explanation": "Un modèle baseline fournit une référence simple pour évaluer la performance des modèles plus complexes. B est incorrect car un modèle baseline permet la comparaison et non l'unification des hyperparamètres. C est incorrect, car éviter le surapprentissage est lié au choix et au paramétrage des modèles, plutôt qu'au concept de modèle baseline. D est faux, car la rapidité n'est pas le critère principal d'un modèle baseline. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour s'assurer que tous les modèles entraînés utilisent les mêmes hyperparamètres.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour éviter la surapprentissage en utilisant des",
       "difficulty": "medium"
     }
   ]

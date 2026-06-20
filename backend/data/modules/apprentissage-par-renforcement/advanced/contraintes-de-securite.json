@@ -14,7 +14,7 @@
         "D": "Rester sur une seule politique fixe sans exploration."
       },
       "correct_answer": "A",
-      "explanation": "La stratégie d'exploration sûre limite les actions aux risques évalués pour éviter les états dangereux. L'exploration aléatoire et l'exécution de toutes les actions peuvent amener à des risques imprévus et les politiques fixes n'apprennent pas de nouvelles informations.",
+      "explanation": "La stratégie d'exploration sûre limite les actions aux risques évalués pour éviter les états dangereux. L'exploration aléatoire et l'exécution de toutes les actions peuvent amener à des risques imprévus et les politiques fixes n'apprennent pas de nouvelles informations. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Permettre une exploration aléatoire complète à chaque étape.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Exécuter toutes les actions possibles dès le début pour identifier les dangers.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Rester sur une seule politique fixe",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Quel état est considéré comme dangereux dans le contexte de l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Un état qui mène à une forte pénalité ou endommage le système.",
-        "B": "Un état qui ne donne pas de récompenses mais n'entraîne pas de dommages.",
+        "A": "Un état qui ne donne pas de récompenses mais n'entraîne pas de dommages.",
+        "B": "Un état qui mène à une forte pénalité ou endommage le système.",
         "C": "Un état où le système n'apprend rien de nouveau.",
         "D": "Un état qui augmente lentement les récompenses au fil du temps."
       },
-      "correct_answer": "A",
-      "explanation": "Un état dangereux est celui qui pourrait causer de graves conséquences négatives immédiates. Les états sans récompenses ne sont pas nécessairement dommageables; ils peuvent être inoffensifs. Les états qui ne favorisent pas l'apprentissage ou augmentent lentement les récompenses ne mettent pas nécessairement en danger le système.",
+      "correct_answer": "B",
+      "explanation": "Un état dangereux est celui qui pourrait causer de graves conséquences négatives immédiates. Les états sans récompenses ne sont pas nécessairement dommageables; ils peuvent être inoffensifs. Les états qui ne favorisent pas l'apprentissage ou augmentent lentement les récompenses ne mettent pas nécessairement en danger le système. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un état qui ne donne pas de récompenses mais n'entraîne pas de dommages.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Un état où le système n'apprend rien de nouveau.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Comment les pénalités sont-elles généralement utilisées pour éviter les états dangereux?",
       "image_url": null,
       "choices": {
-        "A": "En attribuant de fortes pénalités aux actions menant à des états dangereux.",
+        "A": "En attribuant des pénalités égales à toutes les actions pour promouvoir l'exploration.",
         "B": "En éliminant complètement toutes les pénalités au profit des récompenses.",
-        "C": "En attribuant des pénalités égales à toutes les actions pour promouvoir l'exploration.",
+        "C": "En attribuant de fortes pénalités aux actions menant à des états dangereux.",
         "D": "En augmentant progressivement les pénalités jusqu'à ce qu'une action dangereuse soit arrêtée."
       },
-      "correct_answer": "A",
-      "explanation": "Les pénalités servent à dissuader les actions qui mènent à des états dangereux. Éliminer les pénalités ou les rendre égales n'encourage pas la distinction entre actions sûres et risquées. Augmenter progressivement les pénalités pourrait ne pas empêcher un échec immédiat.",
+      "correct_answer": "C",
+      "explanation": "Les pénalités servent à dissuader les actions qui mènent à des états dangereux. Éliminer les pénalités ou les rendre égales n'encourage pas la distinction entre actions sûres et risquées. Augmenter progressivement les pénalités pourrait ne pas empêcher un échec immédiat. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En attribuant des pénalités égales à toutes les actions pour promouvoir l'exploration.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En éliminant complètement toutes les pénalités au profit des récompenses.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (En augmentant",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quel rôle joue le garde-fou dans les algorithmes d'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Il empêche le système de sortir des limites de l'état sûr.",
+        "A": "Il supprime automatiquement toutes les données non pertinentes du modèle.",
         "B": "Il améliore en permanence la performance du système.",
         "C": "Il maximise les récompenses à chaque étape du processus.",
-        "D": "Il supprime automatiquement toutes les données non pertinentes du modèle."
+        "D": "Il empêche le système de sortir des limites de l'état sûr."
       },
-      "correct_answer": "A",
-      "explanation": "Les garde-fous sont conçus pour maintenir l'agent dans des états sûrs. Ils ne visent pas directement à améliorer la performance ou les récompenses mais à prévenir les états dangereux. La suppression de données non pertinentes n'est pas le rôle d'un garde-fou.",
+      "correct_answer": "D",
+      "explanation": "Les garde-fous sont conçus pour maintenir l'agent dans des états sûrs. Ils ne visent pas directement à améliorer la performance ou les récompenses mais à prévenir les états dangereux. La suppression de données non pertinentes n'est pas le rôle d'un garde-fou. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il supprime automatiquement toutes les données non pertinentes du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il améliore en permanence la performance du système.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il maximise les récompenses à",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Parce que les environnements non simulables n'ont pas de risque inhérent."
       },
       "correct_answer": "A",
-      "explanation": "Dans des environnements non simulables, les erreurs doivent être gérées en temps réel car il n'est pas toujours possible de les prévoir par simulation. Bien que les simulations puissent être coûteuses, il est crucial de gérer le risque en temps réel, ce que ne permet pas l'inexistence de simulations.",
+      "explanation": "Dans des environnements non simulables, les erreurs doivent être gérées en temps réel car il n'est pas toujours possible de les prévoir par simulation. Bien que les simulations puissent être coûteuses, il est crucial de gérer le risque en temps réel, ce que ne permet pas l'inexistence de simulations. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Parce que les simulations sont trop coûteuses à réaliser.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce qu'il est impossible d'exécuter plusieurs essais en parallèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quel type de fonction de pénalité pourrait être efficace pour apprendre à éviter un état dangereux spécifique?",
       "image_url": null,
       "choices": {
-        "A": "Une fonction exponentielle qui augmente rapidement la pénalité à l'approche de l'état dangereux.",
-        "B": "Une fonction linéaire qui s'applique uniformément à tous les états sans distinction.",
+        "A": "Une fonction linéaire qui s'applique uniformément à tous les états sans distinction.",
+        "B": "Une fonction exponentielle qui augmente rapidement la pénalité à l'approche de l'état dangereux.",
         "C": "Une fonction constante indépendamment de l'état.",
         "D": "Une fonction aléatoire qui fluctue indépendamment des actions prises."
       },
-      "correct_answer": "A",
-      "explanation": "Une fonction exponentielle permet d'augmenter fortement la pénalité à mesure que l'agent s'approche d'un état dangereux, dissuadant efficacement cet état. Une fonction linéaire ou constante ne s'adapte pas à la gravité croissante et une fonction aléatoire ne serait pas liée au comportement de l'agent.",
+      "correct_answer": "B",
+      "explanation": "Une fonction exponentielle permet d'augmenter fortement la pénalité à mesure que l'agent s'approche d'un état dangereux, dissuadant efficacement cet état. Une fonction linéaire ou constante ne s'adapte pas à la gravité croissante et une fonction aléatoire ne serait pas liée au comportement de l'agent. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une fonction linéaire qui s'applique uniformément à tous les états sans distinction.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une fonction constante indépendamment de l'état.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Une fonction",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quel est un moyen typique d'implémenter des garde-fous dans un système RL?",
       "image_url": null,
       "choices": {
-        "A": "En intégrant des vérifications de contraintes après chaque action de l'agent.",
+        "A": "En n'appliquant les garde-fous qu'à la dernière étape d'un épisode.",
         "B": "En permettant à l'agent de déterminer dynamiquement s'il doit se fixer des limites.",
-        "C": "En n'appliquant les garde-fous qu'à la dernière étape d'un épisode.",
+        "C": "En intégrant des vérifications de contraintes après chaque action de l'agent.",
         "D": "En évitant complètement l'utilisation de seuils ou de limites."
       },
-      "correct_answer": "A",
-      "explanation": "Les garde-fous impliquent des vérifications de contraintes pour s'assurer que les actions respectent les limites de sécurité à chaque étape. Permettre à l'agent de fixer dynamiquement des limites ou d'attendre la fin d'un épisode risque de mener à des états dangereux, tandis que l'absence totale de contraintes ne prévient aucun risque.",
+      "correct_answer": "C",
+      "explanation": "Les garde-fous impliquent des vérifications de contraintes pour s'assurer que les actions respectent les limites de sécurité à chaque étape. Permettre à l'agent de fixer dynamiquement des limites ou d'attendre la fin d'un épisode risque de mener à des états dangereux, tandis que l'absence totale de contraintes ne prévient aucun risque. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En n'appliquant les garde-fous qu'à la dernière étape d'un épisode.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En permettant à l'agent de déterminer dynamiquement s'il doit se fixer des limites.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quels types de méthodes sont recommandées pour éviter d'atteindre des états dangereux en temps réel?",
       "image_url": null,
       "choices": {
-        "A": "Des méthodes prédictives qui anticipent les problèmes potentiels avant qu'ils ne se produisent.",
+        "A": "Une approche qui simule complètement toutes les actions possibles avant exécution.",
         "B": "Des méthodes réactives uniquement, qui traitent les problèmes après qu'ils se soient produits.",
         "C": "L'absence totale de méthodes pour s'adapter aux états changeants.",
-        "D": "Une approche qui simule complètement toutes les actions possibles avant exécution."
+        "D": "Des méthodes prédictives qui anticipent les problèmes potentiels avant qu'ils ne se produisent."
       },
-      "correct_answer": "A",
-      "explanation": "Les méthodes prédictives permettent d'anticiper les problèmes et d'éviter les états dangereux avant qu'ils ne surviennent. Les méthodes purement réactives peuvent souffrir d'une intervention trop tardive. Une absence de méthode ne gère pas le risque, et simuler toutes les actions n'est généralement pas pratique en temps réel.",
+      "correct_answer": "D",
+      "explanation": "Les méthodes prédictives permettent d'anticiper les problèmes et d'éviter les états dangereux avant qu'ils ne surviennent. Les méthodes purement réactives peuvent souffrir d'une intervention trop tardive. Une absence de méthode ne gère pas le risque, et simuler toutes les actions n'est généralement pas pratique en temps réel. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une approche qui simule complètement toutes les actions possibles avant exécution.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Des méthodes réactives uniquement, qui traitent les problèmes après qu'ils se soient produits.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Parce que les pénalités ne devraient être utilisées que symboliquement sans impact réel."
       },
       "correct_answer": "A",
-      "explanation": "Les environnements ont différents niveaux de tolérance aux erreurs, ce qui exige une adaptation des pénalités pour refléter les coûts réels des erreurs spécifiques. Plus de pénalités ne garantissent pas un apprentissage plus rapide et un cadre unique n'est pas adapté à tous. Les pénalités symboliques n'ont pas d'effet dissuasif.",
+      "explanation": "Les environnements ont différents niveaux de tolérance aux erreurs, ce qui exige une adaptation des pénalités pour refléter les coûts réels des erreurs spécifiques. Plus de pénalités ne garantissent pas un apprentissage plus rapide et un cadre unique n'est pas adapté à tous. Les pénalités symboliques n'ont pas d'effet dissuasif. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Parce que plus de pénalités augmentent toujours la vitesse d'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce que les pénalités préétablies conviennent à tous les environnements.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quelle serait une limitation de l'utilisation de garde-fous statiques dans un environnement dynamique?",
       "image_url": null,
       "choices": {
-        "A": "Ils ne peuvent pas s'adapter aux changements des états de l'environnement.",
-        "B": "Ils permettent trop de flexibilité à l'agent.",
+        "A": "Ils permettent trop de flexibilité à l'agent.",
+        "B": "Ils ne peuvent pas s'adapter aux changements des états de l'environnement.",
         "C": "Ils garantissent toujours que l'agent prend les décisions les plus optimales.",
         "D": "Ils sont seulement utiles après que l'agent a atteint l'état terminal."
       },
-      "correct_answer": "A",
-      "explanation": "Les garde-fous statiques ne s'adaptent pas aux environnements en constante évolution, ce qui peut conduire à des comportements non optimaux ou dangereux. Ils ne sont pas flexibles ni optimaux et ne sont pas conçus uniquement pour les états terminaux.",
+      "correct_answer": "B",
+      "explanation": "Les garde-fous statiques ne s'adaptent pas aux environnements en constante évolution, ce qui peut conduire à des comportements non optimaux ou dangereux. Ils ne sont pas flexibles ni optimaux et ne sont pas conçus uniquement pour les états terminaux. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ils permettent trop de flexibilité à l'agent.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ils garantissent toujours que l'agent prend les décisions les plus optimales.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Ils sont seulement utiles après que l'agent",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Comment l'ajout de pénalités influence-t-il le comportement exploratoire d'un agent en apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Il réduit la probabilité que l'agent prenne des décisions risquées.",
+        "A": "Il n'a aucun effet direct sur l'exploration mais uniquement sur l'exploitation.",
         "B": "Il encourage l'agent à tester toutes ses options sans crainte.",
-        "C": "Il n'a aucun effet direct sur l'exploration mais uniquement sur l'exploitation.",
+        "C": "Il réduit la probabilité que l'agent prenne des décisions risquées.",
         "D": "Il conduit l'agent à ignorer complètement les états non visités."
       },
-      "correct_answer": "A",
-      "explanation": "Les pénalités dissuadent les actions qui sont susceptibles de mener à des états indésirables ou risqués. Elles n'encouragent pas une exploration aveugle, impactent directement l'exploration, et ne causent pas une négligence totale des états inexplorés.",
+      "correct_answer": "C",
+      "explanation": "Les pénalités dissuadent les actions qui sont susceptibles de mener à des états indésirables ou risqués. Elles n'encouragent pas une exploration aveugle, impactent directement l'exploration, et ne causent pas une négligence totale des états inexplorés. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il n'a aucun effet direct sur l'exploration mais uniquement sur l'exploitation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il encourage l'agent à tester toutes ses options sans crainte.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il conduit l'agent à ignorer complètement les états",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Dans quel cas un garde-fou dynamique serait-il préférable à un garde-fou statique?",
       "image_url": null,
       "choices": {
-        "A": "Dans un environnement où les règles de sécurité évoluent constamment.",
+        "A": "Lorsqu'aucun ajustement de limites n'est nécessaire, peu importe la situation.",
         "B": "Dans un environnement où toutes les conditions sont connues et fixes.",
         "C": "Lorsqu'un comportement imprévisible est désiré de l'agent.",
-        "D": "Lorsqu'aucun ajustement de limites n'est nécessaire, peu importe la situation."
+        "D": "Dans un environnement où les règles de sécurité évoluent constamment."
       },
-      "correct_answer": "A",
-      "explanation": "Les garde-fous dynamiques s'adaptent aux environnements changeants, contrairement aux statiques qui conviennent aux conditions fixes. Un comportement imprévisible ou un environnement sans nécessité d'ajustement ne bénéficient pas spécifiquement d'un garde-fou dynamique.",
+      "correct_answer": "D",
+      "explanation": "Les garde-fous dynamiques s'adaptent aux environnements changeants, contrairement aux statiques qui conviennent aux conditions fixes. Un comportement imprévisible ou un environnement sans nécessité d'ajustement ne bénéficient pas spécifiquement d'un garde-fou dynamique. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Lorsqu'aucun ajustement de limites n'est nécessaire, peu importe la situation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Dans un environnement où toutes les conditions sont connues et fixes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Lorsqu'un comportement imprévisible est désiré de l'agent.) est plausible mais faux car",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Elles n'ont absolument aucun impact sur le modèle si mal calibrées."
       },
       "correct_answer": "A",
-      "explanation": "Des pénalités mal calibrées peuvent empêcher les actions potentiellement utiles d'être explorées par crainte de conséquences négatives. Elles n'améliorent pas la simplicité du modèle ni ne garantissent une optimalité accélérée. Ignorer leur impact avec une calibration incorrecte est fallacieux.",
+      "explanation": "Des pénalités mal calibrées peuvent empêcher les actions potentiellement utiles d'être explorées par crainte de conséquences négatives. Elles n'améliorent pas la simplicité du modèle ni ne garantissent une optimalité accélérée. Ignorer leur impact avec une calibration incorrecte est fallacieux. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elles rendent le modèle plus simpliste et facile à interpréter.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elles garantissent une politique optimale en moins d'épisodes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elles n'ont absolument aucun impact sur le",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quelle serait la conséquence d'un système de renforcement ignorer entièrement les garde-fous?",
       "image_url": null,
       "choices": {
-        "A": "L'agent pourrait atteindre des états critiques ou irréversibles.",
-        "B": "L'agent maximiserait toujours les récompenses de manière sécurisée.",
+        "A": "L'agent maximiserait toujours les récompenses de manière sécurisée.",
+        "B": "L'agent pourrait atteindre des états critiques ou irréversibles.",
         "C": "L'agent fonctionnerait de manière optimale sans erreurs pendant l'apprentissage.",
         "D": "L'absence de garde-fou n'aurait aucun impact sur la progression de l'agent."
       },
-      "correct_answer": "A",
-      "explanation": "En l'absence de garde-fous, un agent pourrait prendre des décisions risquées menant à des situations critiques. Maximiser les récompenses sécurisées ou fonctionner de manière optimale sans garde-fous est improbable, et ignorer leur importance est une perspective erronée.",
+      "correct_answer": "B",
+      "explanation": "En l'absence de garde-fous, un agent pourrait prendre des décisions risquées menant à des situations critiques. Maximiser les récompenses sécurisées ou fonctionner de manière optimale sans garde-fous est improbable, et ignorer leur importance est une perspective erronée. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'agent maximiserait toujours les récompenses de manière sécurisée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'agent fonctionnerait de manière optimale sans erreurs pendant l'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'absence de garde-fou n'aurait aucun impact sur la progression de",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quel mécanisme d'apprentissage peut être utilisé pour enseigner à un agent à éviter des états dangereux dès le début?",
       "image_url": null,
       "choices": {
-        "A": "Le renforcement négatif renforçant des actions inadéquates pour dissuader les tentatives futures.",
+        "A": "L'exclusion de toute forme de renforcement jusqu'à ce que l'agent identifie chaque état par lui-même.",
         "B": "Le renforcement positif constant qui encourage tous les comportements sans discrimination.",
-        "C": "L'exclusion de toute forme de renforcement jusqu'à ce que l'agent identifie chaque état par lui-même.",
+        "C": "Le renforcement négatif renforçant des actions inadéquates pour dissuader les tentatives futures.",
         "D": "Un apprentissage stagné qui vise à stagner l'agent plutôt que d'apprendre activement."
       },
-      "correct_answer": "A",
-      "explanation": "Le renforcement négatif guide l'agent en associant des actions dangereuses à des impacts négatifs, réduisant ainsi les redites. Un renforcement positif constant ne discrimine pas les actions, et l'exclusion générale de renforcement ou stagnation ne favorise pas l'apprentissage ciblé.",
+      "correct_answer": "C",
+      "explanation": "Le renforcement négatif guide l'agent en associant des actions dangereuses à des impacts négatifs, réduisant ainsi les redites. Un renforcement positif constant ne discrimine pas les actions, et l'exclusion générale de renforcement ou stagnation ne favorise pas l'apprentissage ciblé. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'exclusion de toute forme de renforcement jusqu'à ce que l'agent identifie chaque état par lui-même.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le renforcement positif constant qui encourage tous les comportements sans discrimination.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Pourquoi est-ce un défi de déterminer la bonne balance entre exploration et exploitation sous des contraintes de sécurité?",
       "image_url": null,
       "choices": {
-        "A": "Car une exploration excessive peut ignorer les politiques sûres déjà connues.",
+        "A": "Parce qu'une exploration accrue signifie toujours de meilleures découvertes.",
         "B": "Car l'exploitation pure réduira toujours la performance globale de l'agent.",
         "C": "Parce que la sécurité n'est pas influencée par la balance exploration-exploitation.",
-        "D": "Parce qu'une exploration accrue signifie toujours de meilleures découvertes."
+        "D": "Car une exploration excessive peut ignorer les politiques sûres déjà connues."
       },
-      "correct_answer": "A",
-      "explanation": "Trouver la balance est crucial car l'excès d'exploration peut écarter des politiques sécurisées, alors qu'une exploitation pure ne garantit pas toujours une performance accrue. La sécurité est influencée par cette balance, et une exploration accrue ne garantit pas toujours un meilleur résultat.",
+      "correct_answer": "D",
+      "explanation": "Trouver la balance est crucial car l'excès d'exploration peut écarter des politiques sécurisées, alors qu'une exploitation pure ne garantit pas toujours une performance accrue. La sécurité est influencée par cette balance, et une exploration accrue ne garantit pas toujours un meilleur résultat. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce qu'une exploration accrue signifie toujours de meilleures découvertes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Car l'exploitation pure réduira toujours la performance globale de l'agent.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce que la",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Cela encouragerait une compréhension approfondie et généralisée de l'environnement par l'agent."
       },
       "correct_answer": "A",
-      "explanation": "Penaliser des actions sans un contexte général peut amener l'agent à se concentrer sur des erreurs spécifiques au lieu de s'adapter globalement. Garantir une politique optimale ou supprimer tout biais ne résulterait pas de ce biais de focalisation et ne favorise pas une compréhension généralisée.",
+      "explanation": "Penaliser des actions sans un contexte général peut amener l'agent à se concentrer sur des erreurs spécifiques au lieu de s'adapter globalement. Garantir une politique optimale ou supprimer tout biais ne résulterait pas de ce biais de focalisation et ne favorise pas une compréhension généralisée. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Cela garantirait une politique optimale en minimisant le nombre d'épisodes nécessaires.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Cela supprimerait tout biais de l'agent vers certaines actions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Qu'est-ce qui pourrait fausser le retour d'expérience dans un cadre où les garde-fous sont trop stricts?",
       "image_url": null,
       "choices": {
-        "A": "L'agent peut apprendre des comportements excessivement conservateurs, réduisant le potentiel d'innovation.",
-        "B": "L'agent accèdera à de nouvelles opportunités de façon plus proactive.",
+        "A": "L'agent accèdera à de nouvelles opportunités de façon plus proactive.",
+        "B": "L'agent peut apprendre des comportements excessivement conservateurs, réduisant le potentiel d'innovation.",
         "C": "Les garde-fous stricts n'affectent pas le feedback de l'expérience d'apprentissage de l'agent.",
         "D": "L'agent montrera une versatilité accrue dans des environnements non restreints."
       },
-      "correct_answer": "A",
-      "explanation": "Des garde-fous trop stricts peuvent rendre l'agent trop conservateur, empêchant la découverte de stratégies innovantes. Ils peuvent limiter plutôt qu'encourager l'exploration proactive et ne permettent pas plus de versatilité dans d'autres environnements d'apprentissage.",
+      "correct_answer": "B",
+      "explanation": "Des garde-fous trop stricts peuvent rendre l'agent trop conservateur, empêchant la découverte de stratégies innovantes. Ils peuvent limiter plutôt qu'encourager l'exploration proactive et ne permettent pas plus de versatilité dans d'autres environnements d'apprentissage. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'agent accèdera à de nouvelles opportunités de façon plus proactive.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Les garde-fous stricts n'affectent pas le feedback de l'expérience d'apprentissage de l'agent.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'agent montrera une versatilité accrue dans des environnements non",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Quelle serait une conséquence de ne pas adapter la force des garde-fous à l'évolution des capacités de l'agent?",
       "image_url": null,
       "choices": {
-        "A": "L'agent pourrait ne jamais atteindre son plein potentiel à cause des restrictions.",
+        "A": "Ne pas ajuster les garde-fous rendrait le modèle d'agent plus robuste.",
         "B": "Les garde-fous adaptatifs causeraient des pertes de mémoire dans le modèle de l'agent.",
-        "C": "Ne pas ajuster les garde-fous rendrait le modèle d'agent plus robuste.",
+        "C": "L'agent pourrait ne jamais atteindre son plein potentiel à cause des restrictions.",
         "D": "Cela garantirait toujours une exploration maximale sans entrer dans des états dangereux."
       },
-      "correct_answer": "A",
-      "explanation": "Sans ajustements, un agent peut être inutilement limité dans son développement, ce qui l'empêche d'explorer de nouvelles compétences au-delà des contraintes imposées. Les garde-fous adaptatifs ne causent pas de pertes de mémoire par défaut et n'offrent pas nécessairement de robustesse accrue sans ajustement approprié.",
+      "correct_answer": "C",
+      "explanation": "Sans ajustements, un agent peut être inutilement limité dans son développement, ce qui l'empêche d'explorer de nouvelles compétences au-delà des contraintes imposées. Les garde-fous adaptatifs ne causent pas de pertes de mémoire par défaut et n'offrent pas nécessairement de robustesse accrue sans ajustement approprié. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ne pas ajuster les garde-fous rendrait le modèle d'agent plus robuste.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Les garde-fous adaptatifs causeraient des pertes de mémoire dans le modèle de l'agent.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Quel risque inhérent les pénalités mal définies dans un système RL présentent-elles lorsque les comportements de sécurité sont prioritaires?",
       "image_url": null,
       "choices": {
-        "A": "Elles peuvent provoquer des boucles d'apprentissage inefficaces et converger vers des policies non sûres.",
+        "A": "Une erreur dans les pénalités conduit toujours à un complet échec du modèle d'apprentissage.",
         "B": "Elles garantissent inévitablement des niveaux de sécurité toujours élevés sans ajustements.",
         "C": "Elles ne posent pas de problème significatif tant que l'apprentissage est basé sur les récompenses.",
-        "D": "Une erreur dans les pénalités conduit toujours à un complet échec du modèle d'apprentissage."
+        "D": "Elles peuvent provoquer des boucles d'apprentissage inefficaces et converger vers des policies non sûres."
       },
-      "correct_answer": "A",
-      "explanation": "Des pénalités déficientes peuvent conduire à des apprentissages stagnants où l'agent privilégie des policies non sûres. Elles n'assurent pas un niveau de sécurité élevé par défaut sans ajustement ni ne mènent obligatoirement à un échec complet sans intervention humaine.",
+      "correct_answer": "D",
+      "explanation": "Des pénalités déficientes peuvent conduire à des apprentissages stagnants où l'agent privilégie des policies non sûres. Elles n'assurent pas un niveau de sécurité élevé par défaut sans ajustement ni ne mènent obligatoirement à un échec complet sans intervention humaine. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une erreur dans les pénalités conduit toujours à un complet échec du modèle d'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elles garantissent inévitablement des niveaux de sécurité toujours élevés sans ajustements.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "Il rend le système imperméable aux modifications ultérieures des états ou des actions."
       },
       "correct_answer": "A",
-      "explanation": "Des pénalités mal ajustées peuvent pousser l'agent à explorer des zones à risque en cherchant à minimiser une mauvaise évaluation de la pénalité, compromettant la sûreté. Les découvertes optimales ne sont pas garanties et une telle configuration n'est pas imperméable au changement.",
+      "explanation": "Des pénalités mal ajustées peuvent pousser l'agent à explorer des zones à risque en cherchant à minimiser une mauvaise évaluation de la pénalité, compromettant la sûreté. Les découvertes optimales ne sont pas garanties et une telle configuration n'est pas imperméable au changement. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il conduira automatiquement à la découverte d'états optimaux.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il ne laisse absolument aucune trace dans la politique de prise de décision de l'agent.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "hard"
     },
     {
@@ -302,13 +302,13 @@
       "question": "Dans un système d'apprentissage par renforcement, comment peuvent être implémentés les garde-fous sans empêcher l'innovation?",
       "image_url": null,
       "choices": {
-        "A": "En mettant en place des marges de sécurité flexibles qui s'adaptent à l'expérience accumulée.",
-        "B": "En interdisant toute destruction des politiques connues, indépendamment de leur performance.",
+        "A": "En interdisant toute destruction des politiques connues, indépendamment de leur performance.",
+        "B": "En mettant en place des marges de sécurité flexibles qui s'adaptent à l'expérience accumulée.",
         "C": "En favorisant un seul cheminement de politique pour garantir une optimisation spécifique.",
         "D": "En bloquant entièrement l'accessibilité aux états non testés précédemment."
       },
-      "correct_answer": "A",
-      "explanation": "Des marges de sécurité adaptatives permettent à l'innovation de se produire tout en protégeant contre les scénarios risqués lorsque l'agent devient plus expérimenté. Interdire des changements ou limiter les capacités d'exploration sont contre-productifs à l'innovation.",
+      "correct_answer": "B",
+      "explanation": "Des marges de sécurité adaptatives permettent à l'innovation de se produire tout en protégeant contre les scénarios risqués lorsque l'agent devient plus expérimenté. Interdire des changements ou limiter les capacités d'exploration sont contre-productifs à l'innovation. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En interdisant toute destruction des politiques connues, indépendamment de leur performance.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En favorisant un seul cheminement de politique pour garantir une optimisation spécifique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (En bloquant entièrement l'accessibilité aux états",
       "difficulty": "hard"
     },
     {
@@ -316,13 +316,13 @@
       "question": "Quel est le défi fondamental de l'implémentation de garde-fous adaptatifs dans des systèmes RL évolutifs?",
       "image_url": null,
       "choices": {
-        "A": "Équilibrer la sécurité avec la flexibilité nécessaire pour explorer efficacement.",
+        "A": "Assurer des niveaux de sécurité statiques peu importe l'évolution de l'environnement.",
         "B": "Éliminer complètement les adaptations futures une fois implémentées.",
-        "C": "Assurer des niveaux de sécurité statiques peu importe l'évolution de l'environnement.",
+        "C": "Équilibrer la sécurité avec la flexibilité nécessaire pour explorer efficacement.",
         "D": "Empêcher toutes les modifications d'une politique avant qu'elle soit éprouvée sécurisée."
       },
-      "correct_answer": "A",
-      "explanation": "L'implémentation de garde-fous adaptatifs doit préserver la balance entre sécurité et flexibilité, permettant une exploration sans mettre en danger le système. L'élimination des modifications, sécurité statique, et prévention des modifications limitent l'évolution nécessaire de l'apprentissage.",
+      "correct_answer": "C",
+      "explanation": "L'implémentation de garde-fous adaptatifs doit préserver la balance entre sécurité et flexibilité, permettant une exploration sans mettre en danger le système. L'élimination des modifications, sécurité statique, et prévention des modifications limitent l'évolution nécessaire de l'apprentissage. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Assurer des niveaux de sécurité statiques peu importe l'évolution de l'environnement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Éliminer complètement les adaptations futures une fois implémentées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Empêcher toutes les modifications d'une politique avant qu'elle soit éprouvée",
       "difficulty": "hard"
     },
     {
@@ -330,13 +330,13 @@
       "question": "Quelle approche est couramment utilisée pour garantir l'exploration sûre dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Intégration de contraintes de sécurité qui limitent les actions dangereuses",
+        "A": "Ignorer les états précédents pour accélérer l'apprentissage",
         "B": "Augmentation arbitraire des récompenses pour encourager l'exploration",
         "C": "Définition statique des actions permises avant l'apprentissage",
-        "D": "Ignorer les états précédents pour accélérer l'apprentissage"
+        "D": "Intégration de contraintes de sécurité qui limitent les actions dangereuses"
       },
-      "correct_answer": "A",
-      "explanation": "La safe exploration implique d'intégrer des contraintes de sécurité qui limitent les actions potentiellement dangereuses pour éviter des situations indésirables ou des dommages. Augmenter arbitrairement les récompenses (B) fausse l'apprentissage optimal sans assurer la sécurité. Définir statiquement des actions (C) réduit la flexibilité et l'adaptabilité du modèle. Ignorer les états passés (D) peut mener à des décisions dangereuses, car l'agent ne tire pas de leçons des erreurs précédentes.",
+      "correct_answer": "D",
+      "explanation": "La safe exploration implique d'intégrer des contraintes de sécurité qui limitent les actions potentiellement dangereuses pour éviter des situations indésirables ou des dommages. Augmenter arbitrairement les récompenses (B) fausse l'apprentissage optimal sans assurer la sécurité. Définir statiquement des actions (C) réduit la flexibilité et l'adaptabilité du modèle. Ignorer les états passés (D) peut mener à des décisions dangereuses, car l'agent ne tire pas de leçons des erreurs précédentes. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ignorer les états précédents pour accélérer l'apprentissage) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmentation arbitraire des récompenses pour encourager l'exploration) est plausible",
       "difficulty": "medium"
     },
     {
@@ -350,7 +350,7 @@
         "D": "Il conduit toujours à une boucle infinie d'apprentissage"
       },
       "correct_answer": "A",
-      "explanation": "Un état dangereux est une situation que l'agent doit éviter absolument, généralement en lui associant une pénalité élevée pour prévenir sa survenue. Optimiser les performances globales (B) ne justifie pas de prendre des risques non contrôlés. Ignorer ces états (C) compromettrait non seulement la sécurité mais aussi le succès à long terme. L'idée qu'il conduit à une boucle infinie (D) est incorrecte et est le résultat d'une mauvaise gestion des récompenses.",
+      "explanation": "Un état dangereux est une situation que l'agent doit éviter absolument, généralement en lui associant une pénalité élevée pour prévenir sa survenue. Optimiser les performances globales (B) ne justifie pas de prendre des risques non contrôlés. Ignorer ces états (C) compromettrait non seulement la sécurité mais aussi le succès à long terme. L'idée qu'il conduit à une boucle infinie (D) est incorrecte et est le résultat d'une mauvaise gestion des récompenses. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il optimise les performances globales de l'agent) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il peut être ignoré si le",
       "difficulty": "hard"
     },
     {
@@ -358,13 +358,13 @@
       "question": "Dans quel but un garde-fou est-il utilisé lors de l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Pour prévenir l'agent de prendre des décisions qui mènent à des situations indésirables",
-        "B": "Pour augmenter la diversité des actions possibles de l'agent",
+        "A": "Pour augmenter la diversité des actions possibles de l'agent",
+        "B": "Pour prévenir l'agent de prendre des décisions qui mènent à des situations indésirables",
         "C": "Pour accélérer le processus d'apprentissage en réduisant le nombre d'itérations",
         "D": "Pour contourner les contraintes environnementales lors de l'entraînement"
       },
-      "correct_answer": "A",
-      "explanation": "Un garde-fou sert à empêcher l'agent de prendre des décisions menant à des situations considérées comme indésirables ou dangereuses. Augmenter la diversité des actions (B) peut mener à plus d'erreurs. Réduire le nombre d'itérations (C) concerne l'optimisation temporelle, pas nécessairement la sécurité. Contourner les contraintes environnementales (D) compromet la validité des résultats d'apprentissage.",
+      "correct_answer": "B",
+      "explanation": "Un garde-fou sert à empêcher l'agent de prendre des décisions menant à des situations considérées comme indésirables ou dangereuses. Augmenter la diversité des actions (B) peut mener à plus d'erreurs. Réduire le nombre d'itérations (C) concerne l'optimisation temporelle, pas nécessairement la sécurité. Contourner les contraintes environnementales (D) compromet la validité des résultats d'apprentissage. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour augmenter la diversité des actions possibles de l'agent) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour accélérer le processus d'apprentissage en réduisant le nombre d'itérations) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "hard"
     }
   ]

@@ -14,7 +14,7 @@
         "D": "Appliquer des transformations qui introduisent des erreurs aléatoires dans les étiquettes."
       },
       "correct_answer": "A",
-      "explanation": "La transformation stable cherche à générer de nouvelles données augmentées tout en conservant l'intégrité des étiquettes d'origine. L'application de transformations doit être suffisamment légère pour ne pas altérer les caractéristiques essentielles liées à l'étiquette. B est incorrect car une augmentation du bruit pourrait potentiellement altérer l'intégrité des données. C n'est pas pertinent car cela changerait l'échelle des caractéristiques. D est faux car l'introduction d'erreurs dans les étiquettes va à l'encontre des objectifs de stabilité.",
+      "explanation": "La transformation stable cherche à générer de nouvelles données augmentées tout en conservant l'intégrité des étiquettes d'origine. L'application de transformations doit être suffisamment légère pour ne pas altérer les caractéristiques essentielles liées à l'étiquette. B est incorrect car une augmentation du bruit pourrait potentiellement altérer l'intégrité des données. C n'est pas pertinent car cela changerait l'échelle des caractéristiques. D est faux car l'introduction d'erreurs dans les étiquettes va à l'encontre des objectifs de stabilité. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Appliquer des transformations qui augmentent drastiquement le bruit des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Comment le principe de consistance est-il utilisé pour améliorer les modèles en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Il renforce la similitude des prédictions pour des copies augmentées d'une même donnée.",
-        "B": "Il encourage à apprendre séparément à partir des données labellisées et non-labellisées.",
+        "A": "Il encourage à apprendre séparément à partir des données labellisées et non-labellisées.",
+        "B": "Il renforce la similitude des prédictions pour des copies augmentées d'une même donnée.",
         "C": "Il incite à minimiser les erreurs d'apprentissage sur des lots non-supervisés.",
         "D": "Il force une réduction stricte du volume de données non-labellisées traitées."
       },
-      "correct_answer": "A",
-      "explanation": "Le principe de consistance impose que les prédictions pour des variations augmentées des données doivent être cohérentes entre elles, autrement dit similaires. Cela est possible à travers l'application de légères transformations. B est incorrect car il ne s'agit pas de traitement séparé. C ne décrit pas un mécanisme de consistance mais plutôt un objectif de performance. D est incorrect car il ne s'agit pas de réduire le volume mais d'améliorer la cohérence.",
+      "correct_answer": "B",
+      "explanation": "Le principe de consistance impose que les prédictions pour des variations augmentées des données doivent être cohérentes entre elles, autrement dit similaires. Cela est possible à travers l'application de légères transformations. B est incorrect car il ne s'agit pas de traitement séparé. C ne décrit pas un mécanisme de consistance mais plutôt un objectif de performance. D est incorrect car il ne s'agit pas de réduire le volume mais d'améliorer la cohérence. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il encourage à apprendre séparément à partir des données labellisées et non-labellisées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quelle approche pourrait renforcer la robustesse d'un modèle en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Injection de bruit gaussien lors de l'apprentissage pour améliorer la tolérance aux perturbations.",
+        "A": "Réduction de la diversité des données d'entraînement.",
         "B": "Utilisation exclusive de données très bruyantes.",
-        "C": "Réduction de la diversité des données d'entraînement.",
+        "C": "Injection de bruit gaussien lors de l'apprentissage pour améliorer la tolérance aux perturbations.",
         "D": "Suppression de toute donnée non-labellisée pour éviter les biais."
       },
-      "correct_answer": "A",
-      "explanation": "L'injection de bruit gaussien peut aider à améliorer la robustesse en forçant le modèle à apprendre des caractéristiques invariantes aux perturbations. B est incorrect car trop de bruit peut diminuer la performance générale du modèle. C est faux car réduire la diversité va à l'encontre de l'augmentation de robustesse. D est incorrect car les données non-labellisées sont cruciales en apprentissage semi-supervisé.",
+      "correct_answer": "C",
+      "explanation": "L'injection de bruit gaussien peut aider à améliorer la robustesse en forçant le modèle à apprendre des caractéristiques invariantes aux perturbations. B est incorrect car trop de bruit peut diminuer la performance générale du modèle. C est faux car réduire la diversité va à l'encontre de l'augmentation de robustesse. D est incorrect car les données non-labellisées sont cruciales en apprentissage semi-supervisé. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduction de la diversité des données d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Utilisation exclusive de données très bruyantes.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "En quoi la regularisation par décroissance du poids est-elle bénéfique en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Elle prévient le surapprentissage des données labellisées en limitant la complexité du modèle.",
+        "A": "Elle augmente la taille des poids pour capturer davantage de variations dans les données.",
         "B": "Elle permet d'ignorer totalement les données non-labellisées.",
         "C": "Elle réduit à zéro l'influence des poids sur les résultats du modèle.",
-        "D": "Elle augmente la taille des poids pour capturer davantage de variations dans les données."
+        "D": "Elle prévient le surapprentissage des données labellisées en limitant la complexité du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "La décroissance du poids est une technique de régularisation qui empêche le modèle de s'adapter trop précisément aux données d'entraînement, diminuant ainsi le risque de surapprentissage, particulièrement dans un contexte avec peu de données annotées. B est incorrect car les données non-labellisées sont essentielles. C est faux car réduire à zéro l'influence des poids est contreproductif. D est faux car augmenter la taille des poids ne conduit pas à une meilleure généralisation.",
+      "correct_answer": "D",
+      "explanation": "La décroissance du poids est une technique de régularisation qui empêche le modèle de s'adapter trop précisément aux données d'entraînement, diminuant ainsi le risque de surapprentissage, particulièrement dans un contexte avec peu de données annotées. B est incorrect car les données non-labellisées sont essentielles. C est faux car réduire à zéro l'influence des poids est contreproductif. D est faux car augmenter la taille des poids ne conduit pas à une meilleure généralisation. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle augmente la taille des poids pour capturer davantage de variations dans les données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Zoom intensif modifiant considérablement les proportions."
       },
       "correct_answer": "A",
-      "explanation": "Les rotations avec de légères variations peuvent être stabilisantes car elles maintiennent la structure de l'image et n'altèrent pas fondamentalement son contenu. B introduit une grande variabilité non désirée. C et D sont trop intenses et risquent de rendre les images méconnaissables.",
+      "explanation": "Les rotations avec de légères variations peuvent être stabilisantes car elles maintiennent la structure de l'image et n'altèrent pas fondamentalement son contenu. B introduit une grande variabilité non désirée. C et D sont trop intenses et risquent de rendre les images méconnaissables. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Inversion aléatoire des couleurs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Flou gaussien extrême.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Zoom intensif modifiant considérablement les proportions.) est plausible mais faux car il ne respecte pas",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Pourquoi la consistance joue-t-elle un rôle crucial dans la minimisation de l'erreur de généralisation?",
       "image_url": null,
       "choices": {
-        "A": "Elle garantit que le modèle fait des predictions similaires pour toutes les transformations d'une donnée donnée.",
-        "B": "Elle permet au modèle d'ignorer les biais dans les données non-labellisées.",
+        "A": "Elle permet au modèle d'ignorer les biais dans les données non-labellisées.",
+        "B": "Elle garantit que le modèle fait des predictions similaires pour toutes les transformations d'une donnée donnée.",
         "C": "Elle optimise l'apprentissage des caractéristiques rares en augmentant la variabilité des données.",
         "D": "Elle entraîne le modèle uniquement sur un sous-ensemble constant de données labellisées."
       },
-      "correct_answer": "A",
-      "explanation": "La consistance vise à conserver des prédictions stables malgré les variations apportées par des transformations mineures, ce qui aide à concentrer l'apprentissage sur les véritables caractéristiques de la donnée, minimisant ainsi l'erreur de généralisation. B est incorrect car les biais ne peuvent pas être simplement ignorés. C ne concerne pas la consistance mais plutôt la diversité de données. D ne décrit pas un processus de consistance mais de catalogage inadéquat.",
+      "correct_answer": "B",
+      "explanation": "La consistance vise à conserver des prédictions stables malgré les variations apportées par des transformations mineures, ce qui aide à concentrer l'apprentissage sur les véritables caractéristiques de la donnée, minimisant ainsi l'erreur de généralisation. B est incorrect car les biais ne peuvent pas être simplement ignorés. C ne concerne pas la consistance mais plutôt la diversité de données. D ne décrit pas un processus de consistance mais de catalogage inadéquat. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle permet au modèle d'ignorer les biais dans les données non-labellisées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle optimise l'apprentissage",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quel est l'effet recherché par l'utilisation de la régularisation lors de l'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Réduction du surapprentissage malgré une quantité limitée de données labellisées.",
+        "A": "Prévention de la convergence du modèle.",
         "B": "Augmentation de la variance dans les prédictions.",
-        "C": "Prévention de la convergence du modèle.",
+        "C": "Réduction du surapprentissage malgré une quantité limitée de données labellisées.",
         "D": "Garantir l'exactitude absolue pour chaque point de données labellisé."
       },
-      "correct_answer": "A",
-      "explanation": "La régularisation aide à éviter que le modèle n'utilise les peu nombreuses données labellisées pour se calquer excessivement, permettant un meilleur apprentissage généralisé. B et C introduisent des concepts opposés à l'objectif de régularisation qui est de minimiser la variance inutile. D est impossible, la régularisation tend à réduire la complexité, pas à garantir une exactitude absolue.",
+      "correct_answer": "C",
+      "explanation": "La régularisation aide à éviter que le modèle n'utilise les peu nombreuses données labellisées pour se calquer excessivement, permettant un meilleur apprentissage généralisé. B et C introduisent des concepts opposés à l'objectif de régularisation qui est de minimiser la variance inutile. D est impossible, la régularisation tend à réduire la complexité, pas à garantir une exactitude absolue. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Prévention de la convergence du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmentation de la variance dans les prédictions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quel est un risque potentiel si une augmentation de données principalement repose sur des transformations trop sévères?",
       "image_url": null,
       "choices": {
-        "A": "Le modèle pourrait perdre des caractéristiques importantes essentielles à la classification correcte.",
+        "A": "L'augmentation garantirait que toutes les étiquettes sont prédites correctement.",
         "B": "Cela améliorerait la précision mais réduirait le rappel.",
         "C": "Le modèle serait trop optimiste lors de la prédiction sur des données non-traitées.",
-        "D": "L'augmentation garantirait que toutes les étiquettes sont prédites correctement."
+        "D": "Le modèle pourrait perdre des caractéristiques importantes essentielles à la classification correcte."
       },
-      "correct_answer": "A",
-      "explanation": "L'application de transformations sévères peut risquer de transformer des éléments clés des données, ce qui égarerait le modèle pendant l'apprentissage. B est erroné car l'équilibre entre précision et rappel ne serait pas amélioré. C est mal placé car le modèle ne deviendrait pas automatiquement plus optimiste. D est faux, l'augmentation ne garantit pas l'exactitude des prédictions.",
+      "correct_answer": "D",
+      "explanation": "L'application de transformations sévères peut risquer de transformer des éléments clés des données, ce qui égarerait le modèle pendant l'apprentissage. B est erroné car l'équilibre entre précision et rappel ne serait pas amélioré. C est mal placé car le modèle ne deviendrait pas automatiquement plus optimiste. D est faux, l'augmentation ne garantit pas l'exactitude des prédictions. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'augmentation garantirait que toutes les étiquettes sont prédites correctement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Cela améliorerait la précision mais réduirait le rappel.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "En augmentant le bruit aléatoire dans les prédictions finales."
       },
       "correct_answer": "A",
-      "explanation": "La régulation par consistance utilise des paires de données légèrement transformées pour apprendre l'invariance aux perturbations mineures, assurant ainsi des résultats prédictifs cohérents. B est incorrect car cela va à l'encontre d'une prédiction solide. C est erroné car ignorer ne favorise pas un apprentissage efficient. D est incorrect car augmenter le bruit va à l'encontre de la stabilité.",
+      "explanation": "La régulation par consistance utilise des paires de données légèrement transformées pour apprendre l'invariance aux perturbations mineures, assurant ainsi des résultats prédictifs cohérents. B est incorrect car cela va à l'encontre d'une prédiction solide. C est erroné car ignorer ne favorise pas un apprentissage efficient. D est incorrect car augmenter le bruit va à l'encontre de la stabilité. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (En maximisant la différence entre les prédictions pour encourager la diversité.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En forçant le modèle à ignorer certains éléments des données d'entrée.) est plausible mais faux",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Pourquoi l'injection de bruit au cours de la phase d'entraînement est-elle considérée comme une méthode de régularisation?",
       "image_url": null,
       "choices": {
-        "A": "Elle aide à éviter le surapprentissage en obligeant le réseau à généraliser des caractéristiques invariantes.",
-        "B": "Elle concentre l'apprentissage uniquement sur les données labellisées.",
+        "A": "Elle concentre l'apprentissage uniquement sur les données labellisées.",
+        "B": "Elle aide à éviter le surapprentissage en obligeant le réseau à généraliser des caractéristiques invariantes.",
         "C": "Elle élimine les erreurs potentielles de la fonction de perte.",
         "D": "Elle garantit que toutes les prédictions différeront significativement."
       },
-      "correct_answer": "A",
-      "explanation": "L'injection de bruit favorise la généralisation en décourageant le modèle de s'ajuster trop près des détails spécifiques des exemples de formation, obligeant le modèle à apprendre des structures sous-jacentes robustes. B est faux car le bruit n'effet pas de focalisation particulière. C est un concept erroné car le bruit pourrait introduire des erreurs, pas les éliminer. D est faux car l'objectif est la robustesse, pas la déviation.",
+      "correct_answer": "B",
+      "explanation": "L'injection de bruit favorise la généralisation en décourageant le modèle de s'ajuster trop près des détails spécifiques des exemples de formation, obligeant le modèle à apprendre des structures sous-jacentes robustes. B est faux car le bruit n'effet pas de focalisation particulière. C est un concept erroné car le bruit pourrait introduire des erreurs, pas les éliminer. D est faux car l'objectif est la robustesse, pas la déviation. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle concentre l'apprentissage uniquement sur les données labellisées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle élimine les erreurs potentielles de la fonction de",
       "difficulty": "medium"
     },
     {
@@ -154,7 +154,7 @@
         "D": "L'abondance de données labellisées est nécessaire pour une régularisation efficace."
       },
       "correct_answer": "C",
-      "explanation": "La régularisation fonctionne sous l'hypothèse qu'en limitant la complexité via des pénalités, comme la décroissance des poids, un modèle évite de s'adapter trop précisément aux données d'entraînement, favorisant ainsi la généralisation. A est erroné, car il n'est pas garanti que les biais soient supprimés par la suppression de données. B ne correspond pas à l'apprentissage supervisé car augmenter les variables aléatoires ne contribue pas à la stabilité. D est incorrect, car la régularisation s'avère précisément utile lorsque les exemples labellisés sont limités.",
+      "explanation": "La régularisation fonctionne sous l'hypothèse qu'en limitant la complexité via des pénalités, comme la décroissance des poids, un modèle évite de s'adapter trop précisément aux données d'entraînement, favorisant ainsi la généralisation. A est erroné, car il n'est pas garanti que les biais soient supprimés par la suppression de données. B ne correspond pas à l'apprentissage supervisé car augmenter les variables aléatoires ne contribue pas à la stabilité. D est incorrect, car la régularisation s'avère précisément utile lorsque les exemples labellisés sont limités. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La suppression des biais dans les données non-labellisées améliore les performances de l'ensemble du modèle.) est plausible mais faux car il ne",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel est un avantage clé de l'utilisation d'une régularisation solide dans les modèles de classification?",
       "image_url": null,
       "choices": {
-        "A": "Elle conduit à des frontières de décision plus stables face aux données bruitées.",
+        "A": "Elle augmente le temps de formation requis pour produire le modèle final.",
         "B": "Elle élimine la nécessité d'augmenter le volume de données d'entraînement.",
         "C": "Elle garantit qu'aucun exemple ne sera mal classifié.",
-        "D": "Elle augmente le temps de formation requis pour produire le modèle final."
+        "D": "Elle conduit à des frontières de décision plus stables face aux données bruitées."
       },
-      "correct_answer": "A",
-      "explanation": "En renforçant les frontières de décision, la régularisation réduit la sensibilité du modèle aux perturbations mineures, ce qui est bénéfique lors des attaques adversariales ou en cas de données bruitées. B est incorrect car l'augmentation reste nécessaire pour couvrir une diversité suffisante. C est faux, car une régularisation solide ne garantit pas une exactitude parfaite. D est incorrect car bien que cela puisse rallonger temporairement l'entraînement, ce n'est pas l'objectif de la régularisation.",
+      "correct_answer": "D",
+      "explanation": "En renforçant les frontières de décision, la régularisation réduit la sensibilité du modèle aux perturbations mineures, ce qui est bénéfique lors des attaques adversariales ou en cas de données bruitées. B est incorrect car l'augmentation reste nécessaire pour couvrir une diversité suffisante. C est faux, car une régularisation solide ne garantit pas une exactitude parfaite. D est incorrect car bien que cela puisse rallonger temporairement l'entraînement, ce n'est pas l'objectif de la régularisation. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle augmente le temps de formation requis pour produire le modèle final.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "medium"
     },
     {
@@ -182,7 +182,7 @@
         "D": "En testant la résilience du modèle à des images aléatoires."
       },
       "correct_answer": "A",
-      "explanation": "Mesurer la cohérence sur un ensemble de validation permet d'optimiser la proportion de bruit afin d'atteindre un équilibre idéal entre robustesse et stabilité. B est incorrect car cela chercherait à maximiser les erreurs, ce qui n'est pas souhaité. C est un facteur différent qui peut influencer mais qui ne concerne pas directement le bruit. D est inapproprié car les images aléatoires ne fournissent pas un cadre de référence utile pour l'optimisation de bruit.",
+      "explanation": "Mesurer la cohérence sur un ensemble de validation permet d'optimiser la proportion de bruit afin d'atteindre un équilibre idéal entre robustesse et stabilité. B est incorrect car cela chercherait à maximiser les erreurs, ce qui n'est pas souhaité. C est un facteur différent qui peut influencer mais qui ne concerne pas directement le bruit. D est inapproprié car les images aléatoires ne fournissent pas un cadre de référence utile pour l'optimisation de bruit. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (En maximisant le taux de prédiction erronée sur les données d'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Pourquoi est-il crucial d'assurer une transformation stable lors de l'augmentation de données en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Pour conserver l'intégrité et la pertinence des informations étiquetées d'origine.",
-        "B": "Pour compliquer délibérément les caractéristiques afin de surprendre le modèle.",
+        "A": "Pour compliquer délibérément les caractéristiques afin de surprendre le modèle.",
+        "B": "Pour conserver l'intégrité et la pertinence des informations étiquetées d'origine.",
         "C": "Pour modifier les étiquettes afin de mieux les adapter aux prédictions.",
         "D": "Pour augmenter les données uniquement à partir des exemples les plus simples."
       },
-      "correct_answer": "A",
-      "explanation": "Une transformation stable conserve l'intégrité des données, évitant de perdre les informations essentielles liées à l'étiquette. B est incorrect car le but n'est pas de compliquer délibérément le cadre d'apprentissage. C est faux car modifier les étiquettes irait à l'encontre de la conservation des informations importantes. D n'est pas correct, l'augmentation doit être diverse et non limitée aux exemples simples.",
+      "correct_answer": "B",
+      "explanation": "Une transformation stable conserve l'intégrité des données, évitant de perdre les informations essentielles liées à l'étiquette. B est incorrect car le but n'est pas de compliquer délibérément le cadre d'apprentissage. C est faux car modifier les étiquettes irait à l'encontre de la conservation des informations importantes. D n'est pas correct, l'augmentation doit être diverse et non limitée aux exemples simples. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour compliquer délibérément les caractéristiques afin de surprendre le modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour modifier les étiquettes afin de mieux les adapter aux prédictions.) est plausible mais",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Comment peut-on garantir que l'application de transformations stabilisantes améliore effectivement les performances modèles?",
       "image_url": null,
       "choices": {
-        "A": "En vérifiant une amélioration des scores en consistance entre les données originales et dégradées.",
+        "A": "En augmentant exclusivement les dimensions des données d'entrée.",
         "B": "En réinitialisant fréquemment le modèle pour observer des effets transitoires.",
-        "C": "En augmentant exclusivement les dimensions des données d'entrée.",
+        "C": "En vérifiant une amélioration des scores en consistance entre les données originales et dégradées.",
         "D": "En priorisant les augmentations qui maximisent la complexité des échantillons."
       },
-      "correct_answer": "A",
-      "explanation": "Les transformations stabilisantes, vérifiées par des scores de consistance, permettent de s'assurer que celles-ci conduisent à une amélioration réelle des performances tout en restant pertinentes aux données originales. B est incorrect car réinitialiser le modèle ne mesurera pas la stabilité. C ne vérifie pas la stabilisation non plus qu'une augmentation de dimension. D est incorrect car maximiser la complexité peut saper la stabilité.",
+      "correct_answer": "C",
+      "explanation": "Les transformations stabilisantes, vérifiées par des scores de consistance, permettent de s'assurer que celles-ci conduisent à une amélioration réelle des performances tout en restant pertinentes aux données originales. B est incorrect car réinitialiser le modèle ne mesurera pas la stabilité. C ne vérifie pas la stabilisation non plus qu'une augmentation de dimension. D est incorrect car maximiser la complexité peut saper la stabilité. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En augmentant exclusivement les dimensions des données d'entrée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En réinitialisant fréquemment le modèle pour observer des effets transitoires.) est plausible mais",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Quel est un défi courant lors de l'application de la régularisation dans les modèles semi-supervisés?",
       "image_url": null,
       "choices": {
-        "A": "Équilibrer l'influence des données labellisées et non-labellisées sans sur-apprendre l'une d'elles.",
+        "A": "Remplacer complètement les données d'entraînement bruyantes dès la première itération.",
         "B": "Utiliser tous les paramètres malgré l'existence de plusieurs minima locaux.",
         "C": "Réduire toutes les pénalités appliquées pour éviter la sous-optimisation.",
-        "D": "Remplacer complètement les données d'entraînement bruyantes dès la première itération."
+        "D": "Équilibrer l'influence des données labellisées et non-labellisées sans sur-apprendre l'une d'elles."
       },
-      "correct_answer": "A",
-      "explanation": "En régularisation, un des défis majeurs est de bien équilibrer l'apprentissage à partir des exemples labellisés et non-labellisés pour ne pas privilégier indûment un type de données, évitant ainsi d'entraîner un biais. B est incorrect car manipuler tous les paramètres simultanément complexifie inutilement l'apprentissage. C est un conseil incorrect qui méconnait le rôle crucial des pénalités en régularisation. D est erroné car la régularisation n'implique pas nécessairement la substitution complète mais l'ajustement.",
+      "correct_answer": "D",
+      "explanation": "En régularisation, un des défis majeurs est de bien équilibrer l'apprentissage à partir des exemples labellisés et non-labellisés pour ne pas privilégier indûment un type de données, évitant ainsi d'entraîner un biais. B est incorrect car manipuler tous les paramètres simultanément complexifie inutilement l'apprentissage. C est un conseil incorrect qui méconnait le rôle crucial des pénalités en régularisation. D est erroné car la régularisation n'implique pas nécessairement la substitution complète mais l'ajustement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Remplacer complètement les données d'entraînement bruyantes dès la première itération.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Utiliser tous",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Elle supprime systématiquement toutes les données de validation pour forcer l'adaptation."
       },
       "correct_answer": "A",
-      "explanation": "L'augmentation de données veille à créer des exemples diversifiés tout en maintenant l'intégrité des étiquettes sources, ce qui limite le risque que le modèle ne capture que des schémas spécifiques des biais. B est erroné, bien qu'indirectement correct, car la vraie valeur est d'éviter le surapprentissage avec les labels restants. C est faux car il s'agit d'un modèle de perturbation involontaire. D est erroné car ignorer la validation est contre-productif.",
+      "explanation": "L'augmentation de données veille à créer des exemples diversifiés tout en maintenant l'intégrité des étiquettes sources, ce qui limite le risque que le modèle ne capture que des schémas spécifiques des biais. B est erroné, bien qu'indirectement correct, car la vraie valeur est d'éviter le surapprentissage avec les labels restants. C est faux car il s'agit d'un modèle de perturbation involontaire. D est erroné car ignorer la validation est contre-productif. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elle réduit uniquement le nombre d'exemples labellisés nécessaires.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle perturbe aléatoirement les associations d'étiquettes",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Quel est le rôle des stratégies robustes de consistance en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Elles garantissent que les prédictions restent les mêmes sous des formes d'input modifiées de manière contrôlée.",
-        "B": "Elles forcent les prédictions à diverger au maximum pour apprendre la diversité des classes.",
+        "A": "Elles forcent les prédictions à diverger au maximum pour apprendre la diversité des classes.",
+        "B": "Elles garantissent que les prédictions restent les mêmes sous des formes d'input modifiées de manière contrôlée.",
         "C": "Elles permettent l'apprentissage en ignorant la distribution effective des données.",
         "D": "Elles privilégient toujours les exemples labellisés sur des transformations non-labellisées."
       },
-      "correct_answer": "A",
-      "explanation": "Les stratégies de consistance garantissent que même sous diverses transformations, si contrôlées, les sorties du modèle restent identiques, ce qui renforce l'apprentissage des caractéristiques invariantes. B est erroné car il contredit le concept même de consistance. C est incorrect car l'apprentissage nécessite d'interpréter précisément les distributions de données. D est incorrect car cela ne tient pas compte de la contribution des exemples non-labellisés dans le cadre semi-supervisé.",
+      "correct_answer": "B",
+      "explanation": "Les stratégies de consistance garantissent que même sous diverses transformations, si contrôlées, les sorties du modèle restent identiques, ce qui renforce l'apprentissage des caractéristiques invariantes. B est erroné car il contredit le concept même de consistance. C est incorrect car l'apprentissage nécessite d'interpréter précisément les distributions de données. D est incorrect car cela ne tient pas compte de la contribution des exemples non-labellisés dans le cadre semi-supervisé. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elles forcent les prédictions à diverger au maximum pour apprendre la diversité des classes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elles permettent l'apprentissage",
       "difficulty": "hard"
     }
   ]

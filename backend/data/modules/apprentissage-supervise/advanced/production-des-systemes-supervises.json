@@ -14,7 +14,7 @@
         "D": "Un outil pour visualiser l'évolution des performances des modèles."
       },
       "correct_answer": "A",
-      "explanation": "Un feature store est une solution qui gère les caractéristiques utilisées dans le développement de modèles ML et assure la cohérence entre les phases d'entraînement et de production. B est incorrect car il couvre le stockage de modèles, pas de caractéristiques. C est faux car il décrit un système d'inférence. D est incorrect, un outil de visualisation des performances n'est pas un feature store.",
+      "explanation": "Un feature store est une solution qui gère les caractéristiques utilisées dans le développement de modèles ML et assure la cohérence entre les phases d'entraînement et de production. B est incorrect car il couvre le stockage de modèles, pas de caractéristiques. C est faux car il décrit un système d'inférence. D est incorrect, un outil de visualisation des performances n'est pas un feature store. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Une base de données pour stocker les modèles en production.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Un serveur dédié à réaliser des inférences en temps réel.)",
       "difficulty": "medium"
     },
     {
@@ -28,7 +28,7 @@
         "D": "Mettre en place des systèmes de redondance pour le modèle."
       },
       "correct_answer": "B",
-      "explanation": "L'évaluation offline consiste à appliquer le modèle sur des données de test pour mesurer ses performances avant de le déployer. A est incorrect car cela concerne la sécurité, pas l'évaluation. C est faux car la latence d'inférence concerne la production. D est inexact, la redondance est une considération de déploiement, pas d'évaluation.",
+      "explanation": "L'évaluation offline consiste à appliquer le modèle sur des données de test pour mesurer ses performances avant de le déployer. A est incorrect car cela concerne la sécurité, pas l'évaluation. C est faux car la latence d'inférence concerne la production. D est inexact, la redondance est une considération de déploiement, pas d'évaluation. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Tester la robustesse du modèle contre des attaques adversariales.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Optimiser la latence de l'inférence en production.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "medium"
     },
     {
@@ -37,12 +37,12 @@
       "image_url": null,
       "choices": {
         "A": "Le temps nécessaire pour réentraîner le modèle après chaque prédiction.",
-        "B": "Le temps écoulé pour prédire un résultat une fois que le modèle est interrogé.",
-        "C": "La durée pendant laquelle les données brutes sont stockées avant d'être traitées.",
+        "B": "La durée pendant laquelle les données brutes sont stockées avant d'être traitées.",
+        "C": "Le temps écoulé pour prédire un résultat une fois que le modèle est interrogé.",
         "D": "Le nombre de requêtes que le modèle peut traiter simultanément."
       },
-      "correct_answer": "B",
-      "explanation": "La latence en inférence online est le délai entre la réception de la requête par le modèle et la génération de la prédiction. A est incorrect car il parle de réentraînement, pas de latence. C est faux parce que cela traite du stockage des données, non lié directement à la latence. D se réfère à la capacité de traitement, pas à la latence.",
+      "correct_answer": "C",
+      "explanation": "La latence en inférence online est le délai entre la réception de la requête par le modèle et la génération de la prédiction. A est incorrect car il parle de réentraînement, pas de latence. C est faux parce que cela traite du stockage des données, non lié directement à la latence. D se réfère à la capacité de traitement, pas à la latence. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le temps nécessaire pour réentraîner le modèle après chaque prédiction.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (La durée pendant laquelle les données brutes sont stockées avant d'être",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quelle stratégie de rollback permet de minimiser le risque lors de déploiement de modèles ML?",
       "image_url": null,
       "choices": {
-        "A": "Déploiement progressif où le modèle est testé sur une fraction des utilisateurs.",
+        "A": "Arrêter l'ensemble des systèmes jusqu'à ce que le nouveau modèle soit entièrement testé.",
         "B": "Lancer immédiatement le modèle sur l'ensemble du système sans suivi post-déploiement.",
         "C": "Transférer les anciennes données vers un nouveau format de stockage.",
-        "D": "Arrêter l'ensemble des systèmes jusqu'à ce que le nouveau modèle soit entièrement testé."
+        "D": "Déploiement progressif où le modèle est testé sur une fraction des utilisateurs."
       },
-      "correct_answer": "A",
-      "explanation": "Un déploiement progressif (ou canary release) minimise le risque en introduisant le modèle à une portion limitée de l'utilisateur pour en observer les effets avant un déploiement complet. B est faux car un déploiement sans suivi est risqué. C n'est pas pertinent au rollback, c'est un changement de format. D est irréaliste, interrompre les systèmes est peu pratique et inefficace.",
+      "correct_answer": "D",
+      "explanation": "Un déploiement progressif (ou canary release) minimise le risque en introduisant le modèle à une portion limitée de l'utilisateur pour en observer les effets avant un déploiement complet. B est faux car un déploiement sans suivi est risqué. C n'est pas pertinent au rollback, c'est un changement de format. D est irréaliste, interrompre les systèmes est peu pratique et inefficace. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Arrêter l'ensemble des systèmes jusqu'à ce que le nouveau modèle soit entièrement testé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Lancer immédiatement le modèle sur l'ensemble du système sans suivi post-déploiement.)",
       "difficulty": "medium"
     },
     {
@@ -64,13 +64,13 @@
       "question": "Pourquoi est-il important que les feature stores gèrent les versions des caractéristiques?",
       "image_url": null,
       "choices": {
-        "A": "Pour réduire la taille des modèles ML grâce à la compression des caractéristiques.",
-        "B": "Pour faciliter le suivi des modifications et évaluer l'impact sur les performances du modèle.",
+        "A": "Pour faciliter le suivi des modifications et évaluer l'impact sur les performances du modèle.",
+        "B": "Pour réduire la taille des modèles ML grâce à la compression des caractéristiques.",
         "C": "Pour garantir la synchronisation des modèles sur différents serveurs en temps réel.",
         "D": "Pour améliorer l'UI/UX des applications utilisant ML."
       },
-      "correct_answer": "B",
-      "explanation": "Les feature stores qui gèrent les versions des caractéristiques permettent de suivre leurs modifications et d'évaluer comment ces changements influencent les performances des modèles. A est incorrect car la gestion des versions ne concerne pas la compression. C est faux car la gestion de versions n'est pas directement liée à la synchronisation temps-réel, et D est hors contexte car l'UI/UX n'est pas impactée par le feature store.",
+      "correct_answer": "A",
+      "explanation": "Les feature stores qui gèrent les versions des caractéristiques permettent de suivre leurs modifications et d'évaluer comment ces changements influencent les performances des modèles. A est incorrect car la gestion des versions ne concerne pas la compression. C est faux car la gestion de versions n'est pas directement liée à la synchronisation temps-réel, et D est hors contexte car l'UI/UX n'est pas impactée par le feature store. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Pour réduire la taille des modèles ML grâce à la compression des caractéristiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour garantir la synchronisation",
       "difficulty": "medium"
     },
     {
@@ -84,7 +84,7 @@
         "D": "Pour permettre le parallélisme des tâches lors de l'entraînement."
       },
       "correct_answer": "B",
-      "explanation": "Des données de test séparées permettent une évaluation impartiale et indépendante du modèle, prévenant ainsi le sur-apprentissage. A est incorrect car cela réduirait les données de test, pas augmenter. C est faux car l'équilibrage est une question de préparation, pas d'évaluation. D est un problème de performance lors de l'entraînement, indépendant de la validation.",
+      "explanation": "Des données de test séparées permettent une évaluation impartiale et indépendante du modèle, prévenant ainsi le sur-apprentissage. A est incorrect car cela réduirait les données de test, pas augmenter. C est faux car l'équilibrage est une question de préparation, pas d'évaluation. D est un problème de performance lors de l'entraînement, indépendant de la validation. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour augmenter le volume de données d'entraînement et améliorer le modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour garantir que les données d'entraînement sont complètement équilibrées.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "medium"
     },
     {
@@ -93,12 +93,12 @@
       "image_url": null,
       "choices": {
         "A": "Augmentation de la capacité d'apprentissage du modèle.",
-        "B": "Diminution de l'expérience utilisateur en raison de réponses plus lentes.",
-        "C": "Amélioration de l'exactitude des prédictions grâce à plus de temps pour le calcul.",
+        "B": "Amélioration de l'exactitude des prédictions grâce à plus de temps pour le calcul.",
+        "C": "Diminution de l'expérience utilisateur en raison de réponses plus lentes.",
         "D": "Réduction des coûts d'opération des serveurs en raison de la réduction d'activité."
       },
-      "correct_answer": "B",
-      "explanation": "Une latence élevée lors de l'inférence entraîne généralement une expérience utilisateur dégradée en raison de temps de réponse plus longs. A est faux car une latence élevée n'affecte pas directement la capacité d'apprentissage. C est inexact, car plus de temps ne signifie pas nécessairement de meilleures prédictions. D est faux, des serveurs plus lents peuvent augmenter les coûts si cela entraîne des inefficacités opérationnelles.",
+      "correct_answer": "C",
+      "explanation": "Une latence élevée lors de l'inférence entraîne généralement une expérience utilisateur dégradée en raison de temps de réponse plus longs. A est faux car une latence élevée n'affecte pas directement la capacité d'apprentissage. C est inexact, car plus de temps ne signifie pas nécessairement de meilleures prédictions. D est faux, des serveurs plus lents peuvent augmenter les coûts si cela entraîne des inefficacités opérationnelles. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmentation de la capacité d'apprentissage du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Amélioration de l'exactitude des prédictions grâce à plus de temps pour le calcul.)",
       "difficulty": "medium"
     },
     {
@@ -107,12 +107,12 @@
       "image_url": null,
       "choices": {
         "A": "Elle permet d'arrêter définitivement tous les modèles déployés.",
-        "B": "Elle facilite la correction immédiate des erreurs en revenant à une version précédente du modèle.",
+        "B": "Elle assure une mise à jour simultanée de tous les systèmes d'apprentissage automatique.",
         "C": "Elle remplace automatiquement tout modèle testé par un modèle générique.",
-        "D": "Elle assure une mise à jour simultanée de tous les systèmes d'apprentissage automatique."
+        "D": "Elle facilite la correction immédiate des erreurs en revenant à une version précédente du modèle."
       },
-      "correct_answer": "B",
-      "explanation": "La stratégie de rollback permet de revenir à une version antérieure d'un modèle en cas de problème après son déploiement, facilitant ainsi la correction des erreurs. A est incorrect car l'arrêt définitif n'est pas visé. C est incorrect, un modèle générique n'est pas substitué automatiquement. D est faux car le rollback traite des modèles spécifiques plutôt que des mises à jour globales.",
+      "correct_answer": "D",
+      "explanation": "La stratégie de rollback permet de revenir à une version antérieure d'un modèle en cas de problème après son déploiement, facilitant ainsi la correction des erreurs. A est incorrect car l'arrêt définitif n'est pas visé. C est incorrect, un modèle générique n'est pas substitué automatiquement. D est faux car le rollback traite des modèles spécifiques plutôt que des mises à jour globales. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle permet d'arrêter définitivement tous les modèles déployés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle assure une mise à jour simultanée de tous les systèmes d'apprentissage automatique.) est",
       "difficulty": "medium"
     },
     {
@@ -120,13 +120,13 @@
       "question": "Comment un feature store peut-il aider à réduire le risque de fuite de données?",
       "image_url": null,
       "choices": {
-        "A": "En intégrant nativement des fonctions de chiffrement pour toutes les données stockées.",
-        "B": "En centralisant et en régulant l'accès aux caractéristiques pour éviter leur utilisation inappropriée.",
+        "A": "En centralisant et en régulant l'accès aux caractéristiques pour éviter leur utilisation inappropriée.",
+        "B": "En intégrant nativement des fonctions de chiffrement pour toutes les données stockées.",
         "C": "En fournissant des jeux de données aléatoires avec chaque demande de fonctionnalité.",
         "D": "En limitant le nombre de caractéristiques qu'un modèle peut utiliser."
       },
-      "correct_answer": "B",
-      "explanation": "Un feature store centralise les caractéristiques et régule l'accès pour éviter un usage impropre qui pourrait mener à une fuite de données. A bien que plausible, elle n'est pas définie par le feature store lui-même. C est erroné, les données aléatoires ne sont pas un moyen de sécurisation. D est inexact, car limiter le nombre de caractéristiques ne prévient pas directement les fuites.",
+      "correct_answer": "A",
+      "explanation": "Un feature store centralise les caractéristiques et régule l'accès pour éviter un usage impropre qui pourrait mener à une fuite de données. A bien que plausible, elle n'est pas définie par le feature store lui-même. C est erroné, les données aléatoires ne sont pas un moyen de sécurisation. D est inexact, car limiter le nombre de caractéristiques ne prévient pas directement les fuites. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (En intégrant nativement des fonctions de chiffrement pour toutes les données stockées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En fournissant des jeux de données aléatoires avec chaque",
       "difficulty": "medium"
     },
     {
@@ -140,7 +140,7 @@
         "D": "La précision des prédictions est directement proportionnelle à la durée d'évaluation."
       },
       "correct_answer": "B",
-      "explanation": "La performance du modèle en évaluation offline peut ne pas refléter les changements dynamiques des données lors de la mise en production. A est faux, un réentraînement pour chaque donnée n'est pas requis. C est inexact, l'évaluation offline n'exige pas les contraintes de temps réel. D est incorrect, la durée d'évaluation ne garantit pas la précision.",
+      "explanation": "La performance du modèle en évaluation offline peut ne pas refléter les changements dynamiques des données lors de la mise en production. A est faux, un réentraînement pour chaque donnée n'est pas requis. C est inexact, l'évaluation offline n'exige pas les contraintes de temps réel. D est incorrect, la durée d'évaluation ne garantit pas la précision. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le modèle doit être réentraîné à chaque nouvelle donnée entrée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il doit fonctionner en temps réel comme en environnement de production.) est plausible mais faux car il ne",
       "difficulty": "medium"
     },
     {
@@ -149,12 +149,12 @@
       "image_url": null,
       "choices": {
         "A": "Pour réussir à changer rapidement le système de gestion des bases de données sans affecter les performances des modèles.",
-        "B": "Pour s'assurer que les caractéristiques utilisées par les modèles ML sont à jour et disponibles en temps voulu.",
-        "C": "Pour permettre un partage des données plus large parmi des équipes non-ML.",
+        "B": "Pour permettre un partage des données plus large parmi des équipes non-ML.",
+        "C": "Pour s'assurer que les caractéristiques utilisées par les modèles ML sont à jour et disponibles en temps voulu.",
         "D": "Pour réduire les coûts associés au stockage des modèles ML en compressant les caractéristiques."
       },
-      "correct_answer": "B",
-      "explanation": "La compatibilité garantit que les caractéristiques sont actualisées et prêtes à être utilisées par les modèles ML, ce qui est essentiel pour les performances. A est erroné, cette compatibilité n'a pas pour but de gérer des migrations. C est faux, car le partage avec les équipes non-ML n'est pas le principal objectif. D est incorrect, car cela se concentre sur les caractéristiques et non sur les coûts de stockage ou de compression.",
+      "correct_answer": "C",
+      "explanation": "La compatibilité garantit que les caractéristiques sont actualisées et prêtes à être utilisées par les modèles ML, ce qui est essentiel pour les performances. A est erroné, cette compatibilité n'a pas pour but de gérer des migrations. C est faux, car le partage avec les équipes non-ML n'est pas le principal objectif. D est incorrect, car cela se concentre sur les caractéristiques et non sur les coûts de stockage ou de compression. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour réussir à changer rapidement le système de gestion des bases de données sans affecter les performances des modèles.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel est un désavantage potentiel d'un rollback fréquent dans un environnement ML en production ?",
       "image_url": null,
       "choices": {
-        "A": "Ralentir le processus de développement des futures mises à jour de modèles.",
+        "A": "Créer un environnement plus flexible et adaptable aux erreurs fréquentes.",
         "B": "Augmenter la confiance des utilisateurs dans la stabilité des modèles déployés.",
         "C": "Réduire la nécessité de tests approfondis avant le déploiement initial.",
-        "D": "Créer un environnement plus flexible et adaptable aux erreurs fréquentes."
+        "D": "Ralentir le processus de développement des futures mises à jour de modèles."
       },
-      "correct_answer": "A",
-      "explanation": "Des rollbacks fréquents peuvent freiner le développement futur en nécessitant des analyses supplémentaires pour comprendre ce qui a échoué. B est incorrect, ils peuvent diminuer la confiance. C est inexact, cela ne diminue pas le besoin de tests. D est faux, un rollback fréquent signale de mauvaises pratiques de déploiement.",
+      "correct_answer": "D",
+      "explanation": "Des rollbacks fréquents peuvent freiner le développement futur en nécessitant des analyses supplémentaires pour comprendre ce qui a échoué. B est incorrect, ils peuvent diminuer la confiance. C est inexact, cela ne diminue pas le besoin de tests. D est faux, un rollback fréquent signale de mauvaises pratiques de déploiement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Créer un environnement plus flexible et adaptable aux erreurs fréquentes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter la confiance des utilisateurs dans la stabilité des modèles déployés.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     },
     {
@@ -176,13 +176,13 @@
       "question": "Quel est un défi commun rencontré lors de l'inférence online par rapport à l'inférence offline ?",
       "image_url": null,
       "choices": {
-        "A": "Nécessité de gérer des environnements de test isolés pour chaque modèle.",
-        "B": "Répondre en temps réel à de grandes quantités de demandes tout en assurant des performances optimales.",
+        "A": "Répondre en temps réel à de grandes quantités de demandes tout en assurant des performances optimales.",
+        "B": "Nécessité de gérer des environnements de test isolés pour chaque modèle.",
         "C": "Dépassement des capacités de stockage des jeux de données historiques.",
         "D": "Manque d'outils pour surveiller les modèles sur de longues périodes."
       },
-      "correct_answer": "B",
-      "explanation": "L'inférence online doit répondre à des demandes en temps réel, ce qui exige des performances optimales sous de fortes charges. A est une considération de test offline. C est incorrect, la capacité de stockage des données historiques n'est pas le problème principal de l'inférence online. D est faux, car il s'agit de surveillance à long terme, pas nécessairement un défi spécifique à l'inférence online.",
+      "correct_answer": "A",
+      "explanation": "L'inférence online doit répondre à des demandes en temps réel, ce qui exige des performances optimales sous de fortes charges. A est une considération de test offline. C est incorrect, la capacité de stockage des données historiques n'est pas le problème principal de l'inférence online. D est faux, car il s'agit de surveillance à long terme, pas nécessairement un défi spécifique à l'inférence online. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Nécessité de gérer des environnements de test isolés pour chaque modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Dépassement des capacités de stockage des jeux de données",
       "difficulty": "hard"
     },
     {
@@ -196,7 +196,7 @@
         "D": "Les caractéristiques seront forcément biaisées par les tendances actuelles du marché."
       },
       "correct_answer": "B",
-      "explanation": "Une mauvaise intégration peut mener à des incohérences entre les caractéristiques utilisées pour l'entraînement et l'inférence, impactant la performance. A n'est pas vrai car la suppression automatique n'est pas une conséquence directe. C est incorrect, cela n'impose pas l'unicité des données pour tous les modèles. D est inexact, car le biais introduit n'est pas nécessairement le résultat d'une intégration défectueuse.",
+      "explanation": "Une mauvaise intégration peut mener à des incohérences entre les caractéristiques utilisées pour l'entraînement et l'inférence, impactant la performance. A n'est pas vrai car la suppression automatique n'est pas une conséquence directe. C est incorrect, cela n'impose pas l'unicité des données pour tous les modèles. D est inexact, car le biais introduit n'est pas nécessairement le résultat d'une intégration défectueuse. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les caractéristiques peuvent être automatiquement supprimées durant le traitement des lots.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il garantit que tous les modèles utiliseront les mêmes jeux de données sans",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quelle stratégie pourrait être utilisée pour minimiser les erreurs post-déploiement avant d'effectuer un rollback?",
       "image_url": null,
       "choices": {
-        "A": "Monitoring des métriques de performance en temps réel pour détecter des anomalies rapidement.",
+        "A": "Réduire le nombre de tests de pré-déploiement pour accélérer l'implémentation.",
         "B": "Accélérer le processus de déploiement pour réduire le temps d'attente entre deux versions.",
-        "C": "Réduire le nombre de tests de pré-déploiement pour accélérer l'implémentation.",
+        "C": "Monitoring des métriques de performance en temps réel pour détecter des anomalies rapidement.",
         "D": "Ignorer les retours utilisateurs jusqu'à au moins un mois après le déploiement."
       },
-      "correct_answer": "A",
-      "explanation": "Surveiller les métriques de performance en temps réel aide à identifier rapidement les anomalies qui pourraient déclencher un rollback. B est incorrect, accélérer le déploiement sans précaution peut augmenter l'erreur. C est faux, car réduire les tests augmente les risques d'erreur. D est inexact, car l'ignorance des retours peut aggraver les erreurs non détectées.",
+      "correct_answer": "C",
+      "explanation": "Surveiller les métriques de performance en temps réel aide à identifier rapidement les anomalies qui pourraient déclencher un rollback. B est incorrect, accélérer le déploiement sans précaution peut augmenter l'erreur. C est faux, car réduire les tests augmente les risques d'erreur. D est inexact, car l'ignorance des retours peut aggraver les erreurs non détectées. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire le nombre de tests de pré-déploiement pour accélérer l'implémentation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Accélérer le processus de déploiement pour réduire le temps d'attente entre deux versions.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -220,11 +220,11 @@
       "choices": {
         "A": "Le modèle donne des prédictions moins variées qu'avant, augmentant la précision.",
         "B": "Le modèle fonctionne mieux sur les anciennes données mais pas sur les nouvelles.",
-        "C": "Il y a une diminution observable des performances métriques par rapport à un modèle précédent.",
-        "D": "Les résultats sont plus biaisés mais le temps de traitement est réduit."
+        "C": "Les résultats sont plus biaisés mais le temps de traitement est réduit.",
+        "D": "Il y a une diminution observable des performances métriques par rapport à un modèle précédent."
       },
-      "correct_answer": "C",
-      "explanation": "Une régression de performance signifie que les métriques du modèle dans le nouvel environnement sont inférieures à celles du modèle précédent. A est faux, moins de variété ne correspond pas nécessairement à plus de précision. B est incorrect, car fonctionner mieux sur anciennes données n'indique pas nécessairement une performance inférieure. D est un compromis performance-coût, mais ne décrit pas des performances dégradées dans le contexte de métriques.",
+      "correct_answer": "D",
+      "explanation": "Une régression de performance signifie que les métriques du modèle dans le nouvel environnement sont inférieures à celles du modèle précédent. A est faux, moins de variété ne correspond pas nécessairement à plus de précision. B est incorrect, car fonctionner mieux sur anciennes données n'indique pas nécessairement une performance inférieure. D est un compromis performance-coût, mais ne décrit pas des performances dégradées dans le contexte de métriques. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le modèle donne des prédictions moins variées qu'avant, augmentant la précision.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le modèle fonctionne mieux sur les",
       "difficulty": "hard"
     },
     {
@@ -232,13 +232,13 @@
       "question": "Dans le contexte d'un feature store, pourquoi la disponibilité des données en temps réel est cruciale pour les modèles ML ?",
       "image_url": null,
       "choices": {
-        "A": "Cela permet de réduire les coûts de stockage en éliminant le besoin de conserver des copies anciennes des caractéristiques.",
+        "A": "Cela assure que les modèles sont optimisés en continu avec les données les plus récentes.",
         "B": "Cela augmente la complexité algébrique des modèles, rendant les prédictions plus précises.",
-        "C": "Cela assure que les modèles sont optimisés en continu avec les données les plus récentes.",
+        "C": "Cela permet de réduire les coûts de stockage en éliminant le besoin de conserver des copies anciennes des caractéristiques.",
         "D": "Cela réduit l'empreinte carbone des centres de données hébergeant les modèles ML."
       },
-      "correct_answer": "C",
-      "explanation": "La disponibilité en temps réel garantit que les modèles travaillent avec les informations les plus à jour possible, influençant ainsi directement leur pertinence et précision. A est faux, bien que les coûts puissent réduire, la disponibilité n'adresse pas directement le besoin de conservation. B est incorrect, la complexité augmente par les algorithmes, pas par la disponibilité. D est inexact, la réduction de l'empreinte carbone n'est pas un effet direct d'une disponibilité en temps réel des données.",
+      "correct_answer": "A",
+      "explanation": "La disponibilité en temps réel garantit que les modèles travaillent avec les informations les plus à jour possible, influençant ainsi directement leur pertinence et précision. A est faux, bien que les coûts puissent réduire, la disponibilité n'adresse pas directement le besoin de conservation. B est incorrect, la complexité augmente par les algorithmes, pas par la disponibilité. D est inexact, la réduction de l'empreinte carbone n'est pas un effet direct d'une disponibilité en temps réel des données. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Cela augmente la complexité algébrique des modèles, rendant les prédictions plus précises.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Qu'est-ce qu'un feature store dans le contexte du machine learning supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Un système centralisé pour stocker, partager et gérer les fonctionnalités utilisées dans différents modèles de machine learning.",
-        "B": "Un ensemble de graphiques illustrant les performances des modèles de machine learning.",
+        "A": "Un ensemble de graphiques illustrant les performances des modèles de machine learning.",
+        "B": "Un système centralisé pour stocker, partager et gérer les fonctionnalités utilisées dans différents modèles de machine learning.",
         "C": "Une base de données de sauvegarde pour archiver les modèles de machine learning entraînés.",
         "D": "Une interface utilisateur pour visualiser les prédictions de modèles de machine learning."
       },
-      "correct_answer": "A",
-      "explanation": "Un feature store est une plateforme qui gère, sert et conserve les featurings pour l'entraînement et l'inférence de modèles. B est incorrect car il décrit une fonctionnalité de visualisation. C est faux, car les feature stores ne sont pas destinés au stockage de modèles. D est incorrect car il ne s'agit pas d'une interface utilisateur pour visualisations.",
+      "correct_answer": "B",
+      "explanation": "Un feature store est une plateforme qui gère, sert et conserve les featurings pour l'entraînement et l'inférence de modèles. B est incorrect car il décrit une fonctionnalité de visualisation. C est faux, car les feature stores ne sont pas destinés au stockage de modèles. D est incorrect car il ne s'agit pas d'une interface utilisateur pour visualisations. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un ensemble de graphiques illustrant les performances des modèles de machine learning.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une base de données de sauvegarde pour archiver les modèles de machine learning entraînés.) est",
       "difficulty": "medium"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Pourquoi l'évaluation offline des modèles de machine learning est-elle importante ?",
       "image_url": null,
       "choices": {
-        "A": "Elle permet de tester les modèles dans des conditions simulées avant de les déployer.",
+        "A": "Elle optimise automatiquement les hyperparamètres des modèles.",
         "B": "Elle accélère le processus de déploiement sur de nouveaux serveurs.",
-        "C": "Elle optimise automatiquement les hyperparamètres des modèles.",
+        "C": "Elle permet de tester les modèles dans des conditions simulées avant de les déployer.",
         "D": "Elle élimine le besoin de tests en production."
       },
-      "correct_answer": "A",
-      "explanation": "L'évaluation offline permet de valider la performance des modèles de machine learning sur des données historiques ou simulées avant leur mise en production, minimisant ainsi les risques. B est incorrect car l'évaluation ne concerne pas le déploiement sur serveurs. C est faux car l'évaluation n'optimise pas automatiquement les hyperparamètres. D est incorrect car des tests en production peuvent toujours être nécessaires.",
+      "correct_answer": "C",
+      "explanation": "L'évaluation offline permet de valider la performance des modèles de machine learning sur des données historiques ou simulées avant leur mise en production, minimisant ainsi les risques. B est incorrect car l'évaluation ne concerne pas le déploiement sur serveurs. C est faux car l'évaluation n'optimise pas automatiquement les hyperparamètres. D est incorrect car des tests en production peuvent toujours être nécessaires. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle optimise automatiquement les hyperparamètres des modèles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle accélère le processus de déploiement sur de nouveaux serveurs.) est plausible mais faux car il",
       "difficulty": "medium"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Quelle est la différence principale entre une inférence online et une évaluation offline ?",
       "image_url": null,
       "choices": {
-        "A": "L'inférence online se fait en temps réel, contrairement à l'évaluation offline qui se fait sur des données historiques.",
+        "A": "L'inférence online utilise des données annotées, contrairement à l'évaluation offline.",
         "B": "L'inférence online améliore la précision du modèle, alors que l'évaluation offline n'influe pas sur les performances.",
         "C": "L'inférence online est moins sécurisée que l'évaluation offline.",
-        "D": "L'inférence online utilise des données annotées, contrairement à l'évaluation offline."
+        "D": "L'inférence online se fait en temps réel, contrairement à l'évaluation offline qui se fait sur des données historiques."
       },
-      "correct_answer": "A",
-      "explanation": "L'inférence online concerne les prédictions en temps réel sur des données actuelles, alors que l'évaluation offline teste le modèle sur des données passées. B est incorrect car l'inférence ne modifie pas directement la précision des modèles. C est faux car la sécurité dépend de la mise en œuvre. D est incorrect car les données annotées sont typiquement utilisées dans les deux contextes.",
+      "correct_answer": "D",
+      "explanation": "L'inférence online concerne les prédictions en temps réel sur des données actuelles, alors que l'évaluation offline teste le modèle sur des données passées. B est incorrect car l'inférence ne modifie pas directement la précision des modèles. C est faux car la sécurité dépend de la mise en œuvre. D est incorrect car les données annotées sont typiquement utilisées dans les deux contextes. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'inférence online utilise des données annotées, contrairement à l'évaluation offline.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (L'inférence online améliore la précision du modèle, alors que l'évaluation offline n'influe",
       "difficulty": "medium"
     },
     {
@@ -294,7 +294,7 @@
         "D": "Un dépannage manuel des erreurs de prédiction d'un modèle."
       },
       "correct_answer": "A",
-      "explanation": "Une stratégie de rollback permet de revenir à une version antérieure d'un modèle si un problème survient après le déploiement d'une mise à jour. B est incorrect car le rollback n'améliore pas les modèles, il offre un retour en arrière. C et D ne se rapportent pas au retour à une version antérieure de modèles.",
+      "explanation": "Une stratégie de rollback permet de revenir à une version antérieure d'un modèle si un problème survient après le déploiement d'une mise à jour. B est incorrect car le rollback n'améliore pas les modèles, il offre un retour en arrière. C et D ne se rapportent pas au retour à une version antérieure de modèles. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Un processus automatisé d'amélioration des modèles entraînés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une technique de partitionnement des données pour le training efficace.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "medium"
     },
     {
@@ -302,13 +302,13 @@
       "question": "Quel est l'avantage principal d'utiliser un feature store dans un pipeline de machine learning ?",
       "image_url": null,
       "choices": {
-        "A": "Il permet de réutiliser efficacement les fonctionnalités entre différents modèles.",
-        "B": "Il génère automatiquement des modèles performants.",
+        "A": "Il génère automatiquement des modèles performants.",
+        "B": "Il permet de réutiliser efficacement les fonctionnalités entre différents modèles.",
         "C": "Il automatise l'annotation des données d'entraînement.",
         "D": "Il réduit la consommation de puissance de calcul des modèles déployés."
       },
-      "correct_answer": "A",
-      "explanation": "Un feature store améliore la réutilisation des fonctionnalités et assure leur cohérence entre plusieurs modèles. B est incorrect car il ne génère pas de modèles. C est faux car le feature store ne s'occupe pas de l'annotation de données. D est incorrect car il ne réduit pas directement la consommation de puissance de calcul.",
+      "correct_answer": "B",
+      "explanation": "Un feature store améliore la réutilisation des fonctionnalités et assure leur cohérence entre plusieurs modèles. B est incorrect car il ne génère pas de modèles. C est faux car le feature store ne s'occupe pas de l'annotation de données. D est incorrect car il ne réduit pas directement la consommation de puissance de calcul. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il génère automatiquement des modèles performants.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il automatise l'annotation des données d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "medium"
     },
     {
@@ -316,13 +316,13 @@
       "question": "Que signifie le terme 'inférence online' dans le déploiement d'un modèle ?",
       "image_url": null,
       "choices": {
-        "A": "C'est le processus de générer des prédictions en temps réel à partir de nouvelles données lorsqu'elles arrivent.",
+        "A": "C'est le réglage des hyperparamètres d'un modèle de manière continue.",
         "B": "C'est le calcul des métriques de test une fois que toutes les données ont été analysées.",
-        "C": "C'est le réglage des hyperparamètres d'un modèle de manière continue.",
+        "C": "C'est le processus de générer des prédictions en temps réel à partir de nouvelles données lorsqu'elles arrivent.",
         "D": "C'est la compilation de résultats de modèle sur des ensembles de données historiques."
       },
-      "correct_answer": "A",
-      "explanation": "L'inférence online concerne les prédictions en temps réel ou instantanées sur de nouvelles données. B est incorrect car il concerne l'évaluation. C est faux car l'inférence online ne règle pas les hyperparamètres. D est incorrect car il ne se réfère pas à un processus en temps réel.",
+      "correct_answer": "C",
+      "explanation": "L'inférence online concerne les prédictions en temps réel ou instantanées sur de nouvelles données. B est incorrect car il concerne l'évaluation. C est faux car l'inférence online ne règle pas les hyperparamètres. D est incorrect car il ne se réfère pas à un processus en temps réel. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (C'est le réglage des hyperparamètres d'un modèle de manière continue.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (C'est le calcul des métriques de test une fois que toutes les données ont été analysées.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -330,13 +330,13 @@
       "question": "Qu’est-ce qu’un feature store dans le contexte du machine learning supervisé en production?",
       "image_url": null,
       "choices": {
-        "A": "Un repository centralisé pour gérer, stocker et partager les caractéristiques utilisées pour entraîner et servir les modèles.",
+        "A": "Une technique pour compresser les modèles de machine learning afin de réduire leur empreinte mémoire.",
         "B": "Un système de versionnement pour suivre les versions de modèles déployés.",
         "C": "Un ensemble de bibliothèques utilisées pour la visualisation des données en production.",
-        "D": "Une technique pour compresser les modèles de machine learning afin de réduire leur empreinte mémoire."
+        "D": "Un repository centralisé pour gérer, stocker et partager les caractéristiques utilisées pour entraîner et servir les modèles."
       },
-      "correct_answer": "A",
-      "explanation": "Un feature store est un outil centralisé pour gérer, stocker et partager les caractéristiques de données. Option B est incorrecte car elle décrit un système de versionnement de modèle. Option C est fausse car elle concerne la visualisation, pas les caractéristiques. Option D est incorrecte car elle traite de la compression des modèles.",
+      "correct_answer": "D",
+      "explanation": "Un feature store est un outil centralisé pour gérer, stocker et partager les caractéristiques de données. Option B est incorrecte car elle décrit un système de versionnement de modèle. Option C est fausse car elle concerne la visualisation, pas les caractéristiques. Option D est incorrecte car elle traite de la compression des modèles. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une technique pour compresser les modèles de machine learning afin de réduire leur empreinte mémoire.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Un système de versionnement pour suivre les versions de modèles déployés.) est plausible mais faux car",
       "difficulty": "medium"
     },
     {
@@ -350,7 +350,7 @@
         "D": "Vérifier le coût d'exécution du modèle sur les infrastructures cloud."
       },
       "correct_answer": "A",
-      "explanation": "L'évaluation offline concerne l'analyse des performances du modèle sur des données historiques. Option B est fausse car elle traite de la vérification matérielle, ce qui est distinct. Option C est incorrecte car elle concerne la performance d'inférence en ligne. Option D est incorrecte car il ne s’agit pas d’évaluer les performances de coût dans ce cadre.",
+      "explanation": "L'évaluation offline concerne l'analyse des performances du modèle sur des données historiques. Option B est fausse car elle traite de la vérification matérielle, ce qui est distinct. Option C est incorrecte car elle concerne la performance d'inférence en ligne. Option D est incorrecte car il ne s’agit pas d’évaluer les performances de coût dans ce cadre. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Assurer que le modèle fonctionne correctement sur le matériel de production.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Optimiser la vitesse des prédictions en production réelle.) est plausible mais faux car il ne respecte pas",
       "difficulty": "medium"
     },
     {
@@ -358,13 +358,13 @@
       "question": "Quelle est la différence principale entre l'inférence online et l'évaluation offline?",
       "image_url": null,
       "choices": {
-        "A": "L'inférence online implique des prédictions en temps réel, tandis que l'évaluation offline utilise des données préexistantes pour tester le modèle.",
-        "B": "L'évaluation offline est plus coûteuse en ressource que l'inférence online.",
+        "A": "L'évaluation offline est plus coûteuse en ressource que l'inférence online.",
+        "B": "L'inférence online implique des prédictions en temps réel, tandis que l'évaluation offline utilise des données préexistantes pour tester le modèle.",
         "C": "L'inférence online est uniquement utilisée pour entrainer des modèles plus complexes nécessitant des données en temps réel.",
         "D": "L'évaluation offline utilise des données synthétiques alors que l'inférence online ne le fait jamais."
       },
-      "correct_answer": "A",
-      "explanation": "L'inférence online fait référence aux prédictions en temps réel, tandis que l'évaluation offline traite des tests sur des données historiques. Option B est incorrecte car la question de coût n'est pas une différence fondamentale. Option C est fausse car l'inférence online n'implique pas nécessairement l'entraînement. Option D est incorrecte car les données utilisées offline peuvent être réelles.",
+      "correct_answer": "B",
+      "explanation": "L'inférence online fait référence aux prédictions en temps réel, tandis que l'évaluation offline traite des tests sur des données historiques. Option B est incorrecte car la question de coût n'est pas une différence fondamentale. Option C est fausse car l'inférence online n'implique pas nécessairement l'entraînement. Option D est incorrecte car les données utilisées offline peuvent être réelles. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'évaluation offline est plus coûteuse en ressource que l'inférence online.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'inférence online est uniquement utilisée pour entrainer des modèles plus complexes nécessitant des données en temps réel.)",
       "difficulty": "medium"
     },
     {
@@ -372,13 +372,13 @@
       "question": "Qu'est-ce qu'une stratégie de rollback en déploiement de modèles de machine learning?",
       "image_url": null,
       "choices": {
-        "A": "Une méthode pour revenir à une version antérieure du modèle lorsqu'une mise à jour récente se révèle défectueuse.",
+        "A": "Un moyen d'accélérer le temps de réponse des modèles en production en limitant la latence.",
         "B": "Une technique pour améliorer progressivement les performances d'un modèle en ajustant les hyperparamètres.",
-        "C": "Un moyen d'accélérer le temps de réponse des modèles en production en limitant la latence.",
+        "C": "Une méthode pour revenir à une version antérieure du modèle lorsqu'une mise à jour récente se révèle défectueuse.",
         "D": "Une stratégie utilisée pour augmenter la taille des données d'entraînement afin d'améliorer la robustesse du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "Une stratégie de rollback permet de revenir à une version antérieure de modèle si un problème est décelé. Option B est incorrecte car elle parle d'optimisation des performances via des hyperparamètres. Option C traite des performances de latence, ce qui est un sujet différent. Option D concerne l'augmentation des données d'entraînement, incorrecte dans ce contexte.",
+      "correct_answer": "C",
+      "explanation": "Une stratégie de rollback permet de revenir à une version antérieure de modèle si un problème est décelé. Option B est incorrecte car elle parle d'optimisation des performances via des hyperparamètres. Option C traite des performances de latence, ce qui est un sujet différent. Option D concerne l'augmentation des données d'entraînement, incorrecte dans ce contexte. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un moyen d'accélérer le temps de réponse des modèles en production en limitant la latence.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Une technique pour améliorer progressivement les performances d'un modèle en ajustant les hyperparamètres.) est",
       "difficulty": "hard"
     },
     {
@@ -386,13 +386,13 @@
       "question": "Quelle est la fonction principale d'un feature store dans un système de machine learning supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Centraliser et standardiser l'accès aux caractéristiques pour l'entraînement et l'inférence.",
+        "A": "Gérer les versions du code source de l'algorithme.",
         "B": "Prévoir les résultats futurs en temps réel.",
         "C": "Évaluer la performance du modèle en production.",
-        "D": "Gérer les versions du code source de l'algorithme."
+        "D": "Centraliser et standardiser l'accès aux caractéristiques pour l'entraînement et l'inférence."
       },
-      "correct_answer": "A",
-      "explanation": "Un feature store est conçu pour faciliter la gestion des caractéristiques en centralisant et standardisant leur accès pour l'entraînement et l'inférence. Les choix B, C et D se réfèrent respectivement aux tâches d'inférence online, d'évaluation offline et de gestion de la source de l'algorithme, qui ne sont pas des fonctions principales d'un feature store.",
+      "correct_answer": "D",
+      "explanation": "Un feature store est conçu pour faciliter la gestion des caractéristiques en centralisant et standardisant leur accès pour l'entraînement et l'inférence. Les choix B, C et D se réfèrent respectivement aux tâches d'inférence online, d'évaluation offline et de gestion de la source de l'algorithme, qui ne sont pas des fonctions principales d'un feature store. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Gérer les versions du code source de l'algorithme.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Prévoir les résultats futurs en temps réel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "medium"
     },
     {
@@ -406,7 +406,7 @@
         "D": "Détecter et corriger les latences dans un flux de données."
       },
       "correct_answer": "A",
-      "explanation": "L'évaluation offline est utilisée pour analyser la performance d'un modèle sur des données historiques (non en temps réel) afin de déterminer son efficacité avant sa mise en production. Les choix B, C et D sont respectivement liés à l'optimisation d'inférence en ligne, la gestion des caractéristiques en temps réel et la gestion de la latence, qui ne sont pas l'objectif de l'évaluation offline.",
+      "explanation": "L'évaluation offline est utilisée pour analyser la performance d'un modèle sur des données historiques (non en temps réel) afin de déterminer son efficacité avant sa mise en production. Les choix B, C et D sont respectivement liés à l'optimisation d'inférence en ligne, la gestion des caractéristiques en temps réel et la gestion de la latence, qui ne sont pas l'objectif de l'évaluation offline. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Optimiser la vitesse d'inférence du modèle en production.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Assurer la disponibilité continue des caractéristiques en temps réel.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -414,13 +414,13 @@
       "question": "Quel aspect est crucial lors de l'inférence online pour un système d'apprentissage supervisé?",
       "image_url": null,
       "choices": {
-        "A": "La rapidité de prédiction afin de fournir des résultats en temps réel.",
-        "B": "La diversité des modèles pour couvrir différents scénarios.",
+        "A": "La diversité des modèles pour couvrir différents scénarios.",
+        "B": "La rapidité de prédiction afin de fournir des résultats en temps réel.",
         "C": "L'entraînement simultané sur les données en direct.",
         "D": "L'utilisation de modèles non entrainés pour réduire le temps de calcul."
       },
-      "correct_answer": "A",
-      "explanation": "L'inférence online nécessite des prédictions rapides pour fournir des résultats en temps réel. Les choix B, C et D se concentrent incorrectement sur la diversité des modèles, l'entraînement sur des flux en direct et l'utilisation de modèles non entraînés, ce qui ne sont pas des préoccupations principales pour l'inférence online en production.",
+      "correct_answer": "B",
+      "explanation": "L'inférence online nécessite des prédictions rapides pour fournir des résultats en temps réel. Les choix B, C et D se concentrent incorrectement sur la diversité des modèles, l'entraînement sur des flux en direct et l'utilisation de modèles non entraînés, ce qui ne sont pas des préoccupations principales pour l'inférence online en production. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (La diversité des modèles pour couvrir différents scénarios.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'entraînement simultané sur les données en direct.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "hard"
     },
     {
@@ -428,13 +428,13 @@
       "question": "Dans le contexte des systèmes supervisés, qu'est-ce qu'une stratégie de rollback?",
       "image_url": null,
       "choices": {
-        "A": "Revenir à une version précédente d'un modèle en cas de défaillance.",
+        "A": "Améliorer les performances du modèle en augmentant la taille de l'échantillon de données utilisé.",
         "B": "Mettre à jour les hyperparamètres d'un modèle pour améliorer ses performances.",
-        "C": "Améliorer les performances du modèle en augmentant la taille de l'échantillon de données utilisé.",
+        "C": "Revenir à une version précédente d'un modèle en cas de défaillance.",
         "D": "Automatiser le processus d'entraînement pour minimiser les erreurs manuelles."
       },
-      "correct_answer": "A",
-      "explanation": "Une stratégie de rollback est le processus de retour à une version antérieure d'un modèle en cas de défaillance du modèle actuel en production. Les choix B, C et D concernent l'adaptation des hyperparamètres, l'augmentation des données d'entraînement et l'automatisation des processus d'entraînement, qui ne sont pas des aspects d'une stratégie de rollback.",
+      "correct_answer": "C",
+      "explanation": "Une stratégie de rollback est le processus de retour à une version antérieure d'un modèle en cas de défaillance du modèle actuel en production. Les choix B, C et D concernent l'adaptation des hyperparamètres, l'augmentation des données d'entraînement et l'automatisation des processus d'entraînement, qui ne sont pas des aspects d'une stratégie de rollback. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Améliorer les performances du modèle en augmentant la taille de l'échantillon de données utilisé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Mettre à jour les hyperparamètres d'un modèle pour améliorer ses performances.) est plausible mais faux car il",
       "difficulty": "hard"
     },
     {
@@ -442,13 +442,13 @@
       "question": "Pourquoi est-il important de garder des versions des jeux de caractéristiques dans un feature store?",
       "image_url": null,
       "choices": {
-        "A": "Pour permettre de réentraîner le modèle avec des données cohérentes lors du rollback.",
+        "A": "Pour accélérer le temps de calcul pendant l'inférence online.",
         "B": "Pour s'assurer que les caractéristiques sont mises à jour en temps réel.",
         "C": "Pour améliorer la précision du modèle en augmentant artificiellement la taille des données.",
-        "D": "Pour accélérer le temps de calcul pendant l'inférence online."
+        "D": "Pour permettre de réentraîner le modèle avec des données cohérentes lors du rollback."
       },
-      "correct_answer": "A",
-      "explanation": "Conserver des versions des jeux de caractéristiques permet de réentraîner des modèles avec exactement les mêmes données en cas de rollback, assurant ainsi la cohérence des performances passées. Les choix B et D relèvent du traitement en temps réel et de l'inférence optimisée, tandis que le choix C faussement propose l'augmentation artificielle des données pour la précision.",
+      "correct_answer": "D",
+      "explanation": "Conserver des versions des jeux de caractéristiques permet de réentraîner des modèles avec exactement les mêmes données en cas de rollback, assurant ainsi la cohérence des performances passées. Les choix B et D relèvent du traitement en temps réel et de l'inférence optimisée, tandis que le choix C faussement propose l'augmentation artificielle des données pour la précision. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour accélérer le temps de calcul pendant l'inférence online.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour s'assurer que les caractéristiques sont mises à jour en temps réel.) est plausible mais faux car il",
       "difficulty": "hard"
     }
   ]

@@ -14,7 +14,7 @@
         "D": "Une modification de l'architecture du modèle utilisé pour l'apprentissage."
       },
       "correct_answer": "A",
-      "explanation": "Un 'shift de domaine' se réfère à une situation où la distribution des données d'entraînement diffère de celle des données de test, ce qui peut causer une baisse des performances du modèle. Le bruit (B) et la taille des données (C) ne sont pas directement liés au shift de domaine, et la modification de l'architecture du modèle (D) ne concerne pas la distribution des données.",
+      "explanation": "Un 'shift de domaine' se réfère à une situation où la distribution des données d'entraînement diffère de celle des données de test, ce qui peut causer une baisse des performances du modèle. Le bruit (B) et la taille des données (C) ne sont pas directement liés au shift de domaine, et la modification de l'architecture du modèle (D) ne concerne pas la distribution des données. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Une augmentation du bruit dans les données d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une diminution de la taille de l'ensemble de données d'entraînement.) est",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Comment le 'covariate shift' peut-il être problématique pour la généralisation d'un modèle?",
       "image_url": null,
       "choices": {
-        "A": "Les prédictions du modèle sont biaisées car les covariantes en entrée ont des distributions différentes entre l'entraînement et le test.",
-        "B": "Le modèle a une complexité algorithmique trop élevée.",
+        "A": "Le modèle a une complexité algorithmique trop élevée.",
+        "B": "Les prédictions du modèle sont biaisées car les covariantes en entrée ont des distributions différentes entre l'entraînement et le test.",
         "C": "Il y a une sur-représentation de certaines classes dans les données d'entraînement.",
         "D": "Les données de test contiennent des classes non vues pendant l'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "Le 'covariate shift' se produit lorsque la distribution des caractéristiques en entrée change entre l'entraînement et le test, ce qui peut biaiser les prédictions. La complexité algorithmique (B) et la sur-représentation de classes (C) sont des problèmes distincts. Les classes non vues (D) touchent davantage au problème de 'shift de domaine'.",
+      "correct_answer": "B",
+      "explanation": "Le 'covariate shift' se produit lorsque la distribution des caractéristiques en entrée change entre l'entraînement et le test, ce qui peut biaiser les prédictions. La complexité algorithmique (B) et la sur-représentation de classes (C) sont des problèmes distincts. Les classes non vues (D) touchent davantage au problème de 'shift de domaine'. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le modèle a une complexité algorithmique trop élevée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il y a une sur-représentation de certaines classes dans les données d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quel est le rôle de l'alignement de distributions dans l'adaptation de domaine?",
       "image_url": null,
       "choices": {
-        "A": "Réduire la divergence entre les distributions source et cible pour améliorer la robustesse du modèle.",
+        "A": "Supprimer les outliers dans les données pour obtenir une meilleure performance modèle.",
         "B": "Augmenter la taille de l'ensemble de données pour offrir plus d'exemples d'entraînement.",
-        "C": "Supprimer les outliers dans les données pour obtenir une meilleure performance modèle.",
+        "C": "Réduire la divergence entre les distributions source et cible pour améliorer la robustesse du modèle.",
         "D": "Changer le modèle de machine learning utilisé pour une meilleure précision."
       },
-      "correct_answer": "A",
-      "explanation": "L'alignement des distributions vise à réduire la divergence entre la distribution source et cible, ce qui facilite l'adaptation de domaine. Augmenter la taille (B), supprimer les outliers (C) et changer le modèle (D) ne traitent pas directement les différences de distribution.",
+      "correct_answer": "C",
+      "explanation": "L'alignement des distributions vise à réduire la divergence entre la distribution source et cible, ce qui facilite l'adaptation de domaine. Augmenter la taille (B), supprimer les outliers (C) et changer le modèle (D) ne traitent pas directement les différences de distribution. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Supprimer les outliers dans les données pour obtenir une meilleure performance modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter la taille de l'ensemble de données pour offrir plus d'exemples d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Pourquoi l'adaptation de domaine est-elle importante en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Elle permet de transférer un modèle pré-entraîné d'un domaine source à un domaine cible ayant peu de labels.",
+        "A": "Elle réduit le besoin de données d'entrée bruyantes.",
         "B": "Elle augmente la vitesse d'entraînement du modèle.",
         "C": "Elle simplifie la structure du modèle sans perte de performance.",
-        "D": "Elle réduit le besoin de données d'entrée bruyantes."
+        "D": "Elle permet de transférer un modèle pré-entraîné d'un domaine source à un domaine cible ayant peu de labels."
       },
-      "correct_answer": "A",
-      "explanation": "L'adaptation de domaine permet de tirer parti des connaissances acquises dans un domaine riche en données pour un domaine cible avec peu de données labellisées. Elle ne vise pas à optimiser la vitesse d'entraînement (B), simplifier le modèle (C) ou réduire le bruit (D).",
+      "correct_answer": "D",
+      "explanation": "L'adaptation de domaine permet de tirer parti des connaissances acquises dans un domaine riche en données pour un domaine cible avec peu de données labellisées. Elle ne vise pas à optimiser la vitesse d'entraînement (B), simplifier le modèle (C) ou réduire le bruit (D). La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle réduit le besoin de données d'entrée bruyantes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle augmente la vitesse d'entraînement du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle simplifie la structure du",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Manque de diversité dans les classes cibles."
       },
       "correct_answer": "A",
-      "explanation": "Le 'covariate shift' cible la différence de distribution des covariantes entre les ensembles d'entraînement et de test. L'imbalance de classes (B), la complexité des données (C) et la diversité (D) sont des problèmes différents.",
+      "explanation": "Le 'covariate shift' cible la différence de distribution des covariantes entre les ensembles d'entraînement et de test. L'imbalance de classes (B), la complexité des données (C) et la diversité (D) sont des problèmes différents. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Imbalance de classes lors de l'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Différence dans la complexité des données entre les ensembles d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Manque de diversité dans les classes cibles.) est plausible mais faux car il ne",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quel est un symptôme typique d'un 'shift de domaine' non corrigé?",
       "image_url": null,
       "choices": {
-        "A": "Performance diminuée du modèle sur les données de test.",
-        "B": "Augmentation de la complexité du modèle au-delà de sa capacité de généralisation.",
+        "A": "Augmentation de la complexité du modèle au-delà de sa capacité de généralisation.",
+        "B": "Performance diminuée du modèle sur les données de test.",
         "C": "Accélération inattendue du temps d'entraînement.",
         "D": "Incapacité à détecter des outliers dans le dataset."
       },
-      "correct_answer": "A",
-      "explanation": "Un 'shift de domaine' non adressé entraîne souvent une baisse des performances sur les données de test. La complexité du modèle (B), le temps d'entraînement (C), et la détection d'outliers (D) ne sont pas des conséquences directes d'un 'shift de domaine'.",
+      "correct_answer": "B",
+      "explanation": "Un 'shift de domaine' non adressé entraîne souvent une baisse des performances sur les données de test. La complexité du modèle (B), le temps d'entraînement (C), et la détection d'outliers (D) ne sont pas des conséquences directes d'un 'shift de domaine'. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmentation de la complexité du modèle au-delà de sa capacité de généralisation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Accélération inattendue du temps d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Incapacité à détecter des outliers dans",
       "difficulty": "hard"
     },
     {
@@ -93,12 +93,12 @@
       "image_url": null,
       "choices": {
         "A": "Augmentation des données dans le domaine cible.",
-        "B": "Réduction des caractéristiques inutiles.",
-        "C": "Transfert d'apprentissage avec congruence des caractéristiques.",
+        "B": "Transfert d'apprentissage avec congruence des caractéristiques.",
+        "C": "Réduction des caractéristiques inutiles.",
         "D": "Apprentissage de l'alignement des distributions grâce aux réseaux adverses."
       },
-      "correct_answer": "B",
-      "explanation": "Réduire les caractéristiques inutiles est moins pertinent car ce n'est pas directement une technique d'adaptation de domaine. L'augmentation des données (A), l'utilisation du transfert d'apprentissage (C), et les réseaux adverses pour aligner les distributions (D) sont des techniques fréquentes d'adaptation.",
+      "correct_answer": "C",
+      "explanation": "Réduire les caractéristiques inutiles est moins pertinent car ce n'est pas directement une technique d'adaptation de domaine. L'augmentation des données (A), l'utilisation du transfert d'apprentissage (C), et les réseaux adverses pour aligner les distributions (D) sont des techniques fréquentes d'adaptation. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmentation des données dans le domaine cible.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Transfert d'apprentissage avec congruence des caractéristiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Apprentissage de l'alignement des distributions grâce aux réseaux adverses.) est plausible",
       "difficulty": "hard"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Dans quel cas l'alignement de distributions est-il le plus crucial?",
       "image_url": null,
       "choices": {
-        "A": "Lorsque les ensembles de données source et cible ont des caractéristiques semblables mais diffèrent par la distribution.",
+        "A": "Quand les ensembles de données source et cible sont de tailles équivalentes.",
         "B": "Quand les labels manquent totalement dans l'ensemble de données cible.",
         "C": "Quand les classes d'intérêt sont entièrement nouvelles entre les domaines.",
-        "D": "Quand les ensembles de données source et cible sont de tailles équivalentes."
+        "D": "Lorsque les ensembles de données source et cible ont des caractéristiques semblables mais diffèrent par la distribution."
       },
-      "correct_answer": "A",
-      "explanation": "L'alignement de distributions est crucial lorsque les caractéristiques sont semblables mais leurs distributions diffèrent. Un manque total de labels (B), des classes entièrement nouvelles (C), et des tailles similaires (D) ne nécessitent pas nécessairement l'alignement des distributions.",
+      "correct_answer": "D",
+      "explanation": "L'alignement de distributions est crucial lorsque les caractéristiques sont semblables mais leurs distributions diffèrent. Un manque total de labels (B), des classes entièrement nouvelles (C), et des tailles similaires (D) ne nécessitent pas nécessairement l'alignement des distributions. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Quand les ensembles de données source et cible sont de tailles équivalentes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Quand les labels manquent totalement dans l'ensemble de données cible.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Quand les classes d'intérêt sont",
       "difficulty": "hard"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Une augmentation de la variance dans les prédictions du modèle."
       },
       "correct_answer": "A",
-      "explanation": "Un alignement réussi se manifeste par une performance similaire sur les données de source et de cible. La taille de batch (B), le surajustement sur les données de test (C), et la variance des prédictions (D) ne sont pas des indicateurs directs d'un tel alignement.",
+      "explanation": "Un alignement réussi se manifeste par une performance similaire sur les données de source et de cible. La taille de batch (B), le surajustement sur les données de test (C), et la variance des prédictions (D) ne sont pas des indicateurs directs d'un tel alignement. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Une diminution significative des échantillons de taille de batch.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une réduction du surajustement du modèle sur les données de test.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "hard"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quel problème le 'covariate shift' pose-t-il spécifiquement pour les méthodes basées sur des modèles linéaires?",
       "image_url": null,
       "choices": {
-        "A": "Il peut biaiser les coefficients estimés en raison de la distribution changeante des attributs.",
-        "B": "Il entraîne une augmentation du temps de formation pour les modèles linéaires.",
+        "A": "Il entraîne une augmentation du temps de formation pour les modèles linéaires.",
+        "B": "Il peut biaiser les coefficients estimés en raison de la distribution changeante des attributs.",
         "C": "Il exige des ensembles de données beaucoup plus grands pour assurer la convergence.",
         "D": "Il impose des modifications des hyperparamètres pour stabiliser la formation."
       },
-      "correct_answer": "A",
-      "explanation": "Le 'covariate shift' peut biaiser les coefficients des modèles linéaires, car ces modèles sont sensibles aux changements de distribution des covariantes. Le temps de formation (B), la taille des ensembles (C) et les hyperparamètres (D) ne sont pas directement liés au problème de la distribution changeante dans le contexte des modèles linéaires.",
+      "correct_answer": "B",
+      "explanation": "Le 'covariate shift' peut biaiser les coefficients des modèles linéaires, car ces modèles sont sensibles aux changements de distribution des covariantes. Le temps de formation (B), la taille des ensembles (C) et les hyperparamètres (D) ne sont pas directement liés au problème de la distribution changeante dans le contexte des modèles linéaires. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il entraîne une augmentation du temps de formation pour les modèles linéaires.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il exige des ensembles de données beaucoup plus grands pour assurer la convergence.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Quelle technique permet de gérer efficacement un 'shift de domaine'?",
       "image_url": null,
       "choices": {
-        "A": "Domain adversarial neural networks (DANN).",
+        "A": "Augmentation simple des données d'entraînement.",
         "B": "Utilisation des réseaux profonds entièrement connectés.",
-        "C": "Augmentation simple des données d'entraînement.",
+        "C": "Domain adversarial neural networks (DANN).",
         "D": "Application d'une régularisation L1 agressive."
       },
-      "correct_answer": "A",
-      "explanation": "Les Domain adversarial neural networks (DANN) sont conçus pour réduire l'écart entre les distributions source et cible. Les réseaux profonds entièrement connectés (B), l'augmentation simple des données (C), et une régularisation L1 agressive (D) ne ciblent pas spécifiquement le problème de shift de domaine.",
+      "correct_answer": "C",
+      "explanation": "Les Domain adversarial neural networks (DANN) sont conçus pour réduire l'écart entre les distributions source et cible. Les réseaux profonds entièrement connectés (B), l'augmentation simple des données (C), et une régularisation L1 agressive (D) ne ciblent pas spécifiquement le problème de shift de domaine. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmentation simple des données d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Utilisation des réseaux profonds entièrement connectés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Application d'une régularisation L1 agressive.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel défi l'adaptation de domaine cherche-t-elle spécialement à surmonter?",
       "image_url": null,
       "choices": {
-        "A": "Transfert fonctionnel de connaissance d'un domaine riche en données vers un domaine pauvre en données.",
+        "A": "Optimisation des hyperparamètres pour améliorer la performance sur le même domaine.",
         "B": "Réduction de la taille des modèles pour minimiser la consommation de mémoire.",
         "C": "Augmentation systématique de la diversité des caractéristiques dans les données.",
-        "D": "Optimisation des hyperparamètres pour améliorer la performance sur le même domaine."
+        "D": "Transfert fonctionnel de connaissance d'un domaine riche en données vers un domaine pauvre en données."
       },
-      "correct_answer": "A",
-      "explanation": "L'adaptation de domaine consiste à transférer le savoir d'un domaine riche en données à un domaine avec moins de données labellisées. Les préoccupations concernant la taille du modèle (B), la diversité des caractéristiques (C), et l'optimisation des hyperparamètres (D) sont distinctes de cet objectif principal.",
+      "correct_answer": "D",
+      "explanation": "L'adaptation de domaine consiste à transférer le savoir d'un domaine riche en données à un domaine avec moins de données labellisées. Les préoccupations concernant la taille du modèle (B), la diversité des caractéristiques (C), et l'optimisation des hyperparamètres (D) sont distinctes de cet objectif principal. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Optimisation des hyperparamètres pour améliorer la performance sur le même domaine.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Réduction de la taille des modèles pour minimiser la consommation de mémoire.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Utiliser une version simplifiée du modèle pour éviter le surajustement."
       },
       "correct_answer": "A",
-      "explanation": "Le rééquilibrage des données par repondération est une technique courante pour corriger le 'covariate shift'. Augmenter la profondeur (B), supprimer les variantes élevées (C), et utiliser des modèles simplifiés (D) ne résolvent pas spécifiquement le problème de la distribution du 'covariate shift'.",
+      "explanation": "Le rééquilibrage des données par repondération est une technique courante pour corriger le 'covariate shift'. Augmenter la profondeur (B), supprimer les variantes élevées (C), et utiliser des modèles simplifiés (D) ne résolvent pas spécifiquement le problème de la distribution du 'covariate shift'. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Augmenter la profondeur du réseau de neurones.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Supprimer les échantillons avec des hautes valeurs de variance.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Utiliser une version simplifiée du modèle",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Parmi les options suivantes, laquelle est essentielle pour une adaptation de domaine réussie?",
       "image_url": null,
       "choices": {
-        "A": "Capacité à ajuster les distributions de données d'entrée à travers des techniques d'alignement.",
-        "B": "Capacité à diminuer la consommation d'énergie du modèle en production.",
+        "A": "Capacité à diminuer la consommation d'énergie du modèle en production.",
+        "B": "Capacité à ajuster les distributions de données d'entrée à travers des techniques d'alignement.",
         "C": "Capacité à entraîner le modèle plus rapidement sur le même ensemble de données.",
         "D": "Capacité à simplifier les données d'entrée en réduisant leur dimensionnalité."
       },
-      "correct_answer": "A",
-      "explanation": "L'adaptation de domaine réussie repose sur la capacité à ajuster les distributions de données d'entrée via des techniques d'alignement. La consommation d'énergie (B), la rapidité d'entraînement (C), et la réduction de dimensionnalité (D) ne sont pas fondamentales pour l'adaptation de domaine.",
+      "correct_answer": "B",
+      "explanation": "L'adaptation de domaine réussie repose sur la capacité à ajuster les distributions de données d'entrée via des techniques d'alignement. La consommation d'énergie (B), la rapidité d'entraînement (C), et la réduction de dimensionnalité (D) ne sont pas fondamentales pour l'adaptation de domaine. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Capacité à diminuer la consommation d'énergie du modèle en production.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Capacité à entraîner le modèle plus rapidement sur le même ensemble de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "hard"
     },
     {
@@ -210,7 +210,7 @@
         "D": "Il peut nécessiter l'utilisation de techniques d'apprentissage non supervisées."
       },
       "correct_answer": "C",
-      "explanation": "L'alignement des distributions ne prévient pas l'overfitting; il facilite la généralisation. Les affirmations A, B, et D sont vraies: il aide la généralisation (A), peut impliquer des transformations de caractéristiques (B), et parfois des techniques non supervisées (D).",
+      "explanation": "L'alignement des distributions ne prévient pas l'overfitting; il facilite la généralisation. Les affirmations A, B, et D sont vraies: il aide la généralisation (A), peut impliquer des transformations de caractéristiques (B), et parfois des techniques non supervisées (D). La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'alignement des distributions permet au modèle de généraliser entre les domaines source et cible.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Cela implique souvent une transformation explicite des caractéristiques de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il peut",
       "difficulty": "hard"
     },
     {
@@ -224,7 +224,7 @@
         "D": "Un modèle d'analyse de sentiment appliqué à un corpus de données non labellisées."
       },
       "correct_answer": "D",
-      "explanation": "D n'est pas un exemple typique de 'shift de domaine', car il concerne l'absence de labels, non la distribution changeante. A, B, et C sont tous des exemples de distributions de données d'entraînement différentes des distributions de données de test.",
+      "explanation": "D n'est pas un exemple typique de 'shift de domaine', car il concerne l'absence de labels, non la distribution changeante. A, B, et C sont tous des exemples de distributions de données d'entraînement différentes des distributions de données de test. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un système de reconnaissance faciale formé sur des images de jour testé sur des images de nuit.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Un modèle de prédiction météorologique développé en été utilisé en hiver.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Le modèle pourrait utiliser efficacement les données d'entraînement inutilisées."
       },
       "correct_answer": "A",
-      "explanation": "Ne pas traiter le 'covariate shift' signifie que le modèle pourrait mal généraliser, surestimant ainsi ses performances réelles prédictives. B, C, et D sont incorrects: ils ne sont pas des effets directs de l'absence de traitement du 'covariate shift'.",
+      "explanation": "Ne pas traiter le 'covariate shift' signifie que le modèle pourrait mal généraliser, surestimant ainsi ses performances réelles prédictives. B, C, et D sont incorrects: ils ne sont pas des effets directs de l'absence de traitement du 'covariate shift'. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Le modèle pourrait fonctionner correctement même sans données d'étiquettes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le modèle pourrait nécessiter plus de données d'entraînement pour convergence.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Le modèle pourrait utiliser efficacement les",
       "difficulty": "hard"
     }
   ]

@@ -14,7 +14,7 @@
         "D": "Le bruit des labels augmente la complexité de calcul des pseudo-labels."
       },
       "correct_answer": "A",
-      "explanation": "Le bruit dans les labels peut entraîner une diminution de la précision du modèle car les modèles se basent sur des informations erronées ou floues. Contrairement à l'affirmation B, le bruit ne conduit pas systématiquement à une meilleure généralisation. L'affirmation C est incorrecte car le bruit peut aussi affecter la performance finale. D est incorrect car le bruit ne modifie pas directement la complexité de calcul.",
+      "explanation": "Le bruit dans les labels peut entraîner une diminution de la précision du modèle car les modèles se basent sur des informations erronées ou floues. Contrairement à l'affirmation B, le bruit ne conduit pas systématiquement à une meilleure généralisation. L'affirmation C est incorrecte car le bruit peut aussi affecter la performance finale. D est incorrect car le bruit ne modifie pas directement la complexité de calcul. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Le bruit améliore systématiquement la généralisation du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le bruit n'affecte que la vitesse de convergence, pas la",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Quel mécanisme est couramment utilisé pour corriger les erreurs de pseudo-label dues au bruit ?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser un modèle de confiance pour écarter les labels les moins fiables.",
-        "B": "Augmenter la taille de l'ensemble de données sans filtrage.",
+        "A": "Augmenter la taille de l'ensemble de données sans filtrage.",
+        "B": "Utiliser un modèle de confiance pour écarter les labels les moins fiables.",
         "C": "Ajouter du bruit supplémentaire pour masquer les erreurs existantes.",
         "D": "Réduire le nombre de classes dans le problème."
       },
-      "correct_answer": "A",
-      "explanation": "L'utilisation d'un modèle de confiance pour écarter les labels les moins fiables aide à corriger les erreurs dues au bruit. Augmenter la taille sans filtrage (choix B) ne corrige pas spécifiquement le bruit. Ajouter du bruit (choix C) aggrave le problème. Réduire le nombre de classes (choix D) ne traite pas directement le bruit.",
+      "correct_answer": "B",
+      "explanation": "L'utilisation d'un modèle de confiance pour écarter les labels les moins fiables aide à corriger les erreurs dues au bruit. Augmenter la taille sans filtrage (choix B) ne corrige pas spécifiquement le bruit. Ajouter du bruit (choix C) aggrave le problème. Réduire le nombre de classes (choix D) ne traite pas directement le bruit. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmenter la taille de l'ensemble de données sans filtrage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ajouter du bruit supplémentaire pour masquer les erreurs existantes.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quelle est la principale raison d'utiliser des techniques de réponderation des labels en apprentissage semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Atténuer l'impact des labels bruyants sur l'apprentissage du modèle.",
+        "A": "Faire converger le modèle plus rapidement.",
         "B": "Éliminer complètement le bruit des pseudo-labels.",
-        "C": "Faire converger le modèle plus rapidement.",
+        "C": "Atténuer l'impact des labels bruyants sur l'apprentissage du modèle.",
         "D": "Augmenter artificiellement le nombre de labels disponibles."
       },
-      "correct_answer": "A",
-      "explanation": "La réponderation des labels est utilisée pour atténuer l'impact des labels bruyants et améliorer l'apprentissage. Éliminer complètement le bruit (B) est généralement irréaliste. Bien que C soit un effet possible, ce n'est pas la raison principale. D est incorrect car la réponderation ne crée pas de nouveaux labels.",
+      "correct_answer": "C",
+      "explanation": "La réponderation des labels est utilisée pour atténuer l'impact des labels bruyants et améliorer l'apprentissage. Éliminer complètement le bruit (B) est généralement irréaliste. Bien que C soit un effet possible, ce n'est pas la raison principale. D est incorrect car la réponderation ne crée pas de nouveaux labels. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Faire converger le modèle plus rapidement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Éliminer complètement le bruit des pseudo-labels.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Augmenter artificiellement le nombre",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Dans une approche teacher-student, quel est le rôle principal du modèle teacher ?",
       "image_url": null,
       "choices": {
-        "A": "Il génère des pseudo-labels pour guider l'entraînement du modèle student.",
+        "A": "Il évalue la performance du modèle student après l'entraînement.",
         "B": "Il ajuste directement les paramètres du modèle student.",
         "C": "Il augmente la capacité de calcul globale du système.",
-        "D": "Il évalue la performance du modèle student après l'entraînement."
+        "D": "Il génère des pseudo-labels pour guider l'entraînement du modèle student."
       },
-      "correct_answer": "A",
-      "explanation": "Le modèle teacher génère des pseudo-labels qui sont ensuite utilisés pour guider le modèle student. B est incorrect car le teacher ne modifie pas directement les paramètres du student. C est incorrect car la capacité de calcul n'est pas directement augmentée par cette relation. D est incorrect, car bien que l'évaluation soit possible, ce n'est pas sa fonction principale.",
+      "correct_answer": "D",
+      "explanation": "Le modèle teacher génère des pseudo-labels qui sont ensuite utilisés pour guider le modèle student. B est incorrect car le teacher ne modifie pas directement les paramètres du student. C est incorrect car la capacité de calcul n'est pas directement augmentée par cette relation. D est incorrect, car bien que l'évaluation soit possible, ce n'est pas sa fonction principale. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il évalue la performance du modèle student après l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il ajuste directement les paramètres du modèle student.) est plausible mais faux car il ne respecte",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Le modèle total perd la capacité de généralisation."
       },
       "correct_answer": "A",
-      "explanation": "Si les pseudo-labels sont trop confiants, le modèle student pourrait renforcer les erreurs, menant à un surapprentissage. B est faux car la génération de labels se poursuit indépendamment de la confiance. C est incorrect car le student ne devient pas automatiquement indépendant. D est faux car la perte de généralisation n'est pas directement causée par la confiance des labels.",
+      "explanation": "Si les pseudo-labels sont trop confiants, le modèle student pourrait renforcer les erreurs, menant à un surapprentissage. B est faux car la génération de labels se poursuit indépendamment de la confiance. C est incorrect car le student ne devient pas automatiquement indépendant. D est faux car la perte de généralisation n'est pas directement causée par la confiance des labels. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Le modèle teacher cesse de générer de nouveaux labels.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le modèle student devient indépendant du modèle teacher.) est plausible mais faux car il ne respecte",
       "difficulty": "easy"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Comment un modèle student peut-il être entraîné pour ignorer les pseudo-labels les moins fiables ?",
       "image_url": null,
       "choices": {
-        "A": "En appliquant une réponderation basée sur la confiance estimée des labels.",
-        "B": "En doublant la taille de l'ensemble de données.",
+        "A": "En doublant la taille de l'ensemble de données.",
+        "B": "En appliquant une réponderation basée sur la confiance estimée des labels.",
         "C": "En remplaçant les pseudo-labels non fiables par des labels aléatoires.",
         "D": "En réduisant le nombre d'époques d'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "La réponderation basée sur la confiance permet de diminuer l'impact des labels peu fiables. Doubler la taille (B) ne cible pas directement les labels. C est faux car des choix aléatoires n'améliorent pas la fiabilité. Réduire les époques (D) ne traite pas spécifiquement le problème des labels non fiables.",
+      "correct_answer": "B",
+      "explanation": "La réponderation basée sur la confiance permet de diminuer l'impact des labels peu fiables. Doubler la taille (B) ne cible pas directement les labels. C est faux car des choix aléatoires n'améliorent pas la fiabilité. Réduire les époques (D) ne traite pas spécifiquement le problème des labels non fiables. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En doublant la taille de l'ensemble de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En remplaçant les pseudo-labels non fiables par des labels aléatoires.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quelle méthode de correction des labels pourrait aider à améliorer la qualité des pseudo-labels ?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser un réseau de confusion pour identifier les erreurs systématiques.",
+        "A": "Standardiser les features des données d'entrée.",
         "B": "Rendre tous les pseudo-labels équi-probables.",
-        "C": "Standardiser les features des données d'entrée.",
+        "C": "Utiliser un réseau de confusion pour identifier les erreurs systématiques.",
         "D": "Capturer plus de données d'entraînement simples."
       },
-      "correct_answer": "A",
-      "explanation": "Un réseau de confusion peut mettre en évidence les erreurs systématiques dans les labels. B est incorrect car rendre les labels équi-probables ignore complètement la variation naturelle des données. C est lié à la pré-traitement des features, pas à la correction des labels. D ne traite pas les erreurs de labels existantes.",
+      "correct_answer": "C",
+      "explanation": "Un réseau de confusion peut mettre en évidence les erreurs systématiques dans les labels. B est incorrect car rendre les labels équi-probables ignore complètement la variation naturelle des données. C est lié à la pré-traitement des features, pas à la correction des labels. D ne traite pas les erreurs de labels existantes. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Standardiser les features des données d'entrée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Rendre tous les pseudo-labels équi-probables.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Capturer",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quelle situation peut provoquer un surajustement lors de l'utilisation d'un ensemble teacher-student ?",
       "image_url": null,
       "choices": {
-        "A": "Le modèle student apprend trop exclusivement à partir des pseudo-labels du teacher.",
+        "A": "Le student ne reçoit jamais de rétroaction sur ses erreurs.",
         "B": "Le teacher produit systématiquement des labels incorrects.",
         "C": "Les données d'entraînement sont excessivement variées.",
-        "D": "Le student ne reçoit jamais de rétroaction sur ses erreurs."
+        "D": "Le modèle student apprend trop exclusivement à partir des pseudo-labels du teacher."
       },
-      "correct_answer": "A",
-      "explanation": "Le surajustement peut se produire si le student apprend trop exclusivement des pseudo-labels produits par le teacher, incluant les éventuelles erreurs. B contribuerait à un surajustement s'il n'y avait pas d'autres sources de données, mais les termes du problème sont différents. C n'est pas un facteur de surajustement, et D est incorrect car le student reçoit souvent des rétroactions.",
+      "correct_answer": "D",
+      "explanation": "Le surajustement peut se produire si le student apprend trop exclusivement des pseudo-labels produits par le teacher, incluant les éventuelles erreurs. B contribuerait à un surajustement s'il n'y avait pas d'autres sources de données, mais les termes du problème sont différents. C n'est pas un facteur de surajustement, et D est incorrect car le student reçoit souvent des rétroactions. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le student ne reçoit jamais de rétroaction sur ses erreurs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le teacher produit systématiquement des labels incorrects.) est plausible mais faux car il ne respecte",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Il garantit une utilisation optimale de la mémoire."
       },
       "correct_answer": "A",
-      "explanation": "L'étalonnage assure que les probabilités de sorties reflètent correctement la confiance en un label, pertinent pour l'interprétation et l'ajustement du modèle. B ne concerne pas directement l'étalonnage. C et D ne sont pas des fonctions primaires de l'étalonnage.",
+      "explanation": "L'étalonnage assure que les probabilités de sorties reflètent correctement la confiance en un label, pertinent pour l'interprétation et l'ajustement du modèle. B ne concerne pas directement l'étalonnage. C et D ne sont pas des fonctions primaires de l'étalonnage. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il rééquilibre automatiquement la distribution des classes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il permet d'augmenter la vitesse d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il garantit une utilisation optimale de la mémoire.) est plausible mais faux car",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quel bénéfice apporte la validation croisée sur les pseudo-labels dans un ensemble teacher-student ?",
       "image_url": null,
       "choices": {
-        "A": "Évaluer la fiabilité des pseudo-labels générés.",
-        "B": "Réduire la taille totale de l'ensemble de données.",
+        "A": "Réduire la taille totale de l'ensemble de données.",
+        "B": "Évaluer la fiabilité des pseudo-labels générés.",
         "C": "Transformer les données brutes en features.",
         "D": "Assurer la symétrie dans la structure du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "La validation croisée permet d'évaluer la fiabilité des pseudo-labels en observant leur performance préliminaire. B est incorrect et C concerne le prétraitement des données, pas l'évaluation des labels. D est un concept lié à la structure des modèles, pas à l'évaluation des labels.",
+      "correct_answer": "B",
+      "explanation": "La validation croisée permet d'évaluer la fiabilité des pseudo-labels en observant leur performance préliminaire. B est incorrect et C concerne le prétraitement des données, pas l'évaluation des labels. D est un concept lié à la structure des modèles, pas à l'évaluation des labels. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire la taille totale de l'ensemble de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Transformer les données brutes en features.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Assurer la symétrie dans la structure du",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "En apprentissage semi-supervisé, que signifie 'nettoyer' les pseudo-labels ?",
       "image_url": null,
       "choices": {
-        "A": "Supprimer ou corriger les pseudo-labels identifiés comme bruyants.",
+        "A": "Redistribuer uniformément les classes cibles.",
         "B": "Normaliser les caractéristiques de la donnée au niveau du dataset.",
-        "C": "Redistribuer uniformément les classes cibles.",
+        "C": "Supprimer ou corriger les pseudo-labels identifiés comme bruyants.",
         "D": "Augmenter la taille des mini-lots pendant l'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "'Nettoyer' les pseudo-labels signifie ajuster ou écarter ceux qui ont été identifiés comme incorrects ou peu fiables. B et C traitent des données de manière générale, non spécifiquement des pseudo-labels. D, bien que pertinent pour l'entraînement, ne modifie en rien les pseudo-labels.",
+      "correct_answer": "C",
+      "explanation": "'Nettoyer' les pseudo-labels signifie ajuster ou écarter ceux qui ont été identifiés comme incorrects ou peu fiables. B et C traitent des données de manière générale, non spécifiquement des pseudo-labels. D, bien que pertinent pour l'entraînement, ne modifie en rien les pseudo-labels. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Redistribuer uniformément les classes cibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Normaliser les caractéristiques de la donnée au niveau du dataset.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Augmenter la taille des mini-lots pendant l'entraînement.)",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel est le risque d'utiliser des pseudo-labels trop tôt dans le processus d'apprentissage semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Le modèle peut amplifier les erreurs initiales.",
+        "A": "La structure du modèle pourrait être modifiée de manière non supervisée.",
         "B": "Le modèle cesse de mettre à jour ses paramètres.",
         "C": "Les données d'entrée deviennent biaisées.",
-        "D": "La structure du modèle pourrait être modifiée de manière non supervisée."
+        "D": "Le modèle peut amplifier les erreurs initiales."
       },
-      "correct_answer": "A",
-      "explanation": "Utiliser trop tôt des pseudo-labels peut amener le modèle à amplifier les erreurs initiales, car il ne peut pas encore distinguer efficacement le signal du bruit. B est incorrect puisque le modèle continue de s'adapter. C est une conséquence, mais pas un risque direct dans cette phase. D concerne la construction du modèle, pas l'utilisation de pseudo-labels.",
+      "correct_answer": "D",
+      "explanation": "Utiliser trop tôt des pseudo-labels peut amener le modèle à amplifier les erreurs initiales, car il ne peut pas encore distinguer efficacement le signal du bruit. B est incorrect puisque le modèle continue de s'adapter. C est une conséquence, mais pas un risque direct dans cette phase. D concerne la construction du modèle, pas l'utilisation de pseudo-labels. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (La structure du modèle pourrait être modifiée de manière non supervisée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le modèle cesse de mettre à jour ses paramètres.) est plausible mais faux car il ne",
       "difficulty": "medium"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Remplacer les activations non-linéaires par des linéaires."
       },
       "correct_answer": "A",
-      "explanation": "Utiliser des ensembliers pour générer des pseudo-labels peut aider à réduire le biais et augmenter la robustesse. B et D sont des transformations des données ou des architectures qui n'améliorent pas spécifiquement la sécurité des pseudo-labels. C, bien que pertinent pour ajuster l'attention sur certaines entrées, ne touche pas directement à la robustesse face aux labels biaisés.",
+      "explanation": "Utiliser des ensembliers pour générer des pseudo-labels peut aider à réduire le biais et augmenter la robustesse. B et D sont des transformations des données ou des architectures qui n'améliorent pas spécifiquement la sécurité des pseudo-labels. C, bien que pertinent pour ajuster l'attention sur certaines entrées, ne touche pas directement à la robustesse face aux labels biaisés. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Réduire la dimensionnalité des données d'entrée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Modifier la fonction de perte pour minimiser l'entropie.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "medium"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quel indicateur pourrait suggérer une amélioration nécessaire des pseudo-labels générés par le modèle teacher ?",
       "image_url": null,
       "choices": {
-        "A": "Une convergence rapide avec résultats insatisfaisants.",
-        "B": "Des temps d'entraînement allongés.",
+        "A": "Des temps d'entraînement allongés.",
+        "B": "Une convergence rapide avec résultats insatisfaisants.",
         "C": "Un nombre croissant d'erreurs système lors de l'inférence.",
         "D": "Des pertes modérément élevées avec forte précision individuelle."
       },
-      "correct_answer": "A",
-      "explanation": "Une convergence rapide suivie de résultats insatisfaisants pourrait indiquer que les pseudo-labels ne sont pas assez qualitatifs pour promouvoir un apprentissage pertinent. B est souvent indépendant de la qualité, et C ne s'applique pas aux labels. D est plus une anomalie de métrique qu'un indicatif de qualité.",
+      "correct_answer": "B",
+      "explanation": "Une convergence rapide suivie de résultats insatisfaisants pourrait indiquer que les pseudo-labels ne sont pas assez qualitatifs pour promouvoir un apprentissage pertinent. B est souvent indépendant de la qualité, et C ne s'applique pas aux labels. D est plus une anomalie de métrique qu'un indicatif de qualité. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Des temps d'entraînement allongés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Un nombre croissant d'erreurs système lors de l'inférence.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Des pertes modérément élevées avec",
       "difficulty": "medium"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Pourquoi est-il important d'évaluer régulièrement la qualité des pseudo-labels en cours de formation ?",
       "image_url": null,
       "choices": {
-        "A": "Pour ajuster l'entraînement et réduire le risque d'apprentissage négatif.",
+        "A": "Pour minimiser le temps de calcul par mini-lot.",
         "B": "Pour assurer une convergence à un maximum global.",
-        "C": "Pour minimiser le temps de calcul par mini-lot.",
+        "C": "Pour ajuster l'entraînement et réduire le risque d'apprentissage négatif.",
         "D": "Pour synchroniser l'entraînement sur plusieurs machines."
       },
-      "correct_answer": "A",
-      "explanation": "Évaluer les pseudo-labels permet d'ajuster la formation et d'éviter l'apprentissage négatif qui pourrait empêcher une bonne généralisation. B est un objectif, mais pas directement lié à la qualité des labels. C est une optimisation de la performance plutôt que du label. D, bien que pertinent pour le calcul distribué, ne concerne pas la qualité des pseudo-labels.",
+      "correct_answer": "C",
+      "explanation": "Évaluer les pseudo-labels permet d'ajuster la formation et d'éviter l'apprentissage négatif qui pourrait empêcher une bonne généralisation. B est un objectif, mais pas directement lié à la qualité des labels. C est une optimisation de la performance plutôt que du label. D, bien que pertinent pour le calcul distribué, ne concerne pas la qualité des pseudo-labels. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour minimiser le temps de calcul par mini-lot.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour assurer une convergence à un maximum global.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Quel est un indicateur de bruit de labels qui pourrait nécessiter une repondération des pseudo-labels ?",
       "image_url": null,
       "choices": {
-        "A": "Un désaccord persistant entre prédictions et observations sur un sous-ensemble.",
+        "A": "Une disparition soudaine de gradient lors de l'entraînement.",
         "B": "Un excès de convergence sur les premières époques.",
         "C": "Un nombre égal de faux positifs et faux négatifs.",
-        "D": "Une disparition soudaine de gradient lors de l'entraînement."
+        "D": "Un désaccord persistant entre prédictions et observations sur un sous-ensemble."
       },
-      "correct_answer": "A",
-      "explanation": "Un désaccord constant pourrait indiquer la présence d'un bruit de label, nécessaire pour une intervention telle que la repondération. B pourrait être attribué à d'autres causes comme l'overfitting précoce. C ne reflète pas nécessairement un bruit de label, et D est généralement lié à des problèmes d'apprentissage indépendants des labels.",
+      "correct_answer": "D",
+      "explanation": "Un désaccord constant pourrait indiquer la présence d'un bruit de label, nécessaire pour une intervention telle que la repondération. B pourrait être attribué à d'autres causes comme l'overfitting précoce. C ne reflète pas nécessairement un bruit de label, et D est généralement lié à des problèmes d'apprentissage indépendants des labels. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une disparition soudaine de gradient lors de l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Un excès de convergence sur les premières époques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Inversion des gradients de confirmation."
       },
       "correct_answer": "A",
-      "explanation": "La surpondération de pseudo-labels sûr peut conduire à un surapprentissage de ces exemples, négligeant la variabilité globale des données. B, C et D ne sont ni des conséquences directes de cet ajustement, ni définies dans le contexte de reponderation.",
+      "explanation": "La surpondération de pseudo-labels sûr peut conduire à un surapprentissage de ces exemples, négligeant la variabilité globale des données. B, C et D ne sont ni des conséquences directes de cet ajustement, ni définies dans le contexte de reponderation. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Réduction de la génération des fonctionnalités non supervisées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Divergence rapide de la fonction de coût.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Inversion des gradients de confirmation.) est plausible mais faux car",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Quel problème peut survenir si l'ajustement des poids pour compenser le bruit de labels est excessif ?",
       "image_url": null,
       "choices": {
-        "A": "Compromission de la diversité du modèle en formation.",
-        "B": "Réduction du cadre d'hyperparamètres possibles.",
+        "A": "Réduction du cadre d'hyperparamètres possibles.",
+        "B": "Compromission de la diversité du modèle en formation.",
         "C": "Boost imposé sur les classes sous-représentées.",
         "D": "Augmentation de l'instabilité du gradient pendant l'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "Un ajustement excessif des poids peut compromettre la diversité en focalisant trop l'apprentissage, négligeant d'autres aspects de généralisation. B ne concerne pas directement ce type de modulation et C, bien que correct dans un autre contexte, n'est pas la conséquence immédiate d'un ajustement excessif lié au bruit. D est plausible, mais il est moins fréquemment perçu que la diversification compromise.",
+      "correct_answer": "B",
+      "explanation": "Un ajustement excessif des poids peut compromettre la diversité en focalisant trop l'apprentissage, négligeant d'autres aspects de généralisation. B ne concerne pas directement ce type de modulation et C, bien que correct dans un autre contexte, n'est pas la conséquence immédiate d'un ajustement excessif lié au bruit. D est plausible, mais il est moins fréquemment perçu que la diversification compromise. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduction du cadre d'hyperparamètres possibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Boost imposé sur les classes sous-représentées.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Dans un ensemble teacher-student, pourquoi pourrait-on introduire une régularisation sur le modèle student ?",
       "image_url": null,
       "choices": {
-        "A": "Pour prévenir le surapprentissage des erreurs du teacher.",
+        "A": "Pour diluer l'influence des données étiquetées.",
         "B": "Pour accélérer l'apprentissage du modèle par le teacher.",
-        "C": "Pour diluer l'influence des données étiquetées.",
+        "C": "Pour prévenir le surapprentissage des erreurs du teacher.",
         "D": "Pour améliorer la communication entre teacher et student."
       },
-      "correct_answer": "A",
-      "explanation": "La régularisation du modèle student peut limiter l'attention excessive sur les erreurs commises par le modèle teacher, évitant ainsi le surapprentissage de ces erreurs. B est incorrect car l'objectif n'est pas d'accélérer l'apprentissage par le teacher. C n'est pas pertinent dans ce contexte, et D est incorrect car la régularisation n'améliore pas la communication directe.",
+      "correct_answer": "C",
+      "explanation": "La régularisation du modèle student peut limiter l'attention excessive sur les erreurs commises par le modèle teacher, évitant ainsi le surapprentissage de ces erreurs. B est incorrect car l'objectif n'est pas d'accélérer l'apprentissage par le teacher. C n'est pas pertinent dans ce contexte, et D est incorrect car la régularisation n'améliore pas la communication directe. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour diluer l'influence des données étiquetées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour accélérer l'apprentissage du modèle par le teacher.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Quel est le rôle d'une fonction de coût asymétrique dans la gestion des pseudo-labels ?",
       "image_url": null,
       "choices": {
-        "A": "Penaliser plus fortement les erreurs sur les pseudo-labels.",
+        "A": "Maximiser l'écart entre précision et rappel.",
         "B": "Favoriser un balance entre temps de traitement et précision.",
         "C": "Ajuster dynamiquement la distribution des données d'entrée.",
-        "D": "Maximiser l'écart entre précision et rappel."
+        "D": "Penaliser plus fortement les erreurs sur les pseudo-labels."
       },
-      "correct_answer": "A",
-      "explanation": "Une fonction de coût asymétrique peut pénaliser plus sévèrement les erreurs sur des pseudo-labels pour favoriser la correction des erreurs systématiques. B, C et D sont des interprétations erronées de l'objectif principal de l'asymétrie dans une fonction de coût.",
+      "correct_answer": "D",
+      "explanation": "Une fonction de coût asymétrique peut pénaliser plus sévèrement les erreurs sur des pseudo-labels pour favoriser la correction des erreurs systématiques. B, C et D sont des interprétations erronées de l'objectif principal de l'asymétrie dans une fonction de coût. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Maximiser l'écart entre précision et rappel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Favoriser un balance entre temps de traitement et précision.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ajuster dynamiquement la distribution des données d'entrée.) est plausible mais",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "Il est nécessaire pour entraîner un modèle ensemble teacher-student."
       },
       "correct_answer": "A",
-      "explanation": "Le bruit de labels fait référence aux erreurs dans les informations de classe fournies, ce qui peut propager des erreurs et diminuer la précision du modèle lorsque les pseudo-labels sont générés sur des échantillons non étiquetés. Choix B est incorrect car le bruit ne sert pas à améliorer la généralisation mais peut nuire aux performances. Choix C est inexact car le bruit a un impact significatif sur la qualité des pseudo-labels. Choix D est incorrect car le bruit n'est pas nécessaire pour entraîner un modèle ensemble teacher-student.",
+      "explanation": "Le bruit de labels fait référence aux erreurs dans les informations de classe fournies, ce qui peut propager des erreurs et diminuer la précision du modèle lorsque les pseudo-labels sont générés sur des échantillons non étiquetés. Choix B est incorrect car le bruit ne sert pas à améliorer la généralisation mais peut nuire aux performances. Choix C est inexact car le bruit a un impact significatif sur la qualité des pseudo-labels. Choix D est incorrect car le bruit n'est pas nécessaire pour entraîner un modèle ensemble teacher-student. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il améliore la généralisation du modèle en ajoutant de la diversité.) est plausible mais faux car il",
       "difficulty": "easy"
     },
     {
@@ -302,13 +302,13 @@
       "question": "Quel est le rôle principal de la reponderation dans la gestion des pseudo-labels bruités?",
       "image_url": null,
       "choices": {
-        "A": "Elle ajuste l'importance de chaque pseudo-label basé sur sa fiabilité estimée.",
-        "B": "Elle diminue systématiquement le poids des pseudo-labels les plus récents.",
+        "A": "Elle diminue systématiquement le poids des pseudo-labels les plus récents.",
+        "B": "Elle ajuste l'importance de chaque pseudo-label basé sur sa fiabilité estimée.",
         "C": "Elle augmente le poids des pseudo-labels correspondant aux classes majoritaires.",
         "D": "Elle élimine complètement les pseudo-labels associés à des classes rares."
       },
-      "correct_answer": "A",
-      "explanation": "La reponderation est utilisée pour attribuer un poids différent aux pseudo-labels en fonction de leur fiabilité estimée, minimisant ainsi l'impact des erreurs due au bruit. Choix B est incorrect car la reponderation n'affecte pas les pseudo-labels en fonction du temps. Choix C est incorrect car augmenter le poids des classes majoritaires pourrait aggraver le déséquilibre des données. Choix D est inexact car l'élimination complète des pseudo-labels de classes rares peut entraîner des pertes d'information critiques.",
+      "correct_answer": "B",
+      "explanation": "La reponderation est utilisée pour attribuer un poids différent aux pseudo-labels en fonction de leur fiabilité estimée, minimisant ainsi l'impact des erreurs due au bruit. Choix B est incorrect car la reponderation n'affecte pas les pseudo-labels en fonction du temps. Choix C est incorrect car augmenter le poids des classes majoritaires pourrait aggraver le déséquilibre des données. Choix D est inexact car l'élimination complète des pseudo-labels de classes rares peut entraîner des pertes d'information critiques. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle diminue systématiquement le poids des pseudo-labels les plus récents.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "medium"
     }
   ]

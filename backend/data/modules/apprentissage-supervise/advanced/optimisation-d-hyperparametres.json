@@ -14,7 +14,7 @@
         "D": "Il ne peut être utilisé qu'avec les algorithmes de décision arborescents."
       },
       "correct_answer": "A",
-      "explanation": "Le grid search est coûteux car il évalue toutes les combinaisons possibles, ce qui peut être prohibitif pour des espaces de recherche larges. B est incorrect car grid search ne garantit pas d'atteindre le minimum global. C est faux car il peut traiter des hyperparamètres catégoriels. D est incorrect car il est applicable à divers modèles.",
+      "explanation": "Le grid search est coûteux car il évalue toutes les combinaisons possibles, ce qui peut être prohibitif pour des espaces de recherche larges. B est incorrect car grid search ne garantit pas d'atteindre le minimum global. C est faux car il peut traiter des hyperparamètres catégoriels. D est incorrect car il est applicable à divers modèles. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il garantit toujours d'atteindre le minimum global de la fonction de perte.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il limite l'optimisation aux hyperparamètres continus uniquement.) est plausible mais faux car il ne respecte pas",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Quelle est la différence clé entre le random search et le grid search dans le contexte d'optimisation des hyperparamètres?",
       "image_url": null,
       "choices": {
-        "A": "Le random search échantillonne aléatoirement l'espace des hyperparamètres, tandis que le grid search explore systématiquement toutes les combinaisons possibles.",
-        "B": "Le random search nécessite une évaluation plus approfondie de chaque combinaison que le grid search.",
+        "A": "Le random search nécessite une évaluation plus approfondie de chaque combinaison que le grid search.",
+        "B": "Le random search échantillonne aléatoirement l'espace des hyperparamètres, tandis que le grid search explore systématiquement toutes les combinaisons possibles.",
         "C": "Le random search est limité aux modèles linéaires contrairement au grid search.",
         "D": "Le grid search est utilisé principalement pour les hyperparamètres continus, contrairement au random search."
       },
-      "correct_answer": "A",
-      "explanation": "Le random search échantillonne les combinaisons de manière aléatoire, offrant souvent une exploration plus rapide et efficace des grandes dimensions. B est incorrect car les deux méthodes évaluent de manière similaire chaque combinaison. C est faux car le random search fonctionne avec divers modèles. D est incorrect, le grid search est souvent utilisé aussi pour les hyperparamètres discrets.",
+      "correct_answer": "B",
+      "explanation": "Le random search échantillonne les combinaisons de manière aléatoire, offrant souvent une exploration plus rapide et efficace des grandes dimensions. B est incorrect car les deux méthodes évaluent de manière similaire chaque combinaison. C est faux car le random search fonctionne avec divers modèles. D est incorrect, le grid search est souvent utilisé aussi pour les hyperparamètres discrets. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le random search nécessite une évaluation plus approfondie de chaque combinaison que le grid search.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le random search est limité aux modèles linéaires contrairement au grid",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Dans le contexte de l'optimisation bayésienne, qu'est-ce qu'une fonction d'acquisition?",
       "image_url": null,
       "choices": {
-        "A": "Elle estime les performances des configurations de modèles potentiels non encore testées pour déterminer le prochain point à évaluer.",
+        "A": "Elle applique un processus d'évolution génétique pour améliorer progressivement les hyperparamètres.",
         "B": "Elle est utilisée pour calculer directement le gradient de la fonction de perte.",
-        "C": "Elle applique un processus d'évolution génétique pour améliorer progressivement les hyperparamètres.",
+        "C": "Elle estime les performances des configurations de modèles potentiels non encore testées pour déterminer le prochain point à évaluer.",
         "D": "Elle génère des données artificielles pour agrandir l'ensemble d'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "Une fonction d'acquisition évalue quelles configurations non explorées devraient ensuite être testées en se basant sur une modélisation probabiliste du problème. B est incorrect car elle ne calcule pas de gradients. C est faux car elle ne cherche pas des solutions par des procédés évolutionnistes. D est incorrect car elle n'augmente pas l'ensemble d'entraînement.",
+      "correct_answer": "C",
+      "explanation": "Une fonction d'acquisition évalue quelles configurations non explorées devraient ensuite être testées en se basant sur une modélisation probabiliste du problème. B est incorrect car elle ne calcule pas de gradients. C est faux car elle ne cherche pas des solutions par des procédés évolutionnistes. D est incorrect car elle n'augmente pas l'ensemble d'entraînement. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle applique un processus d'évolution génétique pour améliorer progressivement les hyperparamètres.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle est utilisée pour calculer directement le gradient de la fonction de perte.) est plausible mais faux car il",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quel est l'avantage principal de l'optimisation bayésienne par rapport au grid search dans le cadre de l'optimisation d'hyperparamètres?",
       "image_url": null,
       "choices": {
-        "A": "Elle exploite les résultats des évaluations antérieures pour orienter les recherches futures de manière plus efficace.",
+        "A": "Elle fonctionne uniquement avec les vecteurs à faibles dimensions.",
         "B": "Elle est plus simple à implémenter et à comprendre que le grid search.",
         "C": "Elle garantit une optimisation optimale dans tous les cas.",
-        "D": "Elle fonctionne uniquement avec les vecteurs à faibles dimensions."
+        "D": "Elle exploite les résultats des évaluations antérieures pour orienter les recherches futures de manière plus efficace."
       },
-      "correct_answer": "A",
-      "explanation": "L'optimisation bayésienne utilise les informations des évaluations antérieures pour prédire les performances de nouvelles configurations, augmentant ainsi l'efficacité par rapport aux démarches exhaustives. B est incorrect car elle est souvent plus complexe à implémenter que le grid search. C est faux car elle ne garantit pas toujours des solutions optimales. D est incorrect, elle peut s'adapter à des dimensions élevées.",
+      "correct_answer": "D",
+      "explanation": "L'optimisation bayésienne utilise les informations des évaluations antérieures pour prédire les performances de nouvelles configurations, augmentant ainsi l'efficacité par rapport aux démarches exhaustives. B est incorrect car elle est souvent plus complexe à implémenter que le grid search. C est faux car elle ne garantit pas toujours des solutions optimales. D est incorrect, elle peut s'adapter à des dimensions élevées. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle fonctionne uniquement avec les vecteurs à faibles dimensions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle est plus simple à implémenter et à comprendre que le grid search.) est plausible",
       "difficulty": "medium"
     },
     {
@@ -64,13 +64,13 @@
       "question": "Pourquoi l'espace de recherche doit-il être défini avec soin lors de l'optimisation des hyperparamètres?",
       "image_url": null,
       "choices": {
-        "A": "Parce que l'espace de recherche trop large peut conduire à un surapprentissage dû aux redondances trop nombreuses.",
-        "B": "Parce que des bornes inappropriées peuvent entraîner des temps d'apprentissage inutiles très longs.",
+        "A": "Parce que des bornes inappropriées peuvent entraîner des temps d'apprentissage inutiles très longs.",
+        "B": "Parce que l'espace de recherche trop large peut conduire à un surapprentissage dû aux redondances trop nombreuses.",
         "C": "Parce qu'un espace de recherche trop restreint interdit l'utilisation de grilles de recherche.",
         "D": "Parce que seul un espace de recherche fini peut être utilisé avec des algorithmes génétiques."
       },
-      "correct_answer": "B",
-      "explanation": "Définir un espace de recherche approprié influence la rapidité et l'efficacité de l'optimisation; des bornes trop larges étendent inutilement le temps de calcul. A est incorrect car l'espace de recherche n'affecte pas directement le risque de surapprentissage. C est faux, il peut être exploré par des méthodes aléatoires ou bayésiennes. D est incorrect, l'utilisation d'algorithmes génétiques n'est pas restreinte aux espaces finis.",
+      "correct_answer": "A",
+      "explanation": "Définir un espace de recherche approprié influence la rapidité et l'efficacité de l'optimisation; des bornes trop larges étendent inutilement le temps de calcul. A est incorrect car l'espace de recherche n'affecte pas directement le risque de surapprentissage. C est faux, il peut être exploré par des méthodes aléatoires ou bayésiennes. D est incorrect, l'utilisation d'algorithmes génétiques n'est pas restreinte aux espaces finis. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Parce que l'espace de recherche trop large peut conduire à un surapprentissage dû aux redondances trop nombreuses.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce qu'un espace de recherche",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Dans un espace de recherche hyperparamétrique, pourquoi est-il parfois préférable d'utiliser des distributions logarithmiques pour les paramètres?",
       "image_url": null,
       "choices": {
-        "A": "Parce qu'elles permettent une exploration équidistante du logarithme des valeurs hyperparamétriques.",
-        "B": "Parce qu'elles convertissent tous les paramètres en valeurs continues.",
+        "A": "Parce qu'elles convertissent tous les paramètres en valeurs continues.",
+        "B": "Parce qu'elles permettent une exploration équidistante du logarithme des valeurs hyperparamétriques.",
         "C": "Parce qu'elles empêchent le modèle de surapprendre.",
         "D": "Parce qu'elles sont plus rapides à calculer lors du processus d'optimisation."
       },
-      "correct_answer": "A",
-      "explanation": "Les distributions logarithmiques sont utilisées pour explorer les valeurs sur plusieurs ordres de grandeur, souvent applicable pour des paramètres tels que le taux d'apprentissage. B est incorrect car elles ne modifient pas les types de données des paramètres. C est faux car elles ne préviennent pas le surapprentissage par elles-mêmes. D est incorrect car ces distributions ne concernent pas la vitesse de calcul.",
+      "correct_answer": "B",
+      "explanation": "Les distributions logarithmiques sont utilisées pour explorer les valeurs sur plusieurs ordres de grandeur, souvent applicable pour des paramètres tels que le taux d'apprentissage. B est incorrect car elles ne modifient pas les types de données des paramètres. C est faux car elles ne préviennent pas le surapprentissage par elles-mêmes. D est incorrect car ces distributions ne concernent pas la vitesse de calcul. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce qu'elles convertissent tous les paramètres en valeurs continues.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce qu'elles empêchent le modèle de surapprendre.) est plausible mais faux car",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quel énoncé est vrai concernant l'optimisation bayésienne dans l'optimisation des hyperparamètres?",
       "image_url": null,
       "choices": {
-        "A": "Elle modélise la fonction de coût avec des approximations probabilistes pour minimiser le nombre d'essais nécessaires.",
+        "A": "Elle ne peut être combinée qu'avec la validation croisée k-fold.",
         "B": "Elle promet toujours de meilleurs résultats que les méthodes de recherche exhaustives.",
-        "C": "Elle ne peut être combinée qu'avec la validation croisée k-fold.",
+        "C": "Elle modélise la fonction de coût avec des approximations probabilistes pour minimiser le nombre d'essais nécessaires.",
         "D": "Elle doit impérativement être supervisée par une technique d'agrégation de modèles pour être efficace."
       },
-      "correct_answer": "A",
-      "explanation": "L'optimisation bayésienne utilise une approche probabiliste pour estimer la fonction de coût, permettant une exploration plus intelligente de l'espace de recherche. B est incorrect car elle peut ne pas toujours surpasser les autres méthodes. C est faux car elle peut être combinée avec divers schémas de validation. D est incorrect car elle n'exige pas d'être supervisée par l'agrégation de modèles.",
+      "correct_answer": "C",
+      "explanation": "L'optimisation bayésienne utilise une approche probabiliste pour estimer la fonction de coût, permettant une exploration plus intelligente de l'espace de recherche. B est incorrect car elle peut ne pas toujours surpasser les autres méthodes. C est faux car elle peut être combinée avec divers schémas de validation. D est incorrect car elle n'exige pas d'être supervisée par l'agrégation de modèles. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle ne peut être combinée qu'avec la validation croisée k-fold.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle promet toujours de meilleurs résultats que les méthodes de recherche exhaustives.) est plausible",
       "difficulty": "hard"
     },
     {
@@ -107,12 +107,12 @@
       "image_url": null,
       "choices": {
         "A": "En ajustant dynamiquement le taux d'apprentissage au fil des itérations.",
-        "B": "En variant la fonction d'acquisition utilisée pour choisir le prochain point à évaluer.",
+        "B": "En optimisant simultanément plusieurs modèles en parallèle.",
         "C": "En réduisant automatiquement l'échelle de l'espace de recherche au fur et à mesure des essais.",
-        "D": "En optimisant simultanément plusieurs modèles en parallèle."
+        "D": "En variant la fonction d'acquisition utilisée pour choisir le prochain point à évaluer."
       },
-      "correct_answer": "B",
-      "explanation": "L'optimisation bayésienne équilibre l'exploitation et l'exploration par l'ajustement de la fonction d'acquisition, qui guide le choix des essais futurs selon la modélisation de l'incertitude. A est incorrect, le taux d'apprentissage n'entre pas directement dans le processus. C est faux car l'espace de recherche n'est pas réduit. D est inexact, elle optimise séquentiellement en utilisant une modélisation probabiliste.",
+      "correct_answer": "D",
+      "explanation": "L'optimisation bayésienne équilibre l'exploitation et l'exploration par l'ajustement de la fonction d'acquisition, qui guide le choix des essais futurs selon la modélisation de l'incertitude. A est incorrect, le taux d'apprentissage n'entre pas directement dans le processus. C est faux car l'espace de recherche n'est pas réduit. D est inexact, elle optimise séquentiellement en utilisant une modélisation probabiliste. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En ajustant dynamiquement le taux d'apprentissage au fil des itérations.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En optimisant simultanément plusieurs modèles en parallèle.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "hard"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Ils sont limités aux ensembles de données binaires."
       },
       "correct_answer": "A",
-      "explanation": "Ni le grid search ni le random search n'utilisent de modélisation probabiliste, ne tenant ainsi pas compte de l'incertitude des résultats d'évaluation. B est incorrect, les deux peuvent manipuler des hyperparamètres continus. C est faux, ils peuvent être appliqués aux modèles de deep learning. D est incorrect, les deux peuvent être utilisés sur divers types de données.",
+      "explanation": "Ni le grid search ni le random search n'utilisent de modélisation probabiliste, ne tenant ainsi pas compte de l'incertitude des résultats d'évaluation. B est incorrect, les deux peuvent manipuler des hyperparamètres continus. C est faux, ils peuvent être appliqués aux modèles de deep learning. D est incorrect, les deux peuvent être utilisés sur divers types de données. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Ils sont inefficaces pour les espaces de recherche contenant des hyperparamètres continus.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ils ne peuvent pas être utilisés pour ajuster les hyperparamètres des modèles de deep learning.)",
       "difficulty": "hard"
     },
     {
@@ -140,7 +140,7 @@
         "D": "Il garantit toujours de trouver la configuration optimale."
       },
       "correct_answer": "B",
-      "explanation": "Le random search ne fournit pas une couverture systématique de l'espace de recherche, contrairement au grid search, ce qui peut être un inconvénient pour des combinaisons précises dans des espaces réduits. A est incorrect car il peut nécessiter moins d'évaluations. C est faux, il peut manipuler des hyperparamètres catégoriels. D est incorrect car il ne garantit pas de trouver une configuration optimale.",
+      "explanation": "Le random search ne fournit pas une couverture systématique de l'espace de recherche, contrairement au grid search, ce qui peut être un inconvénient pour des combinaisons précises dans des espaces réduits. A est incorrect car il peut nécessiter moins d'évaluations. C est faux, il peut manipuler des hyperparamètres catégoriels. D est incorrect car il ne garantit pas de trouver une configuration optimale. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il nécessite souvent plus d'évaluations pour obtenir des résultats comparables.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il est limité à des hyperparamètres numériques uniquement.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -149,12 +149,12 @@
       "image_url": null,
       "choices": {
         "A": "Pour éviter que le modèle ne dépasse ses capacités de calcul.",
-        "B": "Pour améliorer la vitesse de convergence vers une solution optimale.",
-        "C": "Pour garantir que le modèle surapprendra les données disponibles.",
+        "B": "Pour garantir que le modèle surapprendra les données disponibles.",
+        "C": "Pour améliorer la vitesse de convergence vers une solution optimale.",
         "D": "Pour restreindre automatiquement les algorithmes de recherche à un sous-ensemble de l'espace possible."
       },
-      "correct_answer": "B",
-      "explanation": "Choisir des valeurs initiales appropriées peut aider à accélérer l'identification de solutions optimales, réduisant le temps nécessaire pour l'optimisation de l'ensemble du modèle. A est incorrect, cela n’affecte pas les capacités de calcul directement. C est faux, il ne garantit pas le surapprentissage. D est incorrect, car cela ne restreint pas les algorithmes par leurs choix initiaux.",
+      "correct_answer": "C",
+      "explanation": "Choisir des valeurs initiales appropriées peut aider à accélérer l'identification de solutions optimales, réduisant le temps nécessaire pour l'optimisation de l'ensemble du modèle. A est incorrect, cela n’affecte pas les capacités de calcul directement. C est faux, il ne garantit pas le surapprentissage. D est incorrect, car cela ne restreint pas les algorithmes par leurs choix initiaux. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour éviter que le modèle ne dépasse ses capacités de calcul.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour garantir que le modèle surapprendra les données disponibles.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Comment la modification de l'espace d'hyperparamètres peut-elle influencer la performance d'un modèle lors de l'optimisation?",
       "image_url": null,
       "choices": {
-        "A": "Elle peut rehausser la probabilité de convergence vers une solution sous-optimale.",
+        "A": "Elle augmente automatiquement la précision prédictive du modèle entraîné.",
         "B": "Elle garantit que tous les résultats de performance seront mieux que ceux de la version précédente.",
         "C": "Elle n'a aucun impact sur la performance du modèle final.",
-        "D": "Elle augmente automatiquement la précision prédictive du modèle entraîné."
+        "D": "Elle peut rehausser la probabilité de convergence vers une solution sous-optimale."
       },
-      "correct_answer": "A",
-      "explanation": "Modifier l'espace peut impacter l'efficacité de convergence vers des solutions optimalement, parfois limitant ou élargissant la perspective. B est incorrect, car des espaces élargis ou mal conçus peuvent empirer les résultats. C est faux, l'espace a un impact fort. D est inexact, la précision prédictive n'augmente pas forcément automatiquement.",
+      "correct_answer": "D",
+      "explanation": "Modifier l'espace peut impacter l'efficacité de convergence vers des solutions optimalement, parfois limitant ou élargissant la perspective. B est incorrect, car des espaces élargis ou mal conçus peuvent empirer les résultats. C est faux, l'espace a un impact fort. D est inexact, la précision prédictive n'augmente pas forcément automatiquement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle augmente automatiquement la précision prédictive du modèle entraîné.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle garantit que tous les résultats de performance seront mieux que ceux de la version précédente.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "hard"
     },
     {
@@ -176,13 +176,13 @@
       "question": "Pourquoi la reproductibilité est-elle souvent un problème lors de l'utilisation du random search?",
       "image_url": null,
       "choices": {
-        "A": "Parce que le random search ne maintient pas de log des valeurs d'hyperparamètres testées.",
-        "B": "Parce que chaque lancement génère des variantes différentes des échantillons de l'espace des hyperparamètres en raison de sa nature stochastique.",
+        "A": "Parce que chaque lancement génère des variantes différentes des échantillons de l'espace des hyperparamètres en raison de sa nature stochastique.",
+        "B": "Parce que le random search ne maintient pas de log des valeurs d'hyperparamètres testées.",
         "C": "Parce qu'il nécessite une infrastructure de calcul dispersée.",
         "D": "Parce qu'il ignore les dépendances entre les hyperparamètres."
       },
-      "correct_answer": "B",
-      "explanation": "La nature aléatoire et stochastique du random search peut mener à des séquences différente à chaque exécution, rendant la recréation exacte des résultats difficile sans contrôle pseudo-aléatoire. A est incorrect, les logs peuvent cependant être créés manuellement. C est faux, l'infrastructure dispersée n'est pas une exigence. D est incorrect, c'est moins lié à la reproductibilité comparé à l'évaluation indépendante des paramètres.",
+      "correct_answer": "A",
+      "explanation": "La nature aléatoire et stochastique du random search peut mener à des séquences différente à chaque exécution, rendant la recréation exacte des résultats difficile sans contrôle pseudo-aléatoire. A est incorrect, les logs peuvent cependant être créés manuellement. C est faux, l'infrastructure dispersée n'est pas une exigence. D est incorrect, c'est moins lié à la reproductibilité comparé à l'évaluation indépendante des paramètres. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Parce que le random search ne maintient pas de log des valeurs d'hyperparamètres testées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce qu'il nécessite une infrastructure de calcul dispersée.) est",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Dans quelle situation l'optimisation bayésienne peut-elle échouer lors de l'optimisation des hyperparamètres?",
       "image_url": null,
       "choices": {
-        "A": "Lorsque la fonction de coût est très non linéaire avec des gradients abrupts.",
-        "B": "Lorsque l'espace des hyperparamètres est composé exclusivement de variables catégoriques.",
+        "A": "Lorsque l'espace des hyperparamètres est composé exclusivement de variables catégoriques.",
+        "B": "Lorsque la fonction de coût est très non linéaire avec des gradients abrupts.",
         "C": "Lorsque l'approche bayésienne est utilisée sur un jeu de données trop petit.",
         "D": "Lors de l'application à des modèles d'apprentissage profonds avec beaucoup de couches cachées."
       },
-      "correct_answer": "A",
-      "explanation": "L'optimisation bayésienne peut mal performer sur des surfaces très non linéaires ou avec des fonctions de coût aux gradients abruptes. B est incorrect, elle peut traiter des variables catégoriques. C est faux, elle peut être adaptée à de petits ensembles de données. D est incorrect, elle peut être appliquée aux modèles complexes bien que demandant plus de ressources calcul.",
+      "correct_answer": "B",
+      "explanation": "L'optimisation bayésienne peut mal performer sur des surfaces très non linéaires ou avec des fonctions de coût aux gradients abruptes. B est incorrect, elle peut traiter des variables catégoriques. C est faux, elle peut être adaptée à de petits ensembles de données. D est incorrect, elle peut être appliquée aux modèles complexes bien que demandant plus de ressources calcul. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Lorsque l'espace des hyperparamètres est composé exclusivement de variables catégoriques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Lorsque l'approche bayésienne est utilisée sur un jeu de données trop petit.) est plausible mais",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quel est un indicateur que l'espace de recherche pour les hyperparamètres est mal défini?",
       "image_url": null,
       "choices": {
-        "A": "Les scores de validation sont très similaires à travers de nombreuses combinaisons testées.",
+        "A": "La convergence vers une réduction de la fonction de perte est devenue plus rapide que prévu.",
         "B": "L'augmentation des tentatives améliore systématiquement les résultats à chaque fois.",
-        "C": "La convergence vers une réduction de la fonction de perte est devenue plus rapide que prévu.",
+        "C": "Les scores de validation sont très similaires à travers de nombreuses combinaisons testées.",
         "D": "La précision du modèle ne change pas, même quand l'échelle des hyperparamètres est ajustée."
       },
-      "correct_answer": "A",
-      "explanation": "Une plage restreinte empêchait les variations convaincantes de performance, indiquant un besoin d'élargir l'espace de recherche. B est incorrect, car cela montre plutôt une exploration fructueuse de l'espace. C est faux, une convergence rapide est un signe de stabilisation, pas d'un mauvais espace. D est inexact, des échelles ajustées sans changement peuvent identifier des problèmes mais aussi direction propre.",
+      "correct_answer": "C",
+      "explanation": "Une plage restreinte empêchait les variations convaincantes de performance, indiquant un besoin d'élargir l'espace de recherche. B est incorrect, car cela montre plutôt une exploration fructueuse de l'espace. C est faux, une convergence rapide est un signe de stabilisation, pas d'un mauvais espace. D est inexact, des échelles ajustées sans changement peuvent identifier des problèmes mais aussi direction propre. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La convergence vers une réduction de la fonction de perte est devenue plus rapide que prévu.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (L'augmentation des tentatives améliore systématiquement les résultats à chaque",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Dans l'optimisation hyperparamétrique, à quoi sert l'arrêt précoce?",
       "image_url": null,
       "choices": {
-        "A": "À éviter un gaspillage inutile de ressources lors de la perte d'amélioration des performances du modèle.",
+        "A": "À augmenter la complexité du modèle d'une manière contrôlée.",
         "B": "À identifier automatiquement l'échelle optimale de chaque hyperparamètre.",
         "C": "À aligner le taux d'apprentissage des modèles en fonction de la perte.",
-        "D": "À augmenter la complexité du modèle d'une manière contrôlée."
+        "D": "À éviter un gaspillage inutile de ressources lors de la perte d'amélioration des performances du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "L'arrêt précoce est utilisé pour cesser la formation lorsque la performance commence à stagner, préservant les ressources et prévenant le surapprentissage. B est incorrect, il ne régle pas directement des échelles hyperparamétriques. C est faux, il n'adapte pas le taux d'apprentissage. D est incorrect, il ne change pas la complexité interne des modèles.",
+      "correct_answer": "D",
+      "explanation": "L'arrêt précoce est utilisé pour cesser la formation lorsque la performance commence à stagner, préservant les ressources et prévenant le surapprentissage. B est incorrect, il ne régle pas directement des échelles hyperparamétriques. C est faux, il n'adapte pas le taux d'apprentissage. D est incorrect, il ne change pas la complexité interne des modèles. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (À augmenter la complexité du modèle d'une manière contrôlée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (À identifier automatiquement l'échelle optimale de chaque hyperparamètre.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Passer à une optimisation de type Monte Carlo."
       },
       "correct_answer": "A",
-      "explanation": "Le grid search hiérarchique affine étroitement les hyperparamètres à l’endroit où il discerne les améliorations, économisant du temps de calcul. B est incorrect, cela reste coûteux sans optimisation d'échantillonnage. C est faux, la réduction de l'ensemble de validation pourrait engendrer des biais. D est inexact, Monte Carlo propose une autre logique aléatoire, mais pas de hiérarchisation.",
+      "explanation": "Le grid search hiérarchique affine étroitement les hyperparamètres à l’endroit où il discerne les améliorations, économisant du temps de calcul. B est incorrect, cela reste coûteux sans optimisation d'échantillonnage. C est faux, la réduction de l'ensemble de validation pourrait engendrer des biais. D est inexact, Monte Carlo propose une autre logique aléatoire, mais pas de hiérarchisation. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Diviser systématiquement l'espace de recherche entre plusieurs machines.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Réduire l'ensemble de validation à un sous-échantillon des données d'entraînement.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "hard"
     },
     {
@@ -246,12 +246,12 @@
       "question": "Quelle est une caractéristique essentielle de la recherche par grille (grid search) dans l'optimisation d'hyperparamètres ?",
       "image_url": null,
       "choices": {
-        "A": "Elle évalue systématiquement toutes les combinaisons possibles des hyperparamètres spécifiés.",
-        "B": "Elle sélectionne les hyperparamètres en s'appuyant sur un processus d'élimination itératif.",
+        "A": "Elle sélectionne les hyperparamètres en s'appuyant sur un processus d'élimination itératif.",
+        "B": "Elle évalue systématiquement toutes les combinaisons possibles des hyperparamètres spécifiés.",
         "C": "Elle optimise les hyperparamètres en modélisant des fonctions de vraisemblance.",
         "D": "Elle ajuste dynamiquement la taille de l'échantillon pour chaque ensemble d'hyperparamètres évalué."
       },
-      "correct_answer": "A",
+      "correct_answer": "B",
       "explanation": "La recherche par grille (grid search) est une méthode d'optimisation qui consiste à évaluer systématiquement toutes les combinaisons possibles des hyperparamètres que l'utilisateur a spécifiés dans une grille prédéfinie. \n- B est incorrect car la description correspond davantage à des méthodes de type algorithme génétique. \n- C est faux car elle décrit l'optimisation bayesienne, qui utilise des modèles probabilistes pour estimer les performances futures des ensembles d'hyperparamètres non évalués. \n- D est inexact, ce principe est utilisé dans certaines variantes d'optimisation continue ou de sélection de modèles, mais pas dans la recherche par grille classique.",
       "difficulty": "medium"
     }

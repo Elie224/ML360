@@ -14,7 +14,7 @@
         "D": "La fiabilité d'une règle d'association donnée."
       },
       "correct_answer": "A",
-      "explanation": "Le support est défini comme la fréquence avec laquelle un ensemble d'items apparaît dans le dataset. Il ne s'agit pas de probabilité d'achat d'un seul article (B), ni de corrélation entre articles (C), ni de la fiabilité (D).",
+      "explanation": "Le support est défini comme la fréquence avec laquelle un ensemble d'items apparaît dans le dataset. Il ne s'agit pas de probabilité d'achat d'un seul article (B), ni de corrélation entre articles (C), ni de la fiabilité (D). La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La probabilité qu'un article spécifique soit acheté.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La corrélation entre deux ensembles d'articles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La fiabilité d'une règle d'association donnée.) est plausible mais faux car il ne",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Comment la confiance d'une règle est-elle calculée dans les règles d'association?",
       "image_url": null,
       "choices": {
-        "A": "Support(A ∪ B) / Support(A)",
-        "B": "Support(A) x Support(B)",
+        "A": "Support(A) x Support(B)",
+        "B": "Support(A ∪ B) / Support(A)",
         "C": "Lift(A → B) / Support(A ∪ B)",
         "D": "Support(A) + Support(B) - Support(A ∪ B)"
       },
-      "correct_answer": "A",
-      "explanation": "La confiance d'une règle est calculée en divisant le support de l'union des items par le support de l'item présent dans l'antécédent de la règle. Les autres formules n'appliquent pas la définition de la confiance.",
+      "correct_answer": "B",
+      "explanation": "La confiance d'une règle est calculée en divisant le support de l'union des items par le support de l'item présent dans l'antécédent de la règle. Les autres formules n'appliquent pas la définition de la confiance. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Support(A) x Support(B)) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Lift(A → B) / Support(A ∪ B)) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Support(A) + Support(B) - Support(A ∪ B)) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quel est l'objectif principal de l'utilisation du lift dans les règles d'association?",
       "image_url": null,
       "choices": {
-        "A": "Évaluer l'indépendance statistique entre les items.",
+        "A": "Rendre le calcul de la confiance plus précis.",
         "B": "Augmenter le support des articles individuels.",
-        "C": "Rendre le calcul de la confiance plus précis.",
+        "C": "Évaluer l'indépendance statistique entre les items.",
         "D": "Identifier la fiabilité temporelle des règles d'association."
       },
-      "correct_answer": "A",
-      "explanation": "Le lift est une mesure pour évaluer si les articles A et B sont indépendants. Il ne s'agit pas d'augmenter le support (B), de calculer la confiance (C) ou d'évaluer la fiabilité temporelle (D).",
+      "correct_answer": "C",
+      "explanation": "Le lift est une mesure pour évaluer si les articles A et B sont indépendants. Il ne s'agit pas d'augmenter le support (B), de calculer la confiance (C) ou d'évaluer la fiabilité temporelle (D). La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Rendre le calcul de la confiance plus précis.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter le support des articles individuels.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Identifier la fiabilité temporelle des règles d'association.) est plausible mais faux car il ne respecte pas",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Parmi les options suivantes, laquelle représente une méthode correcte pour identifier un market basket dans le retail?",
       "image_url": null,
       "choices": {
-        "A": "Analyser les transactions pour regrouper fréquemment achetés ensemble.",
+        "A": "Evaluer la corrélation spatiale des produits dans un magasin.",
         "B": "Ajouter maximalement des items non achetés dans le panier d'achat.",
         "C": "Calculer la moyenne des ventes par article.",
-        "D": "Evaluer la corrélation spatiale des produits dans un magasin."
+        "D": "Analyser les transactions pour regrouper fréquemment achetés ensemble."
       },
-      "correct_answer": "A",
-      "explanation": "Identifier un market basket implique de regrouper des articles qui sont fréquemment achetés ensemble. Les autres options ne correspondent pas à cet objectif.",
+      "correct_answer": "D",
+      "explanation": "Identifier un market basket implique de regrouper des articles qui sont fréquemment achetés ensemble. Les autres options ne correspondent pas à cet objectif. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Evaluer la corrélation spatiale des produits dans un magasin.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Ajouter maximalement des items non achetés dans le panier d'achat.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Calculer la moyenne des ventes par article.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "La règle a une confiance minimale garantie."
       },
       "correct_answer": "A",
-      "explanation": "Un lift supérieur à 1 indique que les items sont achetés ensemble plus souvent que si les achats étaient indépendants. B, C et D ne sont pas des conséquences directes du lift.",
+      "explanation": "Un lift supérieur à 1 indique que les items sont achetés ensemble plus souvent que si les achats étaient indépendants. B, C et D ne sont pas des conséquences directes du lift. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il est sûr que les clients aiment ces items.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le support des items doit être augmenté.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La règle a une confiance minimale garantie.) est plausible mais faux car il ne respecte pas",
       "difficulty": "easy"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Pourquoi est-il important de considérer le support lors de la génération de règles d'association?",
       "image_url": null,
       "choices": {
-        "A": "Pour éviter de générer des règles basées sur des événements rares.",
-        "B": "Pour maximiser la confiance de chaque règle.",
+        "A": "Pour maximiser la confiance de chaque règle.",
+        "B": "Pour éviter de générer des règles basées sur des événements rares.",
         "C": "Pour garantir que toutes les règles ont un lift faible.",
         "D": "Pour remplacer le besoin en confiance élevée."
       },
-      "correct_answer": "A",
-      "explanation": "Le support aide à ne considérer que les règles basées sur des ensembles d'items fréquent afin d'éviter des événements rares qui peuvent ne pas être significatifs. Maximiser la confiance (B) et remplacer (D) sont incorrects, tandis que garantir un lift faible (C) n'est pas l'objectif.",
+      "correct_answer": "B",
+      "explanation": "Le support aide à ne considérer que les règles basées sur des ensembles d'items fréquent afin d'éviter des événements rares qui peuvent ne pas être significatifs. Maximiser la confiance (B) et remplacer (D) sont incorrects, tandis que garantir un lift faible (C) n'est pas l'objectif. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour maximiser la confiance de chaque règle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour garantir que toutes les règles ont un lift faible.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Pour remplacer",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "En quoi le market basket analysis diffère-t-il d'une simple analyse de vente par produit?",
       "image_url": null,
       "choices": {
-        "A": "Il se concentre sur les associations entre produits plutôt que sur les ventes individuelles.",
+        "A": "Il nécessite toujours des données temporelles précises.",
         "B": "Il détermine les prix optimaux des produits.",
-        "C": "Il nécessite toujours des données temporelles précises.",
+        "C": "Il se concentre sur les associations entre produits plutôt que sur les ventes individuelles.",
         "D": "Il prédit la popularité des produits pendant les soldes."
       },
-      "correct_answer": "A",
-      "explanation": "Le market basket analysis se concentre sur les associations entre produits plutôt que sur les ventes individuelles (B, C, D). C'est cette relation qui le distingue d'une simple analyse des ventes.",
+      "correct_answer": "C",
+      "explanation": "Le market basket analysis se concentre sur les associations entre produits plutôt que sur les ventes individuelles (B, C, D). C'est cette relation qui le distingue d'une simple analyse des ventes. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il nécessite toujours des données temporelles précises.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il détermine les prix optimaux des produits.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il prédit la popularité des produits pendant les soldes.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Comment la confiance d'une règle est-elle influencée par le support faible d'un antécédent?",
       "image_url": null,
       "choices": {
-        "A": "La confiance peut être élevée même avec un support faible.",
+        "A": "Une grande taille du dataset compense un support faible.",
         "B": "La confiance ne dépend pas du support de l'antécédent.",
         "C": "Un support faible diminue toujours la confiance.",
-        "D": "Une grande taille du dataset compense un support faible."
+        "D": "La confiance peut être élevée même avec un support faible."
       },
-      "correct_answer": "A",
-      "explanation": "La confiance peut être élevée avec un support faible si les items de la conclusion apparaissent systématiquement lorsque les items de l'antécédent apparaissent, malgré la rareté. La confiance dépend du support (B faux), le support faible n'affecte pas directement (C incorrect), et la taille du dataset n'influe pas (D faux).",
+      "correct_answer": "D",
+      "explanation": "La confiance peut être élevée avec un support faible si les items de la conclusion apparaissent systématiquement lorsque les items de l'antécédent apparaissent, malgré la rareté. La confiance dépend du support (B faux), le support faible n'affecte pas directement (C incorrect), et la taille du dataset n'influe pas (D faux). La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une grande taille du dataset compense un support faible.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (La confiance ne dépend pas du support de l'antécédent.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "La confiance de la règle est nulle."
       },
       "correct_answer": "A",
-      "explanation": "Un lift de 1 indique que les items sont indépendants, car leur co-occurrence est équivalente à celle attendue par hasard. B, C et D sont des interprétations incorrectes de la métrique de lift.",
+      "explanation": "Un lift de 1 indique que les items sont indépendants, car leur co-occurrence est équivalente à celle attendue par hasard. B, C et D sont des interprétations incorrectes de la métrique de lift. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La règle est statistiquement significative.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le support de la règle est maximal.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La confiance de la règle est nulle.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Pourquoi utilise-t-on des seuils de support minimum dans l'analyse de règles d'association?",
       "image_url": null,
       "choices": {
-        "A": "Pour réduire le nombre de règles générées et se concentrer sur les plus significatives.",
-        "B": "Parce qu'une confiance élevée dans les règles n'est pas nécessairement fiable.",
+        "A": "Parce qu'une confiance élevée dans les règles n'est pas nécessairement fiable.",
+        "B": "Pour réduire le nombre de règles générées et se concentrer sur les plus significatives.",
         "C": "Pour garantir que toutes les règles ont un lift supérieur à 1.",
         "D": "Pour remplacer la nécessité de définir un seuil de confiance minimum."
       },
-      "correct_answer": "A",
-      "explanation": "Les seuils de support minimum aident à réduire le nombre de règles en se concentrant sur celles qui sont basées sur des occurrences fréquentes, contrairement à B, C, et D.",
+      "correct_answer": "B",
+      "explanation": "Les seuils de support minimum aident à réduire le nombre de règles en se concentrant sur celles qui sont basées sur des occurrences fréquentes, contrairement à B, C, et D. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce qu'une confiance élevée dans les règles n'est pas nécessairement fiable.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour garantir que toutes les règles ont un lift supérieur à 1.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Pour remplacer la nécessité de définir un seuil de confiance minimum.)",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Quelle mesure permet d'évaluer l'intérêt d'une règle par rapport à la co-occurrence aléatoire des items?",
       "image_url": null,
       "choices": {
-        "A": "Lift",
+        "A": "Confiance",
         "B": "Support",
-        "C": "Confiance",
+        "C": "Lift",
         "D": "Fréquence absolue"
       },
-      "correct_answer": "A",
-      "explanation": "Le lift mesure l'intérêt d'une règle par rapport à ce que l'on pourrait attendre par hasard. B (Support) et C (Confiance) mesurent des aspects différents, et D (Fréquence absolue) n'est pas appropriée.",
+      "correct_answer": "C",
+      "explanation": "Le lift mesure l'intérêt d'une règle par rapport à ce que l'on pourrait attendre par hasard. B (Support) et C (Confiance) mesurent des aspects différents, et D (Fréquence absolue) n'est pas appropriée. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Confiance) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Support) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Fréquence absolue) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En pratique, verifie toujours la definition, les conditions d'application et l'impact",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel est un inconvénient majeur de la métrique de support seule?",
       "image_url": null,
       "choices": {
-        "A": "Elle ne reflète pas la relation de cause à effet entre les items.",
+        "A": "Elle réduit automatiquement le nombre de règles générées.",
         "B": "Elle est sensible aux fluctuations de prix.",
         "C": "Elle surestime toujours les règles de faible confiance.",
-        "D": "Elle réduit automatiquement le nombre de règles générées."
+        "D": "Elle ne reflète pas la relation de cause à effet entre les items."
       },
-      "correct_answer": "A",
-      "explanation": "Le support ne reflète pas la relation de cause à effet entre les items, il est purement une mesure de fréquence. B, C et D ne sont pas corrects car ils n'évaluent pas ce que le support mesure réellement.",
+      "correct_answer": "D",
+      "explanation": "Le support ne reflète pas la relation de cause à effet entre les items, il est purement une mesure de fréquence. B, C et D ne sont pas corrects car ils n'évaluent pas ce que le support mesure réellement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle réduit automatiquement le nombre de règles générées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle est sensible aux fluctuations de prix.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle surestime toujours les règles de faible confiance.) est plausible",
       "difficulty": "medium"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Cela rend impossible l'analyse de grande échelle."
       },
       "correct_answer": "A",
-      "explanation": "Sans le lift, on risque de ne pas détecter que certaines co-occurrences pourraient être dues au hasard. B, C et D ne sont pas pertinents car ils ne concernent pas cette omission spécifique.",
+      "explanation": "Sans le lift, on risque de ne pas détecter que certaines co-occurrences pourraient être dues au hasard. B, C et D ne sont pas pertinents car ils ne concernent pas cette omission spécifique. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Cela garantit une analyse temporelle incorrecte.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Cela surestime systématiquement le niveau de support.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Cela rend impossible l'analyse de grande échelle.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "medium"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Si le support minimum est fixé trop bas, quel est le principal risque pour l'analyse des règles d'association?",
       "image_url": null,
       "choices": {
-        "A": "Générer trop de règles basées sur des données non significatives.",
-        "B": "Ignorer les relations importantes entre les items.",
+        "A": "Ignorer les relations importantes entre les items.",
+        "B": "Générer trop de règles basées sur des données non significatives.",
         "C": "Augmenter artificiellement la confiance des règles.",
         "D": "Diminuer la probabilité que les règles soient utiles pour la segmentation de la clientèle."
       },
-      "correct_answer": "A",
-      "explanation": "Un support minimum trop bas peut entraîner la génération de règles basées sur des occurrences rares et probablement non significatives. B, C et D sont conceptuellement incorrects dans ce contexte.",
+      "correct_answer": "B",
+      "explanation": "Un support minimum trop bas peut entraîner la génération de règles basées sur des occurrences rares et probablement non significatives. B, C et D sont conceptuellement incorrects dans ce contexte. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ignorer les relations importantes entre les items.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Augmenter artificiellement la confiance des règles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Diminuer la probabilité que les règles soient utiles pour la segmentation de la clientèle.) est plausible mais faux car il ne",
       "difficulty": "medium"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quel indicateur offre une meilleure indication de la causalité potentielle dans un dataset: support, confiance ou lift?",
       "image_url": null,
       "choices": {
-        "A": "Lift",
+        "A": "Confiance",
         "B": "Support",
-        "C": "Confiance",
+        "C": "Lift",
         "D": "Fréquence absolue des items"
       },
-      "correct_answer": "A",
-      "explanation": "Le lift fournit une indication de l'importance relative et potentiellement causale des relations entre items. Le support et la confiance relèvent plus de la fréquence et de la fiabilité, mais pas de la causalité (D 'fréquence absolue' est une distraction).",
+      "correct_answer": "C",
+      "explanation": "Le lift fournit une indication de l'importance relative et potentiellement causale des relations entre items. Le support et la confiance relèvent plus de la fréquence et de la fiabilité, mais pas de la causalité (D 'fréquence absolue' est une distraction). La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Confiance) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Support) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Fréquence absolue des items) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "À quoi faut-il être particulièrement attentif lorsque l'on interprète des règles avec un bon support mais une faible confiance et un lift bas?",
       "image_url": null,
       "choices": {
-        "A": "Ces règles pourraient être non informatives car les items se trouvent déjà ensemble par hasard.",
+        "A": "Ces règles devraient toujours être regroupées pour hauteur d'analyse.",
         "B": "Ces règles sont plus fiables et doivent être mises en priorité dans un déploiement stratégique.",
         "C": "Ces règles indiquent toujours une tendance cachée.",
-        "D": "Ces règles devraient toujours être regroupées pour hauteur d'analyse."
+        "D": "Ces règles pourraient être non informatives car les items se trouvent déjà ensemble par hasard."
       },
-      "correct_answer": "A",
-      "explanation": "Des règles avec un bas lift et faible confiance malgré un bon support peuvent simplement indiquer que la co-occurrence d'items est due au hasard. B, C et D sont incorrects car ils présument que ces règles sont plus significatives qu'elles ne le sont réellement.",
+      "correct_answer": "D",
+      "explanation": "Des règles avec un bas lift et faible confiance malgré un bon support peuvent simplement indiquer que la co-occurrence d'items est due au hasard. B, C et D sont incorrects car ils présument que ces règles sont plus significatives qu'elles ne le sont réellement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ces règles devraient toujours être regroupées pour hauteur d'analyse.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Ces règles sont plus fiables et doivent être mises en priorité dans un déploiement stratégique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Cela fausse la confiance des règles peu fréquentes."
       },
       "correct_answer": "A",
-      "explanation": "Un lift élevé pourrait résulter de co-occurrences qui sont statistiquement rares et non informatives sans support adéquat. B, C, et D proposent des explications incorrectes de la signification d'un lift élevé.",
+      "explanation": "Un lift élevé pourrait résulter de co-occurrences qui sont statistiquement rares et non informatives sans support adéquat. B, C, et D proposent des explications incorrectes de la signification d'un lift élevé. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il peut conduire à l'ignorance des règles à support élevé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Cela entraîne une dépendance accrue sur le support.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Cela fausse la confiance des règles peu fréquentes.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Lorsque l'on utilise le market basket analysis pour optimiser l'agencement d'un magasin, que faudrait-il éviter de baser exclusivement sur le support des articles?",
       "image_url": null,
       "choices": {
-        "A": "L'agencement des produits devrait également tenir compte de la confiance pour les associations.",
-        "B": "L'évolution des prix devrait uniquement refléter le support.",
+        "A": "L'évolution des prix devrait uniquement refléter le support.",
+        "B": "L'agencement des produits devrait également tenir compte de la confiance pour les associations.",
         "C": "Les promotions devraient être alignées sur le support seul.",
         "D": "Le service client devrait être réorganisé selon le support."
       },
-      "correct_answer": "A",
-      "explanation": "Un simple calcul de support pourrait ne pas révéler la vraie nature des relations utiles pour l'agencement. Tenir compte de la confiance permet de mieux comprendre les réelles associations de produits. B, C et D sont également malavisés car ils attribuent une perspective unilatérale au support.",
+      "correct_answer": "B",
+      "explanation": "Un simple calcul de support pourrait ne pas révéler la vraie nature des relations utiles pour l'agencement. Tenir compte de la confiance permet de mieux comprendre les réelles associations de produits. B, C et D sont également malavisés car ils attribuent une perspective unilatérale au support. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'évolution des prix devrait uniquement refléter le support.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Les promotions devraient être alignées sur le support seul.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Le",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Pourquoi le simple fait d'avoir une confiance élevée ne garantit pas qu'une règle soit utile dans le contexte d'analyses commerciales?",
       "image_url": null,
       "choices": {
-        "A": "Parce que cela pourrait ne pas être significatif sans un lift élevé.",
+        "A": "Parce que les règles de haute confiance sont souvent moins fréquentes.",
         "B": "Parce que la confiance ne mesure pas le support absolu.",
-        "C": "Parce que les règles de haute confiance sont souvent moins fréquentes.",
+        "C": "Parce que cela pourrait ne pas être significatif sans un lift élevé.",
         "D": "Parce que la confiance est généralement substituée par le support dans les analyses prédictives."
       },
-      "correct_answer": "A",
-      "explanation": "Une confiance élevée sans lift significatif peut simplement représenter une relation non causale. B, C, et D confondent la notion de confiance avec d'autres concepts.",
+      "correct_answer": "C",
+      "explanation": "Une confiance élevée sans lift significatif peut simplement représenter une relation non causale. B, C, et D confondent la notion de confiance avec d'autres concepts. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce que les règles de haute confiance sont souvent moins fréquentes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Parce que la confiance ne mesure pas le support absolu.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Parce que la confiance est généralement substituée par le support dans les analyses prédictives.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Quel aspect du market basket analysis est crucial pour éviter la surinterprétation des règles d'association?",
       "image_url": null,
       "choices": {
-        "A": "Vérifier les règles par multiple méthodes, y compris le lift.",
+        "A": "Ne pas utiliser de seuil pour le lift.",
         "B": "Se concentrer uniquement sur la fréquence des transactions.",
         "C": "Éviter de tenir compte des règles avec un faible support.",
-        "D": "Ne pas utiliser de seuil pour le lift."
+        "D": "Vérifier les règles par multiple méthodes, y compris le lift."
       },
-      "correct_answer": "A",
-      "explanation": "Il est important de vérifier les règles par plusieurs méthodes, comme le support, la confiance et le lift, pour éviter la surinterprétation. B, C et D sont incorrects car ils offriraient une vision biaisée des décisions basées sur le market basket analysis.",
+      "correct_answer": "D",
+      "explanation": "Il est important de vérifier les règles par plusieurs méthodes, comme le support, la confiance et le lift, pour éviter la surinterprétation. B, C et D sont incorrects car ils offriraient une vision biaisée des décisions basées sur le market basket analysis. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ne pas utiliser de seuil pour le lift.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Se concentrer uniquement sur la fréquence des transactions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Éviter de tenir compte des règles",
       "difficulty": "hard"
     }
   ]

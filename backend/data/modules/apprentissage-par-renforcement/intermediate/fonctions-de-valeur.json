@@ -14,7 +14,7 @@
         "D": "Déterminer de manière exacte la suite des actions à réaliser."
       },
       "correct_answer": "A",
-      "explanation": "Une fonction de valeur estime l'espérance des récompenses futures à partir d'un état, ce qui aide à déterminer les politiques optimales. (B) est incorrect car cela relève de la dynamique environnementale. (C) est faux, car optimiser direct sans exploration néglige la découverte de meilleures politiques. (D) est inexact, car elle ne prescrit pas exactement les actions mais guide leur choix.",
+      "explanation": "Une fonction de valeur estime l'espérance des récompenses futures à partir d'un état, ce qui aide à déterminer les politiques optimales. (B) est incorrect car cela relève de la dynamique environnementale. (C) est faux, car optimiser direct sans exploration néglige la découverte de meilleures politiques. (D) est inexact, car elle ne prescrit pas exactement les actions mais guide leur choix. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Calculer la probabilité de transition entre deux états.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Optimiser directement la politique en évitant toute exploration.) est plausible mais faux car il ne respecte",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Dans une Q-value, que représente la lettre 'Q'?",
       "image_url": null,
       "choices": {
-        "A": "Quality",
-        "B": "Query",
+        "A": "Query",
+        "B": "Quality",
         "C": "Quantity",
         "D": "Quantum"
       },
-      "correct_answer": "A",
-      "explanation": "La Q-value, ou Quality value, évalue la qualité de l'action dans un état particulier, c'est-à-dire l'espérance de la récompense future. 'Query' (B) n'a pas de lien direct avec ce concept, 'Quantity' (C) est une notion de nombre, et 'Quantum' (D) appartient au domaine de la physique quantique.",
+      "correct_answer": "B",
+      "explanation": "La Q-value, ou Quality value, évalue la qualité de l'action dans un état particulier, c'est-à-dire l'espérance de la récompense future. 'Query' (B) n'a pas de lien direct avec ce concept, 'Quantity' (C) est une notion de nombre, et 'Quantum' (D) appartient au domaine de la physique quantique. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Query) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Quantity) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Quantum) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quel est le type de politique adopté par une stratégie d'action 'greedy'?",
       "image_url": null,
       "choices": {
-        "A": "Elle choisit toujours l'action avec la valeur la plus élevée connue.",
+        "A": "Elle alterne aléatoirement entre les actions disponibles.",
         "B": "Elle explore systématiquement toutes les actions possibles.",
-        "C": "Elle alterne aléatoirement entre les actions disponibles.",
+        "C": "Elle choisit toujours l'action avec la valeur la plus élevée connue.",
         "D": "Elle choisit les actions de manière temporellement corrélée."
       },
-      "correct_answer": "A",
-      "explanation": "Une stratégie 'greedy' sélectionne systématiquement l'action avec la Q-value la plus élevée, par rapport aux valeurs estimées. (B) décrit une politique explorative, (C) n'est pas structuré en vue de l'optimisation, et (D) n'exprime aucune rationalité spécifique.",
+      "correct_answer": "C",
+      "explanation": "Une stratégie 'greedy' sélectionne systématiquement l'action avec la Q-value la plus élevée, par rapport aux valeurs estimées. (B) décrit une politique explorative, (C) n'est pas structuré en vue de l'optimisation, et (D) n'exprime aucune rationalité spécifique. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle alterne aléatoirement entre les actions disponibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle explore systématiquement toutes les actions possibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle choisit les actions de manière temporellement corrélée.) est plausible mais faux car il",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quel problème peut survenir en utilisant exclusivement une politique greedy?",
       "image_url": null,
       "choices": {
-        "A": "Ignorer les actions optimales non explorées.",
+        "A": "Rendre l'algorithme de mise à jour inutile.",
         "B": "Trop explorer des actions sous-optimales.",
         "C": "Ne pas disposer de valeurs initialisées.",
-        "D": "Rendre l'algorithme de mise à jour inutile."
+        "D": "Ignorer les actions optimales non explorées."
       },
-      "correct_answer": "A",
-      "explanation": "La politique greedy peut ignorer des actions optimales si elles ne sont pas suffisamment explorées initialement. (B) correspond à une problématique d'exploration excessive, (C) concerne l'initialisation plutôt que la sélection, et (D) est incorrect car la mise à jour demeure essentielle.",
+      "correct_answer": "D",
+      "explanation": "La politique greedy peut ignorer des actions optimales si elles ne sont pas suffisamment explorées initialement. (B) correspond à une problématique d'exploration excessive, (C) concerne l'initialisation plutôt que la sélection, et (D) est incorrect car la mise à jour demeure essentielle. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Rendre l'algorithme de mise à jour inutile.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Trop explorer des actions sous-optimales.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ne pas disposer de valeurs initialisées.) est plausible mais faux car",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Une dépendance excessive à la modélisation de l'environnement."
       },
       "correct_answer": "A",
-      "explanation": "Une politique purement greedy peut ne pas explorer suffisamment, ratant des actions potentiellement meilleures. (B) serait plutôt une caractéristique d'une politique epsilon-greedy. (C) est plus aligné avec des algorithmes plus lents, et (D) n'est pas inhérent à une politique greedy.",
+      "explanation": "Une politique purement greedy peut ne pas explorer suffisamment, ratant des actions potentiellement meilleures. (B) serait plutôt une caractéristique d'une politique epsilon-greedy. (C) est plus aligné avec des algorithmes plus lents, et (D) n'est pas inhérent à une politique greedy. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Un trop grand biais vers l'exploration aléatoire.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'incapacité à ajuster la politique en temps réel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Une dépendance excessive à la modélisation de l'environnement.) est",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Comment estimer les Q-values dans un processus d'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Par la méthode de Mise à Jour Temporelle (TD).",
-        "B": "En comptant simplement le nombre de fois qu'une action a été choisie.",
+        "A": "En comptant simplement le nombre de fois qu'une action a été choisie.",
+        "B": "Par la méthode de Mise à Jour Temporelle (TD).",
         "C": "En calculant la valeur totale des récompenses futures uniques.",
         "D": "En ajustant chaque action selon le feedback constant de l'environnement seulement à la fin."
       },
-      "correct_answer": "A",
-      "explanation": "La méthode de Mise à Jour Temporelle (TD) permet d'estimer les Q-values en utilisant les récompenses immédiates et la valeur estimée future. (B) ne fournit pas d'estimation de valeur, (C) suggère une méthode non-historique, et (D) néglige les mises à jour continues requises pendant l'apprentissage.",
+      "correct_answer": "B",
+      "explanation": "La méthode de Mise à Jour Temporelle (TD) permet d'estimer les Q-values en utilisant les récompenses immédiates et la valeur estimée future. (B) ne fournit pas d'estimation de valeur, (C) suggère une méthode non-historique, et (D) néglige les mises à jour continues requises pendant l'apprentissage. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En comptant simplement le nombre de fois qu'une action a été choisie.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En calculant la valeur totale des récompenses futures uniques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quel est l'impact d'un paramètre 'epsilon' dans une politique epsilon-greedy?",
       "image_url": null,
       "choices": {
-        "A": "Permettre un équilibre entre exploration et exploitation.",
+        "A": "Détourner complètement l'agent vers des actions aléatoires.",
         "B": "Garantir uniquement l'exploitation totale des actions.",
-        "C": "Détourner complètement l'agent vers des actions aléatoires.",
+        "C": "Permettre un équilibre entre exploration et exploitation.",
         "D": "Assurer une exploration exhaustive des actions en séquence."
       },
-      "correct_answer": "A",
-      "explanation": "Le paramètre 'epsilon' dans une politique epsilon-greedy aide à équilibrer exploration (actions aléatoires) et exploitation (actions optimales actuelles). (B) et (C) manquent de ce double objectif, et (D) est faux car ce n'est pas séquentiel mais stochastique.",
+      "correct_answer": "C",
+      "explanation": "Le paramètre 'epsilon' dans une politique epsilon-greedy aide à équilibrer exploration (actions aléatoires) et exploitation (actions optimales actuelles). (B) et (C) manquent de ce double objectif, et (D) est faux car ce n'est pas séquentiel mais stochastique. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Détourner complètement l'agent vers des actions aléatoires.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Garantir uniquement l'exploitation totale des actions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Assurer une exploration exhaustive des actions en séquence.) est plausible mais faux car il",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Comment la fonction de valeur d'action est-elle généralement mise à jour dans l'algorithme Q-learning?",
       "image_url": null,
       "choices": {
-        "A": "Elle utilise la récompense obtenue et la différence temporelle.",
+        "A": "Elle reste statique pendant l'évolution de l'environnement.",
         "B": "Elle est remplacée par la moyenne mobile des récompenses.",
         "C": "Elle est ajustée uniquement en cas de succès critère.",
-        "D": "Elle reste statique pendant l'évolution de l'environnement."
+        "D": "Elle utilise la récompense obtenue et la différence temporelle."
       },
-      "correct_answer": "A",
-      "explanation": "Dans Q-learning, la Q-value est mise à jour à l'aide de la récompense actuelle et de la différence entre la valeur estimée actuelle et la meilleure Q-value future (différence temporelle). (B) n'utilise pas les futures estimations, (C) néglige l'apprentissage continuel, et (D) est incorrect car elle doit changer pour refléter les nouvelles informations.",
+      "correct_answer": "D",
+      "explanation": "Dans Q-learning, la Q-value est mise à jour à l'aide de la récompense actuelle et de la différence entre la valeur estimée actuelle et la meilleure Q-value future (différence temporelle). (B) n'utilise pas les futures estimations, (C) néglige l'apprentissage continuel, et (D) est incorrect car elle doit changer pour refléter les nouvelles informations. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle reste statique pendant l'évolution de l'environnement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle est remplacée par la moyenne mobile des récompenses.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "medium"
     },
     {
@@ -120,13 +120,13 @@
       "question": "Quels sont les deux composants critiques qui définissent une estimation de valeur TD (Temporal Difference)?",
       "image_url": null,
       "choices": {
-        "A": "Différence de valeur et écart de politique.",
+        "A": "Récompense immédiate et valeur escomptée de l'état suivant.",
         "B": "Variation de gradient et récompense instantanée.",
-        "C": "Récompense immédiate et valeur escomptée de l'état suivant.",
+        "C": "Différence de valeur et écart de politique.",
         "D": "Erreur quadratique moyenne et dérivé temporel."
       },
-      "correct_answer": "C",
-      "explanation": "Une estimation de valeur TD utilise la récompense immédiate et la valeur escomptée du prochain état pour calculer son approche itérative. (A) et (D) ne renvoient pas aux outils critiques de TD, et (B) mentionne des termes extérieurs au concept TD.",
+      "correct_answer": "A",
+      "explanation": "Une estimation de valeur TD utilise la récompense immédiate et la valeur escomptée du prochain état pour calculer son approche itérative. (A) et (D) ne renvoient pas aux outils critiques de TD, et (B) mentionne des termes extérieurs au concept TD. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Variation de gradient et récompense instantanée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Différence de valeur et écart de politique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Erreur quadratique moyenne et dérivé temporel.) est plausible mais faux",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quel est le principe fondamental derrière l'estimation de valeur Monte Carlo dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser la moyenne des récompenses futures observées à partir de parties complètes.",
-        "B": "Évaluer les différences instantanées durant l'apprentissage.",
+        "A": "Évaluer les différences instantanées durant l'apprentissage.",
+        "B": "Utiliser la moyenne des récompenses futures observées à partir de parties complètes.",
         "C": "Extraire directement la dynamique de l'environnement sans exploration.",
         "D": "Calculer des valeurs indépendamment des observations."
       },
-      "correct_answer": "A",
-      "explanation": "L'estimation de valeur Monte Carlo s'appuie sur la moyenne des récompenses reçues à partir de jeux complets pour établir des estimations. (B) est typique de TD learning. (C) supprime la phase d'exploration importante et (D) ignore les données essentielles pour Monte Carlo.",
+      "correct_answer": "B",
+      "explanation": "L'estimation de valeur Monte Carlo s'appuie sur la moyenne des récompenses reçues à partir de jeux complets pour établir des estimations. (B) est typique de TD learning. (C) supprime la phase d'exploration importante et (D) ignore les données essentielles pour Monte Carlo. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Évaluer les différences instantanées durant l'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Extraire directement la dynamique de l'environnement sans exploration.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Calculer des valeurs indépendamment des observations.) est plausible",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Pourquoi une approche greedy pure est-elle souvent sous-optimale dans les environnements dynamiques?",
       "image_url": null,
       "choices": {
-        "A": "Elle manque d'exploration pour identifier les changements dans les valeurs d'action.",
+        "A": "Elle induit une complexité algorithmique excessive dans les calculs.",
         "B": "Elle nécessite des connaissances préalables de tous les scénarios possibles.",
-        "C": "Elle induit une complexité algorithmique excessive dans les calculs.",
+        "C": "Elle manque d'exploration pour identifier les changements dans les valeurs d'action.",
         "D": "Elle empêche l'utilisation de techniques supervisées pour le feedback."
       },
-      "correct_answer": "A",
-      "explanation": "Une approche greedy pure ne tient pas compte des possibles changements de valeurs d'action dus à l'évolution de l'environnement, inhibant l'exploration nécessaire. (B) est faux, c'est l'exploration qui découvre de nouvelles informations. (C) n'est pas nécessairement vrai, et (D) n'est pas pertinent dans le contexte de politiques 'greedy'.",
+      "correct_answer": "C",
+      "explanation": "Une approche greedy pure ne tient pas compte des possibles changements de valeurs d'action dus à l'évolution de l'environnement, inhibant l'exploration nécessaire. (B) est faux, c'est l'exploration qui découvre de nouvelles informations. (C) n'est pas nécessairement vrai, et (D) n'est pas pertinent dans le contexte de politiques 'greedy'. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle induit une complexité algorithmique excessive dans les calculs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle nécessite des connaissances préalables de tous les scénarios possibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Dans le contexte d'une fonction de valeur, quelle notion est cruciale pour converger vers des solutions optimales?",
       "image_url": null,
       "choices": {
-        "A": "La mise à jour itérative selon la différence temporelle.",
+        "A": "Une optimisation déterministe basée sur le modèle.",
         "B": "L'analyse directe des matrices de transition.",
         "C": "Un calcul initial précis des valeurs finales.",
-        "D": "Une optimisation déterministe basée sur le modèle."
+        "D": "La mise à jour itérative selon la différence temporelle."
       },
-      "correct_answer": "A",
-      "explanation": "La mise à jour itérative utilisant une différence temporelle permet une convergence potentiellement optimale de la fonction de valeur. (B) représente davantage l'analyse de modèle statique. (C) pourrait être implémenté dans des environnements simulés mais n'est pas pratique sans estimation. (D) échoue sans prendre en compte la stochastique essentielle de la dynamique.",
+      "correct_answer": "D",
+      "explanation": "La mise à jour itérative utilisant une différence temporelle permet une convergence potentiellement optimale de la fonction de valeur. (B) représente davantage l'analyse de modèle statique. (C) pourrait être implémenté dans des environnements simulés mais n'est pas pratique sans estimation. (D) échoue sans prendre en compte la stochastique essentielle de la dynamique. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une optimisation déterministe basée sur le modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (L'analyse directe des matrices de transition.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "L'agent évite complètement les récompenses négatives."
       },
       "correct_answer": "A",
-      "explanation": "Un epsilon proche de 1 favorise l'exploration aléatoire, souvent au détriment des actions greedys, nécessaires ultérieurement pour l'exploitation. (B) et (C) contredisent l'effet d'un epsilon élevé en favorisant l'exploration. (D) n'est pas correct, car l'exploration peut conduire à des récompenses négatives.",
+      "explanation": "Un epsilon proche de 1 favorise l'exploration aléatoire, souvent au détriment des actions greedys, nécessaires ultérieurement pour l'exploitation. (B) et (C) contredisent l'effet d'un epsilon élevé en favorisant l'exploration. (D) n'est pas correct, car l'exploration peut conduire à des récompenses négatives. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (L'agent suit strictement une seule ligne d'action prédéfinie.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'agent utilise une politique déterministe sans exploration.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'agent évite complètement les récompenses négatives.) est plausible",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quelle difficulté inhérente à l'estimation de la fonction de valeur est accentuée dans les environnements avec de grandes espaces d'état?",
       "image_url": null,
       "choices": {
-        "A": "La généralisation des valeurs d'état inconnus non explorés.",
-        "B": "L'acquisition immédiate de la valeur absolue des récompenses.",
+        "A": "L'acquisition immédiate de la valeur absolue des récompenses.",
+        "B": "La généralisation des valeurs d'état inconnus non explorés.",
         "C": "La formulation précise des règles dynamiques sur l'instant.",
         "D": "La transition entre politiques alternées sans conditions fixes."
       },
-      "correct_answer": "A",
-      "explanation": "Dans de vastes espaces d'état, il est difficile de généraliser les valeurs pour des états peu ou non explorés, rendant l'apprentissage moins efficace. (B) manque l'idée de temporalité et de convergence. (C) se réfère à l'aspect modèle et non directement aux fonctions de valeur. (D) est hors sujet, ne touchant pas à l'estimation directe.",
+      "correct_answer": "B",
+      "explanation": "Dans de vastes espaces d'état, il est difficile de généraliser les valeurs pour des états peu ou non explorés, rendant l'apprentissage moins efficace. (B) manque l'idée de temporalité et de convergence. (C) se réfère à l'aspect modèle et non directement aux fonctions de valeur. (D) est hors sujet, ne touchant pas à l'estimation directe. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'acquisition immédiate de la valeur absolue des récompenses.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La formulation précise des règles dynamiques sur l'instant.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     }
   ]

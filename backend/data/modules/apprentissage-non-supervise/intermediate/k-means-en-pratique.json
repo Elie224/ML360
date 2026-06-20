@@ -14,7 +14,7 @@
         "D": "Assurer que chaque point de données est dans un cluster unique"
       },
       "correct_answer": "A",
-      "explanation": "L'initialisation vise à positionner les centroides pour minimiser la variance intra-cluster au début. Le choix de 'B' est faux car l'initialisation ne détermine pas le nombre de clusters, 'C' est incorrect car la pré-calculation n'est pas une étape d'initialisation, et 'D' est une conséquence des itérations, pas de l'initialisation.",
+      "explanation": "L'initialisation vise à positionner les centroides pour minimiser la variance intra-cluster au début. Le choix de 'B' est faux car l'initialisation ne détermine pas le nombre de clusters, 'C' est incorrect car la pré-calculation n'est pas une étape d'initialisation, et 'D' est une conséquence des itérations, pas de l'initialisation. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Trouver le nombre optimal de clusters) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Éviter de pré-calculer les distances entre tous les points) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Lors de la mise à jour des centroides dans K-means, que signifie 'moyenne des points' ?",
       "image_url": null,
       "choices": {
-        "A": "Calculer la moyenne arithmétique des coordonnées des points de chaque cluster",
-        "B": "Utiliser le point médian pour chaque dimension",
+        "A": "Utiliser le point médian pour chaque dimension",
+        "B": "Calculer la moyenne arithmétique des coordonnées des points de chaque cluster",
         "C": "Choisir le point médian du cluster entier",
         "D": "Moyenner toutes les distances entre les points du cluster"
       },
-      "correct_answer": "A",
-      "explanation": "La mise à jour des centroides implique de calculer la moyenne arithmétique des coordonnées des points de chaque cluster. 'B' et 'C' évoquent des méthodes basées sur la médiane, pas de simple moyenne, et 'D' suggère une moyenne des distances qui n'est pas correcte pour l'emplacement du centroide.",
+      "correct_answer": "B",
+      "explanation": "La mise à jour des centroides implique de calculer la moyenne arithmétique des coordonnées des points de chaque cluster. 'B' et 'C' évoquent des méthodes basées sur la médiane, pas de simple moyenne, et 'D' suggère une moyenne des distances qui n'est pas correcte pour l'emplacement du centroide. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Utiliser le point médian pour chaque dimension) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Choisir le point médian du cluster entier) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Moyenner toutes",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quel est un inconvénient de l'initialisation par K-means++ par rapport à une initialisation aléatoire?",
       "image_url": null,
       "choices": {
-        "A": "Il peut être plus coûteux en termes de temps de calcul.",
+        "A": "Il ne prend pas en compte les valeurs aberrantes.",
         "B": "Il produit toujours des clusters de taille inégale.",
-        "C": "Il ne prend pas en compte les valeurs aberrantes.",
+        "C": "Il peut être plus coûteux en termes de temps de calcul.",
         "D": "Il nécessite que les données soient normalisées au préalable."
       },
-      "correct_answer": "A",
-      "explanation": "L'initialisation K-means++ sélectionne les premiers centroides plus intelligemment, ce qui peut être plus coûteux en temps de calcul par rapport à une initialisation purement aléatoire. Il n'y a pas de garantie qu'il produira des clusters de taille inégale (B). K-means++ ne change pas comment les valeurs aberrantes sont gérées (C), et il ne nécessite pas que les données soient normalisées au préalable (D).",
+      "correct_answer": "C",
+      "explanation": "L'initialisation K-means++ sélectionne les premiers centroides plus intelligemment, ce qui peut être plus coûteux en temps de calcul par rapport à une initialisation purement aléatoire. Il n'y a pas de garantie qu'il produira des clusters de taille inégale (B). K-means++ ne change pas comment les valeurs aberrantes sont gérées (C), et il ne nécessite pas que les données soient normalisées au préalable (D). La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il ne prend pas en compte les valeurs aberrantes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il produit toujours des clusters de taille inégale.) est plausible mais faux",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Comment sont mises à jour les coordonnées des centroides dans une itération de K-means?",
       "image_url": null,
       "choices": {
-        "A": "En calculant la moyenne des points actuels de chaque cluster.",
+        "A": "En ajoutant un point aléatoire à chaque cluster.",
         "B": "En prenant le point le plus proche du centre de chaque cluster.",
         "C": "En supprimant les points les plus éloignés de chaque cluster.",
-        "D": "En ajoutant un point aléatoire à chaque cluster."
+        "D": "En calculant la moyenne des points actuels de chaque cluster."
       },
-      "correct_answer": "A",
-      "explanation": "Les coordonnées des centroides sont mises à jour en calculant la moyenne des points affectés à chaque cluster (A). B décrit la méthode du 'medoid', pas K-means. C et D ne concernent pas la manière dont les centroides sont mis à jour.",
+      "correct_answer": "D",
+      "explanation": "Les coordonnées des centroides sont mises à jour en calculant la moyenne des points affectés à chaque cluster (A). B décrit la méthode du 'medoid', pas K-means. C et D ne concernent pas la manière dont les centroides sont mis à jour. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En ajoutant un point aléatoire à chaque cluster.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En prenant le point le plus proche du centre de chaque cluster.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En supprimant",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Tous les clusters ont le même nombre de points."
       },
       "correct_answer": "A",
-      "explanation": "La convergence dans K-means est atteinte lorsque les positions des centroides ne changent plus significativement (A). B est incorrect car l'équilibre des distances ne conduit pas naturellement à la convergence. C décrit une mauvaise compréhension du mécanisme de K-means qui maintient un nombre constant de clusters. D n'est pas une condition nécessaire à la convergence.",
+      "explanation": "La convergence dans K-means est atteinte lorsque les positions des centroides ne changent plus significativement (A). B est incorrect car l'équilibre des distances ne conduit pas naturellement à la convergence. C décrit une mauvaise compréhension du mécanisme de K-means qui maintient un nombre constant de clusters. D n'est pas une condition nécessaire à la convergence. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Tous les points de données sont à une distance équidistante des centroides.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le nombre de clusters augmente à chaque itération.) est plausible mais faux car il ne respecte pas",
       "difficulty": "easy"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quelle méthode pourrait aider à déterminer le bon choix de k dans K-means?",
       "image_url": null,
       "choices": {
-        "A": "La méthode du coude.",
-        "B": "L'utilisation de cross-validation.",
+        "A": "L'utilisation de cross-validation.",
+        "B": "La méthode du coude.",
         "C": "Le test t de Student.",
         "D": "Le coefficient de détermination R²."
       },
-      "correct_answer": "A",
-      "explanation": "La méthode du coude aide à choisir le bon nombre de clusters (k) en traçant la fonction de coût par rapport à k et en recherchant le point où l'amélioration commence à diminuer (le coude). La cross-validation (B) est utilisée pour l'évaluation générale des modèles supervisés. Le test t de Student (C) et le coefficient de détermination R² (D) ne sont pas utilisés pour déterminer k dans le contexte de K-means.",
+      "correct_answer": "B",
+      "explanation": "La méthode du coude aide à choisir le bon nombre de clusters (k) en traçant la fonction de coût par rapport à k et en recherchant le point où l'amélioration commence à diminuer (le coude). La cross-validation (B) est utilisée pour l'évaluation générale des modèles supervisés. Le test t de Student (C) et le coefficient de détermination R² (D) ne sont pas utilisés pour déterminer k dans le contexte de K-means. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'utilisation de cross-validation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le test t de Student.) est plausible mais faux car",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quelle est une méthode courante pour initialiser les centres dans l'algorithme K-means ?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser la méthode K-means++",
+        "A": "Utiliser les valeurs moyennes des colonnes comme centres initiaux",
         "B": "Choisir les k premiers points du jeu de données",
-        "C": "Utiliser les valeurs moyennes des colonnes comme centres initiaux",
+        "C": "Utiliser la méthode K-means++",
         "D": "Définir les centres à l'origine du plan"
       },
-      "correct_answer": "A",
-      "explanation": "La méthode K-means++ est conçue pour initialiser intelligemment les centres, réduisant ainsi le risque de mauvaise convergence. Choisir les k premiers points ou les valeurs moyennes ne garantit pas une bonne dispersion et définir à l'origine ne maximise pas la distance initiale entre centres.",
+      "correct_answer": "C",
+      "explanation": "La méthode K-means++ est conçue pour initialiser intelligemment les centres, réduisant ainsi le risque de mauvaise convergence. Choisir les k premiers points ou les valeurs moyennes ne garantit pas une bonne dispersion et définir à l'origine ne maximise pas la distance initiale entre centres. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Utiliser les valeurs moyennes des colonnes comme centres initiaux) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Choisir les k premiers points du jeu de données) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Définir les",
       "difficulty": "easy"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Comment l'algorithme K-means met-il à jour les centres après chaque itération ?",
       "image_url": null,
       "choices": {
-        "A": "En calculant la moyenne des points attribués à chaque centre",
+        "A": "En ne modifiant jamais les centres après l'initialisation",
         "B": "En choisissant un point au hasard parmi ceux de la classe comme nouveau centre",
         "C": "En prenant le point le plus éloigné comme nouveau centre",
-        "D": "En ne modifiant jamais les centres après l'initialisation"
+        "D": "En calculant la moyenne des points attribués à chaque centre"
       },
-      "correct_answer": "A",
-      "explanation": "Après chaque itération, K-means met à jour les centres en calculant la moyenne des points leur étant attribués, assurant ainsi que chaque centre est au \"centre\" de son cluster. Choisir aléatoirement ou le point le plus éloigné manqueraient de stabilité, et ne jamais modifier n'expliquerait pas l'apprentissage.",
+      "correct_answer": "D",
+      "explanation": "Après chaque itération, K-means met à jour les centres en calculant la moyenne des points leur étant attribués, assurant ainsi que chaque centre est au \"centre\" de son cluster. Choisir aléatoirement ou le point le plus éloigné manqueraient de stabilité, et ne jamais modifier n'expliquerait pas l'apprentissage. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En ne modifiant jamais les centres après l'initialisation) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En choisissant un point au hasard parmi ceux de la classe comme nouveau centre) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "easy"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Réduction de la distance entre chaque point et le centroid de l'origine"
       },
       "correct_answer": "A",
-      "explanation": "L'algorithme K-means est considéré convergent quand les centres ne changent plus d'une itération à l'autre. Une augmentation de la variance indiquerait un problème. Le nombre de points par cluster est susceptible de fluctuer, et mesurer par rapport à l'origine n'est pas pertinent.",
+      "explanation": "L'algorithme K-means est considéré convergent quand les centres ne changent plus d'une itération à l'autre. Une augmentation de la variance indiquerait un problème. Le nombre de points par cluster est susceptible de fluctuer, et mesurer par rapport à l'origine n'est pas pertinent. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Augmentation continue de la variance intra-cluster) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le nombre de points dans chaque cluster n'augmente pas) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Réduction de la distance entre chaque point",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quel est l'impact d'un choix incorrect de k dans l'algorithme K-means ?",
       "image_url": null,
       "choices": {
-        "A": "Les clusters peuvent être trop larges ou trop petits, réduisant l'efficacité",
-        "B": "K-means échouera complètement à produire des clusters",
+        "A": "K-means échouera complètement à produire des clusters",
+        "B": "Les clusters peuvent être trop larges ou trop petits, réduisant l'efficacité",
         "C": "Le résultat sera toujours prédictif peu importe le k",
         "D": "Les clusters deviendront nécessairement de même taille"
       },
-      "correct_answer": "A",
-      "explanation": "Un choix incorrect de k peut mener à des clusters sur ou sous segmentés. K-means ne garantit pas l'échec complet avec un mauvais k mais peut mener à des clusters peu utiles. Les prédictions ne sont pas garanties et les tailles des clusters ne sont pas toujours égales.",
+      "correct_answer": "B",
+      "explanation": "Un choix incorrect de k peut mener à des clusters sur ou sous segmentés. K-means ne garantit pas l'échec complet avec un mauvais k mais peut mener à des clusters peu utiles. Les prédictions ne sont pas garanties et les tailles des clusters ne sont pas toujours égales. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (K-means échouera complètement à produire des clusters) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le résultat sera toujours prédictif peu importe le k) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Lorsque vous exécutez l'algorithme K-means plusieurs fois, pourquoi obtenez-vous des résultats différents ?",
       "image_url": null,
       "choices": {
-        "A": "Les centres initiaux peuvent être différents à chaque exécution",
+        "A": "K-means est un algorithme aléatoire par nature",
         "B": "Les points de données changent à chaque exécution",
-        "C": "K-means est un algorithme aléatoire par nature",
+        "C": "Les centres initiaux peuvent être différents à chaque exécution",
         "D": "La convergence est due à des calculs imprécis"
       },
-      "correct_answer": "A",
-      "explanation": "Les différentes initialisations des centres entraînent souvent différents résultats. Les points de données ne changent pas et K-means, bien que basé sur des choix initiaux aléatoires, est déterministe après cela. La convergence découle de la nature de l'algorithme et non d'une imprécision.",
+      "correct_answer": "C",
+      "explanation": "Les différentes initialisations des centres entraînent souvent différents résultats. Les points de données ne changent pas et K-means, bien que basé sur des choix initiaux aléatoires, est déterministe après cela. La convergence découle de la nature de l'algorithme et non d'une imprécision. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (K-means est un algorithme aléatoire par nature) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Les points de données changent à chaque exécution) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La convergence est due à des calculs",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel est un signe potentiel que k est surévalué dans K-means ?",
       "image_url": null,
       "choices": {
-        "A": "Il y a plusieurs clusters avec très peu ou aucun point",
+        "A": "La variance inter-cluster est identiquement nulle",
         "B": "Tous les clusters présentent une variabilité interne importante",
         "C": "Les clusters sont significativement éloignés les uns des autres",
-        "D": "La variance inter-cluster est identiquement nulle"
+        "D": "Il y a plusieurs clusters avec très peu ou aucun point"
       },
-      "correct_answer": "A",
-      "explanation": "Si k est trop élevé, certains clusters peuvent avoir très peu de points, voire aucun. Une grande variabilité interne est plus fréquente avec un k trop faible, des clusters espacés ne sont pas indicatifs et une variance inter-cluster nulle n'a pas de sens dans ce contexte.",
+      "correct_answer": "D",
+      "explanation": "Si k est trop élevé, certains clusters peuvent avoir très peu de points, voire aucun. Une grande variabilité interne est plus fréquente avec un k trop faible, des clusters espacés ne sont pas indicatifs et une variance inter-cluster nulle n'a pas de sens dans ce contexte. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (La variance inter-cluster est identiquement nulle) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Tous les clusters présentent une variabilité interne importante) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Les clusters sont significativement",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Parce qu'il cherche à maximiser la variance intra-cluster"
       },
       "correct_answer": "A",
-      "explanation": "K-means peut converger vers des minimums locaux en raison de l'initialisation aléatoire des centres. Les centres sont effectivement mis à jour à chaque itération, et K-means fonctionne uniquement sur des données numériques. Il cherche à minimiser la variance intra-cluster, pas à la maximiser.",
+      "explanation": "K-means peut converger vers des minimums locaux en raison de l'initialisation aléatoire des centres. Les centres sont effectivement mis à jour à chaque itération, et K-means fonctionne uniquement sur des données numériques. Il cherche à minimiser la variance intra-cluster, pas à la maximiser. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il n'effectue pas de mises à jour des centres après l'initialisation) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il n'est pas conçu pour traiter des données non numériques) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Dans le contexte des K-means, quelle est une pratique pour choisir un bon nombre de k ?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser le 'coude' de la courbe d'inertie pour déterminer un effondrement",
-        "B": "Fixer k en utilisant toujours un nombre pair pour équilibrer les clusters",
+        "A": "Fixer k en utilisant toujours un nombre pair pour équilibrer les clusters",
+        "B": "Utiliser le 'coude' de la courbe d'inertie pour déterminer un effondrement",
         "C": "S'assurer que k est égal à la racine carrée du nombre total de points",
         "D": "Toujours choisir k égal au nombre de caractéristiques des données"
       },
-      "correct_answer": "A",
-      "explanation": "La méthode du 'coude' est une approche courante pour déterminer un bon k en étudiant la courbe d'inertie. Fixer k pair ou en fonction du nombre de points/variables n'assure pas un résultat optimal et ne se base pas sur l'analyse de la variance intra-cluster.",
+      "correct_answer": "B",
+      "explanation": "La méthode du 'coude' est une approche courante pour déterminer un bon k en étudiant la courbe d'inertie. Fixer k pair ou en fonction du nombre de points/variables n'assure pas un résultat optimal et ne se base pas sur l'analyse de la variance intra-cluster. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Fixer k en utilisant toujours un nombre pair pour équilibrer les clusters) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (S'assurer que k est égal à la racine carrée du nombre total de points) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     }
   ]

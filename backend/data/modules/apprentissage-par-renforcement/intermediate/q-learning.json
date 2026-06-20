@@ -14,7 +14,7 @@
         "D": "L'agent ne met à jour ses valeurs que lorsque l'état final est atteint."
       },
       "correct_answer": "A",
-      "explanation": "En off-policy, l'agent peut apprendre une politique différente de celle utilisée pour explorer, ce qui est caractéristique du Q-learning. B est incorrect car cela décrit on-policy. C est faux car les mises à jour se basent sur des récompenses immédiates. D est incorrect car les mises à jour sont intégrées continuellement.",
+      "explanation": "En off-policy, l'agent peut apprendre une politique différente de celle utilisée pour explorer, ce qui est caractéristique du Q-learning. B est incorrect car cela décrit on-policy. C est faux car les mises à jour se basent sur des récompenses immédiates. D est incorrect car les mises à jour sont intégrées continuellement. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (L'agent met à jour ses actions exclusivement sur la politique suivie pour générer les données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Les mises à jour des états s'effectuent en utilisant des récompenses globales.) est plausible mais faux car il",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Quelle est la définition du 'max target' dans le contexte du Q-learning ?",
       "image_url": null,
       "choices": {
-        "A": "C'est la valeur maximale future escomptée parmi toutes les actions possibles depuis le nouvel état atteint.",
-        "B": "C'est la moyenne des récompenses futures escomptées pour toutes les actions possibles.",
+        "A": "C'est la moyenne des récompenses futures escomptées pour toutes les actions possibles.",
+        "B": "C'est la valeur maximale future escomptée parmi toutes les actions possibles depuis le nouvel état atteint.",
         "C": "C'est la valeur Q actuelle plus la récompense immédiate obtenue.",
         "D": "C'est le produit des valeurs Q de l'état actuel et de l'état suivant."
       },
-      "correct_answer": "A",
-      "explanation": "Le 'max target' en Q-learning est défini comme la meilleure estimation de la valeur future, souvent calculée comme le max des valeurs Q du nouvel état. B est faux car il s'agit d'une moyenne, et C et D ne suivent pas la définition formelle du max target.",
+      "correct_answer": "B",
+      "explanation": "Le 'max target' en Q-learning est défini comme la meilleure estimation de la valeur future, souvent calculée comme le max des valeurs Q du nouvel état. B est faux car il s'agit d'une moyenne, et C et D ne suivent pas la définition formelle du max target. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (C'est la moyenne des récompenses futures escomptées pour toutes les actions possibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (C'est la valeur Q actuelle plus la récompense immédiate obtenue.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quel rôle joue la table Q dans l'algorithme de Q-learning ?",
       "image_url": null,
       "choices": {
-        "A": "Elle stocke les estimations de la valeur de chaque action à partir de chaque état.",
+        "A": "Elle contient uniquement la liste des récompenses immédiates obtenues.",
         "B": "Elle enregistre les états-visites successifs pour éviter les re-boucles.",
-        "C": "Elle contient uniquement la liste des récompenses immédiates obtenues.",
+        "C": "Elle stocke les estimations de la valeur de chaque action à partir de chaque état.",
         "D": "Elle sert à tracer l'historique des décisions prises par l'agent."
       },
-      "correct_answer": "A",
-      "explanation": "La table Q est une structure où les valeurs Q, qui quantifient l'utilité des actions données des états, sont enregistrées. B et D concernent plutôt le traçage des visites ou des décisions, et C est incorrect car la table ne stocke pas seulement les récompenses immédiates.",
+      "correct_answer": "C",
+      "explanation": "La table Q est une structure où les valeurs Q, qui quantifient l'utilité des actions données des états, sont enregistrées. B et D concernent plutôt le traçage des visites ou des décisions, et C est incorrect car la table ne stocke pas seulement les récompenses immédiates. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle contient uniquement la liste des récompenses immédiates obtenues.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle enregistre les états-visites successifs pour éviter les re-boucles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Comment la convergence est-elle atteinte dans le Q-learning ?",
       "image_url": null,
       "choices": {
-        "A": "En visitant toutes les paires état-action suffisamment de fois avec une politique exploratrice.",
+        "A": "En appliquant les mêmes actions successivement jusqu'à ce que les récompenses se stabilisent.",
         "B": "En réduisant les valeurs Q progressivement à chaque itération jusqu'à ce qu'elles soient minimales.",
         "C": "En augmentant progressivement le taux d'apprentissage lors des mises à jour des valeurs Q.",
-        "D": "En appliquant les mêmes actions successivement jusqu'à ce que les récompenses se stabilisent."
+        "D": "En visitant toutes les paires état-action suffisamment de fois avec une politique exploratrice."
       },
-      "correct_answer": "A",
-      "explanation": "Le Q-learning converge vers l'optimum en s'assurant que toutes les paires état-action sont explorées, généralement via une politique epsilon-greedy. B et C sont incorrects car la convergence nécessite un taux d'apprentissage diminuant. D est faux car la convergence ne se base pas sur des actions répétées.",
+      "correct_answer": "D",
+      "explanation": "Le Q-learning converge vers l'optimum en s'assurant que toutes les paires état-action sont explorées, généralement via une politique epsilon-greedy. B et C sont incorrects car la convergence nécessite un taux d'apprentissage diminuant. D est faux car la convergence ne se base pas sur des actions répétées. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En appliquant les mêmes actions successivement jusqu'à ce que les récompenses se stabilisent.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En réduisant les valeurs Q progressivement à chaque itération jusqu'à ce qu'elles soient minimales.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Car il n'a pas besoin de politique pour choisir ses actions."
       },
       "correct_answer": "A",
-      "explanation": "En Q-learning, l'agent peut explorer avec une politique (e.g., epsilon-greedy) et mettre à jour ses valeurs Q en se basant sur une politique optimale (meilleure action), ce qui le caractérise comme off-policy. B, C et D sont incorrects car ils déforment cette indépendance entre exploration et mise à jour.",
+      "explanation": "En Q-learning, l'agent peut explorer avec une politique (e.g., epsilon-greedy) et mettre à jour ses valeurs Q en se basant sur une politique optimale (meilleure action), ce qui le caractérise comme off-policy. B, C et D sont incorrects car ils déforment cette indépendance entre exploration et mise à jour. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Car il met à jour les valeurs Q sans jamais explorer l'environnement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Car il utilise plusieurs politiques simultanément pour explorer et exploiter.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Comment le concept de 'max target' contribue-t-il à la stabilité du Q-learning ?",
       "image_url": null,
       "choices": {
-        "A": "Il évite l'accumulation d'erreurs en s'appuyant sur la meilleure évaluation future.",
-        "B": "Il accélère l'exploration en récompensant toujours la même action.",
+        "A": "Il accélère l'exploration en récompensant toujours la même action.",
+        "B": "Il évite l'accumulation d'erreurs en s'appuyant sur la meilleure évaluation future.",
         "C": "Il utilise des moyennes réduisant la variance des mises à jour.",
         "D": "Il ignore les valeurs futures pour se concentrer sur l'état actuel."
       },
-      "correct_answer": "A",
-      "explanation": "Le 'max target' contribue à la stabilité en évitant la propagation d'erreurs en fournissant toujours le meilleur estimateur de la valeur future. B et D n'impliquent pas l'utilisation prévisionnelle, et C parle de moyennes alors que le max n'est pas une moyenne.",
+      "correct_answer": "B",
+      "explanation": "Le 'max target' contribue à la stabilité en évitant la propagation d'erreurs en fournissant toujours le meilleur estimateur de la valeur future. B et D n'impliquent pas l'utilisation prévisionnelle, et C parle de moyennes alors que le max n'est pas une moyenne. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il accélère l'exploration en récompensant toujours la même action.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il utilise des moyennes réduisant la variance des mises à jour.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il ignore",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Dans le Q-learning, pourquoi la table Q peut-elle devenir très grande ?",
       "image_url": null,
       "choices": {
-        "A": "Parce que chaque combinaison possible d'état et d'action est stockée.",
+        "A": "Parce qu'elle garde un historique de toutes les transitions vécues par l'agent.",
         "B": "Parce qu'elle inclut toutes les récompenses reçues durant les épisodes.",
-        "C": "Parce qu'elle garde un historique de toutes les transitions vécues par l'agent.",
+        "C": "Parce que chaque combinaison possible d'état et d'action est stockée.",
         "D": "Parce qu'elle multiplie les états par le nombre d'itérations."
       },
-      "correct_answer": "A",
-      "explanation": "La taille de la table Q dépend du nombre d'états et d'actions, car elle stocke chaque combinaison. B, C, et D sont incorrects car ils ne concernent pas la structure fondamentale ou ajoutent des données non pertinentes.",
+      "correct_answer": "C",
+      "explanation": "La taille de la table Q dépend du nombre d'états et d'actions, car elle stocke chaque combinaison. B, C, et D sont incorrects car ils ne concernent pas la structure fondamentale ou ajoutent des données non pertinentes. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce qu'elle garde un historique de toutes les transitions vécues par l'agent.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Parce qu'elle inclut toutes les récompenses reçues durant les épisodes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Parce qu'elle multiplie les états",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Comment la notion de 'convergence' est-elle assurée précautionneusement en Q-learning ?",
       "image_url": null,
       "choices": {
-        "A": "En ajustant le taux d'apprentissage à un niveau décroissant au fil des épisodes.",
+        "A": "En adoptant une politique statique sans mise à jour.",
         "B": "En choisissant une valeur fixe et élevée pour le taux de récompense.",
         "C": "En évitant toute forme d'exploration après un certain seuil d'épisodes.",
-        "D": "En adoptant une politique statique sans mise à jour."
+        "D": "En ajustant le taux d'apprentissage à un niveau décroissant au fil des épisodes."
       },
-      "correct_answer": "A",
-      "explanation": "Un taux d'apprentissage qui diminue avec le temps garantit la convergence grâce à des ajustements de plus en plus subtiles. B est incorrect car un taux de récompense ne contrôle pas directement l'apprentissage. C et D réduisent la qualité de l'exploration, freinant la convergence.",
+      "correct_answer": "D",
+      "explanation": "Un taux d'apprentissage qui diminue avec le temps garantit la convergence grâce à des ajustements de plus en plus subtiles. B est incorrect car un taux de récompense ne contrôle pas directement l'apprentissage. C et D réduisent la qualité de l'exploration, freinant la convergence. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En adoptant une politique statique sans mise à jour.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En choisissant une valeur fixe et élevée pour le taux de récompense.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Le mécanisme de réinitialisation fréquente des tables Q pour explorer de nouvelles stratégies."
       },
       "correct_answer": "A",
-      "explanation": "L'indépendance entre exploration (extension des connaissances de l'environnement) et exploitation (utilisation des connaissances actuelles pour maximiser la récompense) confère une grande flexibilité au Q-learning. B est faux car la fonction de récompense est centrale. C et D ne concernent pas des ajustements entre politiques.",
+      "explanation": "L'indépendance entre exploration (extension des connaissances de l'environnement) et exploitation (utilisation des connaissances actuelles pour maximiser la récompense) confère une grande flexibilité au Q-learning. B est faux car la fonction de récompense est centrale. C et D ne concernent pas des ajustements entre politiques. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (L'absence totale de fonction de récompense définie.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La fonctionnalité intégrée pour analyser l'environnement en détail.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Le mécanisme de réinitialisation fréquente",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Comment l'utilisation d'une 'politique epsilon-greedy' affecte-t-elle le Q-learning ?",
       "image_url": null,
       "choices": {
-        "A": "Elle introduit un équilibre entre l'exploration et l'exploitation.",
-        "B": "Elle assure que l'agent n'explore jamais l'environnement.",
+        "A": "Elle assure que l'agent n'explore jamais l'environnement.",
+        "B": "Elle introduit un équilibre entre l'exploration et l'exploitation.",
         "C": "Elle élimine la nécessité d'une fonction de récompense.",
         "D": "Elle optimise exclusivement pour les actions à court terme."
       },
-      "correct_answer": "A",
-      "explanation": "La stratégie epsilon-greedy garantit un juste milieu entre essayer de nouvelles actions (exploration) et choisir les meilleures actions connues (exploitation). B est incorrect car elle favorise l'exploration. C est faux, le besoin de récompense est toujours intact. D réduit l'objectif de l'algorithme.",
+      "correct_answer": "B",
+      "explanation": "La stratégie epsilon-greedy garantit un juste milieu entre essayer de nouvelles actions (exploration) et choisir les meilleures actions connues (exploitation). B est incorrect car elle favorise l'exploration. C est faux, le besoin de récompense est toujours intact. D réduit l'objectif de l'algorithme. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle assure que l'agent n'explore jamais l'environnement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle élimine la nécessité d'une fonction de récompense.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle optimise exclusivement pour les actions à",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Pourquoi le Q-learning est-il susceptible de ne pas converger dans certaines situations ?",
       "image_url": null,
       "choices": {
-        "A": "Si l'epsilon de la politique epsilon-greedy n'est jamais réduit, favorisant trop l'exploration.",
+        "A": "Si toutes les valeurs de la table Q sont initialisées à zéro.",
         "B": "Si le taux de récompense décroît trop rapidement, limitant l'effet des récompenses immédiates.",
-        "C": "Si toutes les valeurs de la table Q sont initialisées à zéro.",
+        "C": "Si l'epsilon de la politique epsilon-greedy n'est jamais réduit, favorisant trop l'exploration.",
         "D": "Si l'agent change constamment sa politique d'apprentissage à chaque épisode."
       },
-      "correct_answer": "A",
-      "explanation": "Une valeur epsilon trop élevée maintenue en permanence empêche l'exploitation efficace, empêchant ainsi la convergence. B est erroné car cela ne concerne pas directement la convergence. C est faux car on peut converger même avec une table initialisée à zéro. D est incorrect car changer la politique n'empêche pas nécessairement la convergence, surtout si les politiques convergent vers un optimum.",
+      "correct_answer": "C",
+      "explanation": "Une valeur epsilon trop élevée maintenue en permanence empêche l'exploitation efficace, empêchant ainsi la convergence. B est erroné car cela ne concerne pas directement la convergence. C est faux car on peut converger même avec une table initialisée à zéro. D est incorrect car changer la politique n'empêche pas nécessairement la convergence, surtout si les politiques convergent vers un optimum. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Si toutes les valeurs de la table Q sont initialisées à zéro.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Si le taux de récompense décroît trop rapidement, limitant l'effet des récompenses",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Dans quelle situation la convergence du Q-learning peut-elle être ralentie ?",
       "image_url": null,
       "choices": {
-        "A": "Si le taux d'apprentissage est trop élevé, entraînant des mises à jour instables.",
+        "A": "Si l'agent suit strictement sa politique optimale dès le début.",
         "B": "Si toutes les récompenses sont instantanément maximisées.",
         "C": "Si le nombre d'actions possibles est trop restreint.",
-        "D": "Si l'agent suit strictement sa politique optimale dès le début."
+        "D": "Si le taux d'apprentissage est trop élevé, entraînant des mises à jour instables."
       },
-      "correct_answer": "A",
-      "explanation": "Un taux d'apprentissage élevé peut rendre le système instable en provoquant de grands sauts dans les mises à jour Q, ralentissant ou empêchant la convergence. B et C ne ralentissent pas la convergence. D est incorrect car un suivi trop précoce de la politique optimale ne ralentit pas directement la convergence mais peut échouer à découvrir de meilleures politiques.",
+      "correct_answer": "D",
+      "explanation": "Un taux d'apprentissage élevé peut rendre le système instable en provoquant de grands sauts dans les mises à jour Q, ralentissant ou empêchant la convergence. B et C ne ralentissent pas la convergence. D est incorrect car un suivi trop précoce de la politique optimale ne ralentit pas directement la convergence mais peut échouer à découvrir de meilleures politiques. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Si l'agent suit strictement sa politique optimale dès le début.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Si toutes les récompenses sont instantanément maximisées.) est plausible mais faux car il ne respecte",
       "difficulty": "medium"
     },
     {
@@ -182,7 +182,7 @@
         "D": "En fixant epsilon à zéro dès le début pour toujours exploiter."
       },
       "correct_answer": "A",
-      "explanation": "Réduire epsilon au fil du temps permet de passer d'une exploration intensive à une exploitation de ce que l'on a appris, optimisant ainsi progressivement les actions. B retarderait l'exploitation critique pour la convergence. C empêcherait l'agent d'apprendre efficacement les récompenses maximales. D annihile l'exploration nécessaire pour un apprentissage efficace.",
+      "explanation": "Réduire epsilon au fil du temps permet de passer d'une exploration intensive à une exploitation de ce que l'on a appris, optimisant ainsi progressivement les actions. B retarderait l'exploitation critique pour la convergence. C empêcherait l'agent d'apprendre efficacement les récompenses maximales. D annihile l'exploration nécessaire pour un apprentissage efficace. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (En augmentant epsilon au fil du temps pour continuer à explorer.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En fixant epsilon à un niveau très élevé pour éviter toute exploitation.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Qu'est-ce qui distingue le Q-learning de l'algorithme SARSA ?",
       "image_url": null,
       "choices": {
-        "A": "Q-learning utilise une mise à jour 'max' tandis que SARSA utilise une mise à jour basée sur l'action actuelle.",
-        "B": "SARSA n'est pas capable d'exploiter l'échantillonnage on-policy comme le Q-learning.",
+        "A": "SARSA n'est pas capable d'exploiter l'échantillonnage on-policy comme le Q-learning.",
+        "B": "Q-learning utilise une mise à jour 'max' tandis que SARSA utilise une mise à jour basée sur l'action actuelle.",
         "C": "Le Q-learning nécessite une fonction de récompense temporelle tandis que SARSA est purement aléatoire.",
         "D": "Le Q-learning met à jour toutes les valeurs Q en même temps, contrairement à SARSA."
       },
-      "correct_answer": "A",
-      "explanation": "En Q-learning, la mise à jour se fait avec 'max' pour calculer le meilleur futur possible (hors politique), alors que SARSA utilise la prochaine action définie par sa politique courante (on-policy). B est erroné car SARSA est conçu pour l'on-policy. C fausse la nature déterministe des récompenses dans les deux. D est incorrect car Q-learning, comme SARSA, met à jour état par état.",
+      "correct_answer": "B",
+      "explanation": "En Q-learning, la mise à jour se fait avec 'max' pour calculer le meilleur futur possible (hors politique), alors que SARSA utilise la prochaine action définie par sa politique courante (on-policy). B est erroné car SARSA est conçu pour l'on-policy. C fausse la nature déterministe des récompenses dans les deux. D est incorrect car Q-learning, comme SARSA, met à jour état par état. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (SARSA n'est pas capable d'exploiter l'échantillonnage on-policy comme le Q-learning.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le Q-learning nécessite une fonction de récompense temporelle tandis que SARSA",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quelle stratégie pourrait renforcer la convergence pour des environnements avec de très grandes tables Q ?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser une représentation par fonction approximative comme les réseaux de neurones.",
+        "A": "Réduire la taille des états représentés pour un échantillonnage plus rapide.",
         "B": "Accroître la taille de la table Q proportionnellement aux itérations.",
-        "C": "Réduire la taille des états représentés pour un échantillonnage plus rapide.",
+        "C": "Utiliser une représentation par fonction approximative comme les réseaux de neurones.",
         "D": "Multiplier par deux toutes les récompenses reçues par l'agent."
       },
-      "correct_answer": "A",
-      "explanation": "Les réseaux de neurones et autres approches de approximations fonctionnelles traitent les contraintes de grande dimensionnalité en généralisant les états dans la table Q. B ne donne pas une solution réaliste pour la convergence. C réduit la fidélité des représentations d'état. D amplifie des récompenses arbitrairement sans résolution des problèmes de convergence.",
+      "correct_answer": "C",
+      "explanation": "Les réseaux de neurones et autres approches de approximations fonctionnelles traitent les contraintes de grande dimensionnalité en généralisant les états dans la table Q. B ne donne pas une solution réaliste pour la convergence. C réduit la fidélité des représentations d'état. D amplifie des récompenses arbitrairement sans résolution des problèmes de convergence. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire la taille des états représentés pour un échantillonnage plus rapide.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Accroître la taille de la table Q proportionnellement aux itérations.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Pourquoi trop d'exploration en Q-learning peut-il inhiber efficacement la convergence ?",
       "image_url": null,
       "choices": {
-        "A": "Parce que cela rend encore imprécises les estimations Q des actions optimales découvertes.",
+        "A": "Parce que l'absence totale d'exploitation nuit à l'évolution des taux d'apprentissage.",
         "B": "Parce que cela augmente systématiquement la taille de la table Q.",
         "C": "Parce que l'agent n'applique aucune politique pratique à tester dans l'environnement.",
-        "D": "Parce que l'absence totale d'exploitation nuit à l'évolution des taux d'apprentissage."
+        "D": "Parce que cela rend encore imprécises les estimations Q des actions optimales découvertes."
       },
-      "correct_answer": "A",
-      "explanation": "Un déséquilibre pro-exploration entraîne à répéter des actions moins bénéfiques, ne permettant pas le renforcement suffisant des actions optimales. B et C confondent exploration avec la structure de la table et non la stratégie de décision. D ignore le rôle clé de l'équilibre entre exploration et l'exploitation.",
+      "correct_answer": "D",
+      "explanation": "Un déséquilibre pro-exploration entraîne à répéter des actions moins bénéfiques, ne permettant pas le renforcement suffisant des actions optimales. B et C confondent exploration avec la structure de la table et non la stratégie de décision. D ignore le rôle clé de l'équilibre entre exploration et l'exploitation. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce que l'absence totale d'exploitation nuit à l'évolution des taux d'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Parce que cela augmente systématiquement la taille de la table Q.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Elle neutralise toutes les valeurs de récompenses immédiates fixées au zéro."
       },
       "correct_answer": "A",
-      "explanation": "Les récompenses escomptées futures jouent fortement lorsqu'elles encouragent des décisions intentionnées qui priorisent le long terme. B évite l'attention sur le futur, et C, D mal interprètent comment l'escompte affecte les calculs Q.",
+      "explanation": "Les récompenses escomptées futures jouent fortement lorsqu'elles encouragent des décisions intentionnées qui priorisent le long terme. B évite l'attention sur le futur, et C, D mal interprètent comment l'escompte affecte les calculs Q. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elle favorise uniquement les actions immédiates en négligeant totalement l'avenir.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle maintient constante la valeur des actions indépendamment du résultat obtenu.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle neutralise toutes les valeurs de récompenses immédiates fixées au",
       "difficulty": "hard"
     },
     {
@@ -247,12 +247,12 @@
       "image_url": null,
       "choices": {
         "A": "Réduire epsilon pour prioriser davantage l'exploitation après suffisamment d'exploration.",
-        "B": "Assurer que toutes les paires état-action soient visitées assez souvent.",
-        "C": "Utiliser un taux d'apprentissage fixe chaque fois qu'une mise à jour est faite.",
+        "B": "Utiliser un taux d'apprentissage fixe chaque fois qu'une mise à jour est faite.",
+        "C": "Assurer que toutes les paires état-action soient visitées assez souvent.",
         "D": "Adapter régulièrement le taux d'escompte pour améliorer la valeur future."
       },
-      "correct_answer": "C",
-      "explanation": "Otenir une convergence stable implique souvent un taux d'apprentissage qui diminue avec le temps, plutôt que de rester fixe. A et B sont critères réalistes pour convergence, et D encourage l'évaluation précise des valeurs futures, bien que réajustable.",
+      "correct_answer": "B",
+      "explanation": "Otenir une convergence stable implique souvent un taux d'apprentissage qui diminue avec le temps, plutôt que de rester fixe. A et B sont critères réalistes pour convergence, et D encourage l'évaluation précise des valeurs futures, bien que réajustable. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire epsilon pour prioriser davantage l'exploitation après suffisamment d'exploration.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Assurer que toutes les paires état-action soient visitées assez souvent.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Adapter régulièrement le taux d'escompte pour améliorer",
       "difficulty": "hard"
     }
   ]

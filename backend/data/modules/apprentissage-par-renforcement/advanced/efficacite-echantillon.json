@@ -14,7 +14,7 @@
         "D": "Il assure que l'agent explore toujours des environnements inconnus."
       },
       "correct_answer": "A",
-      "explanation": "Un replay buffer stocke les expériences passées pour être réutilisées, ce qui améliore l'efficacité de l'échantillon. Cela ne remplace pas la nécessité de nouvelles expériences (B), n'élimine pas les biais (C), et ne garantit pas l'exploration de nouvelles zones (D).",
+      "explanation": "Un replay buffer stocke les expériences passées pour être réutilisées, ce qui améliore l'efficacité de l'échantillon. Cela ne remplace pas la nécessité de nouvelles expériences (B), n'élimine pas les biais (C), et ne garantit pas l'exploration de nouvelles zones (D). La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il élimine complètement le besoin de nouvelles expériences.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il évite toute forme de biais dans les données collectées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il assure que l'agent explore toujours",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Comment la reutilisation affecte-t-elle l'efficacite echantillon dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Elle permet d'améliorer la performance sans augmenter le nombre d'échantillons.",
-        "B": "Elle garantit toujours la convergence vers l'optimum global.",
+        "A": "Elle garantit toujours la convergence vers l'optimum global.",
+        "B": "Elle permet d'améliorer la performance sans augmenter le nombre d'échantillons.",
         "C": "Elle rend tout calcul de gradient inutile.",
         "D": "Elle empêche les agents d'apprendre des nouvelles politiques."
       },
-      "correct_answer": "A",
-      "explanation": "La réutilisation des expériences déjà collectées permet une amélioration de la performance avec le même ensemble de données, augmentant ainsi l'efficacité de l'échantillon. Elle ne garantit pas l'atteinte de l'optimum global (B), n'annule pas la nécessité des calculs de gradient (C), et permet toujours d'apprendre de nouvelles politiques (D).",
+      "correct_answer": "B",
+      "explanation": "La réutilisation des expériences déjà collectées permet une amélioration de la performance avec le même ensemble de données, augmentant ainsi l'efficacité de l'échantillon. Elle ne garantit pas l'atteinte de l'optimum global (B), n'annule pas la nécessité des calculs de gradient (C), et permet toujours d'apprendre de nouvelles politiques (D). La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle garantit toujours la convergence vers l'optimum global.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle rend tout calcul de gradient inutile.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quel est un défi principal associé au batch learning dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Conserver la cohérence des données lorsque celles-ci proviennent de différentes sources.",
+        "A": "Minimiser l'usage des ressources de calcul tout en maximisant l'échantillonnage.",
         "B": "Travailler exclusivement avec des données en temps réel.",
-        "C": "Minimiser l'usage des ressources de calcul tout en maximisant l'échantillonnage.",
+        "C": "Conserver la cohérence des données lorsque celles-ci proviennent de différentes sources.",
         "D": "Assurer une exploration constante de nouveaux états."
       },
-      "correct_answer": "A",
-      "explanation": "Le batch learning doit gérer la cohérence des données issues de différentes sources ou épisodes, ce qui n'est pas le cas avec des données en temps réel (B). L'utilisation des ressources n'est pas le défi principal (C), et il n'a pas besoin d'assurer l'exploration de nouveaux états (D) à tout moment.",
+      "correct_answer": "C",
+      "explanation": "Le batch learning doit gérer la cohérence des données issues de différentes sources ou épisodes, ce qui n'est pas le cas avec des données en temps réel (B). L'utilisation des ressources n'est pas le défi principal (C), et il n'a pas besoin d'assurer l'exploration de nouveaux états (D) à tout moment. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Minimiser l'usage des ressources de calcul tout en maximisant l'échantillonnage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Travailler exclusivement avec des données en temps réel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quel role joue le cout simulation dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Il détermine la viabilité économique des politiques explorées.",
+        "A": "Il est uniquement utilisé pour ajuster les hyper-paramètres du modèle.",
         "B": "Il contrôle directement le taux d'apprentissage de l'agent.",
         "C": "Il n'a aucun impact sur le nombre d'itérations nécessaires pour converger.",
-        "D": "Il est uniquement utilisé pour ajuster les hyper-paramètres du modèle."
+        "D": "Il détermine la viabilité économique des politiques explorées."
       },
-      "correct_answer": "A",
-      "explanation": "Le coût de simulation impacte la viabilité économique, car les simulations peuvent être coûteuses en ressources. Ce coût n'affecte pas directement le taux d'apprentissage (B), peut impacter le nombre d'itérations (C), et son rôle ne se limite pas à l'ajustement des hyper-paramètres (D).",
+      "correct_answer": "D",
+      "explanation": "Le coût de simulation impacte la viabilité économique, car les simulations peuvent être coûteuses en ressources. Ce coût n'affecte pas directement le taux d'apprentissage (B), peut impacter le nombre d'itérations (C), et son rôle ne se limite pas à l'ajustement des hyper-paramètres (D). La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il est uniquement utilisé pour ajuster les hyper-paramètres du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il contrôle directement le taux d'apprentissage de l'agent.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il n'a aucun",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Elle assure que chaque politique essayée est optimale."
       },
       "correct_answer": "A",
-      "explanation": "L'efficacité d'échantillon est cruciale car elle réduit le nombre d'échantillons nécessaires pour obtenir des résultats satisfaisants. Elle ne supprime pas le besoin d'essai et d'erreur (B), ne réduit pas automatiquement l'exploration (C) et n'assure pas l'optimalité de chaque politique essayée (D).",
+      "explanation": "L'efficacité d'échantillon est cruciale car elle réduit le nombre d'échantillons nécessaires pour obtenir des résultats satisfaisants. Elle ne supprime pas le besoin d'essai et d'erreur (B), ne réduit pas automatiquement l'exploration (C) et n'assure pas l'optimalité de chaque politique essayée (D). La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elle élimine le besoin de tout essai et erreur.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle diminue toujours le besoin en exploration.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle assure que chaque politique essayée est",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Comment le choix de la taille d'un replay buffer peut-il influencer l'apprentissage?",
       "image_url": null,
       "choices": {
-        "A": "Une trop grande taille peut rendre l'apprentissage inefficace en surchargeant la mémoire.",
-        "B": "Une taille fixe sans adaptation est toujours optimisée pour tout environnement.",
+        "A": "Une taille fixe sans adaptation est toujours optimisée pour tout environnement.",
+        "B": "Une trop grande taille peut rendre l'apprentissage inefficace en surchargeant la mémoire.",
         "C": "La taille n'affecte pas la capacité de l'agent à généraliser des politiques.",
         "D": "La taille du replay buffer influence directement le taux de renforcement des récompenses."
       },
-      "correct_answer": "A",
-      "explanation": "Un replay buffer trop grand peut encombrer la mémoire et rendre l'apprentissage inefficace en diluant les expériences pertinentes avec trop de données anciennes. Une taille fixe n'est pas toujours optimisée (B), elle peut affecter la généralisation (C), et la taille n'influence pas directement le taux de renforcement des récompenses (D).",
+      "correct_answer": "B",
+      "explanation": "Un replay buffer trop grand peut encombrer la mémoire et rendre l'apprentissage inefficace en diluant les expériences pertinentes avec trop de données anciennes. Une taille fixe n'est pas toujours optimisée (B), elle peut affecter la généralisation (C), et la taille n'influence pas directement le taux de renforcement des récompenses (D). La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une taille fixe sans adaptation est toujours optimisée pour tout environnement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La taille n'affecte pas la capacité de l'agent à généraliser des politiques.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "medium"
     },
     {
@@ -98,7 +98,7 @@
         "D": "Pour garantir que les agents n'explorent que les politiques déjà connues."
       },
       "correct_answer": "C",
-      "explanation": "Le coût de simulation doit être pris en compte pour ne pas consommer inutilement des ressources qui sont coûteuses en raison des temps de simulation trop élevés. Il ne vise pas à réduire l'impact sur la mémoire (B), ni à empêcher l'apprentissage de politiques complexes (A), et il n'encourage pas l'exploration limitée aux politiques connues (D).",
+      "explanation": "Le coût de simulation doit être pris en compte pour ne pas consommer inutilement des ressources qui sont coûteuses en raison des temps de simulation trop élevés. Il ne vise pas à réduire l'impact sur la mémoire (B), ni à empêcher l'apprentissage de politiques complexes (A), et il n'encourage pas l'exploration limitée aux politiques connues (D). La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour éviter un surapprentissage des politiques simplifiées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour réduire l'impact sur la mémoire en temps d'exécution.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quel aspect de la reutilisation est essentiel pour améliorer l'efficacite echantillon?",
       "image_url": null,
       "choices": {
-        "A": "L'utilisation systématique des expériences réussies et échouées.",
+        "A": "L'adaptation continue des paramètres de récompense sans dépendre des échantillons précédents.",
         "B": "La prédiction précise des dynamiques futures sans recourir aux données passées.",
         "C": "La suppression des expériences redondantes pour économiser de la mémoire.",
-        "D": "L'adaptation continue des paramètres de récompense sans dépendre des échantillons précédents."
+        "D": "L'utilisation systématique des expériences réussies et échouées."
       },
-      "correct_answer": "A",
-      "explanation": "Pour améliorer l'efficacité de l'échantillon, il est crucial de réutiliser systématiquement à la fois les expériences réussies et échouées pour former un agent plus robuste. Prédire sans données passées (B), supprimer uniquement pour économiser de la mémoire (C), et adapter sans dépendance (D) ne contribuent pas à améliorer directement l'efficacité des échantillons.",
+      "correct_answer": "D",
+      "explanation": "Pour améliorer l'efficacité de l'échantillon, il est crucial de réutiliser systématiquement à la fois les expériences réussies et échouées pour former un agent plus robuste. Prédire sans données passées (B), supprimer uniquement pour économiser de la mémoire (C), et adapter sans dépendance (D) ne contribuent pas à améliorer directement l'efficacité des échantillons. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'adaptation continue des paramètres de récompense sans dépendre des échantillons précédents.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (La prédiction précise des dynamiques futures sans recourir aux données passées.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Lorsque l'environnement garantit des changements drastiques et continus."
       },
       "correct_answer": "A",
-      "explanation": "Le batch learning est plus avantageux lorsque les données arrivent de manière massive et intermittente, car il permet de traiter de grandes quantités de données simultanément. L'apprentissage temps réel (B), l'ajustement après chaque action (C), et les environnements en constante évolution (D) ne bénéficient pas autant du batch learning.",
+      "explanation": "Le batch learning est plus avantageux lorsque les données arrivent de manière massive et intermittente, car il permet de traiter de grandes quantités de données simultanément. L'apprentissage temps réel (B), l'ajustement après chaque action (C), et les environnements en constante évolution (D) ne bénéficient pas autant du batch learning. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Lorsque chaque échantillon est requis pour être traité en temps réel pour l'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Lorsque l'agent doit ajuster ses politiques après chaque action.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     },
     {
@@ -140,7 +140,7 @@
         "D": "Il rend l'algorithme incapable d'apprendre dans un environnement dynamique."
       },
       "correct_answer": "B",
-      "explanation": "Le batch learning retarde les mises à jour des modèles car il regroupe les données avant de les traiter, contrairement à l'approche incrémentale. Il peut utiliser des données historiques (A), ne priorise pas forcément les récentes (C), et peut s'adapter aux environnements dynamiques (D) mais avec un décalage temporel.",
+      "explanation": "Le batch learning retarde les mises à jour des modèles car il regroupe les données avant de les traiter, contrairement à l'approche incrémentale. Il peut utiliser des données historiques (A), ne priorise pas forcément les récentes (C), et peut s'adapter aux environnements dynamiques (D) mais avec un décalage temporel. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il ne peut pas exploiter des données historiques pour l'amélioration.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il priorise toujours les données les plus récentes pour l'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Dans quel scenario l'efficacite echantillon peut-elle etre compromise?",
       "image_url": null,
       "choices": {
-        "A": "Quand il y a un fort déséquilibre entre les politiques exploitées dans les données collectées.",
+        "A": "Quand l'algorithme garantit systématiquement une exploration aléatoire.",
         "B": "Quand toutes les expériences sont archivées et jamais effacées.",
-        "C": "Quand l'algorithme garantit systématiquement une exploration aléatoire.",
+        "C": "Quand il y a un fort déséquilibre entre les politiques exploitées dans les données collectées.",
         "D": "Quand l'agent ne met à jour ses politiques qu'après chaque épisode complété."
       },
-      "correct_answer": "A",
-      "explanation": "Un déséquilibre dans l'exploitation des politiques entraîne une collecte biaisée, compromettant ainsi l'efficacité de l'échantillon. Archiver toutes les expériences (B) ne compromet pas directement l'efficacité. Une exploration aléatoire (C) et des mises à jour après épisode (D), bien que moins optimales, ne compromettent pas l'efficacité intrinsèquement.",
+      "correct_answer": "C",
+      "explanation": "Un déséquilibre dans l'exploitation des politiques entraîne une collecte biaisée, compromettant ainsi l'efficacité de l'échantillon. Archiver toutes les expériences (B) ne compromet pas directement l'efficacité. Une exploration aléatoire (C) et des mises à jour après épisode (D), bien que moins optimales, ne compromettent pas l'efficacité intrinsèquement. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Quand l'algorithme garantit systématiquement une exploration aléatoire.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Quand toutes les expériences sont archivées et jamais effacées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Quand l'agent",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Comment le cout simulation affecte-t-il la scalability dans les projets d'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "En augmentant, il peut limiter la capacité à exécuter des simulations à grande échelle.",
+        "A": "En réduisant, il augmente les chances de développer des modèles supervisés complexes.",
         "B": "Il garantit que toutes les politiques testées respecteront les contraintes temporelles.",
         "C": "Un coût élevé rend l'approche par simulation idéale pour l'adaptation en temps réel.",
-        "D": "En réduisant, il augmente les chances de développer des modèles supervisés complexes."
+        "D": "En augmentant, il peut limiter la capacité à exécuter des simulations à grande échelle."
       },
-      "correct_answer": "A",
-      "explanation": "Un coût de simulation élevé peut restreindre l'échelle des simulations exécutable, limitant ainsi la scalability. Il ne garantit pas le respect des contraintes temporelles (B), ni une adaptation idéale en temps réel (C). Un coût réduit n'affecte pas directement le développement de modèles supervisés (D).",
+      "correct_answer": "D",
+      "explanation": "Un coût de simulation élevé peut restreindre l'échelle des simulations exécutable, limitant ainsi la scalability. Il ne garantit pas le respect des contraintes temporelles (B), ni une adaptation idéale en temps réel (C). Un coût réduit n'affecte pas directement le développement de modèles supervisés (D). La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En réduisant, il augmente les chances de développer des modèles supervisés complexes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il garantit que toutes les politiques testées respecteront les contraintes temporelles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Il élimine le besoin de toute méthode de validation croisée."
       },
       "correct_answer": "A",
-      "explanation": "Le multistage batch learning est utile pour incorporer progressivement de nouvelles données sans accuser de refonte complète des modèles. Il ne neutralise pas complètement les biais (B), n'assure pas une convergence rapide sur tous les environnements (C), et l'emploi de méthodes de validation reste souvent nécessaire (D).",
+      "explanation": "Le multistage batch learning est utile pour incorporer progressivement de nouvelles données sans accuser de refonte complète des modèles. Il ne neutralise pas complètement les biais (B), n'assure pas une convergence rapide sur tous les environnements (C), et l'emploi de méthodes de validation reste souvent nécessaire (D). La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il neutralise entièrement les biais présents dans les échantillons.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il garantit une convergence rapide et uniforme sur tous types d'environnements.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quel element distingue la reutilisation des donnees dans un replay buffer d'une simple memorisation?",
       "image_url": null,
       "choices": {
-        "A": "Les données sont réexaminées pour extraction de nouvelles informations contextuelles.",
-        "B": "Les données sont simplement stockées sans affecter l'apprentissage futur.",
+        "A": "Les données sont simplement stockées sans affecter l'apprentissage futur.",
+        "B": "Les données sont réexaminées pour extraction de nouvelles informations contextuelles.",
         "C": "Les incidences des erreurs dans les exemples passés sont totalement supprimées.",
         "D": "Le replay buffer aplatie toutes les distributions de récompenses associées."
       },
-      "correct_answer": "A",
-      "explanation": "La réutilisation concerne la réexamination des données pour en tirer de nouvelles informations pertinentes pour l'apprentissage, ce qui dépasse la simple mémorisation. Le stockage passif (B), la suppression d'erreurs (C), et l'aplatissement des distributions de récompenses (D) ne sont pas les objectifs d'un replay buffer.",
+      "correct_answer": "B",
+      "explanation": "La réutilisation concerne la réexamination des données pour en tirer de nouvelles informations pertinentes pour l'apprentissage, ce qui dépasse la simple mémorisation. Le stockage passif (B), la suppression d'erreurs (C), et l'aplatissement des distributions de récompenses (D) ne sont pas les objectifs d'un replay buffer. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les données sont simplement stockées sans affecter l'apprentissage futur.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Les incidences des erreurs dans les exemples passés sont totalement supprimées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "hard"
     },
     {
@@ -205,12 +205,12 @@
       "image_url": null,
       "choices": {
         "A": "Synchroniser les résultats de simulation avec les dynamiques réelles rapidement.",
-        "B": "Maintenir un faible coût tout en garantissant une représentation précise de la complexité.",
-        "C": "Assurer un temps d'inactivité minimal entre les itérations d'apprentissage.",
+        "B": "Assurer un temps d'inactivité minimal entre les itérations d'apprentissage.",
+        "C": "Maintenir un faible coût tout en garantissant une représentation précise de la complexité.",
         "D": "Garantir une exploration exhaustive des tous les états potentiels."
       },
-      "correct_answer": "B",
-      "explanation": "Le défi du coût de simulation réside dans le fait de garder les coûts bas tout en représentant fidèlement l'environnement complexe. Synchronisation rapide (A) et inactivité minimale (C) ne sont pas les défis principaux. L'exploration exhaustive (D) n'est pas réaliste dans les environnements à grande complexité.",
+      "correct_answer": "C",
+      "explanation": "Le défi du coût de simulation réside dans le fait de garder les coûts bas tout en représentant fidèlement l'environnement complexe. Synchronisation rapide (A) et inactivité minimale (C) ne sont pas les défis principaux. L'exploration exhaustive (D) n'est pas réaliste dans les environnements à grande complexité. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Synchroniser les résultats de simulation avec les dynamiques réelles rapidement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Assurer un temps d'inactivité minimal entre les itérations d'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Dans quel contexte un replay buffer pourrait-il introduire des erreurs de biais?",
       "image_url": null,
       "choices": {
-        "A": "Si les expériences stockées sont déséquilibrées par rapport aux politiques actuelles de l'agent.",
+        "A": "Si le replay buffer est trop souvent purgé pour économiser de la mémoire.",
         "B": "Si les expériences incluent exclusivement les transitions les plus rentables.",
         "C": "Si les échanges dans le buffer sont aléatoires et constantes.",
-        "D": "Si le replay buffer est trop souvent purgé pour économiser de la mémoire."
+        "D": "Si les expériences stockées sont déséquilibrées par rapport aux politiques actuelles de l'agent."
       },
-      "correct_answer": "A",
-      "explanation": "Un replay buffer introduit des biais si la distribution des expériences stockées ne correspond plus aux politiques actuelles, accentuant certaines voies d'apprentissage. Exclusivité de transitions rentables (B), échanges aléatoires (C) et purges fréquentes (D) posent d'autres problèmes mais pas directement celui de biais.",
+      "correct_answer": "D",
+      "explanation": "Un replay buffer introduit des biais si la distribution des expériences stockées ne correspond plus aux politiques actuelles, accentuant certaines voies d'apprentissage. Exclusivité de transitions rentables (B), échanges aléatoires (C) et purges fréquentes (D) posent d'autres problèmes mais pas directement celui de biais. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Si le replay buffer est trop souvent purgé pour économiser de la mémoire.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Si les expériences incluent exclusivement les transitions les plus rentables.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Minimiser les besoins matériels en traquant les itérations conclues."
       },
       "correct_answer": "A",
-      "explanation": "Les approches hybrides du replay buffer permettent d'optimiser la diversité des échantillons et ainsi éviter que l'agent s'accroche à une seule voie possible – un point crucial dans des environnements stochastiques. La compression de données (C) ou la minimisation des ressources matérielles (D) ne sont pas des bénéfices directs et la dépendance envers les modèles de récompense reste (B).",
+      "explanation": "Les approches hybrides du replay buffer permettent d'optimiser la diversité des échantillons et ainsi éviter que l'agent s'accroche à une seule voie possible – un point crucial dans des environnements stochastiques. La compression de données (C) ou la minimisation des ressources matérielles (D) ne sont pas des bénéfices directs et la dépendance envers les modèles de récompense reste (B). La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Accélérer la convergence indépendamment des modèles de récompense.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Comprimer la taille des données sans perte d'information contextuelle.) est plausible mais faux car il ne respecte",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Dans l'apprentissage par renforcement, quelles sont les parties essentielles d'un cycle de batch learning?",
       "image_url": null,
       "choices": {
-        "A": "Collecte, agrégation, traitement et mise à jour du modèle.",
-        "B": "Migration de données, alignement, simulation et archivage.",
+        "A": "Migration de données, alignement, simulation et archivage.",
+        "B": "Collecte, agrégation, traitement et mise à jour du modèle.",
         "C": "Série d'essais, expérimentation, publication et évaluation.",
         "D": "Entraînement initial, calibrage de modèle, convergence et extinction."
       },
-      "correct_answer": "A",
-      "explanation": "Le cycle de batch learning dans l'apprentissage par renforcement comprend la collecte, l'agrégation, le traitement et la mise à jour du modèle. Les autres choix évoquent des processus non directement liés aux cycles de batch en apprentissage par renforcement tels que migrations (B), publications (C) ou calibrage et extinction (D).",
+      "correct_answer": "B",
+      "explanation": "Le cycle de batch learning dans l'apprentissage par renforcement comprend la collecte, l'agrégation, le traitement et la mise à jour du modèle. Les autres choix évoquent des processus non directement liés aux cycles de batch en apprentissage par renforcement tels que migrations (B), publications (C) ou calibrage et extinction (D). La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Migration de données, alignement, simulation et archivage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Série d'essais, expérimentation, publication et évaluation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Entraînement",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Comment la mise à jour des politiques est-elle influencée par les techniques de batch learning dans des environnements incertains?",
       "image_url": null,
       "choices": {
-        "A": "Elles sont mises à jour plus lentement mais potentiellement avec plus de données consolidées.",
+        "A": "Elles permettent une adaptation rapide aux micro-changements continus.",
         "B": "Elles sont mises à jour indépendamment de l'accumulation de données.",
-        "C": "Elles permettent une adaptation rapide aux micro-changements continus.",
+        "C": "Elles sont mises à jour plus lentement mais potentiellement avec plus de données consolidées.",
         "D": "Elles se figent après la première itération concluante."
       },
-      "correct_answer": "A",
-      "explanation": "Dans le batch learning, les politiques peuvent être mises à jour plus lentement à cause du traitement agrégé, mais avec davantage de données consolidées, les rendant potentiellement plus robustes. Indépendance (B), adaptation rapide (C) ou blocage (D) ne sont pas caractéristiques de l'impact du batch learning.",
+      "correct_answer": "C",
+      "explanation": "Dans le batch learning, les politiques peuvent être mises à jour plus lentement à cause du traitement agrégé, mais avec davantage de données consolidées, les rendant potentiellement plus robustes. Indépendance (B), adaptation rapide (C) ou blocage (D) ne sont pas caractéristiques de l'impact du batch learning. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elles permettent une adaptation rapide aux micro-changements continus.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elles sont mises à jour indépendamment de l'accumulation de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Quel est le role d'un cout simulation semi-synthétique dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Fournir un compromis entre précision de la simulation et réduction des coûts.",
+        "A": "Éliminer toutes les dépendances logistiques dans l'entraînement virtuel.",
         "B": "Remplacer intégralement les simulations physiques abandonnées.",
         "C": "Garantir la cohérence des expériences passées avec les dynamiques futures.",
-        "D": "Éliminer toutes les dépendances logistiques dans l'entraînement virtuel."
+        "D": "Fournir un compromis entre précision de la simulation et réduction des coûts."
       },
-      "correct_answer": "A",
-      "explanation": "Les simulations semi-synthétiques servent à trouver un équilibre entre précision et coûts, permettant une représentation fidèle de l'environnement avec moins de ressources. Elles ne remplacent pas complètement les simulations physiques (B), ne garantissent pas toujours la cohérence (C), et ne suppriment pas toutes les dépendances logistiques (D).",
+      "correct_answer": "D",
+      "explanation": "Les simulations semi-synthétiques servent à trouver un équilibre entre précision et coûts, permettant une représentation fidèle de l'environnement avec moins de ressources. Elles ne remplacent pas complètement les simulations physiques (B), ne garantissent pas toujours la cohérence (C), et ne suppriment pas toutes les dépendances logistiques (D). La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Éliminer toutes les dépendances logistiques dans l'entraînement virtuel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Remplacer intégralement les simulations physiques abandonnées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Garantir la cohérence",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "Pour maintenir les transitions expérimentées juste assez pour l'entraînement des hyper-paramètres."
       },
       "correct_answer": "A",
-      "explanation": "Dans des environnements très fluctuants, il est crucial de maintenir le replay buffer à jour pour éviter que les informations dépassées influencent négativement l'apprentissage. Assurer une neutralité (B), capturer uniformément l'évolution (C) ou conserver simplement les transitions pour les hyper-paramètres (D) ne sont pas directement concernés par les fluctuations de l'environnement.",
+      "explanation": "Dans des environnements très fluctuants, il est crucial de maintenir le replay buffer à jour pour éviter que les informations dépassées influencent négativement l'apprentissage. Assurer une neutralité (B), capturer uniformément l'évolution (C) ou conserver simplement les transitions pour les hyper-paramètres (D) ne sont pas directement concernés par les fluctuations de l'environnement. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Pour assurer une neutralité constante des politiques existantes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour capturer uniformément l'évolution de toutes les récompenses possibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "hard"
     },
     {
@@ -302,13 +302,13 @@
       "question": "Quel est un risque principal de reutilisation excessive dans le contexte de l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Elle peut entraîner le surapprentissage de politiques fondées sur des échantillons biaisés.",
-        "B": "Elle réduit la complexité algorithmique nécessaire pour l'apprentissage.",
+        "A": "Elle réduit la complexité algorithmique nécessaire pour l'apprentissage.",
+        "B": "Elle peut entraîner le surapprentissage de politiques fondées sur des échantillons biaisés.",
         "C": "Elle empêche le modèle de collecter de nouvelles données pertinentes.",
         "D": "Elle neutralise systématiquement toutes les divergences d'échantillon."
       },
-      "correct_answer": "A",
-      "explanation": "La réutilisation excessive peut entraîner le surapprentissage si les échantillons disponibles sont biaisés. Elle n'ajoute pas de complexité (B), n'empêche pas directement la collecte de nouvelles données (C), et ne neutralise pas les divergences d'échantillons (D).",
+      "correct_answer": "B",
+      "explanation": "La réutilisation excessive peut entraîner le surapprentissage si les échantillons disponibles sont biaisés. Elle n'ajoute pas de complexité (B), n'empêche pas directement la collecte de nouvelles données (C), et ne neutralise pas les divergences d'échantillons (D). La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle réduit la complexité algorithmique nécessaire pour l'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle empêche le modèle de collecter de nouvelles données pertinentes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle neutralise systématiquement toutes les divergences d'échantillon.) est plausible mais",
       "difficulty": "hard"
     },
     {
@@ -316,12 +316,12 @@
       "question": "Quel est le rôle principal d'un 'replay buffer' dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Stocker des expériences passées pour un apprentissage ultérieur.",
+        "A": "Filtrer uniquement les meilleures expériences pour l'apprentissage.",
         "B": "Augmenter dynamiquement la taille du réseau de neurones au fil du temps.",
-        "C": "Filtrer uniquement les meilleures expériences pour l'apprentissage.",
+        "C": "Stocker des expériences passées pour un apprentissage ultérieur.",
         "D": "Accélérer la simulation des actions dans l'environnement."
       },
-      "correct_answer": "A",
+      "correct_answer": "C",
       "explanation": "Le 'replay buffer' est utilisé pour stocker des expériences passées (états, actions, récompenses, états suivants) afin de permettre à l'algorithme d'entraînement de réutiliser ces expériences de manière aléatoire lors de sessions ultérieures d'apprentissage. Cela contribue à améliorer la stabilité et l'efficacité de l'apprentissage. Le choix B est incorrect car il se réfère au redimensionnement du réseau, ce qui n'est pas le rôle du 'replay buffer'. Le choix C est incorrect car un 'replay buffer' stocke toutes les expériences, pas seulement les meilleures. Le choix D est incorrect car il se rapporte à la vitesse de simulation, qui est un autre aspect de l'apprentissage par renforcement mais pas lié au 'replay buffer'.",
       "difficulty": "medium"
     },
@@ -330,12 +330,12 @@
       "question": "Pourquoi la réutilisation d'expériences dans l'apprentissage par renforcement peut-elle améliorer l'efficacité échantillon?",
       "image_url": null,
       "choices": {
-        "A": "Elle réduit le nombre d'interactions en temps réel nécessaires pour apprendre une politique.",
+        "A": "Elle permet de calculer les gradients plus rapidement en temps réel.",
         "B": "Elle filtre automatiquement les données bruyantes des expériences.",
         "C": "Elle assure que chaque épisode est optimisé pour les récompenses maximales obtenues.",
-        "D": "Elle permet de calculer les gradients plus rapidement en temps réel."
+        "D": "Elle réduit le nombre d'interactions en temps réel nécessaires pour apprendre une politique."
       },
-      "correct_answer": "A",
+      "correct_answer": "D",
       "explanation": "La réutilisation d'expériences permet de diminuer le besoin en nouvelles données de l'environnement en tirant parti d'expériences passées stockées, ce qui est crucial dans des environnements coûteux ou limités. Le choix B est incorrect car la réutilisation ne filtre pas automatiquement le bruit, elle implique simplement de refaire un apprentissage sur des séances passées. Le choix C est incorrect car même si la réutilisation permet un meilleur apprentissage, elle ne constitue pas une optimisation assurée de chaque épisode. Le choix D est incorrect car la vitesse de calcul des gradients est généralement liée à la configuration de l'apprentissage par lots ou aux améliorations d'algorithmes, pas spécifiquement à la réutilisation d'expériences.",
       "difficulty": "hard"
     }

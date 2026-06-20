@@ -14,7 +14,7 @@
         "D": "Un ensemble de données distantes dans l'espace des caractéristiques"
       },
       "correct_answer": "A",
-      "explanation": "Dans l'apprentissage semi-supervisé, le voisinage désigne un groupe de points de données proches dans l'espace des caractéristiques. Cette proximité est souvent utilisée pour propager des labels des données étiquetées aux non-étiquetées. L'option B est incorrecte car elle ne prend pas en compte la proximité. C est erroné parce que les points ne doivent pas avoir exactement les mêmes caractéristiques. D est faux car il s'agit de points de données éloignés.",
+      "explanation": "Dans l'apprentissage semi-supervisé, le voisinage désigne un groupe de points de données proches dans l'espace des caractéristiques. Cette proximité est souvent utilisée pour propager des labels des données étiquetées aux non-étiquetées. L'option B est incorrecte car elle ne prend pas en compte la proximité. C est erroné parce que les points ne doivent pas avoir exactement les mêmes caractéristiques. D est faux car il s'agit de points de données éloignés. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Un ensemble de points aléatoirement sélectionnés) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Un groupe de points de données ayant exactement",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Quel rôle joue un graphe dans un modèle d'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Représenter la structure entre les données étiquetées et non-étiquetées",
-        "B": "Générer des données supplémentaires",
+        "A": "Générer des données supplémentaires",
+        "B": "Représenter la structure entre les données étiquetées et non-étiquetées",
         "C": "Augmenter le nombre de labels dans le dataset",
         "D": "Supprimer les anomalies dans les données"
       },
-      "correct_answer": "A",
-      "explanation": "Un graphe en apprentissage semi-supervisé est un outil pour représenter les relations structurelles entre les données étiquetées et non-étiquetées, facilitant ainsi la propagation des labels. B est faux car le graphe ne produit pas de nouvelles données. C est incorrect car il n'augmente pas directement le nombre de labels, mais aide à les propager. D est erroné, car le graphe n'est pas utilisé pour la détection d'anomalies.",
+      "correct_answer": "B",
+      "explanation": "Un graphe en apprentissage semi-supervisé est un outil pour représenter les relations structurelles entre les données étiquetées et non-étiquetées, facilitant ainsi la propagation des labels. B est faux car le graphe ne produit pas de nouvelles données. C est incorrect car il n'augmente pas directement le nombre de labels, mais aide à les propager. D est erroné, car le graphe n'est pas utilisé pour la détection d'anomalies. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Générer des données supplémentaires) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Augmenter le nombre de labels dans le dataset) est plausible mais faux car",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Comment se fait la propagation des labels dans un graphe?",
       "image_url": null,
       "choices": {
-        "A": "En utilisant les connexions entre les nœuds pour étendre les labels",
+        "A": "En supprimant les labels non fiables",
         "B": "En dupliquant les labels existants vers de nouvelles données",
-        "C": "En supprimant les labels non fiables",
+        "C": "En utilisant les connexions entre les nœuds pour étendre les labels",
         "D": "En réétiquetant aléatoirement tous les nœuds du graphe"
       },
-      "correct_answer": "A",
-      "explanation": "La propagation des labels se fait en utilisant les connexions entre les nœuds (proximité et similarité) pour étendre les labels des données étiquetées aux non-étiquetées. B est faux car la duplication n'est pas basée sur des relations. C ne désigne pas une propagation mais une correction. D est incorrect car il n'y a pas de logique ni de structure dans l'aléatoire.",
+      "correct_answer": "C",
+      "explanation": "La propagation des labels se fait en utilisant les connexions entre les nœuds (proximité et similarité) pour étendre les labels des données étiquetées aux non-étiquetées. B est faux car la duplication n'est pas basée sur des relations. C ne désigne pas une propagation mais une correction. D est incorrect car il n'y a pas de logique ni de structure dans l'aléatoire. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En supprimant les labels non fiables) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En dupliquant les labels existants vers de nouvelles données) est plausible mais faux car il ne respecte",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Qu'est-ce que la consistance dans l'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "L'hypothèse que des points proches partagent la même étiquette",
+        "A": "L'utilisation de différents modèles pour vérifier les étiquettes",
         "B": "La nécessité de vérifier les labels après chaque étape",
         "C": "Le besoin de garder un nombre égal de données étiquetées et non-étiquetées",
-        "D": "L'utilisation de différents modèles pour vérifier les étiquettes"
+        "D": "L'hypothèse que des points proches partagent la même étiquette"
       },
-      "correct_answer": "A",
-      "explanation": "La consistance se base sur l'hypothèse que les points proches dans l'espace des caractéristiques partagent les mêmes étiquettes, ce qui sous-tend la logique de propagation des labels. B est faux car il ne s'agit pas de vérification. C est incorrect car l'égalité des nombres n'est pas nécessaire. D est erroné car elle ne représente pas un concept de consistance.",
+      "correct_answer": "D",
+      "explanation": "La consistance se base sur l'hypothèse que les points proches dans l'espace des caractéristiques partagent les mêmes étiquettes, ce qui sous-tend la logique de propagation des labels. B est faux car il ne s'agit pas de vérification. C est incorrect car l'égalité des nombres n'est pas nécessaire. D est erroné car elle ne représente pas un concept de consistance. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'utilisation de différents modèles pour vérifier les étiquettes) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (La nécessité de vérifier les labels après chaque étape) est plausible mais faux car il ne respecte",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Pour ajuster le modèle à des ensembles de données de grande taille"
       },
       "correct_answer": "A",
-      "explanation": "Maintenir la consistance lors de la propagation des labels est crucial pour garantir que les prédictions restent fidèles à la structure des données et ne divergent pas de manière erronée. B est incorrect car il ne concerne pas la complexité temporelle. C, bien que la précision soit un objectif, il ne s'agit pas du maintien de la consistance directement. D est hors-contexte, car ce n'est pas spécifiquement lié à la taille des ensembles de données.",
+      "explanation": "Maintenir la consistance lors de la propagation des labels est crucial pour garantir que les prédictions restent fidèles à la structure des données et ne divergent pas de manière erronée. B est incorrect car il ne concerne pas la complexité temporelle. C, bien que la précision soit un objectif, il ne s'agit pas du maintien de la consistance directement. D est hors-contexte, car ce n'est pas spécifiquement lié à la taille des ensembles de données. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Pour réduire la complexité temporelle du modèle) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour maximiser",
       "difficulty": "easy"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quel est un moyen efficace de déterminer le voisinage dans un graphe de données?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser une distance euclidienne pour évaluer la proximité des données",
-        "B": "Compter le nombre de caractéristiques partagées",
+        "A": "Compter le nombre de caractéristiques partagées",
+        "B": "Utiliser une distance euclidienne pour évaluer la proximité des données",
         "C": "Évaluer la distance temporelle entre les instances",
         "D": "Regrouper les données aléatoirement pour éviter le biais"
       },
-      "correct_answer": "A",
-      "explanation": "La distance euclidienne est une méthode couramment utilisée pour évaluer quantitativement la proximité des points dans un graphe, ce qui aide à établir un voisinage pour la propagation des labels. B ne considère pas la structure spatiale. C est inapproprié si les données ne sont pas temporelles. D est faux car regrouper aléatoirement ne facilite pas une propagation correcte.",
+      "correct_answer": "B",
+      "explanation": "La distance euclidienne est une méthode couramment utilisée pour évaluer quantitativement la proximité des points dans un graphe, ce qui aide à établir un voisinage pour la propagation des labels. B ne considère pas la structure spatiale. C est inapproprié si les données ne sont pas temporelles. D est faux car regrouper aléatoirement ne facilite pas une propagation correcte. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Compter le nombre de caractéristiques partagées) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Évaluer la distance temporelle entre les instances) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "easy"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quel est un des principaux défis de l'utilisation de graphes en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "La difficulté à définir des distances de similarité",
+        "A": "L'incapacité de gérer des données non structurées",
         "B": "Le besoin constant de données nouvelles pour le modèle",
-        "C": "L'incapacité de gérer des données non structurées",
+        "C": "La difficulté à définir des distances de similarité",
         "D": "Le manque de diversité dans les données étiquetées"
       },
-      "correct_answer": "A",
-      "explanation": "Un défi majeur en utilisant des graphes consiste à définir correctement les distances de similarité entre les données, ce qui est crucial pour la création d'un voisinage pertinent. B est faux car la nécessité de nouvelles données n'est pas un problème spécifique aux graphes. C est incorrect, car les graphes peuvent modéliser même les données non structurées de manière appropriée. D est moins pertinent car il ne concerne pas directement les graphes, bien que la diversité des données puisse impacter d'autres aspects du modèle.",
+      "correct_answer": "C",
+      "explanation": "Un défi majeur en utilisant des graphes consiste à définir correctement les distances de similarité entre les données, ce qui est crucial pour la création d'un voisinage pertinent. B est faux car la nécessité de nouvelles données n'est pas un problème spécifique aux graphes. C est incorrect, car les graphes peuvent modéliser même les données non structurées de manière appropriée. D est moins pertinent car il ne concerne pas directement les graphes, bien que la diversité des données puisse impacter d'autres aspects du modèle. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'incapacité de gérer des données non structurées) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "easy"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quels sont les deux types principaux d'arêtes utilisés dans un graphe pour représenter des données semi-supervisées?",
       "image_url": null,
       "choices": {
-        "A": "Arêtes pondérées par similarité et arêtes binaires affichant la connexité",
+        "A": "Arêtes continues et arêtes discontinues",
         "B": "Arêtes dirigées et arêtes cycliques",
         "C": "Arêtes de distance et arêtes de proximité temporelle",
-        "D": "Arêtes continues et arêtes discontinues"
+        "D": "Arêtes pondérées par similarité et arêtes binaires affichant la connexité"
       },
-      "correct_answer": "A",
-      "explanation": "Dans les graphes utilisés pour l'apprentissage semi-supervisé, on utilise souvent des arêtes pondérées par la similarité entre les données pour capturer l'ampleur des relations, et des arêtes binaires pour représenter une simple connexité ou appartenance. B est incorrect car les arêtes dirigées et cycliques n'ont pas cette catégorisation précise. C mentionne des aspects non conventionnels dans ce contexte. D n'existe pas en termes de catégorisation pratique des arêtes.",
+      "correct_answer": "D",
+      "explanation": "Dans les graphes utilisés pour l'apprentissage semi-supervisé, on utilise souvent des arêtes pondérées par la similarité entre les données pour capturer l'ampleur des relations, et des arêtes binaires pour représenter une simple connexité ou appartenance. B est incorrect car les arêtes dirigées et cycliques n'ont pas cette catégorisation précise. C mentionne des aspects non conventionnels dans ce contexte. D n'existe pas en termes de catégorisation pratique des arêtes. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Arêtes continues et arêtes discontinues) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Arêtes dirigées et arêtes cycliques) est plausible mais faux car il",
       "difficulty": "medium"
     },
     {
@@ -120,13 +120,13 @@
       "question": "Comment le concept de consistance est-il vérifié dans un modèle utilisant des graphes?",
       "image_url": null,
       "choices": {
-        "A": "Par validation croisée des clusters formés",
+        "A": "Par comparaison de la propagation des labels à des labels connus a posteriori",
         "B": "Par vérification des arêtes les plus faibles du graphe",
-        "C": "Par comparaison de la propagation des labels à des labels connus a posteriori",
+        "C": "Par validation croisée des clusters formés",
         "D": "Par recalcul systématique des distances entre chaque paire de nœuds après chaque itération"
       },
-      "correct_answer": "C",
-      "explanation": "Le concept de consistance peut être vérifié en comparant les labels propagés à des labels connus initialement ou ajoutés a posteriori, pour vérifier la fiabilité du modèle avec les nouvelles étiquettes obtenues. A est irréaliste pour une évaluation continue. B, au lieu de se concentrer sur les connexions faibles, ne fournit pas vraiment de critère pour la consistance. D est inefficace et computationalement coûteux pour évaluer la consistance.",
+      "correct_answer": "A",
+      "explanation": "Le concept de consistance peut être vérifié en comparant les labels propagés à des labels connus initialement ou ajoutés a posteriori, pour vérifier la fiabilité du modèle avec les nouvelles étiquettes obtenues. A est irréaliste pour une évaluation continue. B, au lieu de se concentrer sur les connexions faibles, ne fournit pas vraiment de critère pour la consistance. D est inefficace et computationalement coûteux pour évaluer la consistance. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Par vérification des arêtes les plus faibles du graphe) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Par validation croisée des clusters formés) est",
       "difficulty": "medium"
     },
     {
@@ -135,12 +135,12 @@
       "image_url": null,
       "choices": {
         "A": "Pour prévenir la surapprentissage en limitant les connexions inutiles",
-        "B": "Pour éviter un déséquilibre dans la répartition des données étiquetées",
-        "C": "Pour garantir une propagation des labels vers des instances pertinentes",
+        "B": "Pour garantir une propagation des labels vers des instances pertinentes",
+        "C": "Pour éviter un déséquilibre dans la répartition des données étiquetées",
         "D": "Pour permettre une reconstruction facile des graphes en cas de pertes de données"
       },
-      "correct_answer": "C",
-      "explanation": "Établir correctement le voisinage est essentiel pour garantir que les labels sont propagés uniquement vers des instances pertinentes qui partagent des caractéristiques similaires, assurant la validité des prévisions. A est incorrect, la surapprentissage ne concerne pas directement le voisinage mais la capacité du modèle. B est moins pertinent à ce sujet, car le déséquilibre n'est pas un problème de voisinage. D n’est pas un avantage direct d’un bon voisinage.",
+      "correct_answer": "B",
+      "explanation": "Établir correctement le voisinage est essentiel pour garantir que les labels sont propagés uniquement vers des instances pertinentes qui partagent des caractéristiques similaires, assurant la validité des prévisions. A est incorrect, la surapprentissage ne concerne pas directement le voisinage mais la capacité du modèle. B est moins pertinent à ce sujet, car le déséquilibre n'est pas un problème de voisinage. D n’est pas un avantage direct d’un bon voisinage. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour prévenir la surapprentissage en limitant les connexions inutiles) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour éviter un déséquilibre dans la",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Dans quel cas l'hypothèse de consistance pourrait-elle échouer dans l'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Lorsque les données sont fortement bruitées et non séparables",
+        "A": "Lorsque les labels initiaux sont déjà parfaits",
         "B": "Lorsque toutes les données sont bien réparties et équilibrées",
-        "C": "Lorsque les labels initiaux sont déjà parfaits",
+        "C": "Lorsque les données sont fortement bruitées et non séparables",
         "D": "Lorsque les points de données partagent des caractéristiques identiques"
       },
-      "correct_answer": "A",
-      "explanation": "L'hypothèse de consistance peut échouer si les données sont fortement bruitées, ce qui rend la séparation claire des clusters difficile, induisant des erreurs dans la propagation des labels. B est incorrect car cela favoriserait la consistance. C ne pose pas de problème en termes de consistance. D, bien que les points partagent des caractéristiques, ne présente pas directement de défi contre la consistance.",
+      "correct_answer": "C",
+      "explanation": "L'hypothèse de consistance peut échouer si les données sont fortement bruitées, ce qui rend la séparation claire des clusters difficile, induisant des erreurs dans la propagation des labels. B est incorrect car cela favoriserait la consistance. C ne pose pas de problème en termes de consistance. D, bien que les points partagent des caractéristiques, ne présente pas directement de défi contre la consistance. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Lorsque les labels initiaux sont déjà parfaits) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Lorsque toutes les données sont bien réparties et équilibrées) est plausible mais faux car",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel mécanisme sous-tend la propagation des labels dans un cadre de graphe laplacien?",
       "image_url": null,
       "choices": {
-        "A": "Diffusion guidée par le Laplacien du graphe pour lisser les labels",
+        "A": "Accumulation séquentielle des labels basée sur des heuristiques temporelles",
         "B": "Croissance de cluster guidée par la légèreté des arêtes",
         "C": "Réduction dimensionnelle pour minimiser l'erreur résiduelle",
-        "D": "Accumulation séquentielle des labels basée sur des heuristiques temporelles"
+        "D": "Diffusion guidée par le Laplacien du graphe pour lisser les labels"
       },
-      "correct_answer": "A",
-      "explanation": "Dans un cadre de graphe laplacien, la propagation des labels repose sur la diffusion guidée par le Laplacien du graphe, assurant un lissage des labels qui respecte la structure de similarité des données. B est inexact, la croissance de clusters n’est pas la méthode utilisée. C concerne un objectif différent et ne s'applique pas directement à la propagation des labels. D est hors contexte concernant le mécanisme de diffusion.",
+      "correct_answer": "D",
+      "explanation": "Dans un cadre de graphe laplacien, la propagation des labels repose sur la diffusion guidée par le Laplacien du graphe, assurant un lissage des labels qui respecte la structure de similarité des données. B est inexact, la croissance de clusters n’est pas la méthode utilisée. C concerne un objectif différent et ne s'applique pas directement à la propagation des labels. D est hors contexte concernant le mécanisme de diffusion. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Accumulation séquentielle des labels basée sur des heuristiques temporelles) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Croissance de cluster guidée par la",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "L'efficacité de la propagation ne dépend que du nombre de nœuds étiquetés"
       },
       "correct_answer": "A",
-      "explanation": "La qualité du graphe est essentielle car un graphe mal construit peut propager incorrectement les labels à des instances non similaires, faussant ainsi le processus de classification. B est inexact car la qualité du graphe est cruciale. C est faux, car même avec un bon graphe, un apprentissage supervisé initial reste pertinent. D est erroné car il y a d'autres facteurs affectant l'efficacité outre le nombre de nœuds étiquetés.",
+      "explanation": "La qualité du graphe est essentielle car un graphe mal construit peut propager incorrectement les labels à des instances non similaires, faussant ainsi le processus de classification. B est inexact car la qualité du graphe est cruciale. C est faux, car même avec un bon graphe, un apprentissage supervisé initial reste pertinent. D est erroné car il y a d'autres facteurs affectant l'efficacité outre le nombre de nœuds étiquetés. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Un graphe de qualité n'affecte jamais la propagation des labels) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (De meilleurs graphes réduisent le",
       "difficulty": "hard"
     }
   ]

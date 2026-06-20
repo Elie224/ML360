@@ -14,7 +14,7 @@
         "D": "Améliorer la précision du modèle uniquement avec des exemples déjà étiquetés."
       },
       "correct_answer": "A",
-      "explanation": "La motivation principale des requêtes de labels est de minimiser les coûts d'annotation en ne demandant des étiquettes que pour les exemples les plus incertains. B est incorrect car l'objectif premier n'est pas d'augmenter le jeu de données sans limite de coût. C est erroné car l'équilibre des catégories n'est pas directement adressé. D manque l'opportunité d'améliorer avec de nouveaux exemples étiquetés.",
+      "explanation": "La motivation principale des requêtes de labels est de minimiser les coûts d'annotation en ne demandant des étiquettes que pour les exemples les plus incertains. B est incorrect car l'objectif premier n'est pas d'augmenter le jeu de données sans limite de coût. C est erroné car l'équilibre des catégories n'est pas directement adressé. D manque l'opportunité d'améliorer avec de nouveaux exemples étiquetés. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Augmenter la taille du jeu de données supervisé sans soucis de coût.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Assurer que chaque catégorie est également représentée dans le jeu",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Quelle technique est souvent utilisée pour mesurer l'incertitude d'un modèle en apprentissage actif?",
       "image_url": null,
       "choices": {
-        "A": "Entropie de la distribution de probabilité des prédictions",
-        "B": "Calcul du coût en temps d'exécution du modèle",
+        "A": "Calcul du coût en temps d'exécution du modèle",
+        "B": "Entropie de la distribution de probabilité des prédictions",
         "C": "Variation de l'erreur quadratique moyenne",
         "D": "Équilibre des classes dans le jeu de données"
       },
-      "correct_answer": "A",
-      "explanation": "L'entropie de la distribution de probabilité des prédictions est un indicateur courant de l'incertitude. B est incorrect car le temps d'exécution ne mesure pas l'incertitude du modèle. C ne s'applique qu'aux modèles de régression et peut ne pas refléter l'incertitude. D concerne la représentativité des classes, pas l'incertitude des prédictions.",
+      "correct_answer": "B",
+      "explanation": "L'entropie de la distribution de probabilité des prédictions est un indicateur courant de l'incertitude. B est incorrect car le temps d'exécution ne mesure pas l'incertitude du modèle. C ne s'applique qu'aux modèles de régression et peut ne pas refléter l'incertitude. D concerne la représentativité des classes, pas l'incertitude des prédictions. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Calcul du coût en temps d'exécution du modèle) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Variation de l'erreur quadratique moyenne) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Équilibre",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "En apprentissage actif, que définit principalement un budget d'annotation?",
       "image_url": null,
       "choices": {
-        "A": "Le nombre maximal d'annotations humaines que l'on peut se permettre pour le projet.",
+        "A": "Le nombre total de données non étiquetées dans le jeu de données.",
         "B": "Une stratégie pour optimiser la précision du modèle sans restrictions financières.",
-        "C": "Le nombre total de données non étiquetées dans le jeu de données.",
+        "C": "Le nombre maximal d'annotations humaines que l'on peut se permettre pour le projet.",
         "D": "La précision cible que l'on espère atteindre avec les annotations humaines."
       },
-      "correct_answer": "A",
-      "explanation": "Un budget d'annotation définit le nombre maximal d'annotations humaines disponibles. B est incorrect car il mentionne l'optimisation sans considérer le budget. C est erroné car cela se réfère à la taille des données non étiquetées. D confond objectif de précision et définition de budget.",
+      "correct_answer": "C",
+      "explanation": "Un budget d'annotation définit le nombre maximal d'annotations humaines disponibles. B est incorrect car il mentionne l'optimisation sans considérer le budget. C est erroné car cela se réfère à la taille des données non étiquetées. D confond objectif de précision et définition de budget. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le nombre total de données non étiquetées dans le jeu de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Une stratégie pour optimiser la précision du modèle sans restrictions financières.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Pourquoi la boucle humaine est-elle cruciale dans le cadre d'un système d'apprentissage actif hybride?",
       "image_url": null,
       "choices": {
-        "A": "Elle permet de corriger les erreurs de prédiction en temps réel.",
+        "A": "Elle applique les modèles de machine learning aux nouvelles données automatiquement.",
         "B": "Elle remplace entièrement l'apprentissage automatique pour des tasks complexes.",
         "C": "Elle est utilisée uniquement pour valider les résultats finaux.",
-        "D": "Elle applique les modèles de machine learning aux nouvelles données automatiquement."
+        "D": "Elle permet de corriger les erreurs de prédiction en temps réel."
       },
-      "correct_answer": "A",
-      "explanation": "Dans l'apprentissage actif, la boucle humaine corrige et améliore le système en apportant des annotations précises. B est faux car elle ne remplace pas l'apprentissage automatique. C réduit son usage alors qu'elle intervient tout au long du processus, et D confond l'application automatique des modèles avec l'intervention humaine.",
+      "correct_answer": "D",
+      "explanation": "Dans l'apprentissage actif, la boucle humaine corrige et améliore le système en apportant des annotations précises. B est faux car elle ne remplace pas l'apprentissage automatique. C réduit son usage alors qu'elle intervient tout au long du processus, et D confond l'application automatique des modèles avec l'intervention humaine. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle applique les modèles de machine learning aux nouvelles données automatiquement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle remplace entièrement l'apprentissage automatique pour des tasks complexes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Réduire la charge computationnelle en excluant l'entraînement sur certains exemples."
       },
       "correct_answer": "A",
-      "explanation": "Incorporer l'incertitude permet de se concentrer sur les exemples ayant le plus de potentiel d'améliorer le modèle. B est erroné car les données non étiquetées sont une part essentielle du processus. C est faux car l'objectif est d'améliorer globalement, pas nécessairement de façon égale. D mentionne une réduction computationnelle qui n'est pas l'objectif principal.",
+      "explanation": "Incorporer l'incertitude permet de se concentrer sur les exemples ayant le plus de potentiel d'améliorer le modèle. B est erroné car les données non étiquetées sont une part essentielle du processus. C est faux car l'objectif est d'améliorer globalement, pas nécessairement de façon égale. D mentionne une réduction computationnelle qui n'est pas l'objectif principal. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Éliminer complètement le besoin de données non étiquetées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Augmenter de manière égale la performance sur toutes les classes.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Dans un scénario d'apprentissage actif, quel rôle joue principalement une boucle humaine pendant le processus?",
       "image_url": null,
       "choices": {
-        "A": "Fournir des annotations supplémentaires pour traiter l'incertitude du modèle.",
-        "B": "Pré-traiter toutes les données afin de les rendre exploitables par les modèles.",
+        "A": "Pré-traiter toutes les données afin de les rendre exploitables par les modèles.",
+        "B": "Fournir des annotations supplémentaires pour traiter l'incertitude du modèle.",
         "C": "Remplacer automatiquement les modèles lorsqu'ils sous-performent.",
         "D": "Minimiser la diversité dans les données échantillonnées."
       },
-      "correct_answer": "A",
-      "explanation": "La boucle humaine intervient pour apporter des annotations nécessaires à clarifier les incertitudes du modèle. B est un sous-usage de la boucle, et C est une intention incorrecte car elle n'implique pas de remplacement automatique. D est erroné car la diversité est généralement voulue.",
+      "correct_answer": "B",
+      "explanation": "La boucle humaine intervient pour apporter des annotations nécessaires à clarifier les incertitudes du modèle. B est un sous-usage de la boucle, et C est une intention incorrecte car elle n'implique pas de remplacement automatique. D est erroné car la diversité est généralement voulue. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pré-traiter toutes les données afin de les rendre exploitables par les modèles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Remplacer automatiquement les modèles lorsqu'ils sous-performent.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Minimiser la",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Pourquoi est-il crucial d'optimiser l'ordre de requêtes de labels dans un cadre d'apprentissage actif hybride?",
       "image_url": null,
       "choices": {
-        "A": "Pour maximiser l'information gagnée par label étiqueté compte tenu du budget limité.",
+        "A": "Pour réduire le temps nécessaire à l'entraînement d'un modèle supervisé sur les données existantes.",
         "B": "Pour garantir que chaque label est obtenu rapidement et séquentiellement.",
-        "C": "Pour réduire le temps nécessaire à l'entraînement d'un modèle supervisé sur les données existantes.",
+        "C": "Pour maximiser l'information gagnée par label étiqueté compte tenu du budget limité.",
         "D": "Pour équilibrer les classes étiquetées dans les données."
       },
-      "correct_answer": "A",
-      "explanation": "Dans un cadre actif hybride, l'optimisation des requêtes permet de maximiser l'information gagnée par étiquette. B est incorrect car l'objectif n'est pas la rapidité mais le gain d'information. C ne prend pas en compte l'aspect sélectif de l'apprentissage actif. D n'est important qu'en contexte de distribution de classes, pas en priorité pour le gain d'information.",
+      "correct_answer": "C",
+      "explanation": "Dans un cadre actif hybride, l'optimisation des requêtes permet de maximiser l'information gagnée par étiquette. B est incorrect car l'objectif n'est pas la rapidité mais le gain d'information. C ne prend pas en compte l'aspect sélectif de l'apprentissage actif. D n'est important qu'en contexte de distribution de classes, pas en priorité pour le gain d'information. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour réduire le temps nécessaire à l'entraînement d'un modèle supervisé sur les données existantes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour garantir que chaque label est obtenu rapidement et séquentiellement.) est plausible mais faux car",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quels types de données sont les plus critiques pendant la phase de requête de labels en apprentissage actif?",
       "image_url": null,
       "choices": {
-        "A": "Exemples proches de la frontière de décision.",
+        "A": "Exemples qui appartiennent déjà à des classes sur-échantillonnées.",
         "B": "Exemples à valeurs aberrantes fortes.",
         "C": "Exemples aléatoires dans l'ensemble de données.",
-        "D": "Exemples qui appartiennent déjà à des classes sur-échantillonnées."
+        "D": "Exemples proches de la frontière de décision."
       },
-      "correct_answer": "A",
-      "explanation": "Les exemples proches de la frontière de décision sont critiques pour améliorer le modèle car ils représentent des cas d'incertitude. B, même s'ils peuvent être intéressants, ne sont pas le focus principal. C est incorrect car les échantillons aléatoires ne ciblent pas spécifiquement l'incertitude, et D ne sert pas à améliorer la précision dans un scénario d'apprentissage actif.",
+      "correct_answer": "D",
+      "explanation": "Les exemples proches de la frontière de décision sont critiques pour améliorer le modèle car ils représentent des cas d'incertitude. B, même s'ils peuvent être intéressants, ne sont pas le focus principal. C est incorrect car les échantillons aléatoires ne ciblent pas spécifiquement l'incertitude, et D ne sert pas à améliorer la précision dans un scénario d'apprentissage actif. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Exemples qui appartiennent déjà à des classes sur-échantillonnées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Exemples à valeurs aberrantes fortes.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Un modèle de remplacement basé sur des conditions pré-défini."
       },
       "correct_answer": "A",
-      "explanation": "L'intégration est souvent réalisée en mettant à jour le modèle de manière incrémentale basées sur des échantillons où le modèle montre de l'incertitude. B est souvent trop coûteux en temps, C ne s'applique pas directement à l'intégration d'annotations, et D suppose un remplacement non nécessaire.",
+      "explanation": "L'intégration est souvent réalisée en mettant à jour le modèle de manière incrémentale basées sur des échantillons où le modèle montre de l'incertitude. B est souvent trop coûteux en temps, C ne s'applique pas directement à l'intégration d'annotations, et D suppose un remplacement non nécessaire. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Un ré-entraînement complet après chaque annotation supplémentaire.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'échantillonnage aléatoire continue pour vérifier la variabilité des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Un modèle de",
       "difficulty": "hard"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quel est l'impact principal de l'incertitude lorsque les budgets d'annotation sont limités en apprentissage actif?",
       "image_url": null,
       "choices": {
-        "A": "Déterminer les échantillons à annoter pour maximiser la connaissance gagnée.",
-        "B": "Réduire le nombre total d'exemples requis pour l'annotation.",
+        "A": "Réduire le nombre total d'exemples requis pour l'annotation.",
+        "B": "Déterminer les échantillons à annoter pour maximiser la connaissance gagnée.",
         "C": "Imposer une limite stricte sur la diversité des données échantillonnées.",
         "D": "Écarter automatiquement les données en dehors des classes les plus fréquentes."
       },
-      "correct_answer": "A",
-      "explanation": "Avec des budgets limités, l'incertitude dirige l'effort là où le gain d'information est maximal. B est trop général, C est faux car la diversité peut être souhaitée, et D ne concerne pas le fonctionnement de l'incertitude mais une reconfiguration des classes.",
+      "correct_answer": "B",
+      "explanation": "Avec des budgets limités, l'incertitude dirige l'effort là où le gain d'information est maximal. B est trop général, C est faux car la diversité peut être souhaitée, et D ne concerne pas le fonctionnement de l'incertitude mais une reconfiguration des classes. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire le nombre total d'exemples requis pour l'annotation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Imposer une limite stricte sur la diversité des données échantillonnées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Écarter automatiquement les données en",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Dans le contexte de l'apprentissage semi-supervisé, quelle technique est couramment utilisée pour la requête de labels?",
       "image_url": null,
       "choices": {
-        "A": "Active learning",
+        "A": "Encodage one-hot",
         "B": "Rétropropagation",
-        "C": "Encodage one-hot",
+        "C": "Active learning",
         "D": "Agrandissement de données"
       },
-      "correct_answer": "A",
-      "explanation": "L'active learning permet de sélectionner les instances les plus informatives pour les annoter, de manière à améliorer le modèle avec un coût d'annotation réduit. La rétropropagation est une méthode d'optimisation des réseaux de neurones supervisés, l'encodage one-hot est utilisé pour transformer des variables catégorielles, et l'agrandissement de données est une technique de data augmentation.",
+      "correct_answer": "C",
+      "explanation": "L'active learning permet de sélectionner les instances les plus informatives pour les annoter, de manière à améliorer le modèle avec un coût d'annotation réduit. La rétropropagation est une méthode d'optimisation des réseaux de neurones supervisés, l'encodage one-hot est utilisé pour transformer des variables catégorielles, et l'agrandissement de données est une technique de data augmentation. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Encodage one-hot) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Rétropropagation) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Agrandissement de données) est plausible mais faux",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel critère est souvent utilisé pour sélectionner les instances lors d'une requête de labels dans un contexte d'incertitude?",
       "image_url": null,
       "choices": {
-        "A": "Le modèle a une confiance basse pour ces instances",
+        "A": "Les instances sont petites en taille de fichier",
         "B": "Les instances ont le plus grand nombre de caractéristiques",
         "C": "Les instances sont les plus éloignées du centre de données",
-        "D": "Les instances sont petites en taille de fichier"
+        "D": "Le modèle a une confiance basse pour ces instances"
       },
-      "correct_answer": "A",
-      "explanation": "Le critère d'incertitude se base sur la faible confiance du modèle vis-à-vis de certaines instances pour sélectionner celles qui nécessitent un label. Choisir les instances avec le plus grand nombre de caractéristiques, leur éloignement du centre, ou leur taille de fichier n'est pas pertinent pour la sélection basée sur l'incertitude.",
+      "correct_answer": "D",
+      "explanation": "Le critère d'incertitude se base sur la faible confiance du modèle vis-à-vis de certaines instances pour sélectionner celles qui nécessitent un label. Choisir les instances avec le plus grand nombre de caractéristiques, leur éloignement du centre, ou leur taille de fichier n'est pas pertinent pour la sélection basée sur l'incertitude. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les instances sont petites en taille de fichier) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Les instances ont le plus grand nombre de caractéristiques) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Il fixe la vitesse d'apprentissage du modèle"
       },
       "correct_answer": "A",
-      "explanation": "Le budget d'annotation définit strictement le nombre d'instances que l'on peut se permettre d'annoter et donc doit être alloué judicieusement. Il ne concerne pas le nombre de classes, l'architecture du réseau, ni la vitesse d'apprentissage du modèle.",
+      "explanation": "Le budget d'annotation définit strictement le nombre d'instances que l'on peut se permettre d'annoter et donc doit être alloué judicieusement. Il ne concerne pas le nombre de classes, l'architecture du réseau, ni la vitesse d'apprentissage du modèle. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il détermine le nombre total de classes à prédire) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il influence directement l'architecture du réseau de neurones) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il fixe la vitesse d'apprentissage du modèle) est plausible mais",
       "difficulty": "medium"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quelle est la fonction principale de la boucle humaine dans l'apprentissage semi-supervisé avec un apprentissage actif hybride?",
       "image_url": null,
       "choices": {
-        "A": "Fournir des annotations de qualité pour les données incertaines",
-        "B": "Augmenter automatiquement la complexité du modèle",
+        "A": "Augmenter automatiquement la complexité du modèle",
+        "B": "Fournir des annotations de qualité pour les données incertaines",
         "C": "Réduire le nombre de classes dans la classification",
         "D": "Diminuer le temps de calcul nécessaire à l'entraînement"
       },
-      "correct_answer": "A",
-      "explanation": "La boucle humaine permet aux annotateurs humains de fournir des labels sur les exemples pour lesquels le modèle a une confiance faible, améliorant ainsi la qualité du jeu de données. Elle ne change pas automatiquement la complexité du modèle, le nombre de classes, ni le temps de calcul.",
+      "correct_answer": "B",
+      "explanation": "La boucle humaine permet aux annotateurs humains de fournir des labels sur les exemples pour lesquels le modèle a une confiance faible, améliorant ainsi la qualité du jeu de données. Elle ne change pas automatiquement la complexité du modèle, le nombre de classes, ni le temps de calcul. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmenter automatiquement la complexité du modèle) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Réduire le nombre de classes dans la classification) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Diminuer le",
       "difficulty": "medium"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quelle technique est souvent utilisée en apprentissage actif pour sélectionner les instances les plus incertaines pour l'annotation?",
       "image_url": null,
       "choices": {
-        "A": "Stratégie du plus faible score de confiance",
+        "A": "Stratégie de décimation",
         "B": "Stratégie de régularisation L2",
-        "C": "Stratégie de décimation",
+        "C": "Stratégie du plus faible score de confiance",
         "D": "Stratégie de moyennage exponentiel"
       },
-      "correct_answer": "A",
-      "explanation": "La stratégie du plus faible score de confiance sélectionne les instances pour lesquelles le modèle est le moins certain. La régularisation L2 est une technique pour éviter le surapprentissage et n'est pas directement liée à l'incertitude d'instances. La décimation est une technique de réduction de données, et le moyennage exponentiel est utilisé pour lisser des valeurs au fil du temps.",
+      "correct_answer": "C",
+      "explanation": "La stratégie du plus faible score de confiance sélectionne les instances pour lesquelles le modèle est le moins certain. La régularisation L2 est une technique pour éviter le surapprentissage et n'est pas directement liée à l'incertitude d'instances. La décimation est une technique de réduction de données, et le moyennage exponentiel est utilisé pour lisser des valeurs au fil du temps. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Stratégie de décimation) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Stratégie de régularisation L2) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Quel est un aspect clé à considérer lors de la définition d'un budget d'annotation en apprentissage actif?",
       "image_url": null,
       "choices": {
-        "A": "Le nombre total d'instances labellisées nécessaires",
+        "A": "La vitesse de convergence de l'algorithme",
         "B": "Le type d'algorithme d'apprentissage supervisé utilisé",
         "C": "La précision déjà atteinte par le modèle",
-        "D": "La vitesse de convergence de l'algorithme"
+        "D": "Le nombre total d'instances labellisées nécessaires"
       },
-      "correct_answer": "A",
-      "explanation": "Un budget d'annotation se réfère au nombre total d'instances pour lesquelles on peut demander des labels. Le type d'algorithme ou la vitesse de convergence ne sont pas directement liés au budget d'annotation, et bien que la précision puisse influencer les décisions, elle ne définit pas le budget.",
+      "correct_answer": "D",
+      "explanation": "Un budget d'annotation se réfère au nombre total d'instances pour lesquelles on peut demander des labels. Le type d'algorithme ou la vitesse de convergence ne sont pas directement liés au budget d'annotation, et bien que la précision puisse influencer les décisions, elle ne définit pas le budget. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (La vitesse de convergence de l'algorithme) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le type d'algorithme d'apprentissage supervisé utilisé) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La précision déjà atteinte par",
       "difficulty": "medium"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Restreindre les interactions humaines pour éviter l'interférence"
       },
       "correct_answer": "A",
-      "explanation": "La boucle humaine implique des annotateurs dans le processus pour valider et apporter des corrections là où le modèle est incertain. Les modèles auto-supervisés et les évaluations continues ne remplacent pas cette validation humaine, et restreindre les interactions humaines va à l'encontre de cette pratique.",
+      "explanation": "La boucle humaine implique des annotateurs dans le processus pour valider et apporter des corrections là où le modèle est incertain. Les modèles auto-supervisés et les évaluations continues ne remplacent pas cette validation humaine, et restreindre les interactions humaines va à l'encontre de cette pratique. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Utiliser uniquement des modèles auto-supervisés pour réduire les biais) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Évaluer continuellement les performances du modèle après chaque mise à jour) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Pourquoi l'incertitude est-elle un facteur crucial dans la sélection des instances en apprentissage actif?",
       "image_url": null,
       "choices": {
-        "A": "Elle aide à maximiser le gain d'information à chaque itération",
-        "B": "Elle améliore directement la vitesse de convergence des algorithmes",
+        "A": "Elle améliore directement la vitesse de convergence des algorithmes",
+        "B": "Elle aide à maximiser le gain d'information à chaque itération",
         "C": "Elle réduit la taille des données nécessaires pour l'entraînement",
         "D": "Elle augmente la taille du dataset de validation"
       },
-      "correct_answer": "A",
-      "explanation": "L'incertitude permet de sélectionner des instances pour maximiser le gain d'information, améliorant l'apprentissage du modèle. Elle n'affecte pas directement la vitesse de convergence ou la réduction des données, ni n'augmente la taille du dataset de validation.",
+      "correct_answer": "B",
+      "explanation": "L'incertitude permet de sélectionner des instances pour maximiser le gain d'information, améliorant l'apprentissage du modèle. Elle n'affecte pas directement la vitesse de convergence ou la réduction des données, ni n'augmente la taille du dataset de validation. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle améliore directement la vitesse de convergence des algorithmes) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle réduit la taille des données nécessaires pour l'entraînement) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle augmente la taille du dataset de validation) est plausible",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Quelle est une méthode couramment utilisée pour mesurer l'incertitude dans les prévisions d'un modèle?",
       "image_url": null,
       "choices": {
-        "A": "Le critère de margin sampling",
+        "A": "Application du skewness positif",
         "B": "Utilisation de l'entropie croisée inverse",
-        "C": "Application du skewness positif",
+        "C": "Le critère de margin sampling",
         "D": "Moyennage des poids biaisés"
       },
-      "correct_answer": "A",
-      "explanation": "La technique de margin sampling mesure l'écart entre les deux meilleures classes prédites pour estimer l'incertitude. L'entropie croisée est une mesure de perte, le skewness mesure la dissymétrie d'une distribution, et le moyennage des poids biaisés n'est pas pertinent ici.",
+      "correct_answer": "C",
+      "explanation": "La technique de margin sampling mesure l'écart entre les deux meilleures classes prédites pour estimer l'incertitude. L'entropie croisée est une mesure de perte, le skewness mesure la dissymétrie d'une distribution, et le moyennage des poids biaisés n'est pas pertinent ici. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Application du skewness positif) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Utilisation de l'entropie croisée inverse) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Moyennage des poids biaisés) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Quelle est une conséquence d'un budget d'annotation mal défini en apprentissage actif?",
       "image_url": null,
       "choices": {
-        "A": "Des labelages inutiles qui augmentent les coûts",
+        "A": "Une impossibilité d'implémenter la régularisation",
         "B": "Un surentraînement automatique du modèle",
         "C": "Une mise à jour en temps réel plus lente du modèle",
-        "D": "Une impossibilité d'implémenter la régularisation"
+        "D": "Des labelages inutiles qui augmentent les coûts"
       },
-      "correct_answer": "A",
-      "explanation": "Un budget d'annotation mal défini peut entraîner des labelages non nécessaires, augmentant ainsi les coûts. Le surentraînement dépend davantage de la régularisation et pas directement du budget, et l'ajustement temporel ou la régularisation ne sont pas directement impactés par le budget.",
+      "correct_answer": "D",
+      "explanation": "Un budget d'annotation mal défini peut entraîner des labelages non nécessaires, augmentant ainsi les coûts. Le surentraînement dépend davantage de la régularisation et pas directement du budget, et l'ajustement temporel ou la régularisation ne sont pas directement impactés par le budget. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une impossibilité d'implémenter la régularisation) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Un surentraînement automatique du modèle) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une mise à jour en temps réel plus lente du modèle) est plausible",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "Modifier les hyperparamètres du modèle en temps réel"
       },
       "correct_answer": "A",
-      "explanation": "Les annotateurs humains fournissent des labels précis sur des données que le modèle trouve incertaines. Ils ne valident pas automatiquement les modèles, ne créent pas de nouvelles fonctions et ne modifient pas les hyperparamètres du modèle.",
+      "explanation": "Les annotateurs humains fournissent des labels précis sur des données que le modèle trouve incertaines. Ils ne valident pas automatiquement les modèles, ne créent pas de nouvelles fonctions et ne modifient pas les hyperparamètres du modèle. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Automatiser la validation des modèles) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Générer de nouvelles fonctions à partir de données déjà existantes) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Modifier les hyperparamètres du modèle en temps réel) est plausible mais faux car",
       "difficulty": "hard"
     },
     {
@@ -302,13 +302,13 @@
       "question": "Comment un budget d'annotation impacte-t-il le processus d'apprentissage actif?",
       "image_url": null,
       "choices": {
-        "A": "En définissant des limites sur le nombre d'instances qui peuvent être labellisées",
-        "B": "En ajustant le taux d'apprentissage du modèle",
+        "A": "En ajustant le taux d'apprentissage du modèle",
+        "B": "En définissant des limites sur le nombre d'instances qui peuvent être labellisées",
         "C": "En améliorant automatiquement la précision des prédictions",
         "D": "En réduisant la complexité des modèles supervisés"
       },
-      "correct_answer": "A",
-      "explanation": "Le budget d'annotation limite le nombre d'instances labellisées pour contrôler les coûts et l'efficacité de l'apprentissage. Il n'affecte pas directement le taux d'apprentissage, la précision ni la complexité des modèles.",
+      "correct_answer": "B",
+      "explanation": "Le budget d'annotation limite le nombre d'instances labellisées pour contrôler les coûts et l'efficacité de l'apprentissage. Il n'affecte pas directement le taux d'apprentissage, la précision ni la complexité des modèles. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En ajustant le taux d'apprentissage du modèle) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En améliorant automatiquement la précision des prédictions) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (En réduisant la complexité des modèles supervisés) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     }
   ]

@@ -5,142 +5,142 @@
   "questions": [
     {
       "type": "text",
-      "question": "Qu'est-ce qu'une donnée étiquetée dans l'apprentissage supervisé?",
+      "question": "Qu'est-ce qu'une donnée étiquetée en apprentissage supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Une donnée qui a à la fois des caractéristiques (features) et une valeur cible (target) associée.",
-        "B": "Une donnée où les caractéristiques sont enregistrées sans valeur cible.",
-        "C": "Une donnée utilisée uniquement pour l'apprentissage non supervisé.",
-        "D": "Une donnée générée aléatoirement pour le test des algorithmes."
+        "A": "Un ensemble de données où chaque point a une réponse correcte associée",
+        "B": "Un ensemble de données sans réponses associées",
+        "C": "Un ensemble de données utilisé uniquement pour l'entraînement",
+        "D": "Un ensemble de données avec uniquement des fonctionnalités prédictives"
       },
       "correct_answer": "A",
-      "explanation": "Une donnée étiquetée comprend des caractéristiques et leur valeur cible, ce qui est essentiel pour entraîner un modèle supervisé. Les données non étiquetées (B) ne contiennent pas de cibles, et C, D sont hors contexte pour le supervisé.",
+      "explanation": "Dans l'apprentissage supervisé, une donnée étiquetée est un ensemble où chaque point comprend des caractéristiques et une réponse correcte (étiquette). Cette étiquette permet au modèle d'apprendre à faire des prédictions précises. Ainsi, l'option A est correcte. L'option B est incorrecte car elle décrit un scénario typique de l'apprentissage non supervisé, qui n'utilise pas d'étiquettes. L'option C est incomplète car elle ne mentionne pas les étiquettes nécessaires à l'apprentissage supervisé. Quant à l'option D, elle est fausse car elle ne précise pas que les données doivent inclure une étiquette, tandis qu'elles se concentrent uniquement sur les fonctionnalités prédictives.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Que signifie 'feature' dans un modèle de machine learning?",
+      "question": "Quelle est la principale caractéristique d'une 'feature' dans un jeu de données?",
       "image_url": null,
       "choices": {
-        "A": "Une caractéristique ou un attribut mesuré dans les données d'entrée.",
-        "B": "Le résultat prédit par le modèle.",
-        "C": "Une méthode de validation croisée pour améliorer l'apprentissage.",
-        "D": "Un ensemble de données utilisé pour tester le modèle."
+        "A": "Elle est la valeur que l'on essaie de prédire",
+        "B": "Elle est une variable explicative dans le dataset",
+        "C": "Elle est uniquement un label utilisé pour la validation",
+        "D": "Elle ne joue aucun rôle dans le modèle prédictif"
       },
-      "correct_answer": "A",
-      "explanation": "Une 'feature' est une caractéristique des données d'entrée utilisée pour entraîner le modèle. B décrit la target, C et D sont des techniques et concepts non liés directement à la définition de 'feature'.",
+      "correct_answer": "B",
+      "explanation": "Dans un jeu de données, une 'feature' est une variable explicative qui contribue à prédire la valeur de la variable cible (target). Par conséquent, l'option B est correcte. L'option A est incorrecte car elle décrit la cible à prédire, pas une feature. L'option C est fausse car les labels ne sont pas des features et ne servent pas à la validation; ils aident à guider le modèle pendant l'entraînement. Enfin, l'option D est incorrecte car les features jouent un rôle majeur dans la construction de modèles prédictifs, permettant d'interpréter et d'analyser les motifs dans les données.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quelle est la 'target' dans une tâche d'apprentissage supervisé?",
+      "question": "Quelle est la 'target' dans un modèle d'apprentissage supervisé?",
       "image_url": null,
       "choices": {
-        "A": "La valeur que le modèle doit prédire.",
-        "B": "Les paramètres internes ajustés lors de l'entraînement.",
-        "C": "La technique de normalisation des données d'entrée.",
-        "D": "Une métrique d'erreur utilisée pour évaluer le modèle."
+        "A": "Un ensemble de paramètres du modèle",
+        "B": "Une caractéristique du dataset",
+        "C": "La variable à prédire par le modèle",
+        "D": "Un élément de validation du modèle"
       },
-      "correct_answer": "A",
-      "explanation": "La 'target' est la valeur que le modèle cherche à prédire. B concerne l'optimisation des paramètres, C est une technique de prétraitement, et D est liée à l'évaluation plutôt qu'à la prédiction.",
+      "correct_answer": "C",
+      "explanation": "Dans un modèle d'apprentissage supervisé, la 'target' est la variable que le modèle doit prédire à partir des données d'entrée. Par conséquent, l'option C est correcte. L'option A est incorrecte car elle décrit les paramètres ou hyperparamètres du modèle, non la variable cible. L'option B est fausse car elle confond la target avec une feature des données. L'option D est également incorrecte parce qu'elle se rapporte plutôt au processus de validation du modèle, qui n'est pas directement lié à ce que le modèle doit prédire. Ainsi, connaître la bonne target est crucial pour entraîner un modèle supervisé.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quel est le rôle principal d'un modèle prédictif en apprentissage supervisé?",
+      "question": "Quel rôle joue un modèle prédictif dans l'apprentissage supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Prédire la 'target' à partir de nouvelles 'features'.",
-        "B": "Mettre à jour les données d'entrée pour mieux s'adapter.",
-        "C": "Réduire le nombre de 'features' inutiles dans le jeu de données.",
-        "D": "Générer de nouvelles données à partir d'un ensemble existant."
+        "A": "Il mesure l'efficacité des caractéristiques",
+        "B": "Il détermine automatiquement les étiquettes correctes",
+        "C": "Il génère de nouvelles données d'entraînement",
+        "D": "Il produit une prédiction basée sur les données d'entrée"
       },
-      "correct_answer": "A",
-      "explanation": "Un modèle prédictif est conçu pour prédire des cibles sur la base des nouvelles observations de caractéristiques. B modifie les données d'entrée, C est lié à la sélection de caractéristiques, D concerne la génération de données, non la prédiction.",
+      "correct_answer": "D",
+      "explanation": "Dans l'apprentissage supervisé, un modèle prédictif a pour rôle principal de produire une prédiction basée sur les données d'entrée. Cela signifie qu'il utilise les caractéristiques (ou features) fournies pour estimer une valeur cible, ce qui correspond à l'option D. L'option A est incorrecte parce que l'évaluation de l'efficacité des caractéristiques nécessite généralement une analyse distincte, souvent via des méthodes statistiques ou des visualisations, et non le modèle lui-même. L'option B est fausse car les étiquettes sont préalablement définies dans un apprentissage supervisé, et le modèle ne les détermine pas. L'option C est également incorrecte : le modèle n'est pas conçu pour créer de nouvelles données d'entraînement mais pour apprendre à partir de celles fournies.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans un ensemble de données, pourquoi est-il important d'avoir des étiquettes?",
+      "question": "Comment se distingue l'apprentissage supervisé d'autres types d'apprentissage machine?",
       "image_url": null,
       "choices": {
-        "A": "Pour superviser l'apprentissage et ajuster le modèle en fonction des erreurs.",
-        "B": "Pour améliorer la vitesse d'entraînement du modèle.",
-        "C": "Pour économiser de l'espace mémoire lors du traitement des données.",
-        "D": "Pour garantir que les données sont normalisées avec précision."
+        "A": "Il nécessite des données étiquetées pour l'entraînement",
+        "B": "Il se concentre sur la réduction des erreurs de classification",
+        "C": "Il utilise des données sans supervision humaine",
+        "D": "Il est uniquement utilisé pour la prédiction de séries temporelles"
       },
       "correct_answer": "A",
-      "explanation": "Les étiquettes aident à superviser l'apprentissage en montrant au modèle ce qu'il doit apprendre. B, C, et D ne décrivent pas correctement l'importance des étiquettes, car elles entraînent davantage le modèle ou sont liées à des aspects logiciels.",
+      "explanation": "L'apprentissage supervisé se caractérise par la nécessité d'utiliser des données étiquetées pour entraîner le modèle, ce qui signifie que chaque instance de donnée a une étiquette préalablement déterminée, d'où la justesse de l'option A. L'option B n'est pas unique à l'apprentissage supervisé car la réduction des erreurs de classification est un objectif commun à d'autres approches d'apprentissage. L'option C est incorrecte, car elle décrit l'apprentissage non supervisé, où les données sont sans étiquettes humaines. Enfin, l'option D est fausse car l'apprentissage supervisé s'applique à une variété de domaines, pas seulement à la prédiction de séries temporelles, bien qu'il y soit effectivement utile.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Comment un modèle prédictif en apprentissage supervisé est-il évalué?",
+      "question": "Quelle est la première étape pour créer un modèle supervisé efficace?",
       "image_url": null,
       "choices": {
-        "A": "En comparant ses prédictions aux valeurs cibles des données de test.",
-        "B": "En mesurant sa capacité à ingérer de gros volumes de données.",
-        "C": "En évaluant la diversité des caractéristiques qu'il produit.",
-        "D": "En testant son efficacité sur des données non étiquetées."
+        "A": "Appliquer immédiatement un algorithme de ML",
+        "B": "Collecter des données étiquetées de qualité",
+        "C": "Configurer les hyperparamètres",
+        "D": "Effectuer la validation croisée"
       },
-      "correct_answer": "A",
-      "explanation": "L'évaluation d'un modèle se fait en comparant ses prédictions avec les cibles établies dans les données de test. B et C touchent à d'autres aspects non liés à l'évaluation directe, D est incorrect car il n'utilise pas de données étiquetées.",
+      "correct_answer": "B",
+      "explanation": "Pour créer un modèle supervisé efficace, la première étape consiste à collecter des données étiquetées de haute qualité. Cela garantit que le modèle a une base solide pour apprendre et fait de l'option B la bonne réponse. L'option A est incorrecte car appliquer un algorithme sans données appropriées ne mène pas à de bons résultats. L'option C concerne l'optimisation du modèle, et D se rapporte à l'évaluation, qui sont des étapes ultérieures dans le processus de modélisation. Les données étiquetées définissent le cadre d'apprentissage pour le modèle, crucial pour sa performance future.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quel est un avantage des données étiquetées pour entraîner un modèle supervisé?",
+      "question": "Pourquoi est-il important de séparer les données d'entraînement et de test?",
       "image_url": null,
       "choices": {
-        "A": "Elles permettent une évaluation directe de la précision du modèle.",
-        "B": "Elles nécessitent moins de ressources pour être stockées.",
-        "C": "Elles permettent de traiter des problèmes non étiquetés.",
-        "D": "Elles garantissent que le modèle ne fait aucune erreur de prédiction."
+        "A": "Pour améliorer la précision du modèle sur l'ensemble des données",
+        "B": "Pour construire un modèle plus simple",
+        "C": "Pour éviter la fuite de données durant l'évaluation",
+        "D": "Pour accélérer le processus d'entraînement"
       },
-      "correct_answer": "A",
-      "explanation": "Avec des données étiquetées, on peut directement valider la précision en comparant les prédictions aux cibles. B parle de stockage, C et D sont incorrects car elles ne résolvent pas de problèmes non étiquetés ou assurent l'absence d'erreur.",
+      "correct_answer": "C",
+      "explanation": "Séparer les données d'entraînement et de test vise à éviter la fuite de données, garantissant que le modèle est évalué sur des données variables et inconnues, d'où l'option C est correcte. L'option A est incorrecte, car la séparation ne vise pas à améliorer la précision sur l'ensemble des données, mais plutôt à évaluer une généralisation fiable. L'option B est fausse car la simplicité du modèle n'est pas dictée par la séparation des données. Enfin, D est incorrect, car cette division n'accélère pas l'entraînement, mais assure plutôt un évaluation non biaisée sur de nouvelles données.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pourquoi les 'features' doivent-elles être soigneusement sélectionnées?",
+      "question": "Quel algorithme est généralement utilisé pour les problèmes de classification binaire?",
       "image_url": null,
       "choices": {
-        "A": "Pour améliorer la précision et la généralisation du modèle.",
-        "B": "Pour garantir que chaque modèle utilise le même volume de données.",
-        "C": "Pour réduire la complexité de l'algorithme k-NN.",
-        "D": "Pour s'assurer que le modèle utilise des 'features' invisibles aux autres modèles."
+        "A": "Régression Linéaire",
+        "B": "Réseau de neurones pour séries temporelles",
+        "C": "K-Nearest Neighbors pour clustering",
+        "D": "Logistic Regression"
       },
-      "correct_answer": "A",
-      "explanation": "Une bonne sélection de 'features' optimise la précision et la généralisation du modèle. B est erroné car il ne s'agit pas de volume de données strictement nécessaires, C n'adresse qu'un problème spécifique, D est conceptuellement faux car la visibilité n'est pas pertinente.",
+      "correct_answer": "D",
+      "explanation": "La régression logistique est l'algorithme couramment utilisé pour les problèmes de classification binaire, car elle modélise les probabilités des classes possibles. Donc, l'option D est correcte. L'option A, la régression linéaire, n'est pas adaptée car elle est utilisée pour des problèmes de régression continue. L'option B, un réseau de neurones axé sur des séries temporelles, n'est pas spécifique aux classifications binaires. L'option C décrit le K-Nearest Neighbors pour le clustering, qui bien qu’utile dans d’autres contextes de classification, n’est pas spécifiquement optimal pour de simples problèmes binaires comme la régression logistique.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Laquelle des méthodes suivantes NE fait PAS partie des étapes de l'entraînement d'un modèle supervisé?",
+      "question": "Pourquoi est-il essentiel d'évaluer un modèle sur des données jamais vues pendant l'entraînement?",
       "image_url": null,
       "choices": {
-        "A": "Randomisation des valeurs cibles dans l'ensemble de test.",
-        "B": "Sélection de 'features' pertinentes.",
-        "C": "Ajustement des hyperparamètres.",
-        "D": "Acquisition et préparation des données de formation."
+        "A": "Pour obtenir une évaluation réaliste de sa performance sur de nouvelles données",
+        "B": "Pour obtenir un taux d'apprentissage amélioré",
+        "C": "Pour optimiser les hyperparamètres en fonction des données de test",
+        "D": "Pour détecter plus rapidement les erreurs de programmation"
       },
       "correct_answer": "A",
-      "explanation": "Randomiser les valeurs cibles ruinerait toute capacité à évaluer correctement un modèle. Les choix B, C, et D sont des étapes standard et cruciales dans le processus de formation d'un modèle supervisé.",
+      "explanation": "Évaluer un modèle sur des données jamais vues durant l'entraînement est crucial pour obtenir une estimation réaliste de sa performance réelle en dehors de l'échantillon d'entraînement. Par conséquent, l'option A est correcte. L'option B est incorrecte car le taux d'apprentissage se réfère au taux de mise à jour du modèle, pas à sa capacité à généraliser. L'option C est incorrecte car l'optimisation des hyperparamètres est généralement faite en utilisant des ensembles de validation et non les données de test. Enfin, D est incorrect car l'objectif principal est d'assurer la performance future, bien que des erreurs pourraient effectivement être détectées dans ce processus.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Quel est un défi majeur associé à l'utilisation de données étiquetées?",
+      "question": "Dans l'apprentissage supervisé, comment pourrait-on détecter une fuite de données?",
       "image_url": null,
       "choices": {
-        "A": "Les données étiquetées peuvent être coûteuses et longues à obtenir.",
-        "B": "Les données étiquetées ne peuvent pas être utilisées pour la validation croisée.",
-        "C": "Les données étiquetées sont souvent introuvables dans les bases de données publiques.",
-        "D": "Les données étiquetées doivent être nécessairement codées en binaire."
+        "A": "Les performances en entraînement et test sont très similaires",
+        "B": "Le modèle montre une exactitude extrêmement élevée en test",
+        "C": "Les performances chutes drastiquement sur de nouvelles données",
+        "D": "Le modèle converge rapidement durant l'entraînement"
       },
-      "correct_answer": "A",
-      "explanation": "Un défi est le temps et le coût nécessaires pour obtenir des données étiquetées. B est incorrect car elles sont idéales pour la validation croisée, C est partiellement vrai mais pas un défi technique, et D est faux car les données peuvent être numériques ou catégoriques.",
+      "correct_answer": "B",
+      "explanation": "Une fuite de données est souvent détectée si un modèle montre une exactitude extrêmement élevée sur les données de test, car cela suggère qu'il a vu les données durant l'entraînement. Ainsi, l'option B est correcte. L'option A, où entraînement et test montrent des performances similaires, peut être normal et ne signale pas nécessairement une fuite. L'option C décrit plutôt un phénomène de surapprentissage lorsque le modèle ne généralise pas bien. L'option D, une convergence rapide, peut être dû à divers facteurs et n'indique pas spécifiquement une fuite de données. C'est la performance suspecte en test qui est le signe le plus révélateur.",
       "difficulty": "hard"
     }
   ]

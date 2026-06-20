@@ -14,7 +14,7 @@
         "D": "Une étiquette assignée manuellement à un ensemble d'échantillons pour initialiser un modèle."
       },
       "correct_answer": "A",
-      "explanation": "Un pseudo-label est une étiquette prédite pour un échantillon non étiqueté par un modèle préalablement entraîné, dans le but d'améliorer l'apprentissage. Les autres options sont fausses : B décrit l'étiquetage aléatoire, ce qui n'améliore pas l'apprentissage ; C se réfère au concept d'ensemble, pas de pseudo-labeling; D est manuel, donc pas un pseudo-label.",
+      "explanation": "Un pseudo-label est une étiquette prédite pour un échantillon non étiqueté par un modèle préalablement entraîné, dans le but d'améliorer l'apprentissage. Les autres options sont fausses : B décrit l'étiquetage aléatoire, ce qui n'améliore pas l'apprentissage ; C se réfère au concept d'ensemble, pas de pseudo-labeling; D est manuel, donc pas un pseudo-label. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Une étiquette assignée aléatoirement à un échantillon pour augmenter la diversité du dataset.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une étiquette fixée en fonction de la moyenne des prédictions de plusieurs modèles.) est plausible mais faux car",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Comment la 'confiance' est-elle généralement mesurée dans le processus de pseudo-labeling ?",
       "image_url": null,
       "choices": {
-        "A": "En utilisant la probabilité issue de la distribution de sortie d'un modèle pour une prédiction donnée.",
-        "B": "En comptant le nombre de modèles ayant produit le même pseudo-label.",
+        "A": "En comptant le nombre de modèles ayant produit le même pseudo-label.",
+        "B": "En utilisant la probabilité issue de la distribution de sortie d'un modèle pour une prédiction donnée.",
         "C": "En évaluant la différence entre la moyenne des prédictions et la prédiction individuelle.",
         "D": "En mesurant le temps de calcul nécessaire pour produire le pseudo-label."
       },
-      "correct_answer": "A",
-      "explanation": "La confiance dans le pseudo-labeling est généralement mesurée par la probabilité associée à la prédiction dans la sortie du modèle. B décrit plutôt l'ensemble, C n'est pas pertinent à la confiance, et D n'a pas de lien direct avec celle-ci.",
+      "correct_answer": "B",
+      "explanation": "La confiance dans le pseudo-labeling est généralement mesurée par la probabilité associée à la prédiction dans la sortie du modèle. B décrit plutôt l'ensemble, C n'est pas pertinent à la confiance, et D n'a pas de lien direct avec celle-ci. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En comptant le nombre de modèles ayant produit le même pseudo-label.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En évaluant la différence entre la moyenne des prédictions et la prédiction individuelle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quelle est l'utilité du filtrage dans le processus de pseudo-labeling ?",
       "image_url": null,
       "choices": {
-        "A": "Sélectionner uniquement les pseudo-labels ayant une confiance au-dessus d'un certain seuil.",
+        "A": "Mélanger de façon aléatoire les pseudo-labels pour un meilleur apprentissage.",
         "B": "Créer un ensemble d'étiquettes complètement nouvelles pour un dataset.",
-        "C": "Mélanger de façon aléatoire les pseudo-labels pour un meilleur apprentissage.",
+        "C": "Sélectionner uniquement les pseudo-labels ayant une confiance au-dessus d'un certain seuil.",
         "D": "Supprimer automatiquement tous les pseudo-labels une fois le modèle entraîné."
       },
-      "correct_answer": "A",
-      "explanation": "Le filtrage consiste à sélectionner les pseudo-labels ayant une confiance élevée pour éviter d'introduire du bruit dans le processus d'apprentissage. B et C n'ont pas de rapport avec la confiance ou qualité des labels, et D est une opération finale, non un choix stratégique.",
+      "correct_answer": "C",
+      "explanation": "Le filtrage consiste à sélectionner les pseudo-labels ayant une confiance élevée pour éviter d'introduire du bruit dans le processus d'apprentissage. B et C n'ont pas de rapport avec la confiance ou qualité des labels, et D est une opération finale, non un choix stratégique. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Mélanger de façon aléatoire les pseudo-labels pour un meilleur apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Créer un ensemble d'étiquettes complètement nouvelles pour un dataset.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Supprimer",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quelle méthode peut-on utiliser pour réduire le bruit des pseudo-labels en confiance ?",
       "image_url": null,
       "choices": {
-        "A": "Appliquer un seuil minimum de confiance pour inclure un pseudo-label dans l'ensemble d'entraînement.",
+        "A": "Augmenter la profondeur du réseau de neurones pour améliorer la prédiction.",
         "B": "Réduire la taille du dataset non étiqueté pour minimiser les erreurs.",
         "C": "Étiqueter manuellement un pourcentage fixe du dataset pour minimiser le bruit.",
-        "D": "Augmenter la profondeur du réseau de neurones pour améliorer la prédiction."
+        "D": "Appliquer un seuil minimum de confiance pour inclure un pseudo-label dans l'ensemble d'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "Utiliser un seuil de confiance aide à filtrer les pseudo-labels les plus fiables, minimisant ainsi le bruit. B réduit la taille sans rapport à la confiance, C est valide pour un petit ensemble mais pas pour pseudo-labeling, et D ne garantit pas la réduction du bruit.",
+      "correct_answer": "D",
+      "explanation": "Utiliser un seuil de confiance aide à filtrer les pseudo-labels les plus fiables, minimisant ainsi le bruit. B réduit la taille sans rapport à la confiance, C est valide pour un petit ensemble mais pas pour pseudo-labeling, et D ne garantit pas la réduction du bruit. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmenter la profondeur du réseau de neurones pour améliorer la prédiction.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Réduire la taille du dataset non étiqueté pour minimiser les erreurs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Je ne sais pas."
       },
       "correct_answer": "A",
-      "explanation": "Les itérations permettent de ré-entraîner le modèle avec un ensemble de pseudo-labels de meilleure qualité à chaque cycle, améliorant ainsi la performance globale. Augmenter systématiquement la taille d'un dataset (B) ne garantit pas l'amélioration; C n'est pas communément lié au pseudo-labeling.",
+      "explanation": "Les itérations permettent de ré-entraîner le modèle avec un ensemble de pseudo-labels de meilleure qualité à chaque cycle, améliorant ainsi la performance globale. Augmenter systématiquement la taille d'un dataset (B) ne garantit pas l'amélioration; C n'est pas communément lié au pseudo-labeling. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Augmenter la taille de l'ensemble d'entraînement en permanence pour converger plus rapidement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Réinitialiser automatiquement le modèle pour éviter le surapprentissage à chaque étape.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "easy"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quels pseudo-labels sont souvent utilisés lors des premières itérations d'un processus de pseudo-labeling ?",
       "image_url": null,
       "choices": {
-        "A": "Ceux avec la confiance la plus élevée.",
-        "B": "Ceux avec la confiance la plus basse.",
+        "A": "Ceux avec la confiance la plus basse.",
+        "B": "Ceux avec la confiance la plus élevée.",
         "C": "Tous les pseudo-labels créés jusqu'à maintenant.",
         "D": "Uniquement ceux qui sont manuellement vérifiés."
       },
-      "correct_answer": "A",
-      "explanation": "Au début, les pseudo-labels ayant la plus haute confiance sont utilisés pour s'assurer de minimiser l'erreur d'étiquetage. Les options B et C risquent d'ajouter du bruit, tandis que D n'est pas viable pour de grands ensembles de données sans automatisation.",
+      "correct_answer": "B",
+      "explanation": "Au début, les pseudo-labels ayant la plus haute confiance sont utilisés pour s'assurer de minimiser l'erreur d'étiquetage. Les options B et C risquent d'ajouter du bruit, tandis que D n'est pas viable pour de grands ensembles de données sans automatisation. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ceux avec la confiance la plus basse.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Tous les pseudo-labels créés jusqu'à maintenant.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Uniquement ceux qui sont manuellement vérifiés.) est plausible mais faux car",
       "difficulty": "easy"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quel est l'effet d'utiliser des pseudo-labels de faible confiance sur un modèle d'apprentissage ?",
       "image_url": null,
       "choices": {
-        "A": "Cela peut augmenter le bruit dans les données et dégrader la performance du modèle.",
+        "A": "Cela accélère le temps d'entraînement du modèle en réduisant la complexité.",
         "B": "Cela assure que le modèle couvre de manière exhaustive toutes les classes.",
-        "C": "Cela accélère le temps d'entraînement du modèle en réduisant la complexité.",
+        "C": "Cela peut augmenter le bruit dans les données et dégrader la performance du modèle.",
         "D": "Cela garantit que le modèle ne sur-apprend pas les données d'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "Utiliser des pseudo-labels de faible confiance introduit plus de bruit, ce qui peut détériorer la performance du modèle. B, C et D décrivent des effets positifs incorrects; ils ne sont pas liés à l'usage des labels de faible confiance.",
+      "correct_answer": "C",
+      "explanation": "Utiliser des pseudo-labels de faible confiance introduit plus de bruit, ce qui peut détériorer la performance du modèle. B, C et D décrivent des effets positifs incorrects; ils ne sont pas liés à l'usage des labels de faible confiance. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Cela accélère le temps d'entraînement du modèle en réduisant la complexité.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Cela assure que le modèle couvre de manière exhaustive toutes les classes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Cela garantit",
       "difficulty": "easy"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Pourquoi est-il important de réévaluer les pseudo-labels après plusieurs cycles d'itérations ?",
       "image_url": null,
       "choices": {
-        "A": "Pour ajuster les labels avec la nouvelle compréhension du modèle et améliorer l'exactitude globale.",
+        "A": "Pour supprimer les labels manuellement mal positionnés.",
         "B": "Pour réduire le coût de l'entraînement en diminuant la taille du dataset utilisé.",
         "C": "Pour garantir que tous les pseudo-labels soient finalement corrects.",
-        "D": "Pour supprimer les labels manuellement mal positionnés."
+        "D": "Pour ajuster les labels avec la nouvelle compréhension du modèle et améliorer l'exactitude globale."
       },
-      "correct_answer": "A",
-      "explanation": "Réévaluer permet d’adapter les labels à mesure que le modèle s'améliore, augmentant ainsi la précision. B et D ne concernent pas la qualité des pseudo-labels, et C est illogique car aucun modèle ne garantit 100% de correction.",
+      "correct_answer": "D",
+      "explanation": "Réévaluer permet d’adapter les labels à mesure que le modèle s'améliore, augmentant ainsi la précision. B et D ne concernent pas la qualité des pseudo-labels, et C est illogique car aucun modèle ne garantit 100% de correction. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour supprimer les labels manuellement mal positionnés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour réduire le coût de l'entraînement en diminuant la taille du dataset utilisé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour garantir que tous les pseudo-labels soient",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "En entraînant le modèle uniquement avec des pseudo-labels plutôt qu'avec des données étiquetées manuellement."
       },
       "correct_answer": "A",
-      "explanation": "Les adaptations basées sur les pseudo-labels permettent de constamment ajuster le modèle pour mieux refléter les données réelles, réduisant potentiellement le biais. B ne décrit pas un processus de pseudo-labeling, C et D altéreraient les fondements du modèle au lieu de l'améliorer.",
+      "explanation": "Les adaptations basées sur les pseudo-labels permettent de constamment ajuster le modèle pour mieux refléter les données réelles, réduisant potentiellement le biais. B ne décrit pas un processus de pseudo-labeling, C et D altéreraient les fondements du modèle au lieu de l'améliorer. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (En augmentant strictement la diversité des pseudo-labels avec des mutations aléatoires.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En substituant toutes les étiquettes d'origine avec des pseudo-labels pour plus d'homogénéité.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quelle est une limitation du pseudo-labeling en termes de performance de modèle ?",
       "image_url": null,
       "choices": {
-        "A": "L'ajout de bruit à travers des labels incorrects prédits, affectant la généralisation.",
-        "B": "Le besoin excessif en temps pour entraîner le modèle sur de petits ensembles de données.",
+        "A": "Le besoin excessif en temps pour entraîner le modèle sur de petits ensembles de données.",
+        "B": "L'ajout de bruit à travers des labels incorrects prédits, affectant la généralisation.",
         "C": "L'existence de biais dans les étiquetages qui sont exclusivement supervisés.",
         "D": "Le besoin accru de ressources humaines pour vérifier chaque pseudo-label."
       },
-      "correct_answer": "A",
-      "explanation": "Une limitation est que les labels incorrects peuvent ajouter du bruit et dégrader la performance. B est incorrect car pseudo-labeling est typiquement utilisé avec des datasets large; C n’exploite pas le concept semi-supervisé; D va à l'encontre de l'automatisation propre au pseudo-labeling.",
+      "correct_answer": "B",
+      "explanation": "Une limitation est que les labels incorrects peuvent ajouter du bruit et dégrader la performance. B est incorrect car pseudo-labeling est typiquement utilisé avec des datasets large; C n’exploite pas le concept semi-supervisé; D va à l'encontre de l'automatisation propre au pseudo-labeling. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le besoin excessif en temps pour entraîner le modèle sur de petits ensembles de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'existence de biais dans les étiquetages qui sont exclusivement supervisés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Quel critère est souvent utilisé pour choisir les pseudo-labels à utiliser en apprentissage semi-supervisé avancé ?",
       "image_url": null,
       "choices": {
-        "A": "La divergence de Jensen-Shannon entre les prédictions et la distribution cible attendue.",
+        "A": "La quantité de données initialement étiquetées manuellement.",
         "B": "La différence absolue entre la précision du modèle et un seuil de tolérance fixé.",
-        "C": "La quantité de données initialement étiquetées manuellement.",
+        "C": "La divergence de Jensen-Shannon entre les prédictions et la distribution cible attendue.",
         "D": "Le nombre total de cycles d'itérations déjà accomplis."
       },
-      "correct_answer": "A",
-      "explanation": "La divergence de Jensen-Shannon est parfois utilisée pour évaluer la différence entre les prédictions modèle et la distribution de la vérité, aidant à filtrer les pseudo-labels viables. Les autres options ne prennent pas en compte la viabilité qualitative des pseudo-labels.",
+      "correct_answer": "C",
+      "explanation": "La divergence de Jensen-Shannon est parfois utilisée pour évaluer la différence entre les prédictions modèle et la distribution de la vérité, aidant à filtrer les pseudo-labels viables. Les autres options ne prennent pas en compte la viabilité qualitative des pseudo-labels. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La quantité de données initialement étiquetées manuellement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (La différence absolue entre la précision du modèle et un seuil de tolérance fixé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Le nombre total",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Pour quoi le concept de méta-apprentissage peut-il être appliqué au pseudo-labeling ?",
       "image_url": null,
       "choices": {
-        "A": "Pour optimiser la sélection et l'application des pseudo-labels dans divers contextes de données inconnues.",
+        "A": "Pour garantir que le processus reste conforme à un cadre fixe de supervision humaine.",
         "B": "Pour entraîner des modèles exclusivement sur des jeux de données déjà pré-étiquetés manuellement.",
         "C": "Pour réduire le besoin de révisions manuelles basées sur des hypothèses d'itération constante.",
-        "D": "Pour garantir que le processus reste conforme à un cadre fixe de supervision humaine."
+        "D": "Pour optimiser la sélection et l'application des pseudo-labels dans divers contextes de données inconnues."
       },
-      "correct_answer": "A",
-      "explanation": "Le méta-apprentissage peut optimiser l'approche de pseudo-labeling pour différents scénarios de données. B ne concerne pas les pseudo-labels, C sans optimisation intelligente perd son sens, D réduit l'automatisation inhérente au pseudo-labeling.",
+      "correct_answer": "D",
+      "explanation": "Le méta-apprentissage peut optimiser l'approche de pseudo-labeling pour différents scénarios de données. B ne concerne pas les pseudo-labels, C sans optimisation intelligente perd son sens, D réduit l'automatisation inhérente au pseudo-labeling. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour garantir que le processus reste conforme à un cadre fixe de supervision humaine.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour entraîner des modèles exclusivement sur des jeux de données déjà pré-étiquetés manuellement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour réduire le besoin de révisions",
       "difficulty": "hard"
     }
   ]

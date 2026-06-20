@@ -14,7 +14,7 @@
         "D": "C'est une courbe ROC montrant le taux de faux positifs contre le taux de vrais positifs."
       },
       "correct_answer": "A",
-      "explanation": "La courbe de calibration compare les probabilités prédites à celles observées pour évaluer la qualité de la probabilité prédictive. Les autres réponses décrivent à tort des méthodes spécifiques à l'analyse de performance, comme la courbe ROC ou des distributions d'erreur.",
+      "explanation": "La courbe de calibration compare les probabilités prédites à celles observées pour évaluer la qualité de la probabilité prédictive. Les autres réponses décrivent à tort des méthodes spécifiques à l'analyse de performance, comme la courbe ROC ou des distributions d'erreur. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (C'est une courbe représentant la précision en fonction du rappel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (C'est un histogramme de l'erreur quadratique moyenne pour différentes classes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (C'est une courbe ROC",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Quel est l'objectif principal de la calibration des probabilités dans les modèles de classification?",
       "image_url": null,
       "choices": {
-        "A": "Faire en sorte que les probabilités prédites reflètent correctement la vérité sur le long terme.",
-        "B": "Augmenter systématiquement la précision du modèle.",
+        "A": "Augmenter systématiquement la précision du modèle.",
+        "B": "Faire en sorte que les probabilités prédites reflètent correctement la vérité sur le long terme.",
         "C": "Réduire le taux de rappel tout en augmentant la précision.",
         "D": "Maximiser la surface sous la courbe ROC."
       },
-      "correct_answer": "A",
-      "explanation": "L'objectif de la calibration des probabilités est de s'assurer que les estimations de probabilité correspondent aux fréquences observées. Les autres options mal interprètent les objectifs de précision, de rappel et d'AUC, qui ne concernent pas la calibration directe.",
+      "correct_answer": "B",
+      "explanation": "L'objectif de la calibration des probabilités est de s'assurer que les estimations de probabilité correspondent aux fréquences observées. Les autres options mal interprètent les objectifs de précision, de rappel et d'AUC, qui ne concernent pas la calibration directe. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmenter systématiquement la précision du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Réduire le taux de rappel tout en augmentant la précision.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Maximiser la surface sous la courbe ROC.) est plausible mais",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quel indicateur quantifie l'erreur de probabilité dans les prédictions probabilistes?",
       "image_url": null,
       "choices": {
-        "A": "Le Brier score.",
+        "A": "Le coefficient de corrélation de Pearson.",
         "B": "La superficie sous la courbe ROC.",
-        "C": "Le coefficient de corrélation de Pearson.",
+        "C": "Le Brier score.",
         "D": "Le score de F1."
       },
-      "correct_answer": "A",
-      "explanation": "Le Brier score évalue la précision des prévisions probabilistes, mesurant leur écarte par rapport aux valeurs réelles. Le coefficient de corrélation de Pearson, le score F1, et l'AUC ne se concentrent pas sur les probabilités de la même manière.",
+      "correct_answer": "C",
+      "explanation": "Le Brier score évalue la précision des prévisions probabilistes, mesurant leur écarte par rapport aux valeurs réelles. Le coefficient de corrélation de Pearson, le score F1, et l'AUC ne se concentrent pas sur les probabilités de la même manière. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le coefficient de corrélation de Pearson.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (La superficie sous la courbe ROC.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Le score de F1.) est plausible mais faux car il ne respecte pas",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quel processus consiste à ajuster un seuil de décision dans un modèle de classification binaire?",
       "image_url": null,
       "choices": {
-        "A": "Changer la sensibilité aux faux positifs et faux négatifs.",
+        "A": "Améliorer la calibration des probabilités prédites.",
         "B": "Optimiser directement la fonction de coût du modèle.",
         "C": "Augmenter le nombre de fausses alertes prédictives.",
-        "D": "Améliorer la calibration des probabilités prédites."
+        "D": "Changer la sensibilité aux faux positifs et faux négatifs."
       },
-      "correct_answer": "A",
-      "explanation": "Ajuster le seuil de décision influence les taux de faux positifs et négatifs, ce qui affecte les sensibilités aux erreurs de décision. Les autres réponses font faussement référence à l'optimisation de la calibration ou de la fonction de coût sans ajustement de seuil.",
+      "correct_answer": "D",
+      "explanation": "Ajuster le seuil de décision influence les taux de faux positifs et négatifs, ce qui affecte les sensibilités aux erreurs de décision. Les autres réponses font faussement référence à l'optimisation de la calibration ou de la fonction de coût sans ajustement de seuil. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Améliorer la calibration des probabilités prédites.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Optimiser directement la fonction de coût du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Augmenter le nombre de fausses alertes prédictives.)",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Un graphique présentant le taux d'erreur en fonction de la taille de l'échantillon."
       },
       "correct_answer": "A",
-      "explanation": "La courbe de calibration compare les probabilités prédites par un modèle aux fréquences observées des événements pour évaluer l'exactitude probabiliste du modèle. La réponse B est incorrecte car elle décrit la courbe précision-rappel. La réponse C est fausse car elle explique une courbe d'apprentissage. La réponse D n'est pas correcte car elle concerne l'analyse par validation croisée.",
+      "explanation": "La courbe de calibration compare les probabilités prédites par un modèle aux fréquences observées des événements pour évaluer l'exactitude probabiliste du modèle. La réponse B est incorrecte car elle décrit la courbe précision-rappel. La réponse C est fausse car elle explique une courbe d'apprentissage. La réponse D n'est pas correcte car elle concerne l'analyse par validation croisée. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Un graphique illustrant la relation entre le rappel et la précision.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Un graphique décrivant les variations du coût de la fonction de perte au fil des itérations.)",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quel est l'objectif principal de l'utilisation d'un seuil de décision dans un modèle de classification binaire?",
       "image_url": null,
       "choices": {
-        "A": "Convertir les probabilités prédites en classes discrètes.",
-        "B": "Maximiser la variance des prédictions.",
+        "A": "Maximiser la variance des prédictions.",
+        "B": "Convertir les probabilités prédites en classes discrètes.",
         "C": "Réduire la biais lors de l'ajustement du modèle.",
         "D": "Mesurer la précision des prédictions probabilistes."
       },
-      "correct_answer": "A",
-      "explanation": "Le seuil de décision est utilisé pour transformer des prédictions probabilistes continues en décisions de classes discrètes, basées sur un seuil fixé. La réponse B est incorrecte car la maximisation de la variance n'est pas liée au seuil de décision. La réponse C est une mauvaise interprétation du rôle des seuils. La réponse D est inappropriée, le seuil n'étant pas utilisé pour mesurer la précision des prédictions.",
+      "correct_answer": "B",
+      "explanation": "Le seuil de décision est utilisé pour transformer des prédictions probabilistes continues en décisions de classes discrètes, basées sur un seuil fixé. La réponse B est incorrecte car la maximisation de la variance n'est pas liée au seuil de décision. La réponse C est une mauvaise interprétation du rôle des seuils. La réponse D est inappropriée, le seuil n'étant pas utilisé pour mesurer la précision des prédictions. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Maximiser la variance des prédictions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Réduire la biais lors de l'ajustement du modèle.) est plausible mais faux",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quel score évalue l'exactitude probabiliste d'un modèle de classification?",
       "image_url": null,
       "choices": {
-        "A": "Brier score",
+        "A": "Nombre de faux positifs",
         "B": "F1 score",
-        "C": "Nombre de faux positifs",
+        "C": "Brier score",
         "D": "Coefficient de corrélation de Pearson"
       },
-      "correct_answer": "A",
-      "explanation": "Le Brier score mesure l'exactitude probabiliste des prédictions, calculant la moyenne des écarts quadratiques entre probabilités prédites et résultats réels. La réponse B évalue l'équilibre entre précision et rappel. La réponse C est un indicateur de performance des faux positifs. La réponse D mesure la relation linéaire entre deux variables, non applicable pour une évaluation probabiliste.",
+      "correct_answer": "C",
+      "explanation": "Le Brier score mesure l'exactitude probabiliste des prédictions, calculant la moyenne des écarts quadratiques entre probabilités prédites et résultats réels. La réponse B évalue l'équilibre entre précision et rappel. La réponse C est un indicateur de performance des faux positifs. La réponse D mesure la relation linéaire entre deux variables, non applicable pour une évaluation probabiliste. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Nombre de faux positifs) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (F1 score) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Coefficient de",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quel concept décrit l'ajustement de la sortie d'un modèle pour qu'elle représente mieux les vraies probabilités d'occurrence?",
       "image_url": null,
       "choices": {
-        "A": "Calibration des probabilités",
+        "A": "Augmentation des données",
         "B": "Normalisation des données",
         "C": "Réduction de la dimensionnalité",
-        "D": "Augmentation des données"
+        "D": "Calibration des probabilités"
       },
-      "correct_answer": "A",
-      "explanation": "La calibration des probabilités ajuste les prédictions d'un modèle pour qu'elles correspondent mieux aux probabilités réelles. La normalisation (réponse B) échelle les caractéristiques, la réduction de la dimensionnalité (réponse C) simplifie les modèles, et l'augmentation des données (réponse D) améliore la variété des échantillons d'entraînement.",
+      "correct_answer": "D",
+      "explanation": "La calibration des probabilités ajuste les prédictions d'un modèle pour qu'elles correspondent mieux aux probabilités réelles. La normalisation (réponse B) échelle les caractéristiques, la réduction de la dimensionnalité (réponse C) simplifie les modèles, et l'augmentation des données (réponse D) améliore la variété des échantillons d'entraînement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmentation des données) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Normalisation des données) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Réduction de la dimensionnalité) est plausible mais faux car il ne respecte pas",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "En augmentant le nombre de fonctionnalités utilisées dans le modèle."
       },
       "correct_answer": "A",
-      "explanation": "Une courbe de calibration permet de visualiser la calibration du modèle en comparant ses probabilités prédites aux résultats observés. La réponse B est fausse car le MSE est utilisé pour l'ajustement et non pour la calibration. La réponse C est incorrecte, car l'échantillon d'entraînement n'intervient pas directement dans la calibration. La réponse D est aussi incorrecte, augmenter les fonctionnalités ne garantit pas une meilleure calibration.",
+      "explanation": "Une courbe de calibration permet de visualiser la calibration du modèle en comparant ses probabilités prédites aux résultats observés. La réponse B est fausse car le MSE est utilisé pour l'ajustement et non pour la calibration. La réponse C est incorrecte, car l'échantillon d'entraînement n'intervient pas directement dans la calibration. La réponse D est aussi incorrecte, augmenter les fonctionnalités ne garantit pas une meilleure calibration. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (En minimisant simplement la métrique d'erreur quadratique mean squared error (MSE).) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En contrôlant la taille de l'échantillon d'entraînement.) est",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Pourquoi une calibration inadéquate peut-elle poser problème dans l'utilisation d'un modèle prédictif?",
       "image_url": null,
       "choices": {
-        "A": "Parce que les décisions basées sur des probabilités peuvent être incorrectes.",
-        "B": "Parce que le modèle aura une complexité temporelle élevée.",
+        "A": "Parce que le modèle aura une complexité temporelle élevée.",
+        "B": "Parce que les décisions basées sur des probabilités peuvent être incorrectes.",
         "C": "Parce que cela entraînera nécessairement une surestimation des rappels.",
         "D": "Parce que cela maximise automatiquement le F1 score."
       },
-      "correct_answer": "A",
-      "explanation": "Si un modèle est mal calibré, les probabilités prédites peuvent conduire à de mauvaises décisions, car elles ne reflètent pas fidèlement la réalité. La réponse B est fausse, la complexité n'est pas directement liée à la calibration. La réponse C est incorrecte, bien que la calibration puisse affecter le rappel, elle ne le surestime pas nécessairement. La réponse D est fausse, le F1 score n'est pas automatiquement maximisé par une calibration inadéquate.",
+      "correct_answer": "B",
+      "explanation": "Si un modèle est mal calibré, les probabilités prédites peuvent conduire à de mauvaises décisions, car elles ne reflètent pas fidèlement la réalité. La réponse B est fausse, la complexité n'est pas directement liée à la calibration. La réponse C est incorrecte, bien que la calibration puisse affecter le rappel, elle ne le surestime pas nécessairement. La réponse D est fausse, le F1 score n'est pas automatiquement maximisé par une calibration inadéquate. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce que le modèle aura une complexité temporelle élevée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce que cela",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Qu'est-ce qui pourrait indiquer un modèle de classification bien calibré?",
       "image_url": null,
       "choices": {
-        "A": "Les probabilités prédites sont proches des fréquences observées.",
+        "A": "Le modèle généralise bien sur des nouvelles données.",
         "B": "Le modèle sur-apprend et a de bonnes performances sur les données d'entraînement.",
-        "C": "Le modèle généralise bien sur des nouvelles données.",
+        "C": "Les probabilités prédites sont proches des fréquences observées.",
         "D": "Le modèle a une faible variance dans ses prédictions."
       },
-      "correct_answer": "A",
-      "explanation": "Un modèle bien calibré prédit des probabilités qui correspondent étroitement aux fréquences observées des classes. La réponse B décrit le surapprentissage, qui n'a pas de rapport direct avec la calibration. La réponse C concerne la généralisation, bien qu'importante, elle n'adresse pas la calibration spécifique. La réponse D fait référence à la variance, qui est plus liée à la fiabilité qu'à la calibration proprement dite.",
+      "correct_answer": "C",
+      "explanation": "Un modèle bien calibré prédit des probabilités qui correspondent étroitement aux fréquences observées des classes. La réponse B décrit le surapprentissage, qui n'a pas de rapport direct avec la calibration. La réponse C concerne la généralisation, bien qu'importante, elle n'adresse pas la calibration spécifique. La réponse D fait référence à la variance, qui est plus liée à la fiabilité qu'à la calibration proprement dite. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le modèle généralise bien sur des nouvelles données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le modèle sur-apprend et a de bonnes performances sur les données d'entraînement.)",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel impact un seuil de décision mal choisi peut-il avoir sur un modèle de classification?",
       "image_url": null,
       "choices": {
-        "A": "Il peut causer un déséquilibre entre taux de faux positifs et vrais positifs.",
+        "A": "Il garantit que toutes les classes sont également représentées.",
         "B": "Il réduit automatiquement la complexité du modèle.",
         "C": "Il augmente la surestimation des variables d'entrée.",
-        "D": "Il garantit que toutes les classes sont également représentées."
+        "D": "Il peut causer un déséquilibre entre taux de faux positifs et vrais positifs."
       },
-      "correct_answer": "A",
-      "explanation": "Un seuil de décision mal choisi peut déséquilibrer le nombre de faux positifs et vrais positifs en contrôlant la transformée des probabilités en classes. La réponse B est fausse, le seuil affecte la classification et non la complexité du modèle. La réponse C est incorrecte, le seuil n'affecte pas l'estimation des variables d'entrée. La réponse D est également fausse, car le seuil ne garantit pas une répartition égale des classes.",
+      "correct_answer": "D",
+      "explanation": "Un seuil de décision mal choisi peut déséquilibrer le nombre de faux positifs et vrais positifs en contrôlant la transformée des probabilités en classes. La réponse B est fausse, le seuil affecte la classification et non la complexité du modèle. La réponse C est incorrecte, le seuil n'affecte pas l'estimation des variables d'entrée. La réponse D est également fausse, car le seuil ne garantit pas une répartition égale des classes. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il garantit que toutes les classes sont également représentées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il réduit automatiquement la complexité",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Amélioration des taux de variabilité des données."
       },
       "correct_answer": "A",
-      "explanation": "L'ajustement des biais de prédiction est crucial pour une bonne calibration, afin que les probabilités reflètent fidèlement les véritables probabilités des événements. La réponse B est incorrecte, la mémoire n'affecte pas la calibration. La réponse C est hors sujet car la calibration n'est pas affectée par des problèmes matériels. La réponse D est inappropriée, la variabilité des données concerne surtout la généralisation.",
+      "explanation": "L'ajustement des biais de prédiction est crucial pour une bonne calibration, afin que les probabilités reflètent fidèlement les véritables probabilités des événements. La réponse B est incorrecte, la mémoire n'affecte pas la calibration. La réponse C est hors sujet car la calibration n'est pas affectée par des problèmes matériels. La réponse D est inappropriée, la variabilité des données concerne surtout la généralisation. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Augmentation de la mémoire disponible pour le calcul.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Minimisation des incompatibilités matérielles.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Comment un modèle peut-il être calibré après avoir été entraîné?",
       "image_url": null,
       "choices": {
-        "A": "En utilisant une méthode de Platt Scaling ou isotonic regression.",
-        "B": "En augmentant le nombre d'itérations d'entraînement.",
+        "A": "En augmentant le nombre d'itérations d'entraînement.",
+        "B": "En utilisant une méthode de Platt Scaling ou isotonic regression.",
         "C": "En supprimant les outliers des données d'entraînement.",
         "D": "En ajoutant davantage de classes à prédire."
       },
-      "correct_answer": "A",
-      "explanation": "Platt Scaling et isotonic regression sont des techniques de post-calibration utilisées pour ajuster les probabilités prédites d'un modèle. La réponse B est fausse, car augmenter le nombre d'itérations ne concerne que l'ajustement initial. La réponse C est incorrecte, bien que la suppression d'outliers puisse aider la précision, elle n'améliore pas directement la calibration. La réponse D est fausse, l'ajout de classes n'est pas un facteur de calibration.",
+      "correct_answer": "B",
+      "explanation": "Platt Scaling et isotonic regression sont des techniques de post-calibration utilisées pour ajuster les probabilités prédites d'un modèle. La réponse B est fausse, car augmenter le nombre d'itérations ne concerne que l'ajustement initial. La réponse C est incorrecte, bien que la suppression d'outliers puisse aider la précision, elle n'améliore pas directement la calibration. La réponse D est fausse, l'ajout de classes n'est pas un facteur de calibration. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En augmentant le nombre d'itérations d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En supprimant les outliers des données d'entraînement.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quel est un mauvais effet potentiel d'un modèle mal calibré dans une application médicale?",
       "image_url": null,
       "choices": {
-        "A": "Donner des assurances incorrectes aux patients sur leurs diagnostics.",
+        "A": "Réduire le coût de traitement des données.",
         "B": "Augmenter la précision du model.",
-        "C": "Réduire le coût de traitement des données.",
+        "C": "Donner des assurances incorrectes aux patients sur leurs diagnostics.",
         "D": "Faciliter le surapprentissage des données."
       },
-      "correct_answer": "A",
-      "explanation": "Un modèle mal calibré peut donner une fausse impression de confiance sur des diagnostics médicaux, ce qui a des implications critiques. La réponse B est fausse, une mauvaise calibration n'augmente pas la précision, mais souvent la diminue. La réponse C n'est pas correcte non plus, le coût n'est pas lié à la calibration. La réponse D est incorrecte, bien que la calibration puisse être impactée par le surapprentissage, elle ne le facilite pas directement.",
+      "correct_answer": "C",
+      "explanation": "Un modèle mal calibré peut donner une fausse impression de confiance sur des diagnostics médicaux, ce qui a des implications critiques. La réponse B est fausse, une mauvaise calibration n'augmente pas la précision, mais souvent la diminue. La réponse C n'est pas correcte non plus, le coût n'est pas lié à la calibration. La réponse D est incorrecte, bien que la calibration puisse être impactée par le surapprentissage, elle ne le facilite pas directement. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire le coût de traitement des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter la précision",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Quel est l'effet d'un faible Brier score pour un modèle prédictif?",
       "image_url": null,
       "choices": {
-        "A": "Indique que le modèle est bien calibré.",
+        "A": "Indique une hétérogénéité élevée dans les prédictions.",
         "B": "Signifie que le modèle a une reconnaissance faible des patterns.",
         "C": "Démontre que le modèle a surestimé les faux négatifs.",
-        "D": "Indique une hétérogénéité élevée dans les prédictions."
+        "D": "Indique que le modèle est bien calibré."
       },
-      "correct_answer": "A",
-      "explanation": "Un faible Brier score signifie que les probabilités prédites sont proches des valeurs réelles, donc le modèle est bien calibré. La réponse B est fausse, la reconnaissance des patterns n'est pas liée au Brier score. La réponse C est incorrecte, le Brier score n'indique pas spécifiquement des erreurs de faux négatifs. La réponse D est aussi incorrecte, l'hétérogénéité élevée des prédictions n'est pas indiquée par le Brier score.",
+      "correct_answer": "D",
+      "explanation": "Un faible Brier score signifie que les probabilités prédites sont proches des valeurs réelles, donc le modèle est bien calibré. La réponse B est fausse, la reconnaissance des patterns n'est pas liée au Brier score. La réponse C est incorrecte, le Brier score n'indique pas spécifiquement des erreurs de faux négatifs. La réponse D est aussi incorrecte, l'hétérogénéité élevée des prédictions n'est pas indiquée par le Brier score. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Indique une hétérogénéité élevée dans les prédictions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Signifie que le modèle a une reconnaissance faible des",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Analyse des composantes principales"
       },
       "correct_answer": "A",
-      "explanation": "La courbe de calibration est utilisée pour comparer les probabilités prédites par le modèle avec les probabilités observées, afin d'évaluer sa calibration. La réponse B décrit une courbe qui illustre la performance de classification binaire (taux de TP vs taux de FP). La réponse C concerne un mesure de distribution des valeurs, et la réponse D est une technique de réduction de dimensionnalité, non pour évaluer la calibration.",
+      "explanation": "La courbe de calibration est utilisée pour comparer les probabilités prédites par le modèle avec les probabilités observées, afin d'évaluer sa calibration. La réponse B décrit une courbe qui illustre la performance de classification binaire (taux de TP vs taux de FP). La réponse C concerne un mesure de distribution des valeurs, et la réponse D est une technique de réduction de dimensionnalité, non pour évaluer la calibration. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Courbe ROC) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Coefficient de Gini) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Que mesure le Brier score précisément pour un modèle de classification binaire?",
       "image_url": null,
       "choices": {
-        "A": "La moyenne des carrés des écarts entre les probabilités prédites et observées.",
-        "B": "La mitoyenneté de la distribution des classes.",
+        "A": "La mitoyenneté de la distribution des classes.",
+        "B": "La moyenne des carrés des écarts entre les probabilités prédites et observées.",
         "C": "La covariance entre les prédictions et les vraies valeurs.",
         "D": "Le gain en performance obtenu après la réduction de biais."
       },
-      "correct_answer": "A",
-      "explanation": "Le Brier score mesure avec précision l'écart au carré entre les probabilités prédites et les résultats réels, facilitant l'évaluation de l'exactitude probabiliste. La réponse B est incorrecte puisqu'elle ne se rapporte pas au Brier score. La réponse C mentionne la covariance, qui est un concept statistique différent. La réponse D est fausse, car elle décrit un résultat hypothétique non lié directement au Brier score.",
+      "correct_answer": "B",
+      "explanation": "Le Brier score mesure avec précision l'écart au carré entre les probabilités prédites et les résultats réels, facilitant l'évaluation de l'exactitude probabiliste. La réponse B est incorrecte puisqu'elle ne se rapporte pas au Brier score. La réponse C mentionne la covariance, qui est un concept statistique différent. La réponse D est fausse, car elle décrit un résultat hypothétique non lié directement au Brier score. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (La mitoyenneté de la distribution des classes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La covariance entre les prédictions et les vraies valeurs.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Que signifie une courbe de calibration en ligne droite à 45°?",
       "image_url": null,
       "choices": {
-        "A": "Le modèle est parfaitement calibré.",
+        "A": "Le modèle surestime systématiquement les probabilités.",
         "B": "Le modèle sous-estime systématiquement les probabilités.",
-        "C": "Le modèle surestime systématiquement les probabilités.",
+        "C": "Le modèle est parfaitement calibré.",
         "D": "Les prédictions du modèle sont indépendantes des données d'entrée."
       },
-      "correct_answer": "A",
-      "explanation": "Une courbe de calibration en ligne droite à 45° indique que les prédictions probabilistes du modèle correspondent exactement aux fréquences observées, soit une calibration parfaite. La réponse B et C sont fausses car elles indiqueraient que les points sur la courbe se situeraient en dessous ou au-dessus de la diagonale respectivement. La réponse D est incorrecte car elle n'a aucun lien avec la calibration.",
+      "correct_answer": "C",
+      "explanation": "Une courbe de calibration en ligne droite à 45° indique que les prédictions probabilistes du modèle correspondent exactement aux fréquences observées, soit une calibration parfaite. La réponse B et C sont fausses car elles indiqueraient que les points sur la courbe se situeraient en dessous ou au-dessus de la diagonale respectivement. La réponse D est incorrecte car elle n'a aucun lien avec la calibration. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le modèle surestime systématiquement les probabilités.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le modèle sous-estime systématiquement les probabilités.) est plausible mais faux car il ne respecte",
       "difficulty": "hard"
     },
     {
@@ -274,12 +274,12 @@
       "question": "Quelle est la principale utilité d'une courbe de calibration dans un modèle de classification binaire ?",
       "image_url": null,
       "choices": {
-        "A": "Évaluer la concordance entre les probabilités prédites et les résultats observés.",
+        "A": "Mesurer la corrélation entre deux variables indépendantes.",
         "B": "Déterminer l'erreur quadratique moyenne des prédictions.",
         "C": "Calculer la précision du modèle en termes de faux positifs et faux négatifs.",
-        "D": "Mesurer la corrélation entre deux variables indépendantes."
+        "D": "Évaluer la concordance entre les probabilités prédites et les résultats observés."
       },
-      "correct_answer": "A",
+      "correct_answer": "D",
       "explanation": "Une courbe de calibration est utilisée pour évaluer la concordance entre les probabilités prédites par un modèle de classification et les résultats réels observés. Ceci est crucial pour vérifier que les probabilités de sortie peuvent être utilisées pour prendre des décisions informées. La réponse B décrit le Brier score, qui mesure l'erreur quadratique des probabilités prédites, mais n'évalue pas directement la calibration. La réponse C concerne la précision du modèle, qui est évaluée via d'autres métriques comme l'exactitude ou le F1 score, et non la calibration. La réponse D se réfère à une corrélation, qui n'est pas pertinente dans le contexte de la calibration des modèles.",
       "difficulty": "medium"
     }

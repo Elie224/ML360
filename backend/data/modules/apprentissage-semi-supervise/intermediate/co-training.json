@@ -14,7 +14,7 @@
         "D": "Fusionner les prédictions de multiples modèles pour améliorer l'accuracy."
       },
       "correct_answer": "A",
-      "explanation": "Le co-training se base sur deux modèles formés sur des vues complémentaires, qui s'échangent des labels pour mieux étiqueter les données non labellisées. B implique un modèle unique, C parle de dépendance au lieu d'indépendance, et D décrit le bagging, non applicable ici.",
+      "explanation": "Le co-training se base sur deux modèles formés sur des vues complémentaires, qui s'échangent des labels pour mieux étiqueter les données non labellisées. B implique un modèle unique, C parle de dépendance au lieu d'indépendance, et D décrit le bagging, non applicable ici. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Former un seul modèle à partir de tous les sous-ensembles de données disponibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Rendre les modèles dépendants l'un de l'autre pour renforcer la performance.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "En co-training, qu'entend-on par 'vues complémentaires' ?",
       "image_url": null,
       "choices": {
-        "A": "Des descriptions de données qui sont conditionnellement indépendantes mais fournissent des informations complètes ensemble.",
-        "B": "Des jeux de données qui se ressemblent mais sont collectés indépendamment.",
+        "A": "Des jeux de données qui se ressemblent mais sont collectés indépendamment.",
+        "B": "Des descriptions de données qui sont conditionnellement indépendantes mais fournissent des informations complètes ensemble.",
         "C": "Des subsets de données qui sont séparés temporellement.",
         "D": "Des représentations de données qui nécessitent le même algorithme de modèle."
       },
-      "correct_answer": "A",
-      "explanation": "'Vues complémentaires' fait référence à des perspectives de données conditionnellement indépendantes qui combinées offrent une vue complète. B parle de similarité sans complémentarité, C se concentre sur le temps non pertinent, et D ne respecte pas l'indépendance requise.",
+      "correct_answer": "B",
+      "explanation": "'Vues complémentaires' fait référence à des perspectives de données conditionnellement indépendantes qui combinées offrent une vue complète. B parle de similarité sans complémentarité, C se concentre sur le temps non pertinent, et D ne respecte pas l'indépendance requise. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Des jeux de données qui se ressemblent mais sont collectés indépendamment.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Des subsets de données qui sont séparés temporellement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Des représentations de données qui nécessitent le",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quel rôle joue l'indépendance conditionnelle dans le co-training?",
       "image_url": null,
       "choices": {
-        "A": "Elle assure que les erreurs des modèles sur chaque vue ne se renforcent pas mutuellement.",
+        "A": "Elle évite la surapprentissage en partitionnant aléatoirement les données.",
         "B": "Elle garantit que chaque modèle atteint une haute précision seul.",
-        "C": "Elle évite la surapprentissage en partitionnant aléatoirement les données.",
+        "C": "Elle assure que les erreurs des modèles sur chaque vue ne se renforcent pas mutuellement.",
         "D": "Elle réduit le nombre total d'exemples nécessaires pour le training."
       },
-      "correct_answer": "A",
-      "explanation": "L'indépendance conditionnelle évite que les erreurs se propagent entre les modèles en assurant qu'elles ne se supportent pas mutuellement. B confond avec la validation croisée, C décrit une autre technique, et D est une conséquence, pas une explication directe.",
+      "correct_answer": "C",
+      "explanation": "L'indépendance conditionnelle évite que les erreurs se propagent entre les modèles en assurant qu'elles ne se supportent pas mutuellement. B confond avec la validation croisée, C décrit une autre technique, et D est une conséquence, pas une explication directe. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle évite la surapprentissage en partitionnant aléatoirement les données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle garantit que chaque modèle atteint une haute précision seul.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle réduit le nombre total d'exemples",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "En quoi l'échange de labels améliore-t-il l'apprentissage des modèles en co-training?",
       "image_url": null,
       "choices": {
-        "A": "En permettant aux modèles d'améliorer leurs généralisations respectives via des données supposées fiables.",
+        "A": "En réduisant le nombre d'erreurs faits par le jeu de données test.",
         "B": "En augmentant directement la taille du dataset étiqueté initial.",
         "C": "En contrôlant spécifiquement la variance des prédictions de chaque modèle.",
-        "D": "En réduisant le nombre d'erreurs faits par le jeu de données test."
+        "D": "En permettant aux modèles d'améliorer leurs généralisations respectives via des données supposées fiables."
       },
-      "correct_answer": "A",
-      "explanation": "Grâce à l'échange de labels, chaque modèle s'appuie sur les prédictions de l'autre comme sur des données supposées fiables, affinant ainsi sa généralisation. B ne concerne pas l'augmentation initiale, C parle de biais-variance non direct en co-training, et D est une conséquence sans lien d'amélioration direct.",
+      "correct_answer": "D",
+      "explanation": "Grâce à l'échange de labels, chaque modèle s'appuie sur les prédictions de l'autre comme sur des données supposées fiables, affinant ainsi sa généralisation. B ne concerne pas l'augmentation initiale, C parle de biais-variance non direct en co-training, et D est une conséquence sans lien d'amélioration direct. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En réduisant le nombre d'erreurs faits par le jeu de données test.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En augmentant directement la taille du dataset étiqueté initial.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "La contrainte que les modèles ne doivent jamais échanger de labels de manière bidirectionnelle."
       },
       "correct_answer": "A",
-      "explanation": "L'accord entre modèles est important pour éviter de propager des erreurs. B va à l'encontre de l'idée de vues complémentaires, C parle de processus d'entraînement synchronisé, pas typique en co-training, et D est faux car l'échange est bidirectionnel par design.",
+      "explanation": "L'accord entre modèles est important pour éviter de propager des erreurs. B va à l'encontre de l'idée de vues complémentaires, C parle de processus d'entraînement synchronisé, pas typique en co-training, et D est faux car l'échange est bidirectionnel par design. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (L'utilisation du même ensemble de features pour chaque modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'optimisation synchrone des deux modèles sur les mêmes instances.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La contrainte que les modèles ne",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Pourquoi le co-training sur des vues dépendantes pourrait-il échouer?",
       "image_url": null,
       "choices": {
-        "A": "Parce que les erreurs dans les prédictions peuvent se renforcer mutuellement.",
-        "B": "Parce que les modèles ont moins de paramètres pour capturer de la complexité.",
+        "A": "Parce que les modèles ont moins de paramètres pour capturer de la complexité.",
+        "B": "Parce que les erreurs dans les prédictions peuvent se renforcer mutuellement.",
         "C": "Parce que le set de données devient trop petit pour entraîner efficacement.",
         "D": "Parce que les modèles deviennent identiques rapidement, brisant l'indépendance."
       },
-      "correct_answer": "A",
-      "explanation": "Sans indépendance conditionnelle, les erreurs de prédiction se renforcent. B ne concerne pas le rôle des vues, C est une question de dataset non liée, et D explique l'état final sans viser la cause initiale de divergence.",
+      "correct_answer": "B",
+      "explanation": "Sans indépendance conditionnelle, les erreurs de prédiction se renforcent. B ne concerne pas le rôle des vues, C est une question de dataset non liée, et D explique l'état final sans viser la cause initiale de divergence. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce que les modèles ont moins de paramètres pour capturer de la complexité.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce que le set de données devient trop petit pour entraîner efficacement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Parce que",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Comment l'inadéquation des vues affecte-t-elle les performances du co-training?",
       "image_url": null,
       "choices": {
-        "A": "Elle limite le transfert d'informations fiables, conduisant à une mauvaise généralisation.",
+        "A": "Elle conduit souvent à une augmentation de la complexité computationnelle.",
         "B": "Elle augmente la précision mais réduit le rappel en influençant les caractéristiques.",
-        "C": "Elle conduit souvent à une augmentation de la complexité computationnelle.",
+        "C": "Elle limite le transfert d'informations fiables, conduisant à une mauvaise généralisation.",
         "D": "Elle joue un rôle mineur car la diversité des données reste prioritaire."
       },
-      "correct_answer": "A",
-      "explanation": "L'inadéquation des vues restreint l'information échangée, affectant négativement la généralisation. B aborde précision/rappel non directement touchée, C implique une complexité technique non justifiée par vues, et D minimise de manière inexacte l'importance des vues adéquates.",
+      "correct_answer": "C",
+      "explanation": "L'inadéquation des vues restreint l'information échangée, affectant négativement la généralisation. B aborde précision/rappel non directement touchée, C implique une complexité technique non justifiée par vues, et D minimise de manière inexacte l'importance des vues adéquates. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle conduit souvent à une augmentation de la complexité computationnelle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle augmente la précision mais réduit le rappel en influençant les caractéristiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle joue un rôle mineur car la",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Un modèle correct de co-training exploite quelles caractéristiques?",
       "image_url": null,
       "choices": {
-        "A": "Deux classes de modèle ayant des accès indépendants mais complémentaires à différentes caractéristiques.",
+        "A": "Un modèle non supervisé qui limite son influence aux vues équitablement.",
         "B": "Une fusion de modèle sans accès séparé aux features individualisées.",
         "C": "Une architecture de réseau neural unique permettant le partage de poids.",
-        "D": "Un modèle non supervisé qui limite son influence aux vues équitablement."
+        "D": "Deux classes de modèle ayant des accès indépendants mais complémentaires à différentes caractéristiques."
       },
-      "correct_answer": "A",
-      "explanation": "Les modèles fonctionnent sur des vues indépendantes mais complémentaires pour composer des labels. B ne sépare pas les vues, C mêle métriques non applicables, D ajoute des restrictions en dehors du champ supervisé.",
+      "correct_answer": "D",
+      "explanation": "Les modèles fonctionnent sur des vues indépendantes mais complémentaires pour composer des labels. B ne sépare pas les vues, C mêle métriques non applicables, D ajoute des restrictions en dehors du champ supervisé. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un modèle non supervisé qui limite son influence aux vues équitablement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Une fusion de modèle sans accès séparé aux features individualisées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une architecture de réseau neural unique permettant le partage de",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Une comparaison continue des erreurs de classification obtenues par chaque modèle."
       },
       "correct_answer": "A",
-      "explanation": "Le bon accord en co-training se vérifie par la similarité des prédictions sur données non étiquetées. B n'est pas spécifique à co-training, C se rattache à une approche différentielle, et D suit une autre métrique que la notion de 'concordance'.",
+      "explanation": "Le bon accord en co-training se vérifie par la similarité des prédictions sur données non étiquetées. B n'est pas spécifique à co-training, C se rattache à une approche différentielle, et D suit une autre métrique que la notion de 'concordance'. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (L'utilisation de plusieurs modèles jusqu'à obtenir une convergence d'accord.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'implémentation de techniques de boosting pour réduire l'erreur globale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Une comparaison continue des erreurs de",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Que devient l'erreur lorsque les modèles ne s'accordent pas sur les prédictions en co-training?",
       "image_url": null,
       "choices": {
-        "A": "L'erreur totale peut augmenter car les labels échangés sont peu fiables.",
-        "B": "L'erreur totale reste identique, car les modèles sont indépendants.",
+        "A": "L'erreur totale reste identique, car les modèles sont indépendants.",
+        "B": "L'erreur totale peut augmenter car les labels échangés sont peu fiables.",
         "C": "L'erreur totale ne change que si un jeu de données est plus grand que l'autre.",
         "D": "L'erreur totale diminue forcément car la diversité des modèles est assurée."
       },
-      "correct_answer": "A",
-      "explanation": "Des désaccords engendrent l'augmentation des erreurs dues à l'échange de labels moins fiables. B fausse l'indépendance comme bénéfice anti-erreur, C relie incorrectement taille et erreur, et D suppose erronément une diminution automatique des erreurs par diversité de modèle.",
+      "correct_answer": "B",
+      "explanation": "Des désaccords engendrent l'augmentation des erreurs dues à l'échange de labels moins fiables. B fausse l'indépendance comme bénéfice anti-erreur, C relie incorrectement taille et erreur, et D suppose erronément une diminution automatique des erreurs par diversité de modèle. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'erreur totale reste identique, car les modèles sont indépendants.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'erreur totale ne change que si un jeu de données est plus grand que l'autre.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'erreur totale",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Quel défi majeur doit être traité pour le succès en co-training?",
       "image_url": null,
       "choices": {
-        "A": "Assurer que les deux modèles perçoivent des données vraiment indépendantes.",
+        "A": "Maximiser l'apprentissage automatique en n'utilisant qu'une seule vue.",
         "B": "Trouver un moyen de partager les poids entre toutes les couches du réseau.",
-        "C": "Maximiser l'apprentissage automatique en n'utilisant qu'une seule vue.",
+        "C": "Assurer que les deux modèles perçoivent des données vraiment indépendantes.",
         "D": "Minimiser la mémoire utilisée par l'entraînement de deux modèles."
       },
-      "correct_answer": "A",
-      "explanation": "Le succès du co-training repose sur l'indépendance des vues. B, partage de poids, déforme l'idée des vues indépendantes, C oppose vue unique à la notion centrale, D, rentabilité mémoire, évite la question qualitative.",
+      "correct_answer": "C",
+      "explanation": "Le succès du co-training repose sur l'indépendance des vues. B, partage de poids, déforme l'idée des vues indépendantes, C oppose vue unique à la notion centrale, D, rentabilité mémoire, évite la question qualitative. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Maximiser l'apprentissage automatique en n'utilisant qu'une seule vue.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Trouver un moyen de partager les poids entre toutes les couches du réseau.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Minimiser la mémoire utilisée par l'entraînement de deux modèles.) est",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel impact a un mauvais choix de perspectives complémentaires en co-training?",
       "image_url": null,
       "choices": {
-        "A": "Il réduit l'effet bénéfique d'étiqueter de nouveaux exemples avec précision.",
+        "A": "Il permet une meilleure compréhension mais réduit la précision.",
         "B": "Il augmente automatiquement la convergence du modèle si bien ajusté.",
         "C": "Il a un effet négligeable vu que les données demeurent constantes.",
-        "D": "Il permet une meilleure compréhension mais réduit la précision."
+        "D": "Il réduit l'effet bénéfique d'étiqueter de nouveaux exemples avec précision."
       },
-      "correct_answer": "A",
-      "explanation": "Choisir des perspectives inappropriées diminue la qualité des labels prédits, ce qui fausse les performances. B suppose à tort une amélioration garantie, C minimise indûment l'impact, et D décrit faussement une compréhension au détriment de la précision.",
+      "correct_answer": "D",
+      "explanation": "Choisir des perspectives inappropriées diminue la qualité des labels prédits, ce qui fausse les performances. B suppose à tort une amélioration garantie, C minimise indûment l'impact, et D décrit faussement une compréhension au détriment de la précision. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il permet une meilleure compréhension mais réduit la précision.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il augmente automatiquement la convergence du modèle si bien ajusté.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il a un effet négligeable vu que les",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "En recalibrant les prédictions selon un seuil défini de bruit de données."
       },
       "correct_answer": "A",
-      "explanation": "Le co-training réduit le bruit en permettant aux vues de se valider mutuellement via l'échange, équilibrant ainsi les inadéquations. B propose à tort une fusion de vues, C concentre les erreurs non souhaitées et D, le recalibrage n'est pas la norme en co-training.",
+      "explanation": "Le co-training réduit le bruit en permettant aux vues de se valider mutuellement via l'échange, équilibrant ainsi les inadéquations. B propose à tort une fusion de vues, C concentre les erreurs non souhaitées et D, le recalibrage n'est pas la norme en co-training. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (En fusionnant les vues pour réduire les biais des données bruyantes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En isolant les erreurs dans un seul modèle pour limiter leur propagation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quel est l'un des risques d'une mauvaise implementation de co-training?",
       "image_url": null,
       "choices": {
-        "A": "Propagation de fausses étiquettes entre modèles conduisant à une baisse de performance.",
-        "B": "Augmentation forcée du nombre de classes pour inclure tous les échantillons.",
+        "A": "Augmentation forcée du nombre de classes pour inclure tous les échantillons.",
+        "B": "Propagation de fausses étiquettes entre modèles conduisant à une baisse de performance.",
         "C": "Réduction du temps d'entrainement en supprimant certaines vues de prédiction.",
         "D": "Conversion non désirée de données en format non supervisé."
       },
-      "correct_answer": "A",
-      "explanation": "Sans gestion adéquate, le co-training peut amplifier les erreurs via la propagation de fausses étiquettes. B resserre la diversité, C diminue des perspectives essentielles par rapidité, D incorpore mal un format non supervisé inapproprié.",
+      "correct_answer": "B",
+      "explanation": "Sans gestion adéquate, le co-training peut amplifier les erreurs via la propagation de fausses étiquettes. B resserre la diversité, C diminue des perspectives essentielles par rapidité, D incorpore mal un format non supervisé inapproprié. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmentation forcée du nombre de classes pour inclure tous les échantillons.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Réduction du temps d'entrainement en supprimant certaines vues de prédiction.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Conversion non désirée de données en format non supervisé.)",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quelle stratégie peut optimiser l'accord entre modèles dans un schéma de co-training?",
       "image_url": null,
       "choices": {
-        "A": "Choisir des algorithmes avec une performance similaire mais des biais différents.",
+        "A": "Limiter la taille des ensembles de données non étiquetées.",
         "B": "Toujours utiliser les mêmes hyperparamètres pour les deux modèles.",
-        "C": "Limiter la taille des ensembles de données non étiquetées.",
+        "C": "Choisir des algorithmes avec une performance similaire mais des biais différents.",
         "D": "Figer les architectures et les empêcher de mutuellement s'ajuster."
       },
-      "correct_answer": "A",
-      "explanation": "Utiliser des algorithmes avec des performances similaires mais des biais différents favorise une complémentarité renforcée. B n'explore pas assez la diversité dans l'apprentissage, C limite indûment l'information, et D fige l'évolution bénéfique.",
+      "correct_answer": "C",
+      "explanation": "Utiliser des algorithmes avec des performances similaires mais des biais différents favorise une complémentarité renforcée. B n'explore pas assez la diversité dans l'apprentissage, C limite indûment l'information, et D fige l'évolution bénéfique. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Limiter la taille des ensembles de données non étiquetées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Toujours utiliser les mêmes hyperparamètres pour les deux modèles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Figer les architectures et les empêcher de mutuellement s'ajuster.) est plausible mais faux car",
       "difficulty": "hard"
     }
   ]

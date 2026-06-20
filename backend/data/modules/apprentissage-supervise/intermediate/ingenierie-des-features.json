@@ -5,170 +5,170 @@
   "questions": [
     {
       "type": "text",
-      "question": "Quelle est la principale raison d'utiliser la standardisation des données avant l'entraînement d'un modèle?",
+      "question": "Quel processus implique de transformer des caractéristiques pour qu'elles aient une moyenne de 0 et un écart-type de 1 ?",
       "image_url": null,
       "choices": {
-        "A": "Améliorer la convergence de l'algorithme d'optimisation",
-        "B": "Ne pas avoir à traiter les valeurs manquantes",
-        "C": "Réduire la taille du dataset",
-        "D": "Préserver l'ordre des classes cibles"
+        "A": "Standardisation",
+        "B": "Normalisation",
+        "C": "Binarisation",
+        "D": "Encodage"
       },
       "correct_answer": "A",
-      "explanation": "La standardisation met les données sur une échelle commune, souvent nécessaire pour assurer une convergence rapide et stable dans de nombreux algorithmes d'optimisation. La standardisation n'élimine pas les valeurs manquantes (B), ne réduit pas la taille du dataset (C) et n'affecte pas l'ordre des classes cibles (D).",
+      "explanation": "La standardisation consiste à transformer les caractéristiques de manière à ce qu'elles aient une moyenne de 0 et un écart-type de 1. Cela est crucial pour faciliter la convergence des algorithmes d'apprentissage. Contrairement à cela, la normalisation redimensionne les valeurs pour se situer dans un intervalle entre 0 et 1, ce qui ne modifie pas l'écart-type ni la moyenne. La binarisation convertit les valeurs en 0 et 1, mais ne touche pas à la moyenne ou à l'écart-type. L'encodage est utilisé pour transformer des variables catégorielles en numériques, sans ajustement des caractéristiques numériques en termes de moyenne ou d'écart-type.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quel est l'impact principal d'une mauvaise sélection de variables pour un modèle supervisé?",
+      "question": "Quelle méthode consiste à sélectionner uniquement les caractéristiques utiles pour un modèle de machine learning?",
       "image_url": null,
       "choices": {
-        "A": "Réduction de la performance générale du modèle",
-        "B": "Augmentation de la taille physique des données",
-        "C": "Amélioration automatique des métriques de test",
-        "D": "Prévention des doublons dans les données"
-      },
-      "correct_answer": "A",
-      "explanation": "Une mauvaise sélection de variables peut inclure des variables non pertinentes qui ajoutent du bruit, réduisant ainsi la performance du modèle (A). Elle n'affecte pas nécessairement la taille physique des données (B) sauf si elle réduit les dimensions, n'améliore pas automatiquement les métriques de test (C) et ne s'occupe pas des doublons (D).",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Laquelle de ces techniques est utilisée pour créer de nouvelles variables à partir de données existantes?",
-      "image_url": null,
-      "choices": {
-        "A": "Encodage one-hot",
-        "B": "Variables dérivées",
-        "C": "Réduction de dimension",
-        "D": "Filtrage de caractéristiques"
+        "A": "Standardisation",
+        "B": "Sélection de variables",
+        "C": "Échantillonnage",
+        "D": "Imputation"
       },
       "correct_answer": "B",
-      "explanation": "Les variables dérivées sont générées à partir de transformations logiques ou arithmétiques sur les données existantes (B). L'encodage one-hot (A) transforme des variables catégorielles en variables binaires, la réduction de dimension (C) réduit la taille des données, et le filtrage de caractéristiques (D) supprime des variables.",
+      "explanation": "La sélection de variables consiste à identifier et conserver uniquement les caractéristiques les plus pertinentes pour l'entraînement d'un modèle, optimisant ainsi sa performance et réduisant le surapprentissage. Contrairement à cela, la standardisation se focalise sur l'ajustement des échelles sans influencer la pertinence des variables. L'échantillonnage se réfère à la sélection d'un sous-ensemble de données plutôt qu'à la réduction des caractéristiques. L'imputation concerne le remplissage des valeurs manquantes et ne traite pas de la sélection de variables pertinentes. Ainsi, la sélection de variables vise spécifiquement à optimiser la qualité des données utilisées pour l'entraînement.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Pourquoi est-il important de séparer les données d'entraînement et de validation lors de la création de variables dérivées?",
+      "question": "Qu'est-ce qu'une variable dérivée ?",
       "image_url": null,
       "choices": {
-        "A": "Pour éviter la fuite de données",
-        "B": "Pour économiser de l'espace de stockage",
-        "C": "Pour accélérer le temps d'entraînement",
-        "D": "Pour améliorer la normalisation des données"
+        "A": "Une échelle de normalisation pour les variables continues",
+        "B": "Une donnée manquante imputée à partir de la moyenne",
+        "C": "Une variable créée en combinant plusieurs variables existantes",
+        "D": "Un index de classification pour les valeurs catégorielles"
       },
-      "correct_answer": "A",
-      "explanation": "Séparer les ensembles évite la fuite de données, où des informations du set de validation contamineraient le set d'entraînement, biaisant les résultats (A). Cela n'économise pas l'espace de stockage (B), n'accélère pas l'entraînement (C) ou n'améliore pas directement la normalisation (D).",
-      "difficulty": "medium"
+      "correct_answer": "C",
+      "explanation": "Une variable dérivée est une nouvelle caractéristique obtenue en combinant ou transformant plusieurs variables existantes pour extraire des informations supplémentaires. À l'inverse, une donnée manquante imputée maintient sa nature d'origine, et une échelle de normalisation ne créée pas de variables nouvelles, elle redimensionne simplement les données existantes. Un index de classification transforme des catégories en valeurs numériques, mais il ne crée pas d'entités dérivées. L'utilisation de variables dérivées permet de mieux capturer la complexité des relations entre les données, ce qui est essentiel pour améliorer les modèles de machine learning.",
+      "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Lors de la standardisation, pourquoi est-il important de calculer les statistiques de normalisation uniquement sur le jeu d'entraînement?",
+      "question": "Quel problème est souvent causé par le partage de données cibles dans l'ensemble d'entraînement ?",
       "image_url": null,
       "choices": {
-        "A": "Pour garantir que le modèle est évalué de manière juste et indépendante",
-        "B": "Pour minimiser les erreurs de codage",
-        "C": "Pour maximiser la taille du jeu d'entraînement",
-        "D": "Pour faciliter l'interprétation des résultats"
-      },
-      "correct_answer": "A",
-      "explanation": "Calculer les statistiquessur le jeu d'entraînement assure que les informations du jeu de test ne biaisent pas le modèle, préservant ainsi une évaluation juste et indépendante (A). Cela n'affecte pas les erreurs de codage (B) ou la taille du jeu (C), ni ne facilite l'interprétation des résultats directement (D).",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Quel est un problème courant lorsque l'on n'élimine pas les variables inutiles pour un modèle de régression linéaire?",
-      "image_url": null,
-      "choices": {
-        "A": "Surgénéralisation du modèle",
-        "B": "Multicolinéarité accrue",
-        "C": "Réduction du biais",
-        "D": "Amélioration de la précision"
-      },
-      "correct_answer": "B",
-      "explanation": "Garder des variables inutiles peut accroître la multicolinéarité, rendant les coefficients du modèle instables (B). Cela ne cause pas la surgénéralisation (A), n'affecte pas directement le biais (C), et diminue souvent la précision (D), au lieu de l'améliorer.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Quelle approche vous permettrait de sélectionner les variables les plus pertinentes pour votre modèle sans biaiser les résultats?",
-      "image_url": null,
-      "choices": {
-        "A": "Utilisation d'un ensemble de validation distinct",
-        "B": "Utilisation des moyennes mobiles",
-        "C": "Inclusion de toutes les variables possibles",
-        "D": "Supprimer aléatoirement des variables"
-      },
-      "correct_answer": "A",
-      "explanation": "Utiliser un ensemble de validation permet d'évaluer la pertinence des variables de manière objective (A). Les moyennes mobiles (B) sont une technique de lissage temporel, inclure toutes les variables possibles (C) peut entraîner la suradéquation, et supprimer aléatoirement (D) manque de logique cohérente.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Quelle méthode est particulièrement sensible à la standardisation de ses variables d'entrée?",
-      "image_url": null,
-      "choices": {
-        "A": "Réseaux de neurones",
-        "B": "Arbres de décision",
-        "C": "Naïve Bayes",
-        "D": "K-means"
+        "A": "Surapprentissage",
+        "B": "Colinéarité",
+        "C": "Sous-échantillonnage",
+        "D": "Fuite de données"
       },
       "correct_answer": "D",
-      "explanation": "Les méthodes de clustering comme K-means sont sensibles aux échelles des données car elles calculent des distances (D). Les réseaux de neurones (A) bénéficient aussi de la standardisation, mais ne sont pas aussi dépendants. Les arbres de décision (B) et Naïve Bayes (C) ne sont pas influencés par les échelles.",
+      "explanation": "La fuite de données survient quand des informations futures, telles que les valeurs cibles, sont accidentellement incluses dans l'ensemble d'entraînement, biaisant ainsi les prévisions du modèle. Elle résulte d'un partage incorrect des données entre l'entraînement et la validation/test. Le surapprentissage découle de modèles trop complexes s'adaptant trop fortement aux données d'entraînement. La colinéarité fait référence aux variables indépendantes fortement corrélées, et le sous-échantillonnage implique ne pas exploiter suffisamment de données pour entraîner le modèle. La compréhension correcte de ces concepts est cruciale pour éviter les erreurs dans la configuration des ensembles de données.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pourquoi la génération de variables dérivées peut-elle parfois entraîner une fuite de données?",
+      "question": "Quel est un avantage clé de la standardisation des données avant l'entraînement d'un modèle ?",
       "image_url": null,
       "choices": {
-        "A": "Car elle peut inclure des informations du futur",
-        "B": "Car elle pourrait augmenter la pression sur les ressources CPU",
-        "C": "Car elle simplifie les modèles en éliminant des paramètres",
-        "D": "Car elle réduit la taille du dataset"
+        "A": "Améliore la stabilité de l'entraînement",
+        "B": "Augmente les données d'entraînement",
+        "C": "Transforme les variables catégorielles en numériques",
+        "D": "Retire les valeurs aberrantes"
       },
       "correct_answer": "A",
-      "explanation": "La génération de variables dérivées peut inclure des informations futures dans les variables, menant à une fuite (A). Cela n’a pas d'impact direct sur la pression sur les ressources CPU (B), ne simplifie pas nécessairement les modèles (C) et n'entraîne pas une réduction de taille du dataset (D).",
-      "difficulty": "hard"
+      "explanation": "La standardisation des données stabilise l'entraînement en normalisant les caractéristiques sur la même échelle, ce qui améliore la convergence des algorithmes d'optimisation. Cela signifie que chaque caractéristique a une moyenne de zéro et un écart-type d'un, facilitant ainsi l'apprentissage, surtout pour les modèles sensibles à l'échelle des données. La standardisation ne génère pas de données supplémentaires, contrairement à l'augmentation de données, qui crée de nouveaux exemples à partir de ceux existants. Elle ne convertit pas les variables catégorielles en numériques, rôle typiquement joué par l'encodage, comme l'encodage one-hot. Enfin, elle ne supprime pas les valeurs aberrantes, mais elle peut réduire leur impact en équilibrant leur influence relatif au reste des données.",
+      "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans le contexte de la prévention de fuite, pourquoi est-il dangereux d'utiliser des statistiques de jeu test pour le prétraitement des données?",
+      "question": "Quelle méthode garantit que les informations d'entraînement ne contiennent pas de données futures ?",
       "image_url": null,
       "choices": {
-        "A": "Parce que cela augmente artificiellement les performances du modèle",
-        "B": "Parce que cela facilite le surapprentissage",
-        "C": "Parce que cela empêche la permutation des étiquettes",
-        "D": "Parce que cela réduit la variance de la sortie cible"
-      },
-      "correct_answer": "A",
-      "explanation": "Utiliser des statistiques de test dans le prétraitement entraîne une fuite, car cela offre au modèle des informations qu'il n'aurait pas lors d'une prédiction réelle, augmentant artificiellement les performances (A). Cela ne facilite pas directement le surapprentissage (B), n'empêche pas la permutation (C) et ne réduit pas la variance cible (D).",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Lorsque l'on parle de fuites de données, pourquoi est-il nécessaire de séparer certaines étapes de prétraitement entre jeu de validation et jeu d'entraînement?",
-      "image_url": null,
-      "choices": {
-        "A": "Pour s'assurer que les métriques sont représentatives en conditions réelles",
-        "B": "Pour vérifier la capacité des modèles à mémoriser les échantillons",
-        "C": "Pour augmenter la taille du pipeline d'entraînement",
-        "D": "Pour éliminer la corrélation entre les variables dérivées"
-      },
-      "correct_answer": "A",
-      "explanation": "Séparer les étapes de prétraitement assure que l'évaluation reflète une situation indépendante, ce qui implique des métriques représentatives en conditions réelles (A). Cela ne vérifie pas la capacité de mémorisation (B), n'augmente pas le pipeline (C) et ne diminue pas directement les corrélations (D).",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Lequel des problèmes suivants est le moins affecté par une normalisation incorrecte des données d'entrée dans le cadre d'une sélection de variables?",
-      "image_url": null,
-      "choices": {
-        "A": "Régression logistique",
-        "B": "Arbre de décision",
-        "C": "SVM avec noyau linéaire",
-        "D": "Réseau de neurones"
+        "A": "Validation croisée",
+        "B": "Séparation temporelle",
+        "C": "Encodage one-hot",
+        "D": "Normalisation"
       },
       "correct_answer": "B",
-      "explanation": "Les arbres de décision (B) ne sont pas affectés par la normalisation parce qu'ils se basent sur des séparations binaires. Les régressions logistiques (A), SVMs avec un noyau linéaire (C), et réseaux de neurones (D) sont plus sensibles aux échelles des variables d'entrée.",
+      "explanation": "La séparation temporelle garantit que les données d'entraînement ne comprennent pas d'informations futures en organisant les ensembles de manière chronologique. Ce processus permet d'éviter la fuite d'informations, cruciale dans les données temporelles où la causalité et la logique de progression doivent être respectées. La validation croisée est une méthode utilisée pour évaluer les modèles et n'impose pas d'ordre temporel spécifique, puisqu'elle fragmente les données de manière aléatoire. L'encodage one-hot transforme les variables catégorielles mais ne gère pas l'aspect temporel. La normalisation met à l’échelle les caractéristiques, sans lien avec l’ordre temporel des données.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il risqué de créer des variables dérivées basées sur des données cibles?",
+      "image_url": null,
+      "choices": {
+        "A": "Cela augmente exponentiellement le nombre de variables",
+        "B": "Le modèle peut surapprendre et généraliser moins",
+        "C": "Cela peut entraîner une fuite de données",
+        "D": "Les variables créées seront plus corrélées entre elles"
+      },
+      "correct_answer": "C",
+      "explanation": "Créer des variables dérivées basées sur des données cibles peut entraîner une fuite de données, rendant les résultats trompeurs car les variables incorporent des informations futures. Bien que ces variables puissent éventuellement augmenter le nombre total de variables dans un modèle, ce n'est pas systématique ni directement problématique. Le modèle ne surapprend pas nécessairement avec de telles variables, mais cela pourrait exacerber le surapprentissage si les caractéristiques dérivées en résultent riches en bruit. Les corrélations accrues entre variables ne sont pas une conséquence directe de l'utilisation des données cibles pour les variables dérivées.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Lorsque vous standardisez, pourquoi est-il crucial d'utiliser des statistiques de l'ensemble d'entraînement pour la mise à l'échelle ?",
+      "image_url": null,
+      "choices": {
+        "A": "Pour réduire le temps de calcul",
+        "B": "Pour augmenter le biais du modèle",
+        "C": "Pour garantir la diversité des données",
+        "D": "Pour éviter la fuite de données"
+      },
+      "correct_answer": "D",
+      "explanation": "Lors de la standardisation, utiliser uniquement les statistiques de l'ensemble d'entraînement permet de prévenir la fuite de données en s'assurant que les ensembles de validation et de test restent indépendants. Une utilisation incorrecte de ces statistiques pourrait involontairement incorporer des informations des ensembles de test dans l'entraînement, biaisant ainsi les résultats. Cela n'influence pas directement le temps de calcul, ni ne cherche à augmenter la diversité des données ou le biais modèlel. Maintenir l'intégrité des ensembles de données lors du prétraitement est crucial pour l'évaluation pertinente et la capacité de généralisation des modèles.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel est le bénéfice principal de la sélection de variables pour les modèles d'apprentissage automatique ?",
+      "image_url": null,
+      "choices": {
+        "A": "Réduit le surapprentissage",
+        "B": "Augmente la taille de l'échantillon",
+        "C": "Automatise l'imputation des valeurs manquantes",
+        "D": "Améliore la modularité des algorithmes"
+      },
+      "correct_answer": "A",
+      "explanation": "La sélection de variables réduit le surapprentissage en éliminant les caractéristiques redondantes ou bruitées, ce qui permet au modèle de généraliser plus efficacement sur de nouvelles données. Cela n'augmente pas la taille des échantillons, contrairement à l'augmentation de données. La sélection des variables n'implique pas non plus l'imputation automatique des valeurs manquantes, qui est une procédure séparée visant à remplir les lacunes de données. Bien que la modularité des algorithmes puisse être influencée indirectement par la qualité des données, la sélection de variables ne vise pas explicitement cet aspect, mais plutôt la réduction de la complexité inutile.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il déconseillé d'inclure des variables temporelles brutes dans le modèle sans transformation ?",
+      "image_url": null,
+      "choices": {
+        "A": "Elles sont souvent trop vastes pour être utiles",
+        "B": "Elles peuvent mener à une fuite de données si elles incluent des informations futures",
+        "C": "Elles introduisent systématiquement un biais",
+        "D": "Elles nécessitent une mémoire trop importante"
+      },
+      "correct_answer": "B",
+      "explanation": "Intégrer des variables temporelles brutes dans un modèle peut entraîner une fuite de données si elles incluent des informations futures que le modèle ne devrait pas connaître. Ces variables ne sont pas intrinsèquement 'trop vastes', ne causent pas systématiquement de biais, et n'impliquent pas nécessairement des requêtes mémorielles plus importantes. La sensibilité de ces variables à l'ordre temporel peut compromettre la validité des prédictions en cas de mauvaise manipulation des données futures. Appliquer des transformations appropriées peut aider à maintenir l'intégrité du modèle tout en exploitant les informations pertinentes des variables temporelles.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel problème peut découler d'une sélection de variables basée uniquement sur la corrélation avec la variable cible ?",
+      "image_url": null,
+      "choices": {
+        "A": "Manque de diversité des données",
+        "B": "Le modèle devient complexe et surajusté",
+        "C": "Les interactions multi-variables sont ignorées",
+        "D": "Les variables catégorielles deviennent biaisées"
+      },
+      "correct_answer": "C",
+      "explanation": "La sélection de variables uniquement basée sur la corrélation avec la variable cible peut ignorer des interactions complexes entre variables multiples qui sont essentielles pour capturer la véritable dynamique des données. Cela n'entraîne pas directement une complexité excessive du modèle ni un sur-ajustement, bien qu'une mauvaise sélection puisse y contribuer. Cette approche n'affecte pas la diversité des données ni ne contribue à un biais spécifique dans les variables catégorielles. Une analyse plus exhaustive, tenant compte des interactions entre variables, peut fournir des intuitions précieuses pour développer des modèles plus robustes et précis.",
+      "difficulty": "hard"
+    },
+    {
+      "type": "text",
+      "question": "Quel est un piège courant lors de la création de variables dérivées basées sur des données de validation ?",
+      "image_url": null,
+      "choices": {
+        "A": "Cela rend le modèle trop simpliste",
+        "B": "Cela utilise des ressources computationnelles élevées",
+        "C": "Cela augmente excessivement la colinéarité",
+        "D": "Cela introduit une fuite de données"
+      },
+      "correct_answer": "D",
+      "explanation": "Créer des variables dérivées à partir des données de validation entraîne une fuite de données, car cela utilise des informations qui ne devraient pas affecter le modèle pendant l'entraînement. Cela donne une fausse assurance sur la performance du modèle en faussant les résultats. Ce processus n'a pas pour effet de simplifier le modèle, n'utilise pas nécessairement plus de ressources computationnelles et n'augmente pas intrinsèquement la colinéarité à moins qu'une mauvaise pratique de transformation en soit la cause. Il est crucial d'éviter ce piège pour préserver l'intégrité des évaluations du modèle.",
       "difficulty": "hard"
     }
   ]

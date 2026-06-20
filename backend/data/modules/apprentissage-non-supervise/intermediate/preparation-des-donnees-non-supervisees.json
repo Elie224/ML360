@@ -14,7 +14,7 @@
         "D": "Pour neutraliser les effets des valeurs manquantes."
       },
       "correct_answer": "A",
-      "explanation": "La PCA (analyse en composantes principales) est sensible à l'échelle des variables parce qu'elle repose sur les distances euclidiennes. Si les données ne sont pas normalisées, les variables avec des valeurs plus grandes influencent davantage les résultats. Réduire le nombre de dimensions est un effet de la PCA, mais pas lié à la normalisation. Convertir les valeurs catégorielles en numériques ou neutraliser les valeurs manquantes ne justifie pas la normalisation dans le contexte du PCA.",
+      "explanation": "La PCA (analyse en composantes principales) est sensible à l'échelle des variables parce qu'elle repose sur les distances euclidiennes. Si les données ne sont pas normalisées, les variables avec des valeurs plus grandes influencent davantage les résultats. Réduire le nombre de dimensions est un effet de la PCA, mais pas lié à la normalisation. Convertir les valeurs catégorielles en numériques ou neutraliser les valeurs manquantes ne justifie pas la normalisation dans le contexte du PCA. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Pour réduire le nombre de dimensions des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Quelle approche est efficace pour traiter les outliers dans l'apprentissage non supervisé lorsque les mécanismes de génération sont inconnus?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser un algorithme robuste aux valeurs extrêmes, comme DBSCAN.",
-        "B": "Supprimer toutes les instances au-delà de 1.5 fois l'écart-type.",
+        "A": "Supprimer toutes les instances au-delà de 1.5 fois l'écart-type.",
+        "B": "Utiliser un algorithme robuste aux valeurs extrêmes, comme DBSCAN.",
         "C": "Appliquer la normalisation min-max.",
         "D": "Remplacer les outliers par la moyenne de l'ensemble des données."
       },
-      "correct_answer": "A",
-      "explanation": "DBSCAN est un algorithme de clustering qui est robuste aux valeurs extrêmes puisqu'il ne considère pas les outliers dans la formation des clusters principaux. Supprimer toutes les instances au-delà de 1.5 fois l'écart-type peut éliminer trop de points pertinents. La normalisation min-max peut amplifier l'effet des outliers. Remplacer les outliers par la moyenne peut biaiser les données.",
+      "correct_answer": "B",
+      "explanation": "DBSCAN est un algorithme de clustering qui est robuste aux valeurs extrêmes puisqu'il ne considère pas les outliers dans la formation des clusters principaux. Supprimer toutes les instances au-delà de 1.5 fois l'écart-type peut éliminer trop de points pertinents. La normalisation min-max peut amplifier l'effet des outliers. Remplacer les outliers par la moyenne peut biaiser les données. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Supprimer toutes les instances au-delà de 1.5 fois l'écart-type.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Appliquer la normalisation min-max.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quel est l'effet principal du 'curse of dimensionality' dans le cadre de l'apprentissage non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Les distances entre points deviennent moins discriminantes, rendant la séparation des clusters difficile.",
+        "A": "Les algorithmes convergent plus vite mais avec moins de précision.",
         "B": "Il devient impossible de normaliser les données.",
-        "C": "Les algorithmes convergent plus vite mais avec moins de précision.",
+        "C": "Les distances entre points deviennent moins discriminantes, rendant la séparation des clusters difficile.",
         "D": "La visualisation des données devient impossible."
       },
-      "correct_answer": "A",
-      "explanation": "Le 'curse of dimensionality', ou 'malédiction de la dimensionnalité', signifie que dans les espaces à haute dimension, les distances entre les points deviennent similaires, ce qui rend difficile la discrimination pour former des clusters. Il n'empêche pas la normalisation. Les algorithmes ne convergent pas nécessairement plus vite et la visualisation est difficile mais pas impossible.",
+      "correct_answer": "C",
+      "explanation": "Le 'curse of dimensionality', ou 'malédiction de la dimensionnalité', signifie que dans les espaces à haute dimension, les distances entre les points deviennent similaires, ce qui rend difficile la discrimination pour former des clusters. Il n'empêche pas la normalisation. Les algorithmes ne convergent pas nécessairement plus vite et la visualisation est difficile mais pas impossible. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les algorithmes convergent plus vite mais avec moins de précision.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il devient impossible de normaliser les données.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Lors de la sélection de variables en apprentissage non supervisé, pourquoi est-il conseillé de réduire les dimensions à l'aide de la PCA?",
       "image_url": null,
       "choices": {
-        "A": "Pour augmenter l'efficacité computationnelle et réduire le bruit des données.",
+        "A": "Pour se débarrasser des données redondantes en les supprimant directement.",
         "B": "Pour s'assurer que chaque dimension représente une variable catégorielle.",
         "C": "Pour rendre les données plus homogènes.",
-        "D": "Pour se débarrasser des données redondantes en les supprimant directement."
+        "D": "Pour augmenter l'efficacité computationnelle et réduire le bruit des données."
       },
-      "correct_answer": "A",
-      "explanation": "La PCA aide à réduire la dimensionalité en projetant les données sur un espace de dimension inférieure, ce qui réduit le bruit et augmente l'efficacité computationnelle. La PCA ne s'assure pas que les dimensions représentent des variables catégorielles, ne rend pas les données plus homogènes, ni ne supprime les données redondantes directement.",
+      "correct_answer": "D",
+      "explanation": "La PCA aide à réduire la dimensionalité en projetant les données sur un espace de dimension inférieure, ce qui réduit le bruit et augmente l'efficacité computationnelle. La PCA ne s'assure pas que les dimensions représentent des variables catégorielles, ne rend pas les données plus homogènes, ni ne supprime les données redondantes directement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour se débarrasser des données redondantes en les supprimant directement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour s'assurer que chaque dimension représente une variable catégorielle.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Lorsque seules les valeurs manquantes doivent être traitées."
       },
       "correct_answer": "A",
-      "explanation": "La normalisation z-score est meilleure pour les données qui suivent une distribution normale car elle utilise la moyenne et l'écart-type pour centrer et réduire l'échelle des valeurs, ce qui amortit l'impact des outliers. La normalisation min-max est plus simple mais sensible aux valeurs extrêmes. Elle ne convient pas aux variables binaires ou catégorielles, ni ne résout le problème des valeurs manquantes.",
+      "explanation": "La normalisation z-score est meilleure pour les données qui suivent une distribution normale car elle utilise la moyenne et l'écart-type pour centrer et réduire l'échelle des valeurs, ce qui amortit l'impact des outliers. La normalisation min-max est plus simple mais sensible aux valeurs extrêmes. Elle ne convient pas aux variables binaires ou catégorielles, ni ne résout le problème des valeurs manquantes. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Lorsque les données sont composées uniquement de variables binaires.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Lorsque nous traitons exclusivement de variables catégorielles.) est plausible mais faux car il ne",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Pourquoi ne devrait-on pas toujours supprimer les outliers lors de la préparation des données non supervisées?",
       "image_url": null,
       "choices": {
-        "A": "Parce qu'ils peuvent représenter des structures ou groupes d'intérêt dans les données.",
-        "B": "Parce qu'ils indiquent probablement une erreur de saisie toujours corrigible.",
+        "A": "Parce qu'ils indiquent probablement une erreur de saisie toujours corrigible.",
+        "B": "Parce qu'ils peuvent représenter des structures ou groupes d'intérêt dans les données.",
         "C": "Parce que les outliers n'ont pas d'impact sur les méthodes de clustering.",
         "D": "Parce que les outliers sont toujours corrigés par la normalisation."
       },
-      "correct_answer": "A",
-      "explanation": "Les outliers peuvent potentiellement révéler des structures ou des anomalies intéressantes dans les données qu'on pourrait vouloir analyser davantage. Les considérer toujours comme des erreurs peut mener à la perte d'informations cruciales. Les outliers impactent les méthodes de clustering sensibles aux distances, et la normalisation seule ne corrige pas leur effet.",
+      "correct_answer": "B",
+      "explanation": "Les outliers peuvent potentiellement révéler des structures ou des anomalies intéressantes dans les données qu'on pourrait vouloir analyser davantage. Les considérer toujours comme des erreurs peut mener à la perte d'informations cruciales. Les outliers impactent les méthodes de clustering sensibles aux distances, et la normalisation seule ne corrige pas leur effet. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce qu'ils indiquent probablement une erreur de saisie toujours corrigible.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce que les outliers n'ont pas d'impact sur les méthodes de clustering.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quelle méthode serait la plus appropriée pour traiter des données avec plusieurs variables catégorielles dans un clustering?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser une technique d'encodage comme l'encodage one-hot.",
+        "A": "Supprimer les variables catégorielles pour un modèle plus simple.",
         "B": "Appliquer directement la PCA pour réduire la dimensionalité.",
-        "C": "Supprimer les variables catégorielles pour un modèle plus simple.",
+        "C": "Utiliser une technique d'encodage comme l'encodage one-hot.",
         "D": "Utiliser uniquement la normalisation min-max pour les variables numériques."
       },
-      "correct_answer": "A",
-      "explanation": "L'encodage one-hot transforme les variables catégorielles en un format binaire compatible avec les algorithmes de clustering qui nécessitent des données numériques. Appliquer la PCA aux données catégorielles n'est pas direct et les supprimer sans analyse peut faire perdre des informations. La normalisation min-max concerne seulement les variables numériques.",
+      "correct_answer": "C",
+      "explanation": "L'encodage one-hot transforme les variables catégorielles en un format binaire compatible avec les algorithmes de clustering qui nécessitent des données numériques. Appliquer la PCA aux données catégorielles n'est pas direct et les supprimer sans analyse peut faire perdre des informations. La normalisation min-max concerne seulement les variables numériques. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Supprimer les variables catégorielles pour un modèle plus simple.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Appliquer directement la PCA pour réduire la dimensionalité.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quel serait l'impact sur le clustering de ne pas gérer correctement les outliers dans les données initiales?",
       "image_url": null,
       "choices": {
-        "A": "Les outliers peuvent fausser la formation de clusters en étant prépondérants dans les calculs de distance.",
+        "A": "Les clusters ne sont pas affectés car les algorithmes de machine learning sont invariants aux outliers.",
         "B": "Les algorithmes identifieraient automatiquement les outliers comme clusters indépendants.",
         "C": "Les outliers n'ont aucun impact car les algorithmes les ignorent systématiquement.",
-        "D": "Les clusters ne sont pas affectés car les algorithmes de machine learning sont invariants aux outliers."
+        "D": "Les outliers peuvent fausser la formation de clusters en étant prépondérants dans les calculs de distance."
       },
-      "correct_answer": "A",
-      "explanation": "Les outliers affectent la formation des clusters, notamment lorsqu'ils influencent les calculs de distance, rendant certains clusters plus dispersés ou mal formés. Les algorithmes ne détectent pas automatiquement les outliers comme clusters indépendants sauf s'ils sont explicitement conçus pour cela. Les outliers ont généralement un impact, sauf dans quelques algorithmes robustes comme DBSCAN.",
+      "correct_answer": "D",
+      "explanation": "Les outliers affectent la formation des clusters, notamment lorsqu'ils influencent les calculs de distance, rendant certains clusters plus dispersés ou mal formés. Les algorithmes ne détectent pas automatiquement les outliers comme clusters indépendants sauf s'ils sont explicitement conçus pour cela. Les outliers ont généralement un impact, sauf dans quelques algorithmes robustes comme DBSCAN. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les clusters ne sont pas affectés car les algorithmes de machine learning sont invariants aux outliers.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Les algorithmes identifieraient automatiquement les outliers comme clusters indépendants.) est plausible mais faux car il",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Parce qu'elle est utilisée uniquement pour les modèles supervisés."
       },
       "correct_answer": "A",
-      "explanation": "La sélection de variables réduit la complexité des modèles et élimine le bruit, améliorant potentiellement les résultats des algorithmes. Ce n'est pas uniquement nécessaire pour gérer les valeurs manquantes. L'utilisation de toutes les variables n'augmente pas toujours la performance. De plus, la sélection de variables est importante tant pour les modèles supervisés que non supervisés.",
+      "explanation": "La sélection de variables réduit la complexité des modèles et élimine le bruit, améliorant potentiellement les résultats des algorithmes. Ce n'est pas uniquement nécessaire pour gérer les valeurs manquantes. L'utilisation de toutes les variables n'augmente pas toujours la performance. De plus, la sélection de variables est importante tant pour les modèles supervisés que non supervisés. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Parce qu'elle est nécessaire uniquement lorsque les données ont des valeurs manquantes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce qu'elle augmente inévitablement la performance des algorithmes si on utilise toutes les variables.) est plausible mais",
       "difficulty": "hard"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Comment le 'curse of dimensionality' affecte-t-il la densité des données en apprentissage non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Les données deviennent éparses, rendant les concepts de densité moins significatifs.",
-        "B": "La densité des données augmente car chaque point est entouré par plus de points voisins.",
+        "A": "La densité des données augmente car chaque point est entouré par plus de points voisins.",
+        "B": "Les données deviennent éparses, rendant les concepts de densité moins significatifs.",
         "C": "Les concepts de densité ne changent pas, ils ne sont pas influencés par la dimensionnalité.",
         "D": "La densité est accrue car le volume de l'espace est réduit."
       },
-      "correct_answer": "A",
-      "explanation": "Dans des espaces de grande dimension, les données deviennent éparses et les notions de densité perdent de leur sens, car les points sont très séparés. La densité n'augmente pas, au contraire, elle devient difficilement mesurable. La densité et la signification des mesures de proximité sont fortement affectées par la dimensionnalité.",
+      "correct_answer": "B",
+      "explanation": "Dans des espaces de grande dimension, les données deviennent éparses et les notions de densité perdent de leur sens, car les points sont très séparés. La densité n'augmente pas, au contraire, elle devient difficilement mesurable. La densité et la signification des mesures de proximité sont fortement affectées par la dimensionnalité. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (La densité des données augmente car chaque point est entouré par plus de points voisins.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Les concepts de densité ne changent pas, ils ne sont pas influencés par la dimensionnalité.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Que doit-on considérer lors de la gestion des données avec variables à échelle très différente dans l'apprentissage non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Appliquer une normalisation ou standardisation pour équilibrer l'influence des variables.",
+        "A": "Préférer les distances Manhattan sur Euclidiennes uniquement.",
         "B": "Toujours supprimer les variables avec plus petite échelle.",
-        "C": "Préférer les distances Manhattan sur Euclidiennes uniquement.",
+        "C": "Appliquer une normalisation ou standardisation pour équilibrer l'influence des variables.",
         "D": "Utiliser uniquement des modèles basés sur des logarithmes."
       },
-      "correct_answer": "A",
-      "explanation": "Lorsque les données ont des variables sur des échelles très différentes, une normalisation ou standardisation est cruciale pour empêcher qu'une variable ait plus d'impact que nécessaire. Supprimer des variables selon leur échelle n'est pas justifié sans analyse. Les distances Manhattan ou Euclidiennes toutes deux seraient affectées sans normalisation, et les modèles basés sur logarithmes ne résolvent pas intrinsèquement le problème de l'échelle.",
+      "correct_answer": "C",
+      "explanation": "Lorsque les données ont des variables sur des échelles très différentes, une normalisation ou standardisation est cruciale pour empêcher qu'une variable ait plus d'impact que nécessaire. Supprimer des variables selon leur échelle n'est pas justifié sans analyse. Les distances Manhattan ou Euclidiennes toutes deux seraient affectées sans normalisation, et les modèles basés sur logarithmes ne résolvent pas intrinsèquement le problème de l'échelle. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Préférer les distances Manhattan sur Euclidiennes uniquement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Toujours supprimer les variables avec plus petite échelle.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel est un risque potentiel de l'utilisation de trop de variables dans une analyse non supervisée, et comment peut-on le mitiger?",
       "image_url": null,
       "choices": {
-        "A": "La malédiction de la dimensionnalité qui rend les calculs complexes; on peut la mitiger avec une PCA.",
+        "A": "Les variables deviennent redondantes et difficiles à analyser individuellement; il faut ignorer les plus petites variables.",
         "B": "Risque d'overfitting qui est inévitable; on ne peut rien y faire.",
         "C": "Risque de sur-densité rapide; il faut augmenter systématiquement le nombre de données.",
-        "D": "Les variables deviennent redondantes et difficiles à analyser individuellement; il faut ignorer les plus petites variables."
+        "D": "La malédiction de la dimensionnalité qui rend les calculs complexes; on peut la mitiger avec une PCA."
       },
-      "correct_answer": "A",
-      "explanation": "Avec trop de variables, on risque la malédiction de la dimensionnalité, qui augmente la complexité des calculs et rend les résultats moins utiles. L'utilisation de méthodes de réduction de dimensionnalité, comme la PCA, peut aider à mitiger ce problème. L'overfitting est un risque moindre en non supervisé et est pour la plupart évitable. Une sur-densité n'est pas réaliste dans de nombreuses dimensions, et ignorer les variables de moindre échelle n'est pas une solution viable.",
+      "correct_answer": "D",
+      "explanation": "Avec trop de variables, on risque la malédiction de la dimensionnalité, qui augmente la complexité des calculs et rend les résultats moins utiles. L'utilisation de méthodes de réduction de dimensionnalité, comme la PCA, peut aider à mitiger ce problème. L'overfitting est un risque moindre en non supervisé et est pour la plupart évitable. Une sur-densité n'est pas réaliste dans de nombreuses dimensions, et ignorer les variables de moindre échelle n'est pas une solution viable. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les variables deviennent redondantes et difficiles à analyser individuellement; il faut ignorer les plus petites variables.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     }
   ]

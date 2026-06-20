@@ -14,7 +14,7 @@
         "D": "Dropout regularization"
       },
       "correct_answer": "A",
-      "explanation": "Loss correction techniques are specifically developed to deal with noisy labels by adjusting the loss function to minimize the impact of incorrect labels. Data augmentation, gradient clipping, and dropout are general techniques for improving model performance or preventing overfitting, not specifically targeted at label noise.",
+      "explanation": "Loss correction techniques are specifically developed to deal with noisy labels by adjusting the loss function to minimize the impact of incorrect labels. Data augmentation, gradient clipping, and dropout are general techniques for improving model performance or preventing overfitting, not specifically targeted at label noise. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Data augmentation methods) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Gradient clipping) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Dropout regularization) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "What is a robust loss function that can handle outliers in the data?",
       "image_url": null,
       "choices": {
-        "A": "Huber loss",
-        "B": "Cross-entropy loss",
+        "A": "Cross-entropy loss",
+        "B": "Huber loss",
         "C": "Mean squared error",
         "D": "Hinge loss"
       },
-      "correct_answer": "A",
-      "explanation": "Huber loss is robust to outliers as it combines mean squared error for small residuals and mean absolute error for large residuals. Cross-entropy, mean squared error, and hinge loss do not have this property and are sensitive to outliers.",
+      "correct_answer": "B",
+      "explanation": "Huber loss is robust to outliers as it combines mean squared error for small residuals and mean absolute error for large residuals. Cross-entropy, mean squared error, and hinge loss do not have this property and are sensitive to outliers. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Cross-entropy loss) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Mean squared error) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Hinge loss) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "In filtering anomalies, what technique involves removing data points that significantly deviate from the rest?",
       "image_url": null,
       "choices": {
-        "A": "Outlier detection",
+        "A": "One-hot encoding",
         "B": "Data binning",
-        "C": "One-hot encoding",
+        "C": "Outlier detection",
         "D": "Dimensionality reduction"
       },
-      "correct_answer": "A",
-      "explanation": "Outlier detection is specifically used to identify and potentially remove data points that deviate significantly from the majority of the data. Data binning, one-hot encoding, and dimensionality reduction serve other purposes such as discretizing variables, encoding categorical data, and reducing feature space, respectively.",
+      "correct_answer": "C",
+      "explanation": "Outlier detection is specifically used to identify and potentially remove data points that deviate significantly from the majority of the data. Data binning, one-hot encoding, and dimensionality reduction serve other purposes such as discretizing variables, encoding categorical data, and reducing feature space, respectively. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (One-hot encoding) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Data binning) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Dimensionality reduction) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Which approach improves model performance by ensuring the training and validation subsets are consistent?",
       "image_url": null,
       "choices": {
-        "A": "Cohort consistency checks",
+        "A": "Learning rate scheduling",
         "B": "Batch normalization",
         "C": "Cross-validation",
-        "D": "Learning rate scheduling"
+        "D": "Cohort consistency checks"
       },
-      "correct_answer": "A",
-      "explanation": "Cohort consistency checks ensure that data subsets used in training and validation are drawn from the same distribution, preventing data leakage and improving performance. Batch normalization, cross-validation, and learning rate scheduling are general strategies for model optimization and evaluation, not ensuring data subset consistency.",
+      "correct_answer": "D",
+      "explanation": "Cohort consistency checks ensure that data subsets used in training and validation are drawn from the same distribution, preventing data leakage and improving performance. Batch normalization, cross-validation, and learning rate scheduling are general strategies for model optimization and evaluation, not ensuring data subset consistency. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Learning rate scheduling) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Batch normalization) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Cross-validation) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Gradient descent"
       },
       "correct_answer": "A",
-      "explanation": "Weighted loss functions assign different weights to different samples, allowing the model to lessen the impact of potentially mislabeled data. Early stopping, batch normalization, and gradient descent do not specifically address mislabeled data.",
+      "explanation": "Weighted loss functions assign different weights to different samples, allowing the model to lessen the impact of potentially mislabeled data. Early stopping, batch normalization, and gradient descent do not specifically address mislabeled data. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Early stopping) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Batch normalization) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Gradient descent) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En pratique, verifie toujours la definition, les conditions",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "When dealing with noisy labels, what method adjusts label estimation during training?",
       "image_url": null,
       "choices": {
-        "A": "Bootstrapping",
-        "B": "Bagging",
+        "A": "Bagging",
+        "B": "Bootstrapping",
         "C": "Dropout",
         "D": "Early stopping"
       },
-      "correct_answer": "A",
-      "explanation": "Bootstrapping involves re-estimating labels during training to correct potential errors, a tactic useful for dataset noise. Bagging, dropout, and early stopping do not adjust labels directly but focus on model variance reduction and optimization strategies.",
+      "correct_answer": "B",
+      "explanation": "Bootstrapping involves re-estimating labels during training to correct potential errors, a tactic useful for dataset noise. Bagging, dropout, and early stopping do not adjust labels directly but focus on model variance reduction and optimization strategies. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Bagging) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Dropout) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Early stopping) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En pratique, verifie toujours la definition, les conditions",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Which anomaly detection method identifies outliers based on similarity to their neighbors?",
       "image_url": null,
       "choices": {
-        "A": "Local Outlier Factor (LOF)",
+        "A": "Hierarchical Clustering",
         "B": "Principal Component Analysis (PCA)",
-        "C": "Hierarchical Clustering",
+        "C": "Local Outlier Factor (LOF)",
         "D": "K-means Clustering"
       },
-      "correct_answer": "A",
-      "explanation": "Local Outlier Factor (LOF) assesses the degree of isolation of a data point by comparing it to its neighbors, effectively identifying outliers. PCA, hierarchical clustering, and k-means clustering are techniques for dimensionality reduction and grouping data, not specifically tailored for outlier detection.",
+      "correct_answer": "C",
+      "explanation": "Local Outlier Factor (LOF) assesses the degree of isolation of a data point by comparing it to its neighbors, effectively identifying outliers. PCA, hierarchical clustering, and k-means clustering are techniques for dimensionality reduction and grouping data, not specifically tailored for outlier detection. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Hierarchical Clustering) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Principal Component Analysis (PCA)) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (K-means Clustering) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "What principle helps ensure the integrity of training data by cross-verifying with another dataset?",
       "image_url": null,
       "choices": {
-        "A": "Data provenance tracking",
+        "A": "Dropout",
         "B": "Data shuffling",
         "C": "Feature augmentation",
-        "D": "Dropout"
+        "D": "Data provenance tracking"
       },
-      "correct_answer": "A",
-      "explanation": "Data provenance tracking involves maintaining a record of the origins and transformations of datasets to ensure integrity and traceability. Data shuffling, feature augmentation, and dropout pertain to preparation and training processes, not data integrity.",
+      "correct_answer": "D",
+      "explanation": "Data provenance tracking involves maintaining a record of the origins and transformations of datasets to ensure integrity and traceability. Data shuffling, feature augmentation, and dropout pertain to preparation and training processes, not data integrity. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Dropout) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Data shuffling) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Feature augmentation) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En pratique, verifie toujours la definition, les conditions",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Euclidean distance"
       },
       "correct_answer": "A",
-      "explanation": "Noise-robust loss functions are specifically crafted to minimize the impact of noise and errors in the dataset by adjusting the loss calculation. Categorical cross-entropy, negative log likelihood, and Euclidean distance do not inherently address dataset noise.",
+      "explanation": "Noise-robust loss functions are specifically crafted to minimize the impact of noise and errors in the dataset by adjusting the loss calculation. Categorical cross-entropy, negative log likelihood, and Euclidean distance do not inherently address dataset noise. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Categorical cross-entropy) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Negative log likelihood) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Euclidean distance) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En pratique, verifie toujours",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Which model training strategy is effective against label noise due to its ensemble nature?",
       "image_url": null,
       "choices": {
-        "A": "Bagging",
-        "B": "Gradient descent",
+        "A": "Gradient descent",
+        "B": "Bagging",
         "C": "Support vector machine",
         "D": "Random search"
       },
-      "correct_answer": "A",
-      "explanation": "Bagging leverages ensemble learning to average out individual model errors, thus reducing the impact of noisy labels. Gradient descent, support vector machines, and random search focus on optimization and hyperparameter tuning independent of label noise.",
+      "correct_answer": "B",
+      "explanation": "Bagging leverages ensemble learning to average out individual model errors, thus reducing the impact of noisy labels. Gradient descent, support vector machines, and random search focus on optimization and hyperparameter tuning independent of label noise. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Gradient descent) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Support vector machine) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Random search) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En pratique, verifie toujours la",
       "difficulty": "hard"
     },
     {
@@ -149,12 +149,12 @@
       "image_url": null,
       "choices": {
         "A": "Adversarial noise training",
-        "B": "Loss reweighing",
-        "C": "Vanilla stochastic gradient descent",
+        "B": "Vanilla stochastic gradient descent",
+        "C": "Loss reweighing",
         "D": "Learning rate decay"
       },
-      "correct_answer": "B",
-      "explanation": "Loss reweighing modifies the contribution of each sample to the total loss, tailored for datasets with varying levels of noise. Adversarial noise training is unrelated as it focuses on model robustness against adversarial samples, while vanilla SGD and learning rate decay are optimization strategies.",
+      "correct_answer": "C",
+      "explanation": "Loss reweighing modifies the contribution of each sample to the total loss, tailored for datasets with varying levels of noise. Adversarial noise training is unrelated as it focuses on model robustness against adversarial samples, while vanilla SGD and learning rate decay are optimization strategies. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Adversarial noise training) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Vanilla stochastic gradient descent) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Learning rate decay) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "How does 'cleaning' the label data before training improve model robustness?",
       "image_url": null,
       "choices": {
-        "A": "By increasing the signal-to-noise ratio in training data",
+        "A": "By eliminating the need for regularization",
         "B": "By enhancing the dimensionality of feature space",
         "C": "By reducing the need for batch normalization",
-        "D": "By eliminating the need for regularization"
+        "D": "By increasing the signal-to-noise ratio in training data"
       },
-      "correct_answer": "A",
-      "explanation": "Cleaning label data increases the signal-to-noise ratio, thereby improving the dataset quality for training. It does not directly affect feature dimensionality, nor does it necessarily eliminate the need for batch normalization or regularization, which address different aspects of model training.",
+      "correct_answer": "D",
+      "explanation": "Cleaning label data increases the signal-to-noise ratio, thereby improving the dataset quality for training. It does not directly affect feature dimensionality, nor does it necessarily eliminate the need for batch normalization or regularization, which address different aspects of model training. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (By eliminating the need for regularization) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (By enhancing the dimensionality of feature space) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (By reducing the need for batch normalization) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Naive Bayes"
       },
       "correct_answer": "A",
-      "explanation": "Isolation Forest is well-suited for anomaly detection, especially in skewed datasets, because it isolates outliers without assuming statistical distribution. K-means, SVM with a linear kernel, and Naive Bayes are less effective in anomaly detection tasks, particularly in noisy data.",
+      "explanation": "Isolation Forest is well-suited for anomaly detection, especially in skewed datasets, because it isolates outliers without assuming statistical distribution. K-means, SVM with a linear kernel, and Naive Bayes are less effective in anomaly detection tasks, particularly in noisy data. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (K-means) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (SVM with linear kernel) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Naive Bayes) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Which technique is NOT suitable for ensuring robustness to noisy labels?",
       "image_url": null,
       "choices": {
-        "A": "Random cropping",
-        "B": "Noise-tolerant labeling",
+        "A": "Noise-tolerant labeling",
+        "B": "Random cropping",
         "C": "Co-teaching",
         "D": "Label smoothing"
       },
-      "correct_answer": "A",
-      "explanation": "Random cropping is a data augmentation technique primarily aimed at improving generalization and is not specifically targeted at handling noisy labels. Noise-tolerant labeling, co-teaching, and label smoothing are methods designed to improve model robustness against noisy labels.",
+      "correct_answer": "B",
+      "explanation": "Random cropping is a data augmentation technique primarily aimed at improving generalization and is not specifically targeted at handling noisy labels. Noise-tolerant labeling, co-teaching, and label smoothing are methods designed to improve model robustness against noisy labels. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Noise-tolerant labeling) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Co-teaching) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Label smoothing) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En pratique, verifie toujours la",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "What is a significant downside of filtering anomalies using a simple threshold technique?",
       "image_url": null,
       "choices": {
-        "A": "Loss of potentially informative outliers",
+        "A": "Increased training time",
         "B": "Altering the model's architecture",
-        "C": "Increased training time",
+        "C": "Loss of potentially informative outliers",
         "D": "Necessitating the use of unsupervised learning techniques"
       },
-      "correct_answer": "A",
-      "explanation": "Simple thresholding can lead to the loss of outliers that might contain valuable information for model prediction. It doesn't affect model architecture or inherently increase training time, nor does it require unsupervised methods as a consequence.",
+      "correct_answer": "C",
+      "explanation": "Simple thresholding can lead to the loss of outliers that might contain valuable information for model prediction. It doesn't affect model architecture or inherently increase training time, nor does it require unsupervised methods as a consequence. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Increased training time) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Altering the model's architecture) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Necessitating the use of unsupervised learning techniques) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "When is a robust loss function particularly crucial during model training?",
       "image_url": null,
       "choices": {
-        "A": "When labels are suspected to be noisy or inaccurate",
+        "A": "When using deterministic algorithms",
         "B": "When hyperparameters are unoptimized",
         "C": "When data is already fully cleaned and pre-processed",
-        "D": "When using deterministic algorithms"
+        "D": "When labels are suspected to be noisy or inaccurate"
       },
-      "correct_answer": "A",
-      "explanation": "Robust loss functions are most crucial when labels are noisy, as they can mitigate the effect of label inaccuracies. They are not a resolution for unoptimized hyperparameters, completely clean datasets, or specific to deterministic algorithms.",
+      "correct_answer": "D",
+      "explanation": "Robust loss functions are most crucial when labels are noisy, as they can mitigate the effect of label inaccuracies. They are not a resolution for unoptimized hyperparameters, completely clean datasets, or specific to deterministic algorithms. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (When using deterministic algorithms) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (When hyperparameters are unoptimized) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (When data is already fully cleaned and pre-processed) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "By using fixed learning schedules"
       },
       "correct_answer": "A",
-      "explanation": "In the presence of noise, empirical risk minimization can adjust by incorporating terms in the objective function that are tolerant to noise. Adjustments like model complexity reduction, more cross-validation folds, or using fixed learning rates do not address label noise directly.",
+      "explanation": "In the presence of noise, empirical risk minimization can adjust by incorporating terms in the objective function that are tolerant to noise. Adjustments like model complexity reduction, more cross-validation folds, or using fixed learning rates do not address label noise directly. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (By reducing the model complexity) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (By splitting the data into more cross-validation folds) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (By using fixed learning schedules) est plausible mais faux car",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Which practice ensures that noise in training data does not disproportionately affect model parameters?",
       "image_url": null,
       "choices": {
-        "A": "Regularized model training",
-        "B": "Random shuffling of data",
+        "A": "Random shuffling of data",
+        "B": "Regularized model training",
         "C": "Learning rate annealing",
         "D": "Exclusive use of test data"
       },
-      "correct_answer": "A",
-      "explanation": "Regularized training helps prevent model overfitting to noise by penalizing excessive complexity. Random shuffling ensures data order variety but not parameter impact reduction, while learning rate annealing focuses on convergence speed, and using only test data is impractical and defies training logic.",
+      "correct_answer": "B",
+      "explanation": "Regularized training helps prevent model overfitting to noise by penalizing excessive complexity. Random shuffling ensures data order variety but not parameter impact reduction, while learning rate annealing focuses on convergence speed, and using only test data is impractical and defies training logic. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Random shuffling of data) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Learning rate annealing) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Exclusive use of test data) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Why is robustness to noise a critical factor in high-risk machine learning applications?",
       "image_url": null,
       "choices": {
-        "A": "Because errors can lead to significant harm or financial loss",
+        "A": "To eliminate the need for model evaluation",
         "B": "To ensure faster computational performance",
-        "C": "To eliminate the need for model evaluation",
+        "C": "Because errors can lead to significant harm or financial loss",
         "D": "To integrate unsupervised learning methods"
       },
-      "correct_answer": "A",
-      "explanation": "In high-risk applications, robustness to noise is crucial as errors could lead to serious consequences, including harm and financial loss. It does not inherently ensure faster performance, negate evaluation need, or relate to unsupervised learning integration.",
+      "correct_answer": "C",
+      "explanation": "In high-risk applications, robustness to noise is crucial as errors could lead to serious consequences, including harm and financial loss. It does not inherently ensure faster performance, negate evaluation need, or relate to unsupervised learning integration. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (To eliminate the need for model evaluation) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (To ensure faster computational performance) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (To integrate unsupervised learning methods) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "What specific issue can label noise introduce during model evaluation?",
       "image_url": null,
       "choices": {
-        "A": "Skewing accuracy and recall metrics",
+        "A": "Prolonging training epochs",
         "B": "Reducing data size during processing",
         "C": "Increasing computational resource demand",
-        "D": "Prolonging training epochs"
+        "D": "Skewing accuracy and recall metrics"
       },
-      "correct_answer": "A",
-      "explanation": "Label noise can skew accuracy and recall, misleading model evaluation by corrupting the true performance assessment. It does not directly affect data size, resource demand, or training duration unless analysis and rectification measures are taken.",
+      "correct_answer": "D",
+      "explanation": "Label noise can skew accuracy and recall, misleading model evaluation by corrupting the true performance assessment. It does not directly affect data size, resource demand, or training duration unless analysis and rectification measures are taken. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Prolonging training epochs) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Reducing data size during processing) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Increasing computational resource demand) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "Iterative stratification"
       },
       "correct_answer": "A",
-      "explanation": "The co-teaching method helps in selecting training samples potentially free of label noise by training two models concurrently, where each rectifies the other's mistakes. Simple random sampling, grid search, and iterative stratification do not focus on label noise directly.",
+      "explanation": "The co-teaching method helps in selecting training samples potentially free of label noise by training two models concurrently, where each rectifies the other's mistakes. Simple random sampling, grid search, and iterative stratification do not focus on label noise directly. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Simple random sampling) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Grid search) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Iterative stratification) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En",
       "difficulty": "hard"
     },
     {
@@ -302,13 +302,13 @@
       "question": "What is a drawback of applying aggressive anomaly filtering techniques?",
       "image_url": null,
       "choices": {
-        "A": "Potential loss of significant insights or data patterns",
-        "B": "Complexity in hyperparameter optimization",
+        "A": "Complexity in hyperparameter optimization",
+        "B": "Potential loss of significant insights or data patterns",
         "C": "Decreased model simplification",
         "D": "Requirements of high computational power"
       },
-      "correct_answer": "A",
-      "explanation": "Aggressive anomaly filtering might remove data that holds meaningful insights, inadvertently diminishing data utility. It does not inherently complicate hyperparameter optimization, decrease model simplicity, or require high computational power.",
+      "correct_answer": "B",
+      "explanation": "Aggressive anomaly filtering might remove data that holds meaningful insights, inadvertently diminishing data utility. It does not inherently complicate hyperparameter optimization, decrease model simplicity, or require high computational power. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Complexity in hyperparameter optimization) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Decreased model simplification) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Requirements of high computational power) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En pratique, verifie toujours la definition,",
       "difficulty": "hard"
     },
     {
@@ -316,13 +316,13 @@
       "question": "Which factor should you focus on to improve coherence in a dataset with noise?",
       "image_url": null,
       "choices": {
-        "A": "Minimizing cross-validation leakage",
+        "A": "Using dropout exclusively",
         "B": "Randomizing batch order",
-        "C": "Using dropout exclusively",
+        "C": "Minimizing cross-validation leakage",
         "D": "Maximizing feature extraction depth"
       },
-      "correct_answer": "A",
-      "explanation": "Minimizing cross-validation leakage ensures dataset coherence by preventing information leakage between folds in noisy conditions. Randomizing batch order or using dropout and exclusive feature extraction depth do not address coherence directly with respect to label noise.",
+      "correct_answer": "C",
+      "explanation": "Minimizing cross-validation leakage ensures dataset coherence by preventing information leakage between folds in noisy conditions. Randomizing batch order or using dropout and exclusive feature extraction depth do not address coherence directly with respect to label noise. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Using dropout exclusively) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Randomizing batch order) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Maximizing feature extraction depth) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En",
       "difficulty": "hard"
     },
     {
@@ -330,13 +330,13 @@
       "question": "Why is it challenging to develop noise-robust models in real-world applications?",
       "image_url": null,
       "choices": {
-        "A": "Noise patterns vary significantly across different datasets",
+        "A": "Necessitates unsupervised learning techniques",
         "B": "Requires removing feature interactions",
         "C": "Demands increased disk storage",
-        "D": "Necessitates unsupervised learning techniques"
+        "D": "Noise patterns vary significantly across different datasets"
       },
-      "correct_answer": "A",
-      "explanation": "Noise robustness is complex due to varied noise patterns across datasets, making generalized solutions difficult. It doesn't intrinsically involve feature interaction removal, storage increase, or unsupervised learning mandates.",
+      "correct_answer": "D",
+      "explanation": "Noise robustness is complex due to varied noise patterns across datasets, making generalized solutions difficult. It doesn't intrinsically involve feature interaction removal, storage increase, or unsupervised learning mandates. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Necessitates unsupervised learning techniques) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Requires removing feature interactions) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Demands increased disk storage) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En pratique, verifie toujours la definition, les",
       "difficulty": "hard"
     },
     {
@@ -350,7 +350,7 @@
         "D": "Memory usage"
       },
       "correct_answer": "A",
-      "explanation": "The F1 score, reliant on precision and recall, can be significantly skewed by label noise, misleadingly reflecting model performance. AUC-ROC may also be affected, although computation time and memory usage are metrics unrelated to label integrity.",
+      "explanation": "The F1 score, reliant on precision and recall, can be significantly skewed by label noise, misleadingly reflecting model performance. AUC-ROC may also be affected, although computation time and memory usage are metrics unrelated to label integrity. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (AUC-ROC) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Computation time) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Memory usage) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En pratique, verifie toujours la definition,",
       "difficulty": "hard"
     },
     {
@@ -358,13 +358,13 @@
       "question": "In what way does label smoothing help in training noisy datasets?",
       "image_url": null,
       "choices": {
-        "A": "By reducing confidence in the predicted classes",
-        "B": "By increasing the width of decision boundaries",
+        "A": "By increasing the width of decision boundaries",
+        "B": "By reducing confidence in the predicted classes",
         "C": "By enhancing feature importance",
         "D": "By boosting overfitting to noise"
       },
-      "correct_answer": "A",
-      "explanation": "Label smoothing reduces a model's confidence in its predictions to combat overfitting noise by distributing some probability mass toward incorrect classes, not adjusting boundary width, feature importance, or exacerbating overfitting.",
+      "correct_answer": "B",
+      "explanation": "Label smoothing reduces a model's confidence in its predictions to combat overfitting noise by distributing some probability mass toward incorrect classes, not adjusting boundary width, feature importance, or exacerbating overfitting. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (By increasing the width of decision boundaries) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (By enhancing feature importance) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (By boosting overfitting to noise) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En",
       "difficulty": "hard"
     },
     {
@@ -372,13 +372,13 @@
       "question": "Why can high-capacity models potentially perform worse on noisy data?",
       "image_url": null,
       "choices": {
-        "A": "They are prone to overfitting noise",
+        "A": "They have limited expressiveness",
         "B": "They strictly require labeled data",
-        "C": "They have limited expressiveness",
+        "C": "They are prone to overfitting noise",
         "D": "They reduce feature dimensionality"
       },
-      "correct_answer": "A",
-      "explanation": "High-capacity models can overfit noise due to their flexibility in capturing even irrelevant patterns, unlike the supposed reliance on labeled data, expressiveness limitation, or dimensionality reduction, which do not specifically pertain to noise.",
+      "correct_answer": "C",
+      "explanation": "High-capacity models can overfit noise due to their flexibility in capturing even irrelevant patterns, unlike the supposed reliance on labeled data, expressiveness limitation, or dimensionality reduction, which do not specifically pertain to noise. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (They have limited expressiveness) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (They strictly require labeled data) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (They reduce feature dimensionality) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En",
       "difficulty": "hard"
     },
     {
@@ -386,13 +386,13 @@
       "question": "Quelle méthode permet de réduire l'impact des labels bruités lors de l'entraînement d'un modèle d'apprentissage supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Utilisation d'une fonction de perte robuste qui pèse moins les erreurs.",
+        "A": "Réduire la taille du batch pour améliorer la précision.",
         "B": "Augmenter le nombre d'epochs pour mémoriser davantage les données.",
         "C": "Utiliser une fonction d'activation non-linéaire plus complexe.",
-        "D": "Réduire la taille du batch pour améliorer la précision."
+        "D": "Utilisation d'une fonction de perte robuste qui pèse moins les erreurs."
       },
-      "correct_answer": "A",
-      "explanation": "La fonction de perte robuste est conçue pour mieux gérer les erreurs causées par des labels incorrects ou bruités, en atténuant leur influence sur la mise à jour des poids. En revanche, augmenter le nombre d'epochs (B) pourrait aggraver le problème en sur-apprenant les erreurs. Changer la fonction d'activation (C) ou réduire la taille du batch (D) a peu à voir avec le bruit de label et n'offre pas une solution directe à ce problème.",
+      "correct_answer": "D",
+      "explanation": "La fonction de perte robuste est conçue pour mieux gérer les erreurs causées par des labels incorrects ou bruités, en atténuant leur influence sur la mise à jour des poids. En revanche, augmenter le nombre d'epochs (B) pourrait aggraver le problème en sur-apprenant les erreurs. Changer la fonction d'activation (C) ou réduire la taille du batch (D) a peu à voir avec le bruit de label et n'offre pas une solution directe à ce problème. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire la taille du batch pour améliorer la précision.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B",
       "difficulty": "medium"
     }
   ]

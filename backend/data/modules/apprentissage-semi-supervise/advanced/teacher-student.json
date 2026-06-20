@@ -14,7 +14,7 @@
         "D": "Appliquer des transformations de données pour améliorer la généralisation du modèle étudiant."
       },
       "correct_answer": "A",
-      "explanation": "Le modèle enseignant est utilisé pour créer des pseudo-étiquettes à partir de données non étiquetées, ce qui permet d'entraîner le modèle étudiant avec plus de données. Option B est incorrecte car la génération de données synthétiques est une tâche d'augmentation de données, pas spécifique au modèle enseignant. Option C est incorrecte car la validation est généralement réalisée avec un ensemble de test. Option D est fausse car les transformations de données sont une étape distincte indépendante du rôle du modèle enseignant.",
+      "explanation": "Le modèle enseignant est utilisé pour créer des pseudo-étiquettes à partir de données non étiquetées, ce qui permet d'entraîner le modèle étudiant avec plus de données. Option B est incorrecte car la génération de données synthétiques est une tâche d'augmentation de données, pas spécifique au modèle enseignant. Option C est incorrecte car la validation est généralement réalisée avec un ensemble de test. Option D est fausse car les transformations de données sont une étape distincte indépendante du rôle du modèle enseignant. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Générer des données synthétiques pour augmenter l'ensemble de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Dans l'apprentissage semi-supervisé, quel est le rôle du modèle étudiant?",
       "image_url": null,
       "choices": {
-        "A": "Affiner ses prédictions en utilisant des pseudo-étiquettes fournies par le modèle enseignant.",
-        "B": "Calibrer les hyperparamètres automatiquement pour optimiser la performance.",
+        "A": "Calibrer les hyperparamètres automatiquement pour optimiser la performance.",
+        "B": "Affiner ses prédictions en utilisant des pseudo-étiquettes fournies par le modèle enseignant.",
         "C": "Stocker et comparer les performances des différents modèles au cours du temps.",
         "D": "Contrôler les variations dans l'apprentissage non supervisé."
       },
-      "correct_answer": "A",
-      "explanation": "Le modèle étudiant apprend principalement à partir des pseudo-étiquettes fournies par le modèle enseignant et les données étiquetées réelles. Option B, calibration automatique des hyperparamètres n'est pas typique du rôle du modèle étudiant. Option C est incorrecte car la gestion des performances au fil du temps n'est pas une fonction centrale du modèle étudiant. Option D est fausse car le modèle étudiant n'est pas conçu pour contrôler les variations de l'apprentissage non supervisé.",
+      "correct_answer": "B",
+      "explanation": "Le modèle étudiant apprend principalement à partir des pseudo-étiquettes fournies par le modèle enseignant et les données étiquetées réelles. Option B, calibration automatique des hyperparamètres n'est pas typique du rôle du modèle étudiant. Option C est incorrecte car la gestion des performances au fil du temps n'est pas une fonction centrale du modèle étudiant. Option D est fausse car le modèle étudiant n'est pas conçu pour contrôler les variations de l'apprentissage non supervisé. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Calibrer les hyperparamètres automatiquement pour optimiser la performance.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Stocker et comparer",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quelle est la fonction d'une consistency loss dans un cadre teacher-student?",
       "image_url": null,
       "choices": {
-        "A": "Assurer que les prédictions pour une même donnée restant cohérentes sous des augmentations aléatoires.",
+        "A": "Assurer que toutes les couches du réseau contribuent de manière égale à la décision finale.",
         "B": "Faire converger les poids du modèle étudiant vers ceux du modèle enseignant.",
-        "C": "Assurer que toutes les couches du réseau contribuent de manière égale à la décision finale.",
+        "C": "Assurer que les prédictions pour une même donnée restant cohérentes sous des augmentations aléatoires.",
         "D": "Évaluer la performance de l'ensemble du cadre d'apprentissage semi-supervisé."
       },
-      "correct_answer": "A",
-      "explanation": "La consistency loss vise à rendre les prédictions du modèle robuste aux variations dans les données d'entrée grâce à des augmentations aléatoires. Option B est fausse parce que l'alignement des poids n'est pas l'objectif de la consistency loss. Option C est incorrecte car l'implication égale des couches n'est pas gérée par la consistency loss. Option D n'est pas correcte car l'évaluation de la performance globale n'est pas faite par cette fonction de perte.",
+      "correct_answer": "C",
+      "explanation": "La consistency loss vise à rendre les prédictions du modèle robuste aux variations dans les données d'entrée grâce à des augmentations aléatoires. Option B est fausse parce que l'alignement des poids n'est pas l'objectif de la consistency loss. Option C est incorrecte car l'implication égale des couches n'est pas gérée par la consistency loss. Option D n'est pas correcte car l'évaluation de la performance globale n'est pas faite par cette fonction de perte. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Assurer que toutes les couches du réseau contribuent de manière égale à la décision finale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Comment se définit la mise à jour EMA (Exponential Moving Average) dans le contexte enseignant-étudiant?",
       "image_url": null,
       "choices": {
-        "A": "C'est une technique pour lisser les poids du modèle enseignant sur la base des poids passés.",
+        "A": "C'est une stratégie pour synchroniser les évaluations entre le modèle enseignant et le modèle étudiant.",
         "B": "C'est une méthode pour ajuster les taux d'apprentissage du modèle étudiant en temps réel.",
         "C": "C'est une manière de diminuer progressivement la robustesse de la loss function utilisée.",
-        "D": "C'est une stratégie pour synchroniser les évaluations entre le modèle enseignant et le modèle étudiant."
+        "D": "C'est une technique pour lisser les poids du modèle enseignant sur la base des poids passés."
       },
-      "correct_answer": "A",
-      "explanation": "La mise à jour EMA utilise une moyenne mobile exponentielle pour ajuster les poids du modèle enseignant en utilisant les poids passés pour garantir une stabilité et éviter les changements abrupts. Option B est incorrecte car EMA n'est pas pour ajuster les taux d'apprentissage. Option C est incorrecte, car EMA n'affecte pas directement la robustesse des fonctions de perte. Option D est fausse parce que l'EMA ne traite pas de la synchronisation de l'évaluation entre modèles.",
+      "correct_answer": "D",
+      "explanation": "La mise à jour EMA utilise une moyenne mobile exponentielle pour ajuster les poids du modèle enseignant en utilisant les poids passés pour garantir une stabilité et éviter les changements abrupts. Option B est incorrecte car EMA n'est pas pour ajuster les taux d'apprentissage. Option C est incorrecte, car EMA n'affecte pas directement la robustesse des fonctions de perte. Option D est fausse parce que l'EMA ne traite pas de la synchronisation de l'évaluation entre modèles. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (C'est une stratégie pour synchroniser les évaluations entre le modèle enseignant et le modèle étudiant.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Optimiser automatiquement l'architecture du réseau de neurones."
       },
       "correct_answer": "A",
-      "explanation": "L'EMA aide à réduire la variance car elle prend en compte les poids passés, offrant un modèle enseignant plus stable et cohérent. Option B est incorrecte, l'EMA ne modifie pas la vitesse d'entraînement. Option C est incorrecte car l'EMA ne concerne pas la fréquence de mise à jour des étiquettes. Option D est incorrecte car EMA ne traite pas de l'optimisation de l'architecture du réseau de neurones.",
+      "explanation": "L'EMA aide à réduire la variance car elle prend en compte les poids passés, offrant un modèle enseignant plus stable et cohérent. Option B est incorrecte, l'EMA ne modifie pas la vitesse d'entraînement. Option C est incorrecte car l'EMA ne concerne pas la fréquence de mise à jour des étiquettes. Option D est incorrecte car EMA ne traite pas de l'optimisation de l'architecture du réseau de neurones. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Augmenter la vitesse d'entraînement du modèle étudiant.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Permettre une mise à jour plus fréquente des étiquettes de",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Pourquoi est-il important que le modèle enseignant soit plus stable dans le cadre teacher-student?",
       "image_url": null,
       "choices": {
-        "A": "Pour fournir des pseudo-étiquettes fiables sur lesquelles le modèle étudiant puisse s'appuyer.",
-        "B": "Pour réduire les coûts de calcul associés à l'entraînement.",
+        "A": "Pour réduire les coûts de calcul associés à l'entraînement.",
+        "B": "Pour fournir des pseudo-étiquettes fiables sur lesquelles le modèle étudiant puisse s'appuyer.",
         "C": "Pour simplifier le processus de rétropropagation dans les réseaux de neurones profonds.",
         "D": "Pour augmenter la liberté d'architectures réseau utilisées pour le modèle étudiant."
       },
-      "correct_answer": "A",
-      "explanation": "La stabilité du modèle enseignant permet de produire des pseudo-étiquettes fiables, essentielles pour la qualité de l'apprentissage du modèle étudiant. Option B est incorrecte car la stabilité ne concerne pas directement les coûts de calcul. Option C est incorrecte car la stabilité n'affecte pas directement la rétropropagation. Option D est fausse, bien que stabilité contribue à la qualité, elle n'augmente pas directement la liberté architecturale.",
+      "correct_answer": "B",
+      "explanation": "La stabilité du modèle enseignant permet de produire des pseudo-étiquettes fiables, essentielles pour la qualité de l'apprentissage du modèle étudiant. Option B est incorrecte car la stabilité ne concerne pas directement les coûts de calcul. Option C est incorrecte car la stabilité n'affecte pas directement la rétropropagation. Option D est fausse, bien que stabilité contribue à la qualité, elle n'augmente pas directement la liberté architecturale. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour réduire les coûts de calcul associés à l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour simplifier le processus de rétropropagation dans les réseaux de",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Comment une consistency loss améliore-t-elle la robustesse d'un modèle étudiant?",
       "image_url": null,
       "choices": {
-        "A": "En forçant le modèle à produire des prédictions similaires malgré les augmentations de données.",
+        "A": "En réduisant la taille de l'ensemble de données requis pour l'apprentissage.",
         "B": "En augmentant progressivement la complexité des fonctions d'activation utilisées.",
-        "C": "En réduisant la taille de l'ensemble de données requis pour l'apprentissage.",
+        "C": "En forçant le modèle à produire des prédictions similaires malgré les augmentations de données.",
         "D": "En intégrant des techniques de régularisation avancées comme le dropout."
       },
-      "correct_answer": "A",
-      "explanation": "La consistency loss améliore la robustesse en encourageant le modèle à rester stable sous des augmentations de données. Option B est incorrecte, la complexity des fonctions d'activation n'est pas modifiée par la consistency loss. Option C est fausse car la taille de l'ensemble de données n'est pas réduite par la consistency loss. Option D est incorrecte car l'intégration de régularisation comme le dropout est un processus distinct.",
+      "correct_answer": "C",
+      "explanation": "La consistency loss améliore la robustesse en encourageant le modèle à rester stable sous des augmentations de données. Option B est incorrecte, la complexity des fonctions d'activation n'est pas modifiée par la consistency loss. Option C est fausse car la taille de l'ensemble de données n'est pas réduite par la consistency loss. Option D est incorrecte car l'intégration de régularisation comme le dropout est un processus distinct. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En réduisant la taille de l'ensemble de données requis pour l'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En augmentant progressivement la complexité des",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quel est l'effet de l'EMA sur la vitesse de convergence du modèle étudiant?",
       "image_url": null,
       "choices": {
-        "A": "Il n'affecte pas directement la vitesse de convergence, mais stabilise les mises à jour du modèle enseignant.",
+        "A": "Il ne joue aucun rôle dans la convergence des modèles étudiants.",
         "B": "Il accélère la convergence en augmentant les taux d'apprentissage.",
         "C": "Il ralentit la convergence en introduisant plus de calculs.",
-        "D": "Il ne joue aucun rôle dans la convergence des modèles étudiants."
+        "D": "Il n'affecte pas directement la vitesse de convergence, mais stabilise les mises à jour du modèle enseignant."
       },
-      "correct_answer": "A",
-      "explanation": "L'EMA stabilise les poids du modèle enseignant, mais n'affecte pas directement la vitesse à laquelle le modèle étudiant converge. Option B est incorrecte car l'EMA n'augmente pas les taux d'apprentissage. Option C est incorrecte car il ne ralentit pas la convergence de cette manière, même s'il ajoute une petite surcharge. Option D est faux parce que l'indirecte influence de l'EMA sur la stabilité affecte la convergence du modèle étudiant.",
+      "correct_answer": "D",
+      "explanation": "L'EMA stabilise les poids du modèle enseignant, mais n'affecte pas directement la vitesse à laquelle le modèle étudiant converge. Option B est incorrecte car l'EMA n'augmente pas les taux d'apprentissage. Option C est incorrecte car il ne ralentit pas la convergence de cette manière, même s'il ajoute une petite surcharge. Option D est faux parce que l'indirecte influence de l'EMA sur la stabilité affecte la convergence du modèle étudiant. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il ne joue aucun rôle dans la convergence des modèles étudiants.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il accélère la convergence",
       "difficulty": "hard"
     },
     {
@@ -120,13 +120,13 @@
       "question": "Comment le modèle enseignant influence-t-il l'étape de rétropropagation dans un modèle étudiant à travers des pseudo-étiquettes?",
       "image_url": null,
       "choices": {
-        "A": "Les pseudo-étiquettes servent de vérités terrain sans bruit et influencent directement la fonction de perte.",
+        "A": "Elles sont utilisées comme vérités terrain approximatives, influençant les gradients pendant l'apprentissage.",
         "B": "Elles sont ignorées pendant la rétropropagation pour ne pas biaiser les mises à jour des poids.",
         "C": "Elles sont utilisées pour ajouter un bruit gaussien aux gradients pendant la rétropropagation.",
-        "D": "Elles sont utilisées comme vérités terrain approximatives, influençant les gradients pendant l'apprentissage."
+        "D": "Les pseudo-étiquettes servent de vérités terrain sans bruit et influencent directement la fonction de perte."
       },
-      "correct_answer": "D",
-      "explanation": "Les pseudo-étiquettes agissent comme des vérités approximatives pendant la rétropropagation, permettant d’ajuster les poids du modèle étudiant en conséquence. Option A est incorrecte, les pseudo-étiquettes peuvent contenir du bruit. Option B est incorrecte, elles ne sont pas ignorées mais intégrées. Option C est incorrecte car elles ne sont pas utilisées pour ajouter du bruit aux gradients, bien qu’elles participent à l’ajustement des gradients.",
+      "correct_answer": "A",
+      "explanation": "Les pseudo-étiquettes agissent comme des vérités approximatives pendant la rétropropagation, permettant d’ajuster les poids du modèle étudiant en conséquence. Option A est incorrecte, les pseudo-étiquettes peuvent contenir du bruit. Option B est incorrecte, elles ne sont pas ignorées mais intégrées. Option C est incorrecte car elles ne sont pas utilisées pour ajouter du bruit aux gradients, bien qu’elles participent à l’ajustement des gradients. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elles sont ignorées pendant la rétropropagation pour ne pas biaiser les mises à jour des poids.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elles sont utilisées pour ajouter",
       "difficulty": "hard"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quelles sont les conséquences de ne pas utiliser l'EMA dans un modèle enseignant?",
       "image_url": null,
       "choices": {
-        "A": "Une plus grande instabilité dans les poids du modèle enseignant qui pourrait dégrader la qualité des pseudo-étiquettes.",
-        "B": "Un accroissement de la consommation mémoire pendant l'entraînement.",
+        "A": "Un accroissement de la consommation mémoire pendant l'entraînement.",
+        "B": "Une plus grande instabilité dans les poids du modèle enseignant qui pourrait dégrader la qualité des pseudo-étiquettes.",
         "C": "Une évolution trop rapide de la structure des couches du modèle étudiant.",
         "D": "Un besoin accru de données étiquetées pour générer des pseudo-étiquettes."
       },
-      "correct_answer": "A",
-      "explanation": "Sans EMA, les poids peuvent changer drastiquement d'une étape à l'autre, rendant les pseudo-étiquettes moins fiables. Option B est incorrecte car l'EMA ne réduit pas la consommation mémoire de manière significative. Option C est incorrecte car l'EMA n'affecte pas la structure des couches du modèle étudiant. Option D est incorrecte car l'EMA n'apprend pas sur la quantité de données étiquetées requises pour générer des pseudo-étiquettes.",
+      "correct_answer": "B",
+      "explanation": "Sans EMA, les poids peuvent changer drastiquement d'une étape à l'autre, rendant les pseudo-étiquettes moins fiables. Option B est incorrecte car l'EMA ne réduit pas la consommation mémoire de manière significative. Option C est incorrecte car l'EMA n'affecte pas la structure des couches du modèle étudiant. Option D est incorrecte car l'EMA n'apprend pas sur la quantité de données étiquetées requises pour générer des pseudo-étiquettes. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un accroissement de la consommation mémoire pendant l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une évolution trop rapide de la structure des couches du modèle",
       "difficulty": "hard"
     },
     {
@@ -149,12 +149,12 @@
       "image_url": null,
       "choices": {
         "A": "Pour prévenir les conflits lors de la mise à jour des poids du modèle enseignant.",
-        "B": "Pour garantir que les variations des données d'entrée ne modifient pas considérablement les prédictions.",
-        "C": "Pour permettre une diminution automatique du learning rate sans intervention humaine.",
+        "B": "Pour permettre une diminution automatique du learning rate sans intervention humaine.",
+        "C": "Pour garantir que les variations des données d'entrée ne modifient pas considérablement les prédictions.",
         "D": "Pour augmenter la complexité du modèle enseignant sans compromettre la performance."
       },
-      "correct_answer": "B",
-      "explanation": "Une loss de cohérence bien configurée assure que les prédictions restent stables malgré les variations des données, améliorant ainsi la robustesse du modèle. Option A est incorrecte, car la loss de cohérence ne traite pas de la mise à jour des poids du modèle enseignant. Option C est incorrecte, la loss de cohérence ne gère pas les learning rates. Option D est incorrecte car la complexité du modèle enseignant n'est pas directement augmentée par la loss de cohérence.",
+      "correct_answer": "C",
+      "explanation": "Une loss de cohérence bien configurée assure que les prédictions restent stables malgré les variations des données, améliorant ainsi la robustesse du modèle. Option A est incorrecte, car la loss de cohérence ne traite pas de la mise à jour des poids du modèle enseignant. Option C est incorrecte, la loss de cohérence ne gère pas les learning rates. Option D est incorrecte car la complexité du modèle enseignant n'est pas directement augmentée par la loss de cohérence. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour prévenir les conflits lors de la mise à jour des poids du modèle enseignant.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel problème peut survenir si le modèle étudiant est beaucoup plus complexe que le modèle enseignant?",
       "image_url": null,
       "choices": {
-        "A": "Le modèle étudiant risque de surapprendre les pseudo-étiquettes biaisées du modèle enseignant.",
+        "A": "Les mises à jour de l'EMA seraient inutiles pour le modèle enseignant.",
         "B": "Le modèle enseignant ne pourra pas suivre les mises à jour rapides de l'étudiant.",
         "C": "La rétropropagation des gradients pourrait être interrompue prématurément.",
-        "D": "Les mises à jour de l'EMA seraient inutiles pour le modèle enseignant."
+        "D": "Le modèle étudiant risque de surapprendre les pseudo-étiquettes biaisées du modèle enseignant."
       },
-      "correct_answer": "A",
-      "explanation": "Un modèle étudiant plus complexe peut surapprendre les biais des pseudo-étiquettes, ce qui nuit généralement à la performance générale. Option B est incorrecte, car le modèle enseignant n’est pas conçu pour suivre les mises à jour de l’étudiant mais pour générer des prédictions stables. Option C est incorrecte car la complexité relative ne cause pas d’interruption dans la rétropropagation. Option D est incorrecte car les mises à jour EMA ne sont pas destinées à devenir inutiles simplement en raison de la complexité relative des modèles.",
+      "correct_answer": "D",
+      "explanation": "Un modèle étudiant plus complexe peut surapprendre les biais des pseudo-étiquettes, ce qui nuit généralement à la performance générale. Option B est incorrecte, car le modèle enseignant n’est pas conçu pour suivre les mises à jour de l’étudiant mais pour générer des prédictions stables. Option C est incorrecte car la complexité relative ne cause pas d’interruption dans la rétropropagation. Option D est incorrecte car les mises à jour EMA ne sont pas destinées à devenir inutiles simplement en raison de la complexité relative des modèles. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les mises à jour de l'EMA seraient inutiles pour le modèle enseignant.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "En minimisant le besoin d'une couche d'activation sur la sortie."
       },
       "correct_answer": "A",
-      "explanation": "Une diversité dans les prédictions permet de couvrir une plus large gamme de scénarios, aidant ainsi le modèle étudiant à généraliser mieux. Option B est incorrecte, car la diversité des prédictions n’affecte pas directement le temps de calcul. Option C est incorrecte et la diversité inhérente ne se traduit pas par un mécanisme explicite pour détecter les outliers. Option D est incorrecte, car la nécessité d'une couche d'activation n'est pas liée à la diversité des prédictions du modèle teacher.",
+      "explanation": "Une diversité dans les prédictions permet de couvrir une plus large gamme de scénarios, aidant ainsi le modèle étudiant à généraliser mieux. Option B est incorrecte, car la diversité des prédictions n’affecte pas directement le temps de calcul. Option C est incorrecte et la diversité inhérente ne se traduit pas par un mécanisme explicite pour détecter les outliers. Option D est incorrecte, car la nécessité d'une couche d'activation n'est pas liée à la diversité des prédictions du modèle teacher. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (En général, en réduisant le temps de calcul nécessaire pour chaque epoch.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     },
     {
@@ -196,7 +196,7 @@
         "D": "Réduire à zero la capacité du modèle à distinguer entre bruit et signal."
       },
       "correct_answer": "B",
-      "explanation": "Une mauvaise calibration de la consistency loss peut entraîner un ajustement trop précis à la distribution spécifique du bruit dans les données, ce qui peut être pernicieux pour la généralisation. Option A est incorrecte car la consistency loss n’implique pas nécessairement de négliger les vrais labels. Option C est incorrecte, elle n'affecte pas directement la complexité computationnelle au-delà de son propre calcul. Option D est incorrecte parce qu'elle ne compromet pas entièrement la capacité de distinguer entre bruit et signal mais pourrait affecter négativement la performance.",
+      "explanation": "Une mauvaise calibration de la consistency loss peut entraîner un ajustement trop précis à la distribution spécifique du bruit dans les données, ce qui peut être pernicieux pour la généralisation. Option A est incorrecte car la consistency loss n’implique pas nécessairement de négliger les vrais labels. Option C est incorrecte, elle n'affecte pas directement la complexité computationnelle au-delà de son propre calcul. Option D est incorrecte parce qu'elle ne compromet pas entièrement la capacité de distinguer entre bruit et signal mais pourrait affecter négativement la performance. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmenter un phénomène d'underfitting en négligeant les vrais labels.) est plausible mais faux car il ne respecte pas",
       "difficulty": "hard"
     },
     {
@@ -210,7 +210,7 @@
         "D": "Produire des pseudo-étiquettes faute de l'accès continu aux vrais labels."
       },
       "correct_answer": "C",
-      "explanation": "Le plus grand défi pour le modèle enseignant est de générer des pseudo-étiquettes variées qui représentent bien la diversité des données réelles rencontrées. Option A est incorrecte bien que les invariances soient désirables, elles ne sont pas l’objectif principal. Option B est incorrecte, car bien que souhaitable, la convergence rapide du modèle étudiant ne repose pas seulement sur la qualité des pseudo-étiquettes. Option D est incorrecte, car le problème central est la qualité et la représentativité des pseudo-étiquettes, pas l'accès aux vrais labels.",
+      "explanation": "Le plus grand défi pour le modèle enseignant est de générer des pseudo-étiquettes variées qui représentent bien la diversité des données réelles rencontrées. Option A est incorrecte bien que les invariances soient désirables, elles ne sont pas l’objectif principal. Option B est incorrecte, car bien que souhaitable, la convergence rapide du modèle étudiant ne repose pas seulement sur la qualité des pseudo-étiquettes. Option D est incorrecte, car le problème central est la qualité et la représentativité des pseudo-étiquettes, pas l'accès aux vrais labels. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Préciser les pseudo-étiquettes de manière à être invariantes par transformation géométrique.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Pourquoi l'EMA est-elle souvent appliquée spécifiquement au modèle teacher et non pas au modèle student?",
       "image_url": null,
       "choices": {
-        "A": "Parce que la stabilité est plus critique pour les prédictions du teacher afin d’assurer la qualité des pseudo-étiquettes.",
+        "A": "Parce qu'elle automatise l'ajustement des taux d'apprentissage pour le student.",
         "B": "Parce que le modèle student est généralement plus petit et moins sujet aux fluctuations.",
         "C": "Parce que elle améliore significativement la rapidité d’entraînement du modèle student.",
-        "D": "Parce qu'elle automatise l'ajustement des taux d'apprentissage pour le student."
+        "D": "Parce que la stabilité est plus critique pour les prédictions du teacher afin d’assurer la qualité des pseudo-étiquettes."
       },
-      "correct_answer": "A",
-      "explanation": "L'EMA assure la stabilité des prédictions du modèle enseignant, ce qui est essentiel pour produire des pseudo-étiquettes fiables. Option B est incorrecte, la taille n'est pas nécessairement liée à la volatilité. Option C est incorrecte, l'EMA n'améliore pas principalement la vitesse de l'entraînement du modèle étudiant. Option D est incorrecte, car l'EMA ne gère pas l'ajustement des taux d'apprentissage.",
+      "correct_answer": "D",
+      "explanation": "L'EMA assure la stabilité des prédictions du modèle enseignant, ce qui est essentiel pour produire des pseudo-étiquettes fiables. Option B est incorrecte, la taille n'est pas nécessairement liée à la volatilité. Option C est incorrecte, l'EMA n'améliore pas principalement la vitesse de l'entraînement du modèle étudiant. Option D est incorrecte, car l'EMA ne gère pas l'ajustement des taux d'apprentissage. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce qu'elle automatise l'ajustement des taux d'apprentissage pour le student.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Parce que le modèle student est généralement plus petit et moins sujet aux fluctuations.) est",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Elles améliorent la performance en raison de leur nature stochastique."
       },
       "correct_answer": "A",
-      "explanation": "Les pseudo-étiquettes incorrectes peuvent induire un biais qui affectera la capacité de généralisation du modèle student. Option B est incorrecte, car la réduction de la dimensionnalité des features n'est pas un effet direct des pseudo-étiquettes. Option C est incorrecte, elles ne contribuent pas directement à la détection d'anomalies. Option D est faux, car la nature stochastique d'étiquettes incorrectes ne conduit pas à une amélioration de la performance.",
+      "explanation": "Les pseudo-étiquettes incorrectes peuvent induire un biais qui affectera la capacité de généralisation du modèle student. Option B est incorrecte, car la réduction de la dimensionnalité des features n'est pas un effet direct des pseudo-étiquettes. Option C est incorrecte, elles ne contribuent pas directement à la détection d'anomalies. Option D est faux, car la nature stochastique d'étiquettes incorrectes ne conduit pas à une amélioration de la performance. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elles réduisent automatiquement la dimensionnalité des features en apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elles augmentent la capacité du student à détecter",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Quelle est la conséquence directe d'une forte dépendance du modèle student aux pseudo-étiquettes générées par le modèle teacher?",
       "image_url": null,
       "choices": {
-        "A": "Risque de surajustement aux biais ou erreurs présentes dans les pseudo-étiquettes.",
-        "B": "Amélioration générale de la robustesse face aux données bruyantes.",
+        "A": "Amélioration générale de la robustesse face aux données bruyantes.",
+        "B": "Risque de surajustement aux biais ou erreurs présentes dans les pseudo-étiquettes.",
         "C": "Augmentation linéaire du volume de données étiquetées requis.",
         "D": "Diminution de la précision car les données non étiquetées sont ignorées."
       },
-      "correct_answer": "A",
-      "explanation": "Le modèle student peut surajuster si les pseudo-étiquettes sont biaisées ou contiennent des erreurs, car elles influencent l'apprentissage. Option B est incorrecte, car la robustesse n'est généralement pas améliorée par des pseudo-étiquettes inexactes. Option C est incorrecte, car la dépendance ne change pas directement le volume de données étiquetées requis. Option D est faux, car les données non étiquetées sont justement valorisées par l'utilisation de pseudo-étiquettes.",
+      "correct_answer": "B",
+      "explanation": "Le modèle student peut surajuster si les pseudo-étiquettes sont biaisées ou contiennent des erreurs, car elles influencent l'apprentissage. Option B est incorrecte, car la robustesse n'est généralement pas améliorée par des pseudo-étiquettes inexactes. Option C est incorrecte, car la dépendance ne change pas directement le volume de données étiquetées requis. Option D est faux, car les données non étiquetées sont justement valorisées par l'utilisation de pseudo-étiquettes. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Amélioration générale de la robustesse face aux données bruyantes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Augmentation linéaire du volume de données étiquetées requis.) est",
       "difficulty": "hard"
     },
     {
@@ -260,12 +260,12 @@
       "question": "Comment un modèle enseignant est-il typiquement utilisé dans l'apprentissage semi-supervisé avec une architecture teacher-student?",
       "image_url": null,
       "choices": {
-        "A": "Le modèle enseignant génère des pseudo-étiquettes pour les données non étiquetées pour améliorer l'apprentissage du modèle étudiant.",
+        "A": "Le modèle enseignant a une complexité plus faible que le modèle étudiant pour favoriser une convergence rapide.",
         "B": "Le modèle enseignant est entraîné en parallèle et ne partage aucun paramètre avec le modèle étudiant.",
-        "C": "Le modèle enseignant a une complexité plus faible que le modèle étudiant pour favoriser une convergence rapide.",
+        "C": "Le modèle enseignant génère des pseudo-étiquettes pour les données non étiquetées pour améliorer l'apprentissage du modèle étudiant.",
         "D": "Le modèle enseignant utilise les erreurs du modèle étudiant pour ajuster ses propres paramètres."
       },
-      "correct_answer": "A",
+      "correct_answer": "C",
       "explanation": "Dans l'architecture teacher-student, le modèle enseignant sert à générer des pseudo-étiquettes pour les données non étiquetées, ce qui aide le modèle étudiant à s'entraîner avec un volume de données élargi et diversifié. L'option B est incorrecte car le modèle étudiant utilise les informations du modèle enseignant, pas nécessairement de manière totalement indépendante. L'option C est incorrecte, car on préfère généralement que le modèle enseignant soit au moins aussi complexe que le modèle étudiant pour générer de bonnes pseudo-étiquettes. L'option D est incorrecte car c'est le modèle étudiant qui apprend à partir des sorties du modèle enseignant, pas l'inverse.",
       "difficulty": "medium"
     },
@@ -274,13 +274,13 @@
       "question": "Dans le contexte des modèles teacher-student, qu'est-ce que la mise à jour EMA (Exponential Moving Average) affecte principalement?",
       "image_url": null,
       "choices": {
-        "A": "Elle calcule une version lissée des poids du modèle enseignant au cours de l'entraînement.",
+        "A": "Elle normalise les sorties du modèle enseignant pour garantir la stabilité numérique.",
         "B": "Elle ajuste dynamiquement le learning rate du modèle étudiant en fonction des performances passées.",
         "C": "Elle met à jour les biais des couches denses du modèle étudiant pour éviter le surapprentissage.",
-        "D": "Elle normalise les sorties du modèle enseignant pour garantir la stabilité numérique."
+        "D": "Elle calcule une version lissée des poids du modèle enseignant au cours de l'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "La mise à jour par moyenne mobile exponentielle (EMA) est utilisée pour lisser les poids du modèle enseignant afin de réduire les fluctuations et stabiliser son comportement au cours de l'entraînement. L'option B est incorrecte car EMA ne concerne pas l'ajustement du taux d'apprentissage. L'option C est inadéquate car EMA ne cible pas spécifiquement les biais des couches denses. L'option D est fausse car elle confond le rôle d'EMA avec des techniques telles que la normalisation de lot.",
+      "correct_answer": "D",
+      "explanation": "La mise à jour par moyenne mobile exponentielle (EMA) est utilisée pour lisser les poids du modèle enseignant afin de réduire les fluctuations et stabiliser son comportement au cours de l'entraînement. L'option B est incorrecte car EMA ne concerne pas l'ajustement du taux d'apprentissage. L'option C est inadéquate car EMA ne cible pas spécifiquement les biais des couches denses. L'option D est fausse car elle confond le rôle d'EMA avec des techniques telles que la normalisation de lot. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle normalise les sorties du modèle enseignant pour garantir la stabilité numérique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     }
   ]

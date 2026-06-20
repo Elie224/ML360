@@ -5,212 +5,212 @@
   "questions": [
     {
       "type": "text",
-      "question": "Qu'est-ce que l'accuracy dans le contexte de l'apprentissage supervisé?",
+      "question": "Quelle est la mesure qui évalue la proportion de prédictions correctes parmi l'ensemble des prédictions faites par un modèle?",
       "image_url": null,
       "choices": {
-        "A": "La proportion de prédictions correctes sur le total des prédictions effectuées",
-        "B": "La proportion de vrais positifs sur le total des prédictions positives",
-        "C": "La proportion de vrais positifs sur le total des cas positifs réels",
-        "D": "Le risque de surestimation de la capacité prédictive d'un modèle"
+        "A": "Accuracy",
+        "B": "Precision",
+        "C": "Recall",
+        "D": "Specificity"
       },
       "correct_answer": "A",
-      "explanation": "L'accuracy est la proportion de prédictions correctes parmi toutes les prédictions effectuées. B décrit la précision et C décrit le rappel. D est une définition d'overfitting.",
+      "explanation": "L'accuracy est une mesure qui évalue la proportion de prédictions correctes sur l'ensemble des prédictions effectuées par un modèle. On la calcule en divisant le nombre total de prédictions correctes (vrais positifs + vrais négatifs) par le nombre total de prédictions (vrais positifs, vrais négatifs, faux positifs et faux négatifs). La precision quantifie les prédictions positives correctes, tandis que le recall mesure la capacité à identifier tous les vrais positifs. La specificity, elle, se concentre sur la capacité du modèle à identifier correctement les cas négatifs, ne couvrant donc pas l'ensemble des prédictions.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quelle formule définit l'accuracy?",
+      "question": "Comment calcule-t-on la précision en apprentissage supervisé?",
       "image_url": null,
       "choices": {
-        "A": "(TP + TN) / (TP + TN + FP + FN)",
+        "A": "Vrais positifs / (Vrais positifs + Faux négatifs)",
+        "B": "Vrais positifs / (Vrais positifs + Faux positifs)",
+        "C": "Vrais positifs / (Vrais positifs + Vrais négatifs)",
+        "D": "Faux positifs / (Faux positifs + Vrais positifs)"
+      },
+      "correct_answer": "B",
+      "explanation": "La précision (ou precision) se calcule en divisant le nombre de vrais positifs par la somme des vrais positifs et des faux positifs : TP / (TP + FP). Cette mesure évalue la capacité du modèle à limiter les faux positifs. La réponse A décrit le recall, qui s'intéresse aux vrais positifs par rapport à la somme des vrais positifs et des faux négatifs. La réponse C est incorrecte car elle combine les vrais positifs et négatifs au numérateur, tandis que D calcule uniquement les faux positifs, ce qui n'est pas pertinent pour la précision.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la définition de 'recall' en apprentissage supervisé?",
+      "image_url": null,
+      "choices": {
+        "A": "Vrais négatifs / (Vrais négatifs + Faux positifs)",
+        "B": "Vrais positifs / (Vrais positifs + Faux positifs)",
+        "C": "Vrais positifs / (Vrais positifs + Faux négatifs)",
+        "D": "Faux positifs / (Faux négatifs + Vrais négatifs)"
+      },
+      "correct_answer": "C",
+      "explanation": "Le recall, ou sensibilité, est défini comme le ratio des vrais positifs sur la somme des vrais positifs et des faux négatifs : TP / (TP + FN). Il quantifie la capacité du modèle à identifier toutes les instances positives réelles. L'option B décrit la précision, qui concerne la qualité des prédictions positives. L'option A correspond à la specificity, qui évalue la capacité à identifier correctement les cas négatifs. L'option D n'est pas une métrique standard connue et ne mesure pas le recall, car elle tient compte des faux et vrais négatifs.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Comment calcule-t-on l'accuracy dans un modèle de classification?",
+      "image_url": null,
+      "choices": {
+        "A": "FP / (FP + TN)",
         "B": "TP / (TP + FP)",
         "C": "TP / (TP + FN)",
-        "D": "(FP + FN) / (TP + TN + FP + FN)"
+        "D": "(TP + TN) / (TP + FP + FN + TN)"
       },
-      "correct_answer": "A",
-      "explanation": "L'accuracy est définie comme le nombre de prédictions correctes (vrais positifs plus vrais négatifs) sur le total des cas. B correspond à la précision, C au rappel, et D n'est pas une métrique standard.",
+      "correct_answer": "D",
+      "explanation": "L'accuracy est calculée comme la somme des vrais positifs et des vrais négatifs divisée par le total de prédictions : (TP + TN) / (TP + TN + FP + FN). Cette mesure représente la proportion totale de prédictions correctes sur l'ensemble des prédictions effectuées. L'option B décrit la precision, centrée sur le ratio des prédictions positives correctes. L'option C concerne le recall, qui évalue la capacité à identifier les vrais positifs. L'option A est incohérente, calculant une fraction sans rapport à l'accuracy, puisqu'elle se concentre sur les faux positifs et les vrais négatifs.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quelle métrique décrit le mieux la capacité d'un modèle à éviter les faux positifs?",
+      "question": "Quelle est la formule de l'indicateur appelé 'precision'?",
       "image_url": null,
       "choices": {
-        "A": "Précision",
-        "B": "Rappel",
-        "C": "Accuracy",
-        "D": "F1 Score"
+        "A": "TP / (TP + FP)",
+        "B": "TP / (TP + FN)",
+        "C": "TP / (TP + TN + FP + FN)",
+        "D": "FP / (FP + TN)"
       },
       "correct_answer": "A",
-      "explanation": "La précision se concentre sur la proportion de vrais positifs parmi le total des prédictions positives, donc moins de faux positifs. Le rappel (B) traite les cas positifs réels, l'accuracy (C) considère toutes les prédictions, et le F1 score (D) est une moyenne harmonique de précision et de rappel.",
+      "explanation": "La précision, ou precision, est définie comme le rapport des vrais positifs (TP) sur le total des prédictions positives, incluant les faux positifs (FP), donc TP / (TP + FP). Elle mesure l'exactitude des prédictions positives émises par le modèle. L'option B correspond au recall, qui évalue la capacité d'un modèle à détecter les vrais positifs parmi tous les positifs réels. L'option C décrit l'accuracy, qui considère toutes les prédictions correctes sur l'ensemble des données. L'option D est incorrecte car elle ne constitue pas une mesure pertinente pour évaluer la performance globale d'un modèle puisqu'elle ne concerne que les faux et vrais négatifs.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quel est l'effet principal de l'overfitting sur un modèle d'apprentissage supervisé?",
+      "question": "Comment définit-on le 'recall' dans un modèle prédictif?",
       "image_url": null,
       "choices": {
-        "A": "Le modèle fonctionne bien sur les données d'entraînement mais mal sur les nouvelles données",
-        "B": "Le modèle diminue la variance des données de test",
-        "C": "Le modèle améliore la précision de toutes les prédictions",
-        "D": "Le modèle augmente le nombre de faux négatifs"
+        "A": "TP / (TP + FP)",
+        "B": "TP / (TP + FN)",
+        "C": "TN / (TN + FP)",
+        "D": "FP / (FP + TN)"
       },
-      "correct_answer": "A",
-      "explanation": "L'overfitting signifie que le modèle mémorise plutôt qu'il n'apprene, ce qui conduit à de bonnes performances sur les données d'entraînement mais à des résultats médiocres sur de nouvelles données. B, C, et D ne décrivent pas les conséquences typiques de l'overfitting.",
+      "correct_answer": "B",
+      "explanation": "Le recall (ou sensibilité) mesure combien de vrais positifs (TP) sont correctement identifiés par rapport à tous les cas positifs réels, exprimé par TP / (TP + FN). C'est essentiel pour évaluer la capacité à ne pas rater les cas pertinents. L'option A décrit la précision, focalisée sur la justesse des prédictions positives. L'option C est la spécificité, qui quantifie la capacité à reconnaître correctement les cas négatifs. L'option D n'est pas une métrique reconnue, car elle isole les faux positifs et vrais négatifs, ne fournissant pas d'insight sur la détection des vrais positifs, qui est le cœur du recall.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Que mesure le rappel dans un modèle de classification?",
+      "question": "Quel phénomène est caractéristique de l'overfitting?",
       "image_url": null,
       "choices": {
-        "A": "La proportion de vrais positifs parmi tous les cas positifs réels",
-        "B": "La proportion de vrais positifs parmi toutes les prédictions positives",
-        "C": "La différence entre vrais positifs et faux positifs",
-        "D": "Le taux global de prédictions incorrectes"
+        "A": "Le modèle s'ajuste bien aux données de test mais pas aux données d'entraînement.",
+        "B": "Le modèle a une haute précision et un faible recall.",
+        "C": "Le modèle s'ajuste trop bien aux données d'entraînement mais performe mal sur les données de test.",
+        "D": "Le modèle a peu de faux négatifs mais beaucoup de faux positifs."
       },
-      "correct_answer": "A",
-      "explanation": "Le rappel, ou sensibilité, est la mesure de la proportion de vrais positifs correctement identifiés parmi tous les cas qui sont réellement positifs. B décrit la précision, C n'est pas une métrique standard, et D décrit une erreur.",
+      "correct_answer": "C",
+      "explanation": "L'overfitting survient lorsqu'un modèle s'ajuste trop précisément aux données d'entraînement, capturant le 'bruit' plutôt que les véritables motifs. Cela résulte en des performances médiocres sur de nouvelles données. L'option A est incorrecte, car elle décrit un bon ajustement aux données de test, alors que l'overfitting se manifeste lors des tests. L'option B indique un déséquilibre entre précision et rappel, sans lien direct avec l'overfitting. L'option D focalise sur la distribution de faux positifs et de faux négatifs, ce qui n'est pas typique de l'overfitting mais plutôt de la précision du modèle.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quelle est l'une des causes principales de l'overfitting?",
+      "question": "Qu'est-ce que l'accuracy dans un modèle de classification?",
       "image_url": null,
       "choices": {
-        "A": "Un modèle trop complexe par rapport au volume de données d'entraînement",
-        "B": "Un modèle avec trop peu de paramètres",
-        "C": "Un modèle entraîné avec trop peu de données étiquetées",
-        "D": "Un taux d'apprentissage trop élevé"
+        "A": "Le nombre de faux positifs sur le nombre de faux négatifs.",
+        "B": "Le ratio des vraies prédictions positives sur le total des vrais positifs et faux négatifs.",
+        "C": "Le ratio des vraies prédictions positives sur le total des prédictions positives.",
+        "D": "Le ratio des prédictions correctes sur le total des prédictions."
       },
-      "correct_answer": "A",
-      "explanation": "L'overfitting survient souvent lorsque le modèle est trop complexe et capture le bruit des données d'entraînement au lieu des véritables tendances. B évoque l'underfitting, C est un facteur contributif mais pas direct, et D se rapporte à la vitesse d'apprentissage plutôt qu'à l'overfitting.",
+      "correct_answer": "D",
+      "explanation": "L'accuracy d'un modèle de classification est le ratio des prédictions correctes parmi toutes les prédictions émises : (TP + TN) / (TP + TN + FP + FN). Elle montre la proportion de cas bien classifiés par le modèle. L'option A fait référence à un ratio qui n'a pas de signification pertinente. L'option B décrit le recall, la capacité à capturer tous les cas positifs réels. L'option C se concentre sur la précision, c'est-à-dire la qualité des prédictions positives. L'accuracy, en revanche, prend en compte à la fois les vraies et les fausses prédictions.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "En apprentissage supervisé, quelle métrique est utilisée pour évaluer la proportion de prédictions positives correctement identifiées?",
+      "question": "Quel est le terme qui décrit le ratio des vraies prédictions positives sur le nombre total de prédictions positives?",
       "image_url": null,
       "choices": {
         "A": "Précision",
         "B": "Rappel",
         "C": "Exactitude",
-        "D": "Erreur quadratique moyenne"
+        "D": "Sensibilité"
       },
       "correct_answer": "A",
-      "explanation": "La précision mesure la proportion de prédictions positives qui étaient correctes. Le rappel (B) traite les cas positifs réels, l'exactitude (C), ou l'accuracy, se concentre sur toutes les prédictions, et l'erreur quadratique moyenne (D) est une métrique de régression.",
+      "explanation": "La précision (ou precision) est le ratio des vraies prédictions positives (TP) sur l'ensemble des prédictions positives, soit TP / (TP + FP). Cela indique la proportion de prédictions positives qui étaient correctes. Le rappel (ou recall) se concentre sur la capacité à identifier tous les cas positifs réels, tandis que l'exactitude (ou accuracy) représente la proportion globale de prédictions correctes, englobant toutes les classes. La sensibilité est en fait synonyme de rappel, pas de précision. Ces nuances aident à comprendre comment chaque métrique reflète différents aspects de la performance d'un modèle en classification.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quel problème peut survenir si un modèle est trop simple par rapport aux données?",
+      "question": "Quelle métrique peut être définie comme la capacité d'un modèle à détecter tous les exemples pertinents dans un ensemble de données?",
       "image_url": null,
       "choices": {
-        "A": "Underfitting",
-        "B": "Overfitting",
-        "C": "Augmentation du bruit",
-        "D": "Dérive du concept"
+        "A": "Précision",
+        "B": "Rappel",
+        "C": "Exactitude",
+        "D": "Spécificité"
       },
-      "correct_answer": "A",
-      "explanation": "L'underfitting se produit lorsqu'un modèle est trop simple pour capturer les schémas sous-jacents des données. B est opposé à l'underfitting, C est un ajout de données non pertinentes, et D concerne les changements temporels dans les données.",
+      "correct_answer": "B",
+      "explanation": "Le recall, ou sensibilité, est la métrique qui évalue la capacité d’un modèle à détecter tous les exemples pertinents parmi les cas positifs réels, calculé par TP / (TP + FN). La précision mesure la qualité des prédictions positives, tandis que l’accuracy reflète la proportion totale de prédictions correctes, et la spécificité indique l’aptitude à identifier correctement les cas négatifs. Le recall est essentiel dans des contextes où il est crucial de ne manquer aucun cas positif, comme dans les dépistages médicaux. Il met l'accent sur la couverture complète des positifs, ce qui est vital pour la protection contre les conséquences des faux négatifs.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quel effet un jeu de données de test très petit peut-il avoir sur l'évaluation d'un modèle?",
+      "question": "Quel terme est utilisé pour décrire un modèle qui apprend trop bien les détails et le bruit d'un ensemble de données d'entraînement?",
       "image_url": null,
       "choices": {
-        "A": "Rendre l'évaluation peu fiable",
-        "B": "Supprimer le besoin de validation croisée",
-        "C": "Augmenter la généralisation",
-        "D": "Améliorer les scores de précision"
+        "A": "Sous-ajustement",
+        "B": "Biais",
+        "C": "Sur-ajustement",
+        "D": "Variance"
       },
-      "correct_answer": "A",
-      "explanation": "Un petit jeu de test peut ne pas refléter adéquatement la performance du modèle sur de nouvelles données. B est faux car la validation croisée est souvent plus nécessaire, C et D ne sont pas typiques d'un petit échantillon de test.",
+      "correct_answer": "C",
+      "explanation": "Le sur-ajustement (ou overfitting) survient lorsque le modèle est trop ajusté aux détails et au bruit de l’ensemble de données d’entraînement, compromettant ainsi sa généralisation à de nouvelles données. Le modèle devient capable de mémoriser les données d'entraînement au lieu de capter les motifs sous-jacents. Le sous-ajustement (underfitting) est l'opposé, produisant un modèle trop simple pour représenter les données correctement. Le biais et la variance influencent la performance du modèle mais ne définissent pas le sur-ajustement par eux-mêmes. Comprendre le sur-ajustement est crucial pour équilibrer la complexité d’un modèle face aux nouveaux ensembles de données.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans un modèle de classification, que se passe-t-il si le seuil de décision est trop bas?",
+      "question": "Qu'est-ce que l'accuracy dans un modèle de classification? (variante 2)",
       "image_url": null,
       "choices": {
-        "A": "Augmentation du nombre de faux positifs",
-        "B": "Réduction du nombre de vrais positifs",
-        "C": "Augmentation du nombre de faux négatifs",
-        "D": "Réduction des faux positifs"
+        "A": "La proportion de vrais négatifs parmi les prévisions négatives.",
+        "B": "La proportion de vrais positifs sur le total des prédictions positives.",
+        "C": "La capacité du modèle à générer des prédictions nouvelles.",
+        "D": "Le pourcentage de prédictions correctes sur l'ensemble des données."
+      },
+      "correct_answer": "D",
+      "explanation": "L'accuracy dans un modèle de classification se définit par le pourcentage de prédictions correctes sur l'ensemble des données : (TP + TN) / (TP + TN + FP + FN). Elle offre une vue d'ensemble de la justesse du modèle. B décrit la précision (TP / (TP + FP)), qui se concentre sur la véracité des prédictions positives. Les choix A et C ne sont pas des mesures pertinentes pour l'accuracy car ils mettent l'accent sur des aspects isolés, tels que les vrais négatifs ou l'aptitude d'un modèle à générer de nouvelles données, plutôt que sur une évaluation globale.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Comment définit-on la precision en apprentissage supervise?",
+      "image_url": null,
+      "choices": {
+        "A": "La proportion de vrais positifs parmi les vrais et faux positifs.",
+        "B": "La proportion de vrais positifs parmi le total des exemples positifs.",
+        "C": "La proportion de prédictions globalement correctes.",
+        "D": "La fréquence à laquelle le modèle évite les faux positifs."
       },
       "correct_answer": "A",
-      "explanation": "Un seuil bas peut conduire à beaucoup de prédictions positives, augmentant le risque de faux positifs. B et D sont l'inverse de ce qui est observé, et C est incorrect car les faux négatifs ne sont généralement pas augmentés.",
+      "explanation": "La precision est la proportion de vrais positifs parmi toutes les prédictions positives : TP / (TP + FP). Elle évalue la qualité des prédictions positives du modèle. Le choix B décrit le recall, qui quantifie la capacité à identifier tous les positifs réels. L'option C correspond à l'accuracy, qui intègre l'ensemble des prédictions correctes. Quant à D, il n'exprime pas directement la precision mais plutôt une conséquence indirecte de sa maximisation. Comprendre ces distinctions aide à bien évaluer la performance du modèle et à identifier les domaines nécessitant des améliorations.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'objectif du recall (rappel) dans un modèle de classification?",
+      "image_url": null,
+      "choices": {
+        "A": "Maximiser le nombre total de prédictions positives.",
+        "B": "La proportion de vrais positifs parmi tous les exemples positifs.",
+        "C": "Mesurer l'efficacité des prédictions négatives.",
+        "D": "Évaluer la justesse du point de décision."
+      },
+      "correct_answer": "B",
+      "explanation": "Le recall, ou rappel, dans un modèle de classification mesure la proportion de vrais positifs détectés parmi tous les exemples positifs réels : TP / (TP + FN). Il évalue la capacité à capturer tous les cas pertinents, essentiel dans des situations sensibles comme les diagnostics médicaux. Le choix A est incorrect car il ne se concentre pas spécifiquement sur les positifs pertinents. C se concentre sur les négatifs, et D fait référence à l'évaluation globale de la performance, pas spécifiquement au recall. Le recall est en particulier important quand il est critique de ne pas manquer des cas positifs.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Quelle stratégie permet de réduire l'overfitting?",
+      "question": "Que signifie l'overfitting dans le contexte des modèles de machine learning?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser la régularisation",
-        "B": "Augmenter la complexité du modèle",
-        "C": "Réduire la taille des données d'entraînement",
-        "D": "Augmenter le taux d'apprentissage"
+        "A": "L'amélioration constante des performances du modèle avec plus de données.",
+        "B": "La capacité du modèle à généraliser au-delà des données d'entraînement.",
+        "C": "Le modèle performant mieux sur les données d'entraînement que sur les données nouvelles.",
+        "D": "Le modèle sous-estime les relations présentes dans les données."
       },
-      "correct_answer": "A",
-      "explanation": "La régularisation pénalise la complexité excessive d'un modèle, aidant à prévenir l'overfitting. B exacerbe l'overfitting, C est contre-productif, et D concerne davantage la vitesse d'apprentissage que l'overfitting.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Dans quel cas l'accuracy peut-elle être trompeuse?",
-      "image_url": null,
-      "choices": {
-        "A": "Dans un ensemble de données déséquilibré",
-        "B": "Dans un ensemble de données équilibré",
-        "C": "Lorsqu'un modèle sous-apprend",
-        "D": "Quand tous les prédicteurs sont continus"
-      },
-      "correct_answer": "A",
-      "explanation": "Dans des données déséquilibrées, un modèle pourrait obtenir un haut score d'accuracy en prédisant toujours la classe majoritaire. B est incorrect car l'accuracy est plus fiable dans des ensembles équilibrés. C et D ne se rapportent pas directement à la tromperie par l'accuracy.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Quelle méthode est souvent utilisée pour estimer la capacité de généralisation d'un modèle?",
-      "image_url": null,
-      "choices": {
-        "A": "Validation croisée",
-        "B": "Régularisation",
-        "C": "Augmentation du jeu de données d'entraînement",
-        "D": "Entraînement sur un jeu de données déséquilibré"
-      },
-      "correct_answer": "A",
-      "explanation": "La validation croisée permet d'estimer comment le modèle va se comporter sur un ensemble de données indépendant en testant plusieurs segments du jeu de données. B diminue l'overfitting, C peut aider mais ne donne pas une estimation immédiate, et D est souvent problématique plutôt que bénéfique.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Que représente le compromis entre biais et variance?",
-      "image_url": null,
-      "choices": {
-        "A": "Le compromis entre underfitting et overfitting",
-        "B": "La précision et le rappel",
-        "C": "L'erreur quadratique moyenne",
-        "D": "La sélection de caractéristiques"
-      },
-      "correct_answer": "A",
-      "explanation": "Le compromis biais-variance représente l'équilibre entre biais élevé (underfitting) et variance élevée (overfitting). B est un compromis entre deux mesures de performance, C n'est pas directement lié au biais-variance, et D concerne l'ingénierie des caractéristiques.",
-      "difficulty": "hard"
-    },
-    {
-      "type": "text",
-      "question": "Quels sont les impacts possibles des données bruitées sur un modèle linéaire?",
-      "image_url": null,
-      "choices": {
-        "A": "Augmentation du risque d'overfitting",
-        "B": "Amélioration des prédictions",
-        "C": "Invariance du modèle aux changements",
-        "D": "Réduction du risque de variance élevée"
-      },
-      "correct_answer": "A",
-      "explanation": "Les données bruitées peuvent mener à l'overfitting car le modèle pourrait essayer d'ajuster le bruit plutôt que de capturer le signal sous-jacent. B est faux car les prédictions se détériorent généralement, C n'est pas typique, et D est incorrect car le bruit peut même aggraver la variance.",
+      "correct_answer": "C",
+      "explanation": "L'overfitting, ou sur-ajustement, survient lorsque le modèle apprend les détails et le bruit des données d'entraînement de façon excessive, ce qui lui fait perdre sa capacité de généralisation sur de nouvelles données. Cela mène souvent à de meilleures performances sur les données d'entraînement que sur des données inconnues. L'option A implique une amélioration continue due à plus de données, ce qui généralement corrige, plutôt que crée, l'overfitting. L'option B est à l'opposé du problème, indiquant une généralisation efficace. Quant à D, il décrit un phénomène d'underfitting, où le modèle est trop simpliste pour capter les relations présentes.",
       "difficulty": "hard"
     }
   ]

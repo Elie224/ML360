@@ -14,7 +14,7 @@
         "D": "Remplacer totalement le jeu de test pour évaluer les performances."
       },
       "correct_answer": "A",
-      "explanation": "Un jeu de validation labellisé est utilisé pour évaluer les performances du modèle pendant l'entraînement sans altérer le modèle lui-même. Option B est fausse car l'amélioration initiale est généralement liée à des hyperparamètres et non au jeu de validation. Option C est fausse parce que le jeu de validation ne sert pas à augmenter la taille de l'entraînement, mais à évaluer. Option D est incorrect parce que le jeu de validation est utilisé pendant l'entraînement, tandis que le jeu de test évalue la performance finale.",
+      "explanation": "Un jeu de validation labellisé est utilisé pour évaluer les performances du modèle pendant l'entraînement sans altérer le modèle lui-même. Option B est fausse car l'amélioration initiale est généralement liée à des hyperparamètres et non au jeu de validation. Option C est fausse parce que le jeu de validation ne sert pas à augmenter la taille de l'entraînement, mais à évaluer. Option D est incorrect parce que le jeu de validation est utilisé pendant l'entraînement, tandis que le jeu de test évalue la performance finale. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Améliorer la performance initiale du modèle avant l'entraînement.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Que représente la précision des pseudo-labels dans un modèle semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Le pourcentage de pseudo-labels corrects parmi tous les pseudo-labels générés.",
-        "B": "La capacité d'un modèle à retenir des informations des données non labellisées.",
+        "A": "La capacité d'un modèle à retenir des informations des données non labellisées.",
+        "B": "Le pourcentage de pseudo-labels corrects parmi tous les pseudo-labels générés.",
         "C": "La proportion de données labellisées dans le jeu de données total.",
         "D": "La fidélité des prédictions sur le jeu de test final."
       },
-      "correct_answer": "A",
-      "explanation": "La précision des pseudo-labels se réfère au pourcentage de pseudo-labels générés par le modèle qui sont corrects. Option B est incorrecte car il ne s'agit pas de rétention d'information mais de précision des prédictions. Option C est fausse car elle parle de la proportion des données labellisées, non des pseudo-labels. Option D décrit l'évaluation finale, non les pseudo-labels.",
+      "correct_answer": "B",
+      "explanation": "La précision des pseudo-labels se réfère au pourcentage de pseudo-labels générés par le modèle qui sont corrects. Option B est incorrecte car il ne s'agit pas de rétention d'information mais de précision des prédictions. Option C est fausse car elle parle de la proportion des données labellisées, non des pseudo-labels. Option D décrit l'évaluation finale, non les pseudo-labels. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (La capacité d'un modèle à retenir des informations des données non labellisées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La proportion de données labellisées dans le jeu de données total.) est plausible mais",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Qu'est-ce que le drift des labels dans le contexte de l'apprentissage semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Le changement dans la distribution des classes entre l'entraînement et la phase de test.",
+        "A": "La variation des performances du modèle sur un jeu de test au fil du temps.",
         "B": "L'accumulation d'erreurs systématiques dans les labels manuels des données.",
-        "C": "La variation des performances du modèle sur un jeu de test au fil du temps.",
+        "C": "Le changement dans la distribution des classes entre l'entraînement et la phase de test.",
         "D": "Une amélioration progressive des prédictions à chaque itération de pseudo-étiquetage."
       },
-      "correct_answer": "A",
-      "explanation": "Le drift des labels se réfère à un changement dans la distribution des classes, souvent entre le jeu de données utilisé pour l'entraînement et celui utilisé en test. Ceci peut affecter la performance du modèle. Option B est incorrecte car elle parle d'erreurs systématiques plutôt que de changement de distribution. Option C est mal interprétée; elle se réfère à des performances variables mais ne concerne pas le changement de distribution des labels. Option D est incorrecte car elle décrit une amélioration, pas un changement de distribution.",
+      "correct_answer": "C",
+      "explanation": "Le drift des labels se réfère à un changement dans la distribution des classes, souvent entre le jeu de données utilisé pour l'entraînement et celui utilisé en test. Ceci peut affecter la performance du modèle. Option B est incorrecte car elle parle d'erreurs systématiques plutôt que de changement de distribution. Option C est mal interprétée; elle se réfère à des performances variables mais ne concerne pas le changement de distribution des labels. Option D est incorrecte car elle décrit une amélioration, pas un changement de distribution. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La variation des performances du modèle sur un jeu de test au fil du temps.) est plausible mais",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quel est l'impact du surapprentissage dans un modèle semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Le modèle performe bien sur les données d'entraînement mais mal sur les nouvelles données.",
+        "A": "Le modèle dépend de l'exactitude des étiquettes initiales pour toutes ses futures prédictions.",
         "B": "Le modèle devient plus précis au fur et à mesure qu'il s'entraîne.",
         "C": "Le modèle génère des pseudo-labels de plus en plus précis.",
-        "D": "Le modèle dépend de l'exactitude des étiquettes initiales pour toutes ses futures prédictions."
+        "D": "Le modèle performe bien sur les données d'entraînement mais mal sur les nouvelles données."
       },
-      "correct_answer": "A",
-      "explanation": "Le surapprentissage se manifeste lorsque le modèle apprend tellement de détails sur les données d'entraînement qu'il perd en capacité de généraliser. Option B est incorrecte car une meilleure performance avec l'entraînement peut indiquer un bon apprentissage, pas un surapprentissage. Option C concerne la précision croissante des pseudo-labels, non l'impact du surapprentissage. Option D est incorrecte car elle confond la dépendance sur l'exactitude des étiquettes initiales avec le surapprentissage.",
+      "correct_answer": "D",
+      "explanation": "Le surapprentissage se manifeste lorsque le modèle apprend tellement de détails sur les données d'entraînement qu'il perd en capacité de généraliser. Option B est incorrecte car une meilleure performance avec l'entraînement peut indiquer un bon apprentissage, pas un surapprentissage. Option C concerne la précision croissante des pseudo-labels, non l'impact du surapprentissage. Option D est incorrecte car elle confond la dépendance sur l'exactitude des étiquettes initiales avec le surapprentissage. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le modèle dépend de l'exactitude des étiquettes initiales pour toutes ses futures prédictions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le modèle devient",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Il permet de prédire la précision finale du modèle."
       },
       "correct_answer": "A",
-      "explanation": "Un jeu de validation labellisé est essentiel pour évaluer objectivement comment le modèle généralise sur des données indépendantes de l'entraînement. Option B est incorrecte; l'ajustement automatique des hyperparamètres nécessite souvent une recherche automatisée. Option C est fausse car les données non labellisées ne sont pas interdites et sont intégrales à l'apprentissage semi-supervisé. Option D n’est pas totalement vrai, car il prédit surtout la capacité de généralisation plutôt que la précision pure finale.",
+      "explanation": "Un jeu de validation labellisé est essentiel pour évaluer objectivement comment le modèle généralise sur des données indépendantes de l'entraînement. Option B est incorrecte; l'ajustement automatique des hyperparamètres nécessite souvent une recherche automatisée. Option C est fausse car les données non labellisées ne sont pas interdites et sont intégrales à l'apprentissage semi-supervisé. Option D n’est pas totalement vrai, car il prédit surtout la capacité de généralisation plutôt que la précision pure finale. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il ajuste automatiquement les hyperparamètres du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il interdit l'utilisation des données",
       "difficulty": "easy"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Comment une mauvaise précision des pseudo-labels affecte-t-elle un modèle semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Elle conduit à des prédictions de plus en plus erronées.",
-        "B": "Elle entraîne un meilleur ajustement du modèle aux données labelisées.",
+        "A": "Elle entraîne un meilleur ajustement du modèle aux données labelisées.",
+        "B": "Elle conduit à des prédictions de plus en plus erronées.",
         "C": "Elle n'a aucun impact si suffisamment de données non labelisées sont utilisées.",
         "D": "Elle corrige automatiquement les erreurs d'étiquetage initiales."
       },
-      "correct_answer": "A",
-      "explanation": "Une mauvaise précision des pseudo-labels peut introduire des erreurs systématiques qui se propagent, entraînant un modèle biaisé et des prédictions erronées. Option B est incorrecte; les mauvaises pseudo-étiquettes ne mènent pas à un meilleur ajustement sur les données labellisées. Option C est fausse; les erreurs ne sont pas nullifiées par la quantité de données non labellisées. Option D est incorrecte car il n’existe pas de mécanisme automatique pour corriger ces erreurs sans intervention.",
+      "correct_answer": "B",
+      "explanation": "Une mauvaise précision des pseudo-labels peut introduire des erreurs systématiques qui se propagent, entraînant un modèle biaisé et des prédictions erronées. Option B est incorrecte; les mauvaises pseudo-étiquettes ne mènent pas à un meilleur ajustement sur les données labellisées. Option C est fausse; les erreurs ne sont pas nullifiées par la quantité de données non labellisées. Option D est incorrecte car il n’existe pas de mécanisme automatique pour corriger ces erreurs sans intervention. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle entraîne un meilleur ajustement du modèle aux données labelisées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle",
       "difficulty": "easy"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Dans quels cas le drift des labels pourrait-il se produire en apprentissage semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Lorsque les conditions environnementales changent pendant les phases de déploiement.",
+        "A": "Lorsque le jeu de validation est utilisé à la place du jeu d'entraînement.",
         "B": "Lorsque le modèle est exposé uniquement à des données non labelisées.",
-        "C": "Lorsque le jeu de validation est utilisé à la place du jeu d'entraînement.",
+        "C": "Lorsque les conditions environnementales changent pendant les phases de déploiement.",
         "D": "Lorsque de nouvelles fonctionnalités sont ajoutées après l'entraînement initial."
       },
-      "correct_answer": "A",
-      "explanation": "Le drift des labels peut se produire si les conditions changent entre l'entraînement et le déploiement, affectant les classes et leurs distributions. Option B est incorrecte; seulement des données non labelisées sans changement contextuel ne suffisent pas à faire un drift. Option C est incorrecte; l'utilisation inadéquate des jeux ne crée pas directement un drift. Option D traite d'autres évolutions de modèle, pas spécifiquement de drift.",
+      "correct_answer": "C",
+      "explanation": "Le drift des labels peut se produire si les conditions changent entre l'entraînement et le déploiement, affectant les classes et leurs distributions. Option B est incorrecte; seulement des données non labelisées sans changement contextuel ne suffisent pas à faire un drift. Option C est incorrecte; l'utilisation inadéquate des jeux ne crée pas directement un drift. Option D traite d'autres évolutions de modèle, pas spécifiquement de drift. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Lorsque le jeu de validation est utilisé à la place du jeu d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Lorsque le modèle est exposé",
       "difficulty": "easy"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quel est un indicateur commun de surapprentissage dans un modèle semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Écart important entre les performances sur le jeu d'entraînement et le jeu de validation.",
+        "A": "Augmentation continue du nombre de faux positifs sur le jeu d'entraînement.",
         "B": "Amélioration constante de la précision sur les pseudo-labels.",
         "C": "Réduction du temps d'entraînement à chaque itération.",
-        "D": "Augmentation continue du nombre de faux positifs sur le jeu d'entraînement."
+        "D": "Écart important entre les performances sur le jeu d'entraînement et le jeu de validation."
       },
-      "correct_answer": "A",
-      "explanation": "Le surapprentissage est souvent indiqué par une performance très élevée sur le jeu d'entraînement mais notablement inférieure sur le jeu de validation, révélant une mauvaise généralisation. Option B est incorrecte car elle peut indiquer un bon apprentissage. Option C est incorrecte, car le temps d'entraînement n'indique pas le surapprentissage. Option D est incorrecte; une augmentation de faux positifs sur l'entraînement n’est pas classique pour le surapprentissage.",
+      "correct_answer": "D",
+      "explanation": "Le surapprentissage est souvent indiqué par une performance très élevée sur le jeu d'entraînement mais notablement inférieure sur le jeu de validation, révélant une mauvaise généralisation. Option B est incorrecte car elle peut indiquer un bon apprentissage. Option C est incorrecte, car le temps d'entraînement n'indique pas le surapprentissage. Option D est incorrecte; une augmentation de faux positifs sur l'entraînement n’est pas classique pour le surapprentissage. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmentation continue du nombre de faux positifs sur le jeu d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Amélioration constante de la précision sur les",
       "difficulty": "easy"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Les performances du modèle sur les données déjà labellisées diminueront systématiquement."
       },
       "correct_answer": "A",
-      "explanation": "Des pseudo-labels incorrects peuvent biaiser l'apprentissage en enseignant des informations erronées, ce qui nuira à la capacité de généralisation du modèle. Option B est incorrecte, car les erreurs de pseudo-labels ne sont pas corrigées automatiquement. Option C est fausse; le modèle ne peut pas mieux performer sur des données non labellisées grâce à de mauvais labels. Option D est incorrecte; la performance sur les données labellisées ne serait pas affectée directement.",
+      "explanation": "Des pseudo-labels incorrects peuvent biaiser l'apprentissage en enseignant des informations erronées, ce qui nuira à la capacité de généralisation du modèle. Option B est incorrecte, car les erreurs de pseudo-labels ne sont pas corrigées automatiquement. Option C est fausse; le modèle ne peut pas mieux performer sur des données non labellisées grâce à de mauvais labels. Option D est incorrecte; la performance sur les données labellisées ne serait pas affectée directement. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il n'y a pas de risque car les erreurs sont corrigées durant l'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C",
       "difficulty": "easy"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Comment identifier un drift des labels dans un jeu de données utilisé pour l'apprentissage semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Comparer la distribution des classes entre plusieurs périodes de temps.",
-        "B": "Observer une augmentation de la précision sur les données d'entraînement.",
+        "A": "Observer une augmentation de la précision sur les données d'entraînement.",
+        "B": "Comparer la distribution des classes entre plusieurs périodes de temps.",
         "C": "Surveiller la réduction du temps de calcul du modèle.",
         "D": "Analyser l'augmentation des taux de faux négatifs dans les prédictions."
       },
-      "correct_answer": "A",
-      "explanation": "Le drift des labels peut être détecté en comparant la distribution des classes entre différentes périodes de temps pour voir si un changement s'est produit. Option B est incorrecte, une augmentation de la précision sur les données d'entraînement n'indique pas un drift de labels. Option C est fausse; le temps de calcul n'est pas pertinent pour détecter le drift. Option D décrit une performance décroissante sur les faux négatifs mais ne détecte pas directement un drift.",
+      "correct_answer": "B",
+      "explanation": "Le drift des labels peut être détecté en comparant la distribution des classes entre différentes périodes de temps pour voir si un changement s'est produit. Option B est incorrecte, une augmentation de la précision sur les données d'entraînement n'indique pas un drift de labels. Option C est fausse; le temps de calcul n'est pas pertinent pour détecter le drift. Option D décrit une performance décroissante sur les faux négatifs mais ne détecte pas directement un drift. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Observer une augmentation de la précision sur les données d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Quel scénario pourrait éviter le surapprentissage dans un cadre semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser plusieurs jeux de validation pour différentes parties de l'entraînement.",
+        "A": "Utiliser uniquement des données non labellisées pour l'entraînement.",
         "B": "Augmenter la taille des pseudo-labels produits.",
-        "C": "Utiliser uniquement des données non labellisées pour l'entraînement.",
+        "C": "Utiliser plusieurs jeux de validation pour différentes parties de l'entraînement.",
         "D": "Réduire les nombre d'itérations d'entraînement sur les données labellisées."
       },
-      "correct_answer": "A",
-      "explanation": "L'utilisation de multiples jeux de validation peut aider à évaluer et amender le modèle en fonction de ses performances sur différents sous-ensembles et éviter le surapprentissage. Option B est incorrecte; la multiplication des pseudo-labels sans contrôle de leur qualité peut empirer le surapprentissage. Option C est fausse car l'entraînement sans données labellisées peut conduire à des problèmes de convergence et de précision. Option D peut aider mais pourrait aussi sous-entraîner le modèle.",
+      "correct_answer": "C",
+      "explanation": "L'utilisation de multiples jeux de validation peut aider à évaluer et amender le modèle en fonction de ses performances sur différents sous-ensembles et éviter le surapprentissage. Option B est incorrecte; la multiplication des pseudo-labels sans contrôle de leur qualité peut empirer le surapprentissage. Option C est fausse car l'entraînement sans données labellisées peut conduire à des problèmes de convergence et de précision. Option D peut aider mais pourrait aussi sous-entraîner le modèle. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Utiliser uniquement des données non labellisées pour l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter la taille des",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel facteur contribue le plus à une précision faible des pseudo-labels dans leur génération automatique ?",
       "image_url": null,
       "choices": {
-        "A": "Un modèle initial mal entraîné.",
+        "A": "Le recours aux données de validation pendant la prédiction.",
         "B": "La taille des données non-labellisées utilisées.",
         "C": "L'utilisation de données de test pour l'entraînement.",
-        "D": "Le recours aux données de validation pendant la prédiction."
+        "D": "Un modèle initial mal entraîné."
       },
-      "correct_answer": "A",
-      "explanation": "La qualité des pseudo-labels dépend en grande partie du modèle initial. S'il est mal entraîné, les pseudo-labels seront incorrects. Option B est incorrecte car la taille des données ne joue pas directement sur la précision des pseudo-labels. Option C est onéreuse mais ici incorrecte; les données de test mal utilisées affectent l'évaluation finale, pas les labels. Option D est incorrecte; la validation ne devrait pas être employée dans la prédiction directe.",
+      "correct_answer": "D",
+      "explanation": "La qualité des pseudo-labels dépend en grande partie du modèle initial. S'il est mal entraîné, les pseudo-labels seront incorrects. Option B est incorrecte car la taille des données ne joue pas directement sur la précision des pseudo-labels. Option C est onéreuse mais ici incorrecte; les données de test mal utilisées affectent l'évaluation finale, pas les labels. Option D est incorrecte; la validation ne devrait pas être employée dans la prédiction directe. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le recours aux données de validation pendant la prédiction.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (La taille des données",
       "difficulty": "medium"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Augmentation immédiate de la performance due à la diversification des cas d'usage."
       },
       "correct_answer": "A",
-      "explanation": "Le drift des labels signifie que le modèle peut être confronté à des données qui ne correspondent pas à ce pour quoi il a été formé, entraînant une diminution des performances. Option B est incorrecte; une variance accrue sans adaptation appropriée dégrade la performance. Option C est incorrecte; sans intervention manuelle, un modèle ne s'adapte pas automatiquement à un drift. Option D est incorrecte; la diversification non contrôlée mène généralement à une baisse de performance.",
+      "explanation": "Le drift des labels signifie que le modèle peut être confronté à des données qui ne correspondent pas à ce pour quoi il a été formé, entraînant une diminution des performances. Option B est incorrecte; une variance accrue sans adaptation appropriée dégrade la performance. Option C est incorrecte; sans intervention manuelle, un modèle ne s'adapte pas automatiquement à un drift. Option D est incorrecte; la diversification non contrôlée mène généralement à une baisse de performance. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Amélioration des performances grâce à une variance accrue des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "medium"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quel bénéfice principal offre l'apprentissage semi-supervisé par rapport à un modèle purement supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Réduction de la dépendance aux grandes quantités de données labellisées.",
-        "B": "Optimisation de la vitesse d'entraînement grâce à moins de données en entrée.",
+        "A": "Optimisation de la vitesse d'entraînement grâce à moins de données en entrée.",
+        "B": "Réduction de la dépendance aux grandes quantités de données labellisées.",
         "C": "Augmentation de la précision uniquement sur les données non labellisées.",
         "D": "Élimination des besoins de validation croisée grâce à l'usage de pseudo-labels."
       },
-      "correct_answer": "A",
-      "explanation": "L'apprentissage semi-supervisé utilise des données non labellisées en combinaison avec quelques données labellisées, réduisant ainsi les besoins en connaissances humaines pour l'étiquetage. Option B est incorrecte; la vitesse d'entraînement n'est pas nécessairement optimisée. Option C est fausse; la précision augmente sur l'ensemble du jeu de données, pas seulement sur les non labellisées. Option D est incorrecte; la validation croisée reste importante pour évaluer la généralisation.",
+      "correct_answer": "B",
+      "explanation": "L'apprentissage semi-supervisé utilise des données non labellisées en combinaison avec quelques données labellisées, réduisant ainsi les besoins en connaissances humaines pour l'étiquetage. Option B est incorrecte; la vitesse d'entraînement n'est pas nécessairement optimisée. Option C est fausse; la précision augmente sur l'ensemble du jeu de données, pas seulement sur les non labellisées. Option D est incorrecte; la validation croisée reste importante pour évaluer la généralisation. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Optimisation de la vitesse d'entraînement grâce à moins de données en entrée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Augmentation de la précision uniquement sur les",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Comment atténuer les effets du surapprentissage dans les modèles d'apprentissage semi-supervisés ?",
       "image_url": null,
       "choices": {
-        "A": "Intégrer une régularisation supplémentaire pendant l'entraînement.",
+        "A": "Réduire la taille des pseudo-labels.",
         "B": "Utiliser uniquement des données non-labellisées pour l'entraînement.",
-        "C": "Réduire la taille des pseudo-labels.",
+        "C": "Intégrer une régularisation supplémentaire pendant l'entraînement.",
         "D": "Ignorer le jeu de validation pour se concentrer sur la performance sur le jeu d'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "La régularisation est une technique pour atténuer le surapprentissage, en ajoutant des pénalités qui limitent l'aptitude du modèle à trop s'ajuster aux données d'entraînement. Option B est fausse; exclure les données labellisées complique la validation du modèle. Option C est incorrecte; réduire la taille des pseudo-labels peut aussi enlever des informations pertinentes. Option D est incorrecte; ignorer le jeu de validation empêche de jauger la vraie performance de généralisation.",
+      "correct_answer": "C",
+      "explanation": "La régularisation est une technique pour atténuer le surapprentissage, en ajoutant des pénalités qui limitent l'aptitude du modèle à trop s'ajuster aux données d'entraînement. Option B est fausse; exclure les données labellisées complique la validation du modèle. Option C est incorrecte; réduire la taille des pseudo-labels peut aussi enlever des informations pertinentes. Option D est incorrecte; ignorer le jeu de validation empêche de jauger la vraie performance de généralisation. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire la taille des pseudo-labels.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Utiliser uniquement des données non-labellisées pour l'entraînement.) est plausible mais",
       "difficulty": "hard"
     }
   ]

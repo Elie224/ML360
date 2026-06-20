@@ -14,7 +14,7 @@
         "D": "Il contient des données générées synthétiquement."
       },
       "correct_answer": "A",
-      "explanation": "Un petit jeu de données labelisé doit avoir des exemples où chaque exemple est associé à une étiquette exacte. B est incorrect car décrit un grand jeu non labelisé, C est une confusion avec un dataset entièrement non-labelisé et D ne décrit pas typiquement un dataset labelisé.",
+      "explanation": "Un petit jeu de données labelisé doit avoir des exemples où chaque exemple est associé à une étiquette exacte. B est incorrect car décrit un grand jeu non labelisé, C est une confusion avec un dataset entièrement non-labelisé et D ne décrit pas typiquement un dataset labelisé. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il contient de nombreux exemples mais peu sont étiquetés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il ne contient que des données sans étiquettes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Un grand jeu de données non labelisé est souvent utilisé en apprentissage semi-supervisé pour:",
       "image_url": null,
       "choices": {
-        "A": "Repérer des motifs communs dans les données.",
-        "B": "Valider un modèle supervisé.",
+        "A": "Valider un modèle supervisé.",
+        "B": "Repérer des motifs communs dans les données.",
         "C": "Calculer directement les prédictions finales.",
         "D": "Générer des pseudo-étiquettes pour tous les exemples."
       },
-      "correct_answer": "A",
-      "explanation": "En apprentissage semi-supervisé, un grand jeu non labelisé est utilisé pour détecter des motifs ou caractéristiques communes utiles aux modèles. B est faux car ce n'est pas pour validation, C est incorrect car les prédictions finales nécessitent des labels et D suppose de façon erronée que toutes les données peuvent être pseudo-étiquetées sans erreur.",
+      "correct_answer": "B",
+      "explanation": "En apprentissage semi-supervisé, un grand jeu non labelisé est utilisé pour détecter des motifs ou caractéristiques communes utiles aux modèles. B est faux car ce n'est pas pour validation, C est incorrect car les prédictions finales nécessitent des labels et D suppose de façon erronée que toutes les données peuvent être pseudo-étiquetées sans erreur. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Valider un modèle supervisé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Calculer directement les prédictions finales.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Générer",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Qu'est-ce que l'hypothèse de continuité en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Les points de données proches ont généralement des étiquettes similaires.",
+        "A": "Les données sont continuellement réétiquetées au fil du temps.",
         "B": "Les données doivent toujours suivre une distribution normale.",
-        "C": "Les données sont continuellement réétiquetées au fil du temps.",
+        "C": "Les points de données proches ont généralement des étiquettes similaires.",
         "D": "Le modèle doit être continuellement mis à jour avec de nouvelles données."
       },
-      "correct_answer": "A",
-      "explanation": "L'hypothèse de continuité suggère que des points de données similaires sont susceptibles d'avoir les mêmes labels, ce qui aide les modèles à généraliser en inter/extrapolation. B est incorrect car la distribution n'est pas toujours normale; C et D mal définissent 'continuité' en termes de ré-étiquetage sans relier la similarité des données.",
+      "correct_answer": "C",
+      "explanation": "L'hypothèse de continuité suggère que des points de données similaires sont susceptibles d'avoir les mêmes labels, ce qui aide les modèles à généraliser en inter/extrapolation. B est incorrect car la distribution n'est pas toujours normale; C et D mal définissent 'continuité' en termes de ré-étiquetage sans relier la similarité des données. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les données sont continuellement réétiquetées au fil du temps.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Les données doivent toujours suivre une distribution normale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Comment le gain de labels améliore-t-il le modèle en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Il augmente la précision du modèle en réduisant l'incertitude sur les prédictions.",
+        "A": "Il garantit des performances parfaites du modèle.",
         "B": "Il permet au modèle d'ignorer complètement le grand dataset non labelisé.",
         "C": "Il élimine le besoin de pré-traiter les données.",
-        "D": "Il garantit des performances parfaites du modèle."
+        "D": "Il augmente la précision du modèle en réduisant l'incertitude sur les prédictions."
       },
-      "correct_answer": "A",
-      "explanation": "Le gain de labels aide à affiner le modèle en réduisant l'incertitude, ce qui améliore la prédiction. B est faux car le grand dataset non étiqueté est essentiel à l'approche semi-supervisée, C est incorrect car le prétraitement reste nécessaire, et D est faussement absolu sur la performance.",
+      "correct_answer": "D",
+      "explanation": "Le gain de labels aide à affiner le modèle en réduisant l'incertitude, ce qui améliore la prédiction. B est faux car le grand dataset non étiqueté est essentiel à l'approche semi-supervisée, C est incorrect car le prétraitement reste nécessaire, et D est faussement absolu sur la performance. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il garantit des performances parfaites du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il permet au modèle d'ignorer complètement le grand dataset non labelisé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Il assure la meilleure précision possible sans erreurs."
       },
       "correct_answer": "A",
-      "explanation": "L'apprentissage semi-supervisé permet de tirer parti de grandes quantités de données non étiquetées, réduisant ainsi le besoin d'un grand jeu de données étiqueté. B est incorrect car l'analyse préalable peut toujours être nécessaire, C et D exagèrent les avantages.",
+      "explanation": "L'apprentissage semi-supervisé permet de tirer parti de grandes quantités de données non étiquetées, réduisant ainsi le besoin d'un grand jeu de données étiqueté. B est incorrect car l'analyse préalable peut toujours être nécessaire, C et D exagèrent les avantages. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il ne nécessite aucune analyse de données préalable.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il augmente significativement la vitesse d'exécution du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il assure la meilleure précision possible sans erreurs.) est",
       "difficulty": "easy"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Pourquoi est-il important de veiller à ce que les données non labelisées soient de haute qualité en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Les biais ou erreurs dans les données peuvent se propager dans le modèle.",
-        "B": "Les données de haute qualité entraînent des pseudo-étiquettes parfaites.",
+        "A": "Les données de haute qualité entraînent des pseudo-étiquettes parfaites.",
+        "B": "Les biais ou erreurs dans les données peuvent se propager dans le modèle.",
         "C": "Des données de haute qualité remplacent complètement le besoin de labels.",
         "D": "La qualité des données n'affecte pas les performances en semi-supervisé."
       },
-      "correct_answer": "A",
-      "explanation": "Des données de mauvaise qualité peuvent propager les biais et affecter la performance du modèle. B est faux car aucune pseudo-étiquette n'est parfaite, C est incorrect car le besoin de labels peut être réduit mais pas éliminé, et D est une fausse affirmation.",
+      "correct_answer": "B",
+      "explanation": "Des données de mauvaise qualité peuvent propager les biais et affecter la performance du modèle. B est faux car aucune pseudo-étiquette n'est parfaite, C est incorrect car le besoin de labels peut être réduit mais pas éliminé, et D est une fausse affirmation. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les données de haute qualité entraînent des pseudo-étiquettes parfaites.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Des données de haute qualité remplacent complètement le besoin de labels.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La",
       "difficulty": "easy"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Comment peut-on confirmer l'hypothèse de continuité dans un jeu de données pour justifier un apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "En vérifiant que les clusters contiennent majoritairement des données appartenant à la même classe.",
+        "A": "En calculant la moyenne et l'écart-type de toutes les données.",
         "B": "En évaluant que chaque point de données a une distribution uniforme.",
-        "C": "En calculant la moyenne et l'écart-type de toutes les données.",
+        "C": "En vérifiant que les clusters contiennent majoritairement des données appartenant à la même classe.",
         "D": "En utilisant un algorithme aléatoire pour attribuer des étiquettes."
       },
-      "correct_answer": "A",
-      "explanation": "Confirmer que les clusters ont majoritairement des données de la même classe suggère la validité de l'hypothèse de continuité. B est incorrect car la distribution uniforme n'est pas pertinente ici, C est une analyse statistique décrivant la tendance mais sans base pour la continuité, et D est absurde pour confirmer l'hypothèse.",
+      "correct_answer": "C",
+      "explanation": "Confirmer que les clusters ont majoritairement des données de la même classe suggère la validité de l'hypothèse de continuité. B est incorrect car la distribution uniforme n'est pas pertinente ici, C est une analyse statistique décrivant la tendance mais sans base pour la continuité, et D est absurde pour confirmer l'hypothèse. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En calculant la moyenne et l'écart-type de toutes les données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En évaluant que chaque point de données a une distribution uniforme.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quel est un risque potentiel de générer des pseudo-étiquettes incorrectes lorsque vous travaillez avec des données non étiquetées?",
       "image_url": null,
       "choices": {
-        "A": "La propagation d'erreurs augmente le biais du modèle.",
+        "A": "Le modèle cesse d'apprendre après l'ajout de pseudo-étiquettes.",
         "B": "Les pseudo-étiquettes remplacent efficacement les étiquettes réelles.",
         "C": "L'erreur n'affecte pas la performance car le modèle apprend des erreurs.",
-        "D": "Le modèle cesse d'apprendre après l'ajout de pseudo-étiquettes."
+        "D": "La propagation d'erreurs augmente le biais du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "Les erreurs dans les pseudo-étiquettes peuvent causer une propagation des erreurs, augmentant le biais. B est incorrect car bien qu'elles soient utilisées comme substitut, elles ne peuvent pas remplacer parfaitement les labels, C est mal compris, et D est faux, car l'apprentissage continue mais est compromis.",
+      "correct_answer": "D",
+      "explanation": "Les erreurs dans les pseudo-étiquettes peuvent causer une propagation des erreurs, augmentant le biais. B est incorrect car bien qu'elles soient utilisées comme substitut, elles ne peuvent pas remplacer parfaitement les labels, C est mal compris, et D est faux, car l'apprentissage continue mais est compromis. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le modèle cesse d'apprendre après l'ajout de pseudo-étiquettes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Les pseudo-étiquettes remplacent efficacement les étiquettes réelles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'erreur n'affecte pas",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Toujours retirer du dataset toute donnée qui n'a pas de label."
       },
       "correct_answer": "A",
-      "explanation": "L'apprentissage actif sélectionne les échantillons les plus informatifs, maximisant l'utilisation des données non étiquetées. B est faux car les données non étiquetées sont essentielles, C est incorrect car cela pourrait mener à des performances médiocres, et D gaspillerait la valeur potentielle des données non étiquetées.",
+      "explanation": "L'apprentissage actif sélectionne les échantillons les plus informatifs, maximisant l'utilisation des données non étiquetées. B est faux car les données non étiquetées sont essentielles, C est incorrect car cela pourrait mener à des performances médiocres, et D gaspillerait la valeur potentielle des données non étiquetées. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Ignorer les données non étiquetées pour se concentrer exclusivement sur les données labélisées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Réduire à zéro la pénalité du modèle pour les erreurs commises sur les données non étiquetées.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quels défis spécifiques se posent lorsqu'on évalue un modèle d'apprentissage semi-supervisé par rapport à un modèle entièrement supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Distinguer l'impact des données non-labélisées par rapport aux données labélisées.",
-        "B": "Évaluer l'application des données entièrement synthétiques en évaluation.",
+        "A": "Évaluer l'application des données entièrement synthétiques en évaluation.",
+        "B": "Distinguer l'impact des données non-labélisées par rapport aux données labélisées.",
         "C": "Mesurer les performances uniquement sur la vitesse d'entraînement.",
         "D": "Appliquer une évaluation qualitative via des tests utilisateurs de base."
       },
-      "correct_answer": "A",
-      "explanation": "Distinguer l'impact des données non-labelisées individuellement est vital car elles influent distinctement du jeu labelisé total. B est incorrect car les données synthétiques ne sont pas toujours pertinentes, C est une métrique non suffisante, et D confond évaluation moteur avec expérience utilisateur.",
+      "correct_answer": "B",
+      "explanation": "Distinguer l'impact des données non-labelisées individuellement est vital car elles influent distinctement du jeu labelisé total. B est incorrect car les données synthétiques ne sont pas toujours pertinentes, C est une métrique non suffisante, et D confond évaluation moteur avec expérience utilisateur. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Évaluer l'application des données entièrement synthétiques en évaluation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Mesurer les performances uniquement sur la vitesse d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Appliquer une évaluation qualitative via des",
       "difficulty": "hard"
     }
   ]

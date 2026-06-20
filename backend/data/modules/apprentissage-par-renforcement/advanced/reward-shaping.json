@@ -14,7 +14,7 @@
         "D": "Une recompense condensee en un seul point dans l'espace d'etat."
       },
       "correct_answer": "A",
-      "explanation": "Une 'recompense dense' est fournie a chaque etape de l'episode, contrairement a une recompense unique en fin d'episode ou a une recompense condensee en un seul point. Option B decrit une recompense finale unique, C decrit une recompense decroissante, et D decrit une recompense localisee.",
+      "explanation": "Une 'recompense dense' est fournie a chaque etape de l'episode, contrairement a une recompense unique en fin d'episode ou a une recompense condensee en un seul point. Option B decrit une recompense finale unique, C decrit une recompense decroissante, et D decrit une recompense localisee. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Une recompense tres elevee qui est donne une seule fois a la fin de l'episode.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une recompense qui diminue progressivement avec chaque etape.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Quel est le risque le plus courant du reward shaping connu sous le nom de 'hacking de recompense'?",
       "image_url": null,
       "choices": {
-        "A": "L'agent optimise les recompenses intermediaires plutot que l'objectif global.",
-        "B": "L'agent refuse d'optimiser et reste inactif.",
+        "A": "L'agent refuse d'optimiser et reste inactif.",
+        "B": "L'agent optimise les recompenses intermediaires plutot que l'objectif global.",
         "C": "L'agent reduit le temps necessaire pour completer l'episode.",
         "D": "L'agent maximise le nombre de pertes au lieu de gains."
       },
-      "correct_answer": "A",
-      "explanation": "Le 'hacking de recompense' se produit lorsque l'agent exploite des failles dans la fonction de recompense en optimisant les recompenses intermediaires plutot que l'objectif global. Option B decrit un agent inactif, C decrit une optimisation temporelle non forcement mauvaise, et D est incorrect car elle indique une mauvaise conception de la fonction de recompense.",
+      "correct_answer": "B",
+      "explanation": "Le 'hacking de recompense' se produit lorsque l'agent exploite des failles dans la fonction de recompense en optimisant les recompenses intermediaires plutot que l'objectif global. Option B decrit un agent inactif, C decrit une optimisation temporelle non forcement mauvaise, et D est incorrect car elle indique une mauvaise conception de la fonction de recompense. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'agent refuse d'optimiser et reste inactif.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'agent reduit le temps necessaire pour completer l'episode.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quel role joue la fonction de potentiel dans le reward shaping de type Potential-based Reward Shaping (PBRS)?",
       "image_url": null,
       "choices": {
-        "A": "Elle garantit que le comportement optimal reste le meme en ajoutant une difference stationnaire.",
+        "A": "Elle supprime completement les recompenses intermediaires non necessaires.",
         "B": "Elle ajuste la duree d'apprentissage en fonction des performances.",
-        "C": "Elle supprime completement les recompenses intermediaires non necessaires.",
+        "C": "Elle garantit que le comportement optimal reste le meme en ajoutant une difference stationnaire.",
         "D": "Elle augmente la complexite de l'apprentissage en introduisant des erreurs stochastiques."
       },
-      "correct_answer": "A",
-      "explanation": "La fonction de potentiel dans PBRS agit comme une difference stationnaire, garantissant que le comportement optimal reste le meme. Option B parle d'ajustement de duree qui n'est pas directement lie au potentiel, C decrit une suppression de recompenses, et D decrit une introduction d'erreurs stochastiques non liees au shaping.",
+      "correct_answer": "C",
+      "explanation": "La fonction de potentiel dans PBRS agit comme une difference stationnaire, garantissant que le comportement optimal reste le meme. Option B parle d'ajustement de duree qui n'est pas directement lie au potentiel, C decrit une suppression de recompenses, et D decrit une introduction d'erreurs stochastiques non liees au shaping. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle supprime completement les recompenses intermediaires non necessaires.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle ajuste la duree d'apprentissage en fonction des performances.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Comment le 'guidage' est-il utilise dans le reward shaping?",
       "image_url": null,
       "choices": {
-        "A": "Il ajuste la fonction de recompense pour diriger l'agent vers des comportements desirables.",
+        "A": "Il omet des etats du modele pour simplifier la solution.",
         "B": "Il ralentit les actions de l'agent pour ameliorer la convergence.",
         "C": "Il insere automatiquement des actions aleatoires entre les mouvements de l'agent.",
-        "D": "Il omet des etats du modele pour simplifier la solution."
+        "D": "Il ajuste la fonction de recompense pour diriger l'agent vers des comportements desirables."
       },
-      "correct_answer": "A",
-      "explanation": "Le 'guidage' dans le reward shaping ajuste la fonction de recompense pour orienter l'agent vers des comportements desirables. Il ne s'agit pas de ralentir les actions ni d'insérer des actions aléatoires, et D mentionne l'omission d'états, qui est une technique de réduction de la complexité non spécifiquement de guidage.",
+      "correct_answer": "D",
+      "explanation": "Le 'guidage' dans le reward shaping ajuste la fonction de recompense pour orienter l'agent vers des comportements desirables. Il ne s'agit pas de ralentir les actions ni d'insérer des actions aléatoires, et D mentionne l'omission d'états, qui est une technique de réduction de la complexité non spécifiquement de guidage. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il omet des etats du modele pour simplifier la solution.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il ralentit les actions de l'agent pour ameliorer la convergence.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Parce qu'il resulte dans une simplification excessive du modele d'apprentissage."
       },
       "correct_answer": "A",
-      "explanation": "Le 'hacking de recompense' conduit l'agent a manipuler la fonction de recompense, compromettant la resolution efficace du probleme. Option B mentionne une absence de recompenses, C de necessite environnementale, et D de simplification excessive, qui ne sont pas associes aux effets directs du hacking.",
+      "explanation": "Le 'hacking de recompense' conduit l'agent a manipuler la fonction de recompense, compromettant la resolution efficace du probleme. Option B mentionne une absence de recompenses, C de necessite environnementale, et D de simplification excessive, qui ne sont pas associes aux effets directs du hacking. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Parce qu'il provoque une absence totale de recompenses durant l'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce qu'il induit une necessite constante de modifier l'environnement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Parce",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quel est l'avantage principal d'utiliser une recompense dense dans un environnement d'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Elle fournit des retours plus frequents, facilitant l'ajustement du comportement de l'agent.",
-        "B": "Elle simplifie la fonction de reussite finale rendant l'etat terminal moins important.",
+        "A": "Elle simplifie la fonction de reussite finale rendant l'etat terminal moins important.",
+        "B": "Elle fournit des retours plus frequents, facilitant l'ajustement du comportement de l'agent.",
         "C": "Elle rend l'apprentissage asynchrone et donc plus rapide.",
         "D": "Elle evite completement le probleme de hacking de recompense."
       },
-      "correct_answer": "A",
-      "explanation": "Une recompense dense offre des retours fréquents, aidant l'agent à ajuster son comportement efficacement. Option B simplifie excessivement l'impact de l'état final, C introduit une asymétrie temporelle mal comprise, et D decrit un avantage inexistant face au hacking.",
+      "correct_answer": "B",
+      "explanation": "Une recompense dense offre des retours fréquents, aidant l'agent à ajuster son comportement efficacement. Option B simplifie excessivement l'impact de l'état final, C introduit une asymétrie temporelle mal comprise, et D decrit un avantage inexistant face au hacking. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle simplifie la fonction de reussite finale rendant l'etat terminal moins important.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle rend l'apprentissage asynchrone et donc plus rapide.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle evite completement le probleme de",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quelle est une strategie courante pour reduire le hacking de recompense dans le reward shaping?",
       "image_url": null,
       "choices": {
-        "A": "Concevoir la fonction de recompense de maniere à rendre le comportement indésirable coûteux.",
+        "A": "Réduire la fréquence des récompenses pour diminuer les feedbacks.",
         "B": "Augmenter la taille de l'espace d'états pour plus de complexité.",
-        "C": "Réduire la fréquence des récompenses pour diminuer les feedbacks.",
+        "C": "Concevoir la fonction de recompense de maniere à rendre le comportement indésirable coûteux.",
         "D": "Utiliser des récompenses aléatoires sans rapport avec la tâche."
       },
-      "correct_answer": "A",
-      "explanation": "Pour diminuer le hacking de recompense, il est utile que la fonction de recompense pénalise les comportements indésirables. Option B ignore que la complexité accrue n'empêche pas les hacks, C propose une solution réduisant l'efficacité de l'apprentissage, et D préconise une approche aléatoire inconsistent avec les objectifs de la tâche.",
+      "correct_answer": "C",
+      "explanation": "Pour diminuer le hacking de recompense, il est utile que la fonction de recompense pénalise les comportements indésirables. Option B ignore que la complexité accrue n'empêche pas les hacks, C propose une solution réduisant l'efficacité de l'apprentissage, et D préconise une approche aléatoire inconsistent avec les objectifs de la tâche. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire la fréquence des récompenses pour diminuer les feedbacks.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter la taille de l'espace d'états pour plus de complexité.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quel est l'effet d'une recompense dense sur la trajectoire d'apprentissage de l'agent?",
       "image_url": null,
       "choices": {
-        "A": "Elle tend à lisser les gradients et à accélérer l'apprentissage initial.",
+        "A": "Elle augmente les fluctuations autour du point de convergence final.",
         "B": "Elle rigidifie la politique d'apprentissage au fur et à mesure.",
         "C": "Elle diminue la variance du gradient au risque de convergence prématurée.",
-        "D": "Elle augmente les fluctuations autour du point de convergence final."
+        "D": "Elle tend à lisser les gradients et à accélérer l'apprentissage initial."
       },
-      "correct_answer": "A",
-      "explanation": "Une recompense dense lisse les gradients, ce qui peut accélérer l'apprentissage initial en fournissant des feedbacks réguliers. Option B décrit une rigidité non associée, C parle de variance mal comprise ici, et D mentionne des fluctuations non typiquement causées par les récompenses denses.",
+      "correct_answer": "D",
+      "explanation": "Une recompense dense lisse les gradients, ce qui peut accélérer l'apprentissage initial en fournissant des feedbacks réguliers. Option B décrit une rigidité non associée, C parle de variance mal comprise ici, et D mentionne des fluctuations non typiquement causées par les récompenses denses. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle augmente les fluctuations autour du point de convergence final.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle rigidifie la politique d'apprentissage au fur et à mesure.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle",
       "difficulty": "hard"
     },
     {
@@ -120,13 +120,13 @@
       "question": "De quelle manière le reward shaping peut-il involontairement altérer le processus d'exploration/exploitation?",
       "image_url": null,
       "choices": {
-        "A": "En augmentant l'attraction vers des trajectoires sous-optimales par manque de pénalités.",
+        "A": "En réduisant la nécessité d'exploration par une recompense continue.",
         "B": "En stimulant l'uniformité des actions dans l'espace d'état.",
-        "C": "En réduisant la nécessité d'exploration par une recompense continue.",
+        "C": "En augmentant l'attraction vers des trajectoires sous-optimales par manque de pénalités.",
         "D": "En restreignant l'espace d'action permis aux choix aléatoires."
       },
-      "correct_answer": "C",
-      "explanation": "Une recompense continue peut réduire la nécessité d'exploration car l'agent reçoit constamment des feedbacks positifs, même pour des actions sous-optimales. Option A décrit une absence de structure, B indique une uniformité ironiquement restrictive, et D confond les contraintes classiques avec celles du shaping.",
+      "correct_answer": "A",
+      "explanation": "Une recompense continue peut réduire la nécessité d'exploration car l'agent reçoit constamment des feedbacks positifs, même pour des actions sous-optimales. Option A décrit une absence de structure, B indique une uniformité ironiquement restrictive, et D confond les contraintes classiques avec celles du shaping. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (En stimulant l'uniformité des actions dans l'espace d'état.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En augmentant l'attraction vers des trajectoires sous-optimales par manque de pénalités.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (En restreignant",
       "difficulty": "hard"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quel parametre devrait être soigneusement calibré pour éviter les problèmes de hacking dans le reward shaping?",
       "image_url": null,
       "choices": {
-        "A": "L'intensité des pénalités pour les actions indésirables.",
-        "B": "La durée minimum d'un épisode.",
+        "A": "La durée minimum d'un épisode.",
+        "B": "L'intensité des pénalités pour les actions indésirables.",
         "C": "La fréquence des mises à jour de la politique.",
         "D": "Le nombre d'états intermédiaires définis."
       },
-      "correct_answer": "A",
-      "explanation": "Calibrer l'intensité des pénalités pour les actions indésirables est crucial pour éviter le hacking de recompense. Option B se concentre sur le timing d'épisodes sans influencer directement sur le hacking, C décrit des mises à jour de politique étrangères au shaping, et D parle d'états intermédiaires sans effet direct sur le hacking.",
+      "correct_answer": "B",
+      "explanation": "Calibrer l'intensité des pénalités pour les actions indésirables est crucial pour éviter le hacking de recompense. Option B se concentre sur le timing d'épisodes sans influencer directement sur le hacking, C décrit des mises à jour de politique étrangères au shaping, et D parle d'états intermédiaires sans effet direct sur le hacking. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (La durée minimum d'un épisode.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La fréquence des mises à jour de la politique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Laquelle des methodes suivantes est cruciale pour maintenir l'optimalite lors de l'utilisation de Potential-based Reward Shaping?",
       "image_url": null,
       "choices": {
-        "A": "Calculer correctement la difference de potentiel entre deux etats consecutifs.",
+        "A": "Utiliser uneseule fonction de potentiel pour l'ensemble de l'espace d'état.",
         "B": "Minimiser l'usage de recompenses positives.",
-        "C": "Utiliser uneseule fonction de potentiel pour l'ensemble de l'espace d'état.",
+        "C": "Calculer correctement la difference de potentiel entre deux etats consecutifs.",
         "D": "Stabiliser la politique en la fixant apres quelques episodes."
       },
-      "correct_answer": "A",
-      "explanation": "Calculer la difference de potentiel entre deux etats consecutifs assure que l'optimalite est conservee en PBRS. B confond l'objectif avec une utilisation minimale de recompenses, C implique une simplification excessive en négligeant les dynamiques, et D propose une fixation précoce qui contrevient à l'adaptation continue requise.",
+      "correct_answer": "C",
+      "explanation": "Calculer la difference de potentiel entre deux etats consecutifs assure que l'optimalite est conservee en PBRS. B confond l'objectif avec une utilisation minimale de recompenses, C implique une simplification excessive en négligeant les dynamiques, et D propose une fixation précoce qui contrevient à l'adaptation continue requise. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Utiliser uneseule fonction de potentiel pour l'ensemble de l'espace d'état.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Minimiser l'usage de recompenses positives.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Stabiliser la politique",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Dans quelle situation une recompense dense peut-elle entrainer un apprentissage inefficace?",
       "image_url": null,
       "choices": {
-        "A": "Lorsque les signaux de recompense dominent le processus de prise de decision sans alignement clair avec l'objectif final.",
+        "A": "Lorsque les recompenses sont fournies uniquement au debut de chaque episode.",
         "B": "Lorsque l'environnement possède un trop grand nombre d'états distincts.",
         "C": "Lorsque toutes les actions possibles sont penalisees de maniere uniforme.",
-        "D": "Lorsque les recompenses sont fournies uniquement au debut de chaque episode."
+        "D": "Lorsque les signaux de recompense dominent le processus de prise de decision sans alignement clair avec l'objectif final."
       },
-      "correct_answer": "A",
-      "explanation": "Une recompense dense peut conduire à un apprentissage inefficace si les signaux de recompense influencent fortement la décision sans un alignement avec l'objectif final. B parle de complexité environnementale trop générale, C d'une pénalisation uniforme non typique pour denses, et D décrit une limite opposée à la densité.",
+      "correct_answer": "D",
+      "explanation": "Une recompense dense peut conduire à un apprentissage inefficace si les signaux de recompense influencent fortement la décision sans un alignement avec l'objectif final. B parle de complexité environnementale trop générale, C d'une pénalisation uniforme non typique pour denses, et D décrit une limite opposée à la densité. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Lorsque les recompenses sont fournies uniquement au debut de chaque episode.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Lorsque l'environnement possède un trop grand nombre d'états distincts.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "hard"
     },
     {
@@ -176,13 +176,13 @@
       "question": "En visualisant le reward shaping, quelle specificite du potential-based shaping est essentielle pour la conservation des valeurs optimales?",
       "image_url": null,
       "choices": {
-        "A": "La conservation stricte de differents potentiels pour differents chemins optimaux.",
+        "A": "La conservation permanante d'une stationarite dans les ajustements des recompenses.",
         "B": "La penalisation croissante de façons similaires a l'echelle lineaire.",
-        "C": "La conservation permanante d'une stationarite dans les ajustements des recompenses.",
+        "C": "La conservation stricte de differents potentiels pour differents chemins optimaux.",
         "D": "L'assignation unique de potentiels d'état indépendants de l'action choisie."
       },
-      "correct_answer": "C",
-      "explanation": "En potential-based shaping, maintenir la stationarite assure que les valeurs optimales ne changeront pas. A mentionne la diversité maladroite, B celui d'une approche linéaire qui n'est pas spécifique à PBRS, et D implique une indépendance d'action incorrectement associée directement au potential-based shaping.",
+      "correct_answer": "A",
+      "explanation": "En potential-based shaping, maintenir la stationarite assure que les valeurs optimales ne changeront pas. A mentionne la diversité maladroite, B celui d'une approche linéaire qui n'est pas spécifique à PBRS, et D implique une indépendance d'action incorrectement associée directement au potential-based shaping. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La penalisation croissante de façons similaires a l'echelle lineaire.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La conservation stricte de differents potentiels pour differents chemins optimaux.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'assignation unique de",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quelle est une difficulté majeure en utilisant le reward shaping à base de potentiel en pratique?",
       "image_url": null,
       "choices": {
-        "A": "Determiner la fonction de potentiel adaptée à un problème donné.",
-        "B": "Reduire l'espace d'action d'un facteur constant à chaque itération.",
+        "A": "Reduire l'espace d'action d'un facteur constant à chaque itération.",
+        "B": "Determiner la fonction de potentiel adaptée à un problème donné.",
         "C": "Assurer l'invariance des habitudes comportementales indépendamment de l'approche.",
         "D": "Formaliser les recompenses terminales anticipées."
       },
-      "correct_answer": "A",
-      "explanation": "Trouver la fonction de potentiel correcte est souvent un défi en potential-based reward shaping, car elle doit être soigneusement ajustée pour chaque problème. B suggère une réduction constante qui n'est pas liée au shaping, C d'une invariance geneticement indifferenciée, et D élude les propriétés terminales en ne touchant pas adéquatement le shaping.",
+      "correct_answer": "B",
+      "explanation": "Trouver la fonction de potentiel correcte est souvent un défi en potential-based reward shaping, car elle doit être soigneusement ajustée pour chaque problème. B suggère une réduction constante qui n'est pas liée au shaping, C d'une invariance geneticement indifferenciée, et D élude les propriétés terminales en ne touchant pas adéquatement le shaping. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Reduire l'espace d'action d'un facteur constant à chaque itération.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Assurer l'invariance des habitudes comportementales indépendamment de l'approche.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quel est un résultat attendu de récompenser plus densément les étapes initiales d'une tâche complexe?",
       "image_url": null,
       "choices": {
-        "A": "Cela peut renforcer l'agent à s'attacher trop aux stratégies sous-optimales simples.",
+        "A": "Cela élimine obligatoirement le 'hacking' de la fonction de recompense.",
         "B": "Cela engendre une réduction obligatoire de l'espace d'état disponible.",
-        "C": "Cela élimine obligatoirement le 'hacking' de la fonction de recompense.",
+        "C": "Cela peut renforcer l'agent à s'attacher trop aux stratégies sous-optimales simples.",
         "D": "Cela provoque une simplification dynamique du modèle de transition environnemental."
       },
-      "correct_answer": "A",
-      "explanation": "Récompenser plus densément les étapes initiales risque d'accrocher l'agent aux solutions sous-optimales initiales, par manque d'exigences ultérieures. B réduit une interaction non requise, C exagère l'élimination du hacking, et D aborde une simplification non directement causée par cette technique.",
+      "correct_answer": "C",
+      "explanation": "Récompenser plus densément les étapes initiales risque d'accrocher l'agent aux solutions sous-optimales initiales, par manque d'exigences ultérieures. B réduit une interaction non requise, C exagère l'élimination du hacking, et D aborde une simplification non directement causée par cette technique. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Cela élimine obligatoirement le 'hacking' de la fonction de recompense.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Cela engendre une réduction obligatoire de l'espace d'état disponible.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Cela provoque une simplification dynamique du",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Pourquoi la difference de potentiel doit-elle etre utilisee soigneusement dans PBRS?",
       "image_url": null,
       "choices": {
-        "A": "Elle devrait maintenir un équilibre pour éviter de biaiser excessivement les chemins optimaux.",
+        "A": "Elle apporte automatiquement des ajustements temporels spontanés.",
         "B": "Elle doit être recalibrée continuellement pour chaque nouvelle action trouvée.",
         "C": "Elle nécessite d'être annulée au bout de chaque sous-épisode.",
-        "D": "Elle apporte automatiquement des ajustements temporels spontanés."
+        "D": "Elle devrait maintenir un équilibre pour éviter de biaiser excessivement les chemins optimaux."
       },
-      "correct_answer": "A",
-      "explanation": "L'utilisation soigneuse de la difference potentielle doit lever l'equilibre necessaire a eviter un biais important dans certains chemins preferenciers. B planifie incorrectement un recalibrage intemporel, C stabillise erronément les sous-épisodes, et D suggère à tort une capacité dynamique attribuable aux potentiels eux-mêmes.",
+      "correct_answer": "D",
+      "explanation": "L'utilisation soigneuse de la difference potentielle doit lever l'equilibre necessaire a eviter un biais important dans certains chemins preferenciers. B planifie incorrectement un recalibrage intemporel, C stabillise erronément les sous-épisodes, et D suggère à tort une capacité dynamique attribuable aux potentiels eux-mêmes. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle apporte automatiquement des ajustements temporels spontanés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle doit être recalibrée continuellement pour chaque nouvelle action trouvée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle nécessite d'être annulée au",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Une récompense qui dépend du nombre total d'actions effectuées."
       },
       "correct_answer": "A",
-      "explanation": "Une récompense dense implique que l'agent reçoit souvent des retours positifs, même pour des actions partielles ou intermédiaires, ce qui facilite l'apprentissage incrémental. B est incorrect car il décrit une récompense sparse. C ne décrit pas une stratégie de récompense valable. D n'est pas vrai, la récompense dense dépend de l'accomplissement d'actions pertinentes, pas de leur quantité.",
+      "explanation": "Une récompense dense implique que l'agent reçoit souvent des retours positifs, même pour des actions partielles ou intermédiaires, ce qui facilite l'apprentissage incrémental. B est incorrect car il décrit une récompense sparse. C ne décrit pas une stratégie de récompense valable. D n'est pas vrai, la récompense dense dépend de l'accomplissement d'actions pertinentes, pas de leur quantité. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Une récompense attribuée uniquement lorsque l'objectif final est atteint.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une récompense qui augmente de manière exponentielle à chaque étape.) est plausible mais faux car il ne respecte",
       "difficulty": "medium"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Quel est le but principal du guidage en reward shaping?",
       "image_url": null,
       "choices": {
-        "A": "Faciliter le parcours de l'agent vers l'objectif en lui fournissant des indices supplémentaires.",
-        "B": "Rendre l'agent dépendant de récompenses prévisibles pour augmenter sa performance à court terme.",
+        "A": "Rendre l'agent dépendant de récompenses prévisibles pour augmenter sa performance à court terme.",
+        "B": "Faciliter le parcours de l'agent vers l'objectif en lui fournissant des indices supplémentaires.",
         "C": "Accroître la difficulté du problème pour améliorer sa robustesse.",
         "D": "Maximiser les gains immédiats sans considérer les résultats à long terme."
       },
-      "correct_answer": "A",
-      "explanation": "Le guidage vise à fournir des informations supplémentaires à l'agent pour le diriger efficacement vers la solution optimale. B est incorrect car il ne s'agit pas de créer de la dépendance. C est hors de propos car le but n'est pas d'accroître la difficulté mais de faciliter le processus. D va à l'encontre de la stratégie de récompense progressive et bien orientée qui tient compte des objectifs à long terme.",
+      "correct_answer": "B",
+      "explanation": "Le guidage vise à fournir des informations supplémentaires à l'agent pour le diriger efficacement vers la solution optimale. B est incorrect car il ne s'agit pas de créer de la dépendance. C est hors de propos car le but n'est pas d'accroître la difficulté mais de faciliter le processus. D va à l'encontre de la stratégie de récompense progressive et bien orientée qui tient compte des objectifs à long terme. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Rendre l'agent dépendant de récompenses prévisibles pour augmenter sa performance à court terme.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Accroître",
       "difficulty": "medium"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Quel est un risque majeur du hacking de la récompense en apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "L'agent peut apprendre à maximiser la récompense sans accomplir la tâche souhaitée.",
+        "A": "L'agent pourrait choisir constamment les actions les plus coûteuses.",
         "B": "L'agent peut perdre sa capacité à apprendre de nouvelles politiques rapidement.",
-        "C": "L'agent pourrait choisir constamment les actions les plus coûteuses.",
+        "C": "L'agent peut apprendre à maximiser la récompense sans accomplir la tâche souhaitée.",
         "D": "L'agent sera incapable de généraliser à partir des exemples de formation."
       },
-      "correct_answer": "A",
-      "explanation": "Le hacking de la récompense se produit lorsque l'agent trouve des failles dans le système de récompense, optimisant des actions non souhaitées pour maximiser les récompenses. B ne décrit pas un phénomène de hacking. C n'est pas pertinent car le coût des actions n'est pas le centre du problème. D est une problématique différente relative à la généralisation, pas à l'optimisation non désirée.",
+      "correct_answer": "C",
+      "explanation": "Le hacking de la récompense se produit lorsque l'agent trouve des failles dans le système de récompense, optimisant des actions non souhaitées pour maximiser les récompenses. B ne décrit pas un phénomène de hacking. C n'est pas pertinent car le coût des actions n'est pas le centre du problème. D est une problématique différente relative à la généralisation, pas à l'optimisation non désirée. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'agent pourrait choisir constamment les actions les plus coûteuses.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (L'agent peut perdre sa capacité à apprendre de nouvelles politiques rapidement.) est",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Comment peut-on définir le potentiel en récompense shaping?",
       "image_url": null,
       "choices": {
-        "A": "C'est une fonction qui attribue une valeur à chaque état pour influencer le comportement de l'agent.",
+        "A": "C'est un outil pour minimiser la variance des récompenses reçues par l'agent.",
         "B": "C'est une méthode pour calculer l'utilité des actions futures.",
         "C": "C'est le point final réaliste que l'agent doit atteindre.",
-        "D": "C'est un outil pour minimiser la variance des récompenses reçues par l'agent."
+        "D": "C'est une fonction qui attribue une valeur à chaque état pour influencer le comportement de l'agent."
       },
-      "correct_answer": "A",
-      "explanation": "Le potentiel dans le reward shaping est défini par une fonction qui donne une valeur à chaque état et aide à influencer la trajectoire de l'agent. B se rapproche de la notion de valeur espérée mais ne capte pas l'essence du potentiel comme un outil de guidance. C réduit le potentiel à un objectif final, ce qui est incorrect. D ne fait pas référence à la fonction potentielle mais plutôt à la gestion des variances de récompenses.",
+      "correct_answer": "D",
+      "explanation": "Le potentiel dans le reward shaping est défini par une fonction qui donne une valeur à chaque état et aide à influencer la trajectoire de l'agent. B se rapproche de la notion de valeur espérée mais ne capte pas l'essence du potentiel comme un outil de guidance. C réduit le potentiel à un objectif final, ce qui est incorrect. D ne fait pas référence à la fonction potentielle mais plutôt à la gestion des variances de récompenses. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (C'est un outil pour minimiser la variance des récompenses reçues par l'agent.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "Elle remplace totalement la fonction de valeur de l'état."
       },
       "correct_answer": "A",
-      "explanation": "Une récompense dense consiste à fournir des retours fréquents à l'agent pour chaque action effectuée, permettant d'accélérer l'apprentissage. La réponse B est incorrecte car elle décrit une récompense éparse qui n'évalue qu'à la fin. La réponse C est fausse car ce type de récompense n'est pas biaisé vers des actions risquées. La réponse D est incorrecte, car la récompense ne remplace pas la fonction de valeur mais fonctionne avec elle.",
+      "explanation": "Une récompense dense consiste à fournir des retours fréquents à l'agent pour chaque action effectuée, permettant d'accélérer l'apprentissage. La réponse B est incorrecte car elle décrit une récompense éparse qui n'évalue qu'à la fin. La réponse C est fausse car ce type de récompense n'est pas biaisé vers des actions risquées. La réponse D est incorrecte, car la récompense ne remplace pas la fonction de valeur mais fonctionne avec elle. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elle ne donne qu'un retour à la fin de l'épisode.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle est utilisée principalement",
       "difficulty": "medium"
     },
     {
@@ -302,13 +302,13 @@
       "question": "Quel est un risque courant lié au 'reward shaping' ou modelage de récompense en apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Le hacking de récompense, où l'agent maximise la récompense sans accomplir l'objectif réel.",
-        "B": "L'agent ayant besoin de moins d'étapes pour apprendre la politique optimale.",
+        "A": "L'agent ayant besoin de moins d'étapes pour apprendre la politique optimale.",
+        "B": "Le hacking de récompense, où l'agent maximise la récompense sans accomplir l'objectif réel.",
         "C": "Obtenir des déviations significatives dans les comportements simulés par rapport au réel.",
         "D": "La régression vers la moyenne des récompenses sur le long terme."
       },
-      "correct_answer": "A",
-      "explanation": "Le hacking de récompense se produit lorsque l'agent découvre une faille dans la structure de récompense qui lui permet de maximiser les récompenses sans accomplir les objectifs souhaités. La réponse B est incorrecte car elle décrit un avantage potentiel du reward shaping. La réponse C ne s'applique pas spécifiquement au reward shaping mais plus généralement à la généralisation. La réponse D est incorrecte car elle se rapporte à la statistique et non au reward shaping en apprentissage par renforcement.",
+      "correct_answer": "B",
+      "explanation": "Le hacking de récompense se produit lorsque l'agent découvre une faille dans la structure de récompense qui lui permet de maximiser les récompenses sans accomplir les objectifs souhaités. La réponse B est incorrecte car elle décrit un avantage potentiel du reward shaping. La réponse C ne s'applique pas spécifiquement au reward shaping mais plus généralement à la généralisation. La réponse D est incorrecte car elle se rapporte à la statistique et non au reward shaping en apprentissage par renforcement. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'agent ayant besoin de moins d'étapes pour apprendre la politique optimale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     }
   ]

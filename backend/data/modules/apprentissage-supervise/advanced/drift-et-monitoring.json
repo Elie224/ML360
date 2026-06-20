@@ -14,7 +14,7 @@
         "D": "Le 'data drift' désigne une augmentation de la variance dans les prédictions du modèle."
       },
       "correct_answer": "A",
-      "explanation": "Le 'data drift' survient lorsque la distribution statistique des données d'entrée change à travers le temps, ce qui peut affecter la performance du modèle. L'option B décrit une situation de performance sans cause de données. L'option C est une erreur de développement et l'option D concerne la variation des résultats du modèle plutôt que les données d'entrée.",
+      "explanation": "Le 'data drift' survient lorsque la distribution statistique des données d'entrée change à travers le temps, ce qui peut affecter la performance du modèle. L'option B décrit une situation de performance sans cause de données. L'option C est une erreur de développement et l'option D concerne la variation des résultats du modèle plutôt que les données d'entrée. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Le 'data drift' est causé par une diminution des performances du modèle sans changement des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le 'data drift' se réfère à une erreur dans le code",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "En quoi le 'concept drift' diffère-t-il du 'data drift'?",
       "image_url": null,
       "choices": {
-        "A": "Le 'concept drift' implique un changement dans le comportement de la variable cible indépendante des données.",
-        "B": "Le 'concept drift' affecte uniquement les modèles non supervisés.",
+        "A": "Le 'concept drift' affecte uniquement les modèles non supervisés.",
+        "B": "Le 'concept drift' implique un changement dans le comportement de la variable cible indépendante des données.",
         "C": "Le 'concept drift' survient lorsque le modèle utilise des données mal étiquetées.",
         "D": "Le 'concept drift' est causé uniquement par des facteurs économiques et financiers."
       },
-      "correct_answer": "A",
-      "explanation": "Le 'concept drift' concerne les changements dans la relation entre les données d'entrée et la variable cible, même si la distribution des données reste constante. L'option B est incorrecte car le concept drift peut affecter tous les types de modèles. L'option C se réfère à des problèmes de qualité des données et D restreint incorrectement le concept aux facteurs économiques.",
+      "correct_answer": "B",
+      "explanation": "Le 'concept drift' concerne les changements dans la relation entre les données d'entrée et la variable cible, même si la distribution des données reste constante. L'option B est incorrecte car le concept drift peut affecter tous les types de modèles. L'option C se réfère à des problèmes de qualité des données et D restreint incorrectement le concept aux facteurs économiques. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le 'concept drift' affecte uniquement les modèles non supervisés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le 'concept drift' survient lorsque le modèle utilise des données mal étiquetées.) est plausible mais",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quel est un indicateur clé à surveiller pour détecter un data drift?",
       "image_url": null,
       "choices": {
-        "A": "La divergence de Kolmogorov-Smirnov entre distributions historiques et actuelles.",
+        "A": "La complexité algorithmique du modèle utilisé.",
         "B": "Le taux d'apprentissage du modèle.",
-        "C": "La complexité algorithmique du modèle utilisé.",
+        "C": "La divergence de Kolmogorov-Smirnov entre distributions historiques et actuelles.",
         "D": "Le nombre de couches dans un réseau de neurones profond."
       },
-      "correct_answer": "A",
-      "explanation": "La divergence de Kolmogorov-Smirnov est une statistique utilisée pour quantifier les différences entre deux distributions qui peut servir à détecter un data drift. L'option B, le taux d'apprentissage, se réfère à un aspect du processus d'entraînement. L'option C et D concernent des caractéristiques de modèle sans lien direct avec le data drift.",
+      "correct_answer": "C",
+      "explanation": "La divergence de Kolmogorov-Smirnov est une statistique utilisée pour quantifier les différences entre deux distributions qui peut servir à détecter un data drift. L'option B, le taux d'apprentissage, se réfère à un aspect du processus d'entraînement. L'option C et D concernent des caractéristiques de modèle sans lien direct avec le data drift. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La complexité algorithmique du modèle utilisé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le taux d'apprentissage du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Le",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Pourquoi est-il essentiel de surveiller la performance des modèles en production?",
       "image_url": null,
       "choices": {
-        "A": "Pour identifier rapidement tout déclin des performances qui pourrait nécessiter un recalibrage du modèle.",
+        "A": "Pour garantir que le même algorithme est utilisé indéfiniment.",
         "B": "Pour améliorer automatiquement la précision du modèle sans intervention humaine.",
         "C": "Pour réduire la taille des données d'entraînement requises.",
-        "D": "Pour garantir que le même algorithme est utilisé indéfiniment."
+        "D": "Pour identifier rapidement tout déclin des performances qui pourrait nécessiter un recalibrage du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "Surveiller les performances des modèles est crucial pour identifier les déclins qui peuvent justifier une mise à jour du modèle. L'option B est incorrecte car l'amélioration automatique nécessite généralement une intervention, C et D ne concernent pas directement la surveillance en production.",
+      "correct_answer": "D",
+      "explanation": "Surveiller les performances des modèles est crucial pour identifier les déclins qui peuvent justifier une mise à jour du modèle. L'option B est incorrecte car l'amélioration automatique nécessite généralement une intervention, C et D ne concernent pas directement la surveillance en production. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour garantir que le même algorithme est utilisé indéfiniment.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour améliorer automatiquement la précision du modèle sans intervention humaine.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour réduire la",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "En utilisant la taille des échantillons de test uniquement."
       },
       "correct_answer": "A",
-      "explanation": "Un seuil d'alerte pour le data drift peut être établi en utilisant une statistique spécifique telle que la divergence de Kullback-Leibler, qui mesure la différence entre deux distributions. L'option B est liée à l'entraînement, C est trop vague et D est non spécifique car la taille d'échantillon ne suffit pas pour définir un seuil d'alerte.",
+      "explanation": "Un seuil d'alerte pour le data drift peut être établi en utilisant une statistique spécifique telle que la divergence de Kullback-Leibler, qui mesure la différence entre deux distributions. L'option B est liée à l'entraînement, C est trop vague et D est non spécifique car la taille d'échantillon ne suffit pas pour définir un seuil d'alerte. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (En surveillant la valeur d'apprentissage pendant le modèle d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En observant la stabilité du réseau de données.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quel pourrait être un symptôme de 'concept drift' dans un scénario de machine learning supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Post-prévision, la précision du modèle diminue soudainement tandis que la distribution des données reste intacte.",
-        "B": "Les temps de traitement des données augmentent significativement sans modifications de l'algorithme.",
+        "A": "Les temps de traitement des données augmentent significativement sans modifications de l'algorithme.",
+        "B": "Post-prévision, la précision du modèle diminue soudainement tandis que la distribution des données reste intacte.",
         "C": "L'algorithme échoue à converger pendant l'entraînement initial.",
         "D": "De nouvelles fonctionnalités sont ajoutées à la phase d'extraction des données."
       },
-      "correct_answer": "A",
-      "explanation": "Le 'concept drift' peut être détecté lorsqu'un modèle montre une baisse de précision même lorsque la distribution des données ne change pas. L'option B concerne l'efficacité du traitement, C est un problème d'entraînement, et D concerne la phase d'ingénierie des fonctionnalités.",
+      "correct_answer": "B",
+      "explanation": "Le 'concept drift' peut être détecté lorsqu'un modèle montre une baisse de précision même lorsque la distribution des données ne change pas. L'option B concerne l'efficacité du traitement, C est un problème d'entraînement, et D concerne la phase d'ingénierie des fonctionnalités. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les temps de traitement des données augmentent significativement sans modifications de l'algorithme.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'algorithme échoue à converger pendant l'entraînement initial.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (De nouvelles fonctionnalités sont",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Qu'est-ce qui peut indiquer un besoin de changement de modèle en raison d'un concept drift?",
       "image_url": null,
       "choices": {
-        "A": "Les erreurs de prédiction augmentent malgré l'absence de changement dans les données d'entraînement.",
+        "A": "Les ressources matérielles nécessaires augmentent.",
         "B": "Le nombre de données manquantes augmente dans les ensembles de données entrants.",
-        "C": "Les ressources matérielles nécessaires augmentent.",
+        "C": "Les erreurs de prédiction augmentent malgré l'absence de changement dans les données d'entraînement.",
         "D": "Le nombre de classes cible change soudainement."
       },
-      "correct_answer": "A",
-      "explanation": "Un accroissement des erreurs de prédiction sans changement des données d'entraînement indique potentiellement un concept drift. L'option B se réfère à la qualité des données, C est liée à l'infrastructure et D peut indiquer des erreurs dans l'étiquetage ou le processus.",
+      "correct_answer": "C",
+      "explanation": "Un accroissement des erreurs de prédiction sans changement des données d'entraînement indique potentiellement un concept drift. L'option B se réfère à la qualité des données, C est liée à l'infrastructure et D peut indiquer des erreurs dans l'étiquetage ou le processus. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les ressources matérielles nécessaires augmentent.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le nombre de données manquantes augmente dans les ensembles de données entrants.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Le nombre de classes cible change",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quel type de monitoring pourrait détecter un 'data drift' provoqué par un changement saisonnier?",
       "image_url": null,
       "choices": {
-        "A": "Un monitoring qui compare régulièrement les distributions de données actuelles et historiques.",
+        "A": "Un monitoring axé uniquement sur les erreurs de retour de l'utilisateur.",
         "B": "Un monitoring centré sur l'analyse des coûts de calcul du modèle.",
         "C": "Un monitoring basé sur les mises à jour du modèle du type gradient boosting.",
-        "D": "Un monitoring axé uniquement sur les erreurs de retour de l'utilisateur."
+        "D": "Un monitoring qui compare régulièrement les distributions de données actuelles et historiques."
       },
-      "correct_answer": "A",
-      "explanation": "Surveiller les distributions de données actuelles et historiques permet de détecter des patterns saisonniers en data drift. L'option B se concentre sur l'efficacité du calcul, C sur la performance d'un type spécifique d'algorithme et D manque une méthode précise pour détecter le data drift.",
+      "correct_answer": "D",
+      "explanation": "Surveiller les distributions de données actuelles et historiques permet de détecter des patterns saisonniers en data drift. L'option B se concentre sur l'efficacité du calcul, C sur la performance d'un type spécifique d'algorithme et D manque une méthode précise pour détecter le data drift. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un monitoring axé uniquement sur les erreurs de retour de l'utilisateur.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Un monitoring centré sur l'analyse des coûts de calcul du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "En utilisant une technique de clustering pour regrouper les résultats de prédiction."
       },
       "correct_answer": "A",
-      "explanation": "Réentraîner le modèle avec les données actuelles permet d'aligner le modèle avec les nouvelles distributions de données. B ne corrige pas le drift, C détériore les données et D ne s'adresse pas au problème central de l'actualisation des distributions de données.",
+      "explanation": "Réentraîner le modèle avec les données actuelles permet d'aligner le modèle avec les nouvelles distributions de données. B ne corrige pas le drift, C détériore les données et D ne s'adresse pas au problème central de l'actualisation des distributions de données. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (En augmentant la profondeur du réseau de neurones sans changer les données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En ajoutant aléatoirement du bruit aux données d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (En utilisant une",
       "difficulty": "hard"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quel est un effet potentiel du 'concept drift' s'il n'est pas corrigé dans le temps?",
       "image_url": null,
       "choices": {
-        "A": "Le modèle peut faire des prédictions qui sont de plus en plus inexactes et non représentatives.",
-        "B": "Le modèle augmentera automatiquement sa complexité pour s'adapter aux nouvelles données.",
+        "A": "Le modèle augmentera automatiquement sa complexité pour s'adapter aux nouvelles données.",
+        "B": "Le modèle peut faire des prédictions qui sont de plus en plus inexactes et non représentatives.",
         "C": "Les performances du modèle resteront constantes mais nécessiteront plus de données pour entraîner.",
         "D": "Le modèle commencera à surapprendre même sur l'ensemble de données d'entraînement d'origine."
       },
-      "correct_answer": "A",
-      "explanation": "Un 'concept drift' non traité conduit à des prédictions inexactes puisque la relation entre les entrées et la cible peut avoir changé. B est faux car le modèle ne modifie pas auto ses paramètres. C est incorrect, ce serait le 'data drift' qui nécessiterait potentiellement plus de données. D réfère à un problème de surentraînement pas lié spécifiquement au drift.",
+      "correct_answer": "B",
+      "explanation": "Un 'concept drift' non traité conduit à des prédictions inexactes puisque la relation entre les entrées et la cible peut avoir changé. B est faux car le modèle ne modifie pas auto ses paramètres. C est incorrect, ce serait le 'data drift' qui nécessiterait potentiellement plus de données. D réfère à un problème de surentraînement pas lié spécifiquement au drift. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le modèle augmentera automatiquement sa complexité pour s'adapter aux nouvelles données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Les performances du modèle resteront constantes mais nécessiteront plus de données pour entraîner.)",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Dans le contexte du suivi de la performance d'un modèle, que signifie 'seuil d'alerte'?",
       "image_url": null,
       "choices": {
-        "A": "Une valeur prédéfinie qui déclenche un examen ou une action spécifique lorsqu'elle est dépassée par une métrique.",
+        "A": "Une ligne de base qui garantit que les résultats restent constants sans modification.",
         "B": "Le point où le coût de calcul du modèle devient insoutenable.",
-        "C": "Une ligne de base qui garantit que les résultats restent constants sans modification.",
+        "C": "Une valeur prédéfinie qui déclenche un examen ou une action spécifique lorsqu'elle est dépassée par une métrique.",
         "D": "Le niveau de taille des données où le modèle commence à échouer à s'entraîner."
       },
-      "correct_answer": "A",
-      "explanation": "Un 'seuil d'alerte' est une valeur prédéterminée qui, quand atteinte, déclenche une vérification ou une action en réponse à une fluctuation de performance. B se rapporte à la scalabilité, C à de l'assurance qualité sans précision d'action et D concerne la capacité d'entraînement.",
+      "correct_answer": "C",
+      "explanation": "Un 'seuil d'alerte' est une valeur prédéterminée qui, quand atteinte, déclenche une vérification ou une action en réponse à une fluctuation de performance. B se rapporte à la scalabilité, C à de l'assurance qualité sans précision d'action et D concerne la capacité d'entraînement. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une ligne de base qui garantit que les résultats restent constants sans modification.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le point où le coût de calcul du modèle devient insoutenable.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel est un défi principal lors du monitoring de modèles pour détection de concept drift?",
       "image_url": null,
       "choices": {
-        "A": "Distinguer clairement entre un concept drift réel et un simple changement aléatoire de performance.",
+        "A": "Ignorer les facteurs externes influençant le modèle.",
         "B": "Rendre le modèle plus complexe pour éviter les erreurs de drift.",
         "C": "Réduire la taille d'échantillon pour accélérer la détection du drift.",
-        "D": "Ignorer les facteurs externes influençant le modèle."
+        "D": "Distinguer clairement entre un concept drift réel et un simple changement aléatoire de performance."
       },
-      "correct_answer": "A",
-      "explanation": "Distinguer un concept drift réel d'un simple bruit statistique ou de variations aléatoires est un challenge dans le monitoring. B est incorrect car plus de complexité peut aggraver le problème, C est faux puisque réduire la taille peut diminuer la fiabilité statistique, et D est une approche contre-productive puisqu'elle négligerait des influences clé.",
+      "correct_answer": "D",
+      "explanation": "Distinguer un concept drift réel d'un simple bruit statistique ou de variations aléatoires est un challenge dans le monitoring. B est incorrect car plus de complexité peut aggraver le problème, C est faux puisque réduire la taille peut diminuer la fiabilité statistique, et D est une approche contre-productive puisqu'elle négligerait des influences clé. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ignorer les facteurs externes influençant le modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Rendre le modèle plus complexe pour éviter les erreurs de drift.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Parce qu'elle garantie une distribution de classes équilibrée."
       },
       "correct_answer": "A",
-      "explanation": "L'analyse de la dérive saisonnière est essentielle car elle permet de capturer des changements saisonniers récurrents pouvant influencer la performance du modèle dans le temps. B est inexact, cela n'affecte pas la fréquence d'entraînement. C est faux car l'analyse n'implique pas la réduction de variables, et D ne traite pas équilibrage de classes.",
+      "explanation": "L'analyse de la dérive saisonnière est essentielle car elle permet de capturer des changements saisonniers récurrents pouvant influencer la performance du modèle dans le temps. B est inexact, cela n'affecte pas la fréquence d'entraînement. C est faux car l'analyse n'implique pas la réduction de variables, et D ne traite pas équilibrage de classes. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Parce qu'elle réduit automatiquement le besoin d'entraînement régulier.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce que cela simplifie les modèles en diminuant le nombre de variables.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quelles méthodes sont souvent utilisées pour détecter le data drift?",
       "image_url": null,
       "choices": {
-        "A": "Tests de distance statistique comme la divergence de Kullback-Leibler ou le test KS.",
-        "B": "Seuil basé sur la mémoire cache du modèle pour accélérer la prédiction.",
+        "A": "Seuil basé sur la mémoire cache du modèle pour accélérer la prédiction.",
+        "B": "Tests de distance statistique comme la divergence de Kullback-Leibler ou le test KS.",
         "C": "Augmentation en ajoutant des couches cachées supplémentaires pour stabiliser l'apprentissage.",
         "D": "Echelle logarithmique pour ajuster graduellement les poids."
       },
-      "correct_answer": "A",
-      "explanation": "Des tests de distance statistique comme la divergence de Kullback-Leibler (KLD) ou le test de Kolmogorov-Smirnov (KS) sont couramment utilisés pour détecter le data drift en comparant deux distributions de données. L'option B ne concerne pas le drift, C parle de l'entraînement de modèle et D traite de l'ajustement de poids non lié directement au drift.",
+      "correct_answer": "B",
+      "explanation": "Des tests de distance statistique comme la divergence de Kullback-Leibler (KLD) ou le test de Kolmogorov-Smirnov (KS) sont couramment utilisés pour détecter le data drift en comparant deux distributions de données. L'option B ne concerne pas le drift, C parle de l'entraînement de modèle et D traite de l'ajustement de poids non lié directement au drift. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Seuil basé sur la mémoire cache du modèle pour accélérer la prédiction.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Augmentation en ajoutant des couches cachées supplémentaires pour stabiliser l'apprentissage.) est plausible mais faux car il",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Comment peut-on atténuer les impacts d'un concept drift après sa détection?",
       "image_url": null,
       "choices": {
-        "A": "Mise à jour fréquente des ensembles d'entraînement pour inclure les nouvelles tendances.",
+        "A": "Spécialiser l'algorithme uniquement sur les catégories les plus fréquentes.",
         "B": "Diminuer la capacité des réseaux neuronaux pour réduire le temps de calcul.",
-        "C": "Spécialiser l'algorithme uniquement sur les catégories les plus fréquentes.",
+        "C": "Mise à jour fréquente des ensembles d'entraînement pour inclure les nouvelles tendances.",
         "D": "Isoler les composants systèmes pour empêcher toute intervention d'autres processus."
       },
-      "correct_answer": "A",
-      "explanation": "Mettre à jour régulièrement les ensembles d'entraînement pour inclure les tendances émergentes est une pratique clé pour gérer un concept drift. B, C et D détournent le problème en modifiant la structure ou l'environnement du modèle sans traiter le drift.",
+      "correct_answer": "C",
+      "explanation": "Mettre à jour régulièrement les ensembles d'entraînement pour inclure les tendances émergentes est une pratique clé pour gérer un concept drift. B, C et D détournent le problème en modifiant la structure ou l'environnement du modèle sans traiter le drift. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Spécialiser l'algorithme uniquement sur les catégories les plus fréquentes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Diminuer la capacité des réseaux neuronaux pour réduire le temps de calcul.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Isoler les composants",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Quelle technique peut assister dans le suivi des performances pour détecter les concept drifts?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser un suivi de métriques à long terme, comme le suivi des performances des modèles dans le temps.",
+        "A": "Remplacer toutes les instances du modèle en évolution par la méthode de base.",
         "B": "Implémenter une méthode de codage couleur dans la visualisation de données.",
         "C": "Adopter un système isolant les processus de prétraitement des données.",
-        "D": "Remplacer toutes les instances du modèle en évolution par la méthode de base."
+        "D": "Utiliser un suivi de métriques à long terme, comme le suivi des performances des modèles dans le temps."
       },
-      "correct_answer": "A",
-      "explanation": "Le suivi des métriques temporelles permet de détecter les schémas associés aux concept drifts. L'option B est une approche visuelle, C ne traite pas de drift, et D reviendrait à des solutions initiales sans amélioration qualifiante.",
+      "correct_answer": "D",
+      "explanation": "Le suivi des métriques temporelles permet de détecter les schémas associés aux concept drifts. L'option B est une approche visuelle, C ne traite pas de drift, et D reviendrait à des solutions initiales sans amélioration qualifiante. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Remplacer toutes les instances du modèle en évolution par la méthode de base.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Implémenter une méthode de codage couleur dans la visualisation de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Adopter un système isolant",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Cela pourrait résulter en une ré-évaluation constante par un analyseur externe non supervisé."
       },
       "correct_answer": "A",
-      "explanation": "Si les seuils d'alerte ne sont pas ajustés, des alertes inutiles pourraient devenir fréquentes, provoquant une saturation cognitive des opérateurs. B suggère une utilisation inefficace des ressources qui n'est pas directement liée aux seuils d'alerte, C n'offre pas de contexte d'évaluation réaliste, et D exagère le processus de ré-évaluation avec des participants externes.",
+      "explanation": "Si les seuils d'alerte ne sont pas ajustés, des alertes inutiles pourraient devenir fréquentes, provoquant une saturation cognitive des opérateurs. B suggère une utilisation inefficace des ressources qui n'est pas directement liée aux seuils d'alerte, C n'offre pas de contexte d'évaluation réaliste, et D exagère le processus de ré-évaluation avec des participants externes. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Les ressources matérielles peuvent finir par être sous-utilisées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La vitesse d'évaluation de performance peut augmenter de manière incontrôlable.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Lors de la conception d'un système de monitoring, quel élément est crucial pour distinguer entre des variations normales et un concept drift?",
       "image_url": null,
       "choices": {
-        "A": "Définir des intervalles de confiance pour la variabilité acceptable des métriques.",
-        "B": "Assurer un temps de latence minimum entre les mises à jour du système.",
+        "A": "Assurer un temps de latence minimum entre les mises à jour du système.",
+        "B": "Définir des intervalles de confiance pour la variabilité acceptable des métriques.",
         "C": "Sélectionner des seuils d'alerte basés uniquement sur les pics de charge réseau.",
         "D": "Éliminer complètement les erreurs type I et type II pendant la conception."
       },
-      "correct_answer": "A",
-      "explanation": "Définir des intervalles de confiance pour les métriques aide à identifier ce qui constitue une déviation significative dû au concept drift par rapport aux variations normales. B concerne la performance du système pas directement le drift, C n'est pas lié à des métriques de drift, et D exagère l'élimination des erreurs statistiques.",
+      "correct_answer": "B",
+      "explanation": "Définir des intervalles de confiance pour les métriques aide à identifier ce qui constitue une déviation significative dû au concept drift par rapport aux variations normales. B concerne la performance du système pas directement le drift, C n'est pas lié à des métriques de drift, et D exagère l'élimination des erreurs statistiques. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Assurer un temps de latence minimum entre les mises à jour du système.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Sélectionner des seuils d'alerte basés uniquement sur les pics de charge réseau.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Comment pouvons-nous adapter un modèle face à une preuve de concept drift d'origine environnementale?",
       "image_url": null,
       "choices": {
-        "A": "En utilisant des modèles adaptatifs ou utilisant l'apprentissage en ligne pour intégrer de nouvelles données.",
+        "A": "En limitant le modèle à un sous-ensemble des fonctionnalités les plus stables.",
         "B": "En réduisant la fréquence d'échantillonnage des données pour ralentir l'impact.",
-        "C": "En limitant le modèle à un sous-ensemble des fonctionnalités les plus stables.",
+        "C": "En utilisant des modèles adaptatifs ou utilisant l'apprentissage en ligne pour intégrer de nouvelles données.",
         "D": "En choisissant de n'appliquer aucun ajustement lorsque les prévisions actuelles datent de plus de six mois."
       },
-      "correct_answer": "A",
-      "explanation": "L'utilisation de modèles adaptatifs ou de techniques d'apprentissage en ligne permet des mises à jour progressives basées sur des données nouvelles pour mieux gérer un concept drift. Les options B et C restreignent ou perturbent le contexte d'input du modèle, et D suggère d'ignorer le problème pas de l'adresser.",
+      "correct_answer": "C",
+      "explanation": "L'utilisation de modèles adaptatifs ou de techniques d'apprentissage en ligne permet des mises à jour progressives basées sur des données nouvelles pour mieux gérer un concept drift. Les options B et C restreignent ou perturbent le contexte d'input du modèle, et D suggère d'ignorer le problème pas de l'adresser. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En limitant le modèle à un sous-ensemble des fonctionnalités les plus stables.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En réduisant la fréquence d'échantillonnage des données pour ralentir l'impact.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Quand est-ce qu'un concept drift est particulièrement difficile à détecter?",
       "image_url": null,
       "choices": {
-        "A": "Lors de variations fines et progressives qui se produisent sur une longue période.",
+        "A": "Quand il est associé à une amélioration générale des données d'entrée.",
         "B": "Lorsque toutes les métriques du modèle montrent une amélioration.",
         "C": "Lorsqu'un seul événement cause un changement drastique immédiatement visible.",
-        "D": "Quand il est associé à une amélioration générale des données d'entrée."
+        "D": "Lors de variations fines et progressives qui se produisent sur une longue période."
       },
-      "correct_answer": "A",
-      "explanation": "Les changements subtils et progressifs sur une période prolongée peuvent être difficiles à identifier car ils ne sont pas immédiatement apparents dans les vérifications de routine. B et D ne présentent pas de problèmes, et C est facilement identifiable par l'impact significatif qu'il produit.",
+      "correct_answer": "D",
+      "explanation": "Les changements subtils et progressifs sur une période prolongée peuvent être difficiles à identifier car ils ne sont pas immédiatement apparents dans les vérifications de routine. B et D ne présentent pas de problèmes, et C est facilement identifiable par l'impact significatif qu'il produit. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Quand il est associé à une amélioration générale des données d'entrée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Lorsque toutes les métriques du modèle montrent une amélioration.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "Concentrer la surveillance uniquement sur les moyennes mobiles des erreurs de prédiction."
       },
       "correct_answer": "A",
-      "explanation": "L'apprentissage incrémental adapte continuellement le modèle aux données changeantes en temps réel, essentiel pour les données en streaming. B se fie à des mises à jour technologiques pas au drift, C s'occupe de cohérence mais pas d'évolution de modèle et D fournit une sensibilité limitée à des changements non linéaires.",
+      "explanation": "L'apprentissage incrémental adapte continuellement le modèle aux données changeantes en temps réel, essentiel pour les données en streaming. B se fie à des mises à jour technologiques pas au drift, C s'occupe de cohérence mais pas d'évolution de modèle et D fournit une sensibilité limitée à des changements non linéaires. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Mettre à jour les algorithmes basés sur les mises à jour annuelles de matériel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Isoler les flux à changer pour maintenir une cohérence temporelle dans les données.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -302,13 +302,13 @@
       "question": "Quel mécanisme pourrait prévenir les modèles de l'épuisement dû à des fausses alertes générées par des bruits temporaires?",
       "image_url": null,
       "choices": {
-        "A": "Incorporer des seuils de tolérance pour les erreurs ponctuelles afin d'éviter des réactions excessives.",
-        "B": "Réduire la taille du dataset d'origine arbitrairement pour minimiser la complexité.",
+        "A": "Réduire la taille du dataset d'origine arbitrairement pour minimiser la complexité.",
+        "B": "Incorporer des seuils de tolérance pour les erreurs ponctuelles afin d'éviter des réactions excessives.",
         "C": "Augmenter le pooling de toutes les couches de convolution pour simplifier.",
         "D": "Fixer des mises à jour fixes hebdomadaires sans ajustement réactif."
       },
-      "correct_answer": "A",
-      "explanation": "Établir des seuils de tolérance accommodant des erreurs ponctuelles significatives permet d'éviter des fausses alertes qui surchargeraient les modèles avec des variations bruyantes temporaires. L'option B limite les données, C fausse les caractéristiques du modèle, et D ignore la flexibilité proactive requise.",
+      "correct_answer": "B",
+      "explanation": "Établir des seuils de tolérance accommodant des erreurs ponctuelles significatives permet d'éviter des fausses alertes qui surchargeraient les modèles avec des variations bruyantes temporaires. L'option B limite les données, C fausse les caractéristiques du modèle, et D ignore la flexibilité proactive requise. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire la taille du dataset d'origine arbitrairement pour minimiser la complexité.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Augmenter le pooling de toutes les couches de convolution pour simplifier.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "hard"
     },
     {
@@ -316,13 +316,13 @@
       "question": "Quel rôle analytique crucial la visualisation joue-t-elle dans le suivi de concept drift?",
       "image_url": null,
       "choices": {
-        "A": "Faciliter l'identification rapide des tendances et des schémas évocateurs de drift.",
+        "A": "Permet de prévoir automatiquement les décisions de modèle exclusivement basées sur des patterns visuels.",
         "B": "Simplifier toutes les analyses à une seule représentation graphique universelle.",
-        "C": "Permet de prévoir automatiquement les décisions de modèle exclusivement basées sur des patterns visuels.",
+        "C": "Faciliter l'identification rapide des tendances et des schémas évocateurs de drift.",
         "D": "Réduire la nécessité d'une supervision humaine par des représentations statiques."
       },
-      "correct_answer": "A",
-      "explanation": "La visualisation offre des perspectives immédiates sur les tendances qui pourraient indiquer un changement de concept drift, transportant des structures complexes dans des formats facilement compréhensibles. B et C font des simplifications extrêmes ou incorrectes, et D surestime la réduction potentielle de supervision sans capturer la réactivité des analyses visuelles.",
+      "correct_answer": "C",
+      "explanation": "La visualisation offre des perspectives immédiates sur les tendances qui pourraient indiquer un changement de concept drift, transportant des structures complexes dans des formats facilement compréhensibles. B et C font des simplifications extrêmes ou incorrectes, et D surestime la réduction potentielle de supervision sans capturer la réactivité des analyses visuelles. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Permet de prévoir automatiquement les décisions de modèle exclusivement basées sur des patterns visuels.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Simplifier toutes les analyses à une seule représentation graphique universelle.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "hard"
     },
     {
@@ -330,12 +330,12 @@
       "question": "Qu'est-ce que le 'data drift' dans le contexte de l'apprentissage supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Un changement statistique des distributions des données d'entrée par rapport à ce qui était prévu lors de l'entraînement du modèle.",
+        "A": "Un déplacement du seuil de prédiction afin d'améliorer temporairement les performances du modèle.",
         "B": "Un changement dans la relation entre les caractéristiques et la cible, ce qui modifie la façon dont le modèle doit faire des prédictions.",
         "C": "Un processus qui assure que le modèle conserve de bonnes performances en ajustant automatiquement les hyperparamètres.",
-        "D": "Un déplacement du seuil de prédiction afin d'améliorer temporairement les performances du modèle."
+        "D": "Un changement statistique des distributions des données d'entrée par rapport à ce qui était prévu lors de l'entraînement du modèle."
       },
-      "correct_answer": "A",
+      "correct_answer": "D",
       "explanation": "Le 'data drift' est un changement statistique des distributions des données d'entrée. Il se produit lorsque les caractéristiques des données d'entrée varient, ce qui peut affecter les performances du modèle. La réponse B est incorrecte car elle décrit le 'concept drift', qui concerne le changement dans la relation entre les caractéristiques et la cible. La réponse C est fausse car elle décrit une technique d'auto-optimisation, qui n'est pas directement liée au drift. La réponse D est incorrecte car elle fait référence à un ajustement temporaire de seuils de décision et non à un drift des données.",
       "difficulty": "medium"
     }

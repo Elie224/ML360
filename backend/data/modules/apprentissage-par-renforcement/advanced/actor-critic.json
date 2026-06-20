@@ -14,7 +14,7 @@
         "D": "L'actor estime la fonction valeur d'un état donné."
       },
       "correct_answer": "A",
-      "explanation": "L'actor est responsable de sélectionner les actions à effectuer en suivant une politique paramétrisée, souvent basée sur la probabilité. La réponse B est incorrecte car c'est le critic qui évalue la politique. La réponse C est incorrecte car elle décrit la fonction q-learning. La réponse D traite du rôle du critic.",
+      "explanation": "L'actor est responsable de sélectionner les actions à effectuer en suivant une politique paramétrisée, souvent basée sur la probabilité. La réponse B est incorrecte car c'est le critic qui évalue la politique. La réponse C est incorrecte car elle décrit la fonction q-learning. La réponse D traite du rôle du critic. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (L'actor évalue le critic pour améliorer la valeur d'une politique donnée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'actor calcule un score pour chaque action possible dans un état donné.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Qu'est-ce que le critic dans le cadre de l'apprentissage par renforcement avec approche actor-critic?",
       "image_url": null,
       "choices": {
-        "A": "Le critic évalue la qualité des actions prises par l'actor.",
-        "B": "Le critic génère directement les actions à exécuter.",
+        "A": "Le critic génère directement les actions à exécuter.",
+        "B": "Le critic évalue la qualité des actions prises par l'actor.",
         "C": "Le critic calcule le gradient de politique pour mettre à jour l'actor.",
         "D": "Le critic optimise une politique en maximisant le retour attendu."
       },
-      "correct_answer": "A",
-      "explanation": "Le critic évalue la politique en estimant les valeurs de retour d'une action empruntée par l'actor. La réponse B est incorrecte, car le critic ne génère pas d'actions. La réponse C concerne le calcul du gradient, qui est une étape dans l'update conjointe, pas le rôle spécifique du critic. La réponse D est partiellement correcte mais incomplète ; elle ne précise pas que le critic fait cela via l'estimation de la fonction valeur.",
+      "correct_answer": "B",
+      "explanation": "Le critic évalue la politique en estimant les valeurs de retour d'une action empruntée par l'actor. La réponse B est incorrecte, car le critic ne génère pas d'actions. La réponse C concerne le calcul du gradient, qui est une étape dans l'update conjointe, pas le rôle spécifique du critic. La réponse D est partiellement correcte mais incomplète ; elle ne précise pas que le critic fait cela via l'estimation de la fonction valeur. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le critic génère directement les actions à exécuter.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le critic calcule",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quel est le rôle de l'avantage dans les modèles actor-critic?",
       "image_url": null,
       "choices": {
-        "A": "Il mesure combien une action se compare à la politique moyenne dans un état donné.",
+        "A": "Il optimize la fonction de récompense immédiate.",
         "B": "Il est utilisé pour calculer la probabilité d'une action.",
-        "C": "Il optimize la fonction de récompense immédiate.",
+        "C": "Il mesure combien une action se compare à la politique moyenne dans un état donné.",
         "D": "Il élimine le besoin de la fonction valeur dans le critic."
       },
-      "correct_answer": "A",
-      "explanation": "L'avantage mesure combien une action spécifique, dans un état, améliore ou détériore la performance par rapport à l'actuelle politique moyenne. La réponse B est fausse car l'avantage ne calcule pas de probabilités. La réponse C est incorrecte ; l'avantage est une estimation de l'amélioration, pas l'optimisation de la récompense immédiate. La réponse D est incorrecte, car le critic continue d'utiliser la fonction valeur.",
+      "correct_answer": "C",
+      "explanation": "L'avantage mesure combien une action spécifique, dans un état, améliore ou détériore la performance par rapport à l'actuelle politique moyenne. La réponse B est fausse car l'avantage ne calcule pas de probabilités. La réponse C est incorrecte ; l'avantage est une estimation de l'amélioration, pas l'optimisation de la récompense immédiate. La réponse D est incorrecte, car le critic continue d'utiliser la fonction valeur. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il optimize la fonction de récompense immédiate.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il est utilisé pour calculer la probabilité d'une action.) est plausible mais faux car",
       "difficulty": "medium"
     },
     {
@@ -52,11 +52,11 @@
       "choices": {
         "A": "Pour garantir la convergence de l'actor et du critic vers des politiques optimales.",
         "B": "Cela augmente la robustesse contre l'overfitting dans les politiques de l'actor.",
-        "C": "Cela facilite l'amélioration synchronisée des actions et des évaluations.",
-        "D": "Pour accélérer les calculs en réduisant le nombre d'états à explorer."
+        "C": "Pour accélérer les calculs en réduisant le nombre d'états à explorer.",
+        "D": "Cela facilite l'amélioration synchronisée des actions et des évaluations."
       },
-      "correct_answer": "C",
-      "explanation": "La mise à jour conjointe facilite l'amélioration synchronisée, car l'actor adapte ses actions en se basant sur les évaluations de critic mises à jour simultanément. La réponse A est incorrecte car elle ne garantit pas nécessairement la convergence optimale. La réponse B est fausse, la mise à jour conjointe ne vise pas explicitement à traiter l'overfitting. La réponse D est incorrecte ; la mise à jour conjointe ne se focalise pas sur la réduction d'états à explorer.",
+      "correct_answer": "D",
+      "explanation": "La mise à jour conjointe facilite l'amélioration synchronisée, car l'actor adapte ses actions en se basant sur les évaluations de critic mises à jour simultanément. La réponse A est incorrecte car elle ne garantit pas nécessairement la convergence optimale. La réponse B est fausse, la mise à jour conjointe ne vise pas explicitement à traiter l'overfitting. La réponse D est incorrecte ; la mise à jour conjointe ne se focalise pas sur la réduction d'états à explorer. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour garantir la convergence de l'actor et du critic vers des politiques optimales.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "En normalisant la politique d'action pour éviter des valeurs extrêmes."
       },
       "correct_answer": "A",
-      "explanation": "L'avantage est souvent calculé en soustrayant la valeur estimée de l'état (fonction valeur) à la valeur Q d'une action particulière dans cet état. Cette méthode estime combien l'action choisie est meilleure ou pire que la moyenne. La réponse B est incorrecte car cela décrit une méthode de calcul de l'estimation future, pas de l'avantage. La réponse C confond avec l'approximation temporelle moyenne. La réponse D ne décrit pas un calcul d'avantage.",
+      "explanation": "L'avantage est souvent calculé en soustrayant la valeur estimée de l'état (fonction valeur) à la valeur Q d'une action particulière dans cet état. Cette méthode estime combien l'action choisie est meilleure ou pire que la moyenne. La réponse B est incorrecte car cela décrit une méthode de calcul de l'estimation future, pas de l'avantage. La réponse C confond avec l'approximation temporelle moyenne. La réponse D ne décrit pas un calcul d'avantage. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (En ajoutant la récompense immédiate à l'estimation de la valeur de l'état suivant.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C",
       "difficulty": "medium"
     },
     {
@@ -79,12 +79,12 @@
       "image_url": null,
       "choices": {
         "A": "Elle améliore les capacités de l'actor à anticiper les futures récompenses.",
-        "B": "Elle ajuste directement les probabilités d'action dans la politique.",
-        "C": "Elle fournit un gradient de politique plus précis à l'actor.",
+        "B": "Elle fournit un gradient de politique plus précis à l'actor.",
+        "C": "Elle ajuste directement les probabilités d'action dans la politique.",
         "D": "Elle modifie la structure neuronale sous-jacente utilisée par l'actor."
       },
-      "correct_answer": "C",
-      "explanation": "La mise à jour du critic fournit une estimation plus précise des valeurs, ce qui génère un gradient pour ajuster plus finement la politique de l'actor. La réponse A serait correcte pour le critic en termes de prédiction, mais ne décrit pas l'impact sur l'actor. La réponse B est incorrecte car l'impact est indirect via le gradient. La réponse D est incorrecte, étant donné que la mise à jour du critic affecte l'évaluation, pas la structure de l'acteur.",
+      "correct_answer": "B",
+      "explanation": "La mise à jour du critic fournit une estimation plus précise des valeurs, ce qui génère un gradient pour ajuster plus finement la politique de l'actor. La réponse A serait correcte pour le critic en termes de prédiction, mais ne décrit pas l'impact sur l'actor. La réponse B est incorrecte car l'impact est indirect via le gradient. La réponse D est incorrecte, étant donné que la mise à jour du critic affecte l'évaluation, pas la structure de l'acteur. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle améliore les capacités de l'actor à anticiper les futures récompenses.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "medium"
     },
     {
@@ -93,11 +93,11 @@
       "image_url": null,
       "choices": {
         "A": "La lenteur de convergence due aux évaluations séparées des actions.",
-        "B": "L'instabilité causée par l'asynchronicité entre politiques et évaluations.",
-        "C": "Les calculs intensifs nécessaires pour ajuster chaque paramètre indépendamment.",
+        "B": "Les calculs intensifs nécessaires pour ajuster chaque paramètre indépendamment.",
+        "C": "L'instabilité causée par l'asynchronicité entre politiques et évaluations.",
         "D": "Le manque de flexibilité dans l'adaptation aux environnements dynamiques."
       },
-      "correct_answer": "B",
+      "correct_answer": "C",
       "explanation": "La mise à jour conjointe essaye d'adresser l'instabilité potentiellement causée par des ajustements asynchrones entre l'actor et le critic. La réponse A est incorrecte, car bien que cela puisse être le cas, la lenteur est davantage affectée par les traits des algorithmes et non pas simplement par le modèle actor-critic. La réponse C est fausse ; les calculs intensifs ne concernent pas de façon exclusive ce modèle, et ne sont pas résolus uniquement par la mise à jour conjointe. La réponse D est incorrecte, car la flexibilité est un avantage, pas une limitation.",
       "difficulty": "hard"
     },
@@ -106,13 +106,13 @@
       "question": "Quel pourrait être un problème d'ajustement en utilisant une valeur d'avantage mal calculée dans l'actor-critic?",
       "image_url": null,
       "choices": {
-        "A": "Il augmente la variance des estimations, rendant la convergence difficile.",
+        "A": "Il entraîne une exploration insuffisante de l'espace d'état-action.",
         "B": "Il induit une dépendance excessive sur la fonction valeur d'état.",
         "C": "Il fait confondre la récompense immédiate avec la récompense totale.",
-        "D": "Il entraîne une exploration insuffisante de l'espace d'état-action."
+        "D": "Il augmente la variance des estimations, rendant la convergence difficile."
       },
-      "correct_answer": "A",
-      "explanation": "Une mauvaise estimation de l'avantage peut augmenter la variance des estimations, perturbant ainsi la stabilité de la convergence de l'algorithme. La réponse B est incorrecte, car l'avantage est déjà relié à la fonction valeur de facto. La réponse C est incorrecte ; la distinction entre les différentes formes de récompenses est claire dans les structures de l'actor-critic. La réponse D est incorrecte, l'avantage ne déterminant pas directement l'exploration.",
+      "correct_answer": "D",
+      "explanation": "Une mauvaise estimation de l'avantage peut augmenter la variance des estimations, perturbant ainsi la stabilité de la convergence de l'algorithme. La réponse B est incorrecte, car l'avantage est déjà relié à la fonction valeur de facto. La réponse C est incorrecte ; la distinction entre les différentes formes de récompenses est claire dans les structures de l'actor-critic. La réponse D est incorrecte, l'avantage ne déterminant pas directement l'exploration. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il entraîne une exploration insuffisante de l'espace d'état-action.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il induit une dépendance excessive sur la fonction",
       "difficulty": "hard"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Entraîner le critic sur des trajectoires aléatoires sans vectorisation des états."
       },
       "correct_answer": "A",
-      "explanation": "L'actor ne doit pas simplement utiliser les valeurs Q sans tenir compte de la politique paramétrisée, car cela pourrait court-circuiter le processus prévu. La réponse B n'est pas directement une erreur du rôle de l'actor, mais pourrait être une simplification erronée de la dynamique des récompenses. La réponse C est incorrecte ; alors que cela pourrait être restrictif, ce n'est pas typique dans l'actor-critic. La réponse D est plus une question d'efficacité computationnelle qu'un choix d'implémentation de l'actor.",
+      "explanation": "L'actor ne doit pas simplement utiliser les valeurs Q sans tenir compte de la politique paramétrisée, car cela pourrait court-circuiter le processus prévu. La réponse B n'est pas directement une erreur du rôle de l'actor, mais pourrait être une simplification erronée de la dynamique des récompenses. La réponse C est incorrecte ; alors que cela pourrait être restrictif, ce n'est pas typique dans l'actor-critic. La réponse D est plus une question d'efficacité computationnelle qu'un choix d'implémentation de l'actor. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Ignorer l'importance des rewards estimés à court terme au profit des récompenses futures.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Qu'est-ce qui pourrait conduire à la divergence dans un apprentissage actor-critic mal configuré?",
       "image_url": null,
       "choices": {
-        "A": "Un taux d'apprentissage identique non différencié pour l'actor et le critic.",
-        "B": "Une normalisation excessive des rewards avant mise à jour de la politique.",
+        "A": "Une normalisation excessive des rewards avant mise à jour de la politique.",
+        "B": "Un taux d'apprentissage identique non différencié pour l'actor et le critic.",
         "C": "Un recours systématique à des traces de gradients stochastiques.",
         "D": "Une surévaluation des actions basées uniquement sur les valeurs empiriques."
       },
-      "correct_answer": "A",
-      "explanation": "Utiliser le même taux d'apprentissage pour l'actor et le critic peut déséquilibrer leurs mises à jour, rendant difficile la stabilisation du système. C'est important car ils nécessitent souvent des vitesses d'apprentissage différentes. La réponse B pourrait ralentir les convergences, mais pas induire de divergence. La réponse C est incorrecte ; les traces de gradients stochastiques sont souvent utilisées pour plus de robustesse, pas de divergence. La réponse D est incorrecte, comme une surévaluation empirique pourrait conduire à des inefficacités, mais pas nécessairement à une divergence.",
+      "correct_answer": "B",
+      "explanation": "Utiliser le même taux d'apprentissage pour l'actor et le critic peut déséquilibrer leurs mises à jour, rendant difficile la stabilisation du système. C'est important car ils nécessitent souvent des vitesses d'apprentissage différentes. La réponse B pourrait ralentir les convergences, mais pas induire de divergence. La réponse C est incorrecte ; les traces de gradients stochastiques sont souvent utilisées pour plus de robustesse, pas de divergence. La réponse D est incorrecte, comme une surévaluation empirique pourrait conduire à des inefficacités, mais pas nécessairement à une divergence. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une normalisation excessive des rewards avant mise à jour de la politique.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -149,12 +149,12 @@
       "image_url": null,
       "choices": {
         "A": "L'actor pourrait surestimer les risques d'une politique.",
-        "B": "L'actor pourrait tirer des valeurs de politiques sous-optimales.",
-        "C": "L'actor abandonnera systématiquement les politiques basées sur les rewards.",
+        "B": "L'actor abandonnera systématiquement les politiques basées sur les rewards.",
+        "C": "L'actor pourrait tirer des valeurs de politiques sous-optimales.",
         "D": "L'acteur n'implémentera que les politiques conservatrices par excès."
       },
-      "correct_answer": "B",
-      "explanation": "Le critic génère des évaluations erronées de la politique pour l'actor, qui peuvent mener ce dernier à tirer des vérités inexactes, atteignant des politiques sous-optimales. La réponse A est incorrecte, car c'est plutôt une conséquence de la mauvaise estimation des états que des risques de politiques. La réponse C est incorrecte ; l'actor ne doit pas toujours rejeter basique sur les rewards. La réponse D est incorrecte ; bien qu'une surestimation puisse mener l'actor à être plus conservateur, un mauvais critic ne garantit pas ce comportement.",
+      "correct_answer": "C",
+      "explanation": "Le critic génère des évaluations erronées de la politique pour l'actor, qui peuvent mener ce dernier à tirer des vérités inexactes, atteignant des politiques sous-optimales. La réponse A est incorrecte, car c'est plutôt une conséquence de la mauvaise estimation des états que des risques de politiques. La réponse C est incorrecte ; l'actor ne doit pas toujours rejeter basique sur les rewards. La réponse D est incorrecte ; bien qu'une surestimation puisse mener l'actor à être plus conservateur, un mauvais critic ne garantit pas ce comportement. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'actor pourrait surestimer les risques d'une politique.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Dans le cadre des mises à jour de policy, pourquoi l'utilisation de l'avantage est-elle préférée à l'usage direct de Q-values?",
       "image_url": null,
       "choices": {
-        "A": "L'avantage offre une stabilité supérieure due à sa moyenne zéro.",
+        "A": "L'avantage élimine la nécessité de critiquer l'état actuel.",
         "B": "L'avantage demande moins de calculs pour convergence.",
         "C": "L'avantage permet d'ignorer les fluctuations rapides observées dans les states.",
-        "D": "L'avantage élimine la nécessité de critiquer l'état actuel."
+        "D": "L'avantage offre une stabilité supérieure due à sa moyenne zéro."
       },
-      "correct_answer": "A",
-      "explanation": "L'avantage est généralement centré autour de zéro, limitant l'effet de décalage des valeurs élevées ou très faibles et augmentant la stabilité du gradient de politique. La réponse B est incorrecte car l'avantage n'est pas nécessairement plus économe en calcul. La réponse C est incorrecte, l'avantage s'applique toujours à l'évaluation de l'effet d'une action, pas aux fluctuations de l'état lui-même. La réponse D est fausse ; l'avantage est calculé en relation avec le critic et ne le rend pas obsolète.",
+      "correct_answer": "D",
+      "explanation": "L'avantage est généralement centré autour de zéro, limitant l'effet de décalage des valeurs élevées ou très faibles et augmentant la stabilité du gradient de politique. La réponse B est incorrecte car l'avantage n'est pas nécessairement plus économe en calcul. La réponse C est incorrecte, l'avantage s'applique toujours à l'évaluation de l'effet d'une action, pas aux fluctuations de l'état lui-même. La réponse D est fausse ; l'avantage est calculé en relation avec le critic et ne le rend pas obsolète. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'avantage élimine la nécessité de critiquer l'état actuel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Limiter l'impact des récompenses positives sur le critic."
       },
       "correct_answer": "A",
-      "explanation": "L'utilisation de différents taux d'apprentissage pour l'actor et le critic assure que chaque modèle s'ajuste de manière appropriée, minimisant ainsi les risques d'instabilité et de divergence. La réponse B est incorrecte, bien que la rétropropagation temporelle soit utile, elle ne prévient pas spécifiquement la divergence sans autre ajustement. La réponse C est incorrecte ; se focaliser uniquement sur une variation de politique spécifique pourrait être réducteur. La réponse D est incorrecte ; en général, il est préférable d'incorporer à la fois des récompenses positives et négatives de manière équilibrée.",
+      "explanation": "L'utilisation de différents taux d'apprentissage pour l'actor et le critic assure que chaque modèle s'ajuste de manière appropriée, minimisant ainsi les risques d'instabilité et de divergence. La réponse B est incorrecte, bien que la rétropropagation temporelle soit utile, elle ne prévient pas spécifiquement la divergence sans autre ajustement. La réponse C est incorrecte ; se focaliser uniquement sur une variation de politique spécifique pourrait être réducteur. La réponse D est incorrecte ; en général, il est préférable d'incorporer à la fois des récompenses positives et négatives de manière équilibrée. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Appliquer la rétropropagation temporelle à tous les niveaux.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -190,12 +190,12 @@
       "question": "Quel est l'un des principaux défis lors de la mise à jour conjointe de l'actor et du critic?",
       "image_url": null,
       "choices": {
-        "A": "Éviter la surcorrélation des gradients entre l'actor et le critic.",
-        "B": "Maintenir une complexité de calcul polynomiale minimale.",
+        "A": "Maintenir une complexité de calcul polynomiale minimale.",
+        "B": "Éviter la surcorrélation des gradients entre l'actor et le critic.",
         "C": "Garantir l'indépendance totale entre les mises à jour.",
         "D": "Optimiser la politique en utilisant des critères ad hoc seulement."
       },
-      "correct_answer": "A",
+      "correct_answer": "B",
       "explanation": "Un des défis principaux est la possibilité que les gradients deviennent fortement corrélés, ce qui pourrait entraîner des oscillations non désirées et une convergence sous-optimale. La réponse B est incorrecte ; bien que la complexité soit importante, elle n'est pas spécifiquement un défi unique dans ce contexte. La réponse C est incorrecte, en pratique, les mises à jour dépendent les unes des autres, et ce n'est pas toujours possible ni souhaitable de les garder totalement indépendantes. La réponse D n'est pas correcte car l’optimisation doit être basée sur des méthodes robustes, pas uniquement sur critères arbitraires.",
       "difficulty": "hard"
     },
@@ -210,7 +210,7 @@
         "D": "L'actor applique ses politiques retrouvées sans nécessairement incorporer les retours du critic."
       },
       "correct_answer": "C",
-      "explanation": "L'actor utilise l'évaluation de la politique fournie par le critic pour ajuster sa politique, ce qui représente une interaction dynamique essentielle au modèle actor-critic. La réponse A était incorrecte, car le critic n'optimise pas directement les actions. La réponse B est fausse car l'acteur et le critique travaillent ensemble, pas indépendamment. La réponse D est incorrecte, car elle ignore la back-propagation de l'information d'évaluation.",
+      "explanation": "L'actor utilise l'évaluation de la politique fournie par le critic pour ajuster sa politique, ce qui représente une interaction dynamique essentielle au modèle actor-critic. La réponse A était incorrecte, car le critic n'optimise pas directement les actions. La réponse B est fausse car l'acteur et le critique travaillent ensemble, pas indépendamment. La réponse D est incorrecte, car elle ignore la back-propagation de l'information d'évaluation. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'actor ajuste la probabilité d'une action tandis que le critic optimise ladite action.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (L'actor stabilise ses politiques indépendamment alors que",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Pourquoi une distribution normalisée est-elle souvent utilisée lors de la mise à jour des paramètres de policy dans les systèmes actor-critic?",
       "image_url": null,
       "choices": {
-        "A": "Pour équilibrer les différences entre hautes et basses valeurs d'action.",
+        "A": "Pour amplifier les corrections immédiates apportées au critère de récompense.",
         "B": "Pour noter l'impact des fluctuations d'états irrationnels.",
         "C": "Pour maximiser l'espérance des gains via une distribution uniforme.",
-        "D": "Pour amplifier les corrections immédiates apportées au critère de récompense."
+        "D": "Pour équilibrer les différences entre hautes et basses valeurs d'action."
       },
-      "correct_answer": "A",
-      "explanation": "Une distribution normalisée aide à prévenir que les hautes valeurs extrêmes d'actions ne dominent pas injustement l'apprentissage, facilitant ainsi une mise à jour plus stable et progressive des paramètres. La réponse B est incorrecte car elle se concentre sur l'état plutôt que sur l'action. La réponse C est incorrecte, normaliser ne maximise pas automatiquement l'espérance des gains. La réponse D est incorrecte, car l'amplification n'est pas le but de la normalisation aux moyens de l'évaluation des récompenses.",
+      "correct_answer": "D",
+      "explanation": "Une distribution normalisée aide à prévenir que les hautes valeurs extrêmes d'actions ne dominent pas injustement l'apprentissage, facilitant ainsi une mise à jour plus stable et progressive des paramètres. La réponse B est incorrecte car elle se concentre sur l'état plutôt que sur l'action. La réponse C est incorrecte, normaliser ne maximise pas automatiquement l'espérance des gains. La réponse D est incorrecte, car l'amplification n'est pas le but de la normalisation aux moyens de l'évaluation des récompenses. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour amplifier les corrections immédiates apportées au critère de récompense.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "hard"
     },
     {
@@ -232,13 +232,13 @@
       "question": "Quel est l'effet potentiel du 'leakage' dans l'algorithme de convergence d'actor-critic?",
       "image_url": null,
       "choices": {
-        "A": "Il pourrait entraîner l'exploration continue de pathématiques irréalisables.",
+        "A": "Il empêcherait la convergence vers une politique stable en raison d'une mauvaise estimation.",
         "B": "Il permettrait une surspécialisation prématurée sur des politiques sous-optimales.",
-        "C": "Il empêcherait la convergence vers une politique stable en raison d'une mauvaise estimation.",
+        "C": "Il pourrait entraîner l'exploration continue de pathématiques irréalisables.",
         "D": "Il causerait une réduction des fonctionnalités de calcul lorsque les buffers sont pleins."
       },
-      "correct_answer": "C",
-      "explanation": "Le 'leakage' peut engendrer des estimations incorrectes du critic, ce qui entraînera une stratégie qui oscille sans atteindre une convergence stable. La réponse A est peu probable car, même si l'exploration se poursuit, elle est souvent guidée par des récompenses plus faibles. La réponse B est inexacte, le 'leakage' ne mène pas automatiquement à une surspécialisation, mais à une dérive. La réponse D évoque une question de capacité et non de convergence mathématique des modèles.",
+      "correct_answer": "A",
+      "explanation": "Le 'leakage' peut engendrer des estimations incorrectes du critic, ce qui entraînera une stratégie qui oscille sans atteindre une convergence stable. La réponse A est peu probable car, même si l'exploration se poursuit, elle est souvent guidée par des récompenses plus faibles. La réponse B est inexacte, le 'leakage' ne mène pas automatiquement à une surspécialisation, mais à une dérive. La réponse D évoque une question de capacité et non de convergence mathématique des modèles. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il permettrait une surspécialisation prématurée sur des politiques sous-optimales.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C",
       "difficulty": "hard"
     },
     {
@@ -246,12 +246,12 @@
       "question": "Dans le contexte de l'apprentissage par renforcement avec l'approche actor-critic, quelle est la fonction principale de l'actor?",
       "image_url": null,
       "choices": {
-        "A": "Sélectionner les actions en se basant sur une politique qui est mise à jour pour maximiser les récompenses futures.",
-        "B": "Évaluer la valeur de l'état actuel et fournir le signal d'erreur de récompense pour ajuster la politique.",
+        "A": "Évaluer la valeur de l'état actuel et fournir le signal d'erreur de récompense pour ajuster la politique.",
+        "B": "Sélectionner les actions en se basant sur une politique qui est mise à jour pour maximiser les récompenses futures.",
         "C": "Calculer l'avantage en combinant les valeurs des états et des actions pour la rétropropagation.",
         "D": "Gérer la mise à jour des poids du réseau de neurones en fonction de la diminution de la perte moyenne."
       },
-      "correct_answer": "A",
+      "correct_answer": "B",
       "explanation": "Dans l'approche actor-critic, l'actor est responsable de choisir les actions à exécuter en se basant sur une politique qui est améliorée au fil du temps pour maximiser les récompenses futures. Le critic, qui a pour fonction d'évaluer l'état actuel et de fournir un signal d'erreur pour l'apprentissage de la politique, est décrit dans le choix B. Le choix C est incorrect car le calcul de l'avantage n'est pas directement effectué par l'actor. Enfin, le choix D ne correspond pas au rôle ni de l'actor ni du critic dans ce cadre, mais à une étape générale de l'apprentissage supervisé.",
       "difficulty": "medium"
     }

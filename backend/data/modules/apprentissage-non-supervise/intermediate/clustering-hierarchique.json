@@ -14,7 +14,7 @@
         "D": "La liaison simple utilise la distance moyenne, tandis que la liaison complète utilise la distance médiane."
       },
       "correct_answer": "A",
-      "explanation": "La liaison simple relie les clusters basés sur la distance minimale entre leurs points les plus proches, ce qui peut mener à la formation de chaînes de clusters. La liaison complète utilise la distance maximale entre leurs points les plus éloignés, formant des clusters plus compacts.",
+      "explanation": "La liaison simple relie les clusters basés sur la distance minimale entre leurs points les plus proches, ce qui peut mener à la formation de chaînes de clusters. La liaison complète utilise la distance maximale entre leurs points les plus éloignés, formant des clusters plus compacts. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La liaison simple utilise la distance moyenne, tandis que la liaison complète utilise la distance minimale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La liaison simple utilise les centres de gravité des clusters, tandis que la liaison complète utilise la distance entre points aléatoires.) est",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Dans un dendrogramme, que représente un point de fusion des branches?",
       "image_url": null,
       "choices": {
-        "A": "Un point de fusion représente la distance à laquelle deux clusters sont combinés.",
-        "B": "Un point de fusion indique le temps computationnel pris pour l'ajout d'un nouveau cluster.",
+        "A": "Un point de fusion indique le temps computationnel pris pour l'ajout d'un nouveau cluster.",
+        "B": "Un point de fusion représente la distance à laquelle deux clusters sont combinés.",
         "C": "Un point de fusion montre la similarité interne d'un cluster unique.",
         "D": "Un point de fusion définit la taille moyenne des clusters fusionnés."
       },
-      "correct_answer": "A",
-      "explanation": "Un point de fusion dans un dendrogramme montre la distance à laquelle deux clusters ont été combinés pour former un cluster plus grand. Il ne montre ni le temps de calcul (B), ni la similarité interne (C), ni la taille des clusters (D).",
+      "correct_answer": "B",
+      "explanation": "Un point de fusion dans un dendrogramme montre la distance à laquelle deux clusters ont été combinés pour former un cluster plus grand. Il ne montre ni le temps de calcul (B), ni la similarité interne (C), ni la taille des clusters (D). La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un point de fusion indique le temps computationnel pris pour l'ajout d'un nouveau cluster.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Un point de fusion montre la similarité interne d'un cluster unique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Lequel de ces énoncés est vrai à propos de la coupe de clusters dans un dendrogramme?",
       "image_url": null,
       "choices": {
-        "A": "Une coupe horizontale dans un dendrogramme détermine le nombre de clusters à un certain seuil de distance.",
+        "A": "Une coupe de clusters décide automatiquement de l'algorithme de clustering le mieux adapté.",
         "B": "Une coupe verticale dans un dendrogramme révèle la similarité entre points individuels.",
-        "C": "Une coupe de clusters décide automatiquement de l'algorithme de clustering le mieux adapté.",
+        "C": "Une coupe horizontale dans un dendrogramme détermine le nombre de clusters à un certain seuil de distance.",
         "D": "Une coupe de clusters combine les clusters pour former un seul cluster global."
       },
-      "correct_answer": "A",
-      "explanation": "Une coupe horizontale dans un dendrogramme à une certaine hauteur détermine le nombre de clusters en indiquant où les éléments sont regroupés ensemble. Une coupe verticale est incorrecte car elle ne détermine pas les similarités (B), elle ne choisit pas d'algorithme (C) et ne produit pas un seul cluster (D).",
+      "correct_answer": "C",
+      "explanation": "Une coupe horizontale dans un dendrogramme à une certaine hauteur détermine le nombre de clusters en indiquant où les éléments sont regroupés ensemble. Une coupe verticale est incorrecte car elle ne détermine pas les similarités (B), elle ne choisit pas d'algorithme (C) et ne produit pas un seul cluster (D). La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une coupe de clusters décide automatiquement de l'algorithme de clustering le mieux adapté.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Une coupe verticale dans un dendrogramme révèle la similarité entre points individuels.) est plausible mais faux car il ne respecte pas",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Lorsque vous utilisez la liaison complète pour le clustering, quel effet principal attendez-vous sur la forme des clusters?",
       "image_url": null,
       "choices": {
-        "A": "Les clusters sont généralement plus compacts et globulaires.",
+        "A": "Les clusters trouvent toujours le centre de gravité commun.",
         "B": "Les clusters sont généralement en forme de chaîne ou allongés.",
         "C": "La forme des clusters ne change pas, quel que soit le type de liaison.",
-        "D": "Les clusters trouvent toujours le centre de gravité commun."
+        "D": "Les clusters sont généralement plus compacts et globulaires."
       },
-      "correct_answer": "A",
-      "explanation": "La liaison complète a tendance à produire des clusters plus compacts et globulaires en minimisant la distance maximale entre les clusters. Elle ne forme pas des chaînes (B) et ne garde pas la forme inchangée (C), et elle ne calcule pas le centre de gravité (D).",
+      "correct_answer": "D",
+      "explanation": "La liaison complète a tendance à produire des clusters plus compacts et globulaires en minimisant la distance maximale entre les clusters. Elle ne forme pas des chaînes (B) et ne garde pas la forme inchangée (C), et elle ne calcule pas le centre de gravité (D). La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les clusters trouvent toujours le centre de gravité commun.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Les clusters sont généralement en forme de chaîne ou allongés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Il ne fournit aucune information sur la croissance des clusters au fil du temps."
       },
       "correct_answer": "A",
-      "explanation": "Le dendrogramme devient difficilement lisible avec un grand nombre de points (A). Il peut être utilisé avec tous types de liaisons, pas seulement simple (B). Il affiche des fusions, pas seulement des distances maximales (C) et présentes les croissances des clusters (D).",
+      "explanation": "Le dendrogramme devient difficilement lisible avec un grand nombre de points (A). Il peut être utilisé avec tous types de liaisons, pas seulement simple (B). Il affiche des fusions, pas seulement des distances maximales (C) et présentes les croissances des clusters (D). La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il ne peut être utilisé qu'avec la liaison simple.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il affiche uniquement les distances maximales entre tous les points.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il ne fournit",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Pourquoi la coupe de clusters à une hauteur spécifique dans un dendrogramme est-elle critique?",
       "image_url": null,
       "choices": {
-        "A": "Elle détermine directement le nombre de clusters, influençant leur cohésion et séparabilité.",
-        "B": "Elle est essentielle pour optimiser l'algorithme utilisé pour générer le dendrogramme.",
+        "A": "Elle est essentielle pour optimiser l'algorithme utilisé pour générer le dendrogramme.",
+        "B": "Elle détermine directement le nombre de clusters, influençant leur cohésion et séparabilité.",
         "C": "Elle ajuste dynamiquement la taille des données d'entrée pour équilibrer les clusters.",
         "D": "Elle garantit que chaque cluster obtenu a le même nombre de points de données."
       },
-      "correct_answer": "A",
-      "explanation": "La coupe est critique car elle fixe le nombre de clusters, impactant directement leur cohésion et séparabilité (A). Elle ne modifie pas l'algorithme en soi (B), ne rajuste pas les données d'entrée (C), et ne garantit pas un même nombre de points dans chaque cluster (D).",
+      "correct_answer": "B",
+      "explanation": "La coupe est critique car elle fixe le nombre de clusters, impactant directement leur cohésion et séparabilité (A). Elle ne modifie pas l'algorithme en soi (B), ne rajuste pas les données d'entrée (C), et ne garantit pas un même nombre de points dans chaque cluster (D). La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle est essentielle pour optimiser l'algorithme utilisé pour générer le dendrogramme.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle ajuste dynamiquement la taille des données d'entrée pour équilibrer les clusters.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Dans un scénario à forte variance de données, pourquoi la liaison simple peut-elle être problématique?",
       "image_url": null,
       "choices": {
-        "A": "Elle peut provoquer le chaînage, formant des clusters allongés peu représentatifs.",
+        "A": "Elle privilégie la formation de grands clusters compacts.",
         "B": "Elle tend à regrouper les éléments en maximisant la distance entre points éloignés.",
-        "C": "Elle privilégie la formation de grands clusters compacts.",
+        "C": "Elle peut provoquer le chaînage, formant des clusters allongés peu représentatifs.",
         "D": "Elle maximise toujours la variance interne des clusters."
       },
-      "correct_answer": "A",
-      "explanation": "La liaison simple peut créer des chaînes de points allongées (A), ce qui est problématique avec une forte variance. Elle ne maximise pas la distance (B), ne privilégie pas les grands clusters (C) et ne maximise pas la variance (D).",
+      "correct_answer": "C",
+      "explanation": "La liaison simple peut créer des chaînes de points allongées (A), ce qui est problématique avec une forte variance. Elle ne maximise pas la distance (B), ne privilégie pas les grands clusters (C) et ne maximise pas la variance (D). La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle privilégie la formation de grands clusters compacts.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle tend à regrouper les éléments en maximisant la distance entre points éloignés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle maximise toujours",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quel type de données nécessite généralement un prétraitement avant l'application du clustering hiérarchique?",
       "image_url": null,
       "choices": {
-        "A": "Données avec des caractéristiques à échelles très différentes.",
+        "A": "Données avec un faible nombre de dimensions.",
         "B": "Données issues d'une seule distribution gaussienne.",
         "C": "Données statiques sans mis à jour fréquente.",
-        "D": "Données avec un faible nombre de dimensions."
+        "D": "Données avec des caractéristiques à échelles très différentes."
       },
-      "correct_answer": "A",
-      "explanation": "Les données avec des caractéristiques à échelles très différentes (A) nécessitent un prétraitement comme la normalisation. Les données gaussiennes (B), statiques (C) ou de faible dimension (D) ne posent généralement pas ce problème.",
+      "correct_answer": "D",
+      "explanation": "Les données avec des caractéristiques à échelles très différentes (A) nécessitent un prétraitement comme la normalisation. Les données gaussiennes (B), statiques (C) ou de faible dimension (D) ne posent généralement pas ce problème. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Données avec un faible nombre de dimensions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Données issues d'une seule distribution gaussienne.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Données statiques sans mis à jour fréquente.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Elle ne présente aucun inconvénient significatif par rapport aux faibles dimensions."
       },
       "correct_answer": "A",
-      "explanation": "En fortes dimensions, la distance euclidienne souffre du 'curse of dimensionality', rendant les distances moins discriminantes (A). Elle ne sépare pas mieux (B), ne réduit pas les calculs (C) et a plus d'inconvénients que (D).",
+      "explanation": "En fortes dimensions, la distance euclidienne souffre du 'curse of dimensionality', rendant les distances moins discriminantes (A). Elle ne sépare pas mieux (B), ne réduit pas les calculs (C) et a plus d'inconvénients que (D). La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elle optimise la séparation inter-clusters en toutes dimensions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle réduit le besoin de calculs complexes au sein de chaque dimension.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle ne présente aucun inconvénient significatif par rapport aux",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "En utilisant la liaison simple, comment se comportent les clusters en présence de bruit (outliers)?",
       "image_url": null,
       "choices": {
-        "A": "Les clusters peuvent facilement s'étendre pour inclure des points de bruit.",
-        "B": "Les clusters se contractent pour éviter le bruit à tout prix.",
+        "A": "Les clusters se contractent pour éviter le bruit à tout prix.",
+        "B": "Les clusters peuvent facilement s'étendre pour inclure des points de bruit.",
         "C": "La présence de bruit n'a aucun impact sur les clusters.",
         "D": "Les clusters forment plus de subdivisions internes, isolant le bruit."
       },
-      "correct_answer": "A",
-      "explanation": "La liaison simple peut facilement entraîner l'inclusion de points de bruit dans les clusters en raison du chaînage (A). Elle ne se contracte pas (B), est impactée par le bruit (C), et ne subdivise pas particulièrement (D).",
+      "correct_answer": "B",
+      "explanation": "La liaison simple peut facilement entraîner l'inclusion de points de bruit dans les clusters en raison du chaînage (A). Elle ne se contracte pas (B), est impactée par le bruit (C), et ne subdivise pas particulièrement (D). La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les clusters se contractent pour éviter le bruit à tout prix.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La présence de bruit n'a aucun impact sur les clusters.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Les clusters forment plus de subdivisions",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Quel est un avantage de la visualisation des dendrogrammes malgré leur complexité apparente avec de grandes données?",
       "image_url": null,
       "choices": {
-        "A": "Ils permettent de visualiser hiérarchiquement la structure et les relations des clusters potentiels.",
+        "A": "Ils permettent de déterminer directement la corrélation entre toutes les variables de données.",
         "B": "Ils simplifient immédiatement les données complexes en graphiques à faible dimension.",
-        "C": "Ils permettent de déterminer directement la corrélation entre toutes les variables de données.",
+        "C": "Ils permettent de visualiser hiérarchiquement la structure et les relations des clusters potentiels.",
         "D": "Ils offrent une méthode pour optimiser dynamiquement le nombre de clusters en temps réel."
       },
-      "correct_answer": "A",
-      "explanation": "Les dendrogrammes permettent de visualiser hiérarchiquement les structures des clusters (A), mais pas de simplifier les données (B), d'établir des corrélations directes (C) ou d'optimiser dynamiquement en temps réel (D).",
+      "correct_answer": "C",
+      "explanation": "Les dendrogrammes permettent de visualiser hiérarchiquement les structures des clusters (A), mais pas de simplifier les données (B), d'établir des corrélations directes (C) ou d'optimiser dynamiquement en temps réel (D). La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ils permettent de déterminer directement la corrélation entre toutes les variables de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Ils simplifient immédiatement les données complexes en graphiques à faible dimension.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Ils offrent une méthode pour optimiser dynamiquement le nombre de",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Pourquoi l'échelle du dendrogramme est-elle importante lors de l'interprétation des groupes?",
       "image_url": null,
       "choices": {
-        "A": "Elle influence les valeurs de distance à laquelle les fusions doivent être coupées pour déterminer les clusters.",
+        "A": "Elle ne joue aucun rôle direct dans l'interprétation des groupes.",
         "B": "Elle ajuste automatiquement le format visuel du dendrogramme pour une meilleure apparence.",
         "C": "Elle change le modèle sous-jacent de l'algorithme de clustering appliqué.",
-        "D": "Elle ne joue aucun rôle direct dans l'interprétation des groupes."
+        "D": "Elle influence les valeurs de distance à laquelle les fusions doivent être coupées pour déterminer les clusters."
       },
-      "correct_answer": "A",
-      "explanation": "L'échelle influence les valeurs de coupe des fusions dans le dendrogramme (A), mais ne change pas le format visuel (B), n'altère pas l'algorithme (C) et n'est pas insignifiante (D).",
+      "correct_answer": "D",
+      "explanation": "L'échelle influence les valeurs de coupe des fusions dans le dendrogramme (A), mais ne change pas le format visuel (B), n'altère pas l'algorithme (C) et n'est pas insignifiante (D). La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle ne joue aucun rôle direct dans l'interprétation des groupes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle ajuste automatiquement le format visuel du dendrogramme pour une meilleure apparence.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle change le modèle sous-jacent de l'algorithme de clustering appliqué.) est plausible mais",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Aucune distance entre les points n'étant exactement égale."
       },
       "correct_answer": "A",
-      "explanation": "La liaison complète est plus adaptée pour former des clusters compacts même en présence de bruit (A). Les autres options ne montrent pas de spécificités où la liaison complète serait favorable.",
+      "explanation": "La liaison complète est plus adaptée pour former des clusters compacts même en présence de bruit (A). Les autres options ne montrent pas de spécificités où la liaison complète serait favorable. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Des données hautement concentrées près d'une centaine de pôles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une très faible variance inter-clusters.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Aucune distance entre les points n'étant exactement égale.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Dans quel scénario le choix de la distance Manhattan serait-il plus approprié pour le clustering hiérarchique?",
       "image_url": null,
       "choices": {
-        "A": "Lorsque les dimensions montrent des caractéristiques indépendantes et ont des différences similaires.",
-        "B": "Dans des données avec des interrelations complexes entre de multiples dimensions.",
+        "A": "Dans des données avec des interrelations complexes entre de multiples dimensions.",
+        "B": "Lorsque les dimensions montrent des caractéristiques indépendantes et ont des différences similaires.",
         "C": "Pour des données hautement sensibles à l'effet de distance euclidienne.",
         "D": "Quand la corrélation entre toutes les dimensions est élevée."
       },
-      "correct_answer": "A",
-      "explanation": "La distance Manhattan s'applique lorsque les dimensions sont indépendantes et similaires (A), contrairement à des interrelations (B), à l'effet euclidien (C), ou à forte corrélation (D).",
+      "correct_answer": "B",
+      "explanation": "La distance Manhattan s'applique lorsque les dimensions sont indépendantes et similaires (A), contrairement à des interrelations (B), à l'effet euclidien (C), ou à forte corrélation (D). La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Dans des données avec des interrelations complexes entre de multiples dimensions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour des données hautement sensibles à l'effet de distance euclidienne.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Quand la corrélation entre toutes les dimensions est élevée.) est plausible mais faux car il ne respecte",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quel est l'impact principal d'utiliser la liaison simple dans le clustering hiérarchique?",
       "image_url": null,
       "choices": {
-        "A": "Cela peut créer des clusters en forme de chaîne car la distance minimale entre points est utilisée.",
+        "A": "Cela mélange les clusters si la qualité du dendrogramme est incorrecte.",
         "B": "Cela tend à créer des clusters de forme sphérique car la distance maximale entre points est utilisée.",
-        "C": "Cela mélange les clusters si la qualité du dendrogramme est incorrecte.",
+        "C": "Cela peut créer des clusters en forme de chaîne car la distance minimale entre points est utilisée.",
         "D": "Cela regroupe les clusters en créant des coupes horizontales précises."
       },
-      "correct_answer": "A",
-      "explanation": "La liaison simple est une méthode de clustering qui définit la distance inter-cluster comme la distance minimale entre les points de deux clusters. Cela peut entraîner un effet de chaîne, où des points éloignés peuvent être incorporés dans le même cluster, car ils sont reliés à d'autres points par une chaîne de petites distances.\nB est incorrect car c'est la liaison complète qui utilise la distance maximale entre points, tendant à créer des clusters sphériques. \nC est incorrect car le concept de dendrogramme est un outil de visualisation et non une méthode de calcul des distances.\nD est incorrect car la coupe de clusters implique la sélection d'un niveau dans le dendrogramme, mais ce n'est pas spécifiquement lié à la précision des coupes par rapport à la méthode de liaison simple.",
+      "correct_answer": "C",
+      "explanation": "La liaison simple est une méthode de clustering qui définit la distance inter-cluster comme la distance minimale entre les points de deux clusters. Cela peut entraîner un effet de chaîne, où des points éloignés peuvent être incorporés dans le même cluster, car ils sont reliés à d'autres points par une chaîne de petites distances. B est incorrect car c'est la liaison complète qui utilise la distance maximale entre points, tendant à créer des clusters sphériques. C est incorrect car le concept de dendrogramme est un outil de visualisation et non une méthode de calcul des distances. D est incorrect car la coupe de clusters implique la sélection d'un niveau dans le dendrogramme, mais ce n'est pas spécifiquement lié à la",
       "difficulty": "easy"
     }
   ]

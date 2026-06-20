@@ -14,7 +14,7 @@
         "D": "Une mise à jour incrémentale de la fonction de valeur d'action."
       },
       "correct_answer": "A",
-      "explanation": "Un 'rollout' consiste à simuler l'application d'une politique sur plusieurs étapes, créant une séquence d'état-action-récompense. La comparaison de politiques et la mise à jour de la fonction de valeur ne sont pas impliquées directement. La variation stochastique se réfère à un concept distinct lié à l'exploration.",
+      "explanation": "Un 'rollout' consiste à simuler l'application d'une politique sur plusieurs étapes, créant une séquence d'état-action-récompense. La comparaison de politiques et la mise à jour de la fonction de valeur ne sont pas impliquées directement. La variation stochastique se réfère à un concept distinct lié à l'exploration. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Un processus de comparaison entre deux politiques différentes pour évaluer leur performance.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La variation de récompense attendue due à des perturbations stochastiques externes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Comment est calculée la moyenne episodique dans l'évaluation d'une politique?",
       "image_url": null,
       "choices": {
-        "A": "En calculant la moyenne des récompenses totales obtenues par épisode pour plusieurs essais.",
-        "B": "En intégrant la variance des récompenses sur tous les épisodes.",
+        "A": "En intégrant la variance des récompenses sur tous les épisodes.",
+        "B": "En calculant la moyenne des récompenses totales obtenues par épisode pour plusieurs essais.",
         "C": "En prenant la récompense maximale obtenue lors d'un seul épisode.",
         "D": "En exponentiant la somme des récompenses sur un épisode unique."
       },
-      "correct_answer": "A",
-      "explanation": "La moyenne episodique est la moyenne des récompenses cumulées sur des essais multiples sous une politique donnée. La variance n'est pas incluse dans ce calcul, et il ne s'agit pas d'une récompense maximale ni d'une opération exponentielle.",
+      "correct_answer": "B",
+      "explanation": "La moyenne episodique est la moyenne des récompenses cumulées sur des essais multiples sous une politique donnée. La variance n'est pas incluse dans ce calcul, et il ne s'agit pas d'une récompense maximale ni d'une opération exponentielle. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En intégrant la variance des récompenses sur tous les épisodes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En prenant la récompense maximale obtenue lors d'un seul épisode.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (En exponentiant la somme des récompenses sur",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quel impact une haute variance a-t-elle lors de l'évaluation des politiques en apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Elle peut rendre difficile la distinction entre les performances des différentes politiques.",
+        "A": "Elle assure que toutes les politiques convergent vers la même valeur de récompense.",
         "B": "Elle améliore automatiquement l'algorithme de politique en fonction des récompenses.",
-        "C": "Elle assure que toutes les politiques convergent vers la même valeur de récompense.",
+        "C": "Elle peut rendre difficile la distinction entre les performances des différentes politiques.",
         "D": "Elle garantit que les récompenses accumulées augmentent systématiquement à chaque épisode."
       },
-      "correct_answer": "A",
-      "explanation": "Une haute variance peut rendre les performances observées moins fiables en raison de la fluctuation aléatoire des récompenses, rendant la comparaison difficile. Elle n'améliore pas les algorithmes automatiquement, n'assure pas la convergence des valeurs, et n'augmente pas systématiquement les récompenses.",
+      "correct_answer": "C",
+      "explanation": "Une haute variance peut rendre les performances observées moins fiables en raison de la fluctuation aléatoire des récompenses, rendant la comparaison difficile. Elle n'améliore pas les algorithmes automatiquement, n'assure pas la convergence des valeurs, et n'augmente pas systématiquement les récompenses. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle assure que toutes les politiques convergent vers la même valeur de récompense.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle améliore automatiquement l'algorithme de politique en fonction des récompenses.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quel critère est souvent utilisé pour comparer deux politiques dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "La valeur attendue de la somme des récompenses cumulées.",
+        "A": "La couleur du graphe représentant la politique.",
         "B": "La rapidité de convergence d'une politique vers la solution optimale.",
         "C": "La simplicité de calcul des dérivées stochastiques.",
-        "D": "La couleur du graphe représentant la politique."
+        "D": "La valeur attendue de la somme des récompenses cumulées."
       },
-      "correct_answer": "A",
-      "explanation": "Pour comparer deux politiques, on utilise souvent la valeur attendue des récompenses cumulées pour évaluer leur performance. La rapidité de convergence est importante mais n'est pas le critère principal. La simplicité des dérivées et la couleur du graphe ne sont pas pertinentes dans ce contexte.",
+      "correct_answer": "D",
+      "explanation": "Pour comparer deux politiques, on utilise souvent la valeur attendue des récompenses cumulées pour évaluer leur performance. La rapidité de convergence est importante mais n'est pas le critère principal. La simplicité des dérivées et la couleur du graphe ne sont pas pertinentes dans ce contexte. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (La couleur du graphe représentant la politique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (La rapidité de convergence d'une politique vers la solution optimale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La simplicité",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Elle optimise directement la sélection des actions par la politique."
       },
       "correct_answer": "A",
-      "explanation": "La variance influence l'interprétation de la stabilité des performances, donnant un aperçu de la fiabilité des politiques. Elle ne permet pas de prédire ou d'optimiser la sélection d'actions directement, ni de créer des oscillations positives.",
+      "explanation": "La variance influence l'interprétation de la stabilité des performances, donnant un aperçu de la fiabilité des politiques. Elle ne permet pas de prédire ou d'optimiser la sélection d'actions directement, ni de créer des oscillations positives. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elle permet de prédire correctement les prochaines récompenses d'une séquence.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle assure des oscillations positives dans les schémas de récompenses.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle optimise directement la sélection des actions par la",
       "difficulty": "easy"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Lors d'un 'rollout', pourquoi est-il nécessaire de suivre une politique prédéfinie?",
       "image_url": null,
       "choices": {
-        "A": "Pour collecter des séquences de données cohérentes qui peuvent être utilisées pour estimer la valeur de la politique.",
-        "B": "Pour garantir que chaque action choisie est naturellement celle qui rapporte le plus de récompenses selon les observations passées.",
+        "A": "Pour garantir que chaque action choisie est naturellement celle qui rapporte le plus de récompenses selon les observations passées.",
+        "B": "Pour collecter des séquences de données cohérentes qui peuvent être utilisées pour estimer la valeur de la politique.",
         "C": "Pour éviter toute forme d'exploration supplémentaire qui pourrait biaiser les résultats.",
         "D": "Pour appliquer la mise à jour directe des poids des modèles d'apprentissage supervisé en temps réel."
       },
-      "correct_answer": "A",
-      "explanation": "Un 'rollout' avec une politique prédéfinie permet de collecter des données nécessaires pour estimer la valeur de la politique de manière cohérente et fiable. Choisir seulement les actions avec le plus de récompenses peut conduire à un biais. L'exploration fait partie de l'apprentissage par renforcement, et il n'y a pas de mise à jour directe des poids en temps réel dans ce contexte.",
+      "correct_answer": "B",
+      "explanation": "Un 'rollout' avec une politique prédéfinie permet de collecter des données nécessaires pour estimer la valeur de la politique de manière cohérente et fiable. Choisir seulement les actions avec le plus de récompenses peut conduire à un biais. L'exploration fait partie de l'apprentissage par renforcement, et il n'y a pas de mise à jour directe des poids en temps réel dans ce contexte. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour garantir que chaque action choisie est naturellement celle qui rapporte le plus de récompenses selon les observations passées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour éviter",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quel est l'avantage principal d'une faible variance lors de l'évaluation d'une politique de renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Elle permet une évaluation plus fiable de la performance réelle de la politique.",
+        "A": "Elle assure que chaque action prise est optimisée pour toutes les situations possibles.",
         "B": "Elle garantit une meilleure exploration de l'espace d'état-action.",
-        "C": "Elle assure que chaque action prise est optimisée pour toutes les situations possibles.",
+        "C": "Elle permet une évaluation plus fiable de la performance réelle de la politique.",
         "D": "Elle facilite la convergence vers une politique avec des récompenses maximales dans tous les scénarios."
       },
-      "correct_answer": "A",
-      "explanation": "Une faible variance offre une meilleure indication de la performance véritable d'une politique, réduisant le bruit dans les résultats. Elle n'assure pas une meilleure exploration, ne garantit pas l'optimisation des actions dans tous les cas, et ne facilite pas nécessairement la convergence.",
+      "correct_answer": "C",
+      "explanation": "Une faible variance offre une meilleure indication de la performance véritable d'une politique, réduisant le bruit dans les résultats. Elle n'assure pas une meilleure exploration, ne garantit pas l'optimisation des actions dans tous les cas, et ne facilite pas nécessairement la convergence. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle assure que chaque action prise est optimisée pour toutes les situations possibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle garantit une meilleure exploration de l'espace d'état-action.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Dans quel cas l'évaluation de politiques peut-elle être particulièrement influencée par une haute variance?",
       "image_url": null,
       "choices": {
-        "A": "Lorsqu'il y a une grande incertitude dans les environnements stochastiques.",
+        "A": "Lorsque les agents interagissent dans un environnement entièrement déterministe.",
         "B": "Lorsque toutes les actions possibles ont une récompense identique.",
         "C": "Lorsqu'une politique atteint toujours une performance maximale.",
-        "D": "Lorsque les agents interagissent dans un environnement entièrement déterministe."
+        "D": "Lorsqu'il y a une grande incertitude dans les environnements stochastiques."
       },
-      "correct_answer": "A",
-      "explanation": "Une haute variance peut avoir un impact important dans des environnements stochastiques où l'incertitude est élevée. Si les actions ont des récompenses identiques ou si une politique atteint toujours le maximum, la variance est moins influente. Dans un environnement déterministe, la variance est généralement faible.",
+      "correct_answer": "D",
+      "explanation": "Une haute variance peut avoir un impact important dans des environnements stochastiques où l'incertitude est élevée. Si les actions ont des récompenses identiques ou si une politique atteint toujours le maximum, la variance est moins influente. Dans un environnement déterministe, la variance est généralement faible. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Lorsque les agents interagissent dans un environnement entièrement déterministe.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Lorsque toutes les actions possibles ont une récompense identique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Lorsqu'une",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Elle complique l'intégration des modèles de deep learning dans les processus de renforcement."
       },
       "correct_answer": "A",
-      "explanation": "Une haute variance peut entraîner un surajustement aux épisodes particuliers au lieu d'une généralisation. Elle ne réduit pas la flexibilité d'adaptation aux nouveaux états par elle-même, ne garantit pas simplement des temps de convergence prolongés, et n'est pas directement liée à la difficulté d'intégration du deep learning.",
+      "explanation": "Une haute variance peut entraîner un surajustement aux épisodes particuliers au lieu d'une généralisation. Elle ne réduit pas la flexibilité d'adaptation aux nouveaux états par elle-même, ne garantit pas simplement des temps de convergence prolongés, et n'est pas directement liée à la difficulté d'intégration du deep learning. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elle réduit la flexibilité de la politique à s'adapter à de nouveaux états.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle garantit que la convergence vers l'optimum prend plus de temps.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Lors de la comparaison de politiques, pourquoi est-il préférable d'utiliser la moyenne episodique plutôt qu'une seule réalisation épisodique?",
       "image_url": null,
       "choices": {
-        "A": "Pour obtenir une estimation plus stable et représentative de la performance à travers les variations stochastiques.",
-        "B": "Pour corriger les biais systématiques présents dans les données initiales de l'environnement.",
+        "A": "Pour corriger les biais systématiques présents dans les données initiales de l'environnement.",
+        "B": "Pour obtenir une estimation plus stable et représentative de la performance à travers les variations stochastiques.",
         "C": "Pour maximiser les récompenses instantanées de manière continue au long de l'apprentissage.",
         "D": "Pour garantir une convergence stricte vers une politique epsilon-greedy optimisée."
       },
-      "correct_answer": "A",
-      "explanation": "La moyenne episodique fournit une estimation plus fiable des performances globales d'une politique, prenant en compte les écarts aléatoires. Elle ne corrige pas les biais dans les données de l'environnement, ne maximise pas les récompenses instantanées, ni garantie la convergence vers une politique epsilon-greedy.",
+      "correct_answer": "B",
+      "explanation": "La moyenne episodique fournit une estimation plus fiable des performances globales d'une politique, prenant en compte les écarts aléatoires. Elle ne corrige pas les biais dans les données de l'environnement, ne maximise pas les récompenses instantanées, ni garantie la convergence vers une politique epsilon-greedy. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour corriger les biais systématiques présents dans les données initiales de l'environnement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour maximiser les récompenses instantanées de manière continue au long de l'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Quel est l'inconvénient de baser la comparaison de deux politiques uniquement sur la moyenne des récompenses instantanées?",
       "image_url": null,
       "choices": {
-        "A": "Cela peut négliger la consistance des performances à long terme.",
+        "A": "Cela garantit une convergence biaisée vers la première politique testée.",
         "B": "Cela mène souvent à des solutions qui ne considèrent pas le coût computationnel.",
-        "C": "Cela garantit une convergence biaisée vers la première politique testée.",
+        "C": "Cela peut négliger la consistance des performances à long terme.",
         "D": "Cela promeut l'exclusion des politiques stochastiques bénéfiques."
       },
-      "correct_answer": "A",
-      "explanation": "Comparer des politiques uniquement sur les récompenses instantanées peut ignorer les performances à long terme et la robustesse face aux variations. Cela ne concerne pas les coûts computationnels, n'entraîne pas directement des biais liés au test en premier, et n'exclut pas spécifiquement les politiques stochastiques.",
+      "correct_answer": "C",
+      "explanation": "Comparer des politiques uniquement sur les récompenses instantanées peut ignorer les performances à long terme et la robustesse face aux variations. Cela ne concerne pas les coûts computationnels, n'entraîne pas directement des biais liés au test en premier, et n'exclut pas spécifiquement les politiques stochastiques. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Cela garantit une convergence biaisée vers la première politique testée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Cela mène souvent à des solutions qui ne considèrent pas le coût computationnel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel scénario illustre l'usage d'une stratégie de 'rollout' pour évaluer une nouvelle politique?",
       "image_url": null,
       "choices": {
-        "A": "Exécuter la politique dans l'environnement simulation pour un nombre déterminé d'épisodes et analyser les récompenses cumulées.",
+        "A": "Augmenter les couches du réseau neuronal pour diversifier les décisions de la politique.",
         "B": "Adapter la politique en cours d'épisodes selon les actions de politiques concurrentes.",
         "C": "Minimiser les ressources de calcul pour atteindre des décisions optimisées.",
-        "D": "Augmenter les couches du réseau neuronal pour diversifier les décisions de la politique."
+        "D": "Exécuter la politique dans l'environnement simulation pour un nombre déterminé d'épisodes et analyser les récompenses cumulées."
       },
-      "correct_answer": "A",
-      "explanation": "Utiliser une stratégie de 'rollout' implique d'exécuter la politique dans l'environnement et d'évaluer ses performances sur plusieurs épisodes. Il ne s'agit pas d'adaptation ou d'ajustement en temps réel par rapport aux politiques concurrentes. La minimisation des ressources de calcul et l'ajout de couches au réseau ne sont pas directement pertinents.",
+      "correct_answer": "D",
+      "explanation": "Utiliser une stratégie de 'rollout' implique d'exécuter la politique dans l'environnement et d'évaluer ses performances sur plusieurs épisodes. Il ne s'agit pas d'adaptation ou d'ajustement en temps réel par rapport aux politiques concurrentes. La minimisation des ressources de calcul et l'ajout de couches au réseau ne sont pas directement pertinents. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmenter les couches du réseau neuronal pour diversifier les décisions de la politique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Adapter la politique en cours d'épisodes selon les actions de politiques concurrentes.) est plausible mais faux car il ne respecte pas",
       "difficulty": "medium"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Elle neutralise l'impact des agents adversaires dans un environnement multi-agents."
       },
       "correct_answer": "A",
-      "explanation": "La variance aide à apprécier la fiabilité des récompenses moyennes, indiquant la stabilité des performances observées. Elle n'est pas directement liée à l'efficacité computationnelle, à la simplification de la sélection d'actions, ni à la neutralisation des adversaires dans des environnements multi-agents.",
+      "explanation": "La variance aide à apprécier la fiabilité des récompenses moyennes, indiquant la stabilité des performances observées. Elle n'est pas directement liée à l'efficacité computationnelle, à la simplification de la sélection d'actions, ni à la neutralisation des adversaires dans des environnements multi-agents. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elle améliore l'efficacité computationnelle de la mise à jour de la politique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle simplifie le processus de sélection des actions lors de l'exécution de la politique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Lorsque deux politiques sont comparées dans un environnement incertain, quel indicateur est crucial pour une évaluation juste?",
       "image_url": null,
       "choices": {
-        "A": "La moyenne et la variance des récompenses obtenues sur un nombre substantiel d'épisodes.",
-        "B": "La vitesse d'exécution des actions de la politique.",
+        "A": "La vitesse d'exécution des actions de la politique.",
+        "B": "La moyenne et la variance des récompenses obtenues sur un nombre substantiel d'épisodes.",
         "C": "Le nombre minimal de règles implémentées dans la politique.",
         "D": "La longueur moyenne du code source de la politique."
       },
-      "correct_answer": "A",
-      "explanation": "Comparer des politiques nécessite d'observer à la fois la moyenne et la variance des récompenses pour comprendre leur performance et fiabilité. La vitesse d'exécution, le nombre de règles, et la longueur du code source sont rarement utilisés seuls pour une évaluation pertinente.",
+      "correct_answer": "B",
+      "explanation": "Comparer des politiques nécessite d'observer à la fois la moyenne et la variance des récompenses pour comprendre leur performance et fiabilité. La vitesse d'exécution, le nombre de règles, et la longueur du code source sont rarement utilisés seuls pour une évaluation pertinente. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (La vitesse d'exécution des actions de la politique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le nombre minimal de règles implémentées dans la politique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La longueur moyenne du code",
       "difficulty": "medium"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Comment l'ajout de 'rollout' lors de l'évaluation d'une politique peut-il influencer la précision des résultats?",
       "image_url": null,
       "choices": {
-        "A": "Il augmente la précision en offrant une vue échelonnée sur les performances des politiques testées.",
+        "A": "Il substitue aux métriques traditionnelles et offre une seule évaluation discrète.",
         "B": "Il diminue la précision en augmentant la complexité algorithmique sans clair bénéfice.",
-        "C": "Il substitue aux métriques traditionnelles et offre une seule évaluation discrète.",
+        "C": "Il augmente la précision en offrant une vue échelonnée sur les performances des politiques testées.",
         "D": "Il garantit que la politique converge plus rapidement vers l'état optimal à chaque essai."
       },
-      "correct_answer": "A",
-      "explanation": "L'utilisation de 'rollouts' permet d'obtenir une évaluation plus précise et échelonnée des performances, car elle tient compte des fluctuations à travers plusieurs épisodes. Cela n'augmente pas la complexité au détriment de la précision, ne remplace pas totalement les autres métriques, et ne garantit pas une convergence rapide par elle-même.",
+      "correct_answer": "C",
+      "explanation": "L'utilisation de 'rollouts' permet d'obtenir une évaluation plus précise et échelonnée des performances, car elle tient compte des fluctuations à travers plusieurs épisodes. Cela n'augmente pas la complexité au détriment de la précision, ne remplace pas totalement les autres métriques, et ne garantit pas une convergence rapide par elle-même. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il substitue aux métriques traditionnelles et offre une seule évaluation discrète.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il diminue la précision en augmentant la complexité algorithmique sans clair bénéfice.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Quelle erreur commune peut affecter la comparaison de politiques à variance élevée lors d'une évaluation?",
       "image_url": null,
       "choices": {
-        "A": "Confondre une variance élevée avec une politique supérieure en termes de performance.",
+        "A": "Croire que toutes les actions sélectionnées automatiquement neutraliseront l'incertitude.",
         "B": "Supposer qu'une politique stable favorisera une évolution aléatoire dans l'environnement.",
         "C": "S'attendre à des performances uniformes malgré des différences stochastiques importantes.",
-        "D": "Croire que toutes les actions sélectionnées automatiquement neutraliseront l'incertitude."
+        "D": "Confondre une variance élevée avec une politique supérieure en termes de performance."
       },
-      "correct_answer": "A",
-      "explanation": "Un piège consiste à confondre une haute variance avec de meilleures performances car des résultats extrêmes peuvent fausser la perspective. Une variance élevée ne favorise pas nécessairement l'évolution aléatoire ni ne promet une uniformité des performances ou la neutralisation de l'incertitude par seules actions.",
+      "correct_answer": "D",
+      "explanation": "Un piège consiste à confondre une haute variance avec de meilleures performances car des résultats extrêmes peuvent fausser la perspective. Une variance élevée ne favorise pas nécessairement l'évolution aléatoire ni ne promet une uniformité des performances ou la neutralisation de l'incertitude par seules actions. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Croire que toutes les actions sélectionnées automatiquement neutraliseront l'incertitude.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Supposer qu'une politique stable favorisera une évolution aléatoire dans l'environnement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (S'attendre",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Parce qu'on peut ignorer les gains potentiels découlant d'une exploration variée des états non déterministes."
       },
       "correct_answer": "A",
-      "explanation": "Les rollouts dans des environnements déterministes peuvent manquer d'illustrer la variabilité et l'incertitude présentes dans des environnements plus réalistes. Cela ne garantit pas une uniformité dans tous les environnements, n'élimine pas le besoin de politiques, et n'ignore pas les gains potentiels d'exploration variée par simple omission.",
+      "explanation": "Les rollouts dans des environnements déterministes peuvent manquer d'illustrer la variabilité et l'incertitude présentes dans des environnements plus réalistes. Cela ne garantit pas une uniformité dans tous les environnements, n'élimine pas le besoin de politiques, et n'ignore pas les gains potentiels d'exploration variée par simple omission. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Parce que les rollouts garantissent une uniformité dans les résultats dans tous types d'environnements.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce que les techniques déterministes ne requièrent pas de politiques pour analyser les résultats.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Dans une évaluation avec une variance élevée, quand est-il justifié de continuer avec une politique particulière?",
       "image_url": null,
       "choices": {
-        "A": "Lorsqu'il y a une compréhension des causes sous-jacentes de la variance, indiquant une possible amélioration future.",
-        "B": "Lorsque la politique a déjà été implémentée et le changement suggèrerait un coût élevé.",
+        "A": "Lorsque la politique a déjà été implémentée et le changement suggèrerait un coût élevé.",
+        "B": "Lorsqu'il y a une compréhension des causes sous-jacentes de la variance, indiquant une possible amélioration future.",
         "C": "Lorsque toutes les autres politiques présentent une performance sans variance notable.",
         "D": "Lorsque l'état final de l'épisode aboutit toujours à la même récompense positive maximale."
       },
-      "correct_answer": "A",
-      "explanation": "Continuer avec une politique ayant une variance élevée est raisonnable si l'on comprend les causes derrière cette variance, ce qui peut être corrigé ou exploité. La rétention pour des raisons de coûts, ou en raison du manque de variance chez d'autres politiques, n'est pas toujours judicieux sans analyse approfondie. Un état final constant ne compense pas forcément les phases variées intermédiaires.",
+      "correct_answer": "B",
+      "explanation": "Continuer avec une politique ayant une variance élevée est raisonnable si l'on comprend les causes derrière cette variance, ce qui peut être corrigé ou exploité. La rétention pour des raisons de coûts, ou en raison du manque de variance chez d'autres politiques, n'est pas toujours judicieux sans analyse approfondie. Un état final constant ne compense pas forcément les phases variées intermédiaires. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Lorsque la politique a déjà été implémentée et le changement suggèrerait un coût élevé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Lorsque toutes les autres politiques présentent une performance sans",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Dans le contexte de l'apprentissage par renforcement, qu'est-ce qu'un 'rollout'?",
       "image_url": null,
       "choices": {
-        "A": "C'est un processus de simulation dans lequel on exécute une politique donnée pour un certain nombre d'étapes pour estimer sa performance.",
+        "A": "C'est la méthode d'entraînement d'un modèle par retour arriéré à travers le temps.",
         "B": "C'est l'itération jusqu'à convergence des valeurs d'état dans un modèle déterministe.",
-        "C": "C'est la méthode d'entraînement d'un modèle par retour arriéré à travers le temps.",
+        "C": "C'est un processus de simulation dans lequel on exécute une politique donnée pour un certain nombre d'étapes pour estimer sa performance.",
         "D": "C'est l'exploitation d'une politique optimale trouvée par un agent dans son environnement."
       },
-      "correct_answer": "A",
-      "explanation": "Le 'rollout' est un processus consistant à exécuter une politique sur plusieurs épisodes pour estimer sa performance. B est incorrect car cela décrit l'itération de valeur. C se rapporte à la rétropropagation. D décrit l'exploitation d'une politique optimale plutôt que son évaluation.",
+      "correct_answer": "C",
+      "explanation": "Le 'rollout' est un processus consistant à exécuter une politique sur plusieurs épisodes pour estimer sa performance. B est incorrect car cela décrit l'itération de valeur. C se rapporte à la rétropropagation. D décrit l'exploitation d'une politique optimale plutôt que son évaluation. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (C'est la méthode d'entraînement d'un modèle par retour arriéré à travers le temps.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (C'est l'itération jusqu'à convergence des valeurs d'état dans un modèle déterministe.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "easy"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Quelle est la principale problématique de l'utilisation de la moyenne episodique pour comparer deux politiques?",
       "image_url": null,
       "choices": {
-        "A": "Cela n'informe pas sur la variance des retours obtenus, ce qui est crucial pour évaluer la robustesse.",
+        "A": "Elle ne prend en compte que les états finaux, ignorant les autres transitions.",
         "B": "Elle ne peut pas capturer les politiques stochastiques dans leur globalité.",
         "C": "Elle oublie de prendre en compte les récompenses intermédiaires entre le départ et l'arrivée.",
-        "D": "Elle ne prend en compte que les états finaux, ignorant les autres transitions."
+        "D": "Cela n'informe pas sur la variance des retours obtenus, ce qui est crucial pour évaluer la robustesse."
       },
-      "correct_answer": "A",
-      "explanation": "La moyenne episodique calcule le retour moyen d'une politique mais n'exprime pas la variance de ces retours. B est faux car les politiques stochastiques sont correctement évaluées par cette moyenne. C est incorrect car toutes les récompenses intermédiaires sont prises en compte pour le calcul du retour total d'un épisode. D est incorrect car elle prend en compte toutes les transitions, pas uniquement l'état final.",
+      "correct_answer": "D",
+      "explanation": "La moyenne episodique calcule le retour moyen d'une politique mais n'exprime pas la variance de ces retours. B est faux car les politiques stochastiques sont correctement évaluées par cette moyenne. C est incorrect car toutes les récompenses intermédiaires sont prises en compte pour le calcul du retour total d'un épisode. D est incorrect car elle prend en compte toutes les transitions, pas uniquement l'état final. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle ne prend en compte que les états finaux, ignorant les autres transitions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle ne peut pas capturer les",
       "difficulty": "medium"
     }
   ]

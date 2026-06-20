@@ -14,7 +14,7 @@
         "D": "La distance euclidienne moyenne entre les points de données"
       },
       "correct_answer": "A",
-      "explanation": "L'Akaike Information Criterion (AIC) cherche à minimiser l'information perdue, en ajoutant une pénalité liée au nombre de paramètres pour éviter le sur-ajustement. Le choix B néglige la pénalité qui est essentielle pour éviter le surajustement. Le choix C concerne plutôt des méthodes comme l'ACP. Le choix D n'est pas pertinent pour l'AIC.",
+      "explanation": "L'Akaike Information Criterion (AIC) cherche à minimiser l'information perdue, en ajoutant une pénalité liée au nombre de paramètres pour éviter le sur-ajustement. Le choix B néglige la pénalité qui est essentielle pour éviter le surajustement. Le choix C concerne plutôt des méthodes comme l'ACP. Le choix D n'est pas pertinent pour l'AIC. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Le logarithme de la vraisemblance sans se soucier du nombre de paramètres) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La variance totale expliquée par le modèle) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Comment le BIC diffère-t-il de l'AIC?",
       "image_url": null,
       "choices": {
-        "A": "Le BIC pénalise davantage les modèles avec plus de paramètres que l'AIC",
-        "B": "Le BIC ignore complètement le nombre de paramètres du modèle",
+        "A": "Le BIC ignore complètement le nombre de paramètres du modèle",
+        "B": "Le BIC pénalise davantage les modèles avec plus de paramètres que l'AIC",
         "C": "Le BIC privilégie toujours les modèles plus complexes que l'AIC",
         "D": "Le BIC utilise la même formule que l'AIC mais avec des noms différents"
       },
-      "correct_answer": "A",
-      "explanation": "Le Bayesian Information Criterion (BIC) inclut une pénalité plus forte pour le nombre de paramètres que l'AIC, car il prend en compte le nombre d'observations, ce qui le rend plus restrictif. Le choix B est incorrect puisque le BIC pénalise bel et bien les modèles plus complexes. Le choix C est faux car le BIC est en fait plus conservateur, pas moins. Le choix D est incorrect car la structure des pénalités diffère.",
+      "correct_answer": "B",
+      "explanation": "Le Bayesian Information Criterion (BIC) inclut une pénalité plus forte pour le nombre de paramètres que l'AIC, car il prend en compte le nombre d'observations, ce qui le rend plus restrictif. Le choix B est incorrect puisque le BIC pénalise bel et bien les modèles plus complexes. Le choix C est faux car le BIC est en fait plus conservateur, pas moins. Le choix D est incorrect car la structure des pénalités diffère. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le BIC ignore complètement le nombre de paramètres du modèle) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Lors de la sélection du nombre optimal de clusters (k) dans un clustering, quelle technique est souvent utilisée?",
       "image_url": null,
       "choices": {
-        "A": "La méthode du coude",
+        "A": "La méthode de la médiane glissante",
         "B": "La méthode du rapport d'asymétrie",
-        "C": "La méthode de la médiane glissante",
+        "C": "La méthode du coude",
         "D": "La méthode de la corrélation"
       },
-      "correct_answer": "A",
-      "explanation": "La méthode du coude est utilisée pour visualiser la somme des carrés intra-clusters par rapport au nombre de clusters pour détecter un 'coude' où l'ajout de nouveaux clusters n'améliore plus significativement la modélisation. Le choix B n'est pas pertinent pour ce type de problématique. Le choix C n'est pas une méthode reconnue pour la sélection de k. Le choix D est insensé dans ce contexte.",
+      "correct_answer": "C",
+      "explanation": "La méthode du coude est utilisée pour visualiser la somme des carrés intra-clusters par rapport au nombre de clusters pour détecter un 'coude' où l'ajout de nouveaux clusters n'améliore plus significativement la modélisation. Le choix B n'est pas pertinent pour ce type de problématique. Le choix C n'est pas une méthode reconnue pour la sélection de k. Le choix D est insensé dans ce contexte. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La méthode de la médiane glissante) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (La méthode du rapport d'asymétrie) est plausible mais faux car il ne respecte",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Pour quel type de problème est-il crucial de trouver un compromis entre complexité et interprétabilité dans les modèles non supervisés?",
       "image_url": null,
       "choices": {
-        "A": "Pour les modèles de clustering à nombreux clusters",
+        "A": "Dans les réseaux de neurones convolutifs",
         "B": "Dans les arbres de décision",
         "C": "Pour les modèles de régression linéaire",
-        "D": "Dans les réseaux de neurones convolutifs"
+        "D": "Pour les modèles de clustering à nombreux clusters"
       },
-      "correct_answer": "A",
-      "explanation": "Dans le clustering, plus de clusters augmentent la complexité et peuvent perturber l'interprétabilité des résultats, d'où la nécessité de trouver un compromis approprié. Le choix B concerne plutôt les modèles supervisés. Le choix C, bien qu'impliquant une certaine interprétabilité, concerne des modèles supervisés. Le choix D ne concerne pas les méthodes non supervisées.",
+      "correct_answer": "D",
+      "explanation": "Dans le clustering, plus de clusters augmentent la complexité et peuvent perturber l'interprétabilité des résultats, d'où la nécessité de trouver un compromis approprié. Le choix B concerne plutôt les modèles supervisés. Le choix C, bien qu'impliquant une certaine interprétabilité, concerne des modèles supervisés. Le choix D ne concerne pas les méthodes non supervisées. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Dans les réseaux de neurones convolutifs) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Dans les arbres de décision) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Ajuster les hyper-paramètres pour améliorer la précision de prédiction"
       },
       "correct_answer": "A",
-      "explanation": "L'ACP consiste à réduire la dimension des données en retenant les composantes qui expliquent une variance significative tout en limitant le nombre de composantes pour éviter une trop grande complexité. Le choix B est faux car utiliser toutes les variables ne réduit pas la complexité. Le choix C n'est pas efficace car un seul composant ne capte généralement pas toute la variance. Le choix D ne s'applique pas à l'analyse non supervisée.",
+      "explanation": "L'ACP consiste à réduire la dimension des données en retenant les composantes qui expliquent une variance significative tout en limitant le nombre de composantes pour éviter une trop grande complexité. Le choix B est faux car utiliser toutes les variables ne réduit pas la complexité. Le choix C n'est pas efficace car un seul composant ne capte généralement pas toute la variance. Le choix D ne s'applique pas à l'analyse non supervisée. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Utiliser toutes les variables d'origine pour plus de précision) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ignorer la variance",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quel est le principal désavantage de l'utilisation excessive de paramètres dans un modèle non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Surajustement sur les données de formation, rendant le modèle peu généralisable",
-        "B": "Augmentation automatique de la précision de validation croisée",
+        "A": "Augmentation automatique de la précision de validation croisée",
+        "B": "Surajustement sur les données de formation, rendant le modèle peu généralisable",
         "C": "Diminution de la complexité et augmentation de l'efficacité",
         "D": "Convergence plus rapide des algorithmes d'entraînement"
       },
-      "correct_answer": "A",
-      "explanation": "Un excès de paramètres peut entraîner un surajustement, où le modèle s'ajuste trop étroitement aux données de formation et ne se généralise pas bien à de nouvelles données. Le choix B est incorrect car le surajustement n'améliore généralement pas la précision sur des ensembles de validation. Le choix C est faux car plus de paramètres augmentent la complexité. Le choix D est incorrect car une complexité accrue ralentit généralement la convergence.",
+      "correct_answer": "B",
+      "explanation": "Un excès de paramètres peut entraîner un surajustement, où le modèle s'ajuste trop étroitement aux données de formation et ne se généralise pas bien à de nouvelles données. Le choix B est incorrect car le surajustement n'améliore généralement pas la précision sur des ensembles de validation. Le choix C est faux car plus de paramètres augmentent la complexité. Le choix D est incorrect car une complexité accrue ralentit généralement la convergence. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmentation automatique de la précision de validation croisée) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Diminution de la complexité et",
       "difficulty": "medium"
     },
     {
@@ -93,12 +93,12 @@
       "image_url": null,
       "choices": {
         "A": "La sélection de k n'influence pas l'ajustement du modèle aux données",
-        "B": "La sélection de k est basée sur des critères internes sans jeu de données étiqueté",
-        "C": "La sélection de k repose sur les mêmes techniques que pour ajuster un modèle supervisé",
+        "B": "La sélection de k repose sur les mêmes techniques que pour ajuster un modèle supervisé",
+        "C": "La sélection de k est basée sur des critères internes sans jeu de données étiqueté",
         "D": "La sélection de k est arbitraire et ne repose sur aucun fondement théorique"
       },
-      "correct_answer": "B",
-      "explanation": "La sélection de k dans le clustering est unique car elle s'effectue sans accès à des étiquettes, elle repose donc souvent sur des critères internes et heuristiques tels que la méthode du coude. Le choix A est faux car la sélection de k influence fortement la structure de clustering. Le choix C est incorrect car les techniques de validation diffèrent entre supervisé et non supervisé. Le choix D est incorrect car la sélection de k repose effectivement sur des critères bien établis.",
+      "correct_answer": "C",
+      "explanation": "La sélection de k dans le clustering est unique car elle s'effectue sans accès à des étiquettes, elle repose donc souvent sur des critères internes et heuristiques tels que la méthode du coude. Le choix A est faux car la sélection de k influence fortement la structure de clustering. Le choix C est incorrect car les techniques de validation diffèrent entre supervisé et non supervisé. Le choix D est incorrect car la sélection de k repose effectivement sur des critères bien établis. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La sélection de k n'influence pas l'ajustement du modèle aux données) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Pour réduire le surajustement dans une méthode de clustering, quel aspect du modèle devriez-vous ajuster?",
       "image_url": null,
       "choices": {
-        "A": "Réduire le nombre de clusters",
+        "A": "Réduire le nombre d'itérations dans l'algorithme",
         "B": "Augmenter le nombre de dimensions",
         "C": "Augmenter le nombre de données d'apprentissage",
-        "D": "Réduire le nombre d'itérations dans l'algorithme"
+        "D": "Réduire le nombre de clusters"
       },
-      "correct_answer": "A",
-      "explanation": "Réduire le nombre de clusters peut prévenir le surajustement en évitant de segmenter à outrance les données, ce qui rend le modèle plus généralisable. Le choix B est faux car augmenter les dimensions complexe généralement le modèle. Le choix C peut aider au surajustement mais n'implique pas directement une modification du modèle. Le choix D n'adresse pas le surajustement mais peut affecter la convergence.",
+      "correct_answer": "D",
+      "explanation": "Réduire le nombre de clusters peut prévenir le surajustement en évitant de segmenter à outrance les données, ce qui rend le modèle plus généralisable. Le choix B est faux car augmenter les dimensions complexe généralement le modèle. Le choix C peut aider au surajustement mais n'implique pas directement une modification du modèle. Le choix D n'adresse pas le surajustement mais peut affecter la convergence. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire le nombre d'itérations dans l'algorithme) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter le nombre de dimensions) est plausible mais faux car il ne respecte pas",
       "difficulty": "hard"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Lorsqu'un ajustement exceptionnellement précis est nécessaire"
       },
       "correct_answer": "A",
-      "explanation": "Le BIC incorpore une plus forte pénalité pour le nombre de paramètres lorsque le nombre d'observations est élevé, ce qui peut le rendre plus adapté dans ces situations pour éviter le surajustement. Le choix B concerne plutôt l'analyse en composantes principales. Le choix C n'est pas pertinent pour les critères d'information. Le choix D favorise l'AIC, qui est généralement moins pénalisant, donc plus apte à ajuster précisément.",
+      "explanation": "Le BIC incorpore une plus forte pénalité pour le nombre de paramètres lorsque le nombre d'observations est élevé, ce qui peut le rendre plus adapté dans ces situations pour éviter le surajustement. Le choix B concerne plutôt l'analyse en composantes principales. Le choix C n'est pas pertinent pour les critères d'information. Le choix D favorise l'AIC, qui est généralement moins pénalisant, donc plus apte à ajuster précisément. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Lorsque le modèle doit maximiser la variance expliquée) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Lorsque les données présentent une forte colinéarité) est plausible",
       "difficulty": "hard"
     },
     {
@@ -135,12 +135,12 @@
       "image_url": null,
       "choices": {
         "A": "Un biais élevé et une variance faible",
-        "B": "Une variance élevé et un biais faible",
+        "B": "Des performances de test sensiblement inférieures à celles de l'entraînement",
         "C": "Des performances similaires sur les données d'entraînement et de test",
-        "D": "Des performances de test sensiblement inférieures à celles de l'entraînement"
+        "D": "Une variance élevé et un biais faible"
       },
-      "correct_answer": "D",
-      "explanation": "Gérer incorrectement le compromis entre complexité et performance peut entraîner une parfaite adéquation aux données d'entraînement sans généralisation, entraînant ainsi de mauvaises performances sur les données de test (haut différentiel entre train et test). Le choix A se réfère à un modèle sous-ajusté. Le choix B se réfère à un modèle surajusté mais simplifié. Le choix C indiquerait une excellente généralisation, ce qui est l'opposé d'une mauvaise gestion de compromis.",
+      "correct_answer": "B",
+      "explanation": "Gérer incorrectement le compromis entre complexité et performance peut entraîner une parfaite adéquation aux données d'entraînement sans généralisation, entraînant ainsi de mauvaises performances sur les données de test (haut différentiel entre train et test). Le choix A se réfère à un modèle sous-ajusté. Le choix B se réfère à un modèle surajusté mais simplifié. Le choix C indiquerait une excellente généralisation, ce qui est l'opposé d'une mauvaise gestion de compromis. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un biais élevé et une variance faible) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Des performances similaires sur les données d'entraînement",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Lors de l'évaluation du nombre optimal de composantes principales, quel aspect crucial faut-il équilibrer?",
       "image_url": null,
       "choices": {
-        "A": "Le pourcentage de variance expliquée et le nombre de composantes retenues",
+        "A": "L'usage d'autoencodeurs pour évaluer les composantes",
         "B": "La p-value statistique de chaque composante principale",
-        "C": "L'usage d'autoencodeurs pour évaluer les composantes",
+        "C": "Le pourcentage de variance expliquée et le nombre de composantes retenues",
         "D": "Le choix du centre de chaque composante principale"
       },
-      "correct_answer": "A",
-      "explanation": "Pour déterminer le nombre optimal de composantes principales, il est essentiel d'équilibrer la quantité de variance des données retenue par le modèle et la simplicité structurelle du modèle (nombre de composantes). Le choix B concerne souvent des analyses statistiques incomparables avec PCA. Le choix C implique une technique avancée mais n'est pas standard pour l'évaluation des composantes principales. Le choix D n'est pas un ajustement applicable dans l'ACP.",
+      "correct_answer": "C",
+      "explanation": "Pour déterminer le nombre optimal de composantes principales, il est essentiel d'équilibrer la quantité de variance des données retenue par le modèle et la simplicité structurelle du modèle (nombre de composantes). Le choix B concerne souvent des analyses statistiques incomparables avec PCA. Le choix C implique une technique avancée mais n'est pas standard pour l'évaluation des composantes principales. Le choix D n'est pas un ajustement applicable dans l'ACP. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'usage d'autoencodeurs pour évaluer les composantes) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (La p-value statistique de chaque composante principale) est plausible mais",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Pourquoi est-il risqué de choisir un k trop haut dans le cas d'un clustering hiérarchique?",
       "image_url": null,
       "choices": {
-        "A": "Cela peut entraîner des clusters trop spécifiques, rendant la généralisation difficile",
+        "A": "Un k élevé accroît généralement l'overfitting lors de l'entraînement",
         "B": "Un k élevé signifie toujours une meilleure représentation des données",
         "C": "Un k élevé diminue la robustesse face aux changements des données d'entrée",
-        "D": "Un k élevé accroît généralement l'overfitting lors de l'entraînement"
+        "D": "Cela peut entraîner des clusters trop spécifiques, rendant la généralisation difficile"
       },
-      "correct_answer": "A",
-      "explanation": "Choisir un k trop haut en clustering hiérarchique peut créer des clusters qui ne s'appliquent qu'étroitement aux données d'entraînement, nuisant ainsi à la généralisation. Le choix B est faux, un k élevé ne signifie pas nécessairement une meilleure qualité. Le choix C est incorrect car la robustesse n'est pas directement reliée à k dans ce contexte. Le choix D est une attribution qui s'applique plus généralement aux modèles supervisés que non supervisés comme le clustering.",
+      "correct_answer": "D",
+      "explanation": "Choisir un k trop haut en clustering hiérarchique peut créer des clusters qui ne s'appliquent qu'étroitement aux données d'entraînement, nuisant ainsi à la généralisation. Le choix B est faux, un k élevé ne signifie pas nécessairement une meilleure qualité. Le choix C est incorrect car la robustesse n'est pas directement reliée à k dans ce contexte. Le choix D est une attribution qui s'applique plus généralement aux modèles supervisés que non supervisés comme le clustering. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un k élevé accroît généralement l'overfitting lors de l'entraînement) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Éviter l'utilisation de critères d'ajustement comme l'AIC ou le BIC"
       },
       "correct_answer": "A",
-      "explanation": "Utiliser des ensembles de validation indépendants est crucial pour evaluer la performance réelle d'un modèle non supervisé et éviter de surévaluer ses performances. Le choix B amène au surajustement. Le choix C est exactement ce qu'il faut éviter pour ne pas rentrer dans le surajustement. Le choix D est erroné car les critères comme l'AIC et le BIC sont critiques pour la sélection de modèles appropriés.",
+      "explanation": "Utiliser des ensembles de validation indépendants est crucial pour evaluer la performance réelle d'un modèle non supervisé et éviter de surévaluer ses performances. Le choix B amène au surajustement. Le choix C est exactement ce qu'il faut éviter pour ne pas rentrer dans le surajustement. Le choix D est erroné car les critères comme l'AIC et le BIC sont critiques pour la sélection de modèles appropriés. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Maximiser l'ajustement aux données d'entraînement) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Toujours utiliser un modèle avec le plus de paramètres possibles) est plausible mais",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quelle est la limitation principale de l'utilisation du critère BIC dans le cas de petites tailles d'échantillons?",
       "image_url": null,
       "choices": {
-        "A": "Il risque de favoriser les modèles plus simples",
-        "B": "Il ne tient pas compte de la pénalité pour le nombre de paramètres",
+        "A": "Il ne tient pas compte de la pénalité pour le nombre de paramètres",
+        "B": "Il risque de favoriser les modèles plus simples",
         "C": "Il conduit automatiquement à l'overfitting",
         "D": "Il suppose que les erreurs suivent une distribution non gaussienne"
       },
-      "correct_answer": "A",
-      "explanation": "Le BIC peut être biaisé en faveur de modèles plus simples quand le nombre d'échantillons est petit, car il pénalise fortement le nombre de paramètres. Le choix B est incorrect puisque le BIC inclut explicitement une pénalité pour les paramètres. Le choix C est faux, car BIC penche vers une simplification. Le choix D ne concerne pas la présomption des erreurs dans le BIC.",
+      "correct_answer": "B",
+      "explanation": "Le BIC peut être biaisé en faveur de modèles plus simples quand le nombre d'échantillons est petit, car il pénalise fortement le nombre de paramètres. Le choix B est incorrect puisque le BIC inclut explicitement une pénalité pour les paramètres. Le choix C est faux, car BIC penche vers une simplification. Le choix D ne concerne pas la présomption des erreurs dans le BIC. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il ne tient pas compte de la pénalité pour le nombre de paramètres) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il conduit automatiquement à l'overfitting) est plausible",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Pourquoi l'AIC peut-il être favorisé par rapport au BIC malgré un nombre élevé de paramètres de modèle?",
       "image_url": null,
       "choices": {
-        "A": "Il est moins conservateur et peut sélectionner des modèles plus flexibles",
+        "A": "Il maximise systématiquement l'ajustement des données de test",
         "B": "Il n'ajoute aucune pénalité pour des modèles complexes",
-        "C": "Il maximise systématiquement l'ajustement des données de test",
+        "C": "Il est moins conservateur et peut sélectionner des modèles plus flexibles",
         "D": "Il élimine complètement le risque de surajustement"
       },
-      "correct_answer": "A",
-      "explanation": "L'AIC est moins conservateur que le BIC, ce qui peut le rendre avantageux pour explorer des modèles plus flexibles, surtout lorsque l'équilibrage entre ajustement et complexité est négligé. Le choix B est faux car l'AIC intègre une pénalité pour le nombre de paramètres. Le choix C est une perspective erronée puisque l'AIC évalue l'ajustement global basé sur le modèle et les données d'entraînement. Le choix D est incorrect, car l'AIC ne garantit pas contre le surajustement.",
+      "correct_answer": "C",
+      "explanation": "L'AIC est moins conservateur que le BIC, ce qui peut le rendre avantageux pour explorer des modèles plus flexibles, surtout lorsque l'équilibrage entre ajustement et complexité est négligé. Le choix B est faux car l'AIC intègre une pénalité pour le nombre de paramètres. Le choix C est une perspective erronée puisque l'AIC évalue l'ajustement global basé sur le modèle et les données d'entraînement. Le choix D est incorrect, car l'AIC ne garantit pas contre le surajustement. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il maximise systématiquement l'ajustement des données de test) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Dans un scénario où l'on cherche à modéliser la diversité maximale des drapeaux d'un ensemble de données, quel modèle pourrait minimiser l'AIC?",
       "image_url": null,
       "choices": {
-        "A": "Un modèle parcimonieux mais adéquat pour retenir l'essentiel de la diversité",
+        "A": "Un modèle qui minimise le nombre total de cluster au détriment de la diversité interne",
         "B": "Un modèle qui maximise uniquement le nombre de dimensions",
         "C": "Un modèle qui utilise tous les points de données en tant que clusters individuels",
-        "D": "Un modèle qui minimise le nombre total de cluster au détriment de la diversité interne"
+        "D": "Un modèle parcimonieux mais adéquat pour retenir l'essentiel de la diversité"
       },
-      "correct_answer": "A",
-      "explanation": "Un modèle parcimonieux mais adéquat en termes de rétention de diversité minimize l'AIC car il équilibre ajustement et complexité. Le choix B, par contre, ignore l'équilibre essentiel entre complexité et ajustement. Le choix C aboutit à un surajustement typique avec une pénalité sévère de l'AIC. Le choix D pourrait simplifier le modèle, mais se ferait probablement avec une perte excessive de diversité, ce qui n'est pas le but principal ici.",
+      "correct_answer": "D",
+      "explanation": "Un modèle parcimonieux mais adéquat en termes de rétention de diversité minimize l'AIC car il équilibre ajustement et complexité. Le choix B, par contre, ignore l'équilibre essentiel entre complexité et ajustement. Le choix C aboutit à un surajustement typique avec une pénalité sévère de l'AIC. Le choix D pourrait simplifier le modèle, mais se ferait probablement avec une perte excessive de diversité, ce qui n'est pas le but principal ici. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un modèle qui minimise le nombre total de cluster au détriment de la diversité interne) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Elle amène les modèles à se concentrer d'abord sur la réduction du temps de calcul"
       },
       "correct_answer": "A",
-      "explanation": "La parcimonie dans la sélection de modèle signifie choisir des solutions plus simples tant que la perte en termes d'ajustement est négligeable, d'où le choix A correct. Le choix B ignore la pénalisation de la complexité excessive. Le choix C est faux car la parcimonie considère la réduction des dimensions comme un objectif secondaire si cela n'entrave pas la performance. Le choix D n'est pas un objectif principal de la parcimonie qui se concentre plutôt sur le modèle lui-même et non sur les ressources computielles.",
+      "explanation": "La parcimonie dans la sélection de modèle signifie choisir des solutions plus simples tant que la perte en termes d'ajustement est négligeable, d'où le choix A correct. Le choix B ignore la pénalisation de la complexité excessive. Le choix C est faux car la parcimonie considère la réduction des dimensions comme un objectif secondaire si cela n'entrave pas la performance. Le choix D n'est pas un objectif principal de la parcimonie qui se concentre plutôt sur le modèle lui-même et non sur les ressources computielles. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elle privilégie toujours les modèles avec plus de paramètres et d'itérations) est plausible mais faux car il ne respecte",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Quel critère AIC ou BIC est le plus adapté lorsque le but est d'expliquer les patterns et d'explorer les hypothèses avec un échantillon limité?",
       "image_url": null,
       "choices": {
-        "A": "L'AIC, pour ses attributs d'adaptabilité dans les explorations de données",
-        "B": "Le BIC, pour une forte régularisation qui oriente vers les petits modèles",
+        "A": "Le BIC, pour une forte régularisation qui oriente vers les petits modèles",
+        "B": "L'AIC, pour ses attributs d'adaptabilité dans les explorations de données",
         "C": "N'importe lequel, tel que la taille d'échantillon n'influe pas sur ces critères",
         "D": "L'utilisation combinée des deux critères pour des résultats contradictoires"
       },
-      "correct_answer": "A",
-      "explanation": "L'AIC est souvent préféré pour l'exploratoire, particulièrement avec de petits échantillons, parce qu'il tend moins à sous-estimer les modèles complexes comme le ferait le BIC. Le choix B guiderait plus vers la consolidation que l'exploration. Le choix C est incorrect car la taille de l'échantillon impacte directement le BIC. Le choix D n'est pas vraiment fonctionnel car des résultats contradictoires ne sont pas nécessairement instructifs sans un critère dominant.",
+      "correct_answer": "B",
+      "explanation": "L'AIC est souvent préféré pour l'exploratoire, particulièrement avec de petits échantillons, parce qu'il tend moins à sous-estimer les modèles complexes comme le ferait le BIC. Le choix B guiderait plus vers la consolidation que l'exploration. Le choix C est incorrect car la taille de l'échantillon impacte directement le BIC. Le choix D n'est pas vraiment fonctionnel car des résultats contradictoires ne sont pas nécessairement instructifs sans un critère dominant. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le BIC, pour une forte régularisation qui oriente vers les petits modèles) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (N'importe lequel, tel",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Dans un clustering, pourquoi l'utilisation de l'Indice de silhouette est-elle souvent cruciale pour la validation interne?",
       "image_url": null,
       "choices": {
-        "A": "Parce qu'il évalue la cohésion interne et la séparation externe des clusters",
+        "A": "Parce qu'il dépend totalement de paramètres heuristiques fournies par l'utilisateur",
         "B": "Parce qu'il est spécifiquement conçu pour améliorer le temps de traitement",
-        "C": "Parce qu'il dépend totalement de paramètres heuristiques fournies par l'utilisateur",
+        "C": "Parce qu'il évalue la cohésion interne et la séparation externe des clusters",
         "D": "Parce qu'il supprime le besoin de validation externe"
       },
-      "correct_answer": "A",
-      "explanation": "L’indice de silhouette est un outil qui mesure à la fois la cohésion (à quel point les instances sont proches des autres dans le même cluster) et la séparation (la distance moyenne vers le cluster le plus proche dont l'instance ne fait pas partie). Le choix B est incorrect, car l'indice de silhouette concerne la qualité du clustering, pas l'efficacité de traitement. Le choix C est faux, ce critère est principalement dérivé des données. Le choix D est erroné, la validation externe demeure importante.",
+      "correct_answer": "C",
+      "explanation": "L’indice de silhouette est un outil qui mesure à la fois la cohésion (à quel point les instances sont proches des autres dans le même cluster) et la séparation (la distance moyenne vers le cluster le plus proche dont l'instance ne fait pas partie). Le choix B est incorrect, car l'indice de silhouette concerne la qualité du clustering, pas l'efficacité de traitement. Le choix C est faux, ce critère est principalement dérivé des données. Le choix D est erroné, la validation externe demeure importante. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce qu'il dépend totalement de paramètres heuristiques fournies par l'utilisateur) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Quelles seraient les implications possibles de l'application du BIC avec une forte hypothèse a priori de distribution non normale pour les modèles non supervisés?",
       "image_url": null,
       "choices": {
-        "A": "Une pénalité inadéquate des paramètres conduisant à des modèles non optimaux",
+        "A": "Une utilisation plus efficace du clustering hiérarchique",
         "B": "Une maximisation automatique de l'information mutuelle",
         "C": "Une guérison rapide des modèles biaisés",
-        "D": "Une utilisation plus efficace du clustering hiérarchique"
+        "D": "Une pénalité inadéquate des paramètres conduisant à des modèles non optimaux"
       },
-      "correct_answer": "A",
-      "explanation": "Le BIC suppose un modèle de vraisemblance basé souvent sur une hypothèse de normalité; une distribution non-normale pourrait mal ajuster cette pénalité, entraînant un choix de modèle sous-optimal. Le choix B n'est pas pertinent, car BIC ne se focalise pas directement sur l'information mutuelle. C est invraisemblable car le BIC ne guérit pas les biais de modèle. D est inexact; le BIC n'augmente pas spécifiquement l'effet sur les clustering hiérarchiques.",
+      "correct_answer": "D",
+      "explanation": "Le BIC suppose un modèle de vraisemblance basé souvent sur une hypothèse de normalité; une distribution non-normale pourrait mal ajuster cette pénalité, entraînant un choix de modèle sous-optimal. Le choix B n'est pas pertinent, car BIC ne se focalise pas directement sur l'information mutuelle. C est invraisemblable car le BIC ne guérit pas les biais de modèle. D est inexact; le BIC n'augmente pas spécifiquement l'effet sur les clustering hiérarchiques. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une utilisation plus efficace du clustering hiérarchique) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Une maximisation automatique de l'information mutuelle) est",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "Une sur-optimisation pour les données d'entraînement spécifiques"
       },
       "correct_answer": "A",
-      "explanation": "Un AIC faible suggère que le modèle a réussi à garder un bon équilibre entre un ajustement adéquat aux données et une minimisation de la complexité modèle. Le choix B suggère généralement le contraire: la complexité peut indiquer une pente à surajuster. Le choix C est fondamentalement mauvais, car un ajustement parfait est rare et souvent un indicateur de surajustement. Le choix D encore plus, ce qui s'oppose à un faible AIC.",
+      "explanation": "Un AIC faible suggère que le modèle a réussi à garder un bon équilibre entre un ajustement adéquat aux données et une minimisation de la complexité modèle. Le choix B suggère généralement le contraire: la complexité peut indiquer une pente à surajuster. Le choix C est fondamentalement mauvais, car un ajustement parfait est rare et souvent un indicateur de surajustement. Le choix D encore plus, ce qui s'oppose à un faible AIC. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Une plus grande complexité des relations découvertes) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Un ajustement parfait sans aucun",
       "difficulty": "hard"
     },
     {
@@ -302,13 +302,13 @@
       "question": "Quels facteurs influencent principalement le choix final d'un modèle non supervisé au-delà des critères AIC et BIC?",
       "image_url": null,
       "choices": {
-        "A": "Interprétabilité, domaine d'application et échelle de la donnée",
-        "B": "Restrictions juridiques, préférences personnelles du chercheur",
+        "A": "Restrictions juridiques, préférences personnelles du chercheur",
+        "B": "Interprétabilité, domaine d'application et échelle de la donnée",
         "C": "Infinité de combinaisons de données d'entrée",
         "D": "Langage de programmation utilisé pour l'implémentation"
       },
-      "correct_answer": "A",
-      "explanation": "Outre les mesures quantitatives comme AIC et BIC, des considérations pratiques comme l'interprétabilité, le domaine spécifique, et l'échelle de données jouent un rôle critique dans le choix final. Le choix B est incorrect : bien que non négligeables, ces facteurs ne déterminent pas directement le choix modèle. Le choix C est une exagération irréaliste. Le choix D n'est pas pertinent car le langage n'impacte pas le modèle lui-même.",
+      "correct_answer": "B",
+      "explanation": "Outre les mesures quantitatives comme AIC et BIC, des considérations pratiques comme l'interprétabilité, le domaine spécifique, et l'échelle de données jouent un rôle critique dans le choix final. Le choix B est incorrect : bien que non négligeables, ces facteurs ne déterminent pas directement le choix modèle. Le choix C est une exagération irréaliste. Le choix D n'est pas pertinent car le langage n'impacte pas le modèle lui-même. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Restrictions juridiques, préférences personnelles du chercheur) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Infinité de combinaisons de données d'entrée) est plausible mais faux",
       "difficulty": "hard"
     }
   ]

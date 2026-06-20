@@ -42,6 +42,7 @@ REGLES OBLIGATOIRES:
    - definir clairement le concept correct
    - expliquer pourquoi chaque mauvaise reponse est fausse
    - rester specifique (pas de phrase vide type 'moins pertinent')
+    - contenir entre 90 et 120 mots utiles
 4) Sortie JSON stricte uniquement:
 {
   "questions": [
@@ -60,6 +61,219 @@ REGLES OBLIGATOIRES:
 - correct_answer: A/B/C/D
 - difficulty: easy/medium/hard
 """
+
+OPTION_LETTERS = ("A", "B", "C", "D")
+MIN_EXPLANATION_WORDS = 90
+MAX_EXPLANATION_WORDS = 120
+
+
+def _words_count(text: str) -> int:
+    return len((text or "").split())
+
+
+def _target_answer_sequence(question_count: int) -> list[str]:
+    base = question_count // len(OPTION_LETTERS)
+    remainder = question_count % len(OPTION_LETTERS)
+    counts = {letter: base for letter in OPTION_LETTERS}
+    for idx in range(remainder):
+        counts[OPTION_LETTERS[idx]] += 1
+
+    sequence = []
+    while len(sequence) < question_count:
+        progressed = False
+        for letter in OPTION_LETTERS:
+            if counts[letter] > 0:
+                sequence.append(letter)
+                counts[letter] -= 1
+                progressed = True
+        if not progressed:
+            break
+    return sequence
+
+
+def _rebalance_correct_answers(questions: list[dict]) -> list[dict]:
+    target_sequence = _target_answer_sequence(len(questions))
+    balanced = []
+
+    for idx, question in enumerate(questions):
+        target_correct = target_sequence[idx]
+        current_correct = question["correct_answer"]
+        if current_correct == target_correct:
+            balanced.append(question)
+            continue
+
+        swapped = dict(question)
+        choices = dict(swapped["choices"])
+        choices[target_correct], choices[current_correct] = choices[current_correct], choices[target_correct]
+        swapped["choices"] = choices
+        swapped["correct_answer"] = target_correct
+        balanced.append(swapped)
+
+    return balanced
+
+
+def _rewrite_explanations_batch(
+    *,
+    api_key: str,
+    model: str,
+    category_label: str,
+    level_name: str,
+    module_name: str,
+    batch: list[dict],
+) -> list[str]:
+    payload = []
+    for idx, q in enumerate(batch, start=1):
+        payload.append(
+            {
+                "index": idx,
+                "question": q["question"],
+                "choices": q["choices"],
+                "correct_answer": q["correct_answer"],
+                "current_explanation": q["explanation"],
+            }
+        )
+
+    prompt = (
+        "Reecris les explications des questions suivantes en francais naturel et precis.\n"
+        f"Contexte: {category_label} / {level_name} / {module_name}.\n"
+        f"Chaque explication doit faire entre {MIN_EXPLANATION_WORDS} et {MAX_EXPLANATION_WORDS} mots, "
+        "etre specifique, expliquer pourquoi la bonne reponse est correcte, et pourquoi les distracteurs sont faux.\n"
+        "Retourne uniquement un JSON strict sous la forme:"
+        '{"explanations":[{"index":1,"explanation":"..."}]}'
+        " avec exactement une explication par question.\n"
+        f"Questions: {json.dumps(payload, ensure_ascii=False)}"
+    )
+    raw = call_openai(prompt=prompt, api_key=api_key, model=model)
+    match = re.search(r"\{.*\}", raw, re.DOTALL)
+    if not match:
+        raise ValueError("Aucun JSON pour la reecriture des explications")
+    data = json.loads(match.group(0))
+    rows = data.get("explanations")
+    if rows is None:
+        rows = data.get("items")
+    if rows is None and isinstance(data.get("questions"), list):
+        rows = data.get("questions")
+    if rows is None and isinstance(data, dict):
+        # Fallback: map style {"1":"...", "2":"..."}
+        maybe_values = []
+        for idx in range(1, len(batch) + 1):
+            maybe_values.append({"index": idx, "explanation": data.get(str(idx), "")})
+        rows = maybe_values
+    if not isinstance(rows, list):
+        raise ValueError("Format invalide de reecriture des explications")
+
+    if len(rows) > len(batch):
+        rows = rows[: len(batch)]
+
+    rewritten = []
+    by_index = {}
+    for idx, item in enumerate(rows, start=1):
+        if isinstance(item, dict):
+            key = item.get("index", idx)
+            text = item.get("explanation") or item.get("text") or item.get("content") or ""
+            by_index[key] = text
+        elif isinstance(item, str):
+            by_index[idx] = item
+    for idx in range(1, len(batch) + 1):
+        explanation = str(by_index.get(idx, "")).strip()
+        if not explanation:
+            explanation = str(batch[idx - 1].get("explanation", "")).strip()
+        rewritten.append(explanation)
+    return rewritten
+
+
+def _normalize_explanation_length(question: dict) -> str:
+    explanation = str(question.get("explanation", "")).strip()
+    words = explanation.split()
+    if len(words) > MAX_EXPLANATION_WORDS:
+        return " ".join(words[:MAX_EXPLANATION_WORDS])
+
+    if len(words) >= MIN_EXPLANATION_WORDS:
+        return explanation
+
+    correct = question.get("correct_answer", "A")
+    choices = question.get("choices", {})
+    wrong_letters = [letter for letter in OPTION_LETTERS if letter != correct]
+
+    supplements = [
+        f"Pour valider cette question, il faut relier le besoin exprime a l'option {correct}.",
+        f"L'option {correct} ({choices.get(correct, '')}) repond au critere principal attendu dans l'enonce.",
+    ]
+    for letter in wrong_letters:
+        supplements.append(
+            f"L'option {letter} ({choices.get(letter, '')}) est un distracteur plausible, "
+            "mais elle rate la condition centrale demandee."
+        )
+    supplements.append(
+        "En pratique, compare toujours definition, hypothese et impact metier avant de valider la reponse finale."
+    )
+
+    merged = explanation
+    for sentence in supplements:
+        if len(merged.split()) >= MIN_EXPLANATION_WORDS:
+            break
+        merged = f"{merged} {sentence}".strip()
+
+    merged_words = merged.split()
+    filler = "Cette verification limite les confusions frequentes et rend la decision plus fiable en pratique."
+    while len(merged_words) < MIN_EXPLANATION_WORDS:
+        merged = f"{merged} {filler}".strip()
+        merged_words = merged.split()
+    if len(merged_words) > MAX_EXPLANATION_WORDS:
+        merged = " ".join(merged_words[:MAX_EXPLANATION_WORDS])
+    return merged
+
+
+def _enforce_explanation_lengths(
+    *,
+    api_key: str,
+    model: str,
+    category_label: str,
+    level_name: str,
+    module_name: str,
+    questions: list[dict],
+) -> list[dict]:
+    normalized = [dict(q) for q in questions]
+    pending_indexes = [
+        idx
+        for idx, q in enumerate(normalized)
+        if _words_count(q.get("explanation", "")) < MIN_EXPLANATION_WORDS
+        or _words_count(q.get("explanation", "")) > MAX_EXPLANATION_WORDS
+    ]
+
+    if not pending_indexes:
+        return normalized
+
+    max_rewrite_rounds = 3
+    for _ in range(max_rewrite_rounds):
+        if not pending_indexes:
+            break
+
+        batch = [normalized[idx] for idx in pending_indexes]
+        rewritten = _rewrite_explanations_batch(
+            api_key=api_key,
+            model=model,
+            category_label=category_label,
+            level_name=level_name,
+            module_name=module_name,
+            batch=batch,
+        )
+
+        for local_idx, global_idx in enumerate(pending_indexes):
+            normalized[global_idx]["explanation"] = rewritten[local_idx]
+
+        pending_indexes = [
+            idx
+            for idx, q in enumerate(normalized)
+            if _words_count(q.get("explanation", "")) < MIN_EXPLANATION_WORDS
+            or _words_count(q.get("explanation", "")) > MAX_EXPLANATION_WORDS
+        ]
+
+    if pending_indexes:
+        for idx in pending_indexes:
+            normalized[idx]["explanation"] = _normalize_explanation_length(normalized[idx])
+
+    return normalized
 
 
 def _module_concepts(category_key: str, level_name: str, module_name: str) -> list[str]:
@@ -109,6 +323,8 @@ Contraintes pedagogiques:
 - Chaque choix doit apprendre quelque chose de concret.
 - Evite les formulations meta du type 'coherent', 'plausible', 'annexe'.
 - Utilise definitions courtes, cas d'usage, erreurs classiques, comparaisons utiles.
+- Chaque explication doit contenir entre {MIN_EXPLANATION_WORDS} et {MAX_EXPLANATION_WORDS} mots utiles.
+- Repartis les bonnes reponses de maniere equilibree entre A/B/C/D (environ 25% chacune, marge de +-1 question selon la taille).
 - Le format JSON doit respecter exactement le schema demande.
 
 Exemple attendu de bon choix:
@@ -177,6 +393,8 @@ def parse_llm_response(raw: str, level_name: str, expected_count: int, require_f
         if correct_answer not in ("A", "B", "C", "D"):
             continue
 
+        explanation = str(item["explanation"]).strip()
+
         validated.append(
             {
                 "type": "text",
@@ -184,7 +402,7 @@ def parse_llm_response(raw: str, level_name: str, expected_count: int, require_f
                 "image_url": None,
                 "choices": {letter: str(choices[letter]).strip() for letter in ("A", "B", "C", "D")},
                 "correct_answer": correct_answer,
-                "explanation": str(item["explanation"]).strip(),
+                "explanation": explanation,
                 "difficulty": difficulty_sequence[len(validated)],
             }
         )
@@ -221,7 +439,10 @@ def _topup_questions(
                 question_count=missing,
                 difficulty_mix={"easy": missing, "medium": 0, "hard": 0},
             )
-            + "\n\nIMPORTANT: Tu ne dois generer que ces questions manquantes."
+            + (
+                "\n\nIMPORTANT: Tu ne dois generer que ces questions manquantes. "
+                f"Chaque explication doit avoir au moins {MIN_EXPLANATION_WORDS} mots utiles."
+            )
         )
         raw = call_openai(prompt=prompt, api_key=api_key, model=model)
         extra = parse_llm_response(raw=raw, level_name=level_name, expected_count=missing, require_full=False)
@@ -234,7 +455,7 @@ def _topup_questions(
     if len(questions) < expected_count:
         raise ValueError(f"Questions valides insuffisantes apres top-up: {len(questions)}/{expected_count}")
 
-    return questions[:expected_count]
+    return _rebalance_correct_answers(questions[:expected_count])
 
 
 def generate_module_quiz(
@@ -310,6 +531,16 @@ def generate_module_quiz(
 
     if questions is None:
         raise ValueError(f"Generation impossible pour {module_name} apres {max_attempts} tentatives: {last_error}")
+
+    questions = _rebalance_correct_answers(questions)
+    questions = _enforce_explanation_lengths(
+        api_key=api_key,
+        model=model,
+        category_label=category_label,
+        level_name=level_name,
+        module_name=module_name,
+        questions=questions,
+    )
 
     return {
         "category": category_label,

@@ -14,7 +14,7 @@
         "D": "Parce qu'un petit ensemble de validation offre une meilleure variété statistique."
       },
       "correct_answer": "A",
-      "explanation": "Un petit validation set est souvent utilisé pour réduire les coûts et l'effort d'étiquetage manuel. Le surapprentissage est plutôt géré par régularisation. Plus de données d'apprentissage n'améliorent pas nécessairement les performances si elles manquent d'étiquetage. Un petit set ne garantit pas une meilleure variété.",
+      "explanation": "Un petit validation set est souvent utilisé pour réduire les coûts et l'effort d'étiquetage manuel. Le surapprentissage est plutôt géré par régularisation. Plus de données d'apprentissage n'améliorent pas nécessairement les performances si elles manquent d'étiquetage. Un petit set ne garantit pas une meilleure variété. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Parce que cela évite le surapprentissage du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce que plus de données d'apprentissage mènent toujours à de meilleures performances.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "easy"
     },
     {
@@ -23,12 +23,12 @@
       "image_url": null,
       "choices": {
         "A": "Limiter la taille des échantillons de test lors des splits.",
-        "B": "Utiliser un échantillon fixe pour chaque split.",
-        "C": "La difficulté à maintenir un équilibre entre données étiquetées et non étiquetées.",
+        "B": "La difficulté à maintenir un équilibre entre données étiquetées et non étiquetées.",
+        "C": "Utiliser un échantillon fixe pour chaque split.",
         "D": "La réduction de la variance inter-splits."
       },
-      "correct_answer": "C",
-      "explanation": "La cross-validation restreinte en apprentissage semi-supervisé doit maintenir un équilibre entre données étiquetées et non étiquetées à chaque split. Limiter la taille ou avoir un échantillon fixe ne sont pas spécifiques à cette problématique. La variance peut être un problème, mais n'est pas l'objectif principal de cette méthode.",
+      "correct_answer": "B",
+      "explanation": "La cross-validation restreinte en apprentissage semi-supervisé doit maintenir un équilibre entre données étiquetées et non étiquetées à chaque split. Limiter la taille ou avoir un échantillon fixe ne sont pas spécifiques à cette problématique. La variance peut être un problème, mais n'est pas l'objectif principal de cette méthode. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Limiter la taille des échantillons de test lors des splits.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Utiliser un échantillon fixe pour chaque split.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "easy"
     },
     {
@@ -42,7 +42,7 @@
         "D": "Choisir des points de données avec une forte corrélation entre eux."
       },
       "correct_answer": "C",
-      "explanation": "La sélection prudente dans un petit appareil de validation consiste à choisir des points de données représentatifs de la distribution globale pour réduire le biais de sélection. Les similarités fortes et corrélations élevées peuvent introduire un biais et l'incertitude élevée n'est pas un critère pour représentation.",
+      "explanation": "La sélection prudente dans un petit appareil de validation consiste à choisir des points de données représentatifs de la distribution globale pour réduire le biais de sélection. Les similarités fortes et corrélations élevées peuvent introduire un biais et l'incertitude élevée n'est pas un critère pour représentation. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Choisir des points de données présentant des similarités fortes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Choisir des points de données ayant des incertitudes élevées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "easy"
     },
     {
@@ -51,12 +51,12 @@
       "image_url": null,
       "choices": {
         "A": "Biais de variance.",
-        "B": "Biais d'estimation.",
+        "B": "Biais de surajustement.",
         "C": "Biais par échantillonnage opportuniste.",
-        "D": "Biais de surajustement."
+        "D": "Biais d'estimation."
       },
-      "correct_answer": "B",
-      "explanation": "Le biais d'estimation survient car un petit validation set peut ne pas refléter fidèlement les performances réelles sur un grand ensemble de validation. Un biais de variance est lié aux fluctuations aléatoires dans les données. L'échantillonnage opportuniste est un biais de sélection et le surajustement se produit en ajustant trop aux données d'entraînement.",
+      "correct_answer": "D",
+      "explanation": "Le biais d'estimation survient car un petit validation set peut ne pas refléter fidèlement les performances réelles sur un grand ensemble de validation. Un biais de variance est lié aux fluctuations aléatoires dans les données. L'échantillonnage opportuniste est un biais de sélection et le surajustement se produit en ajustant trop aux données d'entraînement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Biais de variance.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Biais de surajustement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Biais par échantillonnage opportuniste.) est",
       "difficulty": "easy"
     },
     {
@@ -64,13 +64,13 @@
       "question": "Pourquoi est-il crucial de gérer le biais d'estimation dans les modèles d'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Pour améliorer la vitesse du modèle.",
-        "B": "Pour garantir une bonne généralisation du modèle.",
+        "A": "Pour garantir une bonne généralisation du modèle.",
+        "B": "Pour améliorer la vitesse du modèle.",
         "C": "Pour valider les hypothèses statistiques du modèle.",
         "D": "Pour minimiser la taille du dataset de test."
       },
-      "correct_answer": "B",
-      "explanation": "Gérer le biais d'estimation est crucial pour s'assurer que les performances du modèle sur le validation set reflètent celles sur des données non vues. Cela ne change pas la vitesse ou la taille du dataset, ni ne valide les hypothèses statistiques directement.",
+      "correct_answer": "A",
+      "explanation": "Gérer le biais d'estimation est crucial pour s'assurer que les performances du modèle sur le validation set reflètent celles sur des données non vues. Cela ne change pas la vitesse ou la taille du dataset, ni ne valide les hypothèses statistiques directement. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Pour améliorer la vitesse du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour valider les hypothèses statistiques du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Pour minimiser la taille du dataset de test.) est",
       "difficulty": "easy"
     },
     {
@@ -79,12 +79,12 @@
       "image_url": null,
       "choices": {
         "A": "Utiliser un ensemble de validation plus large.",
-        "B": "Augmenter la taille du dataset non étiqueté.",
+        "B": "Améliorer l'algorithme d'optimisation.",
         "C": "Utiliser des techniques de bootstrap.",
-        "D": "Améliorer l'algorithme d'optimisation."
+        "D": "Augmenter la taille du dataset non étiqueté."
       },
-      "correct_answer": "D",
-      "explanation": "Réduire le biais d'estimation peut être atteint via une validation plus large ou des techniques de bootstrap qui procurent plus de variabilité et robustesse. Augmenter les données non étiquetées n'aide pas à estimer directement les performances supervisées. L'optimisation de l'algorithme n'adressera pas spécifiquement le biais d'estimation.",
+      "correct_answer": "B",
+      "explanation": "Réduire le biais d'estimation peut être atteint via une validation plus large ou des techniques de bootstrap qui procurent plus de variabilité et robustesse. Augmenter les données non étiquetées n'aide pas à estimer directement les performances supervisées. L'optimisation de l'algorithme n'adressera pas spécifiquement le biais d'estimation. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Utiliser un ensemble de validation plus large.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Utiliser des techniques de bootstrap.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Augmenter la taille du dataset non",
       "difficulty": "medium"
     },
     {
@@ -98,7 +98,7 @@
         "D": "En attribuant chaque point de données étiqueté à plusieurs folds à la fois."
       },
       "correct_answer": "C",
-      "explanation": "Adapter la cross-validation pour l'apprentissage semi-supervisé implique de garder un ratio constant de données étiquetées et non étiquetées dans chaque fold pour une évaluation cohérente. Des folds distincts séparant ces types de données ne reflètent pas un apprentissage semi-supervisé correct.",
+      "explanation": "Adapter la cross-validation pour l'apprentissage semi-supervisé implique de garder un ratio constant de données étiquetées et non étiquetées dans chaque fold pour une évaluation cohérente. Des folds distincts séparant ces types de données ne reflètent pas un apprentissage semi-supervisé correct. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En utilisant des ensembles avec uniquement des étiquettes similaires.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En séparant les données étiquetées et non étiquetées dans des folds distincts.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (En attribuant chaque",
       "difficulty": "medium"
     },
     {
@@ -108,11 +108,11 @@
       "choices": {
         "A": "Variabilité élevée des données non étiquetées.",
         "B": "Similitude forte entre les échantillons de test et de validation.",
-        "C": "Difficulté à mesurer l'incertitude des prédictions.",
-        "D": "Manque de diversité dans les annotateurs."
+        "C": "Manque de diversité dans les annotateurs.",
+        "D": "Difficulté à mesurer l'incertitude des prédictions."
       },
-      "correct_answer": "C",
-      "explanation": "La difficulté à mesurer l'incertitude des prédictions rend complexe la sélection prudente car cela influe sur la qualité de l'évaluation. L'annotateur n'affecte pas directement la sélection de validation, et la variabilité élevée n'affecte pas spécifiquement une sélection prudente de validation.",
+      "correct_answer": "D",
+      "explanation": "La difficulté à mesurer l'incertitude des prédictions rend complexe la sélection prudente car cela influe sur la qualité de l'évaluation. L'annotateur n'affecte pas directement la sélection de validation, et la variabilité élevée n'affecte pas spécifiquement une sélection prudente de validation. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Variabilité élevée des données non étiquetées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Similitude forte entre les échantillons de test et de validation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Manque de diversité dans les annotateurs.) est plausible",
       "difficulty": "medium"
     },
     {
@@ -120,13 +120,13 @@
       "question": "Quel principe est important lors de la constitution d'un petit validation set pour un modèle semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Tous les ensembles de données doivent avoir une distribution identique.",
-        "B": "Le set de validation doit refléter les cas d'utilisations réels ciblés.",
+        "A": "Le set de validation doit refléter les cas d'utilisations réels ciblés.",
+        "B": "Tous les ensembles de données doivent avoir une distribution identique.",
         "C": "Les données étiquetées doivent être les plus déséquilibrées possible.",
         "D": "Il faut prioriser les cas les plus simples à détecter."
       },
-      "correct_answer": "B",
-      "explanation": "Le set de validation doit refléter les cas d'utilisation réels pour évaluer efficacement le modèle dans des contextes applicables. Les distributions identiques ne sont pas une nécessité et augmenter le déséquilibre ou ne prendre que les plus simples conduit à un biais de sélection.",
+      "correct_answer": "A",
+      "explanation": "Le set de validation doit refléter les cas d'utilisation réels pour évaluer efficacement le modèle dans des contextes applicables. Les distributions identiques ne sont pas une nécessité et augmenter le déséquilibre ou ne prendre que les plus simples conduit à un biais de sélection. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Tous les ensembles de données doivent avoir une distribution identique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Les données étiquetées doivent être les plus déséquilibrées possible.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il",
       "difficulty": "medium"
     },
     {
@@ -140,7 +140,7 @@
         "D": "Biais envers des architectures de modèles plus simples."
       },
       "correct_answer": "B",
-      "explanation": "Avec un petit validation set, la performance du modèle peut être sous-estimée ou sur-estimée par rapport à de nouvelles données conséquentes. La généralisation ne s'améliore pas automatiquement et le surajustement reste principalement lié à l'entraînement. Une sélection peut favoriser des modèles simples, mais ce n'est pas garanti.",
+      "explanation": "Avec un petit validation set, la performance du modèle peut être sous-estimée ou sur-estimée par rapport à de nouvelles données conséquentes. La généralisation ne s'améliore pas automatiquement et le surajustement reste principalement lié à l'entraînement. Une sélection peut favoriser des modèles simples, mais ce n'est pas garanti. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Amélioration de la généralisation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Surajustement aux données d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Biais envers des architectures de modèles plus simples.) est",
       "difficulty": "medium"
     },
     {
@@ -149,12 +149,12 @@
       "image_url": null,
       "choices": {
         "A": "En raison de la complexité algorithmique accrue.",
-        "B": "À cause des coûts d'étiquetage importants.",
-        "C": "Car il réduit la capacité des algorithmes simples à converger.",
+        "B": "Car il réduit la capacité des algorithmes simples à converger.",
+        "C": "À cause des coûts d'étiquetage importants.",
         "D": "Parce que cela augmente le risque de surajustement aux données d'entraînement."
       },
-      "correct_answer": "B",
-      "explanation": "Un large validation set dans l'apprentissage semi-supervisé entraîne des coûts d'étiquetage substantiels, ce qui le rend parfois prohibitif. La complexité est davantage une question d'infrastructure. L'impact sur la convergence des algorithmes simples et le surajustement ne sont pas ici les raisons principales.",
+      "correct_answer": "C",
+      "explanation": "Un large validation set dans l'apprentissage semi-supervisé entraîne des coûts d'étiquetage substantiels, ce qui le rend parfois prohibitif. La complexité est davantage une question d'infrastructure. L'impact sur la convergence des algorithmes simples et le surajustement ne sont pas ici les raisons principales. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En raison de la complexité algorithmique accrue.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Car il réduit la capacité des algorithmes simples à converger.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Parce que cela augmente le",
       "difficulty": "medium"
     },
     {
@@ -164,11 +164,11 @@
       "choices": {
         "A": "Biais d'optimisme.",
         "B": "Biais de convergence.",
-        "C": "Biais de pessimisme.",
-        "D": "Biais de stabilité."
+        "C": "Biais de stabilité.",
+        "D": "Biais de pessimisme."
       },
-      "correct_answer": "C",
-      "explanation": "Le biais de pessimisme se produit lorsque les performances d'un modèle semblent plus faibles que ce qu'elles seraient vraiment sur un ensemble de données plus large. L'optimisme et la stabilité concernent généralement des évaluations opposées ou erratiques et la convergence est un problème d'entraînement.",
+      "correct_answer": "D",
+      "explanation": "Le biais de pessimisme se produit lorsque les performances d'un modèle semblent plus faibles que ce qu'elles seraient vraiment sur un ensemble de données plus large. L'optimisme et la stabilité concernent généralement des évaluations opposées ou erratiques et la convergence est un problème d'entraînement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Biais d'optimisme.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Biais de convergence.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Biais de stabilité.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "medium"
     },
     {
@@ -176,13 +176,13 @@
       "question": "Pourquoi la séparation des données étiquetées et non étiquetées ne conviendrait-elle pas dans une cross-validation restreinte?",
       "image_url": null,
       "choices": {
-        "A": "Elle crée un déséquilibre majeur dans les classes prédictives.",
-        "B": "Elle empêche l'apprentissage de relations entre les deux types de données.",
+        "A": "Elle empêche l'apprentissage de relations entre les deux types de données.",
+        "B": "Elle crée un déséquilibre majeur dans les classes prédictives.",
         "C": "Il nuit principalement à l'efficacité computationnelle.",
         "D": "Elle conduit invariablement au surajustement du modèle."
       },
-      "correct_answer": "B",
-      "explanation": "La séparation empêche l'apprentissage des relations entre données étiquetées et non étiquetées, ce qui est essentiel en semi-supervisé. Le déséquilibre de classes concerne plus les proportions, pas la séparation. Effet sur la computation ou surajustement surviennent pour d'autres raisons.",
+      "correct_answer": "A",
+      "explanation": "La séparation empêche l'apprentissage des relations entre données étiquetées et non étiquetées, ce qui est essentiel en semi-supervisé. Le déséquilibre de classes concerne plus les proportions, pas la séparation. Effet sur la computation ou surajustement surviennent pour d'autres raisons. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elle crée un déséquilibre majeur dans les classes prédictives.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il nuit principalement à l'efficacité computationnelle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle conduit invariablement au surajustement du modèle.) est plausible mais",
       "difficulty": "medium"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quel mécanisme peut réduire efficacement l'impact d'un petit set de validation biaisé?",
       "image_url": null,
       "choices": {
-        "A": "Utilisation de données synthétiques pour compléter le set.",
-        "B": "Renforcement de la régularisation du modèle.",
+        "A": "Renforcement de la régularisation du modèle.",
+        "B": "Utilisation de données synthétiques pour compléter le set.",
         "C": "Application des méthodes de dropout pendant l'entraînement.",
         "D": "Multiplication des hyper-paramètres du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "Les données synthétiques peuvent équilibrer un petit ensemble biaisé pour améliorer l'évaluation. La régularisation ou le dropout accroissent la robustesse au surajustement de l'entraînement, pas directement le biais du set. Multiplier les hyper-paramètres peut empirer le surajustement.",
+      "correct_answer": "B",
+      "explanation": "Les données synthétiques peuvent équilibrer un petit ensemble biaisé pour améliorer l'évaluation. La régularisation ou le dropout accroissent la robustesse au surajustement de l'entraînement, pas directement le biais du set. Multiplier les hyper-paramètres peut empirer le surajustement. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Renforcement de la régularisation du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Application des méthodes de dropout pendant l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Multiplication des hyper-paramètres du modèle.) est plausible mais faux car il ne respecte pas",
       "difficulty": "medium"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quand est-il préférable de ne pas utiliser la cross-validation restreinte pour valider un modèle semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Lorsqu'il est difficile d'obtenir un échantillon stratifié impliquant des données non étiquetées.",
+        "A": "Si l'algorithme d'apprentissage n'est pas sensible aux proportions des données.",
         "B": "Quand chaque fold doit contenir uniquement des données étiquetées.",
-        "C": "Si l'algorithme d'apprentissage n'est pas sensible aux proportions des données.",
+        "C": "Lorsqu'il est difficile d'obtenir un échantillon stratifié impliquant des données non étiquetées.",
         "D": "S'il existe suffisamment de données étiquetées pour un validation set traditionnel."
       },
-      "correct_answer": "A",
-      "explanation": "La cross-validation restreinte devient difficile sans stratification des données étiquetées et non étiquetées. Le besoin d'un fold entièrement étiqueté ou l'insensibilité algorithmiques concernent d'autres validités méthodologiques. Avec suffisamment de données étiquetées, une validation traditionnelle reste meilleure.",
+      "correct_answer": "C",
+      "explanation": "La cross-validation restreinte devient difficile sans stratification des données étiquetées et non étiquetées. Le besoin d'un fold entièrement étiqueté ou l'insensibilité algorithmiques concernent d'autres validités méthodologiques. Avec suffisamment de données étiquetées, une validation traditionnelle reste meilleure. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Si l'algorithme d'apprentissage n'est pas sensible aux proportions des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Quand chaque fold doit contenir uniquement des données étiquetées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (S'il existe suffisamment de données étiquetées pour un validation",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Lors de la création d'un petit validation set, quel découpage peut réduire le biais lié à l'ordre des données?",
       "image_url": null,
       "choices": {
-        "A": "Découpage aléatoire des échantillons.",
+        "A": "Regroupement des échantillons de même classe dans un même groupe.",
         "B": "Découpage stratifié basé sur les timestamps d'acquisition.",
         "C": "Sélection des premiers échantillons d'une série temporelle.",
-        "D": "Regroupement des échantillons de même classe dans un même groupe."
+        "D": "Découpage aléatoire des échantillons."
       },
-      "correct_answer": "A",
-      "explanation": "Le découpage aléatoire atténue le biais potentiel lié à un ordre fixe des données. Bien que stratifier sur les timestamps soit utile en certaines analyses, ce n'est pas optimal pour tous jeux de données. La sélection des premiers échantillons ou l'approche de regroupement peuvent renforcer un biais.",
+      "correct_answer": "D",
+      "explanation": "Le découpage aléatoire atténue le biais potentiel lié à un ordre fixe des données. Bien que stratifier sur les timestamps soit utile en certaines analyses, ce n'est pas optimal pour tous jeux de données. La sélection des premiers échantillons ou l'approche de regroupement peuvent renforcer un biais. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Regroupement des échantillons de même classe dans un même groupe.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Découpage stratifié basé sur les timestamps d'acquisition.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C",
       "difficulty": "hard"
     },
     {
@@ -232,13 +232,13 @@
       "question": "Quel est l'effet possible de fixer aléatoirement un seul état initial sur la variance du modèle lors d'une cross-validation?",
       "image_url": null,
       "choices": {
-        "A": "Réduction de la variance intra-splits.",
-        "B": "Augmentation de la variance inter-splits.",
+        "A": "Augmentation de la variance inter-splits.",
+        "B": "Réduction de la variance intra-splits.",
         "C": "Diminution de la variance totale due au bruit.",
         "D": "Aucune influence sur la variance."
       },
-      "correct_answer": "B",
-      "explanation": "Fixer aléatoirement l'état initial peut provoquer des résultats disparates entre les folds, accroissant ainsi la variance inter-splits. Cela ne va pas réduire la variance intra-splits ou être exempt d'influence sur la variance totale agitée par différents initialisations.",
+      "correct_answer": "A",
+      "explanation": "Fixer aléatoirement l'état initial peut provoquer des résultats disparates entre les folds, accroissant ainsi la variance inter-splits. Cela ne va pas réduire la variance intra-splits ou être exempt d'influence sur la variance totale agitée par différents initialisations. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Réduction de la variance intra-splits.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Diminution de la variance totale due au bruit.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Aucune influence sur la variance.) est plausible mais faux car il ne respecte pas",
       "difficulty": "hard"
     },
     {
@@ -247,12 +247,12 @@
       "image_url": null,
       "choices": {
         "A": "En surestimant les performances sur les données de test.",
-        "B": "En reposant uniquement sur les données non étiquetées.",
-        "C": "En ne reflétant pas correctement la distribution étiquetée cible.",
+        "B": "En ne reflétant pas correctement la distribution étiquetée cible.",
+        "C": "En reposant uniquement sur les données non étiquetées.",
         "D": "En entraînant le modèle sur toutes les données non étiquetées."
       },
-      "correct_answer": "C",
-      "explanation": "Ignorer des labels lors de la validation peut mener à un biais d'estimation par mauvaise représentation de la distribution des classes étiquetées qui modifie la performance perçue. La surestimation ou le focus exclusif sur les non-étiquetées ont d'autres implications. Compléter l'apprentissage avec des non-étiquetées ne produit pas ce biais.",
+      "correct_answer": "B",
+      "explanation": "Ignorer des labels lors de la validation peut mener à un biais d'estimation par mauvaise représentation de la distribution des classes étiquetées qui modifie la performance perçue. La surestimation ou le focus exclusif sur les non-étiquetées ont d'autres implications. Compléter l'apprentissage avec des non-étiquetées ne produit pas ce biais. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En surestimant les performances sur les données de test.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En reposant uniquement sur les données non étiquetées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Quelle est une stratégie efficace pour valider un modèle avec un petit ensemble de validation en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser le maximum d'exemples non-étiquetés pour la formation et réserver le peu d'étiquettes pour la validation.",
+        "A": "Toujours diviser les données étiquetées en trois parties égales: formation, validation, et test.",
         "B": "Utiliser uniquement les données étiquetées pour la validation et éviter d'entraîner sur des données non-étiquetées.",
-        "C": "Toujours diviser les données étiquetées en trois parties égales: formation, validation, et test.",
+        "C": "Utiliser le maximum d'exemples non-étiquetés pour la formation et réserver le peu d'étiquettes pour la validation.",
         "D": "Former le modèle uniquement sur les données étiquetées pour obtenir une estimation non biaisée des performances."
       },
-      "correct_answer": "A",
-      "explanation": "En apprentissage semi-supervisé, utiliser des données non-étiquetées pour la formation permet de maximiser l'utilisation des rares données étiquetées pour la validation, présumant un gain en généralisation. B est faux car il ne tirerait pas parti de l'information présente dans les données non-étiquetées. C est incorrect car une telle division stricte ignore l'aspect limité et précieux des labels. D est incorrect car un petit ensemble de labels pourrait introduire un biais d'estimation si non accompagné de l'apprentissage sur des données non étiquetées.",
+      "correct_answer": "C",
+      "explanation": "En apprentissage semi-supervisé, utiliser des données non-étiquetées pour la formation permet de maximiser l'utilisation des rares données étiquetées pour la validation, présumant un gain en généralisation. B est faux car il ne tirerait pas parti de l'information présente dans les données non-étiquetées. C est incorrect car une telle division stricte ignore l'aspect limité et précieux des labels. D est incorrect car un petit ensemble de labels pourrait introduire un biais d'estimation si non accompagné de l'apprentissage sur des données non étiquetées. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Toujours diviser les données étiquetées en trois parties égales: formation, validation, et test.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "easy"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Pourquoi la sélection prudente des exemples de validation est-elle cruciale en apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Pour minimiser le biais d'estimation en choisissant des exemples représentatifs de la distribution globale.",
+        "A": "Pour augmenter la variance de l'erreur prédictive afin de couvrir plus de cas possibles.",
         "B": "Pour maximiser la taille de l'ensemble d'évaluation au détriment de la répartition équitable des classes.",
         "C": "Pour optimiser la précision sur l'ensemble de validation même si la performance générale n'est pas reflétée.",
-        "D": "Pour augmenter la variance de l'erreur prédictive afin de couvrir plus de cas possibles."
+        "D": "Pour minimiser le biais d'estimation en choisissant des exemples représentatifs de la distribution globale."
       },
-      "correct_answer": "A",
-      "explanation": "La sélection prudente des exemples de validation vise à représenter fidèlement la distribution sous-jacente des données, réduisant ainsi le biais d'estimation. B est erroné car il peut exacerber le biais si certaines classes sont sur-représentées ou sous-représentées. C est incorrect, car l'overfitting à un ensemble de validation non représentatif donne une estimation trompeuse de la capacité générale. D est faux car augmenter la variance de l'erreur prédictive n'est pas souhaitable et ne couvre pas nécessairement davantage de cas véridiques.",
+      "correct_answer": "D",
+      "explanation": "La sélection prudente des exemples de validation vise à représenter fidèlement la distribution sous-jacente des données, réduisant ainsi le biais d'estimation. B est erroné car il peut exacerber le biais si certaines classes sont sur-représentées ou sous-représentées. C est incorrect, car l'overfitting à un ensemble de validation non représentatif donne une estimation trompeuse de la capacité générale. D est faux car augmenter la variance de l'erreur prédictive n'est pas souhaitable et ne couvre pas nécessairement davantage de cas véridiques. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour augmenter la variance de l'erreur prédictive afin de couvrir plus de cas possibles.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "medium"
     }
   ]

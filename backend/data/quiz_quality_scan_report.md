@@ -5,31 +5,31 @@
 
 ## Quality Signals
 - shortExplanationsCount_lt80w: 0
-- repetitiveChoicePrefixCount_le2uniqueStarts: 0
+- repetitiveChoicePrefixCount_le2uniqueStarts: 9
 - duplicateChoiceSetModules: 0
 - lowStemDiversityModules_lt0_45: 0
 - duplicatePromptsByCategoryLevel: 0
 - duplicatePromptsByCategory: 0
 
 ## Correct Answer Distribution
-- A: 375 (22.87%)
-- B: 420 (25.61%)
-- C: 421 (25.67%)
-- D: 424 (25.85%)
+- A: 436 (26.59%)
+- B: 428 (26.10%)
+- C: 396 (24.15%)
+- D: 380 (23.17%)
 
 ## Top Option Prefixes (Potential Repetition)
-- 239x :: le signal visible est coh rent
-- 215x :: le schema illustre une d cision
-- 143x :: dans une revue pre deploiement de
-- 88x :: quand une d finition insiste sur
-- 56x :: dans un atelier de cadrage de
-- 32x :: en contexte r el sur valuation
-- 31x :: quand l'objectif est de l'utiliser correctement
-- 19x :: dans un atelier de cadrage d'
-- 18x :: en contexte r el sur clustering
-- 18x :: en contexte r el sur monitoring
-- 18x :: en contexte r el sur robustesse
-- 16x :: dans donn es de grande dimension
-- 16x :: dans robustesse et g n ralisation
-- 16x :: dans d cisions sensibles au cout
-- 15x :: en contexte r el sur fondamentaux
+- 7x :: x2 x1 y2 y1
+- 6x :: r gression logistique
+- 5x :: pour r duire les co ts
+- 5x :: pour garantir que le mod le
+- 5x :: augmenter la taille de l'ensemble de
+- 4x :: r duire la dimensionnalit des donn
+- 4x :: elle augmente la complexit du mod
+- 4x :: pour r duire le temps de
+- 4x :: pour r duire le nombre de
+- 4x :: il met jour les valeurs q
+- 4x :: augmenter la taille du jeu de
+- 4x :: les donn es non tiquet es
+- 4x :: c'est la capacit d'un mod le
+- 4x :: cross validation
+- 4x :: r duire le temps de calcul

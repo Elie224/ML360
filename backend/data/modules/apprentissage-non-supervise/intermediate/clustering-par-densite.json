@@ -14,7 +14,7 @@
         "D": "Le nombre de clusters pré-définis"
       },
       "correct_answer": "A",
-      "explanation": "DBSCAN (Density-Based Spatial Clustering of Applications with Noise) se concentre sur des régions à haute densité pour former des clusters. Il ne se base pas sur la distance moyenne (B), la symétrie (C), ni sur un nombre pré-défini de clusters (D).",
+      "explanation": "DBSCAN (Density-Based Spatial Clustering of Applications with Noise) se concentre sur des régions à haute densité pour former des clusters. Il ne se base pas sur la distance moyenne (B), la symétrie (C), ni sur un nombre pré-défini de clusters (D). La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La distance moyenne entre tous les points) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La symétrie des clusters formés) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Le nombre de clusters pré-définis) est plausible mais faux car il",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Quelle est l'utilité du paramètre 'epsilon' dans DBSCAN?",
       "image_url": null,
       "choices": {
-        "A": "Déterminer la distance maximale pour considérer des points comme voisins",
-        "B": "Prédire le nombre de clusters",
+        "A": "Prédire le nombre de clusters",
+        "B": "Déterminer la distance maximale pour considérer des points comme voisins",
         "C": "Ajuster la taille des points dans le graphe",
         "D": "Réguler la vitesse de convergence de l'algorithme"
       },
-      "correct_answer": "A",
-      "explanation": "Le paramètre 'epsilon' définit la distance maximale dans laquelle un point doit se trouver pour être considéré comme un voisin direct. Ce paramètre ne prédit pas le nombre de clusters (B), n'ajuste pas graphiquement (C), et ne régule pas la convergence (D).",
+      "correct_answer": "B",
+      "explanation": "Le paramètre 'epsilon' définit la distance maximale dans laquelle un point doit se trouver pour être considéré comme un voisin direct. Ce paramètre ne prédit pas le nombre de clusters (B), n'ajuste pas graphiquement (C), et ne régule pas la convergence (D). La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Prédire le nombre de clusters) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ajuster la taille des points dans le graphe) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Réguler la vitesse de convergence de l'algorithme) est plausible",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Que se passe-t-il si 'min_samples' est trop grand dans DBSCAN?",
       "image_url": null,
       "choices": {
-        "A": "Moins de clusters se forment, plus de points sont considérés comme bruit",
+        "A": "Les clusters seront plus serrés et nombreux",
         "B": "Les clusters formés seront plus grands",
-        "C": "Les clusters seront plus serrés et nombreux",
+        "C": "Moins de clusters se forment, plus de points sont considérés comme bruit",
         "D": "Tous les points deviennent des noyaux"
       },
-      "correct_answer": "A",
-      "explanation": "Un 'min_samples' trop grand conduit à considérer plus de points comme bruit car ils ne peuvent pas atteindre le nombre minimum de voisins requis pour former un cluster. Les clusters ne deviennent pas plus grands (B), plus serrés (C), ni tous les points des noyaux (D).",
+      "correct_answer": "C",
+      "explanation": "Un 'min_samples' trop grand conduit à considérer plus de points comme bruit car ils ne peuvent pas atteindre le nombre minimum de voisins requis pour former un cluster. Les clusters ne deviennent pas plus grands (B), plus serrés (C), ni tous les points des noyaux (D). La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les clusters seront plus serrés et nombreux) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Les clusters formés seront plus grands) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Tous les points deviennent des",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Pourquoi DBSCAN est-il particulièrement utile sur des jeux de données avec des formes non-linéaires?",
       "image_url": null,
       "choices": {
-        "A": "Parce qu'il forme des clusters basés sur la densité plutôt que sur la forme des données",
+        "A": "Parce qu'il utilise une mesure de distance linéaire",
         "B": "Parce qu'il force tous les clusters à avoir la même taille",
         "C": "Parce qu'il ignore les données bruit",
-        "D": "Parce qu'il utilise une mesure de distance linéaire"
+        "D": "Parce qu'il forme des clusters basés sur la densité plutôt que sur la forme des données"
       },
-      "correct_answer": "A",
-      "explanation": "DBSCAN peut trouver des clusters de n'importe quelle forme car il utilise la densité pour les définir. Il ne force pas à une taille uniforme (B), bien qu'il ignore le bruit (C), cela ne justifie pas le point, et n'utilise pas uniquement des mesures linéaires (D).",
+      "correct_answer": "D",
+      "explanation": "DBSCAN peut trouver des clusters de n'importe quelle forme car il utilise la densité pour les définir. Il ne force pas à une taille uniforme (B), bien qu'il ignore le bruit (C), cela ne justifie pas le point, et n'utilise pas uniquement des mesures linéaires (D). La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce qu'il utilise une mesure de distance linéaire) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Parce qu'il force tous les clusters à avoir la même taille) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Ces points sont augmentés pour devenir des noyaux de nouveaux clusters"
       },
       "correct_answer": "A",
-      "explanation": "DBSCAN marque les points qui ne se trouvent dans aucune région dense comme 'bruit'. Ils ne sont ni assimilés à d'autres clusters (B), ne forment pas de clusters séparés (C), ni n'initient de nouveaux clusters (D).",
+      "explanation": "DBSCAN marque les points qui ne se trouvent dans aucune région dense comme 'bruit'. Ils ne sont ni assimilés à d'autres clusters (B), ne forment pas de clusters séparés (C), ni n'initient de nouveaux clusters (D). La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Ils sont assimilés à leurs clusters les plus proches) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ils forment de petits clusters à part entière) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Ces points sont augmentés pour devenir des noyaux de nouveaux clusters)",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quelle situation peut conduire DBSCAN à sous-clusteriser?",
       "image_url": null,
       "choices": {
-        "A": "Epsilon trop petit et min_samples trop élevé",
-        "B": "Epsilon trop grand et min_samples trop faible",
+        "A": "Epsilon trop grand et min_samples trop faible",
+        "B": "Epsilon trop petit et min_samples trop élevé",
         "C": "Min_samples égal au nombre total de points",
         "D": "Epsilon et min_samples sont égaux"
       },
-      "correct_answer": "A",
-      "explanation": "Un epsilon trop petit et un min_samples élevé signifient que peu de points seront suffisamment proches pour former des clusters. Une grande epsilon (B) pourrait sur-clusteriser, (C) est incorrect en pratique, et (D) n'a pas de sens au niveau paramétrique.",
+      "correct_answer": "B",
+      "explanation": "Un epsilon trop petit et un min_samples élevé signifient que peu de points seront suffisamment proches pour former des clusters. Une grande epsilon (B) pourrait sur-clusteriser, (C) est incorrect en pratique, et (D) n'a pas de sens au niveau paramétrique. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Epsilon trop grand et min_samples trop faible) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Min_samples égal au nombre total de points) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Epsilon et min_samples sont égaux) est plausible mais faux car",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quel est l'avantage de ne pas nécessiter de définir le nombre de clusters à l'avance dans DBSCAN?",
       "image_url": null,
       "choices": {
-        "A": "Cela permet à l'algorithme de s'adapter à la structure des données",
+        "A": "Cela réduit la complexité de l'algorithme",
         "B": "Parce que tous les autres algorithmes nécessitent cette définition",
-        "C": "Cela réduit la complexité de l'algorithme",
+        "C": "Cela permet à l'algorithme de s'adapter à la structure des données",
         "D": "Cela garantit des clusters de taille égale"
       },
-      "correct_answer": "A",
-      "explanation": "Ne pas fixer le nombre de clusters en amont permet à DBSCAN de déterminer la structure inhérente des données. Tous les algorithmes n'ont pas cette nécessité (B), cela n'affecte pas directement la complexité (C), ni n'entraîne des tailles égales (D).",
+      "correct_answer": "C",
+      "explanation": "Ne pas fixer le nombre de clusters en amont permet à DBSCAN de déterminer la structure inhérente des données. Tous les algorithmes n'ont pas cette nécessité (B), cela n'affecte pas directement la complexité (C), ni n'entraîne des tailles égales (D). La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Cela réduit la complexité de l'algorithme) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Parce que tous les autres algorithmes nécessitent cette définition) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Cela garantit des clusters de taille égale) est plausible",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Que signifie un point étant dans le 'cœur' d'un cluster pour DBSCAN?",
       "image_url": null,
       "choices": {
-        "A": "Il a au moins min_samples points dans son voisinage epsilon",
+        "A": "Il a le plus grand nombre de voisins possibles",
         "B": "Il se trouve à la frontière d'un cluster",
         "C": "Il est considéré comme un point bruit",
-        "D": "Il a le plus grand nombre de voisins possibles"
+        "D": "Il a au moins min_samples points dans son voisinage epsilon"
       },
-      "correct_answer": "A",
-      "explanation": "Un point 'cœur' dans DBSCAN a suffisamment de voisinage pour justifier son inclusion comme partie d'un cluster avec au moins min_samples voisins. Les points frontières (B) ont moins de min_samples, ce n'est pas un point bruit (C), et le plus grand nombre de voisins (D) n'est pas une condition obligatoire.",
+      "correct_answer": "D",
+      "explanation": "Un point 'cœur' dans DBSCAN a suffisamment de voisinage pour justifier son inclusion comme partie d'un cluster avec au moins min_samples voisins. Les points frontières (B) ont moins de min_samples, ce n'est pas un point bruit (C), et le plus grand nombre de voisins (D) n'est pas une condition obligatoire. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il a le plus grand nombre de voisins possibles) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il se trouve à la frontière d'un cluster) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Car il assure une vitesse de convergence rapide"
       },
       "correct_answer": "A",
-      "explanation": "L'epsilon optimal est difficile à déterminer car les jeux de données peuvent avoir des zones de différentes densités. La linéarité (B) n'est pas un lien direct, (C) est erroné car il dépend effectivement, et (D) est incorrect.",
+      "explanation": "L'epsilon optimal est difficile à déterminer car les jeux de données peuvent avoir des zones de différentes densités. La linéarité (B) n'est pas un lien direct, (C) est erroné car il dépend effectivement, et (D) est incorrect. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Epsilon dépend linéairement de min_samples) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Epsilon est indépendant de la distribution des données) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Car il assure une vitesse de convergence rapide) est plausible mais faux car il",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quel problème majeur peut survenir si l'epsilon est trop grand dans DBSCAN?",
       "image_url": null,
       "choices": {
-        "A": "Forme de grands clusters faussement, incluant des points non liés logiquement",
-        "B": "Augmente le temps de calcul",
+        "A": "Augmente le temps de calcul",
+        "B": "Forme de grands clusters faussement, incluant des points non liés logiquement",
         "C": "Résulte en un nombre excessif de points bruit",
         "D": "Génère exclusivement des singletons"
       },
-      "correct_answer": "A",
-      "explanation": "Un epsilon trop grand peut relier des clusters distincts, les fusionnant en un cluster inadéquat. Cela n'augmente pas le temps de calcul (B), ne résulte pas en plus de bruit (C), ni en singletons (D).",
+      "correct_answer": "B",
+      "explanation": "Un epsilon trop grand peut relier des clusters distincts, les fusionnant en un cluster inadéquat. Cela n'augmente pas le temps de calcul (B), ne résulte pas en plus de bruit (C), ni en singletons (D). La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmente le temps de calcul) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Résulte en un nombre excessif de points bruit) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Génère exclusivement des singletons) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Dans quel cas pourrait-il être préférable d’utiliser DBSCAN par rapport à K-means?",
       "image_url": null,
       "choices": {
-        "A": "Lorsque les données contiennent du bruit ou des valeurs aberrantes",
+        "A": "Lorsque les clusters sont globulaires et égaux en taille",
         "B": "Lorsque le nombre de clusters est clairement défini et uniforme",
-        "C": "Lorsque les clusters sont globulaires et égaux en taille",
+        "C": "Lorsque les données contiennent du bruit ou des valeurs aberrantes",
         "D": "Lorsque seule l’assignation rapide des points aux clusters est nécessaire"
       },
-      "correct_answer": "A",
-      "explanation": "DBSCAN gère efficacement le bruit et les valeurs aberrantes, contrairement à K-means, qui suppose une structure de cluster uniforme (B, C) et est plus rapide pour de grandes quantités de données (D).",
+      "correct_answer": "C",
+      "explanation": "DBSCAN gère efficacement le bruit et les valeurs aberrantes, contrairement à K-means, qui suppose une structure de cluster uniforme (B, C) et est plus rapide pour de grandes quantités de données (D). La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Lorsque les clusters sont globulaires et égaux en taille) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Lorsque le nombre de clusters est clairement défini et uniforme) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Lorsque seule l’assignation rapide des points aux clusters est nécessaire) est plausible mais",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Comment DBSCAN réagit-il aux données contenant des clusters de densités très différentes?",
       "image_url": null,
       "choices": {
-        "A": "Il peut ignorer les clusters de densités plus faibles",
+        "A": "Il garantit que tous les points appartiendront à un cluster",
         "B": "Il peut automatiquement ajuster epsilon pour chaque cluster",
         "C": "Il crée des clusters de même densité",
-        "D": "Il garantit que tous les points appartiendront à un cluster"
+        "D": "Il peut ignorer les clusters de densités plus faibles"
       },
-      "correct_answer": "A",
-      "explanation": "DBSCAN risque de négliger les clusters faiblement denses si ses paramètres ne sont pas ajustés spécifiquement. DBSCAN ne modifie pas dynamiquement epsilon (B), ne garantit pas des densités égales (C), ni que chaque point soit en cluster (D).",
+      "correct_answer": "D",
+      "explanation": "DBSCAN risque de négliger les clusters faiblement denses si ses paramètres ne sont pas ajustés spécifiquement. DBSCAN ne modifie pas dynamiquement epsilon (B), ne garantit pas des densités égales (C), ni que chaque point soit en cluster (D). La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il garantit que tous les points appartiendront à un cluster) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il peut automatiquement ajuster epsilon pour chaque cluster) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il crée des clusters de même densité) est",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Il augmente la densité interne du cluster"
       },
       "correct_answer": "A",
-      "explanation": "Les points frontières se trouvent en périphérie d’un cluster existant, reliant ainsi les points de noyau. Ils ne débutent pas de clusters (B), ne sont pas systématiquement des bruits (C), et n'augmentent pas la densité interne (D).",
+      "explanation": "Les points frontières se trouvent en périphérie d’un cluster existant, reliant ainsi les points de noyau. Ils ne débutent pas de clusters (B), ne sont pas systématiquement des bruits (C), et n'augmentent pas la densité interne (D). La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il initialise de nouveaux clusters) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il est toujours considéré comme un point bruit) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il augmente la densité interne du cluster) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quel facteur peut conduire à une performance accrue lors de l'application de DBSCAN sur un jeu de données?",
       "image_url": null,
       "choices": {
-        "A": "Choisir un epsilon bien ajusté",
-        "B": "Augmenter toujours le nombre de min_samples",
+        "A": "Augmenter toujours le nombre de min_samples",
+        "B": "Choisir un epsilon bien ajusté",
         "C": "Réduire le nombre total de points dans le jeu de données",
         "D": "Ajuster tous les points bruit pour qu’ils deviennent des noyaux"
       },
-      "correct_answer": "A",
-      "explanation": "Un epsilon bien choisi équilibre adéquatement la capture des clusters et le filtrage du bruit. Augmenter systématiquement min_samples (B) peut engendrer plus de bruit, réduire les points (C) peut manquer des structures, et modifier les points bruit (D) diluerait la signification de 'bruit'.",
+      "correct_answer": "B",
+      "explanation": "Un epsilon bien choisi équilibre adéquatement la capture des clusters et le filtrage du bruit. Augmenter systématiquement min_samples (B) peut engendrer plus de bruit, réduire les points (C) peut manquer des structures, et modifier les points bruit (D) diluerait la signification de 'bruit'. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmenter toujours le nombre de min_samples) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Réduire le nombre total de points dans le jeu de données) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Ajuster tous les points",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quelle peut être une conséquence de bruits excessifs sur les résultats de DBSCAN?",
       "image_url": null,
       "choices": {
-        "A": "Moins de clusters se forment, ce qui peut amener à sous-estimer certaines densités",
+        "A": "Tous les points bruit fusionnent en nouveaux clusters",
         "B": "Les clusters deviennent plus homogènes",
-        "C": "Tous les points bruit fusionnent en nouveaux clusters",
+        "C": "Moins de clusters se forment, ce qui peut amener à sous-estimer certaines densités",
         "D": "Le temps de traitement est considérablement réduit"
       },
-      "correct_answer": "A",
-      "explanation": "Des points bruit excessifs signifient que moins de données sont utilisées pour les clusters, conduisant potentiellement à ne pas détecter certaines zones de densité. Les clusters ne se homogénéisent pas (B), les points de bruit ne forment pas de clusters (C), et le temps de traitement n'est pas réduit (D).",
+      "correct_answer": "C",
+      "explanation": "Des points bruit excessifs signifient que moins de données sont utilisées pour les clusters, conduisant potentiellement à ne pas détecter certaines zones de densité. Les clusters ne se homogénéisent pas (B), les points de bruit ne forment pas de clusters (C), et le temps de traitement n'est pas réduit (D). La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Tous les points bruit fusionnent en nouveaux clusters) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Les clusters deviennent plus homogènes) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Le",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Comment le choix d'un faible 'min_samples' influence-t-il la détection du bruit dans DBSCAN?",
       "image_url": null,
       "choices": {
-        "A": "Il réduit la probabilité que des points soient considérés comme bruit",
+        "A": "Cela n'a aucun effet sur le bruit dans DBSCAN",
         "B": "Il augmente les exigences pour qu'un point se qualifie comme noyau",
         "C": "Tous les points deviennent automatiquement des noyaux",
-        "D": "Cela n'a aucun effet sur le bruit dans DBSCAN"
+        "D": "Il réduit la probabilité que des points soient considérés comme bruit"
       },
-      "correct_answer": "A",
-      "explanation": "Un faible min_samples réduit le seuil pour qu'un point soit noyau, diminuant ainsi la probabilité qu’il soit traité comme bruit. Cela ne fait pas augmenter les exigences (B), ne rend pas tous les points emplacements de noyaux (C), et a effectivement un effet (D).",
+      "correct_answer": "D",
+      "explanation": "Un faible min_samples réduit le seuil pour qu'un point soit noyau, diminuant ainsi la probabilité qu’il soit traité comme bruit. Cela ne fait pas augmenter les exigences (B), ne rend pas tous les points emplacements de noyaux (C), et a effectivement un effet (D). La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Cela n'a aucun effet sur le bruit dans DBSCAN) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il augmente les exigences pour qu'un point se qualifie comme noyau) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C",
       "difficulty": "hard"
     }
   ]

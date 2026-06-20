@@ -14,7 +14,7 @@
         "D": "Un nombre fixe défini au début de l'entraînement."
       },
       "correct_answer": "A",
-      "explanation": "Le score de confiance est une estimation de probabilité qui indique à quel point un modèle est sûr de sa prédiction. B est la définition de l'accuracy et C est une statistique de l'ensemble d'apprentissage, tandis que D n'a pas de sens dans ce contexte.",
+      "explanation": "Le score de confiance est une estimation de probabilité qui indique à quel point un modèle est sûr de sa prédiction. B est la définition de l'accuracy et C est une statistique de l'ensemble d'apprentissage, tandis que D n'a pas de sens dans ce contexte. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La fréquence des prédictions correctes sur l'ensemble de test.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La moyenne des labels de l'ensemble d'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Un nombre fixe",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Comment la précision attendue peut-elle être augmentée lorsque le score de confiance est utilisé ?",
       "image_url": null,
       "choices": {
-        "A": "En fixant un seuil élevé pour le score de confiance afin d'accepter uniquement les prédictions avec haute certitude.",
-        "B": "En réduisant la taille de l'ensemble de test.",
+        "A": "En réduisant la taille de l'ensemble de test.",
+        "B": "En fixant un seuil élevé pour le score de confiance afin d'accepter uniquement les prédictions avec haute certitude.",
         "C": "En ignorants les données avec le score de confiance le plus bas.",
         "D": "En utilisant le score de confiance pour augmenter la taille de l'ensemble de formation."
       },
-      "correct_answer": "A",
-      "explanation": "En fixant un seuil élevé, seules les prédictions avec un score de confiance élevé sont acceptées, augmentant ainsi la précision attendue. B ne modifie pas la précision intrinsèque. C pourrait conduire à des biais et D n'est pas une méthode pour augmenter la précision directement.",
+      "correct_answer": "B",
+      "explanation": "En fixant un seuil élevé, seules les prédictions avec un score de confiance élevé sont acceptées, augmentant ainsi la précision attendue. B ne modifie pas la précision intrinsèque. C pourrait conduire à des biais et D n'est pas une méthode pour augmenter la précision directement. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En réduisant la taille de l'ensemble de test.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En ignorants les données avec le score de confiance le plus bas.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quel est le principe du trade-off couverture-précision dans les systèmes de rejet ?",
       "image_url": null,
       "choices": {
-        "A": "Augmenter la couverture réduit souvent la précision car plus de prédictions incertaines sont acceptées.",
+        "A": "Réduire la couverture augmente toujours la taille de l'ensemble de validation.",
         "B": "Augmenter la précision n'a pas d'effet sur la couverture.",
-        "C": "Réduire la couverture augmente toujours la taille de l'ensemble de validation.",
+        "C": "Augmenter la couverture réduit souvent la précision car plus de prédictions incertaines sont acceptées.",
         "D": "Une couverture élevée augmente automatiquement la précision sans compromis."
       },
-      "correct_answer": "A",
-      "explanation": "Le trade-off signifie que pour avoir une couverture élevée (plus de prédictions acceptées), on accepte aussi plus d'erreurs, réduisant ainsi la précision. B, C et D ne s'alignent pas sur ce principe et sont incorrects.",
+      "correct_answer": "C",
+      "explanation": "Le trade-off signifie que pour avoir une couverture élevée (plus de prédictions acceptées), on accepte aussi plus d'erreurs, réduisant ainsi la précision. B, C et D ne s'alignent pas sur ce principe et sont incorrects. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire la couverture augmente toujours la taille de l'ensemble de validation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter la précision n'a pas d'effet sur la couverture.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Une couverture élevée augmente automatiquement la précision sans compromis.)",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Dans quel cas le rejet est-il utilisé pour améliorer les performances d'un modèle ?",
       "image_url": null,
       "choices": {
-        "A": "Lorsqu'une prédiction a un score de confiance en dessous d'un seuil prédéfini.",
+        "A": "Pour augmenter la taille de l'ensemble d'entraînement utilisable.",
         "B": "Quand toutes les prédictions d'un modèle ne répondent pas aux attentes.",
         "C": "Pour éliminer les données anomalies pendant le prétraitement.",
-        "D": "Pour augmenter la taille de l'ensemble d'entraînement utilisable."
+        "D": "Lorsqu'une prédiction a un score de confiance en dessous d'un seuil prédéfini."
       },
-      "correct_answer": "A",
-      "explanation": "Le rejet permet d'exclure des prédictions dont le score de confiance est trop bas, diminuant le risque d'erreur. B n'est pas spécifique au concept de rejet tel qu'appliqué dans l'apprentissage semi-supervisé et C touche principalement le prétraitement, tandis que D est incorrect.",
+      "correct_answer": "D",
+      "explanation": "Le rejet permet d'exclure des prédictions dont le score de confiance est trop bas, diminuant le risque d'erreur. B n'est pas spécifique au concept de rejet tel qu'appliqué dans l'apprentissage semi-supervisé et C touche principalement le prétraitement, tandis que D est incorrect. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour augmenter la taille de l'ensemble d'entraînement utilisable.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Quand toutes les prédictions d'un modèle ne répondent pas aux attentes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour éliminer les",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Une réduction significative de la taille des ensembles d'entraînement et de test."
       },
       "correct_answer": "A",
-      "explanation": "Un score de confiance mal calibré entraînera des erreurs dans l'acceptation ou le rejet des prédictions puisqu'il ne reflètera pas fidèlement la certitude d'une prédiction. B est incorrect car on ne multiplie pas le score de confiance par le label et C, D n'ont pas de lien avec les effets d'un mauvais calibrage.",
+      "explanation": "Un score de confiance mal calibré entraînera des erreurs dans l'acceptation ou le rejet des prédictions puisqu'il ne reflètera pas fidèlement la certitude d'une prédiction. B est incorrect car on ne multiplie pas le score de confiance par le label et C, D n'ont pas de lien avec les effets d'un mauvais calibrage. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La multiplication directe du score de confiance avec le label pour ajuster la prédiction.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une distribution correcte des prédictions à travers les classes.) est plausible mais faux car il ne respecte",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Pourquoi le rejet peut-il réduire les erreurs de classification ?",
       "image_url": null,
       "choices": {
-        "A": "Parce qu'il permet d'ignorer des prédictions incertaines susceptibles d'être incorrectes.",
-        "B": "Parce que les modèles ne sont entraînés que sur des données rejetées.",
+        "A": "Parce que les modèles ne sont entraînés que sur des données rejetées.",
+        "B": "Parce qu'il permet d'ignorer des prédictions incertaines susceptibles d'être incorrectes.",
         "C": "Parce qu'il remplace les prédictions rejetées par des prédictions aléatoires correctes.",
         "D": "Parce que le rejet diminue automatiquement le taux de rappel du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "Le rejet améliore la précision en omettant les prédictions incertaines, finissant potentiellement erronées. B est incorrect car le rejet ne définit pas la base d'entraînement des modèles, C est faux puisque le rejet ne fournit pas de prédictions de remplacement, et D mélange deux concepts différents.",
+      "correct_answer": "B",
+      "explanation": "Le rejet améliore la précision en omettant les prédictions incertaines, finissant potentiellement erronées. B est incorrect car le rejet ne définit pas la base d'entraînement des modèles, C est faux puisque le rejet ne fournit pas de prédictions de remplacement, et D mélange deux concepts différents. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce que les modèles ne sont entraînés que sur des données rejetées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce qu'il remplace les prédictions rejetées par des prédictions aléatoires correctes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Comment la sélection d'un seuil de score de confiance impacte-t-elle la couverture ?",
       "image_url": null,
       "choices": {
-        "A": "Un seuil plus élevé diminue la couverture en rejetant plus de prédictions.",
+        "A": "Un seuil plus bas augmente nécessairement la précision.",
         "B": "Un seuil plus élevé augmente la couverture puisqu'il accepte plus de prédictions.",
-        "C": "Un seuil plus bas augmente nécessairement la précision.",
+        "C": "Un seuil plus élevé diminue la couverture en rejetant plus de prédictions.",
         "D": "Un seuil plus bas n'impacte pas la couverture ni la précision du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "Un seuil plus élevé signifie que seules les prédictions avec une certitude plus grande sont acceptées, ce qui réduit la couverture. B est incorrect car un seuil plus élevé diminue généralement la couverture et C, D sont erronés quant à l'impact des seuils sur couverture et précision.",
+      "correct_answer": "C",
+      "explanation": "Un seuil plus élevé signifie que seules les prédictions avec une certitude plus grande sont acceptées, ce qui réduit la couverture. B est incorrect car un seuil plus élevé diminue généralement la couverture et C, D sont erronés quant à l'impact des seuils sur couverture et précision. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un seuil plus bas augmente nécessairement la précision.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Un seuil plus élevé augmente la couverture puisqu'il accepte plus de prédictions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quel avantage offre une bonne calibration du score de confiance ?",
       "image_url": null,
       "choices": {
-        "A": "Elle permet une meilleure prise de décision basée sur la certitude du modèle.",
+        "A": "Elle assure que le modèle ne nécessite plus d'ensembles d'entraînement labellisés.",
         "B": "Elle garantit un taux de faux positifs nul.",
         "C": "Elle permet l'ajustement automatique de l'algorithme pendant le test.",
-        "D": "Elle assure que le modèle ne nécessite plus d'ensembles d'entraînement labellisés."
+        "D": "Elle permet une meilleure prise de décision basée sur la certitude du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "Une bonne calibration mène à une amélioration des décisions fondées sur les scores de confiance des modèles. B, C et D sont inexactes: B est impossible à garantir même avec une bonne calibration, et C, D ne décrivent pas correctement les bénéfices de la calibration.",
+      "correct_answer": "D",
+      "explanation": "Une bonne calibration mène à une amélioration des décisions fondées sur les scores de confiance des modèles. B, C et D sont inexactes: B est impossible à garantir même avec une bonne calibration, et C, D ne décrivent pas correctement les bénéfices de la calibration. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle assure que le modèle ne nécessite plus d'ensembles d'entraînement labellisés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle garantit un taux de faux positifs nul.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Il rend le modèle inutile car il n'effectue aucune prédiction."
       },
       "correct_answer": "A",
-      "explanation": "Un seuil très bas accepte presque toutes les prédictions, augmentant la couverture mais potentiellement au prix de la précision si des prédictions incertaines passent. B confond la relation entre seuil, couverture et précision, et C, D sont factuellement incorrects.",
+      "explanation": "Un seuil très bas accepte presque toutes les prédictions, augmentant la couverture mais potentiellement au prix de la précision si des prédictions incertaines passent. B confond la relation entre seuil, couverture et précision, et C, D sont factuellement incorrects. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il réduit la couverture et améliore la précision du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il élimine automatiquement tous les faux positifs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il rend le modèle inutile car il n'effectue",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Dans quel cas un score de confiance n'est pas utile ?",
       "image_url": null,
       "choices": {
-        "A": "Lorsque toutes les données de test sont précédemment vu et parfaitement prédites.",
-        "B": "Lorsqu'un modèle a une précision perfectible sur l'ensemble d'entraînement.",
+        "A": "Lorsqu'un modèle a une précision perfectible sur l'ensemble d'entraînement.",
+        "B": "Lorsque toutes les données de test sont précédemment vu et parfaitement prédites.",
         "C": "Pour augmenter la taille de l'ensemble d'essai.",
         "D": "Quand le score de confiance est utilisé pour ajuster dynamiquement les poids des classes pendant l'apprentissage."
       },
-      "correct_answer": "A",
-      "explanation": "Si toutes les données de test ont déjà été vues et prédites avec précision, le score de confiance est redondant. B et D ne répondent pas à la question, car ils concernent l'entraînement, et C n'est pas une fonction du score de confiance.",
+      "correct_answer": "B",
+      "explanation": "Si toutes les données de test ont déjà été vues et prédites avec précision, le score de confiance est redondant. B et D ne répondent pas à la question, car ils concernent l'entraînement, et C n'est pas une fonction du score de confiance. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Lorsqu'un modèle a une précision perfectible sur l'ensemble d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour augmenter la taille de l'ensemble d'essai.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Quand le score de confiance",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Quel est un bénéfice majeur de l'utilisation des scores de confiance dans le rejet ?",
       "image_url": null,
       "choices": {
-        "A": "Réduire les erreurs de classification en enlevant les prédictions incertaines.",
+        "A": "Remplacer les données d'entraînement inexistant par des générateurs aléatoires.",
         "B": "Augmenter automatiquement la précision de l'ensemble d'entraînement.",
-        "C": "Remplacer les données d'entraînement inexistant par des générateurs aléatoires.",
+        "C": "Réduire les erreurs de classification en enlevant les prédictions incertaines.",
         "D": "Permettre au modèle d'ignorer des labels incorrects directement."
       },
-      "correct_answer": "A",
-      "explanation": "Le rejet améliore l'exactitude en écartant les prédictions dont la fiabilité est faible. B est incorrect car le score de confiance ne modifie pas directement la précision de l'entraînement, et C, D n'ont rien à voir avec le rejet basé sur les scores de confiance.",
+      "correct_answer": "C",
+      "explanation": "Le rejet améliore l'exactitude en écartant les prédictions dont la fiabilité est faible. B est incorrect car le score de confiance ne modifie pas directement la précision de l'entraînement, et C, D n'ont rien à voir avec le rejet basé sur les scores de confiance. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Remplacer les données d'entraînement inexistant par des générateurs aléatoires.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter automatiquement la précision de l'ensemble d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Permettre au modèle",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Comment un modèle doit-il être ajusté pour prendre en compte un seuil de score de confiance mal calibré et trop restrictif ?",
       "image_url": null,
       "choices": {
-        "A": "Réduire le seuil pour augmenter la couverture des prédictions acceptées.",
+        "A": "Utiliser un modèle différent qui ignore les scores de confiance.",
         "B": "Augmenter le nombre de classes de sortie pour compenser le degré élevé de déséquilibre.",
         "C": "Réentraîner le modèle complètement sans tenir compte du seuil.",
-        "D": "Utiliser un modèle différent qui ignore les scores de confiance."
+        "D": "Réduire le seuil pour augmenter la couverture des prédictions acceptées."
       },
-      "correct_answer": "A",
-      "explanation": "Si le seuil est trop restrictif, baisser légèrement le score peut aider à équilibrer couverture et précision. B n'a pas de rapport et C n'est pas nécessaire, alors que D n'est pas réalisable car les scores de confiance sont souvent éléments cruciaux des systèmes de décision.",
+      "correct_answer": "D",
+      "explanation": "Si le seuil est trop restrictif, baisser légèrement le score peut aider à équilibrer couverture et précision. B n'a pas de rapport et C n'est pas nécessaire, alors que D n'est pas réalisable car les scores de confiance sont souvent éléments cruciaux des systèmes de décision. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Utiliser un modèle différent qui ignore les scores de confiance.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter le nombre de classes de sortie pour compenser le degré élevé de déséquilibre.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Si le score est uniquement calculé sur l'ensemble de test."
       },
       "correct_answer": "A",
-      "explanation": "Un score mal calibré pouvant favoriser certaines classes introduira un biais. B et C ne causaliseront pas un biais lié aux scores de confiance, alors que D est une mauvaise pratique mais pas un facteur de biais intrinsèque.",
+      "explanation": "Un score mal calibré pouvant favoriser certaines classes introduira un biais. B et C ne causaliseront pas un biais lié aux scores de confiance, alors que D est une mauvaise pratique mais pas un facteur de biais intrinsèque. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Si le score de confiance est appliqué uniformément à travers toutes les classes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Si le score est uniquement utilisé pour sélectionner des échantillons d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Si le",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Pourquoi une courbe d'acceptation-rejet équilibrée est-elle importante ?",
       "image_url": null,
       "choices": {
-        "A": "Pour éviter que le modèle ne soit trop conservateur ou trop permissif dans sa prédiction.",
-        "B": "Pour réduire le temps nécessaire à l'entraînement du modèle.",
+        "A": "Pour réduire le temps nécessaire à l'entraînement du modèle.",
+        "B": "Pour éviter que le modèle ne soit trop conservateur ou trop permissif dans sa prédiction.",
         "C": "Pour éviter l'overfitting durant le processus de test.",
         "D": "Pour garantir que chaque classe ait des instances sélectionnées proportionnellement."
       },
-      "correct_answer": "A",
-      "explanation": "Une courbe d'acceptation-rejet équilibrée assure que le modèle ne soit pas excessivement prudent ou laxiste, maintenant une balance entre couverture et précision. B, C, et D n'expliquent pas correctement le besoin d'une courbe équilibrée.",
+      "correct_answer": "B",
+      "explanation": "Une courbe d'acceptation-rejet équilibrée assure que le modèle ne soit pas excessivement prudent ou laxiste, maintenant une balance entre couverture et précision. B, C, et D n'expliquent pas correctement le besoin d'une courbe équilibrée. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour réduire le temps nécessaire à l'entraînement du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour éviter l'overfitting durant le processus de test.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Pour garantir que chaque classe ait des instances sélectionnées proportionnellement.) est plausible mais",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Comment un seuil strict de score de confiance affecte-t-il la performance globale d'un modèle ?",
       "image_url": null,
       "choices": {
-        "A": "Il peut réduire les erreurs de classification mais aussi diminuer le taux de couverture.",
+        "A": "Il garantit que toutes les prédictions sont exactes et précises.",
         "B": "Il augmente automatiquement la taille d'échantillons labellisés disponibles.",
-        "C": "Il garantit que toutes les prédictions sont exactes et précises.",
+        "C": "Il peut réduire les erreurs de classification mais aussi diminuer le taux de couverture.",
         "D": "Il affecte uniquement la complexité computationnelle mais pas la précision directe."
       },
-      "correct_answer": "A",
-      "explanation": "Un seuil stricte améliore souvent la précision en rejetant les incertains mais avec un coût potentiel sur la couverture. B et D sont incorrects et C est impossible car n'existe pas un seuil magique qui assure une précison totale.",
+      "correct_answer": "C",
+      "explanation": "Un seuil stricte améliore souvent la précision en rejetant les incertains mais avec un coût potentiel sur la couverture. B et D sont incorrects et C est impossible car n'existe pas un seuil magique qui assure une précison totale. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il garantit que toutes les prédictions sont exactes et précises.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il augmente automatiquement la taille d'échantillons labellisés disponibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il affecte uniquement la complexité computationnelle mais",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "En apprentissage semi-supervisé, que représente généralement le score de confiance associé à une prédiction ?",
       "image_url": null,
       "choices": {
-        "A": "La probabilité estimée qu'une prédiction soit correcte.",
+        "A": "La précision moyenne de toutes les prédictions effectuées.",
         "B": "La différence entre les prédictions les plus élevées et les plus faibles.",
         "C": "La somme des probabilités des classes possibles pour une prédiction.",
-        "D": "La précision moyenne de toutes les prédictions effectuées."
+        "D": "La probabilité estimée qu'une prédiction soit correcte."
       },
-      "correct_answer": "A",
-      "explanation": "Le score de confiance est la probabilité estimée qu'une prédiction soit correcte, utilisée pour évaluer la fiabilité de cette prédiction. La réponse B est incorrecte car la différence entre les prédictions les plus élevées et les plus faibles ne se réfère pas au score de confiance. La réponse C est fausse puisqu'il s'agit de la somme des probabilités des classes, qui totalise généralement 1, sans indiquer la confiance. La réponse D est incorrecte, car elle décrit la moyenne des précisions, et non un score individuel de confiance.",
+      "correct_answer": "D",
+      "explanation": "Le score de confiance est la probabilité estimée qu'une prédiction soit correcte, utilisée pour évaluer la fiabilité de cette prédiction. La réponse B est incorrecte car la différence entre les prédictions les plus élevées et les plus faibles ne se réfère pas au score de confiance. La réponse C est fausse puisqu'il s'agit de la somme des probabilités des classes, qui totalise généralement 1, sans indiquer la confiance. La réponse D est incorrecte, car elle décrit la moyenne des précisions, et non un score individuel de confiance. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (La précision moyenne de toutes les prédictions effectuées.) est plausible mais faux car il ne respecte pas",
       "difficulty": "easy"
     }
   ]

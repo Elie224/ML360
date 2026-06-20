@@ -14,7 +14,7 @@
         "D": "Maximiser le nombre de points au sein de chaque cluster."
       },
       "correct_answer": "A",
-      "explanation": "L'indice Davies-Bouldin cherche à minimiser les similarités entre les clusters (distance inter-cluster) et à maximiser la compacité des clusters (distance intra-cluster). B est incorrect car Calinski-Harabasz maximise la variance inter-cluster. C et D ne concernent pas les indices de validation de cluster.",
+      "explanation": "L'indice Davies-Bouldin cherche à minimiser les similarités entre les clusters (distance inter-cluster) et à maximiser la compacité des clusters (distance intra-cluster). B est incorrect car Calinski-Harabasz maximise la variance inter-cluster. C et D ne concernent pas les indices de validation de cluster. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Maximiser la variance totale expliquée par les clusters.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Minimiser le nombre total de clusters.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Maximiser le nombre de points au sein de",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Comment est calculée la valeur de l'indice Calinski-Harabasz?",
       "image_url": null,
       "choices": {
-        "A": "Par le rapport entre la variance inter-cluster et la variance intra-cluster.",
-        "B": "En comptant le nombre de clusters.",
+        "A": "En comptant le nombre de clusters.",
+        "B": "Par le rapport entre la variance inter-cluster et la variance intra-cluster.",
         "C": "En calculant le produit des distances intra-cluster.",
         "D": "En prenant la moyenne géométrique des tailles de cluster."
       },
-      "correct_answer": "A",
-      "explanation": "L'indice Calinski-Harabasz calcule le rapport entre la somme des carrés inter-cluster et intra-cluster pour évaluer la séparation. B, C, et D ne reflètent pas la manière dont cet indice est calculé.",
+      "correct_answer": "B",
+      "explanation": "L'indice Calinski-Harabasz calcule le rapport entre la somme des carrés inter-cluster et intra-cluster pour évaluer la séparation. B, C, et D ne reflètent pas la manière dont cet indice est calculé. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En comptant le nombre de clusters.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En calculant le produit des distances intra-cluster.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (En prenant la moyenne géométrique des tailles de cluster.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Pourquoi la stabilité inter-runs est-elle importante en clustering?",
       "image_url": null,
       "choices": {
-        "A": "Pour garantir que la partition des données est similaire à chaque exécution.",
+        "A": "Pour augmenter la complexité algorithmique.",
         "B": "Pour réduire le nombre moyen de clusters trouvés.",
-        "C": "Pour augmenter la complexité algorithmique.",
+        "C": "Pour garantir que la partition des données est similaire à chaque exécution.",
         "D": "Pour améliorer la sélection des modèles supervisés."
       },
-      "correct_answer": "A",
-      "explanation": "La stabilité inter-runs signifie que plusieurs exécutions de l'algorithme de clustering produisent des résultats similaires, assurant la robustesse. B est faux car la stabilité ne concerne pas la réduction du nombre de clusters. C et D ne sont pas pertinent pour la stabilité inter-runs.",
+      "correct_answer": "C",
+      "explanation": "La stabilité inter-runs signifie que plusieurs exécutions de l'algorithme de clustering produisent des résultats similaires, assurant la robustesse. B est faux car la stabilité ne concerne pas la réduction du nombre de clusters. C et D ne sont pas pertinent pour la stabilité inter-runs. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour augmenter la complexité algorithmique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour réduire le nombre moyen de clusters trouvés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Pour améliorer la sélection des modèles supervisés.)",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quelle est une erreur classique lors de l'interprétation métier des clusters?",
       "image_url": null,
       "choices": {
-        "A": "Prendre les clusters comme des groupes concrets dans la réalité sans validation.",
+        "A": "Employer des indices de validation dans des contextes supervisés.",
         "B": "Identifier les centroides des clusters comme des représentations moyennes.",
         "C": "Utiliser les clusters pour des prévisions à court terme.",
-        "D": "Employer des indices de validation dans des contextes supervisés."
+        "D": "Prendre les clusters comme des groupes concrets dans la réalité sans validation."
       },
-      "correct_answer": "A",
-      "explanation": "Une erreur classique est de présenter les clusters sans validation externe comme des groupes réels et utiles. B est généralement correct, C et D ne correspondent pas aux erreurs typiques en interprétation métier.",
+      "correct_answer": "D",
+      "explanation": "Une erreur classique est de présenter les clusters sans validation externe comme des groupes réels et utiles. B est généralement correct, C et D ne correspondent pas aux erreurs typiques en interprétation métier. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Employer des indices de validation dans des contextes supervisés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Identifier les centroides des clusters comme des représentations moyennes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Utiliser les clusters pour des prévisions à court terme.) est plausible mais faux",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Erreur quadratique moyenne"
       },
       "correct_answer": "A",
-      "explanation": "Comme le Davies-Bouldin est basé sur des distances intra et inter-clusters moyennes, il peut être biaisé par des tailles de clusters très inégales. B et C ne sont pas spécifiquement sensibles aux tailles de clusters, et D est peu utilisé en clustering.",
+      "explanation": "Comme le Davies-Bouldin est basé sur des distances intra et inter-clusters moyennes, il peut être biaisé par des tailles de clusters très inégales. B et C ne sont pas spécifiquement sensibles aux tailles de clusters, et D est peu utilisé en clustering. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Indice Calinski-Harabasz) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Coefficient de Silhouette) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Erreur quadratique moyenne) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "easy"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quel impact une distance intra-cluster élevée a-t-elle sur l'indice Calinski-Harabasz?",
       "image_url": null,
       "choices": {
-        "A": "Elle diminue la valeur de l'indice.",
-        "B": "Elle n'affecte pas l'indice.",
+        "A": "Elle n'affecte pas l'indice.",
+        "B": "Elle diminue la valeur de l'indice.",
         "C": "Elle augmente la valeur de l'indice.",
         "D": "Elle inverse la classification des clusters."
       },
-      "correct_answer": "A",
-      "explanation": "Une distance intra-cluster élevée augmente le dénominateur du rapport utilisé pour calculer l'indice, donc diminue la valeur de l'indice Calinski-Harabasz. B et C sont incorrects car l'indice est affecté par intra-cluster. D est conceptuellement incorrect pour cet indice.",
+      "correct_answer": "B",
+      "explanation": "Une distance intra-cluster élevée augmente le dénominateur du rapport utilisé pour calculer l'indice, donc diminue la valeur de l'indice Calinski-Harabasz. B et C sont incorrects car l'indice est affecté par intra-cluster. D est conceptuellement incorrect pour cet indice. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle n'affecte pas l'indice.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle augmente la valeur de l'indice.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle inverse la classification des clusters.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Comment une forte variance intra-cluster affecte-t-elle l'indice Davies-Bouldin?",
       "image_url": null,
       "choices": {
-        "A": "L'indice augmente, indiquant une moins bonne séparation des clusters.",
+        "A": "L'indice diminue, indiquant une séparation plus nette.",
         "B": "L'indice reste constant, indépendamment de la variance.",
-        "C": "L'indice diminue, indiquant une séparation plus nette.",
+        "C": "L'indice augmente, indiquant une moins bonne séparation des clusters.",
         "D": "L'indice est annulé, rendant l'évaluation impossible."
       },
-      "correct_answer": "A",
-      "explanation": "Une grande variance intra-cluster augmente l'indice Davies-Bouldin, ce qui signifie une mauvaise séparation. B est faux car l'indice est sensible à cette variance. C inverse l'effet, et D n'a aucun sens en contexte.",
+      "correct_answer": "C",
+      "explanation": "Une grande variance intra-cluster augmente l'indice Davies-Bouldin, ce qui signifie une mauvaise séparation. B est faux car l'indice est sensible à cette variance. C inverse l'effet, et D n'a aucun sens en contexte. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'indice diminue, indiquant une séparation plus nette.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (L'indice reste constant, indépendamment de la variance.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'indice est annulé, rendant l'évaluation impossible.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quels paramètres sont utilisés par l'indice Calinski-Harabasz pour évaluer une partition de clustering?",
       "image_url": null,
       "choices": {
-        "A": "La variance intra-cluster et la variance inter-cluster.",
+        "A": "La médiane des distances intra-cluster.",
         "B": "Le nombre de données et la dimensionnalité.",
         "C": "La densité des points par clusters.",
-        "D": "La médiane des distances intra-cluster."
+        "D": "La variance intra-cluster et la variance inter-cluster."
       },
-      "correct_answer": "A",
-      "explanation": "L'indice Calinski-Harabasz se base précisément sur le rapport entre la variance inter-cluster et intra-cluster pour évaluer la séparation des clusters. B, C, et D ne sont pas utilisés dans ce calcul.",
+      "correct_answer": "D",
+      "explanation": "L'indice Calinski-Harabasz se base précisément sur le rapport entre la variance inter-cluster et intra-cluster pour évaluer la séparation des clusters. B, C, et D ne sont pas utilisés dans ce calcul. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (La médiane des distances intra-cluster.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le nombre de données et la dimensionnalité.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La densité des points par clusters.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Elle maximise la distance entre les centroides."
       },
       "correct_answer": "A",
-      "explanation": "La stabilité inter-runs est un indicateur crucial de robustesse qui teste la consistance des résultats à travers différentes samples ou conditions. B est une conséquence possible mais indirecte, C et D sont hors de propos.",
+      "explanation": "La stabilité inter-runs est un indicateur crucial de robustesse qui teste la consistance des résultats à travers différentes samples ou conditions. B est une conséquence possible mais indirecte, C et D sont hors de propos. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elle limite le nombre de clusters à une valeur optimale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle supprime les outliers avant le clustering.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle maximise la distance entre les centroides.) est plausible mais faux car",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Pour un ratio Davies-Bouldin optimal, comment devraient se comporter les clusters?",
       "image_url": null,
       "choices": {
-        "A": "Ils doivent être compacts et bien séparés.",
-        "B": "Ils doivent être nombreux et très petits.",
+        "A": "Ils doivent être nombreux et très petits.",
+        "B": "Ils doivent être compacts et bien séparés.",
         "C": "Ils doivent être de taille identique.",
         "D": "Ils doivent inclure tous les outliers."
       },
-      "correct_answer": "A",
-      "explanation": "L'objectif est d'avoir des clusters compacts et bien séparés, minimisant les ratios intra/inter-cluster. B n'indique pas la qualité, C est un cas spécial, et D affecte négativement la compacité.",
+      "correct_answer": "B",
+      "explanation": "L'objectif est d'avoir des clusters compacts et bien séparés, minimisant les ratios intra/inter-cluster. B n'indique pas la qualité, C est un cas spécial, et D affecte négativement la compacité. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ils doivent être nombreux et très petits.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ils doivent être de taille identique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Ils doivent inclure tous les outliers.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Quelle est une limitation commune des mesures comme Davies-Bouldin et Calinski-Harabasz?",
       "image_url": null,
       "choices": {
-        "A": "Sensibilité aux distances définies entre les points de données.",
+        "A": "Exigence d'une normalisation préalable des données.",
         "B": "Incapacité à fonctionner avec des données catégorielles.",
-        "C": "Exigence d'une normalisation préalable des données.",
+        "C": "Sensibilité aux distances définies entre les points de données.",
         "D": "Dépendance forte de la dimensionnalité des données."
       },
-      "correct_answer": "A",
-      "explanation": "Ces indices sont fortement sensibles aux métriques de distance des données, ce qui peut biaiser les résultats. B est incorrect car ils peuvent être adaptés, C est une étape recommandée mais pas liée directement, et D n'est pas spécifique.",
+      "correct_answer": "C",
+      "explanation": "Ces indices sont fortement sensibles aux métriques de distance des données, ce qui peut biaiser les résultats. B est incorrect car ils peuvent être adaptés, C est une étape recommandée mais pas liée directement, et D n'est pas spécifique. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Exigence d'une normalisation préalable des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Incapacité à fonctionner avec des données catégorielles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Dépendance forte de la dimensionnalité des données.) est plausible mais faux car",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel défi typique présente l'interpretation metier des clusters?",
       "image_url": null,
       "choices": {
-        "A": "Alignement des clusters avec des catégories existantes mais non verbalisées.",
+        "A": "Présentation des clusters comme un substitut à la régularisation.",
         "B": "Determination des points de données qui maximisent le nombre de clusters.",
         "C": "Utilisation de clusters pour réduire le temps de calcul dans d'autres analyses.",
-        "D": "Présentation des clusters comme un substitut à la régularisation."
+        "D": "Alignement des clusters avec des catégories existantes mais non verbalisées."
       },
-      "correct_answer": "A",
-      "explanation": "Aligner les clusters sur des concepts métiers existants mais mal définis est un grand défi d'interprétation. B et C sont hors de propos ou exagérés, et D est incorrect conceptuellement.",
+      "correct_answer": "D",
+      "explanation": "Aligner les clusters sur des concepts métiers existants mais mal définis est un grand défi d'interprétation. B et C sont hors de propos ou exagérés, et D est incorrect conceptuellement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Présentation des clusters comme un substitut à la régularisation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Determination des points de données qui maximisent le nombre de clusters.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Utilisation de clusters pour réduire le temps de calcul dans d'autres analyses.) est plausible",
       "difficulty": "medium"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Il change avec le nombre de dimensions des données."
       },
       "correct_answer": "A",
-      "explanation": "Davies-Bouldin ne favorise pas automatiquement de nombreux clusters, mais plutôt ceux qui sont bien séparés et compacts. B est une idée fausse. C et D ne sont pas appropriés pour cet indice.",
+      "explanation": "Davies-Bouldin ne favorise pas automatiquement de nombreux clusters, mais plutôt ceux qui sont bien séparés et compacts. B est une idée fausse. C et D ne sont pas appropriés pour cet indice. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Oui, plus de clusters maximisent la séparation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Uniquement dans des ensembles de données de faible variance.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il change avec le nombre de dimensions des données.) est plausible mais faux car il ne",
       "difficulty": "medium"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quelle méthodologie pourrait vérifier la robustesse des clusters au-delà des indices numériques?",
       "image_url": null,
       "choices": {
-        "A": "Validation croisée avec ré-échantillonnage des données.",
-        "B": "Application de régularisation L2.",
+        "A": "Application de régularisation L2.",
+        "B": "Validation croisée avec ré-échantillonnage des données.",
         "C": "Normalisation des paramètres par moyenne nulle.",
         "D": "Calcul de l'aire sous la courbe ROC."
       },
-      "correct_answer": "A",
-      "explanation": "Le ré-échantillonnage et la validation croisée peuvent tester efficacement la robustesse des clusters à travers différents jeux de données. B, C, et D ne sont pas pertinents dans ce contexte.",
+      "correct_answer": "B",
+      "explanation": "Le ré-échantillonnage et la validation croisée peuvent tester efficacement la robustesse des clusters à travers différents jeux de données. B, C, et D ne sont pas pertinents dans ce contexte. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Application de régularisation L2.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Normalisation des paramètres par moyenne nulle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Calcul de l'aire sous la courbe ROC.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quel indicateur pourrait signifier que la validation de clustering par Davies-Bouldin doit être complétée par d'autres méthodes?",
       "image_url": null,
       "choices": {
-        "A": "Différentes métriques de distance infléchissent les résultats.",
+        "A": "Les résultats sont indépendants de la structure de données initiale.",
         "B": "L'indice devient constant peu importe le nombre de clusters.",
-        "C": "Les résultats sont indépendants de la structure de données initiale.",
+        "C": "Différentes métriques de distance infléchissent les résultats.",
         "D": "Tous les clusters incluent un nombre égal de points."
       },
-      "correct_answer": "A",
-      "explanation": "Les indices peuvent être influencés par les choix de métrique de distance, nécessitant d'autres méthodes pour confirmation. B, C, et D sont improbables ou méthodologiquement incorrects dans ce contexte.",
+      "correct_answer": "C",
+      "explanation": "Les indices peuvent être influencés par les choix de métrique de distance, nécessitant d'autres méthodes pour confirmation. B, C, et D sont improbables ou méthodologiquement incorrects dans ce contexte. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les résultats sont indépendants de la structure de données initiale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (L'indice devient constant peu importe le nombre de clusters.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Tous les clusters incluent un nombre égal de points.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Pourquoi la stabilité inter-runs pourrait-elle être médiocre pour un même set de données?",
       "image_url": null,
       "choices": {
-        "A": "En raison d'un nombre inapproprié de clusters.",
+        "A": "Du bruit dans les labels supervisés.",
         "B": "Dues à une application incorrecte des normalisations.",
         "C": "À cause d'un biais de sélection basé sur la cible.",
-        "D": "Du bruit dans les labels supervisés."
+        "D": "En raison d'un nombre inapproprié de clusters."
       },
-      "correct_answer": "A",
-      "explanation": "Un choix inapproprié de nombre de clusters peut mener à des partitions inconsistantes entre les exécutions. B n'affecte pas la consistance inter-runs directement, C n'est pas applicable en non-supervisé, D est sans rapport.",
+      "correct_answer": "D",
+      "explanation": "Un choix inapproprié de nombre de clusters peut mener à des partitions inconsistantes entre les exécutions. B n'affecte pas la consistance inter-runs directement, C n'est pas applicable en non-supervisé, D est sans rapport. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Du bruit dans les labels supervisés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Dues à une application incorrecte des normalisations.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (À cause d'un biais de sélection basé sur la cible.) est plausible mais faux car il ne respecte",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "L'automatisation complète du processus de clustering."
       },
       "correct_answer": "A",
-      "explanation": "Il est crucial de s'assurer que les clusters répondent aux questions ou besoins spécifiques du contexte métier. B n'assure pas la pertinence, C est une approche potentiellement biaisée, D est incorrect.",
+      "explanation": "Il est crucial de s'assurer que les clusters répondent aux questions ou besoins spécifiques du contexte métier. B n'assure pas la pertinence, C est une approche potentiellement biaisée, D est incorrect. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La maximisation des points inclus dans chaque cluster.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La sélection d'un modèle plus complexe pour décrire les clusters.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'automatisation complète du processus de clustering.) est plausible mais faux car il ne respecte pas",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Qu'est-ce qui pourrait indiquer une mauvaise application de l'indice Calinski-Harabasz?",
       "image_url": null,
       "choices": {
-        "A": "Les clusters résultants ne varient pas malgré la variance Dans ce contexte.",
-        "B": "Un nombre indéfini de clusters produit le même score.",
+        "A": "Un nombre indéfini de clusters produit le même score.",
+        "B": "Les clusters résultants ne varient pas malgré la variance Dans ce contexte.",
         "C": "Variabilités intra-cluster négligeables mais score bas.",
         "D": "Les clusters ne sont pas alignés avec la distribution spatiale des points."
       },
-      "correct_answer": "A",
-      "explanation": "Si les résultats ne varient pas en dépit des variations raisonnables de paramétrage, cela suggère une mauvaise application. B est peu probable, C découle d'un score élevé, D pourrait toujours se produire avec un bon indice.",
+      "correct_answer": "B",
+      "explanation": "Si les résultats ne varient pas en dépit des variations raisonnables de paramétrage, cela suggère une mauvaise application. B est peu probable, C découle d'un score élevé, D pourrait toujours se produire avec un bon indice. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un nombre indéfini de clusters produit le même score.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Variabilités intra-cluster négligeables mais score bas.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Les clusters ne sont pas alignés avec la distribution spatiale des points.) est",
       "difficulty": "hard"
     },
     {
@@ -266,7 +266,7 @@
         "D": "Les caractéristiques non paramétriques des données présentes."
       },
       "correct_answer": "C",
-      "explanation": "Les indices peuvent avoir des biais s'ils reposent sur des distributions implicites, rendant vérifier cette supposition essentielle. A et D ne s'appliquent pas directement, B n'est pas une vérification externe.",
+      "explanation": "Les indices peuvent avoir des biais s'ils reposent sur des distributions implicites, rendant vérifier cette supposition essentielle. A et D ne s'appliquent pas directement, B n'est pas une vérification externe. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La proximité des clusters aux zones de bruit.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le nombre de dimensions projectives.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Les caractéristiques non paramétriques des données présentes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Quel est un exemple de biais commun dans l'interprétation des clusters?",
       "image_url": null,
       "choices": {
-        "A": "Considérer les clusters statiques comme représentatifs de l'évolution temporelle.",
+        "A": "Rétablir les clusters pour qu'ils forment une distribution normale.",
         "B": "Voir chaque point en dehors des clusters comme un outlier.",
         "C": "Attribuer chaque cluster à une catégorie unique préexistante.",
-        "D": "Rétablir les clusters pour qu'ils forment une distribution normale."
+        "D": "Considérer les clusters statiques comme représentatifs de l'évolution temporelle."
       },
-      "correct_answer": "A",
-      "explanation": "Imaginer que les représentations statiques caractérisent l'évolution temporelle est souvent un mauvais jugement. B pourrait être un biais, mais pas directement sur l'interprétation métier. C est plus un encadrage qu'un biais, D est sans rapport.",
+      "correct_answer": "D",
+      "explanation": "Imaginer que les représentations statiques caractérisent l'évolution temporelle est souvent un mauvais jugement. B pourrait être un biais, mais pas directement sur l'interprétation métier. C est plus un encadrage qu'un biais, D est sans rapport. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Rétablir les clusters pour qu'ils forment une distribution normale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Voir chaque point en dehors des clusters comme un outlier.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Attribuer chaque cluster à une catégorie unique préexistante.) est plausible",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "L'extension par manifolds non linéaires des clusters."
       },
       "correct_answer": "A",
-      "explanation": "Un retour d'expérience métier fournit des informations contextuelles cruciales et un supplément qualitatif aux validations quantitatives. B, C, et D ne sont pas pertinents pour cet objectif.",
+      "explanation": "Un retour d'expérience métier fournit des informations contextuelles cruciales et un supplément qualitatif aux validations quantitatives. B, C, et D ne sont pas pertinents pour cet objectif. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Une normalisation asymétrique des variables.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'application de modèles supervisés sur des données non étiquetées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'extension par manifolds non linéaires des clusters.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "hard"
     },
     {
@@ -302,13 +302,13 @@
       "question": "Quel indice peut être utilisé pour évaluer la compacité et la séparation des clusters dans un dataset non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Davies-Bouldin Index",
-        "B": "Correlation Coefficient",
+        "A": "Correlation Coefficient",
+        "B": "Davies-Bouldin Index",
         "C": "Silhouette Width",
         "D": "Confusion Matrix"
       },
-      "correct_answer": "A",
-      "explanation": "Le Davies-Bouldin Index mesure la moyenne du rapport de la somme des dispersions intra-cluster sur la distance inter-cluster, évaluant ainsi la compacité et la séparation. Le Coefficient de Correlation (B) ne s'applique pas à l'évaluation de clusters. La largeur de silhouette (C) est correcte pour l’évaluation des clusters mais n’associe pas explicitement compacité et séparation. La matrice de confusion (D) est utilisée pour les modèles supervisés.",
+      "correct_answer": "B",
+      "explanation": "Le Davies-Bouldin Index mesure la moyenne du rapport de la somme des dispersions intra-cluster sur la distance inter-cluster, évaluant ainsi la compacité et la séparation. Le Coefficient de Correlation (B) ne s'applique pas à l'évaluation de clusters. La largeur de silhouette (C) est correcte pour l’évaluation des clusters mais n’associe pas explicitement compacité et séparation. La matrice de confusion (D) est utilisée pour les modèles supervisés. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Correlation Coefficient) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Silhouette Width) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "easy"
     }
   ]

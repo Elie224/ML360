@@ -5,254 +5,254 @@
   "questions": [
     {
       "type": "text",
-      "question": "Quelle formule definit le F1 score?",
+      "question": "Quelle formule définit le F1 score?",
       "image_url": null,
       "choices": {
-        "A": "2 x (precision x rappel) / (precision + rappel)",
-        "B": "accuracy = (TP+TN)/N",
-        "C": "(rappel + precision) / 2",
-        "D": "precision x rappel"
+        "A": "2 x (précision x rappel) / (précision + rappel)",
+        "B": "(TP + TN) / N",
+        "C": "(précision + rappel) / 2",
+        "D": "précision x rappel"
       },
       "correct_answer": "A",
-      "explanation": "Le F1 score est la moyenne harmonique de la precision et du rappel, formulee comme 2 x (precision x rappel) / (precision + rappel). B est la formule pour l'exactitude, C est la moyenne arithmetique, et D ne prend pas en compte l'inverse des valeurs.",
+      "explanation": "Le F1 score est une mesure utilisée en classification pour évaluer la performance d'un modèle en fonction de sa précision et de son rappel. La formule correcte est la moyenne harmonique de la précision et du rappel, soit 2 x (précision x rappel) / (précision + rappel). L'option B décrit l'accuracy, qui est le rapport des prédictions correctes sur l'ensemble des observations. L'option C utilise une moyenne arithmétique, qui n'est pas adaptée pour pondérer également précision et rappel, et D n'est qu'une simple multiplication des deux métriques, ce qui ne considère pas leur balance harmonique indispensable pour le F1 score.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Que mesure l'aire sous la courbe ROC (ROC-AUC) dans le contexte des classes déséquilibrées?",
+      "question": "Quel est l'avantage principal de l'utilisation du ROC-AUC dans l'évaluation des modèles de classification?",
       "image_url": null,
       "choices": {
-        "A": "La capacité du modèle à séparer les classes",
-        "B": "La précision du modèle uniquement sur la classe majoritaire",
-        "C": "La différence entre rappel et précision",
-        "D": "Le nombre de vrais positifs sur le total"
+        "A": "Il indique directement la précision du modèle.",
+        "B": "Il résume la performance du modèle pour tous les seuils de classification possibles.",
+        "C": "Il fournit la fraction de vrais positifs parmi tous les positifs.",
+        "D": "Il est influencé par le déséquilibre de classe."
       },
-      "correct_answer": "A",
-      "explanation": "Le ROC-AUC mesure la capacité du modèle à séparer les classes en évaluant la trade-off entre le taux de vrais positifs et le taux de faux positifs. B est incorrect car le ROC-AUC prend en compte toutes les classes, C décrit une autre métrique, et D est une mauvaise interprétation du taux de vrais positifs.",
+      "correct_answer": "B",
+      "explanation": "Le ROC-AUC résume la performance d’un modèle de classification pour tous les seuils de classification possibles en traçant la courbe des taux de vrais positifs contre les taux de faux positifs. Il est particulièrement utile pour comparer les modèles sans se focaliser sur un seuil spécifique, contrairement à l'accuracy qui donne un seul point de performance. A est incorrect car le ROC-AUC n'indique pas directement la précision du modèle. C est fausse parce qu'elle décrit le rappel, et D est faux car le ROC-AUC est au contraire robuste aux déséquilibres de classes, car il ne dépend pas directement des quantités absolues de classes.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Dans un problème de déséquilibre de classes, comment les 'class weights' aident-ils?",
+      "question": "Quel est le but principal de l'ajustement des \"class weights\" dans un modèle de classification déséquilibré?",
       "image_url": null,
       "choices": {
-        "A": "En modifiant la fonction d'erreur pour donner plus d'importance aux classes minoritaires",
-        "B": "En augmentant le nombre de données pour la classe majoritaire",
-        "C": "En supprimant des données pour équilibrer les classes",
-        "D": "En calculant uniquement la précision des classes majoritaires"
+        "A": "Réduire le taux de faux négatifs uniquement.",
+        "B": "Augmenter la taille du dataset.",
+        "C": "Équilibrer l'importance des classes sous-représentées pendant l'entraînement.",
+        "D": "Augmenter le biais du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "Les 'class weights' ajustent la fonction de coût pour pénaliser davantage les erreurs sur les classes minoritaires, sans modifier les données. B et C décrivent des techniques de rééchantillonnage, et D est incorrect car ce serait contradictoire au but de corriger le déséquilibre.",
+      "correct_answer": "C",
+      "explanation": "L'ajustement des \"class weights\" a pour objectif d'égaliser l'attention accordée aux classes sous-représentées lors de l'entraînement du modèle. Ainsi, les erreurs pour ces classes auront un impact proportionnellement plus important sur la fonction de coût, ce qui peut améliorer la généralisation du modèle sur ces classes. L'option A est incorrecte car elle se concentre uniquement sur les faux négatifs, alors que les \"class weights\" visent un équilibre global. L'option B est fausse, car elle traite de la taille du dataset, qui n'est pas modifiée. Enfin, l'option D parle d'augmenter le biais du modèle, mais l'action sur les poids des classes ne cible pas le biais mais plutôt les performances sur les classes minoritaires.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quelle méthode de rééchantillonnage consiste à dupliquer des exemples de la classe minoritaire?",
+      "question": "Quelle technique de resampling consiste à augmenter la fréquence des classes minoritaires dans le dataset?",
       "image_url": null,
       "choices": {
-        "A": "Sur-échantillonnage",
-        "B": "Sous-échantillonnage",
-        "C": "Échantillonnage stratifié",
-        "D": "Échantillonnage aléatoire"
+        "A": "Cross-validation",
+        "B": "Undersampling",
+        "C": "Data augmentation",
+        "D": "Oversampling"
       },
-      "correct_answer": "A",
-      "explanation": "Le sur-échantillonnage augmente la proportion de la classe minoritaire en dupliquant ses instances. Le sous-échantillonnage (B) réduit la classe majoritaire, C est une technique pour répartir les échantillons de manière représentative, et D ne garantit pas de traitement du déséquilibre.",
+      "correct_answer": "D",
+      "explanation": "L'oversampling est une méthode qui consiste à augmenter la fréquence des classes minoritaires en répétant ou en créant de manière synthétique des exemples supplémentaires. Cela permet de rééquilibrer le dataset pour un meilleur entraînement du modèle. L'undersampling, à l'inverse, réduit le nombre d'exemples des classes majoritaires, souvent en éliminant des données. La data augmentation se focalise sur la création de nouvelles données à partir d'exemples existants, mais pas spécifiquement pour corriger le déséquilibre de classes. La cross-validation, quant à elle, est employée pour évaluer le modèle et ne modifie pas les proportions des classes. Ainsi, c'est l'option D qui augmente spécifiquement la fréquence des classes minoritaires.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Comment le F1 score réagit-il souvent lors d'un fort déséquilibre de classes?",
+      "question": "Pourquoi le F1 score est-il préféré à l’accuracy pour évaluer un modèle sur un dataset déséquilibré?",
       "image_url": null,
       "choices": {
-        "A": "Indique un faible compromis entre précision et rappel",
-        "B": "Reste constant quel que soit le déséquilibre",
-        "C": "Favorise toujours les classes minoritaires",
-        "D": "Est identique à l'exactitude lors du déséquilibre"
+        "A": "Il considère à la fois la précision et le rappel.",
+        "B": "Il est plus rapide à calculer.",
+        "C": "Il dépend du seuil de classification.",
+        "D": "Il n’est influencé que par le rappel."
       },
       "correct_answer": "A",
-      "explanation": "Avec un déséquilibre, le F1 score est essentiel pour montrer le compromis entre précision et rappel, surtout quand l'une est élevée mais pas l'autre. Il ne restera pas constant (B) et ne favorisera pas les classes minoritaires (C) sans ajustements. Il diffère de l'exactitude (D).",
+      "explanation": "Le F1 score est préféré à l’accuracy sur des datasets déséquilibrés car il intègre à la fois précision (proportion de prédictions correctes parmi les prédites positives) et rappel (capacité à retrouver les éléments positifs). Cela donne une vision équilibrée de la performance, contrairement à l'accuracy qui peut être trompeuse si seules les classes majoritaires sont correctement prédites. L'option B est incorrecte puisqu'il n'est pas plus rapide à calculer que l'accuracy. C est erroné car le F1 score lui-même n'est pas dépendant d'un seuil, et D est faux puisqu'il est affecté par précision et rappel, pas seulement le rappel.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pourquoi un ROC-AUC élevé peut-il être trompeur avec des classes fortement déséquilibrées?",
+      "question": "Quels sont les effets potentiels du sous-échantillonnage (undersampling) sur un dataset déséquilibré?",
       "image_url": null,
       "choices": {
-        "A": "Il peut ne pas refléter la performance réelle des classes minoritaires",
-        "B": "Il mesure uniquement la précision",
-        "C": "Il est biaisé en faveur de la classe minoritaire",
-        "D": "Il influence directement les class weights"
+        "A": "Augmentation du déséquilibre des classes.",
+        "B": "Perte d'information utile en supprimant des exemples de la classe majoritaire.",
+        "C": "Augmentation artificielle de la taille du dataset.",
+        "D": "Choix automatique du seuil de classification."
       },
-      "correct_answer": "A",
-      "explanation": "Avec un déséquilibre, le ROC-AUC peut indiquer une bonne performance globale tout en ignorants erreurs rares mais critiques sur la classe minoritaire, qui sont moins pondérées. B est faux, C est l'inverse, et D lie incorrectement ROC-AUC aux poids de classe.",
+      "correct_answer": "B",
+      "explanation": "Le sous-échantillonnage (undersampling) peut entraîner une perte d'information utile en retirant des exemples de la classe majoritaire afin de rendre un dataset plus équilibré. Cette méthode peut enlever des exemples significatifs, nuisant potentiellement à la capacité d'un modèle à généraliser. Contrairement à l'option A, il cherche à réduire le déséquilibre et n'augmente pas la taille des données de la classe minoritaire, ce qui réfute l'option B. L'option C est incorrecte car le sous-échantillonnage diminue la taille du dataset et D ne reflète pas une capacité qu'avec l'undersampling, le choix de seuils de classification ne se fait pas automatiquement.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Quel impact l'utilisation de 'class weights' incorrectement configurés peut-elle avoir?",
+      "question": "Comment le ROC-AUC est-il affecté par un dataset fortement déséquilibré?",
       "image_url": null,
       "choices": {
-        "A": "Surapprentissage des classes minoritaires",
-        "B": "Amélioration de l'exactitude globale",
-        "C": "Augmentation de l'équilibre des classes dans l'ensemble de données",
-        "D": "Répartition identique des erreurs entre classes"
+        "A": "Il n’est calculable que pour des datasets équilibrés.",
+        "B": "Il augmente systématiquement avec le déséquilibre.",
+        "C": "Il reste utile car il mesure la performance globale malgré le déséquilibre.",
+        "D": "Il ne fournit aucune information sur le modèle."
       },
-      "correct_answer": "A",
-      "explanation": "Des poids de class trop importants peuvent mener à un surapprentissage des classes minoritaires aux dépens de la classe majoritaire. B confond 'class weights' avec d'autres métriques, C n'est pas une fonction des 'class weights' et D assume une impossible équité.",
+      "correct_answer": "C",
+      "explanation": "Le ROC-AUC reste un indicateur pertinent même pour des datasets déséquilibrés, car il évalue la performance globale du modèle en utilisant les taux de vrais positifs et de faux positifs à divers seuils, plutôt que de s'appuyer uniquement sur des proportions de classes. Contrairement à A, le ROC-AUC est calculable independent de l'équilibre des classes, et B est faux, car son efficacité ne croît pas automatiquement avec le déséquilibre. L’option D sous-estime ses informations précieuses, car il fournit un aperçu global de la capacité du modèle à discriminer les classes, essentiel même dans un contexte déséquilibré.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Quelle technique applique un équilibrage en supprimant des exemples de la classe majoritaire?",
+      "question": "Quelle méthode peut être employée pour minimiser l'effet de classes majoritaires lors du processus d'entraînement d'un modèle?",
       "image_url": null,
       "choices": {
-        "A": "Sous-échantillonnage",
-        "B": "Sur-échantillonnage",
-        "C": "Échantillonnage par grappe",
-        "D": "Échantillonnage de quota"
+        "A": "Augmenter les données de la classe majoritaire.",
+        "B": "Utilisation exclusive de métriques basées sur l'accuracy.",
+        "C": "Amélioration de la vitesse de convergence du modèle.",
+        "D": "Application de class weights pour accorder plus d'importance aux classes minoritaires."
       },
-      "correct_answer": "A",
-      "explanation": "Le sous-échantillonnage élimine des instances de la classe majoritaire pour équilibrer les données, tandis que le sur-échantillonnage (B) travaille sur la classe minoritaire. C et D ne se concentrent pas sur le déséquilibre de classe.",
+      "correct_answer": "D",
+      "explanation": "L'application de class weights ajuste l'importance des classes, notamment les classes minoritaires, pour limiter l'impact des classes majoritaires lors de l'entraînement d'un modèle. Cela signifie que les erreurs sur les classes sous-représentées deviennent plus coûteuses à l'apprentissage, améliorant ainsi leur prise en compte. Contrairement à B, se concentrer uniquement sur l'accuracy peut mal représenter la performance sur des classes minoritaires. L'option C améliore la vitesse de convergence, mais cela ne corrige pas le déséquilibre, et A aggraverait le déséquilibre en renforçant davantage la présence de la classe majoritaire au lieu de le corriger.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pourquoi l'accuracy n'est-elle pas une bonne métrique pour évaluer les modèles sur des classes déséquilibrées?",
+      "question": "Dans quels cas l'oversampling peut-il introduire des biais dans un modèle de classification?",
       "image_url": null,
       "choices": {
-        "A": "Elle peut ignorer complètement la classe minoritaire",
-        "B": "Elle surpondère les faux négatifs",
-        "C": "Elle mesure la somme des confusion entre classes",
-        "D": "Elle ne tient pas compte de la taille des classes"
+        "A": "Quand il reproduit excessivement les mêmes exemples entraînant un manque de généralisation.",
+        "B": "Quand il ignore complètement les classes minoritaires.",
+        "C": "Quand il réduit la taille totale du dataset.",
+        "D": "Quand il optimise uniquement pour le rappel."
       },
       "correct_answer": "A",
-      "explanation": "L'accuracy peut être élevée quand le modèle prédit majoritairement la classe majoritaire, ignorant les performances sur la classe minoritaire. B, C, et D ne sont pas corrects en expliquant pourquoi l'accuracy est une métrique inadéquate ici.",
+      "explanation": "L’oversampling, par répétition excessive des mêmes exemples, peut mener à un surapprentissage où le modèle retient ces exemples sans bien se généraliser aux nouveaux cas. L'option B est incorrecte car l’oversampling s'efforce justement de prendre en compte les classes minoritaires. C est faux parce que cette méthode augmente la taille du dataset. D suggère que l’oversampling cible le rappel, ce qui n'est pas le cas; il vise plutôt à mieux représenter les classes minoritaires dans le dataset général en équilibrant les occurrences, non pas à optimiser une seule métrique comme le rappel.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Quelle stratégie est souvent utilisée conjointement avec les 'class weights' pour traiter les classes déséquilibrées?",
+      "question": "Dans un modèle déséquilibré, pourquoi est-il important de faire attention au choix du seuil de classification utilisé?",
       "image_url": null,
       "choices": {
-        "A": "Échantillonnage (sur-échantillonnage ou sous-échantillonnage)",
-        "B": "Prédiction par majority voting",
-        "C": "Augmentation des données de la classe majoritaire",
-        "D": "Application de réduction de dimension"
+        "A": "Il n'a pas d'impact sur les métriques comme la précision.",
+        "B": "Le seuil affecte la balance entre précision et rappel.",
+        "C": "Un seuil trop bas améliore systématiquement le F1 score.",
+        "D": "Le seuil idéal est toujours 0.5."
       },
-      "correct_answer": "A",
-      "explanation": "Des techniques comme le sur-échantillonnage ou sous-échantillonnage intégrées avec 'class weights' traitent efficacement le déséquilibre. B n'est pas relié spécifiquement aux class weights et C/D n'abordent pas directement le déséquilibre.",
+      "correct_answer": "B",
+      "explanation": "Dans un modèle déséquilibré, le choix du seuil de classification influence directement l'équilibre entre la précision et le rappel. Un seuil inapproprié peut favoriser l'une de ces deux métriques aux dépens de l'autre, ce qui est crucial pour maintenir un bon F1 score. L'option A est incorrecte car le seuil affecte précisément les métriques comme la précision. C est faux, car baisser systématiquement le seuil n'améliore pas toujours le F1 score. Penser que 0.5 est toujours idéal (D) est une simplification; dans des scénarios déséquilibrés, un ajustement plus attentif du seuil peut être nécessaire selon le coût des erreurs.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Comment un AUC proche de 0.5 est-il interprété dans un problème de classification binaire?",
+      "question": "Quel impact le resampling a-t-il sur le biais d’un modèle de classification?",
       "image_url": null,
       "choices": {
-        "A": "Le modèle ne parvient pas à séparer les classes",
-        "B": "Le modèle prédit parfaitement les deux classes",
-        "C": "Le modèle est biaisé vers la classe majoritaire",
-        "D": "Le modèle privilégie la prédiction des faux positifs"
+        "A": "Le resampling n'a aucun effet sur le biais du modèle.",
+        "B": "Il augmente systématiquement le biais du modèle.",
+        "C": "Il peut réduire le biais en améliorant l'équilibre des classes dans les données.",
+        "D": "Il garantit une réduction du surapprentissage."
       },
-      "correct_answer": "A",
-      "explanation": "Un AUC proche de 0.5 indique une performance équivalente à une prédiction aléatoire, signifiant que le modèle ne sépare pas bien les classes. B serait un AUC proche de 1, C et D sont de mauvaises interprétations.",
+      "correct_answer": "C",
+      "explanation": "Le resampling modifie la répartition des classes, ce qui peut réduire le biais du modèle en exposant davantage les classes sous-représentées, ce qui contribue à un apprentissage plus équilibré et une meilleure prise en compte de toutes les classes. L'option A est incorrecte, car cela peut effectivement impacter le biais, souvent de manière positive. B est trompeur, car cela dépend de la méthode employée. C ne représente pas la réalité vu que le resampling vise à rééquilibrer, et D est inexact car le resampling peut parfois même aggraver le surapprentissage en augmentant le poids des données sur-échantillonnées.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Quel effet un générateur de classes synthétiques, comme SMOTE, a-t-il dans le contexte des data déséquilibrées?",
+      "question": "Pourquoi l’accuracy seule est-elle une métrique trompeuse pour évaluer des modèles sur des datasets déséquilibrés?",
       "image_url": null,
       "choices": {
-        "A": "Il créer des exemples synthétiques pour la classe minoritaire",
-        "B": "Il réduit les caractéristiques de la classe majoritaire",
-        "C": "Il simule des données pour augmenter toutes les classes",
-        "D": "Il remplace des valeurs manquantes par la classe majoritaire"
+        "A": "Elle ne s’applique qu’aux modèles de régression.",
+        "B": "Elle évalue uniquement le rappel.",
+        "C": "Elle n’est calculée qu’avec les faux négatifs.",
+        "D": "Elle peut être biaisée en faveur de la classe majoritaire."
       },
-      "correct_answer": "A",
-      "explanation": "SMOTE génère de nouveaux exemples synthétiques pour la classe minoritaire pour aider à corriger le déséquilibre. B ne traite pas correctement la question de déséquilibre, C fait faussement référence à toutes les classes et D est erroné concernant la gestion manquante.",
+      "correct_answer": "D",
+      "explanation": "L’accuracy peut être trompeuse pour un dataset déséquilibré car elle peut refléter une haute performance même si le modèle ne prédit que la classe majoritaire, négligeant ainsi la performance sur la minorité. A est incorrect, car l'accuracy s'applique aux modèles de classification, pas seulement à la régression. B est faux, car l'accuracy n'évalue pas uniquement le rappel; elle intègre toutes les prédictions correctes. C est inexact, car l'accuracy inclut l'ensemble des prédictions correctes, pas seulement les faux négatifs. Cela justifie pourquoi D est correct : elle favorise les classes majoritaires, rendant les résultats apparemment bons.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Quelle métrique est la plus robuste face à des classes très déséquilibrées?",
+      "question": "Quelle stratégie est la plus adaptée pour gérer un dataset avec une classe rare particulièrement importante, comme une maladie rare en médecine?",
       "image_url": null,
       "choices": {
-        "A": "F1 score",
-        "B": "Precision",
-        "C": "Accuracy",
-        "D": "Specificity"
+        "A": "Installer un poids plus fort pour la classe rare dans le modèle.",
+        "B": "Réduire les observations de la classe rare.",
+        "C": "Utiliser seulement l'accuracy pour évaluer le modèle.",
+        "D": "Ignorer les classes rares lors de la modélisation."
       },
       "correct_answer": "A",
-      "explanation": "L'F1 score est robuste dans des situations de déséquilibre en combinant précision et rappel, particulièrement sensible aux performances sur la classe minoritaire. B évalue seulement une dimension, et C/D ne tiennent pas suffisamment compte de la distribution des classes.",
+      "explanation": "Mettre un poids plus fort sur la classe rare favorise un apprentissage équilibré du modèle, crucial pour des scénarios tels que la détection de maladies rares. Cela assure que les erreurs concernant cette classe soient davantage pénalisées pendant l’entraînement. B est contre-productif car elle réduirait encore la représentativité de la classe rare. C est également inadéquat car l’accuracy ne rend pas compte des inégalités individuelles sur des classes rares. Quant à D, ignorer des classes rares retirant à la modélisation toute sa valeur diagnostique pour ces enjeux spécifiques, tant cliniques qu'opérationnels, rendant l'analyse partiellement inutile.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Quel problème peut survenir lors de l'utilisation de l'oversampling pour équilibrer les classes?",
+      "question": "Quel est un risque potentiel associé à l’utilisation de l’oversampling avec une simple duplication des instances de la classe minoritaire?",
       "image_url": null,
       "choices": {
-        "A": "Introduction de biais par la répétition excessive des mêmes exemples",
-        "B": "Augmentation de la variance des classes majoritaires",
-        "C": "Amélioration inéquitable des classes minoritaires",
-        "D": "Réduction de la précision pour toutes les classes"
+        "A": "Cela va nécessairement introduire du bruit aléatoire dans les données.",
+        "B": "Cela peut entraîner un surapprentissage car le modèle pourrait mémoriser les exemples doublés.",
+        "C": "Cela diminuera la variance du modèle.",
+        "D": "Il rend la classe majoritaire plus influente."
       },
-      "correct_answer": "A",
-      "explanation": "L'oversampling peut entraîner un surajustement là où des exemples identiques de la classe mineure sont répétés trop souvent. B est incorrect car il affecte les minorités, C implique un gain sans obstacle, et D déforme l'objectif de l'oversampling.",
+      "correct_answer": "B",
+      "explanation": "L'oversampling par duplication des instances de la classe minoritaire peut entraîner un surapprentissage, car le modèle peut mémoriser les exemples répétés sans vraiment apprendre à généraliser. Contrairement à A, cela n'introduit pas de bruit aléatoire dans le dataset. C est incorrect, car la duplication d'exemples n'impacte pas directement la variance en la réduisant. En fait, le risque de mémorisation peut souvent augmenter ce genre de variance. L'option D est erronée, car l'oversampling est conçu pour équilibrer les classes en favorisant les classes minoritaires, et ne confère pas plus d’influence à la classe majoritaire qui est ciblée par l’undersampling.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Quelle erreur est courante lorsque l'on évalue un modèle sur des données déséquilibrées?",
+      "question": "Comment l'utilisation des coefficients des class weights influe-t-elle sur la fonction de coût pendant l'apprentissage supervisé?",
       "image_url": null,
       "choices": {
-        "A": "S'appuyer uniquement sur l'accuracy pour la performance globale",
-        "B": "Privilégier le recall sur la precision",
-        "C": "Ajuster excessivement le modèle pour la majorité",
-        "D": "Utiliser le F1 score pour évaluer la classe majoritaire"
+        "A": "Elle diminue l'effet des classes majoritaires uniquement.",
+        "B": "Elle améliore l'accuracy globale directement.",
+        "C": "Elle punit davantage les erreurs sur les classes minoritaires.",
+        "D": "Elle normalise automatiquement chaque feature du dataset."
       },
-      "correct_answer": "A",
-      "explanation": "L'accuracy mal appliquée sur des ensembles déséquilibrés ne représente pas la performance sur les classes minoritaires. B est plus une favorisance méthodologique qu'une erreur factuelle, et C/D n'évaluent pas correctement le déséquilibre de classes.",
+      "correct_answer": "C",
+      "explanation": "Les coefficients des class weights modifient la fonction de coût pour que les erreurs sur les classes minoritaires soient plus sévèrement pénalisées, offrant ainsi une meilleure attention à ces classes pendant l’apprentissage. A est incorrecte, car cette technique influence les erreurs de toutes les classes selon les poids configurés. B ne garantie pas une amélioration de l'accuracy globale, surtout dans les cas de classes majoritaires où les erreurs pourraient augmenter. D est aussi faux, car appliquer des class weights n'a aucune relation avec la normalisation des features du dataset, qui est un processus distinct dans le prétraitement des données.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pourquoi l'échelle logarithmique de la précision est-elle négligeable face à des classes déséquilibrées?",
+      "question": "Quel défi est lié à l'undersampling lors de la formation d'un modèle sur des données fortement déséquilibrées?",
       "image_url": null,
       "choices": {
-        "A": "Elle ne capture pas les différences significatives dans le taux d'erreur",
-        "B": "Elle n'applique qu'aux variables continues",
-        "C": "Elle modifie le taux de rappel linéairement",
-        "D": "Elle affecte plus les faux négatifs que les faux positifs"
+        "A": "Il élimine la nécessité de valider le modèle.",
+        "B": "Il augmente la taille des données de la classe minoritaire.",
+        "C": "Il réduit significativement la variance du modèle.",
+        "D": "Il peut supprimer des instances importantes de la classe majoritaire."
       },
-      "correct_answer": "A",
-      "explanation": "Une échelle logarithmique mesure mal la performance entre classes disproportionnées, négligeant des asymétries clés. B/C/D n'interprètent pas correctement le recours à des échelles log pour traiter les classes.",
+      "correct_answer": "D",
+      "explanation": "L'undersampling élimine certaines instances de la classe majoritaire pour rééquilibrer le dataset, ce qui peut causer la suppression d’instances significatives, affectant ainsi la performance et la précision du modèle. Cela ne dispense pas de la validation du modèle, contrairement à l'option A qui est incorrecte. L'option B est inexacte car elle ne change pas les données de la classe minoritaire mais réduit plutôt la majorité. L'option C ne décrit pas précisément le résultat, puisque couper des données peut même augmenter la variance et ne diminue pas nécessairement la variance sans ajustement approprié des paramètres.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Quel ajustement apporté par une validation croisée aide-t-il à équilibrer l'évaluation de classes déséquilibrées?",
+      "question": "Qu’est-ce qu’un modèle déséquilibré pourrait mal interpréter lors de la prédiction d'un événement rare?",
       "image_url": null,
       "choices": {
-        "A": "Utilisation de plis stratifiés",
-        "B": "Augmentation directe de la classe majoritaire",
-        "C": "Prédiction par ensemble avec aléatoire",
-        "D": "Réduction du taux de faux positifs"
+        "A": "Prédire souvent la classe majoritaire en ignorant les classes minoritaires.",
+        "B": "Réussir exceptionnellement sur les classes minoritaires.",
+        "C": "Diminuer systématiquement le rappel.",
+        "D": "Fournir des prévisions parfaites pour la classe majoritaire."
       },
       "correct_answer": "A",
-      "explanation": "Les plis stratifiés gardent une représentation proportionnelle des classes dans chaque pli, crucial pour une évaluation utile des modèles déséquilibrés. B/C/D sont des actions indépendantes de la validation croisée spécifique aux déséquilibres.",
+      "explanation": "Un modèle déséquilibré pourrait souvent prédire la classe majoritaire et ignorer la classe minoritaire, ce qui est courant lorsque l'accuracy semble élevée mais ne reflète pas la capacité réelle du modèle à détecter des événements rares. L’option B est incorrecte, car réussir sur les événements rares nécessite une attention ciblée sur l'équilibre des classes. L'option C ne capture pas que le rappel peut être faible pour des classes rares. Quant à D, il pourrait permettre des prévisions correctes pour la classe majoritaire, mais cela ne dévoile pas les faiblesses du modèle sur d'autres aspects, spécifiquement la classe minoritaire.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Quel avantage a l'équilibrage via 'class weights' comparé au rééchantillonnage?",
+      "question": "Dans quelle situation le choix du bon seuil de classification pourrait-il être crucial pour un modèle de classification binaire?",
       "image_url": null,
       "choices": {
-        "A": "Évite de modifier le nombre total d'exemples",
-        "B": "Augmente la diversité des données",
-        "C": "Nécessite moins de calculs pour la précision",
-        "D": "Minimise les faux négatifs en priorité"
+        "A": "Quand toutes les classes ont un nombre égal d'exemples.",
+        "B": "Quand les coûts des faux positifs et faux négatifs diffèrent significativement.",
+        "C": "Quand la précision est la seule métrique d'intérêt.",
+        "D": "Quand les classes ont toutes un poids égal dans le modèle."
       },
-      "correct_answer": "A",
-      "explanation": "L'utilisation de 'class weights' garde le dataset inchangé en taille, tandis que le rééchantillonnage modifie le nombre total d'exemples. B supposerait une variation de données erronée, C ne cible pas spécifiquement le calcul impliqué, et D n'est pas un attribut automatique.",
+      "correct_answer": "B",
+      "explanation": "Choisir le bon seuil de classification est crucial lorsqu’il y a une différence significative dans le coût des faux positifs et des faux négatifs, comme dans le contexte médical où rater un faux négatif (ne pas détecter une maladie) peut avoir des conséquences sérieuses. L'option A ne concerne pas le déséquilibre et n’indique pas une situation où le seuil défini serait critique. L'option C est trompeuse car cela ignore comment les autres métriques peuvent être influencées par le choix du seuil, et D ne tient pas compte des situations où les taux d'erreur divergent significativement par classe, rendant le seuil critique pour la performance opérationnelle.",
       "difficulty": "hard"
     }
   ]

@@ -14,7 +14,7 @@
         "D": "La somme des récompenses accumulées par l'agent"
       },
       "correct_answer": "A",
-      "explanation": "Un épisode est une séquence complète d'actions et d'états, allant de l'état initial à l'état terminal. Les choix B et C décrivent des transitions et des actions aléatoires, respectivement, tandis que D se réfère plutôt au retour ou gain cumulatif.",
+      "explanation": "Un épisode est une séquence complète d'actions et d'états, allant de l'état initial à l'état terminal. Les choix B et C décrivent des transitions et des actions aléatoires, respectivement, tandis que D se réfère plutôt au retour ou gain cumulatif. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Une seule transition entre deux états consécutifs) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Un ensemble aléatoire d'actions effectuées par l'agent) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La somme des récompenses accumulées par l'agent) est plausible mais",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Que représente une 'step' dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Une seule exécution d'une action et l'observation de l'état suivant",
-        "B": "La somme de plusieurs transitions dans l'environnement",
+        "A": "La somme de plusieurs transitions dans l'environnement",
+        "B": "Une seule exécution d'une action et l'observation de l'état suivant",
         "C": "Une série d'épisodes terminés par l'agent",
         "D": "La finalité du processus d'apprentissage"
       },
-      "correct_answer": "A",
-      "explanation": "Une 'step' représente la combinaison d'une action prise par l'agent et l'observation de l'état suivant. Les choix B et C concernent des ensembles plus larges de transitions ou d'épisodes, tandis que D décrit l'objectif global de l'apprentissage.",
+      "correct_answer": "B",
+      "explanation": "Une 'step' représente la combinaison d'une action prise par l'agent et l'observation de l'état suivant. Les choix B et C concernent des ensembles plus larges de transitions ou d'épisodes, tandis que D décrit l'objectif global de l'apprentissage. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (La somme de plusieurs transitions dans l'environnement) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une série d'épisodes terminés par l'agent) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La finalité du processus d'apprentissage) est plausible mais faux car il ne respecte pas",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Comment est définie une transition dans un contexte de renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Un triplet composé d'un état, d'une action, et d'un état suivant",
+        "A": "Le passage direct d'un état terminal à un état initial",
         "B": "La durée d'un épisode complet",
-        "C": "Le passage direct d'un état terminal à un état initial",
+        "C": "Un triplet composé d'un état, d'une action, et d'un état suivant",
         "D": "L'ensemble des récompenses obtenues au cours d'un épisode"
       },
-      "correct_answer": "A",
-      "explanation": "Une transition est définie par un triplet (état, action, nouvel état) et souvent inclut une récompense. Les choix B et C concernent des séquences d'états et des re-configurations complètes, quant à D il fait référence aux récompenses accumulées.",
+      "correct_answer": "C",
+      "explanation": "Une transition est définie par un triplet (état, action, nouvel état) et souvent inclut une récompense. Les choix B et C concernent des séquences d'états et des re-configurations complètes, quant à D il fait référence aux récompenses accumulées. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le passage direct d'un état terminal à un état initial) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (La durée d'un épisode complet) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'ensemble des récompenses obtenues au cours d'un épisode) est plausible mais",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Qu'est-ce qu'un état terminal dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Un état après lequel l'agent ne peut plus effectuer d'actions",
+        "A": "Un état où l'agent reçoit un retour instantané maximal",
         "B": "Un état où toutes les récompenses sont doublées",
         "C": "Un état qui permet de redémarrer l'épisode sans condition",
-        "D": "Un état où l'agent reçoit un retour instantané maximal"
+        "D": "Un état après lequel l'agent ne peut plus effectuer d'actions"
       },
-      "correct_answer": "A",
-      "explanation": "Un état terminal est celui après lequel l'agent ne peut plus effectuer d'actions, signalant la fin de l'épisode. Les choix B et C n'ont pas de fondement dans les MDP, et D joue plutôt sur une récompense fictive instantanée.",
+      "correct_answer": "D",
+      "explanation": "Un état terminal est celui après lequel l'agent ne peut plus effectuer d'actions, signalant la fin de l'épisode. Les choix B et C n'ont pas de fondement dans les MDP, et D joue plutôt sur une récompense fictive instantanée. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un état où l'agent reçoit un retour instantané maximal) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Un état où toutes les récompenses sont doublées) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Un état qui permet de redémarrer l'épisode sans",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Il assure une exploration exhaustive des états"
       },
       "correct_answer": "A",
-      "explanation": "Un état terminal est nécessaire pour connaître la fin d'un épisode et évaluer l'apprentissage de l'agent. Les choix B et C sont incorrects car les états terminaux n'ont pas d'impact direct sur les types de récompenses ou la capacité à réaliser des actions. D est faux car la fin ne garantit pas une exploration exhaustive.",
+      "explanation": "Un état terminal est nécessaire pour connaître la fin d'un épisode et évaluer l'apprentissage de l'agent. Les choix B et C sont incorrects car les états terminaux n'ont pas d'impact direct sur les types de récompenses ou la capacité à réaliser des actions. D est faux car la fin ne garantit pas une exploration exhaustive. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il garantit que l'agent évitera les récompenses négatives) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il empêche toute action d'être réalisée) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "easy"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quelle information est typiquement incluse dans une transition?",
       "image_url": null,
       "choices": {
-        "A": "État actuel, action exécutée, récompense obtenue, nouvel état",
-        "B": "Liste complète des actions possibles",
+        "A": "Liste complète des actions possibles",
+        "B": "État actuel, action exécutée, récompense obtenue, nouvel état",
         "C": "Somme des récompenses depuis le début de l'épisode",
         "D": "Nombre total d'états visités"
       },
-      "correct_answer": "A",
-      "explanation": "Une transition inclut généralement l'état actuel, l'action, la récompense, et le nouvel état. Les choix B et D décrivent des aspects de l'ensemble de l'environnement, tandis que C se réfère au retour cumulé, pas à une seule transition.",
+      "correct_answer": "B",
+      "explanation": "Une transition inclut généralement l'état actuel, l'action, la récompense, et le nouvel état. Les choix B et D décrivent des aspects de l'ensemble de l'environnement, tandis que C se réfère au retour cumulé, pas à une seule transition. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Liste complète des actions possibles) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Somme des récompenses depuis le début de l'épisode) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Nombre total d'états visités) est plausible mais faux car il ne respecte pas",
       "difficulty": "easy"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quel est le rôle des épisodes dans le renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Ils définissent des unités de mesure pour évaluer la performance",
+        "A": "Ils s'assurent que chaque état est visité au moins une fois",
         "B": "Ils empêchent l'agent d'apprendre des comportements non désirés",
-        "C": "Ils s'assurent que chaque état est visité au moins une fois",
+        "C": "Ils définissent des unités de mesure pour évaluer la performance",
         "D": "Ils sont utilisés pour calculer les récompenses instantanées"
       },
-      "correct_answer": "A",
-      "explanation": "Les épisodes servent d'unités de mesure pour évaluer la performance de l'agent. Les choix B et C sont incorrects quant à la prévention de comportements ou de visites d'états, et D concerne les récompenses immédiates dans les transitions, pas par épisode.",
+      "correct_answer": "C",
+      "explanation": "Les épisodes servent d'unités de mesure pour évaluer la performance de l'agent. Les choix B et C sont incorrects quant à la prévention de comportements ou de visites d'états, et D concerne les récompenses immédiates dans les transitions, pas par épisode. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ils s'assurent que chaque état est visité au moins une fois) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Ils empêchent l'agent d'apprendre des comportements non désirés) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Ils sont utilisés pour",
       "difficulty": "easy"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Pourquoi est-il essentiel d'inclure la récompense dans une transition?",
       "image_url": null,
       "choices": {
-        "A": "Elle influence immédiatement comment l'agent évalue les actions futures",
+        "A": "Elle garantit que tous les états sont explorés uniformément",
         "B": "Sans elle, l'état terminal ne peut pas être déterminé",
         "C": "Elle définit la direction de toutes les politiques d'actions",
-        "D": "Elle garantit que tous les états sont explorés uniformément"
+        "D": "Elle influence immédiatement comment l'agent évalue les actions futures"
       },
-      "correct_answer": "A",
-      "explanation": "La récompense dans une transition influence directement l'algorithme pour évaluer la qualité des actions. B est faux car l'état terminal ne se définit pas par la récompense, tandis que C et D ne sont pas directement liés à la façon dont les transitions façonnent l'apprentissage.",
+      "correct_answer": "D",
+      "explanation": "La récompense dans une transition influence directement l'algorithme pour évaluer la qualité des actions. B est faux car l'état terminal ne se définit pas par la récompense, tandis que C et D ne sont pas directement liés à la façon dont les transitions façonnent l'apprentissage. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle garantit que tous les états sont explorés uniformément) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Sans elle, l'état terminal ne peut pas être déterminé) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Tous les résultats des actions sont réinitialisés"
       },
       "correct_answer": "A",
-      "explanation": "Si un épisode n'atteint jamais un état terminal, il sera généralement arrêté par des critères prédéfinis comme une limite de temps ou un seuil de convergence. B et D ne sont pas corrects car ils ne reflètent pas le traitement standard des épisodes non terminés, et C n'a aucun fondement algorithmique.",
+      "explanation": "Si un épisode n'atteint jamais un état terminal, il sera généralement arrêté par des critères prédéfinis comme une limite de temps ou un seuil de convergence. B et D ne sont pas corrects car ils ne reflètent pas le traitement standard des épisodes non terminés, et C n'a aucun fondement algorithmique. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (L'agent finit par explorer tous les états possibles indéfiniment) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Les récompenses sont automatiquement doublées) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Comment une 'step' contribue-t-elle à une meilleure compréhension de l'environnement par l'agent?",
       "image_url": null,
       "choices": {
-        "A": "Elle fournit un retour immédiat sur l'utilité de l'action prise",
-        "B": "Elle permet à l'agent de sauter directement à un état terminal",
+        "A": "Elle permet à l'agent de sauter directement à un état terminal",
+        "B": "Elle fournit un retour immédiat sur l'utilité de l'action prise",
         "C": "Elle génère automatiquement une nouvelle politique optimale",
         "D": "Elle réduit le nombre d'états possibles à chaque action"
       },
-      "correct_answer": "A",
-      "explanation": "Une 'step' offre un retour direct en termes de récompense qui permet à l'agent d'affiner ses politiques. B et C ne sont pas possibles car une step ne change pas directement l'objectif global, et D est incorrect car l'action elle-même n'altère pas le total des états.",
+      "correct_answer": "B",
+      "explanation": "Une 'step' offre un retour direct en termes de récompense qui permet à l'agent d'affiner ses politiques. B et C ne sont pas possibles car une step ne change pas directement l'objectif global, et D est incorrect car l'action elle-même n'altère pas le total des états. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle permet à l'agent de sauter directement à un état terminal) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle génère automatiquement une nouvelle politique optimale) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Dans quel cas un état terminal devient-il crucial pour l'agent lors de l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Lorsqu'un agent doit évaluer le succès d'une stratégie sur une tâche complète",
+        "A": "Quand l'agent veut répéter inlassablement les actions déjà optimales",
         "B": "Lorsque l'agent est incapable de choisir entre deux actions",
-        "C": "Quand l'agent veut répéter inlassablement les actions déjà optimales",
+        "C": "Lorsqu'un agent doit évaluer le succès d'une stratégie sur une tâche complète",
         "D": "Si un état ne peut pas être modifié par des actions"
       },
-      "correct_answer": "A",
-      "explanation": "L'état terminal est crucial pour l'évaluation de la réussite d'une stratégie, car il signale la fin d'une tâche, permettant ainsi de mesurer l'efficacité. B et D ne concernent pas l'importance des états terminaux pour l'apprentissage, et C loupe le point central du suivi de rendement à l'achèvement des tâches.",
+      "correct_answer": "C",
+      "explanation": "L'état terminal est crucial pour l'évaluation de la réussite d'une stratégie, car il signale la fin d'une tâche, permettant ainsi de mesurer l'efficacité. B et D ne concernent pas l'importance des états terminaux pour l'apprentissage, et C loupe le point central du suivi de rendement à l'achèvement des tâches. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Quand l'agent veut répéter inlassablement les actions déjà optimales) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Lorsque l'agent est incapable de choisir entre deux actions) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Dans le cadre de l'apprentissage par renforcement, qu'est-ce qu'un 'épisode'?",
       "image_url": null,
       "choices": {
-        "A": "Une séquence complète de décisions prise par un agent, de l'état initial à l'état terminal.",
+        "A": "Un événement aléatoire qui modifie l'environnement de manière imprévisible.",
         "B": "Un ensemble de transitions entre deux états avec récompenses.",
         "C": "Une simple étape dans laquelle un agent reçoit une récompense pour une action spécifique.",
-        "D": "Un événement aléatoire qui modifie l'environnement de manière imprévisible."
+        "D": "Une séquence complète de décisions prise par un agent, de l'état initial à l'état terminal."
       },
-      "correct_answer": "A",
-      "explanation": "Un 'épisode' en apprentissage par renforcement est une séquence complète de décisions allant de l'état initial à un état terminal. Cette définition permet l'évaluation de la performance globale d'un agent. Choix B décrit plutôt ce qu'est une 'transition', C correspond à un 'step', et D est incorrect car un épisode suit une série de décisions rationnelles de l'agent, même dans un environnement stochastique.",
+      "correct_answer": "D",
+      "explanation": "Un 'épisode' en apprentissage par renforcement est une séquence complète de décisions allant de l'état initial à un état terminal. Cette définition permet l'évaluation de la performance globale d'un agent. Choix B décrit plutôt ce qu'est une 'transition', C correspond à un 'step', et D est incorrect car un épisode suit une série de décisions rationnelles de l'agent, même dans un environnement stochastique. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un événement aléatoire qui modifie l'environnement de manière imprévisible.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Un ensemble de transitions entre deux états avec récompenses.) est plausible mais",
       "difficulty": "easy"
     }
   ]

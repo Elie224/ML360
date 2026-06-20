@@ -14,7 +14,7 @@
         "D": "SARSA nécessite un modèle de l'environnement, tandis que Q-learning n'en nécessite pas."
       },
       "correct_answer": "A",
-      "explanation": "SARSA, ou State-Action-Reward-State-Action, est un algorithme on-policy, ce qui signifie qu'il met à jour les valeurs Q en utilisant la prochaine action choisie par la politique actuelle. En revanche, Q-learning est off-policy et met à jour en considérant la meilleure action possible. B est faux car les deux algorithmes peuvent mettre à jour à chaque étape. C est incorrect car les deux sont des algorithmes en ligne. D est incorrect car aucun des deux n'exige un modèle de l’environnement.",
+      "explanation": "SARSA, ou State-Action-Reward-State-Action, est un algorithme on-policy, ce qui signifie qu'il met à jour les valeurs Q en utilisant la prochaine action choisie par la politique actuelle. En revanche, Q-learning est off-policy et met à jour en considérant la meilleure action possible. B est faux car les deux algorithmes peuvent mettre à jour à chaque étape. C est incorrect car les deux sont des algorithmes en ligne. D est incorrect car aucun des deux n'exige un modèle de l’environnement. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (SARSA met à jour les valeurs Q après chaque épisode, tandis que Q-learning met à jour après chaque étape.) est plausible mais faux car il",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Quel problème résout le double Q-learning par rapport au Q-learning classique?",
       "image_url": null,
       "choices": {
-        "A": "Il réduit le biais de surévaluation des estimations de valeurs d'action.",
-        "B": "Il détermine automatiquement la meilleure politique sans exploration.",
+        "A": "Il détermine automatiquement la meilleure politique sans exploration.",
+        "B": "Il réduit le biais de surévaluation des estimations de valeurs d'action.",
         "C": "Il met à jour les valeurs Q sans nécessiter de fonction de récompense.",
         "D": "Il résout le problème de convergence des valeurs d'état-action."
       },
-      "correct_answer": "A",
-      "explanation": "Le double Q-learning résout le biais de surévaluation typique des algorithmes de Q-learning en utilisant deux ensembles de valeurs Q pour décomposer l'estimation en deux étapes distinctes. B est faux car l'exploration est nécessaire pour déterminer une politique optimale. C est incorrect car une fonction de récompense est essentielle pour la mise à jour des valeurs Q. D est incorrect car le problème de convergence n'est pas spécifique à Q-learning, mais à comment il est implémenté.",
+      "correct_answer": "B",
+      "explanation": "Le double Q-learning résout le biais de surévaluation typique des algorithmes de Q-learning en utilisant deux ensembles de valeurs Q pour décomposer l'estimation en deux étapes distinctes. B est faux car l'exploration est nécessaire pour déterminer une politique optimale. C est incorrect car une fonction de récompense est essentielle pour la mise à jour des valeurs Q. D est incorrect car le problème de convergence n'est pas spécifique à Q-learning, mais à comment il est implémenté. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il détermine automatiquement la meilleure politique sans exploration.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Dans le contexte de l'apprentissage par renforcement avec traces d'éligibilité, qu'est-ce qu'une trace d'éligibilité?",
       "image_url": null,
       "choices": {
-        "A": "Un mécanisme qui attribue du crédit aux états et actions passés proportionnellement à leur durée depuis leur apparition.",
+        "A": "Une méthode pour réduire la variance des mises à jour des valeurs d'action.",
         "B": "Un algorithme de planification visant à anticiper les actions futures.",
-        "C": "Une méthode pour réduire la variance des mises à jour des valeurs d'action.",
+        "C": "Un mécanisme qui attribue du crédit aux états et actions passés proportionnellement à leur durée depuis leur apparition.",
         "D": "Une approche pour diminuer les besoins en mémoire lors de l'apprentissage par renforcement."
       },
-      "correct_answer": "A",
-      "explanation": "Les traces d'éligibilité sont un mécanisme qui étend l'attribution des récompenses aux états et actions précédents dans une trajectoire, pondérées par leur distance temporelle. B est faux car les traces ne planifient pas les actions futures. C est erroné car elles ne visent pas nécessairement à réduire la variance mais à améliorer l'apprentissage. D est faux car elles augmentent en fait le besoin de stockage pour conserver les traces.",
+      "correct_answer": "C",
+      "explanation": "Les traces d'éligibilité sont un mécanisme qui étend l'attribution des récompenses aux états et actions précédents dans une trajectoire, pondérées par leur distance temporelle. B est faux car les traces ne planifient pas les actions futures. C est erroné car elles ne visent pas nécessairement à réduire la variance mais à améliorer l'apprentissage. D est faux car elles augmentent en fait le besoin de stockage pour conserver les traces. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une méthode pour réduire la variance des mises à jour des valeurs d'action.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Un algorithme",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Comment le biais de maximisation impacte-t-il les algorithmes d'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Il conduit à une surévaluation des valeurs Q lorsque des actions optimales sont systématiquement sélectionnées.",
+        "A": "Il améliore la stabilité des estimations de la politique optimale.",
         "B": "Il empêche l'algorithme de converger vers une solution optimale.",
         "C": "Il cause une sous-évaluation systématique des récompenses immédiates.",
-        "D": "Il améliore la stabilité des estimations de la politique optimale."
+        "D": "Il conduit à une surévaluation des valeurs Q lorsque des actions optimales sont systématiquement sélectionnées."
       },
-      "correct_answer": "A",
-      "explanation": "Le biais de maximisation dans les algorithmes d'apprentissage par renforcement survient lorsque les valeurs Q sont surévaluées en raison du bruit dans les échantillons, car les algorithmes comme Q-learning choisissent systématiquement les actions optimales dans leur estimation. B est incorrect car ce biais n'empêche pas nécessairement la convergence. C est faux car le biais affecte les estimations des actions futures, pas les récompenses immédiates. D est incorrect car le biais de maximisation ajoute de l'instabilité dans les estimations.",
+      "correct_answer": "D",
+      "explanation": "Le biais de maximisation dans les algorithmes d'apprentissage par renforcement survient lorsque les valeurs Q sont surévaluées en raison du bruit dans les échantillons, car les algorithmes comme Q-learning choisissent systématiquement les actions optimales dans leur estimation. B est incorrect car ce biais n'empêche pas nécessairement la convergence. C est faux car le biais affecte les estimations des actions futures, pas les récompenses immédiates. D est incorrect car le biais de maximisation ajoute de l'instabilité dans les estimations. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il améliore la stabilité des estimations de la politique optimale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Elles éliminent totalement le besoin d'une fonction de politique pour l'apprentissage."
       },
       "correct_answer": "A",
-      "explanation": "Les traces d'éligibilité permettent d'accélérer la propagation du retour en intégrant les transitions passées au sein d'un épisode pour ajuster plus rapidement les valeurs Q. B est faux parce que les traces ne se concentrent pas sur l'exploration, mais plutôt sur l'exploitation de l'information de trajectoires passées. C est incorrect car elles ne garantissent pas la convergence en soi, cela dépend du choix des paramètres. D est faux car une fonction de politique reste nécessaire pour guider l'agent dans la sélection des actions.",
+      "explanation": "Les traces d'éligibilité permettent d'accélérer la propagation du retour en intégrant les transitions passées au sein d'un épisode pour ajuster plus rapidement les valeurs Q. B est faux parce que les traces ne se concentrent pas sur l'exploration, mais plutôt sur l'exploitation de l'information de trajectoires passées. C est incorrect car elles ne garantissent pas la convergence en soi, cela dépend du choix des paramètres. D est faux car une fonction de politique reste nécessaire pour guider l'agent dans la sélection des actions. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elles facilitent l'exploration exhaustive de l'espace d'état.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quel est le principe fondamental du SARSA (State-Action-Reward-State-Action) dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Il met à jour les valeurs Q en utilisant l'action réellement choisie par l'agent.",
-        "B": "Il met à jour les valeurs Q en utilisant toujours l'action ayant la plus grande valeur Q possible.",
+        "A": "Il met à jour les valeurs Q en utilisant toujours l'action ayant la plus grande valeur Q possible.",
+        "B": "Il met à jour les valeurs Q en utilisant l'action réellement choisie par l'agent.",
         "C": "Il ne met à jour les valeurs Q que lorsque l'agent atteint un état terminal.",
         "D": "Il met à jour les valeurs Q en ignorant l'état suivant de l'environnement."
       },
-      "correct_answer": "A",
-      "explanation": "Le SARSA est appelé on-policy car il met à jour la valeur en fonction de l'action effectivement réalisée par l'agent. La réponse B est fausse car elle décrit plutôt le Q-learning. La réponse C est incorrecte car l'actualisation dans SARSA est effectuée à chaque étape, pas seulement dans un état terminal. La réponse D est fausse car le SARSA tient compte de l'état suivant pour calculer la récompense future.",
+      "correct_answer": "B",
+      "explanation": "Le SARSA est appelé on-policy car il met à jour la valeur en fonction de l'action effectivement réalisée par l'agent. La réponse B est fausse car elle décrit plutôt le Q-learning. La réponse C est incorrecte car l'actualisation dans SARSA est effectuée à chaque étape, pas seulement dans un état terminal. La réponse D est fausse car le SARSA tient compte de l'état suivant pour calculer la récompense future. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il met à jour les valeurs Q en utilisant toujours l'action ayant la plus grande valeur Q possible.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -92,12 +92,12 @@
       "question": "Quelle est la principale différence entre l'algorithme SARSA et Q-learning en termes de mise à jour de la politique?",
       "image_url": null,
       "choices": {
-        "A": "SARSA met à jour en utilisant l'action réellement prise tandis que Q-learning utilise la meilleure action possible.",
+        "A": "SARSA ne met pas à jour ses valeurs d'état-action à chaque étape.",
         "B": "SARSA utilise un modèle de l'environnement, contrairement à Q-learning.",
-        "C": "SARSA ne met pas à jour ses valeurs d'état-action à chaque étape.",
+        "C": "SARSA met à jour en utilisant l'action réellement prise tandis que Q-learning utilise la meilleure action possible.",
         "D": "Q-learning met à jour en temps réel et SARSA de façon différée."
       },
-      "correct_answer": "A",
+      "correct_answer": "C",
       "explanation": "SARSA, un acronyme pour State-Action-Reward-State-Action, met à jour ses valeurs en fonction de l'action réellement suivie dans l'épisode. C'est une méthode de contrôle « on-policy ». En revanche, Q-learning utilise la meilleure action possible (politique optimale) lors de sa mise à jour, ce qui en fait une méthode « off-policy ». Réponse B est fausse car ni SARSA ni Q-learning n'utilisent de modèle de l'environnement. Réponse C est incorrecte, car les deux algorithmes mettent à jour à chaque étape. Réponse D est fausse parce que les deux algorithmes mettent à jour en temps réel.",
       "difficulty": "medium"
     },
@@ -106,13 +106,13 @@
       "question": "En double Q-learning, comment la sélection et l'évaluation de l'action sont-elles réparties?",
       "image_url": null,
       "choices": {
-        "A": "La sélection de l'action utilise la première fonction Q et l'évaluation de l'action utilise la seconde fonction Q.",
+        "A": "L'évaluation de l'action n'utilise pas de fonction Q.",
         "B": "Les deux, la sélection et l'évaluation, utilisent la première fonction Q seulement.",
         "C": "La sélection d'actions utilise des valeurs moyennes des deux fonctions Q.",
-        "D": "L'évaluation de l'action n'utilise pas de fonction Q."
+        "D": "La sélection de l'action utilise la première fonction Q et l'évaluation de l'action utilise la seconde fonction Q."
       },
-      "correct_answer": "A",
-      "explanation": "En double Q-learning, deux fonctions Q distinctes sont maintenues, et la sélection de l'action optimale est effectuée à partir de l'une tandis que l'évaluation de cette action est faite à l'aide de la seconde fonction Q. Réponse B est incorrecte car les deux étapes n’utilisent pas la même fonction Q. Réponse C est fausse parce que l’algorithme ne réalise pas de moyennes entre les différentes valeurs. Réponse D est incorrecte, l'évaluation utilise bien une fonction Q.",
+      "correct_answer": "D",
+      "explanation": "En double Q-learning, deux fonctions Q distinctes sont maintenues, et la sélection de l'action optimale est effectuée à partir de l'une tandis que l'évaluation de cette action est faite à l'aide de la seconde fonction Q. Réponse B est incorrecte car les deux étapes n’utilisent pas la même fonction Q. Réponse C est fausse parce que l’algorithme ne réalise pas de moyennes entre les différentes valeurs. Réponse D est incorrecte, l'évaluation utilise bien une fonction Q. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'évaluation de l'action n'utilise pas de fonction Q.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "La fréquence de l'actualisation des récompenses."
       },
       "correct_answer": "A",
-      "explanation": "Lambda dans le cadre des traces d'éligibilité contrôle la vitesse à laquelle les traces d'éligibilité se dégradent avec le temps. Réponse B est fausse car elle concerne le taux d'apprentissage. Réponse C est incorrecte, car elle se rapporte généralement au tuning du facteur d'exploration/exploitation souvent noté epsilon. Réponse D est erronée car ne correspond pas au rôle du paramètre lambda.",
+      "explanation": "Lambda dans le cadre des traces d'éligibilité contrôle la vitesse à laquelle les traces d'éligibilité se dégradent avec le temps. Réponse B est fausse car elle concerne le taux d'apprentissage. Réponse C est incorrecte, car elle se rapporte généralement au tuning du facteur d'exploration/exploitation souvent noté epsilon. Réponse D est erronée car ne correspond pas au rôle du paramètre lambda. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La learning rate des algorithmes de renforcement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'exploration par rapport à l'exploitation.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quel problème le biais de maximisation vise-t-il à corriger dans les algorithmes de renforcement?",
       "image_url": null,
       "choices": {
-        "A": "L'exagération de l'impact de récompenses observées lors de la sélection des actions.",
-        "B": "L'incapacité à explorer de nouvelles actions en raison de l'exploitation.",
+        "A": "L'incapacité à explorer de nouvelles actions en raison de l'exploitation.",
+        "B": "L'exagération de l'impact de récompenses observées lors de la sélection des actions.",
         "C": "La lente convergence due à la faible learning rate.",
         "D": "L'oubli des anciennes expériences dans la mise à jour de la politique."
       },
-      "correct_answer": "A",
-      "explanation": "Le biais de maximisation survient lorsque les algorithmes de renforcement surestiment les valeurs d'état-action en raison de l'utilisation systématique des valeurs maximales estimées par une seule fonction Q. Réponse B est fausse, car elle se concentre sur le problème d'exploration/exploitation. Réponse C est incorrecte, il s'agit d'un problème lié au taux d'apprentissage. Réponse D est à côté du problème car il ne concerne pas la mise à jour des politiques.",
+      "correct_answer": "B",
+      "explanation": "Le biais de maximisation survient lorsque les algorithmes de renforcement surestiment les valeurs d'état-action en raison de l'utilisation systématique des valeurs maximales estimées par une seule fonction Q. Réponse B est fausse, car elle se concentre sur le problème d'exploration/exploitation. Réponse C est incorrecte, il s'agit d'un problème lié au taux d'apprentissage. Réponse D est à côté du problème car il ne concerne pas la mise à jour des politiques. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'incapacité à explorer de nouvelles actions en raison de l'exploitation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La lente convergence due",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Comment SARSA peut-il être comparé à Q-learning en termes de convergence dans des environnements dynamiques?",
       "image_url": null,
       "choices": {
-        "A": "SARSA converge mieux que Q-learning dans les environnements changeants.",
+        "A": "SARSA ne convergera jamais dans les environnements dynamiques.",
         "B": "Q-learning converge plus rapidement que SARSA dans tous les environnements.",
-        "C": "SARSA ne convergera jamais dans les environnements dynamiques.",
+        "C": "SARSA converge mieux que Q-learning dans les environnements changeants.",
         "D": "L'algorithme SARSA est défini pour les environnements statiques uniquement."
       },
-      "correct_answer": "A",
-      "explanation": "SARSA, en tant qu'algorithme « on-policy », s'adapte mieux aux environnements dynamiques car il prend en compte les actions réellement suivies. Réponse B est fausse car Q-learning peut être moins stable dans les environnements dynamiques. Réponse C est incorrecte car SARSA peut converger, bien que potentiellement plus lentement. Réponse D est erronée, SARSA n'est pas limité aux environnements statiques.",
+      "correct_answer": "C",
+      "explanation": "SARSA, en tant qu'algorithme « on-policy », s'adapte mieux aux environnements dynamiques car il prend en compte les actions réellement suivies. Réponse B est fausse car Q-learning peut être moins stable dans les environnements dynamiques. Réponse C est incorrecte car SARSA peut converger, bien que potentiellement plus lentement. Réponse D est erronée, SARSA n'est pas limité aux environnements statiques. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (SARSA ne convergera jamais dans les environnements dynamiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Q-learning converge plus rapidement que SARSA dans tous les environnements.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Dans un contexte de traces d'éligibilité, que signifie une valeur de lambda égale à 1?",
       "image_url": null,
       "choices": {
-        "A": "L'algorithme se rapproche de la méthode Monte Carlo.",
+        "A": "Les traces d'éligibilité ne décayent jamais dans le temps.",
         "B": "L'algorithme se désengage complètement des updates arriérés.",
         "C": "Aucune mise à jour n'est appliquée aux valeurs d'état-action.",
-        "D": "Les traces d'éligibilité ne décayent jamais dans le temps."
+        "D": "L'algorithme se rapproche de la méthode Monte Carlo."
       },
-      "correct_answer": "A",
-      "explanation": "Avec lambda = 1, les traces d'éligibilité n'ont pas de décroissance, ce qui fait que l'algorithme se rapproche de l'apprentissage par renforcement total type Monte Carlo. Réponse B est fausse car une valeur de 1 implique à l'inverse une pleine implication des mises à jour passées. Réponse C est incorrecte car des mises à jour se produisent toujours. Réponse D exagère, car bien que la décroissance soit nulle, tout ne reste pas éternellement en mémoire.",
+      "correct_answer": "D",
+      "explanation": "Avec lambda = 1, les traces d'éligibilité n'ont pas de décroissance, ce qui fait que l'algorithme se rapproche de l'apprentissage par renforcement total type Monte Carlo. Réponse B est fausse car une valeur de 1 implique à l'inverse une pleine implication des mises à jour passées. Réponse C est incorrecte car des mises à jour se produisent toujours. Réponse D exagère, car bien que la décroissance soit nulle, tout ne reste pas éternellement en mémoire. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les traces d'éligibilité ne décayent jamais dans le temps.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Rendu des récompenses pour chaque action moins aléatoires."
       },
       "correct_answer": "A",
-      "explanation": "Le double Q-learning utilise deux évaluations différentes des actions pour désolidariser le potentiel biaisé des estimations, limitant ainsi la corrélation et le biais de maximisation. Réponse B est incorrecte, car double Q-learning ne repose pas sur des modèles probabilistes de choix. Réponse C est incorrecte, car augmenter epsilon réduirait l'exploitation mais est orthogonal au biais de maximisation. Réponse D est fausse, car la distribution des récompenses n'est pas changée.",
+      "explanation": "Le double Q-learning utilise deux évaluations différentes des actions pour désolidariser le potentiel biaisé des estimations, limitant ainsi la corrélation et le biais de maximisation. Réponse B est incorrecte, car double Q-learning ne repose pas sur des modèles probabilistes de choix. Réponse C est incorrecte, car augmenter epsilon réduirait l'exploitation mais est orthogonal au biais de maximisation. Réponse D est fausse, car la distribution des récompenses n'est pas changée. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Incorporation d'un modèle probabiliste pour les choix d'action.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Augmentation indéfinie du taux d'exploration epsilon.) est",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Comment les traces d'éligibilité améliorent-elles l'efficacité de l'apprentissage dans les algorithmes comme SARSA?",
       "image_url": null,
       "choices": {
-        "A": "En permettant des mises à jour plus rapides en intégrant plusieurs étapes du passé en une seule fois.",
-        "B": "En augmentant le taux d'apprentissage gamma au-delà de 1 pour une convergence rapide.",
+        "A": "En augmentant le taux d'apprentissage gamma au-delà de 1 pour une convergence rapide.",
+        "B": "En permettant des mises à jour plus rapides en intégrant plusieurs étapes du passé en une seule fois.",
         "C": "En ignorant complètement les erreurs de prédiction futures.",
         "D": "En redoublant la taille de l'échantillon de données à chaque itération."
       },
-      "correct_answer": "A",
-      "explanation": "Les traces d'éligibilité améliorent l'efficacité de l'apprentissage en intégrant des informations de plusieurs étapes passées à une mise à jour unique, ce qui accélère la convergence par rapport aux méthodes traditionnelles par étape unique. Réponse B est incorrecte, gamma doit rester dans l'intervalle [0,1]. Réponse C est fausse, les traces d'éligibilité ne négligent pas les étapes futures. Réponse D est incorrecte, elles n'augmentent pas l'échantillon de données.",
+      "correct_answer": "B",
+      "explanation": "Les traces d'éligibilité améliorent l'efficacité de l'apprentissage en intégrant des informations de plusieurs étapes passées à une mise à jour unique, ce qui accélère la convergence par rapport aux méthodes traditionnelles par étape unique. Réponse B est incorrecte, gamma doit rester dans l'intervalle [0,1]. Réponse C est fausse, les traces d'éligibilité ne négligent pas les étapes futures. Réponse D est incorrecte, elles n'augmentent pas l'échantillon de données. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En augmentant le taux d'apprentissage gamma au-delà de 1 pour une convergence rapide.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En ignorant complètement les",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Pourquoi le double Q-learning peut-il être plus efficace que le Q-learning classique?",
       "image_url": null,
       "choices": {
-        "A": "Il réduit l'usage excessif des valeurs maximales biaisées dans l'estimation des récompenses.",
+        "A": "Il utilise un modèle supervisé pour prédire les meilleures actions.",
         "B": "Il abaisse automatiquement le taux d'exploration selon l'environnement.",
-        "C": "Il utilise un modèle supervisé pour prédire les meilleures actions.",
+        "C": "Il réduit l'usage excessif des valeurs maximales biaisées dans l'estimation des récompenses.",
         "D": "Il supprime la phase d'exploration dès les premiers essais réussis."
       },
-      "correct_answer": "A",
-      "explanation": "Le double Q-learning est plus efficace car il réduit le biais de maximisation en utilisant deux ensembles de valeurs d'état-action Q, limitant ainsi l'utilisation excessive et potentiellement faussée des estimations maximales. Réponse B est incorrecte car le double Q-learning ne modifie pas dynamiquement epsilon. Réponse C est fausse, car il s'agit toujours d'un apprentissage par renforcement non supervisé. Réponse D est incorrecte, une exploration suffisante reste nécessaire pour de bonnes performances.",
+      "correct_answer": "C",
+      "explanation": "Le double Q-learning est plus efficace car il réduit le biais de maximisation en utilisant deux ensembles de valeurs d'état-action Q, limitant ainsi l'utilisation excessive et potentiellement faussée des estimations maximales. Réponse B est incorrecte car le double Q-learning ne modifie pas dynamiquement epsilon. Réponse C est fausse, car il s'agit toujours d'un apprentissage par renforcement non supervisé. Réponse D est incorrecte, une exploration suffisante reste nécessaire pour de bonnes performances. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il utilise un modèle supervisé pour prédire les meilleures actions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il abaisse automatiquement",
       "difficulty": "hard"
     }
   ]

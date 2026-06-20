@@ -14,7 +14,7 @@
         "D": "Utiliser l'augmentation de données pour générer des labels synthétiques."
       },
       "correct_answer": "A",
-      "explanation": "Le filtre de confiance consiste à utiliser un seuil de probabilité sur les sorties du modèle pour n'accepter que les pseudo-labels les plus fiables et donc réduire le bruit dans les labels. B est une confusion avec la normalisation des données, C concerne une technique de contrôle du surajustement non spécifique aux pseudo-labels, et D parle d'augmentation de données qui ne s'inscrit pas spécifiquement dans le filtrage de confiance.",
+      "explanation": "Le filtre de confiance consiste à utiliser un seuil de probabilité sur les sorties du modèle pour n'accepter que les pseudo-labels les plus fiables et donc réduire le bruit dans les labels. B est une confusion avec la normalisation des données, C concerne une technique de contrôle du surajustement non spécifique aux pseudo-labels, et D parle d'augmentation de données qui ne s'inscrit pas spécifiquement dans le filtrage de confiance. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Appliquer un filtre numérique pour normaliser les pseudo-labels.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Limiter l'ajout de nouvelles données pour éviter",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Comment la température affecte-t-elle la distribution des probabilités dans le contexte de pseudo-labeling?",
       "image_url": null,
       "choices": {
-        "A": "La température contrôle la concentration des probabilités, une température plus basse rend les prévisions plus confiantes.",
-        "B": "Elle normalise la somme des probabilités pour qu'elles totalisent un.",
+        "A": "Elle normalise la somme des probabilités pour qu'elles totalisent un.",
+        "B": "La température contrôle la concentration des probabilités, une température plus basse rend les prévisions plus confiantes.",
         "C": "Elle ajuste le taux d'apprentissage pendant l'entraînement.",
         "D": "Elle est utilisée pour augmenter le dataset en générant plus d'échantillons."
       },
-      "correct_answer": "A",
-      "explanation": "Dans le contexte de pseudo-labeling, la température est utilisée pour aplatir ou affiner la distribution des probabilités. Une température plus élevée diminue la confiance, tandis qu'une température plus basse augmente la certitude des prévisions. B est une description générale de la normalisation, C parle à tort du taux d'apprentissage, et D concerne l'augmentation de données.",
+      "correct_answer": "B",
+      "explanation": "Dans le contexte de pseudo-labeling, la température est utilisée pour aplatir ou affiner la distribution des probabilités. Une température plus élevée diminue la confiance, tandis qu'une température plus basse augmente la certitude des prévisions. B est une description générale de la normalisation, C parle à tort du taux d'apprentissage, et D concerne l'augmentation de données. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle normalise la somme des probabilités pour qu'elles totalisent un.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle ajuste le taux d'apprentissage pendant l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "En quoi consiste le label sharpening dans le cadre de l'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Transformer une distribution de probabilités en une distribution plus pointue pour renforcer les prédictions fortes.",
+        "A": "Augmenter le nombre de classes de sortie pour une meilleure diversification.",
         "B": "Rendre tous les labels pseudo plus similaires pour assurer l'homogénéité.",
-        "C": "Augmenter le nombre de classes de sortie pour une meilleure diversification.",
+        "C": "Transformer une distribution de probabilités en une distribution plus pointue pour renforcer les prédictions fortes.",
         "D": "Ajuster la taille du batch pour stabiliser l'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "Le label sharpening est un processus transformant les distributions de probabilités pour les rendre plus concentrées, ce qui renforce les prédictions fortes et réduit les fluctuations. B est incorrect car il décrit une homogénéisation inutile des labels, C est hors sujet par rapport au concept de sharpening, et D est lié à la gestion des batches, pas au label sharpening.",
+      "correct_answer": "C",
+      "explanation": "Le label sharpening est un processus transformant les distributions de probabilités pour les rendre plus concentrées, ce qui renforce les prédictions fortes et réduit les fluctuations. B est incorrect car il décrit une homogénéisation inutile des labels, C est hors sujet par rapport au concept de sharpening, et D est lié à la gestion des batches, pas au label sharpening. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmenter le nombre de classes de sortie pour une meilleure diversification.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Rendre tous les labels pseudo plus similaires pour assurer l'homogénéité.) est plausible mais",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quel est l'objectif principal de la correction itérative dans le pseudo-labeling?",
       "image_url": null,
       "choices": {
-        "A": "Améliorer progressivement la qualité des pseudo-labels par des étapes successives d'entraînement.",
+        "A": "Réduire la complexité des modèles pour des temps d'entraînement plus courts.",
         "B": "Ajouter aléatoirement du bruit aux données pour améliorer la robustesse.",
         "C": "Converger vers un modèle final plus complexe avec plus de paramètres.",
-        "D": "Réduire la complexité des modèles pour des temps d'entraînement plus courts."
+        "D": "Améliorer progressivement la qualité des pseudo-labels par des étapes successives d'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "La correction itérative vise à améliorer progressivement la qualité des pseudo-labels en réentraînant le modèle avec des labels de plus en plus précis. B parle de l'ajout de bruit qui n'est pas le but ici, C et D concernent des adjustments de modèles qui ne sont pas directement liés à l'amélioration des pseudo-labels.",
+      "correct_answer": "D",
+      "explanation": "La correction itérative vise à améliorer progressivement la qualité des pseudo-labels en réentraînant le modèle avec des labels de plus en plus précis. B parle de l'ajout de bruit qui n'est pas le but ici, C et D concernent des adjustments de modèles qui ne sont pas directement liés à l'amélioration des pseudo-labels. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire la complexité des modèles pour des temps d'entraînement plus courts.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Ajouter aléatoirement du bruit aux données pour améliorer la robustesse.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Pour réguler la mémoire GPU durant l'entraînement."
       },
       "correct_answer": "A",
-      "explanation": "La température est ajustée pour moduler la concentration des probabilités, affectant ainsi la confiance des prévisions. B fait référence incorrectement à l'entraînement direct des weights des neurons, C ne concerne pas l'utilisation de la température qui n'a pas pour but de synchroniser des phases, et D parle vaguement de gestion de mémoire GPU sans rapport direct.",
+      "explanation": "La température est ajustée pour moduler la concentration des probabilités, affectant ainsi la confiance des prévisions. B fait référence incorrectement à l'entraînement direct des weights des neurons, C ne concerne pas l'utilisation de la température qui n'a pas pour but de synchroniser des phases, et D parle vaguement de gestion de mémoire GPU sans rapport direct. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Pour calibrer les poids des neurons dans un réseau profond.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour synchroniser les phases d'entraînement supervisé et non supervisé.) est plausible mais faux car il ne respecte pas",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quel est un défi principal du label sharpening à haute température?",
       "image_url": null,
       "choices": {
-        "A": "Il conduit à des distributions de probabilités plus uniformes et moins confiantes.",
-        "B": "Il ne modifie pas les probabilités initiales des classes.",
+        "A": "Il ne modifie pas les probabilités initiales des classes.",
+        "B": "Il conduit à des distributions de probabilités plus uniformes et moins confiantes.",
         "C": "Il rend les modèles plus lents à converger.",
         "D": "Il crée un nombre excessif de pseudo-labels erronés."
       },
-      "correct_answer": "A",
-      "explanation": "À haute température, le label sharpening produit des distributions plus uniformes, réduisant ainsi la certitude des prévisions. B est incorrect car la température influence explicitement les probabilités, C peut être un effet, mais n'est pas un défi principal lié à la température, et D confond l'ajout de bruit avec l'effet direct de la température.",
+      "correct_answer": "B",
+      "explanation": "À haute température, le label sharpening produit des distributions plus uniformes, réduisant ainsi la certitude des prévisions. B est incorrect car la température influence explicitement les probabilités, C peut être un effet, mais n'est pas un défi principal lié à la température, et D confond l'ajout de bruit avec l'effet direct de la température. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il ne modifie pas les probabilités initiales des classes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il rend les modèles plus lents à converger.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quelle est une méthode commune pour implémenter un filtre de confiance efficace?",
       "image_url": null,
       "choices": {
-        "A": "Appliquer un seuil fixe sur la sortie de probabilité du modèle pour sélectionner les pseudo-labels.",
+        "A": "Sélectionner aléatoirement des pseudo-labels pour l'entraînement.",
         "B": "Utiliser des arbres de décision pour évaluer la fiabilité des pseudo-labels.",
-        "C": "Sélectionner aléatoirement des pseudo-labels pour l'entraînement.",
+        "C": "Appliquer un seuil fixe sur la sortie de probabilité du modèle pour sélectionner les pseudo-labels.",
         "D": "Augmenter la régularisation des poids pour assurer des prédictions précises."
       },
-      "correct_answer": "A",
-      "explanation": "Un filtre de confiance efficace utilise un seuil fixe pour sélectionner uniquement les pseudo-labels dont la sortie est suffisamment confiante. B utilise des arbres de décision, ce qui n'est pas typique pour appliquer un seuil de confiance, C est incorrect car cela ignore totalement la confiance des prévisions, et D parle de régularisation de profondeur modèle, ce qui n'est pas directement pertinent pour la sélection de pseudo-labels.",
+      "correct_answer": "C",
+      "explanation": "Un filtre de confiance efficace utilise un seuil fixe pour sélectionner uniquement les pseudo-labels dont la sortie est suffisamment confiante. B utilise des arbres de décision, ce qui n'est pas typique pour appliquer un seuil de confiance, C est incorrect car cela ignore totalement la confiance des prévisions, et D parle de régularisation de profondeur modèle, ce qui n'est pas directement pertinent pour la sélection de pseudo-labels. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Sélectionner aléatoirement des pseudo-labels pour l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Utiliser des arbres de décision pour évaluer la fiabilité des pseudo-labels.)",
       "difficulty": "hard"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Comment la correction itérative peut-elle améliorer la performance d'un modèle semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "En affinant successivement les pseudo-labels sur la base des performances du modèle.",
+        "A": "En fixant les poids du modèle pour stabiliser les résultats.",
         "B": "En introduisant des régularisations aléatoires à chaque étape d'entraînement.",
         "C": "En changeant le modèle sous-jacent à chaque itération.",
-        "D": "En fixant les poids du modèle pour stabiliser les résultats."
+        "D": "En affinant successivement les pseudo-labels sur la base des performances du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "La correction itérative affine les pseudo-labels sur la base de performances antérieures, ce qui peut améliorer la qualité des pseudo-labels et donc les performances globales. B et D sont des méthodes qui ne sont pas directes dans l'amélioration qualitative de pseudo-labels, et C crée un problème de variation constante impliquant une réinitialisation fréquente évitant une convergence stable.",
+      "correct_answer": "D",
+      "explanation": "La correction itérative affine les pseudo-labels sur la base de performances antérieures, ce qui peut améliorer la qualité des pseudo-labels et donc les performances globales. B et D sont des méthodes qui ne sont pas directes dans l'amélioration qualitative de pseudo-labels, et C crée un problème de variation constante impliquant une réinitialisation fréquente évitant une convergence stable. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En fixant les poids du modèle pour stabiliser les résultats.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En introduisant des régularisations aléatoires à chaque étape d'entraînement.) est plausible mais faux car il ne respecte",
       "difficulty": "hard"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Cela conduit à une plus grande diversité dans les données d'entraînement."
       },
       "correct_answer": "A",
-      "explanation": "Un seuil de confiance trop élevé signifie que moins de pseudo-labels sont acceptés, ce qui pourrait diminuer l'effet d'enrichir le dataset non étiqueté. B et C parlent de gestion de ressources mémoire et batch, qui ne sont pas directement liés, et D serait un résultat paradoxal puisque moins de pseudo-labels entraînerait moins de diversité.",
+      "explanation": "Un seuil de confiance trop élevé signifie que moins de pseudo-labels sont acceptés, ce qui pourrait diminuer l'effet d'enrichir le dataset non étiqueté. B et C parlent de gestion de ressources mémoire et batch, qui ne sont pas directement liés, et D serait un résultat paradoxal puisque moins de pseudo-labels entraînerait moins de diversité. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Cela augmente automatiquement la taille des batches d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Cela nécessite moins de mémoire GPU pour l'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Pourquoi la température doit-elle parfois être diminuée au fur et à mesure de l'entraînement?",
       "image_url": null,
       "choices": {
-        "A": "Pour rendre les prévisions du modèle plus nettes et plus confiantes.",
-        "B": "Pour ajuster la complexité du réseau de neurones.",
+        "A": "Pour ajuster la complexité du réseau de neurones.",
+        "B": "Pour rendre les prévisions du modèle plus nettes et plus confiantes.",
         "C": "Pour réduire la consommation énergétique du modèle.",
         "D": "Pour augmenter le lien entre les variables d'entrée et de sortie."
       },
-      "correct_answer": "A",
-      "explanation": "Réduire la température affine le pic de probabilité des classes prédictives, rendant les prévisions plus précises et confiantes. B, C et D parlent de concepts différents très vagues qui ne concernent pas spécifiquement l'ajustement dynamique des prévisions par l'ajustement de la température.",
+      "correct_answer": "B",
+      "explanation": "Réduire la température affine le pic de probabilité des classes prédictives, rendant les prévisions plus précises et confiantes. B, C et D parlent de concepts différents très vagues qui ne concernent pas spécifiquement l'ajustement dynamique des prévisions par l'ajustement de la température. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour ajuster la complexité du réseau de neurones.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour réduire la consommation énergétique du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Pour augmenter le lien entre les variables",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Comment le label sharpening peut-il contribuer à la réduction du bruit dans les pseudo-labels?",
       "image_url": null,
       "choices": {
-        "A": "En accentuant la différenciation entre les classes dominantes et non dominantes.",
+        "A": "En réduisant le dataset pour ne conserver que les données les plus fiables.",
         "B": "En filtrant automatiquement les labels jugés irréalistes.",
-        "C": "En réduisant le dataset pour ne conserver que les données les plus fiables.",
+        "C": "En accentuant la différenciation entre les classes dominantes et non dominantes.",
         "D": "En augmentant le nombre de classes pour diluer le bruit."
       },
-      "correct_answer": "A",
-      "explanation": "Le label sharpening augmente l’écart entre les classes avec des probabilités élevées et basses, réduisant le bruit issu de prévisions ambiguës ou incertaines. B et D ne sont pas directement des techniques utilisées pour affiner la différentiation, et C propose une réduction de dataset, ce qui est une stratégie différente que le sharpening.",
+      "correct_answer": "C",
+      "explanation": "Le label sharpening augmente l’écart entre les classes avec des probabilités élevées et basses, réduisant le bruit issu de prévisions ambiguës ou incertaines. B et D ne sont pas directement des techniques utilisées pour affiner la différentiation, et C propose une réduction de dataset, ce qui est une stratégie différente que le sharpening. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En réduisant le dataset pour ne conserver que les données les plus fiables.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En filtrant automatiquement les labels jugés irréalistes.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Lors d'une correction itérative, pourquoi faut-il éviter d'effectuer trop d'itérations?",
       "image_url": null,
       "choices": {
-        "A": "Pour éviter l'accumulation de biais et l'ajustement excessif des pseudo-labels erronés.",
+        "A": "Pour empêcher l'auto-tuning des hyperparamètres du modèle.",
         "B": "Pour limiter la surconsommation de mémoire RAM.",
         "C": "Pour prévenir la génération automatique d'un modèle plus profond.",
-        "D": "Pour empêcher l'auto-tuning des hyperparamètres du modèle."
+        "D": "Pour éviter l'accumulation de biais et l'ajustement excessif des pseudo-labels erronés."
       },
-      "correct_answer": "A",
-      "explanation": "Trop d'itérations dans la correction itérative peuvent accroître l'effet des biais dans les pseudo-labels plutôt que de les réduire, menant à un sur-ajustement. B, C et D traitent de ressources mémoire et changements structurels qui ne sont pas directement influencés par le nombre d'itérations.",
+      "correct_answer": "D",
+      "explanation": "Trop d'itérations dans la correction itérative peuvent accroître l'effet des biais dans les pseudo-labels plutôt que de les réduire, menant à un sur-ajustement. B, C et D traitent de ressources mémoire et changements structurels qui ne sont pas directement influencés par le nombre d'itérations. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour empêcher l'auto-tuning des hyperparamètres du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour limiter la surconsommation de mémoire RAM.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour prévenir la génération automatique d'un",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Le modèle Naive Bayes."
       },
       "correct_answer": "A",
-      "explanation": "Le modèle MixMatch adopte le concept de label sharpening dans l'apprentissage semi-supervisé pour ajuster les distributions de probabilité des pseudo-labels. B, C et D sont des modèles standard qui ne mettent pas en œuvre ce concept particulier typiquement utilisé dans le domaine du deep learning.",
+      "explanation": "Le modèle MixMatch adopte le concept de label sharpening dans l'apprentissage semi-supervisé pour ajuster les distributions de probabilité des pseudo-labels. B, C et D sont des modèles standard qui ne mettent pas en œuvre ce concept particulier typiquement utilisé dans le domaine du deep learning. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Le modèle Random Forest.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le modèle K-means.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Le modèle Naive Bayes.) est plausible mais faux car il ne respecte",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quelle est la conséquence d'une mauvaise initialisation de température lors de la première phase de pseudo-labeling?",
       "image_url": null,
       "choices": {
-        "A": "Elle peut entraîner des pseudo-labels trop incertains et ralentir l'apprentissage.",
-        "B": "Elle provoque une réduction instantanée de la taille des données d'entraînement.",
+        "A": "Elle provoque une réduction instantanée de la taille des données d'entraînement.",
+        "B": "Elle peut entraîner des pseudo-labels trop incertains et ralentir l'apprentissage.",
         "C": "Elle augmente les pertes d'entraînement, causant la saturation du modèle.",
         "D": "Elle désynchronise les étapes d'apprentissage supervisé et non supervisé."
       },
-      "correct_answer": "A",
-      "explanation": "Une mauvaise initialisation de la température peut produire des pseudo-labels qui manquent de clarté, augmentant ainsi les erreurs de prévision. B n'est pas lié à la température et sa fonction, C ne correspond pas à la défaillance elle-même et D n'est pas impacté par le paramètre de température par rapport à son rôle sur les prévisions.",
+      "correct_answer": "B",
+      "explanation": "Une mauvaise initialisation de la température peut produire des pseudo-labels qui manquent de clarté, augmentant ainsi les erreurs de prévision. B n'est pas lié à la température et sa fonction, C ne correspond pas à la défaillance elle-même et D n'est pas impacté par le paramètre de température par rapport à son rôle sur les prévisions. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle provoque une réduction instantanée de la taille des données d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle augmente les pertes d'entraînement, causant la saturation du modèle.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Pourquoi la sélection dynamique d'un seuil de confiance peut-elle être bénéfique par rapport à un seuil fixe?",
       "image_url": null,
       "choices": {
-        "A": "Elle peut s'adapter aux changements dans la distribution des données, assurant une meilleure qualification des pseudo-labels.",
+        "A": "Elle permet de réduire automatiquement le nombre de classes en compétition.",
         "B": "Elle simplifie le modèle de réseau, permettant une structure plus légère.",
-        "C": "Elle permet de réduire automatiquement le nombre de classes en compétition.",
+        "C": "Elle peut s'adapter aux changements dans la distribution des données, assurant une meilleure qualification des pseudo-labels.",
         "D": "Elle facilite l'équilibrage des ressources GPU pendant l'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "Un seuil dynamique est capable de s'ajuster aux conditions variables des données en entrée, optimisant l'utilisation des pseudo-labels. B et C ne concernent pas directement cette flexibilité, et D est en dehors du contexte des pseudo-labels puisque le seuil n'impacte pas la distribution des ressources.",
+      "correct_answer": "C",
+      "explanation": "Un seuil dynamique est capable de s'ajuster aux conditions variables des données en entrée, optimisant l'utilisation des pseudo-labels. B et C ne concernent pas directement cette flexibilité, et D est en dehors du contexte des pseudo-labels puisque le seuil n'impacte pas la distribution des ressources. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle permet de réduire automatiquement le nombre de classes en compétition.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle simplifie le modèle de réseau, permettant une structure plus légère.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "hard"
     }
   ]

@@ -5,156 +5,156 @@
   "questions": [
     {
       "type": "text",
-      "question": "Quel est l'objectif principal du nettoyage des données en machine learning?",
+      "question": "Quel est l'objectif principal du nettoyage des données?",
       "image_url": null,
       "choices": {
-        "A": "Supprimer ou corriger les valeurs manquantes et aberrantes",
-        "B": "Augmenter la taille du jeu de données initial",
-        "C": "Transformer toutes les données en texte",
-        "D": "Réduire le coût computationnel des algorithmes de machine learning"
+        "A": "Supprimer ou corriger les valeurs aberrantes",
+        "B": "Améliorer l'esthétique du dataset",
+        "C": "Réduire la taille du fichier",
+        "D": "Augmenter les valeurs numériques"
       },
       "correct_answer": "A",
-      "explanation": "Le nettoyage des données consiste principalement à traiter les valeurs manquantes et les données aberrantes pour garantir l'exactitude et la qualité des données. B est faux car augmenter la taille n'est pas l'objectif principal du nettoyage. C est incorrect car toutes les données n'ont pas besoin d'être transformées en texte. D est incorrect car bien que la qualité des données puisse influencer la performance, ce n'est pas le but principal du nettoyage.",
+      "explanation": "Le nettoyage des données a pour principal objectif de supprimer ou corriger les valeurs aberrantes, erreurs, et données manquantes afin de garantir l'intégrité et la qualité des données utilisées dans les modèles. L'option B est incorrecte car améliorer l'esthétique d'un dataset n'améliore pas sa qualité pour l'apprentissage machine. Réduire la taille du fichier, comme proposé en C, peut être une conséquence du nettoyage mais n'en est pas la finalité principale et peut nuire à l'intégrité des données. D est également incorrect, car augmenter toutes les valeurs numériques ne résout aucun problème de qualité et pourrait fausser les modèles.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Pourquoi la normalisation des données est-elle souvent nécessaire en apprentissage supervisé?",
+      "question": "Quel processus permet de mettre toutes les données sur une même échelle?",
       "image_url": null,
       "choices": {
-        "A": "Pour s'assurer que toutes les caractéristiques contribuent de façon égale à la distance dans les algorithmes comme KNN",
-        "B": "Pour augmenter la variabilité entre les différentes classes",
-        "C": "Pour réduire le nombre de variables dans le modèle",
-        "D": "Pour rendre les variables catégorielles utilisables par les modèles de machine learning"
+        "A": "Agrégation",
+        "B": "Normalisation",
+        "C": "Codage binaire",
+        "D": "Filtrage par fréquence"
       },
-      "correct_answer": "A",
-      "explanation": "La normalisation met les caractéristiques sur la même échelle, garantissant qu'elles ont toutes un impact similaire sur les calculs de distance utilisés dans certains algorithmes. B est incorrect car la variabilité entre classes n'est pas directement affectée par la normalisation. C est faux puisqu'il ne réduit pas le nombre de variables, ça affecte seulement leur échelle. D concerne l'encodage et non la normalisation.",
+      "correct_answer": "B",
+      "explanation": "La normalisation ajuste l'échelle des données pour qu'elles se situent généralement entre 0 et 1, permettant une contribution égale de chaque caractéristique dans un modèle. L'agrégation (A) regroupe différentes données sans ajuster leur échelle. Le codage binaire (C) transforme des données catégorielles en format numérique mais ne met pas les données sur une même échelle. Le filtrage par fréquence (D) est principalement utilisé pour analyser des signaux plutôt que pour échelonner des données. La normalisation est essentielle dans les modèles sensibles à l'échelle des caractéristiques, comme le k-NN ou la régression logistique.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quelle méthode d'encodage catégoriel transforme les valeurs catégorielles en colonnes binaires?",
+      "question": "Quel encodage est souvent utilisé pour transformer des variables catégorielles en variables numériques?",
+      "image_url": null,
+      "choices": {
+        "A": "Encodage binaire",
+        "B": "Encodage analogique",
+        "C": "One-hot encoding",
+        "D": "Encodage par fréquence"
+      },
+      "correct_answer": "C",
+      "explanation": "Le one-hot encoding transforme chaque catégorie d'une variable catégorielle en une colonne distincte dans le jeu de données, où chaque colonne est remplie de zéros et un seul '1' indique la présence de la catégorie. Cette technique est essentielle pour permettre aux algorithmes de machine learning de traiter les variables catégorielles. L'encodage binaire (A) n'est pas conçu spécifiquement pour les variables catégorielles mais convertit simplement des valeurs numériques en binaire. L'encodage analogique (B) est inexistant dans ce contexte. L'encodage par fréquence (D) attribue des valeurs basées sur la fréquence d'occurrence, ce qui peut biaiser l'importance relative des catégories comparé à l'objectif du one-hot encoding.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la proportion typique pour diviser un dataset en ensembles d'entraînement et de test?",
+      "image_url": null,
+      "choices": {
+        "A": "50%/50%",
+        "B": "100%/0%",
+        "C": "90%/10%",
+        "D": "70%/30%"
+      },
+      "correct_answer": "D",
+      "explanation": "Une répartition de 70%/30% entre l'ensemble d'entraînement et l'ensemble de test est couramment utilisée car elle offre un bon équilibre : assez de données pour entraîner un modèle tout en gardant suffisamment de données indépendantes pour une évaluation correcte de ses performances. Une répartition 50%/50% (A) peut fournir trop peu de données d'entraînement, ce qui limite l'apprentissage. Un 90%/10% (C) peut entraîner un sous-échantillonnage des données de test, affectant la robustesse de l'évaluation. Le scénario 100%/0% (B) est impossible pour l'évaluation, car il n’y aurait pas de données indépendantes pour valider les performances du modèle.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi est-il important de normaliser les données avant de les utiliser dans un modèle?",
+      "image_url": null,
+      "choices": {
+        "A": "Éviter que des caractéristiques dominent les autres",
+        "B": "Améliorer l'esthétique des visualisations",
+        "C": "Accélérer le temps d'exécution du modèle",
+        "D": "Augmenter la dimensionnalité des données"
+      },
+      "correct_answer": "A",
+      "explanation": "La normalisation des données est cruciale pour éviter qu'une caractéristique ayant des valeurs numériquement larges domine ou biaise l'apprentissage du modèle. Bien que cela améliore indirectement le temps d'exécution (A en partie vrai), ce n'est pas l'objectif premier. L'esthétique des visualisations (B) n'est pas concernée par la normalisation, qui vise une meilleure performance des modèles. La réponse D est fausse car la normalisation ne modifie pas la dimensionnalité des données; elle ajuste simplement leurs valeurs pour les ramener sur une échelle comparable, améliorant ainsi l'équité du poids de chaque caractéristique.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quelle action devrait être prise si des valeurs manquantes sont présentes dans une colonne?",
+      "image_url": null,
+      "choices": {
+        "A": "Les supprimer toujours",
+        "B": "Les remplacer par la moyenne, médiane ou mode",
+        "C": "Ignorer les valeurs manquantes et continuer",
+        "D": "Ajouter une colonne pour indiquer les manques"
+      },
+      "correct_answer": "B",
+      "explanation": "Remplacer les valeurs manquantes par la moyenne, la médiane ou le mode permet de conserver l'intégrité statistique du dataset, évitant la perte d'informations. Supprimer systématiquement ces valeurs (A) pourrait éliminer des informations importantes et biaiser les résultats. Ignorer les valeurs manquantes (C) mène souvent à des modèles biaisés et peu performants. Ajouter une colonne pour indiquer les valeurs manquantes (D) peut aider à mieux signaler les données manquantes mais ne traite pas directement leur remplacement. Utiliser des méthodes statistiques pour remplacer ces valeurs est donc une pratique reconnue en data science.",
+      "difficulty": "easy"
+    },
+    {
+      "type": "text",
+      "question": "Quel problème survient si on ne split pas les données entre train et test?",
+      "image_url": null,
+      "choices": {
+        "A": "Le modèle sera trop performant",
+        "B": "Le modèle aura moins de données",
+        "C": "On ne peut pas évaluer objectivement la performance du modèle",
+        "D": "Les temps d'entraînement seront réduits"
+      },
+      "correct_answer": "C",
+      "explanation": "Sans séparer les données en ensembles d'entraînement et de test, on ne peut pas évaluer de manière objective la capacité d'un modèle à généraliser sur des données inédites. En utilisant les mêmes données pour apprendre et évaluer, un modèle semble souvent excessivement performant (A), alors qu'il s'agit d'un surapprentissage. L'option B est fausse, car ne pas diviser les données ne réduit pas leur quantité pour l'apprentissage. Les temps d'entraînement (D) ne sont pas directement liés à l'absence de séparation mais plutôt au volume et à la complexité des données. Le manque d'évaluation externe rend l'analyse de performance irréalisable.",
+      "difficulty": "medium"
+    },
+    {
+      "type": "text",
+      "question": "Quel encodage est mieux adapté aux variables catégorielles ordinales?",
       "image_url": null,
       "choices": {
         "A": "One-hot encoding",
-        "B": "Label encoding",
-        "C": "Frequent encoding",
-        "D": "Binary encoding"
+        "B": "Encodage par regroupement",
+        "C": "Encodage cyclique",
+        "D": "Encodage de classement"
       },
-      "correct_answer": "A",
-      "explanation": "Le one-hot encoding crée une colonne binaire pour chaque catégorie possible. B est faux car le label encoding attribue une valeur numérique unique à chaque catégorie, sans créer de colonnes supplémentaires. C et D ne sont pas des techniques standards d'encodage.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Quelle est une pratique recommandée lors du split train-test des données?",
-      "image_url": null,
-      "choices": {
-        "A": "Préserver la distribution des classes dans train et test sets",
-        "B": "Utiliser tout le dataset pour l'entraînement si son volume est réduit",
-        "C": "Inclure plus d'échantillons dans le jeu de test que dans le jeu d'entraînement",
-        "D": "Ne pas appliquer de normalisation avant le split"
-      },
-      "correct_answer": "A",
-      "explanation": "Il est essentiel de préserver le même ratio de classes dans les ensembles train et test pour une bonne représentation des données. B est incorrect car cela empêcherait de tester le modèle. C est faux car l'entraînement nécessite généralement plus de données. D est faux car la normalisation devrait idéalement être déterminée sur les données d'entraînement.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Quelle erreur peut survenir si l'encodage catégoriel n'est pas appliqué correctement?",
-      "image_url": null,
-      "choices": {
-        "A": "Les modèles peuvent percevoir une relation d'ordre qui n'existe pas",
-        "B": "Le modèle sera incapable de détecter les valeurs aberrantes",
-        "C": "Les données numériques ne seront pas normalisées",
-        "D": "Le modèle risque d'avoir un biais de sélection"
-      },
-      "correct_answer": "A",
-      "explanation": "Si le label encoding est utilisé pour des catégories ordinales, il peut faussement suggérer une relation d'ordre. B est faux car la détection des valeurs aberrantes n'est pas liée à l'encodage. C ne concerne pas l'encodage mais plutôt la normalisation. D n'est pas directement lié à l'encodage.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Quel ratio de split train-test est souvent utilisé dans les petits datasets?",
-      "image_url": null,
-      "choices": {
-        "A": "80% entraînement, 20% test",
-        "B": "90% entraînement, 10% test",
-        "C": "50% entraînement, 50% test",
-        "D": "30% entraînement, 70% test"
-      },
-      "correct_answer": "A",
-      "explanation": "Un ratio de 80/20 permet généralement une bonne balance entre les données disponibles pour l'entraînement et le test, surtout dans des petits datasets. B est parfois utilisé, mais moins commun. C et D sont peu probables avec de petits datasets, qui nécessitent plus de données pour l'entraînement.",
-      "difficulty": "easy"
-    },
-    {
-      "type": "text",
-      "question": "Quels problèmes peuvent survenir si les données d'entraînement et de test sont normalisées ensemble?",
-      "image_url": null,
-      "choices": {
-        "A": "Fuite de données entre l'entraînement et le test",
-        "B": "Résultats plus précis",
-        "C": "Diminution de la complexité du modèle",
-        "D": "Augmente la variance des résultats"
-      },
-      "correct_answer": "A",
-      "explanation": "Normaliser les jeux de données ensemble peut introduire de la fuite de données, ce qui faussera les performances lors du test. B est faux parce que cela favoriserait des résultats optimistes non représentatifs de la réalité. C est faux car cela ne décomplexifie pas le modèle. D est incorrect car il n'influence pas la variance.",
+      "correct_answer": "D",
+      "explanation": "L'encodage de classement est le mieux adapté pour les variables ordinales car il traduit l'ordre naturel des catégories en valeurs numériques, conservant ainsi l'information hiérarchique essentielle pour l'analyse. Le one-hot encoding (A) ignore l'ordre en créant uniquement des indicateurs de présence. L'encodage cyclique (C) est utilisé pour des données périodiques comme les dates, ce qui n'est pas pertinent ici. L'encodage par regroupement (B) regroupe des catégories basées sur une similarité mais ne maintient pas nécessairement l'ordre, ce qui est crucial pour les variables ordinales afin de préserver la progression de leur valeur.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Quelle technique d'encodage catégoriel doit être évitée pour les features fortement catégorielles?",
+      "question": "Quel mécanisme évite le biais du modèle dû à la distribution inégale des classes lors de la séparation train-test?",
       "image_url": null,
       "choices": {
-        "A": "One-hot encoding",
-        "B": "Label encoding",
-        "C": "Ordinal encoding",
-        "D": "Target encoding"
+        "A": "Validation croisée stratifiée",
+        "B": "Normalisation des classes",
+        "C": "Encodage fréquent",
+        "D": "Agrandissement des données"
       },
       "correct_answer": "A",
-      "explanation": "One-hot encoding peut devenir inefficace pour les features contenant un grand nombre de catégories, augmentant considérablement le nombre de dimensions. B, C, et D n'augmentent pas directement le nombre de dimensions de cette manière.",
+      "explanation": "La validation croisée stratifiée préserve la distribution proportionnelle des classes à travers les ensembles d'entraînement et de test, ce qui est crucial pour éviter le biais de modèle induit par une représentation inégale. L'encodage fréquent (C) n'a pas de lien avec la répartition des classes, il concerne l’encodage des données catégorielles. La normalisation des classes (B) n'est pas un concept pertinent dans ce contexte spécifique. Enfin, l'agrandissement des données (D) peut équilibrer les classes lors de l'apprentissage mais ne garantit pas une bonne répartition initiale des classes entre les ensembles d’entraînement et de test, contrairement à la validation croisée stratifiée.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Quelle est une des conséquences de l'utilisation incorrecte de la normalisation lors du pré-traitement des données?",
+      "question": "Quelle étape critique suit le nettoyage et avant l'entraînement du modèle?",
       "image_url": null,
       "choices": {
-        "A": "Influence insuffisante de certaines variables",
-        "B": "Création de bruit dans les variables catégorielles",
-        "C": "Augmentation excessive de la précision",
-        "D": "Ensablement des données"
+        "A": "Validation du modèle",
+        "B": "Partitionnement des données",
+        "C": "Génération de rapports",
+        "D": "Feature engineering"
       },
-      "correct_answer": "A",
-      "explanation": "Une mauvaise normalisation peut faire en sorte que certaines variables ont peu d'effet sur le modèle si elles ne sont pas correctement mises à l'échelle. B est faux, car le bruit n'est pas introduit dans les variables catégorielles. C est incorrect car la précision est généralement compromise, pas augmentée excessivement. D n'a pas de sens dans ce contexte.",
-      "difficulty": "medium"
-    },
-    {
-      "type": "text",
-      "question": "Pourquoi est-il important d'évaluer les performances sur le jeu de test après l'entraînement?",
-      "image_url": null,
-      "choices": {
-        "A": "Pour évaluer la généralisation du modèle aux données non vues",
-        "B": "Pour améliorer le processus de nettoyage des données",
-        "C": "Pour ajuster les hyperparamètres sur ce même dataset",
-        "D": "Pour normaliser les données d'entraînement"
-      },
-      "correct_answer": "A",
-      "explanation": "Évaluer sur le jeu de test permet de comprendre comment le modèle se généralise à des données non vues. B n'est pas directement lié à l'évaluation du test. C ne doit pas se faire avec le dataset de test pour éviter le surapprentissage. D est confus car la normalisation concerne principalement le jeu d'entraînement.",
+      "correct_answer": "B",
+      "explanation": "Après le nettoyage, la prochaine étape cruciale est le partitionnement des données entre ensembles d'entraînement et de test pour assurer une évaluation juste et probante des modèles de machine learning. La validation du modèle (A) n'intervient qu'après sa formation. Le feature engineering (C) est souvent une étape préalable, pendant laquelle des caractéristiques utiles sont créées ou choisies. La génération de rapports (D) relate les résultats obtenus mais n'interfère pas avec la préparation des données. Bien organiser les données en train et test est essentiel pour garantir la validité des résultats du modèle final.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Quel est un piège potentiel si le ratio de classes n'est pas maintenu pendant le split train-test?",
+      "question": "Comment pourrait-on traiter un dataset avec beaucoup de valeurs extrêmes influençant les statistiques?",
       "image_url": null,
       "choices": {
-        "A": "Le modèle surentraîné peut se produire facilement",
-        "B": "Le dataset n'atteindra pas la taille nécessaire",
-        "C": "Mauvaise précision due à un biais de classification",
-        "D": "Réduction de la complexité des caractéristiques"
+        "A": "Garder toutes les valeurs pour plus de précision",
+        "B": "Ignorer les valeurs extrêmes pour gagner du temps",
+        "C": "Utiliser une transformation log pour réduire les écarts extrêmes",
+        "D": "Doubler toutes les valeurs pour compenser"
       },
       "correct_answer": "C",
-      "explanation": "Ne pas maintenir le ratio de classes peut introduire un biais de classification, faussant les résultats de précision. A est faux car les biais de classe n'entrainent pas typiquement un surentraînement. B est incorrect car cela concerne la distribution des classes. D est incorrect car cela ne concerne pas la complexité des caractéristiques.",
+      "explanation": "L'application d'une transformation logarithmique réduit les écarts dus aux valeurs extrêmes, ce qui aide à stabiliser la variance et à rendre les données plus conformes à une distribution normale. Cela améliore la robustesse des statistiques descriptives et inférentielles. Garder toutes les valeurs (A) sans transformation peut biaiser vos modèles, car les valeurs extrêmes influencent disproportionnellement les résultats. Ignorer les valeurs extrêmes (B) peut entraîner une perte d'information significative. Doubler toutes les valeurs (D) aggraverait les problèmes d'analyse statistique et n'aurait aucun sens pour atténuer l'effet des valeurs extrêmes. La transformation log est une meilleure solution pour réduire le biais des valeurs extrêmes.",
       "difficulty": "hard"
     }
   ]

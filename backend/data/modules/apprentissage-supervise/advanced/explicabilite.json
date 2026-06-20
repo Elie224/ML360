@@ -14,7 +14,7 @@
         "D": "Local surrogate models"
       },
       "correct_answer": "A",
-      "explanation": "La permutation importance évalue l'importance d'une variable en perturbant ses valeurs aléatoirement. SHAP calcule des valeurs basées sur des jeux coopératifs. Les partial dependence plots montrent l'impact d'une variable en la gardant continue et les modèles local surrogates expliquent les prédictions au niveau local.",
+      "explanation": "La permutation importance évalue l'importance d'une variable en perturbant ses valeurs aléatoirement. SHAP calcule des valeurs basées sur des jeux coopératifs. Les partial dependence plots montrent l'impact d'une variable en la gardant continue et les modèles local surrogates expliquent les prédictions au niveau local. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (SHAP) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Partial dependence) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Local surrogate models) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Qu'est-ce que la valeur de SHAP cherche à quantifier dans l'explication d'un modèle ?",
       "image_url": null,
       "choices": {
-        "A": "La contribution de chaque feature à la prédiction d'un modèle",
-        "B": "L'effet moyen d'une feature sur la prédiction",
+        "A": "L'effet moyen d'une feature sur la prédiction",
+        "B": "La contribution de chaque feature à la prédiction d'un modèle",
         "C": "La performance globale d'un modèle",
         "D": "La variance de la prédiction due à une feature"
       },
-      "correct_answer": "A",
-      "explanation": "Les valeurs de SHAP quantifient la contribution de chaque feature individuelle à une prédiction donnée. L'effet moyen d'une feature est quantifié par les partial dependence plots, la performance globale est mesurée par des scores tel que l'accuracy, et la variance de la prédiction due à une feature n'est pas directement capturée par les valeurs SHAP.",
+      "correct_answer": "B",
+      "explanation": "Les valeurs de SHAP quantifient la contribution de chaque feature individuelle à une prédiction donnée. L'effet moyen d'une feature est quantifié par les partial dependence plots, la performance globale est mesurée par des scores tel que l'accuracy, et la variance de la prédiction due à une feature n'est pas directement capturée par les valeurs SHAP. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'effet moyen d'une feature sur la prédiction) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La performance globale d'un modèle) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quelle approche parmi les suivantes fournit des explications locales pour les prédictions de modèles de machine learning ?",
       "image_url": null,
       "choices": {
-        "A": "LIME (Local Interpretable Model-agnostic Explanations)",
+        "A": "Ensemble Learning",
         "B": "Ridge Regression",
-        "C": "Ensemble Learning",
+        "C": "LIME (Local Interpretable Model-agnostic Explanations)",
         "D": "Z-score scaling"
       },
-      "correct_answer": "A",
-      "explanation": "LIME est une méthode qui donne des explications locales, c'est-à-dire au niveau de la prédiction individuelle. Ridge Regression est une méthode de modélisation, l'ensemble learning est une technique d'amélioration de modèle et le scaling de Z-score est une technique de prétraitement.",
+      "correct_answer": "C",
+      "explanation": "LIME est une méthode qui donne des explications locales, c'est-à-dire au niveau de la prédiction individuelle. Ridge Regression est une méthode de modélisation, l'ensemble learning est une technique d'amélioration de modèle et le scaling de Z-score est une technique de prétraitement. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ensemble Learning) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Ridge Regression) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Z-score scaling) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Que signifie SHAP dans le contexte de l'explicabilité en machine learning?",
       "image_url": null,
       "choices": {
-        "A": "SHapley Additive exPlanations",
+        "A": "Sparse Hybrid Approximation Protocol",
         "B": "Simple Hierarchical Analysis Procedure",
         "C": "Statistical Hypothesis Adjustment Process",
-        "D": "Sparse Hybrid Approximation Protocol"
+        "D": "SHapley Additive exPlanations"
       },
-      "correct_answer": "A",
-      "explanation": "SHAP, ou SHapley Additive exPlanations, est une méthode basée sur la théorie des jeux pour expliquer les prédictions individuelles en attribuant à chaque caractéristique une valeur de Shapley. Les autres choix sont incorrects car ils n'ont pas de lien avec SHAP ni l'explicabilité.",
+      "correct_answer": "D",
+      "explanation": "SHAP, ou SHapley Additive exPlanations, est une méthode basée sur la théorie des jeux pour expliquer les prédictions individuelles en attribuant à chaque caractéristique une valeur de Shapley. Les autres choix sont incorrects car ils n'ont pas de lien avec SHAP ni l'explicabilité. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Sparse Hybrid Approximation Protocol) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Simple Hierarchical Analysis Procedure) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Statistical Hypothesis Adjustment Process) est plausible mais faux car il ne respecte pas",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Le calcul est basé sur la fréquence d'apparition d'une variable dans l'ensemble d'entraînement."
       },
       "correct_answer": "A",
-      "explanation": "Les valeurs de Shapley sont calculées en évaluant la contribution marginale d'une caractéristique à travers toutes les combinaisons possibles de caractéristiques. Les autres options sont incorrectes car elles simplifient à tort ou dénaturent le calcul des valeurs de Shapley.",
+      "explanation": "Les valeurs de Shapley sont calculées en évaluant la contribution marginale d'une caractéristique à travers toutes les combinaisons possibles de caractéristiques. Les autres options sont incorrectes car elles simplifient à tort ou dénaturent le calcul des valeurs de Shapley. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La contribution est estimée uniquement sur la base des observations erronées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La contribution d'une caractéristique est calculée en utilisant une moyenne pondérée des coefficients de régression.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quelle est la fonction principale d'un graphique de Partial Dependence (PDP)?",
       "image_url": null,
       "choices": {
-        "A": "Montrer l'impact moyen d'une ou plusieurs caractéristiques sur la prédiction du modèle.",
-        "B": "Identifier les corrélations entre toutes les caractéristiques.",
+        "A": "Identifier les corrélations entre toutes les caractéristiques.",
+        "B": "Montrer l'impact moyen d'une ou plusieurs caractéristiques sur la prédiction du modèle.",
         "C": "Comparer la précision des modèles avec et sans une caractéristique particulière.",
         "D": "Afficher les distributions de probabilité des sorties prédictives."
       },
-      "correct_answer": "A",
-      "explanation": "Un graphique de Partial Dependence montre comment chaque variable affecte en moyenne la prédiction faite par le modèle. Les autres options sont incorrectes, car elles concernent des objectifs non liés aux PDP.",
+      "correct_answer": "B",
+      "explanation": "Un graphique de Partial Dependence montre comment chaque variable affecte en moyenne la prédiction faite par le modèle. Les autres options sont incorrectes, car elles concernent des objectifs non liés aux PDP. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Identifier les corrélations entre toutes les caractéristiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Comparer la précision des modèles avec et sans une caractéristique particulière.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Afficher les distributions de probabilité des sorties prédictives.) est plausible mais faux car il",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Dans l'analyse de l'importance par permutation, qu'est-ce qui est permuté?",
       "image_url": null,
       "choices": {
-        "A": "Les valeurs d'une caractéristique spécifique pour évaluer leur impact sur l'erreur du modèle.",
+        "A": "Les coefficients de poids dans une régression linéaire.",
         "B": "Les étiquettes de classe dans l'ensemble de validation.",
-        "C": "Les coefficients de poids dans une régression linéaire.",
+        "C": "Les valeurs d'une caractéristique spécifique pour évaluer leur impact sur l'erreur du modèle.",
         "D": "Les hyperparamètres pendant le processus d'apprentissage."
       },
-      "correct_answer": "A",
-      "explanation": "L'analyse de l'importance par permutation implique de permuter les valeurs d'une caractéristique sur l'ensemble de validation pour voir comment cela influence l'erreur prédictive. Les autres options sont incorrectes car elles impliquent des processus de permutation non pertinents pour cette méthode.",
+      "correct_answer": "C",
+      "explanation": "L'analyse de l'importance par permutation implique de permuter les valeurs d'une caractéristique sur l'ensemble de validation pour voir comment cela influence l'erreur prédictive. Les autres options sont incorrectes car elles impliquent des processus de permutation non pertinents pour cette méthode. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les coefficients de poids dans une régression linéaire.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Les étiquettes de classe dans l'ensemble de validation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Les hyperparamètres pendant le processus d'apprentissage.) est plausible",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quel aspect l'explication locale cherche-t-elle à éclaircir?",
       "image_url": null,
       "choices": {
-        "A": "Comment une approche de modélisation génère une prédiction pour une instance spécifique.",
+        "A": "La stabilité des hyperparamètres sur l'ensemble d'entraînement.",
         "B": "Comment toutes les instances d'un dataset influencent le modèle global.",
         "C": "La précision moyenne des prédictions du modèle.",
-        "D": "La stabilité des hyperparamètres sur l'ensemble d'entraînement."
+        "D": "Comment une approche de modélisation génère une prédiction pour une instance spécifique."
       },
-      "correct_answer": "A",
-      "explanation": "L'explication locale vise à comprendre comment une seule prédiction est générée par le modèle en analysant les contributions individuelles des caractéristiques pour cette instance. Les autres options ne se concentrent pas sur le niveau d'une instance individuelle.",
+      "correct_answer": "D",
+      "explanation": "L'explication locale vise à comprendre comment une seule prédiction est générée par le modèle en analysant les contributions individuelles des caractéristiques pour cette instance. Les autres options ne se concentrent pas sur le niveau d'une instance individuelle. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (La stabilité des hyperparamètres sur l'ensemble d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Comment toutes les instances d'un dataset influencent le modèle global.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La précision moyenne des prédictions du modèle.) est plausible mais",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "La robustesse d'un modèle en injectant du bruit dans les données d'entrée."
       },
       "correct_answer": "A",
-      "explanation": "SHAP (SHapley Additive exPlanations) utilise les valeurs de Shapley pour attribuer l'importance à chaque feature. B est faux car les gradients ne sont pas utilisés dans SHAP. C est incorrect car il s'agit de permutation importance, et D décrit un test de robustesse, pas SHAP.",
+      "explanation": "SHAP (SHapley Additive exPlanations) utilise les valeurs de Shapley pour attribuer l'importance à chaque feature. B est faux car les gradients ne sont pas utilisés dans SHAP. C est incorrect car il s'agit de permutation importance, et D décrit un test de robustesse, pas SHAP. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (L'interaction entre les features en calculant les gradients.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La métrique de performance des modèles après permutation des étiquettes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quelle méthode permet de visualiser l'effet moyen d'une feature sur la prédiction d'un modèle?",
       "image_url": null,
       "choices": {
-        "A": "Courbes de dépendance partielle (PDP)",
-        "B": "SHAP",
+        "A": "SHAP",
+        "B": "Courbes de dépendance partielle (PDP)",
         "C": "Permutation importance",
         "D": "Gradient boosting"
       },
-      "correct_answer": "A",
-      "explanation": "Les courbes de dépendance partielle (PDP) montrent l'effet moyen d'une feature sur la prédiction. B est incorrect car SHAP explique les contributions individuelles. C mesure l'importance en permutant les valeurs, et D est une technique de modélisation, pas d'explication.",
+      "correct_answer": "B",
+      "explanation": "Les courbes de dépendance partielle (PDP) montrent l'effet moyen d'une feature sur la prédiction. B est incorrect car SHAP explique les contributions individuelles. C mesure l'importance en permutant les valeurs, et D est une technique de modélisation, pas d'explication. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (SHAP) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Permutation importance) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Gradient boosting) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. En pratique, verifie",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Quelle est la principale utilité de l'importance par permutation?",
       "image_url": null,
       "choices": {
-        "A": "Évaluer l'importance des features en mesurant la diminution de performance après permutation.",
+        "A": "Calculer la corrélation entre les features d'entrée.",
         "B": "Obtenir une meilleure précision du modèle en ajustant l'hyperparamètre.",
-        "C": "Calculer la corrélation entre les features d'entrée.",
+        "C": "Évaluer l'importance des features en mesurant la diminution de performance après permutation.",
         "D": "Augmenter la taille du jeu de données pour l'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "La permutation importance mesure comment la performance du modèle diminue lorsque les valeurs d'une feature sont permutées. B est faux car il ne s'agit pas d'optimisation. C et D concernent les relations et la taille des données, non pas l'évaluation d'importance.",
+      "correct_answer": "C",
+      "explanation": "La permutation importance mesure comment la performance du modèle diminue lorsque les valeurs d'une feature sont permutées. B est faux car il ne s'agit pas d'optimisation. C et D concernent les relations et la taille des données, non pas l'évaluation d'importance. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Calculer la corrélation entre les features d'entrée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Obtenir une meilleure précision du modèle en ajustant l'hyperparamètre.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Augmenter la taille du jeu de données",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Dans quel contexte utiliseriez-vous une explication locale pour un modèle?",
       "image_url": null,
       "choices": {
-        "A": "Pour comprendre des prédictions spécifiques pour un seul échantillon.",
+        "A": "Pour réduire le surapprentissage en ajoutant une régularisation.",
         "B": "Pour évaluer la performance globale d'un modèle sur un ensemble de test.",
         "C": "Pour déterminer les hyperparamètres optimaux pour un modèle.",
-        "D": "Pour réduire le surapprentissage en ajoutant une régularisation."
+        "D": "Pour comprendre des prédictions spécifiques pour un seul échantillon."
       },
-      "correct_answer": "A",
-      "explanation": "Les explications locales sont utilisées pour expliciter pourquoi une prédiction donnée a été faite pour un échantillon spécifique. B est incorrect car il concerne la performance globale. C et D se concentrent sur le réglage du modèle, pas sur l'explication individuelle.",
+      "correct_answer": "D",
+      "explanation": "Les explications locales sont utilisées pour expliciter pourquoi une prédiction donnée a été faite pour un échantillon spécifique. B est incorrect car il concerne la performance globale. C et D se concentrent sur le réglage du modèle, pas sur l'explication individuelle. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour réduire le surapprentissage en ajoutant une régularisation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour évaluer la performance globale d'un modèle sur un ensemble de test.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour déterminer les",
       "difficulty": "medium"
     },
     {
@@ -182,7 +182,7 @@
         "D": "En optimisant la fonction de perte avec SGD."
       },
       "correct_answer": "A",
-      "explanation": "Les valeurs de Shapley sont calculées en évaluant toutes les combinaisons possibles de valeurs de features et leur effet sur la prédiction. B est faux car il omet les combinaisons. C ignore les autres features, et D décrit une méthode d'optimisation, pas d'explication.",
+      "explanation": "Les valeurs de Shapley sont calculées en évaluant toutes les combinaisons possibles de valeurs de features et leur effet sur la prédiction. B est faux car il omet les combinaisons. C ignore les autres features, et D décrit une méthode d'optimisation, pas d'explication. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (En calculant les dérivées partielles des features.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En utilisant uniquement les interactions des deux premières features.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (En optimisant la fonction de",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quels sont les indicateurs principaux d'une courbe de dépendance partielle?",
       "image_url": null,
       "choices": {
-        "A": "Variations de prédiction selon la valeur de la feature tracée.",
-        "B": "Les gradients des poids du modèle.",
+        "A": "Les gradients des poids du modèle.",
+        "B": "Variations de prédiction selon la valeur de la feature tracée.",
         "C": "La réduction de variance associée à chaque feature.",
         "D": "Le nombre d'itérations lors de l'entraînement du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "Les courbes de dépendance partielle montrent comment les prédictions changent avec les valeurs des features. B et D sont incorrects car ils concernent l'optimisation du modèle, et C se réfère à la sélection des features, pas aux PDP.",
+      "correct_answer": "B",
+      "explanation": "Les courbes de dépendance partielle montrent comment les prédictions changent avec les valeurs des features. B et D sont incorrects car ils concernent l'optimisation du modèle, et C se réfère à la sélection des features, pas aux PDP. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les gradients des poids du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La réduction de variance associée à chaque feature.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Le nombre d'itérations lors de l'entraînement du modèle.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quel problème peut survenir lorsqu'on utilise l'importance par permutation?",
       "image_url": null,
       "choices": {
-        "A": "Sous-estimation de l'importance des features corrélées.",
+        "A": "Augmentation de la complexité du modèle.",
         "B": "Problème de non-convergence des gradients.",
-        "C": "Augmentation de la complexité du modèle.",
+        "C": "Sous-estimation de l'importance des features corrélées.",
         "D": "Réduction automatique des features non pertinentes."
       },
-      "correct_answer": "A",
-      "explanation": "L'importance par permutation peut sous-estimer l'importance des features corrélées car elle évalue chaque feature indépendamment. B est faux car cela s'applique aux algorithmes d'entraînement. C et D ne sont pas des résultats de l'importance par permutation.",
+      "correct_answer": "C",
+      "explanation": "L'importance par permutation peut sous-estimer l'importance des features corrélées car elle évalue chaque feature indépendamment. B est faux car cela s'applique aux algorithmes d'entraînement. C et D ne sont pas des résultats de l'importance par permutation. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmentation de la complexité du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Problème de non-convergence des gradients.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Réduction automatique des features non pertinentes.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Quelle est une limitation typique des explications locales?",
       "image_url": null,
       "choices": {
-        "A": "Elles peuvent ne pas généraliser à d'autres échantillons.",
+        "A": "Elles ont besoin d'une grande quantité de données d'entraînement.",
         "B": "Elles nécessitent un modèle linéaire sous-jacent.",
         "C": "Elles augmentent la variance du modèle.",
-        "D": "Elles ont besoin d'une grande quantité de données d'entraînement."
+        "D": "Elles peuvent ne pas généraliser à d'autres échantillons."
       },
-      "correct_answer": "A",
-      "explanation": "Les explications locales sont spécifiques à un échantillon particulier et ne généralisent pas à d'autres. B est faux car n'importe quel modèle peut être expliqué localement. C est incorrect car cela concerne l'entraînement du modèle. D est une exigence posée sur le modèle, pas l'explication.",
+      "correct_answer": "D",
+      "explanation": "Les explications locales sont spécifiques à un échantillon particulier et ne généralisent pas à d'autres. B est faux car n'importe quel modèle peut être expliqué localement. C est incorrect car cela concerne l'entraînement du modèle. D est une exigence posée sur le modèle, pas l'explication. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elles ont besoin d'une grande quantité de données d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elles nécessitent un modèle linéaire sous-jacent.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elles augmentent la variance",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Détecter des anomalies dans les données d'entraînement"
       },
       "correct_answer": "A",
-      "explanation": "SHAP utilise les valeurs de Shapley pour fournir des explications cohérentes basées sur la théorie des jeux. B et C concernent l'optimisation du modèle, et D n'est pas l'objectif principal de SHAP.",
+      "explanation": "SHAP utilise les valeurs de Shapley pour fournir des explications cohérentes basées sur la théorie des jeux. B et C concernent l'optimisation du modèle, et D n'est pas l'objectif principal de SHAP. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Minimiser l'erreur de prédiction grâce à une meilleure régularisation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Optimiser la performance en ajustant automatiquement les paramètres.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Détecter des anomalies dans les données d'entraînement) est plausible mais faux car il ne respecte",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Comment une explication locale peut-elle être générée pour un modèle complexe?",
       "image_url": null,
       "choices": {
-        "A": "En utilisant des méthodes comme LIME ou une version simplifiée du modèle.",
-        "B": "En appliquant une réduction de dimension pour simplifier les features.",
+        "A": "En appliquant une réduction de dimension pour simplifier les features.",
+        "B": "En utilisant des méthodes comme LIME ou une version simplifiée du modèle.",
         "C": "En ajustant les hyperparamètres pour maximiser la justesse.",
         "D": "En partitionnant le dataset et en utilisant l'arbre moyen."
       },
-      "correct_answer": "A",
-      "explanation": "Les méthodes comme LIME approximant localement le comportement d'un modèle complexe avec un modèle simple. B utilise la réduction de dimension qui n'explique pas spécifiquement le modèle. C et D ne sont pas des techniques d'explicabilité.",
+      "correct_answer": "B",
+      "explanation": "Les méthodes comme LIME approximant localement le comportement d'un modèle complexe avec un modèle simple. B utilise la réduction de dimension qui n'explique pas spécifiquement le modèle. C et D ne sont pas des techniques d'explicabilité. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En appliquant une réduction de dimension pour simplifier les features.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En ajustant les hyperparamètres pour maximiser la justesse.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (En partitionnant le dataset et en utilisant l'arbre moyen.) est",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Quel est un indicateur d'erreur lors de l'utilisation de courbes de dépendance partielle?",
       "image_url": null,
       "choices": {
-        "A": "Prétendre que la variation d'une seule feature n'affecte pas les autres.",
+        "A": "Ne pas utiliser de validation croisée pendant l'entraînement.",
         "B": "Assumer que les données sont distribuées uniformément.",
-        "C": "Ne pas utiliser de validation croisée pendant l'entraînement.",
+        "C": "Prétendre que la variation d'une seule feature n'affecte pas les autres.",
         "D": "Régulariser excessivement pour éviter le surajustement."
       },
-      "correct_answer": "A",
-      "explanation": "Les courbes de dépendance partielle supposent que seule une feature est modifiée à la fois, ce qui peut être erroné si les features interagissent. B, C et D concernent des aspects de modélisation, pas un problème direct lié aux PDP.",
+      "correct_answer": "C",
+      "explanation": "Les courbes de dépendance partielle supposent que seule une feature est modifiée à la fois, ce qui peut être erroné si les features interagissent. B, C et D concernent des aspects de modélisation, pas un problème direct lié aux PDP. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ne pas utiliser de validation croisée pendant l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Assumer que les données sont distribuées uniformément.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Régulariser excessivement pour éviter le surajustement.) est plausible mais",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Qu'est-ce qui est essentiel pour interpréter l'importance par permutation correctement?",
       "image_url": null,
       "choices": {
-        "A": "L'absence de corrélation entre les features.",
+        "A": "La présence de plusieurs hyperparamètres réglés.",
         "B": "Un modèle avec une fonction de coût quadratique.",
         "C": "Un ensemble de données de test de grande taille.",
-        "D": "La présence de plusieurs hyperparamètres réglés."
+        "D": "L'absence de corrélation entre les features."
       },
-      "correct_answer": "A",
-      "explanation": "L'importance par permutation repose sur l'hypothèse que les features ne sont pas corrélées pour fournir des résultats précis. B, C, et D ne sont pas directement liés à l'interprétation correcte de la permutation importance.",
+      "correct_answer": "D",
+      "explanation": "L'importance par permutation repose sur l'hypothèse que les features ne sont pas corrélées pour fournir des résultats précis. B, C, et D ne sont pas directement liés à l'interprétation correcte de la permutation importance. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (La présence de plusieurs hyperparamètres réglés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Un modèle avec une fonction de coût quadratique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Un ensemble de données de test de grande taille.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "Elles garantissent que chaque feature est incluse au moins une fois dans l'entraînement."
       },
       "correct_answer": "A",
-      "explanation": "Les valeurs de Shapley calculent la contribution de chaque feature en analysant toutes ses permutations, garantissant ainsi une distribution équitable. B et C concernent la performance du modèle, et D est incorrect car elle ne concerne pas l'équité.",
+      "explanation": "Les valeurs de Shapley calculent la contribution de chaque feature en analysant toutes ses permutations, garantissant ainsi une distribution équitable. B et C concernent la performance du modèle, et D est incorrect car elle ne concerne pas l'équité. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elles maximisent l'accuracy du modèle global.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elles réduisent l'overfitting en simplifiant le modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elles garantissent que chaque feature est incluse au moins une fois dans l'entraînement.)",
       "difficulty": "hard"
     },
     {
@@ -302,13 +302,13 @@
       "question": "Quel est un avantage clé des explications locales par rapport aux explications globales?",
       "image_url": null,
       "choices": {
-        "A": "Elles fournissent des informations détaillées sur une décision spécifique.",
-        "B": "Elles sont toujours moins coûteuses en temps de calcul.",
+        "A": "Elles sont toujours moins coûteuses en temps de calcul.",
+        "B": "Elles fournissent des informations détaillées sur une décision spécifique.",
         "C": "Elles peuvent s'appliquer directement à tout le système sans ajustement.",
         "D": "Elles ne nécessitent aucun modèle sous-jacent pour fonctionner."
       },
-      "correct_answer": "A",
-      "explanation": "Les explications locales fournissent des informations précises sur les décisions spécifiques d'un modèle. B est faux car le coût dépend du modèle. C et D sont incorrects car les explications locales sont spécifiques et nécessitent un modèle sous-jacent.",
+      "correct_answer": "B",
+      "explanation": "Les explications locales fournissent des informations précises sur les décisions spécifiques d'un modèle. B est faux car le coût dépend du modèle. C et D sont incorrects car les explications locales sont spécifiques et nécessitent un modèle sous-jacent. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elles sont toujours moins coûteuses en temps de calcul.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elles peuvent s'appliquer directement à tout le système sans ajustement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elles ne nécessitent aucun modèle sous-jacent pour",
       "difficulty": "hard"
     }
   ]

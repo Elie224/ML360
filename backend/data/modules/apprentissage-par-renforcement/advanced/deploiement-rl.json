@@ -14,7 +14,7 @@
         "D": "Garantir la mise à jour automatique des algorithmes en production."
       },
       "correct_answer": "A",
-      "explanation": "Un simulateur crée un environnement contrôlé pour expérimenter et évaluer les politiques RL avant leur déploiement réel. Les autres options sont incorrectes : B confond avec la sécurité des données, C attribue un usage du simulateur au déploiement final, et D décrit une fonctionnalité de MLOps.",
+      "explanation": "Un simulateur crée un environnement contrôlé pour expérimenter et évaluer les politiques RL avant leur déploiement réel. Les autres options sont incorrectes : B confond avec la sécurité des données, C attribue un usage du simulateur au déploiement final, et D décrit une fonctionnalité de MLOps. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Protéger les données confidentielles pendant l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Évaluer la performance en temps réel sur les utilisateurs finaux.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Garantir la",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "En quoi le 'shadow mode' est-il utile dans le déploiement de systèmes RL?",
       "image_url": null,
       "choices": {
-        "A": "Permet d'évaluer les politiques sans affecter l'utilisateur final.",
-        "B": "Offre une réduction automatique de la complexité des modèles.",
+        "A": "Offre une réduction automatique de la complexité des modèles.",
+        "B": "Permet d'évaluer les politiques sans affecter l'utilisateur final.",
         "C": "Fournit une méthode de compression du modèle pour réduire l'espace mémoire.",
         "D": "Facilite l'intégration des algorithmes RL avec d'autres systèmes d'apprentissage supervisé."
       },
-      "correct_answer": "A",
-      "explanation": "Le 'shadow mode' évalue l'impact potentiel des politiques RL dans un environnement de production sans affecter l'utilisateur final. Les choix B, C, et D désignent des processus distincts non liés au 'shadow mode'.",
+      "correct_answer": "B",
+      "explanation": "Le 'shadow mode' évalue l'impact potentiel des politiques RL dans un environnement de production sans affecter l'utilisateur final. Les choix B, C, et D désignent des processus distincts non liés au 'shadow mode'. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Offre une réduction automatique de la complexité des modèles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Fournit une méthode de compression du modèle pour réduire l'espace mémoire.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Facilite l'intégration des algorithmes RL avec d'autres systèmes d'apprentissage supervisé.) est",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Qu'est-ce que la latence de décision dans un contexte RL déployé?",
       "image_url": null,
       "choices": {
-        "A": "Le délai entre la réception de l'état et l'action prise par le modèle.",
+        "A": "La fréquence de mise à jour des poids du modèle pendant l'entraînement.",
         "B": "Le temps pris par le modèle pour être entraîné avec un nouvel ensemble de données.",
-        "C": "La fréquence de mise à jour des poids du modèle pendant l'entraînement.",
+        "C": "Le délai entre la réception de l'état et l'action prise par le modèle.",
         "D": "La durée nécessaire pour sauvegarder le modèle sur un serveur de production."
       },
-      "correct_answer": "A",
-      "explanation": "La latence de décision est le délai entre la réception de l'état et l'exécution d'une action. Les choix B, C, et D concernent d'autres aspects du cycle de vie du modèle, pas la latence de décision.",
+      "correct_answer": "C",
+      "explanation": "La latence de décision est le délai entre la réception de l'état et l'exécution d'une action. Les choix B, C, et D concernent d'autres aspects du cycle de vie du modèle, pas la latence de décision. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La fréquence de mise à jour des poids du modèle pendant l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le temps pris par le modèle pour être entraîné avec un nouvel ensemble de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Pourquoi le rollback est-il une stratégie cruciale dans le déploiement de RL?",
       "image_url": null,
       "choices": {
-        "A": "Il permet de rétablir un état antérieur du système en cas de défaillance de la politique actuelle.",
+        "A": "Il supervise le routage des données entre les différents systèmes de production.",
         "B": "Il entraîne automatiquement le modèle avec des techniques de transfert learning.",
         "C": "Il garantit la synchronisation des mises à jour des modèles sur tous les serveurs.",
-        "D": "Il supervise le routage des données entre les différents systèmes de production."
+        "D": "Il permet de rétablir un état antérieur du système en cas de défaillance de la politique actuelle."
       },
-      "correct_answer": "A",
-      "explanation": "Le rollback est crucial pour revenir à un état antérieur stable en cas de problème avec la politique actuelle. Les choix B, C, et D se connectent à des aspects techniques non liés directement à la restauration d'états antérieurs.",
+      "correct_answer": "D",
+      "explanation": "Le rollback est crucial pour revenir à un état antérieur stable en cas de problème avec la politique actuelle. Les choix B, C, et D se connectent à des aspects techniques non liés directement à la restauration d'états antérieurs. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il supervise le routage des données entre les différents systèmes de production.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il entraîne automatiquement le modèle avec des techniques de transfert learning.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il garantit",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "L'incompatibilité avec les techniques de compression de modèles."
       },
       "correct_answer": "A",
-      "explanation": "Les simulateurs peuvent avoir du mal à reproduire fidèlement toutes les conditions d'un environnement réel, affectant ainsi l'entraînement. B, C, et D concernent des problèmes non pertinents pour les simulateurs en apprentissage par renforcement.",
+      "explanation": "Les simulateurs peuvent avoir du mal à reproduire fidèlement toutes les conditions d'un environnement réel, affectant ainsi l'entraînement. B, C, et D concernent des problèmes non pertinents pour les simulateurs en apprentissage par renforcement. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (L'incapacité à générer des données suffisantes pour l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La restriction au seul apprentissage supervisé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'incompatibilité avec les techniques de compression de modèles.) est plausible mais faux car il ne respecte",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quels sont les risques d'une latence de décision élevée dans un système RL en production?",
       "image_url": null,
       "choices": {
-        "A": "Réactivité réduite, potentiellement conduisant à des décisions obsolètes.",
-        "B": "Augmentation automatique de la précision du modèle.",
+        "A": "Augmentation automatique de la précision du modèle.",
+        "B": "Réactivité réduite, potentiellement conduisant à des décisions obsolètes.",
         "C": "Réduction immédiate de l'utilisation des ressources serveur.",
         "D": "Optimisation efficace de l'algorithme de RL."
       },
-      "correct_answer": "A",
-      "explanation": "Une latence élevée peut causer des décisions moins pertinentes car elles arrivent trop tard. B, C, et D interprètent de manière incorrecte les effets d'une latence accrue, tels que la précision ou l'économie de ressources.",
+      "correct_answer": "B",
+      "explanation": "Une latence élevée peut causer des décisions moins pertinentes car elles arrivent trop tard. B, C, et D interprètent de manière incorrecte les effets d'une latence accrue, tels que la précision ou l'économie de ressources. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmentation automatique de la précision du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Réduction immédiate de l'utilisation des ressources serveur.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Optimisation efficace de l'algorithme de RL.) est plausible mais faux car il ne respecte pas",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quel aspect du 'shadow mode' peut améliorer la sécurité des déploiements RL?",
       "image_url": null,
       "choices": {
-        "A": "Tester les impacts des politiques sans exposition directe à des risques pour les utilisateurs.",
+        "A": "Assurer la conformité avec les régulations de protection des données.",
         "B": "Crypter automatiquement les transactions de données utilisateurs.",
-        "C": "Assurer la conformité avec les régulations de protection des données.",
+        "C": "Tester les impacts des politiques sans exposition directe à des risques pour les utilisateurs.",
         "D": "Permettre une mise en réseau distribuée sécurisée."
       },
-      "correct_answer": "A",
-      "explanation": "Le 'shadow mode' propose de tester des politiques sans exposer les utilisateurs aux changements, minimisant ainsi les risques de sécurité potentiels. B, C, et D abordent de manière incorrecte des problématiques de sécurité associées à d'autres aspects techniques.",
+      "correct_answer": "C",
+      "explanation": "Le 'shadow mode' propose de tester des politiques sans exposer les utilisateurs aux changements, minimisant ainsi les risques de sécurité potentiels. B, C, et D abordent de manière incorrecte des problématiques de sécurité associées à d'autres aspects techniques. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Assurer la conformité avec les régulations de protection des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Crypter automatiquement les transactions de données utilisateurs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Permettre une mise en réseau distribuée sécurisée.) est plausible",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Comment le rollback interagit-il avec la gestion des versions dans le RL?",
       "image_url": null,
       "choices": {
-        "A": "Permet de revenir à une version précédente du modèle en cas de défaillance.",
+        "A": "Envoie toutes les versions anciennes sur une base de données distale.",
         "B": "Déclenche l'entraînement d'une nouvelle version à chaque minute.",
         "C": "Fusionne automatiquement toutes les versions en une seule.",
-        "D": "Envoie toutes les versions anciennes sur une base de données distale."
+        "D": "Permet de revenir à une version précédente du modèle en cas de défaillance."
       },
-      "correct_answer": "A",
-      "explanation": "Le rollback permet de rétablir une version précédente si la version actuelle pose problème. B, C, et D se trompent sur la fonctionnalité en croyant à tort que cela implique une formation ou gestion versionnelle automatique ou mal localisée.",
+      "correct_answer": "D",
+      "explanation": "Le rollback permet de rétablir une version précédente si la version actuelle pose problème. B, C, et D se trompent sur la fonctionnalité en croyant à tort que cela implique une formation ou gestion versionnelle automatique ou mal localisée. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Envoie toutes les versions anciennes sur une base de données distale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Déclenche l'entraînement d'une nouvelle version à chaque minute.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Fusionne automatiquement toutes les versions en",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Ils imposent de recompiler le code pour chaque nouvelle itération."
       },
       "correct_answer": "A",
-      "explanation": "Les simulateurs peuvent manquer certaines complexités réelles, menant à des politiques non optimisées une fois en production. B, C, et D pointent des limitations faussement attribuées aux simulateurs.",
+      "explanation": "Les simulateurs peuvent manquer certaines complexités réelles, menant à des politiques non optimisées une fois en production. B, C, et D pointent des limitations faussement attribuées aux simulateurs. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Ils ne permettent pas l'interaction en temps réel avec les utilisateurs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ils nécessitent des ressources de calcul illimitées pour fonctionner correctement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Ils imposent de recompiler le code pour chaque nouvelle itération.) est plausible mais faux car",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "En quoi le rollback diffère-t-il d'une simple modification d'un paramètre dans un système RL?",
       "image_url": null,
       "choices": {
-        "A": "Le rollback replace le système dans un état antérieur complet plutôt que de modifier un élément isolé.",
-        "B": "Le rollback accélère automatiquement la convergence des politiques.",
+        "A": "Le rollback accélère automatiquement la convergence des politiques.",
+        "B": "Le rollback replace le système dans un état antérieur complet plutôt que de modifier un élément isolé.",
         "C": "Le rollback incorpore des données de test en temps réel dans la politique.",
         "D": "Le rollback ajuste dynamiquement les fonctions de récompense basées sur les feedbacks passés."
       },
-      "correct_answer": "A",
-      "explanation": "Un rollback restaure un état complet antérieur, alors qu'une simple modification ne touche qu'un paramètre. B, C, et D confondent un rollback avec l'apprentissage adaptatif ou la modification des algorithmes d'apprentissage.",
+      "correct_answer": "B",
+      "explanation": "Un rollback restaure un état complet antérieur, alors qu'une simple modification ne touche qu'un paramètre. B, C, et D confondent un rollback avec l'apprentissage adaptatif ou la modification des algorithmes d'apprentissage. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le rollback accélère automatiquement la convergence des politiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le rollback incorpore des données de test en temps réel dans la politique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Le rollback ajuste dynamiquement les fonctions de récompense basées sur les feedbacks",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Comment le déploiement d'une politique RL peut-il être impacté par la latence de décision?",
       "image_url": null,
       "choices": {
-        "A": "Une latence élevée peut altérer la pertinence des décisions prises.",
+        "A": "Elle neutralise automatiquement les biais de données historiques.",
         "B": "Elle améliore la puissance de calcul du modèle en temps réel.",
-        "C": "Elle neutralise automatiquement les biais de données historiques.",
+        "C": "Une latence élevée peut altérer la pertinence des décisions prises.",
         "D": "Elle permet aux modèles de s'auto-entraîner sur des périodes prolongées."
       },
-      "correct_answer": "A",
-      "explanation": "Une latence élevée peut entraîner des actions non adaptées car les circonstances peuvent avoir changé au moment de la décision. B, C, et D décrivent incorrectement des effets qui ne relèvent pas de la latence de décision.",
+      "correct_answer": "C",
+      "explanation": "Une latence élevée peut entraîner des actions non adaptées car les circonstances peuvent avoir changé au moment de la décision. B, C, et D décrivent incorrectement des effets qui ne relèvent pas de la latence de décision. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle neutralise automatiquement les biais de données historiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle améliore la puissance de calcul du modèle en temps réel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle permet aux modèles de s'auto-entraîner sur des",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "À quelle difficulté les simulateurs doivent-ils souvent faire face lors de la modélisation des environnements pour le RL?",
       "image_url": null,
       "choices": {
-        "A": "Capturer les incertitudes stochastiques et imprévues émergentes en temps réel.",
+        "A": "Exécuter uniquement sur des architectures de réseau local.",
         "B": "Générer des états continus mais discrétisés par défaut.",
         "C": "Requérir systématiquement la supervision humaine pour valider chaque transition d'état.",
-        "D": "Exécuter uniquement sur des architectures de réseau local."
+        "D": "Capturer les incertitudes stochastiques et imprévues émergentes en temps réel."
       },
-      "correct_answer": "A",
-      "explanation": "Les simulateurs ont du mal à modéliser les incertitudes complexes et les comportements imprévus d'environnements réels. B, C, et D posent des limites incorrectes non liées à la nature des simulateurs.",
+      "correct_answer": "D",
+      "explanation": "Les simulateurs ont du mal à modéliser les incertitudes complexes et les comportements imprévus d'environnements réels. B, C, et D posent des limites incorrectes non liées à la nature des simulateurs. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Exécuter uniquement sur des architectures de réseau local.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Générer des états continus mais discrétisés par défaut.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Requérir systématiquement la supervision humaine pour valider chaque transition d'état.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Il supprime les récompenses négatives pour prévenir les comportements adverses."
       },
       "correct_answer": "A",
-      "explanation": "Le 'shadow mode', en simulant des situations sans affectation réelle, consomme des ressources sans retour de feedback immédiat. B, C, et D sont incorrects car ils décrivent des interactions ou des modifications qui ne sont pas directement impactées par le 'shadow mode'.",
+      "explanation": "Le 'shadow mode', en simulant des situations sans affectation réelle, consomme des ressources sans retour de feedback immédiat. B, C, et D sont incorrects car ils décrivent des interactions ou des modifications qui ne sont pas directement impactées par le 'shadow mode'. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il force toutes les décisions à s'effectuer hors ligne sans interaction en temps réel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il empêche l'évolution des politiques basées sur des données en temps réel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Dans le contexte RL, pourquoi un rollback pourrait-il être nécessaire après l'évaluation dans 'shadow mode'?",
       "image_url": null,
       "choices": {
-        "A": "Une évaluation en 'shadow mode' peut montrer des comportements adverses non souhaités nécessitant un retour en arrière.",
-        "B": "Pour recompiler toutes les bibliothèques liées au modèle.",
+        "A": "Pour recompiler toutes les bibliothèques liées au modèle.",
+        "B": "Une évaluation en 'shadow mode' peut montrer des comportements adverses non souhaités nécessitant un retour en arrière.",
         "C": "Pour réduire la taille du modèle en compressant ses couches intermédiaires.",
         "D": "Pour améliorer l'interopérabilité avec les bases de données externes."
       },
-      "correct_answer": "A",
-      "explanation": "Un rollback se justifie si le 'shadow mode' révèle des problèmes potentiels qui nécessitent de revenir à une configuration éprouvée. B, C, et D suggèrent des actions inappropriées non directement liées à l'évaluation des comportements.",
+      "correct_answer": "B",
+      "explanation": "Un rollback se justifie si le 'shadow mode' révèle des problèmes potentiels qui nécessitent de revenir à une configuration éprouvée. B, C, et D suggèrent des actions inappropriées non directement liées à l'évaluation des comportements. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour recompiler toutes les bibliothèques liées au modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour réduire la taille du modèle en compressant ses couches intermédiaires.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Pour améliorer l'interopérabilité avec les bases de données externes.) est",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quel est un des bénéfices principaux d'un rollback fréquent lors du déploiement de RL?",
       "image_url": null,
       "choices": {
-        "A": "Augmenter la résilience du système face à des erreurs politiques non prévues.",
+        "A": "Assurer que toutes les versions du modèle sont synchronisées en temps réel.",
         "B": "Accélérer le temps de réponse client grâce à une charge réduite sur le serveur.",
-        "C": "Assurer que toutes les versions du modèle sont synchronisées en temps réel.",
+        "C": "Augmenter la résilience du système face à des erreurs politiques non prévues.",
         "D": "Réduire l'exposition aux biais de pré-entraînement grâce à une réinitialisation complète."
       },
-      "correct_answer": "A",
-      "explanation": "Rollback fréquents permettent de réagir rapidement aux erreurs constatées, augmentant la stabilité. B, C, et D méconnaissent la procédure de rollback en l'attribuant mal à la réactivité ou aux biais d'entraînement.",
+      "correct_answer": "C",
+      "explanation": "Rollback fréquents permettent de réagir rapidement aux erreurs constatées, augmentant la stabilité. B, C, et D méconnaissent la procédure de rollback en l'attribuant mal à la réactivité ou aux biais d'entraînement. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Assurer que toutes les versions du modèle sont synchronisées en temps réel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Accélérer le temps de réponse client grâce à une charge réduite sur le serveur.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Réduire l'exposition aux biais de pré-entraînement grâce",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Comment le shadow mode peut-il contribuer à optimiser une stratégie de rollback efficace?",
       "image_url": null,
       "choices": {
-        "A": "En permettant l'identification précoce des failles potentiellement critiques avant le lancement complet.",
+        "A": "En prévoyant le routage dynamique des actions de rollback par réseau neuronal.",
         "B": "En convertissant automatiquement toutes les décisions en lignes de code optimisées.",
         "C": "En utilisant les techniques de clustering pour regrouper les erreurs similaires.",
-        "D": "En prévoyant le routage dynamique des actions de rollback par réseau neuronal."
+        "D": "En permettant l'identification précoce des failles potentiellement critiques avant le lancement complet."
       },
-      "correct_answer": "A",
-      "explanation": "Le shadow mode aide à détecter les problèmes avant un déploiement complet, rendant les rollbacks plus ciblés et efficaces. B, C, et D prêtent des mécanismes incorrects qui n'ont pas de lien direct avec l'optimisation par shadow mode.",
+      "correct_answer": "D",
+      "explanation": "Le shadow mode aide à détecter les problèmes avant un déploiement complet, rendant les rollbacks plus ciblés et efficaces. B, C, et D prêtent des mécanismes incorrects qui n'ont pas de lien direct avec l'optimisation par shadow mode. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En prévoyant le routage dynamique des actions de rollback par réseau neuronal.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En convertissant automatiquement toutes les décisions en lignes de code optimisées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En utilisant les",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "L'élimination complète des interactions stochastiques sous-jacentes."
       },
       "correct_answer": "A",
-      "explanation": "Pour rendre l'algorithme RL robuste, le simulateur doit modéliser des scénarios divers et réalistes. B, C, et D sursimplifient ou excluent des méthodologies nécessaires dans le contexte RL.",
+      "explanation": "Pour rendre l'algorithme RL robuste, le simulateur doit modéliser des scénarios divers et réalistes. B, C, et D sursimplifient ou excluent des méthodologies nécessaires dans le contexte RL. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (L'exclusivité de la simulation pour des environnements entièrement discrétisés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La limitation stricte aux modèles non supervisés durant les tests.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'élimination complète des interactions stochastiques sous-jacentes.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Qu'est-ce qui peut requérir un rollback immédiat après la dérivation d'une politique à partir d'un simulateur RL?",
       "image_url": null,
       "choices": {
-        "A": "Comportements algorithmiques divergents par rapport aux attentes spécifiques.",
-        "B": "Unité réduite du taux d'apprentissage boostant automatiquement les performances.",
+        "A": "Unité réduite du taux d'apprentissage boostant automatiquement les performances.",
+        "B": "Comportements algorithmiques divergents par rapport aux attentes spécifiques.",
         "C": "Anomalies entraînant une surproduction d'actions non spécialisées.",
         "D": "Prestations réglées pour une efficacité énergétique accrue."
       },
-      "correct_answer": "A",
-      "explanation": "Des divergences peuvent indiquer que le modèle ne fonctionne pas comme prévu, nécessitant un retour à une politique antérieure. B, C, et D inventent des effets dérivés qui ne concernent pas directement une dérivation de politique défectueuse.",
+      "correct_answer": "B",
+      "explanation": "Des divergences peuvent indiquer que le modèle ne fonctionne pas comme prévu, nécessitant un retour à une politique antérieure. B, C, et D inventent des effets dérivés qui ne concernent pas directement une dérivation de politique défectueuse. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Unité réduite du taux d'apprentissage boostant automatiquement les performances.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Anomalies entraînant une surproduction d'actions non spécialisées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Prestations réglées pour une efficacité énergétique accrue.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "En procédant à des rollback de politiques RL, quel est un effet secondaire possible qui doit être géré?",
       "image_url": null,
       "choices": {
-        "A": "Perturbation possible de la cohérence des résultats accumulés.",
+        "A": "Mise en surbrillance automatique des implications éthiques sous-jacentes.",
         "B": "Nécessité de re-calibrer l'ensemble des hyperparamètres du modèle.",
-        "C": "Mise en surbrillance automatique des implications éthiques sous-jacentes.",
+        "C": "Perturbation possible de la cohérence des résultats accumulés.",
         "D": "Accroissement intentionnel des coûts de calculs pour maintenir la scalabilité."
       },
-      "correct_answer": "A",
-      "explanation": "Les rollbacks peuvent interrompre la continuité des résultats, demandant une attention aux impacts cumulés. B, C, et D évoquent des conséquences indues ou mal ciblées qui ne résultent pas forcément des rollbacks.",
+      "correct_answer": "C",
+      "explanation": "Les rollbacks peuvent interrompre la continuité des résultats, demandant une attention aux impacts cumulés. B, C, et D évoquent des conséquences indues ou mal ciblées qui ne résultent pas forcément des rollbacks. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Mise en surbrillance automatique des implications éthiques sous-jacentes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Nécessité de re-calibrer l'ensemble des hyperparamètres du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Accroissement intentionnel des coûts de calculs pour maintenir la scalabilité.) est plausible mais faux car il",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Quel est un inconvénient majeur à considérer lorsque l'on utilise le 'shadow mode' pour tester de nouvelles politiques RL?",
       "image_url": null,
       "choices": {
-        "A": "Les données collectées ne reflètent pas toujours l'interaction réelle préoccupante.",
+        "A": "Il ne peut être activé qu'en conjonction avec des missions critiques.",
         "B": "Les mises à jour de la politique deviennent irréversibles dès l'instant du test.",
         "C": "Il élude les considérations de sécurité intégrées à l'utilisateur final.",
-        "D": "Il ne peut être activé qu'en conjonction avec des missions critiques."
+        "D": "Les données collectées ne reflètent pas toujours l'interaction réelle préoccupante."
       },
-      "correct_answer": "A",
-      "explanation": "En 'shadow mode', les données peuvent ne pas complètement correspondre à l'utilisation réelle en raison de leur nature non interactive. B, C, et D expriment de fausses limitations ou conséquences non associées au 'shadow mode'.",
+      "correct_answer": "D",
+      "explanation": "En 'shadow mode', les données peuvent ne pas complètement correspondre à l'utilisation réelle en raison de leur nature non interactive. B, C, et D expriment de fausses limitations ou conséquences non associées au 'shadow mode'. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il ne peut être activé qu'en conjonction avec des missions critiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Les mises à jour de la politique deviennent irréversibles dès l'instant du test.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il élude les considérations de",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "Elle élimine toute forme de surcharge algébrique lors de l'ajustement en ligne."
       },
       "correct_answer": "A",
-      "explanation": "Les rollbacks sont précieux pour restaurer rapidement des états fiables, évitant les effets néfastes d'erreurs progressives. B, C, et D confondent une pratique d'ingénierie robuste avec des phénomènes d'opérabilité ou de surcharge imaginaires.",
+      "explanation": "Les rollbacks sont précieux pour restaurer rapidement des états fiables, évitant les effets néfastes d'erreurs progressives. B, C, et D confondent une pratique d'ingénierie robuste avec des phénomènes d'opérabilité ou de surcharge imaginaires. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elle réduit le nombre d'interactions utilisateur nécessaires pour optimiser.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle améliore automatiquement la puissance d'apprentissage en réseau distribué.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle élimine toute forme de surcharge algébrique lors de l'ajustement en ligne.) est",
       "difficulty": "hard"
     },
     {
@@ -302,13 +302,13 @@
       "question": "En implémentant un simulateur pour RL, quelle préoccupation peut émerger concernant l'accurate imitation des conditions de l'environnement réel?",
       "image_url": null,
       "choices": {
-        "A": "La fidélité des réponses simulées aux stimuli du monde réel peut être limitée.",
-        "B": "L'existence de systèmes en temps réel et synchronisés sans rétroaction directe.",
+        "A": "L'existence de systèmes en temps réel et synchronisés sans rétroaction directe.",
+        "B": "La fidélité des réponses simulées aux stimuli du monde réel peut être limitée.",
         "C": "La compatibilité coûteuse avec des dispositifs matériels prédéfinis uniquement.",
         "D": "L'élimination systématique des bruitages sous forme de distributions aléatoires."
       },
-      "correct_answer": "A",
-      "explanation": "Le principal défi est que le simulateur peut échouer à reproduire précisément les réponses complexes du monde réel. B, C, et D imaginent des obstacles technologiques qui ne concernent pas la fidélité de la simulation.",
+      "correct_answer": "B",
+      "explanation": "Le principal défi est que le simulateur peut échouer à reproduire précisément les réponses complexes du monde réel. B, C, et D imaginent des obstacles technologiques qui ne concernent pas la fidélité de la simulation. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'existence de systèmes en temps réel et synchronisés sans rétroaction directe.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La compatibilité coûteuse avec des dispositifs matériels prédéfinis uniquement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'élimination systématique des bruitages sous forme de distributions aléatoires.)",
       "difficulty": "hard"
     },
     {
@@ -316,13 +316,13 @@
       "question": "Quel rôle fondamental le rollback joue-t-il lors des tests de stratégies en 'shadow mode' ?",
       "image_url": null,
       "choices": {
-        "A": "Il permet de revenir à une version éprouvée si des problèmes sont détectés.",
+        "A": "Il compile des données éthiques pour l'évaluation future des décisions.",
         "B": "Il développe de nouvelles fonctions de récompense en cours de simulation.",
-        "C": "Il compile des données éthiques pour l'évaluation future des décisions.",
+        "C": "Il permet de revenir à une version éprouvée si des problèmes sont détectés.",
         "D": "Il ajuste automatiquement les biais d'entraînement identifiés lors des tests."
       },
-      "correct_answer": "A",
-      "explanation": "Le rollback est essentiel pour revenir à des stratégies antérieures en cas de détection de failles en 'shadow mode'. B, C, et D inventent des capacités de gestion des récompenses, éthiques ou biais qui ne sont pas véritablement associées à ce processus.",
+      "correct_answer": "C",
+      "explanation": "Le rollback est essentiel pour revenir à des stratégies antérieures en cas de détection de failles en 'shadow mode'. B, C, et D inventent des capacités de gestion des récompenses, éthiques ou biais qui ne sont pas véritablement associées à ce processus. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il compile des données éthiques pour l'évaluation future des décisions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il développe de nouvelles fonctions de récompense en cours de simulation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il",
       "difficulty": "hard"
     },
     {
@@ -330,13 +330,13 @@
       "question": "Quel est l'impact potentiel d'une latence de décision mal calibrée lors du déploiement de RL?",
       "image_url": null,
       "choices": {
-        "A": "Un mauvais ajustement temporel peut entraîner la prise de décisions inadéquates.",
+        "A": "Elle renverse la hiérarchie de commande des circuits d'entrée de données.",
         "B": "Elle conduit nécessairement à la désactivation dynamique des nœuds réseau.",
         "C": "Elle interdit temporairement aux modèles d'adapter des modèles complexes.",
-        "D": "Elle renverse la hiérarchie de commande des circuits d'entrée de données."
+        "D": "Un mauvais ajustement temporel peut entraîner la prise de décisions inadéquates."
       },
-      "correct_answer": "A",
-      "explanation": "Une latence mal calibrée désynchronise les décisions de l'algorithme, les rendant inappropriées. B, C, et D énoncent des conséquences irréalistes ou ambiguës non reliées à des décalages temporels.",
+      "correct_answer": "D",
+      "explanation": "Une latence mal calibrée désynchronise les décisions de l'algorithme, les rendant inappropriées. B, C, et D énoncent des conséquences irréalistes ou ambiguës non reliées à des décalages temporels. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle renverse la hiérarchie de commande des circuits d'entrée de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle conduit nécessairement à la désactivation dynamique des nœuds réseau.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle interdit temporairement aux modèles d'adapter des modèles complexes.) est plausible mais faux car il",
       "difficulty": "hard"
     },
     {
@@ -350,7 +350,7 @@
         "D": "Créer des sessions de test indépendantes des métriques conventionnelles."
       },
       "correct_answer": "A",
-      "explanation": "Le simulateur doit capturer précisément des comportements complexes se manifestant dans le réel, une tâche ardue. B, C, et D simplifient ou conceptualisent de manière incorrecte les fonctionnalités d'un simulateur au-delà de sa finalité.",
+      "explanation": "Le simulateur doit capturer précisément des comportements complexes se manifestant dans le réel, une tâche ardue. B, C, et D simplifient ou conceptualisent de manière incorrecte les fonctionnalités d'un simulateur au-delà de sa finalité. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Fournir exclusivement des configurations de test minimalistes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Inciter les environnements virtuels à révéler des algorithmes propriétaires.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Créer des sessions de test indépendantes des métriques conventionnelles.) est plausible mais faux car",
       "difficulty": "hard"
     },
     {
@@ -358,13 +358,13 @@
       "question": "Pourquoi l'utilisation d'un rollback est-elle critiquement importante au déploiement de systèmes RL lorsqu'une politique révèle des failles systémiques?",
       "image_url": null,
       "choices": {
-        "A": "Pour empêcher la propagation des défaillances à travers la base utilisateur.",
-        "B": "Pour accomoder l'interaction de méthodes non supervisées dans des réseaux hybrides.",
+        "A": "Pour accomoder l'interaction de méthodes non supervisées dans des réseaux hybrides.",
+        "B": "Pour empêcher la propagation des défaillances à travers la base utilisateur.",
         "C": "Pour maximiser automatiquement le débit de calcul en période de surcharge.",
         "D": "Pour canaliser systématiquement chaque bug vers un débogueur distribué."
       },
-      "correct_answer": "A",
-      "explanation": "Le rollback est essentiel afin d'éviter que des défaillances ne touchent les utilisateurs, par retour à des politiques sans failles. B, C, et D échouent à se concentrer sur l'impact direct des échecs systémiques liés aux présentes politiques RL.",
+      "correct_answer": "B",
+      "explanation": "Le rollback est essentiel afin d'éviter que des défaillances ne touchent les utilisateurs, par retour à des politiques sans failles. B, C, et D échouent à se concentrer sur l'impact direct des échecs systémiques liés aux présentes politiques RL. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour accomoder l'interaction de méthodes non supervisées dans des réseaux hybrides.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour maximiser automatiquement le débit de calcul en période de surcharge.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Pour canaliser systématiquement",
       "difficulty": "hard"
     },
     {
@@ -372,13 +372,13 @@
       "question": "Qu'il est important d'anticiper lors de simulations RL concernant la latence de décision avant une mise en production ?",
       "image_url": null,
       "choices": {
-        "A": "Les écarts préidentifiés entre simulations et environnements réels concernant les temps d'exécution.",
+        "A": "L'individualisation des facteurs naturels par corrélation énergétique.",
         "B": "Les mesures de la sécurité de la structure interne du modèle.",
-        "C": "L'individualisation des facteurs naturels par corrélation énergétique.",
+        "C": "Les écarts préidentifiés entre simulations et environnements réels concernant les temps d'exécution.",
         "D": "La vitesse de particulisation inhérente aux réseaux génératifs adversariaux."
       },
-      "correct_answer": "A",
-      "explanation": "Il est crucial d'évaluer comment la latence perçue en simulation pourrait différer une fois le système en production. B, C, et D introduisent des concepts qui ne touchent pas le souffle temporel intrinsèque d'une implémentation RL.",
+      "correct_answer": "C",
+      "explanation": "Il est crucial d'évaluer comment la latence perçue en simulation pourrait différer une fois le système en production. B, C, et D introduisent des concepts qui ne touchent pas le souffle temporel intrinsèque d'une implémentation RL. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'individualisation des facteurs naturels par corrélation énergétique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Les mesures de la sécurité de la structure interne du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La vitesse de particulisation inhérente aux réseaux génératifs adversariaux.) est",
       "difficulty": "hard"
     },
     {
@@ -386,13 +386,13 @@
       "question": "Comment pouvez-vous atténuer principalement les risques associés à la latence de décision lors du déploiement des politiques RL?",
       "image_url": null,
       "choices": {
-        "A": "En optimisant le pipeline de traitement afin de limiter les goulots d'étranglement temporels.",
+        "A": "En segmentant le processus d'entraînement selon une granulométrie hiérarchique.",
         "B": "En conférant une mémoire améliorée par prédiction à chaque phase d'action.",
         "C": "En exécutant en parallèle plusieurs instances scalaires du modèle.",
-        "D": "En segmentant le processus d'entraînement selon une granulométrie hiérarchique."
+        "D": "En optimisant le pipeline de traitement afin de limiter les goulots d'étranglement temporels."
       },
-      "correct_answer": "A",
-      "explanation": "La gestion et optimisation du pipeline de traitement est clé pour atténuer la latence. B, C, et D proposent des solutions tangentielles qui ne concernent pas directement le traitement de la latence du modèle en ligne.",
+      "correct_answer": "D",
+      "explanation": "La gestion et optimisation du pipeline de traitement est clé pour atténuer la latence. B, C, et D proposent des solutions tangentielles qui ne concernent pas directement le traitement de la latence du modèle en ligne. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En segmentant le processus d'entraînement selon une granulométrie hiérarchique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En conférant une mémoire améliorée par prédiction à chaque phase d'action.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En exécutant en parallèle plusieurs instances scalaires du",
       "difficulty": "hard"
     },
     {
@@ -406,7 +406,7 @@
         "D": "L'utilisation exclusive de structures de données non hiérarchiques pour simuler l'environnement."
       },
       "correct_answer": "A",
-      "explanation": "Il est essentiel que le simulateur équilibre sa capacité à capturer le dynamisme réel et l'exigence computationnelle. B, C, et D simplifient ou mal interprètent des aspects plus profonds qui ne sont pas fixés par le simulateur dans le RL.",
+      "explanation": "Il est essentiel que le simulateur équilibre sa capacité à capturer le dynamisme réel et l'exigence computationnelle. B, C, et D simplifient ou mal interprètent des aspects plus profonds qui ne sont pas fixés par le simulateur dans le RL. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La mise à distance de toute intervention humaine pour maintenir un entraînement autonome.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La minimisation des interruptions causées par l'intégration de bibliothèques open-source.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'utilisation",
       "difficulty": "hard"
     },
     {
@@ -414,13 +414,13 @@
       "question": "Quel est un impact indirect spécifique de l'implémentation inappropriée d'un rollback dans un environnement RL en production ?",
       "image_url": null,
       "choices": {
-        "A": "La réduction de la confiance des utilisateurs dus aux fluctuations de performance inattendues.",
-        "B": "Un accroissement obligatoire des failles de sécurité courant.",
+        "A": "Un accroissement obligatoire des failles de sécurité courant.",
+        "B": "La réduction de la confiance des utilisateurs dus aux fluctuations de performance inattendues.",
         "C": "La conversion automatique des processus pour tenir compte d’ensablement.",
         "D": "La génération spontanée de surcouches de lois d'apprentissage rétroactives."
       },
-      "correct_answer": "A",
-      "explanation": "Un rollback inadéquat peut provoquer des perturbations dans la performance aux yeux des utilisateurs, réduisant ainsi leur confiance. B, C, et D offrent une mauvaise interprétation des conséquences non traitées concernant les rollback dans des environnements RL.",
+      "correct_answer": "B",
+      "explanation": "Un rollback inadéquat peut provoquer des perturbations dans la performance aux yeux des utilisateurs, réduisant ainsi leur confiance. B, C, et D offrent une mauvaise interprétation des conséquences non traitées concernant les rollback dans des environnements RL. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un accroissement obligatoire des failles de sécurité courant.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La conversion automatique des processus pour tenir compte d’ensablement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La génération spontanée de surcouches de lois d'apprentissage rétroactives.) est",
       "difficulty": "hard"
     }
   ]

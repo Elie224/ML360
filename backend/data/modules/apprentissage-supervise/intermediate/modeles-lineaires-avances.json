@@ -5,198 +5,198 @@
   "questions": [
     {
       "type": "text",
-      "question": "Que représente le coefficient dans une régression linéaire avancée?",
+      "question": "Que represente le coefficient dans un modele de regression lineaire?",
       "image_url": null,
       "choices": {
-        "A": "L'impact d'une unité de changement dans la variable indépendante sur la variable dépendante.",
-        "B": "La proportion de variance expliquée par le modèle.",
-        "C": "Le biais du modèle par rapport à l'erreur quadratique.",
-        "D": "Le niveau de bruit dans les données mesuré par l'écart-type."
+        "A": "L'influence d'une variable independante sur la variable dependante",
+        "B": "Le biais ajoute au modele pour empecher le surapprentissage",
+        "C": "Le maximum de vraisemblance estime par le modele",
+        "D": "L'erreur moyenne entre les predictions et les valeurs reelles"
       },
       "correct_answer": "A",
-      "explanation": "Le coefficient indique l'ampleur de la variation de la variable dépendante lorsque la variable indépendante augmente d'une unité. B est incorrect car il décrit le R². C et D se réfèrent respectivement au biais-variance et à une mesure de dispersion, non liés directement aux coefficients.",
+      "explanation": "Le coefficient dans un modèle de régression linéaire représente l'impact qu'une variation de la variable indépendante exerce sur la variable dépendante. Cette relation est souvent exprimée comme la pente de la ligne de régression. En revanche, un biais est un paramètre constant qui n'influence pas la variabilité des données mais modifie l'axe de la ligne de régression. Le maximum de vraisemblance est une méthode d'estimation qui n'est pas égale aux coefficients mais se réfère à la structure globale du modèle. Enfin, l'erreur moyenne est une statistique évaluant la concordance prédictive, sans rôle dans la détermination des coefficients.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quelle est la fonction principale de la régularisation dans un modèle de régression?",
+      "question": "Quel est l'objectif principal de la regularisation dans les modeles lineaires?",
       "image_url": null,
       "choices": {
-        "A": "Réduire le surapprentissage en pénalisant la complexité du modèle.",
-        "B": "Augmenter la taille de l'échantillon d'entraînement.",
-        "C": "Modifier la distribution des erreurs résiduelles.",
-        "D": "Maximiser la variance expliquée par le modèle."
+        "A": "Augmenter les performances en ajoutant plus de variables",
+        "B": "Reduire la complexite du modele pour eviter le surapprentissage",
+        "C": "Reduire le biais du modele",
+        "D": "Maximiser le pouvoir explicatif des coefficients"
       },
-      "correct_answer": "A",
-      "explanation": "La régularisation est utilisée pour pénaliser l'ampleur des coefficients afin de prévenir le surapprentissage. B concerne les données, pas une méthode de régularisation. C and D ne traitent pas de la régularisation.",
+      "correct_answer": "B",
+      "explanation": "La régularisation dans les modèles linéaires vise à réduire la complexité du modèle pour éviter le surapprentissage en limitant les valeurs des coefficients qui pourraient amplifier des variations non pertinentes. Elle ne consiste pas à ajouter plus de variables, comme le suggère A. Au contraire, cela pourrait augmenter le risque d'overfitting. La réponse C est incorrecte car la régularisation tend à introduire du biais pour réduire la variance, et donc ne réduit pas directement le biais. Enfin, D est fausse car la régularisation cherche plutôt à équilibrer biais et variance que de maximiser le pouvoir explicatif des coefficients.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Comment le terme de régularisation Ridge impacte-t-il un modèle?",
+      "question": "Que signifie 'log-odds' dans un modele de regression logistique?",
       "image_url": null,
       "choices": {
-        "A": "Il ajoute une pénalité proportionnelle au carré des coefficients.",
-        "B": "Il sélectionne uniquement les caractéristiques principales.",
-        "C": "Il minimise l'erreur quadratique moyenne sans régulation.",
-        "D": "Il favorise les coefficients binaires pour simplifier l'interprétation."
+        "A": "Une mesure de la dispersion des coefficients",
+        "B": "La fonction de cout utilisee pour ajuster le modele",
+        "C": "Le logarithme du ratio des probabilites pour et contre un evenement",
+        "D": "La base logarithmique utilisee pour les sorties du modele"
       },
-      "correct_answer": "A",
-      "explanation": "Ridge ajoute une pénalité équivalente à la somme des carrés des coefficients, ce qui aide à réduire la variance. B décrit une sélection de fonction, souvent associée au Lasso. C évite la régularisation et D ne s'applique pas aux modèles Ridge.",
+      "correct_answer": "C",
+      "explanation": "Les 'log-odds' en régression logistique sont le logarithme du ratio des probabilités d'un événement par rapport à son absence, ce qui en fait une transformation linéaire pratique pour modéliser les probabilités. L'affirmation A est incorrecte car les 'log-odds' ne concernent pas la dispersion des coefficients. B confond avec le terme de log-loss, une fonction de coût, alors que 'log-odds' est une mesure des résultats. D est faux car la base logarithmique est utilisée pour transformer les outputs, mais cela ne définit pas les 'log-odds' eux-mêmes. Pour valider cette question, il faut relier le besoin exprime a l'option C.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Pourquoi la régularisation Lasso peut-elle conduire à des coefficients nuls?",
+      "question": "Comment la regularisation L1 affecte-t-elle les coefficients des modeles lineaires?",
       "image_url": null,
       "choices": {
-        "A": "Elle applique une pénalité linéaire sur la somme absolue des coefficients.",
-        "B": "Elle utilise une pénalité quadratique qui réduit graduellement les coefficients.",
-        "C": "Elle optimise indépendamment chaque variable pour minimiser les erreurs.",
-        "D": "Elle transforme toutes les valeurs négatives en zéro pour simplification."
+        "A": "Elle ne modifie pas les coefficients mais augmente la complexite du modele",
+        "B": "Elle ecrase tous les coefficients pour qu'ils aient la meme valeur",
+        "C": "Elle augmente tous les coefficients de la meme maniere",
+        "D": "Elle pousse certains coefficients a exactement zero"
       },
-      "correct_answer": "A",
-      "explanation": "Lasso impose une pénalité sur la somme absolue des coefficients, favorisant des solutions éparses en plaçant certains à zéro. B décrit la pénalité Ridge. C et D ne se rapportent pas à la méthode Lasso.",
+      "correct_answer": "D",
+      "explanation": "La régularisation L1, également connue sous le nom de Lasso, pénalise les coefficients de manière à ce que certains d'entre eux deviennent exactement zéro, favorisant une sélection de variables efficace. Cela permet au modèle de conserver uniquement les variables les plus significatives. Contrairement à B, L1 ne rend pas tous les coefficients égaux mais les élimine progressivement. C est incorrect, car L1 ne vise pas à augmenter de façon égale, mais à réduire certains à zéro. A est faux également, puisque L1 ne complexifie pas mais simplifie le modèle en retirant les variables peu pertinentes.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Que signifie le terme 'log-odds' dans une régression logistique?",
+      "question": "Quelle est une difference cle entre la regression ridge et la regression lasso?",
       "image_url": null,
       "choices": {
-        "A": "Le logarithme du rapport des probabilités d'un événement vs non-événement.",
-        "B": "La différence entre les probabilités d'un événement et d'un non-événement.",
-        "C": "Le logarithme transformé de la probabilité lorsqu'elle atteint 1.",
-        "D": "La somme des probabilités d'occurrence de tous les résultats possibles."
+        "A": "La regression lasso peut selectionner un sous-ensemble de variables",
+        "B": "La regression lasso favorise une solution dense",
+        "C": "La regression ridge minimise la somme des carres des residus",
+        "D": "La regression ridge peut avoir des coefficients nuls"
       },
       "correct_answer": "A",
-      "explanation": "Le log-odds représente le logarithme du rapport de la probabilité qu'un événement se produise à celle qu'il ne se produise pas. B est incorrect car il ne s'agit pas d'un ratio, C et D ne décrivent pas le concept log-odds.",
+      "explanation": "La régression Lasso (L1) diffère de Ridge par sa capacité à pousser des coefficients à zéro, simplifiant ainsi le modèle en ne conservant qu'un sous-ensemble pertinent de variables. Cela la rend bien plus efficace en sélection de variables, contrairement à B, qui affirme incorrectement que Lasso favorise une solution dense. La minimisation de la somme des carrés des résidus n'est pas exclusive à Ridge, comme le prétend C, puisque les deux méthodes prennent cela en considération. Enfin, D est incorrect, car Ridge ne produit pas de coefficients nuls, elle pénalise seulement les valeurs élevées, rendant A correctement précis.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pourquoi le modèle de régression logistique est-il interprétable?",
+      "question": "Quel aspect d'un modele est particulierement affecte par des valeurs de regularisation elevees?",
       "image_url": null,
       "choices": {
-        "A": "Parce que les coefficients peuvent être facilement transformés pour montrer un changement dans les log-odds.",
-        "B": "Parce qu'il maximise directement la précision.",
-        "C": "Parce qu'il utilise un réseau de neurones pour faire des décisions précises.",
-        "D": "Parce que les relations non linéaires complexes sont mieux adaptées."
+        "A": "Le biais du modele",
+        "B": "La variance du modele",
+        "C": "La precision sur les donnees d'apprentissage",
+        "D": "La taille de l'ensemble d'entraînement"
       },
-      "correct_answer": "A",
-      "explanation": "Les coefficients peuvent être convertis en variations proportionnelles des log-odds, augmentant l'interprétabilité. B confond un objectif d'optimisation. C et D attribuent des caractéristiques liées aux réseaux de neurones, pas à la régression logistique.",
+      "correct_answer": "B",
+      "explanation": "Une régularisation élevée dans un modèle linéaire limite la capacité du modèle à s'adapter étroitement aux données d'apprentissage en augmentant le biais tout en réduisant la variance. Cela diminue le risque de surajustement, rendant ainsi le modèle plus généralisable. Contrairement à A, le biais est en effet accru, pas réduit. C n'est pas correct car la régularisation peut réduire la précision sur les données d'entraînement. D est incorrect car le taux de régularisation n'affecte pas la taille de l'ensemble d'entraînement mais agit sur les paramètres du modèle lui-même, maintenant la taille constante.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Quel est l'impact de la régularisation L1 sur l'interprétabilité d'un modèle?",
+      "question": "Pourquoi la regression logistique est-elle consideree interpretable?",
       "image_url": null,
       "choices": {
-        "A": "Elle rend le modèle plus interprétable en réduisant certains coefficients à zéro.",
-        "B": "Elle complexifie le modèle en augmentant les coefficients de toutes les fonctionnalités.",
-        "C": "Elle maintient tous les coefficients proches de zéro sans les annuler.",
-        "D": "Elle amène le modèle à se concentrer exclusivement sur le biais."
+        "A": "Elle utilise uniquement des coefficients positifs",
+        "B": "Elle ne necessite toujours pas de normalisation",
+        "C": "Les log-odds peuvent etre facilement traduits en probabilites",
+        "D": "Elle optimise la fonction de linear least squares"
       },
-      "correct_answer": "A",
-      "explanation": "L1 pénalise la somme des valeurs absolues des coefficients, favorisant des modèles épars qui sont souvent plus facilement interprétables. B et C sont incorrects car ils décrivent des effets opposés à ceux de L1. D ne concerne pas la régularisation.",
+      "correct_answer": "C",
+      "explanation": "La régression logistique est considérée interprétable car elle permet de convertir les 'log-odds' en probabilités comprises entre 0 et 1. Ces probabilités sont intuitivement compréhensibles pour l'interprétation des résultats. A est incorrect car les coefficients peuvent être positifs ou négatifs, selon l'effet de chaque variable. Bien que la normalisation ne soit pas utilisée systématiquement, elle n'affecte pas l'interprétabilité (ce qui rend B faux). Enfin, D est erroné car la régression logistique utilise normalement la log-loss plutôt que les least squares, qui sont spécifiques à la régression linéaire. Pour valider cette question, il faut relier le besoin exprime a l'option C.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Comment la normalisation des données affecte-t-elle une régression avec régularisation?",
+      "question": "Quel est l'effet principal du taux de regularisation dans une regression ridge?",
       "image_url": null,
       "choices": {
-        "A": "Elle garantit que l'effet de la régularisation n'est pas biaisé par l'échelle des caractéristiques.",
-        "B": "Elle empêche toujours le surapprentissage indépendamment de la taille du modèle.",
-        "C": "Elle augmente le nombre de coefficients nuls dans les modèles Ridge.",
-        "D": "Elle réduit automatiquement les valeurs des biais à zéro pour toutes les caractéristiques."
+        "A": "Modifier l'epaisseur de la pente des courbes d'apprentissage",
+        "B": "Appliquer une selection de variables stricte",
+        "C": "Generer un modele avec des points d'inflexion multiples",
+        "D": "Contraindre l'amplitude totale des coefficients"
       },
-      "correct_answer": "A",
-      "explanation": "Normaliser les données assure que chaque caractéristique a la même influence lors de la régularisation. B est faux car la normalisation ne résout pas à elle seule le surapprentissage. C et D sont incorrects, car la pénalisation Ridge n'annule pas spécifiquement des coefficients individuellement, et la normalisation n'affecte pas directement les biais.",
+      "correct_answer": "D",
+      "explanation": "La régularisation Ridge ou L2 limite les valeurs extrêmes des coefficients en contraignant leur amplitude totale, ce qui conduit à un modèle plus stable et moins susceptible de surajustement. Elle ne modifie pas l'épaisseur des courbes d'apprentissage, ce qui rend A incorrect. B est faux, car Ridge n'applique pas de sélection de variables stricte en poussant les coefficients à zéro. C est erroné, car Ridge stabilise plutôt que de créer plusieurs points d'inflexion. Ridge vise à rendre les modèles plus lisses, pas à introduire de complexe discontinuités dans les transferts de courbes.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Quel aspect des coefficients d'une régression Ridge peut rendre le modèle plus robuste?",
+      "question": "Pourquoi une regression lineaire multiple peut-elle ne pas etre interpretable?",
       "image_url": null,
       "choices": {
-        "A": "La pénalité quadratique impose une réduction uniforme mais substantielle des coefficients.",
-        "B": "Elle entraîne des coefficients à être principalement des valeurs binaires.",
-        "C": "Elle transforme les coefficients négatifs en valeurs positives.",
-        "D": "Elle impose que tous les biais soient ramenés à zéro."
+        "A": "Les coefficients peuvent etre sensibles aux multicollinearites",
+        "B": "Tous les coefficients sont toujours significatifs",
+        "C": "Elle ne fonctionne qu'avec des variables binaires",
+        "D": "Le nombre de variables depend uniquement de la taille de l'echantillon"
       },
       "correct_answer": "A",
-      "explanation": "La pénalité Ridge tend à réduire les valeurs des coefficients sans les amener à zéro, ce qui peut éviter le surajustement. B, C, D sont incorrects, car Ridge ne force ni des valeurs binaires, ni des transformations de signe, ni n'affecte directement les biais au point zéro.",
+      "explanation": "En régression linéaire multiple, la multicolinéarité rend les coefficients difficiles à interpréter en créant des corrélations significatives entre les variables indépendantes. Cela peut rendre les coefficients instables et cacher les contributions individuelles. B est faux, car l'importance des coefficients n'est pas garantie; certains peuvent être non-significatifs. C est incorrect car la régression linéaire peut inclure divers types de variables, pas seulement les binaires. Enfin, D est incorrect puisque le nombre de variables dépend de leur pertinence pour le modèle, et non uniquement de la taille de l'échantillon. Pour valider cette question, il faut relier le besoin exprime a l'option A.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans quel contexte l'interprétabilité des coefficients de la régression logistique peut-elle être limitée?",
+      "question": "Quel role joue le terme de biais dans un modele de regression lineaire?",
       "image_url": null,
       "choices": {
-        "A": "Lorsqu'une forte multicolinéarité entre les variables explicatives est présente.",
-        "B": "Lorsque les coefficients sont normalisés avant ajustement.",
-        "C": "Lorsque la probabilité d'événements rares devient élevée.",
-        "D": "Lorsque l'échantillon de données est exhaustif et complet."
+        "A": "Il determine l'interpretabilite du modele",
+        "B": "Il ajuste la position de la ligne de regression",
+        "C": "Il penalise la valeur totale des coefficients",
+        "D": "Il preserve la variance du modele"
       },
-      "correct_answer": "A",
-      "explanation": "Avec une forte multicolinéarité, il est difficile de déterminer l'effet distinct de chaque variable sur le résultat, rendant l'interprétation des coefficients compliquée. B est un processus préliminaire qui améliore généralement la stabilité. C concerne davantage les prédictions que la structure du modèle. D, au contraire, peut améliorer la robustesse des résultats.",
+      "correct_answer": "B",
+      "explanation": "Le terme de biais dans un modèle de régression linéaire ajuste la position de la ligne de régression, permettant de fixer l'interception avec l'axe des ordonnées. Contrairement à A, il n'influence pas directement l'interprétabilité, qui dépend plus de la simplicité du modèle et des interactions de variables. Le biais n’affecte pas la valeur totale des coefficients comme indiqué en C, c'est le rôle de la régularisation. D est erroné, car la préservation de la variance n’est pas liée au terme de biais, qui contribue plutôt à un ajustement de la moyenne du modèle, sans affecter la dispersion.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Quel scénario pourrait justifier l'utilisation conjointe de L1 et L2 dans un modèle de régression?",
+      "question": "Comment la regularisation L2 influence-t-elle les coefficients dans les modeles lineaires?",
       "image_url": null,
       "choices": {
-        "A": "Combiner une meilleure sélection de caractéristiques avec la stabilité des coefficients.",
-        "B": "Augmenter la complexité pour améliorer la captation des biais.",
-        "C": "Minimiser le coût de calcul tout en maximisant les coefficients actifs.",
-        "D": "Réduire la précision de la prédiction pour mieux généraliser."
+        "A": "Elle ne modifie pas les coefficients mais affecte seulement les termes d'interaction",
+        "B": "Elle elimine completement certains coefficients",
+        "C": "Elle les contraint vers zero sans pour autant les rendre nuls",
+        "D": "Elle inverse la polarité des coefficients par rapport à L1"
       },
-      "correct_answer": "A",
-      "explanation": "L'ajout de L1 aide à la sélection de caractéristiques tandis que L2 garantit la stabilité des coefficients restants. B et D ne sont pas de véritables motivations pratiques, tandis que C va à l'encontre de l'objectif de contraintes de pénalisation.",
+      "correct_answer": "C",
+      "explanation": "La régularisation L2, ou Ridge, contraint les amplitudes des coefficients pour les pousser vers zéro sans les réduire à néant, équilibre idéal entre complexité et suremplissage. Elle ne ressemble pas à L1 qui peut annuler certains coefficients, rendant B incorrect. A est faux car L2 affecte tous les coefficients, pas seulement les termes d'interaction. Enfin, D est inexacte, L2 modifie tous les coefficients de manière uniforme, limitant leur magnitude mais sans inverser leur polarité ou signification statistique. Elle harmonise plutôt les contributions de toutes les variables pour réduire le risque d’overfitting.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Comment la régularisation L2 influence-t-elle la variance d’un modèle?",
+      "question": "En quoi la regularisation L1 et la regularisation L2 different-elles?",
       "image_url": null,
       "choices": {
-        "A": "Elle réduit la variance en contraignant excessivement les coefficients.",
-        "B": "Elle augmente la variance en exacerbant le surapprentissage.",
-        "C": "Elle ne fait pas varier la variance car seule la moyenne est affectée.",
-        "D": "Elle module la variance en fonction du ratio biais/variance optimisé."
+        "A": "L1 utilise une penalisation quadratique tandis que L2 n'en utilise pas",
+        "B": "L1 penalise plus fortement les grands coefficients que L2",
+        "C": "L2 peut rendre un modele exactement parcimonieux tandis que L1 ne le peut pas",
+        "D": "L1 tend a produire des modeles plus interprétables que L2"
       },
-      "correct_answer": "A",
-      "explanation": "La régularisation L2 diminue la variance en réduisant les coefficients, ce qui peut limiter le surapprentissage potentiel du modèle. B est incorrect car elle vise justement à minimiser le surapprentissage. C est faux puisque la variance est directement affectée. D décrit un idéal théorique mais pas l’effet direct de L2.",
+      "correct_answer": "D",
+      "explanation": "L1 (Lasso) est reconnue pour produire des modèles plus interprétables en annulant plusieurs coefficients, donc en simplifiant la complexité du modèle. Contrairement à A, c’est L2 qui applique une pénalisation quadratique, non L1. B est incorrect, car c’est L1 qui tend à annuler plus de coefficients, tandis que L2 réduit uniformément. Quant à C, L1, et non L2, offre une solution parcimonieuse en rendant certains coefficients exactement zéro, ce qui contribue à sa meilleure capacité de sélection de variables utiles, rendant la modélisation souvent plus intuitive et facile à comprendre dans son essence.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Quel problème principal le modèle Elastic Net résout-il par rapport aux Lasso et Ridge?",
+      "question": "Pourquoi une approche de regression logistique penalisee pourrait ne pas donner de probable resultat optimal?",
       "image_url": null,
       "choices": {
-        "A": "Il corrige la sélection biaisée de caractéristiques fortement corrélées.",
-        "B": "Il élimine le besoin de validation croisée.",
-        "C": "Il réduit exclusivement le biais sans toucher à la variance.",
-        "D": "Il garantit toujours une solution convergente rapide."
+        "A": "Les termes de penalisation peuvent compliquer le paysage du cout",
+        "B": "Elle tend a surechantillonner les donnees",
+        "C": "La penalisation debalancent toutes les classes",
+        "D": "Elle est basee exclusivement sur des principes bayesiens"
       },
       "correct_answer": "A",
-      "explanation": "Elastic Net combine les forces de Lasso et Ridge pour aider à sélectionner des groupes de variables corrélées en prévenant la menace de biais dans la sélection. B, C et D ne décrivent pas les véritables fonctionnalités ou améliorations d’Elastic Net.",
+      "explanation": "Les termes de pénalité utilisés dans une régression logistique pénalisée peuvent rendre la topologie de la fonction de coût plus complexe, rendant plus difficile l'atteinte d'un minima global. Alors que A touche justement au sujet, B est hors propos, car ce modèle ne change pas la méthode d'échantillonnage. C est erroné, la régularisation n'affectant pas l'équilibre entre classes mais la pénalité sur les coefficients. D est tout aussi incorrect, car bien que certains éléments bayésiens soient appliqués dans des contextes de régularisation, la méthode n'est pas exclusivement bayésienne, s'inspirant aussi de probabilités fréquentes.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pourquoi est-il crucial de choisir adéquatement le paramètre alpha dans un modèle Elastic Net?",
+      "question": "Quelle est une limite de l'utilisation exclusive de la regression lineaire standard pour modeliser des donnees?",
       "image_url": null,
       "choices": {
-        "A": "L'alpha équilibre les pénalités des termes L1 et L2, influençant la performance.",
-        "B": "Il détermine la rapidité de convergence de l'algorithme de descente de gradient.",
-        "C": "Il ajuste automatiquement la taille de l'échantillonnage des données.",
-        "D": "Il équilibre le nombre de lignes et colonnes utilisées pour l'initialisation."
+        "A": "Elle necessite toujours une approche paramétrique",
+        "B": "Elle presume une relation lineaire parfaite entre variables",
+        "C": "Elle depend excessivement de la normalisation des donnees d'entree",
+        "D": "Elle est utile uniquement avec des variables independantes categorisees"
       },
-      "correct_answer": "A",
-      "explanation": "Le paramètre alpha dans Elastic Net équilibre l'importance des pénalités L1 (sparse) et L2 (stabilité) influençant directement la performance du modèle. B n'impacte pas directement le modèle Elastic Net. C et D sont sans rapport avec le rôle d'alpha dans ce contexte.",
+      "correct_answer": "B",
+      "explanation": "La régression linéaire standard présente la limitation d’exiger une relation linéaire stricte entre les variables indépendantes et la variable dépendante, ce qui peut ne pas convenir à des relations dans des données réelles plus complexes. En contradiction avec A, des méthodes non-paramétriques existent pour traiter divers ensembles de données. C n’évoque pas correctement, puisque même si cela booste l'efficacité des algorithmes, rien n'oblige une normalisation des données selon B. Enfin, D est incorrect, la régression linéaire peut englober divers types de variables, y compris continues, et n’est pas exclusivement réservée aux variables catégorielles.",
       "difficulty": "hard"
     }
   ]

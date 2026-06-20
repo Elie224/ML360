@@ -14,7 +14,7 @@
         "D": "Une méthode pour réduire la dimensionnalité de l'espace de données."
       },
       "correct_answer": "A",
-      "explanation": "Un cluster est défini comme un groupement de points de données dans un espace multi-dimensionnel qui partagent des caractéristiques similaires. La réponse B est incorrecte car elle décrit un centroïde, pas un cluster tout entier. La réponse C est fausse car cela décrit plutôt une frontière ou un seuil. La réponse D décrit la réduction de dimensionnalité, pas la définition d'un cluster.",
+      "explanation": "Un cluster est défini comme un groupement de points de données dans un espace multi-dimensionnel qui partagent des caractéristiques similaires. La réponse B est incorrecte car elle décrit un centroïde, pas un cluster tout entier. La réponse C est fausse car cela décrit plutôt une frontière ou un seuil. La réponse D décrit la réduction de dimensionnalité, pas la définition d'un cluster. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Un seul point de données utilisé comme référence pour d'autres points.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une limite prédéfinie pour classifier les points de données.) est plausible",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Quel est le rôle d'un centroïde dans le clustering k-means?",
       "image_url": null,
       "choices": {
-        "A": "Il représente le centre d'un cluster et est utilisé pour attribuer des points de données aux clusters.",
-        "B": "Il définit le nombre total de clusters dans l'algorithme.",
+        "A": "Il définit le nombre total de clusters dans l'algorithme.",
+        "B": "Il représente le centre d'un cluster et est utilisé pour attribuer des points de données aux clusters.",
         "C": "Il est utilisé pour mesurer la distance entre les différents clusters.",
         "D": "Il détermine le seuil de convergence de l'algorithme."
       },
-      "correct_answer": "A",
-      "explanation": "Un centroïde est le point moyen d'un cluster en termes de ses paramètres; il est utilisé par l'algorithme k-means pour réassigner les points de données aux clusters les plus proches. La réponse B est incorrecte car le nombre de clusters est défini par k. La réponse C est incorrecte car la distance entre clusters se mesure généralement entre les centroïdes, mais le centroïde n'est pas un outil de mesure. La réponse D est incorrecte car le centroïde n'influence pas le seuil de convergence.",
+      "correct_answer": "B",
+      "explanation": "Un centroïde est le point moyen d'un cluster en termes de ses paramètres; il est utilisé par l'algorithme k-means pour réassigner les points de données aux clusters les plus proches. La réponse B est incorrecte car le nombre de clusters est défini par k. La réponse C est incorrecte car la distance entre clusters se mesure généralement entre les centroïdes, mais le centroïde n'est pas un outil de mesure. La réponse D est incorrecte car le centroïde n'influence pas le seuil de convergence. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il définit le nombre total de clusters dans l'algorithme.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Comment l'inertie est-elle utilisée dans le clustering k-means?",
       "image_url": null,
       "choices": {
-        "A": "Comme mesure de la somme des distances au carré entre les points de données et leur centroïde respectif.",
+        "A": "Pour ajuster dynamiquement le nombre de clusters dans l'algorithme.",
         "B": "Pour déterminer la séparation entre différents clusters.",
-        "C": "Pour ajuster dynamiquement le nombre de clusters dans l'algorithme.",
+        "C": "Comme mesure de la somme des distances au carré entre les points de données et leur centroïde respectif.",
         "D": "Pour évaluer l'algorithme en termes de temps de convergence."
       },
-      "correct_answer": "A",
-      "explanation": "L'inertie mesure la compactitude des clusters; elle est calculée comme la somme des distances au carré entre chaque point de données et son centroïde. La réponse B est incorrecte car la séparation n'est pas mesurée par l'inertie mais souvent par un autre indicateur, comme le coefficient de silhouette. La réponse C est incorrecte car k est fixé avant l'exécution de l'algorithme k-means. La réponse D est fausse car l'inertie ne concerne pas la vitesse de convergence mais la qualité des clusters formés.",
+      "correct_answer": "C",
+      "explanation": "L'inertie mesure la compactitude des clusters; elle est calculée comme la somme des distances au carré entre chaque point de données et son centroïde. La réponse B est incorrecte car la séparation n'est pas mesurée par l'inertie mais souvent par un autre indicateur, comme le coefficient de silhouette. La réponse C est incorrecte car k est fixé avant l'exécution de l'algorithme k-means. La réponse D est fausse car l'inertie ne concerne pas la vitesse de convergence mais la qualité des clusters formés. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour ajuster dynamiquement le nombre de clusters dans l'algorithme.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Qu'est-ce que l'assignation dans le contexte de l'algorithme k-means?",
       "image_url": null,
       "choices": {
-        "A": "L'étape où chaque point de données est affecté au cluster avec le centroïde le plus proche.",
+        "A": "L'étape où les centroides sont recalculés après l'assignation initiale des points.",
         "B": "Le processus de calcul des centroïdes initiaux basés sur des données aléatoires.",
         "C": "La méthode utilisée pour décider de la valeur de k avant l'exécution de l'algorithme.",
-        "D": "L'étape où les centroides sont recalculés après l'assignation initiale des points."
+        "D": "L'étape où chaque point de données est affecté au cluster avec le centroïde le plus proche."
       },
-      "correct_answer": "A",
-      "explanation": "L'assignation dans k-means se réfère à l'étape où chaque point de données est affecté au cluster dont il est le plus proche, déterminé par le centroïde. La réponse B est incorrecte car elle décrit le démarrage de l'algorithme, pas l'assignation. La réponse C est incorrecte car elle décrit un choix préliminaire nécessaire pour débuter l'algorithme. La réponse D est fausse car elle décrit la mise à jour des centroïdes, une étape différente des assignations.",
+      "correct_answer": "D",
+      "explanation": "L'assignation dans k-means se réfère à l'étape où chaque point de données est affecté au cluster dont il est le plus proche, déterminé par le centroïde. La réponse B est incorrecte car elle décrit le démarrage de l'algorithme, pas l'assignation. La réponse C est incorrecte car elle décrit un choix préliminaire nécessaire pour débuter l'algorithme. La réponse D est fausse car elle décrit la mise à jour des centroïdes, une étape différente des assignations. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'étape où les centroides sont recalculés après l'assignation initiale des points.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Un grand k est préférable car il assure une classification détaillée des données."
       },
       "correct_answer": "A",
-      "explanation": "Choisir un k incorrect peut entraîner un mauvais groupement des données : une valeur trop petite peut sous-segmenter (groupements trop larges), tandis qu'une valeur trop grande peut sursegmenter (groupements trop restreints). La réponse B est incorrecte car bien que ça puisse influencer la vitesse, l'impact principal est sur la qualité de clustering. Les choix C et D sont faux car ni un petit k ni un grand k ne sont systématiquement meilleurs ; ils doivent être choisis en fonction des données.",
+      "explanation": "Choisir un k incorrect peut entraîner un mauvais groupement des données : une valeur trop petite peut sous-segmenter (groupements trop larges), tandis qu'une valeur trop grande peut sursegmenter (groupements trop restreints). La réponse B est incorrecte car bien que ça puisse influencer la vitesse, l'impact principal est sur la qualité de clustering. Les choix C et D sont faux car ni un petit k ni un grand k ne sont systématiquement meilleurs ; ils doivent être choisis en fonction des données. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il affecte directement la vitesse de convergence de l'algorithme.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "easy"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quelle est la meilleure approche pour initialiser les centroïdes dans k-means?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser k-means++ pour améliorer la robustesse et la convergence rapide.",
-        "B": "Toujours choisir le premier k points de données comme centroïdes initiaux.",
+        "A": "Toujours choisir le premier k points de données comme centroïdes initiaux.",
+        "B": "Utiliser k-means++ pour améliorer la robustesse et la convergence rapide.",
         "C": "Affecter aléatoirement chaque point de données à un cluster dès le début.",
         "D": "Utiliser la moyenne globale de toutes les données comme premier centroïde."
       },
-      "correct_answer": "A",
-      "explanation": "k-means++ est une méthode d'initialisation intelligente des centroïdes qui améliore significativement la convergence et l'efficacité par rapport à une sélection purement aléatoire. La réponse B est incorrecte car choisir les premiers points peut ne pas bien représenter l'ensemble du dataset. La réponse C est incorrecte car elle laisse la sélection de départ au hasard pur. La réponse D est fausse car un seul centroïde ne suffirait pas pour commencer l'algorithme.",
+      "correct_answer": "B",
+      "explanation": "k-means++ est une méthode d'initialisation intelligente des centroïdes qui améliore significativement la convergence et l'efficacité par rapport à une sélection purement aléatoire. La réponse B est incorrecte car choisir les premiers points peut ne pas bien représenter l'ensemble du dataset. La réponse C est incorrecte car elle laisse la sélection de départ au hasard pur. La réponse D est fausse car un seul centroïde ne suffirait pas pour commencer l'algorithme. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Toujours choisir le premier k points de données comme centroïdes initiaux.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Affecter aléatoirement chaque",
       "difficulty": "easy"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Dans l'algorithme k-means, que se passe-t-il si aucun point ne change de cluster lors d'une itération?",
       "image_url": null,
       "choices": {
-        "A": "L'algorithme converge et l'exécution se termine.",
+        "A": "Il montre que les distances entre les points doivent être recalculées.",
         "B": "Cela indique que l'algorithme doit commencer une nouvelle initialisation de centroïdes.",
-        "C": "Il montre que les distances entre les points doivent être recalculées.",
+        "C": "L'algorithme converge et l'exécution se termine.",
         "D": "Les centroïdes sont automatiquement réinitialisés à leurs valeurs d'origine."
       },
-      "correct_answer": "A",
-      "explanation": "Si aucune réaffectation de points ne se produit, cela signifie que les centroïdes sont stables et que l'algorithme a convergé. La réponse B est incorrecte car cela impliquerait une non-convergence, ce qui est contraire à la situation décrite. Les choix C et D sont faux car ni un recalcul des distances ni une réinitialisation des centroïdes n'est nécessaire en cas de convergence.",
+      "correct_answer": "C",
+      "explanation": "Si aucune réaffectation de points ne se produit, cela signifie que les centroïdes sont stables et que l'algorithme a convergé. La réponse B est incorrecte car cela impliquerait une non-convergence, ce qui est contraire à la situation décrite. Les choix C et D sont faux car ni un recalcul des distances ni une réinitialisation des centroïdes n'est nécessaire en cas de convergence. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il montre que les distances entre les points doivent être recalculées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Cela indique que l'algorithme doit commencer une nouvelle initialisation de centroïdes.)",
       "difficulty": "easy"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quelle est une limite principale de l'algorithme k-means?",
       "image_url": null,
       "choices": {
-        "A": "Il incline à détecter les clusters sphériques de taille comparable.",
+        "A": "Il nécessite une structure hiérarchique préalable des données.",
         "B": "Il ne peut être exécuté que sur des données à 2 dimensions.",
         "C": "Il ne reconnait pas les clusters qui se chevauchent.",
-        "D": "Il nécessite une structure hiérarchique préalable des données."
+        "D": "Il incline à détecter les clusters sphériques de taille comparable."
       },
-      "correct_answer": "A",
-      "explanation": "K-means présume des clusters sphériques de taille similaire, ce qui peut conduire à de mauvais résultats pour des clusters de formes ou tailles diverses. La réponse B est incorrecte car k-means fonctionne sur des données de toute dimension tant qu'elles sont numériques. La réponse C est en partie vraie mais A capture l'essence de la limitation spécifique. La réponse D est fausse, car cela s'applique à des méthodes de clustering hiérarchiques, pas à k-means.",
+      "correct_answer": "D",
+      "explanation": "K-means présume des clusters sphériques de taille similaire, ce qui peut conduire à de mauvais résultats pour des clusters de formes ou tailles diverses. La réponse B est incorrecte car k-means fonctionne sur des données de toute dimension tant qu'elles sont numériques. La réponse C est en partie vraie mais A capture l'essence de la limitation spécifique. La réponse D est fausse, car cela s'applique à des méthodes de clustering hiérarchiques, pas à k-means. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il nécessite une structure hiérarchique préalable des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il ne",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Tous les centroïdes sont situés sur les coordonnées d'origine (0,0)."
       },
       "correct_answer": "A",
-      "explanation": "L'algorithme peut s'arrêter s'il atteint une inertie suffisamment petite ou si les points ne se réaffectent plus à de nouveaux clusters. La réponse B est incorrecte car bien que le nombre d'itérations soit parfois limité, l'important est la convergence. La réponse C est incorrecte car la couleur n'est pas un facteur dans un algorithme mathématique tel que k-means. La réponse D est fausse car il est improbable et inutile que tous les centroïdes se retrouvent en (0,0).",
+      "explanation": "L'algorithme peut s'arrêter s'il atteint une inertie suffisamment petite ou si les points ne se réaffectent plus à de nouveaux clusters. La réponse B est incorrecte car bien que le nombre d'itérations soit parfois limité, l'important est la convergence. La réponse C est incorrecte car la couleur n'est pas un facteur dans un algorithme mathématique tel que k-means. La réponse D est fausse car il est improbable et inutile que tous les centroïdes se retrouvent en (0,0). La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Nombre d'itérations surpassant 1000, peu importe l'état des clusters.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quel impact un point de données anormalement distant peut-il avoir sur l'algorithme k-means?",
       "image_url": null,
       "choices": {
-        "A": "Il peut faussement tirer un centroïde vers lui, perturber l'intégrité des clusters.",
-        "B": "Il est généralement écarté comme bruit et n'affecte pas l'algorithme.",
+        "A": "Il est généralement écarté comme bruit et n'affecte pas l'algorithme.",
+        "B": "Il peut faussement tirer un centroïde vers lui, perturber l'intégrité des clusters.",
         "C": "Il aide à identifier automatiquement un cluster de points anomalies.",
         "D": "Il remet à zéro tous les autres centroïdes dans l'algorithme."
       },
-      "correct_answer": "A",
-      "explanation": "Les points anormaux peuvent influencer un centroïde et détourner son positionnement, faussant ainsi le clustering. La réponse B est incorrecte car, sans technique spécifique, k-means ne considère pas le bruit de cette manière. La réponse C est incorrecte car l'identification de clusters d'anomalies n'est pas automatiquement effectuée par k-means. D est fausse car un seul point ne peut pas remettre à zéro les centroïdes.",
+      "correct_answer": "B",
+      "explanation": "Les points anormaux peuvent influencer un centroïde et détourner son positionnement, faussant ainsi le clustering. La réponse B est incorrecte car, sans technique spécifique, k-means ne considère pas le bruit de cette manière. La réponse C est incorrecte car l'identification de clusters d'anomalies n'est pas automatiquement effectuée par k-means. D est fausse car un seul point ne peut pas remettre à zéro les centroïdes. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il est généralement écarté comme bruit et n'affecte pas l'algorithme.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il aide à identifier automatiquement un cluster de points anomalies.)",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Comment détecter le bon choix de k dans k-means pour un dataset inconnu?",
       "image_url": null,
       "choices": {
-        "A": "En employant la méthode du coude sur un graphique d'inertie.",
+        "A": "En utilisant le nombre d'attributs des données comme valeur de k.",
         "B": "En évaluant la taille des clusters après la première itération.",
-        "C": "En utilisant le nombre d'attributs des données comme valeur de k.",
+        "C": "En employant la méthode du coude sur un graphique d'inertie.",
         "D": "En maximisant aléatoirement le nombre de k jusqu'à convergence."
       },
-      "correct_answer": "A",
-      "explanation": "La méthode du coude est une technique graphique où l'on choisit k au niveau de l'inflexion de la courbe d'inertie. La réponse B est incorrecte car l'examen des clusters après une seule itération n'indique pas la solution optimale. La réponse C est fausse car le nombre d'attributs n'est pas une indication fiable pour k. La réponse D est incorrecte car k-means ne requiert pas la maximisation aléatoire puisque cela ne garantit pas une convergence optimale.",
+      "correct_answer": "C",
+      "explanation": "La méthode du coude est une technique graphique où l'on choisit k au niveau de l'inflexion de la courbe d'inertie. La réponse B est incorrecte car l'examen des clusters après une seule itération n'indique pas la solution optimale. La réponse C est fausse car le nombre d'attributs n'est pas une indication fiable pour k. La réponse D est incorrecte car k-means ne requiert pas la maximisation aléatoire puisque cela ne garantit pas une convergence optimale. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En utilisant le nombre d'attributs des données comme valeur de k.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel problème peut survenir avec des clusters de tailles très différentes dans l'algorithme k-means?",
       "image_url": null,
       "choices": {
-        "A": "K-means pourrait faussement attribuer des points des petits clusters aux gros.",
+        "A": "Il n'est pas capable de traiter des petits clusters, ignorant les gros.",
         "B": "Il pourrait ne pas reconnaître les petits clusters et les fusionner toujours.",
         "C": "Il classera automatiquement le plus petit cluster comme bruit.",
-        "D": "Il n'est pas capable de traiter des petits clusters, ignorant les gros."
+        "D": "K-means pourrait faussement attribuer des points des petits clusters aux gros."
       },
-      "correct_answer": "A",
-      "explanation": "K-means attribue totalement en fonction de la distance au centroïde le plus proche, donc des clusters plus petits peuvent se voir affecter par un gros cluster en raison de cette distance relative. La réponse B est fausse car l'agglomération n'est pas systématique sans calcul additionnel. La réponse C est incorrecte car k-means ne classifie pas le bruit de manière automatique. La réponse D ne pourrait pas être correcte puisque k-means traite tous les clusters proportionnellement.",
+      "correct_answer": "D",
+      "explanation": "K-means attribue totalement en fonction de la distance au centroïde le plus proche, donc des clusters plus petits peuvent se voir affecter par un gros cluster en raison de cette distance relative. La réponse B est fausse car l'agglomération n'est pas systématique sans calcul additionnel. La réponse C est incorrecte car k-means ne classifie pas le bruit de manière automatique. La réponse D ne pourrait pas être correcte puisque k-means traite tous les clusters proportionnellement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il n'est pas capable de traiter des petits clusters, ignorant les gros.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "hard"
     }
   ]

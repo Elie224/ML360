@@ -14,7 +14,7 @@
         "D": "Réduire le nombre total de features pour augmenter la vitesse de calcul."
       },
       "correct_answer": "A",
-      "explanation": "Le bagging utilise l'échantillonnage bootstrap pour créer plusieurs échantillons entraînants avec remplacement, réduisant ainsi la variance du modèle. Ceci n'influence pas le biais (B) et ne concerne pas la sélection de caractéristiques ou la réduction du nombre de features (C et D).",
+      "explanation": "Le bagging utilise l'échantillonnage bootstrap pour créer plusieurs échantillons entraînants avec remplacement, réduisant ainsi la variance du modèle. Ceci n'influence pas le biais (B) et ne concerne pas la sélection de caractéristiques ou la réduction du nombre de features (C et D). La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Augmenter la biais du modèle pour une meilleure généralisation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Sélectionner uniquement les caractéristiques les plus pertinentes pour chaque base learner.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Réduire le",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Quel attribut du boosting aide à corriger les erreurs des modèles faibles précédents?",
       "image_url": null,
       "choices": {
-        "A": "Les poids ajustés accordés aux données mal classées.",
-        "B": "L'utilisation de réseaux de neurones profonds pour chaque modèle faible.",
+        "A": "L'utilisation de réseaux de neurones profonds pour chaque modèle faible.",
+        "B": "Les poids ajustés accordés aux données mal classées.",
         "C": "L'abandon de l'échantillonnage bootstrap au profit d'un entraînement sur l'ensemble des données.",
         "D": "L'entraînement de chaque modèle faible de manière totalement indépendante."
       },
-      "correct_answer": "A",
-      "explanation": "Le boosting donne plus de poids aux instances mal classées pour corriger les erreurs des modèles précédents. L'option C décrit une caractéristique non spécifique au boosting et l'option D est incorrecte car les learners ne sont pas indépendants; B est erroné car il n'implique pas nécessairement des réseaux profonds.",
+      "correct_answer": "B",
+      "explanation": "Le boosting donne plus de poids aux instances mal classées pour corriger les erreurs des modèles précédents. L'option C décrit une caractéristique non spécifique au boosting et l'option D est incorrecte car les learners ne sont pas indépendants; B est erroné car il n'implique pas nécessairement des réseaux profonds. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'utilisation de réseaux de neurones profonds pour chaque modèle faible.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'abandon de l'échantillonnage bootstrap au profit d'un entraînement sur l'ensemble des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Dans une approche de stacking, quel est le rôle des métamodèles?",
       "image_url": null,
       "choices": {
-        "A": "Combiner les sorties des modèles de base pour améliorer la prédiction finale.",
+        "A": "Filtrer les données pour améliorer prétraitement.",
         "B": "Former indépendamment chaque modèle de base pour réduire la divergence.",
-        "C": "Filtrer les données pour améliorer prétraitement.",
+        "C": "Combiner les sorties des modèles de base pour améliorer la prédiction finale.",
         "D": "Réduire le temps de calcul en ignorant des modèles de base."
       },
-      "correct_answer": "A",
-      "explanation": "Dans le stacking, un métamodèle combine les sorties des modèles de base pour faire une meilleure prédiction. B décrit une caractéristique indépendante au stacking. C et D ne sont pas des propriétés associées aux métamodèles de stacking.",
+      "correct_answer": "C",
+      "explanation": "Dans le stacking, un métamodèle combine les sorties des modèles de base pour faire une meilleure prédiction. B décrit une caractéristique indépendante au stacking. C et D ne sont pas des propriétés associées aux métamodèles de stacking. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Filtrer les données pour améliorer prétraitement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Former indépendamment chaque modèle de base pour réduire la divergence.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Réduire le temps de calcul en ignorant des modèles de base.)",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quel est un critère courant pour classifier un 'weak learner' en apprentissage machine?",
       "image_url": null,
       "choices": {
-        "A": "Il performe légèrement au-dessus du hasard.",
+        "A": "Il est fortement régularisé pour éviter le surapprentissage.",
         "B": "Il utilise toujours une seule feature à la fois.",
         "C": "Il ne nécessite aucune validation.",
-        "D": "Il est fortement régularisé pour éviter le surapprentissage."
+        "D": "Il performe légèrement au-dessus du hasard."
       },
-      "correct_answer": "A",
-      "explanation": "Un 'weak learner' performe légèrement mieux que le hasard, suffisant pour être utilisé dans des techniques d'ensemble comme l'AdaBoost. B et D décrivent des contraintes non spécifiques aux weak learners et C est incorrect car une simple validation basique est souvent requise.",
+      "correct_answer": "D",
+      "explanation": "Un 'weak learner' performe légèrement mieux que le hasard, suffisant pour être utilisé dans des techniques d'ensemble comme l'AdaBoost. B et D décrivent des contraintes non spécifiques aux weak learners et C est incorrect car une simple validation basique est souvent requise. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il est fortement régularisé pour éviter le surapprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il utilise toujours une seule feature à la fois.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il ne nécessite aucune validation.)",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Il applique une régularisation stricte sur chaque modèle faible."
       },
       "correct_answer": "A",
-      "explanation": "Le boosting ajuste les poids donnés aux erreurs, améliorant la généralisation. B et C sont incorrects car ils ne concernent pas la gestion des erreurs ou des paramètres. D est faux car le boosting intrinsèquement n'implique pas la régularisation stricte.",
+      "explanation": "Le boosting ajuste les poids donnés aux erreurs, améliorant la généralisation. B et C sont incorrects car ils ne concernent pas la gestion des erreurs ou des paramètres. D est faux car le boosting intrinsèquement n'implique pas la régularisation stricte. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il augmente aléatoirement le nombre de features.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il diminue la complexité du modèle en supprimant des bases learners.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il applique une régularisation stricte sur",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "En résistance au surapprentissage, pourquoi le bagging peut échouer lorsqu'il est appliqué à des modèles fortement biaisés?",
       "image_url": null,
       "choices": {
-        "A": "Parce qu'il ne réduira pas le biais élevé initial du modèle.",
-        "B": "Car il augmente les fonctionnalités pour fournir un ajustement excessif.",
+        "A": "Car il augmente les fonctionnalités pour fournir un ajustement excessif.",
+        "B": "Parce qu'il ne réduira pas le biais élevé initial du modèle.",
         "C": "Parce qu'il construit seulement un seul base learner.",
         "D": "Car il ne modifie pas les distributions de caractéristiques."
       },
-      "correct_answer": "A",
-      "explanation": "Le bagging diminue la variance mais ne peut réduire le biais du modèle, donc si un modèle est déjà biaisé, combiner ses prédictions ne changera rien. B est irréaliste car il ne change pas le nombre de features. C est faux car le bagging implique plusieurs base learners et D est hors de contexte car ce n'est pas le focus du bagging.",
+      "correct_answer": "B",
+      "explanation": "Le bagging diminue la variance mais ne peut réduire le biais du modèle, donc si un modèle est déjà biaisé, combiner ses prédictions ne changera rien. B est irréaliste car il ne change pas le nombre de features. C est faux car le bagging implique plusieurs base learners et D est hors de contexte car ce n'est pas le focus du bagging. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Car il augmente les fonctionnalités pour fournir un ajustement excessif.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce qu'il construit seulement un seul base learner.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Dans le stacking, pourquoi est-il important de séparer l'entraînement des métamodèles et des modèles de base?",
       "image_url": null,
       "choices": {
-        "A": "Pour éviter les fuites de données et garantir une meilleure généralisation.",
+        "A": "Pour forcer les modèles de base à avoir des poids nuls initiaux.",
         "B": "Pour permettre aux métamodèles d'ajouter de nouvelles données exogènes.",
-        "C": "Pour forcer les modèles de base à avoir des poids nuls initiaux.",
+        "C": "Pour éviter les fuites de données et garantir une meilleure généralisation.",
         "D": "Pour s'assurer que chaque modèle de base conserve une forte complexité."
       },
-      "correct_answer": "A",
-      "explanation": "En séparant l'entraînement, on évite les fuites de données, permettant à chaque modèle de s'entraîner indépendamment des erreurs des autres. B et D ne sont pas nécessaires alors que C n'est techniquement pas pertinent pour le stacking car le poids initial n'est pas la préoccupation ici.",
+      "correct_answer": "C",
+      "explanation": "En séparant l'entraînement, on évite les fuites de données, permettant à chaque modèle de s'entraîner indépendamment des erreurs des autres. B et D ne sont pas nécessaires alors que C n'est techniquement pas pertinent pour le stacking car le poids initial n'est pas la préoccupation ici. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour forcer les modèles de base à avoir des poids nuls initiaux.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour permettre aux métamodèles d'ajouter de nouvelles données exogènes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "hard"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Pourquoi le boosting est-il considéré comme supérieur au bagging pour les données déséquilibrées?",
       "image_url": null,
       "choices": {
-        "A": "Parce qu'il se concentre sur les observations difficiles en ajustant les poids.",
+        "A": "Parce qu'il utilise des combinaisons aléatoires de features.",
         "B": "Parce qu'il génère des échantillons parfaitement équilibrés par échantillonnage.",
         "C": "Parce qu'il combine les modèles les plus biaisés pour réduire l'erreur de compréhension.",
-        "D": "Parce qu'il utilise des combinaisons aléatoires de features."
+        "D": "Parce qu'il se concentre sur les observations difficiles en ajustant les poids."
       },
-      "correct_answer": "A",
-      "explanation": "Le boosting est efficace sur les données déséquilibrées car il modifie les poids pour se concentrer sur les erreurs difficiles. Contrairement à B, il ne crée pas d'échantillons équilibrés. C est incorrect car il ne se concentre pas sur les modèles biaisés et D n'est pas pertinent en termes de traitement des déséquilibres.",
+      "correct_answer": "D",
+      "explanation": "Le boosting est efficace sur les données déséquilibrées car il modifie les poids pour se concentrer sur les erreurs difficiles. Contrairement à B, il ne crée pas d'échantillons équilibrés. C est incorrect car il ne se concentre pas sur les modèles biaisés et D n'est pas pertinent en termes de traitement des déséquilibres. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce qu'il utilise des combinaisons aléatoires de features.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Parce qu'il génère des échantillons parfaitement équilibrés par échantillonnage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Les modèles peuvent devenir linéaires indépendamment de la complexité d'origine."
       },
       "correct_answer": "A",
-      "explanation": "Si les modèles de base sont très corrélés, ils sont susceptibles de faire des erreurs similaires, réduisant ainsi l'avantage de diversification propre au stacking. B concerne la capacité de calcul qui n'est pas spécifique à la corrélation. C et D ne se rapportent pas directement à la corrélation entre modèles dans le stacking.",
+      "explanation": "Si les modèles de base sont très corrélés, ils sont susceptibles de faire des erreurs similaires, réduisant ainsi l'avantage de diversification propre au stacking. B concerne la capacité de calcul qui n'est pas spécifique à la corrélation. C et D ne se rapportent pas directement à la corrélation entre modèles dans le stacking. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Les modèles peuvent saturer leur capacité de calcul.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il normalise les données, perturbant les variables catégoriques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "hard"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Qu'est-ce qu'une erreur classique lorsqu'on évalue le performance d'un weak learner dans un ensemble boosting?",
       "image_url": null,
       "choices": {
-        "A": "Considérer sa performance isolée au lieu de son apport global.",
-        "B": "Chercher toujours à augmenter sa complexité.",
+        "A": "Chercher toujours à augmenter sa complexité.",
+        "B": "Considérer sa performance isolée au lieu de son apport global.",
         "C": "Éviter de l'entraîner sur l'ensemble complet d'entraînements.",
         "D": "Utiliser des métriques basées sur les intervalles de confiance."
       },
-      "correct_answer": "A",
-      "explanation": "Évaluer un weak learner uniquement sur sa performance individuelle néglige sa contribution au modèle combiné, crucial dans le boosting. B n'est pas nécessaire pour un weak learner. C est erroné car le boosting implique d'entraîner sur toutes les données. D n'est pas pertinent pour la performance individuelle.",
+      "correct_answer": "B",
+      "explanation": "Évaluer un weak learner uniquement sur sa performance individuelle néglige sa contribution au modèle combiné, crucial dans le boosting. B n'est pas nécessaire pour un weak learner. C est erroné car le boosting implique d'entraîner sur toutes les données. D n'est pas pertinent pour la performance individuelle. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Chercher toujours à augmenter sa complexité.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Éviter de l'entraîner sur l'ensemble complet d'entraînements.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Utiliser des métriques basées",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Dans quelles situations le bagging pourrait être préféré au boosting?",
       "image_url": null,
       "choices": {
-        "A": "Lorsque la variance du modèle est la principale préoccupation.",
+        "A": "Quand l'importance des features individuelles est cruciale.",
         "B": "Lorsque la vitesse de convergence est prioritaire.",
-        "C": "Quand l'importance des features individuelles est cruciale.",
+        "C": "Lorsque la variance du modèle est la principale préoccupation.",
         "D": "Lorsqu'on dispose de très petites quantités de données."
       },
-      "correct_answer": "A",
-      "explanation": "Le bagging est privilégié lorsque l'on souhaite réduire la variance, en utilisant des échantillons bootstrap multiples. B concerne plutôt le boosting. C n'a pas de rapport direct avec le bagging et D est inexact car le bagging nécessite généralement des jeux de données plus grands.",
+      "correct_answer": "C",
+      "explanation": "Le bagging est privilégié lorsque l'on souhaite réduire la variance, en utilisant des échantillons bootstrap multiples. B concerne plutôt le boosting. C n'a pas de rapport direct avec le bagging et D est inexact car le bagging nécessite généralement des jeux de données plus grands. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Quand l'importance des features individuelles est cruciale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Lorsque la vitesse de convergence est prioritaire.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Lorsqu'on dispose de très petites",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quels sont les critères principaux pour choisir les modèles de base dans une approche de stacking?",
       "image_url": null,
       "choices": {
-        "A": "Diversité et indépendance des erreurs.",
+        "A": "Uniformité dans le temps de formation des modèles.",
         "B": "Similitudes de l'architecture des modèles.",
         "C": "Taille minimale de chaque arbre de décision choisi.",
-        "D": "Uniformité dans le temps de formation des modèles."
+        "D": "Diversité et indépendance des erreurs."
       },
-      "correct_answer": "A",
-      "explanation": "La diversité et l'indépendance des erreurs améliorent la capacité prédictive en stacking en combinant diverses perceptions du problème. B et C ne contribuent pas à la diversification nécessaire. D n'est pas un critère principal, mais plutôt une considération pratique.",
+      "correct_answer": "D",
+      "explanation": "La diversité et l'indépendance des erreurs améliorent la capacité prédictive en stacking en combinant diverses perceptions du problème. B et C ne contribuent pas à la diversification nécessaire. D n'est pas un critère principal, mais plutôt une considération pratique. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Uniformité dans le temps de formation des modèles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Similitudes de l'architecture des modèles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Taille minimale de chaque arbre de décision choisi.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Nécessité d'une réduction de dimension préalable."
       },
       "correct_answer": "A",
-      "explanation": "Le stacking peut souvent être complex et gourmand en ressources, avec des temps d'entraînement élevés. B est plus un problème de boosting. C est faux car le stacking accepte différents modèles. D n'est pas une contrainte absolue mais une option selon la nature des données.",
+      "explanation": "Le stacking peut souvent être complex et gourmand en ressources, avec des temps d'entraînement élevés. B est plus un problème de boosting. C est faux car le stacking accepte différents modèles. D n'est pas une contrainte absolue mais une option selon la nature des données. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Risque d'overfitting sur des ensembles de données déséquilibrés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Obligation d'utiliser exclusivement des arbres de décisions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Nécessité d'une réduction de",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Pourquoi le boosting est-il particulièrement vulnérable aux bruits dans les données d'entraînement?",
       "image_url": null,
       "choices": {
-        "A": "Parce qu'il tend à trop s'ajuster aux exemples avec des erreurs difficiles.",
-        "B": "Parce qu'il minimise les données bruyantes par moyennage.",
+        "A": "Parce qu'il minimise les données bruyantes par moyennage.",
+        "B": "Parce qu'il tend à trop s'ajuster aux exemples avec des erreurs difficiles.",
         "C": "Parce qu'il ignore les échantillons avec des prédictions correctes.",
         "D": "Car il dépend fortement de la consistance entre modèles de base."
       },
-      "correct_answer": "A",
-      "explanation": "Le boosting tend à accorder plus de poids aux erreurs, y compris celles dues au bruit, ce qui peut mener à un surapprentissage. B est inapplicable car le boosting ne fait pas de moyennage. C est faux car il ne les ignore pas mais les ajuste. D est incorrect car la consistance n'est pas une vulnérabilité spécifiquement liée au bruit.",
+      "correct_answer": "B",
+      "explanation": "Le boosting tend à accorder plus de poids aux erreurs, y compris celles dues au bruit, ce qui peut mener à un surapprentissage. B est inapplicable car le boosting ne fait pas de moyennage. C est faux car il ne les ignore pas mais les ajuste. D est incorrect car la consistance n'est pas une vulnérabilité spécifiquement liée au bruit. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce qu'il minimise les données bruyantes par moyennage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce qu'il ignore les échantillons avec des prédictions correctes.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -210,7 +210,7 @@
         "D": "S'il dépend de l'échantillonnage bootstrap."
       },
       "correct_answer": "C",
-      "explanation": "Un 'weak learner' doit performer légèrement au-dessus du hasard pour être utile en boosting. Si ce n'est pas le cas, son intégration sera inefficace. A concerne le bagging et un excès de variance. B ne pose pas de problème pour le boosting et D est en lien plus avec le bagging que le boosting.",
+      "explanation": "Un 'weak learner' doit performer légèrement au-dessus du hasard pour être utile en boosting. Si ce n'est pas le cas, son intégration sera inefficace. A concerne le bagging et un excès de variance. B ne pose pas de problème pour le boosting et D est en lien plus avec le bagging que le boosting. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Quand le dataset est trop petit pour obtenir une variance suffisante.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Si le learner atteint facilement de hautes performances sans ensemble.) est plausible mais faux car il ne respecte pas",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Comment le stacking pourrait-il théoriquement aider à atténuer un problème de surapprentissage par rapport à d'autres méthodes d'ensemble?",
       "image_url": null,
       "choices": {
-        "A": "En combinant méticuleusement des modèles hétérogènes, ce qui augmente la robustesse.",
+        "A": "En échantillonnant les données avec remise, contrairement au bagging.",
         "B": "En fixant le nombre total de modèles de base pour éviter la complexité.",
         "C": "En favorisant systématiquement les modèles avec un biais faible.",
-        "D": "En échantillonnant les données avec remise, contrairement au bagging."
+        "D": "En combinant méticuleusement des modèles hétérogènes, ce qui augmente la robustesse."
       },
-      "correct_answer": "A",
-      "explanation": "Le stacking favorise l'utilisation de divers modèles permettant de capturer différents aspects du problème, ce qui peut atténuer le surapprentissage. B concerne la limitation de la complexité mais pas nécessairement l'atténuation du surapprentissage. C et D sont incorrects et D est une caractéristique du bagging, non du stacking.",
+      "correct_answer": "D",
+      "explanation": "Le stacking favorise l'utilisation de divers modèles permettant de capturer différents aspects du problème, ce qui peut atténuer le surapprentissage. B concerne la limitation de la complexité mais pas nécessairement l'atténuation du surapprentissage. C et D sont incorrects et D est une caractéristique du bagging, non du stacking. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En échantillonnant les données avec remise, contrairement au bagging.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En fixant le nombre total de modèles de base pour éviter la complexité.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Il doit utiliser un ensemble de validation distinct de celui d'entraînement."
       },
       "correct_answer": "A",
-      "explanation": "Le bagging est efficace lorsqu'il réduit la variance des modèles de base. Des modèles corrélés ou utilisant un seul algorithme (B et C) limiteraient le bénéfice du bagging. D n'est pas une exigence spécifique mais une pratique d'évaluation générale.",
+      "explanation": "Le bagging est efficace lorsqu'il réduit la variance des modèles de base. Des modèles corrélés ou utilisant un seul algorithme (B et C) limiteraient le bénéfice du bagging. D n'est pas une exigence spécifique mais une pratique d'évaluation générale. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Une forte corrélation entre les modèles est souhaitable.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Les modèles doivent être basés exclusivement sur le même algorithme.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il doit utiliser un ensemble de validation",
       "difficulty": "hard"
     }
   ]

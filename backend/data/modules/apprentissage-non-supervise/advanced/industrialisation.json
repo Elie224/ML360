@@ -14,7 +14,7 @@
         "D": "Générer des ensembles de données pour l'entraînement en augmentant artificiellement le volume de données."
       },
       "correct_answer": "A",
-      "explanation": "Un pipeline batch traite de grands volumes à intervales. B est incorrect car le batch n'est pas pour le temps réel. C confond avec le streaming. D décrit l'augmentation, non le batch.",
+      "explanation": "Un pipeline batch traite de grands volumes à intervales. B est incorrect car le batch n'est pas pour le temps réel. C confond avec le streaming. D décrit l'augmentation, non le batch. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Assurer le traitement en temps réel des données pour des reactions immediates.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Maximiser l'utilisation des ressources cloud en analysant les données directement en ligne.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Générer des ensembles de données pour l'entraînement en",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Quel problème spécifique le versioning de segments permet-il de résoudre dans la mise en oeuvre de clusters?",
       "image_url": null,
       "choices": {
-        "A": "Gérer les changements dans la définition ou la structure d'un segment sans perturber les analyses historiques.",
-        "B": "Optimiser la partie computationnelle d'un pipeline en réduisant le temps de traitement par segment.",
+        "A": "Optimiser la partie computationnelle d'un pipeline en réduisant le temps de traitement par segment.",
+        "B": "Gérer les changements dans la définition ou la structure d'un segment sans perturber les analyses historiques.",
         "C": "Identifier automatiquement les segments qui nécessitent une ré-analyse suite à un changement dans le modèle de machine learning.",
         "D": "Permettre la visualisation des segments de données via des outils BI en temps réel."
       },
-      "correct_answer": "A",
-      "explanation": "Le versioning gère les changements de segments pour éviter de fausser l'historique. B concerne l'optimisation non le versioning. C et D ne traitent pas de versions.",
+      "correct_answer": "B",
+      "explanation": "Le versioning gère les changements de segments pour éviter de fausser l'historique. B concerne l'optimisation non le versioning. C et D ne traitent pas de versions. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Optimiser la partie computationnelle d'un pipeline en réduisant le temps de traitement par segment.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Identifier automatiquement les segments qui nécessitent une ré-analyse suite à un changement dans le modèle de machine learning.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Permettre la visualisation des segments de",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Pourquoi le rafraichissement périodique est-il crucial dans un environnement de production utilisant des données non supervisées?",
       "image_url": null,
       "choices": {
-        "A": "Pour mettre à jour les modèles et capturer les nouvelles tendances des données.",
+        "A": "Pour augmenter la précision immédiate des modèles sans nécessiter de nouveau calcul.",
         "B": "Pour réduire les coûts associés au traitement de données en temps réel.",
-        "C": "Pour augmenter la précision immédiate des modèles sans nécessiter de nouveau calcul.",
+        "C": "Pour mettre à jour les modèles et capturer les nouvelles tendances des données.",
         "D": "Pour garantir que le modèle est conforme aux normes industrielles prédéfinies."
       },
-      "correct_answer": "A",
-      "explanation": "Rafraîchir périodiquement capte les nouvelles tendances. B est flou sur la mise à jour. C décrit mal la dynamique. D est une conformité, non un refresh.",
+      "correct_answer": "C",
+      "explanation": "Rafraîchir périodiquement capte les nouvelles tendances. B est flou sur la mise à jour. C décrit mal la dynamique. D est une conformité, non un refresh. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour augmenter la précision immédiate des modèles sans nécessiter de nouveau calcul.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour réduire les coûts associés au traitement de données en temps réel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Pour garantir que le modèle est conforme aux normes industrielles prédéfinies.) est plausible mais",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quel est le principal avantage du rollback analytique dans des pipelines d'apprentissage non supervisés?",
       "image_url": null,
       "choices": {
-        "A": "Revenir à une version antérieure des données pour corriger une erreur de traitement.",
+        "A": "Optimiser les performances actuelles du model en recompressant les données.",
         "B": "Récupérer un modèle de machine learning après une suppression accidentelle.",
         "C": "Générer automatiquement des rapports de performance sur les échecs d'analyses passées.",
-        "D": "Optimiser les performances actuelles du model en recompressant les données."
+        "D": "Revenir à une version antérieure des données pour corriger une erreur de traitement."
       },
-      "correct_answer": "A",
-      "explanation": "Le rollback retrouve une version précédente en cas d'erreur. B parle de récupération non de rollback. C est un reporting, pas un rollback. D concerne la compression, pas le rollback.",
+      "correct_answer": "D",
+      "explanation": "Le rollback retrouve une version précédente en cas d'erreur. B parle de récupération non de rollback. C est un reporting, pas un rollback. D concerne la compression, pas le rollback. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Optimiser les performances actuelles du model en recompressant les données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Récupérer un modèle de machine learning après une suppression accidentelle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Générer automatiquement des rapports de performance sur les échecs d'analyses passées.) est plausible mais",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Supprimer toutes les versions précédentes du pipeline pour économiser de l'espace."
       },
       "correct_answer": "A",
-      "explanation": "Tester différentes versions prévient les erreurs. B saute la validation. C risque de perdre l'historique. D risque de perdre des données utiles.",
+      "explanation": "Tester différentes versions prévient les erreurs. B saute la validation. C risque de perdre l'historique. D risque de perdre des données utiles. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Intégrer immédiatement tous les nouveaux datasets entrants sans validation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Réduire le temps de traitement des données en ignorant certains segments historiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Supprimer toutes les versions précédentes du pipeline pour économiser de l'espace.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Lors du versioning de segments dans un environnement distribué, quelle est une considération clé?",
       "image_url": null,
       "choices": {
-        "A": "S'assurer que la cohérence des segments est maintenue à travers les différents nodes.",
-        "B": "Utiliser des segmentations dynamiques pour réduire les coûts de stockage.",
+        "A": "Utiliser des segmentations dynamiques pour réduire les coûts de stockage.",
+        "B": "S'assurer que la cohérence des segments est maintenue à travers les différents nodes.",
         "C": "Appliquer des algorithmes de clustering supervisés pour augmenter la précision des segments.",
         "D": "Définir une stratégie de sauvegarde automatique qui fait régulièrement un rollback."
       },
-      "correct_answer": "A",
-      "explanation": "La cohérence des segments est essentielle pour éviter la fragmentation. B concerne le coût non la cohérence. C mélange supervision non requis. D sauvegarde, non versionne.",
+      "correct_answer": "B",
+      "explanation": "La cohérence des segments est essentielle pour éviter la fragmentation. B concerne le coût non la cohérence. C mélange supervision non requis. D sauvegarde, non versionne. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Utiliser des segmentations dynamiques pour réduire les coûts de stockage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Appliquer des algorithmes de clustering supervisés pour augmenter la précision des segments.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Définir une stratégie de sauvegarde automatique qui fait régulièrement un rollback.) est plausible mais faux car",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Pourquoi est-il important de planifier un rafraîchissement périodique des modèles non supervisés?",
       "image_url": null,
       "choices": {
-        "A": "Les données évoluent et les modèles doivent s'adapter à ces changements pour rester pertinents.",
+        "A": "Les algorithmes non supervisés consomment plus de ressources avec le temps si non rafraîchis.",
         "B": "Cela élimine le besoin de tout contrôle qualité ultérieur sur les prédictions générées.",
-        "C": "Les algorithmes non supervisés consomment plus de ressources avec le temps si non rafraîchis.",
+        "C": "Les données évoluent et les modèles doivent s'adapter à ces changements pour rester pertinents.",
         "D": "Une mise à jour continue élimine le besoin de stocker les anciennes versions de résultats."
       },
-      "correct_answer": "A",
-      "explanation": "Les modèles doivent suivre l'évolution des données. B est faux car le QA est toujours nécessaire. C est faux car la consommation n'est pas temporelle. D ignore l'historique des performances.",
+      "correct_answer": "C",
+      "explanation": "Les modèles doivent suivre l'évolution des données. B est faux car le QA est toujours nécessaire. C est faux car la consommation n'est pas temporelle. D ignore l'historique des performances. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les algorithmes non supervisés consomment plus de ressources avec le temps si non rafraîchis.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Cela élimine le besoin de tout contrôle qualité ultérieur sur les prédictions générées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Une mise à jour continue élimine le",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quel est l'effet d'un rollback analytique mal configuré?",
       "image_url": null,
       "choices": {
-        "A": "Perte d'intégrité des données en retournant vers une version corrompue.",
+        "A": "Blocage total du système de production jusqu'à nouvelle mise à jour.",
         "B": "Induit un surcoût en double-comptant les performances passées et actuelles.",
         "C": "Nécessite une revalidation immédiate de tous les modèles supervisés.",
-        "D": "Blocage total du système de production jusqu'à nouvelle mise à jour."
+        "D": "Perte d'intégrité des données en retournant vers une version corrompue."
       },
-      "correct_answer": "A",
-      "explanation": "Retourner à une version corrompue compromet l'intégrité. B ne cause pas un surcoût immédiat ainsi. C est pour les modèles supervisés, pas ici. D ne bloque pas forcément le système.",
+      "correct_answer": "D",
+      "explanation": "Retourner à une version corrompue compromet l'intégrité. B ne cause pas un surcoût immédiat ainsi. C est pour les modèles supervisés, pas ici. D ne bloque pas forcément le système. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Blocage total du système de production jusqu'à nouvelle mise à jour.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Induit un surcoût en double-comptant les performances passées et actuelles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Nécessite une revalidation immédiate de tous les modèles supervisés.) est plausible mais faux",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Effacer systématiquement les segments non utilisés pour optimiser la vitesse."
       },
       "correct_answer": "A",
-      "explanation": "Documenter les changements permet de retracer et justifier. B peut créer de la confusion. C néglige la valeur historique. D empêche une analyse rétrospective correcte.",
+      "explanation": "Documenter les changements permet de retracer et justifier. B peut créer de la confusion. C néglige la valeur historique. D empêche une analyse rétrospective correcte. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Combiner les versions obsolètes pour éviter une surcharge de gestion.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ignorer l'ancienneté des versions si le volume de données est constant.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Effacer systématiquement les segments non utilisés pour optimiser la vitesse.) est plausible mais faux car il ne respecte",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Dans un contexte industriel, pourquoi l'industrialisation des pipelines batch est-elle primordiale?",
       "image_url": null,
       "choices": {
-        "A": "Elle garantit que le système est scalable et peut traiter de grandes quantités de données de manière efficace.",
-        "B": "Elle permet uniquement de réduire les coûts relatifs à l'hébergement des modèles sur le cloud.",
+        "A": "Elle permet uniquement de réduire les coûts relatifs à l'hébergement des modèles sur le cloud.",
+        "B": "Elle garantit que le système est scalable et peut traiter de grandes quantités de données de manière efficace.",
         "C": "Elle élimine le besoin de toute intervention humaine en automatisant totalement tous les processus.",
         "D": "Elle est principalement conçue pour contrer toutes les erreurs humaines possibles dans les prédictions."
       },
-      "correct_answer": "A",
-      "explanation": "L'industrialisation assure la scalabilité et performance. B atténue l'objectif général. C n'élimine pas l'humain. D ne cible pas que les erreurs humaines.",
+      "correct_answer": "B",
+      "explanation": "L'industrialisation assure la scalabilité et performance. B atténue l'objectif général. C n'élimine pas l'humain. D ne cible pas que les erreurs humaines. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle permet uniquement de réduire les coûts relatifs à l'hébergement des modèles sur le cloud.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle élimine le besoin de toute intervention humaine en automatisant totalement tous les processus.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle est principalement conçue pour contrer toutes les erreurs humaines possibles dans les",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Dans le cadre d'un pipeline batch, quel est l'impact d'une mauvaise définition des séquences d'étapes?",
       "image_url": null,
       "choices": {
-        "A": "Résultats biaisés ou incorrects car les étapes ne sont pas exécutées dans l'ordre logique.",
+        "A": "Augmentation des coûts directement liés à l'hébergement sur le cloud.",
         "B": "Diminution significative du volume total de données analysées.",
-        "C": "Augmentation des coûts directement liés à l'hébergement sur le cloud.",
+        "C": "Résultats biaisés ou incorrects car les étapes ne sont pas exécutées dans l'ordre logique.",
         "D": "Amélioration accidentelle de certaines parties spécifiques du pipeline non prévues par la moulinette principale."
       },
-      "correct_answer": "A",
-      "explanation": "Une mauvaise séquence impacte les résultats logiques. B n'est pas nécessairement le cas. C lié à hébergement indirectement. D est illogique dans le contexte.",
+      "correct_answer": "C",
+      "explanation": "Une mauvaise séquence impacte les résultats logiques. B n'est pas nécessairement le cas. C lié à hébergement indirectement. D est illogique dans le contexte. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmentation des coûts directement liés à l'hébergement sur le cloud.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Diminution significative du volume total de données analysées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Amélioration accidentelle de certaines parties spécifiques du pipeline non prévues par la moulinette principale.) est plausible mais faux car il ne respecte",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel aspect technique crucial est souvent négligé dans le versioning des segments, causant des erreurs analytiques?",
       "image_url": null,
       "choices": {
-        "A": "La compatibilité descendante pour assurer l'accès aux anciennes versions sans problème.",
+        "A": "L'utilisation d'algorithmes sans supervision pour déterminer les ajustements nécessaires.",
         "B": "L'automatisation complète des mises à jour sans vérification manuelle.",
         "C": "La mise en commun de toutes les métadonnées au sein d'une base centralisée.",
-        "D": "L'utilisation d'algorithmes sans supervision pour déterminer les ajustements nécessaires."
+        "D": "La compatibilité descendante pour assurer l'accès aux anciennes versions sans problème."
       },
-      "correct_answer": "A",
-      "explanation": "La compatibilité descendante prévient des erreurs avec les anciennes versions. B néglige les contrôles. C peut causer de la confusion. D concerne le non-supervisé, mais pas les versions.",
+      "correct_answer": "D",
+      "explanation": "La compatibilité descendante prévient des erreurs avec les anciennes versions. B néglige les contrôles. C peut causer de la confusion. D concerne le non-supervisé, mais pas les versions. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'utilisation d'algorithmes sans supervision pour déterminer les ajustements nécessaires.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (L'automatisation complète des mises à jour sans vérification manuelle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La mise en commun de toutes les métadonnées au sein d'une base centralisée.) est plausible mais faux car",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Assumer que tous les datasets sont parfaitement nettoyés et prêts pour le traitement."
       },
       "correct_answer": "A",
-      "explanation": "Les dépendances sont essentielles pour éviter des erreurs dans la chaîne. B est communication, non technique. C est important mais pas l'erreur la plus classique. D concerne souvent le data cleaning avant même la pipeline.",
+      "explanation": "Les dépendances sont essentielles pour éviter des erreurs dans la chaîne. B est communication, non technique. C est important mais pas l'erreur la plus classique. D concerne souvent le data cleaning avant même la pipeline. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Mettre en œuvre le rafraîchissement sans consulter l'équipe de production.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ne pas archiver efficacement les résultats précédents pour une analyse future.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Assumer que tous les datasets sont parfaitement nettoyés",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quel est le principal défi associé au rollback analytique dans les systèmes industriels?",
       "image_url": null,
       "choices": {
-        "A": "S'assurer que le rollback est transparent et ne cause pas d'interruption de service.",
-        "B": "Obtenir l'accord des parties prenantes avant de lancer un rollback.",
+        "A": "Obtenir l'accord des parties prenantes avant de lancer un rollback.",
+        "B": "S'assurer que le rollback est transparent et ne cause pas d'interruption de service.",
         "C": "Anticiper complètement les impacts à long terme sur le flux de trésorerie de l'entreprise.",
         "D": "Garantir que tous les systèmes connexes peuvent supporter une version plus ancienne des segments."
       },
-      "correct_answer": "A",
-      "explanation": "La transparence et continuité de service est essentielle. B est une question de politique. C est financier, non technique. D ne concerne qu'un aspect potentiel.",
+      "correct_answer": "B",
+      "explanation": "La transparence et continuité de service est essentielle. B est une question de politique. C est financier, non technique. D ne concerne qu'un aspect potentiel. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Obtenir l'accord des parties prenantes avant de lancer un rollback.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Anticiper complètement les impacts à long terme sur le flux de trésorerie de l'entreprise.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Garantir que tous les systèmes connexes peuvent supporter une version plus ancienne des segments.) est",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quel est un signe indicatif qu'un rafraîchissement périodique est nécessaire dans un pipeline batch non supervisé?",
       "image_url": null,
       "choices": {
-        "A": "La distribution des résultats se dégrade, indiquant que le modèle est obsolète.",
+        "A": "L'équipe opérationnelle commence à voir un flux de données stabilisé.",
         "B": "Tous les calculs sont terminés plus rapidement que prévu.",
-        "C": "L'équipe opérationnelle commence à voir un flux de données stabilisé.",
+        "C": "La distribution des résultats se dégrade, indiquant que le modèle est obsolète.",
         "D": "Les erreurs signalées dans les résultats finaux diminuent drastiquement."
       },
-      "correct_answer": "A",
-      "explanation": "La dégradation des résultats indique qu'un modèle est obsolète. B traite d'efficience non d'obsolescence. C suppose erronément que stabilité = qualité. D serait inattendu pour un besoin de rafraîchissement.",
+      "correct_answer": "C",
+      "explanation": "La dégradation des résultats indique qu'un modèle est obsolète. B traite d'efficience non d'obsolescence. C suppose erronément que stabilité = qualité. D serait inattendu pour un besoin de rafraîchissement. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'équipe opérationnelle commence à voir un flux de données stabilisé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Tous les calculs sont terminés plus rapidement que prévu.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Les erreurs signalées dans les résultats finaux diminuent drastiquement.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Quelle stratégie est cruciale pour minimiser le risque lors de l'application d'un rollback analytique?",
       "image_url": null,
       "choices": {
-        "A": "Développer un plan de test complet pour valider les versions antérieures avant le déploiement.",
+        "A": "Ne jamais retarder un rollback si nécessaire pour des raisons de maintenance planifiée.",
         "B": "Effectuer un rollback seulement après validation complète par le service juridique.",
         "C": "S'assurer que le rollback est effectué pendant les heures non ouvrées.",
-        "D": "Ne jamais retarder un rollback si nécessaire pour des raisons de maintenance planifiée."
+        "D": "Développer un plan de test complet pour valider les versions antérieures avant le déploiement."
       },
-      "correct_answer": "A",
-      "explanation": "Valider les versions antérieures prévient les erreurs lors du rollback. B compte moins sur une validation juridique. C peut être une tactique, non une stratégie. D peut être risqué, sans validation.",
+      "correct_answer": "D",
+      "explanation": "Valider les versions antérieures prévient les erreurs lors du rollback. B compte moins sur une validation juridique. C peut être une tactique, non une stratégie. D peut être risqué, sans validation. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ne jamais retarder un rollback si nécessaire pour des raisons de maintenance planifiée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Effectuer un rollback seulement après validation complète par le service juridique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (S'assurer que le rollback est effectué pendant les heures",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Pour empêcher toute régression dans les performances des modèles existants."
       },
       "correct_answer": "A",
-      "explanation": "L'archivage pour l'analyse comparative améliore les futurs modèles. B est possible, mais secondaire. C n'est pas l'effet direct de l'archivage. D ne prévient pas directement cela.",
+      "explanation": "L'archivage pour l'analyse comparative améliore les futurs modèles. B est possible, mais secondaire. C n'est pas l'effet direct de l'archivage. D ne prévient pas directement cela. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Pour se conformer aux exigences légales concernant le stockage des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour réduire le temps de calcul nécessaire lors du prochain cycle de rafraîchissement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Pour empêcher toute régression dans les performances des modèles existants.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Quel est un indicateur typique que le versioning de segments n'est pas correctement établi dans un pipeline de données?",
       "image_url": null,
       "choices": {
-        "A": "Des résultats incohérents sont observés lors de l'utilisation des mêmes paramètres de modèle.",
-        "B": "Un flux de données continu est maintenu sans interruption visible.",
+        "A": "Un flux de données continu est maintenu sans interruption visible.",
+        "B": "Des résultats incohérents sont observés lors de l'utilisation des mêmes paramètres de modèle.",
         "C": "La consommation de ressources a diminué sans changements explicites dans le traitement.",
         "D": "Les équipes signalent une meilleure performance générale sans justification technique."
       },
-      "correct_answer": "A",
-      "explanation": "Des incohérences signalent un problème de versionning. B pourrait être normal. C ne signifie pas un problème. D pourrait être subjectif, non lié au versionnement.",
+      "correct_answer": "B",
+      "explanation": "Des incohérences signalent un problème de versionning. B pourrait être normal. C ne signifie pas un problème. D pourrait être subjectif, non lié au versionnement. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un flux de données continu est maintenu sans interruption visible.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La consommation de ressources a diminué sans changements explicites dans le traitement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Les équipes signalent une meilleure performance générale sans justification technique.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Pourquoi le rollback analytique nécessite-t-il un couplage serré avec la gestion des versions des segments?",
       "image_url": null,
       "choices": {
-        "A": "Pour éviter tout désalignement entre les données actuelles et historiques analysées.",
+        "A": "Pour faciliter la migration des segments vers des interfaces utilisateur finales.",
         "B": "Pour améliorer la rapidité du rollback en phase de production.",
-        "C": "Pour faciliter la migration des segments vers des interfaces utilisateur finales.",
+        "C": "Pour éviter tout désalignement entre les données actuelles et historiques analysées.",
         "D": "Pour accroître l'accès des segments de données aux équipes non techniques."
       },
-      "correct_answer": "A",
-      "explanation": "Le couplage évite le désalignement entre données actuelles et historiques. B n'améliore pas directement la rapidité. C est un usage non critique. D ne nécessite pas un couplage serré.",
+      "correct_answer": "C",
+      "explanation": "Le couplage évite le désalignement entre données actuelles et historiques. B n'améliore pas directement la rapidité. C est un usage non critique. D ne nécessite pas un couplage serré. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour faciliter la migration des segments vers des interfaces utilisateur finales.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour améliorer la rapidité du rollback en phase de production.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Pour accroître l'accès des segments de données aux équipes non techniques.) est plausible mais",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Quelle est une conséquence d'un rafraîchissement périodique inapproprié dans les pipelines d'apprentissage automatic?",
       "image_url": null,
       "choices": {
-        "A": "Les modèles pourraient s'approprier des comportements de données périmés.",
+        "A": "Une baisse immédiate des coûts de stockage est observée.",
         "B": "La vitesse de traitement augmente temporairement jusqu'à la prochaine mise à jour.",
         "C": "L'alignement des ressources humaines et techniques devient trivial.",
-        "D": "Une baisse immédiate des coûts de stockage est observée."
+        "D": "Les modèles pourraient s'approprier des comportements de données périmés."
       },
-      "correct_answer": "A",
-      "explanation": "Les modèles rafraîchis inappropriés peuvent intégrer des données périmées. B n'est pas lié directement. C n'est pas concerné. D n'est pas une conséquence du rafraîchissement.",
+      "correct_answer": "D",
+      "explanation": "Les modèles rafraîchis inappropriés peuvent intégrer des données périmées. B n'est pas lié directement. C n'est pas concerné. D n'est pas une conséquence du rafraîchissement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une baisse immédiate des coûts de stockage est observée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (La vitesse de traitement augmente temporairement jusqu'à la prochaine mise à jour.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'alignement des ressources humaines et techniques devient trivial.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "Il renforce directement la robustesse de l'infrastructure de stockage."
       },
       "correct_answer": "A",
-      "explanation": "Le versioning permet une comparaison équitable des résultats. B n'est pas directement impliqué dans le versionage. C n'est pas son rôle principal. D n'est pas directement renforcé par le versioning.",
+      "explanation": "Le versioning permet une comparaison équitable des résultats. B n'est pas directement impliqué dans le versionage. C n'est pas son rôle principal. D n'est pas directement renforcé par le versioning. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il permet un traitement en temps quasi-réel des données entrantes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il simplifie l'intégration de nouveaux algorithmes de manière continue.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il renforce directement la robustesse de l'infrastructure de stockage.) est plausible mais faux car il",
       "difficulty": "hard"
     },
     {
@@ -302,13 +302,13 @@
       "question": "Quelle erreur peut compromettre le pipeline lors d'un rollback analytique si elle n'est pas gérée?",
       "image_url": null,
       "choices": {
-        "A": "Ne pas invalider les caches utilisés par les étapes du pipeline.",
-        "B": "Effectuer des logging excessifs, ralentissant le processus analytique.",
+        "A": "Effectuer des logging excessifs, ralentissant le processus analytique.",
+        "B": "Ne pas invalider les caches utilisés par les étapes du pipeline.",
         "C": "Assurer une distribution inappropriée des modèles dans le cloud.",
         "D": "Ignorer la performance réseau lors du transfert de données entre segments."
       },
-      "correct_answer": "A",
-      "explanation": "Les caches peuvent contenir des données désynchronisées post-rollback. B ralentit mais n'est pas directement crucial. C et D concernent distribution et réseau, moins central au rollback.",
+      "correct_answer": "B",
+      "explanation": "Les caches peuvent contenir des données désynchronisées post-rollback. B ralentit mais n'est pas directement crucial. C et D concernent distribution et réseau, moins central au rollback. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Effectuer des logging excessifs, ralentissant le processus analytique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Assurer une distribution inappropriée des modèles dans le cloud.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Ignorer la performance réseau lors du transfert de données entre segments.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "hard"
     },
     {
@@ -316,13 +316,13 @@
       "question": "Quel besoin justifie l'intégration de systèmes de monitoring lors du rafraîchissement périodique?",
       "image_url": null,
       "choices": {
-        "A": "Ils permettent une réponse rapide aux dérives de performance dans le temps.",
+        "A": "Ils remplacent la nécessité de l'assurance qualité humaine dans toutes les étapes.",
         "B": "Ils réduisent automatiquement les délais intersystème pour maximiser le rendement.",
-        "C": "Ils remplacent la nécessité de l'assurance qualité humaine dans toutes les étapes.",
+        "C": "Ils permettent une réponse rapide aux dérives de performance dans le temps.",
         "D": "Ils sont principalement orientés vers la détection d'erreurs syntaxiques dans les données."
       },
-      "correct_answer": "A",
-      "explanation": "Le monitoring réagit aux dérives de performance. B minimise les délais, pas le focus. C ne remplace pas l'humain. D est trop restreint au syntaxique.",
+      "correct_answer": "C",
+      "explanation": "Le monitoring réagit aux dérives de performance. B minimise les délais, pas le focus. C ne remplace pas l'humain. D est trop restreint au syntaxique. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ils remplacent la nécessité de l'assurance qualité humaine dans toutes les étapes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Ils réduisent automatiquement les délais intersystème pour maximiser le rendement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Ils sont principalement orientés vers la détection d'erreurs syntaxiques dans les données.) est plausible mais faux car",
       "difficulty": "hard"
     },
     {
@@ -330,13 +330,13 @@
       "question": "Comment le concept de versioning de segments peut-il affecter l'analyse prédictive?",
       "image_url": null,
       "choices": {
-        "A": "Il assure que les prédictions sont basées sur des données pertinentes à la version correcte.",
+        "A": "Il permet l'adaptation continue des modèles à des changements en temps réel.",
         "B": "Il diminue les besoins en puissance de calcul pour les algorithmes supervisés.",
         "C": "Il est utilisé pour convertir des données non structurées en données structurées.",
-        "D": "Il permet l'adaptation continue des modèles à des changements en temps réel."
+        "D": "Il assure que les prédictions sont basées sur des données pertinentes à la version correcte."
       },
-      "correct_answer": "A",
-      "explanation": "Le versioning lie la pertinence des données à la version correcte pour prédiction. B concerne puissance, non version. C conversion non concernée ici. D est hyperbole sur versionnement.",
+      "correct_answer": "D",
+      "explanation": "Le versioning lie la pertinence des données à la version correcte pour prédiction. B concerne puissance, non version. C conversion non concernée ici. D est hyperbole sur versionnement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il permet l'adaptation continue des modèles à des changements en temps réel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il diminue les besoins en puissance de calcul pour les algorithmes supervisés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il est utilisé pour convertir des données non structurées en données structurées.)",
       "difficulty": "hard"
     },
     {
@@ -350,7 +350,7 @@
         "D": "L'échec dans l'adoption généralisée de techniques d'apprentissage non supervisé par l'équipe."
       },
       "correct_answer": "A",
-      "explanation": "Un rafraîchissement mal synchronisé provoque des incohérences entre jeux de données. B et C ne sont pas liés au synchronisme. D ignore la responsabilité technique.",
+      "explanation": "Un rafraîchissement mal synchronisé provoque des incohérences entre jeux de données. B et C ne sont pas liés au synchronisme. D ignore la responsabilité technique. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Une hausse temporaire des coûts de calcul sans impact notable sur la qualité des modèles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une réduction générale des délais d'exécution perçue comme positive mais trompeuse.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'échec dans l'adoption généralisée de techniques d'apprentissage non supervisé par l'équipe.) est plausible",
       "difficulty": "hard"
     },
     {
@@ -358,13 +358,13 @@
       "question": "Quel est un critère essentiel à évaluer avant de lancer un rollback analytique dans un pipeline industrialisé?",
       "image_url": null,
       "choices": {
-        "A": "La capacité du système à identifier et alerter sur des erreurs post-rollback.",
-        "B": "La rapidité avec laquelle de nouvelles données peuvent être intégrées au modèle.",
+        "A": "La rapidité avec laquelle de nouvelles données peuvent être intégrées au modèle.",
+        "B": "La capacité du système à identifier et alerter sur des erreurs post-rollback.",
         "C": "Le coût de l'ensemble du processus de rollback en matière de temps de calcul.",
         "D": "La compatibilité des nouvelles bibliothèques avec les segments précédents."
       },
-      "correct_answer": "A",
-      "explanation": "L'alerte sur erreurs post-rollback est essentielle à la stabilité. B et C sont logistique et budgetaires. D est moindrement critique.",
+      "correct_answer": "B",
+      "explanation": "L'alerte sur erreurs post-rollback est essentielle à la stabilité. B et C sont logistique et budgetaires. D est moindrement critique. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (La rapidité avec laquelle de nouvelles données peuvent être intégrées au modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le coût de l'ensemble du processus de rollback en matière de temps de calcul.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La compatibilité des nouvelles bibliothèques avec les segments précédents.) est plausible mais faux car il ne respecte pas",
       "difficulty": "hard"
     },
     {
@@ -372,13 +372,13 @@
       "question": "Comment un pipeline batch bien conçu supporte-t-il une croissance exponentielle des données?",
       "image_url": null,
       "choices": {
-        "A": "En séparant les charges de traitement pour maintenir l'efficacité au fur et à mesure de la montée en charge.",
+        "A": "En intégrant un rafraîchissement chaque fois qu'un seuil pré-défini de données est atteint.",
         "B": "En allouant temporairement plus de RAM pour les opérations les plus gourmandes.",
-        "C": "En intégrant un rafraîchissement chaque fois qu'un seuil pré-défini de données est atteint.",
+        "C": "En séparant les charges de traitement pour maintenir l'efficacité au fur et à mesure de la montée en charge.",
         "D": "En consolidant constamment les segments existants jusqu'à atteindre une taille critique."
       },
-      "correct_answer": "A",
-      "explanation": "Séparer les charges maintient l'efficacité à grande échelle. B ignore la gestion structurelle. C et D concernent rafraîchissement et consolidation, non traitement efficace.",
+      "correct_answer": "C",
+      "explanation": "Séparer les charges maintient l'efficacité à grande échelle. B ignore la gestion structurelle. C et D concernent rafraîchissement et consolidation, non traitement efficace. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En intégrant un rafraîchissement chaque fois qu'un seuil pré-défini de données est atteint.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En allouant temporairement plus de RAM pour les opérations les plus gourmandes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (En consolidant constamment les segments existants jusqu'à atteindre une taille critique.) est plausible mais faux car",
       "difficulty": "hard"
     },
     {
@@ -386,13 +386,13 @@
       "question": "À quel défi le versioning de segments répond-il lorsqu'il est intégré dans des systèmes de données distribués?",
       "image_url": null,
       "choices": {
-        "A": "Il garantit la cohérence et la disponibilité des données à travers différents nœuds.",
+        "A": "Il uniformise automatiquement les changements dans les schémas de données entrants.",
         "B": "Il concentre les efforts de développement sur l'exécution de calculs en mémoire.",
         "C": "Il favorise l'accélération du temps de développement des nouvelles fonctionnalités.",
-        "D": "Il uniformise automatiquement les changements dans les schémas de données entrants."
+        "D": "Il garantit la cohérence et la disponibilité des données à travers différents nœuds."
       },
-      "correct_answer": "A",
-      "explanation": "La cohérence et disponibilité sont clés pour les systèmes distribués. B, C, D sont liés au développement et schémas, moins sur la cohérence.",
+      "correct_answer": "D",
+      "explanation": "La cohérence et disponibilité sont clés pour les systèmes distribués. B, C, D sont liés au développement et schémas, moins sur la cohérence. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il uniformise automatiquement les changements dans les schémas de données entrants.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il concentre les efforts de développement sur l'exécution de calculs en mémoire.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il favorise l'accélération du temps de développement des nouvelles fonctionnalités.) est plausible mais faux car il ne respecte",
       "difficulty": "hard"
     },
     {
@@ -406,7 +406,7 @@
         "D": "Mise à jour des accords de niveau de service (SLA) pour refléter les changements."
       },
       "correct_answer": "A",
-      "explanation": "Surveiller les performances après rollback évite des erreurs consécutives. B libère l'espace mais ne contrôle pas. C et D sont gestion et administratif.",
+      "explanation": "Surveiller les performances après rollback évite des erreurs consécutives. B libère l'espace mais ne contrôle pas. C et D sont gestion et administratif. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Suppression immédiate des versions redondantes pour libérer de l'espace de stockage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Audit complet des coûts et des avantages pour réajuster les budgets futurs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Mise à jour des accords de niveau de service (SLA) pour refléter les changements.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -414,13 +414,13 @@
       "question": "Comment un système bien industrialisé gère-t-il les erreurs après l'application d'un rollback analytique?",
       "image_url": null,
       "choices": {
-        "A": "Il implémente des alertes automatisées pour signaler toute déviation inhabituelle.",
-        "B": "Il supprime les données problématiques pour éviter leur réintroduction dans l'analyse.",
+        "A": "Il supprime les données problématiques pour éviter leur réintroduction dans l'analyse.",
+        "B": "Il implémente des alertes automatisées pour signaler toute déviation inhabituelle.",
         "C": "Il restreint l'accès des utilisateurs jusqu'à ce que le problème soit entièrement résolu.",
         "D": "Il répartit automatiquement les charges de données pour équilibrer les erreurs potentielles."
       },
-      "correct_answer": "A",
-      "explanation": "Alertes automatisées aident à détecter les déviations rapides. B peut perdre des données importantes. C n'est pas pratique. D ne corrige pas les erreurs.",
+      "correct_answer": "B",
+      "explanation": "Alertes automatisées aident à détecter les déviations rapides. B peut perdre des données importantes. C n'est pas pratique. D ne corrige pas les erreurs. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il supprime les données problématiques pour éviter leur réintroduction dans l'analyse.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il restreint l'accès des utilisateurs jusqu'à ce que le problème soit entièrement résolu.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il répartit automatiquement les charges de données pour équilibrer les erreurs potentielles.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -428,13 +428,13 @@
       "question": "Quel avantage le concept de versioning de segments offre-t-il dans un contexte de rafraîchissement périodique?",
       "image_url": null,
       "choices": {
-        "A": "Il permet de comparer les performances nouvelles et anciennes pour affiner l'ajustement du modèle.",
+        "A": "Il élimine la nécessité de toute validation externe avant le calcul.",
         "B": "Il automatise la mise à jour de toutes les instances de pipeline en temps réel.",
-        "C": "Il élimine la nécessité de toute validation externe avant le calcul.",
+        "C": "Il permet de comparer les performances nouvelles et anciennes pour affiner l'ajustement du modèle.",
         "D": "Il réduit le temps de déploiement des mises à jour en éliminant les étapes intermédiaires inutiles."
       },
-      "correct_answer": "A",
-      "explanation": "Comparer les performances nouvelles et anciennes permet un affinement. B exagère les automatismes. C et D omettent validation et structure.",
+      "correct_answer": "C",
+      "explanation": "Comparer les performances nouvelles et anciennes permet un affinement. B exagère les automatismes. C et D omettent validation et structure. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il élimine la nécessité de toute validation externe avant le calcul.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il automatise la mise à jour de toutes les instances de pipeline en temps réel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il réduit le temps de déploiement des mises à jour en éliminant les étapes intermédiaires inutiles.) est plausible",
       "difficulty": "hard"
     },
     {
@@ -442,13 +442,13 @@
       "question": "Quel avantage principal un pipeline batch offre-t-il dans le contexte de l'apprentissage non supervisé industriel ?",
       "image_url": null,
       "choices": {
-        "A": "Il permet de traiter de larges volumes de données à intervalles réguliers, réduisant la charge sur les ressources en temps réel.",
+        "A": "Il permet l'interaction directe avec l'utilisateur final pour ajuster les paramètres du modèle sur le terrain.",
         "B": "Il permet une mise à jour instantanée des modèles de manière synchrone avec les flux de données entrants.",
         "C": "Il assure un suivi en temps réel des modifications des données pour une adaptation immédiate des modèles.",
-        "D": "Il permet l'interaction directe avec l'utilisateur final pour ajuster les paramètres du modèle sur le terrain."
+        "D": "Il permet de traiter de larges volumes de données à intervalles réguliers, réduisant la charge sur les ressources en temps réel."
       },
-      "correct_answer": "A",
-      "explanation": "Un pipeline batch est conçu pour traiter de gros volumes de données en lots à intervalles prévus, ce qui est efficace pour l'apprentissage non supervisé à grande échelle. La réponse B est incorrecte car elle décrit les pipelines de traitement en temps réel, pas batch. La réponse C est incorrecte, car ce n'est pas le but d'un pipeline batch qui travaille hors ligne. La réponse D est fausse car un pipeline batch se concentre sur le traitement des données, pas sur l'interaction utilisateur en temps réel.",
+      "correct_answer": "D",
+      "explanation": "Un pipeline batch est conçu pour traiter de gros volumes de données en lots à intervalles prévus, ce qui est efficace pour l'apprentissage non supervisé à grande échelle. La réponse B est incorrecte car elle décrit les pipelines de traitement en temps réel, pas batch. La réponse C est incorrecte, car ce n'est pas le but d'un pipeline batch qui travaille hors ligne. La réponse D est fausse car un pipeline batch se concentre sur le traitement des données, pas sur l'interaction utilisateur en temps réel. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il permet l'interaction directe avec l'utilisateur final pour ajuster les paramètres du modèle sur le terrain.) est plausible",
       "difficulty": "medium"
     }
   ]

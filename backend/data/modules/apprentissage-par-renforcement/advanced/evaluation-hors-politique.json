@@ -14,7 +14,7 @@
         "D": "Maximiser la variance des échantillons pour une meilleure estimation."
       },
       "correct_answer": "A",
-      "explanation": "L'échantillonnage par importance est utilisé pour corriger le biais dans l'estimation des récompenses d'une nouvelle politique, surtout lors de l'évaluation hors politique. B est incorrect car il ne concerne pas la convergence mais l'évaluation. C est incorrect car il concerne l'exploration en ligne, pas l'évaluation hors ligne. D est faux car l'objectif est de minimiser la variance, pas de la maximiser.",
+      "explanation": "L'échantillonnage par importance est utilisé pour corriger le biais dans l'estimation des récompenses d'une nouvelle politique, surtout lors de l'évaluation hors politique. B est incorrect car il ne concerne pas la convergence mais l'évaluation. C est incorrect car il concerne l'exploration en ligne, pas l'évaluation hors ligne. D est faux car l'objectif est de minimiser la variance, pas de la maximiser. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Accélérer la convergence des algorithmes d'apprentissage par renforcement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Optimiser l'exploration dans les environnements en ligne.) est plausible mais faux car il ne respecte",
       "difficulty": "medium"
     },
     {
@@ -23,12 +23,12 @@
       "image_url": null,
       "choices": {
         "A": "Les stratégies optimales sont rarement disponibles en échantillons hors ligne.",
-        "B": "Les estimateurs doivent ajuster la diversité des données recueillies par la politique comportementale.",
+        "B": "Les biais statistiques sont corrigés au détriment d'une variance accrue.",
         "C": "Les politiques hors ligne sous-échantillonnent systématiquement l'espace d'état-action.",
-        "D": "Les biais statistiques sont corrigés au détriment d'une variance accrue."
+        "D": "Les estimateurs doivent ajuster la diversité des données recueillies par la politique comportementale."
       },
-      "correct_answer": "D",
-      "explanation": "L'estimation hors politique lutte contre le biais à travers des techniques comme l'échantillonnage par importance, souvent au prix d'une variance accrue. A est faux car les stratégies optimales n'affectent pas directement ce compromis. B est incorrect car la diversité des données est un atout, non une limitation pour le biais-variance. C est une fausse croyance; ce n'est pas le sous-échantillonnage qui cause ce compromis directement.",
+      "correct_answer": "B",
+      "explanation": "L'estimation hors politique lutte contre le biais à travers des techniques comme l'échantillonnage par importance, souvent au prix d'une variance accrue. A est faux car les stratégies optimales n'affectent pas directement ce compromis. B est incorrect car la diversité des données est un atout, non une limitation pour le biais-variance. C est une fausse croyance; ce n'est pas le sous-échantillonnage qui cause ce compromis directement. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les stratégies optimales sont rarement disponibles en échantillons hors ligne.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Les politiques hors ligne sous-échantillonnent systématiquement l'espace d'état-action.) est",
       "difficulty": "medium"
     },
     {
@@ -37,12 +37,12 @@
       "image_url": null,
       "choices": {
         "A": "La capacité d'une politique d'explorer toutes les actions possibles dans un état donné.",
-        "B": "La mesure dans laquelle l'ensemble des données couvre les états potentiellement rencontrés par la nouvelle politique.",
-        "C": "Le pourcentage d'actions explorées par la politique de comportement en ligne.",
+        "B": "Le pourcentage d'actions explorées par la politique de comportement en ligne.",
+        "C": "La mesure dans laquelle l'ensemble des données couvre les états potentiellement rencontrés par la nouvelle politique.",
         "D": "La fréquence à laquelle une politique rencontre des états d'échec."
       },
-      "correct_answer": "B",
-      "explanation": "La 'coverage' fait référence à la mesure de la pertinence des données hors-ligne par rapport aux politiques évaluées. A est incorrect car cela fait référence à la politique d'exploration, pas à la coverage. C est incorrect; le contexte ici est en ligne, non hors politique. D est inexact car cela ne mesure pas spécifiquement la coverage en évaluation hors ligne.",
+      "correct_answer": "C",
+      "explanation": "La 'coverage' fait référence à la mesure de la pertinence des données hors-ligne par rapport aux politiques évaluées. A est incorrect car cela fait référence à la politique d'exploration, pas à la coverage. C est incorrect; le contexte ici est en ligne, non hors politique. D est inexact car cela ne mesure pas spécifiquement la coverage en évaluation hors ligne. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La capacité d'une politique d'explorer toutes les actions possibles dans un état donné.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le pourcentage d'actions explorées par la politique de comportement en ligne.)",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Dans le contexte de l'évaluation hors politique en apprentissage par renforcement, quel est le rôle principal de l'importance sampling?",
       "image_url": null,
       "choices": {
-        "A": "Corriger le biais d'échantillonnage lorsque les données ne sont pas collectées sous la même politique.",
+        "A": "Accélérer la convergence des méthodes de type Monte Carlo.",
         "B": "Augmenter la variance des estimations pour les rendre plus robustes.",
         "C": "Minimiser l'erreur quadratique moyenne des prédictions de valeurs d'états.",
-        "D": "Accélérer la convergence des méthodes de type Monte Carlo."
+        "D": "Corriger le biais d'échantillonnage lorsque les données ne sont pas collectées sous la même politique."
       },
-      "correct_answer": "A",
-      "explanation": "L'importance sampling est utilisé pour ajuster les estimations lorsque les comportements de collecte de données diffèrent de la politique cible, en réévaluant les probabilités des trajectoires. B est faux car l'importance sampling peut augmenter la variance, pas la diminuer. C et D ne concernent pas l'importance sampling.",
+      "correct_answer": "D",
+      "explanation": "L'importance sampling est utilisé pour ajuster les estimations lorsque les comportements de collecte de données diffèrent de la politique cible, en réévaluant les probabilités des trajectoires. B est faux car l'importance sampling peut augmenter la variance, pas la diminuer. C et D ne concernent pas l'importance sampling. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Accélérer la convergence des méthodes de type Monte Carlo.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter la variance des estimations pour les rendre plus robustes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Améliore toujours la performance en ligne d'une politique."
       },
       "correct_answer": "A",
-      "explanation": "L'estimation offline permet de tester et valider des politiques à partir de données historiques, évitant des coûts potentiels élevés d'interactions réelles. B est faux car les estimations optimales ne sont pas garanties sans échantillons adéquats. C est incorrect car elle ne touche pas directement la convergence de toutes les politiques, et D parce qu'elle n'améliore pas en ligne par défaut.",
+      "explanation": "L'estimation offline permet de tester et valider des politiques à partir de données historiques, évitant des coûts potentiels élevés d'interactions réelles. B est faux car les estimations optimales ne sont pas garanties sans échantillons adéquats. C est incorrect car elle ne touche pas directement la convergence de toutes les politiques, et D parce qu'elle n'améliore pas en ligne par défaut. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Garantit des estimations de valeurs optimales avec des données limitées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Accélère la convergence de toutes les politiques.) est plausible mais faux car il ne",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Comment le problème de coverage peut-il affecter l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Il limite la capacité d'évaluer certaines politiques si certaines actions ou états n'ont jamais été explorés.",
-        "B": "Il augmente automatiquement la généralisation des politiques à travers différents contextes.",
+        "A": "Il augmente automatiquement la généralisation des politiques à travers différents contextes.",
+        "B": "Il limite la capacité d'évaluer certaines politiques si certaines actions ou états n'ont jamais été explorés.",
         "C": "Il simplifie la conception des fonctions de récompense.",
         "D": "Il permet une évaluation parfaite à partir de l'échantillon d'entraînement existant."
       },
-      "correct_answer": "A",
-      "explanation": "Le problème de coverage se réfère à l'absence de données couvrant toutes les actions ou états possibles, rendant difficile l'évaluation correcte de politiques qui nécessitent ces informations. B est faux, le coverage peut limiter la généralisation. C est une fausse interprétation, et D est incorrect car sans couverture complète, l'évaluation parfaite est impossible.",
+      "correct_answer": "B",
+      "explanation": "Le problème de coverage se réfère à l'absence de données couvrant toutes les actions ou états possibles, rendant difficile l'évaluation correcte de politiques qui nécessitent ces informations. B est faux, le coverage peut limiter la généralisation. C est une fausse interprétation, et D est incorrect car sans couverture complète, l'évaluation parfaite est impossible. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il augmente automatiquement la généralisation des politiques à travers différents contextes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il simplifie la conception des fonctions de récompense.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quel est l'effet du biais-variance dans l'évaluation hors politique?",
       "image_url": null,
       "choices": {
-        "A": "L'importance sampling peut être utilisé pour diminuer le biais mais augmenter la variance.",
+        "A": "En présence de biais élevé, la variance devient toujours négligeable.",
         "B": "Il assure toujours une réduction des deux, biais et variance, simultanément.",
-        "C": "En présence de biais élevé, la variance devient toujours négligeable.",
+        "C": "L'importance sampling peut être utilisé pour diminuer le biais mais augmenter la variance.",
         "D": "Le biais et la variance ne sont jamais affectés en évaluation hors politique."
       },
-      "correct_answer": "A",
-      "explanation": "L'importance sampling est une technique qui peut diminuer le biais de l'évaluation mais souvent au prix d'une augmentation de la variance. B est faux car la réduction simultanée n'est pas garantie. C et D sont incorrects car ce sont des simplifications erronées de concepts complexes.",
+      "correct_answer": "C",
+      "explanation": "L'importance sampling est une technique qui peut diminuer le biais de l'évaluation mais souvent au prix d'une augmentation de la variance. B est faux car la réduction simultanée n'est pas garantie. C et D sont incorrects car ce sont des simplifications erronées de concepts complexes. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En présence de biais élevé, la variance devient toujours négligeable.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il assure toujours une réduction des deux, biais et variance, simultanément.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Qu'est-ce que l'importamce sampling permet d'estimer en apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Les valeurs d'attentes d'une politique cible à partir de données collectées avec une autre politique.",
+        "A": "Les résultats des plans d'action futurs en utilisant uniquement des échantillons non influencés.",
         "B": "Les avantages immédiats de l'environnement en essayant toute action possible.",
         "C": "Les gradients de la politique cible pour optimiser la politique actuelle.",
-        "D": "Les résultats des plans d'action futurs en utilisant uniquement des échantillons non influencés."
+        "D": "Les valeurs d'attentes d'une politique cible à partir de données collectées avec une autre politique."
       },
-      "correct_answer": "A",
-      "explanation": "L'importance sampling permet d'estimer les valeurs d'attentes d'une politique cible en utilisant des échantillons collectés à partir d'une autre politique (policy off). Les choix B, C, et D sont incorrects car ils n'exploitent pas la relation entre les politiques actuelles et cibles via des distributions de probabilité pondérées.",
+      "correct_answer": "D",
+      "explanation": "L'importance sampling permet d'estimer les valeurs d'attentes d'une politique cible en utilisant des échantillons collectés à partir d'une autre politique (policy off). Les choix B, C, et D sont incorrects car ils n'exploitent pas la relation entre les politiques actuelles et cibles via des distributions de probabilité pondérées. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les résultats des plans d'action futurs en utilisant uniquement des échantillons non influencés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Les avantages immédiats de l'environnement en essayant toute action possible.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Le biais améliore l'estimation hors politique en stabilisant les gradients de politique."
       },
       "correct_answer": "A",
-      "explanation": "Le biais est une erreur systématique due à des suppositions dans le modèle, qui peut parfois être échangé avec la variance. B est incorrect car le biais n'augmente pas la variance, au contraire, il y a souvent une balance entre le biais et la variance. C est incorrect car l'importance sampling peut ne pas éliminer totalement le biais. D est faux car même si le biais peut stabiliser des approximations, cela ne se traduit pas par une amélioration intrinsèque.",
+      "explanation": "Le biais est une erreur systématique due à des suppositions dans le modèle, qui peut parfois être échangé avec la variance. B est incorrect car le biais n'augmente pas la variance, au contraire, il y a souvent une balance entre le biais et la variance. C est incorrect car l'importance sampling peut ne pas éliminer totalement le biais. D est faux car même si le biais peut stabiliser des approximations, cela ne se traduit pas par une amélioration intrinsèque. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Le biais réduit l'efficacité d'apprentissage en augmentant la variance.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Pourquoi l'estimation offline est-elle cruciale en apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Elle permet de réutiliser des données historiques sans interactions coûteuses avec l'environnement.",
-        "B": "Elle garantit une politique optimisée sans besoin de nouvelles données.",
+        "A": "Elle garantit une politique optimisée sans besoin de nouvelles données.",
+        "B": "Elle permet de réutiliser des données historiques sans interactions coûteuses avec l'environnement.",
         "C": "Elle empêche toute forme de biais en utilisant des données entièrement vérifiées.",
         "D": "Elle facilite l'utilisation illimitée de données non échantillonnées pour améliorer l'apprentissage."
       },
-      "correct_answer": "A",
-      "explanation": "L'estimation offline utilise des données historiques pour évaluer des politiques sans recourir à des interactions supplémentaires avec l'environnement. B, C, et D sont incorrects car l'estimation offline ne garantit pas une optimisation intrinsèque, ne supprime pas nécessairement tout biais, et n'utilise pas de données non échantillonnées illimitées.",
+      "correct_answer": "B",
+      "explanation": "L'estimation offline utilise des données historiques pour évaluer des politiques sans recourir à des interactions supplémentaires avec l'environnement. B, C, et D sont incorrects car l'estimation offline ne garantit pas une optimisation intrinsèque, ne supprime pas nécessairement tout biais, et n'utilise pas de données non échantillonnées illimitées. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle garantit une politique optimisée sans besoin de nouvelles données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle empêche toute forme de biais en utilisant des données entièrement vérifiées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Que désigne la notion de 'coverage' dans l'évaluation hors politique?",
       "image_url": null,
       "choices": {
-        "A": "La mesure dans laquelle les échantillons collectés sous une politique couvrent l'espace des transitions de la politique cible.",
+        "A": "La maximisation de l'espace de décision en explorant toutes les actions possibles.",
         "B": "La garantie de performance de la politique actuelle sur l’ensemble des échantillons disponibles.",
-        "C": "La maximisation de l'espace de décision en explorant toutes les actions possibles.",
+        "C": "La mesure dans laquelle les échantillons collectés sous une politique couvrent l'espace des transitions de la politique cible.",
         "D": "La couverture totale de l'environnement par la politique pour minimiser la variance."
       },
-      "correct_answer": "A",
-      "explanation": "Le 'coverage' désigne la capacité des échantillons collectés à bien représenter la politique cible, particulièrement crucial pour l'exactitude de l'estimation. B est incorrect car la couverture ne garantit pas la performance sur tous les échantillons. C est faux car il s’agit de maximiser les transitions valides et non l’exploration de toutes les actions. D est incorrect car la couverture concerne les transitions entre politiques, pas la couverture complète de l'environnement.",
+      "correct_answer": "C",
+      "explanation": "Le 'coverage' désigne la capacité des échantillons collectés à bien représenter la politique cible, particulièrement crucial pour l'exactitude de l'estimation. B est incorrect car la couverture ne garantit pas la performance sur tous les échantillons. C est faux car il s’agit de maximiser les transitions valides et non l’exploration de toutes les actions. D est incorrect car la couverture concerne les transitions entre politiques, pas la couverture complète de l'environnement. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La maximisation de l'espace de décision en explorant toutes les actions possibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (La garantie",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Comment l'importance sampling peut-elle aider à gérer le biais dans l'évaluation hors politique?",
       "image_url": null,
       "choices": {
-        "A": "En ajustant les poids des échantillons pour mieux représenter la distribution cible.",
+        "A": "En diminuant systématiquement la variance des estimations par un double échantillonnage.",
         "B": "En ignorant les échantillons qui ne correspondent pas à la distribution cible.",
         "C": "En augmentant la taille des échantillons pour diversifier l'exploration de l'espace des états.",
-        "D": "En diminuant systématiquement la variance des estimations par un double échantillonnage."
+        "D": "En ajustant les poids des échantillons pour mieux représenter la distribution cible."
       },
-      "correct_answer": "A",
-      "explanation": "L'importance sampling ajuste les poids des échantillons pour mieux représenter la distribution cible. B est faux car ignorer des échantillons accroît le biais. C est incorrect car l'importance sampling fonctionne principalement avec le poidsage des échantillons, pas l'augmentation de leur nombre. D est faux car l'importance sampling n'implique pas systématiquement une diminution de la variance.",
+      "correct_answer": "D",
+      "explanation": "L'importance sampling ajuste les poids des échantillons pour mieux représenter la distribution cible. B est faux car ignorer des échantillons accroît le biais. C est incorrect car l'importance sampling fonctionne principalement avec le poidsage des échantillons, pas l'augmentation de leur nombre. D est faux car l'importance sampling n'implique pas systématiquement une diminution de la variance. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En diminuant systématiquement la variance des estimations par un double échantillonnage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En ignorant les échantillons qui ne correspondent pas à la distribution cible.) est plausible mais faux car il",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Il restreint l'espace d'action pour mieux concentrer l'avaitation des erreurs instantanées."
       },
       "correct_answer": "A",
-      "explanation": "Le biais-variance trade-off est crucial car il soumet l'impact de l'erreur systématique par opposition à sa variabilité, mais pas en augmentant la complexité de l'algorithme ou en uniformisant la distribution des échantillons. C et D s'écartent du concept en se concentrant sur la distribution ou la limitation des actions, ce qui est non-conforme ici.",
+      "explanation": "Le biais-variance trade-off est crucial car il soumet l'impact de l'erreur systématique par opposition à sa variabilité, mais pas en augmentant la complexité de l'algorithme ou en uniformisant la distribution des échantillons. C et D s'écartent du concept en se concentrant sur la distribution ou la limitation des actions, ce qui est non-conforme ici. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il augmente la complexité de l'algorithme sans affecter sa capacité de généralisation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il uniformise la distribution des échantillons pour favoriser l'évaluation de la politique.) est plausible mais faux car il",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quel effet un 'coverage' insuffisant peut-il avoir sur l'estimation offline?",
       "image_url": null,
       "choices": {
-        "A": "Il peut mener à des biais accrus en raison de la mauvaise représentation de la politique cible.",
-        "B": "Il assure un certain degré de performance en évitant les échantillons non pertinents.",
+        "A": "Il assure un certain degré de performance en évitant les échantillons non pertinents.",
+        "B": "Il peut mener à des biais accrus en raison de la mauvaise représentation de la politique cible.",
         "C": "Il augmente la précision de l'estimation de la valeur en limitant la complexité computationnelle.",
         "D": "Il minimise les erreurs générales en ciblant uniquement les actions rentables."
       },
-      "correct_answer": "A",
-      "explanation": "'Coverage' insuffisant augmente le biais car les données ne représentent pas bien la politique cible, ce qui affecte la précision des estimations. B, C, et D ne sont pas valides car la couverture manque de provisions pour éviter la pertinence ou affiner la précision de telles manières.",
+      "correct_answer": "B",
+      "explanation": "'Coverage' insuffisant augmente le biais car les données ne représentent pas bien la politique cible, ce qui affecte la précision des estimations. B, C, et D ne sont pas valides car la couverture manque de provisions pour éviter la pertinence ou affiner la précision de telles manières. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il assure un certain degré de performance en évitant les échantillons non pertinents.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il augmente la précision de l'estimation de la valeur en limitant la complexité computationnelle.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quand est-il difficile d'appliquer l'importance sampling dans un contexte de renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Lorsque les distributions des politiques source et cible divergent largement.",
+        "A": "Lorsque la politique source est toujours moins performante que la politique cible.",
         "B": "Lorsque l'environnement est entièrement déterministe.",
-        "C": "Lorsque la politique source est toujours moins performante que la politique cible.",
+        "C": "Lorsque les distributions des politiques source et cible divergent largement.",
         "D": "Lorsque toutes les actions de la politique cible sont des actions optimales."
       },
-      "correct_answer": "A",
-      "explanation": "L'importance sampling devient difficile lorsque les politiques source et cible divergent largement, rendant la correspondance des poids non fiable. B, C, et D ne sont pas des situations significativement problématiques pour l'importance sampling dans les scénarios décrits.",
+      "correct_answer": "C",
+      "explanation": "L'importance sampling devient difficile lorsque les politiques source et cible divergent largement, rendant la correspondance des poids non fiable. B, C, et D ne sont pas des situations significativement problématiques pour l'importance sampling dans les scénarios décrits. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Lorsque la politique source est toujours moins performante que la politique cible.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Lorsque l'environnement est entièrement déterministe.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Lorsque toutes les actions de la politique cible sont des",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Comment l'estimation offline peut-elle réduire les risques associés aux tests en ligne?",
       "image_url": null,
       "choices": {
-        "A": "En permettant une évaluation préalable des stratégies sans interactions avec l'environnement réel.",
+        "A": "En favorisant l'oubli rapide des métriques passées dans la mise à jour des politiques.",
         "B": "En augmentant les interactions aléatoires pour explorer plus de stratégies.",
         "C": "En garantissant que toute nouvelle politique améliore systématiquement la politique précédente.",
-        "D": "En favorisant l'oubli rapide des métriques passées dans la mise à jour des politiques."
+        "D": "En permettant une évaluation préalable des stratégies sans interactions avec l'environnement réel."
       },
-      "correct_answer": "A",
-      "explanation": "L'estimation offline réduit les risques en offrant une évaluation des politiques avant un déploiement en environnement réel. B et D ne fournissent pas une réduction réelle des risques car ils ne s'alignent pas sur une pré-évaluation. C est incorrect car l'estimation offline ne garantit pas systématiquement une amélioration.",
+      "correct_answer": "D",
+      "explanation": "L'estimation offline réduit les risques en offrant une évaluation des politiques avant un déploiement en environnement réel. B et D ne fournissent pas une réduction réelle des risques car ils ne s'alignent pas sur une pré-évaluation. C est incorrect car l'estimation offline ne garantit pas systématiquement une amélioration. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En favorisant l'oubli rapide des métriques passées dans la mise à jour des politiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En augmentant les interactions aléatoires pour explorer plus de stratégies.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Compromis entre précocité des mises à jour de réseau de neurones et robustesse."
       },
       "correct_answer": "A",
-      "explanation": "L'importance sampling nécessite souvent un compromis entre un bon équilibre des poids et une augmentation de la variance des estimations. B, C, et D ne définissent pas correctement l'impact de l'importance sampling.",
+      "explanation": "L'importance sampling nécessite souvent un compromis entre un bon équilibre des poids et une augmentation de la variance des estimations. B, C, et D ne définissent pas correctement l'impact de l'importance sampling. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Compromis entre le nombre d'échantillons et la dimension de l'espace d'action.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Compromis entre exploration et conservation de la politique initiale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Compromis entre précocité des mises à jour de réseau de neurones et",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Quel aspect est crucial à surveiller pour la précision lors de l'évaluation hors politique?",
       "image_url": null,
       "choices": {
-        "A": "La similarité entre les distributions de la politique actuelle et cible.",
-        "B": "La correction des valeurs d'actions par étapes successives.",
+        "A": "La correction des valeurs d'actions par étapes successives.",
+        "B": "La similarité entre les distributions de la politique actuelle et cible.",
         "C": "L'optimisation uniquement dans des environnements stochastiques.",
         "D": "La distribution uniforme des récompenses dans l'espace d'états."
       },
-      "correct_answer": "A",
-      "explanation": "Pour la précision de l'évaluation hors politique, la similarité entre les distributions de la politique actuelle et cible est cruciale, car les différences amplifient les erreurs de distribution. B et C sont incorrects car ils ne concernent pas directement l'évaluation hors politique. D est faux car la distribution uniforme des récompenses n'est pas directement en lien avec la précision de l'évaluation.",
+      "correct_answer": "B",
+      "explanation": "Pour la précision de l'évaluation hors politique, la similarité entre les distributions de la politique actuelle et cible est cruciale, car les différences amplifient les erreurs de distribution. B et C sont incorrects car ils ne concernent pas directement l'évaluation hors politique. D est faux car la distribution uniforme des récompenses n'est pas directement en lien avec la précision de l'évaluation. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (La correction des valeurs d'actions par étapes successives.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'optimisation uniquement dans des environnements stochastiques.) est plausible mais faux car il ne respecte pas",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Comment l'estimation offline peut-elle être affectée par un biais d'échantillonnage?",
       "image_url": null,
       "choices": {
-        "A": "En fournissant des estimations inexactes car les échantillons ne représentent pas bien la distribution réelle.",
+        "A": "En augmentant les performances de convergence des modèles par diversification des données.",
         "B": "En améliorant la robustesse des estimations grâce à des échantillons ciblés.",
-        "C": "En augmentant les performances de convergence des modèles par diversification des données.",
+        "C": "En fournissant des estimations inexactes car les échantillons ne représentent pas bien la distribution réelle.",
         "D": "En réduisant le temps de calcul nécessaire pour chaque évaluation."
       },
-      "correct_answer": "A",
-      "explanation": "Un biais d'échantillonnage dans l'estimation offline conduit à des estimations inexactes si les échantillons ne représentent pas correctement la distribution réelle. B est incorrect car viser des échantillons ciblés peut accroître le biais, non la robustesse. C et D s'écartent de l'impact du biais sur l'exactitude.",
+      "correct_answer": "C",
+      "explanation": "Un biais d'échantillonnage dans l'estimation offline conduit à des estimations inexactes si les échantillons ne représentent pas correctement la distribution réelle. B est incorrect car viser des échantillons ciblés peut accroître le biais, non la robustesse. C et D s'écartent de l'impact du biais sur l'exactitude. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En augmentant les performances de convergence des modèles par diversification des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En améliorant la robustesse des estimations grâce à des échantillons ciblés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Qu'est-ce qui est essentiel pour un bon coverage lors de l'évaluation hors politique par importance sampling?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser des poids adaptés pour chaque échantillon basé sur sa probabilité sous les politiques.",
+        "A": "Maintenir une constante mise à jour de la politique cible à partir des données échantillonnées.",
         "B": "Limiter les actions possibles pour optimiser la répartition d'échantillons.",
         "C": "Élaborer des politiques sources qui imitent parfaitement la politique cible.",
-        "D": "Maintenir une constante mise à jour de la politique cible à partir des données échantillonnées."
+        "D": "Utiliser des poids adaptés pour chaque échantillon basé sur sa probabilité sous les politiques."
       },
-      "correct_answer": "A",
-      "explanation": "Pour un bon coverage, il est essentiel d'utiliser des poids adaptés pour chaque échantillon, en se basant sur leur probabilité sous les politiques concernées. B et C sont incorrects car ils limitent ou imitent sans contribuer au bon coverage. D ne correspond pas non plus car il s’agit plutôt d’un aspect d'actualisation que de coverage.",
+      "correct_answer": "D",
+      "explanation": "Pour un bon coverage, il est essentiel d'utiliser des poids adaptés pour chaque échantillon, en se basant sur leur probabilité sous les politiques concernées. B et C sont incorrects car ils limitent ou imitent sans contribuer au bon coverage. D ne correspond pas non plus car il s’agit plutôt d’un aspect d'actualisation que de coverage. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Maintenir une constante mise à jour de la politique cible à partir des données échantillonnées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Limiter les actions possibles pour optimiser la répartition d'échantillons.) est plausible mais faux car",
       "difficulty": "hard"
     }
   ]

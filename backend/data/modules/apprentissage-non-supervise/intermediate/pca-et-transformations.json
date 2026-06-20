@@ -14,7 +14,7 @@
         "D": "Classer les données en fonction de leur similarité sans réduire leur dimensionnalité."
       },
       "correct_answer": "A",
-      "explanation": "L'objectif principal de PCA est de réduire la dimensionnalité des données tout en conservant le plus de variance possible. La réponse B est incorrecte car elle mélange avec des techniques comme le kernel PCA visant des transformations non linéaires. La réponse C est fausse car PCA ne corrige pas mais transforme pour maximiser la variance. La réponse D est inexacte car PCA ne classifie pas mais transforme.",
+      "explanation": "L'objectif principal de PCA est de réduire la dimensionnalité des données tout en conservant le plus de variance possible. La réponse B est incorrecte car elle mélange avec des techniques comme le kernel PCA visant des transformations non linéaires. La réponse C est fausse car PCA ne corrige pas mais transforme pour maximiser la variance. La réponse D est inexacte car PCA ne classifie pas mais transforme. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Augmenter la dimensionnalité des données pour améliorer la classification.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Corriger les erreurs systématiques dans les données en",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Quelle propriété est significativement associée à la première composante principale dans PCA ?",
       "image_url": null,
       "choices": {
-        "A": "Elle capture la plus grande variance dans les données.",
-        "B": "Elle correspond à l'axe avec le moins de signaux de bruit.",
+        "A": "Elle correspond à l'axe avec le moins de signaux de bruit.",
+        "B": "Elle capture la plus grande variance dans les données.",
         "C": "Elle maximise la dépendance entre les différentes dimensions.",
         "D": "Elle est toujours alignée avec un des axes d'origine de l'espace de données."
       },
-      "correct_answer": "A",
-      "explanation": "La première composante principale capture la plus grande variance dans les données. La réponse B est incorrecte car la PCA ne vise pas principalement à réduire le bruit mais à maximiser la variance. La réponse C est fausse car PCA vise à réduire la redondance, non à maximiser la dépendance. La réponse D est incorrecte car la composante principale est rarement alignée avec les axes d'origine.",
+      "correct_answer": "B",
+      "explanation": "La première composante principale capture la plus grande variance dans les données. La réponse B est incorrecte car la PCA ne vise pas principalement à réduire le bruit mais à maximiser la variance. La réponse C est fausse car PCA vise à réduire la redondance, non à maximiser la dépendance. La réponse D est incorrecte car la composante principale est rarement alignée avec les axes d'origine. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle correspond à l'axe avec le moins de signaux de bruit.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle maximise la dépendance entre les différentes",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Que signifie la decorrelation en contexte de PCA ?",
       "image_url": null,
       "choices": {
-        "A": "Les composantes principales sont orthogonales entre elles.",
+        "A": "Les données sont transformées en une distribution uniformément répartie.",
         "B": "Les données originales n'ont plus de variance.",
-        "C": "Les données sont transformées en une distribution uniformément répartie.",
+        "C": "Les composantes principales sont orthogonales entre elles.",
         "D": "Les composantes principales sont alignées avec les données originales."
       },
-      "correct_answer": "A",
-      "explanation": "La decorrelation dans le contexte de la PCA signifie que les composantes principales sont orthogonales entre elles et donc non corrélées. La réponse B est incorrecte car la variance est redistribuée et non supprimée. La réponse C est fausse car PCA n'égalise pas la distribution des données mais les transforme pour maximiser la variance capturée. La réponse D est incorrecte car les composantes ne sont généralement pas alignées avec les axes d'origine.",
+      "correct_answer": "C",
+      "explanation": "La decorrelation dans le contexte de la PCA signifie que les composantes principales sont orthogonales entre elles et donc non corrélées. La réponse B est incorrecte car la variance est redistribuée et non supprimée. La réponse C est fausse car PCA n'égalise pas la distribution des données mais les transforme pour maximiser la variance capturée. La réponse D est incorrecte car les composantes ne sont généralement pas alignées avec les axes d'origine. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les données sont transformées en une distribution uniformément répartie.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Les données originales",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quelle est la première étape dans la procédure de PCA ?",
       "image_url": null,
       "choices": {
-        "A": "Centrage des données.",
+        "A": "Construction de la matrice de covariance.",
         "B": "Calcul des valeurs propres de la matrice de covariance.",
         "C": "Normalisation des vecteurs propres.",
-        "D": "Construction de la matrice de covariance."
+        "D": "Centrage des données."
       },
-      "correct_answer": "A",
-      "explanation": "La première étape dans la procédure de PCA est le centrage des données en soustrayant leur moyenne pour chaque dimension. La réponse B vient après que la matrice de covariance a été construite. La réponse C concerne l'étape de normalisation des vecteurs propres, mais elle est après l'obtention de ces vecteurs. La réponse D est incorrecte comme première étape car le centrage doit précéder la construction de la matrice de covariance.",
+      "correct_answer": "D",
+      "explanation": "La première étape dans la procédure de PCA est le centrage des données en soustrayant leur moyenne pour chaque dimension. La réponse B vient après que la matrice de covariance a été construite. La réponse C concerne l'étape de normalisation des vecteurs propres, mais elle est après l'obtention de ces vecteurs. La réponse D est incorrecte comme première étape car le centrage doit précéder la construction de la matrice de covariance. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Construction de la matrice de covariance.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Calcul des valeurs propres de la matrice",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "En alignant les données reconstruites avec les données d'origine."
       },
       "correct_answer": "A",
-      "explanation": "En PCA, la reconstruction consiste à approcher les données originales via les composantes réduites, minimisant ainsi l'erreur de reconstruction. La réponse B est fausse car la PCA ne modifie pas les données initiales mais seulement leur représentation. La réponse C est incorrecte car la PCA ne vise pas à augmenter la variance mais à la préserver. La réponse D est fausse car les données reconstruites ne peuvent pas toujours être parfaitement alignées avec les données d'origine sans perte d'information.",
+      "explanation": "En PCA, la reconstruction consiste à approcher les données originales via les composantes réduites, minimisant ainsi l'erreur de reconstruction. La réponse B est fausse car la PCA ne modifie pas les données initiales mais seulement leur représentation. La réponse C est incorrecte car la PCA ne vise pas à augmenter la variance mais à la préserver. La réponse D est fausse car les données reconstruites ne peuvent pas toujours être parfaitement alignées avec les données d'origine sans perte d'information. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (En modifiant les données initiales pour ajuster les erreurs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "medium"
     },
     {
@@ -78,12 +78,12 @@
       "question": "Quel est le principal défi de la compression utilisant PCA ?",
       "image_url": null,
       "choices": {
-        "A": "La sélection du nombre de composantes à conserver.",
-        "B": "La nécessité de données étiquetées pour s'entraîner.",
+        "A": "La nécessité de données étiquetées pour s'entraîner.",
+        "B": "La sélection du nombre de composantes à conserver.",
         "C": "L'impossibilité d'inverser la transformation.",
         "D": "L'augmentation inévitable du bruit après la transformation."
       },
-      "correct_answer": "A",
+      "correct_answer": "B",
       "explanation": "Le principal défi de la compression avec PCA est de choisir un nombre approprié de composantes principales à conserver pour maintenir un équilibre entre la réduction de la dimension et la perte d'information. La réponse B est incorrecte car la PCA ne nécessite pas de données étiquetées. La réponse C est fausse car la PCA est une transformation linéaire et réversible, même si des informations peuvent être perdues. La réponse D est incorrecte puisque la PCA ne vise pas à augmenter le bruit, bien que certaines informations puissent être perdues.",
       "difficulty": "medium"
     },
@@ -93,12 +93,12 @@
       "image_url": null,
       "choices": {
         "A": "Pour garantir que la première composante principale est la plus informative.",
-        "B": "Pour éviter de biaiser le calcul des valeurs propres.",
-        "C": "Pour réduire la taille des vecteurs propres calculés.",
+        "B": "Pour réduire la taille des vecteurs propres calculés.",
+        "C": "Pour éviter de biaiser le calcul des valeurs propres.",
         "D": "Pour s'assurer que les dimensions sont normalisées."
       },
-      "correct_answer": "B",
-      "explanation": "Centrer les données est crucial pour éviter de biaiser le calcul des valeurs propres et pour que les directions principales capturent efficacement la variance. La réponse A est incorrecte car ce n'est pas seulement le centrage qui rend la première composante principale informative. La réponse C est fausse car le centrage n'affecte pas la taille des vecteurs propres. La réponse D est incorrecte car le centrage ne normalise pas les dimensions, il assure seulement que les calculs de covariance se concentrent sur les variations réelles.",
+      "correct_answer": "C",
+      "explanation": "Centrer les données est crucial pour éviter de biaiser le calcul des valeurs propres et pour que les directions principales capturent efficacement la variance. La réponse A est incorrecte car ce n'est pas seulement le centrage qui rend la première composante principale informative. La réponse C est fausse car le centrage n'affecte pas la taille des vecteurs propres. La réponse D est incorrecte car le centrage ne normalise pas les dimensions, il assure seulement que les calculs de covariance se concentrent sur les variations réelles. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour garantir que la première composante principale est la plus informative.) est plausible mais faux car il ne respecte",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Dans la PCA, comment les composantes principales sont-elles ordonnées ?",
       "image_url": null,
       "choices": {
-        "A": "Par ordre décroissant de variance capturée.",
+        "A": "Selon leur capacité à capturer du bruit.",
         "B": "Par ordre croissant de corrélation avec les dimensions originales.",
         "C": "Dans l'ordre où elles sont calculées.",
-        "D": "Selon leur capacité à capturer du bruit."
+        "D": "Par ordre décroissant de variance capturée."
       },
-      "correct_answer": "A",
-      "explanation": "Dans la PCA, les composantes principales sont ordonnées par ordre décroissant de variance qu'elles capturent. La réponse B est incorrecte car les composantes ne sont pas ordonnées par leur corrélation avec les dimensions originales. La réponse C est fausse parce que l'ordre de calcul peut ne pas correspondre aux propriétés statistiques capturées. La réponse D est inexacte puisque les composantes principales ne capturent pas le bruit intentionnellement.",
+      "correct_answer": "D",
+      "explanation": "Dans la PCA, les composantes principales sont ordonnées par ordre décroissant de variance qu'elles capturent. La réponse B est incorrecte car les composantes ne sont pas ordonnées par leur corrélation avec les dimensions originales. La réponse C est fausse parce que l'ordre de calcul peut ne pas correspondre aux propriétés statistiques capturées. La réponse D est inexacte puisque les composantes principales ne capturent pas le bruit intentionnellement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Selon leur capacité à capturer du bruit.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Par ordre croissant de corrélation avec les dimensions originales.) est",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "L'algorithme de k-moyennes pour la sélection des axes."
       },
       "correct_answer": "A",
-      "explanation": "En PCA, les vecteurs et valeurs propres de la matrice de covariance sont utilisés pour déterminer les composantes principales. La réponse B est incorrecte car elle concerne une technique pour analyser les signaux, pas pour réduire la dimensionnalité. La réponse C est fausse car bien que les données soient souvent normalisées, cela ne génère pas les composantes principales. La réponse D est incorrecte, car k-moyennes est un algorithme de clustering, pas une méthode de transformation de dimensionnalité.",
+      "explanation": "En PCA, les vecteurs et valeurs propres de la matrice de covariance sont utilisés pour déterminer les composantes principales. La réponse B est incorrecte car elle concerne une technique pour analyser les signaux, pas pour réduire la dimensionnalité. La réponse C est fausse car bien que les données soient souvent normalisées, cela ne génère pas les composantes principales. La réponse D est incorrecte, car k-moyennes est un algorithme de clustering, pas une méthode de transformation de dimensionnalité. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La transformation de Fourier discrète.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La distribution",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Pourquoi une transformation inverse est-elle possible dans la PCA ?",
       "image_url": null,
       "choices": {
-        "A": "Parce que les transformations sont linéaires.",
-        "B": "Parce que la matrice de corrélation est unitaire.",
+        "A": "Parce que la matrice de corrélation est unitaire.",
+        "B": "Parce que les transformations sont linéaires.",
         "C": "Parce que toutes les dimensions ont la même variance.",
         "D": "Parce que les vecteurs propres sont non-négatifs."
       },
-      "correct_answer": "A",
-      "explanation": "La transformation inverse est possible en PCA car les transformations sont linéaires. La réponse B est incorrecte car la PCA utilise la matrice de covariance, pas la matrice de corrélation unitaire. La réponse C est fausse puisque ce n'est pas la variance égale des dimensions qui permet l'inversibilité. La réponse D est incorrecte car les vecteurs propres peuvent avoir des valeurs négatives, la contrainte n'est pas basée sur les signes mais sur l'orthogonalité.",
+      "correct_answer": "B",
+      "explanation": "La transformation inverse est possible en PCA car les transformations sont linéaires. La réponse B est incorrecte car la PCA utilise la matrice de covariance, pas la matrice de corrélation unitaire. La réponse C est fausse puisque ce n'est pas la variance égale des dimensions qui permet l'inversibilité. La réponse D est incorrecte car les vecteurs propres peuvent avoir des valeurs négatives, la contrainte n'est pas basée sur les signes mais sur l'orthogonalité. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce que la matrice de corrélation est unitaire.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce que toutes",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Comment le calcul des composantes principales impacte-t-il la reconstruction des données originales ?",
       "image_url": null,
       "choices": {
-        "A": "Plus de composantes principales maintiennent mieux les données originales.",
+        "A": "Le nombre de composantes principales n'influence pas la fidélité de la reconstruction.",
         "B": "Moins de composantes principales augmentent la variance des données reconstruites.",
-        "C": "Le nombre de composantes principales n'influence pas la fidélité de la reconstruction.",
+        "C": "Plus de composantes principales maintiennent mieux les données originales.",
         "D": "Un nombre égal de composantes à celui des dimensions d'origine assure toujours une reconstruction parfaite."
       },
-      "correct_answer": "A",
-      "explanation": "Utiliser plus de composantes principales permet de maintenir davantage de l'information des données originales, ce qui impacte positivement la fidélité de la reconstruction. La réponse B est incorrecte car moins de composantes réduisent la variance totale capturée, ce qui peut introduire des erreurs dans les données reconstruites. La réponse C est clairement fausse, car le nombre de composantes est crucial pour la qualité de la reconstruction. La réponse D est incorrecte si les composantes supprimées étaient significatives en termes de variance capturée.",
+      "correct_answer": "C",
+      "explanation": "Utiliser plus de composantes principales permet de maintenir davantage de l'information des données originales, ce qui impacte positivement la fidélité de la reconstruction. La réponse B est incorrecte car moins de composantes réduisent la variance totale capturée, ce qui peut introduire des erreurs dans les données reconstruites. La réponse C est clairement fausse, car le nombre de composantes est crucial pour la qualité de la reconstruction. La réponse D est incorrecte si les composantes supprimées étaient significatives en termes de variance capturée. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le nombre de composantes principales n'influence pas la fidélité de la reconstruction.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "medium"
     },
     {
@@ -162,12 +162,12 @@
       "question": "Quel problème peut survenir si les données ne sont pas normalisées avant d'appliquer la PCA ?",
       "image_url": null,
       "choices": {
-        "A": "Les variables avec des échelles différentes peuvent dominer les premières composantes principales.",
+        "A": "Les vecteurs propres calculés sont ceux des dimensions d'origine.",
         "B": "La PCA n'est pas capable d'opérer du tout sans normalisation.",
         "C": "Les composantes principales deviennent dépendantes des vecots propres.",
-        "D": "Les vecteurs propres calculés sont ceux des dimensions d'origine."
+        "D": "Les variables avec des échelles différentes peuvent dominer les premières composantes principales."
       },
-      "correct_answer": "A",
+      "correct_answer": "D",
       "explanation": "Si les données ne sont pas normalisées, les variables avec des échelles plus grandes peuvent dominer les premières composantes principales, menant à des biais. La réponse B est incorrecte car la PCA peut toujours fonctionner sans normalisation mais elle peut ne pas être pertinente avec des données déséquilibrées. La réponse C ne se concentre pas sur une conséquence de l'absence de normalisation, mais sur un malentendu de dépendances mathématiques. La réponse D est incorrecte car elle confond les résultats de la PCA avec le fait que les vecteurs propres ne reflètent pas les dimensions d'origine.",
       "difficulty": "medium"
     },
@@ -182,7 +182,7 @@
         "D": "Elle génère de nouvelles données qui remplacent les anciennes pour lisser les valeurs."
       },
       "correct_answer": "A",
-      "explanation": "La PCA aide à la compression en priorisant les dimensions par variance, permettant de conserver les plus significatives pour réduire la dimensionnalité tout en limitant la perte d'information. La réponse B est erronée car elle va à l'encontre du principe de réduction de dimension. La réponse C est incorrecte, car PCA est une technique linéaire. La réponse D est incorrecte puisque PCA ne génère pas de nouvelles données mais transforme les existantes pour maximiser la structure.",
+      "explanation": "La PCA aide à la compression en priorisant les dimensions par variance, permettant de conserver les plus significatives pour réduire la dimensionnalité tout en limitant la perte d'information. La réponse B est erronée car elle va à l'encontre du principe de réduction de dimension. La réponse C est incorrecte, car PCA est une technique linéaire. La réponse D est incorrecte puisque PCA ne génère pas de nouvelles données mais transforme les existantes pour maximiser la structure. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elle augmente la taille des vecteurs pour mieux capturer l'information.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quel est un signe que trop de composantes ont été retirées lors d'une compression par PCA ?",
       "image_url": null,
       "choices": {
-        "A": "Une large perte de variance avec des reconstructions floues.",
-        "B": "Un gain facile en performances de classification.",
+        "A": "Un gain facile en performances de classification.",
+        "B": "Une large perte de variance avec des reconstructions floues.",
         "C": "Une meilleure corrélation entre les dimensions restantes.",
         "D": "Une capacité d'adaptation accrue pour des constructions ultérieures."
       },
-      "correct_answer": "A",
-      "explanation": "Trop de composantes retirées entraînent une perte substantielle de la variance, rendant les reconstructions floues et moins fidèles aux données originales. La réponse B est incorrecte, retirer trop de composantes dégrade généralement les performances. La réponse C est fausse puisque moins de dimensions signifie moins de redondance. La réponse D est inexacte car le retrait excessif rend les composantes inutiles pour des reconstructions futures fidèles.",
+      "correct_answer": "B",
+      "explanation": "Trop de composantes retirées entraînent une perte substantielle de la variance, rendant les reconstructions floues et moins fidèles aux données originales. La réponse B est incorrecte, retirer trop de composantes dégrade généralement les performances. La réponse C est fausse puisque moins de dimensions signifie moins de redondance. La réponse D est inexacte car le retrait excessif rend les composantes inutiles pour des reconstructions futures fidèles. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un gain facile en performances de classification.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une meilleure corrélation entre les dimensions restantes.) est plausible mais faux car",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quelle condition indique qu'une PCA est nécessaire avant de poursuivre avec d'autres analyses ?",
       "image_url": null,
       "choices": {
-        "A": "Quand il existe une haute corrélation entre les caractéristiques des données.",
+        "A": "Quand toutes les caractéristiques sont normalisées.",
         "B": "Quand les données sont déjà dans un espace de haute dimension.",
-        "C": "Quand toutes les caractéristiques sont normalisées.",
+        "C": "Quand il existe une haute corrélation entre les caractéristiques des données.",
         "D": "Quand les données sont déjà décorélées."
       },
-      "correct_answer": "A",
-      "explanation": "La PCA est particulièrement utile quand il y a une forte corrélation entre les caractéristiques, car elle peut réduire les redondances et consolider l'information. La réponse B est incorrecte par elle-même, une dimension élevée n'impose pas d'emblée l'usage de PCA. La réponse C est incorrecte car la normalisation seule ne justifie pas la PCA, bien qu'elle soit souvent pré-requise. La réponse D est fausse car si les données sont déjà décorélées, la PCA n'offre pas d'avantage significatif en termes de réduction de redondance.",
+      "correct_answer": "C",
+      "explanation": "La PCA est particulièrement utile quand il y a une forte corrélation entre les caractéristiques, car elle peut réduire les redondances et consolider l'information. La réponse B est incorrecte par elle-même, une dimension élevée n'impose pas d'emblée l'usage de PCA. La réponse C est incorrecte car la normalisation seule ne justifie pas la PCA, bien qu'elle soit souvent pré-requise. La réponse D est fausse car si les données sont déjà décorélées, la PCA n'offre pas d'avantage significatif en termes de réduction de redondance. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Quand toutes les caractéristiques sont normalisées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Quel aspect critique doit être considéré lors de l'interprétation des composantes principales ?",
       "image_url": null,
       "choices": {
-        "A": "Les composantes ne représentent pas toujours des caractéristiques interprétables concrètes.",
+        "A": "Les composantes principales sont invariantes face aux transformations non linéaires des données.",
         "B": "Les composantes ont généralement une signification spatiale linéaire.",
         "C": "Les composantes principales identifient souvent des clusters dans les données.",
-        "D": "Les composantes principales sont invariantes face aux transformations non linéaires des données."
+        "D": "Les composantes ne représentent pas toujours des caractéristiques interprétables concrètes."
       },
-      "correct_answer": "A",
-      "explanation": "Un aspect critique de l'interprétation des composantes principales est qu'elles ne représentent pas nécessairement des caractéristiques directement interprétables, car elles sont des combinaisons linéaires des variables originales. La réponse B est erronée car les composantes n'ont pas toujours une signification directe en termes spatiaux. La réponse C est incorrecte, bien que PCA puisse être utilisé pour la visualisation, il n'identifie pas activement les clusters. La réponse D est fausse, car PCA est sensible aux transformations non linéaires.",
+      "correct_answer": "D",
+      "explanation": "Un aspect critique de l'interprétation des composantes principales est qu'elles ne représentent pas nécessairement des caractéristiques directement interprétables, car elles sont des combinaisons linéaires des variables originales. La réponse B est erronée car les composantes n'ont pas toujours une signification directe en termes spatiaux. La réponse C est incorrecte, bien que PCA puisse être utilisé pour la visualisation, il n'identifie pas activement les clusters. La réponse D est fausse, car PCA est sensible aux transformations non linéaires. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les composantes principales sont invariantes face aux transformations non linéaires des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Elle minimise l'erreur quadratique des données projetées."
       },
       "correct_answer": "A",
-      "explanation": "La caractéristique principale d'une composante principale est qu'elle maximise la variance des données projetées. PCA est utilisé pour réduire la dimensionnalité tout en conservant autant que possible la variance des données. La réponse B est fausse car minimiser la distance entre les points est typique d'autres techniques comme le clustering. La réponse C est incorrecte car la PCA ne se préoccupe pas du nombre de points, mais de la variance. La réponse D est incorrecte car minimiser l'erreur quadratique est typique des modèles de régression, et non de PCA.",
+      "explanation": "La caractéristique principale d'une composante principale est qu'elle maximise la variance des données projetées. PCA est utilisé pour réduire la dimensionnalité tout en conservant autant que possible la variance des données. La réponse B est fausse car minimiser la distance entre les points est typique d'autres techniques comme le clustering. La réponse C est incorrecte car la PCA ne se préoccupe pas du nombre de points, mais de la variance. La réponse D est incorrecte car minimiser l'erreur quadratique est typique des modèles de régression, et non de PCA. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elle minimise la distance entre les points de données projetés.) est plausible mais faux car",
       "difficulty": "easy"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Dans le contexte de la PCA, que signifie 'decorrelation' des données ?",
       "image_url": null,
       "choices": {
-        "A": "Les composantes principales sont orthogonales entre elles.",
-        "B": "Les données initiales sont normalisées à une même échelle.",
+        "A": "Les données initiales sont normalisées à une même échelle.",
+        "B": "Les composantes principales sont orthogonales entre elles.",
         "C": "Les composantes principales sont dépendantes dans un espace orthogonal.",
         "D": "Les données sont centrées autour de zéro."
       },
-      "correct_answer": "A",
-      "explanation": "La décorrelation signifie que les composantes principales sont orthogonales entre elles, c'est-à-dire statistiquement indépendantes. Cela facilite l'interprétation et l'analyse des données en réduisant la redondance. La réponse B est incorrecte car elle concerne la normalisation, pas la décorrelation. La réponse C est fausse car les composantes doivent être indépendantes, donc non-dépendantes. La réponse D concerne la centration des données, qui est une étape préalable mais n'implique pas nécessairement la décorrelation.",
+      "correct_answer": "B",
+      "explanation": "La décorrelation signifie que les composantes principales sont orthogonales entre elles, c'est-à-dire statistiquement indépendantes. Cela facilite l'interprétation et l'analyse des données en réduisant la redondance. La réponse B est incorrecte car elle concerne la normalisation, pas la décorrelation. La réponse C est fausse car les composantes doivent être indépendantes, donc non-dépendantes. La réponse D concerne la centration des données, qui est une étape préalable mais n'implique pas nécessairement la décorrelation. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les données initiales sont normalisées à une même échelle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Les composantes principales sont dépendantes",
       "difficulty": "medium"
     }
   ]

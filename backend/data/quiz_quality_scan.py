@@ -1,5 +1,6 @@
 import json
 import re
+import argparse
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -23,7 +24,7 @@ def words_count(text: str) -> int:
     return len(re.findall(r"\b\w+\b", text or ""))
 
 
-def scan():
+def scan(max_a_ratio_global: float, max_a_ratio_module: float):
     files = sorted(ROOT.rglob("*.json"))
     if not files:
         raise SystemExit(f"No quiz json files found under {ROOT}")
@@ -46,6 +47,7 @@ def scan():
 
     top_option_prefixes = Counter()
     module_summary = []
+    module_answer_ratios = []
 
     for file_path in files:
         payload = json.loads(file_path.read_text(encoding="utf-8"))
@@ -111,6 +113,21 @@ def scan():
             }
         )
 
+        module_answers = Counter(q.get("correct_answer") for q in questions if q.get("correct_answer") in LETTERS)
+        module_total = max(len(questions), 1)
+        module_a_ratio = module_answers["A"] / module_total
+        module_answer_ratios.append(
+            {
+                "file": str(file_path),
+                "questions": len(questions),
+                "A": module_answers["A"],
+                "B": module_answers["B"],
+                "C": module_answers["C"],
+                "D": module_answers["D"],
+                "a_ratio": round(module_a_ratio, 4),
+            }
+        )
+
     dup_scope = []
     for (category, level, prompt), occurrences in prompts_by_scope.items():
         modules = {m for m, _, _ in occurrences}
@@ -167,6 +184,7 @@ def scan():
             "duplicatePromptsByCategory": dup_category[:20],
             "topOptionPrefixes": top_option_prefixes.most_common(25),
             "lowestStemDiversityModules": sorted(module_summary, key=lambda x: x["stem_diversity_ratio"])[:20],
+            "highestARatioModules": sorted(module_answer_ratios, key=lambda x: x["a_ratio"], reverse=True)[:20],
         },
     }
 
@@ -212,6 +230,29 @@ def scan():
         "correctAnswerDistribution": report["correctAnswerDistribution"],
     }, indent=2, ensure_ascii=False))
 
+    global_a_ratio = report["correctAnswerDistribution"]["A"]["ratio"]
+    module_a_violations = [m for m in module_answer_ratios if m["a_ratio"] > max_a_ratio_module]
+    if global_a_ratio > max_a_ratio_global or module_a_violations:
+        print(
+            json.dumps(
+                {
+                    "error": "A-bias threshold exceeded",
+                    "global_a_ratio": global_a_ratio,
+                    "max_a_ratio_global": max_a_ratio_global,
+                    "module_violations_count": len(module_a_violations),
+                    "max_a_ratio_module": max_a_ratio_module,
+                    "module_violations_sample": module_a_violations[:10],
+                },
+                indent=2,
+                ensure_ascii=False,
+            )
+        )
+        raise SystemExit(2)
+
 
 if __name__ == "__main__":
-    scan()
+    parser = argparse.ArgumentParser(description="ML360 quiz quality scan")
+    parser.add_argument("--max-a-ratio-global", type=float, default=0.35)
+    parser.add_argument("--max-a-ratio-module", type=float, default=0.5)
+    args = parser.parse_args()
+    scan(max_a_ratio_global=args.max_a_ratio_global, max_a_ratio_module=args.max_a_ratio_module)

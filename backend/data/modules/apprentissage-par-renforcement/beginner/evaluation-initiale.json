@@ -14,7 +14,7 @@
         "D": "Le pourcentage des actions optimales sur la totalité des actions possibles."
       },
       "correct_answer": "A",
-      "explanation": "Le score cumulé est la somme des récompenses reçues au fil du temps par un agent. B est incorrect car le maximum n'indique pas le total cumulé; C est incorrect car cela se réfère à une autre métrique; D est faux car cela concerne l'efficacité mais pas directement le score cumulé.",
+      "explanation": "Le score cumulé est la somme des récompenses reçues au fil du temps par un agent. B est incorrect car le maximum n'indique pas le total cumulé; C est incorrect car cela se réfère à une autre métrique; D est faux car cela concerne l'efficacité mais pas directement le score cumulé. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Le maximum des récompenses reçues pendant un épisode.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La moyenne des récompenses obtenues par un agent sur des épisodes multiples.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Quel est l'intérêt d'une random baseline en apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Établir un niveau de performance de référence pour évaluer l'agent.",
-        "B": "Optimiser le modèle pour maximiser les récompenses.",
+        "A": "Optimiser le modèle pour maximiser les récompenses.",
+        "B": "Établir un niveau de performance de référence pour évaluer l'agent.",
         "C": "Améliorer les performances de l'agent en augmentant l'exploration.",
         "D": "Éviter les biais dans les mesures de l'environnement."
       },
-      "correct_answer": "A",
-      "explanation": "La random baseline sert à mesurer la performance d'un agent par rapport à un comportement aléatoire. B et C sont liés à l'optimisation de l'apprentissage, pas à l'évaluation de base; D est incorrect car la random baseline n'affecte pas directement le biais de mesure.",
+      "correct_answer": "B",
+      "explanation": "La random baseline sert à mesurer la performance d'un agent par rapport à un comportement aléatoire. B et C sont liés à l'optimisation de l'apprentissage, pas à l'évaluation de base; D est incorrect car la random baseline n'affecte pas directement le biais de mesure. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Optimiser le modèle pour maximiser les récompenses.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Améliorer les performances de l'agent en augmentant l'exploration.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Éviter les biais dans les",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Pourquoi est-il important de considérer la stabilité de l'apprentissage en apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Cela assure que l'agent converge vers une politique stable et performante.",
+        "A": "Cela permet à l'agent d'apprendre plus rapidement.",
         "B": "Cela garantit que l'agent explore toutes les actions possibles.",
-        "C": "Cela permet à l'agent d'apprendre plus rapidement.",
+        "C": "Cela assure que l'agent converge vers une politique stable et performante.",
         "D": "Cela empêche l'agent de changer de politique en cours d'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "La stabilité de l'apprentissage se réfère à la convergence cohérente de l'agent vers une bonne politique. B est faux car explorer toutes les actions ne garantit pas la stabilité; C concerne la vitesse d'apprentissage, pas la stabilité; D est incorrect car un changement de politique peut être nécessaire pour converger de manière optimale.",
+      "correct_answer": "C",
+      "explanation": "La stabilité de l'apprentissage se réfère à la convergence cohérente de l'agent vers une bonne politique. B est faux car explorer toutes les actions ne garantit pas la stabilité; C concerne la vitesse d'apprentissage, pas la stabilité; D est incorrect car un changement de politique peut être nécessaire pour converger de manière optimale. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Cela permet à l'agent d'apprendre plus rapidement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Cela garantit que l'agent explore toutes les actions possibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quelle est une stratégie d'exploration en apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "ε-greedy, qui choisit aléatoirement ou le meilleur choix selon une probabilité.",
+        "A": "Greedy, qui choisit aléatoirement entre toutes les actions possibles.",
         "B": "Discount greedy, qui maximise uniquement les récompenses futures.",
         "C": "Softmax, qui choisit l'action avec une probabilité liée à sa valeur.",
-        "D": "Greedy, qui choisit aléatoirement entre toutes les actions possibles."
+        "D": "ε-greedy, qui choisit aléatoirement ou le meilleur choix selon une probabilité."
       },
-      "correct_answer": "A",
-      "explanation": "Le ε-greedy est une stratégie où l'agent choisit généralement la meilleure action connue mais explore aussi aléatoirement. Discount greedy n'existe pas comme stratégie standardisée; C est incorrect car le softmax n'est pas un choix direct mais basé sur une probabilité; D est faux car le greedy ne choisit pas aléatoirement.",
+      "correct_answer": "D",
+      "explanation": "Le ε-greedy est une stratégie où l'agent choisit généralement la meilleure action connue mais explore aussi aléatoirement. Discount greedy n'existe pas comme stratégie standardisée; C est incorrect car le softmax n'est pas un choix direct mais basé sur une probabilité; D est faux car le greedy ne choisit pas aléatoirement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Greedy, qui choisit aléatoirement entre toutes les actions possibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Discount greedy, qui maximise uniquement les récompenses futures.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Reward schedule"
       },
       "correct_answer": "A",
-      "explanation": "La random baseline est une référence pour comparer la performance contre un choix aléatoire. B est incorrect car optimal baseline supposerait en général la performance maximale; C est incorrect car l'exploration/exploitation trade-off concerne le processus d'apprentissage; D est incorrect car le reward schedule décrit comment les récompenses sont octroyées au fil du temps.",
+      "explanation": "La random baseline est une référence pour comparer la performance contre un choix aléatoire. B est incorrect car optimal baseline supposerait en général la performance maximale; C est incorrect car l'exploration/exploitation trade-off concerne le processus d'apprentissage; D est incorrect car le reward schedule décrit comment les récompenses sont octroyées au fil du temps. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Optimal baseline) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Exploration/exploitation trade-off) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Reward schedule) est plausible mais faux car",
       "difficulty": "easy"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Comment l'exploration excessive peut-elle affecter le processus d'apprentissage dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Elle peut ralentir la convergence vers une politique optimale.",
-        "B": "Elle garantit une exploration complète de l'environnement.",
+        "A": "Elle garantit une exploration complète de l'environnement.",
+        "B": "Elle peut ralentir la convergence vers une politique optimale.",
         "C": "Elle augmente les récompenses perçues par l'agent.",
         "D": "Elle diminue le besoin d'exploitation dans toutes les situations."
       },
-      "correct_answer": "A",
-      "explanation": "Une exploration excessive peut empêcher l'agent de se concentrer sur l'exploitation des actions déjà identifiées comme étant bonnes. B peut être vrai mais ne tient pas compte des coûts; C est faux car exploration n'implique pas nécessairement de meilleures récompenses; D est faux car l'exploitation est toujours nécessaire pour suivre les expériences antérieures.",
+      "correct_answer": "B",
+      "explanation": "Une exploration excessive peut empêcher l'agent de se concentrer sur l'exploitation des actions déjà identifiées comme étant bonnes. B peut être vrai mais ne tient pas compte des coûts; C est faux car exploration n'implique pas nécessairement de meilleures récompenses; D est faux car l'exploitation est toujours nécessaire pour suivre les expériences antérieures. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle garantit une exploration complète de l'environnement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle augmente les récompenses perçues par l'agent.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "easy"
     },
     {
@@ -92,13 +92,13 @@
       "question": "En apprentissage par renforcement, qu'est-ce qu'un agent entend par 'exploration'?",
       "image_url": null,
       "choices": {
-        "A": "Essayer de nouvelles actions sans garantir un résultat optimal.",
+        "A": "Mettre en place un réseau de neurones plus profond.",
         "B": "Modifier son objectif d'entraînement pour de meilleurs résultats.",
-        "C": "Mettre en place un réseau de neurones plus profond.",
+        "C": "Essayer de nouvelles actions sans garantir un résultat optimal.",
         "D": "Valoriser uniquement les récompenses futures maximisées."
       },
-      "correct_answer": "A",
-      "explanation": "L'exploration implique de tester divers choix, même ceux qui n'ont pas prouvé leur efficacité, pour découvrir de possibles meilleures solutions. B est incorrect car cela implique un changement d'objectif plutôt que d'actions; C est faux car cela concerne l'architecture du modèle; D est faux car c'est plutôt lié à l'exploitation.",
+      "correct_answer": "C",
+      "explanation": "L'exploration implique de tester divers choix, même ceux qui n'ont pas prouvé leur efficacité, pour découvrir de possibles meilleures solutions. B est incorrect car cela implique un changement d'objectif plutôt que d'actions; C est faux car cela concerne l'architecture du modèle; D est faux car c'est plutôt lié à l'exploitation. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Mettre en place un réseau de neurones plus profond.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Modifier son objectif d'entraînement pour de meilleurs résultats.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "easy"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quel est l'effet d'utiliser une politique purement 'greedy' dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Accélérer l'apprentissage initial mais risquer la stagnation en local.",
+        "A": "Réduire la variance des récompenses par prise de décisions conservatrices.",
         "B": "Assurer que toutes les actions sont testées de manière uniforme.",
         "C": "Garantir l'apprentissage optimal en toutes circonstances.",
-        "D": "Réduire la variance des récompenses par prise de décisions conservatrices."
+        "D": "Accélérer l'apprentissage initial mais risquer la stagnation en local."
       },
-      "correct_answer": "A",
-      "explanation": "Une politique 'greedy' choisit toujours les actions avec la meilleure valeur connue actuellement, ce qui peut mener à une stagnation dans des optima locaux. B est incorrect car cela n'élargit pas le spectre des actions testées; C est incorrect car cela omet le besoin d'exploration pour contourner les optima locaux; D est faux car une stratégie 'greedy' peut en fait conduire à une variance élevée due aux changements locaux.",
+      "correct_answer": "D",
+      "explanation": "Une politique 'greedy' choisit toujours les actions avec la meilleure valeur connue actuellement, ce qui peut mener à une stagnation dans des optima locaux. B est incorrect car cela n'élargit pas le spectre des actions testées; C est incorrect car cela omet le besoin d'exploration pour contourner les optima locaux; D est faux car une stratégie 'greedy' peut en fait conduire à une variance élevée due aux changements locaux. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire la variance des récompenses par prise de décisions conservatrices.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Assurer que toutes les actions",
       "difficulty": "easy"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Minimiser les erreurs de l'agent en continu tout en ignorant l'exploration."
       },
       "correct_answer": "A",
-      "explanation": "Le problème exploration/exploitation consiste à choisir entre essayer de nouvelles actions pour découvrir leur valeur (exploration) ou sélectionner les meilleures actions connues pour maximiser les récompenses (exploitation). B mentionne une fonction mais pas un conflit d'approche; C et D sont incorrects car ils n'abordent pas la dualité d'objectifs entre l'exploration et l'exploitation.",
+      "explanation": "Le problème exploration/exploitation consiste à choisir entre essayer de nouvelles actions pour découvrir leur valeur (exploration) ou sélectionner les meilleures actions connues pour maximiser les récompenses (exploitation). B mentionne une fonction mais pas un conflit d'approche; C et D sont incorrects car ils n'abordent pas la dualité d'objectifs entre l'exploration et l'exploitation. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Déterminer les récompenses futures maximales d'un agent.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Augmenter continuellement les performances de l'agent de manière linéaire.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "easy"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quel est l'avantage de l'approche softmax par rapport à une stratégie ε-greedy pour l'exploration?",
       "image_url": null,
       "choices": {
-        "A": "Elle ajuste la probabilité de choisir des actions en fonction de l'estimation actuelle de leur qualité.",
-        "B": "Elle choisit toujours la meilleure action estimée.",
+        "A": "Elle choisit toujours la meilleure action estimée.",
+        "B": "Elle ajuste la probabilité de choisir des actions en fonction de l'estimation actuelle de leur qualité.",
         "C": "Elle réduit la possibilité d'explorer de nouvelles actions.",
         "D": "Elle assure que toutes les actions sont choisies de manière égale."
       },
-      "correct_answer": "A",
-      "explanation": "Softmax utilise une distribution de probabilités basée sur les valeurs de Q pour choisir les actions, permettant un équilibre plus nuancé entre exploration et exploitation. B est incorrect car cela décrit un comportement greedy; C est incorrect car softmax encourage toujours une exploration en fonction des probabilités; D est faux car les probabilités ne sont pas nécessairement égales.",
+      "correct_answer": "B",
+      "explanation": "Softmax utilise une distribution de probabilités basée sur les valeurs de Q pour choisir les actions, permettant un équilibre plus nuancé entre exploration et exploitation. B est incorrect car cela décrit un comportement greedy; C est incorrect car softmax encourage toujours une exploration en fonction des probabilités; D est faux car les probabilités ne sont pas nécessairement égales. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle choisit toujours la meilleure action estimée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle réduit la possibilité d'explorer de nouvelles actions.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Comment un agent en apprentissage par renforcement peut-il améliorer la stabilité de son apprentissage?",
       "image_url": null,
       "choices": {
-        "A": "En ajustant dynamiquement le taux d'exploration au fil du temps.",
+        "A": "En réduisant le nombre d'actions possibles dans l'environnement.",
         "B": "En augmentant la fréquence des actions aléatoires choisies.",
-        "C": "En réduisant le nombre d'actions possibles dans l'environnement.",
+        "C": "En ajustant dynamiquement le taux d'exploration au fil du temps.",
         "D": "En ignorant les récompenses négatives pour éviter les biais."
       },
-      "correct_answer": "A",
-      "explanation": "Ajuster dynamiquement le taux d'exploration permet à l'agent de réduire le niveau d'exploration à mesure qu'il devient plus confiant dans ses actions, ce qui est crucial pour la stabilité. B peut perturber la convergence; C limiterait l'apprentissage au lieu de le stabiliser; D serait trompeur car les récompenses négatives peuvent indiquer des erreurs à corriger.",
+      "correct_answer": "C",
+      "explanation": "Ajuster dynamiquement le taux d'exploration permet à l'agent de réduire le niveau d'exploration à mesure qu'il devient plus confiant dans ses actions, ce qui est crucial pour la stabilité. B peut perturber la convergence; C limiterait l'apprentissage au lieu de le stabiliser; D serait trompeur car les récompenses négatives peuvent indiquer des erreurs à corriger. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En réduisant le nombre d'actions possibles dans l'environnement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En augmentant la fréquence des actions aléatoires choisies.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Dans l'apprentissage par renforcement, pourquoi une politique trop exploratrice peut-elle être préjudiciable à long terme?",
       "image_url": null,
       "choices": {
-        "A": "Elle peut empêcher l'agent de se concentrer sur les actions rentables.",
+        "A": "Elle limite l'agent à un sous-ensemble restreint d'actions.",
         "B": "Elle garantit qu'aucune action n'est jamais exploitée.",
         "C": "Elle empêche l'agent d'apprendre de nouvelles actions.",
-        "D": "Elle limite l'agent à un sous-ensemble restreint d'actions."
+        "D": "Elle peut empêcher l'agent de se concentrer sur les actions rentables."
       },
-      "correct_answer": "A",
-      "explanation": "Une politique trop exploratrice peut détourner l'attention des actions identifiées comme rentables, ce qui peut empêcher la maximisation des récompenses. B et C sont incorrects car exploration implique qu'aucune action ne soit exclue; D est incorrect car l'exploration ne restreint pas en soi le nombre d'actions explorables.",
+      "correct_answer": "D",
+      "explanation": "Une politique trop exploratrice peut détourner l'attention des actions identifiées comme rentables, ce qui peut empêcher la maximisation des récompenses. B et C sont incorrects car exploration implique qu'aucune action ne soit exclue; D est incorrect car l'exploration ne restreint pas en soi le nombre d'actions explorables. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle limite l'agent à un sous-ensemble restreint d'actions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle garantit qu'aucune action n'est jamais exploitée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle empêche",
       "difficulty": "medium"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Pour empêcher que l'agent n'acquière jamais de politique solution."
       },
       "correct_answer": "A",
-      "explanation": "Un mécanisme de décroissance aide à réduire progressivement l'exploration à mesure que l'agent trouve une politique de plus en plus stable. B et C sont incorrects car ne reconnaissent pas la nécessité de stabilisation et d'exploitation accrue au fil du temps; D est incorrect car la décroissance aide précisément à atteindre une politique solution.",
+      "explanation": "Un mécanisme de décroissance aide à réduire progressivement l'exploration à mesure que l'agent trouve une politique de plus en plus stable. B et C sont incorrects car ne reconnaissent pas la nécessité de stabilisation et d'exploitation accrue au fil du temps; D est incorrect car la décroissance aide précisément à atteindre une politique solution. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Pour continuer à explorer l'environnement avec intensité maximale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour élargir progressivement la variété des états explorés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "medium"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quel est le rôle du paramètre 'gamma' dans le calcul des récompenses futures en apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Il détermine l'importance des récompenses futures par rapport aux immédiates.",
-        "B": "Il fixe le niveau de bruit dans l'exploration des actions.",
+        "A": "Il fixe le niveau de bruit dans l'exploration des actions.",
+        "B": "Il détermine l'importance des récompenses futures par rapport aux immédiates.",
         "C": "Il garantit que l'agent explore toutes les actions possibles.",
         "D": "Il ajuste la fréquence à laquelle les actions aléatoires sont choisies."
       },
-      "correct_answer": "A",
-      "explanation": "Le paramètre gamma (γ) mesure l'impact des récompenses futures, influençant l'étendue sur laquelle les récompenses futures sont prises en compte. B et D se réfèrent à des concepts d'ajustement qui ne sont pas liés à gamma; C est incorrect car gamma n'affecte pas directement l'exploration des actions.",
+      "correct_answer": "B",
+      "explanation": "Le paramètre gamma (γ) mesure l'impact des récompenses futures, influençant l'étendue sur laquelle les récompenses futures sont prises en compte. B et D se réfèrent à des concepts d'ajustement qui ne sont pas liés à gamma; C est incorrect car gamma n'affecte pas directement l'exploration des actions. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il fixe le niveau de bruit dans l'exploration des actions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il garantit que l'agent explore toutes les actions possibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Dans le contexte de l'apprentissage par renforcement, que désigne le 'score cumulé' ?",
       "image_url": null,
       "choices": {
-        "A": "La somme totale des récompenses reçues par l'agent au cours d'un épisode.",
+        "A": "La différence entre la récompense la plus élevée et la plus basse qu'un agent peut recevoir.",
         "B": "Le nombre moyen d'actions réussies par l'agent au cours d'un épisode.",
-        "C": "La différence entre la récompense la plus élevée et la plus basse qu'un agent peut recevoir.",
+        "C": "La somme totale des récompenses reçues par l'agent au cours d'un épisode.",
         "D": "Le taux auquel l'agent explore par rapport à l'exploitation de l'environnement."
       },
-      "correct_answer": "A",
-      "explanation": "Le 'score cumulé' est la somme totale des récompenses qu'un agent accumule au cours d'un épisode ou d'une série d'épisodes. Cette mesure permet d'évaluer la performance globale de l'agent. La réponse B est incorrecte car elle se réfère à une moyenne sur les actions plutôt qu'à une somme de récompenses. La réponse C est fausse car elle concerne les récompenses maximales et minimales, pas leur somme totale. La réponse D est incorrecte, car elle décrit le ratio exploration-exploitation, non lié directement au score cumulé.",
+      "correct_answer": "C",
+      "explanation": "Le 'score cumulé' est la somme totale des récompenses qu'un agent accumule au cours d'un épisode ou d'une série d'épisodes. Cette mesure permet d'évaluer la performance globale de l'agent. La réponse B est incorrecte car elle se réfère à une moyenne sur les actions plutôt qu'à une somme de récompenses. La réponse C est fausse car elle concerne les récompenses maximales et minimales, pas leur somme totale. La réponse D est incorrecte, car elle décrit le ratio exploration-exploitation, non lié directement au score cumulé. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La différence entre la récompense la plus élevée et la plus basse qu'un agent peut recevoir.) est plausible mais faux",
       "difficulty": "easy"
     }
   ]

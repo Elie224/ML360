@@ -14,7 +14,7 @@
         "D": "V(s) = max[V(s') + Q(s,a)]"
       },
       "correct_answer": "A",
-      "explanation": "L'équation de Bellman pour une valeur d'état (V) s'exprime par : V(s) = max_a [R(s,a) + γ Σ P(s'|s,a)V(s')]. B et D ne définissent pas le concept de combinaison des récompenses et probabilités de transition. C omet l'aspect de maximisation et la somme sur les probabilités d'état suivant.",
+      "explanation": "L'équation de Bellman pour une valeur d'état (V) s'exprime par : V(s) = max_a [R(s,a) + γ Σ P(s'|s,a)V(s')]. B et D ne définissent pas le concept de combinaison des récompenses et probabilités de transition. C omet l'aspect de maximisation et la somme sur les probabilités d'état suivant. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (V(s) = Σ P(s'|s,a)Q(s,a)) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (V(s) = R(s) + γ V(s')) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (V(s) = max[V(s') + Q(s,a)]) est",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "En quoi consiste le bootstrapping dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Mettre à jour l'estimation actuelle en utilisant les estimations futures comme partie de la mise à jour",
-        "B": "Utiliser les expériences passées pour prédire la récompense immédiate exacte",
+        "A": "Utiliser les expériences passées pour prédire la récompense immédiate exacte",
+        "B": "Mettre à jour l'estimation actuelle en utilisant les estimations futures comme partie de la mise à jour",
         "C": "Mettre à jour uniquement après recevoir la récompense finale à la fin de l'épisode",
         "D": "Utiliser une approche par recherche totale d'espace de politique"
       },
-      "correct_answer": "A",
-      "explanation": "Le bootstrapping utilise les estimations futures pour améliorer celles présentes. B est incorrect car ce n'est pas axé uniquement sur la récompense immédiate. C décrit l'apprentissage Monte Carlo, et D n'est pas lié au concept de bootstrapping.",
+      "correct_answer": "B",
+      "explanation": "Le bootstrapping utilise les estimations futures pour améliorer celles présentes. B est incorrect car ce n'est pas axé uniquement sur la récompense immédiate. C décrit l'apprentissage Monte Carlo, et D n'est pas lié au concept de bootstrapping. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Utiliser les expériences passées pour prédire la récompense immédiate exacte) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Mettre à jour uniquement après recevoir la récompense finale à la fin de l'épisode) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Utiliser une approche",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quelle est la différence principale entre le policy iteration et le value iteration dans le calcul des mises à jour?",
       "image_url": null,
       "choices": {
-        "A": "Le policy iteration décompose les étapes de calcul de valeurs et de politique, tandis que le value iteration les combine",
+        "A": "Le policy iteration considère uniquement la récompense immédiate, alors que le value iteration n'utilise pas la récompense",
         "B": "Le value iteration utilise l'exploration, tandis que le policy iteration utilise l'exploitation",
-        "C": "Le policy iteration considère uniquement la récompense immédiate, alors que le value iteration n'utilise pas la récompense",
+        "C": "Le policy iteration décompose les étapes de calcul de valeurs et de politique, tandis que le value iteration les combine",
         "D": "Le value iteration est une méthode non déterministe, le policy iteration est déterministe"
       },
-      "correct_answer": "A",
-      "explanation": "Le policy iteration procède en deux phases distinctes: un calcul de valeur (value evaluation) et une amélioration de politique. Le value iteration réalise simultanément l'amélioration de la politique au cours de la mise à jour de valeur. B et D confondent exploration/exploitation et déterminisme. C déforme le rôle des récompenses.",
+      "correct_answer": "C",
+      "explanation": "Le policy iteration procède en deux phases distinctes: un calcul de valeur (value evaluation) et une amélioration de politique. Le value iteration réalise simultanément l'amélioration de la politique au cours de la mise à jour de valeur. B et D confondent exploration/exploitation et déterminisme. C déforme le rôle des récompenses. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le policy iteration considère uniquement la récompense immédiate, alors que le value iteration n'utilise pas la récompense) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le value iteration utilise l'exploration, tandis que le policy iteration utilise l'exploitation) est plausible mais faux car",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quelle méthode utilise une estimation ponctuelle et une mise à jour directe de l'estimation de l'état-action?",
       "image_url": null,
       "choices": {
-        "A": "Q-learning",
+        "A": "A3C",
         "B": "Monte Carlo Control",
         "C": "SARSA",
-        "D": "A3C"
+        "D": "Q-learning"
       },
-      "correct_answer": "A",
-      "explanation": "Le Q-learning met à jour directement les valeurs Q par une estimation ponctuelle des récompenses futures. C est une mise à jour basée sur un état-action séquentiel en ligne. B attend la fin de l'épisode pour ajuster. D est un modèle asynchrone d'apprentissage par renforcement.",
+      "correct_answer": "D",
+      "explanation": "Le Q-learning met à jour directement les valeurs Q par une estimation ponctuelle des récompenses futures. C est une mise à jour basée sur un état-action séquentiel en ligne. B attend la fin de l'épisode pour ajuster. D est un modèle asynchrone d'apprentissage par renforcement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (A3C) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Monte Carlo Control) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (SARSA) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Elle assure que seules les récompenses immédiates sont évaluées"
       },
       "correct_answer": "A",
-      "explanation": "L'erreur TD permet de mettre à jour les estimations de valeurs à mesure que les retours (feedback) sont reçus en continu. B est faux car la rétroaction n'est pas immédiate pour toutes les prévisions. C est incorrect, car elle inclut bien les récompenses différées avec γ, et D ignore la notion de récompenses futures.",
+      "explanation": "L'erreur TD permet de mettre à jour les estimations de valeurs à mesure que les retours (feedback) sont reçus en continu. B est faux car la rétroaction n'est pas immédiate pour toutes les prévisions. C est incorrect, car elle inclut bien les récompenses différées avec γ, et D ignore la notion de récompenses futures. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elle corrige toutes les prévisions de politique dès le départ) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle élimine le besoin d'une fonction de récompense différée) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quel est l'objectif de la mise à jour de cible (target update) dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Stabiliser l'apprentissage en séparant les valeurs cibles des valeurs prédictives",
-        "B": "Améliorer l'exploration en augmentant les échecs initiaux",
+        "A": "Améliorer l'exploration en augmentant les échecs initiaux",
+        "B": "Stabiliser l'apprentissage en séparant les valeurs cibles des valeurs prédictives",
         "C": "Rendre l'algorithme plus complexe pour des calculs plus précis",
         "D": "Affiner la politique jusqu'à ce qu'elle converge immédiatement"
       },
-      "correct_answer": "A",
-      "explanation": "Les target updates stabilisent l'apprentissage en utilisant des valeurs séparées pour guider les estimations futures. B et D ne concernent pas la stabilité de la convergence. C n'améliore pas directement la précision des calculs, mais peut compliquer le modèle.",
+      "correct_answer": "B",
+      "explanation": "Les target updates stabilisent l'apprentissage en utilisant des valeurs séparées pour guider les estimations futures. B et D ne concernent pas la stabilité de la convergence. C n'améliore pas directement la précision des calculs, mais peut compliquer le modèle. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Améliorer l'exploration en augmentant les échecs initiaux) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Rendre l'algorithme plus complexe pour des calculs plus précis) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Affiner la politique jusqu'à ce qu'elle converge immédiatement) est",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Dans une mise à jour par différence temporelle (TD), quelle formule représente correctement l'erreur à utiliser?",
       "image_url": null,
       "choices": {
-        "A": "TD_error = R + γ V(s') - V(s)",
+        "A": "TD_error = V(s') - [R + γ V(s)]",
         "B": "TD_error = R - [γ Σ P(s'|s,a)V(s')]",
-        "C": "TD_error = V(s') - [R + γ V(s)]",
+        "C": "TD_error = R + γ V(s') - V(s)",
         "D": "TD_error = γ [V(s) - V(s')] + R"
       },
-      "correct_answer": "A",
-      "explanation": "L'erreur TD est la différence entre la récompense obtenue plus la valeur estimée de l'état suivant et la valeur de l'état actuel. B isole la récompense, C inverse la logique de transition, et D mixe incorrectement les termes.",
+      "correct_answer": "C",
+      "explanation": "L'erreur TD est la différence entre la récompense obtenue plus la valeur estimée de l'état suivant et la valeur de l'état actuel. B isole la récompense, C inverse la logique de transition, et D mixe incorrectement les termes. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (TD_error = V(s') - [R + γ V(s)]) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (TD_error = R - [γ Σ P(s'|s,a)V(s')]) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (TD_error = γ [V(s) - V(s')] + R) est plausible mais",
       "difficulty": "medium"
     },
     {
@@ -107,12 +107,12 @@
       "image_url": null,
       "choices": {
         "A": "Utiliser des mises à jour après chaque acte, pas seulement à la fin d'une séquence complète",
-        "B": "Effectuer des évaluations à la fin de chaque épisode complet",
+        "B": "Ignorer les états finaux lors de l'estimation des valeurs",
         "C": "Se concentrer exclusivement sur les récompenses immédiates pour réduire la variance",
-        "D": "Ignorer les états finaux lors de l'estimation des valeurs"
+        "D": "Effectuer des évaluations à la fin de chaque épisode complet"
       },
-      "correct_answer": "B",
-      "explanation": "L'approche Monte Carlo fait des mises à jour de valeurs une fois les épisodes entièrement terminés, ce qui aide à moyenner les résultats et à réduire la variance. A représenterait un TD ou SARSA. C n'intègre pas l'ensemble des récompenses. D supprime des informations cruciales.",
+      "correct_answer": "D",
+      "explanation": "L'approche Monte Carlo fait des mises à jour de valeurs une fois les épisodes entièrement terminés, ce qui aide à moyenner les résultats et à réduire la variance. A représenterait un TD ou SARSA. C n'intègre pas l'ensemble des récompenses. D supprime des informations cruciales. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Utiliser des mises à jour après chaque acte, pas seulement à la fin d'une séquence complète) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Ignorer les états finaux lors de l'estimation des valeurs) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "medium"
     },
     {
@@ -120,13 +120,13 @@
       "question": "Comment la propagation de l'estimation des récompenses futures diffère-t-elle entre SARSA et Q-learning?",
       "image_url": null,
       "choices": {
-        "A": "SARSA utilise une transition basique de politique, tandis que Q-learning optimise une politique arbitraire",
+        "A": "SARSA utilise la prochain action réelle pour la mise à jour, Q-learning suppose l'action future optimale",
         "B": "Q-learning intègre directement la politique future, tandis que SARSA évalue les récompenses passées",
-        "C": "SARSA utilise la prochain action réelle pour la mise à jour, Q-learning suppose l'action future optimale",
+        "C": "SARSA utilise une transition basique de politique, tandis que Q-learning optimise une politique arbitraire",
         "D": "Les deux méthodes n'ont aucune différence en termes d'évaluation de politique"
       },
-      "correct_answer": "C",
-      "explanation": "SARSA met à jour les valeurs en utilisant l'action réellement exécutée, ce qui dépend du policy actuel, tandis que Q-learning met à jour en considérant l'action optimale suivante indépendamment de la politique courante. A et D sont erronés concepts de politique. B mélange les temporalités des récompenses.",
+      "correct_answer": "A",
+      "explanation": "SARSA met à jour les valeurs en utilisant l'action réellement exécutée, ce qui dépend du policy actuel, tandis que Q-learning met à jour en considérant l'action optimale suivante indépendamment de la politique courante. A et D sont erronés concepts de politique. B mélange les temporalités des récompenses. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Q-learning intègre directement la politique future, tandis que SARSA évalue les récompenses passées) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (SARSA utilise une transition basique de politique, tandis que Q-learning optimise une politique arbitraire) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "medium"
     },
     {
@@ -140,7 +140,7 @@
         "D": "Elles nécessitent des épisodes plus courts permettant plus de flexibilité"
       },
       "correct_answer": "B",
-      "explanation": "Les méthodes TD bénéficient d'un apprentissage en ligne avec des mises à jour fréquentes lorsque de nouvelles données sont disponibles. A est incorrect sur la gestion des récompenses futures. C est faux car les biais de séquence ne sont pas explicitement réduits. D entraîne une méprise sur le fonctionnement épisodique.",
+      "explanation": "Les méthodes TD bénéficient d'un apprentissage en ligne avec des mises à jour fréquentes lorsque de nouvelles données sont disponibles. A est incorrect sur la gestion des récompenses futures. C est faux car les biais de séquence ne sont pas explicitement réduits. D entraîne une méprise sur le fonctionnement épisodique. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elles nécessitent moins de ressources en calcul car aucune récompense future n'est considérée) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elles évitent le biais de subséquence en ignorant certains états initiaux) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "hard"
     },
     {
@@ -154,7 +154,7 @@
         "D": "La convergence n'est jamais véritablement atteinte dans aucune des méthodes"
       },
       "correct_answer": "C",
-      "explanation": "Q-learning est indépendant de la politique de comportement, rendant la convergence plus souple dans certains cas, contrairement à SARSA qui est on-policy. A et B généralisent des comportements erronés. D est incorrect car la convergence est l'objectif mais dépend des paramètres et contextes.",
+      "explanation": "Q-learning est indépendant de la politique de comportement, rendant la convergence plus souple dans certains cas, contrairement à SARSA qui est on-policy. A et B généralisent des comportements erronés. D est incorrect car la convergence est l'objectif mais dépend des paramètres et contextes. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Q-learning converge toujours plus rapidement que SARSA dans des environnements stochastiques) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (SARSA converge plus rapidement dans des environnements complexes en raison de sa dépendance à la politique comportementale) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Pourquoi l'algorithme double Q-learning est-il une extension importante du Q-learning de base?",
       "image_url": null,
       "choices": {
-        "A": "Il réduit le surajustement par l'utilisation de deux réseaux pour décorréler les mises à jour",
+        "A": "Il remplace entièrement la fonction gamma par des poids variables",
         "B": "Il accélère l'apprentissage grâce à une politique du Fed-exploratoire",
         "C": "Il permet une politique directement dérivée des valeurs d'actions associées",
-        "D": "Il remplace entièrement la fonction gamma par des poids variables"
+        "D": "Il réduit le surajustement par l'utilisation de deux réseaux pour décorréler les mises à jour"
       },
-      "correct_answer": "A",
-      "explanation": "Double Q-learning adresse le problème de surévaluation en utilisant deux ensembles indépendants de mises à jour Q-values pour réduire la corrélation des biais d'estimation. B et C décrivent des fonctionnalités non présentées dans Q-learning. D change incorrectement le rôle de γ.",
+      "correct_answer": "D",
+      "explanation": "Double Q-learning adresse le problème de surévaluation en utilisant deux ensembles indépendants de mises à jour Q-values pour réduire la corrélation des biais d'estimation. B et C décrivent des fonctionnalités non présentées dans Q-learning. D change incorrectement le rôle de γ. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il remplace entièrement la fonction gamma par des poids variables) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il accélère l'apprentissage grâce à une politique du Fed-exploratoire) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il permet une politique",
       "difficulty": "hard"
     },
     {
@@ -176,13 +176,13 @@
       "question": "Quelle est la conséquence possible de ne pas correctement régler le paramètre gamma dans une méthode TD?",
       "image_url": null,
       "choices": {
-        "A": "Une valeur gamma élevée pourrait conduire à ignorer les récompenses à long terme",
+        "A": "Un mauvais gamma peut provoquer une convergence plus lente ou même une non-convergence",
         "B": "Un gamma faible pourrait n'inclure que des récompenses futures lointaines",
-        "C": "Un mauvais gamma peut provoquer une convergence plus lente ou même une non-convergence",
+        "C": "Une valeur gamma élevée pourrait conduire à ignorer les récompenses à long terme",
         "D": "Cela empêche l'utilisation de l'algorithme de Bellman directement"
       },
-      "correct_answer": "C",
-      "explanation": "Un gamma inadéquat peut perturber l'équilibre entre l'impact des récompenses immédiates et futures, ralentissant ou stoppant la convergence. A inverserait l'effet escompté de gamma. B illustre mal son utilisation. D compromet mal la fonction de γ dans l'équation de Bellman.",
+      "correct_answer": "A",
+      "explanation": "Un gamma inadéquat peut perturber l'équilibre entre l'impact des récompenses immédiates et futures, ralentissant ou stoppant la convergence. A inverserait l'effet escompté de gamma. B illustre mal son utilisation. D compromet mal la fonction de γ dans l'équation de Bellman. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Un gamma faible pourrait n'inclure que des récompenses futures lointaines) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une valeur gamma élevée pourrait conduire à ignorer les récompenses à long terme) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Cela",
       "difficulty": "hard"
     },
     {
@@ -196,7 +196,7 @@
         "D": "Actualiser la fonction de valeur directement sans transition implicite"
       },
       "correct_answer": "B",
-      "explanation": "Dans Actor-Critic, l'Actor ajuste la politique basée sur l'évaluation critique des performances, en optimisant les actions prises. A désigne la tâche principale du Critic. C pourrait décrire une politique de Q-learning plutôt. D est une fausse compréhension des rôles conjunctionnels.",
+      "explanation": "Dans Actor-Critic, l'Actor ajuste la politique basée sur l'évaluation critique des performances, en optimisant les actions prises. A désigne la tâche principale du Critic. C pourrait décrire une politique de Q-learning plutôt. D est une fausse compréhension des rôles conjunctionnels. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Évaluer la différence de valeur prévue entre les états) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Décider des actions spécifiques en se basant sur la valeur des états) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Actualiser la fonction",
       "difficulty": "hard"
     },
     {
@@ -210,7 +210,7 @@
         "D": "Il optimise uniquement pour les contextes en ligne avec la récompense maximale prévisible"
       },
       "correct_answer": "C",
-      "explanation": "L'épsilon-greedy favorise généralement l'action ayant la meilleure espérance, tout en choisissant aléatoirement d'explorer avec une petite probabilité (épsilon). A ne permet pas de variation aléatoire. B confond les variables aléatoires et structure de probabilité. D faussement fixe un cadre optimal.",
+      "explanation": "L'épsilon-greedy favorise généralement l'action ayant la meilleure espérance, tout en choisissant aléatoirement d'explorer avec une petite probabilité (épsilon). A ne permet pas de variation aléatoire. B confond les variables aléatoires et structure de probabilité. D faussement fixe un cadre optimal. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il exploite toujours la meilleure action perçue à partir Q-values exclusifs) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il explore aléatoirement toutes les actions possibles avec un bêta déterminé) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il optimise",
       "difficulty": "hard"
     }
   ]

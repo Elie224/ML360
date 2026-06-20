@@ -14,7 +14,7 @@
         "D": "Il présente une variation élevée dans les prédictions pour des données similaires."
       },
       "correct_answer": "A",
-      "explanation": "Un biais élevé signifie que le modèle fait des hypothèses simplificatrices fortes sur les données, conduisant à une sous-adaptation. B, C et D décrivent des caractéristiques plus associées à une variance élevée.",
+      "explanation": "Un biais élevé signifie que le modèle fait des hypothèses simplificatrices fortes sur les données, conduisant à une sous-adaptation. B, C et D décrivent des caractéristiques plus associées à une variance élevée. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il s'adapte parfaitement aux données d'entraînement, capturant les moindres variations.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il a une forte sensibilité aux fluctuations des données d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il présente une variation élevée dans les prédictions pour des données similaires.)",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Comment diagnostique-t-on généralement une variance élevée dans un modèle?",
       "image_url": null,
       "choices": {
-        "A": "L'erreur sur le jeu d'entraînement est beaucoup plus faible que sur le jeu de test.",
-        "B": "L'erreur sur le jeu d'entraînement est légèrement plus élevée que sur le jeu de test.",
+        "A": "L'erreur sur le jeu d'entraînement est légèrement plus élevée que sur le jeu de test.",
+        "B": "L'erreur sur le jeu d'entraînement est beaucoup plus faible que sur le jeu de test.",
         "C": "L'erreur sur le jeu d'entraînement et le jeu de test est similaire.",
         "D": "L'erreur sur le jeu de test est nulle."
       },
-      "correct_answer": "A",
-      "explanation": "Une variance élevée se manifeste par des performances beaucoup meilleures sur le jeu d'entraînement par rapport au jeu de test. B et C sont souvent le signe d'un modèle équilibré, et D n'est pratiquement impossible sans biais.",
+      "correct_answer": "B",
+      "explanation": "Une variance élevée se manifeste par des performances beaucoup meilleures sur le jeu d'entraînement par rapport au jeu de test. B et C sont souvent le signe d'un modèle équilibré, et D n'est pratiquement impossible sans biais. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'erreur sur le jeu d'entraînement est légèrement plus élevée que sur le jeu de test.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'erreur sur le jeu d'entraînement et le jeu de test est similaire.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quelle implication a une variance élevée sur les performances préditives d'un modèle?",
       "image_url": null,
       "choices": {
-        "A": "Fluctuations importantes des prédictions selon le jeu de test utilisé.",
+        "A": "Stabilité des prédictions sur différents jeux de test.",
         "B": "Prédictions constamment sous-évaluées par rapport à la moyenne.",
-        "C": "Stabilité des prédictions sur différents jeux de test.",
+        "C": "Fluctuations importantes des prédictions selon le jeu de test utilisé.",
         "D": "Amélioration des performances lorsqu'on augmente la taille des données d'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "Une variance élevée signifie que le modèle est instable vis-à-vis des variations des données d'entraînement, causant de grandes fluctuations dans les prédictions. B n'est pas typiquement associé à la variance, et C et D ne sont pas des symptômes de variance élevée.",
+      "correct_answer": "C",
+      "explanation": "Une variance élevée signifie que le modèle est instable vis-à-vis des variations des données d'entraînement, causant de grandes fluctuations dans les prédictions. B n'est pas typiquement associé à la variance, et C et D ne sont pas des symptômes de variance élevée. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Stabilité des prédictions sur différents jeux de test.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Prédictions constamment sous-évaluées par rapport à la moyenne.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Amélioration des performances lorsqu'on augmente la",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Que représente la courbe d'apprentissage d'un modèle?",
       "image_url": null,
       "choices": {
-        "A": "La courbe de l'erreur de test et d'entraînement en fonction de la taille des données.",
+        "A": "Les performances du modèle en fonction des variations de l'architecture.",
         "B": "La courbe de l'erreur par rapport au nombre d'époques.",
         "C": "L'évolution de la précision du modèle avec diverses valeurs d'hyperparamètres.",
-        "D": "Les performances du modèle en fonction des variations de l'architecture."
+        "D": "La courbe de l'erreur de test et d'entraînement en fonction de la taille des données."
       },
-      "correct_answer": "A",
-      "explanation": "La courbe d'apprentissage montre comment l'erreur d'un modèle sur les jeux d'entraînement et de test évolue en fonction de la taille du jeu de données. B et C sont liés à l'optimisation et au tuning, et D concerne plutôt les réseaux de neurones.",
+      "correct_answer": "D",
+      "explanation": "La courbe d'apprentissage montre comment l'erreur d'un modèle sur les jeux d'entraînement et de test évolue en fonction de la taille du jeu de données. B et C sont liés à l'optimisation et au tuning, et D concerne plutôt les réseaux de neurones. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les performances du modèle en fonction des variations de l'architecture.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (La courbe de l'erreur par rapport au nombre d'époques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'évolution de",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Lorsque l'erreur d'entraînement est nulle mais l'erreur de test reste élevée."
       },
       "correct_answer": "A",
-      "explanation": "Un sous-apprentissage est visible quand les erreurs se stabilisent à des niveaux élevés malgré l'augmentation des données ou des époques, indiquant un biais élevé. B pourrait indiquer un cas de surapprentissage, et C une mauvaise généralisation. D ne représente pas un sous-apprentissage mais un surapprentissage.",
+      "explanation": "Un sous-apprentissage est visible quand les erreurs se stabilisent à des niveaux élevés malgré l'augmentation des données ou des époques, indiquant un biais élevé. B pourrait indiquer un cas de surapprentissage, et C une mauvaise généralisation. D ne représente pas un sous-apprentissage mais un surapprentissage. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Lorsque l'erreur de test baisse constamment et l'erreur d'entraînement augmente.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Lorsque l'erreur de test augmente alors que l'erreur d'entraînement diminue.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Dans la décomposition de l'erreur pour un modèle donné, quel effet a un faible biais mais une forte variance?",
       "image_url": null,
       "choices": {
-        "A": "Variabilité élevée avec une faible précision et un risque élevé de surapprentissage.",
-        "B": "Faible variabilité et tendance à sous-ajuster les données.",
+        "A": "Faible variabilité et tendance à sous-ajuster les données.",
+        "B": "Variabilité élevée avec une faible précision et un risque élevé de surapprentissage.",
         "C": "Précision constante avec une stabilité accrue des prédictions.",
         "D": "Biais constant et risque de sous-apprentissage élevé."
       },
-      "correct_answer": "A",
-      "explanation": "Un faible biais mais une forte variance suggèrent que le modèle s'ajuste de près aux données, entraînant un surapprentissage et une grande variabilité. B et D décrivent des situations de biais élevé, et C est incorrect car une haute variance entraîne de l'instabilité.",
+      "correct_answer": "B",
+      "explanation": "Un faible biais mais une forte variance suggèrent que le modèle s'ajuste de près aux données, entraînant un surapprentissage et une grande variabilité. B et D décrivent des situations de biais élevé, et C est incorrect car une haute variance entraîne de l'instabilité. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Faible variabilité et tendance à sous-ajuster les données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Précision constante avec une stabilité accrue des prédictions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Biais constant et risque de",
       "difficulty": "hard"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Comment peut-on réduire le biais élevé d'un modèle prédictif sans augmenter significativement la variance?",
       "image_url": null,
       "choices": {
-        "A": "Augmenter progressivement la complexité du modèle.",
+        "A": "Réduire la taille du jeu d'entraînement.",
         "B": "Augmenter la taille du jeu de test seulement.",
-        "C": "Réduire la taille du jeu d'entraînement.",
+        "C": "Augmenter progressivement la complexité du modèle.",
         "D": "Diminuer les entrées bruitées dans le modèle."
       },
-      "correct_answer": "A",
-      "explanation": "En augmentant progressivement la complexité, le modèle peut capturer de façon plus détaillée la structure des données. B ne concerne pas le biais mais la généralisation, C réduirait la précision potentiellement et D n'adresse qu'indirectement le biais.",
+      "correct_answer": "C",
+      "explanation": "En augmentant progressivement la complexité, le modèle peut capturer de façon plus détaillée la structure des données. B ne concerne pas le biais mais la généralisation, C réduirait la précision potentiellement et D n'adresse qu'indirectement le biais. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire la taille du jeu d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter la taille du jeu de test seulement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Diminuer les entrées bruitées dans le modèle.) est plausible mais faux car il",
       "difficulty": "hard"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Qu'indique une erreur de test élevée combinée à une erreur d'entraînement faible après ajustement du modèle?",
       "image_url": null,
       "choices": {
-        "A": "Le modèle a probablement une forte variance.",
+        "A": "Le modèle est parfaitement équilibré entre biais et variance.",
         "B": "Le modèle a probablement un biais élevé.",
         "C": "Le modèle souffre d'un sous-apprentissage sévère.",
-        "D": "Le modèle est parfaitement équilibré entre biais et variance."
+        "D": "Le modèle a probablement une forte variance."
       },
-      "correct_answer": "A",
-      "explanation": "Une faible erreur d'entraînement et une forte erreur de test indiquent que le modèle s'est adapté aux données d'entraînement mais qu'il ne se généralise pas bien, suggérant une haute variance. B et C décrivent une autre situation, et D est incorrect vu les erreurs élevées.",
+      "correct_answer": "D",
+      "explanation": "Une faible erreur d'entraînement et une forte erreur de test indiquent que le modèle s'est adapté aux données d'entraînement mais qu'il ne se généralise pas bien, suggérant une haute variance. B et C décrivent une autre situation, et D est incorrect vu les erreurs élevées. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le modèle est parfaitement équilibré entre biais et variance.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le modèle a probablement un biais élevé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le modèle souffre",
       "difficulty": "hard"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Observer le biais prédictif à travers le temps sur un jeu de données temporel."
       },
       "correct_answer": "A",
-      "explanation": "Pour vérifier le biais, il est crucial d'examiner les erreurs sur les jeux de données d'entraînement et de test. B ne fait pas de distinction entre l'entraînement et le test, C est anecdotique et non informatif globalement, et D ne couvre qu'un aspect temporel",
+      "explanation": "Pour vérifier le biais, il est crucial d'examiner les erreurs sur les jeux de données d'entraînement et de test. B ne fait pas de distinction entre l'entraînement et le test, C est anecdotique et non informatif globalement, et D ne couvre qu'un aspect temporel La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Comparer uniquement l'erreur sur les données d'entraînement entre différents modèles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Regarder les prédictions pour uniquement les valeurs minimales du jeu de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "hard"
     },
     {
@@ -135,12 +135,12 @@
       "image_url": null,
       "choices": {
         "A": "Une diminution continue de l'erreur de test accompagnée d'une hausse de l'erreur d'entraînement.",
-        "B": "Une hausse continue de l'erreur d'entraînement sans évolution de l'erreur de test.",
-        "C": "Une erreur de test réduite initialement mais ensuite stagnante alors que l'erreur d'entraînement continue de diminuer.",
+        "B": "Une erreur de test réduite initialement mais ensuite stagnante alors que l'erreur d'entraînement continue de diminuer.",
+        "C": "Une hausse continue de l'erreur d'entraînement sans évolution de l'erreur de test.",
         "D": "Une stabilité des erreurs de test et d'entraînement à un niveau intermédiaire."
       },
-      "correct_answer": "C",
-      "explanation": "L'erreur de test qui reste stagnante tandis que l'erreur d'entraînement continue de diminuer est typique du surapprentissage, où le modèle devient trop spécifique aux données d'entraînement. A est incohérent avec la définition courante de surapprentissage, et B et D ne traitent pas spécifiquement du surapprentissage.",
+      "correct_answer": "B",
+      "explanation": "L'erreur de test qui reste stagnante tandis que l'erreur d'entraînement continue de diminuer est typique du surapprentissage, où le modèle devient trop spécifique aux données d'entraînement. A est incohérent avec la définition courante de surapprentissage, et B et D ne traitent pas spécifiquement du surapprentissage. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une diminution continue de l'erreur de test accompagnée d'une hausse de l'erreur d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une hausse continue de l'erreur d'entraînement sans évolution de l'erreur de test.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Pour un modèle de type arbre de décision, que peut-on ajuster pour réduire une variance élevée?",
       "image_url": null,
       "choices": {
-        "A": "Réduire la profondeur maximale de l'arbre.",
+        "A": "Augmenter la taille minimale des feuilles.",
         "B": "Augmenter le nombre de caractéristiques utilisées pour l'entraînement.",
-        "C": "Augmenter la taille minimale des feuilles.",
+        "C": "Réduire la profondeur maximale de l'arbre.",
         "D": "Ajouter plus de données de test au total de données disponibles."
       },
-      "correct_answer": "A",
-      "explanation": "Limiter la profondeur d'un arbre réduit sa capacité à surajuster les données, diminuant ainsi la variance. B augmenterait probablement la variance, C réduit la complexité du modèle de manière plus spécifique, et D ne concerne pas directement un modèle donné.",
+      "correct_answer": "C",
+      "explanation": "Limiter la profondeur d'un arbre réduit sa capacité à surajuster les données, diminuant ainsi la variance. B augmenterait probablement la variance, C réduit la complexité du modèle de manière plus spécifique, et D ne concerne pas directement un modèle donné. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmenter la taille minimale des feuilles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter le nombre de caractéristiques utilisées pour l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Ajouter plus de données de test au total de données",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quelle méthode réduit simultanément le biais et la variance mais pourrait ne pas être adaptée en cas de données limitées?",
       "image_url": null,
       "choices": {
-        "A": "Bagging",
+        "A": "Réduction de la dimensionnalité par PCA",
         "B": "Régression L1",
         "C": "Ensembles d'arbres profonds",
-        "D": "Réduction de la dimensionnalité par PCA"
+        "D": "Bagging"
       },
-      "correct_answer": "A",
-      "explanation": "Le bagging (Bootstrap Aggregating) réduit l'erreur en réduisant à la fois le biais et la variance en moyenne, mais il nécessite de robustes ensembles de données pour être vraiment efficace. B minimize primarily the variance, C typically increases complexity, and D reduces bias differently.",
+      "correct_answer": "D",
+      "explanation": "Le bagging (Bootstrap Aggregating) réduit l'erreur en réduisant à la fois le biais et la variance en moyenne, mais il nécessite de robustes ensembles de données pour être vraiment efficace. B minimize primarily the variance, C typically increases complexity, and D reduces bias differently. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduction de la dimensionnalité par PCA) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Régression L1) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ensembles d'arbres profonds) est plausible mais faux car il ne respecte pas",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Cela ne fait que déplacer la distribution des données d'entraînement."
       },
       "correct_answer": "A",
-      "explanation": "L'augmentation de la taille permet au réseau de mémoriser non seulement les tendances mais aussi le bruit, menant au surapprentissage. B et C ne correspondent pas aux effets d'une augmentation de la capacité, et D est incorrect.",
+      "explanation": "L'augmentation de la taille permet au réseau de mémoriser non seulement les tendances mais aussi le bruit, menant au surapprentissage. B et C ne correspondent pas aux effets d'une augmentation de la capacité, et D est incorrect. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Cela réduit la profondeur du réseau, rendant l'apprentissage moins flexible.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Cela conduit à une régularisation excessive et à une sous-adaptation.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Cela ne fait que déplacer la distribution",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quand un modèle est-il susceptible de présenter un biais vraiment élevé?",
       "image_url": null,
       "choices": {
-        "A": "Quand il repose sur des hypothèses trop simplistes par rapport à la réalité des données.",
-        "B": "Quand il est régulièrement mis à jour avec de nouvelles données.",
+        "A": "Quand il est régulièrement mis à jour avec de nouvelles données.",
+        "B": "Quand il repose sur des hypothèses trop simplistes par rapport à la réalité des données.",
         "C": "Quand il utilise de nombreux hyperparamètres finement ajustés.",
         "D": "Quand il commence avec un apprentissage non supervisé."
       },
-      "correct_answer": "A",
-      "explanation": "Un modèle est dit biaisé lorsqu'il repose sur des hypothèses simplistes, entraînant une performance médiocre sur de nombreuses observations. B pourrait aider à réduire ce biais, C est souvent utilisé pour affiner et square les modèles, et D est un mode d'initialisation indépendant de cette propriété.",
+      "correct_answer": "B",
+      "explanation": "Un modèle est dit biaisé lorsqu'il repose sur des hypothèses simplistes, entraînant une performance médiocre sur de nombreuses observations. B pourrait aider à réduire ce biais, C est souvent utilisé pour affiner et square les modèles, et D est un mode d'initialisation indépendant de cette propriété. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Quand il est régulièrement mis à jour avec de nouvelles données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Quand il utilise de nombreux hyperparamètres finement ajustés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quel scénario illustre un biais élevé dans un modèle d'apprentissage supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Un modèle linéaire est utilisé pour des données qui ont une relation quadratique.",
+        "A": "Après plus d'entraînement, l'erreur de validation diminue mais l'erreur d'entraînement augmente.",
         "B": "Un modèle complexe de réseau de neurones overfit un petit jeu de données d'entraînement.",
-        "C": "Après plus d'entraînement, l'erreur de validation diminue mais l'erreur d'entraînement augmente.",
+        "C": "Un modèle linéaire est utilisé pour des données qui ont une relation quadratique.",
         "D": "L'erreur d'entraînement et l'erreur de validation sont toutes deux basses."
       },
-      "correct_answer": "A",
-      "explanation": "Le biais élevé est caractérisé par une erreur importante sur les données d'entraînement, souvent due à une mauvaise capacité de modélisation du modèle, comme l'utilisation d'un modèle linéaire qui ne peut pas capturer une relation quadratique dans les données. B est un exemple de haute variance, typiquement causée par un modèle trop complexe. C décrit une situation inhabituelle et incorrecte du point de vue de la convergence de l'entraînement. D suggère un bon équilibre, donc aucun biais ni variance n'est particulièrement élevé.",
+      "correct_answer": "C",
+      "explanation": "Le biais élevé est caractérisé par une erreur importante sur les données d'entraînement, souvent due à une mauvaise capacité de modélisation du modèle, comme l'utilisation d'un modèle linéaire qui ne peut pas capturer une relation quadratique dans les données. B est un exemple de haute variance, typiquement causée par un modèle trop complexe. C décrit une situation inhabituelle et incorrecte du point de vue de la convergence de l'entraînement. D suggère un bon équilibre, donc aucun biais ni variance n'est particulièrement élevé. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Après plus d'entraînement, l'erreur de validation diminue mais l'erreur d'entraînement augmente.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "medium"
     }
   ]

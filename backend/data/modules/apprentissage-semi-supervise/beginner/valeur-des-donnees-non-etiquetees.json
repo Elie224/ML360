@@ -14,7 +14,7 @@
         "D": "La structure des données empêche l'utilisation des étiquettes dans l'ensemble de données."
       },
       "correct_answer": "A",
-      "explanation": "Comprendre la structure des données permet de profiter des similitudes pour influencer positivement des prédictions, même si elles ne sont pas directement étiquetées. B est faux car la structure ne détermine pas le nombre de classes. C est incorrect, car l'évitement de l'overfitting se fait via d'autres techniques. D est erroné, car les étiquettes sont toujours utilisées quand disponibles.",
+      "explanation": "Comprendre la structure des données permet de profiter des similitudes pour influencer positivement des prédictions, même si elles ne sont pas directement étiquetées. B est faux car la structure ne détermine pas le nombre de classes. C est incorrect, car l'évitement de l'overfitting se fait via d'autres techniques. D est erroné, car les étiquettes sont toujours utilisées quand disponibles. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La structure des données permet de réduire automatiquement le nombre de classes nécessaires.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La structure des données évite l'overfitting en supprimant les caractéristiques inutiles lors",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Comment la notion de proximité est-elle utilisée dans l'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Les données non étiquetées proches des données étiquetées influencent la classification des points voisins.",
-        "B": "La proximité sert à supprimer les points de données qui ne respectent pas le seuil de similitude.",
+        "A": "La proximité sert à supprimer les points de données qui ne respectent pas le seuil de similitude.",
+        "B": "Les données non étiquetées proches des données étiquetées influencent la classification des points voisins.",
         "C": "La proximité permet une normalisation automatique des caractéristiques.",
         "D": "La proximité est utilisée pour déterminer le taux d'étiquetage requis."
       },
-      "correct_answer": "A",
-      "explanation": "La notion de proximité dans l'apprentissage semi-supervisé signifie que des points de données similaires sont susceptibles de partager la même classe, ce qui aide dans l'infr à partir des données étiquetées. B est faux, car la proximité ne se traduit pas par une suppression. C est incorrect, car la normalisation est un processus distinct. D est erroné, la proximité n'affecte généralement pas le taux d'étiquetage requis.",
+      "correct_answer": "B",
+      "explanation": "La notion de proximité dans l'apprentissage semi-supervisé signifie que des points de données similaires sont susceptibles de partager la même classe, ce qui aide dans l'infr à partir des données étiquetées. B est faux, car la proximité ne se traduit pas par une suppression. C est incorrect, car la normalisation est un processus distinct. D est erroné, la proximité n'affecte généralement pas le taux d'étiquetage requis. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (La proximité sert à supprimer les points de données qui ne respectent pas le seuil de similitude.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Qu'est-ce que la cohérence locale implique dans un modèle semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Les points proches dans l'espace des caractéristiques sont plus susceptibles d'avoir les mêmes étiquettes.",
+        "A": "La cohérence locale signifie que les caractéristiques inutiles doivent être ignorées pour les points proches.",
         "B": "Tous les points d'un cluster diversifié doivent obligatoirement appartenir à la même classe.",
-        "C": "La cohérence locale signifie que les caractéristiques inutiles doivent être ignorées pour les points proches.",
+        "C": "Les points proches dans l'espace des caractéristiques sont plus susceptibles d'avoir les mêmes étiquettes.",
         "D": "Les points éloignés doivent être assignés à des classes différentes pour garantir la cohérence."
       },
-      "correct_answer": "A",
-      "explanation": "La cohérence locale suppose que les données qui sont proches dans l'espace des caractéristiques partagent probablement des étiquettes similaires. B est faux car un cluster diversifié peut contenir plusieurs classes. C et D sont incorrects dans le contexte local de cohérence qui n'implique ni l'ignorance de caractéristiques ni une partition stricte des points éloignés.",
+      "correct_answer": "C",
+      "explanation": "La cohérence locale suppose que les données qui sont proches dans l'espace des caractéristiques partagent probablement des étiquettes similaires. B est faux car un cluster diversifié peut contenir plusieurs classes. C et D sont incorrects dans le contexte local de cohérence qui n'implique ni l'ignorance de caractéristiques ni une partition stricte des points éloignés. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La cohérence locale signifie que les caractéristiques inutiles doivent être ignorées pour les points proches.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Tous les points d'un cluster diversifié doivent obligatoirement appartenir à la même classe.) est plausible",
       "difficulty": "easy"
     },
     {
@@ -52,11 +52,11 @@
       "choices": {
         "A": "Les données non étiquetées peuvent être utilisées pour introduire de faux labels, affinant ainsi les prédictions.",
         "B": "Elles permettent de remplir les lacunes dans les données de test, pendant l'inférence.",
-        "C": "Les pseudo-labels renforcent le modèle en augmentant la taille de l'ensemble de données de formation.",
-        "D": "Les données non étiquetées suppriment automatiquement tous les biais présents."
+        "C": "Les données non étiquetées suppriment automatiquement tous les biais présents.",
+        "D": "Les pseudo-labels renforcent le modèle en augmentant la taille de l'ensemble de données de formation."
       },
-      "correct_answer": "C",
-      "explanation": "Les pseudo-labels permettent d'augmenter la taille de l'ensemble de données d'entraînement, en utilisant des prédictions du modèle pour étiqueter des données non étiquetées. A est faux, les faux labels ne sont pas l'objectif. B est incorrect, l'ajout à l'ensemble de test n'est pas l'objectif des pseudo-labels. D est erroné, car les biais peuvent persister malgré l'utilisation des données non étiquetées.",
+      "correct_answer": "D",
+      "explanation": "Les pseudo-labels permettent d'augmenter la taille de l'ensemble de données d'entraînement, en utilisant des prédictions du modèle pour étiqueter des données non étiquetées. A est faux, les faux labels ne sont pas l'objectif. B est incorrect, l'ajout à l'ensemble de test n'est pas l'objectif des pseudo-labels. D est erroné, car les biais peuvent persister malgré l'utilisation des données non étiquetées. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les données non étiquetées peuvent être utilisées pour introduire de faux labels, affinant ainsi les prédictions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elles permettent de remplir les lacunes dans les",
       "difficulty": "easy"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Elle réduit la nécessité d'utiliser des algorithmes complexes dans la phase de modélisation."
       },
       "correct_answer": "A",
-      "explanation": "En exploitant les similitudes structurelles, on améliore les prédictions pour les données initialement non étiquetées. B est faux, car la structure ne change pas directement le nombre de classes. C est inexact car aucune méthode ne garantit une classification parfaite. D est incorrect, puisque la complexité algorithmique peut encore être nécessaire.",
+      "explanation": "En exploitant les similitudes structurelles, on améliore les prédictions pour les données initialement non étiquetées. B est faux, car la structure ne change pas directement le nombre de classes. C est inexact car aucune méthode ne garantit une classification parfaite. D est incorrect, puisque la complexité algorithmique peut encore être nécessaire. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elle diminue le nombre total de classes dans le modèle, le rendant plus simple à comprendre.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle garantit que toutes les instances de test sont correctement classifiées.) est plausible mais faux car il",
       "difficulty": "easy"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quel est un inconvénient potentiel de l'utilisation de pseudo-information?",
       "image_url": null,
       "choices": {
-        "A": "La propagation de labels incorrects qui peuvent biaiser le modèle.",
-        "B": "L'augmentation excessive du nombre de classes possibles.",
+        "A": "L'augmentation excessive du nombre de classes possibles.",
+        "B": "La propagation de labels incorrects qui peuvent biaiser le modèle.",
         "C": "La suppression de la possibilité d'utiliser des données étiquetées.",
         "D": "L'obligation de réduire la capacité du modèle à chaque itération."
       },
-      "correct_answer": "A",
-      "explanation": "Un inconvénient de la pseudo-information est la possibilité de propager de manière incorrecte des labels erronés, biaisant le modèle. B est faux car la pseudo-information ne concerne pas l'ajout de classes mais de labels potentiels. C est incorrect, car les données étiquetées restent toujours utiles. D est erroné, il n'y a pas de lien direct avec une réduction de capacité.",
+      "correct_answer": "B",
+      "explanation": "Un inconvénient de la pseudo-information est la possibilité de propager de manière incorrecte des labels erronés, biaisant le modèle. B est faux car la pseudo-information ne concerne pas l'ajout de classes mais de labels potentiels. C est incorrect, car les données étiquetées restent toujours utiles. D est erroné, il n'y a pas de lien direct avec une réduction de capacité. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'augmentation excessive du nombre de classes possibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La suppression de la possibilité d'utiliser des données étiquetées.) est plausible mais faux car il ne respecte",
       "difficulty": "easy"
     },
     {
@@ -94,11 +94,11 @@
       "choices": {
         "A": "En supposant à tort que des points très éloignés peuvent être associés aux mêmes classes.",
         "B": "En utilisant des données étiquetées au lieu de données non étiquetées.",
-        "C": "En appliquant la cohérence seulement aux points avec des erreurs de mesure.",
-        "D": "En surestimant l'importance des clusters là où les données sont uniformément réparties."
+        "C": "En surestimant l'importance des clusters là où les données sont uniformément réparties.",
+        "D": "En appliquant la cohérence seulement aux points avec des erreurs de mesure."
       },
-      "correct_answer": "D",
-      "explanation": "Surestimer l'importance des clusters dans des distributions uniformes peut mener à des erreurs de modélisation. A est faux, car l'hypothèse de proximité est généralement valable. B est incorrect, car les données étiquetées sont toujours pertinentes. C est inexact, avec la cohérence locale axée sur l'ensemble, pas juste les erreurs individuelles.",
+      "correct_answer": "C",
+      "explanation": "Surestimer l'importance des clusters dans des distributions uniformes peut mener à des erreurs de modélisation. A est faux, car l'hypothèse de proximité est généralement valable. B est incorrect, car les données étiquetées sont toujours pertinentes. C est inexact, avec la cohérence locale axée sur l'ensemble, pas juste les erreurs individuelles. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En supposant à tort que des points très éloignés peuvent être associés aux mêmes classes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En utilisant des données étiquetées au lieu de données non étiquetées.) est plausible mais faux car il ne respecte",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "En quoi les données non étiquetées peuvent-elles limiter le sur-apprentissage (overfitting) lors de la modélisation semi-supervisée?",
       "image_url": null,
       "choices": {
-        "A": "En augmentant la diversité des données sans nécessairement ajouter des labels.",
+        "A": "En empêchant l'utilisation de modèles complexes.",
         "B": "En augmentant artificiellement le nombre de caractéristiques.",
         "C": "En supprimant automatiquement toutes les corrélations présentes.",
-        "D": "En empêchant l'utilisation de modèles complexes."
+        "D": "En augmentant la diversité des données sans nécessairement ajouter des labels."
       },
-      "correct_answer": "A",
-      "explanation": "Les données non étiquetées ajoutent de la diversité, ce qui peut aider à généraliser et éviter le sur-ajustement. B est faux car ajouter des caractéristiques ne réduit pas l'overfitting. C est incorrect, les corrélations utiles sont un aspect vital de l'apprentissage. D est erroné, car des modèles complexes peuvent toujours être utilisés avec ces données.",
+      "correct_answer": "D",
+      "explanation": "Les données non étiquetées ajoutent de la diversité, ce qui peut aider à généraliser et éviter le sur-ajustement. B est faux car ajouter des caractéristiques ne réduit pas l'overfitting. C est incorrect, les corrélations utiles sont un aspect vital de l'apprentissage. D est erroné, car des modèles complexes peuvent toujours être utilisés avec ces données. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En empêchant l'utilisation de modèles complexes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En augmentant artificiellement le nombre de caractéristiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Pour empêcher la création de nouvelles classes non désirées."
       },
       "correct_answer": "A",
-      "explanation": "Choisir des algorithmes qui exploitent la structure des données permet d'utiliser l'information implicite, optimisant ainsi les prédictions. B est faux car les algorithmes fonctionnent souvent par lot. C est incorrect, car la réduction dimensionnelle n'est pas toujours souhaitable. D est erroné, car la création de classes non désirées n'est pas un problème structurel.",
+      "explanation": "Choisir des algorithmes qui exploitent la structure des données permet d'utiliser l'information implicite, optimisant ainsi les prédictions. B est faux car les algorithmes fonctionnent souvent par lot. C est incorrect, car la réduction dimensionnelle n'est pas toujours souhaitable. D est erroné, car la création de classes non désirées n'est pas un problème structurel. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Pour garantir que tous les points de données sont utilisés au même moment.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour s'assurer que la dimensionnalité des données est réduite au maximum possible.) est plausible mais faux car il",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Dans quels cas l'utilisation de pseudo-étiquettes est-elle plus risquée?",
       "image_url": null,
       "choices": {
-        "A": "Lorsque le modèle initial est déjà biaisé ou peu précis.",
-        "B": "Quand toutes les données disponibles sont déjà étiquetées correctement.",
+        "A": "Quand toutes les données disponibles sont déjà étiquetées correctement.",
+        "B": "Lorsque le modèle initial est déjà biaisé ou peu précis.",
         "C": "Lorsqu'un grand écart entre les caractéristiques est déjà observé dans les données.",
         "D": "Quand les heuristiques utilisées sont bien alignées avec les labels initiaux."
       },
-      "correct_answer": "A",
-      "explanation": "Si le modèle initial est biaisé, l'utilisation de pseudo-étiquettes peut exacerber les problèmes. B est faux, elles seraient inutiles, pas risquées. C est inexact car l'écart n'implique pas de risque direct avec les pseudo-étiquettes. D est faux car un bon alignement réduit les risques.",
+      "correct_answer": "B",
+      "explanation": "Si le modèle initial est biaisé, l'utilisation de pseudo-étiquettes peut exacerber les problèmes. B est faux, elles seraient inutiles, pas risquées. C est inexact car l'écart n'implique pas de risque direct avec les pseudo-étiquettes. D est faux car un bon alignement réduit les risques. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Quand toutes les données disponibles sont déjà étiquetées correctement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Lorsqu'un grand écart entre les caractéristiques est déjà observé dans les données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Comment le choix de la distance affecte-t-il l'efficacité d'une approche par cohérence locale en semi-supervision?",
       "image_url": null,
       "choices": {
-        "A": "Il influence directement la façon dont les clusters sont définis, affectant l'exactitude du modèle.",
+        "A": "Il permet d'ignorer les étiquettes complètement lorsque les distances sont calculées.",
         "B": "Il garantit que toutes les classes sont équidistantes dans l'espace fonctionnel.",
-        "C": "Il permet d'ignorer les étiquettes complètement lorsque les distances sont calculées.",
+        "C": "Il influence directement la façon dont les clusters sont définis, affectant l'exactitude du modèle.",
         "D": "Il assure que les biais pré-existants sont automatiquement corrigés."
       },
-      "correct_answer": "A",
-      "explanation": "La distance influence le groupement de données, impactant comment les clusters se forment et l'assimilation des étiquettes. B est faux car les classes peuvent avoir des distances variables. C est incorrect, car les étiquettes ne sont pas ignorées. D est erroné, car les biais nécessitent une correction explicite et consciente.",
+      "correct_answer": "C",
+      "explanation": "La distance influence le groupement de données, impactant comment les clusters se forment et l'assimilation des étiquettes. B est faux car les classes peuvent avoir des distances variables. C est incorrect, car les étiquettes ne sont pas ignorées. D est erroné, car les biais nécessitent une correction explicite et consciente. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il permet d'ignorer les étiquettes complètement lorsque les distances sont calculées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il garantit que toutes les classes sont équidistantes dans l'espace fonctionnel.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "hard"
     }
   ]

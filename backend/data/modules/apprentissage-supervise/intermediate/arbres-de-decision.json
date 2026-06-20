@@ -5,213 +5,213 @@
   "questions": [
     {
       "type": "text",
-      "question": "Quel critère de séparation est couramment utilisé dans les arbres de décision pour la classification?",
+      "question": "Qu'est-ce que la méthode de 'split' dans un arbre de décision?",
       "image_url": null,
       "choices": {
-        "A": "L'indice de Gini",
-        "B": "Le coefficient de corrélation",
-        "C": "La distance Euclidienne",
-        "D": "La régression logistique"
+        "A": "Diviser les données en sous-ensembles basés sur des critères.",
+        "B": "Fusionner plusieurs arbres en une forêt aléatoire.",
+        "C": "Utiliser toutes les données pour une seule prédiction.",
+        "D": "Réordonner les données selon leur importance."
       },
       "correct_answer": "A",
-      "explanation": "L'indice de Gini mesure l'impureté d'un noeud, ce qui aide à décider quelle caractéristique de données permet de faire les meilleures séparations. Le coefficient de corrélation et la distance Euclidienne ne sont pas utilisés pour cela dans les arbres de décision, et la régression logistique est un modèle différent.",
+      "explanation": "La méthode de 'split' est un processus crucial dans un arbre de décision qui consiste à diviser les données en sous-ensembles basés sur des caractéristiques spécifiques, dans le but d'optimiser des métriques d'impureté comme l'entropie ou l'indice Gini. C'est essentiel pour créer des règles de décision efficaces. La réponse B est incorrecte car elle décrit la création d'une forêt aléatoire, qui utilise plusieurs arbres. La réponse C est fausse parce qu'utiliser toutes les données pour une seule prédiction n'illustre pas la nature récursive des arbres de décision. La réponse D est incorrecte puisque réordonner les données selon leur importance ne concerne pas la segmentation des données à des fins décisionnelles.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Que représente la profondeur maximale dans un arbre de décision?",
+      "question": "Quelle est l'utilité de la profondeur maximale dans un arbre de décision?",
       "image_url": null,
       "choices": {
-        "A": "Le nombre maximal de niveaux de noeuds dans l'arbre",
-        "B": "Le nombre total de feuilles dans l'arbre",
-        "C": "Le nombre moyen de données par feuille",
-        "D": "Le nombre de caractéristiques utilisées"
+        "A": "Calculer le nombre total de feuilles de l'arbre.",
+        "B": "Déterminer la complexité et éviter le surapprentissage.",
+        "C": "Assurer que toutes les branches ont la même longueur.",
+        "D": "Évaluer la précision de l'arbre sur les données d'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "La profondeur maximale limite le nombre de niveaux du modèle, ce qui aide à contrôler la complexité et à prévenir le surapprentissage. Le nombre de feuilles, caractéristiques ou données par feuille ne sont pas directement liés à la profondeur.",
+      "correct_answer": "B",
+      "explanation": "La profondeur maximale dans un arbre de décision contrôle la complexité du modèle. Limiter cette profondeur aide à éviter le surapprentissage, car un arbre excessivement complexe peut mémoriser les données d'entraînement plutôt que de généraliser correctement. La réponse A est incorrecte, car la profondeur n'affecte pas directement le calcul du nombre total de feuilles. La réponse C est fausse puisque l'arbre de décision ne nécessite pas des branches de la même longueur. Enfin, la réponse D est elle aussi fausse car ajuster la profondeur ne concerne pas directement la précision sur les données d'entraînement mais plutôt la généralisation aux nouveaux ensembles de données.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quelle méthode aide à réduire la variance d'un arbre de décision?",
+      "question": "Comment un Random Forest améliore-t-il la précision par rapport à un arbre unique?",
       "image_url": null,
       "choices": {
-        "A": "Random Forest",
-        "B": "Augmenter la profondeur maximale",
-        "C": "Utiliser toute la base de données d'entraînement",
-        "D": "Réduire le nombre de caractéristiques"
+        "A": "En remplaçant l'arbre par un réseau de neurones.",
+        "B": "En utilisant un seul arbre avec une meilleure profondeur.",
+        "C": "En combinant plusieurs arbres ayant traité des sous-échantillons des données.",
+        "D": "En réordonnant les feuilles pour optimiser la prédiction."
       },
-      "correct_answer": "A",
-      "explanation": "Le Random Forest utilise des ensembles de nombreux arbres de décision formés sur des sous-échantillons et moyennés pour réduire la variance. Accroître la profondeur augmente potentiellement la variance, et utiliser l'ensemble de la base ou moins de caractéristiques n'adresse pas directement la variance.",
+      "correct_answer": "C",
+      "explanation": "Un Random Forest améliore la précision par rapport à un arbre unique en combinant les prédictions de nombreux arbres, chacun entraîné sur un sous-échantillon des données, ce qui diminue l'impact des perturbations dans les ensembles de données et limite le surapprentissage. La réponse A est incorrecte car il ne remplace pas les arbres par des réseaux de neurones. La réponse B est fausse car simplement augmenter la profondeur d'un arbre unique ne réduit pas le surapprentissage et peut même l'aggraver. La réponse D est incorrecte car réordonner les feuilles n'est pas une procédure connue ou efficace pour améliorer les prédictions dans ce contexte.",
       "difficulty": "easy"
     },
     {
       "type": "text",
-      "question": "Quel est l'impact de ne pas limiter la profondeur maximale d'un arbre de décision?",
+      "question": "Comment est mesurée l'importance des variables dans un arbre de décision?",
       "image_url": null,
       "choices": {
-        "A": "Surapprentissage",
-        "B": "Sous-apprentissage",
-        "C": "Les résultats restent les mêmes",
-        "D": "Amélioration garantie de la performance"
+        "A": "En vérifiant la position de chaque nœud dans l'arbre.",
+        "B": "En mesurant la taille physique de chaque feuille.",
+        "C": "En comptant le nombre de branches d'un nœud.",
+        "D": "En évaluant la réduction moyenne de l'entropie."
       },
-      "correct_answer": "A",
-      "explanation": "Une profondeur non limitée permet à l'arbre de capturer des bruits aléatoires, conduisant au surapprentissage. Cela n'améliore pas nécessairement la performance sur des données non vues, contrairement à l'idée reçue qu'une complexité accrue règle toujours mieux un problème.",
+      "correct_answer": "D",
+      "explanation": "L'importance des variables dans un arbre de décision est évaluée en mesurant la réduction moyenne de l'entropie (ou une autre métrique d'impureté) lorsqu'elles sont utilisées pour des splits. Cela permet de savoir quelles variables sont les plus influentes pour la classification. La réponse A est incorrecte car la position d'un nœud n'affecte pas sa contribution informationnelle. La réponse B est fausse car la taille physique des feuilles ne représente en rien l'importance des variables. La réponse C est aussi fausse car le nombre de branches d'un nœud ne correspond pas à sa capacité à réduire l'impureté.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "En quoi consiste l'importance des variables dans un arbre de décision?",
+      "question": "Pourquoi est-il important d'ajuster la profondeur maximale en utilisant une validation croisée?",
       "image_url": null,
       "choices": {
-        "A": "L'évaluation de la contribution de chaque variable à la prédiction",
-        "B": "La fréquence d'apparition dans le jeu de données",
-        "C": "Le type de donnée (continue ou catégorielle)",
-        "D": "Leur taille en mémoire"
+        "A": "Pour équilibrer biais et variance et améliorer la généralisation.",
+        "B": "Pour s'assurer que l'arbre a un nombre maximal de feuilles.",
+        "C": "Pour s'assurer que toutes les variables sont utilisées.",
+        "D": "Pour éviter que les feuilles ne représentent plus d'une instance."
       },
       "correct_answer": "A",
-      "explanation": "L'importance des variables est mesurée par la contribution à la réduction des impuretés. Ce n'est pas simplement leur fréquence ou type, ni leur taille en mémoire.",
+      "explanation": "Ajuster la profondeur maximale via la validation croisée permet de trouver le meilleur compromis entre biais et variance, optimisant ainsi la capacité de généralisation du modèle. Cela aide à éviter le surapprentissage sur les données d'entraînement. La réponse B est incorrecte car maximiser le nombre de feuilles pourrait conduire à un surapprentissage, nuisant à la généralisation. La réponse C est fausse, car toutes les variables ne doivent pas nécessairement être utilisées si elles n'améliorent pas le modèle. La réponse D ne concerne pas la gestion de la profondeur, car elle suppose que seul le contrôle de volume des feuilles est important.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Pourquoi un Random Forest est-il moins susceptible de surapprendre qu'un seul arbre de décision?",
+      "question": "Dans quel contexte un Random Forest surpasse-t-il typiquement un seul arbre de décision?",
       "image_url": null,
       "choices": {
-        "A": "Il combine les prédictions de plusieurs arbres",
-        "B": "Il utilise toujours moins de données",
-        "C": "Il ne nécessite pas de critères de séparation",
-        "D": "Tous les arbres dans la forêt sont indépendants"
+        "A": "Dans des ensembles de données avec des caractéristiques hautement corrélées.",
+        "B": "En cas de large variance entre échantillons de données.",
+        "C": "Lorsque la variance des features est minime.",
+        "D": "Quand les données sont purement linéaires."
       },
-      "correct_answer": "A",
-      "explanation": "Le Random Forest agrège les résultats de plusieurs arbres, ce qui minimise la variance et donc réduit le risque de surapprentissage. Utiliser moins de données ou ignorer les critères de séparation ne sont pas des attributs du modèle; la dépendance des arbres par le sous-échantillonnage montre leur interdépendance partielle.",
+      "correct_answer": "B",
+      "explanation": "Un Random Forest surpasse généralement un arbre de décision unique lorsqu'il y a une grande variance entre les échantillons de données, car il combine les prédictions de plusieurs arbres baggés, chacun sur un sous-échantillon, ce qui stabilise les résultats. La réponse A est incorrecte, car des caractéristiques hautement corrélées peuvent conduire à des paquets d'arbres similaires, réduisant la diversité. La réponse C est fausse, car une faible variance des features ne tire pas pleinement profit du Random Forest. La réponse D est également inexacte, car des données purement linéaires peuvent être traitées plus efficacement par des modèles linéaires que par un ensemble de modèles arborescents.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Quel est l'effet d'un sous-arbre trop profond dans un modèle Random Forest?",
+      "question": "Quel impact a l'augmentation de la profondeur maximale sur un arbre de décision?",
       "image_url": null,
       "choices": {
-        "A": "Augmentation de la variance",
-        "B": "Réduction de l'interprétabilité",
-        "C": "Amélioration de la montée d'échelle",
-        "D": "Les erreurs de biais sont accentuées"
+        "A": "Empêche d'utiliser pleinement toutes les caractéristiques.",
+        "B": "Réduit le risque de surapprentissage en simplifiant l'arbre.",
+        "C": "Augmente la capacité de modélisation mais aussi le risque de surapprentissage.",
+        "D": "Conduit automatiquement à une meilleure précision sur les données de test."
       },
-      "correct_answer": "A",
-      "explanation": "Des sous-arbres trop profonds peuvent capturer le bruit, augmentant la variance. La montée en échelle et l'accentuation du biais ne sont pas fortement affectées; la réduction d'interprétabilité intervient, mais n'est pas le principal effet.",
+      "correct_answer": "C",
+      "explanation": "Augmenter la profondeur maximale d'un arbre de décision accroît sa capacité à modéliser des relations complexes, mais augmente aussi le risque de surapprentissage, car l'arbre peut s'attacher aux particularités des données d'entraînement plutôt que de généraliser. La réponse A est incorrecte, car une profondeur accrue permet d'explorer davantage de caractéristiques. La réponse B, qui suggère que cela simplifie l'arbre, est fausse, car cela conduit à des modèles plus complexes. La réponse D est incorrecte car bien que l'arbre puisse performer mieux sur l'ensemble d'entraînement, il pourrait se détériorer sur des données de test non vues à cause d'un surapprentissage.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Comment l'algorithme Random Forest gère-t-il les caractéristiques corrélées?",
+      "question": "Dans un arbre de décision, quel 'split' est le plus informatif?",
       "image_url": null,
       "choices": {
-        "A": "En choisissant aléatoirement un sous-ensemble de caractéristiques pour chaque arbre",
-        "B": "En éliminant automatiquement les caractéristiques corrélées",
-        "C": "En ajoutant un terme de pénalité pour les corrélations",
-        "D": "En augmentant la taille de l'échantillon"
+        "A": "Celui qui minimise la taille de chaque sous-groupe.",
+        "B": "Celui qui divise le nœud de manière uniforme.",
+        "C": "Celui qui prend en compte toutes les caractéristiques en même temps.",
+        "D": "Celui qui maximise la réduction d'impureté, par exemple avec l'entropie."
       },
-      "correct_answer": "A",
-      "explanation": "Le choix aléatoire de sous-ensembles de caractéristiques diminue l'influence des caractéristiques corrélées sur l'ensemble du modèle. Éliminer automatiquement ou pénaliser les corrélations n'est pas spécifique au Random Forest, et l'augmentation de la taille d'échantillon ne concerne pas directement ce problème.",
+      "correct_answer": "D",
+      "explanation": "Dans un arbre de décision, le 'split' le plus informatif est celui qui maximise la réduction de l'impureté, mesurée via des critères tels que l'entropie ou l'indice Gini. Cela permet de créer des règles de décision plus précises en profitant au maximum de l'information contenue dans les données. La réponse A est incorrecte car minimiser la taille ne garantit pas un gain d'information. La réponse B est fausse car diviser uniformément les données ne prend pas en compte l'information potentiellement utile. La réponse C est erronée car un split ne considère pas toutes les caractéristiques simultanément, mais une seule à la fois pour maximiser l'information.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Que signifie 'bootstrap' dans le contexte de Random Forest?",
+      "question": "Quel est le rôle principal des arbres de décision dans un Random Forest?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser un sous-échantillon aléatoire avec retour pour entraîner chaque arbre",
-        "B": "Calculer l'erreur quadratique moyenne pour l'évaluation du modèle",
-        "C": "Croiser des validations successives des modèles",
-        "D": "Ajuster les hyperparamètres automatiquement"
+        "A": "Apporter une diversité de modèles pour réduire le surapprentissage.",
+        "B": "Servir de base pour la compression des données.",
+        "C": "Optimiser la vitesse d'exécution dans les modèles linéaires.",
+        "D": "Maximiser l'utilisation de chaque donnée d'entraînement."
       },
       "correct_answer": "A",
-      "explanation": "Le bootstrap dans Random Forest se réfère à l'utilisation de samples avec replacement pour chaque arbre, optimisant ainsi la qualité du modèle. Les erreurs quadratiques, validations croisées, ou ajustements automatiques d'hyperparamètres ne sont pas directement liés au concept de bootstrap.",
+      "explanation": "Dans un Random Forest, les arbres de décision individuels apportent une diversité de modèles qui, lorsqu'agrégés, réduisent le surapprentissage et améliorent la capacité de généralisation du modèle global. Cette diversité est obtenue grâce à des échantillons aléatoires des données pour chaque arbre. La réponse B est incorrecte, car un Random Forest n'a pas pour but la compression des données. La réponse C est fausse, car il vise la généralisation à travers la variation et non la vitesse d'exécution des modèles linéaires. La réponse D est incorrecte, car l'objectif n'est pas de maximiser l'utilisation des échantillons, mais plutôt de diversifier la formation pour de meilleures performances globales.",
       "difficulty": "medium"
     },
     {
       "type": "text",
-      "question": "Dans un modèle d'Arbre de Décision, comment une diminution de 'min_samples_split' affecte-t-elle l'arbre?",
+      "question": "Comment évaluer l'importance d'une variable dans un Random Forest?",
       "image_url": null,
       "choices": {
-        "A": "Il devient potentiellement plus profond et complexe",
-        "B": "Il augmente le biais global du modèle",
-        "C": "Il résout mieux le problème d'échantillons déséquilibrés",
-        "D": "Il améliore le temps de formation du modèle"
+        "A": "En comptant le nombre de splits effectués par la variable.",
+        "B": "Par la permutation aléatoire des valeurs de cette variable.",
+        "C": "En mesurant la position de la variable dans le modèle.",
+        "D": "En utilisant la variable uniquement à la fin de l'arbre."
       },
-      "correct_answer": "A",
-      "explanation": "Réduire 'min_samples_split' peut conduire à un arbre plus complexe en divisant plus de nœuds, ce qui augmente potentiellement le surajustement. Cela n'affecte pas directement le biais global, ni les échantillons équilibrés, et le temps de formation n'est pas nécessairement amélioré.",
+      "correct_answer": "B",
+      "explanation": "Dans un Random Forest, l'importance d'une variable est souvent évaluée en permutant aléatoirement ses valeurs et en observant l'impact sur la précision du modèle. Un impact important sur la précision indique une forte importance de la variable. La réponse A est incorrecte, car le simple comptage des splits ne considère pas l'impact de ces splits. La réponse C, qui invoque la position de la variable dans le modèle, n'évalue pas utilement sa pertinence globale. La réponse D est incorrecte, car utiliser la variable uniquement à la fin de l'arbre ne reflète pas sa contribution au modèle.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Quel est un symptômes commun lorsque l'importance des variables d'un arbre de décision montre des valeurs similaires pour toutes les caractéristiques?",
+      "question": "Quelle méthode de 'split' est utilisée pour minimiser l'impureté?",
       "image_url": null,
       "choices": {
-        "A": "Les caractéristiques peuvent être peu informatives",
-        "B": "Le modèle a un biais élevé",
-        "C": "Les caractéristiques sont trop pertinentes",
-        "D": "Une erreur d'implémentation dans le calcul de l'importance"
+        "A": "L'erreur quadratique moyenne.",
+        "B": "La distance euclidienne.",
+        "C": "L’indice Gini ou l’entropie.",
+        "D": "La différence absolue moyenne."
       },
-      "correct_answer": "A",
-      "explanation": "Des importances similaires peuvent indiquer que les caractéristiques fournissent peu d'informations discriminatives, un problème de modèle mal formé ou de bruit. Un biais élevé ou des caractéristiques trop pertinentes ne correspond pas à cette situation. Une erreur de calcul d'importance est possible mais pas garantie.",
+      "correct_answer": "C",
+      "explanation": "Les mesures d'impureté telles que l'indice Gini et l'entropie sont utilisées pour choisir les meilleurs points de 'split' dans les arbres de décision, en minimisant l'impureté des données à chaque étape, ce qui améliore la précision de prédiction. La réponse A est incorrecte, car l'erreur quadratique moyenne est utilisée dans les modèles de régression pour évaluer l'erreur plutôt que pour le 'split'. La réponse B, la distance euclidienne, est souvent appliquée dans les algorithmes de clustering et non pour minimiser l'impureté dans les arbres de décision. La réponse D, la différence absolue moyenne, ne figure pas parmi les méthodes employées pour maximiser la pureté d'un 'split'.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Quel avantage apporte la méthode de bagging utilisée dans le Random Forest?",
+      "question": "Quel est un désavantage potentiel d'une trop grande importance des variables dans une prédiction?",
       "image_url": null,
       "choices": {
-        "A": "Réduction de la variance du modèle",
-        "B": "Amélioration du biais de façon systématique",
-        "C": "Suppression des caractéristiques dépendantes",
-        "D": "Augmentation significative de la précision pour les petits datasets"
+        "A": "Cela empêche l'interface utilisateur de se charger correctement.",
+        "B": "Cela simplifie excessivement le modèle final.",
+        "C": "Cela assure que toutes les caractéristiques sont biaisées.",
+        "D": "Les données peuvent surapprendre sur des caractéristiques peu importantes."
       },
-      "correct_answer": "A",
-      "explanation": "Le bagging réduit surtout la variance du modèle en moyenne les erreurs sur des sous-ensembles. Il n'améliore pas directement le biais élevé de certains modèles et ne traite pas spécifiquement des caractéristiques dépendantes ni de gains spécifiques pour des petits ensembles.",
+      "correct_answer": "D",
+      "explanation": "Si certaines caractéristiques dominent excessivement le modèle, la multitude de variables pourrait conduire à un modèle qui capture les anomalies du jeu de données d'entraînement, ce qui peut conduire à un surapprentissage. La réponse A est incorrecte puisqu'elle est hors propos dans le contexte de la performance des modèles de machine learning. La réponse B est fausse car simplifier un modèle ne se traduit pas nécessairement par une surestimation de l'importance des variables. La réponse C n'est pas exacte car toutes les caractéristiques n'entraînent pas nécessairement des biais, surtout pas de façon uniforme comme proposé.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Dans un Random Forest, comment l'aléatoire aide-t-il à prévenir le surapprentissage?",
+      "question": "Quel avantage les arbres de décision offrent-ils par rapport à d'autres modèles dans les tâches de classification?",
       "image_url": null,
       "choices": {
-        "A": "En créant différents modèles grâce à des sous-échantillonnages des données et des caractéristiques",
-        "B": "En utilisant des seuils fixes pour tous les arbres",
-        "C": "En construisant des arbres avec profondeur égale",
-        "D": "En affectant la même importance à toutes les variables"
+        "A": "Ils facilitent l'interprétation des décisions.",
+        "B": "Ils garantissent toujours la meilleure précision.",
+        "C": "Ils nécessitent un très petit jeu de données pour s'entraîner.",
+        "D": "Ils fonctionnent sans prétraitement des données."
       },
       "correct_answer": "A",
-      "explanation": "L'aléatoire, via sous-échantillonnage des données et caractéristiques, diversifie les arbres, ce qui aide à généraliser et réduire la variance. Les seuils fixes, les profondeurs égales ou une importance uniforme ne capitalisent pas sur l'aléatoire pour éviter le surapprentissage.",
+      "explanation": "Les arbres de décision sont appréciés pour leur lisibilité, car leur structure simple montre clairement comment les décisions sont dérivées, les rendant faciles à interpréter. La réponse B est incorrecte, car les arbres ne garantissent pas toujours la meilleure précision, cela dépend de la nature des données et du problème. La réponse C est fausse car même si les arbres peuvent fonctionner avec des petits jeux de données, ce n'est pas une règle absolue. La réponse D est inexacte, bien que les arbres puissent souvent se passer d'un pré-traitement intensif, un certain nettoyage des données est généralement nécessaire pour obtenir de bonnes performances.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Pourquoi l'indice de Gini est-il mieux adapté que l'entropie dans certains cas pour les arbres de décision?",
+      "question": "Pourquoi choisir un Random Forest au lieu d'un arbre de décision pour un problème complexe?",
       "image_url": null,
       "choices": {
-        "A": "Il est plus rapide à calculer que l'entropie",
-        "B": "Il prend en compte plus de classes par défaut",
-        "C": "Il n'a aucune limitation mathématique par rapport à l'entropie",
-        "D": "Il favorise les classes équilibrées"
+        "A": "Parce que cela exige moins de ressources pour l'entraînement.",
+        "B": "Pour mieux gérer le surapprentissage avec un ensemble de modèles divers.",
+        "C": "Parce qu'il construit un seul arbre pour mieux généraliser.",
+        "D": "Car il est plus simple à interpréter que de multiples petits arbres."
       },
-      "correct_answer": "A",
-      "explanation": "L'indice de Gini est plus rapide à calculer car il ne nécessite pas de logarithmes, contrairement à l'entropie. Cela ne concerne pas le nombre de classes, la limitation mathématique ou le traitement des classes pour faire pencher le travail dans son sens.",
+      "correct_answer": "B",
+      "explanation": "Le choix d'un Random Forest par rapport à un seul arbre de décision pour des problèmes complexes est motivé par sa capacité à mieux gérer le surapprentissage grâce à l'agrégation des prédictions de modèles diversifiés. Cette approche utilise la mise en sac (bagging) pour créer divers arbres en utilisant différents sous-échantillons des données. La réponse A est incorrecte, car un Random Forest nécessite généralement plus de ressources. La réponse C est fausse, car le Random Forest ne repose pas sur un seul arbre. La réponse D est également fausse, car l'interprétation devient plus complexe avec la multiplication des arbres au sein de la forêt aléatoire.",
       "difficulty": "hard"
     },
     {
       "type": "text",
-      "question": "Quel est le rôle principal des arbres de décision dans un modèle de Random Forest?",
+      "question": "Dans le contexte des arbres de décision, qu'est-ce qu'un 'split' ?",
       "image_url": null,
       "choices": {
-        "A": "Fournir une base diversifiée de prédictions à agréger",
-        "B": "Éliminer les erreurs de biais systématique",
-        "C": "Créer un consensus basé sur l'arbre le plus précis",
-        "D": "Calculer l'importance des variables pour optimiser les prochaines séparations"
+        "A": "C'est la réduction de la profondeur totale de l'arbre.",
+        "B": "C'est le calcul de l'entropie totale de l'arbre.",
+        "C": "C'est le processus de division d'un nœud en nœuds enfants basés sur une caractéristique.",
+        "D": "C'est la suppression de caractéristiques non pertinentes avant d'entraîner l'arbre."
       },
-      "correct_answer": "A",
-      "explanation": "Dans un Random Forest, chaque arbre fournit une prédiction qui est ensuite moyennée ou majorée, offrant une diversité qui réduit la variance et, par conséquent, le surapprentissage. Les biais ne sont pas nécessairement corrigés par l'arbre le plus précis ou l'optimisation future.",
-      "difficulty": "hard"
+      "correct_answer": "C",
+      "explanation": "Un 'split' dans les arbres de décision consiste à diviser un nœud en nœuds enfants en fonction d'une caractéristique particulière, afin de maximiser l'homogénéité de chaque partition. Le choix A est correct car il décrit précisément ce processus. Le choix B est incorrect car l'entropie est un critère pour décider où diviser, non le split lui-même. Le choix C est faux car réduire la profondeur concerne le pruning, pas le split. Le choix D est incorrect parce que la suppression de caractéristiques relève de la sélection préalable, pas du processus de split.",
+      "difficulty": "easy"
     }
   ]
 }

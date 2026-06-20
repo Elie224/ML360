@@ -14,7 +14,7 @@
         "D": "REINFORCE utilise un modèle du monde pour prévoir les récompenses futures."
       },
       "correct_answer": "A",
-      "explanation": "REINFORCE est une méthode de gradient de politique qui se base sur les retours épisodiques complets pour mettre à jour la politique. B est faux car REINFORCE n'est pas un algorithme basé sur la fonction de valeur, il n'a pas besoin de l'estimer. C est incorrect car les algorithmes de gradient de politique peuvent mettre à jour les politiques de manière stochastique. D est erroné car REINFORCE ne s'appuie pas sur un modèle du monde.",
+      "explanation": "REINFORCE est une méthode de gradient de politique qui se base sur les retours épisodiques complets pour mettre à jour la politique. B est faux car REINFORCE n'est pas un algorithme basé sur la fonction de valeur, il n'a pas besoin de l'estimer. C est incorrect car les algorithmes de gradient de politique peuvent mettre à jour les politiques de manière stochastique. D est erroné car REINFORCE ne s'appuie pas sur un modèle du monde. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (REINFORCE nécessite une estimation de la fonction de valeur d'état.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Comment un baseline réduit-il la variance dans l'apprentissage par renforcement?",
       "image_url": null,
       "choices": {
-        "A": "En soustrayant une valeur constante de la récompense totale sans changer le biais.",
-        "B": "En augmentant la récompense moyenne des actions choisies.",
+        "A": "En augmentant la récompense moyenne des actions choisies.",
+        "B": "En soustrayant une valeur constante de la récompense totale sans changer le biais.",
         "C": "En normalisant toutes les récompenses à une valeur unitaire.",
         "D": "En estimant la probabilité de chaque action prise dans un état donné."
       },
-      "correct_answer": "A",
-      "explanation": "Un baseline est une technique qui consiste à soustraire une valeur constante, souvent une estimation de la valeur de l'état, des récompenses, réduisant ainsi la variance sans affecter le biais de l'estimation du gradient. B est faux car un baseline n'augmente pas la récompense moyenne. C ne concerne pas la réduction de variance et est incorrect. D se réfère à des politiques stochastiques, pas de l'utilisation d'un baseline.",
+      "correct_answer": "B",
+      "explanation": "Un baseline est une technique qui consiste à soustraire une valeur constante, souvent une estimation de la valeur de l'état, des récompenses, réduisant ainsi la variance sans affecter le biais de l'estimation du gradient. B est faux car un baseline n'augmente pas la récompense moyenne. C ne concerne pas la réduction de variance et est incorrect. D se réfère à des politiques stochastiques, pas de l'utilisation d'un baseline. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En augmentant la récompense moyenne des actions choisies.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En normalisant toutes les récompenses à une valeur",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quel est l'avantage principal des méthodes de gradient de politique sur les méthodes basées sur la fonction de valeur?",
       "image_url": null,
       "choices": {
-        "A": "Elles optimisent directement la politique.",
+        "A": "Elles sont toujours plus rapides à converger.",
         "B": "Elles ne nécessitent pas d'observations environnementales directes.",
-        "C": "Elles sont toujours plus rapides à converger.",
+        "C": "Elles optimisent directement la politique.",
         "D": "Elles n'ont pas besoin de gérer l'exploration et l'exploitation."
       },
-      "correct_answer": "A",
-      "explanation": "Les méthodes de gradient de politique optimisent directement les paramètres de la politique, ce qui peut conduire à une meilleure performance dans les cas où une représentation explicite de la politique est bénéfique. B est faux car elles nécessitent généralement des observations. C est incorrect car la vitesse de convergence n'est pas toujours garantie d'être plus rapide. D est faux car l'exploration et l'exploitation restent des défis dans l'apprentissage par renforcement, y compris avec les méthodes de gradient de politique.",
+      "correct_answer": "C",
+      "explanation": "Les méthodes de gradient de politique optimisent directement les paramètres de la politique, ce qui peut conduire à une meilleure performance dans les cas où une représentation explicite de la politique est bénéfique. B est faux car elles nécessitent généralement des observations. C est incorrect car la vitesse de convergence n'est pas toujours garantie d'être plus rapide. D est faux car l'exploration et l'exploitation restent des défis dans l'apprentissage par renforcement, y compris avec les méthodes de gradient de politique. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elles sont toujours plus rapides à converger.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "En quoi le gradient de politique probabiliste diffère-t-il du gradient de politique déterministe?",
       "image_url": null,
       "choices": {
-        "A": "Le gradient de politique probabiliste exploite une politique stochastique.",
+        "A": "Le gradient de politique deterministe nécessite une double estimation des valeurs d'état.",
         "B": "Le gradient de politique probabiliste utilise des fonctions de valeur déterministes.",
         "C": "Le gradient de politique déterministe est uniquement applicable aux problèmes continus.",
-        "D": "Le gradient de politique deterministe nécessite une double estimation des valeurs d'état."
+        "D": "Le gradient de politique probabiliste exploite une politique stochastique."
       },
-      "correct_answer": "A",
-      "explanation": "Le gradient de politique probabiliste est centré sur les politiques stochastiques, qui choisissent les actions selon une distribution de probabilité. B est incorrect car les politiques ne concernent pas directement les fonctions de valeur. C est faux car les méthodes déterministes ne sont pas limitées aux problèmes continus. D est erroné car la double estimation est un concept associé à d'autres techniques d'apprentissage, pas directement aux gradients de politique.",
+      "correct_answer": "D",
+      "explanation": "Le gradient de politique probabiliste est centré sur les politiques stochastiques, qui choisissent les actions selon une distribution de probabilité. B est incorrect car les politiques ne concernent pas directement les fonctions de valeur. C est faux car les méthodes déterministes ne sont pas limitées aux problèmes continus. D est erroné car la double estimation est un concept associé à d'autres techniques d'apprentissage, pas directement aux gradients de politique. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le gradient de politique deterministe nécessite une double estimation des valeurs d'état.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le gradient de",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Ils suppriment la nécessité d'une exploration aléatoire."
       },
       "correct_answer": "A",
-      "explanation": "Un baseline dépendant de l'état, tel qu'une estimation de la valeur, réduit la variance de l'estimation du gradient sans ajouter de biais, car il ne change pas la direction moyenne. B est incorrect car il n'introduit pas de biais. C est faux puisque le but est de réduire la variance tout en maintenant un biais nul. D est incorrect car les baselines ne suppriment pas la nécessité de l'exploration.",
+      "explanation": "Un baseline dépendant de l'état, tel qu'une estimation de la valeur, réduit la variance de l'estimation du gradient sans ajouter de biais, car il ne change pas la direction moyenne. B est incorrect car il n'introduit pas de biais. C est faux puisque le but est de réduire la variance tout en maintenant un biais nul. D est incorrect car les baselines ne suppriment pas la nécessité de l'exploration. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Ils augmentent la variance en introduisant un biais.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ils réduisent le biais mais augmentent la",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Dans le contexte des méthodes de gradient de politique, qu'est-ce que la 'variance de gradient'?",
       "image_url": null,
       "choices": {
-        "A": "La fluctuation aléatoire du gradient estimé de la politique.",
-        "B": "Le biais introduit par l'approximation des gradients.",
+        "A": "Le biais introduit par l'approximation des gradients.",
+        "B": "La fluctuation aléatoire du gradient estimé de la politique.",
         "C": "La différence entre les gradients calculés par des politiques stochastiques et déterministes.",
         "D": "L'erreur inévitable due au choix de l'architecture de la politique."
       },
-      "correct_answer": "A",
-      "explanation": "La variance de gradient se réfère aux fluctuations aléatoires dans l'estimation du gradient dû à la nature stochastique de l'échantillonnage. B est faux car il parle de biais, pas de variance. C est incorrect car il décrit une comparaison, pas la variance intrinsèque dans l'échantillonnage. D n'est pas directement lié à la variance des gradients mais à d'autres types d'erreurs potentielles.",
+      "correct_answer": "B",
+      "explanation": "La variance de gradient se réfère aux fluctuations aléatoires dans l'estimation du gradient dû à la nature stochastique de l'échantillonnage. B est faux car il parle de biais, pas de variance. C est incorrect car il décrit une comparaison, pas la variance intrinsèque dans l'échantillonnage. D n'est pas directement lié à la variance des gradients mais à d'autres types d'erreurs potentielles. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le biais introduit par l'approximation des gradients.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La différence entre les gradients calculés par des politiques stochastiques et déterministes.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Comment le cadre REINFORCE gère-t-il l'exploration dans l'apprentissage de la politique?",
       "image_url": null,
       "choices": {
-        "A": "En adaptant régulièrement les probabilités associées aux actions grâce aux retours reçus.",
+        "A": "En utilisant une fonction de valeur pour déterminer les actions.",
         "B": "En calculant les gradients pour chaque action possible.",
-        "C": "En utilisant une fonction de valeur pour déterminer les actions.",
+        "C": "En adaptant régulièrement les probabilités associées aux actions grâce aux retours reçus.",
         "D": "En évitant les actions avec des récompenses négatives."
       },
-      "correct_answer": "A",
-      "explanation": "REINFORCE ajuste adaptativement la probabilité des actions à prendre en fonction des retours, favorisant les actions ayant conduit à de meilleures récompenses. B est incorrect car il ne traite que des actions réellement entreprises lors de l'épisode. C est erroné; REINFORCE n'utilise pas de fonction de valeur pour dicter les actions. D est inadéquat car éviter simplement les actions négatives n'est pas suffisant pour une bonne exploration.",
+      "correct_answer": "C",
+      "explanation": "REINFORCE ajuste adaptativement la probabilité des actions à prendre en fonction des retours, favorisant les actions ayant conduit à de meilleures récompenses. B est incorrect car il ne traite que des actions réellement entreprises lors de l'épisode. C est erroné; REINFORCE n'utilise pas de fonction de valeur pour dicter les actions. D est inadéquat car éviter simplement les actions négatives n'est pas suffisant pour une bonne exploration. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (En utilisant une fonction de valeur pour déterminer les actions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En calculant les gradients pour chaque action",
       "difficulty": "hard"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quelle propriété est typiquement utilisée pour juger de l'efficacité d'un baseline dans la réduction de variance?",
       "image_url": null,
       "choices": {
-        "A": "La covariance nulle avec le vrai gradient.",
+        "A": "La réduction des biais des récompenses épisodiques.",
         "B": "La multiplication des récompenses par une constante.",
         "C": "L'augmentation de la vitesse de convergence.",
-        "D": "La réduction des biais des récompenses épisodiques."
+        "D": "La covariance nulle avec le vrai gradient."
       },
-      "correct_answer": "A",
-      "explanation": "Un baseline efficace doit avoir une covariance nulle avec le terme de gradient, assurant ainsi qu'il ne change pas la direction moyenne du gradient et réduit seulement la variance. B est faux car la multiplication des récompenses ne fait pas office de baseline. C n'est pas directement correct car bien que des baselines puissent aider, l'amélioration de la vitesse dépend de nombreux autres facteurs. D est faux puisqu'un baseline agit sur la variance, pas sur le biais.",
+      "correct_answer": "D",
+      "explanation": "Un baseline efficace doit avoir une covariance nulle avec le terme de gradient, assurant ainsi qu'il ne change pas la direction moyenne du gradient et réduit seulement la variance. B est faux car la multiplication des récompenses ne fait pas office de baseline. C n'est pas directement correct car bien que des baselines puissent aider, l'amélioration de la vitesse dépend de nombreux autres facteurs. D est faux puisqu'un baseline agit sur la variance, pas sur le biais. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (La réduction des biais des récompenses épisodiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B",
       "difficulty": "hard"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Elles remplacent le besoin d'explorer incertainement l'espace d'État."
       },
       "correct_answer": "A",
-      "explanation": "Les méthodes de réduction de la variance permettent d'obtenir des estimations plus précises du gradient, ce qui peut réduire le nombre d'échantillons nécessaires et accélérer l'apprentissage. B est incorrect; bien que la variance réduction puisse indirectement aider à cela, ce n'est pas son rôle principal. C est fallacieux car la stabilité des réseaux de neurones dépend plus largement de l'architecture du réseau et du choix des hyperparamètres. D est incorrect car la réduction de la variance ne remplace pas la nécessité de l'exploration.",
+      "explanation": "Les méthodes de réduction de la variance permettent d'obtenir des estimations plus précises du gradient, ce qui peut réduire le nombre d'échantillons nécessaires et accélérer l'apprentissage. B est incorrect; bien que la variance réduction puisse indirectement aider à cela, ce n'est pas son rôle principal. C est fallacieux car la stabilité des réseaux de neurones dépend plus largement de l'architecture du réseau et du choix des hyperparamètres. D est incorrect car la réduction de la variance ne remplace pas la nécessité de l'exploration. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Elles assurent que la politique rencontre moins d'erreurs d'approximation.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "hard"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quelle caractéristique de REINFORCE contribue le plus à sa simplicité par rapport à d'autres méthodes de renforcement?",
       "image_url": null,
       "choices": {
-        "A": "Il ne nécessite pas de valeurs d'état ou d'action.",
-        "B": "Il ne met pas à jour les probabilités d'action basées sur les retours épisodiques.",
+        "A": "Il ne met pas à jour les probabilités d'action basées sur les retours épisodiques.",
+        "B": "Il ne nécessite pas de valeurs d'état ou d'action.",
         "C": "Il ne supporte pas l'apprentissage distribué.",
         "D": "Il évite le biais en excluant toute sorte de fonction de base."
       },
-      "correct_answer": "A",
-      "explanation": "REINFORCE est simple car il n'a pas besoin d'estimations de valeurs d'état ou d'action, utilisant directement les retours épisodiques pour l'apprentissage. B est incorrect car REINFORCE met à jour les probabilités basées sur les retours. C est erroné car même si REINFORCE peut ne pas être optimisé pour l'apprentissage distribué, cela ne contribue pas à sa simplicité. D est faux car on peut intégrer des baselines dans REINFORCE pour la réduction de la variance.",
+      "correct_answer": "B",
+      "explanation": "REINFORCE est simple car il n'a pas besoin d'estimations de valeurs d'état ou d'action, utilisant directement les retours épisodiques pour l'apprentissage. B est incorrect car REINFORCE met à jour les probabilités basées sur les retours. C est erroné car même si REINFORCE peut ne pas être optimisé pour l'apprentissage distribué, cela ne contribue pas à sa simplicité. D est faux car on peut intégrer des baselines dans REINFORCE pour la réduction de la variance. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il ne met pas à jour les probabilités d'action basées sur les retours épisodiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "En présence de quelle condition la méthode de REINFORCE peut-elle souffrir d'une variance particulièrement élevée?",
       "image_url": null,
       "choices": {
-        "A": "Lorsque les récompenses sont différées et non fréquentes.",
+        "A": "Lorsqu'il y a une estimation précise des fonctions de valeur.",
         "B": "Lorsqu'il utilise des politques déterministes.",
-        "C": "Lorsqu'il y a une estimation précise des fonctions de valeur.",
+        "C": "Lorsque les récompenses sont différées et non fréquentes.",
         "D": "Lorsque les politiques sont mises à jour par lots massifs de données."
       },
-      "correct_answer": "A",
-      "explanation": "La variance élevée dans REINFORCE est souvent due à des récompenses différées et rares, ce qui rend difficile l'attribution des crédits. B est faux car REINFORCE utilise des politiques stochastiques. C est incorrect car REINFORCE ne repose pas sur des fonctions de valeur. D est erroné car l’estimation par lots peut en réalité réduire la variance.",
+      "correct_answer": "C",
+      "explanation": "La variance élevée dans REINFORCE est souvent due à des récompenses différées et rares, ce qui rend difficile l'attribution des crédits. B est faux car REINFORCE utilise des politiques stochastiques. C est incorrect car REINFORCE ne repose pas sur des fonctions de valeur. D est erroné car l’estimation par lots peut en réalité réduire la variance. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Lorsqu'il y a une estimation précise des fonctions de valeur.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Lorsqu'il utilise des politques déterministes.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel est le principal obstacle à l'application directe des gradients de politique dans les environnements à grande échelle?",
       "image_url": null,
       "choices": {
-        "A": "Le coût élevé de calcul des estimations de gradient de politique pour des actions rares.",
+        "A": "La nécessité de recourir à des politques déterministes pour les environnements discrets complexes.",
         "B": "L'incapacité d'apprendre des politiques stochastiques.",
         "C": "La convergence lente due à l'utilisation de récompenses épisodiques.",
-        "D": "La nécessité de recourir à des politques déterministes pour les environnements discrets complexes."
+        "D": "Le coût élevé de calcul des estimations de gradient de politique pour des actions rares."
       },
-      "correct_answer": "A",
-      "explanation": "Le coût de calcul des estimations de gradient pour des actions rares peut être particulièrement élevé dans les environnements à grande échelle où les actions possibles sont nombreuses. B est incorrect car l'une des forces des gradients de politique est leur applicabilité aux politiques stochastiques. C est partiellement vrai mais C ne représente pas le principal obstacle, car il est souvent compensé par des techniques de variance reduction. D est incorrect car les gradients de politique stochastiques sont souvent souhaitables dans les environnements discrets.",
+      "correct_answer": "D",
+      "explanation": "Le coût de calcul des estimations de gradient pour des actions rares peut être particulièrement élevé dans les environnements à grande échelle où les actions possibles sont nombreuses. B est incorrect car l'une des forces des gradients de politique est leur applicabilité aux politiques stochastiques. C est partiellement vrai mais C ne représente pas le principal obstacle, car il est souvent compensé par des techniques de variance reduction. D est incorrect car les gradients de politique stochastiques sont souvent souhaitables dans les environnements discrets. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (La nécessité de recourir à des politques déterministes pour les environnements discrets complexes.) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Il introduit un biais en faveur des actions positives."
       },
       "correct_answer": "A",
-      "explanation": "Un baseline réduit la variance de l'évaluation du gradient, ce qui peut accélérer la convergence sans modifier la direction moyenne du gradient. B est faux; il ne transforme pas le gradient en une estimation déterministe. C est incorrect car le rôle du baseline n'est pas d'améliorer l'estimation de l'espérance. D est erroné car un baseline efficace ne devrait pas introduire de biais.",
+      "explanation": "Un baseline réduit la variance de l'évaluation du gradient, ce qui peut accélérer la convergence sans modifier la direction moyenne du gradient. B est faux; il ne transforme pas le gradient en une estimation déterministe. C est incorrect car le rôle du baseline n'est pas d'améliorer l'estimation de l'espérance. D est erroné car un baseline efficace ne devrait pas introduire de biais. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il rend le calcul du gradient déterministe.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il fournit une meilleure estimation de l'espérance de la récompense.) est plausible mais faux car",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quel est l'avantage d'utiliser un baseline adaptatif dans les algorithmes de policy gradient?",
       "image_url": null,
       "choices": {
-        "A": "Il s'ajuste dynamiquement selon les variations des récompenses.",
-        "B": "Il élimine la nécessité d'un apprentissage supervisé.",
+        "A": "Il élimine la nécessité d'un apprentissage supervisé.",
+        "B": "Il s'ajuste dynamiquement selon les variations des récompenses.",
         "C": "Il empêche complètement la divergence des politiques.",
         "D": "Il utilise une approche fixe qui simplifie les calculs."
       },
-      "correct_answer": "A",
-      "explanation": "Un baseline adaptatif peut s'ajuster aux variations des récompenses, ce qui aide à maintenir une faible variance tout au long du processus d'apprentissage. B est faux car les baselines ne sont pas liés à l'apprentissage supervisé. C est incorrect car un baseline ne peut pas garantir l'absence de divergence. D est erroné; un baseline fixe, justement, ne s'adapte pas.",
+      "correct_answer": "B",
+      "explanation": "Un baseline adaptatif peut s'ajuster aux variations des récompenses, ce qui aide à maintenir une faible variance tout au long du processus d'apprentissage. B est faux car les baselines ne sont pas liés à l'apprentissage supervisé. C est incorrect car un baseline ne peut pas garantir l'absence de divergence. D est erroné; un baseline fixe, justement, ne s'adapte pas. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il élimine la nécessité d'un apprentissage supervisé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il empêche complètement la divergence des politiques.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "hard"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Quel mécanisme dans les méthodes REINFORCE aide à gérer l'exploration-exploitation?",
       "image_url": null,
       "choices": {
-        "A": "La formulation de la politique avec des distributions de probabilité.",
+        "A": "Les mises à jour fonctionnelles basées sur les valeurs d'action ajustées.",
         "B": "L'utilisation de mécanismes de softmax pour des valeurs d'état.",
-        "C": "Les mises à jour fonctionnelles basées sur les valeurs d'action ajustées.",
+        "C": "La formulation de la politique avec des distributions de probabilité.",
         "D": "Le recours à des réseaux de neurones entièrement connectés pour déduire les résultats."
       },
-      "correct_answer": "A",
-      "explanation": "Les méthodes REINFORCE définissent la politique en termes de distributions de probabilité sur les actions, ce qui permet naturellement une exploration stochastique. B est incorrect car il ne concerne pas les méthodes REINFORCE. C est faux car les mises à jour se basent sur les retours, pas sur des valeurs d'action ajustées. D est erroné car bien que les réseaux puissent faire partie du modèle, ce n'est pas spécifiquement un mécanisme d'exploration.",
+      "correct_answer": "C",
+      "explanation": "Les méthodes REINFORCE définissent la politique en termes de distributions de probabilité sur les actions, ce qui permet naturellement une exploration stochastique. B est incorrect car il ne concerne pas les méthodes REINFORCE. C est faux car les mises à jour se basent sur les retours, pas sur des valeurs d'action ajustées. D est erroné car bien que les réseaux puissent faire partie du modèle, ce n'est pas spécifiquement un mécanisme d'exploration. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les mises à jour fonctionnelles basées sur les valeurs d'action ajustées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (L'utilisation",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Lors de l'utilisation de méthodes de gradient de politique, quel problème peut émerger si les gradients sont trop souvent mis à jour?",
       "image_url": null,
       "choices": {
-        "A": "Risques de divergence élevée en raison de fluctuations excessives dans la direction du gradient.",
+        "A": "La politique devient déterministe, perdant ainsi la capacité à explorer de nouvelles actions.",
         "B": "Surexploitation qui conduit à une exploration inadéquate.",
         "C": "Stagnation du modèle due à l'adaptabilité limitée de la méthode.",
-        "D": "La politique devient déterministe, perdant ainsi la capacité à explorer de nouvelles actions."
+        "D": "Risques de divergence élevée en raison de fluctuations excessives dans la direction du gradient."
       },
-      "correct_answer": "A",
-      "explanation": "Des mises à jour trop fréquentes des gradients peuvent en fait provoquer des fluctuations extrêmes, conduisant à de la divergence dans l'apprentissage. B est incorrect car l'utilisation de mon gradient de politique favorise généralement l'exploration via des politiques stochastiques. C est faux car ce n'est pas représentatif de l'impact de flucutations excessives, et D est incorrect car la nature des politiques est généralement stochastique et non déterministe.",
+      "correct_answer": "D",
+      "explanation": "Des mises à jour trop fréquentes des gradients peuvent en fait provoquer des fluctuations extrêmes, conduisant à de la divergence dans l'apprentissage. B est incorrect car l'utilisation de mon gradient de politique favorise généralement l'exploration via des politiques stochastiques. C est faux car ce n'est pas représentatif de l'impact de flucutations excessives, et D est incorrect car la nature des politiques est généralement stochastique et non déterministe. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (La politique devient déterministe, perdant ainsi la capacité à explorer de nouvelles actions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Surexploitation qui conduit à",
       "difficulty": "hard"
     },
     {
@@ -232,13 +232,13 @@
       "question": "Quel aspect du processus de REINFORCE en fait une cible potentielle pour l'amélioration de la stabilité et de la performance?",
       "image_url": null,
       "choices": {
-        "A": "La succession aléatoire des actions prises.",
-        "B": "La dépendance vis-à-vis des retours épisodiques complets pour l'apprentissage.",
+        "A": "La dépendance vis-à-vis des retours épisodiques complets pour l'apprentissage.",
+        "B": "La succession aléatoire des actions prises.",
         "C": "L'utilisation d'un taux d'apprentissage statique.",
         "D": "L'application d'une estimation déterministe des fonctions de valeur."
       },
-      "correct_answer": "B",
-      "explanation": "La dépendance de REINFORCE aux retours épisodiques complets pour les mises à jour est souvent une cible d'amélioration pour améliorer la stabilité et la performance, car elle peut introduire une variance élevée. A est incorrect car l'aléatoire est voulu pour l'exploration. C est incorrect car la nature de l'apprentissage n'est pas essentielle à la critique de REINFORCE, même s'il peut être amélioré. D est non avéré car REINFORCE ne s'appuie pas sur des estimations déterministes de valeurs.",
+      "correct_answer": "A",
+      "explanation": "La dépendance de REINFORCE aux retours épisodiques complets pour les mises à jour est souvent une cible d'amélioration pour améliorer la stabilité et la performance, car elle peut introduire une variance élevée. A est incorrect car l'aléatoire est voulu pour l'exploration. C est incorrect car la nature de l'apprentissage n'est pas essentielle à la critique de REINFORCE, même s'il peut être amélioré. D est non avéré car REINFORCE ne s'appuie pas sur des estimations déterministes de valeurs. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La succession aléatoire des actions prises.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'utilisation",
       "difficulty": "hard"
     }
   ]

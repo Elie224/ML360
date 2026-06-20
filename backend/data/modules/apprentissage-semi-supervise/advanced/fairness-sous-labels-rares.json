@@ -14,7 +14,7 @@
         "D": "Le modèle est biaisé en faveur de classes majoritaires uniquement à cause d'un manque d'échantillons."
       },
       "correct_answer": "A",
-      "explanation": "Le biais d'échantillonnage se produit lorsque l'échantillon n'est pas représentatif de la population, particulièrement problématique pour les classes rares. Un algorithme complexe (B) ou le volume de données (C) ne sont pas spécifiquement des problèmes liés au biais d'échantillonnage. Le modèle biaisé (D) est une conséquence de l'échantillon biaisé, pas une cause uniquement du manque d'échantillons.",
+      "explanation": "Le biais d'échantillonnage se produit lorsque l'échantillon n'est pas représentatif de la population, particulièrement problématique pour les classes rares. Un algorithme complexe (B) ou le volume de données (C) ne sont pas spécifiquement des problèmes liés au biais d'échantillonnage. Le modèle biaisé (D) est une conséquence de l'échantillon biaisé, pas une cause uniquement du manque d'échantillons. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (L'algorithme est trop complexe pour les données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Les données sont trop nombreuses pour être traitées efficacement.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Comment un audit peut-il aider à identifier les biais dans le traitement des groupes sous-représentés?",
       "image_url": null,
       "choices": {
-        "A": "En comparant les performances du modèle sur des données étiquetées entre différents groupes.",
-        "B": "En évaluant la vitesse de convergence du modèle.",
+        "A": "En évaluant la vitesse de convergence du modèle.",
+        "B": "En comparant les performances du modèle sur des données étiquetées entre différents groupes.",
         "C": "En optimisant la perte du modèle.",
         "D": "En ajustant uniquement les hyperparamètres."
       },
-      "correct_answer": "A",
-      "explanation": "Un audit permet de comprendre les différences de performance entre groupes en analysant où le modèle échoue spécifiquement. Comparer la vitesse de convergence (B) ou la perte (C) ne révèle pas nécessairement des biais. Ajuster les hyperparamètres (D) n'identifie pas les biais mais peut les atténuer une fois découverts.",
+      "correct_answer": "B",
+      "explanation": "Un audit permet de comprendre les différences de performance entre groupes en analysant où le modèle échoue spécifiquement. Comparer la vitesse de convergence (B) ou la perte (C) ne révèle pas nécessairement des biais. Ajuster les hyperparamètres (D) n'identifie pas les biais mais peut les atténuer une fois découverts. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En évaluant la vitesse de convergence du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En optimisant la perte du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (En",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quelle méthode de mitigation pourrait être utilisée pour atténuer l'impact des groupes sous-représentés?",
       "image_url": null,
       "choices": {
-        "A": "Mettre en place une pondération des instances basée sur la rareté des classes.",
+        "A": "Réduire la taille des couches cachées du réseau.",
         "B": "Augmenter les fonctions d'activation du modèle.",
-        "C": "Réduire la taille des couches cachées du réseau.",
+        "C": "Mettre en place une pondération des instances basée sur la rareté des classes.",
         "D": "Passer à un modèle complètement supervisé."
       },
-      "correct_answer": "A",
-      "explanation": "La pondération des instances donne plus d'importance aux données sous-représentées, atténuant les biais. Augmenter les fonctions d'activation (B) ou réduire la taille des couches (C) ne corrigent pas directement les biais. Passer à un modèle entièrement supervisé (D) n'est pas viable si les données étiquetées restent limitées.",
+      "correct_answer": "C",
+      "explanation": "La pondération des instances donne plus d'importance aux données sous-représentées, atténuant les biais. Augmenter les fonctions d'activation (B) ou réduire la taille des couches (C) ne corrigent pas directement les biais. Passer à un modèle entièrement supervisé (D) n'est pas viable si les données étiquetées restent limitées. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduire la taille des couches cachées du réseau.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter les fonctions d'activation du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Passer à un",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Pourquoi est-il crucial d'identifier les groupes sous-représentés dans les données?",
       "image_url": null,
       "choices": {
-        "A": "Parce qu'ils peuvent affecter l'équité et la performance du modèle.",
+        "A": "Parce qu'ils augmentent la capacité de calcul requise par le modèle.",
         "B": "Parce qu'ils n'influencent en rien l'apprentissage du modèle.",
         "C": "Parce qu'ils sont plus facilement détectés après l'entraînement du modèle.",
-        "D": "Parce qu'ils augmentent la capacité de calcul requise par le modèle."
+        "D": "Parce qu'ils peuvent affecter l'équité et la performance du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "Les groupes sous-représentés peuvent conduire à des biais et réduire l'équité. Ils influencent directement l'apprentissage (contrairement à B). Les détecter après l'entraînement (C) limite les opportunités de correction. Plus de calculs (D) ne résout pas directement le problème d'équité.",
+      "correct_answer": "D",
+      "explanation": "Les groupes sous-représentés peuvent conduire à des biais et réduire l'équité. Ils influencent directement l'apprentissage (contrairement à B). Les détecter après l'entraînement (C) limite les opportunités de correction. Plus de calculs (D) ne résout pas directement le problème d'équité. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce qu'ils augmentent la capacité de calcul requise par le modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Parce qu'ils n'influencent en rien l'apprentissage du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce qu'ils sont plus facilement détectés",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Vérifier la convergence des gradients."
       },
       "correct_answer": "A",
-      "explanation": "Comparer la distribution des prédictions peut révéler si un modèle traite injustement différents groupes. La dimensionnalité des données (B) et la complexité temporelle (C) ne mettent pas en lumière les biais. La convergence des gradients (D) n'indique rien sur l'équité de traitement entre groupes.",
+      "explanation": "Comparer la distribution des prédictions peut révéler si un modèle traite injustement différents groupes. La dimensionnalité des données (B) et la complexité temporelle (C) ne mettent pas en lumière les biais. La convergence des gradients (D) n'indique rien sur l'équité de traitement entre groupes. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Examiner la dimensionnalité originelle des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Évaluer la complexité temporelle du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Vérifier la convergence des gradients.) est plausible mais",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Quelle est une conséquence possible si les biais d'échantillonnage ne sont pas traités dans l'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Les décisions du modèle s'appliquent inéquitablement à différentes populations.",
-        "B": "Le modèle va inévitablement générer plus de faux négatifs.",
+        "A": "Le modèle va inévitablement générer plus de faux négatifs.",
+        "B": "Les décisions du modèle s'appliquent inéquitablement à différentes populations.",
         "C": "Les groupes majoritaires ne sont jamais touchés par le biais du modèle.",
         "D": "Les capacités computationnelles sont atteintes plus rapidement."
       },
-      "correct_answer": "A",
-      "explanation": "Sans traitement des biais, les modèles prennent des décisions injustes, ciblant mal certains groupes. Plus de faux négatifs (B) n'est pas garanti et les groupes majoritaires (C) peuvent aussi être affectés. Les capacités computationnelles (D) ne sont pas directement concernées par le biais d'échantillonnage.",
+      "correct_answer": "B",
+      "explanation": "Sans traitement des biais, les modèles prennent des décisions injustes, ciblant mal certains groupes. Plus de faux négatifs (B) n'est pas garanti et les groupes majoritaires (C) peuvent aussi être affectés. Les capacités computationnelles (D) ne sont pas directement concernées par le biais d'échantillonnage. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le modèle va inévitablement générer plus de faux négatifs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Les groupes majoritaires ne sont jamais touchés par le biais du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quel est un problème fréquent lors de l'audit de l'équité des modèles semi-supervisés quand les labels sont rares?",
       "image_url": null,
       "choices": {
-        "A": "La rareté des labels rend difficile l'évaluation de l'équilibre des erreurs.",
+        "A": "Les biais dans les prédictions sont systématiquement ignorés par les auditeurs.",
         "B": "Les metrics quantitatives ne peuvent jamais être utilisées sans données massives.",
-        "C": "Les biais dans les prédictions sont systématiquement ignorés par les auditeurs.",
+        "C": "La rareté des labels rend difficile l'évaluation de l'équilibre des erreurs.",
         "D": "Les audits doivent réduire la taille des données pour être réalisables."
       },
-      "correct_answer": "A",
-      "explanation": "Avec des labels rares, il est ardu de vérifier si toutes les classes sont équitablement traitées. Quantifier l'équité sans données massives est possible avec des techniques appropriées (B). Ignorer les biais par les auditeurs (C) dépend de l'exactitude de l'analyse. Réduire la taille des données (D) n'est pas une exigence pour un audit.",
+      "correct_answer": "C",
+      "explanation": "Avec des labels rares, il est ardu de vérifier si toutes les classes sont équitablement traitées. Quantifier l'équité sans données massives est possible avec des techniques appropriées (B). Ignorer les biais par les auditeurs (C) dépend de l'exactitude de l'analyse. Réduire la taille des données (D) n'est pas une exigence pour un audit. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les biais dans les prédictions sont systématiquement ignorés par les auditeurs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Les metrics quantitatives ne peuvent jamais être utilisées sans données massives.) est plausible mais faux car il ne respecte pas",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quelle stratégie pourrait aider à traiter le déséquilibre des classes dans un modèle semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Utiliser des synthetics pour augmenter les données de classes rares.",
+        "A": "Augmenter la taille de l'ensemble de validation pour plus de précision.",
         "B": "Ignorer les classes sous-représentées pour simplifier le modèle.",
         "C": "Réduire les fonctionnalités en entrée pour favoriser la généralisation.",
-        "D": "Augmenter la taille de l'ensemble de validation pour plus de précision."
+        "D": "Utiliser des synthetics pour augmenter les données de classes rares."
       },
-      "correct_answer": "A",
-      "explanation": "Créer des synthetics ajoute des exemples pour les classes rares, aidant le modèle à apprendre ces classes. Ignorer ces classes (B) accentue le biais. Réduire les fonctionnalités (C) ne cible pas le problème d'équilibre. Un plus grand ensemble de validation (D) ne résout pas le déséquilibre des classes.",
+      "correct_answer": "D",
+      "explanation": "Créer des synthetics ajoute des exemples pour les classes rares, aidant le modèle à apprendre ces classes. Ignorer ces classes (B) accentue le biais. Réduire les fonctionnalités (C) ne cible pas le problème d'équilibre. Un plus grand ensemble de validation (D) ne résout pas le déséquilibre des classes. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Augmenter la taille de l'ensemble de validation pour plus de précision.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Ignorer les classes sous-représentées pour simplifier le modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Une vérification de la complexité algorithmique de chaque prédiction."
       },
       "correct_answer": "A",
-      "explanation": "Évaluer l'impact des erreurs par groupe permet de juger de l'équité des décisions. La précision moyenne (B) masque des biais spécifiques à des classes. La compétence des ingénieurs (C) ou la complexité algorithmique (D) n'examine pas directement l'équité du modèle.",
+      "explanation": "Évaluer l'impact des erreurs par groupe permet de juger de l'équité des décisions. La précision moyenne (B) masque des biais spécifiques à des classes. La compétence des ingénieurs (C) ou la complexité algorithmique (D) n'examine pas directement l'équité du modèle. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Un simple calcul de la précision moyenne.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une mesure de la compétence des ingénieurs impliqués.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Une vérification de la complexité algorithmique de chaque prédiction.)",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quel est un exemple concret de biais d'échantillonnage dans l'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "L'inclusion disproportionnée de données à partir de sources facilement accessibles.",
-        "B": "La sélection aléatoire de données à partir d'une distribution représentative de la population.",
+        "A": "La sélection aléatoire de données à partir d'une distribution représentative de la population.",
+        "B": "L'inclusion disproportionnée de données à partir de sources facilement accessibles.",
         "C": "Exclure toutes les données d'une catégorie spécifique pour quelconque raison.",
         "D": "Utiliser la même taille d'échantillon pour toutes les catégories disponibles."
       },
-      "correct_answer": "A",
-      "explanation": "Le biais d'échantillonnage survient lorsque certaines sous-populations sont sur-représentées dans les données disponibles, comme dans le cas des sources facilement accessibles. La sélection aléatoire éviterait ce biais, exclure toutes les données n'est pas une méthode d'échantillonnage, et maintenir une taille d'échantillon constante ne corrige pas nécessairement le biais initial.",
+      "correct_answer": "B",
+      "explanation": "Le biais d'échantillonnage survient lorsque certaines sous-populations sont sur-représentées dans les données disponibles, comme dans le cas des sources facilement accessibles. La sélection aléatoire éviterait ce biais, exclure toutes les données n'est pas une méthode d'échantillonnage, et maintenir une taille d'échantillon constante ne corrige pas nécessairement le biais initial. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (La sélection aléatoire de données à partir d'une distribution représentative de la population.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Exclure toutes les données d'une catégorie spécifique pour quelconque raison.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Pourquoi les groupes sous-représentés posent-ils un défi particulier dans l'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Les algorithmes de machine learning ont souvent des hypothèses implicites qui les désavantagent.",
+        "A": "On ne peut pas combiner les données de différents groupes sans perdre des informations.",
         "B": "Les données des groupes sous-représentés sont toujours de moins bonne qualité.",
-        "C": "On ne peut pas combiner les données de différents groupes sans perdre des informations.",
+        "C": "Les algorithmes de machine learning ont souvent des hypothèses implicites qui les désavantagent.",
         "D": "Les groupes sous-représentés contiennent toujours des biais culturels qui perturbent les algorithmes."
       },
-      "correct_answer": "A",
-      "explanation": "Les biais algorithmiques peuvent amplifier les disparités lorsque les groupes sont sous-représentés car les modèles peuvent ne pas généraliser bien pour ces groupes. Cela entraîne des erreurs plus élevées. La qualité des données n'est pas toujours inférieure et la combinaison de données peut être faite proprement avec une méthodologie appropriée.",
+      "correct_answer": "C",
+      "explanation": "Les biais algorithmiques peuvent amplifier les disparités lorsque les groupes sont sous-représentés car les modèles peuvent ne pas généraliser bien pour ces groupes. Cela entraîne des erreurs plus élevées. La qualité des données n'est pas toujours inférieure et la combinaison de données peut être faite proprement avec une méthodologie appropriée. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (On ne peut pas combiner les données de différents groupes sans perdre des informations.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Les données des groupes sous-représentés sont toujours de moins bonne qualité.) est plausible mais faux car il ne respecte pas",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quelle est la méthode d'audit la plus directe pour évaluer l'équité d'un modèle d'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Comparer les performances du modèle entre différents groupes démographiques.",
+        "A": "Évaluer la rapidité d'entraînement du modèle pour s'assurer de l'efficacité.",
         "B": "Analyser uniquement la précision globale du modèle.",
         "C": "Vérifier la conformité avec les standards de développement logiciel.",
-        "D": "Évaluer la rapidité d'entraînement du modèle pour s'assurer de l'efficacité."
+        "D": "Comparer les performances du modèle entre différents groupes démographiques."
       },
-      "correct_answer": "A",
-      "explanation": "Auditer l'équité d'un modèle nécessite de comparer les métriques de performance telles que la précision ou le F1-score entre différents groupes, ce qui peut révéler des biais potentiels. La précision globale ne donne pas d'informations détaillées sur les biais, la conformité au développement logiciel et la rapidité ne concernent pas directement l'équité.",
+      "correct_answer": "D",
+      "explanation": "Auditer l'équité d'un modèle nécessite de comparer les métriques de performance telles que la précision ou le F1-score entre différents groupes, ce qui peut révéler des biais potentiels. La précision globale ne donne pas d'informations détaillées sur les biais, la conformité au développement logiciel et la rapidité ne concernent pas directement l'équité. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Évaluer la rapidité d'entraînement du modèle pour s'assurer de l'efficacité.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Analyser uniquement la précision globale du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "medium"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Augmenter le nombre de couches cachées dans le modèle pour augmenter la complexité."
       },
       "correct_answer": "A",
-      "explanation": "Enrichir le jeu de données assure que les sous-populations sont équitablement représentées, ce qui aide à équilibrer l'apprentissage. Réduire les données existantes ne comble pas les lacunes, ignorer complètement des classes peut aggraver le biais, et augmenter la complexité du modèle sans nouvelles données n'offre pas nécessairement de solution au biais.",
+      "explanation": "Enrichir le jeu de données assure que les sous-populations sont équitablement représentées, ce qui aide à équilibrer l'apprentissage. Réduire les données existantes ne comble pas les lacunes, ignorer complètement des classes peut aggraver le biais, et augmenter la complexité du modèle sans nouvelles données n'offre pas nécessairement de solution au biais. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Réduire la quantité de données provenant de groupes sur-représentés pour équilibrer le volume.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ignorer les classes peu fréquentes pour simplifier le modèle.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "medium"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quel est le principal défi que le biais d'échantillonnage pose dans l'apprentissage semi-supervisé avec labels rares?",
       "image_url": null,
       "choices": {
-        "A": "Les modèles entraînés peuvent sur-représenter les classes sur-échantillonnées",
-        "B": "Le biais d'échantillonnage n'affecte pas la performance d'un modèle",
+        "A": "Le biais d'échantillonnage n'affecte pas la performance d'un modèle",
+        "B": "Les modèles entraînés peuvent sur-représenter les classes sur-échantillonnées",
         "C": "Il aide à équilibrer les données en incorporant des exemples non étiquetés",
         "D": "Il garantit que toutes les classes sont représentées équitablement"
       },
-      "correct_answer": "A",
-      "explanation": "Le biais d'échantillonnage survient lorsque certaines classes sont sur-représentées ou sous-représentées dans l'ensemble de données, pouvant mener à des modèles biaisés vers ces classes. En revanche, dire que le biais n'affecte pas la performance, qu'il aide l'équilibrage ou qu'il garantit l'équité est incorrect et trompeur dans ce contexte.",
+      "correct_answer": "B",
+      "explanation": "Le biais d'échantillonnage survient lorsque certaines classes sont sur-représentées ou sous-représentées dans l'ensemble de données, pouvant mener à des modèles biaisés vers ces classes. En revanche, dire que le biais n'affecte pas la performance, qu'il aide l'équilibrage ou qu'il garantit l'équité est incorrect et trompeur dans ce contexte. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le biais d'échantillonnage n'affecte pas la performance d'un modèle) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il aide à équilibrer les données en incorporant des exemples non étiquetés) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "medium"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Pourquoi les groupes sous-représentés posent-ils un problème pour la justice dans l'apprentissage semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Ils peuvent mener à des préjugés inéquitables car le modèle n'apprend pas suffisamment sur eux",
+        "A": "Ils n'ont pas d'effet sur la performance des modèles",
         "B": "Ils garantissent une performance générique",
-        "C": "Ils n'ont pas d'effet sur la performance des modèles",
+        "C": "Ils peuvent mener à des préjugés inéquitables car le modèle n'apprend pas suffisamment sur eux",
         "D": "Ils permettent au modèle de mieux généraliser"
       },
-      "correct_answer": "A",
-      "explanation": "Les groupes sous-représentés peuvent engendrer des préjugés inéquitables si le modèle n'est pas suffisamment informé au sujet de ces minorités, influençant sa capacité à bien les prédire. Contrairement à cette vérité, une performance générique, l'absence d'effet ou une meilleure généralisation sont des notions erronées dans ce scénario.",
+      "correct_answer": "C",
+      "explanation": "Les groupes sous-représentés peuvent engendrer des préjugés inéquitables si le modèle n'est pas suffisamment informé au sujet de ces minorités, influençant sa capacité à bien les prédire. Contrairement à cette vérité, une performance générique, l'absence d'effet ou une meilleure généralisation sont des notions erronées dans ce scénario. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Ils n'ont pas d'effet sur la performance des modèles) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Ils garantissent une performance générique) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Ils permettent au",
       "difficulty": "medium"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Qu'est-ce qu'un audit dans le contexte de l'apprentissage semi-supervisé avec labels rares?",
       "image_url": null,
       "choices": {
-        "A": "C'est un processus d'évaluation des biais et de la performance d'un modèle",
+        "A": "C'est une technique exclusivement destinée à la suppression de bruit dans les données",
         "B": "C'est un algorithme d'optimisation pour améliorer la performance",
         "C": "C'est une méthode pour augmenter la taille de l'ensemble de données",
-        "D": "C'est une technique exclusivement destinée à la suppression de bruit dans les données"
+        "D": "C'est un processus d'évaluation des biais et de la performance d'un modèle"
       },
-      "correct_answer": "A",
-      "explanation": "Un audit consiste à examiner la présence de biais et l'équité de la performance d'un modèle. Ce n'est ni un algorithme d'optimisation, ni une méthode pour augmenter les données, ni une technique de réduction de bruit, mais un outil d'évaluation crucial pour garantir l'équité du modèle.",
+      "correct_answer": "D",
+      "explanation": "Un audit consiste à examiner la présence de biais et l'équité de la performance d'un modèle. Ce n'est ni un algorithme d'optimisation, ni une méthode pour augmenter les données, ni une technique de réduction de bruit, mais un outil d'évaluation crucial pour garantir l'équité du modèle. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (C'est une technique exclusivement destinée à la suppression de bruit dans les données) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (C'est un algorithme d'optimisation pour améliorer la performance) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "medium"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Utiliser uniquement des labels synthétiques générés"
       },
       "correct_answer": "A",
-      "explanation": "Augmenter les données pour des groupes sous-représentés peut aider à réduire les biais; c'est une stratégie proactive. En revanche, s'entraîner exclusivement avec des données non étiquetées, ignorer les minorités, ou utiliser uniquement des labels synthétiques ne résoudrait pas efficacement les biais et pourrait même les exarcerber.",
+      "explanation": "Augmenter les données pour des groupes sous-représentés peut aider à réduire les biais; c'est une stratégie proactive. En revanche, s'entraîner exclusivement avec des données non étiquetées, ignorer les minorités, ou utiliser uniquement des labels synthétiques ne résoudrait pas efficacement les biais et pourrait même les exarcerber. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (S'entraîner avec seulement des données non étiquetées) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ignorer les groupes minoritaires pour éviter le biais) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Utiliser uniquement des",
       "difficulty": "medium"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Quand un audit indique une disparité de performance, quelle est une première étape recommandée?",
       "image_url": null,
       "choices": {
-        "A": "Analyser la source des biais en revisitant l'échantillon de données",
-        "B": "Améliorer directement les indicateurs de performance du modèle",
+        "A": "Améliorer directement les indicateurs de performance du modèle",
+        "B": "Analyser la source des biais en revisitant l'échantillon de données",
         "C": "Augmenter simplement le nombre d'itérations de l'entraînement",
         "D": "Ajouter plus de bruit aux données pour plus de variabilité"
       },
-      "correct_answer": "A",
-      "explanation": "Analyser les biais à leur source dans l'échantillon permet d'identifier des déséquilibres dans les données. Augmenter les itérations ou ajouter du bruit sans comprendre la cause des biais serait contre-productif, tandis qu'améliorer directement les indicateurs sans comprendre le problème sous-jacent ignore le vrai défi.",
+      "correct_answer": "B",
+      "explanation": "Analyser les biais à leur source dans l'échantillon permet d'identifier des déséquilibres dans les données. Augmenter les itérations ou ajouter du bruit sans comprendre la cause des biais serait contre-productif, tandis qu'améliorer directement les indicateurs sans comprendre le problème sous-jacent ignore le vrai défi. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Améliorer directement les indicateurs de performance du modèle) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Augmenter simplement le nombre d'itérations de l'entraînement) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Ajouter plus de bruit aux",
       "difficulty": "medium"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Quel rôle joue une analyse de sensibilité pour évaluer l'équité d'un modèle?",
       "image_url": null,
       "choices": {
-        "A": "Elle identifie comment de légères perturbations affectent les résultats dans les différents groupes",
+        "A": "Elle calcule la vitesse d'apprentissage optimale pour chaque itération",
         "B": "Elle aide le modèle à s'entraîner plus rapidement",
-        "C": "Elle calcule la vitesse d'apprentissage optimale pour chaque itération",
+        "C": "Elle identifie comment de légères perturbations affectent les résultats dans les différents groupes",
         "D": "Elle est principalement utilisée pour réduire le surapprentissage"
       },
-      "correct_answer": "A",
-      "explanation": "L'analyse de sensibilité révèle comment des perturbations mineures influencent le modèle, notamment dans divers groupes, ce qui est essentiel pour évaluer l'équité. Accélérer l'entraînement, déterminer la vitesse d'apprentissage optimale ou réduire le surapprentissage ne sont pas des rôles centrés sur l'évaluation de l'équité.",
+      "correct_answer": "C",
+      "explanation": "L'analyse de sensibilité révèle comment des perturbations mineures influencent le modèle, notamment dans divers groupes, ce qui est essentiel pour évaluer l'équité. Accélérer l'entraînement, déterminer la vitesse d'apprentissage optimale ou réduire le surapprentissage ne sont pas des rôles centrés sur l'évaluation de l'équité. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle calcule la vitesse d'apprentissage optimale pour chaque itération) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle aide le modèle à s'entraîner plus rapidement) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elle est principalement utilisée",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Quelle mesure est souvent utilisée pour auditer l'équité d'un modèle dans des contextes de sous-représentation?",
       "image_url": null,
       "choices": {
-        "A": "Fairness Disparity Index",
+        "A": "Iteration-Convergence Coefficient",
         "B": "Root Mean Square Error (RMSE)",
         "C": "Data Augmentation Ratio",
-        "D": "Iteration-Convergence Coefficient"
+        "D": "Fairness Disparity Index"
       },
-      "correct_answer": "A",
-      "explanation": "Le Fairness Disparity Index est conçu pour mesurer l'équité en détectant des différences de performance entre les groupes. RMSE mesure les erreurs de prédiction, sans se concentrer sur l'équité; le ratio d'augmentation de données n'indique pas l'équité; et le coefficient de convergence d'itération n'existe pas comme un terme utilisé pour auditer l'équité.",
+      "correct_answer": "D",
+      "explanation": "Le Fairness Disparity Index est conçu pour mesurer l'équité en détectant des différences de performance entre les groupes. RMSE mesure les erreurs de prédiction, sans se concentrer sur l'équité; le ratio d'augmentation de données n'indique pas l'équité; et le coefficient de convergence d'itération n'existe pas comme un terme utilisé pour auditer l'équité. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Iteration-Convergence Coefficient) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Root Mean Square Error (RMSE)) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Data Augmentation Ratio) est plausible",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "En mélangeant les étiquettes des données existantes"
       },
       "correct_answer": "A",
-      "explanation": "Les données synthétiques peuvent renforcer la présence des groupes sous-représentés, réduisant ainsi les biais. Supprimer des instances ou se baser uniquement sur des générateurs rompt la cohérence par rapport aux vérités terrain, tandis que mélanger les étiquettes nuit à l'intégrité du jeu de données.",
+      "explanation": "Les données synthétiques peuvent renforcer la présence des groupes sous-représentés, réduisant ainsi les biais. Supprimer des instances ou se baser uniquement sur des générateurs rompt la cohérence par rapport aux vérités terrain, tandis que mélanger les étiquettes nuit à l'intégrité du jeu de données. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (En supprimant toutes les instances originales) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En s'appuyant uniquement sur des générateurs de données pour l'entraînement) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (En mélangeant les étiquettes",
       "difficulty": "hard"
     },
     {
@@ -302,13 +302,13 @@
       "question": "Quel est l'effet principal du sur-échantillonnage sur les groupes sous-représentés lors de l'entraînement d'un modèle?",
       "image_url": null,
       "choices": {
-        "A": "Il améliore la balance des classes, offrant plus d'occasions au modèle d'apprendre ces groupes",
-        "B": "Il n'a aucun effet significatif sur le modèle",
+        "A": "Il n'a aucun effet significatif sur le modèle",
+        "B": "Il améliore la balance des classes, offrant plus d'occasions au modèle d'apprendre ces groupes",
         "C": "Il permet au modèle de ne plus tenir compte des données des groupes sur-représentés",
         "D": "Il garantit le surapprentissage des données supplémentaires"
       },
-      "correct_answer": "A",
-      "explanation": "Sur-échantillonner augmente le poids des groupes minoritaires, réduisant les biais. Dire que cela n'a aucun effet, que ça rejette les sur-représentés ou garantit le surapprentissage sans nuance est une vision réductrice et trompeuse.",
+      "correct_answer": "B",
+      "explanation": "Sur-échantillonner augmente le poids des groupes minoritaires, réduisant les biais. Dire que cela n'a aucun effet, que ça rejette les sur-représentés ou garantit le surapprentissage sans nuance est une vision réductrice et trompeuse. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il n'a aucun effet significatif sur le modèle) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il permet au modèle de ne plus tenir compte des données des groupes sur-représentés) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il garantit le surapprentissage des données supplémentaires) est plausible",
       "difficulty": "hard"
     },
     {
@@ -316,13 +316,13 @@
       "question": "Comment l'audit contribue-t-il à l'amélioration des biais dans un modèle semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Il détecte les biais présents et fournit des directives pour les corriger",
+        "A": "Il réduit systématiquement la taille du jeu de données",
         "B": "Il élimine automatiquement le surapprentissage",
-        "C": "Il réduit systématiquement la taille du jeu de données",
+        "C": "Il détecte les biais présents et fournit des directives pour les corriger",
         "D": "Il optimise la rapidité d'entraînement du modèle"
       },
-      "correct_answer": "A",
-      "explanation": "Un audit révèle où résident les biais, facilitant ainsi leur correction via des stratégies adaptées. Il n'élimine pas automatiquement le surapprentissage, ne préconise pas de réduire les données ni ne se focalise sur la rapidité d'entraînement.",
+      "correct_answer": "C",
+      "explanation": "Un audit révèle où résident les biais, facilitant ainsi leur correction via des stratégies adaptées. Il n'élimine pas automatiquement le surapprentissage, ne préconise pas de réduire les données ni ne se focalise sur la rapidité d'entraînement. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il réduit systématiquement la taille du jeu de données) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il élimine automatiquement le surapprentissage) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Il optimise la rapidité d'entraînement du modèle) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -330,13 +330,13 @@
       "question": "Quels facteurs faut-il principalement évaluer durant un audit de biais pour garantir l'équité?",
       "image_url": null,
       "choices": {
-        "A": "Disparités de performance entre les groupes",
+        "A": "Dimension des hyperparamètres",
         "B": "Temps de calcul total",
         "C": "Nombre d'itérations pour la convergence",
-        "D": "Dimension des hyperparamètres"
+        "D": "Disparités de performance entre les groupes"
       },
-      "correct_answer": "A",
-      "explanation": "Évaluer les disparités de performance entre groupes garantit que le modèle n’est pas biaisé. Le temps de calcul, les itérations pour convergence ou la dimension des hyperparamètres sont des métriques moins pertinentes pour évaluer l’équité.",
+      "correct_answer": "D",
+      "explanation": "Évaluer les disparités de performance entre groupes garantit que le modèle n’est pas biaisé. Le temps de calcul, les itérations pour convergence ou la dimension des hyperparamètres sont des métriques moins pertinentes pour évaluer l’équité. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Dimension des hyperparamètres) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Temps de calcul total) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Nombre d'itérations pour la convergence) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "hard"
     },
     {
@@ -350,7 +350,7 @@
         "D": "Pour équilibrer la vitesse d'exécution du modèle"
       },
       "correct_answer": "A",
-      "explanation": "En se concentrant sur les groupes sous-représentés, un audit met en lumière les biais potentiels. Réduire leur influence, les ignorer, ou équilibrer la vitesse d'exécution ne sont pas des stratégies centrées sur l'équité.",
+      "explanation": "En se concentrant sur les groupes sous-représentés, un audit met en lumière les biais potentiels. Réduire leur influence, les ignorer, ou équilibrer la vitesse d'exécution ne sont pas des stratégies centrées sur l'équité. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Pour s'assurer que seules les classes majoritaires influencent l'entraînement) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour permettre au modèle d'ignorer efficacement ces données) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Pour équilibrer la vitesse d'exécution du modèle) est plausible mais faux car il ne",
       "difficulty": "hard"
     },
     {
@@ -358,13 +358,13 @@
       "question": "Quel est un indicateur fréquent dans l'analyse de biais pour les modèles semi-supervisés?",
       "image_url": null,
       "choices": {
-        "A": "Variance de précision entre les groupes",
-        "B": "Nombre total de données utilisées",
+        "A": "Nombre total de données utilisées",
+        "B": "Variance de précision entre les groupes",
         "C": "Fréquence des mises à jour des poids synaptiques",
         "D": "Taux d'apprentissage standard"
       },
-      "correct_answer": "A",
-      "explanation": "Observer la variabilité de précision parmi les groupes aide à repérer les disparités de traitement. En revanche, le nombre de données, la fréquence de mise à jour des poids ou le taux d'apprentissage ne se concentrent pas explicitement sur les biais intergroupes.",
+      "correct_answer": "B",
+      "explanation": "Observer la variabilité de précision parmi les groupes aide à repérer les disparités de traitement. En revanche, le nombre de données, la fréquence de mise à jour des poids ou le taux d'apprentissage ne se concentrent pas explicitement sur les biais intergroupes. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Nombre total de données utilisées) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Fréquence des mises à jour des poids synaptiques) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Taux d'apprentissage standard) est plausible mais faux car il",
       "difficulty": "hard"
     },
     {
@@ -372,13 +372,13 @@
       "question": "En quoi l'utilisation de méthodes ensemblistes peut-elle contribuer à la réduction des biais?",
       "image_url": null,
       "choices": {
-        "A": "Elles agrègent divers points de vue et atténuent les biais individuels des modèles",
+        "A": "Elles forcent une réduction générale de la complexité du modèle",
         "B": "Elles se concentrent uniquement sur un classificateur performant",
-        "C": "Elles forcent une réduction générale de la complexité du modèle",
+        "C": "Elles agrègent divers points de vue et atténuent les biais individuels des modèles",
         "D": "Elles empêchent l'intégration de données supplémentaires"
       },
-      "correct_answer": "A",
-      "explanation": "Les méthodes ensemblistes combinent plusieurs modèles pour équilibrer leurs biais particuliers, améliorant ainsi l'équité générale. En revanche, se fier à un seul classificateur, réduire la complexité ou empêcher des ajouts de données ne sont pas des caractéristiques inhérentes à ce type de stratégie.",
+      "correct_answer": "C",
+      "explanation": "Les méthodes ensemblistes combinent plusieurs modèles pour équilibrer leurs biais particuliers, améliorant ainsi l'équité générale. En revanche, se fier à un seul classificateur, réduire la complexité ou empêcher des ajouts de données ne sont pas des caractéristiques inhérentes à ce type de stratégie. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elles forcent une réduction générale de la complexité du modèle) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elles se concentrent uniquement sur un classificateur performant) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Elles empêchent l'intégration",
       "difficulty": "hard"
     },
     {
@@ -386,13 +386,13 @@
       "question": "Quelle pratique aide spécifiquement à la mitigation des biais dans un contexte semi-supervisé avec labels rares?",
       "image_url": null,
       "choices": {
-        "A": "Utilisation de regularisations équitables",
+        "A": "Réduction arbitraire des dimensions du modèle",
         "B": "Suppression de toutes les données non étiquetées",
         "C": "Focus exclusif sur les labels synthétiques",
-        "D": "Réduction arbitraire des dimensions du modèle"
+        "D": "Utilisation de regularisations équitables"
       },
-      "correct_answer": "A",
-      "explanation": "Les regularisations équitables ajustent le modèle pour minimiser les biais parmi les groupes. Effacer les données non étiquetées, se concentrer uniquement sur des labels non vérifiés ou réduire les dimensions sans stratégie ne soutiennent pas de manière ciblée la mitigation des biais.",
+      "correct_answer": "D",
+      "explanation": "Les regularisations équitables ajustent le modèle pour minimiser les biais parmi les groupes. Effacer les données non étiquetées, se concentrer uniquement sur des labels non vérifiés ou réduire les dimensions sans stratégie ne soutiennent pas de manière ciblée la mitigation des biais. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Réduction arbitraire des dimensions du modèle) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Suppression de toutes les données non étiquetées) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Focus exclusif sur les labels synthétiques) est plausible mais",
       "difficulty": "hard"
     }
   ]

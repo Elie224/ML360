@@ -14,7 +14,7 @@
         "D": "Un modèle qui atteint une haute précision en utilisant uniquement des données étiquetées."
       },
       "correct_answer": "A",
-      "explanation": "La surconfiance se produit lorsqu'un modèle assigne des probabilités de prédiction élevées de manière injustifiée, sous-estimant son incertitude. La réponse B est incorrecte car elle décrit une approche de réduction de l'incertitude, pas la surconfiance. C parle de calibration, pas de surconfiance. D décrit une situation improbable sans rapport direct avec la surconfiance.",
+      "explanation": "La surconfiance se produit lorsqu'un modèle assigne des probabilités de prédiction élevées de manière injustifiée, sous-estimant son incertitude. La réponse B est incorrecte car elle décrit une approche de réduction de l'incertitude, pas la surconfiance. C parle de calibration, pas de surconfiance. D décrit une situation improbable sans rapport direct avec la surconfiance. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Un modèle accepte uniquement des labels sûrs en ignorant les incertitudes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le processus de calibration des probabilités de prédiction d'un réseau neuronal.) est plausible mais faux car il ne respecte pas",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Quelle est la principale utilité du temperature scaling dans les modèles semi-supervisés?",
       "image_url": null,
       "choices": {
-        "A": "Ajuster les probabilités de sortie d'un modèle sans modifier ses décisions fondamentalement.",
-        "B": "Modifier les décisions de classification pour améliorer l’accuracy.",
+        "A": "Modifier les décisions de classification pour améliorer l’accuracy.",
+        "B": "Ajuster les probabilités de sortie d'un modèle sans modifier ses décisions fondamentalement.",
         "C": "Ajouter de nouvelles fonctionnalités aux modèles pour gérer des données bruitées.",
         "D": "Améliorer la vitesse de convergence lors de l'entraînement du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "Le temperature scaling est une technique utilisée pour calibrer les probabilités de sortie d'un modèle, rendant les prédictions plus fiables sans modifier les classes prédites. B est incorrect parce qu'il ne modifie pas directement l'accuracy. C est incorrect car il ne concerne pas l'ajout de fonctionnalités. D est faux car le temperature scaling ne change pas la vitesse d'entraînement.",
+      "correct_answer": "B",
+      "explanation": "Le temperature scaling est une technique utilisée pour calibrer les probabilités de sortie d'un modèle, rendant les prédictions plus fiables sans modifier les classes prédites. B est incorrect parce qu'il ne modifie pas directement l'accuracy. C est incorrect car il ne concerne pas l'ajout de fonctionnalités. D est faux car le temperature scaling ne change pas la vitesse d'entraînement. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Modifier les décisions de classification pour améliorer l’accuracy.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ajouter de nouvelles fonctionnalités aux modèles pour gérer des données bruitées.) est plausible mais faux car il",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Pourquoi la sélection prudente est-elle importante dans une approche semi-supervisée?",
       "image_url": null,
       "choices": {
-        "A": "Elle évite de propager de fausses étiquettes issues des données non étiquetées.",
+        "A": "Elle minimise le surapprentissage en utilisant des modèles multiples.",
         "B": "Elle réduit le besoin de données étiquetées en utilisant uniquement les plus fiables.",
-        "C": "Elle minimise le surapprentissage en utilisant des modèles multiples.",
+        "C": "Elle évite de propager de fausses étiquettes issues des données non étiquetées.",
         "D": "Elle assure l'étiquetage automatique de toutes les données disponibles."
       },
-      "correct_answer": "A",
-      "explanation": "La sélection prudente choisit soigneusement les données non étiquetées à inclure pour éviter de propager des erreurs. B est incorrect car ce n'est pas une réduction du besoin mais une amélioration de la qualité. C est faux car cela se réfère au bagging ou à l'enembling. D est incorrect; la sélection prudente n'automatise pas l'étiquetage, elle le filtre.",
+      "correct_answer": "C",
+      "explanation": "La sélection prudente choisit soigneusement les données non étiquetées à inclure pour éviter de propager des erreurs. B est incorrect car ce n'est pas une réduction du besoin mais une amélioration de la qualité. C est faux car cela se réfère au bagging ou à l'enembling. D est incorrect; la sélection prudente n'automatise pas l'étiquetage, elle le filtre. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle minimise le surapprentissage en utilisant des modèles multiples.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle réduit le besoin de données étiquetées en utilisant uniquement les plus fiables.) est plausible mais faux",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Comment le concept de fiabilité s'applique-t-il aux modèles semi-supervisés?",
       "image_url": null,
       "choices": {
-        "A": "Il implique que les prédictions d'un modèle sont cohérentes avec la réalité observée.",
+        "A": "La fiabilité se concentre sur une performance plus rapide sur les datasets non annotés.",
         "B": "Un modèle fiable réduit la variance des données analysées.",
         "C": "Il assure que les résultats du modèle sont toujours optimaux quel que soit le set de données utilisé.",
-        "D": "La fiabilité se concentre sur une performance plus rapide sur les datasets non annotés."
+        "D": "Il implique que les prédictions d'un modèle sont cohérentes avec la réalité observée."
       },
-      "correct_answer": "A",
-      "explanation": "La fiabilité vise à s'assurer que les probabilités prédites par un modèle sont alignées avec les vérités sous-jacentes. B est faux car il parle d'un autre aspect du model training. C n'est pas réaliste car la performance optimale n'est pas garantie. D est incorrect parce que la fiabilité ne concerne pas la rapidité.",
+      "correct_answer": "D",
+      "explanation": "La fiabilité vise à s'assurer que les probabilités prédites par un modèle sont alignées avec les vérités sous-jacentes. B est faux car il parle d'un autre aspect du model training. C n'est pas réaliste car la performance optimale n'est pas garantie. D est incorrect parce que la fiabilité ne concerne pas la rapidité. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (La fiabilité se concentre sur une performance plus rapide sur les datasets non annotés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Un modèle fiable réduit la variance des données analysées.) est plausible mais faux car il ne respecte",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Une fréquence d'ajustement des poids du modèle pendant l'entraînement."
       },
       "correct_answer": "A",
-      "explanation": "Dans le temperature scaling, le paramètre de température est utilisé pour ajuster les logits précédant la couche softmax, permettant de calibrer la confiance des prédictions. B est incorrect car régulariser n'est pas l'objectif du temperature scaling. C et D sont incorrects car ils ne sont pas liés au mécanisme de fonctionnement du temperature scaling.",
+      "explanation": "Dans le temperature scaling, le paramètre de température est utilisé pour ajuster les logits précédant la couche softmax, permettant de calibrer la confiance des prédictions. B est incorrect car régulariser n'est pas l'objectif du temperature scaling. C et D sont incorrects car ils ne sont pas liés au mécanisme de fonctionnement du temperature scaling. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Un coefficient de régularisation utilisé pour éviter le surapprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Un seuil minimal de confiance pour accepter une étiquette prédite.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Comment la surconfiance peut-elle affecter la performance d'un modèle semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Elle peut conduire à une généralisation excessive en raison de l'incertitude mal évaluée.",
-        "B": "Elle réduit les erreurs de prédiction en ignorant les données non fiables.",
+        "A": "Elle réduit les erreurs de prédiction en ignorant les données non fiables.",
+        "B": "Elle peut conduire à une généralisation excessive en raison de l'incertitude mal évaluée.",
         "C": "Elle améliore la capacité du modèle à détecter des patterns dans les données bruitées.",
         "D": "Elle stabilise la convergence lors des phases d'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "La surconfiance peut mener à une généralisation excessive car le modèle ne reconnaît pas correctement l'incertitude, ce qui peut fausser ses conclusions. B est incorrect car elle ne réduit pas les erreurs, elle augmente souvent les décisions incorrectes. C est faux car la surconfiance ne détecte pas mieux les patterns, elle induit en erreur. D est incorrect car elle ne stabilise pas la convergence.",
+      "correct_answer": "B",
+      "explanation": "La surconfiance peut mener à une généralisation excessive car le modèle ne reconnaît pas correctement l'incertitude, ce qui peut fausser ses conclusions. B est incorrect car elle ne réduit pas les erreurs, elle augmente souvent les décisions incorrectes. C est faux car la surconfiance ne détecte pas mieux les patterns, elle induit en erreur. D est incorrect car elle ne stabilise pas la convergence. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle réduit les erreurs de prédiction en ignorant les données non fiables.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle améliore la capacité du modèle à détecter",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quel est un défi commun associé à la calibration de la fiabilité des modèles semi-supervisés?",
       "image_url": null,
       "choices": {
-        "A": "Les estimations probabilistes sont biaisées par des échantillons non représentatifs.",
+        "A": "La calibration réduit l'espace de stockage disponible pour le modèle.",
         "B": "Les modèles ne supportent pas plus de deux classes à la fois.",
-        "C": "La calibration réduit l'espace de stockage disponible pour le modèle.",
+        "C": "Les estimations probabilistes sont biaisées par des échantillons non représentatifs.",
         "D": "L'entraînement non étiqueté ralentit considérablement les calculs de prédiction."
       },
-      "correct_answer": "A",
-      "explanation": "Les échantillons non représentatifs peuvent causer un biais dans les estimations probabilistes, nuisant à la calibration. B est incorrect car le support multi-classes est inhérent aux techniques modernes. C est faux car la calibration ne touche pas l'espace de stockage. D est incorrect car l'impact sur la vitesse de prédiction n'est pas directement lié à l'entraînement non étiqueté.",
+      "correct_answer": "C",
+      "explanation": "Les échantillons non représentatifs peuvent causer un biais dans les estimations probabilistes, nuisant à la calibration. B est incorrect car le support multi-classes est inhérent aux techniques modernes. C est faux car la calibration ne touche pas l'espace de stockage. D est incorrect car l'impact sur la vitesse de prédiction n'est pas directement lié à l'entraînement non étiqueté. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La calibration réduit l'espace de stockage disponible pour le modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Les modèles ne supportent pas plus de deux classes à la fois.) est plausible mais faux",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Pourquoi est-il crucial d'appliquer des méthodes de calibration comme le temperature scaling après l'entraînement d'un modèle semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Pour corriger les biais des estimations de confiance dans les classes prédictives.",
+        "A": "Pour ajuster dynamiquement les hyperparamètres durant le déploiement.",
         "B": "Pour étendre la gamme d'applications potentielles des modèles non supervisés.",
         "C": "Pour garantir une utilisation optimale de la puissance de calcul.",
-        "D": "Pour ajuster dynamiquement les hyperparamètres durant le déploiement."
+        "D": "Pour corriger les biais des estimations de confiance dans les classes prédictives."
       },
-      "correct_answer": "A",
-      "explanation": "Le temperature scaling permet de corriger les biais dans les probabilités de confiance, rendant les prédictions plus alignées avec la réalité. B est incorrect car le temperature scaling ne transforme pas un modèle semi-supervisé en non-supervisé. C est faux car il ne concerne pas la puissance de calcul. D est incorrect car le temperature scaling n'ajuste pas les hyperparamètres après déploiement.",
+      "correct_answer": "D",
+      "explanation": "Le temperature scaling permet de corriger les biais dans les probabilités de confiance, rendant les prédictions plus alignées avec la réalité. B est incorrect car le temperature scaling ne transforme pas un modèle semi-supervisé en non-supervisé. C est faux car il ne concerne pas la puissance de calcul. D est incorrect car le temperature scaling n'ajuste pas les hyperparamètres après déploiement. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour ajuster dynamiquement les hyperparamètres durant le déploiement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour étendre la gamme d'applications potentielles des modèles non supervisés.) est plausible mais faux car",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Les lacunes en matière de robustesse du modèle face aux données environnantes."
       },
       "correct_answer": "A",
-      "explanation": "Le temperature scaling n'influence pas la diversité des données d'entraînement, qui est un problème de collecte de données, pas de calibration. B est incorrect car le temperature scaling vise précisément à résoudre les problèmes de calibration. C est faux et C n'est pas un point directement défini ou résolu par le temperature scaling. D est incorrect; bien que la calibration améliore la fiabilité, elle ne résout pas tous les problèmes de robustesse.",
+      "explanation": "Le temperature scaling n'influence pas la diversité des données d'entraînement, qui est un problème de collecte de données, pas de calibration. B est incorrect car le temperature scaling vise précisément à résoudre les problèmes de calibration. C est faux et C n'est pas un point directement défini ou résolu par le temperature scaling. D est incorrect; bien que la calibration améliore la fiabilité, elle ne résout pas tous les problèmes de robustesse. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La calibration inadéquate des probabilités de prédiction.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (L'homogénéité des classes prédictives parmi",
       "difficulty": "hard"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Quelle est une limitation importante de la sélection prudente lorsqu'elle est appliquée aux données non étiquetées?",
       "image_url": null,
       "choices": {
-        "A": "Elle peut maintenir les biais initiaux en privilégiant des échantillons déjà surreprésentés.",
-        "B": "Elle réduit automatiquement la complexité des modèles utilisés.",
+        "A": "Elle réduit automatiquement la complexité des modèles utilisés.",
+        "B": "Elle peut maintenir les biais initiaux en privilégiant des échantillons déjà surreprésentés.",
         "C": "Elle ignore les influences contextuelles issues des modèles supervisés.",
         "D": "Elle garantit que toutes les étiquettes incertaines sont annulées."
       },
-      "correct_answer": "A",
-      "explanation": "La sélection prudente peut privilégier des échantillons surreprésentés, renforçant des biais initiaux. B est incorrect car la sélection prudente ne touche pas à la complexité des modèles. C est faux car la sélection prudente se focalise sur l'échantillonnage, pas sur les influences contextuelles. D n'est pas vrai car la sélection prudente ne garantit pas l'élimination de toutes les incertitudes.",
+      "correct_answer": "B",
+      "explanation": "La sélection prudente peut privilégier des échantillons surreprésentés, renforçant des biais initiaux. B est incorrect car la sélection prudente ne touche pas à la complexité des modèles. C est faux car la sélection prudente se focalise sur l'échantillonnage, pas sur les influences contextuelles. D n'est pas vrai car la sélection prudente ne garantit pas l'élimination de toutes les incertitudes. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle réduit automatiquement la complexité des modèles utilisés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle ignore les influences contextuelles issues des modèles supervisés.) est plausible mais faux car il ne respecte",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Comment peut-on évaluer la fiabilité de la calibration dans un cadre semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "À travers des métriques comme l'Expected Calibration Error (ECE) qui compare les probabilités prédites aux observations réelles.",
+        "A": "Avec une évaluation manuelle de toutes les prédictions générées par le modèle.",
         "B": "En utilisant exclusivement le taux d'acceptation des prédictions.",
-        "C": "Avec une évaluation manuelle de toutes les prédictions générées par le modèle.",
+        "C": "À travers des métriques comme l'Expected Calibration Error (ECE) qui compare les probabilités prédites aux observations réelles.",
         "D": "En focalisant sur les prédictions de classe majoritaire uniquement."
       },
-      "correct_answer": "A",
-      "explanation": "L'Expected Calibration Error (ECE) évalue la calibration en comparant les probabilités prédites à la fréquence réelle des événements. B est incorrect car le taux d'acceptation ne mesure pas directement la calibration. C est faux car l'évaluation manuelle est irréaliste pour la scalabilité. D est incorrect car se focaliser sur la classe majoritaire n'offre pas une vision complète de la fiabilité.",
+      "correct_answer": "C",
+      "explanation": "L'Expected Calibration Error (ECE) évalue la calibration en comparant les probabilités prédites à la fréquence réelle des événements. B est incorrect car le taux d'acceptation ne mesure pas directement la calibration. C est faux car l'évaluation manuelle est irréaliste pour la scalabilité. D est incorrect car se focaliser sur la classe majoritaire n'offre pas une vision complète de la fiabilité. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Avec une évaluation manuelle de toutes les prédictions générées par le modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En utilisant exclusivement le taux d'acceptation des prédictions.) est plausible mais faux",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Quel est l'impact principal de la surconfiance sur l'échantillonnage des données non étiquetées?",
       "image_url": null,
       "choices": {
-        "A": "Elle peut conduire à utiliser des données incorrectement étiquetées entraînant une dégradation du modèle.",
+        "A": "Elle stabilise les prédictions indépendamment de la qualité des données sources.",
         "B": "Elle facilite la réduction du bruit en éliminant les données incertaines.",
         "C": "Elle améliore la diversité de l'échantillon en intégrant des segments sous-représentés.",
-        "D": "Elle stabilise les prédictions indépendamment de la qualité des données sources."
+        "D": "Elle peut conduire à utiliser des données incorrectement étiquetées entraînant une dégradation du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "La surconfiance peut amener à des décisions incorrectes, incluant des données mal étiquetées, nuisant ainsi à la qualité du modèle. B est incorrect car éliminer les données incertaines de manière systématique peut augmenter les erreurs. C est faux; inclure des segments sous-représentés nécessite une gestion consciente de l'échantillonnage. D est incorrect car la stabilisation requiert une évaluation prudente des incertitudes, non une surestimation.",
+      "correct_answer": "D",
+      "explanation": "La surconfiance peut amener à des décisions incorrectes, incluant des données mal étiquetées, nuisant ainsi à la qualité du modèle. B est incorrect car éliminer les données incertaines de manière systématique peut augmenter les erreurs. C est faux; inclure des segments sous-représentés nécessite une gestion consciente de l'échantillonnage. D est incorrect car la stabilisation requiert une évaluation prudente des incertitudes, non une surestimation. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle stabilise les prédictions indépendamment de la qualité des données sources.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Elle facilite la réduction du bruit en éliminant les données",
       "difficulty": "hard"
     },
     {
@@ -182,7 +182,7 @@
         "D": "Il modifie directement les étiquettes de classification pour refléter les incertitudes."
       },
       "correct_answer": "A",
-      "explanation": "Le temperature scaling est préféré pour sa simplicité, nécessitant peu d'altérations à l'architecture du modèle. B est incorrect; le temperature scaling n'élimine pas les outliers. C est faux car la calibration par temperature scaling demande souvent des ajustements spécifiques à chaque contexte. D est incorrect car le temperature scaling ne modifie pas les étiquettes, il ajuste les probabilités.",
+      "explanation": "Le temperature scaling est préféré pour sa simplicité, nécessitant peu d'altérations à l'architecture du modèle. B est incorrect; le temperature scaling n'élimine pas les outliers. C est faux car la calibration par temperature scaling demande souvent des ajustements spécifiques à chaque contexte. D est incorrect car le temperature scaling ne modifie pas les étiquettes, il ajuste les probabilités. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il supprime automatiquement les échantillons outliers du dataset.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il offre des performances meilleures pour les tasks réels sans ajustements spécifiques.) est plausible mais faux car il",
       "difficulty": "hard"
     },
     {
@@ -190,13 +190,13 @@
       "question": "Quelle est une erreur fréquente lors de l'application de la sélection prudente?",
       "image_url": null,
       "choices": {
-        "A": "Ignorer les effets temporaires dus à des changements contextuels dans les données.",
-        "B": "Appliquer une stricte séparation entre données étiquetées et non étiquetées.",
+        "A": "Appliquer une stricte séparation entre données étiquetées et non étiquetées.",
+        "B": "Ignorer les effets temporaires dus à des changements contextuels dans les données.",
         "C": "Assumer que toutes les classes ont des proportions égales parmi les données choisis.",
         "D": "Réduire exagérément la variété de données utilisées durant l'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "Les données peuvent avoir des biais temporaires dus à des événements contextuels qui influencent les échantillons choisis; ne pas le prendre en compte est un piège courant. B est incorrect car une séparation stricte n'est pas demandée lors de la sélection prudente. C est incorrect car la proportion égale de classes n'est pas assurée par la sélection prudente. D est faux car trop réduire la variété de données lors de l'entraînement n'est pas une implémentation directe de la sélection prudente.",
+      "correct_answer": "B",
+      "explanation": "Les données peuvent avoir des biais temporaires dus à des événements contextuels qui influencent les échantillons choisis; ne pas le prendre en compte est un piège courant. B est incorrect car une séparation stricte n'est pas demandée lors de la sélection prudente. C est incorrect car la proportion égale de classes n'est pas assurée par la sélection prudente. D est faux car trop réduire la variété de données lors de l'entraînement n'est pas une implémentation directe de la sélection prudente. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Appliquer une stricte séparation entre données étiquetées et non étiquetées.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     },
     {
@@ -210,7 +210,7 @@
         "D": "La fréquence de mise à jour des paramètres du modèle pendant l'entraînement."
       },
       "correct_answer": "C",
-      "explanation": "Les erreurs importantes dans les données peuvent rendre l'effet de la calibration via le temperature scaling insuffisant pour améliorer la fiabilité, car l'erreur fondamentale reste. A est incorrect car le temperature scaling s'adapte à des distributions hétérogènes. B est faux car la faible capacité de généralisation affecte le modèle mais pas directement le temperature scaling. D est incorrect car la fréquence d'update n'a pas directement d'effet sur le résultat du temperature scaling.",
+      "explanation": "Les erreurs importantes dans les données peuvent rendre l'effet de la calibration via le temperature scaling insuffisant pour améliorer la fiabilité, car l'erreur fondamentale reste. A est incorrect car le temperature scaling s'adapte à des distributions hétérogènes. B est faux car la faible capacité de généralisation affecte le modèle mais pas directement le temperature scaling. D est incorrect car la fréquence d'update n'a pas directement d'effet sur le résultat du temperature scaling. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La présence d'une distribution de classes non homogène dans le jeu de données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix",
       "difficulty": "hard"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Quelle métrique est souvent utilisée pour estimer la qualité de la calibration d'un modèle?",
       "image_url": null,
       "choices": {
-        "A": "Expected Calibration Error (ECE)",
+        "A": "Receiver Operating Characteristic (ROC) Curve",
         "B": "Confusion Matrix",
         "C": "Precision-Recall Curve",
-        "D": "Receiver Operating Characteristic (ROC) Curve"
+        "D": "Expected Calibration Error (ECE)"
       },
-      "correct_answer": "A",
-      "explanation": "L'Expected Calibration Error (ECE) est une mesure qui quantifie l'erreur entre les probabilités prédites et les probabilités réelles. B est incorrect car la matrice de confusion montre les erreurs de classification pas de calibration. C est faux car Precision-Recall Curve est plus approprié pour les datasets déséquilibrés. D est incorrect car la courbe ROC évalue la différenciation mais pas la calibration.",
+      "correct_answer": "D",
+      "explanation": "L'Expected Calibration Error (ECE) est une mesure qui quantifie l'erreur entre les probabilités prédites et les probabilités réelles. B est incorrect car la matrice de confusion montre les erreurs de classification pas de calibration. C est faux car Precision-Recall Curve est plus approprié pour les datasets déséquilibrés. D est incorrect car la courbe ROC évalue la différenciation mais pas la calibration. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Receiver Operating Characteristic (ROC) Curve) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Confusion Matrix) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "hard"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Toutes les données disponibles sont utilisées de manière égale sans considération de condition."
       },
       "correct_answer": "A",
-      "explanation": "Les données non étiquetées peuvent fausser les estimations si elles sont traitées comme correctes, menant à une mauvaise calibration. B est incorrect car les méthodes semi-supervisées traitent souvent les erreurs. C est faux car l'exposition aux variations dépend du dataset et des méthodes. D est incorrect car l'erreur ne vient pas d'une utilisation égale mais non sélective ou prudente.",
+      "explanation": "Les données non étiquetées peuvent fausser les estimations si elles sont traitées comme correctes, menant à une mauvaise calibration. B est incorrect car les méthodes semi-supervisées traitent souvent les erreurs. C est faux car l'exposition aux variations dépend du dataset et des méthodes. D est incorrect car l'erreur ne vient pas d'une utilisation égale mais non sélective ou prudente. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Les erreurs d'étiquetage ne sont jamais corrigées pendant l'apprentissage semi-supervisé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le modèle n'est jamais exposé aux variations réelles pendant l'entraînement.) est plausible mais faux car",
       "difficulty": "hard"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Quel rôle joue la calibration dans l'utilisation des modèles semi-supervisés pour de la prise de décision critique?",
       "image_url": null,
       "choices": {
-        "A": "Elle assure une estimation crédible des risques associée aux pronostics du modèle.",
-        "B": "Elle remplace le besoin d'un expert humain dans le processus de décision.",
+        "A": "Elle remplace le besoin d'un expert humain dans le processus de décision.",
+        "B": "Elle assure une estimation crédible des risques associée aux pronostics du modèle.",
         "C": "Elle garantit une précision de 100% dans toutes les prévisions délivrées.",
         "D": "Elle permet une interprétation qualitative des résultats plutôt qu'une interprétation quantitative."
       },
-      "correct_answer": "A",
-      "explanation": "La calibration assure que les probabilités prédites sont alignées avec le risque réel, important pour la prise de décision. B est incorrect car la calibration ne remplace pas l'expertise humaine. C est faux car elle améliore les prédictions sans garantir une précision absolue. D est incorrect car la calibration rend les résultats quantitatifs plus fidèles, n'en change pas la nature.",
+      "correct_answer": "B",
+      "explanation": "La calibration assure que les probabilités prédites sont alignées avec le risque réel, important pour la prise de décision. B est incorrect car la calibration ne remplace pas l'expertise humaine. C est faux car elle améliore les prédictions sans garantir une précision absolue. D est incorrect car la calibration rend les résultats quantitatifs plus fidèles, n'en change pas la nature. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle remplace le besoin d'un expert humain dans le processus de décision.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle garantit une précision de 100% dans toutes les prévisions délivrées.) est",
       "difficulty": "hard"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Quel défaut est commun lorsqu'on utilise des méthodes de calibration comme le temperature scaling sans prétraitement approprié?",
       "image_url": null,
       "choices": {
-        "A": "Une sous-calibration où les probabilités prédites sont plus faibles que la réalité.",
+        "A": "Un biais permanent envers les classements majoritaires des données.",
         "B": "Une sur-calibration qui génère des logitos plus concentrés.",
-        "C": "Un biais permanent envers les classements majoritaires des données.",
+        "C": "Une sous-calibration où les probabilités prédites sont plus faibles que la réalité.",
         "D": "Un effect d'efficacité où le temps d'inférence est systématiquement inférieur."
       },
-      "correct_answer": "A",
-      "explanation": "Sans un prétraitement adapté, le temperature scaling peut entraîner une sous-calibration, où les prédictions sont distribuées trop timidement. B est incorrect; le sur-calibration n'est pas typique du temperature scaling. C est faux; bien calibrer ne créer pas un biais automatique. D est incorrect car le temperature scaling n'affecte pas la vitesse d'inférence.",
+      "correct_answer": "C",
+      "explanation": "Sans un prétraitement adapté, le temperature scaling peut entraîner une sous-calibration, où les prédictions sont distribuées trop timidement. B est incorrect; le sur-calibration n'est pas typique du temperature scaling. C est faux; bien calibrer ne créer pas un biais automatique. D est incorrect car le temperature scaling n'affecte pas la vitesse d'inférence. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un biais permanent envers les classements majoritaires des données.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Une sur-calibration qui génère des logitos plus concentrés.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "hard"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Comment la selection prudente peut-elle deteriorer l'apprentissage si elle est mal appliquée?",
       "image_url": null,
       "choices": {
-        "A": "En renforçant les biais préexistants par une sureprésentation des données dominantes.",
+        "A": "En ignorant systématiquement les données avec des incertitudes significatives.",
         "B": "En limitant les itérations d'entraînement, entraînant une convergence accélérée.",
         "C": "En forçant la modélisation dans des classes minoritaires.",
-        "D": "En ignorant systématiquement les données avec des incertitudes significatives."
+        "D": "En renforçant les biais préexistants par une sureprésentation des données dominantes."
       },
-      "correct_answer": "A",
-      "explanation": "Une application incorrecte de la sélection prudente peut favoriser des biais existants si les données dominantes deviennent surreprésentées dans l'échantillonnage. B est incorrect car réduire les itérations n'est pas synonyme direct de mauvaise sélection prudente. C est faux; tourner la modélisation vers des classes minoritaires ne détériore pas l'apprentissage intrinsèquement. D ne précise pas que l’accent doit être mis sur une gestion des incertitudes, pas simplement leur élimination.",
+      "correct_answer": "D",
+      "explanation": "Une application incorrecte de la sélection prudente peut favoriser des biais existants si les données dominantes deviennent surreprésentées dans l'échantillonnage. B est incorrect car réduire les itérations n'est pas synonyme direct de mauvaise sélection prudente. C est faux; tourner la modélisation vers des classes minoritaires ne détériore pas l'apprentissage intrinsèquement. D ne précise pas que l’accent doit être mis sur une gestion des incertitudes, pas simplement leur élimination. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En ignorant systématiquement les données avec des incertitudes significatives.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En limitant les itérations d'entraînement, entraînant une",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "Supprimer les classes du dataset qui sont surreprésentées."
       },
       "correct_answer": "A",
-      "explanation": "Le temperature scaling est conçu pour ajuster les probabilités et rendre le modèle plus fiable en alignant les confiances prédictives avec la réalité. B est incorrect car simplement augmenter les epochs ne corrige pas la calibration. C est faux; la taille du batch touche l'efficacité mais pas directement la confiance de prédiction. D est incorrect; éliminer des classes surreprésentées n'adresse pas directement la calibration des confiances.",
+      "explanation": "Le temperature scaling est conçu pour ajuster les probabilités et rendre le modèle plus fiable en alignant les confiances prédictives avec la réalité. B est incorrect car simplement augmenter les epochs ne corrige pas la calibration. C est faux; la taille du batch touche l'efficacité mais pas directement la confiance de prédiction. D est incorrect; éliminer des classes surreprésentées n'adresse pas directement la calibration des confiances. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Régler les hyperparamètres pour augmenter le nombre d'epochs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Réduire la taille du batch pour ralentir l'apprentissage.) est plausible",
       "difficulty": "hard"
     },
     {
@@ -302,13 +302,13 @@
       "question": "Quel rôle joue la calibration reliable dans l'évaluation de la performance d'un modèle semi-supervisé en production?",
       "image_url": null,
       "choices": {
-        "A": "Elle ajuste les probabilités de prédiction pour bien refléter la performance attendue.",
-        "B": "Elle élimine tous les biais rencontrés lors de l'entraînement et du test.",
+        "A": "Elle élimine tous les biais rencontrés lors de l'entraînement et du test.",
+        "B": "Elle ajuste les probabilités de prédiction pour bien refléter la performance attendue.",
         "C": "Elle conduit des inférences beaucoup plus rapides en production.",
         "D": "Elle intègre directement de nouveaux types de données au modèle sans nécessiter de réentraînement."
       },
-      "correct_answer": "A",
-      "explanation": "Une calibration fiable assure que les probabilités émises par le modèle reflètent effectivement sa performance, apportant de la crédibilité en production. B est incorrect car la calibration n'efface pas les biais formés. C est faux; la vitesse d'inférence n'est pas une fonction directe de la calibration. D est incorrect; les nouveaux types de données demandent bien souvent des ajustements au modèle.",
+      "correct_answer": "B",
+      "explanation": "Une calibration fiable assure que les probabilités émises par le modèle reflètent effectivement sa performance, apportant de la crédibilité en production. B est incorrect car la calibration n'efface pas les biais formés. C est faux; la vitesse d'inférence n'est pas une fonction directe de la calibration. D est incorrect; les nouveaux types de données demandent bien souvent des ajustements au modèle. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle élimine tous les biais rencontrés lors de l'entraînement et du test.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle conduit des inférences beaucoup plus rapides en production.) est plausible",
       "difficulty": "hard"
     },
     {
@@ -316,13 +316,13 @@
       "question": "Qu'est-ce qu'une calibration appropriée d'un modèle vise à corriger dans un cadre semi-supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Les différences entre les scores de probabilité prévus et obtenus.",
+        "A": "Le nombre total de classes pouvant être prédites.",
         "B": "La durée d'entraînement nécessaire pour un apprentissage optimal.",
-        "C": "Le nombre total de classes pouvant être prédites.",
+        "C": "Les différences entre les scores de probabilité prévus et obtenus.",
         "D": "La disponibilité permanente de données d'entraînement étiquetées de haute qualité."
       },
-      "correct_answer": "A",
-      "explanation": "Une calibration appropriée cherche à aligner les probabilités prédites par un modèle avec les résultats réels observés, réduisant ainsi l'écart entre eux. B est incorrect car la calibration ne touche pas le temps de l'entraînement. C est faux car cela ne restreint pas automatiquement le nombre de classes prédites. D n'est pas pertinent car la calibration ne concerne pas la disponibilité des données.",
+      "correct_answer": "C",
+      "explanation": "Une calibration appropriée cherche à aligner les probabilités prédites par un modèle avec les résultats réels observés, réduisant ainsi l'écart entre eux. B est incorrect car la calibration ne touche pas le temps de l'entraînement. C est faux car cela ne restreint pas automatiquement le nombre de classes prédites. D n'est pas pertinent car la calibration ne concerne pas la disponibilité des données. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le nombre total de classes pouvant être prédites.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (La durée d'entraînement nécessaire pour un apprentissage optimal.) est plausible mais faux car",
       "difficulty": "hard"
     },
     {
@@ -330,13 +330,13 @@
       "question": "Quelle est une technique courante pour réduire la surconfiance d'un modèle en apprentissage semi-supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Temperature scaling",
+        "A": "Régularisation du gradient",
         "B": "Augmenter la taille du modèle",
         "C": "Utiliser des labels pseudo-aléatoires",
-        "D": "Régularisation du gradient"
+        "D": "Temperature scaling"
       },
-      "correct_answer": "A",
-      "explanation": "Le temperature scaling est une méthode de calibration qui ajuste la confiance des prédictions d'un modèle en appliquant une température à la distribution softmax. Cela réduit la surconfiance du modèle en rendant les prédictions moins extrêmes. Augmenter la taille du modèle peut augmenter la capacité mais pas forcément réduire la surconfiance sans calibration. Les labels pseudo-aléatoires ne corrigent pas la surconfiance, ils peuvent au contraire l'exacerber si mal sélectionnés. La régularisation du gradient est utilisée pour éviter le surajustement, pas spécifiquement pour corriger la surconfiance.",
+      "correct_answer": "D",
+      "explanation": "Le temperature scaling est une méthode de calibration qui ajuste la confiance des prédictions d'un modèle en appliquant une température à la distribution softmax. Cela réduit la surconfiance du modèle en rendant les prédictions moins extrêmes. Augmenter la taille du modèle peut augmenter la capacité mais pas forcément réduire la surconfiance sans calibration. Les labels pseudo-aléatoires ne corrigent pas la surconfiance, ils peuvent au contraire l'exacerber si mal sélectionnés. La régularisation du gradient est utilisée pour éviter le surajustement, pas spécifiquement pour corriger la surconfiance. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Régularisation du gradient) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "medium"
     }
   ]

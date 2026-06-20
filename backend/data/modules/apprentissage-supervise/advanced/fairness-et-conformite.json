@@ -14,7 +14,7 @@
         "D": "Tous les groupes d'attributs sensibles ont la même taille de données d'entraînement."
       },
       "correct_answer": "A",
-      "explanation": "La parité démographique signifie que la probabilité de prédiction positive doit être égale entre les groupes d'attributs sensibles. B est incorrect car il décrit une égalité d'accuracy, pas de parité démographique. C est une approche visant à éviter les biais mais ne définit pas la parité démographique. D concerne le dataset et non la prédiction finale.",
+      "explanation": "La parité démographique signifie que la probabilité de prédiction positive doit être égale entre les groupes d'attributs sensibles. B est incorrect car il décrit une égalité d'accuracy, pas de parité démographique. C est une approche visant à éviter les biais mais ne définit pas la parité démographique. D concerne le dataset et non la prédiction finale. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (La précision du modèle est la même pour tous les groupes d'attributs non sensibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le modèle utilise uniquement des attributs non sensibles pour ses prédictions.) est plausible mais",
       "difficulty": "medium"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Dans le contexte des opportunités égales, quelle condition doit être satisfaite pour un modèle de classification ?",
       "image_url": null,
       "choices": {
-        "A": "Le taux de vrais positifs doit être le même pour tous les groupes d'attributs sensibles.",
-        "B": "Le taux de faux positifs doit être le même pour tous les groupes d'attributs non sensibles.",
+        "A": "Le taux de faux positifs doit être le même pour tous les groupes d'attributs non sensibles.",
+        "B": "Le taux de vrais positifs doit être le même pour tous les groupes d'attributs sensibles.",
         "C": "Le modèle ne doit utiliser aucun attribut sensible dans ses prédictions.",
         "D": "Tous les groupes doivent avoir le même nombre de classes prédictives."
       },
-      "correct_answer": "A",
-      "explanation": "Les opportunités égales se concentrent sur l'égalité du taux de vrais positifs (sensibilité) entre groupes d'attributs sensibles. B est incorrect car il concerne la parité prédictive, pas l'égalité d'opportunité. C est un biais de variable muette, pas la bonne définition. D se concentre sur les classes mais pas sur l'opportunité.",
+      "correct_answer": "B",
+      "explanation": "Les opportunités égales se concentrent sur l'égalité du taux de vrais positifs (sensibilité) entre groupes d'attributs sensibles. B est incorrect car il concerne la parité prédictive, pas l'égalité d'opportunité. C est un biais de variable muette, pas la bonne définition. D se concentre sur les classes mais pas sur l'opportunité. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le taux de faux positifs doit être le même pour tous les groupes d'attributs non sensibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le modèle ne doit utiliser aucun attribut sensible dans ses prédictions.) est plausible mais faux car il ne",
       "difficulty": "medium"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Qu'est-ce qu'un attribut sensible dans le contexte d'un modèle d'apprentissage ?",
       "image_url": null,
       "choices": {
-        "A": "Une caractéristique qui pourrait mener à une discrimination injuste entre différents groupes.",
+        "A": "Une caractéristique que le modèle ignore automatiquement lors de l'entraînement.",
         "B": "Tout attribut qui améliore significativement l'exactitude globale du modèle.",
-        "C": "Une caractéristique que le modèle ignore automatiquement lors de l'entraînement.",
+        "C": "Une caractéristique qui pourrait mener à une discrimination injuste entre différents groupes.",
         "D": "Un attribut choisi au hasard pour tester la robustesse du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "Les attributs sensibles sont ceux qui peuvent induire une discrimination, comme la race, le genre, etc. B est incorrect car l'amélioration de l'exactitude n'élimine pas les biais potentiels. C est faux car le modèle ne les ignore pas normalement par défaut. D est sans rapport avec les biais ou la sensibilité.",
+      "correct_answer": "C",
+      "explanation": "Les attributs sensibles sont ceux qui peuvent induire une discrimination, comme la race, le genre, etc. B est incorrect car l'amélioration de l'exactitude n'élimine pas les biais potentiels. C est faux car le modèle ne les ignore pas normalement par défaut. D est sans rapport avec les biais ou la sensibilité. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Une caractéristique que le modèle ignore automatiquement lors de l'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Tout attribut qui améliore significativement l'exactitude globale du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "medium"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Quel est le principal objectif d'un audit de biais dans les modèles d'apprentissage machine ?",
       "image_url": null,
       "choices": {
-        "A": "Identifier et mesurer les biais potentiels dans les prédictions du modèle.",
+        "A": "Vérifier que le modèle atteint une accuracy de 100%.",
         "B": "Augmenter la complexité des modèles pour intégrer plus de données.",
         "C": "Assurer que l'entraînement du modèle est rapide sur les grands jeux de données.",
-        "D": "Vérifier que le modèle atteint une accuracy de 100%."
+        "D": "Identifier et mesurer les biais potentiels dans les prédictions du modèle."
       },
-      "correct_answer": "A",
-      "explanation": "L'audit de biais vise à détecter et quantifier les biais dans les prédictions, notamment ceux liés à des attributs sensibles. B est incorrect car la complexité n'est pas l'objectif principal. C est erroné car le temps d'entraînement n'est pas l'objet d'un audit de biais. D est faux, car une accuracy de 100% n'est pas réaliste ni forcément équitable.",
+      "correct_answer": "D",
+      "explanation": "L'audit de biais vise à détecter et quantifier les biais dans les prédictions, notamment ceux liés à des attributs sensibles. B est incorrect car la complexité n'est pas l'objectif principal. C est erroné car le temps d'entraînement n'est pas l'objet d'un audit de biais. D est faux, car une accuracy de 100% n'est pas réaliste ni forcément équitable. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Vérifier que le modèle atteint une accuracy de 100%.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter la complexité des modèles pour intégrer plus de données.) est plausible mais faux car il ne",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Ajouter plus d'attributs non pertinents au modèle."
       },
       "correct_answer": "A",
-      "explanation": "Appliquer des contraintes d'équité lors de l'entraînement aide à équilibrer les prédictions entre groupes. B est une mauvaise pratique car ignorer des groupes ne résout pas le problème. C est faux, le deep learning seul n'élimine pas le biais. D est inefficace car ajouter des attributs non pertinents peut dégrader le modèle.",
+      "explanation": "Appliquer des contraintes d'équité lors de l'entraînement aide à équilibrer les prédictions entre groupes. B est une mauvaise pratique car ignorer des groupes ne résout pas le problème. C est faux, le deep learning seul n'élimine pas le biais. D est inefficace car ajouter des attributs non pertinents peut dégrader le modèle. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Ignorer les performances sur le groupe majoritaire.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Utiliser uniquement des algorithmes de deep learning.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "medium"
     },
     {
@@ -78,13 +78,13 @@
       "question": "Pourquoi la parité démographique peut-elle être problématique dans certaines applications critiques ?",
       "image_url": null,
       "choices": {
-        "A": "Elle peut nécessiter de sacrifier la précision pour certains groupes.",
-        "B": "Elle oblige à utiliser des attributs sensibles directement dans les prédictions.",
+        "A": "Elle oblige à utiliser des attributs sensibles directement dans les prédictions.",
+        "B": "Elle peut nécessiter de sacrifier la précision pour certains groupes.",
         "C": "Elle augmente la complexité algorithmique de façon excessive.",
         "D": "Elle garantit l'équité parfaite quel que soit le contexte."
       },
-      "correct_answer": "A",
-      "explanation": "Chercher la parité démographique peut conduire à une perte de précision en ajustant les taux de prédiction positifs entre groupes. B est faux car la parité démographique ne force pas l'usage direct des attributs sensibles. C est incorrect car elle ne change pas la complexité de l'algorithme. D est faux, l'équité parfaite n'est pas systématiquement atteinte.",
+      "correct_answer": "B",
+      "explanation": "Chercher la parité démographique peut conduire à une perte de précision en ajustant les taux de prédiction positifs entre groupes. B est faux car la parité démographique ne force pas l'usage direct des attributs sensibles. C est incorrect car elle ne change pas la complexité de l'algorithme. D est faux, l'équité parfaite n'est pas systématiquement atteinte. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle oblige à utiliser des attributs sensibles directement dans les prédictions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle augmente la complexité algorithmique de façon excessive.) est plausible mais faux car il ne respecte pas",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quel est un inconvénient possible de viser exclusivement une égalité des chances (equal opportunity) ?",
       "image_url": null,
       "choices": {
-        "A": "Cela peut conduire à une augmentation des faux négatifs pour certains groupes.",
+        "A": "Cela élimine le besoin d'audits réguliers de biais.",
         "B": "Cela garantit automatiquement une prédiction totalement impartiale.",
-        "C": "Cela élimine le besoin d'audits réguliers de biais.",
+        "C": "Cela peut conduire à une augmentation des faux négatifs pour certains groupes.",
         "D": "Cela dépend intrinsèquement de l'utilisation de réseaux de neurones profonds."
       },
-      "correct_answer": "A",
-      "explanation": "Viser l'égalité des chances peut augmenter les faux négatifs si l'on se concentre uniquement sur l'égalité des vrais positifs. B est faux car aucune garantie d'impartialité totale n'est assurée. C est faux, des audits réguliers demeurent nécessaires. D est incorrect, l'égalité des chances peut être appliquée à d'autres méthodes que les réseaux de neurones.",
+      "correct_answer": "C",
+      "explanation": "Viser l'égalité des chances peut augmenter les faux négatifs si l'on se concentre uniquement sur l'égalité des vrais positifs. B est faux car aucune garantie d'impartialité totale n'est assurée. C est faux, des audits réguliers demeurent nécessaires. D est incorrect, l'égalité des chances peut être appliquée à d'autres méthodes que les réseaux de neurones. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Cela élimine le besoin d'audits réguliers de biais.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Cela garantit automatiquement une prédiction totalement impartiale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Quel est l'enjeu principal des attributs sensibles dans le cadre de la conformité avec les réglementations de protection des données ?",
       "image_url": null,
       "choices": {
-        "A": "Garantir que les attributs sensibles ne sont pas utilisés en tant que caractéristiques prédictives sauf en cas de nécessité.",
+        "A": "Assurer que les données sensibles proviennent de sources de données publiques.",
         "B": "Augmenter le nombre d'attributs sensibles pour améliorer la diversité du modèle.",
         "C": "Supprimer tous les attributs non sensibles pour se conformer aux lois.",
-        "D": "Assurer que les données sensibles proviennent de sources de données publiques."
+        "D": "Garantir que les attributs sensibles ne sont pas utilisés en tant que caractéristiques prédictives sauf en cas de nécessité."
       },
-      "correct_answer": "A",
-      "explanation": "Les réglementations visent à éviter l'utilisation d'attributs sensibles à moins qu'ils ne soient nécessaires pour le but recherché. B est incorrect car ajouter des attributs sensibles sans discernement augmente les risques de biais. C est faux, les attributs non sensibles ne doivent pas être supprimés sinon les prédictions peuvent perdre en pertinence. D est un contresens légal, car la source publique ne garantit pas le droit d'utilisation.",
+      "correct_answer": "D",
+      "explanation": "Les réglementations visent à éviter l'utilisation d'attributs sensibles à moins qu'ils ne soient nécessaires pour le but recherché. B est incorrect car ajouter des attributs sensibles sans discernement augmente les risques de biais. C est faux, les attributs non sensibles ne doivent pas être supprimés sinon les prédictions peuvent perdre en pertinence. D est un contresens légal, car la source publique ne garantit pas le droit d'utilisation. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Assurer que les données sensibles proviennent de sources de données publiques.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Augmenter le nombre d'attributs sensibles pour",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Ils augmentent systématiquement le taux d'erreurs fausses négatives pour tous les groupes."
       },
       "correct_answer": "A",
-      "explanation": "Les audits de biais aident à identifier les biais et ajuster le modèle afin de réduire l'injustice perçue. B est incorrect car la vitesse d'entraînement n'est pas visée par un audit de biais. C est faux, les audits de biais n'ont pas d'effet direct sur le besoin de réglage d'hyperparamètres. D est erroné, les audits ne conduisent pas nécessairement à plus d'erreurs.",
+      "explanation": "Les audits de biais aident à identifier les biais et ajuster le modèle afin de réduire l'injustice perçue. B est incorrect car la vitesse d'entraînement n'est pas visée par un audit de biais. C est faux, les audits de biais n'ont pas d'effet direct sur le besoin de réglage d'hyperparamètres. D est erroné, les audits ne conduisent pas nécessairement à plus d'erreurs. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Ils garantissent que le modèle sera plus rapide à entraîner.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Ils suppriment le besoin d'hyperparamétrage lors de l'entraînement du modèle.) est plausible",
       "difficulty": "medium"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Dans quels cas l'objectif de parité démographique pourrait-il être secondaire par rapport à un autre objectif dans un modèle ML ?",
       "image_url": null,
       "choices": {
-        "A": "Lorsqu'une moindre précision globale entraînerait de graves conséquences.",
-        "B": "Quand le modèle prédit uniquement des résultats pour des groupes majoritaires.",
+        "A": "Quand le modèle prédit uniquement des résultats pour des groupes majoritaires.",
+        "B": "Lorsqu'une moindre précision globale entraînerait de graves conséquences.",
         "C": "Si le dataset est principalement constitué de données non sensibles.",
         "D": "Lorsque les prévisions du modèle ne sont pas utilisées pour la prise de décision réelle."
       },
-      "correct_answer": "A",
-      "explanation": "La parité démographique peut être secondaire si la perte de précision affecte gravement les conséquences pour tous les utilisateurs. B est incorrect, sous-optimiser pour les majorités ne justifie pas l'abandon de la parité, C décrit une composition de données et n'implique pas de priorités différentes. D est faux car l'usage décisionnel potentiel ne doit pas sous-estimer l'équité.",
+      "correct_answer": "B",
+      "explanation": "La parité démographique peut être secondaire si la perte de précision affecte gravement les conséquences pour tous les utilisateurs. B est incorrect, sous-optimiser pour les majorités ne justifie pas l'abandon de la parité, C décrit une composition de données et n'implique pas de priorités différentes. D est faux car l'usage décisionnel potentiel ne doit pas sous-estimer l'équité. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Quand le modèle prédit uniquement des résultats pour des groupes majoritaires.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Si le dataset est principalement constitué de données non sensibles.) est plausible mais faux car il",
       "difficulty": "medium"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Qu'est-ce que la parité démographique dans le contexte des algorithmes d'apprentissage supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Tous les groupes doivent être représentés de manière égale dans les résultats, peu importe les scores individuels.",
+        "A": "Les algorithmes doivent minimiser l'erreur quadratique moyenne pour tous les groupes.",
         "B": "Tous les groupes doivent obtenir la même performance de prédiction en termes de précision et de rappel.",
-        "C": "Les algorithmes doivent minimiser l'erreur quadratique moyenne pour tous les groupes.",
+        "C": "Tous les groupes doivent être représentés de manière égale dans les résultats, peu importe les scores individuels.",
         "D": "Le modèle doit traiter chaque donnée indépendamment de son appartenance à un groupe."
       },
-      "correct_answer": "A",
-      "explanation": "La parité démographique exige que chaque groupe ait la même proportion dans les résultats prévus, indépendamment des autres métriques de performance. B et C parlent de performances qui ne sont pas reliées à la répartition égalitaire, et D se concentre sur la non-discrimination directe qui n'implicite pas la parité.",
+      "correct_answer": "C",
+      "explanation": "La parité démographique exige que chaque groupe ait la même proportion dans les résultats prévus, indépendamment des autres métriques de performance. B et C parlent de performances qui ne sont pas reliées à la répartition égalitaire, et D se concentre sur la non-discrimination directe qui n'implicite pas la parité. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les algorithmes doivent minimiser l'erreur quadratique moyenne pour tous les groupes.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Tous les groupes doivent obtenir la même performance de prédiction en termes de précision et de rappel.) est plausible mais faux car il ne",
       "difficulty": "medium"
     },
     {
@@ -162,13 +162,13 @@
       "question": "À quoi correspond le concept d'\"equal opportunity\" en machine learning ?",
       "image_url": null,
       "choices": {
-        "A": "Tous les groupes sensibles doivent avoir le même taux de vrais positifs.",
+        "A": "Tous les groupes ont une représentation égale dans les données d'entraînement.",
         "B": "Tous les groupes doivent avoir le même taux de faux positifs.",
         "C": "Les résultats des prédictions doivent être distribués normalement à travers les groupes.",
-        "D": "Tous les groupes ont une représentation égale dans les données d'entraînement."
+        "D": "Tous les groupes sensibles doivent avoir le même taux de vrais positifs."
       },
-      "correct_answer": "A",
-      "explanation": "Equal opportunity nécessite que le taux de vrais positifs soit le même pour tous les groupes afin d'assurer une équité des bénéfices prédictifs. B est une règle différente souvent associée à l'equalized odds, C n'est pas une exigence de fairness mais de distribution statistique, et D concerne la répartition dans l'ensemble d'entraînement, non la performance.",
+      "correct_answer": "D",
+      "explanation": "Equal opportunity nécessite que le taux de vrais positifs soit le même pour tous les groupes afin d'assurer une équité des bénéfices prédictifs. B est une règle différente souvent associée à l'equalized odds, C n'est pas une exigence de fairness mais de distribution statistique, et D concerne la répartition dans l'ensemble d'entraînement, non la performance. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Tous les groupes ont une représentation égale dans les données d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Tous les groupes doivent avoir le même taux de faux positifs.) est plausible mais faux car il ne",
       "difficulty": "medium"
     },
     {
@@ -176,13 +176,13 @@
       "question": "Qu'est-ce qu'un attribut sensible en apprentissage supervisé ?",
       "image_url": null,
       "choices": {
-        "A": "Un attribut utilisé pour ajuster spécifiquement les hyperparamètres d'un modèle.",
-        "B": "Un attribut dont la présence dans le modèle peut mener à une discrimination injuste.",
+        "A": "Un attribut dont la présence dans le modèle peut mener à une discrimination injuste.",
+        "B": "Un attribut utilisé pour ajuster spécifiquement les hyperparamètres d'un modèle.",
         "C": "Un attribut qui augmente systématiquement la précision des prédictions.",
         "D": "Un attribut qui n'est pertinent que pour l'ensemble de test, pas pour l'entraînement."
       },
-      "correct_answer": "B",
-      "explanation": "Un attribut sensible est utilisé pour se référer à des caractéristiques comme le sexe, la race, etc., qui ne devraient pas influencer de manière injuste les résultats prédictifs. A parle de réglage de modèle, C se concentre sur la performance technique et non éthique, et D se réfère à une confusion entre pertinence et séparation des ensembles de données.",
+      "correct_answer": "A",
+      "explanation": "Un attribut sensible est utilisé pour se référer à des caractéristiques comme le sexe, la race, etc., qui ne devraient pas influencer de manière injuste les résultats prédictifs. A parle de réglage de modèle, C se concentre sur la performance technique et non éthique, et D se réfère à une confusion entre pertinence et séparation des ensembles de données. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Un attribut utilisé pour ajuster spécifiquement les hyperparamètres d'un modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Un attribut qui augmente systématiquement la précision des prédictions.) est plausible mais faux car il",
       "difficulty": "medium"
     },
     {
@@ -196,7 +196,7 @@
         "D": "Un test de robustesse contre les perturbations adversariales dans les données."
       },
       "correct_answer": "B",
-      "explanation": "Un audit de biais est un examen approfondi des modèles pour identifier et corriger les discriminations injustes. A concerne la création de nouvelles variables (feature engineering), C fait référence à la validation croisée, qui n'est pas axée sur le biais, et D se concentre sur la robustesse, pas spécifiquement sur le biais éthique.",
+      "explanation": "Un audit de biais est un examen approfondi des modèles pour identifier et corriger les discriminations injustes. A concerne la création de nouvelles variables (feature engineering), C fait référence à la validation croisée, qui n'est pas axée sur le biais, et D se concentre sur la robustesse, pas spécifiquement sur le biais éthique. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Un processus de naissance de nouvelles variables pour améliorer la performance du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Une validation croisée avec tous les hyperparamètres possibles.) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "medium"
     },
     {
@@ -204,13 +204,13 @@
       "question": "Qu'est-ce que la parité démographique dans l'évaluation de l'équité d'un modèle de machine learning?",
       "image_url": null,
       "choices": {
-        "A": "C'est lorsque chaque groupe dans les données a le même taux de prédictions positives.",
+        "A": "C'est lorsque chaque groupe dans les données a le même rappel.",
         "B": "C'est lorsque chaque groupe dans les données a la même précision.",
-        "C": "C'est lorsque chaque groupe dans les données a le même rappel.",
+        "C": "C'est lorsque chaque groupe dans les données a le même taux de prédictions positives.",
         "D": "C'est lorsque chaque groupe dans les données a le même F1 score."
       },
-      "correct_answer": "A",
-      "explanation": "La parité démographique signifie que chaque groupe dans les données a le même taux de prédictions positives, indépendamment des taux d'erreurs. La précision (B), le rappel (C) et le F1 score (D) se rapportent à différentes mesures de performance et ne sont pas équivalentes à la parité démographique.",
+      "correct_answer": "C",
+      "explanation": "La parité démographique signifie que chaque groupe dans les données a le même taux de prédictions positives, indépendamment des taux d'erreurs. La précision (B), le rappel (C) et le F1 score (D) se rapportent à différentes mesures de performance et ne sont pas équivalentes à la parité démographique. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (C'est lorsque chaque groupe dans les données a le même rappel.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (C'est lorsque chaque groupe dans les données a la même précision.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "medium"
     },
     {
@@ -218,13 +218,13 @@
       "question": "Qu'est-ce que le concept d'\"equal opportunity\" en apprentissage supervisé?",
       "image_url": null,
       "choices": {
-        "A": "C'est lorsque chaque groupe a le même taux de vrais positifs.",
+        "A": "C'est lorsque chaque groupe a le même taux de faux positifs.",
         "B": "C'est lorsque chaque groupe a le même taux de faux négatifs.",
         "C": "C'est lorsque chaque groupe a la même précision.",
-        "D": "C'est lorsque chaque groupe a le même taux de faux positifs."
+        "D": "C'est lorsque chaque groupe a le même taux de vrais positifs."
       },
-      "correct_answer": "A",
-      "explanation": "L'\"equal opportunity\" signifie que chaque groupe a le même taux de vrais positifs, ce qui garantit que les individus qualifiés ont une chance égale d'être correctement identifiés. Le taux de faux négatifs (B), la précision (C) et le taux de faux positifs (D) ne sont pas spécifiquement liés à ce concept d'égalité d'opportunité.",
+      "correct_answer": "D",
+      "explanation": "L'\"equal opportunity\" signifie que chaque groupe a le même taux de vrais positifs, ce qui garantit que les individus qualifiés ont une chance égale d'être correctement identifiés. Le taux de faux négatifs (B), la précision (C) et le taux de faux positifs (D) ne sont pas spécifiquement liés à ce concept d'égalité d'opportunité. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (C'est lorsque chaque groupe a le même taux de faux positifs.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (C'est lorsque chaque groupe a le même taux de faux négatifs.) est plausible mais faux car il ne respecte pas",
       "difficulty": "medium"
     },
     {
@@ -238,7 +238,7 @@
         "D": "Un attribut qui évalue la complexité du modèle, comme le nombre de paramètres."
       },
       "correct_answer": "A",
-      "explanation": "Un attribut sensible est lié aux caractéristiques protégées par la loi, telles que le genre ou l'origine ethnique, qui ne doivent pas influencer incorrectement les décisions du modèle. La précision (B), le type d'algorithme (C) et le nombre de paramètres (D) ne relèvent pas de cette définition.",
+      "explanation": "Un attribut sensible est lié aux caractéristiques protégées par la loi, telles que le genre ou l'origine ethnique, qui ne doivent pas influencer incorrectement les décisions du modèle. La précision (B), le type d'algorithme (C) et le nombre de paramètres (D) ne relèvent pas de cette définition. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Un attribut qui définit les performances du modèle, comme la précision.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Un attribut qui influence les caractéristiques du modèle, comme le type d'algorithme.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "medium"
     },
     {
@@ -246,13 +246,13 @@
       "question": "Qu'est-ce qu'un audit de biais dans le contexte de l'apprentissage automatique?",
       "image_url": null,
       "choices": {
-        "A": "C'est une évaluation systématique pour identifier des biais potentiels dans les décisions du modèle.",
-        "B": "C'est l'optimisation du modèle pour améliorer sa vitesse d'exécution.",
+        "A": "C'est l'optimisation du modèle pour améliorer sa vitesse d'exécution.",
+        "B": "C'est une évaluation systématique pour identifier des biais potentiels dans les décisions du modèle.",
         "C": "C'est une analyse de la structure des ensembles de données pour améliorer la précision.",
         "D": "C'est un test de performance du modèle sur des ensembles de données de validation."
       },
-      "correct_answer": "A",
-      "explanation": "Un audit de biais consiste à évaluer les modèles pour détecter et corriger d'éventuels biais qui peuvent conduire à des résultats injustes. Optimiser la vitesse (B), analyser la structure des ensembles de données (C) ou tester les performances (D) ne sont pas spécifiquement des activités liées à l'identification des biais.",
+      "correct_answer": "B",
+      "explanation": "Un audit de biais consiste à évaluer les modèles pour détecter et corriger d'éventuels biais qui peuvent conduire à des résultats injustes. Optimiser la vitesse (B), analyser la structure des ensembles de données (C) ou tester les performances (D) ne sont pas spécifiquement des activités liées à l'identification des biais. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (C'est l'optimisation du modèle pour améliorer sa vitesse d'exécution.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (C'est une analyse de la structure des ensembles de données pour améliorer la précision.) est plausible mais faux car il ne respecte pas totalement le",
       "difficulty": "medium"
     },
     {
@@ -260,13 +260,13 @@
       "question": "Pourquoi est-il important de garantir la parité démographique dans les modèles de machine learning?",
       "image_url": null,
       "choices": {
-        "A": "Pour prévenir les discriminations envers groupes sous-représentés en assurant des résultats égaux.",
+        "A": "Pour garantir que le modèle est rapide et économe.",
         "B": "Pour maximiser le taux de vérité des prédictions.",
-        "C": "Pour garantir que le modèle est rapide et économe.",
+        "C": "Pour prévenir les discriminations envers groupes sous-représentés en assurant des résultats égaux.",
         "D": "Pour s'assurer que les données d'entraînement sont bien équilibrées."
       },
-      "correct_answer": "A",
-      "explanation": "La parité démographique vise à éviter la discrimination en assurant que chaque groupe a le même taux de résultats positifs. Maximiser le taux de vérité (B), l'efficacité (C) ou l'équilibre des données d'entraînement (D) sont des objectifs différents.",
+      "correct_answer": "C",
+      "explanation": "La parité démographique vise à éviter la discrimination en assurant que chaque groupe a le même taux de résultats positifs. Maximiser le taux de vérité (B), l'efficacité (C) ou l'équilibre des données d'entraînement (D) sont des objectifs différents. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Pour garantir que le modèle est rapide et économe.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Pour maximiser le taux de vérité des prédictions.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Pour s'assurer que les données d'entraînement sont bien équilibrées.)",
       "difficulty": "medium"
     },
     {
@@ -274,13 +274,13 @@
       "question": "Comment un attribut sensible influence-t-il un modèle de machine learning?",
       "image_url": null,
       "choices": {
-        "A": "Il peut introduire des biais si le modèle en fait un critère décisionnel implicite.",
+        "A": "Il aide à réduire l'erreur de généralisation du modèle.",
         "B": "Il améliore la performance générale du modèle en augmentant la conformité légale.",
         "C": "Il augmente la vitesse de convergence de l'entraînement du modèle.",
-        "D": "Il aide à réduire l'erreur de généralisation du modèle."
+        "D": "Il peut introduire des biais si le modèle en fait un critère décisionnel implicite."
       },
-      "correct_answer": "A",
-      "explanation": "Les attributs sensibles peuvent introduire des biais si le modèle utilise ces caractéristiques de manière injuste dans ses décisions. Améliorer les performances (B), augmenter la vitesse de convergence (C) ou réduire l'erreur de généralisation (D) ne sont pas directement liés aux attributs sensibles.",
+      "correct_answer": "D",
+      "explanation": "Les attributs sensibles peuvent introduire des biais si le modèle utilise ces caractéristiques de manière injuste dans ses décisions. Améliorer les performances (B), augmenter la vitesse de convergence (C) ou réduire l'erreur de généralisation (D) ne sont pas directement liés aux attributs sensibles. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il aide à réduire l'erreur de généralisation du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il améliore la performance générale du modèle en augmentant la conformité légale.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C",
       "difficulty": "hard"
     },
     {
@@ -294,7 +294,7 @@
         "D": "Réduire le nombre de paramètres pour améliorer l'efficacité du modèle."
       },
       "correct_answer": "A",
-      "explanation": "L'audit de biais implique l'évaluation des métriques de performance telles que la précision ou le taux de faux positifs pour s'assurer qu'elles sont équitables entre différents groupes. Optimiser l'algorithme (B), augmenter la taille de l'échantillon (C) ou réduire le nombre de paramètres (D) ne ciblent pas directement les biais.",
+      "explanation": "L'audit de biais implique l'évaluation des métriques de performance telles que la précision ou le taux de faux positifs pour s'assurer qu'elles sont équitables entre différents groupes. Optimiser l'algorithme (B), augmenter la taille de l'échantillon (C) ou réduire le nombre de paramètres (D) ne ciblent pas directement les biais. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Optimiser l'algorithme de base pour une meilleure précision.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Augmenter la taille de l'échantillon d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Réduire",
       "difficulty": "hard"
     },
     {
@@ -302,13 +302,13 @@
       "question": "Pourquoi l'\"equal opportunity\" est-elle cruciale pour l'équité dans l'apprentissage supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Parce qu'elle garantit que tous les groupes ont une chance égale d'obtenir des résultats positifs corrects.",
-        "B": "Parce qu'elle maximise la précision globale du modèle.",
+        "A": "Parce qu'elle maximise la précision globale du modèle.",
+        "B": "Parce qu'elle garantit que tous les groupes ont une chance égale d'obtenir des résultats positifs corrects.",
         "C": "Parce qu'elle augmente la rapidité de l'algorithme d'apprentissage.",
         "D": "Parce qu'elle offre la plus grande réduction de l'erreur de type II."
       },
-      "correct_answer": "A",
-      "explanation": "L'objectif de l'\"equal opportunity\" est de garantir que les différents groupes ont une chance égale d'obtenir des résultats positifs corrects, ce qui est crucial pour éviter les préjudices. Maximiser la précision (B), augmenter la rapidité de l'algorithme (C) ou réduire l'erreur de type II (D) ne sont pas directement liés à l'équité d'opportunité.",
+      "correct_answer": "B",
+      "explanation": "L'objectif de l'\"equal opportunity\" est de garantir que les différents groupes ont une chance égale d'obtenir des résultats positifs corrects, ce qui est crucial pour éviter les préjudices. Maximiser la précision (B), augmenter la rapidité de l'algorithme (C) ou réduire l'erreur de type II (D) ne sont pas directement liés à l'équité d'opportunité. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Parce qu'elle maximise la précision globale du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Parce qu'elle augmente la rapidité de l'algorithme d'apprentissage.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou",
       "difficulty": "hard"
     },
     {
@@ -316,13 +316,13 @@
       "question": "Quel est le principal défi de l'atteinte de la parité démographique dans un modèle?",
       "image_url": null,
       "choices": {
-        "A": "Cela peut réduire la précision spécifique à certains groupes.",
+        "A": "Cela entraîne un surajustement des données d'entraînement.",
         "B": "Cela augmente généralement la complexité algorithmique.",
-        "C": "Cela entraîne un surajustement des données d'entraînement.",
+        "C": "Cela peut réduire la précision spécifique à certains groupes.",
         "D": "Cela diminue le taux de vrais négatifs dans l'évaluation."
       },
-      "correct_answer": "A",
-      "explanation": "En cherchant à atteindre la parité démographique, un modèle peut sacrifier sa précision spécifique à certains groupes, car il vise à uniformiser les taux de prédictions positives. Augmenter la complexité (B), entraîner un surajustement (C) ou diminuer le taux de vrais négatifs (D) ne sont pas directement les défis associés à la parité démographique.",
+      "correct_answer": "C",
+      "explanation": "En cherchant à atteindre la parité démographique, un modèle peut sacrifier sa précision spécifique à certains groupes, car il vise à uniformiser les taux de prédictions positives. Augmenter la complexité (B), entraîner un surajustement (C) ou diminuer le taux de vrais négatifs (D) ne sont pas directement les défis associés à la parité démographique. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Cela entraîne un surajustement des données d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Cela augmente généralement la complexité algorithmique.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande.",
       "difficulty": "hard"
     },
     {
@@ -330,13 +330,13 @@
       "question": "Comment un audit de biais peut-il corriger des discriminations dans un modèle ML?",
       "image_url": null,
       "choices": {
-        "A": "En identifiant les disparités et ajustant les seuils de décision pour chaque groupe.",
+        "A": "En supprimant entièrement les attributs sensibles des données d'entrée.",
         "B": "En augmentant uniquement la taille de l'ensemble de test.",
         "C": "En choisissant un modèle plus complexe sans discrimination apparente.",
-        "D": "En supprimant entièrement les attributs sensibles des données d'entrée."
+        "D": "En identifiant les disparités et ajustant les seuils de décision pour chaque groupe."
       },
-      "correct_answer": "A",
-      "explanation": "Un audit de biais aide à corriger les discriminations en identifiant les disparités de performance entre les groupes et en ajustant les seuils ou les politiques décisionnelles. Augmenter la taille de l'ensemble de test (B), choisir un modèle plus complexe (C), ou supprimer les attributs sensibles (D) n'aborde pas directement la correction des biais.",
+      "correct_answer": "D",
+      "explanation": "Un audit de biais aide à corriger les discriminations en identifiant les disparités de performance entre les groupes et en ajustant les seuils ou les politiques décisionnelles. Augmenter la taille de l'ensemble de test (B), choisir un modèle plus complexe (C), ou supprimer les attributs sensibles (D) n'aborde pas directement la correction des biais. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (En supprimant entièrement les attributs sensibles des données d'entrée.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (En augmentant uniquement la taille de l'ensemble de test.) est plausible mais faux car il ne respecte pas totalement le contexte,",
       "difficulty": "hard"
     },
     {
@@ -350,7 +350,7 @@
         "D": "Lorsqu'il n'a que peu d'impact sur la vitesse d'exécution du modèle."
       },
       "correct_answer": "A",
-      "explanation": "Un attribut sensible peut être utilisé pour évaluer la façon dont les différents groupes sont affectés et pour ajuster le modèle afin de garantir l'équité. Utiliser l'attribut comme pré-requis (B), pour complexifier (C) ou sans impact sur la vitesse (D) ne traite pas des préoccupations liées aux biais.",
+      "explanation": "Un attribut sensible peut être utilisé pour évaluer la façon dont les différents groupes sont affectés et pour ajuster le modèle afin de garantir l'équité. Utiliser l'attribut comme pré-requis (B), pour complexifier (C) ou sans impact sur la vitesse (D) ne traite pas des préoccupations liées aux biais. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Lorsqu'il est le seul pré-requis pour la construction du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Lorsqu'il est inclus pour complexifier le modèle dans un but de recherche.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses",
       "difficulty": "hard"
     },
     {
@@ -358,13 +358,13 @@
       "question": "Quelle est une limite principale de l'\"equal opportunity\" en termes de biais?",
       "image_url": null,
       "choices": {
-        "A": "Elle peut ne pas traiter les différences de taux de faux positifs entre les groupes.",
-        "B": "Elle diminue la précision générale du modèle.",
+        "A": "Elle diminue la précision générale du modèle.",
+        "B": "Elle peut ne pas traiter les différences de taux de faux positifs entre les groupes.",
         "C": "Elle augmente les exigences de calcul.",
         "D": "Elle restreint la diversité des données d'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "Bien que l'\"equal opportunity\" se concentre sur l'égalité des vrais positifs, elle peut ignorer les disparités dans les faux positifs, ce qui peut également être source de biais. Diminuer la précision générale (B), augmenter les exigences de calcul (C) ou restreindre la diversité des données (D) ne sont pas directement des limites de l'égalité d'opportunité.",
+      "correct_answer": "B",
+      "explanation": "Bien que l'\"equal opportunity\" se concentre sur l'égalité des vrais positifs, elle peut ignorer les disparités dans les faux positifs, ce qui peut également être source de biais. Diminuer la précision générale (B), augmenter les exigences de calcul (C) ou restreindre la diversité des données (D) ne sont pas directement des limites de l'égalité d'opportunité. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Elle diminue la précision générale du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Elle augmente les exigences de calcul.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif",
       "difficulty": "hard"
     },
     {
@@ -372,13 +372,13 @@
       "question": "Lors d'un audit de biais, quels aspects sont crucialement examinés?",
       "image_url": null,
       "choices": {
-        "A": "Les différences de précision et de rappel entre groupes.",
+        "A": "La complexité de l'algorithme utilisé.",
         "B": "Le coût de développement du modèle.",
-        "C": "La complexité de l'algorithme utilisé.",
+        "C": "Les différences de précision et de rappel entre groupes.",
         "D": "La taille des ensembles de données d'entraînement."
       },
-      "correct_answer": "A",
-      "explanation": "Les audits de biais examinent attentivement les différences de précision et de rappel entre groupes pour identifier les biais. Le coût de développement (B), la complexité de l'algorithme (C) et la taille des ensembles de données (D) ne sont pas des caractéristiques principales ciblées par un audit de biais.",
+      "correct_answer": "C",
+      "explanation": "Les audits de biais examinent attentivement les différences de précision et de rappel entre groupes pour identifier les biais. Le coût de développement (B), la complexité de l'algorithme (C) et la taille des ensembles de données (D) ne sont pas des caractéristiques principales ciblées par un audit de biais. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (La complexité de l'algorithme utilisé.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Le coût de développement du modèle.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La taille des ensembles",
       "difficulty": "hard"
     },
     {
@@ -386,13 +386,13 @@
       "question": "Qu'est-ce qui limite la garantie de parité démographique dans certaines applications?",
       "image_url": null,
       "choices": {
-        "A": "Cela peut conduire à un compromis sur la précision spécifique aux groupes.",
+        "A": "Cela nécessite une inversion du flux des données d'entraînement.",
         "B": "Cela réduit le nombre total de données disponibles.",
         "C": "Cela perturbe les équilibres de charge des systèmes.",
-        "D": "Cela nécessite une inversion du flux des données d'entraînement."
+        "D": "Cela peut conduire à un compromis sur la précision spécifique aux groupes."
       },
-      "correct_answer": "A",
-      "explanation": "La garantie de parité démographique peut demander un compromis sur la précision pour différents groupes afin d'assurer des prédictions égales, ce qui est un défi dans certaines applications. Réduire le nombre de données (B), perturber les équilibres de charge (C) ou nécessiter une inversion des flux (D) ne sont pas des limitations directes à l'établissement de la parité.",
+      "correct_answer": "D",
+      "explanation": "La garantie de parité démographique peut demander un compromis sur la précision pour différents groupes afin d'assurer des prédictions égales, ce qui est un défi dans certaines applications. Réduire le nombre de données (B), perturber les équilibres de charge (C) ou nécessiter une inversion des flux (D) ne sont pas des limitations directes à l'établissement de la parité. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Cela nécessite une inversion du flux des données d'entraînement.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Cela réduit le nombre total de données disponibles.) est plausible mais faux car il ne respecte pas",
       "difficulty": "hard"
     },
     {
@@ -406,7 +406,7 @@
         "D": "Il offre une augmentation de la taille des ensembles de données utilisables."
       },
       "correct_answer": "A",
-      "explanation": "L'audit de biais est crucial pour identifier et rectifier les pratiques discriminatoires, assurant ainsi la conformité légale et éthique. L'amélioration de l'efficacité énergétique (B), la garantie de la rapidité (C), ou l'augmentation de la taille des ensembles de données (D) ne sont pas directement liées à la conformité en matière d'équité.",
+      "explanation": "L'audit de biais est crucial pour identifier et rectifier les pratiques discriminatoires, assurant ainsi la conformité légale et éthique. L'amélioration de l'efficacité énergétique (B), la garantie de la rapidité (C), ou l'augmentation de la taille des ensembles de données (D) ne sont pas directement liées à la conformité en matière d'équité. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Il améliore l'efficacité énergétique du déploiement de modèles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Il garantit que le modèle est le plus rapide sur le marché.) est plausible mais faux car il ne respecte pas totalement le contexte, les",
       "difficulty": "hard"
     },
     {
@@ -414,13 +414,13 @@
       "question": "Quel est le but de la parité démographique dans le contexte de l'apprentissage supervisé?",
       "image_url": null,
       "choices": {
-        "A": "Assurer que chaque groupe défini par un attribut sensible est représenté de manière égale dans les prédictions positives.",
-        "B": "Garantir que les erreurs de prédiction sont uniformément distribuées à travers tous les groupes d'attributs sensibles.",
+        "A": "Garantir que les erreurs de prédiction sont uniformément distribuées à travers tous les groupes d'attributs sensibles.",
+        "B": "Assurer que chaque groupe défini par un attribut sensible est représenté de manière égale dans les prédictions positives.",
         "C": "S'assurer que le taux de Faux Positifs est identique pour tous les groupes d'attributs sensibles.",
         "D": "Augmenter la précision globale du modèle pour tout attribut sensible identifié."
       },
-      "correct_answer": "A",
-      "explanation": "La parité démographique vise à égaliser le taux de prédictions positives pour différents groupes définis par des attributs sensibles, peu importe la performance générale du modèle. B est incorrect car il décrit plutôt le concept de 'equalized odds'. C ne décrit pas la parité démographique mais une caractéristique spécifique du 'predictive equality'. D est faux car cela concerne l'amélioration globale de la performance, non liée spécifiquement à la parité démographique.",
+      "correct_answer": "B",
+      "explanation": "La parité démographique vise à égaliser le taux de prédictions positives pour différents groupes définis par des attributs sensibles, peu importe la performance générale du modèle. B est incorrect car il décrit plutôt le concept de 'equalized odds'. C ne décrit pas la parité démographique mais une caractéristique spécifique du 'predictive equality'. D est faux car cela concerne l'amélioration globale de la performance, non liée spécifiquement à la parité démographique. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Garantir que les erreurs de prédiction sont uniformément distribuées à travers tous les groupes d'attributs sensibles.) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "medium"
     }
   ]

@@ -14,7 +14,7 @@
         "D": "L'action courante dépend de plusieurs états futurs"
       },
       "correct_answer": "A",
-      "explanation": "Un processus de décision markovien (MDP) suit la propriété Markov: l'état futur dépend uniquement de l'état courant, et non de la séquence d'états antérieurs. Les réponses incorrectes décrivent des dépendances temporelles qui ne sont pas markoviennes.",
+      "explanation": "Un processus de décision markovien (MDP) suit la propriété Markov: l'état futur dépend uniquement de l'état courant, et non de la séquence d'états antérieurs. Les réponses incorrectes décrivent des dépendances temporelles qui ne sont pas markoviennes. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Chaque réward dépend uniquement de l'action précédente) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Le prochain état dépend de tous les états précédents) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (L'action courante dépend de plusieurs états futurs) est plausible mais faux car",
       "difficulty": "easy"
     },
     {
@@ -22,13 +22,13 @@
       "question": "Dans le cadre d'un MDP, que décrit la fonction de transition ?",
       "image_url": null,
       "choices": {
-        "A": "La probabilité d'atteindre un état donné à partir d'un autre état en exécutant une action spécifique",
-        "B": "Le gain immédiat obtenu après une transition",
+        "A": "Le gain immédiat obtenu après une transition",
+        "B": "La probabilité d'atteindre un état donné à partir d'un autre état en exécutant une action spécifique",
         "C": "La durée minimale pour passer d'un état à un autre",
         "D": "La somme des réwards futurs attendus"
       },
-      "correct_answer": "A",
-      "explanation": "La fonction de transition définit la probabilité de passer d'un état à un autre après avoir pris une action. Les autres options concernent soit les récompenses, soit des concepts temporels qui ne sont pas la fonction de transition spécifique.",
+      "correct_answer": "B",
+      "explanation": "La fonction de transition définit la probabilité de passer d'un état à un autre après avoir pris une action. Les autres options concernent soit les récompenses, soit des concepts temporels qui ne sont pas la fonction de transition spécifique. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (Le gain immédiat obtenu après une transition) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La durée minimale pour passer d'un état à un autre) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La somme des réwards futurs attendus) est plausible",
       "difficulty": "easy"
     },
     {
@@ -36,13 +36,13 @@
       "question": "Quel est le rôle principal de la fonction de réward immédiate dans un MDP ?",
       "image_url": null,
       "choices": {
-        "A": "Attribuer une valeur à chaque transition pour guider les décisions futures",
+        "A": "Calculer la probabilité des transitions d'état",
         "B": "Estimer la durée des transitions entre états",
-        "C": "Calculer la probabilité des transitions d'état",
+        "C": "Attribuer une valeur à chaque transition pour guider les décisions futures",
         "D": "Déterminer l'état final optimal d'un MDP"
       },
-      "correct_answer": "A",
-      "explanation": "La fonction de réward immédiate attribue une valeur à chaque transition, fournissant ainsi une incitation pour choisir certaines actions. Les autres choix se rapportent à des propriétés des transitions, mais pas à la réward immédiate.",
+      "correct_answer": "C",
+      "explanation": "La fonction de réward immédiate attribue une valeur à chaque transition, fournissant ainsi une incitation pour choisir certaines actions. Les autres choix se rapportent à des propriétés des transitions, mais pas à la réward immédiate. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Calculer la probabilité des transitions d'état) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Estimer la durée des transitions entre états) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Déterminer l'état final optimal d'un MDP) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "easy"
     },
     {
@@ -50,13 +50,13 @@
       "question": "Dans le contexte d'un MDP, qu'implique un horizon fini ?",
       "image_url": null,
       "choices": {
-        "A": "Le processus de décision s'arrête après un nombre déterminé d'étapes",
+        "A": "Les transitions d'état deviennent indépendantes au-delà d'un certain point",
         "B": "L'agent peut prendre une infinité d'actions sans s'arrêter",
         "C": "Les récompenses sont nulles après une certaine durée",
-        "D": "Les transitions d'état deviennent indépendantes au-delà d'un certain point"
+        "D": "Le processus de décision s'arrête après un nombre déterminé d'étapes"
       },
-      "correct_answer": "A",
-      "explanation": "Un horizon fini dans un MDP signifie que le processus de décision s'arrête après un nombre fixe d'étapes. Les autres choix évoquent des idées incorrectes comme des durées infinies ou des changements dans la nature des transitions.",
+      "correct_answer": "D",
+      "explanation": "Un horizon fini dans un MDP signifie que le processus de décision s'arrête après un nombre fixe d'étapes. Les autres choix évoquent des idées incorrectes comme des durées infinies ou des changements dans la nature des transitions. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Les transitions d'état deviennent indépendantes au-delà d'un certain point) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (L'agent peut prendre une infinité d'actions sans s'arrêter) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Les récompenses sont nulles après une certaine durée) est plausible",
       "difficulty": "medium"
     },
     {
@@ -70,7 +70,7 @@
         "D": "Pour garantir que chaque état est atteint de manière séquentielle"
       },
       "correct_answer": "A",
-      "explanation": "La dynamique de transition modélise les probabilités de passage entre états, ce qui est essentiel pour trouver et optimiser les politiques. Les autres réponses décrivent des concepts erronés ou incomplets car elles confondent optimisation de la politique avec structure de l'état ou des récompenses.",
+      "explanation": "La dynamique de transition modélise les probabilités de passage entre états, ce qui est essentiel pour trouver et optimiser les politiques. Les autres réponses décrivent des concepts erronés ou incomplets car elles confondent optimisation de la politique avec structure de l'état ou des récompenses. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Pour minimiser le nombre d'états nécessaires dans le MDP) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Pour maximiser le réward immédiat dans chaque état) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Pour garantir que",
       "difficulty": "medium"
     },
     {
@@ -79,12 +79,12 @@
       "image_url": null,
       "choices": {
         "A": "En supposant que la probabilité de chaque état n'interagit pas avec les actions",
-        "B": "En réduisant l'espace des états potentiels à un seul état récurrent",
+        "B": "En utilisant l'indépendance des états passés pour simplifier les calculs futurs",
         "C": "En permettant que chaque état soit analysé indépendamment grâce à la mémoire d'état",
-        "D": "En utilisant l'indépendance des états passés pour simplifier les calculs futurs"
+        "D": "En réduisant l'espace des états potentiels à un seul état récurrent"
       },
-      "correct_answer": "D",
-      "explanation": "Les chaînes de Markov simplifient l'analyse MDP en ne nécessitant que l'état courant pour définir les transitions futures, éliminant ainsi la nécessité de se souvenir des états passés. Les autres choix incorrects minimisent, ignorent ou obligent des contraintes qui ne sont pas présentes dans les chaînes de Markov.",
+      "correct_answer": "B",
+      "explanation": "Les chaînes de Markov simplifient l'analyse MDP en ne nécessitant que l'état courant pour définir les transitions futures, éliminant ainsi la nécessité de se souvenir des états passés. Les autres choix incorrects minimisent, ignorent ou obligent des contraintes qui ne sont pas présentes dans les chaînes de Markov. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En supposant que la probabilité de chaque état n'interagit pas avec les actions) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En permettant que chaque état soit analysé indépendamment grâce à la mémoire d'état) est plausible mais faux car il ne respecte pas totalement",
       "difficulty": "medium"
     },
     {
@@ -92,13 +92,13 @@
       "question": "Quel effet un horizon infini a-t-il sur l'évaluation des politiques dans un MDP ?",
       "image_url": null,
       "choices": {
-        "A": "Il nécessite une pondération des réwards futurs par un facteur de discount",
+        "A": "Il garantit que toutes les combinaisons d'actions seront testées",
         "B": "Il permet d'ignorer complètement les transitions d'état",
-        "C": "Il garantit que toutes les combinaisons d'actions seront testées",
+        "C": "Il nécessite une pondération des réwards futurs par un facteur de discount",
         "D": "Il rend le calcul des réwards futurs constants"
       },
-      "correct_answer": "A",
-      "explanation": "Un horizon infini demande un facteur de discount pour éviter la somme infinie des réwards. Les choix B et C sont faux car ils ne respectent pas les dynamiques et les évaluations des MDP. D est incorrect car les réwards futurs ne deviennent pas constants par nature d'un horizon infini.",
+      "correct_answer": "C",
+      "explanation": "Un horizon infini demande un facteur de discount pour éviter la somme infinie des réwards. Les choix B et C sont faux car ils ne respectent pas les dynamiques et les évaluations des MDP. D est incorrect car les réwards futurs ne deviennent pas constants par nature d'un horizon infini. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (Il garantit que toutes les combinaisons d'actions seront testées) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Il permet d'ignorer complètement les transitions d'état) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le",
       "difficulty": "medium"
     },
     {
@@ -106,13 +106,13 @@
       "question": "Dans un MDP, à quoi sert la fonction de valeur d'état ?",
       "image_url": null,
       "choices": {
-        "A": "Estimer la somme des réwards futurs attendus depuis cet état",
+        "A": "Contrôler l'ordre séquentiel des états dans le MDP",
         "B": "Calculer la probabilité de chaque action dans l'état",
         "C": "Déterminer la durée nécessaire pour atteindre l'état terminal",
-        "D": "Contrôler l'ordre séquentiel des états dans le MDP"
+        "D": "Estimer la somme des réwards futurs attendus depuis cet état"
       },
-      "correct_answer": "A",
-      "explanation": "La fonction de valeur d'état estime les réwards futurs attendus à partir d'un état donné. Les autres choix sont incorrects : B se concentre sur les actions, C et D sur les temps et séquences, qui ne sont pas les rôles de la fonction de valeur d'état.",
+      "correct_answer": "D",
+      "explanation": "La fonction de valeur d'état estime les réwards futurs attendus à partir d'un état donné. Les autres choix sont incorrects : B se concentre sur les actions, C et D sur les temps et séquences, qui ne sont pas les rôles de la fonction de valeur d'état. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (Contrôler l'ordre séquentiel des états dans le MDP) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (Calculer la probabilité de chaque action dans l'état) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Déterminer",
       "difficulty": "medium"
     },
     {
@@ -126,7 +126,7 @@
         "D": "Cela garantit que l'horizon infini est atteint"
       },
       "correct_answer": "A",
-      "explanation": "Modifier la fonction de réward peut changer les incitations et ainsi conduire à des politiques optimales différentes. B est vrai mais n'est pas une conséquence directe des réwards. C et D sont incorrects : un nouveau réward ne rend pas les actions égales ou garantit la longueur de l'horizon.",
+      "explanation": "Modifier la fonction de réward peut changer les incitations et ainsi conduire à des politiques optimales différentes. B est vrai mais n'est pas une conséquence directe des réwards. C et D sont incorrects : un nouveau réward ne rend pas les actions égales ou garantit la longueur de l'horizon. La reponse correcte est A car elle satisfait la contrainte centrale de l'enonce. Le choix B (Cela ne change pas les transitions d'état) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (Cela rend toutes les actions également probables) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (Cela",
       "difficulty": "hard"
     },
     {
@@ -134,13 +134,13 @@
       "question": "Comment les MDP gèrent-ils les incertitudes dans les actions prises par un agent ?",
       "image_url": null,
       "choices": {
-        "A": "En modélisant les probabilités de transition entre les états pour chaque action",
-        "B": "En contraignant chaque action à générer la même récompense immédiate",
+        "A": "En contraignant chaque action à générer la même récompense immédiate",
+        "B": "En modélisant les probabilités de transition entre les états pour chaque action",
         "C": "En ignorant les actions sans conséquences immédiates",
         "D": "En définissant un seul trajet optimal strict pour toutes les actions"
       },
-      "correct_answer": "A",
-      "explanation": "Les MDP incluent les incertitudes des actions via les probabilités de transition. B, C, et D ne sont pas des approches correctes : B et C ignorent les variations des réwards et transitions, D impose une structure inflexible, contraire à la flexibilité des MDP.",
+      "correct_answer": "B",
+      "explanation": "Les MDP incluent les incertitudes des actions via les probabilités de transition. B, C, et D ne sont pas des approches correctes : B et C ignorent les variations des réwards et transitions, D impose une structure inflexible, contraire à la flexibilité des MDP. La reponse correcte est B car elle satisfait la contrainte centrale de l'enonce. Le choix A (En contraignant chaque action à générer la même récompense immédiate) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (En ignorant les actions sans conséquences immédiates) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (En définissant un",
       "difficulty": "hard"
     },
     {
@@ -148,13 +148,13 @@
       "question": "Quelle est une limite importante du modèle MDP à horizon infini ?",
       "image_url": null,
       "choices": {
-        "A": "Le risque de surestimer les réwards futurs sans discounting",
+        "A": "L'incapacité à modéliser des chaînes de Markov simples",
         "B": "L'obligation de prendre toutes les actions possibles en même temps",
-        "C": "L'incapacité à modéliser des chaînes de Markov simples",
+        "C": "Le risque de surestimer les réwards futurs sans discounting",
         "D": "La réduction du nombre d'états possibles à un seul"
       },
-      "correct_answer": "A",
-      "explanation": "Sans discounting, un MDP à horizon infini peut surestimer l'importance des réwards futurs, rendant les politiques incertaines. B, C, et D sont fausses : B parle d'actions non limitées, C ne concerne pas la limite des MDP, et D fait une confusion sur l'espace d'état.",
+      "correct_answer": "C",
+      "explanation": "Sans discounting, un MDP à horizon infini peut surestimer l'importance des réwards futurs, rendant les politiques incertaines. B, C, et D sont fausses : B parle d'actions non limitées, C ne concerne pas la limite des MDP, et D fait une confusion sur l'espace d'état. La reponse correcte est C car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'incapacité à modéliser des chaînes de Markov simples) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (L'obligation de prendre toutes les actions possibles en même temps) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix D (La",
       "difficulty": "hard"
     },
     {
@@ -162,13 +162,13 @@
       "question": "Dans un MDP, quelle stratégie permet d'améliorer la robustesse des politiques face aux changements de transition ?",
       "image_url": null,
       "choices": {
-        "A": "L'utilisation de politiques prudentes qui minimisent les pertes potentielles",
+        "A": "L'annulation des fonctions de réward immédiates",
         "B": "L'évitement complet des états à faible réward",
         "C": "La fixation des transitions d'état immuables",
-        "D": "L'annulation des fonctions de réward immédiates"
+        "D": "L'utilisation de politiques prudentes qui minimisent les pertes potentielles"
       },
-      "correct_answer": "A",
-      "explanation": "Les politiques prudentes prennent en compte les pires scénarios possibles pour renforcer la robustesse. B, C, et D ne sont pas viables : B peut ignorer des chemins optimaux, C fixe les transitions et D annule les incitations à agir.",
+      "correct_answer": "D",
+      "explanation": "Les politiques prudentes prennent en compte les pires scénarios possibles pour renforcer la robustesse. B, C, et D ne sont pas viables : B peut ignorer des chemins optimaux, C fixe les transitions et D annule les incitations à agir. La reponse correcte est D car elle satisfait la contrainte centrale de l'enonce. Le choix A (L'annulation des fonctions de réward immédiates) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix B (L'évitement complet des états à faible réward) est plausible mais faux car il ne respecte pas totalement le contexte, les hypotheses ou l'objectif demande. Le choix C (La fixation des transitions d'état immuables) est plausible mais faux car",
       "difficulty": "hard"
     }
   ]
